@@ -1,0 +1,59 @@
+@import "variables";
+
+.hero {
+  background-color: $color-hero-background;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color-hero-text;
+  a {
+    color: $color-hero-text;
+    font-weight: bold;
+    border-bottom: 2px solid $color-hero-text;
+    text-decoration: none;
+    transition:color $transition-length ease-out, border-bottom-color $transition-length ease-out;
+    &:hover, &:visited:hover {
+      color: $color-hero-text;
+      border-bottom-color: $color-hero-link-border;
+    }
+  }
+
+  img {
+    float:left;
+    margin-right:1.5rem;
+  }
+
+  &:nth-child(4n+2), &:nth-child(4n+4) {
+    img {
+      float:right;
+      margin-right:0;
+      margin-left:1.5rem;
+    }
+    background-color: transparent;
+    color: $color-text-light;
+    a {
+      color: $color-text-light;
+      &:hover {
+        color: $color-text-light;
+      }
+    }
+  }
+  &:nth-child(4n+3) {
+    background-color: $color-hero2-background;
+  }
+}
+
+.contentblock {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.herotext {
+    font-size: 1.2rem;
+    background: rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    p {margin-top: 1.5rem;}
+    p:first-child {margin-top: 0;}
+    small {font-size: 0.8rem;}
+    border-radius: 0.75rem;
+}

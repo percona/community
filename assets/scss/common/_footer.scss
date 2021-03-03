@@ -1,0 +1,85 @@
+@import "base";
+@import "variables";
+@import "menu";
+footer.page {
+  margin-top:1.5rem;
+  h2 {
+    font-size:1rem;
+  }
+}
+
+@media not print {
+  footer.page {
+    margin-top: 1.5rem/2;
+    padding-top: 1.5rem/2;
+    padding-bottom: 1.5rem/2;
+  }
+
+  .page-footer {
+    @include container;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+
+    ul {
+      margin-bottom:1.5rem;
+    }
+
+    @include menu;
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      height:1.5rem;
+      line-height:1.5rem;
+      a {
+        height:1.3rem;
+        line-height:1.3rem;
+        text-align:center;
+        display: block;
+        padding-left:0.75rem;
+        padding-right:0.75rem;
+        border-bottom:.2rem solid transparent;
+        @media (min-width: 768px) {
+          padding-left:1.5rem;
+          padding-right:1.5rem;
+        }
+      }
+    }
+  }
+}
+@media print {
+  footer.page {
+    nav {
+      display:none;
+    }
+
+    aside {
+      border-top:0.2rem solid $color-print-border;
+      margin-top:0.65rem;
+      padding-top:0.65rem;
+    }
+  }
+}
+
+footer.page {
+  border-top:2px solid $color-footer-top;
+  margin-top:-2px;
+  aside {
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    color: #333;
+  }
+}
+
+@media screen {
+  footer.page {
+    background-color: $color-background-footer-light;
+  }
+  .page-footer {
+    @include menu-color-light;
+  }
+}

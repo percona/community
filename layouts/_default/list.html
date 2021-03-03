@@ -1,0 +1,14 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "main" }}
+    {{ if or .Title .Content }}
+        <div class="text">
+            <h1>{{ .Title }}</h1>
+            <div class="body">
+                {{ .Content }}
+            </div>
+        </div>
+    {{ end }}
+{{ end }}

@@ -1,0 +1,86 @@
+@import "variables";
+@import "typography";
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  text-align: center;
+  @media screen {
+    color:$color-text-light;
+    background-color:$color-background-light;
+  }
+  @media print {
+    color:#000000;
+    background:#ffffff;
+  }
+}
+
+@media screen {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.page {
+    width:100%;
+    flex: 1;
+  }
+}
+
+header.page, main.page, footer.page {
+  text-align:left;
+}
+
+@mixin container {
+  max-width: $width-max;
+  @media print {
+    padding:0;
+  }
+  padding-left: $padding-left-page;
+  padding-right: $padding-right-page;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.page-main, .contentblock {
+  @include container;
+}
+
+@page {
+  size: A4;
+  padding: 0;
+  margin: 3rem;
+}
+
+.highlight {
+  color: $color-decor;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.aria-only {
+  display:none;
+  @media aural {
+    display:block;
+  }
+}
+
+a {
+  color: $color-link-light;
+  text-decoration-color: $color-link-underline;
+  transition:color $transition-length ease-out, text-decoration-color $transition-length ease-out;
+  &:hover, &:visited:hover {
+    color: $color-link-hover;
+  }
+  &:active {
+    color:$color-link-active;
+  }
+  &:visited {
+    color: $color-link-visited-light;
+    text-decoration-color: $color-link-visited-underline;
+  }
+}

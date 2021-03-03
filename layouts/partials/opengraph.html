@@ -1,0 +1,53 @@
+<meta property="og:title" content="{{if (eq .Title "")}}{{.Site.Title}}{{ else }}{{ .Title }}{{end}}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ with $.Params.images }}{{ range first 6 . -}}
+    <meta name="image" property="og:image" content="{{ ((resources.Get .).Resize "1200x jpg 90%").Permalink }}" />
+{{ end }}{{ else -}}
+    {{- $images := $.Resources.ByType "image" -}}
+    {{- $featured := $images.GetMatch "*feature*" -}}
+    {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+    {{- with $featured -}}
+        <meta name="image" property="og:image" content="{{ $featured.Permalink }}"/>
+    {{ else -}}
+        {{- with $.Site.Params.images -}}
+            <meta name="image" property="og:image" content="{{ ((resources.Get (index . 0)).Resize "1200x jpg 90%").Permalink }}"/>
+        {{ end }}{{ end }}{{ end }}
+
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- if .IsPage }}
+    {{- if not .PublishDate.IsZero }}<meta property="article:published_time" {{ .PublishDate.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+    {{ else if not .Date.IsZero }}<meta property="article:published_time" {{ .Date.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+    {{ end }}
+    {{- if not .Lastmod.IsZero }}<meta property="article:modified_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />{{ end }}
+{{- else }}
+    {{- if not .Date.IsZero }}<meta property="og:updated_time" {{ .Lastmod.Format $iso8601 | printf "content=%q" | safeHTMLAttr }} />
+    {{- end }}
+{{- end }}{{/* .IsPage */}}
+
+{{- /* If it is part of a series, link to related articles */}}
+{{- $permalink := .Permalink }}
+{{- $siteSeries := .Site.Taxonomies.series }}{{ with .Params.series }}
+    {{- range $name := . }}
+        {{- $series := index $siteSeries $name }}
+        {{- range $page := first 6 $series.Pages }}
+            {{- if ne $page.Permalink $permalink }}<meta property="og:see_also" content="{{ $page.Permalink }}" />{{ end }}
+        {{- end }}
+    {{ end }}{{ end }}
+
+{{- if .IsPage }}
+    {{ range .Params.authors }}
+        {{ with $.Site.GetPage (print "/authors/" .) -}}
+            {{ with .Params.social.facebook }}
+                <meta property="article:author" content="https://www.facebook.com/{{ . }}" />
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ with .Site.Social.facebook }}
+        <meta property="article:publisher" content="https://www.facebook.com/{{ . }}" />
+    {{ end }}
+    <meta property="article:section" content="{{ .Section }}" />
+{{ end -}}
+{{- /* Facebook Page Admin ID for Domain Insights */}}
+{{- with .Site.Social.facebook_admin }}<meta property="fb:admins" content="{{ . }}" />{{ end }}

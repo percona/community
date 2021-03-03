@@ -1,0 +1,3 @@
+{{- range first 1 (where $.Page.Site.Pages "Section" "blog") -}}
+{{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+{{- end -}}

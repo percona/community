@@ -1,0 +1,6 @@
+{{- $css := resources.Get .file -}}
+{{- if $css -}}
+    {{- return ((resources.Get .file | toCSS).Content | safeCSS) -}}
+{{- else -}}
+    ERROR
+{{- end -}}

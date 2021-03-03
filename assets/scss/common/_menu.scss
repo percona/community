@@ -1,0 +1,44 @@
+@import "variables";
+
+@mixin menu {
+  a {
+    display:block;
+    text-decoration: none;
+    &, span {
+      transition: color $transition-length ease-in-out, border-bottom $transition-length, margin-bottom $transition-length;
+    }
+
+    height:($height-header - ($height-menu-underline*2));
+    line-height:($height-header - ($height-menu-underline*2));
+    border-top: $height-menu-underline solid transparent;
+    border-bottom: $height-menu-underline solid transparent;
+
+    &:hover {
+      color: $color-link-light;
+      border-bottom: $height-menu-underline solid $color-link-light;
+    }
+
+    &:hover span {
+      color: $color-link-light;
+    }
+
+    img {
+      height:$height-header - ($height-menu-underline*2);
+    }
+  }
+}
+
+@mixin menu-color-light {
+  a {
+    color: $color-text-light;
+    border-bottom: 0 solid $color-background-light;
+
+    &:hover {
+      color: $color-link-light;
+      border-bottom-color: $color-link-light;
+    }
+    &:visited {
+      color: $color-text-light;
+    }
+  }
+}

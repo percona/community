@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="{{ .Site.Language }}" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      <meta name="robots" content="index,follow">
+    {{ else }}
+      <meta name="robots" content="noindex,nofollow">
+    {{ end }}
+
+    {{"<!-- region Social -->" | safeHTML}}
+    {{ partial "opengraph.html" . }}
+    {{ partial "twitter_cards.html" . }}
+    {{"<!-- endregion -->\n" | safeHTML}}
+
+    {{"<!-- region Social -->" | safeHTML}}
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+    <meta name="copyright" content="{{ .Site.Copyright }}" />
+    {{"<!-- endregion -->\n" | safeHTML}}
+
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink .Name | safeHTML }}
+    {{ end -}}
+
+    {{- block "meta" . }}{{- end -}}
+
+    {{- .Page.Scratch.Set "css" "" -}}
+    {{- block "css" . -}}{{- end -}}
+    {{- $cssPath := printf "%s%s" .RelPermalink "page.css" -}}
+    {{- $css := (.Page.Scratch.Get "css" | resources.FromString $cssPath | resources.ToCSS | resources.Minify) -}}
+    <style>{{ $css.Content | safeCSS }}</style>
+
+	{{ block "head" . }}{{ end }}
+    <meta name="color-scheme" content="dark light" />
+  </head>
+
+  <body>
+    <header>
+      <div class="page-header">
+        <div class="logo"><a href="/">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "percona-logo-vector.svg").Content | base64Encode}}" alt="Percona" />
+        </a></div>
+        <input type="checkbox" id="show-mobile-menu" value="1" aria-hidden="true" />
+        <div class="mobile-toggle" aria-controls="mobile-menu" aria-label="Open navigation" role="button">
+          <label for="show-mobile-menu" id="hamburger">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </label>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" aria-labelledby="navigation-header" role="dialog" aria-modal="false" aria-hidden="true">
+          <nav>
+            <ul>
+              {{ $currentPage := . }}
+              {{ range .Site.Menus.main }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                  <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      {{ block "mainwrapper" . }}
+        <div class="page-main">
+          {{ block "main" . }}{{ end }}
+        </div>
+      {{ end }}
+    </main>
+
+    <footer class="page">
+      <h1 class="aria-only" id="footer-heading" aria-hidden="false">Footer</h1>
+      <div class="page-footer">
+        <nav class="footer">
+          <ul>
+            {{ range .Site.Menus.footer }}
+              <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                  {{ .Pre }}
+                  <span>{{ .Name }}</span>
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+      {{ with .Site.Copyright | default .Site.Title }}<aside> {{ . | safeHTML }} </aside>{{ end }}
+    </footer>
+
+    {{ $js := resources.Get "js/aria.js" }}
+    {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+$font-sans: Arial, sans-serif;
+$font-serif: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
+$font-mono: "Lucida Console", Monaco, monospace;
+$font-heading: $font-serif;
+
+$font-weight-normal: 500;
+$font-weight-heading: 500;
+$font-weight-bold: 700;
+$font-weight-logo: $font-weight-bold;
+$font-weight-footer-heading: $font-weight-bold;
+
+$color-background-light: #fefefe;
+$color-background-footer-light: #fefefe;
+
+$color-background-card-light: #ffffff;
+
+$color-text-light: #2a2d34;
+$color-heading-light: #2a2d34;
+
+$color-meta-text-light: #666666;
+
+$color-inline-code: #009B72;
+$color-blockquote-border: #999999;
+$color-link-light: #004966;
+$color-link-underline: #a2dffb;
+$color-link-hover: #fe7f2d;
+$color-link-active: #fe7f2d;
+$color-link-visited-light: #6761a8;
+$color-link-visited-underline: #009B72;
+$color-admonition-tip: #00a000;
+$color-admonition-warning: #fe7f2d;
+$color-admonition-info: #004966;
+
+$color-hero-background: #004966;
+$color-hero2-background: #fe7f2d;
+$color-hero-text: #ffffff;
+$color-hero-link-border: #fe7f2d;
+
+$color-decor: #6761a8;
+$color-decor-accent: #6761a8;
+$color-decor-contrast: #ffffff;
+$color-print-border: #333333;
+
+$color-footer-top: $color-hero2-background;
+
+$padding-left-page: 1.5rem;
+$padding-right-page: 1.5rem;
+
+$transition-length: .233s;
+
+$width-max:1400px;
+$height-header:3rem;
+$height-menu-underline: 0.2rem;
+
+$size-h2: 2rem;
+$size-h3: 1.5rem;
+$size-h4: 1rem;
+$size-h5: 0.8rem;
+$size-h6: 0.6rem;
+$size-lead: 1.1rem;
+
+$border-radius: 0.2rem;

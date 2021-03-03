@@ -1,0 +1,5 @@
+{{ $content := .Content }}
+{{ if $.PublishDate }}
+    {{ $content = replaceRE "(</p>)\\s*$" " <span aria-label=\"End of article.\" role=\"text\" class=\"tombstone\">∎</span>$1" $content }}
+{{ end }}
+{{ $content | safeHTML }}

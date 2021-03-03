@@ -1,0 +1,451 @@
+@import "variables";
+
+html, body {
+  font-family: $font-sans;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5rem;
+  font-feature-settings: "liga" 1;
+  font-weight:$font-weight-normal;
+
+  font-size: 18px;
+  @media (min-width: 900px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1800px) {
+    font-size: 24px;
+  }
+
+  @media print {
+    font-size: 18px;
+  }
+}
+
+@mixin heading {
+  font-family: $font-heading;
+  font-weight: $font-weight-heading;
+  page-break-after: avoid;
+}
+
+@mixin heading-margins($size) {
+  font-size:$size;
+  @if $size > 1.5rem {
+    line-height: 3rem;
+    margin-top: 3rem;
+  } @else {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@mixin typography($text-width, $text-margin-left) {
+  position: relative;
+
+  .meta {
+    font-variant: small-caps;
+    .byline {
+      display:none;
+    }
+    .line {
+      display:inline-block;
+    }
+    .calendar {
+      display: none;
+    }
+  }
+
+
+  @media screen and (min-width: 760px) {
+    .meta {
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @include heading;
+  }
+
+  p, ul, ol, figure, dl, hr {
+    margin-top:1.5rem;
+    font-size:1rem;
+  }
+
+  q {
+    font-style: italic;
+  }
+
+  ul ul {
+    margin-top:0;
+  }
+
+  p>code, ul>code, ol>code, dt>code, dd>code, li>code {
+    color: $color-inline-code;
+  }
+
+  button {
+    cursor:pointer;
+    display:inline-block;
+    box-sizing: border-box;
+    border:0.1rem solid $color-decor;
+    height:1.5rem;
+    padding-left:0.75rem;
+    padding-right:0.75rem;
+    border-radius: $border-radius;
+    transition: color $transition-length ease-in-out, background-color $transition-length ease-in-out;
+    &:hover {
+      color: $color-decor-contrast;
+      background-color: $color-decor;
+    }
+  }
+
+  audio {
+    display:block;
+    width:100%;
+    height:1.5rem;
+    outline:none;
+    span {
+      line-height:1.5rem;
+    }
+  }
+
+  dl {
+    overflow:auto;
+    position:relative;
+  }
+
+  dt {
+    font-weight:bold;
+  }
+
+  dd {
+    padding-left:2rem;
+  }
+
+  dd + dt {
+    margin-top:1.5rem;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left:1.5rem;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left:1.5rem;
+  }
+
+  p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+
+  h1 {
+    font-size:2.5rem;
+    font-weight: $font-weight-normal;
+    line-height:3rem;
+    margin-top:1.5rem;
+    @media screen and (min-width: 760px) {
+      font-size:3.5rem;
+      line-height:4.5rem;
+      margin-top:1.5rem;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 4rem;
+      line-height:4.5rem;
+      margin-top:3rem;
+    }
+    @media screen and (min-width: 1400px) {
+      font-size: 5rem;
+      line-height:6rem;
+      margin-top:6rem;
+    }
+    margin-bottom:0;
+  }
+  h2 {
+    @include heading-margins($size-h2);
+  }
+
+  h3 {
+    @include heading-margins($size-h3);
+  }
+
+  h4 {
+    @include heading-margins($size-h4);
+  }
+
+  h5 {
+    @include heading-margins($size-h5);
+  }
+
+  h6 {
+    @include heading-margins($size-h6);
+  }
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  blockquote {
+    border-left: 0.2rem solid $color-blockquote-border;
+    padding-left:0.75rem;
+  }
+
+  code {
+    font-family: $font-mono;
+    //noinspection CssInvalidPropertyValue
+    speak: literal-punctuation;
+  }
+
+  abbr, acronym {
+    speak: spell-out;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  ins {
+    text-decoration: none;
+    font-style: italic;
+  }
+
+  figure {
+    position: relative;
+    text-align: center;
+    img {
+      background: $color-background-card-light;
+      border-radius: $border-radius;
+      max-width:100%;
+    }
+    table {
+      min-width:75%;
+      border-radius: $border-radius;
+      margin-left: auto;
+      margin-right:auto;
+      border: $color-decor;
+      border-collapse: separate;
+      border-spacing: 0;
+      background:$color-background-card-light;
+      margin-bottom:-0.1em;
+
+      th, td {
+        padding-left:0.75rem;
+        padding-right:0.75rem;
+        line-height:1.3rem;
+        border-left:0.1rem solid $color-decor;
+        border-top:0.1rem solid $color-decor;
+      }
+
+      thead {
+        background-color:$color-background-card-light;
+      }
+
+      tr td:last-child,
+      tr th:last-child {
+        border-right:0.1rem solid $color-decor;
+      }
+
+      tbody:last-child tr:last-child td {
+        border-bottom:0.1rem solid $color-decor;
+      }
+
+      thead:first-child tr:first-child th:first-child,
+      thead:first-child tr:first-child td:first-child {
+        border-top-left-radius: $border-radius;
+      }
+      thead:first-child tr:first-child,
+      thead:first-child tr:first-child th:last-child,
+      thead:first-child tr:first-child td:last-child {
+        border-top-right-radius: $border-radius;
+      }
+
+      tbody:last-child tr:last-child,
+      tbody:last-child tr:last-child td:first-child {
+        border-bottom-left-radius: $border-radius;
+      }
+      tbody:last-child tr:last-child,
+      tbody:last-child tr:last-child td:last-child {
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+    ul {
+      text-align: left;
+      &.tree {
+        padding-top:1.5em;
+        padding-bottom:1.5em;
+        border-radius: $border-radius;
+        background: $color-background-card-light;
+        li {
+          list-style-type: none;
+        }
+        .tree__item--folder {
+          &::before {
+            content:"📁";
+            margin-right:0.2em;
+          }
+        }
+        .tree__item--file {
+          &::before {
+            content:"📝";
+            margin-right:0.2em;
+          }
+        }
+      }
+    }
+    figcaption {
+      font-style: italic;
+    }
+  }
+
+  pre {
+    margin-top:1.5rem;
+    font-size: inherit;
+    line-height:1.5rem;
+    padding: 1.5rem 1.5rem 0.75rem;
+
+    white-space: pre;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color:#cccccc transparent;
+    scrollbar-width:0.75rem;
+
+    &::-webkit-scrollbar {
+      margin-top:-0.75rem;
+      height:0.75rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background:transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height:0.1rem;
+      border-radius:$border-radius;
+      background:#cccccc;
+    }
+  }
+
+  hr {
+    border:0;
+    height:0.2rem;
+    background: $color-decor;
+    margin-top:1.3rem;
+  }
+
+  .admonition {
+    position:relative;
+    &>* {
+      padding-left:2rem;
+    }
+    &>:first-child::before {
+      display:block;
+      text-align: left;
+      position:absolute;
+      top:0;
+      left:0;
+      width:0.75rem;
+      font-size:1rem;
+      line-height:1.5rem;
+      height:1.5rem;
+    }
+    &--tip>:first-child::before {
+      content:"☛";
+      color: $color-admonition-tip;
+      font-size:1.5rem;
+      line-height:1.5rem;
+      height:1.5rem;
+    }
+    &--warning>:first-child::before {
+      content:"⚠️";
+      color: $color-admonition-warning;
+    }
+    &--info>:first-child::before {
+      content:"ⓘ";
+      color: $color-admonition-info;
+      font-weight: bold;
+    }
+  }
+
+  @media print {
+    h1 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 9rem;
+      width: 80%;
+      font-variant: small-caps;
+      text-align: center;
+    }
+    &--simple h1 {
+      margin-top:0;
+    }
+
+    .meta {
+      page-break-after: always;
+      text-align:center;
+      font-size:1.2rem;
+      margin-top:1.5rem;
+      a {
+        text-decoration:none;
+      }
+      time {
+        display: none;
+      }
+    }
+
+    .body p:first-of-type {
+      margin-top:0;
+    }
+
+    pre {
+      padding:0;
+      font-size: inherit;
+      line-height:1.5rem;
+      overflow: hidden;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  }
+
+  .podcasts {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  a.podcast {
+    display: block;
+    height:3rem;
+  }
+  a.podcast img {
+    width:50%;
+    max-width:200px;
+  }
+  @media screen and (min-width: 768px) {
+    .podcasts {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 1.5rem;
+    }
+    a.podcast img {
+      width:100%;
+    }
+  }
+  .tombstone {
+    opacity:0;
+  }
+}
+
+.text {
+  @include typography(760px, 5rem);
+}

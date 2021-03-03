@@ -1,0 +1,273 @@
+// This file should be included on every page that displays code segments.
+
+@import "common/variables";
+
+.text {
+  .chroma {
+    font-size: 0.8rem;
+    border-radius: $border-radius;
+
+    .lntd {
+      vertical-align: top;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+    .lntable {
+      border-spacing: 0;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      width: auto;
+      overflow: auto;
+      display: block;
+    }
+
+    .hl {
+      display: block;
+      width: 100%;
+    }
+
+    .lnt {
+      margin-right: 0.4em;
+      padding: 0 0.4em;
+    }
+  }
+
+  .chroma {
+    color: #272822;
+    @media screen {
+      background-color: #fafafa;
+    }
+    .err {
+      color: #960050;
+    }
+    .lntd {
+    }
+    .lntable {
+    }
+    .hl {
+      background-color: #ffffcc;
+    }
+    .lnt {
+      margin-right: 0.4em;
+      padding: 0 0.4em 0 0.4em;
+      color: #7f7f7f;
+    }
+    .ln {
+      color: #7f7f7f;
+    }
+    .k {
+      color: #00a8c8;
+    }
+    .kc {
+      color: #00a8c8;
+    }
+    .kd {
+      color: #00a8c8;
+    }
+    .kn {
+      color: #f92672;
+    }
+    .kp {
+      color: #00a8c8;
+    }
+    .kr {
+      color: #00a8c8;
+    }
+    .kt {
+      color: #00a8c8;
+    }
+    .n {
+      color: #111111;
+    }
+    .na {
+      color: #75af00;
+    }
+    .nb {
+      color: #111111;
+    }
+    .bp {
+      color: #111111;
+    }
+    .nc {
+      color: #75af00;
+    }
+    .no {
+      color: #00a8c8;
+    }
+    .nd {
+      color: #75af00;
+    }
+    .ni {
+      color: #111111;
+    }
+    .ne {
+      color: #75af00;
+    }
+    .nf {
+      color: #75af00;
+    }
+    .fm {
+      color: #111111;
+    }
+    .nl {
+      color: #111111;
+    }
+    .nn {
+      color: #111111;
+    }
+    .nx {
+      color: #75af00;
+    }
+    .py {
+      color: #111111;
+    }
+    .nt {
+      color: #f92672;
+    }
+    .nv {
+      color: #111111;
+    }
+    .vc {
+      color: #111111;
+    }
+    .vg {
+      color: #111111;
+    }
+    .vi {
+      color: #111111;
+    }
+    .vm {
+      color: #111111;
+    }
+    .l {
+      color: #ae81ff;
+    }
+    .ld {
+      color: #d88200;
+    }
+    .s {
+      color: #d88200;
+    }
+    .sa {
+      color: #d88200;
+    }
+    .sb {
+      color: #d88200;
+    }
+    .sc {
+      color: #d88200;
+    }
+    .dl {
+      color: #d88200
+    }
+    .sd {
+      color: #d88200;
+    }
+    .s2 {
+      color: #d88200;
+    }
+    .se {
+      color: #8045ff;
+    }
+    .sh {
+      color: #d88200;
+    }
+    .si {
+      color: #d88200;
+    }
+    .sx {
+      color: #d88200;
+    }
+    .sr {
+      color: #d88200;
+    }
+    .s1 {
+      color: #d88200;
+    }
+    .ss {
+      color: #d88200;
+    }
+    .m {
+      color: #ae81ff;
+    }
+    .mb {
+      color: #ae81ff;
+    }
+    .mf {
+      color: #ae81ff;
+    }
+    .mh {
+      color: #ae81ff;
+    }
+    .mi {
+      color: #ae81ff;
+    }
+    .il {
+      color: #ae81ff;
+    }
+    .mo {
+      color: #ae81ff;
+    }
+    .o {
+      color: #f92672;
+    }
+    .ow {
+      color: #f92672;
+    }
+    .p {
+      color: #111111;
+    }
+    .c {
+      color: #75715e;
+    }
+    .ch {
+      color: #75715e;
+    }
+    .cm {
+      color: #75715e;
+    }
+    .c1 {
+      color: #75715e;
+    }
+    .cs {
+      color: #75715e;
+    }
+    .cp {
+      color: #75715e;
+    }
+    .cpf {
+      color: #75715e;
+    }
+    .g {
+    }
+    .gd {
+    }
+    .ge {
+      font-style: italic;
+    }
+    .gr {
+    }
+    .gh {
+    }
+    .gi {
+    }
+    .go {
+    }
+    .gp {
+    }
+    .gs {
+      font-weight: bold;
+    }
+    .gu {
+    }
+    .gt {
+    }
+    .gl {
+    }
+    .w {
+    }
+  }
+}

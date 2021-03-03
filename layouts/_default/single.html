@@ -1,0 +1,66 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+{{- end }}
+
+{{ define "meta" }}
+  {{- if (isset .Params "authors") -}}
+    {{ range $key, $author := .Params.authors -}}
+      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+        <meta name="author" content="{{ .Params.fullname }}" />
+      {{- end }}{{ if $key }}, {{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{ end }}
+
+{{ define "main" }}
+  <article class="text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
+    {{ if $.PublishDate }}
+      {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
+      <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
+      {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
+    {{ end }}
+
+    <h1{{ if $.PublishDate }} itemprop="name headline"{{ end }}>{{ .Title }}</h1>
+    {{ if $.PublishDate }}
+      <div class="meta">
+        <time datetime="{{ $.PublishDate }}"{{ if $.PublishDate }} itemprop="datePublished"{{ end }}>
+          <span class="line">{{ $.PublishDate.Format "Jun 1, 2006" }}</span>
+          <span class="calendar">
+            <span class="day">{{ $.PublishDate.Day}}</span>
+            <span class="month-year">{{ substr $.PublishDate.Month 0 3 }} {{ $.PublishDate.Year}}</span>
+          </span>
+        </time>
+        <span class="authors">
+          {{- if (isset .Params "authors") -}}
+            by {{ range $key, $author := .Params.authors -}}
+              {{- with $.Site.GetPage (print "/authors/" $author) -}}
+                <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+              {{- end }}{{ if $key }}, {{ end -}}
+            {{- end -}}
+          {{- end -}}
+        </span>
+      </div>
+    {{ end }}
+    <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
+      {{ partial "content.html" . }}
+    </div>
+    {{ if (isset .Params "authors")}}
+      <div class="bios">
+        {{ range $key, $author := .Params.authors }}
+          <div class="bio" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            {{ with $.Site.GetPage (print "/authors/" $author) -}}
+                <h2 itemprop="name" aria-label="Author: {{ .Params.fullname_pronounciation }}">{{ .Params.fullname }}</h2>
+                  {{ if (isset .Params "avatar") }}
+                    <img class="avatar" src="{{ ((resources.Get .Params.avatar).Resize "512x 90 jpg").RelPermalink }}" alt="{{ .Params.avatar_alt }}" />
+                  {{ end }}
+                {{ .Content }}
+            {{ end}}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </article>
+{{ end }}

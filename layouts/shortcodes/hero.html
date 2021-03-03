@@ -1,0 +1,1 @@
+<div class="hero"{{ with (.Get "background") }} style="background-image:url({{ ((resources.Get .).Resize "1200x 90% jpg").RelPermalink }})"{{ end }}><div class="contentblock">{{ .Inner }}</div></div>
