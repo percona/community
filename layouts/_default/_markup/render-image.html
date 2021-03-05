@@ -3,18 +3,25 @@
 {{ with .Title }}
     {{ $caption = . | safeHTML }}
 {{ end }}
-{{ $image := resources.Get .Destination }}
-{{- if or (strings.HasSuffix .Destination ".svg") (strings.HasSuffix .Destination ".gif") -}}
-<figure>
-<img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
-{{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
-</figure>
+{{ if in .Destination "http" }}
+    <figure>
+    <img src="{{ .Destination }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+    {{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
+    </figure>
 {{- else -}}
-{{ $small := $image.Resize "480x" }}
-{{ $medium := $image.Resize "768x" }}
-{{ $big := $image.Resize "1024x" }}
-<figure>
-<img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1024w" src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
-{{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
-</figure>
+    {{ $image := resources.Get .Destination }}
+    {{- if or (strings.HasSuffix .Destination ".svg") (strings.HasSuffix .Destination ".gif") -}}
+    <figure>
+    <img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+    {{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
+    </figure>
+    {{- else -}}
+    {{ $small := $image.Resize "480x" }}
+    {{ $medium := $image.Resize "768x" }}
+    {{ $big := $image.Resize "1024x" }}
+    <figure>
+    <img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1024w" src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+    {{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
+    </figure>
+    {{ end }}
 {{ end }}
