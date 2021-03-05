@@ -27,7 +27,7 @@
     {{ if $.PublishDate }}
       <div class="meta">
         <time datetime="{{ $.PublishDate }}"{{ if $.PublishDate }} itemprop="datePublished"{{ end }}>
-          <span class="line">{{ $.PublishDate.Format "Jun 1, 2006" }}</span>
+          <span class="line">{{ $.PublishDate.Format "January 2, 2006" }}</span>
           <span class="calendar">
             <span class="day">{{ $.PublishDate.Day}}</span>
             <span class="month-year">{{ substr $.PublishDate.Month 0 3 }} {{ $.PublishDate.Year}}</span>
