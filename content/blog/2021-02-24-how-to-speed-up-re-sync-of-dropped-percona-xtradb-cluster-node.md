@@ -4,7 +4,7 @@ date: "2021-02-24T00:00:00+00:00"
 authors:
   - wayne
 images:
-  - blog.jpg
+  - blog/2021/02/Blog-Community-Pic.jpg
 ---
 
 ## The Problem
