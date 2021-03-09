@@ -3,6 +3,10 @@ title: 'What If We Could Use Machine Learning Models as Tables – Percona Live 
 date: Mon, 12 Oct 2020 17:56:51 +0000
 draft: false
 tags: ['jorge.torres', 'MariaDB', 'PLO-2020-10', 'PostgreSQL']
+authors:
+  - jorge_torres
+images:
+  - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 1:30 p.m. • London 6:30 p.m. • New Delhi 11:00 p.m. • Singapore 1:30 a.m. (next day)_
