@@ -27,7 +27,7 @@ git clone https://github.com/percona/community.git
 5. Go to the Community folder.
 
 ```
-cd communtiy
+cd community
 ```
 5. Run Hugo
 
