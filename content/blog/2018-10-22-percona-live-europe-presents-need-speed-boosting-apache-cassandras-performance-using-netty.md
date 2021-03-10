@@ -3,9 +3,15 @@ title: 'Percona Live Europe Presents: Need for speed - Boosting Apache Cassandra
 date: Mon, 22 Oct 2018 08:34:35 +0000
 draft: false
 tags: ['author_dinesh', 'DevOps', 'Events', 'MySQL', 'Percona Live Europe 2018']
+images:
+  - blog/2018/10/apache-cassandra-logo-3.png
+authors:
+  - dinesh_joshi
 ---
 
-![](https://www.percona.com/community-blog/wp-content/uploads/2018/10/apache-cassandra-logo-3-300x201.png)My talk is titled [Need for speed: Boosting Apache Cassandra's performance using Netty](https://www.percona.com/live/e18/sessions/need-for-speed-boosting-apache-cassandras-performance-using-netty). Over the years that I have worked in the software industry, making code run fast has fascinated me. So, naturally when I first started contributing to Apache Cassandra, I started looking opportunities to improve its performance. My talk takes us through some interesting challenges within a distributed system like [Apache Cassandra](http://cassandra.apache.org/) and various techniques to significantly improve its performance. Talking about performance is incredibly exciting because you can easily quantify and see the results. Making improvements to the database’s performance not only improves the user experience but also reflects positively on the organization’s bottom line. It also has the added benefit of pushing the boundaries of scale. Furthermore, my talk spans beyond Apache Cassandra and is generally applicable for writing performant networking applications in Java.
+![](blog/2018/10/apache-cassandra-logo-3.png)
+
+My talk is titled [Need for speed: Boosting Apache Cassandra's performance using Netty](https://www.percona.com/live/e18/sessions/need-for-speed-boosting-apache-cassandras-performance-using-netty). Over the years that I have worked in the software industry, making code run fast has fascinated me. So, naturally when I first started contributing to Apache Cassandra, I started looking opportunities to improve its performance. My talk takes us through some interesting challenges within a distributed system like [Apache Cassandra](http://cassandra.apache.org/) and various techniques to significantly improve its performance. Talking about performance is incredibly exciting because you can easily quantify and see the results. Making improvements to the database’s performance not only improves the user experience but also reflects positively on the organization’s bottom line. It also has the added benefit of pushing the boundaries of scale. Furthermore, my talk spans beyond Apache Cassandra and is generally applicable for writing performant networking applications in Java.
 
 Who’d benefit most from the presentation?
 -----------------------------------------

@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/federicorazzoli/
 images:
-  - blog/2020/10/art-vons-pix.png
+  - blog/2018/10/federico-razzoli.jpg
 ---
 
 Relational databases lover and open source supporter. I wrote "Mastering MariaDB" in 2014, and I was a MariaDB Community Ambassador. I am an independent consultant based in London
