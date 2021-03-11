@@ -3,11 +3,15 @@ title: 'Two weeks to MariaDB Server Fest'
 date: Fri, 04 Sep 2020 09:34:53 +0000
 draft: false
 tags: ['kaj.arno', 'Events', 'MariaDB', 'MariaDB', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases']
+images:
+  - blog/2020/09/mariadb_fest_video.jpeg
+authors:
+  - kaj_arno
 ---
 
 There is still time to [register](https://mariadb.org/fest-registration/) for the MariaDB Server Fest 2020!
 
-\[caption id="attachment\_1337" align="alignnone" width="837"\]![MariaDB Fest 2020](https://www.percona.com/community-blog/wp-content/uploads/2020/09/mariadb_fest_video-1024x576.jpeg) MariaDB Fest 2020\[/caption\]
+![MariaDB Fest 2020](blog/2020/09/mariadb_fest_video.jpeg) MariaDB Fest 2020[/caption]
 
 Our Fest is the opportunity to have live interactions with the key players on MariaDB Server: the developers of MariaDB Server, the service providers, the experts, the system integrators, and – perhaps most importantly – your fellow users!
 
