@@ -3,9 +3,15 @@ title: 'Percona Live Presents: Gonymizer, A Tool to Anonymize Sensitive PostgreS
 date: Fri, 17 May 2019 11:11:58 +0000
 draft: false
 tags: ['author_junkert', 'Events', 'Kubernetes', 'PostgreSQL']
+images:
+  - blog/2019/05/gonymizer-postgres-data-anonymizer.jpg
+authors:
+  - levi_junkert
 ---
 
-[SmithRX](https://smithrx.com/)[![gonymizer postgres data anonymizer](https://www.percona.com/community-blog/wp-content/uploads/2019/05/gonymizer-postgres-data-anonymizer-200x150.jpg)](https://smithrx.com/) is a next generation pharmacy benefit platform that is using the latest technology to radically reshape the prescription benefit management industry. To move quickly, we require the ability to iterate and test new versions of our software using production like data without violating Health Information Portability and Accountability Act (HIPAA) regulations. At Percona Live 2019, we are introducing a project we open sourced to anonymize our sensitive production data for use in rapid QA and testing of our software. The talk will cover:
+[SmithRX](https://smithrx.com/)[![gonymizer postgres data anonymizer](blog/2019/05/gonymizer-postgres-data-anonymizer.jpg)](https://smithrx.com/) is a next generation pharmacy benefit platform that is using the latest technology to radically reshape the prescription benefit management industry. To move quickly, we require the ability to iterate and test new versions of our software using production like data without violating Health Information Portability and Accountability Act (HIPAA) regulations. 
+
+At Percona Live 2019, we are introducing a project we open sourced to anonymize our sensitive production data for use in rapid QA and testing of our software. The talk will cover:
 
 *   An introduction to HIPAA and Protected Health Information (PHI)
 *   Deciding which parts of your data need to be anonymized
@@ -31,4 +37,6 @@ At SmithRx we are currently growing our infrastructure size, automation manageme
 *   [Monitoring PostgreSQL with Percona Monitoring and Management (PMM)](https://www.percona.com/live/19/sessions/monitoring-postgresql-with-percona-monitoring-and-management-pmm) by Avinash Vallarapu
 *   [Future of Postgres](https://www.percona.com/live/19/sessions/future-of-postgres) by Ken Rugg
 
-_\--_ _Photo by [Viktor Talashuk](https://unsplash.com/photos/bhoj9tHlsiY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/mannequin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+__
+
+Photo by [Viktor Talashuk](https://unsplash.com/photos/bhoj9tHlsiY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/mannequin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
