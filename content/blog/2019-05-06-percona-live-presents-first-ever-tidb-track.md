@@ -3,9 +3,15 @@ title: 'Percona Live Presents: The First Ever TiDB Track'
 date: Mon, 06 May 2019 20:45:41 +0000
 draft: false
 tags: ['author_pingcap', 'Kubernetes', 'MySQL', 'Open Source Databases', 'Percona Live 2019']
+images:
+  - blog/2019/05/state-of-databases-2019.jpg
+authors:
+  - pingcap
 ---
 
-The PingCAP team has always been a strong supporter of Percona and the wider open source database community. As the people who work day in and day out on [TiDB](https://github.com/pingcap/tidb), an open source NewSQL database with MySQL compatibility, open source database is what gets us in the morning, and there’s no better place to share that passion than Percona Live. At this year’s [Percona Live Open Source Database Conference](https://www.percona.com/live/19/) in Austin, Texas, we are particularly excited to bring you a full track of talks and demo on the latest development in TiDB during Day 1 of the conference.
+The PingCAP team has always been a strong supporter of Percona and the wider open source database community. As the people who work day in and day out on [TiDB](https://github.com/pingcap/tidb), an open source NewSQL database with MySQL compatibility, open source database is what gets us in the morning, and there’s no better place to share that passion than Percona Live. 
+
+At this year’s [Percona Live Open Source Database Conference](https://www.percona.com/live/19/) in Austin, Texas, we are particularly excited to bring you a full track of talks and demo on the latest development in TiDB during Day 1 of the conference.
 
 Who would benefit from the TiDB track
 -------------------------------------
@@ -25,4 +31,6 @@ Phew! That’s a lot. I hope you are excited to join us for this track. As Peter
 Whose presentations do you look forward to?
 -------------------------------------------
 
-Besides the TiDB track, there are many other presentations we are excited about. In particular, I look forward to attending Stacy Yuan and Yashada Jadhav of PayPal’s talk on [MySQL Security and Standardization](https://www.percona.com/live/19/sessions/mysql-security-and-standardization-at-paypal), and Vinicius Grippa of Percona’s presentation on [enhancing MySQL Security](https://www.percona.com/live/19/sessions/enhancing-mysql-security). See you soon in Austin!
+Besides the TiDB track, there are many other presentations we are excited about. In particular, I look forward to attending Stacy Yuan and Yashada Jadhav of PayPal’s talk on [MySQL Security and Standardization](https://www.percona.com/live/19/sessions/mysql-security-and-standardization-at-paypal), and Vinicius Grippa of Percona’s presentation on [enhancing MySQL Security](https://www.percona.com/live/19/sessions/enhancing-mysql-security). 
+
+See you soon in Austin!

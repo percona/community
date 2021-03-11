@@ -2,7 +2,7 @@
 name: cate_lawrence
 name_pronunciation: cate_lawrence
 fullname: Cate Lawrence
-fullname_pronounciation: FCate Lawrence
+fullname_pronounciation: Cate Lawrence
 tagline: 
 social:
   website: 
