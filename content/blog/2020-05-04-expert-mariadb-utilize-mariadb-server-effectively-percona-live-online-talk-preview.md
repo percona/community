@@ -3,6 +3,10 @@ title: 'Expert MariaDB: Utilize MariaDB Server Effectively - Percona Live ONLINE
 date: Mon, 04 May 2020 20:30:20 +0000
 draft: false
 tags: ['Colin.Charles', 'Events', 'MariaDB']
+authors:
+  - colin_charles
+images:
+  - blog/2020/05/Social-PL-Online-2020-1.jpg
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot:  Tue 19 May • New York_ _11:00 p.m. • London 4:00 a.m. (Wed) • New Delhi 8:30 a.m. (Wed)_ _Level: Intermediate_
@@ -13,7 +17,9 @@ MariaDB Server 10.4 has been out for some time now (June 2019) and it has many n
 
 ### Why is Your Talk Exciting?
 
-I am going to talk about MariaDB Server from a user perspective and why you might consider using this fork of MySQL for your production use cases. After all, it has progressed differently from MySQL and has features that are similar, sometimes implemented differently, yet it also has new features that MySQL may not get to, e.g. Oracle compatibility. It is also likely that we can talk a little about MariaDB Server 10.5 which should be just around the corner, as it is currently in beta. There are plenty of improvements around JSON, more information reported in the threadpool, a new Amazon S3 storage engine, plenty of InnoDB improvements, Galera 4 inconsistency voting, and more.
+I am going to talk about MariaDB Server from a user perspective and why you might consider using this fork of MySQL for your production use cases. After all, it has progressed differently from MySQL and has features that are similar, sometimes implemented differently, yet it also has new features that MySQL may not get to, e.g. Oracle compatibility. 
+
+It is also likely that we can talk a little about MariaDB Server 10.5 which should be just around the corner, as it is currently in beta. There are plenty of improvements around JSON, more information reported in the threadpool, a new Amazon S3 storage engine, plenty of InnoDB improvements, Galera 4 inconsistency voting, and more.
 
 ### Who Would Benefit the Most From Your Talk?
 
