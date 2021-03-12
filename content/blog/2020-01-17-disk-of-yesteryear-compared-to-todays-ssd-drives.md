@@ -3,9 +3,18 @@ title: 'Disk of Yesteryear Compared to Today’s SSD Drives'
 date: Fri, 17 Jan 2020 16:48:46 +0000
 draft: false
 tags: ['author_wayne', 'MySQL', 'Open Source Databases', 'Percona Server for MySQL']
+authors:
+  - wayne
+images:
+  - blog/2020/01/enrico-sottocorna-HOhR-t0yZIU-unsplash.jpg
 ---
 
-![](https://www.percona.com/community-blog/wp-content/uploads/2020/01/enrico-sottocorna-HOhR-t0yZIU-unsplash-300x179.jpg)In my [last blog post](https://www.percona.com/community-blog/2019/08/01/how-to-build-a-percona-server-stack-on-a-raspberry-pi-3/) I showed you how to get the entire Percona “Stack" up and running on a Raspberry Pi. This time around, I would like to show the impact on performance between using an SSD hard disk and a standard hard disk. Disk performance is a key factor in [Percona Server for MySQL](https://www.percona.com/software/mysql-database/percona-server) (or any RDB platform) performance on a Raspberry Pi 4.
+![](blog/2020/01/enrico-sottocorna-HOhR-t0yZIU-unsplash.jpg)
+
+In my [last blog post](https://www.percona.com/
+community-blog/2019/08/01/how-to-build-a-percona-server-stack-on-a-raspberry-pi-3/) I showed you how to get the entire Percona “Stack" up and running on a Raspberry Pi. This time around, I would like to show the impact on performance between using an SSD hard disk and a standard hard disk. 
+
+Disk performance is a key factor in [Percona Server for MySQL](https://www.percona.com/software/mysql-database/percona-server) (or any RDB platform) performance on a Raspberry Pi 4.
 
 Test set up
 -----------
@@ -22,57 +31,63 @@ Hardware stayed consistent during test, except for the hard disk that were switc
 *   Persona Server Version: 5.7.27-30 built from source. See the above BLOG for install instructions.
 *   Sysbench 1.0.17
 
-Sample my.cnf```
-\[mysqld\]
+Sample my.cnf
+```
+[mysqld]
 port = 3306
 socket = /var/lib/mysql/mysql.sock
 pid-file = /var/lib/mysql/mysqld.pid
 basedir = /usr/local/mysql
 datadir = /data0/mysql/data
 tmpdir = /data0/mysql/tmp
-general\_log\_file = /var/log/mysql/mysql-general.log
+general_log_file = /var/log/mysql/mysql-general.log
 log-error = /var/log/mysql/mysqld.log
-slow\_query\_log\_file = /var/log/mysql/log/slow\_query.log
-slow\_query\_log = 0 # Slow query log off
+slow_query_log_file = /var/log/mysql/log/slow_query.log
+slow_query_log = 0 # Slow query log off
 lc-messages-dir = /usr/local/mysql/share
-plugin\_dir = /usr/local/mysql/lib/mysql/plugin
+plugin_dir = /usr/local/mysql/lib/mysql/plugin
 log-bin = /data0/mysql/binlog/mysql-bin
-sync\_binlog = 1
-expire\_logs\_days = 5
+sync_binlog = 1
+expire_logs_days = 5
 server-id = 1
-binlog\_format = mixed
-max\_allowed\_packet = 64M
-max\_connections = 50
-max\_user\_connections = 40
-query\_cache\_size=0
-query\_cache\_type=0
+binlog_format = mixed
+max_allowed_packet = 64M
+max_connections = 50
+max_user_connections = 40
+query_cache_size=0
+query_cache_type=0
 
-innodb\_data\_home\_dir = /data0/mysql/data
-innodb\_log\_group\_home\_dir = /data0/mysql/data
-innodb\_log\_files\_in\_group = 2
-innodb\_buffer\_pool\_size = 1536M
-innodb\_log\_file\_size = 64M
-innodb\_log\_buffer\_size = 8M
-innodb\_flush\_log\_at\_trx\_commit = 2
-#innodb\_flush\_log\_at\_trx\_commit = 0
-innodb\_lock\_wait\_timeout = 50
-innodb\_flush\_method = O\_DIRECT
-innodb\_file\_per\_table = 1
-innodb\_buffer\_pool\_instances = 1
+innodb_data_home_dir = /data0/mysql/data
+innodb_log_group_home_dir = /data0/mysql/data
+innodb_log_files_in_group = 2
+innodb_buffer_pool_size = 1536M
+innodb_log_file_size = 64M
+innodb_log_buffer_size = 8M
+innodb_flush_log_at_trx_commit = 2
+#innodb_flush_log_at_trx_commit = 0
+innodb_lock_wait_timeout = 50
+innodb_flush_method = O_DIRECT
+innodb_file_per_table = 1
+innodb_buffer_pool_instances = 1
 skip-name-resolve=0
-thread\_pool\_size=20
-innodb\_temp\_data\_file\_path = ../tmp/ibtmp1:12M:autoextend:max:8G
-```Sysbench MySQL test prep step:```
+thread_pool_size=20
+innodb_temp_data_file_path = ../tmp/ibtmp1:12M:autoextend:max:8G
+```
+Sysbench MySQL test prep step:
+```
 sysbench --db-driver=mysql —mysql-db=sbtest --oltp-table-size=500000 --oltp-tables-count=10 --threads=8 --mysql-host= --mysql-port=3306 --mysql-user= --mysql-password=
-/usr/share/sysbench/tests/include/oltp\_legacy/parallel\_prepare.lua run
+/usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run
 ```
 
 Test 1
 ------
 
-This was done using the: KEXIN 240GB Portable External SSD Drive. Sysbench command:```
-sysbench --db-driver=mysql --mysql-db=sbtest --report-interval=2 --mysql-table-engine=innodb --oltp-table-size=500000 --oltp-tables-count=10 --oltp-test-mode=complex --threads=10 --time=150 —mysql-host= --mysql-port=3306 —mysql-user= —mysql-password= /usr/share/sysbench/tests/include/oltp\_legacy/oltp.lua run
-```Output:```
+This was done using the: KEXIN 240GB Portable External SSD Drive. Sysbench command:
+```
+sysbench --db-driver=mysql --mysql-db=sbtest --report-interval=2 --mysql-table-engine=innodb --oltp-table-size=500000 --oltp-tables-count=10 --oltp-test-mode=complex --threads=10 --time=150 —mysql-host= --mysql-port=3306 —mysql-user= —mysql-password= /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run
+```
+Output:
+```
 SQL statistics:
     queries performed:
         read:                            486542
@@ -98,7 +113,9 @@ Threads fairness:
     events (avg/stddev):           3475.3000/368.77
     execution time (avg/stddev):   150.0045/0.01
 
-```As you can see the performance with the KEXIN (SSD) Drive was pretty good:```
+```
+As you can see the performance with the KEXIN (SSD) Drive was pretty good:
+```
 transactions:                        34753  (231.62 per sec.)
 queries:                             695060 (4632.45 per sec.)
 
@@ -107,7 +124,8 @@ queries:                             695060 (4632.45 per sec.)
 Test 2
 ------
 
-This was done using the: Western Digital My Passport Ultra 1TB drive.```
+This was done using the: Western Digital My Passport Ultra 1TB drive.
+```
 SQL statistics:
     queries performed:
         read:                            60984
@@ -134,7 +152,9 @@ Threads fairness:
     events (avg/stddev):           435.6000/5.71
     execution time (avg/stddev):   150.1739/0.05
 
-```As you can see the performance on the Western Digital Drive was really bad:```
+```
+As you can see the performance on the Western Digital Drive was really bad:
+```
 transactions:                        4356   (29.00 per sec.)
 queries:                             87120  (579.94 per sec.)
 
@@ -142,7 +162,8 @@ queries:                             87120  (579.94 per sec.)
 
 ### Disk IO Tests
 
-KEXIN:```
+KEXIN:
+```
 Operations performed:  208123 Read, 138748 Write, 443904 Other = 790775 Total
 Read 3.1757Gb  Written 2.1171Gb  Total transferred 5.2928Gb  (18.066Mb/sec)
  1156.24 Requests/sec executed
@@ -161,7 +182,9 @@ Threads fairness:
     events (avg/stddev):           346871.0000/0.00
     execution time (avg/stddev):   113.1569/0.00
 
-```Western Digital:```
+```
+Western Digital:
+```
 Operations performed:  24570 Read, 16380 Write, 52352 Other = 93302 Total
 Read 383.91Mb  Written 255.94Mb  Total transferred 639.84Mb  (2.1327Mb/sec)
   136.50 Requests/sec executed
@@ -185,12 +208,20 @@ Threads fairness:
 Conclusion
 ----------
 
-As you can see the transactions per second between the Western Digital Drive and the KEXIN Drive was more than 12.5% slower. The queries per second between the Western Digital Drive and KEXIN drive were more than 12.5% slower. Even the sysbench showed an extreme difference between the two drives. There is a 13.36ms difference in the 95% percentile. KEXIN:```
+As you can see the transactions per second between the Western Digital Drive and the KEXIN Drive was more than 12.5% slower. The queries per second between the Western Digital Drive and KEXIN drive were more than 12.5% slower. Even the sysbench showed an extreme difference between the two drives. There is a 13.36ms difference in the 95% percentile. KEXIN:
+```
 transactions:                        34753  (231.62 per sec.)
 queries:                             695060 (4632.45 per sec.)
 
-```Western Digital:```
+```
+Western Digital:
+```
 transactions:                        4356   (29.00 per sec.)
 queries:                             87120  (579.94 per sec.)
 
-```With the cost of SSD drives dropping, we can see that the Raspberry Pi 4, 4GB with an SSD drive is a good choice for a small business (or anyone) that needs a good robust database at an affordable price range. _The content in this blog is provided in good faith by members of the open source community. Percona has not edited or tested the technical content. Views expressed are the authors’ own. When using the advice from this or any other online resource test ideas before applying them to your production systems, and always secure a working back up._ -- _Photo by [Enrico Sottocorna](https://unsplash.com/@enricosottocorna?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/berries-spoons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+```
+With the cost of SSD drives dropping, we can see that the Raspberry Pi 4, 4GB with an SSD drive is a good choice for a small business (or anyone) that needs a good robust database at an affordable price range. 
+
+_The content in this blog is provided in good faith by members of the open source community. Percona has not edited or tested the technical content. Views expressed are the authors’ own. When using the advice from this or any other online resource test ideas before applying them to your production systems, and always secure a working back up._ 
+
+_Photo by [Enrico Sottocorna](https://unsplash.com/@enricosottocorna?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/berries-spoons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
