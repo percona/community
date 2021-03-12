@@ -3,13 +3,19 @@ title: 'Orchestrating Cassandra with Kubernetes Operator and Yelp PaaSTA - Perco
 date: Wed, 06 May 2020 19:42:03 +0000
 draft: false
 tags: ['raghu.prabhu', 'Events', 'Kubernetes']
+authors:
+  - raghavendra_prabhu
+images:
+  - blog/2020/05/Social-PL-Online-2020-1.jpg
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot: Tue 19 May • New York 3:00 p.m. • London 8:00 p.m. • New Delhi 12:30 a.m. (Wed)_ _Level: Intermediate_
 
 ### Abstract
 
-At Yelp, Cassandra, our NoSQL database of choice, has been deployed on AWS compute (EC2) and AutoScaling Groups (ASG), backed by Block Storage (EBS). This deployment model has been quite robust over the years while presenting its own set of challenges. To make our Cassandra deployment more resilient and reduce the engineering toil associated with our constantly growing infrastructure, we are abstracting Cassandra deployments further away from EC2 with Kubernetes and orchestrating with our Cassandra Operator. We are also leveraging Yelp’s PaaSTA for consistent abstractions and features such as fleet autoscaling with Clusterman, and Spot fleets, features that will be quite useful for an efficient datastore deployment. In this talk, we delve into the architecture of our Cassandra operator and the multi-region multi-AZ clusters it manages, and strategies we have in place for safe rollouts and zero-downtime migration. We will also discuss the challenges that we have faced en route and the design tradeoffs done. Last but not least, our plans for the future will also be shared.
+At Yelp, Cassandra, our NoSQL database of choice, has been deployed on AWS compute (EC2) and AutoScaling Groups (ASG), backed by Block Storage (EBS). This deployment model has been quite robust over the years while presenting its own set of challenges. To make our Cassandra deployment more resilient and reduce the engineering toil associated with our constantly growing infrastructure, we are abstracting Cassandra deployments further away from EC2 with Kubernetes and orchestrating with our Cassandra Operator. We are also leveraging Yelp’s PaaSTA for consistent abstractions and features such as fleet autoscaling with Clusterman, and Spot fleets, features that will be quite useful for an efficient datastore deployment. 
+
+In this talk, we delve into the architecture of our Cassandra operator and the multi-region multi-AZ clusters it manages, and strategies we have in place for safe rollouts and zero-downtime migration. We will also discuss the challenges that we have faced en route and the design tradeoffs done. Last but not least, our plans for the future will also be shared.
 
 ### Why is your talk exciting?
 

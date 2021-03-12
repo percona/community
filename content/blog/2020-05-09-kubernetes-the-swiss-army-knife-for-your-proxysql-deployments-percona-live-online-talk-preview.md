@@ -4,7 +4,7 @@ date: Sat, 09 May 2020 02:02:48 +0000
 draft: false
 tags: ['rene.cannao', 'Events', 'Kubernetes', 'Tools']
 authors:
-  - rene_cannao
+  - raghavendra_prabhu
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
 ---
