@@ -3,13 +3,25 @@ title: 'Kubernetes, The Swiss Army Knife For Your ProxySQL Deployments – Perco
 date: Sat, 09 May 2020 02:02:48 +0000
 draft: false
 tags: ['rene.cannao', 'Events', 'Kubernetes', 'Tools']
+authors:
+  - rene_cannao
+images:
+  - blog/2020/05/Social-PL-Online-2020-1.jpg
 ---
 
 _Percona Live Online Agenda Slot: Tue 19 May • New York 10:00 p.m. • London 3:00 a.m. (Wed) • New Delhi 7:30 a.m. (Wed)_
 
 ### Abstract
 
-ProxySQL is a high performance proxy from design to implementation. It speaks the MySQL protocol, and can go beyond load balancing. This talk covers various deployment options for ProxySQL in a Kubernetes environment. Typically ProxySQL is deployed in one of three ways depending on the scale and needs of your environment: - Directly on each application server - On a separate server (or layer) - Cascaded, i.e. on each application server as well as a separate server (or layer) This talk will cover how to successfully implement each of these ProxySQL deployment methods in Kubernetes using a highly scalable and robust approach.
+ProxySQL is a high performance proxy from design to implementation. It speaks the MySQL protocol, and can go beyond load balancing. This talk covers various deployment options for ProxySQL in a Kubernetes environment. 
+
+Typically ProxySQL is deployed in one of three ways depending on the scale and needs of your environment: 
+
+- Directly on each application server 
+- On a separate server (or layer) 
+- Cascaded, i.e. on each application server as well as a separate server (or layer) 
+
+This talk will cover how to successfully implement each of these ProxySQL deployment methods in Kubernetes using a highly scalable and robust approach.
 
 ### Why is your talk exciting?
 

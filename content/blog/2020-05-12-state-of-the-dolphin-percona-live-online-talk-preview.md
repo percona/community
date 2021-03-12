@@ -3,6 +3,10 @@ title: 'State of the Dolphin – Percona Live ONLINE Talk Preview'
 date: Tue, 12 May 2020 16:30:04 +0000
 draft: false
 tags: ['frederic.descamps', 'Events', 'MySQL']
+authors:
+  - lefred
+images:
+  - blog/2020/05/Social-PL-Online-2020-1.jpg
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot: Tue 19 May • New York 11:00 a.m. • London 4:00 p.m. • New Delhi 8:30 p.m._
