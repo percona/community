@@ -3,6 +3,10 @@ title: 'MariaDB 10.5 New Features for Troubleshooting – Percona Live ONLINE Ta
 date: Thu, 01 Oct 2020 23:42:03 +0000
 draft: false
 tags: ['valeriy.kravchuk', 'Events', 'MariaDB', 'perconalive', 'PLO-2020-10']
+authors:
+  - valeriy_kravchuk
+images:
+  - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 ---
 
 _[Percona Live Online](https://www.percona.com/live/agenda) Agenda Slot: Wed 21 Aug • New York 12:00 midnight • London 05:00 a.m. • New Delhi 9:30 a.m. • Singapore 12:00 noon_
