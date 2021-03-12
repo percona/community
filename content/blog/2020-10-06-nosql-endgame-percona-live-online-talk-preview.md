@@ -3,13 +3,20 @@ title: 'NoSQL Endgame – Percona Live ONLINE Talk Preview'
 date: Tue, 06 Oct 2020 01:08:04 +0000
 draft: false
 tags: ['thodoris.bais', 'werner.keil', 'Entry Level', 'Events', 'Open Source Databases', 'PLO-2020-10']
+authors:
+  - thodoris_bais
+  - werner_keil
+images:
+  - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 3:00 p.m. • London 8:00 p.m. • New Delhi 12:30 a.m. (next day) • Singapore 3:00 a.m._
 
 ### Abstract
 
-The amount of data collected by applications nowadays is growing at a scary pace. Many of them need to handle billions of users generating and consuming data at an incredible speed. Maybe you are wondering how to create an application like this? What is required? What works best for your project? In this session we'll compare popular Java and JVM persistence frameworks for NoSQL databases: Spring Data, Micronaut Data, Hibernate OGM, Jakarta NoSQL, and GORM. How do they compare, what are the strengths, weaknesses, differences, and similarities? We'll show each of them with a selection of different NoSQL database systems (Key-Value, Document, Column, Graph).
+The amount of data collected by applications nowadays is growing at a scary pace. Many of them need to handle billions of users generating and consuming data at an incredible speed. Maybe you are wondering how to create an application like this? What is required? What works best for your project? 
+
+In this session we'll compare popular Java and JVM persistence frameworks for NoSQL databases: Spring Data, Micronaut Data, Hibernate OGM, Jakarta NoSQL, and GORM. How do they compare, what are the strengths, weaknesses, differences, and similarities? We'll show each of them with a selection of different NoSQL database systems (Key-Value, Document, Column, Graph).
 
 ### Why is your talk exciting?
 

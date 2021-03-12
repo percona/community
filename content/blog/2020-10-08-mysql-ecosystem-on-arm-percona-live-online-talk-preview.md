@@ -3,13 +3,19 @@ title: 'MySQL Ecosystem on ARM – Percona Live ONLINE Talk Preview'
 date: Thu, 08 Oct 2020 02:28:58 +0000
 draft: false
 tags: ['krunal.bauskar', 'Events', 'MariaDB', 'MySQL', 'PLO-2020-10']
+authors:
+  - krunal_bauskar
+images:
+  - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 8:00 p.m. • London 1:00 a.m (next day) • New Delhi 5:30 a.m. • Singapore 8:00 a.m._
 
 ### Abstract?
 
-The ARM ecosystem is quickly evolving as a cost-effective alternative to run High-Performance Computing (HPC) software. It continues to grow with some major cloud players hosting ARM-based cloud servers. MySQL too joined the ecosystem with 8.x. MariaDB already has made its presence. But besides the mainline server, a lot of tools are yet to get ported to ARM. In this talk, we will explore what all aspects of the MySQL ecosystem are part of ARM, work in progress, optimization being done for ARM, challenges involved, Is it safe to run MySQL (or its variant) on ARM?, community and industry support, performance aspect (especially with x86\_64), etc.
+The ARM ecosystem is quickly evolving as a cost-effective alternative to run High-Performance Computing (HPC) software. It continues to grow with some major cloud players hosting ARM-based cloud servers. MySQL too joined the ecosystem with 8.x. MariaDB already has made its presence. But besides the mainline server, a lot of tools are yet to get ported to ARM. 
+
+In this talk, we will explore what all aspects of the MySQL ecosystem are part of ARM, work in progress, optimization being done for ARM, challenges involved, Is it safe to run MySQL (or its variant) on ARM?, community and industry support, performance aspect (especially with x86\_64), etc.
 
 ### Why is your talk exciting?
 
