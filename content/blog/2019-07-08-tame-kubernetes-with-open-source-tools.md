@@ -3,13 +3,19 @@ title: 'Tame Kubernetes with These Open-Source Tools'
 date: Mon, 08 Jul 2019 13:03:15 +0000
 draft: false
 tags: ['author_gaurav', 'DevOps', 'Kubernetes', 'Tools']
+authors:
+  - gaurav_belani
+images:
+  - blog/2019/07/kubernetes-management-tools.jpg
 ---
 
-[Kubernetes](https://kubernetes.io/)’ popularity as the most-preferred open-source container-orchestration system has skyrocketed in the recent past. The [overall container market](https://enterprisersproject.com/article/2017/11/kubernetes-numbers-10-compelling-stats) is expected to cross USD 2.7 billion by 2020 with a CAGR of 40 percent.  Three orchestrators spearhead this upward trend, namely Kubernetes, [Mesos](http://mesos.apache.org/), and [Docker Swarm](https://docs.docker.com/engine/swarm/). However, referring to the graph below, Kubernetes clearly leads the pack. ![](https://www.percona.com/community-blog/wp-content/uploads/2019/07/kubernetes-growth.jpg)
+[Kubernetes](https://kubernetes.io/)’ popularity as the most-preferred open-source container-orchestration system has skyrocketed in the recent past. The [overall container market](https://enterprisersproject.com/article/2017/11/kubernetes-numbers-10-compelling-stats) is expected to cross USD 2.7 billion by 2020 with a CAGR of 40 percent. Three orchestrators spearhead this upward trend, namely Kubernetes, [Mesos](http://mesos.apache.org/), and [Docker Swarm](https://docs.docker.com/engine/swarm/). However, referring to the graph below, Kubernetes clearly leads the pack. 
+
+![](blog/2019/07/kubernetes-growth.jpg)
 
 _source: [https://medium.com/@rdodev/saved-you-an-analyst-read-on-kubernetes-growth-2018-edition-810367876981 ](https://medium.com/@rdodev/saved-you-an-analyst-read-on-kubernetes-growth-2018-edition-810367876981)_
 
-  The automation and infrastructural capabilities of Kubernetes are transforming the DevOps space,  thereby enhancing the value of the business through software. With Kubernetes you can deploy, scale, and [manage cloud-native databases](https://www.percona.com/live/19/sites/default/files/digital_rack_aws.pdf) and applications from anywhere. No wonder, data scientists and [machine learning engineers](https://www.manipalprolearn.com/data-science/post-graduate-certificate-program-in-data-science-and-machine-learning-manipal-academy-higher-education) love Kubernetes and apply it to improve their productivity. As Kubernetes continues to evolve and grow in complexity, we need to be ready with solutions that simplify Kubernetes, thereby enhancing your development work. Here is a comprehensive list of Kubernetes tools that can help you tame this orchestrator, many of them open source. I have divided them into five functional categories.
+The automation and infrastructural capabilities of Kubernetes are transforming the DevOps space,  thereby enhancing the value of the business through software. With Kubernetes you can deploy, scale, and [manage cloud-native databases](https://www.percona.com/live/19/sites/default/files/digital_rack_aws.pdf) and applications from anywhere. No wonder, data scientists and [machine learning engineers](https://www.manipalprolearn.com/data-science/post-graduate-certificate-program-in-data-science-and-machine-learning-manipal-academy-higher-education) love Kubernetes and apply it to improve their productivity. As Kubernetes continues to evolve and grow in complexity, we need to be ready with solutions that simplify Kubernetes, thereby enhancing your development work. Here is a comprehensive list of Kubernetes tools that can help you tame this orchestrator, many of them open source. I have divided them into five functional categories.
 
 1\. Tools for Automating Cluster Deployments
 --------------------------------------------
@@ -25,7 +31,7 @@ Automated Kubernetes cluster services are a hot topic today because they elimina
 2\. Cluster Monitoring Tools
 ----------------------------
 
-Monitoring Kubernetes clusters is critical in a microservice architecture. The following graph shows the top cluster monitoring tools available today. ![](https://www.percona.com/community-blog/wp-content/uploads/2019/07/tools-services-to-monitor-kubernetes-clusters.jpg)
+Monitoring Kubernetes clusters is critical in a microservice architecture. The following graph shows the top cluster monitoring tools available today. ![](blog/2019/07/tools-services-to-monitor-kubernetes-clusters.jpg)
 
 _Source: [https://thenewstack.io/5-tools-monitoring-kubernetes-scale-production/](https://thenewstack.io/5-tools-monitoring-kubernetes-scale-production/)_
 
@@ -68,6 +74,10 @@ Due to Kubernetes’ ability to orchestrate containers across clusters of hosts,
 Time for Action
 ---------------
 
-Open-source container-orchestration systems like Kubernetes have helped users overcome several challenges in the DevOps space. However, as Kubernetes continues to evolve, your development, monitoring, and security strategies need to change. Use the Kubernetes tools and frameworks shared in this post to simplify cluster orchestration and deployment, making it easy to deploy this popular orchestrator. -- _The content in this blog is provided in good faith by members of the open source community. The content is not edited or tested by Percona, and views expressed are the authors’ own. When using the advice from this or any other online resource, please **test** ideas before applying them to your production systems, and **always **secure a working back up._
+Open-source container-orchestration systems like Kubernetes have helped users overcome several challenges in the DevOps space. However, as Kubernetes continues to evolve, your development, monitoring, and security strategies need to change. Use the Kubernetes tools and frameworks shared in this post to simplify cluster orchestration and deployment, making it easy to deploy this popular orchestrator. 
+
+-- 
+
+_The content in this blog is provided in good faith by members of the open source community. The content is not edited or tested by Percona, and views expressed are the authors’ own. When using the advice from this or any other online resource, please **test** ideas before applying them to your production systems, and **always **secure a working back up._
 
 _Featured image photograph [AnnaD on Pixabay](https://pixabay.com/photos/boat-wheel-ship-sea-nautical-2387790/)_
