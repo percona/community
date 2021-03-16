@@ -1,8 +1,8 @@
 ---
 name: timur_solodovnikov
 name_pronunciation: timur_solodovnikov
-fullname: Stacy Rostova
-fullname_pronounciation: Stacy Rostova
+fullname: Timur Solodovnikov
+fullname_pronounciation: Timur Solodovnikov
 tagline: 
 social:
   website: 

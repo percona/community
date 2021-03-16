@@ -3,6 +3,9 @@ title: 'Author Posting Guidelines'
 date: Mon, 04 Jun 2018 13:59:55 +0000
 draft: false
 tags: ['tom.basil', 'daniil.bazhenov', 'Information']
+authors:
+  - tom_basil
+  - daniil_bazhenov
 ---
 
 Percona's guidelines for articles on [our Community blog](https://www.percona.com/community-blog/) are simple:

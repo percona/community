@@ -3,6 +3,9 @@ title: 'Invitation To Authors'
 date: Mon, 04 Jun 2018 11:03:47 +0000
 draft: false
 tags: ['tom.basil', 'daniil.bazhenov', 'Information', 'Open Source Databases']
+authors:
+  - tom_basil
+  - daniil_bazhenov
 ---
 
 Our authors

@@ -3,6 +3,8 @@ title: 'Content License'
 date: Fri, 01 Jun 2018 12:19:51 +0000
 draft: false
 tags: ['lorraine.pocklington', 'Information']
+authors:
+  - lorraine_pocklington
 ---
 
 The [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) license in summary:
