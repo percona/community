@@ -37,8 +37,9 @@
           {{- if (isset .Params "authors") -}}
             by {{ range $key, $author := .Params.authors -}}
               {{- with $.Site.GetPage (print "/authors/" $author) -}}
+                {{ if $key }}, {{ end -}}
                 <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
-              {{- end }}{{ if $key }}, {{ end -}}
+              {{- end }} 
             {{- end -}}
           {{- end -}}
         </span>

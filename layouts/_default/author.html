@@ -10,6 +10,12 @@
 {{ define "mainwrapper" }}
     <div class="hero"><div class="contentblock">
         <h1>{{ .Params.fullname }}</h1>
+
+        <br/>
+        {{- with .Params.images -}}
+            <img src="{{ (resources.Get (index . 0)).Permalink }}" alt="" />
+        {{- end -}}
+
         {{- .Content -}}
     </div></div>
 
