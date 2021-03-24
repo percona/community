@@ -37,7 +37,7 @@ This talk from Wikipedia is along similar lines as the previous one. It just goe
 
 #### [Advanced MySQL Data at Rest Encryption in Percona Server](https://www.percona.com/live/e18/sessions/advanced-mysql-data-at-rest-encryption-in-percona-server)
 
-Another security related talk! This one's about encryption at rest. This is interesting in an of itself as we tend to talk a lot about security in transit and less often about security of data at rest. [![](https://pbs.twimg.com/profile_images/888622205403148289/5Dd1mKUL_400x400.jpg)](https://www.dineshjoshi.com)I hope to learn more about the cost of implementing encryption at rest and it’s impact on the database performance, operations as well as security.
+Another security related talk! This one's about encryption at rest. This is interesting in and of itself as we tend to talk a lot about security in transit and less often about security of data at rest. I hope to learn more about the cost of implementing encryption at rest and its impact on the database performance, operations as well as security.
 
 #### [Artificial Intelligence Database Performance Tuning](https://www.percona.com/live/e18/sessions/artificial-intelligence-database-performance-tuning)
 

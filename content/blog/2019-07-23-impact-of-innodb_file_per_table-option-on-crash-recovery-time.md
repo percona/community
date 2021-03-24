@@ -31,8 +31,6 @@ Version: '5.6.39-83.1-log' socket: ......
 ```
 During startup time I checked MySQL behavior and found that MySQL opens files one by one. In my test case it was 1400000+ tables and it took 02:46:48 just to scan ibd files. 
 
-![](https://i.imgur.com/c4jt321.png) 
-
 To prevent such a long downtime we decided to move all the tables to shared tablespaces.
 
 ### Solution – moving tables to shared tablespaces

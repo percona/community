@@ -27,8 +27,7 @@ mysql> SELECT json_object('employee_id', emp_no, 'first_name', first_name ) AS '
 ```
 In this article, I will be using the employees sample database available from here: [https://dev.mysql.com/doc/employee/en/employees-installation.html](https://dev.mysql.com/doc/employee/en/employees-installation.html) 
 
-The employees schema: 
-[![Employee schema from MySQL https://dev.mysql.com/doc/employee/en/images/employees-schema.png](https://dev.mysql.com/doc/employee/en/images/employees-schema.png)](https://dev.mysql.com/doc/employee/en/images/employees-schema.png) 
+You can find the employees schema on [dev.mysql.com](https://dev.mysql.com/doc/employee/en/images/employees-schema.png).
 
 When mapping relations with collections, generally there is no one to one mapping, you would want to merge data from some MySQL tables into a single collection.
 

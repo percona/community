@@ -20,20 +20,20 @@ How do you find outliers?
 
 “That’s easy”, people will usually say, and then start with the average plus/minus one standard deviation. “We’ll construct this “n stddev wide corridor around the average” and then look at all the things outside.” 
 
-![](https://isotopp.github.io/uploads/2020/11/obs-no.png) 
+[](https://isotopp.github.io/uploads/2020/11/obs-no.png) 
 
 _No._ That is descriptive statistics for normal distributions and for them to work we need to actually have a normal distribution. Averages and Standard Deviations work on normal distributions. So the first thing we need to do is to look at the data and ensure that we actually have a normal distribution. 
 
-![](https://isotopp.github.io/uploads/2020/11/obs-anscombe.png) 
+[](https://isotopp.github.io/uploads/2020/11/obs-anscombe.png) 
 
 _Anscombe’s Quartet is a set of graphs having an identical number of points, and producing identical descriptive statistics, but being clearly extremely different distributions._ 
 Because when you apply the Descriptive Statistics of Averages and Standard Deviations to things that are Not a Normal Distribution (see [Anscombe’s Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet)) they do not tell you much about the data: all the graphs in the infamous Quartet have the same descriptive stats (more than just average and stddev, even), but are clearly completely different. So what we would want is a graph of the data. For a time series – which is what we usually get when dealing with metrics – a good way to plot the data is a heatmap. For the given problem, the heatmap more often than not looks like this: 
 
-![](https://isotopp.github.io/uploads/2020/11/obs-heatmap.png) 
+[](https://isotopp.github.io/uploads/2020/11/obs-heatmap.png) 
 
 _We partition the time axis into buckets of - say - 10s each, and then bucket execution times linearly or logarithmically. For each query we run, we determine the bucket it goes into and increment by one. The resulting numbers are plotted as pixels - darker, redder means more queries in that bucket. A flat 2D plot of three dimensional data._ What you see here is a bi- or multipartite distribution. It is a common case when benchmarking: We have a (often larger) number of normally executed queries, and a second set (often smaller) of queries that need our attention because they are executed slower. The slow set is also often run with unstable execution times – an important secondary observation. 
 
-![](https://isotopp.github.io/uploads/2020/11/obs-mixture.png) 
+[](https://isotopp.github.io/uploads/2020/11/obs-mixture.png) 
 
 This is not a normal distribution, but a thing composed of two other things (hence bipartite), each of which in itself hopefully can be adequately modelled as a normal distribution: A [gaussian mixture](https://en.wikipedia.org/wiki/Mixture_model#Gaussian_mixture_model). Luckily we do not actually have to deal with the math of these mixtures (I hope you did not follow the Wikipedia link :-) ) when we want to find slow queries. We just want to be able to separate them, which could even be done manually, and then want the back pointer to the events that constitute the cluster of outliers we identified.
 

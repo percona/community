@@ -151,6 +151,6 @@ Community contributions are highly appreciated; we should mention the pull reque
 
 ### Come and talk to us about the project
 
-[![ple18_logo](https://www.percona.com/community-blog/wp-content/uploads/2018/10/ple18_logo.png)](https://www.percona.com/live/e18/registration-information)Along with my colleague Calin Don, I'll be talking about this at [Percona Live Europe](https://www.percona.com/live/e18/sessions/automating-mysql-deployments-on-kubernetes) in November. It would be great to have the chance to meet other enthusiasts and talk about what we've discovered so far! 
+[![ple18_logo](blog/2018/10/ple18_logo.png)](https://www.percona.com/live/e18/registration-information)Along with my colleague Calin Don, I'll be talking about this at [Percona Live Europe](https://www.percona.com/live/e18/sessions/automating-mysql-deployments-on-kubernetes) in November. It would be great to have the chance to meet other enthusiasts and talk about what we've discovered so far! 
 
 _The content in this blog is provided in good faith by members of the open source community. The content is not edited or tested by Percona, and views expressed are the authors’ own. When using the advice from this or any other online resource **test** ideas before applying them to your production systems, and **always **secure a working back up._

@@ -124,7 +124,7 @@ INSERT INTO roomdetails VALUES ('WomanClothing', NULL);
 INSERT INTO roomdetails VALUES ('Fitting', NULL);
 INSERT INTO roomdetails VALUES ('ManClothing', NULL);
 ```
-It is quite a convenient solution: ![select from roomdetails table](https://www.percona.com/community-blog/wp-content/uploads/2018/09/select-from-roomdetails-table.png)
+It is quite a convenient solution: ![select from roomdetails table](blog/2018/09/select-from-roomdetails-table.png)
 
 ### Special values auto generation
 

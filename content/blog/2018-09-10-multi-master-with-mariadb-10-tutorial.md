@@ -388,7 +388,7 @@ master1 [PRODUCTION]> SELECT * FROM `PRODUCTION`.`france`;
 +------+
 1 ROW IN SET (0.01 sec)
 ```
-_on PmaControl:_ ![pmacli schema diagram showing error](https://www.percona.com/community-blog/wp-content/uploads/2018/09/pmacli-schema-diagram-1.jpg) on **slave:**
+_on PmaControl:_ ![pmacli schema diagram showing error](blog/2018/09/pmacli-schema-diagram-1.jpg) on **slave:**
 ```
 slave [PRODUCTION_FR]> SHOW slave 'PRODUCTION_FR' STATUSG;
 *************************** 1. ROW ***************************

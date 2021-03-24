@@ -11,8 +11,6 @@ images:
 
 [**Free Software Foundation Europe**](https://fsfe.org/) (FSFE) is celebrating the creators of free software with their I Love Free Software campaign #ilovefs, a social campaign for Valentine’s Day. 
 
-[![I love Free Software!](https://fsfe.org/campaigns/ilovefs/artwork/graphics/ilovefs-heart-px.png)](http://ilovefs.org)
-
 The idea is to show some appreciation to the makers of free software. Most of our communications with free software creators are about bugs and feature requests and maybe we just forget to say "Thanks”. So FSFE are trying to provides some balance. 
 
 FSFE were promoting the campaign at FOSDEM at the beginning of this month. Unfortunately my swag parcel arrived a little late to get our widely distributed remote colleagues the balloons and material to pose with, so you just get me! 
