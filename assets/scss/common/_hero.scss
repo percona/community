@@ -6,6 +6,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: $color-hero-text;
+  h1 {
+    margin-bottom:1.5rem;
+  }
+
   a {
     color: $color-hero-text;
     font-weight: bold;
@@ -40,6 +44,34 @@
   }
   &:nth-child(4n+3) {
     background-color: $color-hero2-background;
+  }
+
+  &--bio {
+    .contentblock {
+      text-align: center;
+      img {
+        text-align:center;
+        float:none;
+        margin-bottom:1.5rem;
+      }
+      p {
+        text-align:left;
+      }
+    }
+  }
+  @media (min-width: 769px) {
+    &--bio {
+      .contentblock {
+        min-height: 240px;
+        text-align:left;
+
+        img {
+          float: right;
+          margin-left: 1.5rem;
+          margin-bottom:0;
+        }
+      }
+    }
   }
 }
 
