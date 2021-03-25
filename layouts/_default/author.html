@@ -8,13 +8,12 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-    <div class="hero"><div class="contentblock">
-        <h1>{{ .Params.fullname }}</h1>
-
-        <br/>
+    <div class="hero hero--bio"><div class="contentblock">
         {{- with .Params.images -}}
-            <img src="{{ (resources.Get (index . 0)).Permalink }}" alt="" />
+            <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
         {{- end -}}
+
+        <h1>{{ .Params.fullname }}</h1>
 
         {{- .Content -}}
     </div></div>
