@@ -1,0 +1,41 @@
+@import "variables";
+
+.paginator {
+  margin-top:1.5rem;
+  text-align:center;
+  a {
+    display:inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    color: $color-text-light;
+    border: 1px solid $color-text-light;
+    transition:
+      0.2s background-color ease-in-out,
+      0.2s color ease-in-out,
+      0.2s border-color ease-in-out;
+    &:hover,&.active {
+      background: $color-link-light;
+      color: $color-background-light;
+      border: 1px solid $color-link-light;
+    }
+
+    height:1rem;
+    width:1rem;
+    line-height:1rem;
+    font-size:0.7rem;
+    margin-left:0.2rem;
+    margin-right:0.2rem;
+    @media screen and (min-width: 768px) {
+      height:1.5rem;
+      width:1.5rem;
+      line-height:1.5rem;
+      font-size:1rem;
+    }
+    @media screen and (min-width: 900px) {
+      height:3rem;
+      width:3rem;
+      line-height:3rem;
+      font-size:1.2rem;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 <div class="contentblock">
     <div class="grid grid--2">
-        {{- range where $.Page.Site.RegularPages "Section" .Section -}}
+        {{- $pages := where $.Page.Site.RegularPages "Section" .Section -}}
+        {{- $paginator := .Paginate $pages }}
+        {{- range $paginator.Pages -}}
             <div class="grid__item">
                 {{- if isset .Params "images" -}}
                     {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
@@ -10,4 +12,17 @@
             </div>
         {{- end -}}
     </div>
+    {{- if gt $paginator.TotalPages 1 -}}
+    <div class="paginator">
+        {{- if $paginator.HasPrev -}}
+            <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+        {{- end -}}
+        {{- range $paginator.Pagers -}}
+            <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+        {{- end -}}
+        {{- if $paginator.HasNext -}}
+            <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+        {{- end -}}
+    </div>
+    {{- end -}}
 </div>
