@@ -3,7 +3,20 @@
 .post--preview {
   display: block;
   border-radius: 0.3rem;
-  padding: 0.5rem;
+  padding-bottom:0.375rem;
+
+  img {
+    margin-bottom:0.375rem;
+  }
+
+  h2, p {
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+  }
+
+  :last-child {
+    margin-bottom:0;
+  }
 
   &:hover {
     box-shadow: 0 0 1.5rem $color-meta-text-light;

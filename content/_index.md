@@ -14,11 +14,16 @@ Data is the main component of almost every larger application, which is why you 
 {{% /hero %}}
 
 {{% contentblock %}}
-{{% grid %}}
-{{% griditem %}}
-{{% latestpost %}}
-{{% /griditem %}}
 
+## [Blog](/blog)
+
+{{% latestposts %}}
+
+---
+
+## More
+
+{{% grid size=3 %}}
 {{% griditem %}}
 {{< postpreview link="/contribute/" title="Contribute" image="brainstorming.jpg" >}}
 Learn about our community, open source commitments, and how to contribute!
@@ -34,3 +39,5 @@ What do we want? All the resources around databases - with a dash of global cult
 {{% /griditem %}}
 {{% /grid %}}
 {{% /contentblock %}}
+
+
