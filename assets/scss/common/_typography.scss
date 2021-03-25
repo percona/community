@@ -25,10 +25,23 @@ html, body {
   }
 }
 
+hr {
+  border:0;
+  height:2px;
+  background-color: $color-hr;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem;
+}
+
 @mixin heading {
   font-family: $font-heading;
   font-weight: $font-weight-heading;
   page-break-after: avoid;
+
+  a, a:visited {
+    color:$color-text-light;
+    text-decoration: none;
+  }
 }
 
 @mixin heading-margins($size) {
@@ -36,9 +49,11 @@ html, body {
   @if $size > 1.5rem {
     line-height: 3rem;
     margin-top: 3rem;
+    margin-bottom:3rem;
   } @else {
     line-height: 1.5rem;
     margin-top: 1.5rem;
+    margin-bottom:1.5rem;
   }
 }
 
@@ -57,7 +72,6 @@ html, body {
       display: none;
     }
   }
-
 
   @media screen and (min-width: 760px) {
     .meta {
