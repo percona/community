@@ -25,7 +25,7 @@ Data is the main component of almost every larger application, which is why you 
 
 {{% grid size=3 %}}
 {{% griditem %}}
-{{< postpreview link="/contribute/" title="Contribute" image="brainstorming.jpg" >}}
+{{< postpreview link="/contribute/" title="Contribute" image="contribute.jpg" >}}
 Learn about our community, open source commitments, and how to contribute!
 {{< /postpreview >}}
 {{% /griditem %}}

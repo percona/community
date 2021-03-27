@@ -1,0 +1,7 @@
+<ul>
+    {{- $forumPosts := getJSON "https://forums.percona.com/latest.json" -}}
+
+    {{- range first 5 (after 1 $forumPosts.topic_list.topics) -}}
+        <li><a href="https://forums.percona.com/t/{{ .slug }}/{{ .id }}" target="_blank">{{ htmlUnescape .fancy_title }}</a></li>
+    {{- end -}}
+</ul>

@@ -2,7 +2,7 @@
 title: '#ilovefs Valentine''s Day Celebration (I Love Free Software)'
 date: Thu, 14 Feb 2019 10:21:04 +0000
 draft: false
-tags: ['lorraine.pocklington', '#ilovefs', 'Events']
+tags: ['lorraine.pocklington', 'Events']
 authors:
   - lorraine_pocklington
 images:
@@ -11,7 +11,7 @@ images:
 
 [**Free Software Foundation Europe**](https://fsfe.org/) (FSFE) is celebrating the creators of free software with their I Love Free Software campaign #ilovefs, a social campaign for Valentine’s Day. 
 
-The idea is to show some appreciation to the makers of free software. Most of our communications with free software creators are about bugs and feature requests and maybe we just forget to say "Thanks”. So FSFE are trying to provides some balance. 
+The idea is to show some appreciation to the makers of free software. Most of our communications with free software creators are about bugs and feature requests and maybe we just forget to say "Thanks". So FSFE are trying to provide some balance. 
 
 FSFE were promoting the campaign at FOSDEM at the beginning of this month. Unfortunately my swag parcel arrived a little late to get our widely distributed remote colleagues the balloons and material to pose with, so you just get me! 
 

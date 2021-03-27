@@ -1,43 +1,17 @@
-# Percona Blog Website Project
+# Percona Community
 
-## How to Run on MacOs
+<img align="left" width="150" height="150" src="assets/perconacommunity.png">
 
-You need to install Git and Hugo:
+Welcome everyone to your Percona community for developing, installing, running, optimizing, and learning everything around databases and the needed infrastructure. For questions, you can best reach us on our [forums](https://forums.percona.com) or chat with us on [Discord](https://discord.gg/mQEyGPkNbR).
 
-1. Install Homebrew if it is not installed.
+### Contributing
 
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-2. Install Git.
+Have you checked out our site dedicated to [contributions](https://percona.community/contribute) yet? You may also find more technical information in our [contribution guidelines](CONTRIBUTING.md).
 
-```
-brew install git
-```
-3. Install Hugo.
+### Code of Conduct
 
-```
-brew install hugo
-```
-4. Clone the repository.
+By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
 
-```
-git clone https://github.com/percona/community.git
-```
-5. Go to the Community folder.
+### License
 
-```
-cd community
-```
-5. Run Hugo
-
-```
-hugo server -D
-```
-6. Open the URL that Hugo indicates you in Terminal, for example http://localhost:1313/. You will see the project.
-
-7. Use CTRL + C to stop the server. If you need to kill the old ports, run:
-
-```
-killall -9 hugo
-```
+This project is run by the Percona Community and [licensed](LICENSE.md) as Creative Commons Attribution 4.0 (CC-BY-4.0).

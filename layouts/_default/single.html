@@ -49,19 +49,6 @@
       {{ partial "content.html" . }}
     </div>
     {{ if (isset .Params "authors")}}
-      <div class="bios">
-        {{ range $key, $author := .Params.authors }}
-          <div class="bio" itemprop="author" itemscope itemtype="https://schema.org/Person">
-            {{ with $.Site.GetPage (print "/authors/" $author) -}}
-                <h2 itemprop="name" aria-label="Author: {{ .Params.fullname_pronounciation }}">{{ .Params.fullname }}</h2>
-                  {{ if (isset .Params "avatar") }}
-                    <img class="avatar" src="{{ ((resources.Get .Params.avatar).Resize "512x 90 jpg").RelPermalink }}" alt="{{ .Params.avatar_alt }}" />
-                  {{ end }}
-                {{ .Content }}
-            {{ end}}
-          </div>
-        {{ end }}
-      </div>
     {{ end }}
   </article>
 {{ end }}
