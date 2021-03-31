@@ -10,11 +10,15 @@
 {{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
 </figure>
 {{- else -}}
+<figure>
+{{- if gt $image.Width 1400 -}}
 {{ $small := $image.Resize "480x" }}
 {{ $medium := $image.Resize "768x" }}
-{{ $big := $image.Resize "1024x" }}
-<figure>
-<img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1024w" src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+{{ $big := $image.Resize "1400x" }}
+<img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1400w" src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+{{- else -}}
+<img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+{{- end -}}
 {{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
 </figure>
 {{ end }}
