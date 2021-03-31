@@ -33,7 +33,53 @@ DBs are Often IO Bound
 
 The trick is, databases are notoriously disk intensive and latency sensitive. The reason this has an impact on your Kubernetes deployments is that storage support in stock settings and untuned K8s clusters is rudimentary at best. That’s created a number of projects that are out to provide for storage in K8s projects, including, of course, the popular OpenEBS project. 
 
-![Mayastor 2](blog/2020/10/image2.png) 
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: percona-mysql
+  labels:
+    app: percona-mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: percona-mysql
+  template:
+    metadata:
+      name: percona-mysql
+      labels:
+        app: percona-mysql
+    spec:
+      nodeSelector:
+        app: db
+      securityContext:
+        fsGroup: 1001
+      containers:
+      - resources:
+          limits:
+            cpu: "20"
+            memory: 8Gi
+        name: percona-mysql
+        image: percona
+        args:
+        - "--ignore-db-dir"
+        - "lost+found"
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: foobarbaz
+        ports:
+        - containerPort: 3306
+          name: percona-mysql
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: percona-mysql
+      volumes:
+      - name: percona-mysql
+        persistentVolumeClaim:
+          claimName: vol2
+``` 
 
 In this post I'm going to investigate the newest of the storage engines that comprise the data plane for OpenEBS. As a challenge, I’d like to be able to achieve 20,000 queries per second out of a MySQL database using this storage engine for block storage underneath. 
 
@@ -46,7 +92,21 @@ The deployment pictured references an external volume, vol2. Now we could create
 Enter Mayastor
 --------------
 
-![Mayastor 3](blog/2020/10/image4.png)
+```yaml
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: vol2
+spec:
+  storageClassName: mayastor-nvmf-fast
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+```
+
 Mayastor is the latest storage engine for OpenEBS and MayaData’s Kubera offering. Mayastor represents the state-of-the-art in feature-rich storage for Linux systems. Mayastor creates virtual volumes that are backed by fast NVMe disks, and exports those volumes over the super-fast NVMf protocol. It’s a fresh implementation of the Container Attached Storage model. By [CAS](https://www.cncf.io/blog/2018/04/19/container-attached-storage-a-primer/), I mean it’s purpose built for the multi-tenant distributed world of the cloud. CAS means each workload gets its own storage system, with knobs for tuning and everything. The beauty of the CAS architecture is that it decouples your apps from their storage. You can attach to a disk locally or via NVMf or iSCSI. 
 
 Mayastor is CAS and it is purpose built to support cloud native workloads at speed with very little overhead. At MayaData we wrote it in Rust; we worked with Intel to implement new breakthrough technology called SPDK; made it easy to use with Kubernetes and possible to use with anything; and open-sourced it because, well, it improves the state of the art of storage in k8s and community always wins (eventually). 
@@ -78,8 +138,9 @@ We’ve seen more than 700MB/s out of the storage already from our synthetic tes
 I wonder if we can get another MySQL on here…
 ---------------------------------------------
 
-Sure enough, this system is fast enough to host two high performance relational database instances on the same nvme drive, with cpu to spare.  If only I had another one of those NVMe drives in this box…. 
-![Mayastor 4](blog/2020/10/image3.png) 
+Sure enough, this system is fast enough to host two high performance relational database instances on the same nvme drive, with cpu to spare.  If only I had another one of those NVMe drives in this box….
+ 
+![A screenshot showing Mayastor in action](blog/2020/10/image3.png) 
 
 That’s about 1.1GB/s, with 52k IOPs. Not bad. We might even be able to fit a third in if we’re willing to sacrifice a little bit of speed across all the instances. 
 
