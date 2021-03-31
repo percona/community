@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-    <link rel="canonical" href="{{ .Permalink }}" />
+
+    {{ if .Params.canonical -}}
+      <link rel="canonical" href="{{ .Params.canonical }}" />
+    {{- else -}}
+      <link rel="canonical" href="{{ .Permalink }}" />
+    {{- end }}
 
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       <meta name="robots" content="index,follow">
