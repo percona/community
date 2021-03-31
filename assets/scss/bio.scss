@@ -1,0 +1,31 @@
+@import "common/variables";
+
+.bios {
+  &__bio {
+    overflow-y:visible;
+    margin-top:1.5rem;
+    border-top:2px solid $color-hero2-background;
+    padding-top:1.5rem;
+    margin-bottom:1.5rem;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+
+    h2 {
+      line-height:3rem;
+      margin-bottom:1.5rem;
+      margin-top:0;
+    }
+
+    img {
+      margin-left:1.5rem;
+      border-radius:50%;
+      height:10.5rem;
+      width:10.5rem;
+    }
+  }
+
+  &__content {
+    flex:1;
+  }
+}
