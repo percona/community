@@ -7,6 +7,7 @@ images:
   - blog/2019/05/cloud-native-database.jpg
 authors:
   - dave_cohen
+slug: percona-live-presents-open-source-cloud-native-database
 ---
 
 ![an open source cloud native database](blog/2019/05/cloud-native-database.jpg)

@@ -7,6 +7,7 @@ images:
   - blog/2018/10/MariaDB-Foundation-vertical.png
 authors:
   - arjen_lentz
+slug: percona-live-europe-session-whats-new-mariadb-server-10-3
 ---
 
 **![MariaDB Foundation](blog/2018/10/MariaDB-Foundation-vertical.png)

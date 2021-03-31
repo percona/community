@@ -7,6 +7,7 @@ authors:
   - valeriy_kravchuk
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: dynamic-tracing-for-finding-and-solving-mariadb-and-mysql-performance-problems-on-linux-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot (CORRECTED): Wed 20 May • New York 6:00 a.m. • London 11:00 a.m. • New Delhi 3:30 p.m._ _Level: Advanced_

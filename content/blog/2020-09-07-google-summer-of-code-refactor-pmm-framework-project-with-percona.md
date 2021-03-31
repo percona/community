@@ -7,6 +7,7 @@ authors:
   - meet_patel
 images:
   - blog/2020/09/Screenshot-2020-09-07-at-14.46.59.png
+slug: google-summer-of-code-refactor-pmm-framework-project-with-percona
 ---
 
 I am **Meet Patel**, 2nd year undergraduate at DAIICT, Gandhinagar, India; pursuing a bachelor’s degree in Information and Communication Technology with a minor in Computational Science. 

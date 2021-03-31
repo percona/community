@@ -7,6 +7,7 @@ authors:
   - federico_razzoli
 images:
   - blog/2018/12/mariadb-system-versioned-tables.jpg
+slug: notes-mariadb-system-versioned-tables
 ---
 
 As mentioned in a [previous post](https://www.percona.com/community-blog/2018/10/17/percona-live-europe-presents-mariadb-system-versioned-tables/), I gave a talk at [Percona Live Europe 2018](https://www.percona.com/live/e18/sessions/mariadb-system-versioned-tables) about system-versioned tables. This is a new MariaDB 10.3 feature, which consists of preserving old versions of a table rows. Each version has two timestamps that indicate the start (INSERT,UPDATE) of the validity of that version, and its end (DELETE, UPDATE). As a result, the user is able to query these tables as they appear at a point in the past, or how data evolved in a certain time range. An alternative name for this feature is _temporal table_, and I will use it in the rest of this text.

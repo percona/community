@@ -7,6 +7,7 @@ authors:
   - gaurav_belani
 images:
   - blog/2019/07/kubernetes-management-tools.jpg
+slug: tame-kubernetes-with-open-source-tools
 ---
 
 [Kubernetes](https://kubernetes.io/)’ popularity as the most-preferred open-source container-orchestration system has skyrocketed in the recent past. The [overall container market](https://enterprisersproject.com/article/2017/11/kubernetes-numbers-10-compelling-stats) is expected to cross USD 2.7 billion by 2020 with a CAGR of 40 percent. Three orchestrators spearhead this upward trend, namely Kubernetes, [Mesos](http://mesos.apache.org/), and [Docker Swarm](https://docs.docker.com/engine/swarm/). However, referring to the graph below, Kubernetes clearly leads the pack. 

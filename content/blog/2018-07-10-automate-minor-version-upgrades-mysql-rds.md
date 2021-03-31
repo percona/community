@@ -7,6 +7,7 @@ images:
   - blog/2018/07/upgrade-minor-versions-MySQL-Amazon-RDS.jpg
 authors:
   - renato_losio
+slug: automate-minor-version-upgrades-mysql-rds
 ---
 
 Amazon RDS for MySQL offers the option to automate [minor version upgrades](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.MySQL.html#USER_UpgradeDBInstance.MySQL.Minor) using the _minor version upgrade policy_, a property that lets you decide if Amazon is allowed to perform the upgrades on your behalf. Usually the goal is not to upgrade automatically every RDS instance but to keep up to date automatically non-production deployments. This helps you address engine issues as soon as possible and improve the automation of the deployment process. 

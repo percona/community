@@ -7,6 +7,7 @@ images:
   - blog/2018/10/MySQL-at-scale.jpg
 authors:
   - jaime_crespo
+slug: percona-live-europe-tutorial-query-optimization-workshop-tls-large-scale-session
 ---
 
 [![MySQL has many ways to provide scalability, but can it provide it while at the same time guarantee perfect privacy? Learn it at my tutorial!](blog/2018/10/MySQL-at-scale.jpg)](https://www.percona.com/live/e18/sessions/tls-for-mysql-at-large-scale) For Percona Live Europe this year, [I got accepted](https://www.percona.com/live/e18/speaker/jaime-crespo) a workshop on query optimization and a 50-minute talk covering TLS for MySQL at Large Scale, talking about our experiences at the [Wikimedia Foundation](https://wikimediafoundation.org/).

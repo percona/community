@@ -7,6 +7,7 @@ images:
   - blog/2018/10/igor_small.png
 authors:
   - federico_campoli
+slug: percona-live-europe-presents-pg_chameleon-mysql-postgresql-replica-made-easy
 ---
 
 ![](blog/2018/10/igor_small.png)

@@ -7,6 +7,7 @@ authors:
   - danish_wadhwa
 images:
   - blog/2019/01/mongodb-replication.jpg
+slug: introduction-mongodb-replication
 ---
 
 MongoDB® is database software that stores data in the same format as [JSON](https://www.json.org/). The data structure of the database can be changed when required. The performance of the database is good and developers can easily use to it to connect their code to the database. 

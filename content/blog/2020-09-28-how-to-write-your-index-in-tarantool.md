@@ -7,6 +7,7 @@ images:
   - blog/2020/09/tarantool_cover.png
 authors:
   - oleg_babin
+slug: how-to-write-your-index-in-tarantool
 ---
 
 Tarantool is an application server and a database. The server part is written in C, and the user is provided with a Lua interface to use it. Then, [Tarantool](https://www.tarantool.io/en/developers/) is an open-source product with its source code in open access, and anyone can develop and distribute Tarantool-based software freely. 

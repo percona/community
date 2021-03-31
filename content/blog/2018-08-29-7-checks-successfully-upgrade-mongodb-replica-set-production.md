@@ -7,6 +7,7 @@ authors:
   - atish_a
 images:
   - blog/2018/08/checklist-for-the-upgrade-of-MongoDB-replica-set.jpg
+slug: 7-checks-successfully-upgrade-mongodb-replica-set-production
 ---
 
 MongoDB ships powerful features in each release. The new release brings new features while revisions add bug fixes, security patches or improvements to existing features. To bring most out these [releases](https://docs.mongodb.com/manual/release-notes/3.6/) to your plate you should always consider upgrading your MongoDB deployments. 

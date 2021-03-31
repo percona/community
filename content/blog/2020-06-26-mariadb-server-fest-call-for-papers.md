@@ -7,6 +7,7 @@ authors:
   - kaj_arno
 images:
   - blog/2020/06/MDBS_Fest_logowhite_bg.png
+slug: mariadb-server-fest-call-for-papers
 ---
 
 In the week of 14-20 September 2020, MariaDB Foundation will host the MariaDB Server Fest Online Conference. We welcome the Percona Community not just to participate, but also to submit papers for the event. We already have Peter Zaitsev joining as keynoter; we hope for more to come. 

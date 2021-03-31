@@ -7,6 +7,7 @@ authors:
   - lefred
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: state-of-the-dolphin-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot: Tue 19 May • New York 11:00 a.m. • London 4:00 p.m. • New Delhi 8:30 p.m._

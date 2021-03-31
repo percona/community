@@ -7,6 +7,7 @@ images:
   - blog/2018/06/InnoDB-buffer-pool-size.jpg
 authors:
   - jeff_gagne
+slug: nice-feature-in-mariadb-103-no-innodb-buffer-pool-in-coredumps
 ---
 
 MariaDB 10.3 is now generally available (10.3.7 was released GA on 2018-05-25). The article [What's New in MariaDB Server 10.3](https://mariadb.com/resources/blog/whats-new-mariadb-server-103) by the MariaDB Corporation lists three key improvements in 10.3: temporal data processing, Oracle compatibility features, and purpose-built storage engines. Even if I am excited about [MyRocks](https://mariadb.com/kb/en/library/myrocks/) and curious on [Spider](https://mariadb.com/kb/en/library/spider-storage-engine-overview/), I am also very interested in less flashy but still very important changes that make running the database in production easier. This post describes such improvement: **no** [**InnoDB Buffer Pool**](https://dev.mysql.com/doc/refman/5.7/en/innodb-buffer-pool.html) **in core dumps**. 

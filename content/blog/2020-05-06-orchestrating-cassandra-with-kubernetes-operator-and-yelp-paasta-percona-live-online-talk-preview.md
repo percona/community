@@ -7,6 +7,7 @@ authors:
   - raghavendra_prabhu
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: orchestrating-cassandra-with-kubernetes-operator-and-yelp-paasta-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot: Tue 19 May • New York 3:00 p.m. • London 8:00 p.m. • New Delhi 12:30 a.m. (Wed)_ _Level: Intermediate_

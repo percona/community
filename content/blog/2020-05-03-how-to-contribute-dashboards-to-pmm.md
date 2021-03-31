@@ -7,6 +7,7 @@ authors:
   - daniil_bazhenov
 images:
   - blog/2020/05/Contribute_to_dashboards_1.png
+slug: how-to-contribute-dashboards-to-pmm
 ---
 
 Have you already contributed to Percona’s open-source products or perhaps you wanted to try doing so? 

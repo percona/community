@@ -7,6 +7,7 @@ authors:
   - jeff_gagne
 images: 
   - blog/2018/08/semi-sync-replication-MySQL.jpg
+slug: question-about-semi-synchronous-replication-answer-with-all-the-details
 ---
 
 I was recently asked a question by mail about [MySQL Lossless Semi-Synchronous Replication](https://dev.mysql.com/doc/refman/5.7/en/replication-semisync.html). As I think the answer could benefit many people, I am answering it in a blog post. The answer brings us to the internals of transaction committing, of semi-synchronous replication, of MySQL (server) crash recovery, and of storage engine (InnoDB) crash recovery. I am also debunking some misconceptions that I have often seen and heard repeated by many. Let's start by stating one of those misconceptions. 

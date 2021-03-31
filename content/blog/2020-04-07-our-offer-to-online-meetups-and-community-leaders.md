@@ -7,6 +7,7 @@ authors:
   - daniil_bazhenov
 images:
   - blog/2020/04/online-meetups-percona-linkedin.jpg
+slug: our-offer-to-online-meetups-and-community-leaders
 ---
 
 ![Offer of Percona Speakers for events](blog/2020/04/online-meetups-percona-linkedin.jpg)Percona’s Community team organizes our speakers at in-person events around the world, such as Percona Live, Percona University, and events sponsored by other organizations. However, like everyone else around the world, all our plans are on hold due to the Coronavirus pandemic. 

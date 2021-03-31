@@ -8,6 +8,7 @@ authors:
   - werner_keil
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: nosql-endgame-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 3:00 p.m. • London 8:00 p.m. • New Delhi 12:30 a.m. (next day) • Singapore 3:00 a.m._

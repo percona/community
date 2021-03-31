@@ -7,6 +7,7 @@ images:
   - blog/2020/06/image4.jpg
 authors:
   - cate_lawrence
+slug: percona-live-online-anti-cheating-tools-for-massive-multiplayer-games-using-amazon-aurora-and-amazon-ml-services
 ---
 
 Would you play a multiplayer game if you discovered other people are cheating? According to a survey by Irdeto, 60% of online games were negatively impacted by cheaters, and 77% of players said they would stop playing a multiplayer game if they think opponents are cheating. Player churn grows as cheating grows.

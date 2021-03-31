@@ -71,4 +71,6 @@ imaging:
   resampleFilter: lanczos
   quality: 90
   anchor: smart
-
+permalinks:
+  /: /:filename/
+  blog: /blog/:year/:month/:day/:slug/

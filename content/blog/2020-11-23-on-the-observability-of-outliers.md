@@ -7,6 +7,7 @@ authors:
   - koehntopp
 images:
   - blog/2020/11/obs-no.png
+slug: on-the-observability-of-outliers
 ---
 
 At work, I am in an ongoing discussion with a number of people on the Observability of Outliers. It started with the age-old question “How do I find slow queries in my application?” aka “What would I want from tooling to get that data and where should that tooling sit?”

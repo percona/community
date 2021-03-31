@@ -7,6 +7,7 @@ images:
   - blog/2019/09/dbdeployer.jpg
 authors:
   - giuseppe
+slug: percona-live-europe-presents-test-like-a-boss
 ---
 
 ![](blog/2019/09/dbdeployer.jpg)

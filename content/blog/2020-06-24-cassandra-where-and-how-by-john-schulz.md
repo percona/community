@@ -7,6 +7,7 @@ authors:
   - mayank_sharma
 images:
   - blog/2020/06/PLO-Card-Cassandra.jpg
+slug: cassandra-where-and-how-by-john-schulz
 ---
 
 If Percona Live ONLINE had graded its talks by skill level this year, John Schulz’s talk would have been essential viewing in the Beginners track. (You can watch all the event’s presentations now on [Percona’s YouTube channel.](https://www.youtube.com/user/PerconaMySQL/videos)) This talk was a good overview and meant for anyone who had heard of the Apache Cassandra distributed database but wasn’t sure whether it would be suitable for their project or not. 

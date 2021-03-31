@@ -7,6 +7,7 @@ images:
   - blog/2020/09/mariadb_fest_video.jpeg
 authors:
   - kaj_arno
+slug: two-weeks-to-mariadb-server-fest
 ---
 
 There is still time to [register](https://mariadb.org/fest-registration/) for the MariaDB Server Fest 2020!

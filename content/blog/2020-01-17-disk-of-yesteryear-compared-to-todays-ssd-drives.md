@@ -7,6 +7,7 @@ authors:
   - wayne
 images:
   - blog/2020/01/enrico-sottocorna-HOhR-t0yZIU-unsplash.jpg
+slug: disk-of-yesteryear-compared-to-todays-ssd-drives
 ---
 
 ![](blog/2020/01/enrico-sottocorna-HOhR-t0yZIU-unsplash.jpg)

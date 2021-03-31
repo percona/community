@@ -7,6 +7,7 @@ images:
   - blog/2020/08/iot1-scaled.jpg
 authors:
   - gaurav_belani
+slug: iot-performance-bottlenecks-and-open-source-databases
 ---
 
 The Internet of Things (IoT), in essence, is all about everyday devices that are readable, recognizable, trackable, and/or controllable via the Internet, regardless of the communication means — RFID, wireless LAN, and so on. The total installed base of IoT connected devices is projected to amount to [21.5 billion units worldwide by 2025](https://www.statista.com/statistics/1101442/iot-number-of-connected-devices-worldwide/). Thanks to IoT, the proliferation of data can be quite daunting. Hence, businesses should effectively organize and work with this enormous amount of valuable data. 

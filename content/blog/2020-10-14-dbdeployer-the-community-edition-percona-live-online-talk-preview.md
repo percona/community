@@ -7,6 +7,7 @@ authors:
   - giuseppe
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: dbdeployer-the-community-edition-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Wed 21 Oct • New York 3:30 a.m. • London 8:30 a.m. • New Delhi 1:00 p.m. • Singapore 3:30 p.m._

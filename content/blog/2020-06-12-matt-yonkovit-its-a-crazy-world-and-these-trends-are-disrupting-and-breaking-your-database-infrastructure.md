@@ -7,6 +7,7 @@ authors:
   - cate_lawrence
 images:
   - blog/2020/06/PLO-Card-Matt.jpg
+slug: matt-yonkovit-its-a-crazy-world-and-these-trends-are-disrupting-and-breaking-your-database-infrastructure
 ---
 
 Matt Yonkovit, Chief Experience Officer at Percona, presented a session at this year's Percona Live ONLINE, sharing initial insights from the [Open Source Data Management Survey 2020.](https://www.percona.com/open-source-data-management-software-survey) The survey provides a critical insight first-hand into how enterprises of all sizes are using, developing, and troubleshooting open source database software. The full data will be released later this year with a detailed analysis.

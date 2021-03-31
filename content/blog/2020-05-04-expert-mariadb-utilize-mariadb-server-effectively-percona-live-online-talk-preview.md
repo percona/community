@@ -7,6 +7,7 @@ authors:
   - colin_charles
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: expert-mariadb-utilize-mariadb-server-effectively-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot:  Tue 19 May • New York_ _11:00 p.m. • London 4:00 a.m. (Wed) • New Delhi 8:30 a.m. (Wed)_ _Level: Intermediate_

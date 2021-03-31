@@ -8,6 +8,7 @@ authors:
   - alexandre_vaniachine
 images:
   - blog/2020/04/alter-table-different-on-larger-database.jpg
+slug: unexpected-slow-alter-table-mysql-5-7
 ---
 
 Usually one would expect that ALTER TABLE with ALGORITHM=COPY will be slower than the default ALGORITHM=INPLACE. In this blog post we describe the case when this is not so. 

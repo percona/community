@@ -7,6 +7,7 @@ authors:
   - renato_losio
 images:
   - blog/2019/12/allie-smith-zp-0uEqBwpU-unsplash-50.jpg
+slug: a-first-look-at-amazon-rds-proxy
 ---
 
 At [re:Invent](https://reinvent.awsevents.com/) in Las Vegas in December 2019, **AWS announced the public preview of [RDS Proxy](https://aws.amazon.com/rds/proxy/)**, a fully managed database proxy that sits between your application and RDS. The new service offers to "_share established database connections, improving database efficiency and application scalability"_. 

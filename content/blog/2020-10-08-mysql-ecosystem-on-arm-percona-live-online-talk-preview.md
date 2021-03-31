@@ -7,6 +7,7 @@ authors:
   - krunal_bauskar
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: mysql-ecosystem-on-arm-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 8:00 p.m. • London 1:00 a.m (next day) • New Delhi 5:30 a.m. • Singapore 8:00 a.m._

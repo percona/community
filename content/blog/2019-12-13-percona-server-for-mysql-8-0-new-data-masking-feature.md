@@ -7,6 +7,7 @@ authors:
   - francisco_miguel
 images:
   - blog/2019/12/data-masking-Percona-Server-for-MySQL.jpg
+slug: percona-server-for-mysql-8-0-new-data-masking-feature
 ---
  
 

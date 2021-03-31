@@ -7,6 +7,7 @@ authors:
   - art_vanscheppingen
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: sharding-diy-or-out-of-the-box-solution-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Wed 21 Oct • New York 7:00 a.m. • London 12:00 noon • New Delhi 4:30 p.m. • Singapore 7:00 p.m._

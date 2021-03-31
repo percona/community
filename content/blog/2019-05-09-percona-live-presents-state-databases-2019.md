@@ -7,6 +7,7 @@ images:
   - blog/2019/05/state-of-databases-2019.jpg
 authors:
   - dave_cohen
+slug: percona-live-presents-state-databases-2019
 ---
 
 ![state of databases 2019](blog/2019/05/state-of-databases-2019.jpg)

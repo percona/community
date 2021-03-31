@@ -7,6 +7,7 @@ authors:
   - jaime_crespo
 images:
   - blog/2019/08/this_is_fine.png
+slug: are-your-database-backups-good-enough
 ---
 
 In the last few years there have been several examples of major service problems affecting businesses data: outages causing data inconsistencies; unavailability or data loss, and [worldwide cyberattacks encrypting your files and asking for a ransom](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack). 

@@ -7,6 +7,7 @@ images:
   - blog/2019/04/oysteing3.jpg
 authors:
   - oystein_grovlen
+slug: mysql-query-optimizer-explained-optimizer-trace
 ---
 
 During my presentation at [Percona Live 2019](https://www.percona.com/live/19/sessions/the-mysql-query-optimizer-explained-through-optimizer-trace) I will show how using Optimizer Trace can give insight into the inner workings of the MySQL Query Optimizer. Through the presentation, the audience will both be introduced to optimizer trace, learn more about the decisions the query optimizer makes, and learn about the query execution strategies the query optimizer has at its disposal. I'll be covering the main phases of the MySQL optimizer and its optimization strategies, including query transformations, data access strategies, the range optimizer, the join optimizer, and subquery optimization.

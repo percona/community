@@ -7,6 +7,7 @@ authors:
   - lefred
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: mysql-8-0-document-store-discovery-of-a-new-world-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Wed 21 Oct • New York 5:00 a.m. • London 10:00 a.m. • New Delhi 2:30 p.m. • Singapore 5:00 p.m._

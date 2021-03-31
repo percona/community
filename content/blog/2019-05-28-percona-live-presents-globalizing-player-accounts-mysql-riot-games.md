@@ -7,6 +7,7 @@ images:
   - blog/2019/05/riot-games.jpg
 authors:
   - tyler_turk
+slug: percona-live-presents-globalizing-player-accounts-mysql-riot-games
 ---
 
 ![](blog/2019/05/riot-games.jpg)

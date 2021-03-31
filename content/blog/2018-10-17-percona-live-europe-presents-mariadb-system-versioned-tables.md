@@ -7,6 +7,7 @@ images:
   - blog/2018/10/PLE-Frankfurt-Logo.png
 authors:
   - federico_razzoli
+slug: percona-live-europe-presents-mariadb-system-versioned-tables
 ---
 
 ![PLE Frankfurt Logo](blog/2018/10/PLE-Frankfurt-Logo.png)

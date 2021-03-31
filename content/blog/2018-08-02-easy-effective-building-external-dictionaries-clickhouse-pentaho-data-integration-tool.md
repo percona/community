@@ -7,6 +7,7 @@ authors:
   - timur_solodovnikov
 images:
   - blog/2018/08/pentaho-clickhouse.jpg
+slug: easy-effective-building-external-dictionaries-clickhouse-pentaho-data-integration-tool
 ---
 
 In this post, I provide an illustration of how to use Pentaho Data Integration (PDI) tool to set up external dictionaries in MySQL to support ClickHouse. Although I use MySQL in this example, you can use any PDI supported source.

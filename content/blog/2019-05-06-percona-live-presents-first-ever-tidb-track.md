@@ -7,6 +7,7 @@ images:
   - blog/2019/05/state-of-databases-2019.jpg
 authors:
   - pingcap
+slug: percona-live-presents-first-ever-tidb-track
 ---
 
 The PingCAP team has always been a strong supporter of Percona and the wider open source database community. As the people who work day in and day out on [TiDB](https://github.com/pingcap/tidb), an open source NewSQL database with MySQL compatibility, open source database is what gets us in the morning, and there’s no better place to share that passion than Percona Live. 

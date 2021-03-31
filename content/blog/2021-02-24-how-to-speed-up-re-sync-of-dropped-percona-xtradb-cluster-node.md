@@ -5,6 +5,7 @@ authors:
   - wayne
 images:
   - blog/2021/02/Blog-Community-Pic.jpg
+slug: how-to-speed-up-re-sync-of-dropped-percona-xtradb-cluster-node
 ---
 
 ## The Problem

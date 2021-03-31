@@ -7,6 +7,7 @@ authors:
   - lorraine_pocklington
 images:
   - blog/2019/02/ilovefs_postcard.jpg
+slug: ilovefs-valentines-day
 ---
 
 [**Free Software Foundation Europe**](https://fsfe.org/) (FSFE) is celebrating the creators of free software with their I Love Free Software campaign #ilovefs, a social campaign for Valentine’s Day. 

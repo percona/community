@@ -7,6 +7,7 @@ images:
   - blog/2020/03/ycgmxxaqlvyslsrzoo6jnv1vmx0.jpeg
 authors:
   - elizaveta_dokshina
+slug: deploying-tarantool-cartridge-applications-with-zero-effort-part-2
 ---
 
 ![](blog/2020/03/ycgmxxaqlvyslsrzoo6jnv1vmx0.jpeg) 

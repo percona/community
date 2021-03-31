@@ -7,6 +7,7 @@ images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 authors:
   - emily_gorcenski
+slug: engineering-data-reliably-using-slo-theory-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 12:30 p.m. • London 5:30 p.m. • New Delhi 10:00 p.m. • Singapore 12:30 a.m. (next day)_

@@ -7,6 +7,7 @@ authors:
   - wayne
 images:
   - blog/2019/07/Percona-installation-on-Raspberry-Pi-3.jpg
+slug: how-to-build-a-percona-server-stack-on-a-raspberry-pi-3
 ---
 
 The blog post [_How to Compile Percona Server for MySQL 5.7 in Raspberry Pi 3_](https://www.percona.com/blog/2018/08/22/how-to-compile-percona-server-for-mysql-5-7-in-raspberry-pi-3/) by Walter Garcia, inspired me to create an updated install of Percona Server for the [Raspberry Pi 3+](https://www.raspberrypi.org/products/). 
