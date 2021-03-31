@@ -7,6 +7,7 @@ authors:
   - aftab_khan
 images:
   - blog/2018/09/application-deadlock-in-MySQL-transactions.jpg
+slug: minimize-mysql-deadlocks-3-steps
 ---
 
 MySQL has locking capabilities, for example table and row level locking, and such locks are needed to control data integrity in multi-user concurrency. Deadlocks—where two or more transactions are waiting for one another to give up locks before the transactions can proceed successfully—are an unwanted situation. It is a classic problem for all databases including MySQL/PostgreSQL/Oracle etc. By default, MySQL detects the deadlock condition and to break the deadlock it rolls back one of the transactions. 

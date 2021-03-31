@@ -7,6 +7,7 @@ images:
   - blog/2020/06/SC-3-Matt-Percona.jpg
 authors:
   - mayank_sharma
+slug: percona-live-online-talk-enhancing-mysql-security-at-linkedin-by-karthik-appigatla
 ---
 
 MySQL, arguably the most popular relational database, is used pretty extensively at the popular professional social network LinkedIn. At Percona Live ONLINE 2020, the company’s flagship event held online for the first time due to the Covid-19 pandemic, Karthik Appigatla from LinkedIN’s database SRE team discussed the company’s approach to securing their database deployment without introducing operational hiccups or adversely affecting performance. 

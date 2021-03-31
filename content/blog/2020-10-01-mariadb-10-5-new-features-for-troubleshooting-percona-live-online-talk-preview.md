@@ -7,6 +7,7 @@ authors:
   - valeriy_kravchuk
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: mariadb-10-5-new-features-for-troubleshooting-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/agenda) Agenda Slot: Wed 21 Aug • New York 12:00 midnight • London 05:00 a.m. • New Delhi 9:30 a.m. • Singapore 12:00 noon_

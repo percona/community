@@ -7,6 +7,7 @@ authors:
   - oystein_grovlen
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: analytical-queries-in-mysql-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 6:00 p.m. • London 11:00 p.m. • New Delhi 3:30 a.m. • Singapore 6:00 a.m._

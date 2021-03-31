@@ -7,6 +7,7 @@ authors:
   - raghavendra_prabhu
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: kubernetes-the-swiss-army-knife-for-your-proxysql-deployments-percona-live-online-talk-preview
 ---
 
 _Percona Live Online Agenda Slot: Tue 19 May • New York 10:00 p.m. • London 3:00 a.m. (Wed) • New Delhi 7:30 a.m. (Wed)_

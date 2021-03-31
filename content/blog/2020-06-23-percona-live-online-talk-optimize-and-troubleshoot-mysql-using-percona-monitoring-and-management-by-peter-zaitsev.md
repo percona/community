@@ -7,6 +7,7 @@ images:
   - blog/2020/06/SC-3-Matt-Percona.jpg
 authors:
   - mayank_sharma
+slug: percona-live-online-talk-optimize-and-troubleshoot-mysql-using-percona-monitoring-and-management-by-peter-zaitsev
 ---
 
 Incorporating a database in an organization is a complicated task that involves a lot of people besides the DBAs. This is something that Peter Zaitsev, co-founder and CEO of Percona, understands very well. 

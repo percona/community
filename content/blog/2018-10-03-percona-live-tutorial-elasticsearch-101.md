@@ -7,6 +7,7 @@ images:
   - blog/2018/10/MySQL-at-scale.jpg
 authors:
   - antonios_giannopoulos
+slug: percona-live-tutorial-elasticsearch-101
 ---
 
 ![Elasticsearch mark](blog/2018/10/elasticsearch-mark.png)

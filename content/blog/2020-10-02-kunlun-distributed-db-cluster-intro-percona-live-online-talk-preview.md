@@ -7,6 +7,7 @@ authors:
   - david_zhao
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: kunlun-distributed-db-cluster-intro-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/agenda) Agenda Slot: Tue 20 Oct • New York 9:30 p.m. • London 02:30 a.m. (next day) • New Delhi 7:00 a.m. • Singapore 09:30 a.m._

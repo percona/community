@@ -7,6 +7,7 @@ images:
   - blog/2019/08/dba-tools-minimalist-mysql-tooling.jpg
 authors:
   - geoff_winans
+slug: minimalist-tooling-for-mysql-mariadb-dbas
 ---
 
 In my roles as a DBA at various companies, I generally found the tooling to be quite lacking. Everything from metrics collection, alerting, backup management; they were either missing, incomplete or implemented poorly. [DBA-Tools](http://gitlab.com/gwinans/dba-tools) was born from a desire to build backup tools that supported my needs in smaller/non-cloud environments. As BASH is easily the most common shell available out there on systems running MySQL® or MariaDB®, it was an easy choice.

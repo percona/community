@@ -7,6 +7,7 @@ images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 authors:
   - shlomi_noach
+slug: vitess-online-schema-migration-automation-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Wed 21 Oct • New York 2:30 a.m. • London 7:30 a.m. • New Delhi 12:00 noon • Singapore 2:30 p.m._

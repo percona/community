@@ -7,6 +7,7 @@ authors:
   - aftab_khan
 images:
   - blog/2018/10/export-data-to-JSON-from-MySQL.jpg
+slug: export-to-json-from-mysql-all-ready-for-mongodb
 ---
 
 This post walks through how to export data from [MySQL](https://dev.mysql.com/)® into JSON format, ready to ingest into [MongoDB](https://www.mongodb.com/)®. Starting from MySQL 5.7+, there is native support for JSON. MySQL provides functions that actually create JSON values, so I will be using these functions in this article to export to JSON from MySQL:

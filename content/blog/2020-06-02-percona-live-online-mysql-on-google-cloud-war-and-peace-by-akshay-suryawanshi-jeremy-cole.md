@@ -7,6 +7,7 @@ images:
   - blog/2020/06/SC-3-Matt-Percona.jpg
 authors:
   - cate_lawrence
+slug: percona-live-online-mysql-on-google-cloud-war-and-peace-by-akshay-suryawanshi-jeremy-cole
 ---
 
 This session at [Percona Live ONLINE](https://www.percona.com/live/conferences) was presented by Akshay Suryawanshi, Senior Production Engineer at Shopify, and Jeremy Cole, Senior Staff Production Engineer - Datastores at Shopify. Shopify is an online and on-premise commerce platform, founded in 2006. 

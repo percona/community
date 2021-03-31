@@ -7,6 +7,7 @@ images:
   - blog/2019/05/gonymizer-postgres-data-anonymizer.jpg
 authors:
   - levi_junkert
+slug: percona-live-gonymizer-tool-anonymize-sensitive-postgresql-data-testing
 ---
 
 [SmithRX](https://smithrx.com/)[![gonymizer postgres data anonymizer](blog/2019/05/gonymizer-postgres-data-anonymizer.jpg)](https://smithrx.com/) is a next generation pharmacy benefit platform that is using the latest technology to radically reshape the prescription benefit management industry. To move quickly, we require the ability to iterate and test new versions of our software using production like data without violating Health Information Portability and Accountability Act (HIPAA) regulations. 

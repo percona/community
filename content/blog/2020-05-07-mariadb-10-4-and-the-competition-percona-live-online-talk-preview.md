@@ -7,6 +7,7 @@ authors:
   - kaj_arno
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: mariadb-10-4-and-the-competition-percona-live-online-talk-preview
 ---
 
 [Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot: Tue 19 May • New York 12:30 p.m. • London 5:30 p.m. • New Delhi 10:00 p.m.

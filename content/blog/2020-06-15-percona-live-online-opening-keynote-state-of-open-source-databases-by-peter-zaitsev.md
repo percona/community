@@ -7,6 +7,7 @@ images:
   - blog/2020/06/SC-3-Matt-Percona.jpg
 authors:
   - cate_lawrence
+slug: percona-live-online-opening-keynote-state-of-open-source-databases-by-peter-zaitsev
 ---
 
 Peter Zaitsev is CEO and co-founder of Percona. He opened [Percona Live ONLINE](https://www.percona.com/live/conferences) with a keynote which took a look at the historical foundations of open source software and how they have shaped the field today.

@@ -7,6 +7,7 @@ authors:
   - renato_losio
 images:
   - blog/2018/04/safety-2890768_640.jpg
+slug: enabling-kms-encryption-running-amazon-rds-instance
 ---
 
 Since summer 2017, Amazon RDS supports [encryption](https://aws.amazon.com/about-aws/whats-new/2017/06/amazon-rds-enables-encryption-at-rest-for-additional-t2-instance-types/) at rest using AWS Key Management Service (KMS) for db.t2.small and db.t2.medium database instances, making the feature now available to virtually every instance class and type. 

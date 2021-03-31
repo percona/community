@@ -7,6 +7,7 @@ images:
   - blog/2018/10/MariaDB-Foundation-vertical.png
 authors:
   - vicențiu_ciorbaru
+slug: mariadb-10-4-reverse-privileges-deny
 ---
 
 ![MariaDB Foundation](blog/2018/10/MariaDB-Foundation-vertical.png)

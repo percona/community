@@ -7,6 +7,7 @@ authors:
   - michael_aboagye
 images:
   - blog/2020/08/social-forums-postgresql-general-discussion.jpg
+slug: fixing-common-postgresql-performance-bottlenecks
 ---
 
 Overview

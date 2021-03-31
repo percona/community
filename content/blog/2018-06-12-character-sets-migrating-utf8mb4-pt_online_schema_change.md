@@ -7,6 +7,7 @@ authors:
   - david_berube
 images:
   - blog/2018/04/problem.jpg
+slug: character-sets-migrating-utf8mb4-pt_online_schema_change
 ---
 
 Modern applications often feature the use of data in many different languages. This is often true even of applications that only offer a user facing interface in a single language. Many users may, for example, need to enter names which, although using Latin characters, feature diacritics; in other cases, they may need to enter text which contains Chinese or Japanese characters. Even if a user is capable of using an application localized for only one language, it may be necessary to deal with data from a wide variety of languages. 

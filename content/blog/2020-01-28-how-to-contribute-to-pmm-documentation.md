@@ -7,6 +7,7 @@ authors:
   - daniil_bazhenov
 images:
   - blog/2020/01/PMM-Contribute-10.png
+slug: how-to-contribute-to-pmm-documentation
 ---
 
 We'd love to see more contributions towards the development and improvement of [Percona Monitoring and Management (PMM),](https://www.percona.com/software/database-tools/percona-monitoring-and-management) one of Percona's most valued projects. Like all of Percona's software, PMM is free and open-source. An area where we'd dearly love to see some community provided enhancement is in its documentation. In future blog posts, we'll provide some insight on how to contribute to our software but... the beauty of documentation is that it's straightforward to maintain, and you don't even have to be a programmer to be able to provide valuable corrections and enhancements. So it's a great place to start. In this post, we set out how you might be able to contribute to this to make PMM even better than it is already!

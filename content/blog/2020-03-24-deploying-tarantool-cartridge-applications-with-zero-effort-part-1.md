@@ -7,6 +7,7 @@ images:
   - blog/2020/02/tarantool-new-instances-scaled.png
 authors:
   - elizaveta_dokshina
+slug: deploying-tarantool-cartridge-applications-with-zero-effort-part-1
 ---
 
 Tarantool is an open-source in-memory DB with a Lua application server on board. It's best used for apps that require high performance and horizontal scaling. Out of the box we support horizontal scaling via the [vshard](https://github.com/tarantool/vshard) module. There are quite a few things that you have to keep in mind when you work on your business logic, though. Not ideal. 

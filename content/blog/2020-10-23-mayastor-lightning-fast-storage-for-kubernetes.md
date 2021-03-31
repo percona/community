@@ -7,6 +7,7 @@ authors:
   - brian_matheson
 images:
   - blog/2020/10/image1.png
+slug: mayastor-lightning-fast-storage-for-kubernetes
 ---
 
 At MayaData we like new tech. Tech that makes our databases perform better. Tech like [lockless ring buffers](https://www.kernel.org/doc/Documentation/trace/ring-buffer-design.txt), [NVMe-oF](https://en.wikipedia.org/wiki/NVM_Express), and [Kubernetes](https://kubernetes.io/). In this blog post we’re going to see those technologies at work to give us awesome block storage performance with flexibility and simple operations.

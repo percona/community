@@ -7,6 +7,7 @@ authors:
   - rene_cannao
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: the-state-of-proxysql-2020-edition-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Wed 21 Oct • New York 7:30 a.m. • London 12:30 p.m. • New Delhi 5:00 p.m. • Singapore 7:30 p.m._

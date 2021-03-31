@@ -7,6 +7,7 @@ authors:
   - jorge_torres
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: what-if-we-could-use-machine-learning-models-as-tables-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Tue 20 Oct • New York 1:30 p.m. • London 6:30 p.m. • New Delhi 11:00 p.m. • Singapore 1:30 a.m. (next day)_

@@ -7,6 +7,7 @@ authors:
   - vladimir_drynkin
 images:
   - blog/2020/06/image3-1.jpg
+slug: making-a-tarantool-based-investment-business-core-for-alfa-bank
 ---
 
 ![A still from "Our Secret Universe: The Hidden Life of the Cell"](blog/2020/06/image3-1.jpg) 

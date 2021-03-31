@@ -7,6 +7,7 @@ authors:
   - timur_solodovnikov
 images:
   - blog/2019/07/logo-mysql-170x115.png
+slug: impact-of-innodb_file_per_table-option-on-crash-recovery-time
 ---
 
 Starting at version MySQL5.6+ by default innodb_file_per_table is enabled and all data is stored in separate tablespaces. It provides some [advantages](https://dev.mysql.com/doc/refman/5.7/en/innodb-multiple-tablespaces.html). 

@@ -7,6 +7,7 @@ authors:
   - daniel_black
 images:
   - blog/2020/01/ricardo-gomez-angel-87vUJY3ntyI-unsplash.jpg
+slug: finding-mysql-scaling-problems-using-perf
 ---
 
 

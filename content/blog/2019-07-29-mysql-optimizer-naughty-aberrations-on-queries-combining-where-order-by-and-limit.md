@@ -7,6 +7,7 @@ images:
   - blog/2019/07/mysql-optimizer-choose-wrong-path.jpg
 authors:
   - jeff_gagne
+slug: mysql-optimizer-naughty-aberrations-on-queries-combining-where-order-by-and-limit
 ---
 
 Sometimes, the MySQL Optimizer chooses a wrong plan, and a query that should execute in less than 0.1 second ends-up running for 12 minutes! This is not a new problem: bugs about this can be traced back to 2014, and a blog post on this subject was published in 2015. But even if this is old news, because this problem recently came yet again to my attention, and because this is still not fixed in MySQL 5.7 and 8.0, this is a subject worth writing about.

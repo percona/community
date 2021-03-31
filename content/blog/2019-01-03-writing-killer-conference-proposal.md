@@ -7,6 +7,7 @@ images:
   - blog/2019/01/writing-a-killer-conference-proposal.jpg
 authors:
   - lorraine_pocklington
+site: writing-killer-conference-proposal
 ---
 
 ![writing a killer conference proposal](blog/2019/01/writing-a-killer-conference-proposal.jpg)

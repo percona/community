@@ -7,6 +7,7 @@ images:
   - blog/2019/04/sugu_sougoumarane.jpg
 authors:
   - sugu_sougoumarane
+slug: percona-live-presents-vitess-running-sharded-mysql-kubernetes
 ---
 
 The topic I'm presenting addresses a growing and unfulfilled need: the ability to run stateful workloads in Kubernetes. Running stateless applications is now considered a solved problem. However, it's currently not practical to put databases like MySQL in containers, give them to Kubernetes, and expect it to manage their life cycles. 

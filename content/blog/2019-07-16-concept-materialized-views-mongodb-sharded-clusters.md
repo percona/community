@@ -7,6 +7,7 @@ authors:
   - antonios_giannopoulos
 images:
   - blog/2019/07/MongoDB-materialized-views.jpg
+slug: concept-materialized-views-mongodb-sharded-clusters
 ---
 
 In one of my past [blogs](https://www.objectrocket.com/blog/mongodb/enhance-your-organization-security-with-mongodb-views/) I explained the contribution of MongoDB® views in organization security. In this blog, I will take it one step further and I will try to approach the concept of a materialized view in MongoDB. In computing, a materialized view is a database object that contains the results of a query (definition taken from Wikipedia). If you are already familiar with MongoDB views (or you read my [blog](https://www.objectrocket.com/blog/mongodb/enhance-your-organization-security-with-mongodb-views/)), you are now probably wondering why I am calling the MongoDB views materialized while it's well known that they are computed on the fly? Well, the answer is that in this blog, I am not going to discuss the built-in view capabilities of MongoDB – which by the way are not materialized –but for a technique on how to build, maintain and use a materialized views in a MongoDB sharded cluster.

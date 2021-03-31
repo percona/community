@@ -7,6 +7,7 @@ authors:
   - puneet_kala
 images:
   - blog/2020/06/google-summer-of-code-2019-367x263-2.jpg
+slug: percona-projects-for-google-summer-of-code-2020
 ---
 
 ![GSC](blog/2020/06/google-summer-of-code-2019-367x263-1.jpg)We are proud to announce that Percona was selected as a participating organization for the [Google Summer of Code (GSoC) 2020 program](https://summerofcode.withgoogle.com/), this is our second year as a participating org with the GSoC program. 

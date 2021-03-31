@@ -7,6 +7,7 @@ authors:
   - stacy
 images:
   - blog/2020/05/2160x1080-cover-Proxy-Percona-3.jpg
+slug: join-proxysql-tech-talks-with-percona-on-june-4th-2020
 ---
 
 Long months of the pandemic lockdown have brought to life many great online events enabling the MySQL community to get together and stay informed about the very recent developments and innovations available to MySQL users. It isn’t over yet! Next **Thursday, June 4th**, Percona & ProxySQL are co-hosting the [**ProxySQL Tech Talks with Percona**](https://bit.ly/2THdDqv) virtual meetup covering ProxySQL, MySQL and Percona XtraDB Cluster. 

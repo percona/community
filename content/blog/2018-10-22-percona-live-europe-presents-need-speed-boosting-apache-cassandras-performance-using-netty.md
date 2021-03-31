@@ -7,6 +7,7 @@ images:
   - blog/2018/10/apache-cassandra-logo-3.png
 authors:
   - dinesh_joshi
+slug: percona-live-europe-presents-need-speed-boosting-apache-cassandras-performance-using-netty
 ---
 
 ![](blog/2018/10/apache-cassandra-logo-3.png)

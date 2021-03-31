@@ -7,6 +7,7 @@ images:
   - blog/2019/09/percona-live-europe2019.jpg
 authors:
   - antonios_giannopoulos
+slug: percona-live-europe-19-mongodb-4-2
 ---
 
 ![](blog/2019/09/percona-live-europe2019.jpg)

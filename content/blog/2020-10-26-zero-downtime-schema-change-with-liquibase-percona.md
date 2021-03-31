@@ -7,6 +7,7 @@ authors:
   - ronak_rahman
 images:
   - blog/2020/10/image1-1.png
+slug: zero-downtime-schema-change-with-liquibase-percona
 ---
 
 I am always surprised to learn something new whenever I talk to a member of the open-source community. No matter how much I think I have heard of every use case there is for [Liquibase](https://www.liquibase.org) (and database change management in general), I always hear something that makes this space still feel new. There’s always something left to discover. 

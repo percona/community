@@ -7,6 +7,7 @@ authors:
   - yaroslav_dynnikov
 images:
   - blog/2020/04/xeyzb9g_fodczvifb-xym4-qdwa.png
+slug: the-anatomy-of-luajit-tables-and-whats-special-about-them
 ---
 
 I don't know about you, but I really like to get inside all sorts of systems. In this article, I’m going to tell you about the internals of Lua tables and special considerations for their use. Lua is my primary professional programming language, and if one wants to write good code, one needs at least to peek behind the curtain. If you are curious, follow me. 

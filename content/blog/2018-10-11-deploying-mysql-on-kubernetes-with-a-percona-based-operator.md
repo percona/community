@@ -7,6 +7,7 @@ images:
   - blog/2018/10/kubernetes-mysql-operator.png
 authors:
   - flavius_mecea
+slug: deploying-mysql-on-kubernetes-with-a-percona-based-operator
 ---
 
 In the context of providing managed WordPress hosting services, at [Presslabs](https://www.presslabs.com/) we operate with lots of small to medium-sized databases, in a DB-per-service model, as we call it. The workloads are mostly reads, so we need to efficiently scale that. The MySQL® asynchronous replication model fits the bill very well, allowing us to scale horizontally from one server—with the obvious availability pitfalls—to tens of nodes. The next release of the stack is going to be open-sourced. 

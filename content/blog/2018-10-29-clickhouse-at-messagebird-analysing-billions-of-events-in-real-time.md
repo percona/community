@@ -8,6 +8,7 @@ images:
 authors:
   - felix_mattrat
   - aleksandar_aleksandrov
+slug: clickhouse-at-messagebird-analysing-billions-of-events-in-real-time
 ---
 
 [![MessageBird Logo](blog/2018/10/message-bird.png)](https://www.messagebird.com/en)

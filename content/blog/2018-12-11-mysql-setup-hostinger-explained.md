@@ -7,6 +7,8 @@ authors:
   - donatas_abraitis
 images:
   - blog/2018/12/mysql-setup-hostinger.jpg
+slug: mysql-setup-hostinger-explained
+canonical: https://www.hostinger.com/blog/mysql-setup-at-hostinger-explained
 ---
 
 Ever wondered how hosting companies manage their MySQL database architecture? At [Hostinger,](https://www.hostinger.com/) we have various MySQL setups starting from the standalone replica-less instances to [Percona XtraDB Cluster](https://www.percona.com/software/mysql-database/percona-xtradb-cluster) (later just PXC), [ProxySQL](http://www.proxysql.com/) routing-based and even absolutely custom and unique solutions which I’m going to describe in this blog post. 

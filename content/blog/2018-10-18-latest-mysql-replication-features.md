@@ -7,6 +7,7 @@ images:
   - blog/2018/10/PLE-Frankfurt-Logo.png
 authors:
   - tiago_jorge
+slug: latest-mysql-replication-features
 ---
 
 ![PLE Frankfurt Logo](blog/2018/10/PLE-Frankfurt-Logo.png)

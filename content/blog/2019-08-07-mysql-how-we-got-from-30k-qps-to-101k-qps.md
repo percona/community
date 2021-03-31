@@ -7,6 +7,7 @@ authors:
   - gurnish_anand
 images: 
   - blog/2019/08/tuning-mysql-for-throughput.jpg
+slug: mysql-how-we-got-from-30k-qps-to-101k-qps
 ---
 
 Late one evening, I was staring at one of our large MySQL installations and noticed the database was hovering around 7-10 run queue length (48 cores, \~500 gigs memory, fusionIO cards). I had been scratching my head on how to get more throughput from the database. This blog records the changes I made to tune performance in order to achieve a 300% better throughput in MySQL. I tested my theories on MySQL 5.6/Maria 10.1. While with 5.7 DBAs would turn to _performance_schema_ for the supporting metrics, I hope that you find the process interesting nevertheless.

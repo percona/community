@@ -7,6 +7,7 @@ authors:
   - renato_losio
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
+slug: serverless-databases-the-good-the-bad-and-the-ugly-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online Agenda](https://www.percona.com/live/agenda) Slot: Wed 21 Oct • New York 4:30 a.m. • London 9:30 a.m • New Delhi 2:00 p.m. • Singapore 4:30 p.m._

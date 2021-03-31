@@ -7,6 +7,7 @@ authors:
   - aurelien_lequoy
 images:
   - blog/2018/09/pmacli-schema-diagram.jpg
+slug: multi-master-with-mariadb-10-tutorial
 ---
 
 The goal of this tutorial is to show you how to use multi-master to aggregate databases with the same name, but different data from different masters, on the same slave. 

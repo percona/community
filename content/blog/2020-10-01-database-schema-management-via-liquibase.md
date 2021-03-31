@@ -7,6 +7,7 @@ authors:
   - ronak_rahman
 images:
   - blog/2020/10/Liquibase.jpg
+slug: database-schema-management-via-liquibase
 ---
 
 Creating the database for an application is simple and easy. However, database script management gets complicated in a hurry when you need to support multiple versions, work with multiple teams, and apply the same changes to multiple types of databases.  

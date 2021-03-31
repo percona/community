@@ -7,6 +7,7 @@ authors:
   - alexey_mikotkin
 images:
   - blog/2018/09/generating-complex-sequences.png
+slug: generating-identifiers-auto_increment-sequence
 ---
 
 There are a number of options for generating ID values for your tables. In this post, Alexey Mikotkin of Devart explores your choices for generating identifiers with a look at auto_increment, triggers, UUID and sequences.

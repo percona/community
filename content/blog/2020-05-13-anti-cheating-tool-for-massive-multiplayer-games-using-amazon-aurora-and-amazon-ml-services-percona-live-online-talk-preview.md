@@ -8,6 +8,7 @@ authors:
   - yahav_biran
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
+slug: anti-cheating-tool-for-massive-multiplayer-games-using-amazon-aurora-and-amazon-ml-services-percona-live-online-talk-preview
 ---
 
 _[Percona Live Online](https://www.percona.com/live/conferences) Agenda Slot: Tue 19 May • New York 4 p.m. • London 9 p.m. • New Delhi 1:30 a.m. (Wed)_ _Level:  Intermediate_

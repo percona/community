@@ -7,6 +7,7 @@ authors:
   - federico_razzoli
 images:
   - blog/2019/03/london-meetup.jpg
+slug: london-open-source-database-community-meetup
 ---
 
 I strongly believe in the community. 

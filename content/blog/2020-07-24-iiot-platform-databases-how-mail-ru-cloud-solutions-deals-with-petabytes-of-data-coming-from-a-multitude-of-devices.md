@@ -7,6 +7,7 @@ images:
   - blog/2020/07/image6.png
 authors:
   - andrey_sergeev
+slug: iiot-platform-databases-how-mail-ru-cloud-solutions-deals-with-petabytes-of-data-coming-from-a-multitude-of-devices
 ---
 
 ![IIoT platform databases - How Mail.ru Cloud Solutions](blog/2020/07/image6.png) Hello, my name is Andrey Sergeyev and I work as a Head of IoT Solution Development at [Mail.ru Cloud Solutions](https://mcs.mail.ru/). We all know there is no such thing as a universal database. Especially when the task is to build an IoT platform that would be capable of processing millions of events from various sensors in near real-time. 
