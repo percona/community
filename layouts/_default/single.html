@@ -80,7 +80,7 @@
         <div class="bios__bio">
           {{- with $.Site.GetPage (print "/authors/" $author) -}}
             <div class="bios__content">
-              <h2>{{ .Params.fullname }}</h2>
+              <h2><span>{{ .Params.fullname }}</span></h2>
               {{ .Content }}
               <p><a href="/authors/{{ $author }}">See all posts by {{ .Params.fullname }} &raquo;</a></p>
             </div>
