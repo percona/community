@@ -3,6 +3,7 @@
   {{- if in .Content "<pre class=\"chroma\">" -}}
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{ end }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/bio.scss") | safeCSS) -}}
 {{- end }}
 
 {{ define "meta" }}
@@ -49,6 +50,22 @@
       {{ partial "content.html" . }}
     </div>
     {{ if (isset .Params "authors")}}
+      <div class="bios">
+      {{ range $key, $author := .Params.authors -}}
+        <div class="bios__bio">
+          {{- with $.Site.GetPage (print "/authors/" $author) -}}
+            <div class="bios__content">
+              <h2>{{ .Params.fullname }}</h2>
+              {{ .Content }}
+              <p><a href="/authors/{{ $author }}">See all posts by {{ .Params.fullname }} &raquo;</a></p>
+            </div>
+            {{- with .Params.images -}}
+              <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
+            {{- end -}}
+          {{- end }}
+        </div>
+      {{- end -}}
+      </div>
     {{ end }}
   </article>
 {{ end }}
