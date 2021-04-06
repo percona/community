@@ -1,6 +1,6 @@
 # Contributing
 
-Are you looking to become a member of Percona Community? We have a site dedicated to [contributions](https://percona.community/contribute). For questions, you can best reach us on our [forums](https://forums.percona.com) or chat with us on [Discord](https://discord.gg/mQEyGPkNbR). By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
+Are you looking to become a member of Percona Community? We have a site dedicated to [contributions](https://percona.community/contribute). For questions, you can best reach us on our [forums](https://forums.percona.com) or chat with us on [Discord](http://per.co.na/discord). By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
 
 If you've already looked at those and just want to get started, continue reading.
 

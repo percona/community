@@ -122,3 +122,62 @@ set global sync_binlog = 0;
 We let these changes bake in for about 2 hours. The client did not want to stop the data extract just yet. They were very open to the idea and did not want to lose the work that had already been completed. This did not bother me because I know the NODE-B was working as it should be. We let these changes bake in for about two hours.
 
 ## Improvement
+
+NODE-B
+
+```
+SHOW STATUS LIKE ‘wsrep_last%';
++----------------------+----------+
+| Variable_name        | Value    |
++----------------------+----------+
+| wsrep_last_applied   | 32902200 |
++----------------------+----------+
+| wsrep_last_committed | 40902100 |
++----------------------+----------+
+```
+
+```
+SHOW STATUS LIKE 'wsrep_cert_deps_distance';
+ +--------------------------+---------+
+ | Variable_name            | Value   |
+ +--------------------------+---------+
+ | wsrep_cert_deps_distance | 86.81   |
+ +--------------------------+---------+
+```
+
+```
+ SHOW GLOBAL STATUS LIKE 'wsrep_local_state_comment';
+ +---------------------------+--------+
+ | Variable_name             | Value  |
+ +---------------------------+--------+
+ | wsrep_local_state_comment | Joined |
+ +---------------------------+--------+
+```
+
+Now let's look at our primary read/write NODE-A:
+
+```
+ SHOW STATUS LIKE ‘wsrep_last%';
+ +----------------------+----------+
+ | Variable_name        | Value    |
+ +----------------------+----------+
+ | wsrep_last_applied   | 43900992 |
+ +----------------------+----------+
+ | wsrep_last_committed | 43902200 |
+ +----------------------+----------+
+```
+
+As we can now see, NODE-B is catching up much faster than before. The committed seqno is only 3,000,100 apart now, where the seqno had been this far apart 20,100,000.
+
+Clearly, we made some significant progress. The client still was concerned about only having 2 of the 3 nodes up. We had a couple of choices, one stops the data extract or be patient for a bit longer. Clients choose patience. After another 2.5 hours, NODE-B had caught up to its peers and switched to Synced.
+
+## Conclusion
+
+NODE-B was stuck in a joined state due to a very undersized gcache; the default size had nev- er been changed.
+
+* Review your Percona XtraDB Cluster setting; if you have an extensive data set, the default gcache size won’t be enough. Not sure how to best size the cache? Look here:• Miguel Angel Nieto wrote a great blog post to help size the galera cache.
+* Give the cluster a regular health check. This is critical as your database grows.
+* Make sure all your tables have Primary Keys. Without the use of primary keys on all tables;your performance will suffer.
+* Make sure you are getting all the performance you can.• Useful link: Tips for MySQL 5.7 Database Tuning and Performance
+* As you can see, adjusting the number of threads applying transactions can make a big dif-ference. Just don’t go overboard.
+* If possible large data loads should be done in off-hours.
