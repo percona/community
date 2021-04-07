@@ -9,7 +9,7 @@
     margin-bottom:1.5rem;
     position:relative;
     display:flex;
-    flex-direction:row;
+    flex-direction:row-reverse;
 
     h2 {
       line-height:3rem;
@@ -33,24 +33,19 @@
     &__bio {
       display: block;
       position:relative;
+      text-align:center;
     }
     &__content {
       flex:none;
+      text-align:left;
     }
     h2 {
-      height: 10.5rem;
-      display: flex;
-      padding-right:12rem;
-      flex-direction: column;
-      justify-content: center;
+      text-align:center;
       span {
         display: block;
       }
     }
     img {
-      position:absolute;
-      top: 1.5rem;
-      right: 0;
     }
   }
 }
