@@ -27,6 +27,11 @@
   p {
     margin-bottom:0.75rem;
   }
+
+  ul {
+    margin-left: 1rem;
+    li {list-style-type: disc;}
+  }
 }
 
 @media (max-width: 768px) {

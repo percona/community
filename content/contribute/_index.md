@@ -54,7 +54,7 @@ Check out the latest 5 forums posts:
 
 {{% grid size=2 %}}
 {{% griditem %}}
-[Discord](https://discord.gg/mQEyGPkNbR)
+[Discord](http://per.co.na/discord)
 {{% /griditem %}}
 {{% griditem %}}
 [YouTube](https://www.youtube.com/user/PerconaMySQL)
