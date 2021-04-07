@@ -1,6 +1,7 @@
 ---
 title: "Open Topics: Blog, Talks, Guides"
 description: "Percona Community Open Topics for Content"
+layout: topics
 ---
 
 {{% hero %}}

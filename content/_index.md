@@ -34,7 +34,7 @@ Learn about our community, open source commitments, and how to contribute!
 Read more about our current projects and how they can work for you. Check our roadmaps and participate.{{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/library/" title="Resources" image="library.jpg" >}}
+{{< postpreview link="/resources/" title="Resources" image="library.jpg" >}}
 What do we want? All the resources around databases - with a dash of global culture and fun. Watch videos, see slide sets, read guides, and check out some special ingredients.{{< /postpreview >}}
 {{% /griditem %}}
 {{% /grid %}}

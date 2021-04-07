@@ -47,6 +47,7 @@ Check out the latest 5 forums posts:
 
 {{% /hero %}}
 
+{{% hero %}}
 {{% contentblock %}}
 
 ## Let's Chat
@@ -71,6 +72,7 @@ Check out the latest 5 forums posts:
 {{% /griditem %}}
 {{% /grid %}}
 {{% /contentblock %}}
+{{% /hero %}}
 
 {{% hero %}}
 
