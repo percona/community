@@ -86,11 +86,13 @@
     </main>
 
     {{ block "edit" . }}
-      <div class="edit-on-github">
-        <div class="container">
-          <a href="https://github.com/percona/community/edit/main/content/{{ .File }}" target="_blank" rel="noreferrer noopener">✎ Edit this page on GitHub</a>
+      {{ with .File }}
+        <div class="edit-on-github">
+          <div class="container">
+            <a href="{{ printf "https://github.com/percona/community/edit/main/content/%s" (replace . "\\" "/") | safeURL }}" target="_blank" rel="noreferrer noopener">✎ Edit this page on GitHub</a>
+          </div>
         </div>
-      </div>
+      {{ end }}
     {{ end }}
 
     <footer class="page">
