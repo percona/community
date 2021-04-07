@@ -85,6 +85,14 @@
       {{ end }}
     </main>
 
+    {{ block "edit" . }}
+      <div class="edit-on-github">
+        <div class="container">
+          <a href="https://github.com/percona/community/edit/main/content/{{ .File }}" target="_blank" rel="noreferrer noopener">✎ Edit this page on GitHub</a>
+        </div>
+      </div>
+    {{ end }}
+
     <footer class="page">
       <h1 class="aria-only" id="footer-heading" aria-hidden="false">Footer</h1>
       <div class="page-footer">
