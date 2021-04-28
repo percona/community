@@ -21,10 +21,26 @@ jobs:
           ref: gh-pages
           path: public
 
+      - name: Cache resources
+        uses: actions/cache@v1
+        with:
+          path: resources
+          key: hugo-resources
+          restore-keys: hugo-resources
+
+      - name: Cache hugo deb
+        uses: actions/cache@v1
+        with:
+          path: /tmp/hugo.deb
+          key: hugo-deb
+          restore-keys: hugo-deb
+
       - name: Setup hugo
         run: |
           set -euo pipefail
-          wget https://github.com/gohugoio/hugo/releases/download/v0.81.0/hugo_extended_0.81.0_Linux-64bit.deb -O /tmp/hugo.deb
+          if [ ! -f /tmp/hugo.deb ]; then
+            wget https://github.com/gohugoio/hugo/releases/download/v0.81.0/hugo_extended_0.81.0_Linux-64bit.deb -O /tmp/hugo.deb
+          fi
           sudo dpkg -i /tmp/hugo.deb
 
       - name: Build
