@@ -1,0 +1,1356 @@
+<!doctype html><html lang=en prefix="og: https://ogp.me/ns#"><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1"><title>How to build a high-performance application on Tarantool from scratch | Percona Community</title><meta name=description content="I came to Mail.ru Group in 2013, and I required a queue for one task. First of all, I decided to check what the company had already got. They told me they had this Tarantool product, and I checked how it worked and decided that adding a queue broker to it could work perfectly well. I contacted Kostja Osipov, the senior expert in Tarantool, and the next day he gave me a 250-string script that was capable of managing almost everything I needed."><link rel=canonical href=https://percona.community/blog/2020/10/30/how-to-build-a-high-performance-application-on-tarantool-from-scratch/><meta name=robots content="noindex,nofollow"><meta property="og:title" content="How to build a high-performance application on Tarantool from scratch"><meta property="og:description" content="I came to Mail.ru Group in 2013, and I required a queue for one task. First of all, I decided to check what the company had already got. They told me they had this Tarantool product, and I checked how it worked and decided that adding a queue broker to it could work perfectly well. I contacted Kostja Osipov, the senior expert in Tarantool, and the next day he gave me a 250-string script that was capable of managing almost everything I needed."><meta property="og:type" content="article"><meta property="og:url" content="https://percona.community/blog/2020/10/30/how-to-build-a-high-performance-application-on-tarantool-from-scratch/"><meta name=image property="og:image" content="https://percona.community/blog/2020/10/image5_hud984d70ee8647d796bb176af405d74b1_21604_1200x0_resize_q90_bgffffff_lanczos_2.jpg"><meta property="article:published_time" content="2020-10-30T14:44:18+00:00"><meta property="article:modified_time" content="2020-10-30T14:44:18+00:00"><meta property="article:section" content="blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://percona.community/blog/2020/10/image5.png"><meta name=twitter:title content="How to build a high-performance application on Tarantool from scratch | Percona Community"><meta name=twitter:description content="I came to Mail.ru Group in 2013, and I required a queue for one task. First of all, I decided to check what the company had already got. They told me they had this Tarantool product, and I checked how it worked and decided that adding a queue broker to it could work perfectly well. I contacted Kostja Osipov, the senior expert in Tarantool, and the next day he gave me a 250-string script that was capable of managing almost everything I needed."><meta name=twitter:site content="@Percona"><meta name=description content="I came to Mail.ru Group in 2013, and I required a queue for one task. First of all, I decided to check what the company had already got. They told me they had this Tarantool product, and I checked how it worked and decided that adding a queue broker to it could work perfectly well. I contacted Kostja Osipov, the senior expert in Tarantool, and the next day he gave me a 250-string script that was capable of managing almost everything I needed."><meta name=copyright content="© Percona Community. MySQL, InnoDB, MariaDB and MongoDB are trademarks of their respective owners.
+"><meta name=author content="Mons Anderson"><style>@charset "UTF-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after{content:none}q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}html,body{font-family:Arial,sans-serif;scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-font-smoothing:antialiased;line-height:1.5rem;font-feature-settings:"liga" 1;font-weight:400;font-size:18px}@media(min-width:900px){html,body{font-size:20px}}@media(min-width:1100px){html,body{font-size:22px}}@media(min-width:1800px){html,body{font-size:24px}}@media print{html,body{font-size:18px}}hr{border:0;height:2px;background-color:#fe7f2d;margin-top:1.5rem;margin-bottom:1.5rem}.text{position:relative}.text .meta{font-variant:small-caps}.text .meta .byline{display:none}.text .meta .line{display:inline-block}.text .meta .calendar{display:none}.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{font-family:Georgia,palatino linotype,book antiqua,Palatino,times new roman,serif;font-weight:400;page-break-after:avoid}.text h1 a,.text h1 a:visited,.text h2 a,.text h2 a:visited,.text h3 a,.text h3 a:visited,.text h4 a,.text h4 a:visited,.text h5 a,.text h5 a:visited,.text h6 a,.text h6 a:visited{color:#333;text-decoration:none}.text p,.text ul,.text ol,.text figure,.text dl,.text hr{margin-top:1.5rem;font-size:1rem}.text q{font-style:italic}.text ul ul{margin-top:0}.text p>code,.text ul>code,.text ol>code,.text dt>code,.text dd>code,.text li>code{color:#004966}.text audio{display:block;width:100%;height:1.5rem;outline:none}.text audio span{line-height:1.5rem}.text dl{overflow:auto;position:relative}.text dt{font-weight:700}.text dd{padding-left:2rem}.text dd+dt{margin-top:1.5rem}.text ul{list-style-type:disc;padding-left:1.5rem}.text ol{list-style-type:decimal;padding-left:1.5rem}.text p{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.text h1{font-size:2.5rem;font-weight:400;line-height:3rem;margin-top:1.5rem;margin-bottom:0}@media screen and (min-width:760px){.text h1{font-size:3.5rem;line-height:4.5rem;margin-top:1.5rem}}@media screen and (min-width:900px){.text h1{font-size:4rem;line-height:4.5rem;margin-top:3rem}}@media screen and (min-width:1400px){.text h1{font-size:5rem;line-height:6rem;margin-top:6rem}}.text h2{font-size:2rem;line-height:3rem;margin-top:3rem;margin-bottom:3rem}.text h3{font-size:1.5rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h4{font-size:1rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h5{font-size:.8rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h6{font-size:.6rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text strong{font-weight:700}.text em{font-style:italic}.text code{font-family:lucida console,Monaco,monospace;speak:literal-punctuation}.text abbr,.text acronym{speak:spell-out}.text del{text-decoration:line-through}.text ins{text-decoration:none;font-style:italic}.text figure{position:relative;text-align:center}.text figure img{background:#fff;border-radius:.2rem;max-width:100%}.text figure table{min-width:75%;border-radius:.2rem;margin-left:auto;margin-right:auto;border:#004966;border-collapse:separate;border-spacing:0;background:#fff;margin-bottom:-.1em}.text figure table th,.text figure table td{padding-left:.75rem;padding-right:.75rem;line-height:1.3rem;border-left:.1rem solid #004966;border-top:.1rem solid #004966}.text figure table thead{background-color:#fff}.text figure table tr td:last-child,.text figure table tr th:last-child{border-right:.1rem solid #004966}.text figure table tbody:last-child tr:last-child td{border-bottom:.1rem solid #004966}.text figure table thead:first-child tr:first-child th:first-child,.text figure table thead:first-child tr:first-child td:first-child{border-top-left-radius:.2rem}.text figure table thead:first-child tr:first-child,.text figure table thead:first-child tr:first-child th:last-child,.text figure table thead:first-child tr:first-child td:last-child{border-top-right-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:first-child{border-bottom-left-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:last-child{border-bottom-right-radius:.2rem}.text figure ul{text-align:left}.text figure ul.tree{padding-top:1.5em;padding-bottom:1.5em;border-radius:.2rem;background:#fff}.text figure ul.tree li{list-style-type:none}.text figure ul.tree .tree__item--folder::before{content:"📁";margin-right:.2em}.text figure ul.tree .tree__item--file::before{content:"📝";margin-right:.2em}.text figure figcaption{font-style:italic}.text pre{margin-top:1.5rem;font-size:inherit;line-height:1.5rem;padding:1.5rem 1.5rem .75rem;white-space:pre;overflow-x:scroll;overflow-y:hidden;scrollbar-color:#cccccc transparent;scrollbar-width:.75rem}.text pre::-webkit-scrollbar{margin-top:-.75rem;height:.75rem}.text pre::-webkit-scrollbar-track{background:0 0}.text pre::-webkit-scrollbar-thumb{height:.1rem;border-radius:.2rem;background:#ccc}.text hr{border:0;height:.2rem;background:#004966;margin-top:1.3rem}.text .admonition{position:relative}.text .admonition>*{padding-left:2rem}.text .admonition>:first-child::before{display:block;text-align:left;position:absolute;top:0;left:0;width:.75rem;font-size:1rem;line-height:1.5rem;height:1.5rem}.text .admonition--tip>:first-child::before{content:"☛";color:#fefefe;font-size:1.5rem;line-height:1.5rem;height:1.5rem}.text .admonition--warning>:first-child::before{content:"⚠️";color:#fefefe}.text .admonition--info>:first-child::before{content:"ⓘ";color:#004966;font-weight:700}@media print{.text h1{margin-left:auto;margin-right:auto;margin-top:9rem;width:80%;font-variant:small-caps;text-align:center}.text--simple h1{margin-top:0}.text .meta{page-break-after:always;text-align:center;font-size:1.2rem;margin-top:1.5rem}.text .meta a{text-decoration:none}.text .meta time{display:none}.text .body p:first-of-type{margin-top:0}.text pre{padding:0;font-size:inherit;line-height:1.5rem;overflow:hidden;white-space:pre-wrap;word-break:break-all}}.text .podcasts{margin-top:1.5rem;text-align:center}.text a.podcast{display:block;height:3rem}.text a.podcast img{width:50%;max-width:200px}@media screen and (min-width:768px){.text .podcasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:1.5rem}.text a.podcast img{width:100%}}.text .tombstone{opacity:0}html,body{min-height:100vh}body{text-align:center}@media screen{body{color:#333;background-color:#fefefe}}@media print{body{color:#000;background:#fff}}@media screen{body{display:flex;flex-direction:column}main.page{width:100%;flex:1}}header.page,main.page,footer.page{text-align:left}.page-main,.contentblock{max-width:1400px;padding-left:1.5rem;padding-right:1.5rem;margin-left:auto;margin-right:auto}@media print{.page-main,.contentblock{padding:0}}@page{size:A4;padding:0;margin:3rem}.highlight{color:#004966}.nobr{white-space:nowrap}.aria-only{display:none}@media aural{.aria-only{display:block}}button{cursor:pointer;display:block;font-weight:700;margin:0 auto;border:.1rem solid #fe7f2d;background-color:#fe7f2d;font-size:1.2rem;border-radius:.9rem;padding:.6rem;transition:color .233s ease-in-out,background-color .233s ease-in-out}button:hover{background-color:#004966;border:.1rem solid #004966}blockquote{padding:0 2rem;margin:0 2rem}blockquote:before{display:block;content:"\1f5e8";font-size:2rem;padding:1rem 0 0;margin:0 0 -1.8rem -2rem;height:max-content;color:#fe7f2d;font-weight:700}a{color:#004966;font-weight:700;text-decoration-color:#004966;transition:color .233s ease-out,text-decoration-color .233s ease-out}a:hover,a:visited:hover{color:#fe7f2d;text-decoration-color:#fe7f2d}a:active{color:#fe7f2d;text-decoration-color:#fe7f2d}a:visited{color:#333}a.downloadbtn{text-decoration:none}html,body{font-family:Arial,sans-serif;scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-font-smoothing:antialiased;line-height:1.5rem;font-feature-settings:"liga" 1;font-weight:400;font-size:18px}@media(min-width:900px){html,body{font-size:20px}}@media(min-width:1100px){html,body{font-size:22px}}@media(min-width:1800px){html,body{font-size:24px}}@media print{html,body{font-size:18px}}hr{border:0;height:2px;background-color:#fe7f2d;margin-top:1.5rem;margin-bottom:1.5rem}.text{position:relative}.text .meta{font-variant:small-caps}.text .meta .byline{display:none}.text .meta .line{display:inline-block}.text .meta .calendar{display:none}.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{font-family:Georgia,palatino linotype,book antiqua,Palatino,times new roman,serif;font-weight:400;page-break-after:avoid}.text h1 a,.text h1 a:visited,.text h2 a,.text h2 a:visited,.text h3 a,.text h3 a:visited,.text h4 a,.text h4 a:visited,.text h5 a,.text h5 a:visited,.text h6 a,.text h6 a:visited{color:#333;text-decoration:none}.text p,.text ul,.text ol,.text figure,.text dl,.text hr{margin-top:1.5rem;font-size:1rem}.text q{font-style:italic}.text ul ul{margin-top:0}.text p>code,.text ul>code,.text ol>code,.text dt>code,.text dd>code,.text li>code{color:#004966}.text audio{display:block;width:100%;height:1.5rem;outline:none}.text audio span{line-height:1.5rem}.text dl{overflow:auto;position:relative}.text dt{font-weight:700}.text dd{padding-left:2rem}.text dd+dt{margin-top:1.5rem}.text ul{list-style-type:disc;padding-left:1.5rem}.text ol{list-style-type:decimal;padding-left:1.5rem}.text p{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.text h1{font-size:2.5rem;font-weight:400;line-height:3rem;margin-top:1.5rem;margin-bottom:0}@media screen and (min-width:760px){.text h1{font-size:3.5rem;line-height:4.5rem;margin-top:1.5rem}}@media screen and (min-width:900px){.text h1{font-size:4rem;line-height:4.5rem;margin-top:3rem}}@media screen and (min-width:1400px){.text h1{font-size:5rem;line-height:6rem;margin-top:6rem}}.text h2{font-size:2rem;line-height:3rem;margin-top:3rem;margin-bottom:3rem}.text h3{font-size:1.5rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h4{font-size:1rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h5{font-size:.8rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h6{font-size:.6rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text strong{font-weight:700}.text em{font-style:italic}.text code{font-family:lucida console,Monaco,monospace;speak:literal-punctuation}.text abbr,.text acronym{speak:spell-out}.text del{text-decoration:line-through}.text ins{text-decoration:none;font-style:italic}.text figure{position:relative;text-align:center}.text figure img{background:#fff;border-radius:.2rem;max-width:100%}.text figure table{min-width:75%;border-radius:.2rem;margin-left:auto;margin-right:auto;border:#004966;border-collapse:separate;border-spacing:0;background:#fff;margin-bottom:-.1em}.text figure table th,.text figure table td{padding-left:.75rem;padding-right:.75rem;line-height:1.3rem;border-left:.1rem solid #004966;border-top:.1rem solid #004966}.text figure table thead{background-color:#fff}.text figure table tr td:last-child,.text figure table tr th:last-child{border-right:.1rem solid #004966}.text figure table tbody:last-child tr:last-child td{border-bottom:.1rem solid #004966}.text figure table thead:first-child tr:first-child th:first-child,.text figure table thead:first-child tr:first-child td:first-child{border-top-left-radius:.2rem}.text figure table thead:first-child tr:first-child,.text figure table thead:first-child tr:first-child th:last-child,.text figure table thead:first-child tr:first-child td:last-child{border-top-right-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:first-child{border-bottom-left-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:last-child{border-bottom-right-radius:.2rem}.text figure ul{text-align:left}.text figure ul.tree{padding-top:1.5em;padding-bottom:1.5em;border-radius:.2rem;background:#fff}.text figure ul.tree li{list-style-type:none}.text figure ul.tree .tree__item--folder::before{content:"📁";margin-right:.2em}.text figure ul.tree .tree__item--file::before{content:"📝";margin-right:.2em}.text figure figcaption{font-style:italic}.text pre{margin-top:1.5rem;font-size:inherit;line-height:1.5rem;padding:1.5rem 1.5rem .75rem;white-space:pre;overflow-x:scroll;overflow-y:hidden;scrollbar-color:#cccccc transparent;scrollbar-width:.75rem}.text pre::-webkit-scrollbar{margin-top:-.75rem;height:.75rem}.text pre::-webkit-scrollbar-track{background:0 0}.text pre::-webkit-scrollbar-thumb{height:.1rem;border-radius:.2rem;background:#ccc}.text hr{border:0;height:.2rem;background:#004966;margin-top:1.3rem}.text .admonition{position:relative}.text .admonition>*{padding-left:2rem}.text .admonition>:first-child::before{display:block;text-align:left;position:absolute;top:0;left:0;width:.75rem;font-size:1rem;line-height:1.5rem;height:1.5rem}.text .admonition--tip>:first-child::before{content:"☛";color:#fefefe;font-size:1.5rem;line-height:1.5rem;height:1.5rem}.text .admonition--warning>:first-child::before{content:"⚠️";color:#fefefe}.text .admonition--info>:first-child::before{content:"ⓘ";color:#004966;font-weight:700}@media print{.text h1{margin-left:auto;margin-right:auto;margin-top:9rem;width:80%;font-variant:small-caps;text-align:center}.text--simple h1{margin-top:0}.text .meta{page-break-after:always;text-align:center;font-size:1.2rem;margin-top:1.5rem}.text .meta a{text-decoration:none}.text .meta time{display:none}.text .body p:first-of-type{margin-top:0}.text pre{padding:0;font-size:inherit;line-height:1.5rem;overflow:hidden;white-space:pre-wrap;word-break:break-all}}.text .podcasts{margin-top:1.5rem;text-align:center}.text a.podcast{display:block;height:3rem}.text a.podcast img{width:50%;max-width:200px}@media screen and (min-width:768px){.text .podcasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:1.5rem}.text a.podcast img{width:100%}}.text .tombstone{opacity:0}.page-header a{display:block;text-decoration:none;height:2.6rem;line-height:2.6rem;border-top:.2rem solid transparent;border-bottom:.2rem solid transparent}.page-header a,.page-header a span{transition:color .233s ease-in-out,border-bottom .233s,margin-bottom .233s}.page-header a:hover{color:#004966;border-bottom:.2rem solid #004966}.page-header a:hover span{color:#004966}.page-header a img{height:2.6rem}.page-header a{color:#333;border-bottom:0 solid #fefefe}.page-header a:hover{color:#004966;border-bottom-color:#004966}.page-header a:visited{color:#333}.page-header a{display:block;border-bottom-width:0;font-weight:700}.page-header .logo{z-index:6;font-size:1.2rem;font-weight:700;font-variant:small-caps}.page-header .logo a{margin-top:.2rem;text-decoration:none;display:block;border:none}#show-mobile-menu{display:none}.mobile-toggle{display:none}@media screen and (max-width:759px){header.page{box-shadow:0 0 3px rgba(168,168,168,.5)}.logo a{position:absolute}.page-header{justify-content:space-between;z-index:1}.hamburger-bar{height:.2rem;background:#333;margin-top:.2rem;display:block}#show-mobile-menu+.mobile-toggle+.mobile-menu nav{background:#fefefe}#show-mobile-menu+.mobile-toggle .hamburger-bar{transform:translateY(0)rotate(0);opacity:1;transition:transform .233s ease-in-out,opacity .233s ease-in-out}#show-mobile-menu:checked+.mobile-toggle{position:fixed;right:1.5rem}#show-mobile-menu:checked+.mobile-toggle .hamburger-bar:nth-of-type(1){transform:translateY(.4rem)rotate(315deg)}#show-mobile-menu:checked+.mobile-toggle .hamburger-bar:nth-of-type(2){opacity:0}#show-mobile-menu:checked+.mobile-toggle .hamburger-bar:nth-of-type(3){transform:translateY(-.4rem)rotate(405deg)}.mobile-toggle{cursor:pointer;display:block;width:1.2rem;height:1rem;z-index:5;margin-top:.75rem}.mobile-toggle label,.mobile-toggle .hamburger-bar{cursor:pointer}.mobile-menu{overflow:hidden;position:fixed;top:0;left:0;right:0;bottom:100vh;opacity:0;background:rgba(0,0,0,.5);transition:opacity .233s ease-in-out,bottom .233s ease-in-out}#show-mobile-menu:checked+.mobile-toggle+.mobile-menu{opacity:1;bottom:0}.hide-mobile-menu{display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:2}.mobile-menu nav{box-sizing:border-box;max-height:100%;position:absolute;top:0;left:0;right:0;z-index:3;font-size:1rem;line-height:3rem;padding:3rem 1.5rem 1.5rem;display:flex;flex-direction:column}.mobile-menu nav header{display:flex;flex-direction:row;font-size:inherit;line-height:inherit}.mobile-menu nav header h1{margin-top:0;font-size:1.2rem;line-height:1.5rem;flex:1;font-variant:small-caps}.mobile-menu nav header .hide-mobile-menu-aria{display:block;z-index:10;height:1.5rem;width:1.5rem}.mobile-menu nav ul{overflow-y:scroll;flex:1;scrollbar-width:none;-ms-overflow-style:none}.mobile-menu nav ul::-webkit-scrollbar{width:0;background:0 0}.mobile-menu nav a:hover{border-bottom:0;margin-bottom:0}}@media screen and (min-width:760px){.page-header .mobile-toggle{display:none}.page-header .mobile-menu{flex:1}.page-header nav{flex:1}.page-header nav header{display:none}.page-header ul{list-style-type:none}.page-header nav ul{display:flex;align-items:end;justify-content:flex-end;flex-direction:row}.page-header nav li{padding-left:1.5rem}.page-header nav li.active a{border-bottom-width:3px;border-bottom-color:#004966}}@media screen{.page-header{position:relative;max-width:1400px;margin-left:auto;margin-right:auto;padding-left:1.5rem;padding-right:1.5rem;height:3rem;display:flex;flex-direction:row}}@media print{header.page{display:none}}@media screen and (max-width:759px) and (prefers-reduced-motion:reduce){.mobile-menu{transition:none}#show-mobile-menu+.mobile-toggle .hamburger-bar{transition:none}}@media screen and (max-width:759px) and (prefers-reduced-transparency:reduce){.mobile-menu{background:gray}}html,body{font-family:Arial,sans-serif;scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-font-smoothing:antialiased;line-height:1.5rem;font-feature-settings:"liga" 1;font-weight:400;font-size:18px}@media(min-width:900px){html,body{font-size:20px}}@media(min-width:1100px){html,body{font-size:22px}}@media(min-width:1800px){html,body{font-size:24px}}@media print{html,body{font-size:18px}}hr{border:0;height:2px;background-color:#fe7f2d;margin-top:1.5rem;margin-bottom:1.5rem}.text{position:relative}.text .meta{font-variant:small-caps}.text .meta .byline{display:none}.text .meta .line{display:inline-block}.text .meta .calendar{display:none}.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{font-family:Georgia,palatino linotype,book antiqua,Palatino,times new roman,serif;font-weight:400;page-break-after:avoid}.text h1 a,.text h1 a:visited,.text h2 a,.text h2 a:visited,.text h3 a,.text h3 a:visited,.text h4 a,.text h4 a:visited,.text h5 a,.text h5 a:visited,.text h6 a,.text h6 a:visited{color:#333;text-decoration:none}.text p,.text ul,.text ol,.text figure,.text dl,.text hr{margin-top:1.5rem;font-size:1rem}.text q{font-style:italic}.text ul ul{margin-top:0}.text p>code,.text ul>code,.text ol>code,.text dt>code,.text dd>code,.text li>code{color:#004966}.text audio{display:block;width:100%;height:1.5rem;outline:none}.text audio span{line-height:1.5rem}.text dl{overflow:auto;position:relative}.text dt{font-weight:700}.text dd{padding-left:2rem}.text dd+dt{margin-top:1.5rem}.text ul{list-style-type:disc;padding-left:1.5rem}.text ol{list-style-type:decimal;padding-left:1.5rem}.text p{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.text h1{font-size:2.5rem;font-weight:400;line-height:3rem;margin-top:1.5rem;margin-bottom:0}@media screen and (min-width:760px){.text h1{font-size:3.5rem;line-height:4.5rem;margin-top:1.5rem}}@media screen and (min-width:900px){.text h1{font-size:4rem;line-height:4.5rem;margin-top:3rem}}@media screen and (min-width:1400px){.text h1{font-size:5rem;line-height:6rem;margin-top:6rem}}.text h2{font-size:2rem;line-height:3rem;margin-top:3rem;margin-bottom:3rem}.text h3{font-size:1.5rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h4{font-size:1rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h5{font-size:.8rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h6{font-size:.6rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text strong{font-weight:700}.text em{font-style:italic}.text code{font-family:lucida console,Monaco,monospace;speak:literal-punctuation}.text abbr,.text acronym{speak:spell-out}.text del{text-decoration:line-through}.text ins{text-decoration:none;font-style:italic}.text figure{position:relative;text-align:center}.text figure img{background:#fff;border-radius:.2rem;max-width:100%}.text figure table{min-width:75%;border-radius:.2rem;margin-left:auto;margin-right:auto;border:#004966;border-collapse:separate;border-spacing:0;background:#fff;margin-bottom:-.1em}.text figure table th,.text figure table td{padding-left:.75rem;padding-right:.75rem;line-height:1.3rem;border-left:.1rem solid #004966;border-top:.1rem solid #004966}.text figure table thead{background-color:#fff}.text figure table tr td:last-child,.text figure table tr th:last-child{border-right:.1rem solid #004966}.text figure table tbody:last-child tr:last-child td{border-bottom:.1rem solid #004966}.text figure table thead:first-child tr:first-child th:first-child,.text figure table thead:first-child tr:first-child td:first-child{border-top-left-radius:.2rem}.text figure table thead:first-child tr:first-child,.text figure table thead:first-child tr:first-child th:last-child,.text figure table thead:first-child tr:first-child td:last-child{border-top-right-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:first-child{border-bottom-left-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:last-child{border-bottom-right-radius:.2rem}.text figure ul{text-align:left}.text figure ul.tree{padding-top:1.5em;padding-bottom:1.5em;border-radius:.2rem;background:#fff}.text figure ul.tree li{list-style-type:none}.text figure ul.tree .tree__item--folder::before{content:"📁";margin-right:.2em}.text figure ul.tree .tree__item--file::before{content:"📝";margin-right:.2em}.text figure figcaption{font-style:italic}.text pre{margin-top:1.5rem;font-size:inherit;line-height:1.5rem;padding:1.5rem 1.5rem .75rem;white-space:pre;overflow-x:scroll;overflow-y:hidden;scrollbar-color:#cccccc transparent;scrollbar-width:.75rem}.text pre::-webkit-scrollbar{margin-top:-.75rem;height:.75rem}.text pre::-webkit-scrollbar-track{background:0 0}.text pre::-webkit-scrollbar-thumb{height:.1rem;border-radius:.2rem;background:#ccc}.text hr{border:0;height:.2rem;background:#004966;margin-top:1.3rem}.text .admonition{position:relative}.text .admonition>*{padding-left:2rem}.text .admonition>:first-child::before{display:block;text-align:left;position:absolute;top:0;left:0;width:.75rem;font-size:1rem;line-height:1.5rem;height:1.5rem}.text .admonition--tip>:first-child::before{content:"☛";color:#fefefe;font-size:1.5rem;line-height:1.5rem;height:1.5rem}.text .admonition--warning>:first-child::before{content:"⚠️";color:#fefefe}.text .admonition--info>:first-child::before{content:"ⓘ";color:#004966;font-weight:700}@media print{.text h1{margin-left:auto;margin-right:auto;margin-top:9rem;width:80%;font-variant:small-caps;text-align:center}.text--simple h1{margin-top:0}.text .meta{page-break-after:always;text-align:center;font-size:1.2rem;margin-top:1.5rem}.text .meta a{text-decoration:none}.text .meta time{display:none}.text .body p:first-of-type{margin-top:0}.text pre{padding:0;font-size:inherit;line-height:1.5rem;overflow:hidden;white-space:pre-wrap;word-break:break-all}}.text .podcasts{margin-top:1.5rem;text-align:center}.text a.podcast{display:block;height:3rem}.text a.podcast img{width:50%;max-width:200px}@media screen and (min-width:768px){.text .podcasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:1.5rem}.text a.podcast img{width:100%}}.text .tombstone{opacity:0}html,body{min-height:100vh}body{text-align:center}@media screen{body{color:#333;background-color:#fefefe}}@media print{body{color:#000;background:#fff}}@media screen{body{display:flex;flex-direction:column}main.page{width:100%;flex:1}}header.page,main.page,footer.page{text-align:left}.page-main,.contentblock{max-width:1400px;padding-left:1.5rem;padding-right:1.5rem;margin-left:auto;margin-right:auto}@media print{.page-main,.contentblock{padding:0}}@page{size:A4;padding:0;margin:3rem}.highlight{color:#004966}.nobr{white-space:nowrap}.aria-only{display:none}@media aural{.aria-only{display:block}}footer.page{margin-top:1.5rem}footer.page h2{font-size:1rem}@media not print{footer.page{margin-top:1.5rem/2;padding-top:1.5rem/2;padding-bottom:1.5rem/2}.page-footer{max-width:1400px;padding-left:1.5rem;padding-right:1.5rem;margin-left:auto;margin-right:auto;font-size:.7rem;line-height:1.5rem}}@media not print{.page-footer ul{margin-bottom:1.5rem}.page-footer a{display:block;text-decoration:none;height:2.6rem;line-height:2.6rem;border-top:.2rem solid transparent;border-bottom:.2rem solid transparent}.page-footer a,.page-footer a span{transition:color .233s ease-in-out,border-bottom .233s,margin-bottom .233s}.page-footer a:hover{color:#004966;border-bottom:.2rem solid #004966}.page-footer a:hover span{color:#004966}.page-footer a img{height:2.6rem}.page-footer nav ul{display:flex;flex-direction:row;align-items:center;justify-content:center;margin-bottom:0;height:1.5rem;line-height:1.5rem}.page-footer nav ul a{height:1.3rem;line-height:1.3rem;text-align:center;display:block;padding-left:.75rem;padding-right:.75rem;border-bottom:.2rem solid transparent}}@media print{footer.page nav{display:none}footer.page aside{border-top:.2rem solid #333;margin-top:.65rem;padding-top:.65rem}}footer.page{border-top:2px solid #fe7f2d;margin-top:-2px}footer.page aside{text-align:center;font-size:.6rem;line-height:1.5rem;color:#333}@media screen{footer.page{background-color:#fefefe}.page-footer a{color:#333;border-bottom:0 solid #fefefe}.page-footer a:hover{color:#004966;border-bottom-color:#004966}.page-footer a:visited{color:#333}}.grid{display:grid;gap:1.5rem 1.5rem;font-size:.9rem;margin-bottom:1.5rem;margin-top:1.5rem}.grid--2{grid-template-columns:1fr 1fr}.grid--3{grid-template-columns:1fr 1fr 1fr}.grid--4{grid-template-columns:1fr 1fr 1fr}.grid img{max-width:100%}.grid h2{font-size:1.2rem;margin-bottom:.75rem}.grid p{margin-bottom:.75rem}.grid ul{margin-left:1rem}.grid ul li{list-style-type:disc}@media(max-width:768px){.grid--2{display:block}}@media(max-width:1200px){.grid--3{display:block}}@media(max-width:1600px){.grid--4{display:block}}.post--preview{display:block;border-radius:.3rem;padding-bottom:.375rem}.post--preview img{margin-bottom:.375rem}.post--preview h2,.post--preview p{padding-left:.5rem;padding-right:.5rem}.post--preview :last-child{margin-bottom:0}.post--preview:hover{box-shadow:0 0 1.5rem #7f7f7f}a.post--preview,a.post--preview *{text-decoration:none;color:#333}a.post--preview .readmore,a.post--preview * .readmore{font-weight:700}.hero{background-color:#004966;background-position:50%;background-repeat:no-repeat;background-size:cover;color:#fff}.hero h1{margin-bottom:1.5rem}.hero a{color:#333;font-weight:700;border-bottom:2px solid #004966;text-decoration:none;transition:color .233s ease-out,border-bottom-color .233s ease-out}.hero a:hover,.hero a:visited:hover{color:#333;border-bottom-color:#fe7f2d}.hero img{float:left;margin-right:1.5rem}.hero:nth-child(4n+2),.hero:nth-child(4n+4){background-color:initial;color:#333}.hero:nth-child(4n+2) img,.hero:nth-child(4n+4) img{float:right;margin-right:0;margin-left:1.5rem}.hero:nth-child(4n+2) a,.hero:nth-child(4n+4) a{color:#333}.hero:nth-child(4n+2) a:hover,.hero:nth-child(4n+4) a:hover{color:#333}.hero:nth-child(4n+3){background-color:#fe7f2d}.hero--bio .contentblock{text-align:center}.hero--bio .contentblock img{text-align:center;float:none;margin-bottom:1.5rem}.hero--bio .contentblock p{text-align:left}@media(min-width:769px){.hero--bio .contentblock{min-height:240px;text-align:left}.hero--bio .contentblock img{float:right;margin-left:1.5rem;margin-bottom:0}}.contentblock{padding-top:3rem;padding-bottom:3rem}.herotext{font-size:1.2rem;background:rgba(0,0,0,.5);padding:1.5rem;border-radius:.75rem}.herotext p{margin-top:1.5rem}.herotext p:first-child{margin-top:0}.herotext small{font-size:.8rem}html,body{font-family:Arial,sans-serif;scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-font-smoothing:antialiased;line-height:1.5rem;font-feature-settings:"liga" 1;font-weight:400;font-size:18px}@media(min-width:900px){html,body{font-size:20px}}@media(min-width:1100px){html,body{font-size:22px}}@media(min-width:1800px){html,body{font-size:24px}}@media print{html,body{font-size:18px}}hr{border:0;height:2px;background-color:#fe7f2d;margin-top:1.5rem;margin-bottom:1.5rem}.text{position:relative}.text .meta{font-variant:small-caps}.text .meta .byline{display:none}.text .meta .line{display:inline-block}.text .meta .calendar{display:none}.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{font-family:Georgia,palatino linotype,book antiqua,Palatino,times new roman,serif;font-weight:400;page-break-after:avoid}.text h1 a,.text h1 a:visited,.text h2 a,.text h2 a:visited,.text h3 a,.text h3 a:visited,.text h4 a,.text h4 a:visited,.text h5 a,.text h5 a:visited,.text h6 a,.text h6 a:visited{color:#333;text-decoration:none}.text p,.text ul,.text ol,.text figure,.text dl,.text hr{margin-top:1.5rem;font-size:1rem}.text q{font-style:italic}.text ul ul{margin-top:0}.text p>code,.text ul>code,.text ol>code,.text dt>code,.text dd>code,.text li>code{color:#004966}.text audio{display:block;width:100%;height:1.5rem;outline:none}.text audio span{line-height:1.5rem}.text dl{overflow:auto;position:relative}.text dt{font-weight:700}.text dd{padding-left:2rem}.text dd+dt{margin-top:1.5rem}.text ul{list-style-type:disc;padding-left:1.5rem}.text ol{list-style-type:decimal;padding-left:1.5rem}.text p{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.text h1{font-size:2.5rem;font-weight:400;line-height:3rem;margin-top:1.5rem;margin-bottom:0}@media screen and (min-width:760px){.text h1{font-size:3.5rem;line-height:4.5rem;margin-top:1.5rem}}@media screen and (min-width:900px){.text h1{font-size:4rem;line-height:4.5rem;margin-top:3rem}}@media screen and (min-width:1400px){.text h1{font-size:5rem;line-height:6rem;margin-top:6rem}}.text h2{font-size:2rem;line-height:3rem;margin-top:3rem;margin-bottom:3rem}.text h3{font-size:1.5rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h4{font-size:1rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h5{font-size:.8rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h6{font-size:.6rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text strong{font-weight:700}.text em{font-style:italic}.text code{font-family:lucida console,Monaco,monospace;speak:literal-punctuation}.text abbr,.text acronym{speak:spell-out}.text del{text-decoration:line-through}.text ins{text-decoration:none;font-style:italic}.text figure{position:relative;text-align:center}.text figure img{background:#fff;border-radius:.2rem;max-width:100%}.text figure table{min-width:75%;border-radius:.2rem;margin-left:auto;margin-right:auto;border:#004966;border-collapse:separate;border-spacing:0;background:#fff;margin-bottom:-.1em}.text figure table th,.text figure table td{padding-left:.75rem;padding-right:.75rem;line-height:1.3rem;border-left:.1rem solid #004966;border-top:.1rem solid #004966}.text figure table thead{background-color:#fff}.text figure table tr td:last-child,.text figure table tr th:last-child{border-right:.1rem solid #004966}.text figure table tbody:last-child tr:last-child td{border-bottom:.1rem solid #004966}.text figure table thead:first-child tr:first-child th:first-child,.text figure table thead:first-child tr:first-child td:first-child{border-top-left-radius:.2rem}.text figure table thead:first-child tr:first-child,.text figure table thead:first-child tr:first-child th:last-child,.text figure table thead:first-child tr:first-child td:last-child{border-top-right-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:first-child{border-bottom-left-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:last-child{border-bottom-right-radius:.2rem}.text figure ul{text-align:left}.text figure ul.tree{padding-top:1.5em;padding-bottom:1.5em;border-radius:.2rem;background:#fff}.text figure ul.tree li{list-style-type:none}.text figure ul.tree .tree__item--folder::before{content:"📁";margin-right:.2em}.text figure ul.tree .tree__item--file::before{content:"📝";margin-right:.2em}.text figure figcaption{font-style:italic}.text pre{margin-top:1.5rem;font-size:inherit;line-height:1.5rem;padding:1.5rem 1.5rem .75rem;white-space:pre;overflow-x:scroll;overflow-y:hidden;scrollbar-color:#cccccc transparent;scrollbar-width:.75rem}.text pre::-webkit-scrollbar{margin-top:-.75rem;height:.75rem}.text pre::-webkit-scrollbar-track{background:0 0}.text pre::-webkit-scrollbar-thumb{height:.1rem;border-radius:.2rem;background:#ccc}.text hr{border:0;height:.2rem;background:#004966;margin-top:1.3rem}.text .admonition{position:relative}.text .admonition>*{padding-left:2rem}.text .admonition>:first-child::before{display:block;text-align:left;position:absolute;top:0;left:0;width:.75rem;font-size:1rem;line-height:1.5rem;height:1.5rem}.text .admonition--tip>:first-child::before{content:"☛";color:#fefefe;font-size:1.5rem;line-height:1.5rem;height:1.5rem}.text .admonition--warning>:first-child::before{content:"⚠️";color:#fefefe}.text .admonition--info>:first-child::before{content:"ⓘ";color:#004966;font-weight:700}@media print{.text h1{margin-left:auto;margin-right:auto;margin-top:9rem;width:80%;font-variant:small-caps;text-align:center}.text--simple h1{margin-top:0}.text .meta{page-break-after:always;text-align:center;font-size:1.2rem;margin-top:1.5rem}.text .meta a{text-decoration:none}.text .meta time{display:none}.text .body p:first-of-type{margin-top:0}.text pre{padding:0;font-size:inherit;line-height:1.5rem;overflow:hidden;white-space:pre-wrap;word-break:break-all}}.text .podcasts{margin-top:1.5rem;text-align:center}.text a.podcast{display:block;height:3rem}.text a.podcast img{width:50%;max-width:200px}@media screen and (min-width:768px){.text .podcasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:1.5rem}.text a.podcast img{width:100%}}.text .tombstone{opacity:0}.paginator{margin-top:1.5rem;text-align:center}.paginator a{display:inline-block;text-decoration:none;border-radius:3px;color:#333;border:1px solid #333;transition:.2s background-color ease-in-out,.2s color ease-in-out,.2s border-color ease-in-out;height:1rem;width:1rem;line-height:1rem;font-size:.7rem;margin-left:.2rem;margin-right:.2rem}.paginator a:hover,.paginator a.active{background:#004966;color:#fefefe;border:1px solid #004966}@media screen and (min-width:768px){.paginator a{height:1.5rem;width:1.5rem;line-height:1.5rem;font-size:1rem}}@media screen and (min-width:900px){.paginator a{height:3rem;width:3rem;line-height:3rem;font-size:1.2rem}}html,body{font-family:Arial,sans-serif;scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-font-smoothing:antialiased;line-height:1.5rem;font-feature-settings:"liga" 1;font-weight:400;font-size:18px}@media(min-width:900px){html,body{font-size:20px}}@media(min-width:1100px){html,body{font-size:22px}}@media(min-width:1800px){html,body{font-size:24px}}@media print{html,body{font-size:18px}}hr{border:0;height:2px;background-color:#fe7f2d;margin-top:1.5rem;margin-bottom:1.5rem}.text{position:relative}.text .meta{font-variant:small-caps}.text .meta .byline{display:none}.text .meta .line{display:inline-block}.text .meta .calendar{display:none}.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{font-family:Georgia,palatino linotype,book antiqua,Palatino,times new roman,serif;font-weight:400;page-break-after:avoid}.text h1 a,.text h1 a:visited,.text h2 a,.text h2 a:visited,.text h3 a,.text h3 a:visited,.text h4 a,.text h4 a:visited,.text h5 a,.text h5 a:visited,.text h6 a,.text h6 a:visited{color:#333;text-decoration:none}.text p,.text ul,.text ol,.text figure,.text dl,.text hr{margin-top:1.5rem;font-size:1rem}.text q{font-style:italic}.text ul ul{margin-top:0}.text p>code,.text ul>code,.text ol>code,.text dt>code,.text dd>code,.text li>code{color:#004966}.text audio{display:block;width:100%;height:1.5rem;outline:none}.text audio span{line-height:1.5rem}.text dl{overflow:auto;position:relative}.text dt{font-weight:700}.text dd{padding-left:2rem}.text dd+dt{margin-top:1.5rem}.text ul{list-style-type:disc;padding-left:1.5rem}.text ol{list-style-type:decimal;padding-left:1.5rem}.text p{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.text h1{font-size:2.5rem;font-weight:400;line-height:3rem;margin-top:1.5rem;margin-bottom:0}@media screen and (min-width:760px){.text h1{font-size:3.5rem;line-height:4.5rem;margin-top:1.5rem}}@media screen and (min-width:900px){.text h1{font-size:4rem;line-height:4.5rem;margin-top:3rem}}@media screen and (min-width:1400px){.text h1{font-size:5rem;line-height:6rem;margin-top:6rem}}.text h2{font-size:2rem;line-height:3rem;margin-top:3rem;margin-bottom:3rem}.text h3{font-size:1.5rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h4{font-size:1rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h5{font-size:.8rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h6{font-size:.6rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text strong{font-weight:700}.text em{font-style:italic}.text code{font-family:lucida console,Monaco,monospace;speak:literal-punctuation}.text abbr,.text acronym{speak:spell-out}.text del{text-decoration:line-through}.text ins{text-decoration:none;font-style:italic}.text figure{position:relative;text-align:center}.text figure img{background:#fff;border-radius:.2rem;max-width:100%}.text figure table{min-width:75%;border-radius:.2rem;margin-left:auto;margin-right:auto;border:#004966;border-collapse:separate;border-spacing:0;background:#fff;margin-bottom:-.1em}.text figure table th,.text figure table td{padding-left:.75rem;padding-right:.75rem;line-height:1.3rem;border-left:.1rem solid #004966;border-top:.1rem solid #004966}.text figure table thead{background-color:#fff}.text figure table tr td:last-child,.text figure table tr th:last-child{border-right:.1rem solid #004966}.text figure table tbody:last-child tr:last-child td{border-bottom:.1rem solid #004966}.text figure table thead:first-child tr:first-child th:first-child,.text figure table thead:first-child tr:first-child td:first-child{border-top-left-radius:.2rem}.text figure table thead:first-child tr:first-child,.text figure table thead:first-child tr:first-child th:last-child,.text figure table thead:first-child tr:first-child td:last-child{border-top-right-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:first-child{border-bottom-left-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:last-child{border-bottom-right-radius:.2rem}.text figure ul{text-align:left}.text figure ul.tree{padding-top:1.5em;padding-bottom:1.5em;border-radius:.2rem;background:#fff}.text figure ul.tree li{list-style-type:none}.text figure ul.tree .tree__item--folder::before{content:"📁";margin-right:.2em}.text figure ul.tree .tree__item--file::before{content:"📝";margin-right:.2em}.text figure figcaption{font-style:italic}.text pre{margin-top:1.5rem;font-size:inherit;line-height:1.5rem;padding:1.5rem 1.5rem .75rem;white-space:pre;overflow-x:scroll;overflow-y:hidden;scrollbar-color:#cccccc transparent;scrollbar-width:.75rem}.text pre::-webkit-scrollbar{margin-top:-.75rem;height:.75rem}.text pre::-webkit-scrollbar-track{background:0 0}.text pre::-webkit-scrollbar-thumb{height:.1rem;border-radius:.2rem;background:#ccc}.text hr{border:0;height:.2rem;background:#004966;margin-top:1.3rem}.text .admonition{position:relative}.text .admonition>*{padding-left:2rem}.text .admonition>:first-child::before{display:block;text-align:left;position:absolute;top:0;left:0;width:.75rem;font-size:1rem;line-height:1.5rem;height:1.5rem}.text .admonition--tip>:first-child::before{content:"☛";color:#fefefe;font-size:1.5rem;line-height:1.5rem;height:1.5rem}.text .admonition--warning>:first-child::before{content:"⚠️";color:#fefefe}.text .admonition--info>:first-child::before{content:"ⓘ";color:#004966;font-weight:700}@media print{.text h1{margin-left:auto;margin-right:auto;margin-top:9rem;width:80%;font-variant:small-caps;text-align:center}.text--simple h1{margin-top:0}.text .meta{page-break-after:always;text-align:center;font-size:1.2rem;margin-top:1.5rem}.text .meta a{text-decoration:none}.text .meta time{display:none}.text .body p:first-of-type{margin-top:0}.text pre{padding:0;font-size:inherit;line-height:1.5rem;overflow:hidden;white-space:pre-wrap;word-break:break-all}}.text .podcasts{margin-top:1.5rem;text-align:center}.text a.podcast{display:block;height:3rem}.text a.podcast img{width:50%;max-width:200px}@media screen and (min-width:768px){.text .podcasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:1.5rem}.text a.podcast img{width:100%}}.text .tombstone{opacity:0}html,body{min-height:100vh}body{text-align:center}@media screen{body{color:#333;background-color:#fefefe}}@media print{body{color:#000;background:#fff}}@media screen{body{display:flex;flex-direction:column}main.page{width:100%;flex:1}}header.page,main.page,footer.page{text-align:left}.page-main,.contentblock{max-width:1400px;padding-left:1.5rem;padding-right:1.5rem;margin-left:auto;margin-right:auto}@media print{.page-main,.contentblock{padding:0}}@page{size:A4;padding:0;margin:3rem}.highlight{color:#004966}.nobr{white-space:nowrap}.aria-only{display:none}@media aural{.aria-only{display:block}}.edit-on-github{font-size:.8rem;text-align:right;padding-top:1.5rem}.edit-on-github .container{max-width:1400px;padding-left:1.5rem;padding-right:1.5rem;margin-left:auto;margin-right:auto}@media print{.edit-on-github .container{padding:0}}.edit-on-github a{background-color:#fe7f2d;color:#fefefe;text-decoration:none;display:inline-block;border-top-left-radius:.5rem;border-top-right-radius:.5rem;padding-left:.5rem;padding-right:.5rem;transition:.2s background-color ease-in-out}.edit-on-github a:hover{color:#fefefe;background-color:#004966}html,body{font-family:Arial,sans-serif;scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-font-smoothing:antialiased;line-height:1.5rem;font-feature-settings:"liga" 1;font-weight:400;font-size:18px}@media(min-width:900px){html,body{font-size:20px}}@media(min-width:1100px){html,body{font-size:22px}}@media(min-width:1800px){html,body{font-size:24px}}@media print{html,body{font-size:18px}}hr{border:0;height:2px;background-color:#fe7f2d;margin-top:1.5rem;margin-bottom:1.5rem}.text{position:relative}.text .meta{font-variant:small-caps}.text .meta .byline{display:none}.text .meta .line{display:inline-block}.text .meta .calendar{display:none}.text h1,.text h2,.text h3,.text h4,.text h5,.text h6{font-family:Georgia,palatino linotype,book antiqua,Palatino,times new roman,serif;font-weight:400;page-break-after:avoid}.text h1 a,.text h1 a:visited,.text h2 a,.text h2 a:visited,.text h3 a,.text h3 a:visited,.text h4 a,.text h4 a:visited,.text h5 a,.text h5 a:visited,.text h6 a,.text h6 a:visited{color:#333;text-decoration:none}.text p,.text ul,.text ol,.text figure,.text dl,.text hr{margin-top:1.5rem;font-size:1rem}.text q{font-style:italic}.text ul ul{margin-top:0}.text p>code,.text ul>code,.text ol>code,.text dt>code,.text dd>code,.text li>code{color:#004966}.text audio{display:block;width:100%;height:1.5rem;outline:none}.text audio span{line-height:1.5rem}.text dl{overflow:auto;position:relative}.text dt{font-weight:700}.text dd{padding-left:2rem}.text dd+dt{margin-top:1.5rem}.text ul{list-style-type:disc;padding-left:1.5rem}.text ol{list-style-type:decimal;padding-left:1.5rem}.text p{overflow-wrap:break-word;word-wrap:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.text h1{font-size:2.5rem;font-weight:400;line-height:3rem;margin-top:1.5rem;margin-bottom:0}@media screen and (min-width:760px){.text h1{font-size:3.5rem;line-height:4.5rem;margin-top:1.5rem}}@media screen and (min-width:900px){.text h1{font-size:4rem;line-height:4.5rem;margin-top:3rem}}@media screen and (min-width:1400px){.text h1{font-size:5rem;line-height:6rem;margin-top:6rem}}.text h2{font-size:2rem;line-height:3rem;margin-top:3rem;margin-bottom:3rem}.text h3{font-size:1.5rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h4{font-size:1rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h5{font-size:.8rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text h6{font-size:.6rem;line-height:1.5rem;margin-top:1.5rem;margin-bottom:1.5rem}.text strong{font-weight:700}.text em{font-style:italic}.text code{font-family:lucida console,Monaco,monospace;speak:literal-punctuation}.text abbr,.text acronym{speak:spell-out}.text del{text-decoration:line-through}.text ins{text-decoration:none;font-style:italic}.text figure{position:relative;text-align:center}.text figure img{background:#fff;border-radius:.2rem;max-width:100%}.text figure table{min-width:75%;border-radius:.2rem;margin-left:auto;margin-right:auto;border:#004966;border-collapse:separate;border-spacing:0;background:#fff;margin-bottom:-.1em}.text figure table th,.text figure table td{padding-left:.75rem;padding-right:.75rem;line-height:1.3rem;border-left:.1rem solid #004966;border-top:.1rem solid #004966}.text figure table thead{background-color:#fff}.text figure table tr td:last-child,.text figure table tr th:last-child{border-right:.1rem solid #004966}.text figure table tbody:last-child tr:last-child td{border-bottom:.1rem solid #004966}.text figure table thead:first-child tr:first-child th:first-child,.text figure table thead:first-child tr:first-child td:first-child{border-top-left-radius:.2rem}.text figure table thead:first-child tr:first-child,.text figure table thead:first-child tr:first-child th:last-child,.text figure table thead:first-child tr:first-child td:last-child{border-top-right-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:first-child{border-bottom-left-radius:.2rem}.text figure table tbody:last-child tr:last-child,.text figure table tbody:last-child tr:last-child td:last-child{border-bottom-right-radius:.2rem}.text figure ul{text-align:left}.text figure ul.tree{padding-top:1.5em;padding-bottom:1.5em;border-radius:.2rem;background:#fff}.text figure ul.tree li{list-style-type:none}.text figure ul.tree .tree__item--folder::before{content:"📁";margin-right:.2em}.text figure ul.tree .tree__item--file::before{content:"📝";margin-right:.2em}.text figure figcaption{font-style:italic}.text pre{margin-top:1.5rem;font-size:inherit;line-height:1.5rem;padding:1.5rem 1.5rem .75rem;white-space:pre;overflow-x:scroll;overflow-y:hidden;scrollbar-color:#cccccc transparent;scrollbar-width:.75rem}.text pre::-webkit-scrollbar{margin-top:-.75rem;height:.75rem}.text pre::-webkit-scrollbar-track{background:0 0}.text pre::-webkit-scrollbar-thumb{height:.1rem;border-radius:.2rem;background:#ccc}.text hr{border:0;height:.2rem;background:#004966;margin-top:1.3rem}.text .admonition{position:relative}.text .admonition>*{padding-left:2rem}.text .admonition>:first-child::before{display:block;text-align:left;position:absolute;top:0;left:0;width:.75rem;font-size:1rem;line-height:1.5rem;height:1.5rem}.text .admonition--tip>:first-child::before{content:"☛";color:#fefefe;font-size:1.5rem;line-height:1.5rem;height:1.5rem}.text .admonition--warning>:first-child::before{content:"⚠️";color:#fefefe}.text .admonition--info>:first-child::before{content:"ⓘ";color:#004966;font-weight:700}@media print{.text h1{margin-left:auto;margin-right:auto;margin-top:9rem;width:80%;font-variant:small-caps;text-align:center}.text--simple h1{margin-top:0}.text .meta{page-break-after:always;text-align:center;font-size:1.2rem;margin-top:1.5rem}.text .meta a{text-decoration:none}.text .meta time{display:none}.text .body p:first-of-type{margin-top:0}.text pre{padding:0;font-size:inherit;line-height:1.5rem;overflow:hidden;white-space:pre-wrap;word-break:break-all}}.text .podcasts{margin-top:1.5rem;text-align:center}.text a.podcast{display:block;height:3rem}.text a.podcast img{width:50%;max-width:200px}@media screen and (min-width:768px){.text .podcasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-gap:1.5rem}.text a.podcast img{width:100%}}.text .tombstone{opacity:0}.text .chroma{font-size:.8rem;border-radius:.2rem}.text .chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.text .chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.text .chroma .hl{display:block;width:100%}.text .chroma .lnt{margin-right:.4em;padding:0 .4em}.text .chroma{color:#272822}@media screen{.text .chroma{background-color:#fafafa}}.text .chroma .err{color:#960050}.text .chroma .hl{background-color:#ffc}.text .chroma .lnt{margin-right:.4em;padding:0 .4em;color:#7f7f7f}.text .chroma .ln{color:#7f7f7f}.text .chroma .k{color:#00a8c8}.text .chroma .kc{color:#00a8c8}.text .chroma .kd{color:#00a8c8}.text .chroma .kn{color:#f92672}.text .chroma .kp{color:#00a8c8}.text .chroma .kr{color:#00a8c8}.text .chroma .kt{color:#00a8c8}.text .chroma .n{color:#111}.text .chroma .na{color:#75af00}.text .chroma .nb{color:#111}.text .chroma .bp{color:#111}.text .chroma .nc{color:#75af00}.text .chroma .no{color:#00a8c8}.text .chroma .nd{color:#75af00}.text .chroma .ni{color:#111}.text .chroma .ne{color:#75af00}.text .chroma .nf{color:#75af00}.text .chroma .fm{color:#111}.text .chroma .nl{color:#111}.text .chroma .nn{color:#111}.text .chroma .nx{color:#75af00}.text .chroma .py{color:#111}.text .chroma .nt{color:#f92672}.text .chroma .nv{color:#111}.text .chroma .vc{color:#111}.text .chroma .vg{color:#111}.text .chroma .vi{color:#111}.text .chroma .vm{color:#111}.text .chroma .l{color:#ae81ff}.text .chroma .ld{color:#d88200}.text .chroma .s{color:#d88200}.text .chroma .sa{color:#d88200}.text .chroma .sb{color:#d88200}.text .chroma .sc{color:#d88200}.text .chroma .dl{color:#d88200}.text .chroma .sd{color:#d88200}.text .chroma .s2{color:#d88200}.text .chroma .se{color:#8045ff}.text .chroma .sh{color:#d88200}.text .chroma .si{color:#d88200}.text .chroma .sx{color:#d88200}.text .chroma .sr{color:#d88200}.text .chroma .s1{color:#d88200}.text .chroma .ss{color:#d88200}.text .chroma .m{color:#ae81ff}.text .chroma .mb{color:#ae81ff}.text .chroma .mf{color:#ae81ff}.text .chroma .mh{color:#ae81ff}.text .chroma .mi{color:#ae81ff}.text .chroma .il{color:#ae81ff}.text .chroma .mo{color:#ae81ff}.text .chroma .o{color:#f92672}.text .chroma .ow{color:#f92672}.text .chroma .p{color:#111}.text .chroma .c{color:#75715e}.text .chroma .ch{color:#75715e}.text .chroma .cm{color:#75715e}.text .chroma .c1{color:#75715e}.text .chroma .cs{color:#75715e}.text .chroma .cp{color:#75715e}.text .chroma .cpf{color:#75715e}.text .chroma .ge{font-style:italic}.text .chroma .gs{font-weight:700}.bios__bio{overflow-y:visible;margin-top:1.5rem;border-top:2px solid #fefefe;padding-top:1.5rem;margin-bottom:1.5rem;position:relative;display:flex;flex-direction:row-reverse}.bios__bio h2{line-height:3rem;margin-bottom:1.5rem;margin-top:0}.bios__bio img{margin-left:1.5rem;border-radius:50%;height:10.5rem;width:10.5rem}.bios__content{flex:1}@media screen and (max-width:768px){.bios__bio{display:block;position:relative;text-align:center}.bios__content{flex:none;text-align:left}.bios h2{text-align:center}.bios h2 span{display:block}}</style><meta name=color-scheme content="dark light"></head><body><header><div class=page-header><div class=logo><a href=/><img src="data:image/svg+xml,%3Csvg baseProfile=%22tiny%22 id=%22Capa_1%22 xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 650 210%22%3E%3Cg%3E%3Cg%3E%3Ccircle fill=%22%23fff%22 cx=%22100.91%22 cy=%22104.98%22 r=%2268.91%22/%3E%3Cg%3E%3Cpath fill=%22%23bf181a%22 d=%22M100.91 36.12C62.85 36.12 32 66.97 32 105.03c0 23.47 11.74 44.18 29.66 56.63v-56.63c0-21.68 17.57-39.25 39.25-39.25s39.25 17.57 39.25 39.25-17.57 39.25-39.25 39.25c-8.76.0-16.82-2.91-23.35-7.76v33.35c7.29 2.63 15.15 4.07 23.35 4.07 38.06.0 68.91-30.85 68.91-68.91s-30.86-68.91-68.91-68.91z%22/%3E%3Ccircle fill=%22%23efc700%22 cx=%22100.91%22 cy=%22105.03%22 r=%2222.96%22/%3E%3Cpath fill=%22%23e6b600%22 d=%22M100.91 84.32c12.3.0 22.31 9.68 22.9 21.83.02-.38.06-.75.06-1.13.0-12.68-10.28-22.96-22.96-22.96s-22.96 10.28-22.96 22.96c0 .38.04.75.06 1.13C78.6 94 88.61 84.32 100.91 84.32z%22/%3E%3C/g%3E%3C/g%3E%3Cpath fill=%22%233c3c3c%22 d=%22M213.3 128.11V81.98h19.29c10.51.0 17.3 6.16 17.3 15.7.0 9.39-7.11 15.95-17.3 15.95h-9.02v14.47H213.3zm18.71-23.13c4.84.0 7.61-2.66 7.61-7.29.0-4.54-2.7-7.04-7.61-7.04h-8.45v14.33H232.01z%22/%3E%3Cpolygon fill=%22%233c3c3c%22 points=%22272.12,128.11 272.12,81.98 304.8,81.98 304.8,90.71 282.39,90.71 282.39,100.36 302.88,100.36 302.88,109.15 282.39,109.15 282.39,119.38 304.87,119.38 304.87,128.11%22/%3E%3Cpath fill=%22%233c3c3c%22 d=%22M354.71 128.11l-8.2-14.35h-8.39v14.35h-10.26V81.98h20.89c10.24.0 16.85 6.24 16.85 15.89.0 6.29-3.19 11.52-8.56 14.12l9.56 16.11H354.71zM347.66 105.23c4.81.0 7.68-2.77 7.68-7.42.0-4.59-2.8-7.23-7.68-7.23h-9.53v14.65H347.66z%22/%3E%3Cpath fill=%22%233c3c3c%22 d=%22M470.47 129.01c-12.53.0-20.63-8.12-20.63-20.69v-6.53c0-12.57 8.1-20.69 20.63-20.69 12.72.0 20.63 7.93 20.63 20.69v6.53C491.1 121.08 483.19 129.01 470.47 129.01zm0-39.2c-6.59.0-10.37 4.2-10.37 11.52v7.43c0 7.32 3.78 11.52 10.37 11.52 6.59.0 10.36-4.2 10.36-11.52v-7.43C480.83 94.01 477.06 89.81 470.47 89.81z%22/%3E%3Cpolygon fill=%22%233c3c3c%22 points=%22543.01,128.11 524.48,99.79 524.48,128.11 514.41,128.11 514.41,81.98 523.93,81.98 542.46,110.3 542.46,81.98 552.53,81.98 552.53,128.11%22/%3E%3Cpath fill=%22%233c3c3c%22 d=%22M607.7 128.11l-3.01-9.41h-16.47l-3.01 9.41h-10.29l16.54-46.13h10.01L618 128.11H607.7zM601.98 110.29l-5.52-17.45-5.58 17.45h11.1z%22/%3E%3Cg%3E%3Cpath fill=%22%233c3c3c%22 d=%22M418.62 111.85c-.77 5.33-4.37 8.5-9.73 8.5-8.74.0-10.05-7.3-10.05-11.65v-7.3c0-4.35 1.31-11.65 10.05-11.65 5.35.0 8.95 3.15 9.73 8.45l9.52-1.42c-1.28-9.33-8.95-15.7-19.24-15.7-12.68.0-20.24 7.76-20.24 20.76v6.4c0 13 7.57 20.76 20.24 20.76 10.3.0 17.98-6.39 19.25-15.74L418.62 111.85z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E" alt=Percona></a></div><input type=checkbox id=show-mobile-menu value=1 aria-hidden=true><div class=mobile-toggle aria-controls=mobile-menu aria-label="Open navigation" role=button><label for=show-mobile-menu id=hamburger><span class=hamburger-bar></span><span class=hamburger-bar></span><span class=hamburger-bar></span></label></div><div class=mobile-menu id=mobile-menu aria-labelledby=navigation-header role=dialog aria-modal=false aria-hidden=true><nav><ul><li><a href=/blog><span>Blog</span></a></li><li><a href=/resources><span>Resources</span></a></li><li><a href=/projects><span>Projects</span></a></li><li><a href=/contribute><span>Contribute</span></a></li></ul></nav></div></div></header><main class=page><div class=page-main><article class=text itemscope itemtype=https://schema.org/BlogPosting><meta itemprop=image content="https://percona.community/blog/2020/10/image5.png"><meta itemprop=mainEntityOfPage content="https://percona.community/blog/2020/10/30/how-to-build-a-high-performance-application-on-tarantool-from-scratch/"><meta itemprop=keywords content="author_anderson, Advanced Level, Code, DevOps, Lua, Open Source Databases, Programming, Tarantool, Tools"><h1 itemprop="name headline">How to build a high-performance application on Tarantool from scratch</h1><div class=meta><time datetime="2020-10-30 14:44:18 +0000 UTC" itemprop=datePublished><span class=line>October 30, 2020</span>
+<span class=calendar><span class=day>30</span>
+<span class=month-year>Oct 2020</span></span></time>
+<span class=authors>by <a href=/authors/mons_anderson/>Mons Anderson</a></span></div><div itemprop=articleBody class=body><p><figure><img src=/blog/2020/10/image1.jpg alt="tarantool start"></figure></p><p>I came to Mail.ru Group in 2013, and I required a queue for one task. First of all, I decided to check what the company had already got. They told me they had this Tarantool product, and I checked how it worked and decided that adding a queue broker to it could work perfectly well. I contacted Kostja Osipov, the senior expert in Tarantool, and the next day he gave me a 250-string <a href=https://github.com/mailru/tntlua/commit/f879dfb6981dc82287b7243074ca6cc9c6038369 target=_blank rel="noopener noreferrer">script</a> that was capable of managing almost everything I needed. Since that moment, I have been in love with Tarantool. It turned out that a small amount of code written with a quite simple script language was capable of ensuring some totally new performance for this DBMS. Today, I’m going to tell you how to instantiate your own queue in Tarantool 2.2. At that moment, I enjoyed a simple and fast queue broker Beanstalkd. It offered a user-friendly interface, task status tracking by connection (client’s disconnection returned the task into the queue), as well as practical opportunities for dealing with delayed tasks. I wanted to make something like that. Here is how the service works: there is a queue broker that accepts and stores tasks; there are clients: producers sending tasks (put method); and consumers taking tasks up (take method).<figure><img src=/blog/2020/10/image3-1.png alt="tarantool 1"></figure>This is how one task’s lifecycle looks like. The task is sent with the put method and then goes to the ready state. The take operation changes the task’s status to taken. The taken task can be acknowledged (ack) and removed or changed back to ready (release-d).<figure><img src=/blog/2020/10/image2-1.png alt="tarantool 2"></figure>Procession of delayed tasks can be added:<figure><img src=/blog/2020/10/image5.png alt="tarantool 3"></figure></p><h2 id=neighborhood-setup><strong>Neighborhood setup</strong></h2><p>Today, Tarantool is also a LuaJIT interpreter. To start working with it, an entry point is required – an initial file init.lua. After that a box.cfg()shall be called – it starts the DBMS internals. For local development, you only have to connect and start the console. Then create and run a file as follows:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>require&#39;strict&#39;.on()
+box.cfg{}
+
+require&#39;console&#39;.start()
+os.exit()
+</code></pre></div><p>The console is interactive and can be instantly put to use. There is no need to install and/or set up multiple tools and learn to use them. It only takes to write 10 to 15 strings of code on any local machine. Another advice from me is to use the strict mode. Lua language is quite easy on the variable declaration, and this mode to a certain extent will help you with error management. If you build Tarantool on your own in the DEBUG mode, the strict mode will be on by default. Let’s run our file with Tarantool:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool init.lua
+</code></pre></div><p>You’ll see something like:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>2020-07-09 20:00:11.344 [30043] main/102/init.lua C&gt; Tarantool 2.2.3-1-g98ecc909a
+2020-07-09 20:00:11.345 [30043] main/102/init.lua C&gt; log level 5
+2020-07-09 20:00:11.346 [30043] main/102/init.lua I&gt; mapping 268435456 bytes for memtx tuple arena...
+2020-07-09 20:00:11.347 [30043] main/102/init.lua I&gt; mapping 134217728 bytes for vinyl tuple arena...
+2020-07-09 20:00:11.370 [30043] main/102/init.lua I&gt; instance uuid 38c59892-263e-42de-875c-8f67539191a3
+2020-07-09 20:00:11.371 [30043] main/102/init.lua I&gt; initializing an empty data directory
+2020-07-09 20:00:11.408 [30043] main/102/init.lua I&gt; assigned id 1 to replica 38c59892-263e-42de-875c-8f67539191a3
+2020-07-09 20:00:11.408 [30043] main/102/init.lua I&gt; cluster uuid 7723bdf4-24e8-4957-bd6c-6ab502a1911c
+2020-07-09 20:00:11.425 [30043] snapshot/101/main I&gt; saving snapshot `./00000000000000000000.snap.inprogress&#39;
+2020-07-09 20:00:11.437 [30043] snapshot/101/main I&gt; done
+2020-07-09 20:00:11.439 [30043] main/102/init.lua I&gt; ready to accept requests
+2020-07-09 20:00:11.439 [30043] main/104/checkpoint_daemon I&gt; scheduled next checkpoint for Thu Jul  9 21:11:59 2020
+tarantool&gt;
+</code></pre></div><h2 id=writing-a-queue><strong>Writing a queue</strong></h2><p>Let’s create a file queue.lua to write our app. We can add all of it right to init.lua, but working with an independent file is handier. Now, connect the queue as a module from the init.lua file:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>require&#39;strict&#39;.on()
+
+box.cfg{}
+
+queue = require &#39;queue&#39;
+
+require&#39;console&#39;.start()
+os.exit()
+
+</code></pre></div><p>All the following modifications will be made in queue.lua. As we’re making a queue, we need a place to store the task data. Let’s create a space – a data table. It can be made optionless, but we’re going to add something at once. For regular restart we have to indicate that a space shall be created only in case it doesn’t exist (if_not_exists). Another thing – in Tarantool, you can indicate the field format with content description (and it is a good idea to do so). I’m going to take a very simple structure for the queue. I’ll need only task id-s, their statuses, and some random data. Data can’t be used with a primary index, so we create an index in accordance with id. Make sure the field type of the format and the index match.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.schema.create_space(&#39;queue&#39;,{ if_not_exists = true; })
+
+box.space.queue:format( {
+    { name = &#39;id&#39;;     type = &#39;number&#39; },
+    { name = &#39;status&#39;; type = &#39;string&#39; },
+    { name = &#39;data&#39;;   type = &#39;*&#39;      },
+} );
+
+box.space.queue:create_index(&#39;primary&#39;, {
+   parts = { 1,&#39;number&#39; };
+   if_not_exists = true;
+})
+
+</code></pre></div><p>Then, we make a global queue table that will contain our functions, attributes, and methods. First of all, we bring out two functions: putting a task (put) and taking a task (take). The queue will show states of the tasks. For status indication, we’ll make another table. Numbers or strings can be used as values, but I like one-symbol references – they can be semantically relevant, and they take little place to be stored. First of all, we create two statuses: R=READY and T=TAKEN.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local queue = {}
+
+local STATUS = {}
+STATUS.READY = &#39;R&#39;
+STATUS.TAKEN = &#39;T&#39;
+
+function queue.put(...)
+
+end
+
+function queue.take(...)
+
+end
+
+return queue
+
+</code></pre></div><p>How do we make put? Easy as pie. We need to generate an id and insert the data to a space with the READY status. There are many ways to generate an indicator, but we’ll take clock.realtime. It can automatically determine the message queue. However, remember that the clock is likely to readjust, causing a wrong message order. Another thing is that a task with the same value can appear in the queue. You can check if there is a task with the same id, and in case of collision you just one unit. This takes microseconds, and this situation is highly unlikely, so efficiency won’t be affected. All the arguments of the function shall be added to our task:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local clock = require &#39;clock&#39;
+function gen_id()
+    local new_id
+    repeat
+        new_id = clock.realtime64()
+    until not box.space.queue:get(new_id)
+    return new_id
+end
+
+function queue.put(...)
+    local id = gen_id()
+    return box.space.queue:insert{ id, STATUS.READY, { ... } }
+end
+
+</code></pre></div><p>After we’ve written the put function, we can restart Tarantool and call this function instantly. The task will be added to the queue, now looking like a tuple. We can add random data and even nested structures to it. Tuples that Tarantool uses to store data are packed into the MessagePack, which facilitates storing of these structures.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; queue.put(&#34;hello&#34;)
+---
+- [1594325382148311477, &#39;R&#39;, [&#39;hello&#39;]]
+...
+
+tarantool&gt; queue.put(&#34;my&#34;,&#34;data&#34;,1,2,3)
+---
+- [1594325394527830491, &#39;R&#39;, [&#39;my&#39;, &#39;data&#39;, 1, 2, 3]]
+...
+
+tarantool&gt; queue.put({ complex = { struct = &#34;data&#34; }})
+---
+- [1594325413166109943, &#39;R&#39;, [{&#39;complex&#39;: {&#39;struct&#39;: &#39;data&#39;}}]]
+...
+
+</code></pre></div><p>Everything we put remains within the space. We can take space commands to see what we have there:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; box.space.queue:select()
+---
+- - [1594325382148311477, &#39;R&#39;, [&#39;hello&#39;]]
+  - [1594325394527830491, &#39;R&#39;, [&#39;my&#39;, &#39;data&#39;, 1, 2, 3]]
+  - [1594325413166109943, &#39;R&#39;, [{&#39;complex&#39;: {&#39;struct&#39;: &#39;data&#39;}}]]
+...
+
+</code></pre></div><p>Now, we need to learn how to take tasks. For this, we make a take function. We take the tasks that are ready for processing, i. e., the ones with the READY status. We can check the primary key and find the first ready task, but if there’re a lot of tasks to be processed this scenario won’t work. We’ll need a special index using the status field. One of the main differences between Tarantool and the key-value databases is that the former facilitates the creation of diverse indexes, almost like in relational databases: using various fields, composite ones, of different kinds. Then, we create the second index, indicating that the first field shows status. This will be our search option. The second field is id. It will put the tasks with the same status in the ascending order.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.space.queue:create_index(&#39;status&#39;, {
+    parts = { 2, &#39;string&#39;, 1, &#39;number&#39; };
+    if_not_exists = true;
+})
+
+</code></pre></div><p>Let’s take predefined functions for our selection. There’s a special iterator that is applied to a space as pairs. We pass a part of the key to it. Here, we have to deal with a composite index, which contains two fields. We use the first one for searching and the second one for putting things in order. We command the system to find the tuples that match the READY status in the first part of their index. And the system will present them put in order in accordance with the second part of the index. If we find anything, we’ll take that task, update it and return it. An update is required to prevent anybody with the same take call taking it. If there are no tasks, we return nil.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.take()
+    local found = box.space.queue.index.status
+        :pairs({STATUS.READY},{ iterator = &#39;EQ&#39; }):nth(1)
+    if found then
+        return box.space.queue
+            :update( {found.id}, {{&#39;=&#39;, 2, STATUS.TAKEN }})
+    end
+    return
+end
+
+</code></pre></div><p>Please, note that the first tuple level in Tarantool is an array. It has no names, but only numbers, and that’s why the field number used to be required at operations like update. Let’s make an auxiliary element – a table, to match the field names and numbers. To compile such a table we can use the format we’ve already written:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local F = {}
+for no,def in pairs(box.space.queue:format()) do
+    F[no] = def.name
+    F[def.name] = no
+end
+
+</code></pre></div><p>For better visibility, we can correct descriptions of indexes like:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.space.queue:format( {
+    { name = &#39;id&#39;;     type = &#39;number&#39; },
+    { name = &#39;status&#39;; type = &#39;string&#39; },
+    { name = &#39;data&#39;;   type = &#39;*&#39;      },
+} );
+
+local F = {}
+for no,def in pairs(box.space.queue:format()) do
+    F[no] = def.name
+    F[def.name] = no
+end
+
+box.space.queue:create_index(&#39;primary&#39;, {
+   parts = { F.id, &#39;number&#39; };
+   if_not_exists = true;
+})
+
+box.space.queue:create_index(&#39;status&#39;, {
+    parts = { F.status, &#39;string&#39;, F.id, &#39;number&#39; };
+    if_not_exists = true;
+})
+</code></pre></div><p>Now we can implement take in whole:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.take(...)
+    for _,t in
+        box.space.queue.index.status
+        :pairs({ STATUS.READY },{ iterator=&#39;EQ&#39; })
+    do
+        return box.space.queue:update({t.id},{
+            { &#39;=&#39;, F.status, STATUS.TAKEN }
+        })
+    end
+    return
+end
+
+</code></pre></div><p>Let’s check how it works. For this, we’ll put one task and call take twice. If by that moment we have any data in the space, we can clear it with the command box.space.queue:truncate():</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; queue.put(&#34;my&#34;,&#34;data&#34;,1,2,3)
+---
+- [1594325927025602515, &#39;R&#39;, [&#39;my&#39;, &#39;data&#39;, 1, 2, 3]]
+...
+
+tarantool&gt; queue.take()
+---
+- [1594325927025602515, &#39;T&#39;, [&#39;my&#39;, &#39;data&#39;, 1, 2, 3]]
+...
+
+tarantool&gt; queue.take()
+---
+...
+
+</code></pre></div><p>The first take will return us the task we’ve put. As soon as we call take for the second time, nil is returned, because there are no more ready-tasks (with R status). To make sure, we run a select command from the space:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; box.space.queue:select()
+---
+- - [1594325927025602515, &#39;T&#39;, [&#39;my&#39;, &#39;data&#39;, 1, 2, 3]]
+...
+
+</code></pre></div><p>The consumer taking the task shall either acknowledge its procession or release it without a procession. In the latter case, somebody else will be able to take the task. For this, two functions are used: ack and release. They receive the task’s id and look for it. If the task’s status shows it’s been taken, we process it. These functions are really similar: one removes processed tasks, and the other returns them with a ready status.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.ack(id)
+    local t = assert(box.space.queue:get{id},&#34;Task not exists&#34;)
+    if t and t.status == STATUS.TAKEN then
+        return box.space.queue:delete{t.id}
+    else
+        error(&#34;Task not taken&#34;)
+    end
+end
+
+function queue.release(id)
+    local t = assert(box.space.queue:get{id},&#34;Task not exists&#34;)
+    if t and t.status == STATUS.TAKEN then
+        return box.space.queue:update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+    else
+        error(&#34;Task not taken&#34;)
+    end
+end
+
+</code></pre></div><p>Let’s see how it works with all four functions. We will put two tasks and take the first of them, then releasing them. It returns to the R status. The second take call takes the same task. If we process it, it will be removed. The third take call will take the second task. The order will be observed. In case the task has been taken, it won’t be available for anybody else.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; queue.put(&#34;task 1&#34;)
+---
+- [1594326185712343931, &#39;R&#39;, [&#39;task 1&#39;]]
+...
+
+tarantool&gt; queue.put(&#34;task 2&#34;)
+---
+- [1594326187061434882, &#39;R&#39;, [&#39;task 2&#39;]]
+...
+
+tarantool&gt; task = queue.take() return task
+---
+- [1594326185712343931, &#39;T&#39;, [&#39;task 1&#39;]]
+...
+
+tarantool&gt; queue.release(task.id)
+---
+- [1594326185712343931, &#39;R&#39;, [&#39;task 1&#39;]]
+...
+
+tarantool&gt; task = queue.take() return task
+---
+- [1594326185712343931, &#39;T&#39;, [&#39;task 1&#39;]]
+...
+
+tarantool&gt; queue.ack(task.id)
+---
+- [1594326185712343931, &#39;T&#39;, [&#39;task 1&#39;]]
+...
+
+tarantool&gt; task = queue.take() return task
+---
+- [1594326187061434882, &#39;T&#39;, [&#39;task 2&#39;]]
+...
+
+tarantool&gt; queue.ack(task.id)
+---
+- [1594326187061434882, &#39;T&#39;, [&#39;task 2&#39;]]
+...
+
+tarantool&gt; task = queue.take() return task
+---
+- null
+...
+
+</code></pre></div><p>This is a properly working queue. We are already capable of writing a consumer to process the tasks. However, there is a problem. When we call take, the function instantly returns either a task or an empty string. If we write a cycle for task procession and start it, it will run unproductively, doing nothing and simply wasting the CPU.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>while true do
+    local task = queue.take()
+    if task then
+        -- ...
+    end
+end
+
+</code></pre></div><p>To fix this, we’ll need a primitive channel. It enables message communication. In fact, it’s a FIFO queue for fiber communication. We have a fiber that puts the tasks when we access the database through the network or via the console. At the fiber, our Lua-code is executed, and it needs some primitive to inform the other fiber awaiting the task that there is a new one available. This is how a channel works: it can contain a buffer with N slots where a message can be located, even if no one is checking the channel. Another option is creating a channel without a buffer: this way, messages will be only acceptable in the slots that somebody waiting for. Let’s say, we create a channel for two buffer elements. It has two slots for put. If one consumer is waiting at the channel, it will create a third slot for put. If we are going to send messages via this channel, three put operations will be enabled without blocking, but the fourth put operation will be blocked by the fiber that sends messages via this channel. This is how an inter-fiber communication is set up. If for any chance you are familiar with channels in Go, they are literally the same there:<figure><img src=/blog/2020/10/image4-1.png alt="tarantool 4"></figure>Let’s slightly modify the take function. First of all, we add a new argument – timeout, implying we’re ready to wait for the task within a set period of time. We make a cycle to search for a ready task. If it can’t be found, the cycle will compute how long it has to wait. Now, let’s make a channel that will wait along with this timeout. While the fiber is pending at the channel (asleep), it can be woken up externally by sending a message via the channel.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local fiber = require &#39;fiber&#39;
+queue._wait = fiber.channel()
+function queue.take(timeout)
+    if not timeout then timeout = 0 end
+    local now = fiber.time()
+    local found
+    while not found do
+        found = box.space.queue.index.status
+            :pairs({STATUS.READY},{ iterator = &#39;EQ&#39; }):nth(1)
+        if not found then
+            local left = (now + timeout) - fiber.time()
+            if left &lt;= 0 then return end
+            queue._wait:get(left)
+        end
+    end
+    return box.space.queue
+        :update( {found.id}, {{&#39;=&#39;, F.status, STATUS.TAKEN }})
+end
+
+</code></pre></div><p>Altogether, take tries to take the task and if this is managed, the task is returned. However, if there is no task, it can be awaited for the rest of the timeout. Besides, the other party that creates the task will be able to wake this fiber up. To make the performance of various tests more convenient, we can globally connect the fiber module in the init.lua file:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>fiber = require &#39;fiber&#39;
+</code></pre></div><p>Let’s see how this works without waking the fiber up. In an independent fiber, we’ll put a task with a 0.1 sec. delay, i. e. at first the queue will be empty, and the task will appear in 0.1 sec. after starting. Upon that, we’ll set up a 3 sec. timeout for the take call. After the start, take will try to find the task, and then if there’s none, it goes to sleep for 3 sec. In 3 sec. it wakes up, searches again, and finds the task.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; do
+    box.space.queue:truncate()
+    fiber.create(function()
+        fiber.sleep(0.1)
+        queue.put(&#34;task 3&#34;)
+    end)
+    local start = fiber.time()
+    return queue.take(3), { wait = fiber.time() - start }
+end
+
+---
+- [1594326905489650533, &#39;T&#39;, [&#39;task 3&#39;]]
+- wait: 3.0017817020416
+...
+
+</code></pre></div><p>Now, let’s make take wake up at the tasks’ appearance. For this, we’ll take our old put function and update it with a message sent via the channel. The message can be literally anything. Let it be true here. Previously, I demonstrated that put can be blocked if the channel lacks place. At the same time, the task producer doesn’t care if there are consumers on the other side. It shouldn’t get blocked while waiting for a consumer. So, it’s a reasonable thing to set up a zero timeout for blocking here. If there are some consumers out there, i. e., the ones who need to be messaged about the new task, we’ll wake them up. Otherwise, we won’t be able to send the message via the channel. An alternative option is to check if the channel has any active readers.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.put(...)
+    local id = gen_id()
+
+    if queue._wait:has_readers() then
+        queue._wait:put(true,0)
+    end
+
+    return box.space.queue:insert{ id, STATUS.READY, { ... } }
+end
+
+</code></pre></div><p>Now the take code is going to work in a totally different way. We create a task in 0.1 sec. and take instantly wakes up and receives it. We’ve got rid of the hot cycle that has been continuously pending, awaiting tasks. If we don’t put a task, the fiber will wait for 3 seconds.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; do
+    box.space.queue:truncate()
+    fiber.create(function()
+        fiber.sleep(0.1)
+        queue.put(&#34;task 4&#34;)
+    end)
+    local start = fiber.time()
+    return queue.take(3), { wait = fiber.time() - start }
+end
+
+---
+- [1594327004302379957, &#39;T&#39;, [&#39;task 4&#39;]]
+- wait: 0.10164666175842
+...
+
+</code></pre></div><p>We’ve tested how things work within the instance, and now let’s try some networking. First of all, let’s create a server. For that, we add the listen option to box.cfg of our init.lua file (it will be a port used for listening). At the same time, we’ll need to give permissions. Right now we’re not going to study privilege setting up in detail, but let’s make every connection have an execution privilege. To read about the rights please check <a href=https://www.tarantool.io/en/doc/latest/book/box/authentication/ target=_blank rel="noopener noreferrer">this</a>.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>require&#39;strict&#39;.on()
+fiber = require &#39;fiber&#39;
+
+box.cfg{
+    listen = &#39;127.0.0.1:3301&#39;
+}
+box.schema.user.grant(&#39;guest&#39;, &#39;super&#39;, nil, nil, { if_not_exists = true })
+
+queue = require &#39;queue&#39;
+
+require&#39;console&#39;.start()
+os.exit()
+
+</code></pre></div><p>Let’s create a producer client for task generation. Tarantool already has a module that facilitates connection to another Tarantool.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>#!/usr/bin/env tarantool
+
+if #arg &lt; 1 then
+    error(&#34;Need arguments&#34;,0)
+end
+
+local netbox = require &#39;net.box&#39;
+local conn = netbox.connect(&#39;127.0.0.1:3301&#39;)
+
+local yaml = require &#39;yaml&#39;
+local res = conn:call(&#39;queue.put&#39;,{unpack(arg)})
+print(yaml.encode(res))
+conn:close()
+
+$ tarantool producer.lua &#34;hi&#34;
+--- [1594327270675788959, &#39;R&#39;, [&#39;hi&#39;]]
+...
+
+</code></pre></div><p>The consumer will connect, call take with a timeout, and process the result. If it receives the task, we’ll print or release it but won’t process it yet. Let’s say, we’ve received the task.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>#!/usr/bin/env tarantool
+
+local netbox = require &#39;net.box&#39;
+local conn = netbox.connect(&#39;127.0.0.1:3301&#39;)
+local yaml = require &#39;yaml&#39;
+
+while true do
+    local task = conn:call(&#39;queue.take&#39;, { 1 })
+
+    if task then
+        print(&#34;Got task: &#34;, yaml.encode(task))
+        conn:call(&#39;queue.release&#39;, { task.id })
+    else
+        print &#34;No more tasks&#34;
+    end
+end
+
+
+</code></pre></div><p>But when we try to release the task, something odd happens:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ tarantool consumer.lua 
+Got task:
+        --- [1594327270675788959, &#39;T&#39;, [&#39;hi&#39;]]
+...
+
+ER_EXACT_MATCH: Invalid key part count in an exact match (expected 1, got 0)
+
+</code></pre></div><p>Let’s delve into this matter. When the consumer will once again attempt to execute the task we’ll see that at the previous start it has taken the task but hasn’t been able to return it. Some error’s occurred, and the tasks got stuck. Such tasks become unavailable for other consumers, and there is nobody to return them to, as the code used to take them has been completed.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ tarantool consumer.lua 
+No more tasks
+No more tasks
+
+```select shows that the tasks have been taken.```
+tarantool&gt; box.space.queue:select()
+---
+- - [1594327004302379957, &#39;T&#39;, [&#39;task 3&#39;]]
+  - [1594327270675788959, &#39;T&#39;, [&#39;hi&#39;]]
+...
+
+</code></pre></div><p>We have several issues at once here. Let’s start with the automatic release of the tasks in case the client disconnects. Tarantool contains triggers for client connection and disconnection. If we add them, we’ll be able to learn about connection and disconnection events.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local log = require &#39;log&#39;
+
+box.session.on_connect(function()
+    log.info( &#34;connected %s from %s&#34;, box.session.id(), box.session.peer() )
+end)
+
+box.session.on_disconnect(function()
+    log.info( &#34;disconnected %s from %s&#34;, box.session.id(), box.session.peer() )
+end)
+
+2020-07-09 20:52:09.107 [32604] main/115/main I&gt; connected 2 from 127.0.0.1:36652
+2020-07-09 20:52:10.260 [32604] main/116/main I&gt; disconnected 2 from nil
+2020-07-09 20:52:10.823 [32604] main/116/main I&gt; connected 3 from 127.0.0.1:36654
+2020-07-09 20:52:11.541 [32604] main/115/main I&gt; disconnected 3 from nil
+
+
+</code></pre></div><p>There is this term, session id, and we can check the IP address used to connect, as well as the time of disconnection. However, calling session.peer()actually calls getpeername(2) right over the socket. That’s why at disconnection we don’t see who’s disconnected (as getpeername is called over a closed socket). Let’s do some minor hacking, then. Tarantool has a box.session.storage — a temporary table, to which anything you wish can be saved during the session lifetime. At connection, we can keep in mind the ones connected to know who’s disconnected. This will make adjustments easier.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.session.on_connect(function()
+    box.session.storage.peer = box.session.peer()
+    log.info( &#34;connected %s from %s&#34;, box.session.id(), box.session.storage.peer )
+end)
+
+box.session.on_disconnect(function()
+    log.info( &#34;disconnected %s from %s&#34;, box.session.id(), box.session.storage.peer )
+end)
+
+</code></pre></div><p>So, we have a client disconnection event. And we need to somehow release the tasks it has taken. Let’s introduce the term “possession of the task.” The session that has taken the task ought to answer for it. Let’s make two tables to save these data and modify the take function:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>queue.taken = {}; -- list of tasks taken
+queue.bysid = {}; -- list of tasks for the specific session
+
+function queue.take(timeout)
+    if not timeout then timeout = 0 end
+    local now = fiber.time()
+    local found
+    while not found do
+        found = box.space.queue.index.status
+            :pairs({STATUS.READY},{ iterator = &#39;EQ&#39; }):nth(1)
+        if not found then
+            local left = (now + timeout) - fiber.time()
+            if left &lt;= 0 then return end
+            queue._wait:get(left)
+        end
+    end
+
+    local sid = box.session.id()
+    log.info(&#34;Register %s by %s&#34;, found.id, sid)
+    queue.taken[ found.id ] = sid
+    queue.bysid[ sid ] = queue.bysid[ sid ] or {}
+    queue.bysid[ sid ][ found.id ] = true
+
+    return box.space.queue
+        :update( {found.id}, {{&#39;=&#39;, F.status, STATUS.TAKEN }})
+end
+
+</code></pre></div><p>We’ll use this table to memorize that a certain task has been taken by a certain session. We’ll also need to modify the task returning code, ack, and release. Let’s make a single common function to check if the task is there and if it has been taken by a specific session. Then, it will be impossible to take the task under one connection and then return under another one requesting its deletion due to its procession completion.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local function get_task( id )
+    if not id then error(&#34;Task id required&#34;, 2) end
+    local t = box.space.queue:get{id}
+    if not t then
+        error(string.format( &#34;Task {%s} was not found&#34;, id ), 2)
+    end
+    if not queue.taken[id] then
+        error(string.format( &#34;Task %s not taken by anybody&#34;, id ), 2)
+    end
+    if queue.taken[id] ~= box.session.id() then
+        error(string.format( &#34;Task %s taken by %d. Not you (%d)&#34;,
+            id, queue.taken[id], box.session.id() ), 2)
+    end
+    return t
+end
+
+</code></pre></div><p>Now ack and release functions become very simple. We use them to call get_task, which checks if the task is possessed by us and if it is taken. Then we can work with it.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.ack(id)
+    local t = get_task(id)
+    queue.taken[ t.id ] = nil
+    queue.bysid[ box.session.id() ][ t.id ] = nil
+    return box.space.queue:delete{t.id}
+end
+
+function queue.release(id)
+    local t = get_task(id)
+    if queue._wait:has_readers() then queue._wait:put(true,0) end
+    queue.taken[ t.id ] = nil
+    queue.bysid[ box.session.id() ][ t.id ] = nil
+    return box.space.queue
+        :update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+end
+
+</code></pre></div><p>To reset statuses of all the tasks to R SQL or Lua snippet can be used:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.execute[[ update &#34;queue&#34; set &#34;status&#34; = &#39;R&#39; where &#34;status&#34; = &#39;T&#39; ]]
+box.space.queue.index.status:pairs({&#39;T&#39;}):each(function(t) 
+box.space.queue:update({t.id},{{&#39;=&#39;,2,&#39;R&#39;}}) end)
+
+</code></pre></div><p>When we call the consumer again, it replies: task ID required.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ tarantool consumer.lua 
+Got task:
+        --- [1594327004302379957, &#39;T&#39;, [&#39;task 3&#39;]]
+...
+
+ER_PROC_LUA: queue.lua:113: Task id required
+
+</code></pre></div><p>Thus, we’ve found the first problem in our code. When we work in Tarantool, a tuple is always associated with the space. The latter has a format, and the format has field names. That’s why we can use field names in a tuple. When we take it beyond the database, a tuple becomes just an array with a number of fields. If we refine the format of return from the function, we’ll be able to return not tuples, but objects with names. For this, we’ll apply the method :tomap{ names_only = true }:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.put(...)
+    --- ...
+    return box.space.queue
+        :insert{ id, STATUS.READY, { ... } }
+        :tomap{ names_only = true }
+end
+
+function queue.take(timeout)
+    --- ...
+    return box.space.queue
+        :update( {found.id}, {{&#39;=&#39;, F.status, STATUS.TAKEN }})
+        :tomap{ names_only = true }
+end
+
+function queue.ack(id)
+    --- ...
+    return box.space.queue:delete{t.id}:tomap{ names_only = true }
+end
+
+function queue.release(id)
+    --- ...
+    return box.space.queue
+        :update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+        :tomap{ names_only = true }
+end
+
+return queue
+
+</code></pre></div><p>Having replaced it, we’ll encounter another issue.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ tarantool consumer.lua 
+Got task:
+        --- {&#39;status&#39;: &#39;T&#39;, &#39;data&#39;: [&#39;hi&#39;], &#39;id&#39;: 1594327270675788959}
+...
+
+ER_PROC_LUA: queue.lua:117: Task 1594327270675788959ULL not taken by anybody
+
+</code></pre></div><p>If we try to release the task the system will answer that we haven’t taken it. Moreover, we will see the same ID, but with a suffix – ULL. Here we encounter a trick of the LuaJIT extention: FFI (Foreign Function Interface). Let’s delve into this matter. We add five values to the table using various alternatives of numeral 1 designation as the keys.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; t = {}
+tarantool&gt; t[1] = 1
+tarantool&gt; t[&#34;1&#34;] = 2
+tarantool&gt; t[1LL] = 3
+tarantool&gt; t[1ULL] = 4
+tarantool&gt; t[1ULL] = 5
+tarantool&gt; t
+---
+- 1: 1
+  1: 5
+  1: 4
+  &#39;1&#39;: 2
+  1: 3
+...
+
+</code></pre></div><p>We would expect them to be displayed as 2 (string + number) or 3 (string + number + LL). But when displayed, all the keys will appear in the table separately: we will still see all the values – 1, 2, 3, 4, 5. Moreover, at serialization, we won’t see any difference between regular, signed, or unsigned numbers.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantool&gt; return t[1], t[&#39;1&#39;], t[1LL], t[1ULL]
+---
+- 1
+- 2
+- null
+- null
+...
+
+</code></pre></div><p>However, the most amusing thing happens when we try to extract data from the table. It goes well with regular Lua-types (number and string), but it doesn’t with LL (long long) and ULL (unsigned long long). They are a separate type of cdata, intended for working with C language types. When saving into a Lua table, cdata is hashed by address, not by value. Two numbers, no matter if they are the same in value, simply have different addresses. And when we add ULL to the table, we can’t extract them using the same value. That’s why we’ll have to change our queue and key possession a bit. This is a forced move, but it will enable random modification of our keys in the future. Somehow, we need to transform our key into a string or a number. Let’s take the MessagePack. In Tarantool, it’s used to store tuples, and it will pack our values just like Tarantool itself does. With this pack, we’ll transform a random key into a string that will become a key to our table.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local msgpack = require &#39;msgpack&#39;
+
+local function keypack( key )
+    return msgpack.encode( key )
+end
+
+local function keyunpack( data )
+    return msgpack.decode( data )
+end
+
+</code></pre></div><p>Then we add the key package to take and save it into the table. In the function get_task we need to check if the key has passed in a correct format, and if not, we change it to int64. After that, we use keypack to pack the key to the MessagePack. As this packed key will be required by all the functions that use it, we’ll return it from get_task, so that ack and release could use it and clean it out from the sessions.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.take(timeout)
+    if not timeout then timeout = 0 end
+    local now = fiber.time()
+    local found
+    while not found do
+        found = box.space.queue.index.status
+            :pairs({STATUS.READY},{ iterator = &#39;EQ&#39; }):nth(1)
+        if not found then
+            local left = (now + timeout) - fiber.time()
+            if left &lt;= 0 then return end
+            queue._wait:get(left)
+        end
+    end
+
+    local sid = box.session.id()
+    log.info(&#34;Register %s by %s&#34;, found.id, sid)
+    local key = keypack( found.id )
+    queue.taken[ key ] = sid
+    queue.bysid[ sid ] = queue.bysid[ sid ] or {}
+    queue.bysid[ sid ][ key ] = true
+
+    return box.space.queue
+        :update( {found.id}, {{&#39;=&#39;, F.status, STATUS.TAKEN }})
+        :tomap{ names_only = true }
+end
+
+local function get_task( id )
+    if not id then error(&#34;Task id required&#34;, 2) end
+    id = tonumber64(id)
+    local key = keypack(id)
+    local t = box.space.queue:get{id}
+    if not t then
+        error(string.format( &#34;Task {%s} was not found&#34;, id ), 2)
+    end
+    if not queue.taken[key] then
+        error(string.format( &#34;Task %s not taken by anybody&#34;, id ), 2)
+    end
+    if queue.taken[key] ~= box.session.id() then
+        error(string.format( &#34;Task %s taken by %d. Not you (%d)&#34;,
+            id, queue.taken[key], box.session.id() ), 2)
+    end
+    return t, key
+end
+
+function queue.ack(id)
+    local t, key = get_task(id)
+    queue.taken[ key ] = nil
+    queue.bysid[ box.session.id() ][ key ] = nil
+    return box.space.queue:delete{t.id}:tomap{ names_only = true }
+end
+
+function queue.release(id)
+    local t, key = get_task(id)
+    queue.taken[ key ] = nil
+    queue.bysid[ box.session.id() ][ key ] = nil
+    if queue._wait:has_readers() then queue._wait:put(true,0) end
+    return box.space.queue
+        :update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+        :tomap{ names_only = true }
+end
+
+</code></pre></div><p>As we have a disconnection trigger, we know that a certain session has disconnected – the one possessing certain keys. We can take all the keys from that session and automatically return them to their initial state — ready. Besides, this session may contain some tasks awaiting to be take-n. Let’s mark them in the session.storage for the tasks not to be taken.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.session.on_disconnect(function()
+    log.info( &#34;disconnected %s from %s&#34;, box.session.id(), box.session.storage.peer )
+    box.session.storage.destroyed = true
+
+    local sid = box.session.id()
+    local bysid = queue.bysid[ sid ]
+    if bysid then
+        while next(bysid) do
+            for key, id in pairs(bysid) do
+                log.info(&#34;Autorelease %s by disconnect&#34;, id);
+                queue.taken[key] = nil
+                bysid[key] = nil
+                local t = box.space.queue:get(id)
+                if t then
+                    if queue._wait:has_readers() then queue._wait:put(true,0) end
+                    box.space.queue:update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+                end
+            end
+        end
+        queue.bysid[ sid ] = nil
+    end
+end)
+
+function queue.take(timeout)
+    if not timeout then timeout = 0 end
+    local now = fiber.time()
+    local found
+    while not found do
+        found = box.space.queue.index.status
+            :pairs({STATUS.READY},{ iterator = &#39;EQ&#39; }):nth(1)
+        if not found then
+            local left = (now + timeout) - fiber.time()
+            if left &lt;= 0 then return end
+            queue._wait:get(left)
+        end
+    end
+
+    if box.session.storage.destroyed then return end
+
+    local sid = box.session.id()
+    log.info(&#34;Register %s by %s&#34;, found.id, sid)
+    local key = keypack( found.id )
+    queue.taken[ key ] = sid
+    queue.bysid[ sid ] = queue.bysid[ sid ] or {}
+    queue.bysid[ sid ][ key ] = found.id
+
+    return box.space.queue
+        :update( {found.id}, {{&#39;=&#39;, F.status, STATUS.TAKEN }})
+        :tomap{ names_only = true }
+end
+
+</code></pre></div><p>For testing purposes, tasks can be taken as a group:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>tarantoolctl connect 127.0.0.1:3301 &lt;&lt;&lt; &#39;queue.take()&#39;
+
+</code></pre></div><p>At adjustment, you might see that you’ve taken the tasks, thus dropping the queue, but at restart the tasks aren’t possessed by anybody (because all connections were interrupted when you switched off), but they get the taken status. That’s why we’ll update our code with status modification at startup. Thus, the database will be started, releasing all the tasks taken.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>while true do
+    local t = box.space.queue.index.status:pairs({STATUS.TAKEN}):nth(1)
+    if not t then break end
+    box.space.queue:update({ t.id }, {{&#39;=&#39;, F.status, STATUS.READY }})
+    log.info(&#34;Autoreleased %s at start&#34;, t.id)
+end
+
+</code></pre></div><p>Now we have a queue ready for operation.</p><h2 id=adding-delayed-procession><strong>Adding delayed procession</strong></h2><p>Thereat, we only have to add delayed tasks. For that, let’s add a new field and a relevant index. We’re going to use this field to store the time when a certain task’s state should be changed. To this end, we’re modifying the put function and adding a new status: W=WAITING.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.space.queue:format( {
+    { name = &#39;id&#39;;     type = &#39;number&#39; },
+    { name = &#39;status&#39;; type = &#39;string&#39; },
+    { name = &#39;runat&#39;;  type = &#39;number&#39; },
+    { name = &#39;data&#39;;   type = &#39;*&#39;      },
+} )
+
+box.space.queue:create_index(&#39;runat&#39;, {
+    parts = { F.runat, &#39;number&#39;, F.id, &#39;number&#39; };
+    if_not_exists = true;
+})
+
+STATUS.WAITING = &#39;W&#39;
+
+</code></pre></div><p>As we are flip-flopping the pattern, and as this is a development mode, let’s clear the previous pattern (via the console):</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.space.queue.drop()
+box.snapshot()
+
+</code></pre></div><p>Now, let’s restart our queue. Then, we add support of delay in put and release. If delay is passed on, the task’s status shall be changed to WAITING, and we have to define when it is subject to the procession. Another thing we need is a processor. For this, we can use background fibers. At any moment we can create a fiber that isn’t associated with any connections and works in the background. Let’s make a fiber that will work infinitely and await the nearest tasks.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.put(data, opts)
+    local id = gen_id()
+
+    local runat = 0
+    local status = STATUS.READY
+
+    if opts and opts.delay then
+        runat = clock.realtime() + tonumber(opts.delay)
+        status = STATUS.WAITING
+    else
+        if queue._wait:has_readers() then
+            queue._wait:put(true,0)
+        end
+    end
+
+    return box.space.queue
+        :insert{ id, status, runat, data }
+        :tomap{ names_only=true }
+end
+
+function queue.release(id, opts)
+    local t, key = get_task(id)
+    queue.taken[ key ] = nil
+    queue.bysid[ box.session.id() ][ key ] = nil
+
+    local runat = 0
+    local status = STATUS.READY
+
+    if opts and opts.delay then
+        runat = clock.realtime() + tonumber(opts.delay)
+        status = STATUS.WAITING
+    else
+        if queue._wait:has_readers() then queue._wait:put(true,0) end
+    end
+
+    return box.space.queue
+        :update({t.id},{{ &#39;=&#39;, F.status, status },{ &#39;=&#39;, F.runat, runat }})
+        :tomap{ names_only = true }
+end
+
+</code></pre></div><p>If a time comes for some of the tasks, we modify it, changing its status from waiting to ready and also notifying the clients that might be awaiting a task. Now, we put a delayed task. Call take, make sure that there are no ready tasks. Call it again with a timeout, which fits into the task’s appearance. As soon as it appears, we see it’s been done by the fiber queue.runat.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>queue._runat = fiber.create(function()
+    fiber.name(&#39;queue.runat&#39;)
+    while true do
+        local remaining
+
+        local now = clock.realtime()
+        for _,t in box.space.queue.index.runat
+            :pairs( { 0 }, { iterator = &#39;GT&#39; })
+        do
+            if t.runat &gt; now then
+                remaining = t.runat - now
+                break
+            else
+                if t.status == STATUS.WAITING then
+                    log.info(&#34;Runat: W-&gt;R %s&#34;,t.id)
+                    if queue._wait:has_readers() then queue._wait:put(true,0) end
+                    box.space.queue:update({ t.id }, {
+                        {&#39;=&#39;, F.status, STATUS.READY },
+                        {&#39;=&#39;, F.runat, 0 },
+                    })
+                else
+                    log.error(&#34;Runat: bad status %s for %s&#34;, t.status, t.id)
+                    box.space.queue:update({ t.id },{{ &#39;=&#39;, F.runat, 0 }})
+                end
+            end
+        end
+
+        if not remaining or remaining &gt; 1 then remaining = 1 end
+        fiber.sleep(remaining)
+    end
+end)
+
+</code></pre></div><h2 id=monitoring><strong>Monitoring</strong></h2><p>Never forget about monitoring the queue, because it can extend too much or even run out. We can count the number of tasks with every status in the queue and start sending the data to monitoring.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>function queue.stats()
+    return {
+        total   = box.space.queue:len(),
+        ready   = box.space.queue.index.status:count({STATUS.READY}),
+        waiting = box.space.queue.index.status:count({STATUS.WAITING}),
+        taken   = box.space.queue.index.status:count({STATUS.TAKEN}),
+    }    
+end
+
+
+tarantool&gt; queue.stats()
+---
+- ready: 10
+  taken: 2
+  waiting: 5
+  total: 17
+...
+
+tarantool&gt; local clock = require &#39;clock&#39; local s = clock.time() local r = queue.stats() return r, clock.time() - s
+---
+- ready: 10
+  taken: 2
+  waiting: 5
+  total: 17
+- 0.00057339668273926
+...
+
+</code></pre></div><p>Such monitoring will work quite fast as long as there are not too many tasks. The normal state of the queue is empty. But suppose we have a million tasks. Our stats function still shows the correct value but works rather slowly. The issue is caused by the index:count call — this is always a full scan by index. Let’s cash the values of the counters.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>queue._stats = {}
+for k,v in pairs(STATUS) do
+    queue._stats[v] = 0LL
+end
+
+for _,t in box.space.queue:pairs() do
+    queue._stats[ t[F.status] ] = (queue._stats[ t[F.status] ] or 0LL)+1
+end
+
+function queue.stats()
+    return {
+        total   = box.space.queue:len(),
+        ready   = queue._stats[ STATUS.READY ],
+        waiting = queue._stats[ STATUS.WAITING ],
+        taken   = queue._stats[ STATUS.TAKEN ],
+    }
+end
+
+</code></pre></div><p>Now, this function will work very fast regardless of the number of records. We only have to update the counters at any operations. Prior to every operation, we have to reduce one value and increase the other. We also can manually set updates of the functions, but errors and contradictions are possible. Luckily, Tarantool has triggers for spaces that are capable of tracing any changes in the space. You can even manually execute space:update or space:delete – the trigger will take that into account, too. The trigger will account for all the statuses according to the value used in the database. At the restart, we’ll once account for the values of all the counters.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.space.queue:on_replace(function(old,new)
+    if old then
+        queue._stats[ old[ F.status ] ] = queue._stats[ old[ F.status ] ] - 1
+    end
+    if new then
+        queue._stats[ new[ F.status ] ] = queue._stats[ new[ F.status ] ] + 1
+    end
+end)
+
+</code></pre></div><p>There is one more operation that can’t be traced in the space directly but affects its content: space:truncate(). To monitor the clearing of the space a special space trigger can be used — _truncate.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>box.space._truncate:on_replace(function(old,new)
+    if new.id == box.space.queue.id then
+        for k,v in pairs(queue._stats) do
+            queue._stats[k] = 0LL
+        end
+    end
+end)
+
+</code></pre></div><p>After that everything will work accurately and consistently. Statistics can be sent over the network. Tarantool has convenient non-blocking sockets that can be used rather low-level, almost like in C. To demonstrate how it works let send the metrics in a Graphite format using UDP:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local socket = require &#39;socket&#39;
+local errno = require &#39;errno&#39;
+
+local graphite_host = &#39;127.0.0.1&#39;
+local graphite_port = 2003
+
+local ai = socket.getaddrinfo(graphite_host, graphite_port, 1, { type = &#39;SOCK_DGRAM&#39; })
+local addr,port
+for _,info in pairs(ai) do
+   addr,port = info.host,info.port
+   break
+end
+if not addr then error(&#34;Failed to resolve host&#34;) end
+
+queue._monitor = fiber.create(function()
+    fiber.name(&#39;queue.monitor&#39;)
+    fiber.yield()
+    local remote = socket(&#39;AF_INET&#39;, &#39;SOCK_DGRAM&#39;, &#39;udp&#39;)
+    while true do
+        for k,v in pairs(queue.stats()) do
+            local msg = string.format(&#34;queue.stats.%s %s %sn&#34;, k, tonumber(v), math.floor(fiber.time()))
+            local res = remote:sendto(addr, port, msg)
+            if not res then
+                log.error(&#34;Failed to send: %s&#34;, errno.strerror(errno()))
+            end
+        end
+        fiber.sleep(1)
+    end
+end)
+
+</code></pre></div><p>or using TCP:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local socket = require &#39;socket&#39;
+local errno = require &#39;errno&#39;
+
+local graphite_host = &#39;127.0.0.1&#39;
+local graphite_port = 2003
+
+queue._monitor = fiber.create(function()
+    fiber.name(&#39;queue.monitor&#39;)
+    fiber.yield()
+    while true do
+        local remote =  require &#39;socket&#39;.tcp_connect(graphite_host, graphite_port)
+        if not remote then
+            log.error(&#34;Failed to connect to graphite %s&#34;,errno.strerror())
+            fiber.sleep(1)
+        else
+            while true do
+                local data = {}
+                for k,v in pairs(queue.stats()) do
+                    table.insert(data,string.format(&#34;queue.stats.%s %s %sn&#34;,k,tonumber(v),math.floor(fiber.time())))
+                end
+                data = table.concat(data,&#39;&#39;)
+                if not remote:send(data) then
+                    log.error(&#34;%s&#34;,errno.strerror())
+                    break
+                end
+                fiber.sleep(1)
+            end
+        end
+    end
+end)
+
+</code></pre></div><h2 id=hot-code-reloading><strong>Hot code reloading</strong></h2><p>An important feature of the Tarantool platform is hot code reloading. It is rarely required in regular apps, but when you have Gigabytes of data stored in the database and every reload takes time, hot reloading is quite helpful.  When Lua loads some code on require, the content of the file is interpreted, and the returned result is cashed in the system table package.loaded under the module’s name. Subsequent require calls of the same module won’t read the file again but will return its cached value. To make Lua reinterpret and redownload the file you just have to delete the relevant record from package.loaded[&mldr;] and call require again. You need to memorize what the runtime has preloaded because there won’t be files for reloading of inbuilt modules. The simplest code snippet for reload procession looks like:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>require&#39;strict&#39;.on()
+fiber = require &#39;fiber&#39;
+
+box.cfg{
+    listen = &#39;127.0.0.1:3301&#39;
+}
+box.schema.user.grant(&#39;guest&#39;, &#39;super&#39;, nil, nil, { if_not_exists = true })
+
+local not_first_run = rawget(_G,&#39;_NOT_FIRST_RUN&#39;)
+_NOT_FIRST_RUN = true
+if not_first_run then
+   for k,v in pairs(package.loaded) do
+      if not preloaded[k] then
+         package.loaded[k] = nil
+      end
+   end
+else
+   preloaded = {}
+   for k,v in pairs(package.loaded) do
+      preloaded[k] = true
+   end
+end
+
+queue = require &#39;queue&#39;
+
+require&#39;console&#39;.start()
+os.exit()
+
+</code></pre></div><p>As the code reload is a typical and regular task, we already have a set module <a href=https://github.com/moonlibs/package-reload target=_blank rel="noopener noreferrer">package.reload</a>, which we use in most of the apps. It memorizes the file used to download data, the modules that were preloaded, and then provides a convenient call for reload initiation: package.reload().</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>require&#39;strict&#39;.on()
+fiber = require &#39;fiber&#39;
+
+box.cfg{
+    listen = &#39;127.0.0.1:3301&#39;
+}
+box.schema.user.grant(&#39;guest&#39;, &#39;super&#39;, nil, nil, { if_not_exists = true })
+
+require &#39;package.reload&#39;
+
+queue = require &#39;queue&#39;
+
+require&#39;console&#39;.start()
+os.exit()
+
+</code></pre></div><p>To make the code reloadable, you should write it in a slightly different way. Mind that the code can be executed repeatedly. At first, it is executed at the first start, and subsequently, it is executed at reloading. We have to clearly process this situation.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local queue = {}
+local old = rawget(_G,&#39;queue&#39;)
+if old then
+    queue.taken = old.taken
+    queue.bysid = old.bysid
+    queue._triggers = old._triggers
+    queue._stats = old._stats
+    queue._wait = old._wait
+    queue._runch = old._runch
+    queue._runat = old._runat
+else
+    queue.taken = {}
+    queue.bysid = {}
+    queue._triggers = {}
+    queue._stats = {}
+    queue._wait = fiber.channel()
+    queue._runch = fiber.cond()
+    while true do
+        local t = box.space.queue.index.status:pairs({STATUS.TAKEN}):nth(1)
+        if not t then break end
+        box.space.queue:update({ t.id }, {{&#39;=&#39;, F.status, STATUS.READY }})
+        log.info(&#34;Autoreleased %s at start&#34;, t.id)
+    end
+    for k,v in pairs(STATUS) do
+        queue._stats[v] = 0LL
+    end
+    for _,t in box.space.queue:pairs() do
+        queue._stats[ t[F.status] ] = (queue._stats[ t[F.status] ] or 0LL)+1
+    end
+    log.info(&#34;Perform initial stat counts %s&#34;, box.tuple.new{ queue._stats })
+end
+
+</code></pre></div><p>Besides, you need to remember about trigger reloading. If you leave the issue as is, every reload will cause the installation of an additional trigger. However, triggers support an indication of the old function, so the installation of the trigger returns it. That’s why we’ll just save the installation result to a variable and pass it on as an argument. At the first start, there will be no variable, and a new trigger will be installed. However, at subsequent loading, the trigger will be replaced.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>queue._triggers.on_replace = box.space.queue:on_replace(function(old,new)
+    if old then
+        queue._stats[ old[ F.status ] ] = queue._stats[ old[ F.status ] ] - 1
+    end
+    if new then
+        queue._stats[ new[ F.status ] ] = queue._stats[ new[ F.status ] ] + 1
+    end
+end, queue._triggers.on_replace)
+
+queue._triggers.on_truncate = box.space._truncate:on_replace(function(old,new)
+    if new.id == box.space.queue.id then
+        for k,v in pairs(queue._stats) do
+            queue._stats[k] = 0LL
+        end
+    end
+end, queue._triggers.on_truncate)
+
+queue._triggers.on_connect = box.session.on_connect(function()
+    box.session.storage.peer = box.session.peer()
+    log.info( &#34;connected %s from %s&#34;, box.session.id(), box.session.storage.peer )
+end, queue._triggers.on_connect)
+
+queue._triggers.on_disconnect = box.session.on_disconnect(function()
+    log.info( &#34;disconnected %s from %s&#34;, box.session.id(), box.session.storage.peer )
+    box.session.storage.destroyed = true
+
+    local sid = box.session.id()
+    local bysid = queue.bysid[ sid ]
+    if bysid then
+        while next(bysid) do
+            for key, id in pairs(bysid) do
+                log.info(&#34;Autorelease %s by disconnect&#34;, id);
+                queue.taken[key] = nil
+                bysid[key] = nil
+                local t = box.space.queue:get(id)
+                if t then
+                    if queue._wait:has_readers() then queue._wait:put(true,0) end
+                    box.space.queue:update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+                end
+            end
+        end
+        queue.bysid[ sid ] = nil
+    end
+end, queue._triggers.on_disconnect)
+
+</code></pre></div><p>Another essential element at reloading is fibers. A fiber is started in the background, and we don’t control it in any way. It has while &mldr; true written, and it never stops and doesn’t reload on its own. To communicate with it we’ll need a channel or rather a fiber.cond: condition variable. There are several different approaches to fiber reload. For example, the old ones can be deleted with the fiber.kill call, but this is not a very consistent take on the issue, as we may call kill at the wrong time. This is why we usually use the fiber generation attribute: the fiber proceeds working only in the generation it has been created. At code reload, the generation changes and the fiber clearly ends. Moreover, we can prevent the simultaneous operation of several fibers, checking the status of the previous generation fiber.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>queue._runat = fiber.create(function(queue, gen, old_fiber)
+    fiber.name(&#39;queue.runat.&#39;..gen)
+
+    while package.reload.count == gen and old_fiber and old_fiber:status() ~= &#39;dead&#39; do
+        log.info(&#34;Waiting for old to die&#34;)
+        queue._runch:wait(0.1)
+    end
+
+    log.info(&#34;Started...&#34;)
+    while package.reload.count == gen do
+        local remaining
+
+        local now = clock.realtime()
+
+        for _,t in box.space.queue.index.runat
+            :pairs( {0}, { iterator = &#39;GT&#39; })
+        do
+            if t.runat &gt; now then
+                remaining = t.runat - now
+                break
+            else
+                if t.status == STATUS.WAITING then
+                    log.info(&#34;Runat: W-&gt;R %s&#34;,t.id)
+                    if queue._wait:has_readers() then queue._wait:put(true,0) end
+                    box.space.queue:update({ t.id }, {
+                        { &#39;=&#39;, F.status, STATUS.READY },
+                        { &#39;=&#39;, F.runat, 0 },
+                    })
+                else
+                    log.error(&#34;Runat: bad status %s for %s&#34;, t.status, t.id)
+                    box.space.queue:update({ t.id },{{ &#39;=&#39;, F.runat, 0 }})
+                end
+            end
+        end
+
+        if not remaining or remaining &gt; 1 then remaining = 1 end
+        queue._runch:wait(remaining)
+    end
+
+    queue._runch:broadcast()
+    log.info(&#34;Finished&#34;)
+end, queue, package.reload.count, queue._runat)
+queue._runch:broadcast()
+
+</code></pre></div><p>And in the end, at code reload you get an error saying the console is already on. This is how this situation can be dealt with:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>if not fiber.self().storage.console then
+    require&#39;console&#39;.start()
+    os.exit()
+end
+
+</code></pre></div><h2 id=lets-summarize><strong>Let’s summarize</strong></h2><p>We’ve written a working network queue with delayed processing, automatic task return by means of triggers, statistics forwarding in Graphite using TCP, and explored quite a few issues. With average state-of-the-art hardware, such a queue will easily support the transmission of 20+ thousand messages per second. It contains about 300 code strings and can be compiled in a day, document studies included. Final files: <strong>queue.lua:</strong></p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>local clock = require &#39;clock&#39;
+local errno = require &#39;errno&#39;
+local fiber = require &#39;fiber&#39;
+local log = require &#39;log&#39;
+local msgpack = require &#39;msgpack&#39;
+local socket = require &#39;socket&#39;
+
+box.schema.create_space(&#39;queue&#39;,{ if_not_exists = true; })
+
+box.space.queue:format( {
+    { name = &#39;id&#39;;     type = &#39;number&#39; },
+    { name = &#39;status&#39;; type = &#39;string&#39; },
+    { name = &#39;runat&#39;;  type = &#39;number&#39; },
+    { name = &#39;data&#39;;   type = &#39;*&#39;      },
+} );
+
+local F = {}
+for no,def in pairs(box.space.queue:format()) do
+    F[no] = def.name
+    F[def.name] = no
+end
+
+box.space.queue:create_index(&#39;primary&#39;, {
+   parts = { F.id, &#39;number&#39; };
+   if_not_exists = true;
+})
+
+box.space.queue:create_index(&#39;status&#39;, {
+    parts = { F.status, &#39;string&#39;, F.id, &#39;number&#39; };
+    if_not_exists = true;
+})
+
+box.space.queue:create_index(&#39;runat&#39;, {
+    parts = { F.runat, &#39;number&#39;, F.id, &#39;number&#39; };
+    if_not_exists = true;
+})
+
+local STATUS = {}
+STATUS.READY = &#39;R&#39;
+STATUS.TAKEN = &#39;T&#39;
+STATUS.WAITING = &#39;W&#39;
+
+local queue = {}
+local old = rawget(_G,&#39;queue&#39;)
+if old then
+    queue.taken = old.taken
+    queue.bysid = old.bysid
+    queue._triggers = old._triggers
+    queue._stats = old._stats
+    queue._wait = old._wait
+    queue._runch = old._runch
+    queue._runat = old._runat
+else
+    queue.taken = {}
+    queue.bysid = {}
+    queue._triggers = {}
+    queue._stats = {}
+    queue._wait = fiber.channel()
+    queue._runch = fiber.cond()
+    while true do
+        local t = box.space.queue.index.status:pairs({STATUS.TAKEN}):nth(1)
+        if not t then break end
+        box.space.queue:update({ t.id }, {{&#39;=&#39;, F.status, STATUS.READY }})
+        log.info(&#34;Autoreleased %s at start&#34;, t.id)
+    end
+
+    for k,v in pairs(STATUS) do queue._stats[v] = 0LL end
+    for _,t in box.space.queue:pairs() do
+        queue._stats[ t[F.status] ] = (queue._stats[ t[F.status] ] or 0LL)+1
+    end
+    log.info(&#34;Perform initial stat counts %s&#34;, box.tuple.new{ queue._stats })
+end
+
+local function gen_id()
+    local new_id
+    repeat
+        new_id = clock.realtime64()
+    until not box.space.queue:get(new_id)
+    return new_id
+end
+
+local function keypack( key )
+    return msgpack.encode( key )
+end
+
+local function keyunpack( data )
+    return msgpack.decode( data )
+end
+
+queue._triggers.on_replace = box.space.queue:on_replace(function(old,new)
+    if old then
+        queue._stats[ old[ F.status ] ] = queue._stats[ old[ F.status ] ] - 1
+    end
+    if new then
+        queue._stats[ new[ F.status ] ] = queue._stats[ new[ F.status ] ] + 1
+    end
+end, queue._triggers.on_replace)
+
+queue._triggers.on_truncate = box.space._truncate:on_replace(function(old,new)
+    if new.id == box.space.queue.id then
+        for k,v in pairs(queue._stats) do
+            queue._stats[k] = 0LL
+        end
+    end
+end, queue._triggers.on_truncate)
+
+queue._triggers.on_connect = box.session.on_connect(function()
+    box.session.storage.peer = box.session.peer()
+end, queue._triggers.on_connect)
+
+queue._triggers.on_disconnect = box.session.on_disconnect(function()
+    box.session.storage.destroyed = true
+    local sid = box.session.id()
+    local bysid = queue.bysid[ sid ]
+    if bysid then
+        log.info( &#34;disconnected %s from %s&#34;, box.session.id(), box.session.storage.peer )
+        while next(bysid) do
+            for key, id in pairs(bysid) do
+                log.info(&#34;Autorelease %s by disconnect&#34;, id);
+                queue.taken[key] = nil
+                bysid[key] = nil
+                local t = box.space.queue:get(id)
+                if t then
+                    if queue._wait:has_readers() then queue._wait:put(true,0) end
+                    box.space.queue:update({t.id},{{&#39;=&#39;, F.status, STATUS.READY }})
+                end
+            end
+        end
+        queue.bysid[ sid ] = nil
+    end
+end, queue._triggers.on_disconnect)
+
+queue._runat = fiber.create(function(queue, gen, old_fiber)
+    fiber.name(&#39;queue.runat.&#39;..gen)
+
+    while package.reload.count == gen and old_fiber and old_fiber:status() ~= &#39;dead&#39; do
+        log.info(&#34;Waiting for old to die&#34;)
+        queue._runch:wait(0.1)
+    end
+
+    log.info(&#34;Started...&#34;)
+    while package.reload.count == gen do
+        local remaining
+
+        local now = clock.realtime()
+
+        for _,t in box.space.queue.index.runat
+            :pairs( {0}, { iterator = &#39;GT&#39; })
+        do
+            if t.runat &gt; now then
+                remaining = t.runat - now
+                break
+            else
+                if t.status == STATUS.WAITING then
+                    log.info(&#34;Runat: W-&gt;R %s&#34;,t.id)
+                    if queue._wait:has_readers() then queue._wait:put(true,0) end
+                    box.space.queue:update({ t.id }, {
+                        { &#39;=&#39;, F.status, STATUS.READY },
+                        { &#39;=&#39;, F.runat, 0 },
+                    })
+                else
+                    log.error(&#34;Runat: bad status %s for %s&#34;, t.status, t.id)
+                    box.space.queue:update({ t.id },{{ &#39;=&#39;, F.runat, 0 }})
+                end
+            end
+        end
+
+        if not remaining or remaining &gt; 1 then remaining = 1 end
+        queue._runch:wait(remaining)
+    end
+
+    queue._runch:broadcast()
+    log.info(&#34;Finished&#34;)
+end, queue, package.reload.count, queue._runat)
+queue._runch:broadcast()
+
+local graphite_host = &#39;127.0.0.1&#39;
+local graphite_port = 2003
+queue._monitor = fiber.create(function(gen)
+    fiber.name(&#39;queue.mon.&#39;..gen)
+    fiber.yield()
+    while package.reload.count == gen do
+        local remote =  require &#39;socket&#39;.tcp_connect(graphite_host, graphite_port)
+        if not remote then
+            log.error(&#34;Failed to connect to graphite %s&#34;,errno.strerror())
+            fiber.sleep(1)
+        else
+            while package.reload.count == gen do
+                local data = {}
+                for k,v in pairs(queue.stats()) do
+                    table.insert(data,string.format(&#34;queue.stats.%s %s %sn&#34;,k,tonumber(v),math.floor(fiber.time())))
+                end
+                data = table.concat(data,&#39;&#39;)
+                if not remote:send(data) then
+                    log.error(&#34;%s&#34;,errno.strerror())
+                    break
+                end
+                fiber.sleep(1)
+            end
+        end
+    end
+end, package.reload.count)
+
+function queue.put(data, opts)
+    local id = gen_id()
+
+    local runat = 0
+    local status = STATUS.READY
+    if opts and opts.delay then
+        runat = clock.realtime() + tonumber(opts.delay)
+        status = STATUS.WAITING
+    else
+        if queue._wait:has_readers() then
+            queue._wait:put(true,0)
+        end
+    end
+
+    return box.space.queue
+        :insert{ id, status, runat, data }
+        :tomap{ names_only=true }
+end
+
+function queue.take(timeout)
+    if not timeout then timeout = 0 end
+    local now = fiber.time()
+    local found
+    while not found do
+        found = box.space.queue.index.status
+            :pairs({STATUS.READY},{ iterator = &#39;EQ&#39; }):nth(1)
+        if not found then
+            local left = (now + timeout) - fiber.time()
+            if left &lt;= 0 then return end
+            queue._wait:get(left)
+        end
+    end
+
+    if box.session.storage.destroyed then return end
+
+    local sid = box.session.id()
+    log.info(&#34;Register %s by %s&#34;, found.id, sid)
+    local key = keypack( found.id )
+    queue.taken[ key ] = sid
+    queue.bysid[ sid ] = queue.bysid[ sid ] or {}
+    queue.bysid[ sid ][ key ] = found.id
+
+    return box.space.queue
+        :update( {found.id}, {{&#39;=&#39;, F.status, STATUS.TAKEN }})
+        :tomap{ names_only = true }
+end
+
+local function get_task( id )
+    if not id then error(&#34;Task id required&#34;, 2) end
+    id = tonumber64(id)
+    local key = keypack(id)
+    local t = box.space.queue:get{id}
+    if not t then
+        error(string.format( &#34;Task {%s} was not found&#34;, id ), 2)
+    end
+    if not queue.taken[key] then
+        error(string.format( &#34;Task %s not taken by anybody&#34;, id ), 2)
+    end
+    if queue.taken[key] ~= box.session.id() then
+        error(string.format( &#34;Task %s taken by %d. Not you (%d)&#34;,
+            id, queue.taken[key], box.session.id() ), 2)
+    end
+    return t, key
+end
+
+function queue.ack(id)
+    local t, key = get_task(id)
+    queue.taken[ key ] = nil
+    queue.bysid[ box.session.id() ][ key ] = nil
+    return box.space.queue:delete{t.id}:tomap{ names_only = true }
+end
+
+function queue.release(id, opts)
+    local t, key = get_task(id)
+    queue.taken[ key ] = nil
+    queue.bysid[ box.session.id() ][ key ] = nil
+
+    local runat = 0
+    local status = STATUS.READY
+
+    if opts and opts.delay then
+        runat = clock.realtime() + tonumber(opts.delay)
+        status = STATUS.WAITING
+    else
+        if queue._wait:has_readers() then queue._wait:put(true,0) end
+    end
+
+    return box.space.queue
+        :update({t.id},{{&#39;=&#39;, F.status, status },{ &#39;=&#39;, F.runat, runat }})
+        :tomap{ names_only = true }
+end
+
+function queue.stats()
+    return {
+        total   = box.space.queue:len(),
+        ready   = queue._stats[ STATUS.READY ],
+        waiting = queue._stats[ STATUS.WAITING ],
+        taken   = queue._stats[ STATUS.TAKEN ],
+    }
+end
+
+return queue
+
+```**init.lua:**```
+require&#39;strict&#39;.on()
+fiber = require &#39;fiber&#39;
+require &#39;package.reload&#39;
+
+box.cfg{
+    listen = &#39;127.0.0.1:3301&#39;
+}
+box.schema.user.grant(&#39;guest&#39;, &#39;super&#39;, nil, nil, { if_not_exists = true })
+
+queue = require &#39;queue&#39;
+
+if not fiber.self().storage.console then
+    require&#39;console&#39;.start()
+    os.exit()
+end
+
+</code></pre></div></div><div class=recommendations><h2>Did you like this post? Why not read more?</h2><div class="grid grid--3"><div class=grid__item><a href=/blog/2021/02/24/how-to-speed-up-re-sync-of-dropped-percona-xtradb-cluster-node/ class="post post--preview"><img src=/blog/2021/02/Blog-Community-Pic_huab0a771bee93875be809596c92c2f91d_190761_682x454_fill_q90_lanczos_smart1.jpg alt><h2>How to Speed Up Re Sync of Dropped Percona Xtradb Cluster Node</h2><div class=post__content><p>The Problem HELP, HELP! My Percona XtraDB Cluster version: 5.7.31-31. Single Node is stuck in a joined state.</p><p class=readmore>Read more &#187;</p></div></a></div><div class=grid__item><a href=/blog/2021/01/04/fork-exec-wait-and-exit/ class="post post--preview"><img src=/blog/2021/01/prozesswechsel_hua53f541dc9b57441137fca3493fdacea_5507_682x454_fill_q90_bgffffff_lanczos_smart1_2.jpg alt><h2>fork, exec, wait and exit</h2><div class=post__content><p>This is the english version of a 2007 article. In de.comp.os.unix.linux.misc somebody asked:</p><p class=readmore>Read more &#187;</p></div></a></div><div class=grid__item><a href=/blog/2020/12/10/embracing-the-stream/ class="post post--preview"><img src=/blog/2020/12/stream-migrate-now_hu710e74e15914f71a0f70d9c6d8a01579_48687_682x454_fill_q90_bgffffff_lanczos_smart1_2.jpg alt><h2>Embracing the Stream</h2><div class=post__content><p>So this happened: CentOS Project shifts focus to CentOS Stream</p><p class=readmore>Read more &#187;</p></div></a></div></div></div><div class=bios><div class=bios__bio><img class=avatar src=https://percona.community/blog/2020/10/2020-10-28-18.10.30_hu7e15cee6e497a9aacdb325eb8baa5fb9_81106_240x240_fill_q90_lanczos_smart1.jpg alt><div class=bios__content><h2><span>Mons Anderson</span></h2><p>Architect of the S3 compatible object storage by Mail.ru Cloud Solutions. Technical product manager at Tarantool. 20+ years of experience in programming, 8+ years in high-performance applications based on Tarantool.</p><p><a href=/authors/mons_anderson>See all posts by Mons Anderson &#187;</a></p></div></div></div></article></div></main><div class=edit-on-github><div class=container><a href=https://github.com/percona/community/edit/main/content/blog/2020-10-30-how-to-build-a-high-performance-application-on-tarantool-from-scratch.md target=_blank rel="noreferrer noopener">✎ Edit this page on GitHub</a></div></div><footer class=page><h1 class=aria-only id=footer-heading aria-hidden=false>Footer</h1><div class=page-footer><nav class=footer><ul><li><a href=https://www.percona.com/about-percona target=_blank rel="noopener noreferrer"><span>About</span></a></li><li><a href=https://www.percona.com/legal target=_blank rel="noopener noreferrer"><span>Legal</span></a></li><li><a href=https://forums.percona.com/ target=_blank rel="noopener noreferrer"><span>Forums</span></a></li><li><a href=https://www.percona.com/about-percona/contact target=_blank rel="noopener noreferrer"><span>Contact</span></a></li></ul></nav></div><aside>© Percona Community. MySQL, InnoDB, MariaDB and MongoDB are trademarks of their respective owners.</aside></footer><script type=text/javascript src=https://percona.community/js/aria.5f30892348d4662fe548bb410f15fc6fe2e1cbfd6473beb3c3ed1d6b362568bbea48896a9f2302a4f78f4614904ca3ef43155ae26f063ed84ae957f951e19647.js integrity="sha512-XzCJI0jUZi/lSLtBDxX8b+Lhy/1kc76zw+0dazYlaLvqSIlqnyMCpPePRhSQTKPvQxVa4m8GPthK6Vf5UeGWRw==" defer></script></body></html>
