@@ -57,7 +57,7 @@ footer.page {
     }
 
     aside {
-      border-top:0.2rem solid $color-print-border;
+      border-top:0.2rem solid $dark;
       margin-top:0.65rem;
       padding-top:0.65rem;
     }
@@ -65,7 +65,7 @@ footer.page {
 }
 
 footer.page {
-  border-top:2px solid $color-footer-top;
+  border-top:2px solid $palette1;
   margin-top:-2px;
   aside {
     text-align: center;
@@ -77,7 +77,7 @@ footer.page {
 
 @media screen {
   footer.page {
-    background-color: $color-background-footer-light;
+    background-color: $palette3;
   }
   .page-footer {
     @include menu-color-light;

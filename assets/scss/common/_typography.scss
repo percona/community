@@ -7,7 +7,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   line-height: 1.5rem;
   font-feature-settings: "liga" 1;
-  font-weight:$font-weight-normal;
+  font-weight: normal;
 
   font-size: 18px;
   @media (min-width: 900px) {
@@ -28,18 +28,18 @@ html, body {
 hr {
   border:0;
   height:2px;
-  background-color: $color-hr;
+  background-color: $palette1;
   margin-top:1.5rem;
   margin-bottom:1.5rem;
 }
 
 @mixin heading {
   font-family: $font-heading;
-  font-weight: $font-weight-heading;
+  font-weight: normal;
   page-break-after: avoid;
 
   a, a:visited {
-    color:$color-text-light;
+    color: $dark;
     text-decoration: none;
   }
 }
@@ -96,23 +96,7 @@ hr {
   }
 
   p>code, ul>code, ol>code, dt>code, dd>code, li>code {
-    color: $color-inline-code;
-  }
-
-  button {
-    cursor:pointer;
-    display:inline-block;
-    box-sizing: border-box;
-    border:0.1rem solid $color-decor;
-    height:1.5rem;
-    padding-left:0.75rem;
-    padding-right:0.75rem;
-    border-radius: $border-radius;
-    transition: color $transition-length ease-in-out, background-color $transition-length ease-in-out;
-    &:hover {
-      color: $color-decor-contrast;
-      background-color: $color-decor;
-    }
+    color: $palette2;
   }
 
   audio {
@@ -164,7 +148,7 @@ hr {
 
   h1 {
     font-size:2.5rem;
-    font-weight: $font-weight-normal;
+    font-weight: normal;
     line-height:3rem;
     margin-top:1.5rem;
     @media screen and (min-width: 760px) {
@@ -205,16 +189,11 @@ hr {
   }
 
   strong {
-    font-weight: $font-weight-bold;
+    font-weight: bold;
   }
 
   em {
     font-style: italic;
-  }
-
-  blockquote {
-    border-left: 0.2rem solid $color-blockquote-border;
-    padding-left:0.75rem;
   }
 
   code {
@@ -240,7 +219,7 @@ hr {
     position: relative;
     text-align: center;
     img {
-      background: $color-background-card-light;
+      background: $light;
       border-radius: $border-radius;
       max-width:100%;
     }
@@ -249,31 +228,31 @@ hr {
       border-radius: $border-radius;
       margin-left: auto;
       margin-right:auto;
-      border: $color-decor;
+      border: $palette2;
       border-collapse: separate;
       border-spacing: 0;
-      background:$color-background-card-light;
+      background: $light;
       margin-bottom:-0.1em;
 
       th, td {
         padding-left:0.75rem;
         padding-right:0.75rem;
         line-height:1.3rem;
-        border-left:0.1rem solid $color-decor;
-        border-top:0.1rem solid $color-decor;
+        border-left:0.1rem solid $palette2;
+        border-top:0.1rem solid $palette2;
       }
 
       thead {
-        background-color:$color-background-card-light;
+        background-color: $light;
       }
 
       tr td:last-child,
       tr th:last-child {
-        border-right:0.1rem solid $color-decor;
+        border-right:0.1rem solid $palette2;
       }
 
       tbody:last-child tr:last-child td {
-        border-bottom:0.1rem solid $color-decor;
+        border-bottom:0.1rem solid $palette2;
       }
 
       thead:first-child tr:first-child th:first-child,
@@ -301,7 +280,7 @@ hr {
         padding-top:1.5em;
         padding-bottom:1.5em;
         border-radius: $border-radius;
-        background: $color-background-card-light;
+        background: $light;
         li {
           list-style-type: none;
         }
@@ -355,7 +334,7 @@ hr {
   hr {
     border:0;
     height:0.2rem;
-    background: $color-decor;
+    background: $palette2;
     margin-top:1.3rem;
   }
 
@@ -377,18 +356,18 @@ hr {
     }
     &--tip>:first-child::before {
       content:"☛";
-      color: $color-admonition-tip;
+      color: $palette3;
       font-size:1.5rem;
       line-height:1.5rem;
       height:1.5rem;
     }
     &--warning>:first-child::before {
       content:"⚠️";
-      color: $color-admonition-warning;
+      color: $palette3;
     }
     &--info>:first-child::before {
       content:"ⓘ";
-      color: $color-admonition-info;
+      color: $palette2;
       font-weight: bold;
     }
   }

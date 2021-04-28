@@ -8,8 +8,8 @@ html, body {
 body {
   text-align: center;
   @media screen {
-    color:$color-text-light;
-    background-color:$color-background-light;
+    color: $dark;
+    background-color: $palette3;
   }
   @media print {
     color:#000000;
@@ -55,7 +55,7 @@ header.page, main.page, footer.page {
 }
 
 .highlight {
-  color: $color-decor;
+  color: $palette2;
 }
 
 .nobr {
@@ -66,21 +66,5 @@ header.page, main.page, footer.page {
   display:none;
   @media aural {
     display:block;
-  }
-}
-
-a {
-  color: $color-link-light;
-  text-decoration-color: $color-link-underline;
-  transition:color $transition-length ease-out, text-decoration-color $transition-length ease-out;
-  &:hover, &:visited:hover {
-    color: $color-link-hover;
-  }
-  &:active {
-    color:$color-link-active;
-  }
-  &:visited {
-    color: $color-link-visited-light;
-    text-decoration-color: $color-link-visited-underline;
   }
 }

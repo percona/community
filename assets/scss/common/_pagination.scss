@@ -7,16 +7,16 @@
     display:inline-block;
     text-decoration: none;
     border-radius: 3px;
-    color: $color-text-light;
-    border: 1px solid $color-text-light;
+    color: $dark;
+    border: 1px solid $dark;
     transition:
       0.2s background-color ease-in-out,
       0.2s color ease-in-out,
       0.2s border-color ease-in-out;
     &:hover,&.active {
-      background: $color-link-light;
-      color: $color-background-light;
-      border: 1px solid $color-link-light;
+      background: $palette2;
+      color: $palette3;
+      border: 1px solid $palette2;
     }
 
     height:1rem;

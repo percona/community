@@ -1,0 +1,57 @@
+/* button */
+button {
+  cursor: pointer;
+  display:block;
+  font-weight: bold;
+  margin: 0 auto;
+  border:0.1rem solid $palette1;
+  background-color: $palette1;
+  font-size: 1.2rem;
+  border-radius: 0.9rem;
+  padding: 0.6rem;
+  transition: color $transition-length ease-in-out, background-color $transition-length ease-in-out;
+  &:hover {
+    background-color: $palette2;
+    border: 0.1rem solid $palette2;
+  }
+}
+
+/* blockquote */
+blockquote {
+  padding: 0 2rem;
+  margin: 0 2rem 0 2rem;
+}
+
+blockquote:before {
+  display: block;
+  content: "\1f5e8";
+  font-size: 2rem;
+  padding: 1rem 0 0 0;
+  margin: 0 0 -1.8rem -2rem;
+  height: max-content;
+  color: $palette1;
+  font-weight: bold;
+}
+
+/* links */
+a {
+  color: $palette2;
+  font-weight: bold;
+  text-decoration-color: $palette2;
+  transition:color $transition-length ease-out, text-decoration-color $transition-length ease-out;
+  &:hover, &:visited:hover {
+    color: $palette1;
+    text-decoration-color: $palette1;
+  }
+  &:active {
+    color: $palette1;
+    text-decoration-color: $palette1;
+  }
+  &:visited {
+    color: $dark;
+  }
+}
+
+a.downloadbtn {
+  text-decoration: none;
+}

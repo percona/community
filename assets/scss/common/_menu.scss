@@ -14,12 +14,12 @@
     border-bottom: $height-menu-underline solid transparent;
 
     &:hover {
-      color: $color-link-light;
-      border-bottom: $height-menu-underline solid $color-link-light;
+      color: $palette2;
+      border-bottom: $height-menu-underline solid $palette2;
     }
 
     &:hover span {
-      color: $color-link-light;
+      color: $palette2;
     }
 
     img {
@@ -30,15 +30,15 @@
 
 @mixin menu-color-light {
   a {
-    color: $color-text-light;
-    border-bottom: 0 solid $color-background-light;
+    color: $dark;
+    border-bottom: 0 solid $palette3;
 
     &:hover {
-      color: $color-link-light;
-      border-bottom-color: $color-link-light;
+      color: $palette2;
+      border-bottom-color: $palette2;
     }
     &:visited {
-      color: $color-text-light;
+      color: $dark;
     }
   }
 }

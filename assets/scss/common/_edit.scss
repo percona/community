@@ -4,12 +4,13 @@
 .edit-on-github {
   font-size:0.8rem;
   text-align:right;
+  padding-top: 1.5rem;
   .container {
     @include container;
   }
   a {
-    background-color: $color-footer-top;
-    color: $color-background-footer-light;
+    background-color: $palette1;
+    color: $palette3;
     text-decoration:none;
     display:inline-block;
     border-top-left-radius: 0.5rem;
@@ -18,8 +19,8 @@
     padding-right:0.5rem;
     transition: 0.2s background-color ease-in-out;
     &:hover {
-      color: $color-background-footer-light;
-      background-color:$color-hero-background;
+      color: $palette3;
+      background-color: $palette2;
     }
   }
 }

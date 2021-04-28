@@ -1,24 +1,24 @@
 @import "variables";
 
 .hero {
-  background-color: $color-hero-background;
+  background-color: $palette2;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: $color-hero-text;
+  color: $light;
   h1 {
     margin-bottom:1.5rem;
   }
 
   a {
-    color: $color-hero-text;
+    color: $dark;
     font-weight: bold;
-    border-bottom: 2px solid $color-hero-text;
+    border-bottom: 2px solid $palette2;
     text-decoration: none;
     transition:color $transition-length ease-out, border-bottom-color $transition-length ease-out;
     &:hover, &:visited:hover {
-      color: $color-hero-text;
-      border-bottom-color: $color-hero-link-border;
+      color: $dark;
+      border-bottom-color: $palette1;
     }
   }
 
@@ -34,16 +34,16 @@
       margin-left:1.5rem;
     }
     background-color: transparent;
-    color: $color-text-light;
+    color: $dark;
     a {
-      color: $color-text-light;
+      color: $dark;
       &:hover {
-        color: $color-text-light;
+        color: $dark;
       }
     }
   }
   &:nth-child(4n+3) {
-    background-color: $color-hero2-background;
+    background-color: $palette1;
   }
 
   &--bio {

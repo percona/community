@@ -14,7 +14,7 @@
   .logo {
     z-index:6;
     font-size: 1.2rem;
-    font-weight: $font-weight-logo;
+    font-weight: bold;
     font-variant: small-caps;
 
     a {
@@ -47,12 +47,12 @@
   }
   .hamburger-bar {
     height:0.2rem;
-    background:$color-text-light;
+    background: $dark;
     margin-top:0.2rem;
     display:block;
   }
   #show-mobile-menu + .mobile-toggle + .mobile-menu nav {
-    background:$color-background-footer-light;
+    background: $palette3;
   }
   #show-mobile-menu + .mobile-toggle {
     .hamburger-bar {
@@ -200,7 +200,7 @@
 
     nav li.active a {
       border-bottom-width: 3px;
-      border-bottom-color: $color-decor;
+      border-bottom-color: $palette2;
     }
   }
 }

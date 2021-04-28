@@ -19,13 +19,13 @@
   }
 
   &:hover {
-    box-shadow: 0 0 1.5rem $color-meta-text-light;
+    box-shadow: 0 0 1.5rem #7f7f7f;
   }
 }
 
 a.post--preview, a.post--preview * {
   text-decoration: none;
-  color: $color-text-light;
+  color: $dark;
 
   .readmore {
     font-weight: bold;
