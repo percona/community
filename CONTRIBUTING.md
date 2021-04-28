@@ -24,7 +24,6 @@ We will highlight the folders that you will most likely touch if you are contrib
     > blog          ## add your post here, follow naming pattern
     > contribute
     > projects
-    > resources
     ...
 > layouts
 > static

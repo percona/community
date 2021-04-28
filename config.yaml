@@ -38,18 +38,23 @@ menu:
       name: Blog
       url: /blog
       weight: -110
-    - identifier: resources
-      name: Resources
-      url: /resources
-      weight: -100
     - identifier: projects
       name: Projects
       url: /projects
-      weight: -90
+      weight: -100
     - identifier: contribute
       name: Contribute
       url: /contribute
+      weight: -90
+    - identifier: forums
+      name: Forums
+      url: https://forums.percona.com
       weight: -80
+    - identifier: discord
+      name: Discord
+      url: http://per.co.na/discord
+      weight: -70
+
   footer:
     - identifier: about
       name: About
@@ -59,14 +64,10 @@ menu:
       name: Legal
       url: https://www.percona.com/legal
       weight: 2
-    - identifier: forums
-      name: Forums
-      url: https://forums.percona.com/
-      weight: 3
     - identifier: contact
       name: Contact
       url: https://www.percona.com/about-percona/contact
-      weight: 4
+      weight: 3
 imaging:
   resampleFilter: lanczos
   quality: 90

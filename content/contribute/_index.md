@@ -18,7 +18,7 @@ Each of our projects has its own contribution guidelines. You will find them in 
 
 Participation in this community may come in many forms: whether it's written, more visual (illustrations, comics, videos, logos), or auditive (podcasts, talks, music), supporting each other or having fun. We had people write jingles and raps as well as drawing superheroes and a vast amount of great articles, talks, and human connection.
 
-If you're interested in producing content for this community (examples: blog post, guide, documentation, talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions. For technical writing, we also have some good links in our [Guides](/resources/guides/technicalwriting).
+If you're interested in producing content for this community (examples: blog post, guide, documentation, talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
 
 For content inspiration, please check the [open topics](topics) or send a pull request with your topic idea.
 {{% /typography %}}
