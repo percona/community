@@ -1,0 +1,65 @@
+name: Build and Deploy
+on:
+  pull_request:
+    branches-ignore:
+      - gh-pages
+  push:
+    branches-ignore:
+      - gh-pages
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: Setup hugo
+        run: |
+          set -euo pipefail
+          wget https://github.com/gohugoio/hugo/releases/download/v0.81.0/hugo_extended_0.81.0_Linux-64bit.deb -O /tmp/hugo.deb
+          sudo dpkg -i /tmp/hugo.deb
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: public
+          if-no-files-found: error
+          path: public/*
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-20.04
+    if: github.ref == 'refs/heads/main'
+    needs:
+      - build
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: public
+          path: artifacts
+      - name: Sync
+        run: rsync -az --exclude=.git --delete ./artifacts/ ./gh-pages/
+      - name: Deploy
+        run: |
+          set -euo pipefail
+          cd gh-pages
+          git config user.name "GitHub Actions"
+          git config user.email noreply@github.com
+          git add .
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "Website publish"
+            git push --set-upstream --force origin gh-pages
+          else
+            echo -e "\e
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
