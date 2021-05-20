@@ -81,3 +81,15 @@ Check out the latest 5 forums posts:
 Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://jira.percona.com) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
 {{% /typography %}}
 {{% /hero %}}
+
+{{% hero %}}
+
+## Engineering Monthly Meeting
+{{% typography %}}
+Join the community and let's chat about technical topics, open pull requests, bugs, and plans!
+
+The meetings take place on [Discord](http://per.co.na/discord) in the voice channel.
+
+[Meetings Agenda and Notes](/emm/).
+{{% /typography %}}
+{{% /hero %}}

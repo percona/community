@@ -46,14 +46,18 @@ menu:
       name: Contribute
       url: /contribute
       weight: -90
+    - identifier: emm
+      name: Meetings
+      url: /emm
+      weight: -80
     - identifier: forums
       name: Forums
       url: https://forums.percona.com
-      weight: -80
+      weight: -70
     - identifier: discord
       name: Discord
       url: http://per.co.na/discord
-      weight: -70
+      weight: -60
 
   footer:
     - identifier: about
