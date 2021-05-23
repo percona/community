@@ -46,18 +46,22 @@ menu:
       name: MySQL
       url: /mysql
       weight: -90
+    - identifier: emm
+      name: Meetings
+      url: /emm
+      weight: -80
     - identifier: PostgreSQL
       name: PostgreSQL
       url: /postgresql
-      weight: -80
+      weight: -70
     - identifier: Cross-DB
       name: Cross-DB
       url: /projects
-      weight: -70
+      weight: -60
     - identifier: contribute
       name: Contribute
       url: /contribute
-      weight: -60
+      weight: -50
 
   footer:
     - identifier: about
