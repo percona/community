@@ -38,26 +38,30 @@ menu:
       name: Blog
       url: /blog
       weight: -110
-    - identifier: projects
-      name: Projects
-      url: /projects
+    - identifier: MongoDB
+      name: MongoDB
+      url: /mongodb
       weight: -100
-    - identifier: contribute
-      name: Contribute
-      url: /contribute
+    - identifier: MySQL
+      name: MySQL
+      url: /mysql
       weight: -90
     - identifier: emm
       name: Meetings
       url: /emm
       weight: -80
-    - identifier: forums
-      name: Forums
-      url: https://forums.percona.com
+    - identifier: PostgreSQL
+      name: PostgreSQL
+      url: /postgresql
       weight: -70
-    - identifier: discord
-      name: Discord
-      url: http://per.co.na/discord
+    - identifier: Cross-DB
+      name: Cross-DB
+      url: /projects
       weight: -60
+    - identifier: contribute
+      name: Contribute
+      url: /contribute
+      weight: -50
 
   footer:
     - identifier: about
@@ -72,6 +76,14 @@ menu:
       name: Contact
       url: https://www.percona.com/about-percona/contact
       weight: 3
+    - identifier: forums
+      name: Forums
+      url: https://forums.percona.com
+      weight: 4
+    - identifier: discord
+      name: Discord
+      url: http://per.co.na/discord
+      weight: 5
 imaging:
   resampleFilter: lanczos
   quality: 90
