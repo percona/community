@@ -1,0 +1,2 @@
+{{ $image := resources.Get (.Get "pic") -}}
+<a class="socialblock" href="{{ .Get "url" }}"><img src="{{ $image.RelPermalink }}" alt="" />{{ .Get "alt" }}</a>

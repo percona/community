@@ -11,13 +11,13 @@
   }
 
   a {
-    color: $dark;
+    color: $light;
     font-weight: bold;
     border-bottom: 2px solid $palette2;
     text-decoration: none;
     transition:color $transition-length ease-out, border-bottom-color $transition-length ease-out;
     &:hover, &:visited:hover {
-      color: $dark;
+      color: $light;
       border-bottom-color: $palette1;
     }
   }
@@ -82,10 +82,13 @@
 
 .herotext {
     font-size: 1.2rem;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     padding: 1.5rem;
     p {margin-top: 1.5rem;}
     p:first-child {margin-top: 0;}
     small {font-size: 0.8rem;}
     border-radius: 0.75rem;
+    &.opaque {
+      background: rgba(0,0,0,0.95);
+    }
 }
