@@ -5,6 +5,8 @@ title: "Percona Community"
 copyright: |
   © Percona Community. MySQL, InnoDB, MariaDB and MongoDB are trademarks of their respective owners.
 disableHugoGeneratorInject: true
+params:
+  favicon: favicon.png
 taxonomies:
   tag: tags
   author: authors

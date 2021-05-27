@@ -7,6 +7,11 @@
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
+
+    {{ if .Site.Params.favicon }}
+    <link rel="shortcut icon" href="{{ relURL ($.Site.Params.favicon) }}" type="image/x-icon" />
+    {{ end }}
+
     {{ if .Params.canonical -}}
       <link rel="canonical" href="{{ .Params.canonical }}" />
     {{- else -}}
