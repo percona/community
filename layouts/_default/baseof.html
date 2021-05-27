@@ -9,7 +9,7 @@
 
 
     {{ if .Site.Params.favicon }}
-    <link rel="shortcut icon" href="{{ relURL ($.Site.Params.favicon) }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ ((resources.Get ($.Site.Params.favicon)).Resize "64x64 png").RelPermalink }}" type="image/png" />
     {{ end }}
 
     {{ if .Params.canonical -}}
