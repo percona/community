@@ -37,31 +37,43 @@ menu:
     - identifier: blog
       name: Blog
       url: /blog
-      weight: -110
+      weight: 1
+    - identifier: devops
+      name: DevOps
+      url: /devops
+      weight: 2
     - identifier: MongoDB
       name: MongoDB
       url: /mongodb
-      weight: -100
+      weight: 3
     - identifier: MySQL
       name: MySQL
       url: /mysql
-      weight: -90
-    - identifier: emm
-      name: Meetings
-      url: /emm
-      weight: -80
+      weight: 4
     - identifier: PostgreSQL
       name: PostgreSQL
       url: /postgresql
-      weight: -70
-    - identifier: Cross-DB
-      name: Cross-DB
-      url: /projects
-      weight: -60
+      weight: 5
     - identifier: contribute
       name: Contribute
       url: /contribute
-      weight: -50
+      weight: 6
+
+    - identifier: coc
+      name: Code of Conduct
+      url: /coc
+      parent: contribute
+      weight: 1
+    - identifier: opentopics
+      name: Open Topics
+      url: /opentopics
+      parent: contribute
+      weight: 2
+    - identifier: emm
+      name: Meetings
+      url: /engineeringmeetings
+      parent: contribute
+      weight: 3
 
   footer:
     - identifier: about

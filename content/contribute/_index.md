@@ -3,10 +3,13 @@ title: "Percona Community"
 description: "Percona Community - Contributions and Contributors"
 ---
 
-{{% hero %}}
+{{% hero background="purplegalaxy.jpg" %}}
+{{% herotext %}}
+
+## Percona Community
 
 We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more - we also contribute to other open source projects and communities! Let's make technology better!
-
+{{% /herotext %}}
 {{% /hero %}}
 
 {{% hero %}}
@@ -20,17 +23,18 @@ Participation in this community may come in many forms: whether it's written, mo
 
 If you're interested in producing content for this community (examples: blog post, guide, documentation, talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
 
-For content inspiration, please check the [open topics](topics) or send a pull request with your topic idea.
+For content inspiration, please check the [open topics](/contribute/opentopics) or send a pull request with your topic idea.
 {{% /typography %}}
 
 {{% /hero %}}
 
-{{% hero %}}
+{{% hero background="orangegalaxy.jpg" %}}
+{{% herotext %}}
 
 ## Code of Conduct
-{{% typography %}}
+
 Our community members care about integrating optimized databases efficiently into their overall architecture. There is no place for harassment of any kind. Please refer to our [Code of Conduct](/contribute/coc) for more information.
-{{% /typography %}}
+{{% /herotext %}}
 {{% /hero %}}
 
 {{% hero %}}
@@ -48,33 +52,6 @@ Check out the latest 5 forums posts:
 {{% /hero %}}
 
 {{% hero %}}
-{{% contentblock %}}
-
-## Let's Chat
-
-{{% grid size=2 %}}
-{{% griditem %}}
-[Discord](http://per.co.na/discord)
-{{% /griditem %}}
-{{% griditem %}}
-[YouTube](https://www.youtube.com/user/PerconaMySQL)
-{{% /griditem %}}
-{{% /grid %}}
-
-{{% grid size=2 %}}
-{{% griditem %}}
-[Twitter Percona](https://twitter.com/percona)
-
-{{% /griditem %}}
-{{% griditem %}}
-[Twitter PerconaBytes](https://twitter.com/perconabytes)
-
-{{% /griditem %}}
-{{% /grid %}}
-{{% /contentblock %}}
-{{% /hero %}}
-
-{{% hero %}}
 
 ## Bug Reports
 {{% typography %}}
@@ -84,12 +61,29 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 
 {{% hero %}}
 
+## Let's Chat
+
+{{% grid size=4 %}}
+{{% griditem %}}
+{{% socialblock pic="icon-discord.svg" alt="Percona Community Discord" url="http://per.co.na/discord" %}}
+{{% /griditem %}}
+{{% griditem %}}
+{{% socialblock pic="icon-youtube.svg" alt="Percona YouTube" url="https://www.youtube.com/user/PerconaMySQL" %}}
+{{% /griditem %}}
+{{% griditem %}}
+{{% socialblock pic="icon-twitter.svg" alt="@percona" url="https://twitter.com/percona" %}}
+{{% /griditem %}}
+{{% griditem %}}
+{{% socialblock pic="icon-twitter.svg" alt="@perconabytes" url="https://twitter.com/perconabytes" %}}
+{{% /griditem %}}
+{{% /grid %}}
+{{% /hero %}}
+
+{{% hero background="contribute.png" %}}
+{{% herotext class="opaque" %}}
+
 ## Engineering Monthly Meeting
-{{% typography %}}
-Join the community and let's chat about technical topics, open pull requests, bugs, and plans!
 
-The meetings take place on [Discord](http://per.co.na/discord) in the voice channel.
-
-[Meetings Agenda and Notes](/emm/).
-{{% /typography %}}
+Our monthly [Engineering meetings](/contribute/engineeringmeetings) take place on [Discord](http://per.co.na/discord) in the voice channel. Join us and let's chat about technical topics, open pull requests, bugs, and plans!
+{{% /herotext %}}
 {{% /hero %}}

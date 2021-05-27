@@ -23,7 +23,7 @@ We will highlight the folders that you will most likely touch if you are contrib
           _index.md ## copy from other author, change to your details
     > blog          ## add your post here, follow naming pattern
     > contribute
-    > projects
+    > ...
     ...
 > layouts
 > static
