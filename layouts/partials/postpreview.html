@@ -3,6 +3,6 @@
 <h2>{{ .Title }}</h2>
 <div class="post__content">
 <p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify  -}}</p>
-<p class="readmore">Read more &raquo;</p>
+{{ if not .Hideread }}<p class="readmore">Read more &raquo;</p>{{ end }}
 </div>
 </a>

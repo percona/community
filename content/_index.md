@@ -37,27 +37,27 @@ Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{% hero background="orangegalaxy.jpg" %}}
 {{% herotext %}}
 
-## DevOps - PMM, Kubernetes, and more
+## Projects - PMM, Kubernetes, and more
 
-We also create, contribute to, and use various infrastructure-related projects. Check out our [DevOps](/devops) section.
+We also create, contribute to, and use various open source projects. Check out our [Projects](/projects).
 {{% /herotext %}}
 {{% /hero %}}
 
 {{% grid size=2 %}}
 {{% griditem %}}
-{{< postpreview link="/mongodb/" title="MongoDB" image="contribute.png" >}}
-Learn about Percona's Distribution for MongoDB and additional tooling.
+{{< postpreview link="/projects/operators" title="Percona Kubernetes Operators" image="projects.jpg" >}}
+Learn about Percona's Kubernetes Operators and how to best use them.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/mysql/" title="MySQL" image="projects.jpg" >}}
-Learn about Percona's Distribution for MySQL and additional tooling.
+{{< postpreview link="/projects/pmm" title="Percona Monitoring and Management" image="pmm.png" >}}
+Find out more about how you can monitor and manage your database effectively with PMM.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% /grid %}}
 
 {{% hero background="contribute.png" %}}
-{{% herotext %}}
+{{% herotext class="opaque" %}}
 Data is the main component of almost every larger application, which is why you will find various guides, blog posts, and other information around software architecture as well as in-depth knowledge about databases in this community.
 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!

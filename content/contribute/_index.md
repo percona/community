@@ -63,13 +63,16 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 
 ## Let's Chat
 
-{{% grid size=4 %}}
+{{% grid size=2 %}}
 {{% griditem %}}
-{{% socialblock pic="icon-discord.svg" alt="Percona Community Discord" url="http://per.co.na/discord" %}}
+{{% socialblock pic="icon-discord.svg" alt="Community Discord" url="http://per.co.na/discord" %}}
 {{% /griditem %}}
 {{% griditem %}}
 {{% socialblock pic="icon-youtube.svg" alt="Percona YouTube" url="https://www.youtube.com/user/PerconaMySQL" %}}
 {{% /griditem %}}
+{{% /grid %}}
+
+{{% grid size=2 %}}
 {{% griditem %}}
 {{% socialblock pic="icon-twitter.svg" alt="@percona" url="https://twitter.com/percona" %}}
 {{% /griditem %}}
