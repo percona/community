@@ -17,17 +17,17 @@ Welcome to Percona Community - your community hub for installing, running, optim
 
 {{% grid size=3 %}}
 {{% griditem %}}
-{{< postpreview link="/mongodb/" title="MongoDB" image="contribute.png" >}}
+{{< postpreview link="/mongodb/" title="MongoDB" image="mongodb-magic.png" >}}
 Learn about Percona's Distribution for MongoDB and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/mysql/" title="MySQL" image="projects.jpg" >}}
+{{< postpreview link="/mysql/" title="MySQL" image="mysql-action.png" >}}
 Learn about Percona's Distribution for MySQL and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/postgresql/" title="PostgreSQL" image="contribute.png" >}}
+{{< postpreview link="/postgresql/" title="PostgreSQL" image="postgres-gaze.png" >}}
 Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
@@ -46,7 +46,7 @@ We also create, contribute to, and use various open source projects. Check out o
 {{% contentblock %}}
 {{% grid size=3 %}}
 {{% griditem %}}
-{{< postpreview link="/projects/operators" title="Percona Kubernetes Operators" image="projects.jpg" >}}
+{{< postpreview link="/projects/operators" title="Percona Kubernetes Operators" image="projects-gaze.png" >}}
 Learn about Percona's Kubernetes Operators and how to best use them.
 {{< /postpreview >}}
 {{% /griditem %}}
@@ -56,7 +56,7 @@ Find out more about how you can monitor and manage your database effectively wit
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/projects/toolkit" title="Percona Toolkit for MySQL and MongoDB" image="projects.jpg" >}}
+{{< postpreview link="/projects/toolkit" title="Percona Toolkit for MySQL and MongoDB" image="projects-magic.png" >}}
 Use Percona Toolkit to get the most out of your MySQL and MongoDB database setups.
 {{< /postpreview >}}
 {{% /griditem %}}

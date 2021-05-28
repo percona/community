@@ -16,7 +16,10 @@ We welcome all kinds of contributions, from code to documentation to visuals, aw
 
 ## Contributing
 
+![Project Superhero saying hi](projects-salute-small.png)
+
 {{% typography %}}
+
 Each of our projects has its own contribution guidelines. You will find them in their respective GitHub repositories. There are many ways our community can thrive: people engaging with and listening to each other, writing and reviewing content, writing and reviewing code, and raising awareness for the topics we all care about.
 
 Participation in this community may come in many forms: whether it's written, more visual (illustrations, comics, videos, logos), or auditive (podcasts, talks, music), supporting each other or having fun. We had people write jingles and raps as well as drawing superheroes and a vast amount of great articles, talks, and human connection.
@@ -60,6 +63,8 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% /hero %}}
 
 {{% hero %}}
+
+![MongoDB Superhero sitting](mongodb-sit-small.png)
 
 ## Let's Chat
 

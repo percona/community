@@ -4,10 +4,14 @@
         {{- $paginator := .Paginate $pages }}
         {{- range $paginator.Pages -}}
             <div class="grid__item">
+                {{- $excerpt := "" -}}
+                {{- if isset .Params "excerpt" }}
+                    {{- $excerpt = .Params.excerpt -}}
+                {{- end -}}
                 {{- if isset .Params "images" -}}
-                    {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
+                    {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt) -}}
                 {{- else -}}
-                    {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
+                    {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
                 {{- end -}}
             </div>
         {{- end -}}
