@@ -1,6 +1,6 @@
 <div class="contentblock">
     <div class="grid grid--2">
-        {{- $pages := where $.Page.Site.RegularPages "Section" .Section -}}
+        {{- $pages := .Pages -}}
         {{- $paginator := .Paginate $pages }}
         {{- range $paginator.Pages -}}
             <div class="grid__item">

@@ -2,7 +2,7 @@
 {{ with .Image }}<img src="{{ ((resources.Get .).Fill "682x454 90% jpg").RelPermalink }}" alt="" />{{ end }}
 <h2>{{ .Title }}</h2>
 <div class="post__content">
-<p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify  -}}</p>
+<p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape  -}}</p>
 {{ if not .Hideread }}<p class="readmore">Read more &raquo;</p>{{ end }}
 </div>
 </a>

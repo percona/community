@@ -1,13 +1,15 @@
 @import "typography";
 @import "menu";
 
+$mobile-breaking-point: 1000px;
+
 .page-header {
   @include menu;
   @include menu-color-light;
 
   a {
     display: block;
-    border-bottom-width: 0;
+    border-bottom-width: 0.2rem;
     font-weight: bold;
   }
 
@@ -34,7 +36,7 @@
   display:none;
 }
 
-@media screen and (max-width: 759px) {
+@media screen and (max-width: $mobile-breaking-point - 1) {
   header.page {
     box-shadow: 0 0 3px 0 rgba(168, 168, 168, .5);
   }
@@ -44,6 +46,9 @@
   .page-header {
     justify-content: space-between;
     z-index:1;
+    a {
+      border-bottom-width: 0;
+    }
   }
   .hamburger-bar {
     height:0.2rem;
@@ -95,7 +100,7 @@
     bottom:100vh;
     opacity:0;
     background:rgba(0,0,0,0.5);
-    transition: opacity $transition-length ease-in-out, bottom $transition-length ease-in-out;
+    transition: opacity $transition-length ease-in-out, border-bottom-color $transition-length ease-in-out;
   }
   #show-mobile-menu:checked + .mobile-toggle + .mobile-menu {
     opacity:1;
@@ -164,7 +169,7 @@
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: $mobile-breaking-point) {
   .page-header {
 
     .mobile-toggle {
@@ -227,7 +232,7 @@
   }
 }
 
-@media screen and (max-width: 759px) and (prefers-reduced-motion: reduce) {
+@media screen and (max-width: $mobile-breaking-point - 1) and (prefers-reduced-motion: reduce) {
   .mobile-menu {
     transition: none;
   }
@@ -238,7 +243,7 @@
   }
 }
 
-@media screen and (max-width: 759px) and (prefers-reduced-transparency: reduce) {
+@media screen and (max-width: $mobile-breaking-point - 1) and (prefers-reduced-transparency: reduce) {
   .mobile-menu {
     background: rgb(128,128,128);
   }
