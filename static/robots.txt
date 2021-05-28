@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://percona.community/sitemap.xml
