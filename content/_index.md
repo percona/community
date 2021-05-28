@@ -43,7 +43,8 @@ We also create, contribute to, and use various open source projects. Check out o
 {{% /herotext %}}
 {{% /hero %}}
 
-{{% grid size=2 %}}
+{{% contentblock %}}
+{{% grid size=3 %}}
 {{% griditem %}}
 {{< postpreview link="/projects/operators" title="Percona Kubernetes Operators" image="projects.jpg" >}}
 Learn about Percona's Kubernetes Operators and how to best use them.
@@ -54,7 +55,14 @@ Learn about Percona's Kubernetes Operators and how to best use them.
 Find out more about how you can monitor and manage your database effectively with PMM.
 {{< /postpreview >}}
 {{% /griditem %}}
+{{% griditem %}}
+{{< postpreview link="/projects/toolkit" title="Percona Toolkit for MySQL and MongoDB" image="projects.jpg" >}}
+Use Percona Toolkit to get the most out of your MySQL and MongoDB database setups.
+{{< /postpreview >}}
+{{% /griditem %}}
+
 {{% /grid %}}
+{{% /contentblock %}}
 
 {{% hero background="contribute.png" %}}
 {{% herotext class="opaque" %}}

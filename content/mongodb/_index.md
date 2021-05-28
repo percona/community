@@ -1,5 +1,8 @@
 ---
 title: MongoDB
+description: "Run Percona: Embrace Open with Percona Distribution for MongoDB"
+images:
+    - mongodb_graphic.jpg
 ---
 {{% typography %}}
 

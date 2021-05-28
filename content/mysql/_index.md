@@ -1,6 +1,8 @@
 ---
 title: "MySQL"
 description: "Run Percona: Embrace Open with Percona Distribution for MySQL"
+images:
+- mysql-graphic.png
 ---
 
 {{% typography %}}
