@@ -16,7 +16,7 @@ We welcome all kinds of contributions, from code to documentation to visuals, aw
 
 ## Contributing
 
-![Project Superhero saying hi](projects-salute-small.png)
+![](projects-salute-small.png)
 
 {{% typography %}}
 
@@ -64,9 +64,9 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 
 {{% hero %}}
 
-![MongoDB Superhero sitting](mongodb-sit-small.png)
-
 ## Let's Chat
+
+![](mongodb-sit-small.png)
 
 {{% grid size=2 %}}
 {{% griditem %}}

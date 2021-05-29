@@ -22,9 +22,31 @@
     }
   }
 
+  figure {
+    @media screen and (max-width: 767px) {
+      position:relative;
+      text-align: center;
+    }
+  }
+
   img {
     float:left;
     margin-right:1.5rem;
+    max-width:100%;
+    @media screen and (max-width: 767px) {
+      float:none;
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+    }
+  }
+
+  h2 + p + figure img {
+    position:relative;
+    top:-3rem;
+    @media screen and (max-width: 767px) {
+      top:0;
+    }
   }
 
   &:nth-child(4n+2), &:nth-child(4n+4) {
@@ -32,6 +54,11 @@
       float:right;
       margin-right:0;
       margin-left:1.5rem;
+      @media screen and (max-width: 767px) {
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+      }
     }
     background-color: transparent;
     color: $dark;
