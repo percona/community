@@ -24,7 +24,7 @@ PMM is fully open source. That means you can not only contribute to the software
 * ProxySQL Server Exporter
 * Amazon RDS Exporter
 
-For more details, please refer to our [Exporters Overview](https://www.percona.com/doc/percona-monitoring-and-management/1.x/index.exporter-option.html).
+For more details, please refer to our [Architecture](https://www.percona.com/doc/percona-monitoring-and-management/2.x/details/architecture.html).
 
 If you're interested in contributing, please check out our page on [contributing](/contribute) as well as the [main PMM repository](https://github.com/percona/pmm) that also lists all our exporter repositories.
 
