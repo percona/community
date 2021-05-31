@@ -14,7 +14,3 @@ Have you checked out our site dedicated to [contributions](https://percona.commu
 ### Code of Conduct
 
 By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
-
-### License
-
-This project is run by the Percona Community and [licensed](LICENSE.md) as Creative Commons Attribution 4.0 (CC-BY-4.0).
