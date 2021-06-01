@@ -10,4 +10,10 @@ images:
 
 # Percona Live Community Rooms
 
+Percona Community worked together with other communities to organize Community Tracks at Percona Live.
+
+Select a room to watch the content.
+
+Full list of speakers on [the Speakers page](/speakers).
+
 {{% /hero %}}
