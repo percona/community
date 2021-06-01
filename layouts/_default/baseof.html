@@ -7,17 +7,18 @@
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
+
+    {{ if .Site.Params.favicon }}
+    <link rel="shortcut icon" href="{{ ((resources.Get ($.Site.Params.favicon)).Resize "64x64 png").RelPermalink }}" type="image/png" />
+    {{ end }}
+
     {{ if .Params.canonical -}}
       <link rel="canonical" href="{{ .Params.canonical }}" />
     {{- else -}}
       <link rel="canonical" href="{{ .Permalink }}" />
     {{- end }}
 
-    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-      <meta name="robots" content="index,follow">
-    {{ else }}
-      <meta name="robots" content="noindex,nofollow">
-    {{ end }}
+    <meta name="robots" content="index,follow">
 
     {{"<!-- region Social -->" | safeHTML}}
     {{ partial "opengraph.html" . }}
@@ -49,7 +50,7 @@
     <header>
       <div class="page-header">
         <div class="logo"><a href="/">
-          <img src="data:image/svg+xml;base64,{{ (resources.Get "percona-logo-vector.svg").Content | base64Encode}}" alt="Percona" />
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "percona-logo.svg").Content | base64Encode}}" alt="Percona" />
         </a></div>
         <input type="checkbox" id="show-mobile-menu" value="1" aria-hidden="true" />
         <div class="mobile-toggle" aria-controls="mobile-menu" aria-label="Open navigation" role="button">

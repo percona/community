@@ -5,6 +5,10 @@ title: "Percona Community"
 copyright: |
   © Percona Community. MySQL, InnoDB, MariaDB and MongoDB are trademarks of their respective owners.
 disableHugoGeneratorInject: true
+params:
+  favicon: superhero.png
+  images:
+  - contribute.png
 taxonomies:
   tag: tags
   author: authors
@@ -37,31 +41,43 @@ menu:
     - identifier: blog
       name: Blog
       url: /blog
-      weight: -110
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 2
     - identifier: MongoDB
       name: MongoDB
       url: /mongodb
-      weight: -100
+      weight: 3
     - identifier: MySQL
       name: MySQL
       url: /mysql
-      weight: -90
-    - identifier: emm
-      name: Meetings
-      url: /emm
-      weight: -80
+      weight: 4
     - identifier: PostgreSQL
       name: PostgreSQL
       url: /postgresql
-      weight: -70
-    - identifier: Cross-DB
-      name: Cross-DB
-      url: /projects
-      weight: -60
+      weight: 5
     - identifier: contribute
       name: Contribute
       url: /contribute
-      weight: -50
+      weight: 6
+
+    - identifier: coc
+      name: Code of Conduct
+      url: /coc
+      parent: contribute
+      weight: 1
+    - identifier: opentopics
+      name: Open Topics
+      url: /opentopics
+      parent: contribute
+      weight: 2
+    - identifier: emm
+      name: Meetings
+      url: /engineeringmeetings
+      parent: contribute
+      weight: 3
 
   footer:
     - identifier: about

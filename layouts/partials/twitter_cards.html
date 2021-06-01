@@ -11,7 +11,7 @@
     {{- else -}}
         {{- with $.Site.Params.images -}}
             <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:image" content="{{ (resources.Get (index . 0)).Permalink }}"/>
+            <meta name="twitter:image" content="{{ ((resources.Get (index . 0)).Resize "1200x jpg 90%").Permalink }}"/>
         {{ else -}}
             <meta name="twitter:card" content="summary"/>
         {{- end -}}

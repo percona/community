@@ -1,1 +1,1 @@
-{{ partial "postpreview" (dict "Link" (.Get "link") "Title" (.Get "title") "Image" (.Get "image") "Content" .Inner) }}
+{{ partial "postpreview" (dict "Link" (.Get "link") "Title" (.Get "title") "Image" (.Get "image") "Content" .Inner "Hideread" ( .Get "hideread" )) }}

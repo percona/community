@@ -23,7 +23,7 @@ We will highlight the folders that you will most likely touch if you are contrib
           _index.md ## copy from other author, change to your details
     > blog          ## add your post here, follow naming pattern
     > contribute
-    > projects
+    > ...
     ...
 > layouts
 > static
@@ -34,9 +34,7 @@ We will highlight the folders that you will most likely touch if you are contrib
 
 If you would like to report a bug/issue or add a suggestion for future consideration, let us know on [Discord](https://discord.gg/mQEyGPkNbR) or open an [issue](https://github.com/percona/community/issues).
 
-Our mission is to keep open source open which is why we are dedicated to making contributions as free from barriers as possible. In order to get your contribution merged, we will ask that you sign your contribution with a [Developer Certificate of Origin](https://developercertificate.org/). This can be done by either adding the following text to your commit message `Signed-off-by: Your Name <your@email.com>` where you replace the relevant pieces with your information or by commiting with the `-s` option:
-
-```git commit -s -m 'Your commit message here'```
+Our mission is to keep open source open which is why we are dedicated to making contributions as free from barriers as possible.
 
 #### I just want to add/edit one file (blog post, code, illustrations, and more)
 
