@@ -12,7 +12,9 @@
     <div class="contentblock">
         <div class="grid grid--3 speakers">
             {{- $pages := .Pages -}}
+
             {{- $paginator := .Paginate $pages 15 }}
+
             {{- range $paginator.Pages -}} 
                 <div class="grid__item speaker">
                     {{- if isset .Params "images" -}}
