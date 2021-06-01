@@ -1,0 +1,7 @@
+{{ if .Params.youtube_id }}
+    <h2>Video</h2>
+    <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">
+    <img width="480px" src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" />
+    </a>
+    <p>Link: <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">https://youtu.be/{{ .Params.youtube_id }}</a></p>
+{{ end }}

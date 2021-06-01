@@ -1,0 +1,20 @@
+@import "common/common";
+
+.speaker .post {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.speaker img {
+    border-radius: 500px;
+    border: 2px solid rgba(0,0,0,.1);
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.hero .avatar {
+    border-radius: 500px;
+    border: 2px solid rgba(0,0,0,.1);
+    min-width: 150px;
+    max-width: 300px;
+}

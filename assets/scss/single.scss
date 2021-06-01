@@ -1,2 +1,27 @@
 @import "common/common";
 @import "common/typography";
+
+.event {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top:1.5rem;
+    margin-bottom:1rem;
+    @media screen and (min-width: 760px) {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-top:1.5rem;
+    }
+    @media screen and (min-width: 900px) {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-top: 3rem;
+    }
+    @media screen and (min-width: 1400px) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      margin-top: 3rem;
+    }
+    font-weight: normal;
+  }
+}
