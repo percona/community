@@ -58,10 +58,14 @@ menu:
       name: PostgreSQL
       url: /postgresql
       weight: 5
+    - identifier: events
+      name: Events
+      url: /events
+      weight: 6
     - identifier: contribute
       name: Contribute
       url: /contribute
-      weight: 6
+      weight: 7
 
     - identifier: coc
       name: Code of Conduct
