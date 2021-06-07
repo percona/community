@@ -21,3 +21,4 @@ The PostgreSQL community is a vibrant community with tons of awesome tools, exte
 **Interested in contributing to make Percona’s distro for PostgreSQL work better in Kubernetes?  Help us make our operator better:** [GitHub for Percona Kubernetes Operator for PostgreSQL](https://github.com/percona/percona-postgresql-operator)
 
 ![Download, Try, Give Feedback, & Enhance](/postgresql/cover-line-2.jpg)
+
