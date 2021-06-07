@@ -1,5 +1,5 @@
 {{ define "css" }}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
 {{ end }}
 
 {{ define "main" }}
@@ -21,24 +21,26 @@
 
                     <h3>{{ .Title }}</h3>
 
-                    Blog posts:
+                    <div class="postgresql-links">
+                        Blog posts:
 
-                    <div class="grid grid--4">
-                    {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "blog") -}}    
-                        <div class="grid__item">
-                            <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+                        <div class="grid-links grid-links--4 ">
+                        {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "blog") -}}    
+                            <div class="grid__item">
+                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+                            </div>
+                        {{- end -}}
                         </div>
-                    {{- end -}}
-                    </div>
 
-                    Video:
+                        Video:
 
-                    <div class="grid grid--4">
-                    {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "video") -}}    
-                        <div class="grid__item">
-                            <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+                        <div class="grid-links grid-links--4">
+                        {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "video") -}}    
+                            <div class="grid__item">
+                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+                            </div>
+                        {{- end -}}
                         </div>
-                    {{- end -}}
                     </div>
                 {{ end }}
 
