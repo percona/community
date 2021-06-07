@@ -8,14 +8,6 @@ Contributing to the PostgreSQL community is not just about coding or providing n
 
 Percona is committed to helping the PostgreSQL community grow and learn. Over the last year the team at Percona has written over 50 PostgreSQL articles geared toward educating and teaching what we learned as we helped our customers. Those posts have been viewed over 300K times. In addition we have also helped deliver, build, or give a platform for over 400 hours of conference talks, videos, and training specifically geared towards PostgreSQL (Many available for free on youtube right now!).  
 
-Here to learn about PostgreSQL? Check out some of the great free content below we have contributed to the ecosystem or that have been delivered as part of our conferences!  When the PostgreSQL community grows we all benefit!  
-
-*   [Starting Out With PostgreSQL](#starting-out-with-postgresql)
-
-*   [Get Advanced With PostgreSQL](#get-advanced-with-postgresql)
-
-*   [Go to the Next Level and Join the Elite](#go-to-the-next-level-and-join-the-elite)
-
-*   [PostgreSQL Features](#postgresql-features)
+Here to learn about PostgreSQL? Check out some of the great free content below we have contributed to the ecosystem or that have been delivered as part of our conferences!  When the PostgreSQL community grows we all benefit!
 
 ![Learn, Try, Teach, and Give Back](/postgresql/cover-line-1.jpg)
