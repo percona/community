@@ -1,0 +1,63 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "main" }}
+    {{ if or .Title .Content }}
+
+        <div class="text">
+
+            <h1>{{ .Title }}</h1>
+            <div class="body">
+                {{ .Content }}
+
+            {{ range where .Pages "Params.block" "mongodb-learn" }}
+
+                <h2>{{ .Title }}</h2>
+
+                {{- .Content -}}
+
+                {{ range where .Site.Pages.ByWeight "Params.lessons" "mongodb-lessons" }}
+
+                    <h3>{{ .Title }}</h3>
+
+                    {{- .Content -}}
+                    <div class="postgresql-links">
+
+                        Blog posts:
+
+                        <div class="grid-links grid-links--4 ">
+                        {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "blog") -}}    
+                            <div class="grid__item">
+                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+                            </div>
+                        {{- end -}}
+                        </div>
+
+                        {{ if not .Params.hideVideo }}
+                            Video:
+
+                            <div class="grid-links grid-links--4">
+                            {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "video") -}}    
+                                <div class="grid__item">
+                                    <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+                                </div>
+                            {{- end -}}
+                            </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
+
+            {{ end }}
+
+            {{ range where .Pages "Params.block" "percona-mongodb-products" }}
+
+                <h2>{{ .Title }}</h2>
+
+                {{- .Content -}}
+
+            {{ end }}
+            </div>
+        </div>
+    {{ end }}
+{{ end }}
