@@ -1,6 +1,6 @@
 ---
 title: "MongoDB 101: How to Tune Your MongoDB Configuration After Upgrading to More Memory"
-link: "https://www.percona.com/blog/2020/03/05/handling-null-values-in-postgresql/"
+link: "https://www.percona.com/blog/2021/01/08/mongodb-101-how-to-tune-your-mongodb-configuration-after-upgrading-to-more-memory/"
 author: "Mike Grayson"
 company: "Percona"
 type: "blog"
