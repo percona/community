@@ -8,4 +8,4 @@ block: "mongodb-lessons-starting"
 weight: 2
 ---
 
-[MongoDB Backups Overview - Percona Tech Days - Akira Kurgane - MongoDB Tutorial](https://www.youtube.com/playlist?list=PLWhC0zeznqkla9TwsihDz--n5c0Ik6YgS) by Akira Kurgane (Percona)
+[MongoDB Backups Overview - Percona Tech Days - Akira Kurgane - MongoDB Tutorial](https://www.youtube.com/watch?v=nWuNjaSPCgc&t=27s) by Akira Kurgane (Percona)
