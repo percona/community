@@ -1,6 +1,6 @@
 ---
 title: 'Deploying Tarantool Cartridge Applications with Zero Effort (Part 2)'
-date: Wed, 01 Apr 2020 11:04:45 +0000
+date: "Wed, 01 Apr 2020 11:04:45 +0000"
 draft: false
 tags: ['author_pavel', 'Open Source Databases', 'Tarantool', 'Tools']
 images:
