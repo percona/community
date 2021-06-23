@@ -4,7 +4,7 @@ date: "2021-06-11T00:00:00+00:00"
 authors:
   - andrii_skomorokhov
 images:
-  - blog/2021/06/pmm-iso-red.png
+  - blog/2021/06/pmm-exporters.jpg
 slug: exporters-roadmap
 ---
 
