@@ -15,7 +15,7 @@ The PostgreSQL community is a vibrant community with tons of awesome tools, exte
 
 {{% gridlinks size=2 %}}
 {{% griditem %}}
-Contribute to Our PostgreSQL Distrobution<br/>
+Contribute to Our PostgreSQL Distribution<br/>
 [Github for Percona PostgreSQL Packging](https://github.com/percona/postgres-packaging)
 {{% /griditem %}}
 {{% griditem %}}
