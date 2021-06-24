@@ -13,11 +13,10 @@
 
   .banner__content
   {
-    max-width: 1400px;
+    max-width: $width-max;
     padding: 1.5rem;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .banner__grid {

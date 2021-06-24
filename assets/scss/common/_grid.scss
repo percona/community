@@ -38,7 +38,13 @@
   }
 }
 
+
+
 @media (max-width: 768px) {
+  .grid__item {
+    margin-bottom:1rem;
+  }
+
   .grid--2 {
     display: block;
   }

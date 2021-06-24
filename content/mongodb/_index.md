@@ -13,4 +13,6 @@ Welcome to Percona’s Community Page for MongoDB! Percona offers free education
 
 {{% mongodbtable %}}
 
+## Ask Questions and Get Answers
 
+Faced an issue which you don’t know how to deal with? Need advice from an experienced MongoDB expert? There is a place to go! Visit our [Community Forum](https://forums.percona.com/c/mongodb/24) where you can ask your questions and get answers from Percona experts and other software users or join our [Discord channel](http://per.co.na/discord). 
