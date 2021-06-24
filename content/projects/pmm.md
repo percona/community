@@ -3,16 +3,21 @@ title: "PMM - Percona Monitoring and Management"
 description: "PMM - Percona Monitoring and Management for database observability"
 ---
 
-Percona Monitoring and Management (PMM) has a [demo website](https://pmmdemo.percona.com/graph/) which allows you to quickly check out what it's all about. If you prefer text instead, here's quick list of what you can do with PMM:
+*How can you help?*
 
-* Query Analytics (intuitive interface enabling you to quickly analyze and optimize your queries)
-* Metrics Monitor (historical view of metrics that are critical to your database server)
-* Security Threat Tool (quickly find and fix common data security issues across all your open source databases)
-* *...and much more*
+## Download, Try, Give Feedback, & Enhance
 
-If you've checked out the demo and are ready to give it a try, you can read more about how to set it up in our [installation documentation](https://www.percona.com/software/pmm/quickstart).
+Need to easily monitor and troubleshoot your databases? PMM is the solution we highly encourage you to try to and give feedback on. It is free, open-source and supports various databases (MySQL, MongoDB, PostgreSQL, MariaDB), and allows you to view and monitor all of your open source databases easily in one place. Give it a try and help us improve it with your feedback! 
 
-[![PMM stylistic screenshot illustration](grafana-dashboard.svg)](https://pmmdemo.percona.com/graph/)
+Enjoy how it is to communicate with the Percona community. Submitting a PR, leaving a review, reporting a bug or helping other users on the forum - all it matters to promote open source and keep it free and open. 
+
+
+{{% pmmtable %}}
+
+
+## Ask questions and Get Answers.
+
+If you have any doubts, there are places you can go! You are free to seek advice and ask any questions you might have on our [Community Forum](https://forums.percona.com/c/percona-monitoring-and-management-pmm/30/none). There you can get help from other Percona software users and experienced Percona experts. Share your knowledge as well! Answer other people’s questions, communicate, and watch the community growing. We also have a [Discord](http://per.co.na/discord) channel, a perfect place to chat about open source, databases, and other tech topics!
 
 ## Which databases can PMM monitor?
 
