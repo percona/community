@@ -25,7 +25,7 @@
 
                     <div class="lessons-links">
 
-                        Blog posts:
+                        <h4>Blog posts</h4>
 
                         <div class="grid-links grid-links--4 ">
                         {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "blog") -}}    
@@ -36,7 +36,7 @@
                         </div>
 
                         {{ if not .Params.hideVideo }}
-                            Video:
+                            <h4>Video</h4>
 
                             <div class="grid-links grid-links--4">
                             {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "video") -}}    
