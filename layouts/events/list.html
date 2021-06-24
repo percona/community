@@ -1,14 +1,17 @@
 {{ define "css" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contribute.scss") | safeCSS) -}}
     {{- if in .Content "<pre class=\"chroma\">" -}}
         {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
     {{ end }}
 {{- end }}
 
 {{ define "mainwrapper" }}
-    {{- .Content -}}
 
+    {{- .Content -}}
+    
     <div class="contentblock">
+
+
         <div class="grid grid--2">
             {{- $pages := .Pages -}}
             {{- $paginator := .Paginate $pages }}
