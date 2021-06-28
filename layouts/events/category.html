@@ -6,9 +6,11 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
+
     {{- .Content -}}
 
     <div class="contentblock">
+
         <div class="grid grid--2">
             {{- $pages := .Sections -}}
             {{- $paginator := .Paginate $pages }}

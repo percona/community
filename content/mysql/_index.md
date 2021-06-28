@@ -19,6 +19,50 @@ Looking to submit a PR, contribute code, or submit a bug?
 
 If you face any situation you are not sure how to proceed with, ask your questions on our [Community Forum](https://forums.percona.com/c/mysql-mariadb/36) and get answers from other users and Percona experts! Also, join our [Discord channel](http://per.co.na/discord) to chat on databases, open source and Percona software.
 
+## Help Others to Choose and Leave an Unbiased Tech Review
+
+If Percona software has been good for you, your testimonials and recommendations can also help others find similar success by leaving a review on one of the software marketplaces. We highly encourage you to describe your experience precisely and honestly, be specific about details of your environment, to help other people find a better solution in their situation.
+
+And also our team is thrilled to receive your feedback and we carefully read all your reviews. Much appreciated!
+
+| Percona Software | Capterra | G2 | SourceForge | TrustRadius |
+|:----------------:|:--------:|:--:|:-----------:|:-----------:|
+| Percona Server For MySQL | [Capterra](https://reviews.capterra.com/new/133993) | [G2](https://www.g2.com/products/percona-server/reviews/) | [SourceForge](https://sourceforge.net/software/product/Percona-Server/) | [TrustRadius](https://www.trustradius.com/products/percona-server-for-mysql/reviews) |
+| Percona XtraBackup | [Capterra](https://reviews.capterra.com/new/205293) | [G2](https://www.g2.com/products/percona-xtrabackup-for-mysql/reviews/) | [SourceForge](https://sourceforge.net/software/product/Percona-XtraBackup/) | [TrustRadius](https://www.trustradius.com/products/percona-xtrabackup/reviews) |
+| Percona XtraDB Cluster | [Capterra](https://www.capterra.com/p/203955/Percona-XtraDB-Cluster/) | [G2](https://www.g2.com/products/percona-xtradb-cluster-pxc/reviews) | [SourceForge](https://sourceforge.net/software/product/Percona-XtraDB-Cluster/) | [TrustRadius](https://www.trustradius.com/products/percona-xtradb-cluster/reviews) |
+| Percona Kubernetes Operator | - | [G2](https://www.g2.com/products/percona-kubernetes-operator-for-percona-xtradb-cluster/reviews) | [SourceForge](https://sourceforge.net/software/product/Percona-Kubernetes-Operator/) | [TrustRadius](https://www.trustradius.com/products/percona-kubernetes-operator-for-mysql-and-mongodb/reviews) |
+
+
+{{% grid size=4 %}}
+{{% griditem %}}
+<!-- Begin SF Tag -->
+<div class="sf-root" data-id="3261319" data-variant-id="sf" data-badge="top-performer-spring-black" data-metadata="achievement=top-performer-seasonal-2021-spring" style="width:200px" data-project-url="https://sourceforge.net/software/product/Percona-XtraDB-Cluster/">
+    <a href="https://sourceforge.net/software/product/Percona-XtraDB-Cluster/" target="_blank">Percona XtraDB Cluster Reviews</a>
+</div>
+<script type="text/javascript">(function () {var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3261319&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
+</script>
+<!-- End SF Tag -->
+{{% /griditem %}}
+{{% griditem %}}
+<!-- Begin SF Tag -->
+<div class="sf-root" data-id="3261326" data-variant-id="sf" data-badge="light-default" data-metadata="" style="width:180px" data-project-url="https://sourceforge.net/software/product/Percona-XtraBackup/">
+    <a href="https://sourceforge.net/software/product/Percona-XtraBackup/" target="_blank">Percona XtraBackup Reviews</a>
+</div>
+<script type="text/javascript">(function () {var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3261326&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
+</script>
+<!-- End SF Tag -->
+{{% /griditem %}}
+{{% griditem %}}
+<a href="https://www.trustradius.com/products/percona-server-for-mysql/reviews?source=ratings_badge&utm_source=badge&utm_medium=referral&utm_campaign=trustradius_ratings_badge" style="display:inline-block;" target="_blank" title="Read Percona Server for MySQL reviews on TrustRadius" rel="noopener"><img alt="Read Percona Server for MySQL reviews on TrustRadius" style="max-width:200px" src="https://www.trustradius.com/api/v1/ratings_badge/percona-server-for-mysql"></a>
+{{% /griditem %}}
+{{% griditem %}}
+<a href="https://www.trustradius.com/products/percona-kubernetes-operator-for-mysql-and-mongodb/reviews?source=ratings_badge&utm_source=badge&utm_medium=referral&utm_campaign=trustradius_ratings_badge" style="display:inline-block;" target="_blank" title="Read Percona Kubernetes Operators reviews on TrustRadius" rel="noopener"><img alt="Read Percona Kubernetes Operators reviews on TrustRadius" style="max-width:200px" src="https://www.trustradius.com/api/v1/ratings_badge/percona-kubernetes-operator-for-mysql-and-mongodb"></a>
+{{% /griditem %}}
+{{% /grid %}}
+
+
+
+
 
 ## The Percona distributions for MySQL
 
