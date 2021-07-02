@@ -56,7 +56,7 @@ menu:
       weight: 4
     - identifier: podcasts
       name: Podcasts
-      url: /events
+      url: /podcasts
       weight: 5
     - identifier: events
       name: Events
