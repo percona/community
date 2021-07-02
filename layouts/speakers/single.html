@@ -20,16 +20,20 @@
     </div></div>
 
     <div class="contentblock">
-        <div class="grid grid--2">
+        <div class="grid grid--3">
             {{- $speaker_name := .Params.name -}}
             {{- range $.Page.Site.RegularPages -}}
                 {{ if (isset .Params "speakers")}}
                     {{ if in .Params.speakers $speaker_name }}  
                         <div class="grid__item">
-                            {{- if isset .Params "images" -}}
-                                {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
+                            {{- if isset .Params "podbean_link" -}}
+                                {{- partial "podcastpreview" . -}}
                             {{- else -}}
-                                {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
+                                {{- if isset .Params "images" -}}
+                                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
+                                {{- else -}}
+                                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
+                                {{- end -}}
                             {{- end -}}
                         </div>
                     {{ end }}
