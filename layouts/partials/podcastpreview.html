@@ -1,0 +1,25 @@
+<a href="{{ .RelPermalink }}" class="post post--preview">
+<img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" />
+<h2>{{ .Title }}</h2>
+<div class="post__content">
+
+<p><em>
+    {{ if .PublishDate }}
+        {{ .PublishDate.Format "January 2, 2006" }}
+    {{ end }}
+    {{- if (isset .Params "speakers") -}}   
+            by {{ range $key, $author := .Params.speakers -}}
+              {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                {{ if $key }}, {{ end -}}
+                {{- .Params.fullname -}}
+              {{- end }} 
+            {{- end -}}
+
+    {{- end -}}
+    </em>
+</p>
+<p>
+{{- .Params.description | safeHTML | plainify | htmlUnescape  -}}</p>
+{{ if not .Params.Hideread }}<p class="readmore">Read more &raquo;</p>{{ end }}
+</div>
+</a>

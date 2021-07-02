@@ -1,2 +1,2 @@
 <div class="banner"{{ with (.Get "background") }} style="background-image:url({{ ((resources.Get .).Resize "1200x 90% jpg").RelPermalink }})"{{ end }}>
-<div class="banner__content"><div class="banner__grid"><div class="banner__text">{{ .Inner }}</div>{{ with (.Get "icon") }}<div class="banner__icon"><img src="{{ ((resources.Get .).Resize "180x 100% png").RelPermalink }}" /></div>{{ end }}</div></div></div>
+<div class="banner__content"><div class="banner__grid"><div class="banner__text">{{ .Inner }}</div>{{ with (.Get "icon") }}<div class="banner__icon"><img src="{{ ((resources.Get .)).RelPermalink }}" /></div>{{ end }}</div></div></div>

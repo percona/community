@@ -1,0 +1,112 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/bio.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "meta" }}
+  {{- if (isset .Params "speakers") -}}
+    {{ range $key, $author := .Params.authors -}}
+      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+        <meta name="author" content="{{ .Params.fullname }}" />
+      {{- end }}{{ if $key }}, {{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{ end }}
+
+{{ define "main" }}
+  <article class="event text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
+    {{ if $.PublishDate }}
+      {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
+      <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
+      {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
+    {{ end }}
+
+    <h1{{ if $.PublishDate }} itemprop="name headline"{{ end }}>{{ .Title }}</h1>
+    {{ if $.PublishDate }}
+      <div class="meta">
+        <time datetime="{{ $.PublishDate }}"{{ if $.PublishDate }} itemprop="datePublished"{{ end }}>
+          <span class="line">{{ $.PublishDate.Format "January 2, 2006" }}</span>
+          <span class="calendar">
+            <span class="day">{{ $.PublishDate.Day}}</span>
+            <span class="month-year">{{ substr $.PublishDate.Month 0 3 }} {{ $.PublishDate.Year}}</span>
+          </span>
+        </time>
+        <span class="authors">
+          {{- if (isset .Params "speakers") -}}
+            by {{ range $key, $author := .Params.speakers -}}
+              {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                {{ if $key }}, {{ end -}}
+                <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+              {{- end }} 
+            {{- end -}}
+          {{- end -}}
+        </span>
+      </div>
+    {{ end }}
+    <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
+
+      <p>Link to listen and subscribe: <a href="{{ .Params.podbean_link }}">PodBean</a></p>
+
+      {{ partial "content.html" . }}
+
+      {{ if .Params.youtube_id }}
+          <h2>YouTube</h2>
+          <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">
+          <img width="480px" src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" />
+          </a>
+          <p>Link: <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">https://youtu.be/{{ .Params.youtube_id }}</a></p>
+      {{ end }}
+
+    </div>
+
+   {{ if (isset .Params "speakers")}}
+      <div class="bios">
+      {{ range $key, $author := .Params.speakers -}}
+        <div class="bios__bio">
+          {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+            {{- with .Params.images -}}
+              <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
+            {{- end -}}
+            <div class="bios__content">
+              <h2><span>{{ .Params.fullname }}</span></h2>
+              <i>{{ .Params.job }}</i>
+              {{ .Content }}
+              <p><a href="/speakers/{{ $author }}">See all talks by {{ .Params.fullname }} &raquo;</a></p>
+            </div>
+          {{- end }}
+        </div>
+      {{- end -}}
+      </div>
+    {{ end }}
+ 
+  </article>
+
+  <div class="recommendations">
+    <h2>Did you like this post? Why not read more?</h2>
+    {{ $recommendationCount := 3 }}
+    <div class="grid grid--{{ $recommendationCount }}">
+      {{- $recommendations := first 0 (where $.Page.Site.RegularPages "Section" "podcasts") }}
+      {{- if isset .Params "recommendations" -}}
+        {{ range $key, $recommendation := .Params.recommendations -}}
+          {{- with $.Site.GetPage $recommendation -}}
+            {{- $recommendations = $recommendations | append . -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- $missingPosts := sub $recommendationCount (len $recommendations) }}
+      {{- range first $missingPosts (where $.Page.Site.RegularPages "Section" "podcasts") }}
+        {{- $recommendations = $recommendations | append . -}}
+      {{- end -}}
+
+      {{- range $recommendations -}}
+        <div class="grid__item">
+          {{ partial "podcastpreview" . }}
+        </div>
+      {{- end -}}
+    </div>
+  </div>
+{{ end }}

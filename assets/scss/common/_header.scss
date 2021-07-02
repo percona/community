@@ -10,7 +10,8 @@ $mobile-breaking-point: 1000px;
   a {
     display: block;
     border-bottom-width: 0.2rem;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 0.80rem;
   }
 
   .logo {
@@ -40,6 +41,7 @@ $mobile-breaking-point: 1000px;
   header.page {
     box-shadow: 0 0 3px 0 rgba(168, 168, 168, .5);
   }
+
   .logo a {
     position:absolute;
   }
@@ -162,6 +164,11 @@ $mobile-breaking-point: 1000px;
       }
     }
 
+    a {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    
     a:hover{
       border-bottom: 0;
       margin-bottom:0;
