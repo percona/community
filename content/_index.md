@@ -3,7 +3,7 @@ title: "Run Percona: Embrace Open"
 description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 ---
 
-{{% bannerwithicon background="purplegalaxy.jpg" icon="home/Stickers-Percona-Polyglots.png" %}}
+{{% bannerwithicon background="purplegalaxy.jpg" icon="home/Stickers-Percona-Polyglots-250.png" %}}
 
 Welcome to Percona Community - your community hub for installing, running, optimizing, and learning everything around databases and software architectures.
 
@@ -34,7 +34,7 @@ Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{% /grid %}}
 {{% /contentblock %}}
 
-{{% bannerwithicon background="orangegalaxy.jpg" icon="home/Stickers-Cloud.png" %}}
+{{% bannerwithicon background="orangegalaxy.jpg" icon="home/Stickers-Percona-Cloud-230.png" %}}
 
 ## Projects - PMM, Kubernetes, and more
 

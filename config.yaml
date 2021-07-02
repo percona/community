@@ -38,34 +38,38 @@ markup:
     tabWidth: 4
 menu:
   main:
-    - identifier: blog
-      name: Blog
-      url: /blog
-      weight: 1
-    - identifier: projects
-      name: Projects
-      url: /projects
-      weight: 2
     - identifier: MongoDB
       name: MongoDB
       url: /mongodb
-      weight: 3
+      weight: 1
     - identifier: MySQL
       name: MySQL
       url: /mysql
-      weight: 4
+      weight: 2
     - identifier: PostgreSQL
       name: PostgreSQL
       url: /postgresql
+      weight: 3
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 4
+    - identifier: podcasts
+      name: Podcasts
+      url: /podcasts
       weight: 5
     - identifier: events
       name: Events
       url: /events
       weight: 6
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 7
     - identifier: contribute
       name: Contribute
       url: /contribute
-      weight: 7
+      weight: 8
 
     - identifier: coc
       name: Code of Conduct

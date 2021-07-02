@@ -8,6 +8,12 @@
   color: $light;
   h1 {
     margin-bottom:1.5rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom:1rem;
   }
 
   h2 {
@@ -108,8 +114,8 @@
 }
 
 .contentblock {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .herotext {
