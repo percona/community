@@ -50,7 +50,9 @@
 
       <p>Link to listen and subscribe: <a href="{{ .Params.podbean_link }}">PodBean</a></p>
 
-      {{ partial "content.html" . }}
+      {{ if .Params.short_text }}
+        <p>{{ .Params.short_text }}</p>
+      {{ end }}
 
       {{ if .Params.youtube_id }}
           <h2>YouTube</h2>
@@ -60,27 +62,29 @@
           <p>Link: <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">https://youtu.be/{{ .Params.youtube_id }}</a></p>
       {{ end }}
 
-    </div>
-
-   {{ if (isset .Params "speakers")}}
-      <div class="bios">
-      {{ range $key, $author := .Params.speakers -}}
-        <div class="bios__bio">
-          {{- with $.Site.GetPage (print "/speakers/" $author) -}}
-            {{- with .Params.images -}}
-              <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
-            {{- end -}}
-            <div class="bios__content">
-              <h2><span>{{ .Params.fullname }}</span></h2>
-              <i>{{ .Params.job }}</i>
-              {{ .Content }}
-              <p><a href="/speakers/{{ $author }}">See all talks by {{ .Params.fullname }} &raquo;</a></p>
-            </div>
-          {{- end }}
+      {{ if (isset .Params "speakers")}}
+        <div class="bios">
+        {{ range $key, $author := .Params.speakers -}}
+          <div class="bios__bio">
+            {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+              {{- with .Params.images -}}
+                <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
+              {{- end -}}
+              <div class="bios__content">
+                <h2><span>{{ .Params.fullname }}</span></h2>
+                <i>{{ .Params.job }}</i>
+                {{ .Content }}
+                <p><a href="/speakers/{{ $author }}">See all talks by {{ .Params.fullname }} &raquo;</a></p>
+              </div>
+            {{- end }}
+          </div>
+        {{- end -}}
         </div>
-      {{- end -}}
-      </div>
-    {{ end }}
+      {{ end }}
+
+      {{ partial "content.html" . }}
+
+    </div>
  
   </article>
 
