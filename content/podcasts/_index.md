@@ -13,7 +13,7 @@ Want to spend your spare time with pleasure and benefit? We prepared for you a P
 
 {{% contentblock %}}
 {{% typography %}}
-He invites outstanding community members, engineers, contributors, and industry leaders to have some tech talk and discuss their experience, open source, and databases. Find out more about the latest trends, technologies, use cases and learn from outstanding experts. 
+Matt invites outstanding community members, engineers, contributors, and industry leaders to have some tech talk and discuss their experience, open source, and databases. Find out more about the latest trends, technologies, use cases and learn from outstanding experts. 
 
 New episodes are available on almost all podcast platforms. 
 
