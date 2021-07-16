@@ -51,7 +51,7 @@
       <p>Link to listen and subscribe: <a href="{{ .Params.podbean_link }}">PodBean</a></p>
 
       {{ if .Params.short_text }}
-        <p>{{ .Params.short_text }}</p>
+        <p>{{ .Params.short_text | markdownify }}</p>
       {{ end }}
 
       {{ if .Params.youtube_id }}

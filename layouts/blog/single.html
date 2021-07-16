@@ -49,6 +49,24 @@
     <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
       {{ partial "content.html" . }}
     </div>
+    {{ if (isset .Params "authors")}}
+      <div class="bios">
+      {{ range $key, $author := .Params.authors -}}
+        <div class="bios__bio">
+          {{- with $.Site.GetPage (print "/authors/" $author) -}}
+            {{- with .Params.images -}}
+              <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
+            {{- end -}}
+            <div class="bios__content">
+              <h2><span>{{ .Params.fullname }}</span></h2>
+              {{ .Content }}
+              <p><a href="/authors/{{ $author }}">See all posts by {{ .Params.fullname }} &raquo;</a></p>
+            </div>
+          {{- end }}
+        </div>
+      {{- end -}}
+      </div>
+    {{ end }}
     <div class="recommendations">
       <h2>Did you like this post? Why not read more?</h2>
       {{ $recommendationCount := 3 }}
@@ -74,23 +92,5 @@
         {{- end -}}
       </div>
     </div>
-    {{ if (isset .Params "authors")}}
-      <div class="bios">
-      {{ range $key, $author := .Params.authors -}}
-        <div class="bios__bio">
-          {{- with $.Site.GetPage (print "/authors/" $author) -}}
-            {{- with .Params.images -}}
-              <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
-            {{- end -}}
-            <div class="bios__content">
-              <h2><span>{{ .Params.fullname }}</span></h2>
-              {{ .Content }}
-              <p><a href="/authors/{{ $author }}">See all posts by {{ .Params.fullname }} &raquo;</a></p>
-            </div>
-          {{- end }}
-        </div>
-      {{- end -}}
-      </div>
-    {{ end }}
   </article>
 {{ end }}
