@@ -30,12 +30,6 @@ Typically, there is [mysqld_expoter](https://github.com/prometheus/mysqld_export
 
 For reference, you can see various exporters from [exporterhub](https://exporterhub.io).
 
-## Creating a Go project
-
-Exporter can be implemented in various languages, but today I will implement it with Go.
-
-Personally, I think Go is very convenient in terms of distribution and compatibility. I will omit the go installation and environment configuration here.
-
 What I am going to present my Blog that is the process of adding my own new exporter among these various exporters. Let’s go!
 
 ## Creating a Go project
