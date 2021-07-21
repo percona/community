@@ -15,5 +15,4 @@ images:
 ---
 MySQL DBA, KakaoBank
 ----
-Dongchan is DBA at KakaoBank, the Korean internet bank. He is very interested in data efficient processing and automation. His final goal is building unbreakable data system. He is interested in all elements (monitoring, automation) for a stable system configuration.
-> https://gywn.blog
+Dongchan is DBA at KakaoBank, the Korean internet bank. He is very interested in data efficient processing and automation. His final goal is building unbreakable data system. He is interested in all elements (monitoring, automation) for a stable system configuration. [https://gywn.blog](https://gywn.blog)
