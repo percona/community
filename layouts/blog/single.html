@@ -67,30 +67,21 @@
       {{- end -}}
       </div>
     {{ end }}
+  </article>
+
+  {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
+  {{ with $related }}
     <div class="recommendations">
       <h2>Did you like this post? Why not read more?</h2>
       {{ $recommendationCount := 3 }}
       <div class="grid grid--{{ $recommendationCount }}">
-        {{- $recommendations := first 0 (where $.Page.Site.RegularPages "Section" "blog") }}
-        {{- if isset .Params "recommendations" -}}
-          {{ range $key, $recommendation := .Params.recommendations -}}
-            {{- with $.Site.GetPage $recommendation -}}
-              {{- $recommendations = $recommendations | append . -}}
-            {{- end -}}
-          {{- end -}}
-        {{- end -}}
 
-        {{- $missingPosts := sub $recommendationCount (len $recommendations) }}
-        {{- range first $missingPosts (where $.Page.Site.RegularPages "Section" "blog") }}
-          {{- $recommendations = $recommendations | append . -}}
-        {{- end -}}
-
-        {{- range $recommendations -}}
+          {{ range . }}
           <div class="grid__item">
             {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
           </div>
-        {{- end -}}
+          {{ end }}
       </div>
     </div>
-  </article>
+  {{ end }}
 {{ end }}
