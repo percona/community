@@ -1,7 +1,7 @@
 ---
 name: sergey_kuzmichev
 name_pronunciation: sergey_kuzmichev
-fullname: Sergey kuzmichev
+fullname: Sergey Kuzmichev
 fullname_pronounciation: Sergey Kuzmichev
 job: Senior Support Engineer, Percona
 country: 
