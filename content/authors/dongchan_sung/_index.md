@@ -14,3 +14,4 @@ images:
   - blog/authors/dongchan_sung.png
 ---
 MySQL DBA, KakaoBank
+> https://gywn.blog
