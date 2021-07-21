@@ -733,7 +733,7 @@ This is the moment when your own Exporter is created at final!. 🙂
 
 The post was very long. I put the source code in the body several times.. I feel like the amount of text is getting longer.
 
-Anyway, I’ve created my own unique Exporter! I implemented a simple function to simply register a query and extract this result as a metric result, but I think you can add more interesting elements according to your own thoughts as needed.
+Anyway, I’ve created my own unique Exporter! **I implemented a simple function to simply register a query and extract this result as a metric result**, but I think you can add more interesting elements according to your own thoughts as needed.
 
 For reference, the source written above is organized in the following Git.
 > https://github.com/go-gywn/query-exporter-simple
