@@ -1,6 +1,6 @@
 ---
 title: 'Create your own Exporter in Go!'
-date: Wed, 21 Jul 2021 09:42:53 +0000
+date: "2021-07-21T00:00:00+00:00"
 draft: false
 tags: ['Exporter', 'Go', 'Query', 'MySQL', 'Prometheus', 'Programming']
 authors: 
@@ -10,16 +10,15 @@ images:
 slug: create-your-own-exporter-in-go
 ---
 
+## Overview
 
-
-# Overview
 Hi, it’s too hot summer in Korea. Today I want to talk about an interesting and exciting topic. **Try to making your own exporter in Go  language**.
 
 If you register a specific query, it is a simple program that shows the result of this query as an exporter result metrics. Some of you may still be unfamiliar with what Expoter is.
 
 I will explain about Exporter step by step in today’s post.
 
-# Exporter?
+## Exporter?
 
 You can think of an **Exporter as an HTTP server for pulling data from a time series database** like Prometheus. Prometheus periodically calls the specific URL of the exporter and saves the result of metrics as a time series.
 
@@ -31,7 +30,7 @@ Typically, there is [mysqld_expoter](https://github.com/prometheus/mysqld_export
 
 For reference, you can see various exporters from [exporterhub](https://exporterhub.io).
 
-# Creating a Go project
+## Creating a Go project
 
 Exporter can be implemented in various languages, but today I will implement it with Go.
 
@@ -39,7 +38,7 @@ Personally, I think Go is very convenient in terms of distribution and compatibi
 
 What I am going to present my Blog that is the process of adding my own new exporter among these various exporters. Let’s go!
 
-# Creating a Go project
+## Creating a Go project
 
 Exporter can be implemented in various languages, but today I will implement it with Go.
 
@@ -69,7 +68,7 @@ go 1.16
 
 Although it is an fundamental project, now everything is ready to make your own exporter. From now on, package management is managed with `go mod`.
 
-# Try Empty Exporter
+## Try Empty Exporter
 
 Now, let’s start making the Exporter in earnest.
 
@@ -200,7 +199,7 @@ query_exporter_build_info{branch="",goversion="go1.16.5",revision="",version=""}
 
 At the very bottom, there is the query_exporter_build_info metric, which is the information collected by the Collector that we added in the previous section. This is the moment we created the new Exporter collecting version information!
 
-# Creating an Exporter in earnest
+## Creating an Exporter in earnest
 
 I made an empty Exporter that specifies only the exporter version. Is that easy, right? 🙂
 
@@ -208,7 +207,7 @@ From now on, I’m going to implement a Collector that collects the information 
 
 ![query exporter](blog/2021/07/query-exporter.png)
 
-## 1. Configuration format (YAML)
+### 1. Configuration format (YAML)
 As I said before, I want to make something that passes the result of the registered query to the Exporter result metric. To do this, you need to know information about the target instance as well as the query to be executed.
 
 Let’s set it up in the below format. MySQL connection information and the query to be executed. It will show two pieces of information as a result: **“Connections per host”** and **“Connections per user”**.
@@ -353,7 +352,7 @@ type Config struct {
 }
 ```
 
-## 2. Implement Collector
+### 2. Implement Collector
 
 The highlight of today’s post is the implementing a Collector to collect the desired information from database.
 
@@ -390,7 +389,7 @@ func main(){
 
 The Version Collector added to the can exporter created earlier and the QueryCollector newly added this time are registered. When an http request comes in to “/metric”, the above two Collectors are finally executed by each thread.
 
-### 2-1. Create the Describe function
+#### 2-1. Create the Describe function
 
 **This is the part that defines the specifications of each metric.** Actually, it is not necessary to define the specification of the metric here, but it is useful if you consider the case of creating and operating multiple Collectors. This method is executed only once when a Collector is registered with prometheus.Register.
 
@@ -426,7 +425,7 @@ metrics:
     labels: ["user"]
 ```
 
-### 2-2. Create the Collect function
+#### 2-2. Create the Collect function
 
 This is the part that connects to the DB, executes the registered SQL, and makes it a metric.
 
@@ -514,7 +513,7 @@ ch <- prometheus.MustNewConstMetric(metric.metricDesc, prometheus.GaugeValue, va
 
 For the value to be displayed as a metric, the value item specified in the setting is retrieved from the query result.
 
-# QueryExporter Source
+## QueryExporter Source
 
 Here’s the everything that I’ve done so far:
 
@@ -729,7 +728,7 @@ query_exporter_process_count_by_user{user="test"} 1
 ```
 This is the moment when your own Exporter is created at final!. 🙂
 
-# Concluding..
+## Concluding..
 
 The post was very long. I put the source code in the body several times.. I feel like the amount of text is getting longer.
 
