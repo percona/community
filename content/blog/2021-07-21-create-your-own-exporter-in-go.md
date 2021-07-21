@@ -2,7 +2,7 @@
 title: 'Create your own Exporter in Go!'
 date: Wed, 21 Jul 2021 09:42:53 +0000
 draft: false
-tags: ['Exporter', 'Go', 'Query', 'MySQL', 'Prometheus' 'Programming']
+tags: ['Exporter', 'Go', 'Query', 'MySQL', 'Prometheus', 'Programming']
 authors: 
   - dongchan_sung
 images:
