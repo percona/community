@@ -1,6 +1,6 @@
 ---
-name: Wayne
-name_pronunciation: Wayne
+name: wayne
+name_pronunciation: wayne
 fullname: Wayne Leutwyler
 fullname_pronounciation: Wayne Leutwyler
 tagline: 
