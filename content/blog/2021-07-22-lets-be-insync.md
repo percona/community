@@ -45,7 +45,7 @@ Let's start off by setting up a VM to play with. For this I will be using Virtua
 
 ![lbis-3](blog/2021/07/lbis-3.png)
 
-5. Download Percona Server: wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.23-14/binary/tarball/Percona-Server-8.0.23-14-Linux.x86_64.glibc2.17-minimal.tar.gz
+5. Download Percona Server: wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.25-15/binary/tarball/Percona-Server-8.0.25-15-Linux.x86_64.glibc2.17-minimal.tar.gz
 
 ![lbis-4](blog/2021/07/lbis-4.png)
 
