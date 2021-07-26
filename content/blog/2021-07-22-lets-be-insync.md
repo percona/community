@@ -56,17 +56,17 @@ Let's start off by setting up a VM to play with. For this I will be using Virtua
 
 7. Deploy your cluster:
   ```
-  	dbdeployer deploy replication ps8.0.23 \\
-   	--gtid \\
-   	--custom-role-name=R_POWERFUL \\
-   	--custom-role-privileges='ALL PRIVILEGES' \\
-   	--custom-role-target='*.*' \\
-   	--custom-role-extra='WITH GRANT OPTION' \\
-   	--default-role=R_POWERFUL \\
-   	--bind-address=0.0.0.0 \\
-   	--remote-access='%' \\
-   	--native-auth-plugin \\
-   	--db-user=sbtest \\
+  	dbdeployer deploy replication ps8.0.23 
+   	--gtid 
+   	--custom-role-name=R_POWERFUL \
+   	--custom-role-privileges='ALL PRIVILEGES' \
+   	--custom-role-target='*.*' \
+   	--custom-role-extra='WITH GRANT OPTION' \
+   	--default-role=R_POWERFUL \
+   	--bind-address=0.0.0.0 \
+   	--remote-access='%' \
+   	--native-auth-plugin \
+   	--db-user=sbtest \
    	--db-password=sbtest!
   ```
 
