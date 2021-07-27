@@ -70,6 +70,13 @@
                     {{ .Pre }}
                     <span>{{ .Name }}</span>
                   </a>
+
+                  <ul class="sub-menu">
+                  {{ range .Children }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                  {{ end }} 
+                  </ul>      
                 </li>
               {{ end }}
             </ul>
