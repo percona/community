@@ -49,6 +49,7 @@
 
 .page-header nav li:hover ul.submenu__list {
   display: flex;
+  z-index: 999;
 }
 
 .page-header nav ul.submenu__list {
