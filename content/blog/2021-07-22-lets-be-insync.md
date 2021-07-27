@@ -19,7 +19,7 @@ The fundamental issue with async replication is that writes sent to the Replica 
 
 I can remember long nights of restoring backups of the primary to the replica’s. Not a painful process but time consuming.
 
-Please take a few moments to review the full documentation of both tools before trying this example on live data: **pt-table-checksum, pt-table-sync**.
+Please take a few moments to review the full [documentation](https://www.percona.com/software/database-tools/percona-toolkit) of both tools before trying this example on live data: **pt-table-checksum, pt-table-sync**.
 
 With pt-table-check and pt-table-sync provided by Percona Toolkit we can recover a replica without needed to do a restore. Keep in mind this approach might not work for all situations. We will go over one example below. We will also use dbdeployer to help us setup a testing sandbox.  
 
@@ -158,7 +158,7 @@ Connect to the 1st replica:
 Change into the synctest database. Do a select on the synctest.names table and you should see 12 rows of data. Remove one row of data.  
 
 ```
-delete from names where id = 1;
+delete from names where id = 7;
 ```
 
 quit out of slave1.
@@ -169,7 +169,7 @@ Connect to the 2nd replica.
 Change into the synctest database. Do a select on the names table and you should see 12 rows of data. Remove one row of data.  
 
 ```
-delete from names where id = 12;
+delete from names where id = 8;
 ```
 quit out of slave2.
 
@@ -182,6 +182,10 @@ Now we know that our cluster is out of sync, but let's use the tool to verify. T
 **Note: that pt-table-checksum is shows a DIFFS of 1 and DIFF_ROWS of 1. This reflects that we have 1 row of data missing from one our both of the slaves.**
 
 Go back to slave2 and remove another row of data. Run Checksum again.
+
+```
+delete from names where id = 9;
+```
 
 ![lbis-11](blog/2021/07/lbis-11.png)
 
