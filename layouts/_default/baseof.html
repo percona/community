@@ -62,7 +62,7 @@
         </div>
         <div class="mobile-menu" id="mobile-menu" aria-labelledby="navigation-header" role="dialog" aria-modal="false" aria-hidden="true">
           <nav>
-            <ul>
+            <ul class="menu__list">
               {{ $currentPage := . }}
               {{ range .Site.Menus.main }}
                 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
@@ -70,6 +70,18 @@
                     {{ .Pre }}
                     <span>{{ .Name }}</span>
                   </a>
+                  {{ if .HasChildren }}
+                  <!-- <span class="drop-icon" for="{{ .Name }}">▾</span> -->
+                  <ul class="submenu__list sub-menu">
+                      {{ range .Children }}
+                      <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                        <a href="{{ .URL }}">
+                          <span>{{ .Name }}</span>
+                        </a>
+                      </li>
+                      {{ end }}
+                  </ul>
+                 {{ end }} 
                 </li>
               {{ end }}
             </ul>
