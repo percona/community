@@ -255,3 +255,39 @@ $mobile-breaking-point: 1000px;
     background: rgb(128,128,128);
   }
 }
+
+.page-header nav li {
+  position: relative;
+}
+
+.page-header nav li:hover ul.submenu__list {
+  display: flex;
+  z-index: 999;
+}
+
+.page-header nav ul.submenu__list {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.page-header nav ul.submenu__list li {
+    padding: 0 20px;
+}
+
+.page-header nav ul.submenu__list li a {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .page-header nav ul.submenu__list {
+        display: flex;
+        position: static;
+    }
+
+    .page-header nav ul.submenu__list li a {
+        font-weight: 400;
+    }
+}
