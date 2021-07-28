@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "advanced"
 weight: 5
+private: true
 ---
 
 [Migrating to PostgreSQL Version 13: Incompatibilities You Should Be Aware Of](https://www.percona.com/blog/2020/07/28/migrating-to-postgresql-version-13-incompatibilities-you-should-be-aware-of/) by Ibrar Ahmed (Percona)

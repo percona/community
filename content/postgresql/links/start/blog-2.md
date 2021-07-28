@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "start"
 weight: 2
+private: true
 ---
 
 [PostgreSQL Configuration Changes You Need to Make Post-Installation](https://www.percona.com/blog/2020/09/29/postgresql-configuration-changes-you-need-to-make-post-installation/) by Robert Bernier (Percona)

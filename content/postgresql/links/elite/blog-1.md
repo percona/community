@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "elite"
 weight: 1
+private: true
 ---
 
 [How to Create PostgreSQL Custom Builds and Debian Packages](https://www.percona.com/blog/2021/01/28/how-to-create-postgresql-custom-builds-and-debian-packages/) by Ibrar Ahmed (Percona)

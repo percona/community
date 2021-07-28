@@ -18,7 +18,11 @@
       <link rel="canonical" href="{{ .Permalink }}" />
     {{- end }}
 
+    {{ if not (or (.Params.private) (hasPrefix .RelPermalink "/tags")) }}
     <meta name="robots" content="index,follow">
+    {{ else }}
+    <meta name="robots" content="noindex,nofollow"> 
+    {{ end }}
 
     {{"<!-- region Social -->" | safeHTML}}
     {{ partial "opengraph.html" . }}
