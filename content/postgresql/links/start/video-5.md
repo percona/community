@@ -6,6 +6,7 @@ company: "credativ GmbH"
 type: "video"
 block: "start"
 weight: 5
+private: true
 ---
 
 [PostgreSQL-As-A-Service: Comparison of Cloud Providers](https://www.youtube.com/watch?v=tjImaMQKXSw) by Michael Banck (credativ GmbH)

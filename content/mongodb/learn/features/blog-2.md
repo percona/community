@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "mongodb-lessons-features"
 weight: 2
+private: true
 ---
 
 [Storing Kubernetes Operator for Percona Server for MongoDB Secrets in Github](https://www.percona.com/blog/2021/03/22/storing-kubernetes-operator-for-percona-server-for-mongodb-secrets-in-github/) by Sergey Pronin (Percona)

@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "start"
 weight: 3
+private: true
 ---
 
 [10 Common PostgreSQL Errors](https://www.percona.com/blog/2020/06/05/10-common-postgresql-errors/) by Robert Bernier (Percona)

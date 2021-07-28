@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "mongodb-lessons-starting"
 weight: 3
+private: true
 ---
 
 [Refreshing Test/Dev Environments With Prod Data Using Percona Backup for MongoDB](https://www.percona.com/blog/2021/05/19/refreshing-test-dev-environments-with-prod-data-using-percona-backup-for-mongodb/) by Rafael Galinari (Percona)

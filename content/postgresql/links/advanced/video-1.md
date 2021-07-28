@@ -6,6 +6,7 @@ company: "Percona"
 type: "video"
 block: "advanced"
 weight: 1
+private: true
 ---
 
 [High Performance PostgreSQL, Tuning and Optimization Guide - Ibrar Ahmed - PostgreSQL Tutorial](https://www.youtube.com/watch?v=BsOYn1CWqBA) by Ibrar Ahmed (Percona)

@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "mongodb-lessons-advanced"
 weight: 3
+private: true
 ---
 
 

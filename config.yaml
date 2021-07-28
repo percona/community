@@ -13,6 +13,8 @@ taxonomies:
   tag: tags
 social:
   twitter: Percona
+sitemap:
+  filename: sitemap.xml
 markup:
   goldmark:
     extensions:

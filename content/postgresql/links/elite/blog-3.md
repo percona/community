@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "elite"
 weight: 3
+private: true
 ---
 
 [Evaluating Checkpointing in PostgreSQL](https://www.percona.com/blog/2020/07/28/evaluating-checkpointing-in-postgresql/) by Vadim Tkachenko (Percona)

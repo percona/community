@@ -61,9 +61,6 @@ And also our team is thrilled to receive your feedback and we carefully read all
 {{% /grid %}}
 
 
-
-
-
 ## The Percona distributions for MySQL
 
 The Percona distributions for MySQL come in two flavors - one is based on MySQL and one is based on [XtraDB Cluster](https://www.percona.com/software/mysql-database/percona-xtradb-cluster). Percona XtraDB Cluster ensures maximum availability with stability and synchronous replication - while being and staying open source.

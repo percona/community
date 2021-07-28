@@ -6,6 +6,7 @@ company: "Percona"
 type: "blog"
 block: "start"
 weight: 4
+private: true
 ---
 
 [PostgreSQL Security Missteps and Tips](https://www.percona.com/blog/2020/06/04/postgresql-security-missteps-and-tips/) by Robert Bernier (Percona)
