@@ -8,7 +8,6 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-test
     <div class="hero hero--bio"><div class="contentblock">
         {{- with .Params.images -}}
             <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
@@ -21,20 +20,16 @@ test
     </div></div>
 
     <div class="contentblock">
-        <div class="grid grid--3">
-            {{- $speaker_name := .Params.name -}}
+        <div class="grid grid--2">
+            {{- $author_name := .Params.name -}}
             {{- range $.Page.Site.RegularPages -}}
-                {{ if (isset .Params "speakers")}}
-                    {{ if in .Params.speakers $speaker_name }}  
+                {{ if (isset .Params "authors")}}
+                    {{ if in .Params.authors $author_name }}  
                         <div class="grid__item">
-                            {{- if isset .Params "podbean_link" -}}
-                                {{- partial "podcastpreview" . -}}
+                            {{- if isset .Params "images" -}}
+                                {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
                             {{- else -}}
-                                {{- if isset .Params "images" -}}
-                                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
-                                {{- else -}}
-                                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
-                                {{- end -}}
+                                {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
                             {{- end -}}
                         </div>
                     {{ end }}

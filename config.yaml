@@ -11,7 +11,6 @@ params:
   - contribute.png
 taxonomies:
   tag: tags
-  author: authors
 social:
   twitter: Percona
 markup:
@@ -71,6 +70,27 @@ menu:
       url: /contribute
       weight: 8
 
+    - identifier: kubernetes
+      name: Kubernetes Operators
+      url: /projects/operators/
+      parent: projects
+      weight: 1
+    - identifier: pmm
+      name: Percona Monitoring and Management
+      url: /projects/pmm/
+      parent: projects
+      weight: 2
+    - identifier: subtoolkit
+      name: Percona Toolkit
+      url: /projects/toolkit/
+      parent: projects
+      weight: 3
+    - identifier: allprojects
+      name: All projects
+      url: /projects
+      parent: projects
+      weight: 4
+
     - identifier: communityevents
       name: Community Events
       url: /events
@@ -80,6 +100,22 @@ menu:
       name: Engineering Meetings
       url: /contribute/engineeringmeetings
       parent: events
+      weight: 2
+    - identifier: speakers
+      name: Speakers
+      url: /speakers
+      parent: events
+      weight: 3
+
+    - identifier: posts
+      name: Posts
+      url: /blog
+      parent: blog
+      weight: 1
+    - identifier: authors
+      name: Authors
+      url: /authors
+      parent: blog
       weight: 2
 
     - identifier: coc
