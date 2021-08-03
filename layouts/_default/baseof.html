@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-    
     {{ if .Site.Params.favicon }}
     <link rel="shortcut icon" href="{{ ((resources.Get ($.Site.Params.favicon)).Resize "64x64 png").RelPermalink }}" type="image/png" />
     {{ end }}
@@ -152,8 +151,6 @@
             {{ end }}
               <li><a class="cmp-revoke-consent">Revoke Consent</a></li>
           </ul>
-        <!-- You may style the button by overriding class "cmp-revoke-consent" -->
-
         </nav>
       </div>
       {{ with .Site.Copyright | default .Site.Title }}<aside> {{ . | safeHTML }} </aside>{{ end }}
