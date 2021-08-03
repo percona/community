@@ -2,7 +2,7 @@
 title: 'Zero downtime schema change with Liquibase & Percona'
 date: Mon, 26 Oct 2020 14:14:50 +0000
 draft: false
-tags: ['ronak.rahman', 'Liquibase', 'MySQL', 'MySQL', 'mysql-and-variants', 'Tools']
+tags: ['ronak.rahman', 'Liquibase', 'MySQL', 'MySQL', 'mysql-and-variants', 'Tools', 'Toolkit']
 authors:
   - ronak_rahman
 images:

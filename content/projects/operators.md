@@ -59,3 +59,4 @@ Also, our team gratefully receives all the reviews and loves to read them.
 
 *   [TrustRadius](https://www.trustradius.com/reviews/new?product=percona-kubernetes-operator-for-mysql-and-mongodb#product)
 
+{{% blogpostsbytags tags="Kubernetes,Cloud,Operators" %}}
