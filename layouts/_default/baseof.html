@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-
+    <script type="text/javascript" src="https://cdn-prod.securiti.ai/consent/auto_blocking/2ea5dc1c-c928-410b-a379-78d825d2eb0c/2f40096a-75c8-4af2-aec3-42db0231a457.js"></script>
 
     {{ if .Site.Params.favicon }}
     <link rel="shortcut icon" href="{{ ((resources.Get ($.Site.Params.favicon)).Resize "64x64 png").RelPermalink }}" type="image/png" />
@@ -46,11 +46,37 @@
     {{- $css := (.Page.Scratch.Get "css" | resources.FromString $cssPath | resources.ToCSS | resources.Minify) -}}
     <style>{{ $css.Content | safeCSS }}</style>
 
-	{{ block "head" . }}{{ end }}
+    {{ block "head" . }}{{ end }}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-343802-37"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-343802-37');
+    </script>
+
     <meta name="color-scheme" content="dark light" />
+    <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
   </head>
 
   <body>
+    <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
+    <script>
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk.js';
+      s.setAttribute('data-tenant-uuid', '2ea5dc1c-c928-410b-a379-78d825d2eb0c');
+      s.setAttribute('data-domain-uuid', '2f40096a-75c8-4af2-aec3-42db0231a457');
+      s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+      s.defer = true;
+      var parent_node = document.head || document.body;
+      parent_node.appendChild(s);
+      s.addEventListener('load', function() { window.initCmp(); });
+    })()
+    </script>
     <header>
       <div class="page-header">
         <div class="logo"><a href="/">
@@ -125,7 +151,10 @@
                 </a>
               </li>
             {{ end }}
+              <li><a class="cmp-revoke-consent">Revoke Consent</a></li>
           </ul>
+        <!-- You may style the button by overriding class "cmp-revoke-consent" -->
+
         </nav>
       </div>
       {{ with .Site.Copyright | default .Site.Title }}<aside> {{ . | safeHTML }} </aside>{{ end }}
