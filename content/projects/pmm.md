@@ -64,7 +64,6 @@ Our team carefully read all the reviews and highly appreciate all the feedback!
 |:----------------:|:--------:|:--:|:-----------:|:-----------:|
 | Percona Monitoring and Management | [Capterra](https://reviews.capterra.com/new/203166) | [G2](https://www.g2.com/products/percona-monitoring-and-management-pmm/reviews/) | [SourceForge](https://sourceforge.net/software/product/Percona-Monitoring-and-Management/) | [TrustRadius](https://www.trustradius.com/products/percona-monitoring-and-management-pmm/reviews) |
 
-
 ## Which databases can PMM monitor?
 
 PMM is fully open source. That means you can not only contribute to the software itself but also create tooling around it. We have created the following exporters to provide metrics to PMM:
@@ -78,4 +77,6 @@ PMM is fully open source. That means you can not only contribute to the software
 For more details, please refer to our [Architecture](https://www.percona.com/doc/percona-monitoring-and-management/2.x/details/architecture.html).
 
 If you're interested in contributing, please check out our page on [contributing](/contribute) as well as the [main PMM repository](https://github.com/percona/pmm) that also lists all our exporter repositories.
+
+{{% blogpostsbytags tags="Monitoring,PMM,Prometheus" %}}
 

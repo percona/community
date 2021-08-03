@@ -35,3 +35,21 @@ a.post--preview, a.post--preview * {
 .recommendations {
   margin-top: 2rem;
 }
+
+.text .grid h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: .75rem;
+    margin-top: 0rem;
+    font-weight: 700;
+}
+
+.text .post__content  p {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+.text .post__content .readmore {
+    font-weight: 700;
+}

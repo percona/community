@@ -1,0 +1,2 @@
+<h2>Community Blog Posts</h2>
+<div class="grid grid--3">{{- $tags := .Get "tags" -}}{{- $array := split $tags "," -}}{{- range first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $array ) -}}<div class="grid__item">{{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}</div>{{- end -}}</div>

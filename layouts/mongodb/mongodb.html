@@ -8,7 +8,9 @@
         <div class="text">
 
             <h1>{{ .Title }}</h1>
+
             <div class="body">
+
                 {{ .Content }}
 
             {{ range where .Pages "Params.block" "mongodb-learn" }}
@@ -16,6 +18,7 @@
                 <h2>{{ .Title }}</h2>
 
                 {{- .Content -}}
+
 
                 {{ range where .Site.Pages.ByWeight "Params.lessons" "mongodb-lessons" }}
 
@@ -60,5 +63,17 @@
             {{ end }}
             </div>
         </div>
+
+        <h2>Community Blog Posts</h2>
+        <div class="grid grid--3">
+            {{ $t := slice "MongoDB" "mongodb" }}
+
+            {{- range first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $t ) -}}
+                <div class="grid__item">
+                {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+                </div>
+            {{- end -}}
+        </div>
+
     {{ end }}
 {{ end }}

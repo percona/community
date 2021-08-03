@@ -2,7 +2,7 @@
 title: 'Lets be inSync!'
 date: "2021-07-22T00:00:00+00:00"
 draft: false
-tags:
+tags: ['Toolkit', 'MySQL']
 authors:
   - wayne
 images:

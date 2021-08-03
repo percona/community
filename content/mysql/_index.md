@@ -95,3 +95,5 @@ The Percona Distribution for MySQL contains **either MySQL or XtraDB Cluster** (
 * MySQL Router (a lightweight middleware that provides transparent routing between your application and back-end MySQL Servers)
 
 ![Percona Distribution for MySQL features illustration](mysql-graphic.png)
+
+{{% blogpostsbytags tags="MySQL,mysql" %}}

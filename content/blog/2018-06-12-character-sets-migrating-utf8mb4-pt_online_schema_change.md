@@ -2,7 +2,7 @@
 title: 'Character Sets: Migrating to utf8mb4 with pt_online_schema_change'
 date: Tue, 12 Jun 2018 11:27:57 +0000
 draft: false
-tags: ['david-berube', 'character sets', 'collation', 'conversion', 'encoding', 'migration', 'MySQL']
+tags: ['david-berube', 'character sets', 'collation', 'conversion', 'encoding', 'migration', 'MySQL', 'Toolkit']
 authors:
   - david_berube
 images:
