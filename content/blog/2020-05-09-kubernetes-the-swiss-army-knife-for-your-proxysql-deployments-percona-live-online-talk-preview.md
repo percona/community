@@ -1,6 +1,6 @@
 ---
 title: 'Kubernetes, The Swiss Army Knife For Your ProxySQL Deployments – Percona Live ONLINE Talk Preview'
-date: Sat, 09 May 2020 02:02:48 +0000
+date: Sat, 08 May 2020 02:02:48 +0000
 draft: false
 tags: ['rene.cannao', 'Events', 'Kubernetes', 'Tools']
 authors:

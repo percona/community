@@ -1,6 +1,6 @@
 ---
 title: 'MySQL Ecosystem on ARM – Percona Live ONLINE Talk Preview'
-date: Thu, 08 Oct 2020 02:28:58 +0000
+date: Thu, 07 Oct 2020 02:28:58 +0000
 draft: false
 tags: ['krunal.bauskar', 'Events', 'MariaDB', 'MySQL', 'PLO-2020-10']
 authors:

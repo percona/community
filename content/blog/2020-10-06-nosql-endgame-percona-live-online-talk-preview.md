@@ -1,6 +1,6 @@
 ---
 title: 'NoSQL Endgame – Percona Live ONLINE Talk Preview'
-date: Tue, 06 Oct 2020 01:08:04 +0000
+date: Tue, 05 Oct 2020 01:08:04 +0000
 draft: false
 tags: ['thodoris.bais', 'werner.keil', 'Entry Level', 'Events', 'Open Source Databases', 'PLO-2020-10']
 authors:
