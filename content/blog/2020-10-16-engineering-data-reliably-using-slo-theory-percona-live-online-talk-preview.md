@@ -1,6 +1,6 @@
 ---
 title: 'Engineering Data Reliably Using SLO Theory – Percona Live ONLINE Talk Preview'
-date: Fri, 16 Oct 2020 02:43:47 +0000
+date: Fri, 15 Oct 2020 02:43:47 +0000
 draft: false
 tags: ['emily.gorcenski', 'DevOps', 'PLO-2020-10']
 images:
