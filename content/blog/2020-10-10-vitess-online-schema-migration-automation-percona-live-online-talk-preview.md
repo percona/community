@@ -1,6 +1,6 @@
 ---
 title: 'Vitess Online Schema Migration Automation – Percona Live ONLINE Talk Preview'
-date: Sat, 9 Oct 2020 00:28:19 +0000
+date: Sat, 09 Oct 2020 17:28:19 +0000
 draft: false
 tags: ['shlomi.noach', 'MySQL', 'PLO-2020-10']
 images:
