@@ -1,6 +1,6 @@
 ---
 title: 'Sharding: DIY or Out of the Box Solution? – Percona Live ONLINE Talk Preview'
-date: Wed, 14 Oct 2020 03:04:37 +0000
+date: Wed, 13 Oct 2020 03:04:37 +0000
 draft: false
 tags: ['art.vanscheppingen', 'MySQL', 'PLO-2020-10']
 authors:
