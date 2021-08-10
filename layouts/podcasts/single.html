@@ -48,8 +48,10 @@
     {{ end }}
     <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
 
+      {{ if .Params.podbean_link }}
       <p>Link to listen and subscribe: <a href="{{ .Params.podbean_link }}">PodBean</a></p>
-
+      {{ end }}
+      
       {{ if .Params.short_text }}
         <p>{{ .Params.short_text | markdownify }}</p>
       {{ end }}
