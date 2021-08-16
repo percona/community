@@ -19,7 +19,7 @@ Who would benefit from the TiDB track
 
 The TiDB track is designed to share with developers, DBAs, and practitioners in general technical know-hows, reproducible benchmarks (no benchmark-eting), and best practices on how TiDB can solve their problems. There are 7 talks total by folks from PingCAP and Intel that cover the full gamut of how you can test, migrate, and use TiDB in the cloud to solve technical problems and deliver business value. Here’s a run down of the talk topics:
 
-*   [How to benchmark TiDB 3.0, the newest version](/live/19/sessions/tidb-30-whats-new-and-whats-next)
+*   [How to benchmark TiDB 3.0, the newest version](https://www.percona.com/live/19/sessions/tidb-30-whats-new-and-whats-next)
 *   [Using chaos engineering to ensure system reliability](https://www.percona.com/live/19/sessions/using-chaos-engineering-to-build-a-reliable-tidb)
 *   [Leveraging Intel Optane to tackle IO challenges](https://www.percona.com/live/19/sessions/leveraging-optane-to-tackle-your-io-challenges-with-tidb)
 *   [A deep look at TiDB’s SQL processing layer, optimized for a distributed system](https://www.percona.com/live/19/sessions/deep-dive-into-tidb-sql-layer)

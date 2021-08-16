@@ -14,4 +14,8 @@ images:
   - blog/authors/daniel_black.png
 ---
 
-Alexandre is an Open Source enthusiast experienced in troubleshooting and resolving scalability issues across the full software stack. In industry and academia, he scaled up data processing from terabytes to petabytes, while minimizing data losses below acceptable level. Early in his career Alexandre pioneered deployment of MySQL databases on Virtual Machines. Alexandre is a Senior MySQL DBA at VirtualHealth
+After a reasonable amount of time doing development and IT security work, Daniel landed a DBA Consultant job and loved it.
+
+After writing a few too many bug fixes without a client to bill them to, he joined IBM to make MariaDB and MySQL scale on IBM POWER.
+
+The love for the community brought him to MariaDB Foundation where he embraces the innovation of contributors and users to make
