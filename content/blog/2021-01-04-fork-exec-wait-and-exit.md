@@ -7,7 +7,6 @@ images:
 authors:
   - koehntopp
 slug: fork-exec-wait-and-exit
-canonical: https://isotopp.github.io/2007/01/07/fork-exec-wait-und-exit.html
 ---
 
 
