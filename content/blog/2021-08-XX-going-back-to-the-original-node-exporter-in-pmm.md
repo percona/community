@@ -108,4 +108,4 @@ case NodeExporterType:
 
 `webConfigFilePlaceholder` is just a string constant used to identify the different files that can be passed to the agents.
 
-### 2.
+## 2.
