@@ -8,7 +8,6 @@ authors:
 images:
   - blog/2020/12/stream-migrate-now.png
 slug: embracing-the-stream
-canonical: https://blog.koehntopp.info/2020/12/09/embracing-the-stream.html
 ---
 
 So this happened: [CentOS Project shifts focus to CentOS Stream](https://lists.centos.org/pipermail/centos-announce/2020-December/048208.html)

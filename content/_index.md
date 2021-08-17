@@ -5,7 +5,9 @@ description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 
 {{% bannerwithicon background="purplegalaxy.jpg" icon="home/Stickers-Percona-Polyglots-250.png" %}}
 
-Welcome to Percona Community - your community hub for installing, running, optimizing, and learning everything around databases and software architectures.
+<h1>Welcome to Percona Community</h1>
+
+Your community hub for installing, running, optimizing, and learning everything around databases and software architectures.
 
 <small>Were you looking for Percona, the company? [Percona](https://percona.com/) offers best of class software and services around databases.</small>
 

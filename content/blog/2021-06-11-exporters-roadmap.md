@@ -85,4 +85,4 @@ For all the above we would try to use the GitHub Project board https://github.co
 
 We would sync with the community during Engineering Monthly Meeting https://percona.community/contribute/engineeringmeetings/  as well as by participating in Upstream meetings.
 
-Come and join us on our journey in OpenSource! Contact us in [per.co.na/discord](per.co.na/discord).
+Come and join us on our journey in OpenSource! Contact us in [per.co.na/discord](https://per.co.na/discord).

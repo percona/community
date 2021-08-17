@@ -78,7 +78,7 @@ Install the documentation locally on your computer. Here's the process:
 5.  Edit some changes and rebuild.
 6.  Check the changes in your browser.
 
-... and so on. It's essential not only to install but also to check what you can change. If you'd like more instructions, please leave a message in the comments to this post or contact me [by email](community-team@percona.com).
+... and so on. It's essential not only to install but also to check what you can change. If you'd like more instructions, please leave a message in the comments to this post or contact me [by email](mailto:community-team@percona.com).
 
 ### 3. Making changes and testing them
 

@@ -1,6 +1,6 @@
 ---
 title: "Data on Kubernetes Track"
-description: "Percona Live ONLINE 2021"
+description: "Data on Kubernetes Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-kubernetes-community-track.jpg
