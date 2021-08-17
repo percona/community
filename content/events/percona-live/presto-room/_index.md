@@ -1,6 +1,6 @@
 ---
 title: "Presto Community Track"
-description: "Percona Live ONLINE 2021"
+description: "Presto Community Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-Presto-community-track.jpg

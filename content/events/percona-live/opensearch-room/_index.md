@@ -1,6 +1,6 @@
 ---
 title: "Amazon OpenSearch Community Track"
-description: "Percona Live ONLINE 2021"
+description: "Amazon OpenSearch Community Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-OpenSearch-community-track.jpg

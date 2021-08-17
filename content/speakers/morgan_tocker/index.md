@@ -1,8 +1,8 @@
 ---
 name: morgan_tocker
 name_pronunciation: morgan_tocker
-fullname: Patrick McFadin
-fullname_pronounciation: Patrick McFadin
+fullname: Morgan Tocker
+fullname_pronounciation: Morgan Tocker
 job: Developer, TiDB 
 country: 
 tagline: 
