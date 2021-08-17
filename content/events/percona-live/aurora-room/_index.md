@@ -1,6 +1,6 @@
 ---
 title: "Amazon Aurora Community Track"
-description: "Percona Live ONLINE 2021"
+description: "Amazon Aurora Community Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-aurora-community-track.jpg

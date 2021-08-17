@@ -1,6 +1,6 @@
 ---
 title: "MariaDB Community Track"
-description: "Percona Live ONLINE 2021"
+description: "MariaDB Community Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-MariaDB-community-track.jpg

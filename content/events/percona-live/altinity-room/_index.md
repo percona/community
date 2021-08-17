@@ -1,6 +1,6 @@
 ---
 title: "Altinity Community Track"
-description: "Percona Live ONLINE 2021"
+description: "Altinity Community Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-altinity-community-track.jpg

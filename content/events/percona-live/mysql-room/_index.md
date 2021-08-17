@@ -1,6 +1,6 @@
 ---
 title: "Oracle MySQL Community Track"
-description: "Percona Live ONLINE 2021"
+description: "Oracle MySQL Community Track - Percona Live ONLINE 2021"
 layout: list
 images:
  - events/percona-live/PL2021-MySQL-community-track.jpg
