@@ -1,6 +1,6 @@
 ---
 title: "Google Community Track"
-description: "Google Community Track - Percona Live ONLINE 2021"
+description: "Google stopped by Percona Live 2021 to provide users with tips and tricks on how to run their databases better in the Google cloud. Check out the Google Percona Live Community track!"
 layout: list
 images:
  - events/percona-live/PL2021-google-community-track.jpg
