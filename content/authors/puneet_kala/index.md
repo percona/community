@@ -14,4 +14,4 @@ images:
   - blog/authors/puneet_kala.png
 ---
 
-Automation QA Engineer
+Frontend Web Automation Quality Assurance at Percona
