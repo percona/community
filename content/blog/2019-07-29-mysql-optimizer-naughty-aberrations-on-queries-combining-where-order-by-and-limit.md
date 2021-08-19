@@ -142,6 +142,8 @@ However, there are probably other bug reports that describes the problem you are
 
 Unfortunately, as Domas decribes, the optimizer trace does not contain any information on the cost calculations made when it decides to switch to an index that provides sorting. Hence, it is not straight-forward to verify why this choice was made.
 
+<hr>
+
 ### [**Jean-François Gagné**](https://jfg-mysql.blogspot.com/)
 
 *July 29, 2019 at 9:59 am*
@@ -152,6 +154,8 @@ Hi Øystein, thanks for the details about Bug#74602 and Bug#78612.
 
 This might be a solution, but I am sure there are others. Tracking correlations might be very complicated. A more simple solution might be to identify plans that are “probabilistic” (like the worse case I show in this post) and to not let queries using those plans run for too long before trying an alternative plan. Also, in the case of plans that might have a very worse case (like the one in this post), maybe running both queries in parallel and killing the other when one completes might be another way to avoid this problem.
 
+<hr>
+
 ### [**Øystein Grøvlen**](http://oysteing.blogspot.com/)
 
 *July 30, 2019 at 5:13 am*
@@ -161,6 +165,8 @@ Hi,
 I think it is an interesting idea to let the optimizer have a fallback plan, in case its original estimates is off. The challenge is how to detect in time that the estimates are off. Maybe it would be easier to just switch to the more safe plan if the execution takes longer than the estimate for the safe plan. (Unfortunately, it is not straight-forward to translate query cost to execution time in MySQL.) Another aspect is diagnostics. It must be a way for the user to determine which plan was actually used.
 
 Maybe, the optimizer could be a bit more cautious, and choose a safe plan over a more risky, but potentially quicker plan. In your case, there will be a pretty accurate estimate for the number of rows that need to be read when using the secondary index, while how many rows needs to be read using the primary index depends on how the interesting rows are distributed.
+
+<hr>
 
 ### **Jeremy**
 
@@ -176,11 +182,15 @@ Of course I understand in some limited cases this isn’t always possible. Still
 
 Finally, as stated, I would like to see this bug fixed. However I still wouldn’t ask the DB to sort in most cases.
 
+<hr>
+
 ### **s**
 
 *August 3, 2019 at 4:27 am*
 
 also see [https://bugs.mysql.com/bug.php?id=95543](https://bugs.mysql.com/bug.php?id=95543) (optimizer prefers index for order by rather than filtering – (70x slower))
+
+<hr>
 
 ### [**Jean-François Gagné**](https://jfg-mysql.blogspot.com/)
 
@@ -189,7 +199,6 @@ also see [https://bugs.mysql.com/bug.php?id=95543](https://bugs.mysql.com/bug.ph
 Another blog post on the same subject (with a patch that was merged in 5.7 and 8.0):
 
 [https://blog.jcole.us/2019/09/30/reconsidering-access-paths-for-index-ordering-a-dangerous-optimization-and-a-fix/](https://blog.jcole.us/2019/09/30/reconsidering-access-paths-for-index-ordering-a-dangerous-optimization-and-a-fix/)
-
 
 
 _--_ 
