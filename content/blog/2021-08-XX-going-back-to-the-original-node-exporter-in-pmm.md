@@ -26,7 +26,7 @@ There are many places to contact us to get help, if you need to, but nowadays, [
 
 Probably going back in time we could find many other reasons, like maintainability, or the ability to use custom builds, but one of the things that was lacking in the first exporters was the support for basic authentication. In PMM, all exporters metrics are password protected, and since there was no support for that in the past and we needed it as part of our specification PMM exporters use a common HTTP module called `exporter_shared`. In that module, the HTTP server supports basic authentication, and some other features as well, but time has passed. Prometheus exporters are much more mature and now the Prometheus [exporter-toolkit package](https://github.com/prometheus/exporter-toolkit/tree/v0.1.0/https) has support for TLS, HTTP2, cyphers, basic auth, etc.
 
-## Some theory
+## How PMM works
 
 As mentioned before, there are many components in PMM. The one 'in charge' to start internal and external exporters and run commands is `pmm-agent`. Internal exporters are the ones built into `pmm-agent`, mostly for Query Analytics and for running commands like `EXPLAIN`, `SHOW TABLES`, etc.
 Also, `pmm-agent` has an internal `supervisor` that, like the popular Python's [supervisord](http://supervisord.org/) project, run processes (agents) and manages them.
