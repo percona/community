@@ -69,6 +69,8 @@
     {{ end }}
   </article>
 
+  {{ template "_internal/disqus.html" . }}
+
   {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
   {{ with $related }}
     <div class="recommendations">
