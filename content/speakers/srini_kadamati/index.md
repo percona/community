@@ -16,6 +16,4 @@ images:
   - speakers/srini_kadamati.jpg
 ---
 
-Googld Cloud Architect with experience of working with bigdata complex, distributed applications based. Experience in designing and implementing solutions. Also certified GCP Cloud Architect, Java Developer and Web Components Developer.
-
-Good understanding of the software development lifecycle (Jenkins CI), experience in establishing the development and release process (Maven, Git, Nexus) and system automation (Chef). Awesome experience with metrics collection and automated service monitoring using statsd, grfanana and Syren.
+I'm a Senior Data Scientist that's on a mission to enable more people to work with data effectively. I spent 5 years building an online learning platform specifically to help people learn existing data tools before turning my attention to improving the data tools themselves. I now am a Developer Advocate at Preset.io, the main company driving and helping grow the Apache Superset project.
