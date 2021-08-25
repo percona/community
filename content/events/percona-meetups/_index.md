@@ -1,6 +1,6 @@
 ---
-title: "Percona Community MeetUp"
-description: "Join the new regular series of monthly Online MeetUp for each community every Wednesday on Discord starting from Sept, 8th 2021. "
+title: "Percona Community MeetUps"
+description: "Join the new regular series of monthly Online MeetUp for each community every Wednesday on Discord starting from Sept, 8th 2021."
 layout: list
 images:
   - events/percona-meetup/category-cover-682.jpg
@@ -8,7 +8,7 @@ images:
 
 {{% hero %}}
 
-# Percona Community MeetUp
+# Percona Community MeetUps
 
 See you on Percona Community MeetUp!
 
