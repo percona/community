@@ -1,6 +1,6 @@
 ---
 title: "Percona MeetUp for MySQL Sept 2021"
-description: "Join Community MeetUp for MySQL on 8th Sept, 2021 as part of a monthly regular event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona. Marcos Albe, Principal Technical Services Engineer at Percona, will share his experience on how to REALLY optimize MySQL performance. Fernando Laudares Camargos, Senior Support Engineer at Percona, will be there to talk about Inspecting MySQL Servers. Attendees will have time for Q&A and to give feedback."
+description: "Join Community MeetUp for MySQL on 8th Sept, 2021 as part of a monthly regular event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona."
 images:
   - events/percona-meetup/cover-682.jpg
 date: Wed, 8 September 2021, 14:00:00 +0000
@@ -13,7 +13,6 @@ tags: ['MySQL', 'Meetup']
 ---
 
 ![Percona MeetUp for MySQL Sept 2021](events/percona-meetup/cover-1920-1080.jpg)
-
 
 The Percona Community MeetUp for MySQL is a great opportunity for experts to share their knowledge and to the attendees to ask questions. This event is a part of a series of regular live online streaming with Matt Yonkovit, The Head of OpenSource Strategy (HOSS) dedicated to experts and users of database.
 
