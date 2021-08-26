@@ -24,7 +24,7 @@ Join the Percona MeetUp for MySQL
 
 * Location: on [Discord](http://per.co.na/discord)
 
-* Live streaming on [YouTube](https://www.youtube.com/user/PerconaMySQL) and [Twitch](https://www.twitch.tv/perconalive)
+* Live streaming on [YouTube](https://www.youtube.com/watch?v=hTSHb0NU_1E) and [Twitch](https://www.twitch.tv/perconacommunity)
 
 Add this event to your [Google Calendar](https://calendar.google.com/calendar/u/0/r/eventedit/copy/NmpnMDJ1YjVrZ3BtajVuOWMzYjJxZDJkOGEgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn/ZnJlZGVsLm1hbWluZHJhQHBlcmNvbmEuY29t?sf=true)
 
