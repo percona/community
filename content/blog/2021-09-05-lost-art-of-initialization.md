@@ -50,10 +50,16 @@ server installation. Modify as needed for a custom installation.
    ```
 ![lostart-10](blog/2021/09/lostart-03.png)
 
-6. Start MySQL. `systemctl start mysqld`
+6. Start MySQL.
+   ```
+   $ systemctl start mysqld
+   ```
+7. Verify MySQL is running.
+   ```
+   $ cat /var/log/mysqld.log
+   ```
+![lostart-10](blog/2021/09/lostart-04.png)
 
 Now you should be able to log into MySQL using the password you got in step 5.
-
-Your MySQL Server is now up and running.
-
-We all can agree that automation has changed our lives for the better.
+There could be many more reasons to re-initliatize a MySQL Database. This is just one example.
+Automation is great. Just remember to pull out your command line tools now and then, so they dont get to rusty.
