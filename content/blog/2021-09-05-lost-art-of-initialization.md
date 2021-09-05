@@ -38,7 +38,7 @@ server installation. Modify as needed for a custom installation.
    ```
    $ vi /etc/my.cnf
    ```
-![lostart-10](blog/2021/09/lostart-02.png)
+   ![lostart-10](blog/2021/09/lostart-02.png)
 
 4. Now initialize mysql.
    ```
@@ -48,7 +48,6 @@ server installation. Modify as needed for a custom installation.
    ```
    $ cat /var/log/mysqld.log | grep password
    ```
-
 ![lostart-10](blog/2021/09/lostart-03.png)
 
 6. Start MySQL. `systemctl start mysqld`
