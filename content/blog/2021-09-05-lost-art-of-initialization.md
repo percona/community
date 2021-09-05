@@ -2,32 +2,32 @@
 title: 'The lost art of Database Server Initialization.'
 date: "2021-06-05T00:00:00+00:00"
 draft: false
-tags: ['Percona', 'MySQL', Recovery]
+tags: ['Percona', 'MySQL', 'Recovery', 'Installation']
 authors:
   - wayne
 images:
   - blog/2021/09/lostart-01.png
-slug: lost-art-of-atabase-erver-initialization
+slug: lost-art-of-database-server-initialization
 ---
 <br>
 
-With all the DBaaS, IaaS and PaaS environments, sometimes I think the Art of Database initialization is becoming a lost art. Many times we just delete the server we created and order a new one.  
+With all the DBaaS, IaaS and PaaS environments, sometimes I think the Art of MySQL initialization is becoming a lost art. Many times we just delete the MySQL Server and order a new one.  
 
-Just recently I was talking to a colleague and this subject came up. We both thought about it and decided we have become spoiled from automation. We were both rusty at the process. This gave me the idea for this post.
+Just recently I was talking with a colleague, and this subject came up. We both thought about it and decided we have become spoiled by automation. We were both rusty on this process. This gave me the idea for this post.
 ![lostart-10](blog/2021/09/lostart-01.png)
 
-You might be thinking why initialize the server again? Let's say that you wanted MySQL Server 8.0 not to use mixed case. Yet when the database was initialized the default setting of  'lower_case_table_names = 0' was used. With 8.0 you can't make the change 'lower_case_table_names = 1' in the my.cnf and restart MySQL. It won't work, leaving you with one option. Initialize the server a second time.
+You might be thinking why initialize MySQL again? Let's say that you wanted MySQL Server 8.0 not to use mixed case. Yet when the database was initialized the default setting of  `lower_case_table_names = 0` was used. With 8.0 you can't make the change `lower_case_table_names = 1` in the my.cnf and restart MySQL. It won't work, leaving you with two option. One Initialize MySQL a second time, or order a new environment.
 
 Let's look at the steps we would need to change the MySQL server to support only lower case.
 
 You may want to take a backup before you begin these steps if you have already loaded data that you wish to keep.
 
-##  Lets look at the steps.
+## The Steps
 
 The steps below assume you are working with a default MySQL
 server installation. Modify as needed for a custom installation.
 
-1. Stop the MySQL Server. `systemctl start mysqld`
+1. Stop the MySQL Server. `$ systemctl start mysqld`
 
 2. You will need to delete everything out of your current data directory.
    ```
@@ -50,6 +50,8 @@ server installation. Modify as needed for a custom installation.
    ```
 ![lostart-10](blog/2021/09/lostart-03.png)
 
+If you dont find the temporary password for the root user, review the steps above making sure you did not miss something.
+
 6. Start MySQL.
    ```
    $ systemctl start mysqld
@@ -60,6 +62,8 @@ server installation. Modify as needed for a custom installation.
    ```
 ![lostart-10](blog/2021/09/lostart-04.png)
 
-Now you should be able to log into MySQL using the password you got in step 5.
+Now you should be able to log into MySQL using the password you got from step 5.
+
 There could be many more reasons to re-initliatize a MySQL Database. This is just one example.
 Automation is great. Just remember to pull out your command line tools now and then, so they dont get to rusty.
+<hr>
