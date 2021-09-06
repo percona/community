@@ -16,4 +16,4 @@ images:
   - speakers/alexander_zaitsev.jpeg
 ---
 
-Alexey Milovidov was the original designer of ClickHouse, starting from its inception in 2008. He is an expert on high-performance C++, analytic applications, and SQL databases. Alexey is the lead committer of the ClickHouse open source project on Github. He leads the ClickHouse development team at Yandex and speaks regularly at community events
+Alexander is a co-founder of Altinity. He has 20 years of engineering and engineering management experience in several international companies. Alexander is an expert in high scale analytics systems design and implementation. He designed and deployed petabyte-scale data warehouses, including one of the earliest ClickHouse deployments outside of Yandex.

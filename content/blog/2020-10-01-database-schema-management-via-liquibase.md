@@ -14,7 +14,7 @@ Creating the database for an application is simple and easy. However, database s
 
 One open-source tool that helps teams track, version, and deploy database schema changes is [Liquibase](https://www.liquibase.org). It executes database scripts sequentially, allows for the automatic creation and execution of rollback scripts for failed updates, and provides an easy way to use the same scripts and apply them to different types of databases. To illustrate how Liquibase works, here's an example using PostgreSQL.   
 
-##### System set up:
+## System set up:
 
 *   [Download the latest version of Liquibase](https://www.liquibase.org/download). 
 *   [Download the JDBC driver jar file for PostgreSQL](https://jdbc.postgresql.org/download.html).
@@ -31,7 +31,7 @@ liquibase
 --password=<POSTGRESQL PASSWORD>
 ```
 
-##### **Create a changelog file:**
+## **Create a changelog file:**
 
 A Liquibase database _changelog_ is an XML, JSON, YAML, or SQL file that describes all changes that need to be performed to update the database. In most cases, you want to create one file for each release. Each file consists of one or more _changesets_. (Note: The XML, JSON, and YAML definitions allow for abstraction, meaning that Liquibase is able to apply the same changes to any database. You can use database-specific SQL, as well.) 
 
@@ -95,10 +95,10 @@ generateChangeLog
 ```
 If you already have a database, generating the changelog is a lot easier (and a whole lot faster) than writing it yourself. [Here are some instructions on how to get started using an existing database](https://docs.liquibase.com/workflows/liquibase-community/existing-project.html). Always review the generated changesets so that you can be sure everything looks as it should. 
 
-##### Executing Liquibase:
+### Executing Liquibase:
 
 There are [3 primary ways to run Liquibase](https://www.liquibase.org/blog/3-ways-to-run-liquibase). You can use command line or a Maven plugin to create the database as part of your build or deployment process. You can also use a Servlet, Spring, or CDI Listener to automatically create or update the database at application startup. [Liquibase also has an official Docker image](https://hub.docker.com/r/liquibase/liquibase). 
 
-##### Summing Up:
+### Summing Up:
 
 A version-based database migration process allows you to evolve your database together with your application code and to automatically apply database updates when you deploy a new release. In our next blog, we’ll walk you through how to combine Liquibase with a Percona extension to achieve zero-downtime schema changes.

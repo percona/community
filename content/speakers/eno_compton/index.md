@@ -17,4 +17,4 @@ images:
   - speakers/eno_compton.jpg
 ---
 
-Kyle Davis is the Senior Developer Advocate with Open Distro for Elasticsearch at AWS. While being a relative newcomer to AWS, Kyle has a long history with software development and databases. When not working, Kyle enjoys 3D printing, and getting his hand dirty in his Edmonton, Alberta-based home garden.
+Eno is a Developer Relations Engineer at Google working on Cloud SQL. He is one of the maintainers of the Cloud SQL Auth proxy. He is also a total language nerd with a Ph.D. in Classical Chinese and Japanese and a decade of experience in nearly a dozen computer languages. Nowadays he works exclusively in Go and loves network programming, delightful APIs, and deleting code in pursuit of simplicity.
