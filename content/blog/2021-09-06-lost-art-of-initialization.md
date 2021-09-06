@@ -1,6 +1,6 @@
 ---
 title: 'The lost art of Database Server Initialization.'
-date: "2021-06-05T00:00:00+00:00"
+date: "2021-09-06T00:00:00+00:00"
 draft: false
 tags: ['Percona', 'MySQL', 'Recovery', 'Installation']
 authors:
@@ -9,7 +9,7 @@ images:
   - blog/2021/09/lostart-01.png
 slug: lost-art-of-database-server-initialization
 ---
-<br>
+
 
 With all the DBaaS, IaaS and PaaS environments, sometimes I think the Art of MySQL initialization is becoming a lost art. Many times we just delete the MySQL Server and order a new one.  
 
@@ -66,4 +66,3 @@ Now you should be able to log into MySQL using the password you got from step 5.
 
 There could be many more reasons to re-initliatize a MySQL Database. This is just one example.
 Automation is great. Just remember to pull out your command line tools now and then, so they dont get to rusty.
-<hr>
