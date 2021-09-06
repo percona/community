@@ -22,7 +22,7 @@ Join for an hour MeetUp for PostgreSQL
 
 * Location : on [Discord](http://per.co.na/discord)
 
-* Live streaming on YouTube and [Twitch](https://www.twitch.tv/perconacommunity)
+* Live streaming on [YouTube](https://www.youtube.com/watch?v=Q25lKB1nDK4) and [Twitch](https://www.twitch.tv/perconacommunity)
 
 * Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N2pmaDgxdnZwaHE1ZW5wam5mdDE5NDZuN28gY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)
 
@@ -58,3 +58,5 @@ The MeetUp for PostgreSQL is recommended for:
 * Interested in PostgreSQL
 
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N2pmaDgxdnZwaHE1ZW5wam5mdDE5NDZuN28gY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)
+
+Turn on the YouTube reminder on the [YouTube page](https://www.youtube.com/watch?v=Q25lKB1nDK4)
