@@ -25,14 +25,13 @@ You may want to take a backup before you begin these steps if you have already l
 ## The Steps
 
 The steps below assume you are working with a default MySQL
-server installation. Modify as needed for a custom installation.
+server installation. Modify as needed for a custom installation. One word of caution. Please dont user root to run the bellow commands. Use `sudo mysql` this will add an extra layer of safety by not being root.
 
 1. Stop the MySQL Server. `$ systemctl start mysqld`
 
 2. You will need to delete everything out of your current data directory.
    ```
-   $ cd /var/lib/mysql
-   $ rm -fR *
+   $ rm -fR /var/lib/mysql*
    ```
 3. Edit your my.cnf file and add: `lower_case_table_names=1`
    ```
