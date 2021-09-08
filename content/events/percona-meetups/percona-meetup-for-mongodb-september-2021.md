@@ -1,6 +1,6 @@
 ---
 title: "Percona MeetUp for MongoDB Sept 2021"
-description: "Join the first Percona Community MeetUp for PostgreSQL for an hour-long talk. We will talk about PostgreSQL Data and Database Security and discuss driving factors for increased PostgreSQL adoption."
+description: "The first Percona MeetUp for MongoDB on MongoDB sharded cluster best practices and future Kubernetes Operator features."
 images:
   - events/percona-meetup/mongodb-cover-1362.jpg
 date: Wed, 22 September 2021, 14:00:00 +0000
@@ -28,7 +28,7 @@ Add this event to your [Google Calendar](https://calendar.google.com/event?actio
 
 Our experts will cover following topics:
 
-### "MongoDB sharded Cluster- best practices" by Vinodh Krishnaswamy
+### "MongoDB sharded Cluster - best practices" by Vinodh Krishnaswamy
 1. How to deploy a cluster for proper HA
 2. How to use Balancer effectively
 3. The most common issues that people run into when or when not sharding MongoDB
