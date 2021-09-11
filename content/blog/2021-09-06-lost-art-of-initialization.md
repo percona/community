@@ -61,7 +61,7 @@ If you dont find the temporary password for the root user, review the steps abov
    ```
 ![lostart-10](blog/2021/09/lostart-04.png)
 
-Now you should be able to log into MySQL using the password you got from step 5.
+Now you should be able to log into MySQL using the password received got from step 5.
 
 There could be many more reasons to re-initliatize a MySQL Database. This is just one example.
 Automation is great. Just remember to pull out your command line tools now and then, so they dont get to rusty.
