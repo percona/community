@@ -1,7 +1,7 @@
 ---
 title: ege_gunes
 name: ege_gunes
-name_pronunciation: eno_compton
+name_pronunciation: ege_gunes
 fullname: Ege Güneş
 fullname_pronounciation: Ege Güneş
 job: Percona, Software Engineer
