@@ -80,7 +80,7 @@ If you're interested in contributing, please check out our page on [contributing
 
 ## PMM Roadmap and Releases
 
-Please check what is in PMM Roadmap on this [Dashboard](https://jira.percona.com/secure/Dashboard.jspa?selectPageId=13502), choose "PMM" in Roadmap picker.
+Please check out the PMM Roadmap on this [Dashboard](https://jira.percona.com/secure/Dashboard.jspa?selectPageId=13502), choose the project "Percona Monitoring and Management (PMM)" in All Product Issues/Roadmap picker.
 
 Check the tickets to be included in the next [Release](https://jira.percona.com/issues/?jql=project%20%3D%20%22Percona%20Monitoring%20and%20Management%22%20and%20fixVersion%20%3D%20earliestUnreleasedVersion()). 
 
