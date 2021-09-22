@@ -36,7 +36,7 @@ How does pmm-agent know which parameters should be used to run each exporter? Th
 
 As a general rule, all agents are defined in `pmm-managed`'s `services/agents` directory.   
 
-![directory](../assets/blog/2021/09/directory.png)
+![directory](../assets/blog/2021/08/directory.png)
 
 In our case, we want to modify how we start the `node_exporter` so we need to modify the [services/agents/node.go](https://github.com/percona/pmm-managed/blob/PMM-2.0/services/agents/node.go) file.
 The [nodeExporterConfig](https://github.com/percona/pmm-managed/blob/PMM-2.0/services/agents/node.go#L31) is defined as follows:
@@ -188,8 +188,6 @@ If you never ran the test for pmm-managed let me quickly show the the only 2 ste
 With those 2 commands, you will be able to run all the tests in the suite to ensure the changes won't break anything.
 
 
-<placeholder for a good bye>
 I hope I was able to explain at least the basics about how to make changes in PMM.
 Remember you can contact us in discord ans we will be glad to answer your questions.
-<end of placeholder>
 
