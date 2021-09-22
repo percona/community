@@ -3,8 +3,7 @@ title: "Percona MeetUp for PostgreSQL Sept 2021"
 description: "Join the first Percona Community MeetUp for PostgreSQL for an hour-long talk. We will talk about PostgreSQL Data and Database Security and discuss driving factors for increased PostgreSQL adoption."
 images:
   - events/percona-meetup/cover-meetup-postgres-682.jpg
-date: Wed, 15 September 2021, 14:00:00 +0000
-publishdate: Wed, 15 September 2021, 14:00:00 +0000
+date: "2021-09-15"
 draft: false
 speakers:
   - ibrar_ahmed

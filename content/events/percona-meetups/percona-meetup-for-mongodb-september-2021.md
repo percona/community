@@ -3,8 +3,7 @@ title: "Percona MeetUp for MongoDB Sept 2021"
 description: "The first Percona MeetUp for MongoDB on MongoDB sharded cluster best practices and future Kubernetes Operator features."
 images:
   - events/percona-meetup/mongodb-cover-1362.jpg
-date: Wed, 22 September 2021, 14:00:00 +0000
-publishdate: Wed, 22 September 2021, 14:00:00 +0000
+date: "2021-09-22"
 draft: false
 speakers:
   - vinodh_krishnaswamy
