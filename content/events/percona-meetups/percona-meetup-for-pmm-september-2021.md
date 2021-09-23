@@ -20,7 +20,7 @@ Join us for an hour MeetUp for PMM
 
 * Day: Wednesday Sept 29th, 2021 at 11:00am EDT (5:00 pm CEST or 8:30 pm IST)
 
-* Live streaming on [YouTube](https://www.youtube.com/c/percona) and [Twitch](https://www.twitch.tv/perconacommunity)
+* Live streaming on [YouTube](https://www.youtube.com/watch?v=2WSsmhzsVXg) and [Twitch](https://www.twitch.tv/perconacommunity)
 
 * Live chatting on [Discord](http://per.co.na/discord)
 
