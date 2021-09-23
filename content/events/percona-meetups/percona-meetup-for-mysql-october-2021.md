@@ -21,7 +21,7 @@ Join for an hour MeetUp for MySQL
 
 * Day: Wednesday Oct 6th at 11:00 am EDT/ 5:00 pm CEST/ 8:30pm IST
 
-* Live stream on YouTube and [Twitch](https://www.twitch.tv/perconalive)
+* Live stream on [YouTube](https://www.youtube.com/watch?v=KULzKh2H8XA) and [Twitch](https://www.twitch.tv/perconalive)
 
 * Live chat on [Discord](http://per.co.na/discord)
 
