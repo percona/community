@@ -20,7 +20,7 @@ In this post, I will try to show how to implement the replacement of the current
 ## What this post is about?
 
 In the next paragraphs, I'll try to explain the basics of how PMM works. My intention is to walk you trough the internals of the PMM API and PMM agent, how do the communicate and how to make some code changes.
-There are many places to contact us to get help if you need to, but nowadays, discord (http://discord/percona?) is the fastest place to get answers.
+There are many places to contact us to get help if you need to, but nowadays, [discord](http://per.co.na/discord) is the fastest place to get answers.
 I will try to keep things clear and simple, but this is a technical post so, there will be some code.
 
 ## Why do we use a different node_exporter?
