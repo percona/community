@@ -6,7 +6,7 @@ images:
 date: Wed, 29 September 2021, 14:00:00 +0000
 publishdate: Wed, 29 September 2021, 14:00:00 +0000
 draft: false
-weight: 1
+weight: 3
 speakers:
   - michael_coburn
 tags: ['PMM', 'Meetup']

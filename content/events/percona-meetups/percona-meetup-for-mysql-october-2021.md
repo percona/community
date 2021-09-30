@@ -6,7 +6,7 @@ images:
 date: Wed, 6 October 2021, 14:00:00 +0000
 publishdate: Wed, 6 October 2021, 14:00:00 +0000
 draft: false
-weight: 2
+weight: 1
 speakers:
   - wayne
   - vaibhav_upadhyay
