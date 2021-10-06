@@ -11,6 +11,17 @@ speakers:
 tags: ['MongoDB', 'Meetup']
 ---
 
+
+Matt Yonkovit hosted the Percona MeetUp for MongoDB on September 22nd with Vinodh Krishnaswamy, Support Engineer at Percona, to talk about "MongoDB sharded Cluster- best practices" and Ege Güneş, Software Engineer at Percona, to discuss "Cross-regional replication for MongoDB with Kubernetes". Check full video on youtube by clicking the link below :
+
+## Video
+
+{{% youtube youtube_id="s7v8hAC55iw" %}}{{% /youtube %}}
+
+## Transcript
+
+
+
 ![Percona MeetUp for MongoDB Sept 2021](events/percona-meetup/mongodb-cover-1920.jpg)
 
 MongoDB is a database which came into light around the mid-2000s used by companies and development teams of all sizes. The Percona Head of Open Source Strategy - HOSS - and experts organize a series of regular live online streaming Community MeetUp for MongoDB to share their knowledge and to answer attendees' questions.

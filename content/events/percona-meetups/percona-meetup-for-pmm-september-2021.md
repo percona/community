@@ -6,11 +6,21 @@ images:
 date: Wed, 29 September 2021, 14:00:00 +0000
 publishdate: Wed, 29 September 2021, 14:00:00 +0000
 draft: false
-weight: 1
+weight: 3
 speakers:
   - michael_coburn
 tags: ['PMM', 'Meetup']
 ---
+
+The Community MeetUp for PMM was an extraordinary one-hour Live Broadcast MeetUp from the OSS Summit on last Sept 29th, to talk about open source databases, observability and monitoring MySQL, MongoDB, PostgreSQL with PMM. Percona experts Matt Yonkovit and Michael Coburn has made a PMM Demo. Check the the full recording by clicking the video here:
+
+## Video
+
+{{% youtube youtube_id="2WSsmhzsVXg" %}}{{% /youtube %}}
+
+## Transcript
+
+
 
 ![Percona MeetUp for PMM Sept 2021](events/percona-meetup/cover-pmm-1920.jpg)
 
