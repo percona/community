@@ -3,10 +3,8 @@ title: "Percona MeetUp for MySQL Oct 6th 2021"
 description: "Join Community MeetUp for MySQL on 8th Sept, 2021 as part of a monthly regular event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona."
 images:
   - events/percona-meetup/mysql-october-1362.jpg
-date: Wed, 6 October 2021, 14:00:00 +0000
-publishdate: Wed, 6 October 2021, 14:00:00 +0000
+date: "2021-10-06"
 draft: false
-weight: 1
 speakers:
   - wayne
   - vaibhav_upadhyay

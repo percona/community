@@ -6,7 +6,7 @@ images:
 date: Wed, 13 October 2021, 14:00:00 +0000
 publishdate: Wed, 13 October 2021, 14:00:00 +0000
 draft: false
-weight: 2
+weight: 1
 speakers:
   - charly_batista
 tags: ['PostgreSQL', 'Meetup']
