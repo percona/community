@@ -3,10 +3,8 @@ title: "Percona MeetUp for PMM Sept 2021"
 description: "This week the PMM MeetUp is live broadcast from the Open Source Summit (OSS Summit) in-person conference. We will discuss PMM and answer questions."
 images:
   - events/percona-meetup/cover-pmm-682.jpg
-date: Wed, 29 September 2021, 14:00:00 +0000
-publishdate: Wed, 29 September 2021, 14:00:00 +0000
+date: "2021-09-29"
 draft: false
-weight: 3
 speakers:
   - michael_coburn
 tags: ['PMM', 'Meetup']
