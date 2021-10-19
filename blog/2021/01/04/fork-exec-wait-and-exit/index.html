@@ -25,153 +25,139 @@ main(void) {
 
         exit(0);
 }
-```  
-Running this, we get:
-
-</code></pre></div><p>kris@linux:/tmp/kris> make probe1
-cc probe1.c -o probe1
-kris@linux:/tmp/kris> ./probe1
+</code></pre></div><p>Running this, we get:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>kris@linux:/tmp/kris&gt; make probe1
+cc     probe1.c   -o probe1
+kris@linux:/tmp/kris&gt; ./probe1
 I am the child.
-I am the parent, the child is 16959.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>We are defining a variable `pid` of the type `pid_t`. This variable saves the `fork()` result, and using it we activate one (“I am the child.”) or the other (“I am the parent”) branch of an if(). Running the program we get two result lines. Since we have only one variable, and this variable can have only one state, an instance of the program can only be in either one or the other branch of the code. Since we see two lines of output, two instances of the program with different values for `pid` must have been running. If we called `getpid()` and printed the result we could prove this by showing two different pids (change the program to do this as an exercise!). The `fork()` system call is entered once, but left twice, and increments the number of processes in the system by one. After finishing our program the number of processes in the system is as large as before. That means there must be another system call which decrements the number of system calls. This system call is `exit()`. `exit()` is a system call you enter once and never leave. It decrements the number of processes in the system by one. `exit()` also accepts an exit status as a parameter, which the parent process can receive (or even has to receive), and which communicates the fate of the child to the parent. In our example, all variants of the program call `exit()` - we are calling `exit()` in the child process, but also in the parent process. That means we terminate two processes. We can only do this, because even the parent process is a child, and in fact, a child of our shell. The shell does exactly the same thing we are doing:
+I am the parent, the child is 16959.
+</code></pre></div><p>We are defining a variable <code>pid</code> of the type <code>pid_t</code>. This variable saves the <code>fork()</code> result, and using it we activate one (“I am the child.”) or the other (“I am the parent”) branch of an if(). Running the program we get two result lines. Since we have only one variable, and this variable can have only one state, an instance of the program can only be in either one or the other branch of the code. Since we see two lines of output, two instances of the program with different values for <code>pid</code> must have been running. If we called <code>getpid()</code> and printed the result we could prove this by showing two different pids (change the program to do this as an exercise!). The <code>fork()</code> system call is entered once, but left twice, and increments the number of processes in the system by one. After finishing our program the number of processes in the system is as large as before. That means there must be another system call which decrements the number of system calls. This system call is <code>exit()</code>. <code>exit()</code> is a system call you enter once and never leave. It decrements the number of processes in the system by one. <code>exit()</code> also accepts an exit status as a parameter, which the parent process can receive (or even has to receive), and which communicates the fate of the child to the parent. In our example, all variants of the program call <code>exit()</code> - we are calling <code>exit()</code> in the child process, but also in the parent process. That means we terminate two processes. We can only do this, because even the parent process is a child, and in fact, a child of our shell. The shell does exactly the same thing we are doing:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>bash (16957) --- calls fork() ---&gt; bash (16958) --- becomes ---&gt; probe1 (16958)
 
-</code></pre></div><p>bash (16957) &mdash; calls fork() &mdash;> bash (16958) &mdash; becomes &mdash;> probe1 (16958)</p><p>probe1 (16958) &mdash; calls fork() &mdash;> probe1 (16959) &ndash;> exit()
-|
-+&mdash;> exit()</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>
-`exit()` closes all files and sockets, frees all memory and then terminates the process. The parameter of `exit()` is the only thing that survives and is handed over to the parent process.
+probe1 (16958) --- calls fork() ---&gt; probe1 (16959) --&gt; exit()
+   |
+   +---&gt; exit()
+</code></pre></div><p><code>exit()</code> closes all files and sockets, frees all memory and then terminates the process. The parameter of <code>exit()</code> is the only thing that survives and is handed over to the parent process.</p><h2 id=wait>wait()</h2><p>Our child process ends with an <code>exit(0)</code>. The 0 is the exit status of our program and can be shipped. We need to make the parent process pick up this value and we need a new system call for this. This system call is <code>wait()</code>. In Code:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;stdlib.h&gt;
 
-wait()
-------
+#include &lt;sys/types.h&gt;
+#include &lt;sys/wait.h&gt;
 
-Our child process ends with an `exit(0)`. The 0 is the exit status of our program and can be shipped. We need to make the parent process pick up this value and we need a new system call for this. This system call is `wait()`. In Code:
-</code></pre></div><p>#include &lt;stdio.h>
-#include &lt;unistd.h>
-#include &lt;stdlib.h></p><p>#include &lt;sys/types.h>
-#include &lt;sys/wait.h></p><p>main(void) {
-pid_t pid = 0;
-int status;</p><pre><code>    pid = fork();
-    if (pid == 0) {
-            printf(&quot;I am the child.\\n&quot;);
-            sleep(10);
-            printf(&quot;I am the child, 10 seconds later.\\n&quot;);
-    }
-    if (pid &gt; 0) {
-            printf(&quot;I am the parent, the child is %d.\\n&quot;, pid);
-            pid = wait(&amp;status);
-            printf(&quot;End of process %d: &quot;, pid);
-            if (WIFEXITED(status)) {
-                    printf(&quot;The process ended with exit(%d).\\n&quot;, WEXITSTATUS(status));
-            }
-            if (WIFSIGNALED(status)) {
-                    printf(&quot;The process ended with kill -%d.\\n&quot;, WTERMSIG(status));
-            }
-    }
-    if (pid &lt; 0) {
-            perror(&quot;In fork():&quot;);
-    }
+main(void) {
+        pid\_t pid = 0;
+        int   status;
 
-    exit(0);
-</code></pre><p>}</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>And the runtime protocol:
-</code></pre></div><p>kris@linux:/tmp/kris> make probe2
-cc probe2.c -o probe2
-kris@linux:/tmp/kris> ./probe2
+        pid = fork();
+        if (pid == 0) {
+                printf(&#34;I am the child.\\n&#34;);
+                sleep(10);
+                printf(&#34;I am the child, 10 seconds later.\\n&#34;);
+        }
+        if (pid &gt; 0) {
+                printf(&#34;I am the parent, the child is %d.\\n&#34;, pid);
+                pid = wait(&amp;status);
+                printf(&#34;End of process %d: &#34;, pid);
+                if (WIFEXITED(status)) {
+                        printf(&#34;The process ended with exit(%d).\\n&#34;, WEXITSTATUS(status));
+                }
+                if (WIFSIGNALED(status)) {
+                        printf(&#34;The process ended with kill -%d.\\n&#34;, WTERMSIG(status));
+                }
+        }
+        if (pid &lt; 0) {
+                perror(&#34;In fork():&#34;);
+        }
+
+        exit(0);
+}
+
+</code></pre></div><p>And the runtime protocol:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>kris@linux:/tmp/kris&gt; make probe2
+cc     probe2.c   -o probe2
+kris@linux:/tmp/kris&gt; ./probe2
 I am the child.
 I am the parent, the child is 17399.
 I am the child, 10 seconds later.
-End of process 17399: The process ended with exit(0).</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>The variable `status` is passed to the system call `wait()` as a reference parameter, and will be overwritten by it. The value is a bitfield, containing the exit status and additional reasons explaining how the program ended. To decode this, C offers a number of macros with predicates such as `WIFEXITED()` or `WIFSIGNALED()`. We also get extractors, such as `WEXITSTATUS()` and `WTERMSIG()`. `wait()` also returns the pid of the process that terminated, as a function result. `wait()` stops execution of the parent process until either a signal arrives or a child process terminates. You can arrange for a SIGALARM to be sent to you in order to time bound the `wait()`.
+End of process 17399: The process ended with exit(0).
+</code></pre></div><p>The variable <code>status</code> is passed to the system call <code>wait()</code> as a reference parameter, and will be overwritten by it. The value is a bitfield, containing the exit status and additional reasons explaining how the program ended. To decode this, C offers a number of macros with predicates such as <code>WIFEXITED()</code> or <code>WIFSIGNALED()</code>. We also get extractors, such as <code>WEXITSTATUS()</code> and <code>WTERMSIG()</code>. <code>wait()</code> also returns the pid of the process that terminated, as a function result. <code>wait()</code> stops execution of the parent process until either a signal arrives or a child process terminates. You can arrange for a SIGALARM to be sent to you in order to time bound the <code>wait()</code>.</p><h2 id=the-init-program-and-zombies>The <code>init</code> program, and Zombies</h2><p>The program <code>init</code> with the pid 1 will do basically nothing but calling <code>wait()</code>: It waits for terminating processes and polls their exit status, only to throw it away. It also reads <code>/etc/inittab</code> and starts the programs configured there. When something from <code>inittab</code> terminates and is set to <code>respawn</code>, it will be restarted by <code>init</code>. When a child process terminates while the parent process is not (yet) waiting for the exit status, <code>exit()</code> will still free all memory, file handles and so on, but the <code>struct task</code> (basically the <code>ps</code> entry) cannot be thrown away. It may be that the parent process at some point in time arrives at a <code>wait()</code> and then we have to have the exit status, which is stored in a field in the <code>struct task</code>, so we need to retain it. And while the child process is dead already, the process list entry cannot die because the exit status has not yet been polled by the parent. Unix calls such processes without memory or other resouces associated <em>Zombies</em>. Zombies are visible in the process list when a process generator (a forking process) is faulty and does not <code>wait()</code> properly. They do not take up memory or any other resouces but the bytes that make up their <code>struct task</code>. The other case can happen, too: The parent process exits while the child moves on. The kernel will set the ppid of such children with dead parents to the constant value 1, or in other words: <code>init</code> inherits orphaned processes. When the child terminates, <code>init</code> will <code>wait()</code> for the exit status of the child, because that’s what <code>init</code> does. No Zombies in this case. When we observe the number of processes in the system to be largely constant over time, then the number of calls to <code>fork()</code>, <code>exit()</code> and <code>wait()</code> have to balanced. This is, because for each <code>fork()</code> there will be an <code>exit()</code> to match and for each <code>exit()</code> there must be a <code>wait()</code> somewhere. In reality, and in modern systems, the situation is a bit more complicated, but the original idea is as simple as this. We have a clean fork-exit-wait triangle that describes all processes.</p><h2 id=exec>exec()</h2><p>So while <code>fork()</code> makes processes, <code>exec()</code> loads programs into processes that already exist. In Code:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;stdlib.h&gt;
 
-The `init` program, and Zombies
--------------------------------
+#include &lt;sys/types.h&gt;
+#include &lt;sys/wait.h&gt;
 
-The program `init` with the pid 1 will do basically nothing but calling `wait()`: It waits for terminating processes and polls their exit status, only to throw it away. It also reads `/etc/inittab` and starts the programs configured there. When something from `inittab` terminates and is set to `respawn`, it will be restarted by `init`. When a child process terminates while the parent process is not (yet) waiting for the exit status, `exit()` will still free all memory, file handles and so on, but the `struct task` (basically the `ps` entry) cannot be thrown away. It may be that the parent process at some point in time arrives at a `wait()` and then we have to have the exit status, which is stored in a field in the `struct task`, so we need to retain it. And while the child process is dead already, the process list entry cannot die because the exit status has not yet been polled by the parent. Unix calls such processes without memory or other resouces associated _Zombies_. Zombies are visible in the process list when a process generator (a forking process) is faulty and does not `wait()` properly. They do not take up memory or any other resouces but the bytes that make up their `struct task`. The other case can happen, too: The parent process exits while the child moves on. The kernel will set the ppid of such children with dead parents to the constant value 1, or in other words: `init` inherits orphaned processes. When the child terminates, `init` will `wait()` for the exit status of the child, because that’s what `init` does. No Zombies in this case. When we observe the number of processes in the system to be largely constant over time, then the number of calls to `fork()`, `exit()` and `wait()` have to balanced. This is, because for each `fork()` there will be an `exit()` to match and for each `exit()` there must be a `wait()` somewhere. In reality, and in modern systems, the situation is a bit more complicated, but the original idea is as simple as this. We have a clean fork-exit-wait triangle that describes all processes.
+main(void) {
+        pid\_t pid = 0;
+        int   status;
 
-exec()
-------
+        pid = fork();
+        if (pid == 0) {
+                printf(&#34;I am the child.\\n&#34;);
+                execl(&#34;/bin/ls&#34;, &#34;ls&#34;, &#34;-l&#34;, &#34;/tmp/kris&#34;, (char \*) 0);
+                perror(&#34;In exec(): &#34;);
+        }
+        if (pid &gt; 0) {
+                printf(&#34;I am the parent, and the child is %d.\\n&#34;, pid);
+                pid = wait(&amp;status);
+                printf(&#34;End of process %d: &#34;, pid);
+                if (WIFEXITED(status)) {
+                        printf(&#34;The process ended with exit(%d).\\n&#34;, WEXITSTATUS(status));
+                }
+                if (WIFSIGNALED(status)) {
+                        printf(&#34;The process ended with kill -%d.\\n&#34;, WTERMSIG(status));
+                }
+        }
+        if (pid &lt; 0) {
+                perror(&#34;In fork():&#34;);
+        }
 
-So while `fork()` makes processes, `exec()` loads programs into processes that already exist. In Code:
-</code></pre></div><p>#include &lt;stdio.h>
-#include &lt;unistd.h>
-#include &lt;stdlib.h></p><p>#include &lt;sys/types.h>
-#include &lt;sys/wait.h></p><p>main(void) {
-pid_t pid = 0;
-int status;</p><pre><code>    pid = fork();
-    if (pid == 0) {
-            printf(&quot;I am the child.\\n&quot;);
-            execl(&quot;/bin/ls&quot;, &quot;ls&quot;, &quot;-l&quot;, &quot;/tmp/kris&quot;, (char \*) 0);
-            perror(&quot;In exec(): &quot;);
-    }
-    if (pid &gt; 0) {
-            printf(&quot;I am the parent, and the child is %d.\\n&quot;, pid);
-            pid = wait(&amp;status);
-            printf(&quot;End of process %d: &quot;, pid);
-            if (WIFEXITED(status)) {
-                    printf(&quot;The process ended with exit(%d).\\n&quot;, WEXITSTATUS(status));
-            }
-            if (WIFSIGNALED(status)) {
-                    printf(&quot;The process ended with kill -%d.\\n&quot;, WTERMSIG(status));
-            }
-    }
-    if (pid &lt; 0) {
-            perror(&quot;In fork():&quot;);
-    }
+        exit(0);
+}
+</code></pre></div><p>The runtime protocol:</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>kris@linux:/tmp/kris&gt; make probe3
+cc     probe3.c   -o probe3
 
-    exit(0);
-</code></pre><p>}</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>The runtime protocol:
-</code></pre></div><p>kris@linux:/tmp/kris> make probe3
-cc probe3.c -o probe3</p><p>kris@linux:/tmp/kris> ./probe3
+kris@linux:/tmp/kris&gt; ./probe3
 I am the child.
 I am the parent, the child is 17690.
 total 36
 -rwxr-xr-x 1 kris users 6984 2007-01-05 13:29 probe1
--rw-r&ndash;r&ndash; 1 kris users 303 2007-01-05 13:36 probe1.c
+-rw-r--r-- 1 kris users  303 2007-01-05 13:36 probe1.c
 -rwxr-xr-x 1 kris users 7489 2007-01-05 13:37 probe2
--rw-r&ndash;r&ndash; 1 kris users 719 2007-01-05 13:40 probe2.c
+-rw-r--r-- 1 kris users  719 2007-01-05 13:40 probe2.c
 -rwxr-xr-x 1 kris users 7513 2007-01-05 13:42 probe3
--rw-r&ndash;r&ndash; 1 kris users 728 2007-01-05 13:42 probe3.c
-End of process 17690: The process ended with exit(0).</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Here the code of `probe3` is thrown away in the child process (the `perror(&#34;In exec():&#34;)` is not reached). Instead the running program is being replaced by the given call to `ls`. From the protocol we can see the parent instance of `probe3` waits for the `exit()`. Since the `perror()` after the `execl()`is never executed, it cannot be an `exit()` in our code. In fact, `ls` ends the process we made with an `exit()` and that is what we receive our exit status from in our parent processes `wait()` call.
+-rw-r--r-- 1 kris users  728 2007-01-05 13:42 probe3.c
+End of process 17690: The process ended with exit(0).
+</code></pre></div><p>Here the code of <code>probe3</code> is thrown away in the child process (the <code>perror("In exec():")</code> is not reached). Instead the running program is being replaced by the given call to <code>ls</code>. From the protocol we can see the parent instance of <code>probe3</code> waits for the <code>exit()</code>. Since the <code>perror()</code> after the <code>execl()</code>is never executed, it cannot be an <code>exit()</code> in our code. In fact, <code>ls</code> ends the process we made with an <code>exit()</code> and that is what we receive our exit status from in our parent processes <code>wait()</code> call.</p><h2 id=the-same-as-a-shellscript>The same, as a Shellscript</h2><p>The examples above have been written in C. We can do the same, in <code>bash</code>:</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>kris@linux:/tmp/kris&gt; cat probe1.sh
+<span class=c1>#! /bin/bash --</span>
 
-The same, as a Shellscript
---------------------------
+<span class=nb>echo</span> <span class=s2>&#34;Starting child:&#34;</span>
+sleep <span class=m>10</span> <span class=p>&amp;</span>
+<span class=nb>echo</span> <span class=s2>&#34;The child is </span><span class=nv>$!</span><span class=s2>&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;The parent is </span><span class=nv>$$</span><span class=s2>&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;</span><span class=k>$(</span>date<span class=k>)</span><span class=s2>: Parent waits.&#34;</span>
+<span class=nb>wait</span>
+<span class=nb>echo</span> <span class=s2>&#34;The child </span><span class=nv>$!</span><span class=s2> has the exit status </span><span class=nv>$?</span><span class=s2>&#34;</span>
+<span class=nb>echo</span> <span class=s2>&#34;</span><span class=k>$(</span>date<span class=k>)</span><span class=s2>: Parent woke up.&#34;</span>
 
-The examples above have been written in C. We can do the same, in `bash`:
-</code></pre></div><p>kris@linux:/tmp/kris> cat probe1.sh
-#! /bin/bash &ndash;</p><p>echo &ldquo;Starting child:&rdquo;
-sleep 10 &
-echo &ldquo;The child is $!&rdquo;
-echo &ldquo;The parent is $$&rdquo;
-echo &ldquo;$(date): Parent waits.&rdquo;
-wait
-echo &ldquo;The child $! has the exit status $?&rdquo;
-echo &ldquo;$(date): Parent woke up.&rdquo;</p><p>kris@linux:/tmp/kris> ./probe1.sh
+kris@linux:/tmp/kris&gt; ./probe1.sh
 Starting child:
-The child is 18071
-The parent is 18070
-Fri Jan 5 13:49:56 CET 2007: Parent waits.
-The child 18071 has the exit status 0
-Fri Jan 5 13:50:06 CET 2007: Parent woke up.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>
-The actual bash
----------------
-
-We can also trace the shell while it executes a single command. The information from above should allow us to understand what goes on, and see how the shell actually works.
-</code></pre></div><p>kris@linux:~> strace -f -e execve,clone,fork,waitpid bash
-kris@linux:~> ls
+The child is <span class=m>18071</span>
+The parent is <span class=m>18070</span>
+Fri Jan  <span class=m>5</span> 13:49:56 CET 2007: Parent waits.
+The child <span class=m>18071</span> has the <span class=nb>exit</span> status <span class=m>0</span>
+Fri Jan  <span class=m>5</span> 13:50:06 CET 2007: Parent woke up.
+</code></pre></div><h2 id=the-actual-bash>The actual bash</h2><p>We can also trace the shell while it executes a single command. The information from above should allow us to understand what goes on, and see how the shell actually works.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>kris@linux:~&gt; strace -f -e execve,clone,fork,waitpid bash
+kris@linux:~&gt; ls
 clone(Process 30048 attached
-child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD,
-child_tidptr=0xb7dab6f8) = 30048
-[pid 30025] waitpid(-1, Process 30025 suspended
-&lt;unfinished &mldr;>
-[pid 30048] execve("/bin/ls", ["/bin/ls", &ldquo;-N&rdquo;, &ldquo;&ndash;color=tty&rdquo;, &ldquo;-T&rdquo;, &ldquo;0&rdquo;],
-[/* 107 vars */]) = 0
-&mldr;
+child\_stack=0, flags=CLONE\_CHILD\_CLEARTID|CLONE\_CHILD\_SETTID|SIGCHLD,
+child\_tidptr=0xb7dab6f8) = 30048
+\[pid 30025\] waitpid(-1, Process 30025 suspended
+ &lt;unfinished ...&gt;
+\[pid 30048\] execve(&#34;/bin/ls&#34;, \[&#34;/bin/ls&#34;, &#34;-N&#34;, &#34;--color=tty&#34;, &#34;-T&#34;, &#34;0&#34;\],
+\[/\* 107 vars \*/\]) = 0
+...
 Process 30025 resumed
 Process 30048 detached
-&lt;&mldr; waitpid resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED
+&lt;... waitpid resumed&gt; \[{WIFEXITED(s) &amp;&amp; WEXITSTATUS(s) == 0}\], WSTOPPED
 WCONTINUED) = 30048
-&mdash; SIGCHLD (Child exited) @ 0 (0) &mdash;
-&mldr;</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>Linux uses a generalization of the original Unix `fork()`, named `clone()`, to create child processes. That is why we do not see `fork()` in a Linux system to create a child process, but a `clone()` call with some parameters. Linux also uses a specialized variant of `wait()`, called `waitpid()`, to wait for a specific pid. Linux finally uses the `exec()` variant `execve()` to load programs, but that is just shuffling the paramters around. At the end of `ls` (PID 30048) the process 30025 will wake up from the `wait()` and continue.
-
-Original Code, what Windows does, and what Microsoft thinks about Linux
------------------------------------------------------------------------
-
-This text is based on [a USENET article](http://groups.google.com/group/de.comp.os.unix.linux.misc/msg/4035c67415f9bc09) I wrote a long time ago. [Here](https://minnie.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/sh/xec.c) is the original C-code of the original `sh` from 1979, with the `fork()` system call. Search for `case TFORK:`. Also, check out the programming style of Mr. Bourne - this is C, even if it does not look like it. The [original 2007 blog article](https://isotopp.github.io/2007/01/07/fork-exec-wait-und-exit.html), has a followup article [on Windows CreateProcess()](https://isotopp.github.io/2007/01/07/fork-und-exec-vs-createprocess.html), which has not been translated. When implementing `fork()` in Windows as part of the WSL 1, Microsoft ran into a lot of problems with the syscall, and wrote an article about how they hate it, and why they think their `CreateProcessEx()` (in Unix: `spawn()`) would be better. The [PDF](https://www.microsoft.com/en-us/research/uploads/prod/2019/04/fork-hotos19.pdf) makes a number of good points, but is still wrong. :-)
-
-First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/) and syndicated here with permission of the author.</code></pre></div></div><div class=bios><div class=bios__bio><img class=avatar src=https://percona.community/blog/2020/10/0-1_hu3deba67f956729c41648f59c305f5449_20674_240x240_fill_q90_lanczos_smart1.jpeg alt><div class=bios__content><h2><span>Kristian Köhntopp</span></h2><p>Senior Scalability Engineer at Booking.com.</p><p><a href=/authors/koehntopp>See all posts by Kristian Köhntopp &#187;</a></p></div></div></div></article><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//https-percona-community.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></main><div class=edit-on-github><div class=container><a href=https://github.com/percona/community/edit/main/content/blog/2021-01-04-fork-exec-wait-and-exit.md target=_blank rel="noreferrer noopener">✎ Edit this page on GitHub</a></div></div><footer class=page><p class=aria-only id=footer-heading aria-hidden=false>Footer</p><div class=page-footer><nav class=footer><ul><li><a href=https://www.percona.com/about-percona target=_blank rel="noopener noreferrer"><span>About</span></a></li><li><a href=https://www.percona.com/legal target=_blank rel="noopener noreferrer"><span>Legal</span></a></li><li><a href=https://www.percona.com/about-percona/contact target=_blank rel="noopener noreferrer"><span>Contact</span></a></li><li><a href=https://forums.percona.com target=_blank rel="noopener noreferrer"><span>Forums</span></a></li><li><a href=http://per.co.na/discord target=_blank rel="noopener noreferrer"><span>Discord</span></a></li><li><a class=cmp-revoke-consent>Revoke Consent</a></li></ul></nav></div><aside>© Percona Community. MySQL, InnoDB, MariaDB and MongoDB are trademarks of their respective owners.</aside></footer><script type=text/javascript src=https://percona.community/js/aria.5f30892348d4662fe548bb410f15fc6fe2e1cbfd6473beb3c3ed1d6b362568bbea48896a9f2302a4f78f4614904ca3ef43155ae26f063ed84ae957f951e19647.js integrity="sha512-XzCJI0jUZi/lSLtBDxX8b+Lhy/1kc76zw+0dazYlaLvqSIlqnyMCpPePRhSQTKPvQxVa4m8GPthK6Vf5UeGWRw==" defer></script></body></html>
+--- SIGCHLD (Child exited) @ 0 (0) ---
+...
+</code></pre></div><p>Linux uses a generalization of the original Unix <code>fork()</code>, named <code>clone()</code>, to create child processes. That is why we do not see <code>fork()</code> in a Linux system to create a child process, but a <code>clone()</code> call with some parameters. Linux also uses a specialized variant of <code>wait()</code>, called <code>waitpid()</code>, to wait for a specific pid. Linux finally uses the <code>exec()</code> variant <code>execve()</code> to load programs, but that is just shuffling the paramters around. At the end of <code>ls</code> (PID 30048) the process 30025 will wake up from the <code>wait()</code> and continue.</p><h2 id=original-code-what-windows-does-and-what-microsoft-thinks-about-linux>Original Code, what Windows does, and what Microsoft thinks about Linux</h2><p>This text is based on <a href=http://groups.google.com/group/de.comp.os.unix.linux.misc/msg/4035c67415f9bc09 target=_blank rel="noopener noreferrer">a USENET article</a> I wrote a long time ago. <a href="https://minnie.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/sh/xec.c" target=_blank rel="noopener noreferrer">Here</a> is the original C-code of the original <code>sh</code> from 1979, with the <code>fork()</code> system call. Search for <code>case TFORK:</code>. Also, check out the programming style of Mr. Bourne - this is C, even if it does not look like it. The <a href=https://isotopp.github.io/2007/01/07/fork-exec-wait-und-exit.html target=_blank rel="noopener noreferrer">original 2007 blog article</a>, has a followup article <a href=https://isotopp.github.io/2007/01/07/fork-und-exec-vs-createprocess.html target=_blank rel="noopener noreferrer">on Windows CreateProcess()</a>, which has not been translated. When implementing <code>fork()</code> in Windows as part of the WSL 1, Microsoft ran into a lot of problems with the syscall, and wrote an article about how they hate it, and why they think their <code>CreateProcessEx()</code> (in Unix: <code>spawn()</code>) would be better. The <a href=https://www.microsoft.com/en-us/research/uploads/prod/2019/04/fork-hotos19.pdf target=_blank rel="noopener noreferrer">PDF</a> makes a number of good points, but is still wrong. :-)</p><br><p><em>First published on <a href=https://blog.koehntopp.info/ target=_blank rel="noopener noreferrer">https://blog.koehntopp.info/</a> and syndicated here with permission of the author.</em> <span aria-label="End of article." role=text class=tombstone>∎</span></p></div><div class=bios><div class=bios__bio><img class=avatar src=https://percona.community/blog/2020/10/0-1_hu3deba67f956729c41648f59c305f5449_20674_240x240_fill_q90_lanczos_smart1.jpeg alt><div class=bios__content><h2><span>Kristian Köhntopp</span></h2><p>Senior Scalability Engineer at Booking.com.</p><p><a href=/authors/koehntopp>See all posts by Kristian Köhntopp &#187;</a></p></div></div></div></article><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//https-percona-community.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></main><div class=edit-on-github><div class=container><a href=https://github.com/percona/community/edit/main/content/blog/2021-01-04-fork-exec-wait-and-exit.md target=_blank rel="noreferrer noopener">✎ Edit this page on GitHub</a></div></div><footer class=page><p class=aria-only id=footer-heading aria-hidden=false>Footer</p><div class=page-footer><nav class=footer><ul><li><a href=https://www.percona.com/about-percona target=_blank rel="noopener noreferrer"><span>About</span></a></li><li><a href=https://www.percona.com/legal target=_blank rel="noopener noreferrer"><span>Legal</span></a></li><li><a href=https://www.percona.com/about-percona/contact target=_blank rel="noopener noreferrer"><span>Contact</span></a></li><li><a href=https://forums.percona.com target=_blank rel="noopener noreferrer"><span>Forums</span></a></li><li><a href=http://per.co.na/discord target=_blank rel="noopener noreferrer"><span>Discord</span></a></li><li><a class=cmp-revoke-consent>Revoke Consent</a></li></ul></nav></div><aside>© Percona Community. MySQL, InnoDB, MariaDB and MongoDB are trademarks of their respective owners.</aside></footer><script type=text/javascript src=https://percona.community/js/aria.5f30892348d4662fe548bb410f15fc6fe2e1cbfd6473beb3c3ed1d6b362568bbea48896a9f2302a4f78f4614904ca3ef43155ae26f063ed84ae957f951e19647.js integrity="sha512-XzCJI0jUZi/lSLtBDxX8b+Lhy/1kc76zw+0dazYlaLvqSIlqnyMCpPePRhSQTKPvQxVa4m8GPthK6Vf5UeGWRw==" defer></script></body></html>
