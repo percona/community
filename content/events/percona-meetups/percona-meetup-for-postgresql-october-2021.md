@@ -3,10 +3,8 @@ title: "Percona MeetUp for PostgreSQL October 2021"
 description: "Community MeetUp for PostgreSQL dedicated to performance improvement, monitoring to prevent performance issues, and troubleshooting."
 images:
   - events/percona-meetup/postgres-october-cover-1362.jpg
-date: Wed, 13 October 2021, 14:00:00 +0000
-publishdate: Wed, 13 October 2021, 14:00:00 +0000
+date: "2021-10-13"
 draft: false
-weight: 1
 speakers:
   - charly_batista
 tags: ['PostgreSQL', 'Meetup']
