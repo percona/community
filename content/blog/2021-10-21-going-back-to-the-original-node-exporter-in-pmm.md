@@ -6,7 +6,7 @@ tags: ['node_exporter', 'exporter', 'pmm']
 authors:
   - carlos_salguero
 images:
-  - blog/2018/04/safety-2890768_640.jpg
+  - blog/2021/10/directory.jpg
 slug: going-back-to-original-pmm-node-exporter
 ---
 
@@ -36,7 +36,7 @@ How does pmm-agent know which parameters should be used to run each exporter? Th
 
 As a general rule, all agents are defined in `pmm-managed`'s `services/agents` directory.   
 
-![directory](../assets/blog/2021/08/directory.png)
+![directory](../assets/blog/2021/10/directory.png)
 
 In our case, we want to modify how we start the `node_exporter` so we need to modify the [services/agents/node.go](https://github.com/percona/pmm-managed/blob/PMM-2.0/services/agents/node.go) file.
 The [nodeExporterConfig](https://github.com/percona/pmm-managed/blob/PMM-2.0/services/agents/node.go#L31) is defined as follows:
