@@ -9,7 +9,6 @@ authors:
 slug: fork-exec-wait-and-exit
 ---
 
-
 This is the [english version of a 2007 article](https://isotopp.github.io/2007/01/07/fork-exec-wait-und-exit.html). In [de.comp.os.unix.linux.misc](news:de.comp.os.unix.linux.misc) somebody asked:
 
 > *   Are commands in a script executed strictly sequentially, that is, will the next command only be executed when the previous command has completed, or will the shell **automatically** start the next command if the system has spare capacity?
@@ -30,7 +29,6 @@ A program in Unix is a sequence of executable instructions on a disk. You can us
 
 Usermode and Kernel
 -------------------
-
 
 [Usermode and Kernel](https://isotopp.github.io/uploads/prozesswechsel.png) 
 
@@ -62,7 +60,8 @@ main(void) {
 
         exit(0);
 }
-```  
+```
+
 Running this, we get:
 
 ```
@@ -72,6 +71,7 @@ kris@linux:/tmp/kris> ./probe1
 I am the child.
 I am the parent, the child is 16959.
 ```
+
 We are defining a variable `pid` of the type `pid_t`. This variable saves the `fork()` result, and using it we activate one (“I am the child.”) or the other (“I am the parent”) branch of an if(). Running the program we get two result lines. Since we have only one variable, and this variable can have only one state, an instance of the program can only be in either one or the other branch of the code. Since we see two lines of output, two instances of the program with different values for `pid` must have been running. If we called `getpid()` and printed the result we could prove this by showing two different pids (change the program to do this as an exercise!). The `fork()` system call is entered once, but left twice, and increments the number of processes in the system by one. After finishing our program the number of processes in the system is as large as before. That means there must be another system call which decrements the number of system calls. This system call is `exit()`. `exit()` is a system call you enter once and never leave. It decrements the number of processes in the system by one. `exit()` also accepts an exit status as a parameter, which the parent process can receive (or even has to receive), and which communicates the fate of the child to the parent. In our example, all variants of the program call `exit()` - we are calling `exit()` in the child process, but also in the parent process. That means we terminate two processes. We can only do this, because even the parent process is a child, and in fact, a child of our shell. The shell does exactly the same thing we are doing:
 
 ```
@@ -123,8 +123,11 @@ main(void) {
 
         exit(0);
 }
+
 ```
+
 And the runtime protocol:
+
 ```
 kris@linux:/tmp/kris> make probe2
 cc     probe2.c   -o probe2
@@ -134,6 +137,7 @@ I am the parent, the child is 17399.
 I am the child, 10 seconds later.
 End of process 17399: The process ended with exit(0).
 ```
+
 The variable `status` is passed to the system call `wait()` as a reference parameter, and will be overwritten by it. The value is a bitfield, containing the exit status and additional reasons explaining how the program ended. To decode this, C offers a number of macros with predicates such as `WIFEXITED()` or `WIFSIGNALED()`. We also get extractors, such as `WEXITSTATUS()` and `WTERMSIG()`. `wait()` also returns the pid of the process that terminated, as a function result. `wait()` stops execution of the parent process until either a signal arrives or a child process terminates. You can arrange for a SIGALARM to be sent to you in order to time bound the `wait()`.
 
 The `init` program, and Zombies
@@ -145,6 +149,7 @@ exec()
 ------
 
 So while `fork()` makes processes, `exec()` loads programs into processes that already exist. In Code:
+
 ```
 #include <stdio.h>
 #include <unistd.h>
@@ -181,7 +186,9 @@ main(void) {
         exit(0);
 }
 ```
+
 The runtime protocol:
+
 ```
 kris@linux:/tmp/kris> make probe3
 cc     probe3.c   -o probe3
@@ -198,12 +205,14 @@ total 36
 -rw-r--r-- 1 kris users  728 2007-01-05 13:42 probe3.c
 End of process 17690: The process ended with exit(0).
 ```
+
 Here the code of `probe3` is thrown away in the child process (the `perror("In exec():")` is not reached). Instead the running program is being replaced by the given call to `ls`. From the protocol we can see the parent instance of `probe3` waits for the `exit()`. Since the `perror()` after the `execl()`is never executed, it cannot be an `exit()` in our code. In fact, `ls` ends the process we made with an `exit()` and that is what we receive our exit status from in our parent processes `wait()` call.
 
 The same, as a Shellscript
 --------------------------
 
 The examples above have been written in C. We can do the same, in `bash`:
+
 ```
 kris@linux:/tmp/kris> cat probe1.sh
 #! /bin/bash --
@@ -224,12 +233,13 @@ The parent is 18070
 Fri Jan  5 13:49:56 CET 2007: Parent waits.
 The child 18071 has the exit status 0
 Fri Jan  5 13:50:06 CET 2007: Parent woke up.
-``` 
+```
 
 The actual bash
 ---------------
 
 We can also trace the shell while it executes a single command. The information from above should allow us to understand what goes on, and see how the shell actually works.
+
 ```
 kris@linux:~> strace -f -e execve,clone,fork,waitpid bash
 kris@linux:~> ls
@@ -248,6 +258,7 @@ WCONTINUED) = 30048
 --- SIGCHLD (Child exited) @ 0 (0) ---
 ...
 ```
+
 Linux uses a generalization of the original Unix `fork()`, named `clone()`, to create child processes. That is why we do not see `fork()` in a Linux system to create a child process, but a `clone()` call with some parameters. Linux also uses a specialized variant of `wait()`, called `waitpid()`, to wait for a specific pid. Linux finally uses the `exec()` variant `execve()` to load programs, but that is just shuffling the paramters around. At the end of `ls` (PID 30048) the process 30025 will wake up from the `wait()` and continue.
 
 Original Code, what Windows does, and what Microsoft thinks about Linux
@@ -255,4 +266,6 @@ Original Code, what Windows does, and what Microsoft thinks about Linux
 
 This text is based on [a USENET article](http://groups.google.com/group/de.comp.os.unix.linux.misc/msg/4035c67415f9bc09) I wrote a long time ago. [Here](https://minnie.tuhs.org/cgi-bin/utree.pl?file=V7/usr/src/cmd/sh/xec.c) is the original C-code of the original `sh` from 1979, with the `fork()` system call. Search for `case TFORK:`. Also, check out the programming style of Mr. Bourne - this is C, even if it does not look like it. The [original 2007 blog article](https://isotopp.github.io/2007/01/07/fork-exec-wait-und-exit.html), has a followup article [on Windows CreateProcess()](https://isotopp.github.io/2007/01/07/fork-und-exec-vs-createprocess.html), which has not been translated. When implementing `fork()` in Windows as part of the WSL 1, Microsoft ran into a lot of problems with the syscall, and wrote an article about how they hate it, and why they think their `CreateProcessEx()` (in Unix: `spawn()`) would be better. The [PDF](https://www.microsoft.com/en-us/research/uploads/prod/2019/04/fork-hotos19.pdf) makes a number of good points, but is still wrong. :-)
 
-First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/) and syndicated here with permission of the author.
+<br>
+
+*First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/) and syndicated here with permission of the author.*

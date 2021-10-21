@@ -3,10 +3,8 @@ title: "Percona MeetUp for MongoDB Oct 20th, 2021"
 description: "Community MeetUp for MongoDB will highlight solutions for your common problems with MongoDB including backups, scalability, security and also some MongoDB5.0 features"
 images:
   - events/percona-meetup/MongoDB-cover-october-1920.jpg
-date: Wed, 20 October 2021, 14:00:00 +0000
-publishdate: Wed, 20 October 2021, 14:00:00 +0000
+date: "2021-10-20"
 draft: false
-weight: 2
 speakers:
   - kimberly_wilkins
   - andrew_pogrebnoi

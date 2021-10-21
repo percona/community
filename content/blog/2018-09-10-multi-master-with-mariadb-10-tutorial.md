@@ -22,7 +22,7 @@ Both have the same database PRODUCTION but the data are totally different.
 ![PmaControl schema topology](blog/2018/09/pmacli-schema-diagram.jpg)
 _This screenshot is made from my own monitoring tool: PmaControl. You have to read 10.10.16.232 on master2 and not 10.10.16.235. The fault of my admin system! :p)_
 
-We will start with three servers—2 masters and 1 slave—you can add more masters if needed. For this tutorial, I used Ubuntu 12.04. I'll let you choose the right procedure for your distribution from [Downloads.](https://downloads.mariadb.org/mariadb/)
+We will start with three servers—2 masters and 1 slave—you can add more masters if needed. For this tutorial, I used Ubuntu 12.04. I'll let you choose the right procedure for your distribution from[Downloads.](https://downloads.mariadb.org/mariadb/)
 
 Scenario
 --------
@@ -57,7 +57,7 @@ id_server=`echo -n $crc32 | cut -d ' ' -f 2 | tr -d 'n'`
 ```
 This configuration file is not one I use in production, but a minimal version that's shown just as an example. The config may work fine for me, but perhaps it won't be the same for you, and it might just crash your MySQL server. 
 
-If you're interested in my default install of MariaDB 10  you can see it here: [https://raw.githubusercontent.com/Esysteme/Debian/master/mariadb.sh](https://raw.githubusercontent.com/Esysteme/Debian/master/mariadb.sh)  (this script as been updated since 4 years) 
+If you're interested in my default installof MariaDB 10 you can see it here: [https://raw.githubusercontent.com/Esysteme/Debian/master/mariadb.sh](https://raw.githubusercontent.com/Esysteme/Debian/master/mariadb.sh) (this script as been updated since 4 years) 
 
 example:
 ```
@@ -65,32 +65,34 @@ example:
 ```
 ```
 cat >> /etc/mysql/conf.d/mariadb10.cnf << EOF
- 
+
 [client]
- 
+
 # default-character-set = utf8
- 
+
 [mysqld]
 character-set-client-handshake = FALSE
 character-set-server = utf8
 collation-server = utf8_general_ci
- 
+
 bind-address        = 0.0.0.0
 external-locking    = off
 skip-name-resolve
- 
+
 #make a crc32 of ip server
 server-id=$id_server
- 
+
 #to prevent auto start of thread slave
 skip-slave-start
- 
+
 [mysql]
 default-character-set   = utf8
- 
+
 EOF
 ```
+
 We restart the server
+
 ```
 /etc/init.d/mysql restart
 ```
@@ -99,6 +101,7 @@ We restart the server
  * Starting MariaDB database server mysqld                                        [ OK ]
  * Checking for corrupt, not cleanly closed and upgrade needing tables.
 ```
+
 Repeat these actions on all three servers.
 
 Create users on both masters
@@ -107,10 +110,13 @@ Create users on both masters
 ### Create the replication user on both masters
 
 on **master1** (10.10.16.231)
+
 ```
 mysql -u root -p -e "GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'replication'@'%' IDENTIFIED BY 'passwd';"
 ```
+
 on **master2** (10.10.16.232)
+
 ```
 mysql -u root -p -e "GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'replication'@'%' IDENTIFIED BY 'passwd';"
 ```
@@ -145,19 +151,23 @@ Dump your master1 and master2 databases from slave (10.10.16.233)
 
 All the commands from now until the end have to be carried out on the **slave** server
 
-*   --master-data=2  get the file (binary log) and its position, and add it to the beginning of the dump as a comment
-*   --single-transaction  This option issues a BEGIN SQL statement before dumping data from the server (this works only on tables with the InnoDB storage engine)
+*   --master-data=2 get the file (binary log) and its position, and add it to the beginning of the dump as a comment
+*   --single-transaction This option issues a BEGIN SQL statement before dumping data from the server (this works only on tables with the InnoDB storage engine)
 
 ```
 mysqldump -h 10.10.16.231 -u root -p --master-data=2 --single-transaction PRODUCTION > PRODUCTION_10.10.16.231.sql
 mysqldump -h 10.10.16.232 -u root -p --master-data=2 --single-transaction PRODUCTION > PRODUCTION_10.10.16.232.sql
 ```
+
 Create both new databases:
+
 ```
 slave[(NONE)]> CREATE DATABASE PRODUCTION_FR;
 slave[(NONE)]> CREATE DATABASE PRODUCTION_UK;
 ```
+
 Load the data:
+
 ```
 mysql -h 10.10.16.233 -u root -p PRODUCTION_FR < PRODUCTION_10.10.16.231.sql
 mysql -h 10.10.16.233 -u root -p PRODUCTION_UK < PRODUCTION_10.10.16.232.sql
@@ -173,7 +183,9 @@ Edit both dumps to get file name and position of the binlog, and replace it here
 ```
 less PRODUCTION_10.10.16.231.sql
 ```
-get the line : (the MASTER_LOG_FILE and MASTER_LOG_POS values will be different to this example)```
+get the line : (the MASTER_LOG_FILE and MASTER_LOG_POS values will be different to this example)
+
+```
 -- CHANGE MASTER TO MASTER_LOG_FILE='mariadb-bin.000010', MASTER_LOG_POS=771;
 ```
 replace the file and position in this command:
@@ -186,11 +198,15 @@ CHANGE MASTER 'PRODUCTION_FR' TO MASTER_HOST = "10.10.16.231", MASTER_USER = "re
 ```
 less PRODUCTION_10.10.16.232.sql
 ```
+
 get the line: (the MASTER_LOG_FILE and MASTER_LOG_POS values will be different to this example, and would normally be different between master1 and master2. It's just in my test example they were the same)
+
 ```
 -- CHANGE MASTER TO MASTER_LOG_FILE='mariadb-bin.000010', MASTER_LOG_POS=771;
 ```
+
 replace the file and position in this command:
+
 ```
 CHANGE MASTER 'PRODUCTION_UK' TO MASTER_HOST = "10.10.16.232", MASTER_USER = "replication", MASTER_PASSWORD ="passwd", MASTER_LOG_FILE='mariadb-bin.000010', MASTER_LOG_POS=771;
 ```
@@ -201,17 +217,22 @@ Unfortunately, the option replicate-rewrite-db doesn't exist for variables, and 
 ```
 /etc/mysql/my.cnf
 ```
+
 add these lines :
+
 ```
 PRODUCTION_FR.replicate-rewrite-db="PRODUCTION->PRODUCTION_FR"
 PRODUCTION_UK.replicate-rewrite-db="PRODUCTION->PRODUCTION_UK"
 PRODUCTION_FR.replicate-do-db="PRODUCTION_FR"
 PRODUCTION_UK.replicate-do-db="PRODUCTION_UK"
 ```
+
 After that, you can restart the daemon without a problem – but don't forgot to launch the slaves because we skipped that at the start ;).
+
 ```
 /etc/init.d/mysql restart
 ```
+
 Start the replication:
 
 *   one by one
@@ -226,7 +247,9 @@ START SLAVE 'PRODUCTION_UK';
 ```
 START ALL SLAVES;
 ```
+
 Now to check the replication:
+
 ```
 slave[(NONE)]>SHOW SLAVE 'PRODUCTION_UK' STATUS;
 slave[(NONE)]>SHOW SLAVE 'PRODUCTION_FR' STATUS;
@@ -237,38 +260,45 @@ Tests
 -----
 
 on **slave**:
+
 ```
 slave [(NONE)]> USE PRODUCTION_FR;
 DATABASE changed
 slave [PRODUCTION_FR]> SHOW TABLES;
 Empty SET (0.00 sec)
- 
+
 slave [(NONE)]> USE PRODUCTION_UK;
 DATABASE changed
 slave [PRODUCTION_UK]> SHOW TABLES;
 Empty SET (0.00 sec)
 ```
+
 on **master1**:
+
 ```
 master1 [(NONE)]> USE PRODUCTION;
 DATABASE changed
 master1 [PRODUCTION]>CREATE TABLE `france` (id INT);
 Query OK, 0 ROWS affected (0.13 sec)
- 
+
 master1 [PRODUCTION]> INSERT INTO `france` SET id=1;
 Query OK, 1 ROW affected (0.00 sec)
 ```
+
 on **master2**:
+
 ```
 master2 [(NONE)]> USE PRODUCTION;
 DATABASE changed
 master2 [PRODUCTION]>CREATE TABLE `british` (id INT);
 Query OK, 0 ROWS affected (0.13 sec)
- 
+
 master2 [PRODUCTION]> INSERT INTO `british` SET id=2;
 Query OK, 1 ROW affected (0.00 sec)
 ```
+
 on **slave**:
+
 ```
 -- for FRANCE
 slave [(NONE)]> USE PRODUCTION_FR;
@@ -280,7 +310,7 @@ slave [PRODUCTION_FR]> SHOW TABLES;
 | france                  |
 +-------------------------+
 1 ROW IN SET (0.00 sec)
- 
+
 slave [PRODUCTION_FR]> SELECT * FROM france;
 +------+
 | id   |
@@ -288,12 +318,12 @@ slave [PRODUCTION_FR]> SELECT * FROM france;
 |    1 |
 +------+
 1 ROW IN SET (0.00 sec)
- 
- 
+
+
 -- for British
 slave [(NONE)]> USE PRODUCTION_UK;
 DATABASE changed
- 
+
 slave [PRODUCTION_UK]> SHOW TABLES;
 +-------------------------+
 | Tables_in_PRODUCTION_UK |
@@ -301,7 +331,7 @@ slave [PRODUCTION_UK]> SHOW TABLES;
 | british                 |
 +-------------------------+
 1 ROW IN SET (0.00 sec)
- 
+
 slave [PRODUCTION_UK]> SELECT * FROM british;
 +------+
 | id   |
@@ -310,9 +340,10 @@ slave [PRODUCTION_UK]> SELECT * FROM british;
 +------+
 1 ROW IN SET (0.00 sec)
 ```
-It works!   
 
-If you want do this online, please add +1 to: [https://jira.mariadb.org/browse/MDEV-17165](https://jira.mariadb.org/browse/MDEV-17165)  
+It works!  
+
+If you want do this online, please add +1 to: [https://jira.mariadb.org/browse/MDEV-17165](https://jira.mariadb.org/browse/MDEV-17165) 
 
 Limitations
 -----------
@@ -320,15 +351,19 @@ Limitations
 #### **WARNING**: it doesn't work with the database specified in query. (With Binlog_format = STATEMENT or MIXED)
 
 This works fine:
+
 ```
 USE PRODUCTION;
 UPDATE `ma_table` SET id=1 WHERE id =2;
 ```
+
 This query will break the replication:
+
 ```
 USE PRODUCTION;
 UPDATE `PRODUCTION`.`ma_table` SET id=1 WHERE id =2;
 ```
+
 => databases `PRODUCTION` does not exist on this server.
 
 ### A real example
@@ -336,11 +371,12 @@ UPDATE `PRODUCTION`.`ma_table` SET id=1 WHERE id =2;
 #### Missing update
 
 on **master1:**
+
 ```
 master1 [(NONE)]>UPDATE `PRODUCTION`.`france` SET id=3 WHERE id =1;
 Query OK, 1 ROW affected (0.02 sec)
 ROWS matched: 1  Changed: 1  Warnings: 0
- 
+
 master1 [(NONE)]> SELECT * FROM `PRODUCTION`.`france`;
 +------+
 | id   |
@@ -349,7 +385,9 @@ master1 [(NONE)]> SELECT * FROM `PRODUCTION`.`france`;
 +------+
 1 ROW IN SET (0.00 sec)
 ```
+
 on **slave:**
+
 ```
 slave [PRODUCTION_FR]> SELECT * FROM france;
 +------+
@@ -359,16 +397,18 @@ slave [PRODUCTION_FR]> SELECT * FROM france;
 +------+
 1 ROW IN SET (0.00 sec)
 ```
+
 In this case we missed the update. It's a real problem, because if the replication should crash, our slave is desynchronized with master1 and we didn't realize it.
 
 #### Crash replication
 
 on **master1**:
+
 ```
 master1[(NONE)]> USE PRODUCTION;
 DATABASE changed
- 
- 
+
+
 master1 [PRODUCTION]> SELECT * FROM`PRODUCTION`.`france`;
 +------+
 | id   |
@@ -376,11 +416,11 @@ master1 [PRODUCTION]> SELECT * FROM`PRODUCTION`.`france`;
 |    3 |
 +------+
 1 ROW IN SET (0.00 sec)
- 
+
 master1 [PRODUCTION]>UPDATE `PRODUCTION`.`france` SET id=4 WHERE id =3;
 Query OK, 1 ROW affected (0.01 sec)
 ROWS matched: 1  Changed: 1  Warnings: 0
- 
+
 master1 [PRODUCTION]> SELECT * FROM `PRODUCTION`.`france`;
 +------+
 | id   |
@@ -389,6 +429,7 @@ master1 [PRODUCTION]> SELECT * FROM `PRODUCTION`.`france`;
 +------+
 1 ROW IN SET (0.01 sec)
 ```
+
 _on PmaControl:_ ![pmacli schema diagram showing error](blog/2018/09/pmacli-schema-diagram-1.jpg) on **slave:**
 ```
 slave [PRODUCTION_FR]> SHOW slave 'PRODUCTION_FR' STATUSG;
@@ -408,7 +449,7 @@ slave [PRODUCTION_FR]> SHOW slave 'PRODUCTION_FR' STATUSG;
               Replicate_Do_DB: PRODUCTION_FR
           Replicate_Ignore_DB:
 
- Replicate_Do_Table:
+Replicate_Do_Table:
        Replicate_Ignore_Table:
       Replicate_Wild_Do_Table:
   Replicate_Wild_Ignore_Table:
@@ -439,9 +480,10 @@ Master_SSL_Verify_Server_Cert: No
                    Using_Gtid: No
                   Gtid_IO_Pos:
 1 ROW IN SET (0.00 sec)
- 
+
 ERROR: No query specified
 ```
+
 And we got the error which crash replication : Error TABLE 'PRODUCTION.france' doesn't exist' ON query. DEFAULT DATABASE: 'PRODUCTION_FR'. Query: 'UPDATE `PRODUCTION`.`france` SET id=4 WHERE id =3 
 
 NB : Everything works fine with binlog_format=ROW. 
