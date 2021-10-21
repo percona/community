@@ -9,6 +9,7 @@ speakers:
   - charly_batista
 tags: ['PostgreSQL', 'Meetup']
 ---
+
 Community MeetUp for PostgreSQL was live stream on Oct 13th at 11:00am EDT to talk about how to improve your database performance with appropriated tools for monitoring and optimization. Here are the full recording and transcript :
 
 ## Video
