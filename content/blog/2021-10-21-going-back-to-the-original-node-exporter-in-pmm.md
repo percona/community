@@ -9,9 +9,8 @@ images:
 slug: going-back-to-original-pmm-node-exporter
 ---
 
-# Going back to the original node_exporter in PMM
-
 This is my first (I hope) post about something no so usual in our regular posts about technology.
+
 Usually we discuss new features, talk about how to do something but even for me, a Percona developer, sometimes it is hard to know where and what to touch in PMM. There are many components, many abstractions, parts that send messages to remote APIs or agents, the PMM agent, the PMM API (pmm-managed), the command line client (pmm-admin) and all the external exporters.
 
 In this post, I will try to show how to implement the replacement of the current node_exporter we use in PMM to move back to the original one.
