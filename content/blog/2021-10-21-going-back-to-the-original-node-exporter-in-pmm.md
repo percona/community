@@ -1,12 +1,11 @@
 ---
 title: 'Going back to the original node_exporter in PMM'
-date: Thu 21 Oct 2021 15:00:00 +0000
-draft: true
+date: "2021-10-21T15:00:00+00:00"
 tags: ['node_exporter', 'exporter', 'pmm']
 authors:
   - carlos_salguero
 images:
-  - blog/2021/10/directory.jpg
+  - blog/2021/10/directory.png
 slug: going-back-to-original-pmm-node-exporter
 ---
 
