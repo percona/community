@@ -9,7 +9,7 @@ date: "2021-10-18"
 
 Percona encourages its staff members to actively collaborate with universities and local communities. Evgeniy Patlan (Manager, Build & Release Engineering) is one of those who enjoy active communication with local students and those who would like to become more familiar with modern open source technologies. In October, he participated in the student training which took place in the Ukrainian National University "Chernihiv Polytechnic". 
 
-![OSDN Conf Kyiv 2021](/events/national_university_chernihiv_polytechnic/national_university_chernihiv_polytechnic-COLLAGE.jpg)
+![National University Chernihiv Polytechnic](/events/national_university_chernihiv_polytechnic/national_university_chernihiv_polytechnic-COLLAGE.jpg)
 
 The mission of the National University "Chernihiv Polytechnic" is the development of society through education and research to build leadership and address global challenges in a changing world. It is a worthy flagship of higher education in Ukraine, a real forge for training highly qualified professionals ready to give their knowledge and strength development of the native state.
 
