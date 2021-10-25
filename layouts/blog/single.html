@@ -16,7 +16,11 @@
   {{- end -}}
 {{ end }}
 
+
 {{ define "main" }}
+
+  {{ partial "sharing.html" . }}
+
   <article class="text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
     {{ if $.PublishDate }}
       {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
