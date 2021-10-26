@@ -19,7 +19,7 @@
         <p>
     </div></div>
 
-    <div class="contentblock">
+    <div class="contentblock"> 
         <div class="grid grid--2">
             {{- $author_name := .Params.name -}}
             {{- range $.Page.Site.RegularPages -}}
@@ -36,5 +36,6 @@
                 {{ end }}
             {{- end -}}
         </div>
+        {{ partial "sharing.html" . }} 
     </div>
 {{ end }}
