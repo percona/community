@@ -19,8 +19,6 @@
 
 {{ define "main" }}
 
-  {{ partial "sharing.html" . }}
-
   <article class="text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
     {{ if $.PublishDate }}
       {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
@@ -53,6 +51,7 @@
     <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
       {{ partial "content.html" . }}
     </div>
+
     {{ if (isset .Params "authors")}}
       <div class="bios">
       {{ range $key, $author := .Params.authors -}}
@@ -72,6 +71,8 @@
       </div>
     {{ end }}
   </article>
+
+  {{ partial "sharing.html" . }}
 
   <div class="disqus-comments">
     <h2>Comments</h2>
