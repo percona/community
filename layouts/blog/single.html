@@ -74,11 +74,6 @@
 
   {{ partial "sharing.html" . }}
 
-  <div class="disqus-comments">
-    <h2>Comments</h2>
-    {{ template "_internal/disqus.html" . }}
-  </div>
-
   {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
   {{ with $related }}
     <div class="recommendations">
