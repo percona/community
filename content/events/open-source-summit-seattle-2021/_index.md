@@ -5,6 +5,7 @@ images:
   - events/oss-2021/oss-2021-cover-682.jpg
 layout: single
 date: "2021-09-27"
+tags: ['opensource', 'sponsorship']
 ---
 
 Percona Team participated in the OSS event organized by Linux Foundation in Seattle in Hyatt Regency Hotel on September 27-30. It was really exciting for all of us to start meeting in person with customers, community members, and teammates as well!
