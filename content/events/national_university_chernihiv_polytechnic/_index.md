@@ -5,6 +5,7 @@ images:
   - events/national_university_chernihiv_polytechnic/national_university_chernihiv_polytechnic_1.jpg
 layout: single
 date: "2021-10-18"
+tags: ['opensource']
 ---
 
 Percona encourages its staff members to actively collaborate with universities and local communities. Evgeniy Patlan (Manager, Build & Release Engineering) is one of those who enjoy active communication with local students and those who would like to become more familiar with modern open source technologies. In October, he participated in the student training which took place in the Ukrainian National University "Chernihiv Polytechnic". 
