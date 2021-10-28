@@ -15,7 +15,15 @@ tags: ['MySQL', 'Meetup']
 
 ![Percona MeetUp for MySQL November 2021](events/percona-meetup/cover-mysql-november-1-1920.jpg)
 
-Backup is very important to reconstruct your database when loss occurs. Percona Xtrabackup is a combination of xtrabackup and innobackupex and can back up data from InnoDB, XtraDB and MyISAM tables. Our Community Meetup for MySQL in November will be hosted by Matt Yonkovit, The Head of Open Source Strategy (HOSS) at Percona with participation of Marcelo Altmann, MySQL Software Engineer at Percona and Pep Pla, Consultant at Percona. We will talk about backup during 1-hour live streaming and answer questions right away.
+Backup is very important to reconstruct your database when loss occurs. Our Community Meetup for MySQL in November will be hosted by Matt Yonkovit, The Head of Open Source Strategy (HOSS) at Percona with participation of Marcelo Altmann, MySQL Software Engineer at Percona and Pep Pla, Consultant at Percona. We will talk about backup during 1-hour live streaming and answer questions right away. Let's tell you a little about our speakers.
+
+Marcelo Altmann develops Percona Xtrabackup and is very experienced with MySQL backup solutions. Percona Xtrabackup is a combination of xtrabackup and innobackupex and can back up data from InnoDB, XtraDB , MyRocks and  MyISAM tables. Marcelo has spoken at many conferences, [blogged about MySQL](https://blog.marceloaltmann.com/) , and even participated in the [HOSS Podcast #21](https://www.youtube.com/watch?v=wUqxEqBIJlQ). 
+
+Pep Pla has been working with MySQL in practice for many years and seems to know everything about backups, so we called him. He has already given a great talk at Percona Live 2021 and participated in the HOSS Podcast #23: 
+
+* [HOSS Podcast](https://www.youtube.com/watch?v=sDG5BOAHJhY)
+* [Dr. XtraBackup or: How I Learned to Stop Worrying and Love Backups I](https://www.youtube.com/watch?v=X-Ef0pyyBjM)
+* [Dr. XtraBackup or: How I Learned to Stop Worrying and Love Backups II](https://www.youtube.com/watch?v=CamzaJGpnvA)
 
 Join for an hour MeetUp for MySQL
 
@@ -38,7 +46,6 @@ The Percona Community MeetUp is a Live Event and Attendees will have time to ask
 ![Percona MeetUp for MySQL November 2021 - Pep Pla](events/percona-meetup/card-mysql-november-pep-pla-1920.jpg)
 
 ![Percona MeetUp for MySQL November 2021 - Marcelo Altmann](events/percona-meetup/card-mysql-november-marcelo-1920.jpg)
-
 
 ## The MeetUp for MySQL is recommended for: 
 
