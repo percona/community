@@ -3,9 +3,7 @@ title: "Percona MeetUp for PMM Oct 27th, 2021"
 description: "Join the Community MeetUp for Percona Monitoring and Management (PMM) to discover some features that help optimize performance, and improve the security of your open-source database environments with a demo."
 images:
   - events/percona-meetup/cover-pmm-october-1920.jpg
-date: Wed, 27 October 2021, 14:00:00 +0000
-publishdate: Wed, 27 October 2021, 14:00:00 +0000
-weight: 1
+date: "2021-10-27"
 draft: false
 speakers:
   - michael_coburn
