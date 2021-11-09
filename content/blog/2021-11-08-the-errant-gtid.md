@@ -1,5 +1,5 @@
 ---
-title: 'The Errant GTID, PT1'
+title: 'The Errant GTID'
 date: "2021-11-08T00:00:00+00:00"
 draft: false
 tags: ['Percona', 'MySQL', 'Recovery', 'Replication', 'GTID']
