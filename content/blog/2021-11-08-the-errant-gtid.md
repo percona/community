@@ -22,7 +22,7 @@ An errant transaction is BAD. Why is it bad? The errant transaction could still 
 #### Its easy to prevent errant transaction.
 
 1. `read_only = ON` in the replicas my.cnf
-2. Disable binlogs when you need to perform work on a replica that he primary does need to to know about. `set sql_log_bin = 'off';` before your work on replica. `set sql_log_bin = 'on';` when your work is complete.</p>
+2. Disable binlogs when you need to perform work on a replica.  `set session sql_log_bin = 'off';` before your work on replica. `set session sql_log_bin = 'on';` when your work is complete.</p>
 
 #### Find and correct errant transaction
 
@@ -156,18 +156,12 @@ Note that both Values match. We have repaired the errant transaction from the re
 
 <p>I would suggest you now run pt-table-checksum from the primary to verify your data is consistent. If you are not familiar with pt-table-checksum, check out this: [Blog Post](https://percona.community/blog/2021/07/22/lets-be-insync/).
 
-In this example I created a database called **community** on the replica to create the errant transaction.
+Now we need to take care of the replica that had the errant transaction. We need to flush and purge the binary logs. Use the commands below to find the current binary file, and then flush and purge.
 
-I suggest you remove that database **community** from the replica. Let's just step through the quickly step through the safe way to drop the database.</p>
 ```
-1. Connect to replica
-2. show databases; (verify that community still exists)
-3. set sql_log_bin = 'off';
-4. drop database community;
-5. show databases; (verify that community is dropped)
-6. set sql_log_bin = 'on';
+show binary logs;
+FLUSH LOGS;
+PURGE BINARY LOGS TO 'binlog.00000x';
 ```
-**example:**
-![errant-gtid-2](blog/2021/11/errant-gtid-2.png)
 
 Thats it. You have fixed and cleaned up the mess you made. This was a rather simple example of an errant GTID. I will be doing part 2 that will look at more complexed examples.
