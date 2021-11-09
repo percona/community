@@ -3,9 +3,7 @@ title: " Percona MeetUp for MySQL Nov 3rd 2021"
 description: "Join us at the Community MeetUp for MySQL on November 3rd for a 1-hour talk about best practices for open source database backup, Percona Xtrabackup, Schroedinger Backup, and Q&A."
 images:
   - events/percona-meetup/cover-mysql-november-1-1920.jpg
-date: Wed, 3 November 2021, 19:00:00 +0000
-publishdate: Wed, 3 November 2021, 19:00:00 +0000
-weight: 1
+date: "2021-11-03"
 draft: false
 speakers:
   - pep_pla
