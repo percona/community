@@ -26,11 +26,11 @@ An errant transaction is BAD. Why is it bad? The errant transaction could still 
 
 #### Find and correct errant transaction
 
-How do you correct an errant transaction? Compare the `gtid_executed` on the primary and replica. Identify the errant transaction on the replica and then apply that transaction to the primary. Pretty simple? well yes and no.
+How do you correct an errant transaction? Compare the `gtid_executed` on the primary and replica. Identify the errant transaction on the replica and then apply that transaction to the primary.
 
-Let me walk you through how I look for and then correct errant transaction.
+I will show you one method in the steps below.
 
-1. On the replica I run `show variable like 'gtid_executed'`
+1. On the replica run `show variables like 'gtid_executed'`
 
 You will receive output similar to this:
 ```
@@ -41,9 +41,9 @@ Variable_name: gtid_executed
 a6b3751e-3fd3-11ec-a4f5-080027ae8b99:1-2
 1 row in set (0.00 sec)
 ```
-Take note of the the transaction following **Value** copy this and hold on to it for later in the steps.
+Make note of the gtid_executed value. You will need this to check if you have an errant transaction.
 
-2. On the primary I run `show variable like 'gtid_executed'`
+2. On the primary run `show variables like 'gtid_executed'`
 
 You will receive output similar to this:
 ```
@@ -54,9 +54,9 @@ Variable_name: gtid_executed
 a6b3751e-3fd3-11ec-a4f5-080027ae8b99:1-2
 1 row in set (0.00 sec)
 ```
-Again take note of the transaction following **Value** copy this and hold on to it for later in the steps.
+Make note of the gtid_executed value. You will need this to check if you have an errant transaction.
 
-3. Now lets determine if the replica has any errant transaction's. We will use the function: 'gtid_subset' to compare the executed GTID set from **replica** and **primary**.
+3. We need to determine if the replica has any errant transaction's. We will use the function: 'gtid_subset' to compare the executed GTID set from **replica** and **primary**.
 ```
 mysql_replica> select gtid_subset('858d4d54-3fe1-11ec-a7e8-080027ae8b99:1,
     '> a6b3751e-3fd3-11ec-a4f5-080027ae8b99:1-2','858d4d54-3fe1-11ec-a7e8-080027ae8b99:1,
@@ -70,7 +70,7 @@ mysql_replica> select gtid_subset('858d4d54-3fe1-11ec-a7e8-080027ae8b99:1,
 ```
 Subset = 1 tells us we have **no** errant transactions.
 
-Now lets introduce an errant transaction on the replica. Let's do something simple by creating a new database.
+Now we need to introduce an errant transaction in to the replica. Let's do something simple by creating a new database.
 ```
 mysql_replica> create database community;
 Query OK, 1 row affected (0.01 sec)
@@ -84,7 +84,7 @@ Variable_name: gtid_executed
 a6b3751e-3fd3-11ec-a4f5-080027ae8b99:1-2
 1 row in set (0.00 sec)
 ```
-Lets repeat step 3 using the **new gtid_executed** from the replica and the **original gtid_executed** from the primary.
+We will repeat step 3 using the **new gtid_executed** from the replica and the **original gtid_executed** from the primary.
 
 ```
 mysql_replica> select gtid_subset('858d4d54-3fe1-11ec-a7e8-080027ae8b99:1-2,
@@ -115,9 +115,9 @@ Now we have our errant transaction from the replica `858d4d54-3fe1-11ec-a7e8-080
 
 #### Repair the issue
 
-Now let's move to the primary.
+Now let's move to the **primary**.
 
-Once on the **primary** we want to insert a pseudo transaction to resolve the errant transaction the replica.
+Once on the **primary** we want to insert a pseudo transaction to resolve the errant transaction from the replica.
 ```
 mysql_primary> set gtid_next='858d4d54-3fe1-11ec-a7e8-080027ae8b99:2';
 Query OK, 0 rows affected (0.00 sec)
@@ -131,8 +131,7 @@ Query OK, 0 rows affected (0.00 sec)
 `mysql_primary> set gtid_next='automatic';
 Query OK, 0 rows affected (0.00 sec)
 ```
-
-Now lets compare the GTID executed again from the replica and primary.
+We can compare the GTID executed again from the replica and primary.
 
 #### Primary:
 ```
@@ -152,11 +151,9 @@ Variable_name: gtid_executed
 a6b3751e-3fd3-11ec-a4f5-080027ae8b99:1-2
 1 row in set (0.00 sec)`
 ```
-Note that both Values match. We have repaired the errant transaction from the replica to the primary.
+Note that both values match. We have repaired the errant transaction from the replica to the primary.
 
-<p>I would suggest you now run pt-table-checksum from the primary to verify your data is consistent. If you are not familiar with pt-table-checksum, check out this: [Blog Post](https://percona.community/blog/2021/07/22/lets-be-insync/).
-
-Now we need to take care of the replica that had the errant transaction. We need to flush and purge the binary logs. Use the commands below to find the current binary file, and then flush and purge.
+Now we need to take care of the replica that had the errant transaction. We need to flush and purge the binary logs. Use the commands below to find the current binary file, and then flush and purge. **Remember to be on the replica**.
 
 ```
 show binary logs;
@@ -164,4 +161,6 @@ FLUSH LOGS;
 PURGE BINARY LOGS TO 'binlog.00000x';
 ```
 
-Thats it. You have fixed and cleaned up the mess you made. This was a rather simple example of an errant GTID. I will be doing part 2 that will look at more complexed examples.
+<p>Thats it. You have fixed the errant transaction. This was a rather simple example of an errant GTID. I will be doing part 2 that will look at more complexed examples.
+
+If you want to validate your data is consistent between the primary and replica. You could use a tool like [pt-table-checksum](https://percona.community/blog/2021/07/22/lets-be-insync/), or any other method you prefer. </p>
