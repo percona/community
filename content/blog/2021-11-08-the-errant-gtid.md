@@ -154,13 +154,14 @@ a6b3751e-3fd3-11ec-a4f5-080027ae8b99:1-2
 Note that both values match. We have repaired the errant transaction from the replica to the primary.
 
 Now we need to take care of the replica that had the errant transaction. We need to flush and purge the binary logs. Use the commands below to find the current binary file, and then flush and purge. **Remember to be on the replica**.
-
 ```
 show binary logs;
 FLUSH LOGS;
 PURGE BINARY LOGS TO 'binlog.00000x';
 ```
-
 <p>Thats it. You have fixed the errant transaction. This was a rather simple example of an errant GTID. I will be doing part 2 that will look at more complexed examples.
+</p>
 
-If you want to validate your data is consistent between the primary and replica. You could use a tool like [pt-table-checksum](https://percona.community/blog/2021/07/22/lets-be-insync/), or any other method you prefer. </p>
+### Referance Information
+- [Set SQL Log Bin](https://dev.mysql.com/doc/refman/8.0/en/set-sql-log-bin.html)
+- [GTID Functions](https://dev.mysql.com/doc/refman/8.0/en/gtid-functions.html)
