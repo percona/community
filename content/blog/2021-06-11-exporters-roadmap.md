@@ -1,6 +1,7 @@
 ---
 title: "Exporters Roadmap"
 date: "2021-06-11T00:00:00+00:00"
+tags: ['Exporter', 'Prometheus', 'PMM', 'Monitoring']
 authors:
   - andrii_skomorokhov
 images:

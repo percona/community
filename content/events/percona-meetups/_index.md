@@ -4,6 +4,7 @@ description: "Join the new regular series of monthly Online MeetUp for each comm
 layout: list
 images:
   - events/percona-meetup/category-cover-682.jpg
+weight: 1
 ---
 
 {{% hero %}}

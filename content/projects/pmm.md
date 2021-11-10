@@ -78,5 +78,20 @@ For more details, please refer to our [Architecture](https://www.percona.com/doc
 
 If you're interested in contributing, please check out our page on [contributing](/contribute) as well as the [main PMM repository](https://github.com/percona/pmm) that also lists all our exporter repositories.
 
+## PMM Roadmap and Releases
+
+Please check out the PMM Roadmap on this [Dashboard](https://jira.percona.com/secure/Dashboard.jspa?selectPageId=13502), choose the project "Percona Monitoring and Management (PMM)" in All Product Issues/Roadmap picker.
+
+Check the tickets to be included in the next [Release](https://jira.percona.com/issues/?jql=project%20%3D%20%22Percona%20Monitoring%20and%20Management%22%20and%20fixVersion%20%3D%20earliestUnreleasedVersion()). 
+
+Release notes under development are in our [pmm-doc repo](https://github.com/percona/pmm-doc/labels/RN).
+
+Here is a feed of early previews that could be tested before release:
+
+{{% blogpostsbytags tags="PMM_prev" %}}
+
+
+## PMM related blog posts
+
 {{% blogpostsbytags tags="Monitoring,PMM,Prometheus" %}}
 

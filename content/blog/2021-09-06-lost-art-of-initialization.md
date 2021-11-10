@@ -25,14 +25,13 @@ You may want to take a backup before you begin these steps if you have already l
 ## The Steps
 
 The steps below assume you are working with a default MySQL
-server installation. Modify as needed for a custom installation.
+server installation. Modify as needed for a custom installation. One word of caution. Please dont user root to run the bellow commands. Use `sudo mysql` this will add an extra layer of safety by not being root.
 
-1. Stop the MySQL Server. `$ systemctl start mysqld`
+1. Stop the MySQL Server. `$ systemctl stop mysqld`
 
 2. You will need to delete everything out of your current data directory.
    ```
-   $ cd /var/lib/mysql
-   $ rm -fR *
+   $ rm -fR /var/lib/mysql*
    ```
 3. Edit your my.cnf file and add: `lower_case_table_names=1`
    ```
@@ -62,7 +61,7 @@ If you dont find the temporary password for the root user, review the steps abov
    ```
 ![lostart-10](blog/2021/09/lostart-04.png)
 
-Now you should be able to log into MySQL using the password you got from step 5.
+Now you should be able to log into MySQL using the password received got from step 5.
 
 There could be many more reasons to re-initliatize a MySQL Database. This is just one example.
 Automation is great. Just remember to pull out your command line tools now and then, so they dont get to rusty.

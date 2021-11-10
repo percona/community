@@ -17,7 +17,6 @@ sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 0.5
-disqusShortname: https-percona-community
 markup:
   goldmark:
     extensions:
@@ -123,21 +122,26 @@ menu:
       parent: blog
       weight: 2
 
+    - identifier: articles
+      name: Articles
+      url: /contribute/articles
+      parent: contribute
+      weight: 1
     - identifier: coc
       name: Code of Conduct
       url: /contribute/coc
       parent: contribute
-      weight: 1
+      weight: 2
     - identifier: opentopics
       name: Open Topics
       url: /contribute/opentopics
       parent: contribute
-      weight: 2
+      weight: 3
     - identifier: emm
       name: Engineering Meetings
       url: /contribute/engineeringmeetings
       parent: contribute
-      weight: 3
+      weight: 4
 
   footer:
     - identifier: about

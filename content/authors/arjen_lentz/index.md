@@ -14,3 +14,4 @@ images:
   - blog/2018/10/arjen-lentz.jpg
 ---
 
+Making stuff work. Solving problems. Organising things. Connecting people. Coming up with new angles.

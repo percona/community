@@ -16,7 +16,9 @@
   {{- end -}}
 {{ end }}
 
+
 {{ define "main" }}
+
   <article class="text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
     {{ if $.PublishDate }}
       {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
@@ -49,6 +51,7 @@
     <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
       {{ partial "content.html" . }}
     </div>
+
     {{ if (isset .Params "authors")}}
       <div class="bios">
       {{ range $key, $author := .Params.authors -}}
@@ -69,7 +72,7 @@
     {{ end }}
   </article>
 
-  {{ template "_internal/disqus.html" . }}
+  {{ partial "sharing.html" . }}
 
   {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
   {{ with $related }}
