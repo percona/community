@@ -13,6 +13,8 @@
 
                 {{ .Content }}
 
+            {{ partial "sharing.html" . }} 
+
             {{ range where .Pages "Params.block" "mongodb-learn" }}
 
                 <h2>{{ .Title }}</h2>
@@ -64,6 +66,7 @@
             </div>
         </div>
 
+        {{ partial "sharing.html" . }} 
         <h2>Community Blog Posts</h2>
         <div class="grid grid--3">
             {{ $t := slice "MongoDB" "mongodb" }}

@@ -4,7 +4,8 @@ description: "Percona team participated in the HighLoad ++ Spring conference in 
 images:
   - events/highload-2021/HighLoad-cover.jpg
 layout: single
-weight: 3
+date: "2021-05-17"
+tags: ['databases', 'sponsorship']
 ---
 
 Percona team participated in the HighLoad ++ Spring conference in Moscow on May 17-18, 2021. It is the most famous IT conference in Russia for developers of highload projects. This year it brought together 2000 participants offline and 2000 online running 8 parallel tracks and having 20+ company stands for networking.

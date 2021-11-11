@@ -46,6 +46,9 @@
         </span>
       </div>
     {{ end }}
+
+    {{ partial "sharing.html" . }}
+
     <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
       {{ partial "content.html" . }}
 
@@ -73,6 +76,8 @@
     {{ end }}
  
   </article>
+
+  {{ partial "sharing.html" . }}
 
   <div class="recommendations">
     <h2>Did you like this post? Why not read more?</h2>
