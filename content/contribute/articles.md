@@ -38,6 +38,9 @@ Thank you to users of our products, customers, communities, and authors for your
 * [Grafana Dashboard for Pgbouncer And Monitor With Percona PMM](https://blog.searce.com/grafana-dashboard-for-pgbouncer-and-monitor-with-percona-pmm-3170d3eb4d14) - Bhuvanesh
 * [PMM Server on AWS: which TCP ports to open](https://dev.to/aws-heroes/pmm-server-on-aws-which-tcp-ports-to-open-2df9) - Franck Pachot
 * [Monitor Cassandra Clusters with Percona PMM - JMX Grafana and Prometheus](https://thedataguy.in/monitor-cassandra-clusters-with-percona-pmm-jmx-grafana-and-prometheus/) - Bhuvanesh aka The Data Guy👋
+* [Tune your databases. Spick and Span](https://www.admin-magazine.com/Archive/2020/59/Tune-your-databases) - Mayank Sharma
+* [Thanks Percona for this great product called PMM (Percona Monitoring & Management Server)](https://fatdba.com/2020/12/02/thanks-percona-for-this-great-product-called-pmm-percona-monitoring-management-server/) - Prashant Dixit
+* [Configure PMM2 for Azure MySQL Database with SSL](https://niravshah2705.medium.com/configure-pmm2-for-azure-mysql-database-with-ssl-82e631fe0f90) - NIRAV SHAH
 
 # Kubernetes
 
