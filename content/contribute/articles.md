@@ -3,7 +3,7 @@ title: "Articles about Percona products"
 description: "We collect links to articles that are written on various resources."
 ---
 
-Thank you to users of our products, customers, communities, and authors for your research, studies, reviews, and articles.
+Thank you to users of our products, customers, communities, and authors for your research, studies, reviews, and articles. If you wrote a post abour Percona product, feel free to add it on this page with the **Edit this page on GitHub** button below. We would love to see it and send you a piece of Swag!
 
 
 # MySQL
@@ -30,7 +30,7 @@ Thank you to users of our products, customers, communities, and authors for your
 * [pg_stat_monitor :: Younger sibling of pg_stat_statements with more knowledge](https://sujithtee.medium.com/pg-stat-monitor-younger-sibling-of-pg-stat-statements-with-more-knowledge-736afb1f05ac) - Sujith Thiravium - October 19, 2021
 * [Setup Percona Postgresql Through the Awsesome(OSM) Ansible Role](https://medium.com/opstree-technology/setup-percona-postgresql-through-the-awsesome-osm-ansible-role-86fe0a5fe1a5) - Abhishek Vishwakarma
 
-# PMM 
+# PMM
 
 * [Fixing Magento 2 Core MySQL performance issues using Percona Monitoring and Management (PMM)](https://yegorshytikov.medium.com/resolution-of-a-mysql-performance-issue-and-used-percona-monitoring-and-management-pmm-25a93cd5a0e2) - Yegor Shytikov
 * [Percona PMM – A beginner’s guide](https://vladmihalcea.com/percona-pmm-beginner-guide/) - Vlad Mihalcea (@vlad_mihalcea)
@@ -46,7 +46,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 * [Deploying Percona Kubernetes Operators using OpenEBS Local Storage](https://dev.to/sudip_sg/deploying-percona-kubernetes-operators-using-openebs-local-storage-4ai9) - Sudip Sengupta
 
-# Other 
+# Other
 
 * [Don’t miss these talks on the Google community track at Percona Live Online](https://medium.com/google-cloud/dont-miss-these-talks-on-the-google-community-track-at-percona-live-online-12b097a64f10) - 
 Jan Kleinert
