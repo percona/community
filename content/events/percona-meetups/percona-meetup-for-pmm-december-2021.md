@@ -27,14 +27,11 @@ Add this event to your [Google Calendar](https://calendar.google.com/event?actio
 
 
 ## Topic
-Come to Community MeetUp to talk about PMM - live from AWS re:Invent with Michael Coburn
+Live stream from AWS re:Invent with Michael Coburn:
 
-* Tour of the AWS re:Invent celebrating 10 year anniversary
-
+* Tour of the AWS re:Invent celebrating 10 year anniversary 
 * Latest news on PMM (Percona Monitoring and Management)
-
 * Demo of database monitoring and performance optimization
-
 * Q&A
 
 
