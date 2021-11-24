@@ -3,9 +3,7 @@ title: "Percona MeetUp for PostgreSQL November 2021 - Autovacuum"
 description: "Highlight and discuss the autovacuum in PostgreSQL: How to stop worrying about it and even love it!"
 images:
   - events/percona-meetup/postgres-november-cover-1920-2.jpg
-date: Wed, 17 November 2021, 19:00:00 +0000
-publishdate: Wed, 17 November 2021, 19:00:00 +0000
-weight: 1
+date: "2021-11-17"
 draft: false
 speakers:
   - sergey_kuzmichev
