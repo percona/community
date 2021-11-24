@@ -1,9 +1,10 @@
 ---
-title: "Percona MeetUp for PMM Dec 1st, 2021"
-description: "We will meet to talk about the PMM features and learn the latest news on the live stream from AWS re:Invent in Las Vegas."
+title: "Percona MeetUp for Percona Monitoring and Management PMM Dec 1st, 2021"
+description: "We will go live streaming from AWS re:Invent in Las Vegas to talk about the PMM features for open-source database monitoring: MySQL, PostgreSQL, MongoDB"
 images:
   - events/percona-meetup/cover-pmm-december-1920.jpg
-date: "2021-12-01"
+date: Wed, 24 December 2021, 19:00:00 +0000
+publishdate: Wed, 24 December 2021, 19:00:00 +0000
 draft: false
 speakers:
   - michael_coburn
