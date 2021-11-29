@@ -8,6 +8,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+* [Mitigating MySQL Downtime for big migrations](https://dev.to/ashusvirus/mitigating-mysql-downtime-for-big-migrations-2ijh) - Ashutosh Mittal - November 20, 2021
 * [Migration from HBase to MyRocks at Quora](https://quoraengineering.quora.com/Migration-from-HBase-to-MyRocks-at-Quora) - Vamsi Ponnekanti - September 14, 2021
 * [Percona Toolkit | Altering large MySQL tables with no locks Ultimate Guide 2021 Update](https://medium.com/creditorwatch/percona-toolkit-461c0a3b469b) - David Shen - March 2, 2021
 * [Percona Series / Zero downtime migration from 5.7 to 8.0](https://ferencfbin.medium.com/zero-downtime-percona-migration-from-5-7-to-8-0-18f0a5b5a3af) - Ferenc Fabian (@PumpkinSeed_dev) & Robert Boros 
