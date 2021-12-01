@@ -11,7 +11,7 @@ speakers:
 tags: ['MySQL', 'Meetup']
 ---
 
-![Percona MeetUp for MySQL November 2021](events/percona-meetup/mysql-december-cover-1920.jpg)
+![Percona MeetUp for MySQL December 2021](events/percona-meetup/mysql-december-cover-1920.jpg)
 
 Our experts will reveal more secrets of the stars to resolve any open source database performance issue. Join this Community MeetUp for MySQL hosted by Matt Yonkovit to discuss Database Tuning and Troubleshooting with Marcos Albe and Nando Camargos. All along this 1-hour talk, you can participate and ask any questions and get an answer right away.
 
