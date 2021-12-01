@@ -15,12 +15,12 @@ tags: ['MySQL', 'Meetup']
 
 Our experts will reveal more secrets of the stars to resolve any open source database performance issue. Join this Community MeetUp for MySQL hosted by Matt Yonkovit to discuss Database Tuning and Troubleshooting with Marcos Albe and Nando Camargos. All along this 1-hour talk, you can participate and ask any questions and get an answer right away.
 
-Join us for an hour MeetUp for MySQL
+## Join us for an hour MeetUp for MySQL
 
-* Day: Wednesday Dec 8th, 2021 at 11:00 am EST/ 5:00 pm CET/ 9:30pm IST
-* Live stream on [YouTube](https://www.youtube.com/watch?v=irsCITZfgBg) and [Twitch](https://www.twitch.tv/perconalive)
-* Live chat on [Discord](http://per.co.na/discord)
-* Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NG9scmd1YWhhbDIzNnV1NTNvYTNpcjRjaXIgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)
+* Day: **Wednesday Dec 8th, 2021 at 11:00 am EST/ 5:00 pm CET/ 9:30pm IST**
+* Live stream on **[YouTube](https://www.youtube.com/watch?v=irsCITZfgBg)** and **[Twitch](https://www.twitch.tv/perconalive)**
+* Live chat on **[Discord](http://per.co.na/discord)**
+* Add this event to your **[Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NG9scmd1YWhhbDIzNnV1NTNvYTNpcjRjaXIgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)**
 
 ## Topic 
 
