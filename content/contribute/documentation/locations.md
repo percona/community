@@ -15,7 +15,7 @@ for details on how to submit or suggest changes to the docs.
 
 | Documentation Set | Source |
 |-------------------|--------|
-| [Percona Monitoring and Management](https://www.percona.com/doc/percona-monitoring-and-management/) | https://github.com/percona/percona-toolkit/tree/master/docs/ |
+| [Percona Monitoring and Management](https://www.percona.com/doc/percona-monitoring-and-management/) | https://github.com/percona/pmm-doc |
 | [Percona Distribution for MongoDB](https://www.percona.com/doc/percona-distribution-for-mongodb/LATEST/index.html) | https://github.com/percona/distmongo-docs |
 | [Percona Distribution for MySQL](https://www.percona.com/doc/percona-distribution-mysql/LATEST/index.html) | https://github.com/percona/pdmysql-docs |
 | [Percona Distribution for PostgeSQL](https://www.percona.com/doc/postgresql/LATEST/index.html) | https://github.com/percona/postgresql-docs |
