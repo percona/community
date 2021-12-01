@@ -22,9 +22,9 @@ for details on how to submit or suggest changes to the docs.
 | [Percona Distribution for MySQL Operator](https://www.percona.com/doc/kubernetes-operator-for-pxc/index.html) | https://github.com/percona/percona-xtradb-cluster-operator/tree/pxc-docs |
 | [Percona Distribution for MongoDB Operator](https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html) | https://github.com/percona/percona-server-mongodb-operator/tree/K8s-PSMDB-docs |
 | [Percona Distribution for PostgreSQL Operator](https://www.percona.com/doc/kubernetes-operator-for-postgresql/index.html) | https://github.com/percona/percona-postgresql-operator/tree/pgo-docs |
-| [Percona Server for MySQL](https://www.percona.com/doc/percona-server/LATEST/index.html)  | https://github.com/percona/percona-server/tree/master/doc |
-| [Percona XtraDB Cluster](https://www.percona.com/doc/percona-xtradb-cluster/LATEST/index.html) | https://github.com/percona/percona-xtradb-cluster/tree/master/doc/ |
-| [Percona XtraBackup](https://www.percona.com/doc/percona-xtrabackup/LATEST/index.html) | https://github.com/percona/percona-xtrabackup//tree/master/storage/innobase/xtrabackup/doc/ |
+| [Percona Server for MySQL](https://www.percona.com/doc/percona-server/LATEST/index.html)  | https://github.com/percona/percona-server/tree/main/doc |
+| [Percona XtraDB Cluster](https://www.percona.com/doc/percona-xtradb-cluster/LATEST/index.html) | https://github.com/percona/percona-xtradb-cluster/tree/main/doc/ |
+| [Percona XtraBackup](https://www.percona.com/doc/percona-xtrabackup/LATEST/index.html) | https://github.com/percona/percona-xtrabackup//tree/main/storage/innobase/xtrabackup/doc/ |
 | [Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/latest/index.html) | https://github.com/percona/psmdb-docs |
 | [Percona Backup for MongoDB](https://www.percona.com/doc/percona-backup-mongodb/index.html) | https://github.com/percona/percona-backup-mongodb |
 | [Percona Toolkit](https://www.percona.com/doc/percona-toolkit/LATEST/index.html) | https://github.com/percona/percona-toolkit/tree/master/docs/ |
