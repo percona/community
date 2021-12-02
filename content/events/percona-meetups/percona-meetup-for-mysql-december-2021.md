@@ -4,6 +4,7 @@ description: "Community MeetUp for MySQL to learn some secrets of the Stars to t
 images:
   - events/percona-meetup/mysql-december-cover-1920.jpg
 date: Wed, 8th December 2021, 19:00:00 +0000
+weight: 1
 draft: false
 speakers:
   - marcos_albe
