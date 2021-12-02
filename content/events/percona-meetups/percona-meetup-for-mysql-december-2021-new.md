@@ -6,6 +6,8 @@ images:
 date: Wed, 8th December 2021, 19:00:00 +0000
 weight: 1
 draft: false
+aliases:
+    - "/events/percona-meetups/percona-meetup-for-mysql-december-2021/" 
 speakers:
   - marcos_albe
   - fernando_laudares
@@ -18,8 +20,8 @@ Our experts will reveal more secrets of the stars to resolve any open source dat
 
 ## Join us for an hour MeetUp for MySQL
 
-* Day: **Wednesday Dec 8th, 2021 at 11:00 am EST/ 5:00 pm CET/ 9:30pm IST**
-* Live stream on **[YouTube](https://www.youtube.com/watch?v=irsCITZfgBg)** and **[Twitch](https://www.twitch.tv/perconalive)**
+* Day: **Wednesday Dec 8th, 2021 at 5:00 pm EST/ 11:00 pm CET**
+* Live stream on **[YouTube](https://www.youtube.com/watch?v=i4DG30guHmA)** and **[Twitch](https://www.twitch.tv/perconalive)**
 * Live chat on **[Discord](http://per.co.na/discord)**
 * Add this event to your **[Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NG9scmd1YWhhbDIzNnV1NTNvYTNpcjRjaXIgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)**
 
