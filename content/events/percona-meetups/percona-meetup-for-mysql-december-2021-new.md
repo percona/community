@@ -6,6 +6,8 @@ images:
 date: Wed, 8th December 2021, 19:00:00 +0000
 weight: 1
 draft: false
+aliases:
+    - "/events/percona-meetups/percona-meetup-for-mysql-december-2021/" 
 speakers:
   - marcos_albe
   - fernando_laudares
