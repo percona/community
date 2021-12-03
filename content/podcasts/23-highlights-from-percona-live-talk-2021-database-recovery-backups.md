@@ -1,0 +1,118 @@
+---
+title: "Highlights from Percona Live talk 2021, Database recovery, backups - Percona Podcast 23"
+description: "Listen to this episode 23 of the HOSS talks FOSS and learn why you should stop worrying so much about backups, and start worrying about recovery."
+short_text: "The Percona HOSS Matt Yonkovit invited Pep Pla, Consultant at Percona to talk about why database recovery trumps database backups every time as well as some highlights from his 2021 Percona Live talk on \"How I Learned to Stop Worrying and Love Backups\". Listen to this episode 23 of the HOSS talks FOSS and learn why you should stop worrying so much about backups, and start worrying about recovery"
+date: "2021-06-03"
+podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-23-with-pep-pla-consultant-percona/"
+youtube_id: "sDG5BOAHJhY"
+speakers:
+  - pep_pla
+aliases:
+    - "/podcasts/23/"
+url: "/podcasts/23-highlights-from-percona-live-talk-2021-database-recovery-backups"
+---
+
+## Transcript
+
+**Matt Yonkovit:**
+Hi, everyone. Welcome to another HOSS Talks FOSS. I'm here with Pep Pla, one of our professional service engineers here at Percona. Hi, Pep, how you doing today?
+
+**Pep Pla:** 
+Hi, fine, fine, really great. And I'm in Barcelona, today's a sunny day. So the weather is fine. It's Friday... So we have to talk about backups. What else?
+
+**Matt Yonkovit:**  
+Yes, yeah, it's a nice Friday day here as well. I don't know when we'll actually be broadcasting this particular session. So it might be Tuesday or Wednesday or Thursday, wherever you are. But we hope your day is going well as well. So Pep, you put together a workshop for Percona Live that was on XtraBackup and backing up your MySQL databases. And it was really, really well attended. And I thought that it would be good for us to sit down and talk a little bit about backups, give people some guidance. Some people will find some time later on to go through that workshop. It's two hours, it is free. It's on YouTube, you can go watch it right now. So that's exciting. But I wanted to talk a little bit about backups and maybe give people a really high level view of some of the things that are important in the backup space. 
+
+So, Pep, you've been in the database space for years and years and years. I mean, I remember talking to you, God, it must have been 10 years ago. Yeah. And so I know you've been in this space for quite some time. Now, when we talk about MySQL backups. What do you see is the most common mistake that people make when they set up their backups?
+
+**Pep Pla:** 
+I think the most common mistake is focusing on backups. Okay, backups, backups don't matter. It's quite shocking seeing this in a conference about backups. Backups only matter for compliance. That's the only reason you are forced to have some kind of backup. What really matters is recovery. Ah, ah, you don't need a backup strategy. You don't need to think about backups, you need to think about recovery. Because the important subject is recovery, if you have a great backup, but for whatever reason, you are not able to recover it in time, for example, then your backup, it doesn't matter. I used to say that you can have 19, I mean, I prefer to have 99 failed backups and one successful recovery, then 99 successful by caps and one failed recovery. Because the real critical issue is recovery. This is the whole point of the beginning of my talk was that you need to think about the things that can happen. Obviously, the amount of things that can happen is infinite. And you can probably prepare for everything. And then you have to decide what kind of protections you are going to apply and then prepare the backups to cover these possible incidents.
+
+**Matt Yonkovit:**  
+So first of all, your piece of advice is very sad. It is “backups don't matter, recovery does”. So you have to do what is required to recover. And so, obviously, that thing, but people do make mistakes when thinking about recovery or backups. And one of those mistakes is commonly never testing recovery.
+
+**Pep Pla:**   
+Yes, this brings me an interesting concept. It's the Schrodinger backup. It's a backup that you did successfully, but you are not able to recover. So that is at the same time in two estates. So for example, if you have a really large database, you can have some fast these... You can have all the infrastructure to be able to make them a backup. But if you don't have a good support contract, in the case of you working with bare metal, you can find that your server is not available and you will lose one week to get the server. So the whole point is that you need to think on the problems and then fix them. And obviously, you need to test your backups.
+
+**Matt Yonkovit:**  
+Well, with terabyte size backup, how do you test that? 
+
+**Pep Pla:** 
+With money.
+
+**Matt Yonkovit:** 
+With money? And how often do you test it? 
+
+**Pep Pla:** 
+Well, it depends on how important your database is. And how resilient is your company to be, for example, one month without that database. I used to work for a company that said “We made some numbers, and we even kiss off an incident, if we are not able to bring the system back in three days, it doesn't matter, because the company has to close”. So you need to test it, it doesn't matter the size of the database. In a company like this, you need to test the backup. And you need to make sure that you're able to recover that database in less than three days. And this is a cost that you need to assume. It's pretty much the same as buying insurance. We are used to paying for insurance, for security, physical security guards and things like that. We also have to pay for backups. And we need to know what we want to be protected. So in the case of a huge, really huge database, or whatever, if you really want to recover it - you need to test backups. Another approach is to make the result smaller. Sometimes you have three terabytes of things that are important, but not that important. And this is also part of the Schrodinger backup, that this is something which is really very depressing is to be recovering something and seeing that you are recovering data that is not important. And you are two days waiting for old log files being recovered, until the recap is recovered completely, then you can start and you say “Okay, the data I really needed was just a part of the database or just a part of the files”.
+
+**Matt Yonkovit:** 
+Is this that  logical backups versus physical can sometimes come in as well, as like you can do things with just backing up certain tables?
+
+**Pep Pla:** 
+It's not only logical, versus physical. I'm quite old and I remember doing backups using tapes. When you write the tape, the order of the files really matters. Because for example, if you read the catalogue of the recap, at the end of the tape you need to load the tape, move forward till the catalogue, then rewind and start recovering, you need to read the tape twice. So you need to test recovery to know the issues you will find. And sometimes you need to use the right tool. So for example, in the case of you want, if you want to recover just one table, you can use an XtraBackup, you don't need to use MySQL dump.
+
+**Matt Yonkovit:**  
+Okay, great. And as you start to look at people who set up their backup strategy, and they start to implement that, are there any best practices around things? Дike how often you should be backing up, or how often you should retain or keep your backups, on near storage versus maybe putting them on an s3 bucket or something else. Because as you start to move your backups around, it's going to always be faster to have them something that's live, ready to access. And then as soon as you start to move them to something that's a little slower, like an s3, or like you said, a backup tape, if you're really old school, it takes a lot longer to get those. So are there some best practices or some rules of thumb that you would recommend people follow in terms of backup retention, when and where they retain those and how often they're keeping those backups.
+
+**Pep Pla:** 
+My recommendation is, first, do not use a single backup strategy. What I mean is, usually backup is pretty much like: “Well, I have a backup, that's it”. I really recommend, for example, use a mixed strategy of physical and logical backups. So sometimes, for example, once a week, you do a physical backup, then every day you perform incrementals, and then maybe once a month, you perform a logical backup just to have both versions of the thing. For various reasons, for example, if you have some kind of corruption, sometimes you can, by copying the files, you are transmitting the corruption, you are replicating the corruption. If you force reading the whole database, you will find that corruption. The database server will detect and say: “Okay, I have here ,in this block of this, something is broken”. And, if possible, backup your big locks also. A point in time recovery is the kind of thing that really makes you happy when you do it. And when you recover something, and you can say your boss: “Don't worry, we have no data loss, or maybe three seconds data loss, because we were able to recover from a physical or logical backup. And then we were able to apply the binary logs, here is your business back, don't worry, I'm sorry, it took three hours”. When you do these kinds of things, your boss looks at you and says: “Oh, he knows what he's doing”. And these kinds of things are really very important. So for me, it's to keep a mixed strategy of backups, and backup your binary logs. And regarding how long you have to keep your backups... It depends on compliance, it depends on the size of data obviously because the bigger, more space you need to store the database. And it depends also on what you want to be protected of. But what I've seen usually is that having a one month old database provides really few value. If there's an incident, usually if you are on ecommerce, you're not going to restore a one month old database.
+
+**Matt Yonkovit:**  
+Yeah, and we see like a lot of people will keep those longer term on something that is slower and much longer access time. So you might keep seven years worth of backups somewhere outside of where you would normally restore from. Because I think a lot of people look at ways to cut corners on backups. And so let me kind of give you a scenario on what I've seen in my past. You mentioned the mixed backups so a lot of times as data gets bigger, it's not easy to do a full backup every night, or even multiple times a day in some cases. So what you'll see is like once a week full backup, and then incrementals daily. If the databases are smaller than a database backup a day tends to be generally the rule of thumb. And then you mentioned keeping the binary logs or the transaction logs. Having those for the whole day allows you to do that point in time recovery. What I've seen is kind of a standard thing in a lot of organisations is they'll leave seven days on disk. So they'll have the last seven days so they can pick any day, do a fall restore point in time to the point where you know, things got wonkier or they need it pull back and then after that they'll take those backups and then move them to s3 move them to like the longer term storage somewhere else, that's slower disk. Also seen there they might only take one of those backups every week, and then store just the one from every weekvin this slower space. And so and then that could be a seven year retention cycle. I mean, gosh, even 15 years ago, when I was doing Oracle DBA work, we had a requirement to keep everything for seven years for compliance reasons. And it's only gotten way more compliant, and way more sensitive around what you keep in what might have to be pulled out. But that leads to a whole litany of other issues, because restoring a database from five years ago or seven years ago, doesn't necessarily mean the application will even work. 
+
+**Pep Pla:** 
+I've told you, you can have issues finding the software. So you can have the data, but you don't have the distribution, or you don't have your SQL or the version of whatever database does not exist anymore. 
+
+**Matt Yonkovit:**  
+There's all kinds of fun things that could happen. And I think it's a real challenge, when you start to think about the compliance side, which is why most DBAs, most sys admins, most people who are in charge of backups are thinking short term. And when you think that like a week, or maybe a couple months out the odds of you having to do a recovery scenario really short term. It could happen but as you go on that, like you mentioned, the data value tends to diminish over time, right? Because what are the odds that you're gonna go back, I need to go a month ago and restore a month ago is back up, you're not going to do it. Because typically, what the recovery scenarios that I've seen, and you can tell me, what you've seen, would be something like if you have a full system crash, it happens not very often, but it happens, it's typically going to be I deployed some code, I deleted data that I shouldn't have, I need to roll back whatever. It might be one table, it might be two tables...
+
+**Pep Pla:** 
+Or even situations like I deployed some code that produces corruption at the logical level, on the some limited circumstances, and then I know that probably 3% of the data on those three tables is not good. So probably you need to recover one month backup, and then compare and undo the development broke. This is why for long term backups, I recommend logical backups. Just for one reason - they are readable. Obviously, it can be a really huge file, but you can split it, you can use a program, whatever. And you can import the data, but also you can analyse the data from the backup, if it's a logical cap. If it's a physical backup, you could try to write some tools or recover something, but it would be really more complex. But in the case of compliance and long term backups, I really recommend logical backups. 
+
+**Matt Yonkovit:**  
+Okay. And so most of your talk is centred around not only backups in general, but really specifically XtraBackup, and you do a deep dive into some of the XtraBackup things. So what are some of the features that you found really useful? Coming from a space where in the past, XtraBackup didn't exist, and now it's there. What are some of those things that you think are really interesting, and people maybe don't know about and should.
+
+**Pep Pla:**  
+In my talk, I described XtraBackup as the Swiss Army Knife of MySQL backups. Because you can do almost everything. Almost everything. So for me the most useful feature is the streaming backup. Because I use it a lot for rebuilding slaves, creating new slaves. It's like you just start the backup, send it across the network, you don't need to write somewhere, and then transfer the file. If you do on MySQL than you need to write it somewhere and then load... You can just stream the backup uncompressed at the same time on the destination, prepare and that's it and you have a replica in the time you need to make the backup.
+
+**Matt Yonkovit:**  
+So just to let everybody know, who might not understand what streaming backups are or the process, typically, when you would backup in the past, and we're going to talk a little bit about history, you would take a copy of the files, and you would copy them onto disk. And then from that disk, you would copy them to another server, and then restore them on the other server. So, you have, first, the copy, and then you have the network copy time. And then you have the restore time. In this case, what the streaming does is allow you to set the other destination and stream the backup directly in a compressed way. So it speeds up your time, it could save you hours on larger backups or even days.
+
+**Pep Pla:**   
+And actually, in some circumstances, it can make the backup, the cloning possible. Because sometimes you don't have enough space to keep one copy of that arrays locally, then transfer to another server.. Very often you have a server that has roughly 80 percent of the disk use. So if you need to write the backup, you need to find the space to write it. So, streaming saves you save a lot of space. You can compress, you can avoid compression, depending on the CPU on your network. So it's really very flexible. For me, that's the most useful feature. But you can do almost everything, you can recover one table and create. So it's a perfect tool.
+
+**Matt Yonkovit:**  
+Yeah. And you mentioned space, right. And this is interesting, I'll jump into that real quick before we go back to XtraBackup. Space is cheap. Most people say. But it does add up. And when you start to think about backups and how you implement your backup setup, the impact on your cost, especially when you're looking at a cloud based setup, could be substantially high. Right? So if you go back to the scenario that I mentioned, right, which is okay, we're going to have seven days worth of backups and binary logs, that's potentially seven times the disk space. Now of course, you can compress. But you'll need a staging environment as well to copy the files over, then compress them and move them and then do you want to keep one copy uncompressed, and then the rest of press, you're talking about having a terabyte system, you might need seven or eight terabytes of actual space, in those seven or eight terabytes might never be used other than just for backups.
+
+**Pep Pla:** 
+Yes. And the problem is that we are seeing, we have really large customers with tonnes of servers. If you have to allocate extra space for certain operations on each server, and you have, let's say, 5000 servers, that's a lot of space, that's not that cheap.
+
+**Matt Yonkovit:**  
+Well, and this is where a lot of people have gone to streaming or sending things directly to s3, or other storage mechanisms, which saves on the cost but it increases your mean time to recover in a lot of cases, because that is designed as slower access storage. So to get a terabyte backup off of one of the services... It can take a while. Maybe you send seven days there in one day, always online, but that still bubbles your space. And again, if you've got 1000s of databases, it really does add up.
+
+**Pep Pla:** 
+Yes, I see. Offline backups or remote backups and cold storage backups, more like compliance or not urgent recovery backup. It's more like, I need to have data for seven years, so I'm going to store it at the cheapest possible location, because my real concern is compliance. This is why, at the beginning, I said, usually people never words, never should worry about the caps unless compliance, because it's the only specific that says, okay, you need to have a cap with this and that and this data. 
+
+**Matt Yonkovit:**  
+So here's the one danger, though. And let me throw this out there, because this is a danger that I do see. I think a lot of people do buy into that, that they're thinking about recovery, and then compliance for backups. But people use their recovery strategy as replication or a cluster.
+
+**Pep Pla:**  
+That's not, that's high availability. And this is a part of the equation, but it's not. I've seen a lot of people that says: “Well, I have 12 replicates in three different disease. So I don't need backups”. Well, you don't need the backups unless somebody drops the table accidentally, just because they connected to production. And it happens, it happens a lot. Usually the largest and costly incidents are related to people.
+
+**Matt Yonkovit:**  
+Right. Because, you know, what people have to remember is, when you talk about a cluster, you talk about a replica, what comes in gets streamed and replicated to the other. So, you've got the DELETE statement, you've got an ALTER TABLE statement, you've got a migration that you do in CO, it propagates to all the systems. Now, some people will go: “Oh, well, I'm going to delay, have a replica that's delayed an hour to protect myself”. Well, that's wonderful, except what's the odds you're gonna catch the problem in the first hour. A lot of times it is for a day or longer before somebody makes the decision to pull the plug. You might find out right away, that there's something wrong, but you don't go failover or restore from backup within the first five minutes of an issue? Right, typically, there's like: “Oh, well, what is that? I don't know”. People don't make that call quickly. And I think that's one of the issues. 
+
+**Pep Pla:** 
+And incidents usually don't appear when you drink your coffee and you are fresh, and you're prepared at your job. You are driving, it's a Friday night, your kids... And all of a sudden you get the call and says there's something wrong happening. And and then you need to start thinking and probably you will not stop the replica.
+
+**Matt Yonkovit:**  
+Right. So, okay, so maybe give us a quick overview of the session. What if people want to go find it, like I said, it's on YouTube, what are they going to learn if they watch it. Tell us like, maybe give us a quick what's going to be in there? And why should they watch that?
+
+**Pep Pla:** 
+I think the main purpose of the talk was something I've seen is people are a bit scared or do not understand how XtraBackup works. And people do some things like cook cold backups and things like that. Because making a backup from a physical backup, from a running database, at the beginning sounds like this can't be consistent. So during the talk, I explain that actually, what XtraBackup does is makes a backup and copies the data to make it consistent. And this is why it's completely reliable, and you can trust your backup. And also I explained the preparation phase and things like that, because the tool is really very powerful. You can do a lot of things. This is the second part of the talk, I explained how you can do almost everything with XtraBackup. And the idea is really, you should stop worrying. And love your backups. And love your recovery. And XtraBackup is really… I'm a Percona guy, but I'm not a XtraBackup developer at all. And so I could have some distance from the tool. And it's really a great tool. So I'm really surprised to find some of our clients don't use it as a weapon of choice for things like cloning databases and things like that.
+
+**Matt Yonkovit:** 
+Okay, so everybody, if you haven't checked it out, check out Pep’s talk, it should be up on YouTube. It's a two hour tutorial of walking through how to set up and use XtraBackup for various scenarios. As you know, Pep mentioned, he'll talk through cloning and doing regular backups and some of the features like streaming, how to set it up and how to really make sure that you have a recovery strategy that's going to work in larger and smaller or every environment in between. And so I would really encourage you to check that out. When you do have a chance and download XtraBackup to see what that's all about. Pep, thanks for taking a few moments today, chatting with me about backups, jammin out what we got to worry about, why we should worry and why we shouldn't worry. I do appreciate it. 
+
+Wow, what a great episode that was. We really appreciate you coming and checking it out. We hope that you love open source as much as we do. If you like this video, go ahead and subscribe to us on the YouTube channel. Follow us on Facebook, Twitter, Instagram and LinkedIn. And of course tune into next week's episode. We really appreciate you coming and talking open source with us.

@@ -20,11 +20,11 @@ We welcome all kinds of contributions, from code to documentation to visuals, aw
 
 {{% typography %}}
 
-Each of our projects has its own contribution guidelines. You will find them in their respective GitHub repositories. There are many ways our community can thrive: people engaging with and listening to each other, writing and reviewing content, writing and reviewing code, and raising awareness for the topics we all care about.
+Each of our projects has its own contribution guidelines. You will find them in their [respective GitHub repositories](https://github.com/percona/). There are many ways our community can thrive: people engaging with and listening to each other, writing and reviewing content, writing and reviewing code, and raising awareness for the topics we all care about.
 
 Participation in this community may come in many forms: whether it's written, more visual (illustrations, comics, videos, logos), or auditive (podcasts, talks, music), supporting each other or having fun. We had people write jingles and raps as well as drawing superheroes and a vast amount of great articles, talks, and human connection.
 
-If you're interested in producing content for this community (examples: blog post, guide, documentation, talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
+If you're interested in producing content for this community (examples: blog post, guide, [documentation](/contribute/documentation), talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
 
 For content inspiration, please check the [open topics](/contribute/opentopics) or send a pull request with your topic idea.
 {{% /typography %}}
