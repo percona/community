@@ -9,6 +9,6 @@ speakers:
   - walter_garcia
 aliases:
     - "/podcasts/2/"
-url: "/podcasts/2-mysql-backups-database-recovery-best practices"
+url: "/podcasts/2-mysql-backups-database-recovery-best-practices"
 ---
   

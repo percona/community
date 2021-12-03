@@ -9,6 +9,6 @@ speakers:
   - sergey_pronin
 aliases:
     - "/podcasts/12/"
-url: "/podcasts/12-database-on-kubernetes-operator-pitr-point-in-time recovery"
+url: "/podcasts/12-database-on-kubernetes-operator-pitr-point-in-time-recovery"
 ---
 

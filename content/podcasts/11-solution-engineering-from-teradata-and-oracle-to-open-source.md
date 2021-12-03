@@ -9,6 +9,6 @@ speakers:
   - brian_walters
 aliases:
     - "/podcasts/11/"
-url: "/podcasts/11-solution-engineering-from-teradata-and-oracle-to-open source"
+url: "/podcasts/11-solution-engineering-from-teradata-and-oracle-to-open-source"
 ---
 
