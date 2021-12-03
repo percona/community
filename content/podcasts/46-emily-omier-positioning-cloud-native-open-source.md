@@ -1,5 +1,5 @@
 ---
-title: "Percona Podcast 46 - Positioning Cloud Native Open Source Project"
+title: "Positioning Cloud Native Open Source Project - Percona Podcast 46"
 description: "Listen in and learn more about positioning of cloud native open source projects, messaging and marketing in a context of growing Open Source adoption and in software as service SaaS business models."
 short_text: "Emily Omier is specialist in the positioning of cloud native open source projects.  In this HOSS Talks FOSS 46, Matt Yonkovit, Head of Open Source Strategy at Percona, sits down with her to talk about how to position your project and gain additional traction in the market. We discuss the often subtle differences between positioning vs. messaging vs. marketing in a context of growing Open Source adoption and in software as service (SaaS) business models."
 date: "2021-11-16"
