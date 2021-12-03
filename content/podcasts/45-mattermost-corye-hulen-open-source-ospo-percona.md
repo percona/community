@@ -1,5 +1,5 @@
 ---
-title: "Building a strong open source community, Corey Hulen, CTO of Mattermost - The Hoss Talks #45"
+title: "Building a strong open source community, Corey Hulen, CTO of Mattermost - Percona Podcast 45"
 description: "Mattermost is an enterprise messaging workspace for teams. They are so dedicated to build a strong and vibrant open source community. Beside the code contributions, the biggest gap would be things like design, whether that's software automation QA, whether that's just manual QA, feedback, user testing, ..."
 short_text: "Engaging users and contributors is key to building a strong and vibrant open source community. At Mattermost, the team spends a lot of time ensuring their community can be successful by making the contribution process as easy as possible and providing a welcoming environment. Corey Hulen the CTO and Co-Founder of Mattermost joins the HOSS to talk about his journey to the open source space and how he has been helping to build a culture internally that promotes and embraces the community as key members of the engineering team. Listen in and get tips on how to grow your contributor communities as well as learn about the cool things happening at Mattermost. Whether you are in your company's OSPO (Open source Program Office), DevRel team, or an open source maintainer this is a great talk to learn about some cool ideas and best practices."
 date: "2021-11-05"
@@ -7,6 +7,9 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-45-building-a-s
 youtube_id: "5sYSKxF97OM"
 speakers:
   - corey_hulen
+aliases:
+    - "/podcasts/45-mattermost-corye-hulen-open-source-ospo-percona/"
+url: "/podcasts/45-mattermost-corey-hulen-open-source-ospo-percona"
 ---
 
 ## Transcript
