@@ -1,5 +1,5 @@
 ---
-title: "Database automation, Google Spanner, Ansible, Kubernetes - Percona Podcast 30"
+title: "Database Automation, Google Spanner, Ansible, and Kubernetes - Percona Podcast 30"
 description: "Derek Downey who recently joined the Google cloud team to talk about his career in the database space, learning Google Spanner, Ansible, database automation, Kubernetes, and more."
 short_text: "Matt Yonkovit, The HOSS, talks with Google Dev Rel Engineer Derek Downey who recently joined the Google cloud team to talk about his career in the database space, learning Google Spanner, Ansible, database automation, Kubernetes, and more. Derek recently gave a talk at Percona Live entitled \"Practical DB Automation Ansible\", and has been active in the open source community for over 10 years."
 date: "2021-07-15"

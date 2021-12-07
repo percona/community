@@ -1,5 +1,5 @@
 ---
-title: "Open Source database vs. Server Side Public License SSPL with Peter Zaitsev - Percona Podcast 01"
+title: "Open Source Database vs. Server Side Public License SSPL With Peter Zaitsev - Percona Podcast 01"
 description: "On this episode of the HOSS (Head of open Source Strategy) talks FOSS (Free and Open Source Software), we talk with Peter Zaitsev CEO of Percona."
 short_text: "On this episode of the HOSS (Head of open Source Strategy) talks FOSS (Free and Open Source Software), we talk with Peter Zaitsev CEO of Percona. We explore the changing landscape of the open source space including recent increases in the use of SSPL licenses by database providers like Elastic. We explore the trends driving the open source business in 2021. 
 

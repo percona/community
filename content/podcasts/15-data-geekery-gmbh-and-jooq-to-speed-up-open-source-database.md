@@ -1,5 +1,5 @@
 ---
-title: "Data Geekery GmbH and JooQ to speed up open source database - Percona Podcast 15"
+title: "Data Geekery GmbH and JooQ to Speed Up Open Source Databases - Percona Podcast 15"
 description: "The HOSS (Matt Yonkovit) sat down with Lukas to discuss ORM’s like Hibernate and how JooQ is different."
 short_text: "Lukas Eder is the CEO and founder of Data Geekery GmbH, the company behind JooQ an open source Java framework that gives you an API that allows you to write SQL statements through natural Java api calls. The HOSS (Matt Yonkovit) sat down with Lukas to discuss ORM’s like Hibernate and how JooQ is different. We also talk about how speed is important and how JooQ can help speed up database applications."
 date: "2021-03-30"

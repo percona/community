@@ -1,5 +1,5 @@
 ---
-title: "PostgreSQL database management, backup tools, migration from Oracle - Percona Podcast 31"
+title: "PostgreSQL Database Management, Backup Tools, Migration From Oracle - Percona Podcast 31"
 description: "Jobin Augustine (PostgreSQL Escalation Specialist) and Sergey Kuzmichev (Senior Support Engineer) both from Percona stop by the HOSS talks FOSS to talk with Matt Yonkovit about open source, PostgreSQL, Migrations, and more"
 short_text: "Jobin Augustine (PostgreSQL Escalation Specialist) and Sergey Kuzmichev (Senior Support Engineer) both from Percona stop by the HOSS talks FOSS to talk with Matt Yonkovit about open source, PostgreSQL, Migrations, and more.  In this episode we cover a large number of topics from the challenges they are facing in their day to day jobs, recommendations and best practices for managing your databases, the differences in backup tools, challenges when migrating from other databases like Oracle, and more!  They also give us an overview of their talk during Percona Live 2021. Finally we get a sneak preview of Sergey’s and his fellow colleague Vinicius’s upcoming book “Learning MySQL” that will be published in Autumn."
 date: "2021-07-20"

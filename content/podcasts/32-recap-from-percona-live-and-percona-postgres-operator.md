@@ -1,5 +1,5 @@
 ---
-title: "Recap from Percona Live and Percona Postgres Operator - Percona Podcast 32"
+title: "Recap From Percona Live and Percona Postgres Operator - Percona Podcast 32"
 description: "Sergey Pronin, Kubernetes Operator Product Owner at Percona stops by again to chat with the HOSS about the current state of operators at Percona."
 short_text: "Sergey Pronin, Kubernetes Operator Product Owner at Percona stops by again to chat with the HOSS about the current state of operators at Percona. We also get a recap of Sergey’s talks he shared at Percona Live, and about the latest entry into Percona’s Operator lineup, the Percona Postgres Operator. Check out Sergey’s talks from Percona Live including “Percona XtraDB Cluster Operator - Architecture Decisions”. Full recording of this session is now available for in-depth tech talk for free."
 date: "2021-07-22"

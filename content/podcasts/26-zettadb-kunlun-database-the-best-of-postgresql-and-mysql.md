@@ -1,5 +1,5 @@
 ---
-title: "ZettaDB, Kunlun database takes the best of PostgreSQL and MySQL - Percona Podcast 26"
+title: "ZettaDB and Kunlun Database Takes the Best of PostgreSQL and MySQL - Percona Podcast 26"
 description: "David sits down with Matt Yonkovit (The HOSS) to talk about the Kunlun project, distribution, implementation, scalability, and more."
 short_text: "David Zhao (ZettaDB) has been working on database kernels for years, developing code and enhancements for Berkeley DB, MySQL, and TDSQL. David is back with a new Hybrid database called Kunlun which aims to take the best of what's in the PostgreSQL and MySQL space both and output a better database. David sits down with Matt Yonkovit (The HOSS) to talk about the Kunlun project, distribution, implementation, scalability, and more. If you are interested in learning more David also delivered a talk at Percona Live 2021 entitled “Performance Comparison of MySQL and PostgreSQL based on Kernel Level Analysis” which is also available now."
 date: "2021-06-30"

@@ -1,5 +1,5 @@
 ---
-title: "MySQL open source, Linux kernel patches, performance tuning - Percona Podcast 22"
+title: "MySQL Open Source, Linux Kernel Patches, and Performance Tuning - Percona Podcast 22"
 description: "In what will become a recurring feature we “Grill Open Source” talking about BBQ, Open Source, MySQL, and real life fun! Join Marcos and Matt for this fun walk through food, open source, Linux kernel patches, finding difficult bugs in code, performance tuning, and of course all things MySQL"
 short_text: "The HOSS sits down with Marcos Albe Principal Support Engineer at Percona and official BBQ master of Percona. In what will become a recurring feature we “Grill Open Source” talking about BBQ, Open Source, MySQL, and real life fun! Join Marcos and Matt for this fun walk through food, open source, Linux kernel patches, finding difficult bugs in code, performance tuning, and of course all things MySQL"
 date: "2021-05-28"

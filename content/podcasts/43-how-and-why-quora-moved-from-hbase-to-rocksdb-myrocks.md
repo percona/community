@@ -1,5 +1,5 @@
 ---
-title: "How and why Quora moved from HBase to RocksDB via MyRocks - Percona Podcast 43"
+title: "How and Why Quora Moved From HBase to RocksDB via MyRocks - Percona Podcast 43"
 description: "JMatt Yonkovit, The HOSS at Percona, sits down with Nagavamsi (Vamsi) Ponnekanti, Software Engineer at Quora."
 short_text: "Matt Yonkovit, The HOSS at Percona, sits down with Nagavamsi (Vamsi) Ponnekanti, Software Engineer at Quora.  During the show we dive into the details on how and why Quora moved from HBase to RocksDB via MyRocks.   We also learn about the need to reduce latency and improve predictability in performance in large infrastructure and database systems.   Vamsi highlights some of his favorite features and tools and gives us tips and tricks on database migrations."
 date: "2021-10-01"

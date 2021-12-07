@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes operators and latest trends in the database space - Percona Podcast 03"
+title: "Kubernetes Operators and the Latest Trends in the Database Space - Percona Podcast 03"
 description: "Sergey Pronin Percona's Product Owner for Percona's Kubernetes operators sat down to talk to us about using Kubernetes to manage databases, running Kubernetes on the edge, and where he sees the technology space headed."
 short_text: "Sergey Pronin Percona's Product Owner for Percona's Kubernetes operators sat down to talk to us about using Kubernetes to manage databases, running Kubernetes on the edge, and where he sees the technology space headed. We talk to Sergey about his latest blogs covering:
 

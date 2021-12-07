@@ -1,5 +1,5 @@
 ---
-title: "Uber Technologies, Inc and Uber’s custom built database DocStore - Percona Podcast 36"
+title: "Uber Technologies, Inc and Uber’s Custom Built Database DocStore - Percona Podcast 36"
 description: "The Percona HOSS Matt Yonkovit invited Ovais Tariq, Sr. Engineering Manager - Core Storage @Uber and Himank Chaudhary, Staff Software Engineer, Uber Technologies to talk more about Uber’s custom built database DocStore."
 short_text: "Uber Technologies, Inc., commonly known as Uber, is an American technology company. Its services include ride-hailing, food delivery, package delivery, couriers, freight transportation, and more. It is one of the largest firms in the gig economy. In Episode 36, The Percona HOSS Matt Yonkovit invited Ovais Tariq, Sr. Engineering Manager - Core Storage @Uber and Himank Chaudhary, Staff Software Engineer, Uber Technologies to talk more about Uber’s custom built database DocStore.  Recently the pair also teamed up at Percona Live to deliver the talk “Docstore - Uber’s Highly Scalable Distributed SQL Database” to give us more details about the technology."
 date: "2021-08-11"
