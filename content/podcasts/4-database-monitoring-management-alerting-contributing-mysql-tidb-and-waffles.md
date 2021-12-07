@@ -1,5 +1,5 @@
 ---
-title: "Database Monitoring Management, Alerting, contributing MySQL, TiDB, and Waffles - Percona Podcast 04"
+title: "Database Monitoring Management, Alerting, Contributing MySQL, TiDB, and Waffles - Percona Podcast 04"
 description: "Join the HOSS (Percona’s Head of Open Source Strategy) as he talks with MySQL and open source veteran Morgan Tocker about open source development, how we both got started in the open-source business, how people can contribute, and some of the cool things he has been up to."
 short_text: "Join the HOSS (Percona’s Head of Open Source Strategy) as he talks with MySQL and open source veteran Morgan Tocker about open source development, how we both got started in the open-source business, how people can contribute, and some of the cool things he has been up to."
 date: "2021-02-18"

@@ -1,5 +1,5 @@
 ---
-title: "KVM hypervisor Experience, developing a new OS, and All things ScyllaDB - Percona Podcast 18"
+title: "KVM Hypervisor Experience, Developing a New OS, and All Things ScyllaDB - Percona Podcast 18"
 description: "We then go Deep diving into all things ScyllaDB including design decisions, the benefits, and what users are looking for."
 short_text: "The HOSS talks with Dor about his career covering working on the KVM hypervisor, developing a new OS, and also building an Open Source Database. We then go Deep diving into all things ScyllaDB including design decisions, the benefits, and what users are looking for."
 date: "2021-04-24"

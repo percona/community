@@ -1,5 +1,5 @@
 ---
-title: "Open Source Database Testing, tooling, debugging code, using microservices - Percona Podcast 35"
+title: "Open Source Database Testing, Tooling, Debugging Code, Using Microservices - Percona Podcast 35"
 description: "Join Percona’s HOSS (Head of Open Source Strategy) Matt Yonkovit as he sits down with Rob Richardson, Developer Advocate at Cyral to talk about testing, tooling, debugging code, using microservices, and more."
 short_text: "Join Percona’s HOSS (Head of Open Source Strategy) Matt Yonkovit as he sits down with Rob Richardson, Developer Advocate at Cyral to talk about testing, tooling, debugging code, using microservices, and more. Rob is a Microsoft MVP, published author, frequent speaker at tech conferences, user groups, and community events.  Recently he shared his knowledge with our community during a session about Databases in the Microservices World during the Percona Live 2021.  Find more presentations on his blog https://robrich.org/presentations  or follow him on twitter at @rob_rich to continue the conversation."
 date: "2021-08-06"

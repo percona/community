@@ -1,5 +1,5 @@
 ---
-title: "Open source database, debugging, GDB & RR - Record and Replay - Percona Podcast 21"
+title: "Open Source Databases, Debugging, GDB & RR - Record and Replay - Percona Podcast 21"
 description: "In this episode we cover his career, finding and debugging hard to find bugs, GDB & RR - Record and Replay - and talk about ideas for a potential special in-person barbecue & open source event"
 short_text: "The HOSS sit down with the Software Engineer at Percona Marcelo Altmann to talk about all things open source, database, and debugging big projects. In this episode we cover his career, finding and debugging hard to find bugs, GDB & RR - Record and Replay - and talk about ideas for a potential special in-person barbecue & open source event"
 date: "2021-05-20"

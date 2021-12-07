@@ -1,7 +1,7 @@
 ---
-title: "Get involeved in Databases on Kubernetes DoK Community - Percona Podcast 14"
+title: "Get Involved in Databases on Kubernetes (DoK) Community - Percona Podcast 14"
 description: "Matt and Bart sit down to talk about what is happening in the community, how people can get involved, and what fun things are coming up next."
-short_text: "Bart Farrell heads up the Data on Kubernetes community ( Dok ). Matt and Bart sit down to talk about what is happening in the community, how people can get involved, and what fun things are coming up next. "
+short_text: "Bart Farrell heads up the Data on Kubernetes community (DoK). Matt and Bart sit down to talk about what is happening in the community, how people can get involved, and what fun things are coming up next. "
 date: "2021-03-17"
 podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep14-databases-on-kubernetes-bart-farrell-the-head-of-the-dok-community/"
 youtube_id: "thE_-d4PvcA"

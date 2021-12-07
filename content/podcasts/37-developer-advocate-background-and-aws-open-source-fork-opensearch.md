@@ -1,5 +1,5 @@
 ---
-title: "Developer Advocate background and AWS’s open source fork OpenSearch - Percona Podcast 37"
+title: "Developer Advocate Background and AWS Open Source Fork OpenSearch - Percona Podcast 37"
 description: "The Percona HOSS, Matt Yonkovit sits down with Kyle Davis, Senior Developer Advocate AWS, to tackle his background as Developer Advocate before diving into the details around AWS’s new open source fork OpenSearch."
 short_text: "The Percona HOSS, Matt Yonkovit sits down with Kyle Davis, Senior Developer Advocate AWS, to tackle his background as Developer Advocate before diving into the details around AWS’s new open source fork OpenSearch. Kyle dives into the history of OpenSearch, the license, challenges,  and roadmap. Kyle fills us in on how to use and to contribute to OpenSearch. If you did not see, Kyle generously donated his knowledge recently handling an entire track at Percona Live focused on OpenSearch.   For a deep dive on how to use and deploy OpenSearch check out all his sessions which are available for free on percona.community or on our youtube channel."
 date: "2021-08-16"

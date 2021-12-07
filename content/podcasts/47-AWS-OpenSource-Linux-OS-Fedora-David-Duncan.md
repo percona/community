@@ -1,5 +1,5 @@
 ---
-title: "Talking AWS, Open Source, Linux OS, Fedora /w David Duncan - Percona Podcast 47"
+title: "Talking Open Source, Linux OS, Fedora With David Duncan (Solutions Architect, AWS) - Percona Podcast 47"
 description: "David Duncan, Principal Solutions Architect, at AWS to talk about his experience, being a key contributor to the Fedora Project (Linux), and in general the open source community and more"
 short_text: "Open source is key to the growth and success of cloud providers like  Amazon Web Services (AWS). The HOSS, Head of Open Source Strategy, at Percona sits down with David Duncan, Principal Solutions Architect, at AWS to talk about his experience working at AWS, being a key contributor to the Fedora Project (Linux), and in general the open source community and more.  David is focused on helping tech partners make it easier to deploy and use their products in the cloud."
 date: "2021-11-22"

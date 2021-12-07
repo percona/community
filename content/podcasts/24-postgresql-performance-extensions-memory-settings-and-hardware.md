@@ -1,5 +1,5 @@
 ---
-title: "PostgreSQL Performance extensions, memory settings, and hardware - Percona Podcast 24"
+title: "PostgreSQL Performance Extensions, Memory Settings, and Hardware - Percona Podcast 24"
 description: "Matt and Ibrar talk about the impact of 3rd party extensions, memory settings, and hardware."
 short_text: "The Percona HOSS Matt Yonkovit sits down with Ibrar Ahmed, Senior Software Engineer, at Percona to talk about PostgreSQL Performance! Matt and Ibrar talk about the impact of 3rd party extensions, memory settings, and hardware. Get a bit more detail behind Ibrar’s talk he delivered at Percona Live 2021. The full recording of his Percona Live session entitled: “High-Performance PostgreSQL” is now available."
 date: "2021-06-17"

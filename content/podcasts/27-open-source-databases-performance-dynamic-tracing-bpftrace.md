@@ -1,5 +1,5 @@
 ---
-title: "Open Source Databases Performance, dynamic tracing, BPftrace - Percona Podcast 27"
+title: "Open Source Databases Performance, Dynamic Tracing, BPftrace - Percona Podcast 27"
 description: "Valerii is passionate about all things Performance, Open Source, and Databases."
 short_text: "Join the HOSS Matt Yonkovit and MySQL & MariaDB expert Valerii Kravchuk on the latest episode of the HOSS talks FOSS. Valerii is passionate about all things Performance, Open Source, and Databases. Listen to the Database Performance and Bug guru talk about performance tools and methods like dynamic tracing, flame graphs, BPftrace, and more! Valerii is a Principal Support Engineer at MariaDB Corp with over 20 years of experience in the database field."
 date: "2021-07-07"

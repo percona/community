@@ -1,5 +1,5 @@
 ---
-title: "OpenUK and the use of Open Source Software, hardware, and database - Percona Podcast 16"
+title: "OpenUK and the Use of Open Source Software, Hardware, and Databases - Percona Podcast 16"
 description: "The HOSS talks with Amanda about her background, the business of open source, licensing, contributor agreements, FOSS growth in the UK, and more!"
 short_text: "Amanda Brock is the CEO of OpenUK an organization that promotes the use of open source software, hardware, and data in the UK. Amanda has a deep background in open source dating back to the time she was the general council for Canonical. The HOSS talks with Amanda about her background, the business of open source, licensing, contributor agreements, FOSS growth in the UK, and more!  Join us for the great discussion on all things open source."
 date: "2021-03-31"

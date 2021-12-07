@@ -1,5 +1,5 @@
 ---
-title: "Database infrastructure at Linkedin, and challenging situations - Percona Podcast 29"
+title: "Database Infrastructure at Linkedin, and Challenging Situations - Percona Podcast 29"
 description: "Karthik is passionate about distributed, scalable and highly available databases and is eager to share his knowledge and experience with us."
 short_text: "Karthik Appigatla, Staff Engineer, Linkedin is the guest of the HOSS in this episode to talk about the database infrastructure at Linkedin, challenging situations that arise from running databases at scale, the evolving role of DBAs and DBREs, and dive deep into his recent Percona Live talks. Karthik is passionate about distributed, scalable and highly available databases and is eager to share his knowledge and experience with us."
 date: "2021-07-13"

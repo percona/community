@@ -1,5 +1,5 @@
 ---
-title: "PostgreSQL community and why PostgreSQL continues to grow in popularity - Percona Podcast 40"
+title: "PostgreSQL Community and Why PostgreSQL Continues to Grow in Popularity - Percona Podcast 40"
 description: "The Percona HOSS, Matt Yonkovit sits down with Umair Shahid, Head of PostgreSQL at Percona, to chat about his background, the PostgreSQL community, and why PostgreSQL continues to grow in popularity."
 short_text: "The Percona HOSS, Matt Yonkovit sits down with Umair Shahid, Head of PostgreSQL at Percona, to chat about his background, the PostgreSQL community, and why PostgreSQL continues to grow in popularity. Umair counts 20 years experience in PostgreSQL and open source experience serving some of the highly competitive technology markets in USA & Europe in roles of increasing responsibility."
 date: "2021-09-09"

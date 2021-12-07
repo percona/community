@@ -1,5 +1,5 @@
 ---
-title: "All things open source including Suse, MySQL, Ceph - Percona Podcast 07"
+title: "All Things Open Source Including Suse, MySQL, and Ceph - Percona Podcast 07"
 description: "We talk about how we both got started in the open-source business, how people can contribute, and some of the cool things he has been up to."
 short_text: "Join the HOSS (Percona’s Head of Open Source Strategy) as he talks all things open-source with long time open source engineer Lenz Grimmer. Lenz has a long history of working on open source projects including Suse, MySQL, Ceph, and others. We talk about how we both got started in the open-source business, how people can contribute, and some of the cool things he has been up to."
 date: "2021-02-23"

@@ -1,5 +1,5 @@
 ---
-title: "ProvenDB BlockChain tech to databases, All things MongoDB - Percona Podcast 25"
+title: "ProvenDB BlockChain Tech to Databases, All Things MongoDB - Percona Podcast 25"
 description: "In this episode we talk about all things MongoDB, Databases, and the future landscape of technology"
 short_text: "Guy Harrison, CTO @ ProvenDB (AKA: Southbank Software) is the special guest of Matt Yonkovit in The latest HOSS Talks FOSS Ep25. Guy has authored several books on database technology including [MongoDB Performance Tuning](https://www.amazon.com/MongoDB-Performance-Tuning-Optimizing-Applications/dp/1484268784/ref=sr_1_1?dchild=1&keywords=Guy+Harrison+Mongodb&qid=1624389887&sr=8-1), [Next Generation Databases](https://www.amazon.com/gp/product/B01IQP397Q/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i3), and [the Oracle Database Problem Solving and Troubleshooting Handbook](https://www.amazon.com/gp/product/B01DWFCP3O/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i0). He is currently the CTO of ProvenDB where he is bringing BlockChain tech to databases. In this episode we talk about all things MongoDB, Databases, and the future landscape of technology"
 date: "2021-06-25"

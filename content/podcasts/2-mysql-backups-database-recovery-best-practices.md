@@ -1,5 +1,5 @@
 ---
-title: "MySQL Backups and Database recovery best practices - Percona Podcast 02"
+title: "MySQL Backups and Database Recovery Best Practices - Percona Podcast 02"
 description: "We cover details about Walter's latest blog outlining MySQL Backup best practices."
 short_text: "The Hoss talks with Walter Garcia remote dba expert for Percona about how to ensure you are getting good and consistent MySQL backups. We cover details about Walter's latest blog outlining MySQL Backup best practices."
 date: "2021-02-16"
