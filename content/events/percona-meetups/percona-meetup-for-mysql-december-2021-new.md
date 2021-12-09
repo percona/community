@@ -3,8 +3,7 @@ title: " MeetUp for MySQL - Database Tuning Secrets of the Stars - Dec 8th 2021"
 description: "Community MeetUp for MySQL to learn some secrets of the Stars to tune your database :  we will have support cases, troubleshooting on RDS/Aurora and stump the Expert with Q&A"
 images:
   - events/percona-meetup/mysql-december-cover-1920.jpg
-date: Wed, 8th December 2021, 19:00:00 +0000
-weight: 1
+date: "2021-12-08"
 draft: false
 aliases:
     - "/events/percona-meetups/percona-meetup-for-mysql-december-2021/" 
