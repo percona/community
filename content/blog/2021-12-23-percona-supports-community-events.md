@@ -5,7 +5,7 @@ tags: ['PMM', 'PostgreSQL', 'PG', 'MySQL', 'MongoDB', 'events']
 authors:
   - aleksandra_abramova
 images:
-  - blog/2021/12/community.png
+  - blog/2021/12/community.jpg
 slug: community-events-support
 ---
 
