@@ -9,7 +9,12 @@ images:
 slug: replace-docker-with-podman-for-pmm-dev
 ---
 
-Lets try to find the use cases where it is not possible or not suitable to do.
+What is [Podman](https://podman.io/)? Podman is a daemonless container engine for developing, managing, and running OCI ([Open Container Initiative](https://opencontainers.org/)) Containers on your Linux System. Containers can either be run as root or in rootless mode. More details [here](https://podman.io/whatis.html). 
+
+Check out also [Kubernetes Podcast](https://kubernetespodcast.com/episode/164-podman/) to learn more about `podman` and listen to it's creators.
+
+Why to replace? Especially in development I need simplest possible solution, I don't need additional daemon running or allowing something to run with elevated privileges. And also it much closer to my personal understanding how it should work to run containers.
+
 
 Looks like for Linux it is quite possible, but the experience could be different on MacOS or Windows.
 
@@ -102,6 +107,31 @@ $ make env-up
 ```
 
 Please also note other aliases that I have added as I progressed through this experiment, I needed them all to run later.
+
+### privileged ports
+
+```sh
+$ make env-up
+...
+
+ERROR: for pmm-managed-server  Cannot start service pmm-managed-server: rootlessport cannot expose privileged port 80, you can add 'net.ipv4.ip_unprivileged_port_start=80' to /etc/sysctl.conf (currently 1024), or choose a larger port number (>= 1024): listen tcp 127.0.0.1:80: bind: permission denied
+compose.parallel.parallel_execute_iter: Failed: <Service: pmm-managed-server>
+compose.parallel.feed_queue: Pending: set()
+
+ERROR: for pmm-managed-server  Cannot start service pmm-managed-server: rootlessport cannot expose privileged port 80, you can add 'net.ipv4.ip_unprivileged_port_start=80' to /etc/sysctl.conf (currently 1024), or choose a larger port number (>= 1024): listen tcp 127.0.0.1:80: bind: permission denied
+ERROR: compose.cli.main.exit_with_metrics: Encountered errors while bringing up the project.
+make: *** [Makefile:9: env-compose-up] Error 1
+```
+
+OK, this is common for rootless containers that system wouldn't allow them to bind ports and could be either tuned as suggested in error message, or we just could bind to the unprivileged ports:
+```yaml
+    ports:
+      - 127.0.0.1:8080:80
+      - 40443:443
+      # For headless delve
+```
+
+This is fine for development purposes. In prod container should be run either under privileged user, or there should be some proxy behind it.
 
 ### security-opt parameter
 ```sh
