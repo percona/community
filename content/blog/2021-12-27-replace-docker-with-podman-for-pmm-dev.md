@@ -3,9 +3,9 @@ title: "How to replace `docker` with `podman` for PMM development"
 date: "2021-12-27T00:00:00+00:00"
 tags: ['PMM', 'docker-compose', 'goreleaser', 'docker', 'podman']
 authors:
-  - denys_kondratenko
+    - denys_kondratenko
 images:
-  - superhero.png
+    - superhero.png
 slug: replace-docker-with-podman-for-pmm-dev
 ---
 
@@ -15,14 +15,15 @@ Check out also [Kubernetes Podcast](https://kubernetespodcast.com/episode/164-po
 
 Why to replace? Especially in development I need simplest possible solution, I don't need additional daemon running or allowing something to run with elevated privileges. And also it much closer to my personal understanding how it should work to run containers.
 
-
 Looks like for Linux it is quite possible, but the experience could be different on MacOS or Windows.
 
 I would use Fedora 35 distro in examples bellow, first lets install `podman` and start needed tools:
+
 ```sh
 $ sudo dnf install podman docker-compose
 $ systemctl --user start podman.socket
 ```
+
 * we still need `docker-compose` as most of PMM tooling is built around it
 * starting `podman.socket` so compose would actually talk to `podman` instead of `docker` socket
 
@@ -51,14 +52,17 @@ $ systemctl --user status podman.socket
 $ DOCKER_HOST=unix:///run/user/1000/podman/podman.sock make env-up
 $ # ^^^that or exporting env would get us to the next stage
 ```
+
 `docker-compose` that is used to bring up environment couldn't connect to the docker daemon and thus failing. There is an env var to point to the right socket to talk to so lets find out the socket path and set it.
 
 Set that var in your environment (`.bashrc` or similar) or I set it in the current session:
+
 ```sh
 $ export DOCKER_HOST=unix:///run/user/1000/podman/podman.sock
 ```
 
 ### short-name image resolution
+
 ```sh
 $ make env-up
 Pulling pmm-managed-server ... error
@@ -68,9 +72,11 @@ ERROR: failed to resolve image name: short-name resolution enforced but cannot p
 
 $ DOCKER_HOST=unix:///run/podman/podman.sock PMM_SERVER_IMAGE=docker.io/perconalab/pmm-server:dev-latest make env-up
 ```
+
 Now it has failed because the system doesn't accept the short names for images, but there is another env for it `PMM_SERVER_IMAGE`.
 
 The short image name resolution we could tune in the system, `/etc/containers/registries.conf` says:
+
 ```
 For more information on this configuration file, see containers-registries.conf(5).
 #
