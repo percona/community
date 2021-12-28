@@ -17,6 +17,8 @@ Why to replace? Especially in development I need simplest possible solution, I d
 
 Looks like for Linux it is quite possible, but the experience could be different on MacOS or Windows.
 
+But what is described bellow is strictly for development, not intended for **production**! **Podman currently is not supported for production for PMM**.
+
 I would use Fedora 35 distro in examples bellow, first lets install `podman` and start needed tools:
 
 ```sh
