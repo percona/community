@@ -14,9 +14,9 @@ taxonomies:
 social:
   twitter: Percona
 sitemap:
-  changefreq: weekly
+  changefreq: daily
   filename: sitemap.xml
-  priority: 0.5
+  priority: 1
 markup:
   goldmark:
     extensions:
