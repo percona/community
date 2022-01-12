@@ -10,6 +10,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 * [Mitigating MySQL Downtime for big migrations](https://dev.to/ashusvirus/mitigating-mysql-downtime-for-big-migrations-2ijh) - Ashutosh Mittal - November 20, 2021
 * [Migration from HBase to MyRocks at Quora](https://quoraengineering.quora.com/Migration-from-HBase-to-MyRocks-at-Quora) - Vamsi Ponnekanti - September 14, 2021
+* [Scaling WordPress to Handle the Largest WordPress Virtual Conference](https://convesio.com/blog/wordpress-performance/scaling-wordpress-wp-agency-summit/) - Tom Fanelli - April 5, 2021
 * [Percona Toolkit | Altering large MySQL tables with no locks Ultimate Guide 2021 Update](https://medium.com/creditorwatch/percona-toolkit-461c0a3b469b) - David Shen - March 2, 2021
 * [Percona Series / Zero downtime migration from 5.7 to 8.0](https://ferencfbin.medium.com/zero-downtime-percona-migration-from-5-7-to-8-0-18f0a5b5a3af) - Ferenc Fabian (@PumpkinSeed_dev) & Robert Boros 
 * [Percona Series / XtraDB Cluster, 8.0](https://ferencfbin.medium.com/percona-xtradb-cluster-8-0-59918c2b1c92) - Ferenc Fabian (@PumpkinSeed_dev) 
@@ -30,6 +31,10 @@ Thank you to users of our products, customers, communities, and authors for your
 
 * [pg_stat_monitor :: Younger sibling of pg_stat_statements with more knowledge](https://sujithtee.medium.com/pg-stat-monitor-younger-sibling-of-pg-stat-statements-with-more-knowledge-736afb1f05ac) - Sujith Thiravium - October 19, 2021
 * [Setup Percona Postgresql Through the Awsesome(OSM) Ansible Role](https://medium.com/opstree-technology/setup-percona-postgresql-through-the-awsesome-osm-ansible-role-86fe0a5fe1a5) - Abhishek Vishwakarma
+
+# MongoDB
+
+* [Deploy Percona for MongoDB with SSL/TLS](https://datablogs.medium.com/deploy-percona-for-mongodb-with-ssl-tls-243bff653241) - SelvaKumar Kuppusamy - January 4, 2022
 
 # PMM
 

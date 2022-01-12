@@ -1,5 +1,5 @@
 ---
-title: "Highlights from Percona Live talk 2021, Database recovery, backups - Percona Podcast 23"
+title: "Highlights From Percona Live Talk 2021: Database Recovery and backups - Percona Podcast 23"
 description: "Listen to this episode 23 of the HOSS talks FOSS and learn why you should stop worrying so much about backups, and start worrying about recovery."
 short_text: "The Percona HOSS Matt Yonkovit invited Pep Pla, Consultant at Percona to talk about why database recovery trumps database backups every time as well as some highlights from his 2021 Percona Live talk on \"How I Learned to Stop Worrying and Love Backups\". Listen to this episode 23 of the HOSS talks FOSS and learn why you should stop worrying so much about backups, and start worrying about recovery"
 date: "2021-06-03"

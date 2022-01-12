@@ -1,5 +1,5 @@
 ---
-title: "Overview of MySQL project, Orchestrator, Ghost, Vitess and PlanetScale - Percona Podcast 19"
+title: "Overview of MySQL Project, Orchestrator, Ghost, Vitess and PlanetScale - Percona Podcast 19"
 description: "Shlomi has been developing and enhancing some of the MySQL communities most popular tools for years. You may know his mysql work from projects like Orchestrator, Ghost, and Vitess. He shares his experiences and his motivations behind some of these projects and gives us a preview into what he is up to next!"
 short_text: "Listen in as the HOSS talks with long time MySQL community contributor Shlomi Noach. Shlomi has been developing and enhancing some of the MySQL communities most popular tools for years. You may know his mysql work from projects like Orchestrator, Ghost, and Vitess. He shares his experiences and his motivations behind some of these projects and gives us a preview into what he is up to next!"
 date: "2021-04-27"

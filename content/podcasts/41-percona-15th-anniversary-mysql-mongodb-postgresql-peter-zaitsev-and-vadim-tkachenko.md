@@ -1,5 +1,5 @@
 ---
-title: "Percona’s 15th anniversary, MySQL, MongoDB, PostgreSQL /w Peter Zaitsev and Vadim Tkachenko - Percona Podcast 41"
+title: "Percona’s 15th Anniversary, MySQL, MongoDB, PostgreSQL With Peter Zaitsev and Vadim Tkachenko - Percona Podcast 41"
 description: "Over the last 15 years Percona has been helping, enhancing, and helping millions in the Open Source ecosystem!"
 short_text: "This year marks Percona’s 15th anniversary!  Over the last 15 years Percona has been helping, enhancing, and helping millions in the Open Source ecosystem! Matt Yonkovit, the Percona Head of Open Source Strategy (HOSS), invited the two founders of Percona, CEO Peter Zaitsev and CTO Vadim Tkachenko, to talk about the beginning and the evolution of Percona all along those 15 years. We cover the early days of MySQL, moving into MongoDB, jumping into the PostgreSQL community, and handling the modern landscape.   Listen to the technical and business challenges as Percona evolved from an idea to 2 geeks starting something new to a successful bootstrapped company with over 300 employees and thousands of customers. It has been an interesting ride! Hear all about it and what  the next 15 years of Percona will look like?"
 date: "2021-09-19"

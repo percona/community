@@ -1,5 +1,5 @@
 ---
-title: "Variety of MySQL Topics, SE Linux,  database security, backups and recovery - Percona Podcast 33"
+title: "Variety of MySQL Topics, SE Linux, Database Security, Backups and Recovery - Percona Podcast 33"
 description: "Percona’s Hoss Matt Yonkovit talks to Lead Database Consultant at Pythian, Matthias Crauwels to tackle SE Linux,  ensuring database security, backups, recovery, testing, and more"
 short_text: "Percona’s Hoss ( Head of Open Source Strategy ) Matt Yonkovit talks to Lead Database Consultant at Pythian, Matthias Crauwels on a variety of MySQL Topics including how to tackle SE Linux,  ensuring database security, backups, recovery, testing, and more. Mathias is a long time member of the MySQL community and has spoken at numerous conferences on MySQL related topics."
 date: "2021-07-30"

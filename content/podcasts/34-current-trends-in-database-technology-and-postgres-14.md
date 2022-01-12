@@ -1,5 +1,5 @@
 ---
-title: "Current trends in database technology and Postgres 14 /w Bruce Momjian - Percona Podcast 34"
+title: "Current Trends in Database Technologies and Postgres 14 With Bruce Momjian - Percona Podcast 34"
 description: "Bruce Momjian, Vice President, Postgres Evangelist at EDB sat down with the HOSS Matt Yonkovit to talk through the current trends in database technology as well as to get details on the release of Postgres 14"
 short_text: "Bruce Momjian, Vice President, Postgres Evangelist at EDB sat down with the HOSS Matt Yonkovit to talk through the current trends in database technology as well as to get details on the release of Postgres 14.  Bruce has been around the database space for more than 30 years : He is a co-founder and core team member of the PostgreSQL Global Development Group as well as a known speaker, author, and contributor in the PostgreSQL community who has appeared at many international open-source conferences.   Recently he visited Percona Live and talked to us about how to choose the best hardware for PostgreSQL in the cloud."
 date: "2021-08-04"

@@ -1,5 +1,5 @@
 ---
-title: "Challenges and issues in open source, and the benefits of MyRocks - Percona Podcast 20"
+title: "Challenges and Issues in Open Source, and the Benefits of MyRocks - Percona Podcast 20"
 description: "The HOSS sits down with Technical Account Manager and long time MySQL DBA Mike Benshoof to talk about the key challenges and issues enterprises are facing today, the benefits of MyRocks, and of course Philadelphia Cheesesteaks!"
 short_text: "The HOSS sits down with Technical Account Manager and long time MySQL DBA Mike Benshoof to talk about the key challenges and issues enterprises are facing today, the benefits of MyRocks, and of course Philadelphia Cheesesteaks!"
 date: "2021-05-06"

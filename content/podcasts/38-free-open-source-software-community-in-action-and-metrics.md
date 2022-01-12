@@ -1,5 +1,5 @@
 ---
-title: "Free open source  software community in action and community efforts metrics - Percona Podcast 38"
+title: "Free Open Source Software Community in Action and Community Efforts Metrics - Percona Podcast 38"
 description: "Matt Yonkovit sits down with Jono Bacon, Community & Collaboration Consultant and Author to talk about building and growing Communities"
 short_text: "Join Percona’s HOSS (Head of Open Source Strategy) Matt Yonkovit as he sits down with Jono Bacon, Community & Collaboration Consultant and Author to talk about building and growing Communities!  Listen in on the discussion on the impact of the pandemic, the growth of diverse and larger communities, the free open source  software community in action, ideas on measuring the effect and impact of community efforts , and more."
 date: "2021-08-25"

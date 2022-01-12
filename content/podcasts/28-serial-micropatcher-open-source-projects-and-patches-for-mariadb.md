@@ -1,5 +1,5 @@
 ---
-title: "Serial micropatcher of open source projects and patches for MariaDB - Percona Podcast 28"
+title: "Serial Micropatcher of Open Source Projects and Patches for MariaDB - Percona Podcast 28"
 description: "Daniel is a self-professed serial micropatcher of open source projects. He is passionate about all things performance, understanding how things work, and has worked tirelessly on porting coding for POWER Systems."
 short_text: "Listen in as the HOSS talks with Daniel Black, Chief Innovation Officer at the MariaDB Foundation. Daniel is a self-professed serial micropatcher of open source projects. He is passionate about all things performance, understanding how things work, and has worked tirelessly on porting coding for POWER Systems. He was formerly a DBA consultant for Open Query where he started writing far too many patches for MariaDB, a tradition which he continues today, and ultimately led him to become the Chief Innovation Officer at the MariaDB foundation."
 date: "2021-07-08"

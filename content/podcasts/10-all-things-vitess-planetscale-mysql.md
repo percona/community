@@ -1,5 +1,5 @@
 ---
-title: "All things, Vitess Planetscale, MySQL, and Sailing passion - Percona Podcast 10"
+title: "All Things Vitess, Planetscale, MySQL, and Sailing Passion - Percona Podcast 10"
 description: "Matt Yonkovit talks to Planetscale’s SR Technical Manager Alkin Tezuysal on his role as a Vitess maintainer, who is using & contributing to Vitess, and where does it make sense for companies."
 short_text: "Percona’s Hoss (Head of Open Source Strategy) Matt Yonkovit talks to Planetscale’s SR Technical Manager Alkin Tezuysal on his role as a Vitess maintainer, who is using & contributing to Vitess, and where does it make sense for companies. We also dive into Alkin’s passion for sailing and talk about sailing during the global pandemic.  You won’t want to miss this week’s episode!"
 date: "2021-03-02"

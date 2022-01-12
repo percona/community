@@ -1,5 +1,5 @@
 ---
-title: "Engineering experience, tips and tricks for managing a team, and PMM - Percona Podcast 42"
+title: "Engineering Experience, Tips and Tricks for Managing a Team, and Monitoring With PMM - Percona Podcast 42"
 description: "Join Percona’s HOSS (Head of Open Source Strategy) Matt Yonkovit as he sits down with Steve Hoffman, VP Engineering at Percona, to talk about his Engineering experience and his journey to Percona."
 short_text: "Join Percona’s HOSS (Head of Open Source Strategy) Matt Yonkovit as he sits down with Steve Hoffman, VP Engineering at Percona, to talk about his Engineering experience and his journey to Percona. Steve dives into several interesting topics including: tips and tricks for managing a team, challenges face in the open source space, the growth and development of Percona Monitoring and Management (PMM), finding and hiring engineers, and how to contribute to an open source project."
 date: "2021-09-24"

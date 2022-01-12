@@ -1,5 +1,5 @@
 ---
-title: "Open source Database from Apache Cassandra, HBase, to Yugabyte - Percona Podcast 17"
+title: "Open Source Database From Apache Cassandra, HBase to Yugabyte - Percona Podcast 17"
 description: "Karthik Ranganathan CTO at Yugabyte knows databases inside and out having been on the team that first built Apache Cassandra, helped optimize and scale HBase, and most recently built Yugabyte."
 short_text: "Karthik Ranganathan CTO at Yugabyte knows databases inside and out having been on the team that first built Apache Cassandra, helped optimize and scale HBase, and most recently built Yugabyte. What insights does he have from participating in these efforts? He sat down with Percona’s HOSS Matt Yonkovit to talk through what he learned, what he regretted, and how Yugabyte takes those lessons and implements them."
 date: "2021-04-09"
