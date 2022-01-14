@@ -1,0 +1,35 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+{{- end }}
+
+{{ define "main" }}
+<div class="text">
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <h2>Podcasts</h2>
+    <ul>
+    {{ range where .Site.Pages "Section" "podcasts" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}   
+    </ul>   
+
+    <h2>Events</h2>
+    <ul>
+    {{ range where .Site.Pages "Section" "events" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}   
+    </ul>   
+
+    <h2>Blog Posts</h2>
+    <ul>
+    {{ range where .Site.Pages "Section" "blog" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}   
+    </ul>   
+</div>
+{{ end }}
