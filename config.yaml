@@ -169,6 +169,10 @@ menu:
       name: Discord
       url: http://per.co.na/discord
       weight: 5
+    - identifier: map
+      name: Sitemap
+      url: /map
+      weight: 6
 imaging:
   resampleFilter: lanczos
   quality: 90
