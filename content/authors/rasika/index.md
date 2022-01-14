@@ -1,6 +1,6 @@
 ---
-name: rasika_chivate
-name_pronunciation: rasika_chivate
+name: rasika
+name_pronunciation: rasika
 fullname: Rasika Chivate
 fullname_pronounciation: Rasika Chivate
 tagline: 
@@ -15,4 +15,3 @@ images:
 ---
 
 Technical Writer, PMM
-
