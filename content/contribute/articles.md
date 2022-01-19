@@ -34,6 +34,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+* [Percona Backup for MongoDB with SSL/TLS](https://datablogs.medium.com/percona-backup-for-mongodb-with-ssl-tls-7e2f56f6b414) - SelvaKumar Kuppusamy - January 12, 2022
 * [Deploy Percona for MongoDB with SSL/TLS](https://datablogs.medium.com/deploy-percona-for-mongodb-with-ssl-tls-243bff653241) - SelvaKumar Kuppusamy - January 4, 2022
 
 # PMM
