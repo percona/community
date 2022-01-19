@@ -34,10 +34,12 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+* [Percona Backup for MongoDB with SSL/TLS](https://datablogs.medium.com/percona-backup-for-mongodb-with-ssl-tls-7e2f56f6b414) - SelvaKumar Kuppusamy - January 12, 2022
 * [Deploy Percona for MongoDB with SSL/TLS](https://datablogs.medium.com/deploy-percona-for-mongodb-with-ssl-tls-243bff653241) - SelvaKumar Kuppusamy - January 4, 2022
 
 # PMM
 
+* [What I really like about Percona PMM](https://blog.dbi-services.com/what-i-really-like-about-percona-pmm/) - Elisa Usai (@elisetta1984) - January 14, 2022
 * [Fixing Magento 2 Core MySQL performance issues using Percona Monitoring and Management (PMM)](https://yegorshytikov.medium.com/resolution-of-a-mysql-performance-issue-and-used-percona-monitoring-and-management-pmm-25a93cd5a0e2) - Yegor Shytikov
 * [Percona PMM – A beginner’s guide](https://vladmihalcea.com/percona-pmm-beginner-guide/) - Vlad Mihalcea (@vlad_mihalcea)
 * [Monitoring GCP CloudSQL PostgreSQL with Percona PMM](https://blog.searce.com/monitoring-gcp-cloudsql-postgresql-with-percona-pmm-923d79a80881) - Bhuvanesh
