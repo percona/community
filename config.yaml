@@ -147,6 +147,11 @@ menu:
       url: /contribute/engineeringmeetings
       parent: contribute
       weight: 5
+    - identifier: surveys
+      name: Testimonials & Surveys
+      url: /contribute/surveys
+      parent: contribute
+      weight: 6
 
   footer:
     - identifier: about
