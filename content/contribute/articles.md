@@ -8,6 +8,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+* [Upgrading MySQL at Shopify](https://shopify.engineering/upgrading-mysql-shopify) - Yi Qing Sim - December 2, 2021
 * [Mitigating MySQL Downtime for big migrations](https://dev.to/ashusvirus/mitigating-mysql-downtime-for-big-migrations-2ijh) - Ashutosh Mittal - November 20, 2021
 * [Migration from HBase to MyRocks at Quora](https://quoraengineering.quora.com/Migration-from-HBase-to-MyRocks-at-Quora) - Vamsi Ponnekanti - September 14, 2021
 * [Scaling WordPress to Handle the Largest WordPress Virtual Conference](https://convesio.com/blog/wordpress-performance/scaling-wordpress-wp-agency-summit/) - Tom Fanelli - April 5, 2021
