@@ -4,7 +4,6 @@ description: "Join us for Friday afternoon Live streaming MySQL party dedicated 
 images:
   - events/percona-meetup/2022.01.14-MySQL.jpg
 date: Fri, 14th January 2022, 20:00:00 +0000
-weight: 1
 draft: false
 aliases:
     - "/events/percona-meetups/percona-meetup-for-mysql-january-14th-2022/" 
