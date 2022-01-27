@@ -12,7 +12,7 @@ Percona is thrilled to support [Chernihiv.IT Cluster](https://www.chernihiv.it/)
 
 **CHERNIHIV.IT DevOps Crash Course**
 
-3-day intensive course for students and everybody else will take place on the base of Chernihiv Polytechnic National University on January 26-28. Attendees will have the opportunity to receive a certificate of completion.
+3-day intensive course for students and everybody else took place on the base of Chernihiv Polytechnic National University on January 26-28. Attendees will have the opportunity to receive a certificate of completion.
 
 The majority of the lectures in the program are from Percona speakers:
 
@@ -23,4 +23,4 @@ The majority of the lectures in the program are from Percona speakers:
 
 Other IT companies of the city also participate in the training and present some talks.
 
-The registration for the event is open! If you are in Chernihiv, click [here](https://www.chernihiv.it/devopscrashcourse) to register.
+![Teaching](/events/chernihiv-it-cluster/teaching.jpg)
