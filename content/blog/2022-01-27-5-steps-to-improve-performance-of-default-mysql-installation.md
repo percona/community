@@ -16,7 +16,7 @@ So, we have a very basic default MySQL installation with some workload. It is co
 
 **Step 1. Rate Limit for Low Queries**
 
-Go to MySQL Summary Dashboard In PMM, find your instance and set a rate limit instead of setting low query time to zero. Once we get to the 3000-4000 words per second, these might start impacting performance in a way that is going to show in the latency papers. The thing is that while it is important to collect as many query details as possible, you don't want to collect too many because it can impact performance and have the opposite effect of what you're trying to do.
+Go to MySQL Summary Dashboard In PMM, find your instance and set a rate limit instead of setting low query time to zero. Once we get to the 3000-4000 queries per second, these might start impacting performance in a way that is going to show in the latency papers. The thing is that while it is important to collect as many query details as possible, you don't want to collect too many because it can impact performance and have the opposite effect of what you're trying to do.
 
 **Step 2. Spikes**
 
