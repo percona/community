@@ -13,7 +13,7 @@ speakers:
 tags: ['PostgreSQL', 'Meetup']
 ---
 
-The Percona Commmunity meetup for PostgreSQL was live on last last Thursday, January 27th, 2022 with Charly Batista and Matt Yonkovit for the optimal settings to tune a new fresh database. Learn in this recording the different parameters that you should check.
+The Percona Commmunity meetup for PostgreSQL was live on last Thursday, January 27th, 2022 with Charly Batista and Matt Yonkovit. They have talked about the optimal settings to tune a new fresh database. Learn in this recording the different parameters that you should check.
 
 ## Video
 
