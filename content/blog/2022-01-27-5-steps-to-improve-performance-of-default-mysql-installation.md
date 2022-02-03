@@ -14,7 +14,7 @@ Recently, Marcos Albe (Principal Support Engineer, Percona) did an [online tunin
 
 So, we have a very basic default MySQL installation with some workload. It is connected to PMM, the slow query log is turned on. But it is largely unconfigured. Here is what actions Marcos considered to take to set up a new system to make sure that it's actually set up from the beginning to reasonable defaults. Do some reactive configuration - go through the workload, observe bottlenecks and then configure to avoid bottlenecks 
 
-**Step 1. Rate Limit for Low Queries**
+**Step 1. Rate Limit for Slow Queries**
 
 Go to MySQL Summary Dashboard In PMM, find your instance and set a rate limit instead of setting low query time to zero. Once we get to the 3000-4000 queries per second, these might start impacting performance in a way that is going to show in the latency papers. The thing is that while it is important to collect as many query details as possible, you don't want to collect too many because it can impact performance and have the opposite effect of what you're trying to do.
 
