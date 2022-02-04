@@ -9,8 +9,8 @@ draft: false
 aliases:
     - "/events/percona-meetups/percona-meetup-for-percona-products-february-9th-2022/" 
 speakers:
-  - marcos_albe
-tags: ['PMM', 'Meetup']
+  - evgeniy_patlan
+tags: ['PMM', 'Meetup', 'Percona products', 'MySQL', 'PostgreSQL', 'MongoDB' ]
 ---
 
 ![Community MeetUp for Percona Products](events/percona-meetup/2022-02-09-meetup-products.jpg)
