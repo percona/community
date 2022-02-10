@@ -36,7 +36,7 @@ Now let's discuss these steps in detail.
 
 ![Fork](/blog/2022/2/1-Forking-Percona-Community.png)
 
-2. Git Clone your fork to your computer. Click Code and get the address to clone the repository.  
+2. Git Clone your fork to your computer. Click Code and get the address to clone the repository. You can learn how to install and work with Git from the cool resource ["Git How To"](https://githowto.com/)
 
 ![Clone](/blog/2022/2/2-Git-Clone-Button.png)
 
