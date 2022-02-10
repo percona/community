@@ -10,6 +10,12 @@ authors:
 slug: 'how-to-publish-blog-post'
 ---
 
+If you are an author or just want to become one, our blog is open to you. We accept any technical articles about databases and open-source technologies. We have no requirements for the uniqueness of the article, if your article is published on another resource, you can also publish it with us.
+
+In this article I will explain in detail how to publish a post in our Community Blog. 
+
+I tried to prepare detailed instructions so that even a non-technical person could publish the post. If you have any difficulties at any step we will be glad to help, just contact us.
+
 ## Preparing the environment and tools for publishing a post. 
 
 This step is optional, If you want to check your post or changes before publishing, you will need to make some adjustments on your computer. 
@@ -115,17 +121,60 @@ Our website works with text and posts marked up in [Markdown](https://www.markdo
 
 6. Now add the post in Markdown format to the `content/blog` directory. Important, get the name of your file right: "Date-name-in-style-URL". In my case, it is '2022-02-12-how-to-post.md'. If you are not familiar with markdown, just look at the examples in our blog, there are examples for code blocks, headers, pictures and lists. 
 
-7. It is important that each post at the beginning must have special parameters in YAML format, the so-called [Front Matter](https://gohugo.io/content-management/front-matter/). You can see an example in any of our 100+ blog posts. You will need to specify in these parameters:
+7. It is important that each post at the beginning must have special parameters in YAML format, the so-called [Front Matter](https://gohugo.io/content-management/front-matter/). You can see an example in any of our 100+ blog posts. You will need to specify in these parameters: Title, Date, Draft status, Tags, Images (A special image that will be displayed in the list of posts and on social networks), Authors (your name as you listed on the author card), Slug (optional, only if you want to have a special URL)
 
-- Title
-- Date
-- Draft status
-- Tags 
-- Images - A special image that will be displayed in the list of posts and on social networks. If you're having trouble, write community-team@percona.com
-- Authors - your name as you listed on the author card
-- Slug - not necessary, only if you want to have a special URL.
+If you're having trouble, write community-team@percona.com
 
-7. If you ran the Hugo server, you can open your post in your browser. If you have difficulties or problems, email us or open Issues on GitHub.
+8. If you ran the Hugo server (`hugo server -D`), you can open your post in your browser (`localhost:1313`). If you have difficulties or problems, email us or open Issues on GitHub. Important, to see the post in the list, you need to put the date earlier than today, as the list displays posts sorted by date.
+
+![Browser Test](/blog/2022/2/5-Browser-Test.png)
+
+You may also see errors in the console or browser. The most common errors are related to the address to the image.
+
+## Saving and submitting changes
+
+1. Now we need to save the changes and submit them to GitHub. Make sure you are in a separate branch and your changes are tracked with git. Enter the command: `git status`. 
+I see that I am in the dbazhenov_post branch and I have a new directory and file.
+
+![Git Status](/blog/2022/2/6-git-status.png)
+
+If you are still in the main branch, create a new branch now `git checkout -b "[branch_name]"`
+
+2. Save the changes in git and commit: 
+
+`git add .`
+
+`git commit -m "Blog: New Post by Daniil Bazhenov"`
+
+This way you will see all the modified or added files that will be sent to the remote repository.
+
+![Git Commit](/blog/2022/2/7-git-commit.png)
+
+3. Submit changes to your repository: `git push origin dbazhenov_post`
+
+4. Open your repository on GitHub (fork) and you will see that your branch is ready to be published (creating a Pull Request). 
+
+![GitHub Branch](/blog/2022/2/8-GitHub-Branch.png)
+
+5. Click the green Compare & Pull Request button and you will be directed to create a Pull Request in the main Percona Community repository. Complete the creation by clicking Create.
+
+![GitHub Branch](/blog/2022/2/9-GitHub-Pull-Request.png)
+
+6. All, now we get your Pull Request, check it and merge it to our site, the post will be published. You can also check your Pull Request right in the GitHub interface under the Files tab, maybe you'll find a bug and you can fix it. 
+
+![GitHub Check PR](/blog/2022/2/10-GitHub-Check-PR.png)
+
+To fix the mistake, simply make changes to the copy on your computer. Repeat steps 2 and 3 (git add, commit, push). Your new commit will automatically be added to your Pull Request.
+
+
+## Assistance and support
+
+If you have any questions, you can contact us:
+- [Discord](https://per.co.na/discord)
+- [Forum](https://forums.percona.com)
+- Email: community-team@percona.com 
+
+You can even just send us the text of the post and we will publish it ourselves.
 
 
 
