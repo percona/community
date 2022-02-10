@@ -14,7 +14,7 @@ If you are an author or just want to become one, our blog is open to you. We acc
 
 In this article I will explain in detail how to publish a post in our Community Blog. 
 
-I tried to prepare detailed instructions so that even a non-technical person could publish the post. If you have any difficulties at any step we will be glad to help, just [contact us](#assistance-and-support).
+We tried to prepare detailed instructions so that even a non-technical person could publish the post. If you have any difficulties at any step we will be glad to help, just [contact us](#assistance-and-support). 
 
 ## Preparing the environment and tools for publishing a post. 
 
@@ -166,6 +166,7 @@ This way you will see all the modified or added files that will be sent to the r
 
 To fix the mistake, simply make changes to the copy on your computer. Repeat steps 2 and 3 (git add, commit, push). Your new commit will automatically be added to your Pull Request.
 
+By publishing your post on our blog, you will become a full contributor to the repository and community, and we will give you a special gift.
 
 ## Assistance and support
 
