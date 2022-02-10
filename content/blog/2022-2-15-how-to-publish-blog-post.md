@@ -14,7 +14,7 @@ If you are an author or just want to become one, our blog is open to you. We acc
 
 In this article I will explain in detail how to publish a post in our Community Blog. 
 
-I tried to prepare detailed instructions so that even a non-technical person could publish the post. If you have any difficulties at any step we will be glad to help, just contact us.
+I tried to prepare detailed instructions so that even a non-technical person could publish the post. If you have any difficulties at any step we will be glad to help, just [contact us](#assistance-and-support).
 
 ## Preparing the environment and tools for publishing a post. 
 
@@ -170,6 +170,7 @@ To fix the mistake, simply make changes to the copy on your computer. Repeat ste
 ## Assistance and support
 
 If you have any questions, you can contact us:
+- [GitHub Issues](https://github.com/percona/community/issues)
 - [Discord](https://per.co.na/discord)
 - [Forum](https://forums.percona.com)
 - Email: community-team@percona.com 
