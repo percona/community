@@ -10,7 +10,7 @@ authors:
 slug: poll-metrics-keep
 ---
 
-Hello everyone! New release of VictoriaMetrics have many intersting features. We want to implement downsampling in our future releases, but we strongly want to know how long you keep metrics in PMM. Please help us and go to page with our [poll](https://forums.percona.com/t/how-long-do-you-keep-the-metrics-in-pmm/14236).
+Hello everyone! New release of VictoriaMetrics have many interesting features. We want to implement downsampling in our future releases, but we strongly want to know how long you keep metrics in PMM. Please help us and go to page with our [poll](https://forums.percona.com/t/how-long-do-you-keep-the-metrics-in-pmm/14236).
 
 Thank you for helping us out!
 
