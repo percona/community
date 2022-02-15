@@ -10,13 +10,13 @@ authors:
 slug: poll-metrics-keep
 ---
 
-Hello everyone! New release of VictoriaMetrics have many interesting features. One of them is [downsampling](https://docs.victoriametrics.com/#downsampling).
+Hello everyone! We are indeed excited to announce that the new release of VictoriaMetrics has many exciting features, one of them being [downsampling](https://docs.victoriametrics.com/#downsampling).
 
-Downsampling help to reduce disk space usage and improve query perfomance in a big and long time series. It applied independently per each time series. But this feature working only with time series with big number of samples per each series.
+Downsampling helps to reduce disk space usage and improves query performance in a big and long time series if applied independently per each time series. However, this feature works only with a large number of samples per series.
 
-We want to implement downsampling in our future releases, but we strongly want to know how long you keep metrics in PMM. Please help us and go to page with our [poll](https://forums.percona.com/t/how-long-do-you-keep-the-metrics-in-pmm/14236).
+As we are keen on implementing downsampling in our future releases, we would like to understand how long you keep your metrics in PMM. Please go to the [Poll](https://forums.percona.com/t/how-long-do-you-keep-the-metrics-in-pmm/14236) page and provide your inputs.
 
-Thank you for helping us out!
+We appreciate your help. Thank You!
 
 ---
 
