@@ -10,7 +10,7 @@ authors:
 slug: poll-metrics-keep
 ---
 
-Hello everyone! New release of VictoriaMetrics have many interesting features. One of them is downsampling.
+Hello everyone! New release of VictoriaMetrics have many interesting features. One of them is [downsampling](https://docs.victoriametrics.com/#downsampling).
 
 Downsampling help to reduce disk space usage and improve query perfomance in a big and long time series. It applied independently per each time series. But this feature working only with time series with big number of samples per each series.
 
