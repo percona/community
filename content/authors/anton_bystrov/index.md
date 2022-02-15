@@ -11,7 +11,7 @@ social:
   github:
   linkedin:
 images:
-  - blog/authors/icon.png
+  - blog/authors/anton_bystrov.png
 ---
 
-Dashboards engineer, PMM
+Dashboards engineer, Percona Monitoring and Management.
