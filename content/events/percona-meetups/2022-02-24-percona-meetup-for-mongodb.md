@@ -1,5 +1,5 @@
 ---
-title: " Comunity MeetUp - Installation of MongoDB via a Kubernetes Operator - February 24th, 2022 at 11:00 am EST"
+title: " Community MeetUp - Installation of MongoDB via a Kubernetes Operator - February 24th, 2022 at 11:00 am EST"
 description: "Join us and we will be walking through the installation of MongoDB via a Kubernetes operator in Community MeetUp on February 24th, 2022 at 11:00 am EST."
 images:
   - events/percona-meetup/2022-02-24-meetup-mongodb.jpg
