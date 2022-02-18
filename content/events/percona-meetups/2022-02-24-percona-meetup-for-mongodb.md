@@ -28,7 +28,7 @@ Join us in The Percona Community MeetUp and walk with us through the installatio
 **Installation of MongoDB via a Kubernetes operator, with Sergey Pronin and Matt Yonkovit**
 * Databases on k8s - the whys and use cases
 * Installation with Operator (demo)
-* Management with Operator (demo
+* Management with Operator (demo)
 * Q&A
 
 
