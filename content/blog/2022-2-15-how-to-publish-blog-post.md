@@ -112,7 +112,6 @@ Our website works with text and posts marked up in [Markdown](https://www.markdo
 1. Create a separate branch for your changes.
 2. Add information about you to the `content/authors/` folder.
 3. Add your photo to the folder `assets/blog/authors`.
-4. Add your photo to the folder `assets/blog/authors`.
 5. Add your post in Markdown to the `content/blog` directory. Please, specify the name of your file according to the example: "Date-name-in-style-URL" ('2022-02-12-how-to-post.md').
 
 
@@ -150,7 +149,7 @@ You may also see errors in the console or browser. The most common errors are re
 1. Run `git status` to make sure you are in a separate branch and your changes are tracked with Git.
 2. Save the changes in Git and create a commit.
 3. Push changes to your repository on GitHub.
-4. Open your repository on GitHub and create a pull request
+4. Open your repository on GitHub and create a pull request.
 
 **Detailed Instructions**
 
@@ -191,7 +190,7 @@ By publishing your post on our blog, you will become a full contributor to the r
 
 ## Assistance and Support
 
-If you have any questions, please can contact us:
+If you have any questions, please contact us:
 - [GitHub Issues](https://github.com/percona/community/issues)
 - [Discord](https://per.co.na/discord)
 - [Forum](https://forums.percona.com)
