@@ -29,16 +29,19 @@ If you are ready to step in and contribute to Percona software or this website, 
 
 We would love to see more authors of technical content in our [Community Blog](https://percona.community/blog/). We accept any technical posts about databases and open source technologies. Also, we have no requirements for the uniqueness of the article. If your post is published on another resource, you can duplicate it here and get more attention.
 
+> We understand that the process may be a bit complicated for you. So you can simply send us your post in PDF/Google Doc/Markdown format by email at community-team@percona.com.
+> 
 Here are the quick steps to publish the post. You can find the detailed description of each step in this [article](https://percona.community/blog/2022/02/10/how-to-publish-blog-post/).
 
 The site runs on Hugo engine. It turns Markdown pages into HTML very quickly and easily. We also use GitHub and GitHub Pages for free website hosting.
 
 - Fork our repository ["percona/community"](https://github.com/percona/community/) and git clone that fork on your computer.
-- Install [Hugo engine](https://gohugo.io/getting-started/installing/)
+- (Optional) install [Hugo engine](https://gohugo.io/getting-started/installing/)
 - Run the Hugo server in the source code folder of the site with the command `hugo server -D` and open a local copy of the site in your browser at `localhost:1313`
 - Create a separate branch for your changes.
 - Add information about you to the `content/authors/` folder.
 - Add your photo to the folder `assets/blog/authors`.
+- If your post contains images, load the pre-made images into the `assets/blog/[YEAR]/[month]` directory. If there is no directory, create one. 
 - Add your post in Markdown to the `content/blog` directory. Please, specify the name of your file according to the example: "Date-name-in-style-URL" ('2022-02-12-how-to-post.md').
 - Save the changes in Git and create a commit.
 - Push changes to your repository on GitHub.
