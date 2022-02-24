@@ -1,8 +1,8 @@
 ---
-title: " Community MeetUp - Installation of MongoDB via a Kubernetes Operator - February 24th, 2022 at 11:00 am EST"
-description: "Join us and we will be walking through the installation of MongoDB via a Kubernetes operator in Community MeetUp on February 24th, 2022 at 11:00 am EST."
+title: " Community MeetUp - Installation of MongoDB via a Kubernetes Operator - POSTPONED"
+description: "We have to postpone our Community MeetUp of today February 24th, 2022"
 images:
-  - events/percona-meetup/2022-02-24-meetup-mongodb.jpg
+  - events/percona-meetup/2022-02-24-meetup-mongodb-postponed.jpg
 date: Thu, 24th February 2022, 19:00:00 +0000
 weight: 1
 draft: false
@@ -13,7 +13,20 @@ speakers:
 tags: ['Mongo', 'k8s', 'Kubernetes', 'MongoDB' ]
 ---
 
-![Community MeetUp for Percona Products](events/percona-meetup/2022-02-24-meetup-mongodb.jpg)
+![Community MeetUp for Percona Products](events/percona-meetup/2022-02-24-meetup-mongodb-postponed.jpg)
+
+***********************
+Hello,
+
+We are sorry to inform you that we have to POSTPONE our Community MeetUp of Today Thursday, Feb 24th, 11 am EST (5:00 pm CEST /  9:30 pm IST).
+A new schedule of the meeting will be announced soon.
+
+Thank you for your understanding.
+
+Percona Community Team
+
+
+***********************
 
 Join us in The Percona Community MeetUp and walk with us through the installation of MongoDB via a Kubernetes operator.  Sergey Pronin will take us through all steps of the setup to get us started with a new MongoDB Cluster. Stop by and ask your questions and receive an answer right away.
 
