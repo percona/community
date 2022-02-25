@@ -3,8 +3,7 @@ title: " Community MeetUp - Installation of MongoDB via a Kubernetes Operator - 
 description: "We have to postpone our Community MeetUp of today February 24th, 2022"
 images:
   - events/percona-meetup/2022-02-24-meetup-mongodb-postponed.jpg
-date: Thu, 24th February 2022, 19:00:00 +0000
-weight: 1
+date: "2022-02-24"
 draft: false
 aliases:
     - "/events/percona-meetups/installation-of-mongodb-via-a-kubernetes-operator-feb-24th/" 
