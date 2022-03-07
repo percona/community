@@ -1,10 +1,9 @@
 ---
-title: " Community MeetUp - Installation and Configuration of PostgreSQL Operator - March, 2nd"
-description: "We will meet in Community MeetUp on Wednesday, March 2nd, at 11 am EST (5:00 pm CET / 9:30 pm IST). Join us for 1-hour live stream to talk about Installation and Configuration of PostgreSQL Operator"
+title: " Percona Community MeetUp - Installation and Configuration of PostgreSQL Operator - March, 2nd"
+description: "Percona Community highlighted running your databases on Kubernetes with Nickolay Ihalainen. Specifically, how to install and use Postgres in a Kubernetes environment"
 images:
   - events/percona-meetup/2022-03-02-postgresql-operator.jpg
-date: Wednesday, March 2nd, 2022, 19:00:00 +0000
-weight: 1
+date: "2022-03-02"
 draft: false
 aliases:
     - "/events/percona-meetups/percona-community-meetup-for-postgresql-operator-march-2nd" 
@@ -12,6 +11,27 @@ speakers:
   - nickolay_ihalainen
 tags: ['Postgres', 'PostgreSQL', 'Operator' ]
 ---
+Learn more about Installation and Configuration of PostgreSQL Operator in this video from our meetup of Wednesday, March, 2nd at 11 am EST. Nickolay Ihalainen show us how to work with PG replication cluster and internal components, access to your database, put data in it and use in your application, dealing with failover, backup, restore. This event is a part of our regular meetup series hosted by the Head of Open Source Strategy at Percona, Matt Yonkovit.
+
+## Video
+
+{{% youtube youtube_id="oDzc-Ej9hUc" %}}{{% /youtube %}}
+
+## Transcript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ![Community MeetUp for Percona Products](events/percona-meetup/2022-03-02-postgresql-operator.jpg)
 
