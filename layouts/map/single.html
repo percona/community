@@ -14,7 +14,22 @@
     <h2>Podcasts</h2>
     <ul>
     {{ range where .Site.Pages "Section" "podcasts" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a><br>
+          {{- if (isset .Params "speakers") -}}
+            <span class="speakers">
+                by {{ range $key, $author := .Params.speakers -}}
+                  {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                    {{ if $key }}, {{ end -}}
+                    <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+                  {{- end }} 
+                {{- end -}}
+            </span>
+          {{- end -}}
+
+          {{- if (isset .Params "date") -}}
+             <span class="date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+          {{- end -}}
+        </li>
     {{ end }}   
     </ul>   
 
@@ -28,7 +43,21 @@
     <h2>Blog Posts</h2>
     <ul>
     {{ range where .Site.Pages "Section" "blog" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a>
+          {{- if (isset .Params "authors") -}}
+            <span class="authors">
+                by {{ range $key, $author := .Params.authors -}}
+                  {{- with $.Site.GetPage (print "/authors/" $author) -}}
+                    {{ if $key }}, {{ end -}}
+                    <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+                  {{- end }} 
+                {{- end -}}
+            </span>
+          {{- end -}}
+          {{- if (isset .Params "date") -}}
+             <span class="date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+          {{- end -}}
+        </li>
     {{ end }}   
     </ul>   
 </div>
