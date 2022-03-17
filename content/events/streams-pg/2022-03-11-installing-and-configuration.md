@@ -16,6 +16,6 @@ This is a part of the bi-weekly Live Streaming series to discuss Postgres-relate
 
 ## Video
 
-{{% youtube youtube_id="mzWDzrx-VIQ" %}}{{% /youtube %}}
+{{% youtube youtube_id="H2uNDbQ8lCk" %}}{{% /youtube %}}
 
 ## Transcript
