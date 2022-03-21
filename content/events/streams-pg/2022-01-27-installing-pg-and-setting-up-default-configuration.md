@@ -1,8 +1,7 @@
 ---
 title: "Installing PG and Setting Up a Default Configuration - Community PostgreSQL Live Stream & Chat - Jan 27th"
 description: "Check this recording for more tips and tricks on Installing PostgreSQL and setting up a default configuration with Matt Yonkovit and Charly Batista"
-images:
-  - events/streams-pg/pg-stream-week-1-jan27.jpg
+
 date: "2022-01-27"
 draft: false
 speakers:
