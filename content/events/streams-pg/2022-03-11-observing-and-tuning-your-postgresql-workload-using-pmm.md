@@ -2,7 +2,7 @@
 title: "Observing & Tuning Your PostgreSQL Workload Using PMM - Community PostgreSQL Live Stream & Chat - March 11th"
 description: "This Live stream is all about tuning your PostgreSQL workload with Percona Monitoring and Management (PMM). This is a part of Percona bi-weekly Live Stream series dedicated to Postgres-related topics and deep talk about technology secrets and tricks."
 images:
-  - events/streams-pg/pg-stream-week-2-march11.jpg
+  - events/streams-pg/pg-stream-week-2-march11-upd.jpg
 date: "2022-03-11"
 draft: false
 speakers:
