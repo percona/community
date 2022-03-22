@@ -127,31 +127,36 @@ menu:
       url: /contribute/articles
       parent: contribute
       weight: 1
+    - identifier: youtube_playlists
+      name: YouTube Playlists
+      url: /contribute/youtube_playlists
+      parent: contribute
+      weight: 3
     - identifier: coc
       name: Code of Conduct
       url: /contribute/coc
       parent: contribute
-      weight: 2
+      weight: 6
     - identifier: documentation
       name: Documentation
       url: /contribute/documentation
       parent: contribute
-      weight: 3
+      weight: 7
     - identifier: opentopics
       name: Open Topics
       url: /contribute/opentopics
       parent: contribute
-      weight: 4
+      weight: 2
     - identifier: emm
       name: Engineering Meetings
       url: /contribute/engineeringmeetings
       parent: contribute
-      weight: 5
+      weight: 4
     - identifier: surveys
       name: Testimonials & Surveys
       url: /contribute/surveys
       parent: contribute
-      weight: 6
+      weight: 5
 
   footer:
     - identifier: about
