@@ -72,6 +72,8 @@
     {{ end }}
   </article>
 
+  {{ partial "disqus.html" . }}
+
   {{ partial "sharing.html" . }}
 
   {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
