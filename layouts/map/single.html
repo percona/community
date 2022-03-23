@@ -14,48 +14,66 @@
     <h2>Podcasts</h2>
     <ul>
     {{ range where .Site.Pages "Section" "podcasts" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a><br>
+        <li class="podcast"><a href="{{ .Permalink }}" class="podcast__link">{{ .Title }}</a><br>
           {{- if (isset .Params "speakers") -}}
-            <span class="speakers">
+            <span class="podcast__speakers">
                 by {{ range $key, $author := .Params.speakers -}}
                   {{- with $.Site.GetPage (print "/speakers/" $author) -}}
                     {{ if $key }}, {{ end -}}
-                    <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+                    <a href="{{ .RelPermalink }}" class="podcast__speaker">{{- .Params.fullname -}}</a>
                   {{- end }} 
                 {{- end -}}
             </span>
           {{- end -}}
 
           {{- if (isset .Params "date") -}}
-             <span class="date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+             <span class="podcast__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
           {{- end -}}
         </li>
     {{ end }}   
     </ul>   
 
     <h2>Events</h2>
+    
     <ul>
     {{ range where .Site.Pages "Section" "events" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li class="event"><a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- if (isset .Params "speakers") -}}
+            <span class="event__speakers">
+                by {{ range $key, $author := .Params.speakers -}}
+                  {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                    {{ if $key }}, {{ end -}}
+                    <a href="{{ .RelPermalink }}" class="event__speaker">{{- .Params.fullname -}}</a>
+                  {{- end }} 
+                {{- end -}}
+            </span>
+            {{- end -}}
+
+            {{- if (isset .Params "date") -}}
+             <span class="event__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+            {{- end -}}
+
+        </li>
     {{ end }}   
     </ul>   
 
     <h2>Blog Posts</h2>
+
     <ul>
     {{ range where .Site.Pages "Section" "blog" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a>
+        <li class="community-post"><a href="{{ .Permalink }}">{{ .Title }}</a>
           {{- if (isset .Params "authors") -}}
-            <span class="authors">
+            <span class="community-post__authors">
                 by {{ range $key, $author := .Params.authors -}}
                   {{- with $.Site.GetPage (print "/authors/" $author) -}}
                     {{ if $key }}, {{ end -}}
-                    <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+                    <a href="{{ .RelPermalink }}" class="community-post__author">{{- .Params.fullname -}}</a>
                   {{- end }} 
                 {{- end -}}
             </span>
           {{- end -}}
           {{- if (isset .Params "date") -}}
-             <span class="date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+             <span class="community-post__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
           {{- end -}}
         </li>
     {{ end }}   
