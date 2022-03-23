@@ -5,7 +5,7 @@ images:
   - events/balalaika-meetup-2021/cover.jpg
 layout: single
 date: "2021-11-13"
-tags: ['opensource', 'russia', 'PostgreSQL', 'Kubernetes']
+tags: ['opensource', 'event', 'russia', 'PostgreSQL', 'Kubernetes']
 speakers:
   - peter_zaitsev
 ---

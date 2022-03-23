@@ -11,6 +11,58 @@
 
     {{ .Content }}
 
+    <h2>Streams</h2>
+
+    {{ $streams := slice "Stream" "stream" }}
+    <ul>
+    {{ range where (where .Site.Pages "Section" "events") "Params.tags" "intersect" $streams }}
+
+        <li class="stream"><a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- if (isset .Params "speakers") -}}
+            <span class="stream__speakers">
+                by {{ range $key, $author := .Params.speakers -}}
+                  {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                    {{ if $key }}, {{ end -}}
+                    <span class="stream__speaker">{{- .Params.fullname -}}</span>
+                  {{- end }} 
+                {{- end -}}
+            </span>
+            {{- end -}}
+
+            {{- if (isset .Params "date") -}}
+             <span class="stream__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+            {{- end -}}
+
+        </li>
+    {{ end }} 
+    </ul>
+
+    <h2>Meetups</h2>
+
+    {{ $meetups := slice "Meetup" "meetup" }}
+    <ul>
+    {{ range where (where .Site.Pages "Section" "events") "Params.tags" "intersect" $meetups }}
+
+        <li class="meetup"><a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- if (isset .Params "speakers") -}}
+            <span class="meetup__speakers">
+                by {{ range $key, $author := .Params.speakers -}}
+                  {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                    {{ if $key }}, {{ end -}}
+                    <span class="meetup__speaker">{{- .Params.fullname -}}</span>
+                  {{- end }} 
+                {{- end -}}
+            </span>
+            {{- end -}}
+
+            {{- if (isset .Params "date") -}}
+             <span class="meetup__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
+            {{- end -}}
+
+        </li>
+    {{ end }} 
+    </ul>
+
     <h2>Podcasts</h2>
     <ul>
     {{ range where .Site.Pages "Section" "podcasts" }}
@@ -20,7 +72,7 @@
                 by {{ range $key, $author := .Params.speakers -}}
                   {{- with $.Site.GetPage (print "/speakers/" $author) -}}
                     {{ if $key }}, {{ end -}}
-                    <a href="{{ .RelPermalink }}" class="podcast__speaker">{{- .Params.fullname -}}</a>
+                    <span class="podcast__speaker">{{- .Params.fullname -}}</span>
                   {{- end }} 
                 {{- end -}}
             </span>
@@ -29,30 +81,6 @@
           {{- if (isset .Params "date") -}}
              <span class="podcast__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
           {{- end -}}
-        </li>
-    {{ end }}   
-    </ul>   
-
-    <h2>Events</h2>
-    
-    <ul>
-    {{ range where .Site.Pages "Section" "events" }}
-        <li class="event"><a href="{{ .Permalink }}">{{ .Title }}</a>
-            {{- if (isset .Params "speakers") -}}
-            <span class="event__speakers">
-                by {{ range $key, $author := .Params.speakers -}}
-                  {{- with $.Site.GetPage (print "/speakers/" $author) -}}
-                    {{ if $key }}, {{ end -}}
-                    <a href="{{ .RelPermalink }}" class="event__speaker">{{- .Params.fullname -}}</a>
-                  {{- end }} 
-                {{- end -}}
-            </span>
-            {{- end -}}
-
-            {{- if (isset .Params "date") -}}
-             <span class="event__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
-            {{- end -}}
-
         </li>
     {{ end }}   
     </ul>   
@@ -67,7 +95,7 @@
                 by {{ range $key, $author := .Params.authors -}}
                   {{- with $.Site.GetPage (print "/authors/" $author) -}}
                     {{ if $key }}, {{ end -}}
-                    <a href="{{ .RelPermalink }}" class="community-post__author">{{- .Params.fullname -}}</a>
+                    <span class="community-post__author">{{- .Params.fullname -}}</span>
                   {{- end }} 
                 {{- end -}}
             </span>
@@ -77,6 +105,34 @@
           {{- end -}}
         </li>
     {{ end }}   
-    </ul>   
+    </ul>  
+
+
+    <h2>Events</h2>
+
+    <ul>
+
+    {{ $t := slice "event" "events" }}
+
+    {{ range where .Site.Pages "Section" "events" }}
+
+        <li class="event"><a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- if (isset .Params "speakers") -}}
+            <span class="event__speakers">
+                by {{ range $key, $author := .Params.speakers -}}
+                  {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+                    {{ if $key }}, {{ end -}}
+                    <span class="event__speaker">{{- .Params.fullname -}}</span>
+                  {{- end }} 
+                {{- end -}}
+            </span>
+            {{- end -}}
+
+            {{- if (isset .Params "date") -}}
+             <span class="event__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span>
+            {{- end -}}
+        </li>
+    {{ end }}   
+    </ul>    
 </div>
 {{ end }}
