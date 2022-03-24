@@ -20,7 +20,7 @@ Community Team starts a series of live-streamed meetings on MySQL. They start on
 
 ## Schedule
 
-Matt and Marcos will cover the following topics every two weeks on Friday at 02:00 PM EDT ((07:00 PM CET): 
+Matt and Marcos will cover the following topics every two weeks on Friday at at 9:00 AM EDT (03:00 PM CEST/ 06:30 PM IST): 
 
 * April, 1st -  [Installing MySQL and Setting Up a Default Configuration](/events/streams-mysql/2022-04-01-install-mysql-setting-up-configuration/)
 
