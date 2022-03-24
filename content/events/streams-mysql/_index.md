@@ -1,6 +1,6 @@
 ---
 title: "Community PostgreSQL Live Stream & Chat"
-description: "Community Team starts a series of live-streamed meetings on MySQL."
+description: "Percona Community Team hosts a series of live-streamed event on MySQL. You will find out all the secrets of work with that open source database together with the Principal Support Engineer Marcos Albe. The meetings are bi-weekly and start in April. Join us on the sessions and ask your questions to the expert!"
 layout: list
 images:
   - events/streams-mysql/Stream-MySQL-cover.jpg
