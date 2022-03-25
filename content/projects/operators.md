@@ -1,5 +1,5 @@
 ---
-title: "Percona Distribution for Kubernetes Operators"
+title: "Percona Kubernetes Operators"
 description: "If you are using Kubernetes, you might have wondered how to best deal with database clusters. This is done by controllers in Kubernetes configuration files - our Kubernetes Operators allow you to easily manage complex deployments by extending the Kubernetes API with custom resources."
 ---
 
@@ -13,20 +13,20 @@ Welcome to Percona’s Community Page for Kubernetes Operators! The Percona Kube
 
 {{% grid size=3 %}}
 {{% griditem %}}
-### Percona Distribution for MySQL Operator
+### Percona Operator for MySQL
 *   [Documentation](https://www.percona.com/doc/kubernetes-operator-for-pxc/index.html)
 *   [GitHub](https://github.com/percona/percona-xtradb-cluster-operator)
 *   [Jira](https://jira.percona.com/projects/K8SPXC/issues/)
 
 {{% /griditem %}}
 {{% griditem %}}
-### Percona Distribution for MongoDB Operator
+### Percona Operator for MongoDB
 *   [Documentation](https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html)
 *   [GitHub](https://github.com/percona/percona-server-mongodb-operator)
 *   [Jira](https://jira.percona.com/projects/K8SPSMDB/issues/)
 {{% /griditem %}}
 {{% griditem %}}
-### Percona Distribution for PostgreSQL Operator
+### Percona Operator for PostgreSQL
 *   [Documentation](https://www.percona.com/doc/kubernetes-operator-for-postgresql/index.html)
 *   [GitHub](https://github.com/percona/percona-postgresql-operator)
 *   [Jira](https://jira.percona.com/projects/K8SPG/issues/)
@@ -41,11 +41,11 @@ If you're interested in contributing, please check out our page on [contributing
 If you have any doubts, experienced any issue or unusual situation you are not sure how to proceed, ask your questions on our [Community Forum](https://forums.percona.com/) and get advice from Percona experts and other community members. Don’t be shy to answer questions as well! Share your knowledge with other users and support community growth. 
 
 
-*   Percona Distribution for MySQL Operator [Forum](https://forums.percona.com/c/mysql-mariadb/percona-kubernetes-operator-for-mysql/28)
+*   Percona Operator for MySQL [Forum](https://forums.percona.com/c/mysql-mariadb/percona-kubernetes-operator-for-mysql/28)
 
-*   Percona Distribution for MongoDB Operator [Forum](https://forums.percona.com/c/mongodb/percona-kubernetes-operator-for-mongodb/29)
+*   Percona Operator for MongoDB [Forum](https://forums.percona.com/c/mongodb/percona-kubernetes-operator-for-mongodb/29)
 
-*   Percona Distribution for PostgreSQL Operator [Forum](https://forums.percona.com/c/postgresql/percona-kubernetes-operator-for-postgresql/68)
+*   Percona Operator for PostgreSQL [Forum](https://forums.percona.com/c/postgresql/percona-kubernetes-operator-for-postgresql/68)
 
 ## Help Others to Choose and Leave an Unbiased Tech Review
 
