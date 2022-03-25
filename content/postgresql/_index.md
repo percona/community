@@ -24,7 +24,7 @@ Help make monitoring better<br/>
 {{% /griditem %}}
 {{% griditem %}}
 Help deploy and run in Kubernetes<br/>
-[GitHub for Percona Kubernetes Operator for PostgreSQL](https://github.com/percona/percona-postgresql-operator)
+[GitHub for Percona Operator for PostgreSQL](https://github.com/percona/percona-postgresql-operator)
 {{% /griditem %}}
 {{% griditem %}}
 File a Bug<br/>
