@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep13-datastaxs-
 youtube_id: "KoDNxczU5Mo"
 speakers:
   - patrick_mcfadin
+  - matt_yonkovit
 aliases:
     - "/podcasts/13/"
 url: "/podcasts/13-apache-cassandra-datastax-role-of-sre-dbre-and-dba"

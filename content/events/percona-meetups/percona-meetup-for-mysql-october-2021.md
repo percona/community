@@ -8,6 +8,7 @@ draft: false
 speakers:
   - wayne
   - vaibhav_upadhyay
+  - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---
 The Community MeetUp for MySQL on Oct 6th 2021 was about MySQL basics for prod environment starting from the system level and monitoring with PMM or Zabbix and backups. In addition, it was a great talk how to enable MySQL Audit Logging and to view the output. Watch the video here!

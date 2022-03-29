@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep07-talking-op
 youtube_id: "5N_xWYczFGA"
 speakers:
   - lenz_grimmer
+  - matt_yonkovit
 aliases:
     - "/podcasts/7/"
 url: "/podcasts/7-all-things-open-source-suse-mysql-ceph"

@@ -9,6 +9,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-39-liquan-
 youtube_id: "C8Hldu7nHP8"
 speakers:
   - liquan_pei
+  - matt_yonkovit
 aliases:
     - "/podcasts/39/"
 url: "/podcasts/39-pingcap-htap-newsql-and-tidb"

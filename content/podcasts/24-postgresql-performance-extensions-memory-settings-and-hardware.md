@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-24-with-ib
 youtube_id: "jCKnETLljK0"
 speakers:
   - ibrar_ahmed
+  - matt_yonkovit
 aliases:
     - "/podcasts/24/"
 url: "/podcasts/24-postgresql-performance-extensions-memory-settings-and-hardware"

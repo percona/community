@@ -9,6 +9,7 @@ aliases:
     - "/events/percona-meetups/percona-meetup-for-mysql-january-14th-2022/" 
 speakers:
   - marcos_albe
+  - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---
 If you missed the meetup of Friday January 14th, 2022 at 12:00 pm EST with Matt Yonkovit and Marcos Albe, here is the recording as they talk about why complexity is driving outages, slowdowns, and security issues.  Matt play stump the expert and see if Marcos can improve my MySQL workload.

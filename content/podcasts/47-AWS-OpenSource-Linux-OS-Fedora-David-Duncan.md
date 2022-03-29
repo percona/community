@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/percona-podcast-47-talking-aws-open
 youtube_id: "sSZhZ_GV68U"
 speakers:
   - david_duncan
+  - matt_yonkovit
 ---
 
 ## Transcript

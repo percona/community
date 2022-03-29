@@ -9,7 +9,7 @@ aliases:
     - "/events/percona-meetups/percona-meetup-for-postgresql-jan-27th-2022/" 
 speakers:
   - charly_batista
-
+  - matt_yonkovit
 tags: ['PostgreSQL', 'Meetup']
 ---
 

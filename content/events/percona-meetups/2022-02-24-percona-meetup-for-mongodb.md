@@ -9,6 +9,7 @@ aliases:
     - "/events/percona-meetups/installation-of-mongodb-via-a-kubernetes-operator-feb-24th/" 
 speakers:
   - sergey_pronin
+  - matt_yonkovit
 tags: ['Mongo', 'k8s', 'Kubernetes', 'MongoDB', 'Meetup']
 ---
 

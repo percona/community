@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep26-david-zhao
 youtube_id: "fIK2ZnSDa2s"
 speakers:
   - david_zhao
+  - matt_yonkovit
 aliases:
     - "/podcasts/26/"
 url: "/podcasts/26-zettadb-kunlun-database-the-best-of-postgresql-and-mysql"

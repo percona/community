@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-28-with-da
 youtube_id: "3w7mMsSYn3Q"
 speakers:
   - daniel_black
+  - matt_yonkovit
 aliases:
     - "/podcasts/28/"
 url: "/podcasts/28-serial-micropatcher-open-source-projects-and-patches-for-mariadb"

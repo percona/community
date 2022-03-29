@@ -8,6 +8,7 @@ draft: false
 speakers:
   - pep_pla
   - marcelo_altmann
+  - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---
 Full recording of the Percona MeetUp for MySQL of Nov 3rd 2021. Marcelo Altmann and Pep Pla joined Matt Yonkovit to talk about Database Backup and Xtrabackup. In this video you will be aware of different database Backup solutions out there, Best practices vs. wrong strategies, Percona XtraBackup and more. As usual during the Community Meetup, They have answered questions from attendees live.

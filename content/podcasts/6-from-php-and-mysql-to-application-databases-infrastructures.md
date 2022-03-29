@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep06-featuring-
 youtube_id: "cD_w7kUcWKc"
 speakers:
   - gabi_ferrara
+  - matt_yonkovit
 aliases:
     - "/podcasts/6/"
 url: "/podcasts/6-from-php-and-mysql-to-application-databases-infrastructures"

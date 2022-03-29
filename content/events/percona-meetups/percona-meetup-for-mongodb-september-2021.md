@@ -8,6 +8,7 @@ draft: false
 speakers:
   - vinodh_krishnaswamy
   - ege_gunes
+  - matt_yonkovit
 tags: ['MongoDB', 'Meetup']
 ---
 

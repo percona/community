@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep10-alkin-tezu
 youtube_id: "8e3IC-lAgXs"
 speakers:
   - alkin_tezuysal
+  - matt_yonkovit
 aliases:
     - "/podcasts/10/"
 url: "/podcasts/10-all-things-vitess-planetscale-mysql"

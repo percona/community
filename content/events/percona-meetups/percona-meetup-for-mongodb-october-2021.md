@@ -8,6 +8,7 @@ draft: false
 speakers:
   - kimberly_wilkins
   - andrew_pogrebnoi
+  - matt_yonkovit
 tags: ['MongoDB', 'Meetup']
 ---
 

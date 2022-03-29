@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-45-building-a-s
 youtube_id: "5sYSKxF97OM"
 speakers:
   - corey_hulen
+  - matt_yonkovit
 aliases:
     - "/podcasts/45-mattermost-corye-hulen-open-source-ospo-percona/"
 url: "/podcasts/45-mattermost-corey-hulen-open-source-ospo-percona"

@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep11-talking-os
 youtube_id: "HTrGSfs8g1I"
 speakers:
   - brian_walters
+  - matt_yonkovit
 aliases:
     - "/podcasts/11/"
 url: "/podcasts/11-solution-engineering-from-teradata-and-oracle-to-open-source"

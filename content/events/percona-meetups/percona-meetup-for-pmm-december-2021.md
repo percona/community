@@ -7,6 +7,7 @@ date: "2021-12-01"
 draft: false
 speakers:
   - michael_coburn
+  - matt_yonkovit
 tags: ['PMM', 'Meetup']
 ---
 Percona Monitoring and Management (PMM) is designed and constantly updated with useful features for monitoring and optimizing your database performance. The Community MeetUp for PMM of last Dec 1st, 2021 was live streaming from AWS re:Invent with Michael Coburn, hosted by Matt Yonkovit. Together, they have resolved database performance issues and stump the expert.
