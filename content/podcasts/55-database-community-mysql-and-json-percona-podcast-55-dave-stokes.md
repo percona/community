@@ -7,7 +7,7 @@ podbean_link: "https://percona.podbean.com/e/database-community-mysql-and-json-p
 youtube_id: "saIfiuv0C9k"
 speakers:
   - dave_stokes
-
+  - matt_yonkovit
 ---
 
 ## Transcript

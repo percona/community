@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep02-talking-my
 youtube_id: "AJaze6ehqm0"
 speakers:
   - walter_garcia
+  - matt_yonkovit
 aliases:
     - "/podcasts/2/"
 url: "/podcasts/2-mysql-backups-database-recovery-best-practices"

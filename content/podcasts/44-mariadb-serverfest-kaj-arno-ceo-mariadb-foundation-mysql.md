@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep-44-kaj-arno/
 youtube_id: "4BTIbMN81oQ"
 speakers:
   - kaj_arno
+  - matt_yonkovit
 aliases:
     - "/podcasts/44/"
 url: "/podcasts/44-mariadb-serverfest-kaj-arno-ceo-mariadb-foundation-mysql"

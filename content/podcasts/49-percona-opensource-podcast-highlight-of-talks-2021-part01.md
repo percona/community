@@ -5,6 +5,9 @@ short_text: "In this episode, we have selected some short talks from previous po
 date: "2021-12-29"
 podbean_link: "https://percona.podbean.com/e/highlight-of-talks-2021-open-source-database-mysql-postgres-mongodb-mariadb-part-01-special-edition-49/"
 youtube_id: "hWuPeRm0Sds"
+speakers:
+  - alvaro_hernandez
+  - matt_yonkovit
 ---
 
 ## Transcript

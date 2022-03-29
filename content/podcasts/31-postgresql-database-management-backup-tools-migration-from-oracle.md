@@ -8,6 +8,7 @@ youtube_id: "ZxHWO2FfhmQ"
 speakers:
   - jobin_augustine
   - sergey_kuzmichev
+  - matt_yonkovit
 aliases:
     - "/podcasts/31/"
 url: "/podcasts/31-postgresql-database-management-backup-tools-migration-from-oracle"

@@ -7,7 +7,7 @@ podbean_link: "https://percona.podbean.com/e/percona-build-and-release-process-p
 youtube_id: "A7oEkTMNrr0"
 speakers:
   - evgeniy_patlan
-
+  - matt_yonkovit
 ---
 
 ## Transcript

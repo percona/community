@@ -7,7 +7,7 @@ podbean_link: "https://percona.podbean.com/e/talking-about-open-source-community
 youtube_id: "ldQRgCQ7Fuc"
 speakers:
   - matt_farina
-
+  - matt_yonkovit
 ---
 
 ## Transcript

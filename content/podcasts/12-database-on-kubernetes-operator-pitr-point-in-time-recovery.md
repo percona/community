@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep12-sergey-pro
 youtube_id: "hHxLBRvCZeg"
 speakers:
   - sergey_pronin
+  - matt_yonkovit
 aliases:
     - "/podcasts/12/"
 url: "/podcasts/12-database-on-kubernetes-operator-pitr-point-in-time-recovery"

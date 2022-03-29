@@ -5,6 +5,8 @@ short_text: "All along 2021, Matt Yonkovit, The Head of Open Source Strategy, sa
 date: "2022-01-19"
 podbean_link: "https://percona.podbean.com/e/highlight-of-talks-2021-open-source-database-mysql-postgres-mongodb-mariadb-part-02-special-edition-50/"
 youtube_id: "lGcnZrZiQ6w"
+speakers:
+  - matt_yonkovit
 ---
 
 ## Transcript

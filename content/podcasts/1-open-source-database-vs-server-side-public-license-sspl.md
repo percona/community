@@ -13,6 +13,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep01-talking-wi
 youtube_id: "KkFajzrF61s"
 speakers:
   - peter_zaitsev
+  - matt_yonkovit
 aliases:
     - "/podcasts/1/"
 url: "/podcasts/1-open-source-database-vs-server-side-public-license-sspl"

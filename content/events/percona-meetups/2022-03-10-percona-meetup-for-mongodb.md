@@ -8,7 +8,8 @@ draft: false
 aliases:
     - "/events/percona-meetups/installation-of-mongodb-via-kubernetes-operator-mar-10th/" 
 speakers:
-  - sergey_pronin
+    - sergey_pronin
+    - matt_yonkovit
 tags: ['Mongo', 'k8s', 'Kubernetes', 'MongoDB', 'Meetup']
 ---
 Check this full recording of the Percona Community MeetUp of March 10th hosted and learn more about installation of MongoDB via a Kubernetes operator. Matt Yonkovit, the Head of Open Source Strategy at Percona, and Sergey Pronin, Product Owner at Percona, took us through the step-by-step setup to get us started with a new MongoDB cluster.

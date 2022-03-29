@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-21-with-ma
 youtube_id: "wUqxEqBIJlQ"
 speakers:
   - marcelo_altmann
+  - matt_yonkovit
 aliases:
     - "/podcasts/21/"
 url: "/podcasts/21-open-source-database-debugging-gdb-rr-record-and-replay"

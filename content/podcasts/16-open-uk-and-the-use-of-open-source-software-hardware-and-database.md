@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-16-with-am
 youtube_id: "Gvs-aShENn0"
 speakers:
   - amanda_brock
+  - matt_yonkovit
 aliases:
     - "/podcasts/16/"
 url: "/podcasts/16-open-uk-and-the-use-of-open-source-software-hardware-and-database"

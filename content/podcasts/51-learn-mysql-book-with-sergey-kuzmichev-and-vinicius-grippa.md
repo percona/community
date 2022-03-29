@@ -8,6 +8,7 @@ youtube_id: "BcQFv5mHZUQ"
 speakers:
   - sergey_kuzmichev
   - vinicius_grippa
+  - matt_yonkovit
 ---
 
 ## Transcript

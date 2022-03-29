@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-38-jono-ba
 youtube_id: "cZTi3QrCLvo"
 speakers:
   - jono_bacon
+  - matt_yonkovit
 aliases:
     - "/podcasts/38/"
 url: "/podcasts/38-free-open-source-software-community-in-action-and-metrics"

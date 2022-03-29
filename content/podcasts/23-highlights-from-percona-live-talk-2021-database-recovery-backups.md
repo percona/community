@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-23-with-pe
 youtube_id: "sDG5BOAHJhY"
 speakers:
   - pep_pla
+  - matt_yonkovit
 aliases:
     - "/podcasts/23/"
 url: "/podcasts/23-highlights-from-percona-live-talk-2021-database-recovery-backups"

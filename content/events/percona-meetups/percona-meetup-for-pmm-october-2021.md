@@ -7,6 +7,7 @@ date: "2021-10-27"
 draft: false
 speakers:
   - michael_coburn
+  - matt_yonkovit
 tags: ['PMM', 'Meetup']
 ---
 
