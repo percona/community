@@ -2,7 +2,7 @@
 title: "Setting Up and Scheduling Regular PostgreSQL Backups - Percona Community PostgreSQL Live Stream & Chat - April, 8th"
 description: "Learn more about backups setting with experienced Percona experts to ensure that your data is secure and safe on April 8th at 2:00 pm EDT  / 07:00 PM CEST"
 images:
-  - events/streams-pg/pg-stream-week-8-april.jpg
+  - events/streams-pg/pg-stream-week-3-april8.jpg
 draft: false
 weight: 1
 date: Fri, 8th April 2022, 21:00:00 +0000
@@ -12,7 +12,7 @@ speakers:
 tags: ['Postgres', 'Stream']
 ---
 
-![Percona Community MySQL Live Stream & Chat - April 8th](events/streams-pg/pg-stream-week-8-april.jpg)
+![Percona Community MySQL Live Stream & Chat - April 8th](events/streams-pg/pg-stream-week-3-april8.jpg)
 
 Join the next Community Live stream for PostgresSQL and learn about the best setting to protect and restore your data in our next. Matt and Charly will talk about database backup settings, frequency, and different types of backups. Come up with your questions and our experts will answer live.
 
