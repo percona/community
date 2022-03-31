@@ -110,6 +110,17 @@ Watch this tutorial to go deep into the MySQL upgrade. Like these videos and sha
 Indexes are a basic feature of relational databases, and PostgreSQL offers a rich collection of options to developers and designers. To take advantage of these fully, users need to understand the basic concept of indexes, to be able to compare the different index types and how they apply to different application scenarios.
 
 {{% /griditem %}}
+{{% griditem %}}
+
+## Percona's Sri Sakthivel Vlog
+
+{{% playlist code="PLsbe6JgCskIny7ARSlPE7t3zjtMre56UK" thumbnail="playlists/sri_channel.png" %}}{{% /playlist %}}
+
+[PLAY ALL](https://youtube.com/channel/UCsushN5xMcsIo5j_9EMHBsA)
+
+Sri Sakthivel is a MySQL DBA in Percona. He regulary posts videos on his YouTube channel about MySQL tips and tricks. Watch them, like and subscribe!
+
+{{% /griditem %}}
 
 {{% /grid %}}
 
