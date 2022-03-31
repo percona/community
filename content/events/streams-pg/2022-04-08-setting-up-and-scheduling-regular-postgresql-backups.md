@@ -4,7 +4,7 @@ description: "Learn more about backups setting with experienced Percona experts 
 images:
   - events/streams-pg/pg-stream-week-8-april.jpg
 draft: false
-weight: 1
+
 date: Fri, 8th April 2022, 21:00:00 +0000
 speakers:
   - charly_batista
@@ -12,7 +12,7 @@ speakers:
 tags: ['Postgres', 'Stream']
 ---
 
-![Percona Community MySQL Live Stream & Chat - April 1st](events/streams-pg/pg-stream-week-8-april.jpg)
+![Percona Community MySQL Live Stream & Chat - April 8th](events/streams-pg/pg-stream-week-8-april.jpg)
 
 Join the next Community Live stream for PostgresSQL and learn about the best setting to protect and restore your data in our next. Mat and Charly will talk about database backup settings, frequency, and different types of backups. Come up with your questions and our experts will answer live.
 
