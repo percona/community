@@ -121,6 +121,17 @@ Indexes are a basic feature of relational databases, and PostgreSQL offers a ric
 Sri Sakthivel is a MySQL DBA in Percona. He regulary posts videos on his YouTube channel about MySQL tips and tricks. Watch them, like and subscribe!
 
 {{% /griditem %}}
+{{% griditem %}}
+
+## Percona Community Team Tutorials
+
+{{% playlist code="PLWhC0zeznqkmn4mvtcUQ60xitotGJZ9md" thumbnail="playlists/community_tutorials.png" %}}{{% /playlist %}}
+
+[PLAY ALL](https://youtube.com/channel/UCsushN5xMcsIo5j_9EMHBsA)
+
+Discover the best-of-breed database tutorials from the Percona Community Team. Dave Stokes, Technical Evangelist, records videos on what you need to do to start using Percona software fast and easy.
+
+{{% /griditem %}}
 
 {{% /grid %}}
 
