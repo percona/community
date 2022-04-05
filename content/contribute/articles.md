@@ -35,12 +35,14 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+* [MongoDB 4.4.13 : Here to SRV you with easier replica set connections](https://www.datablogs.in/2022/03/mongodb-4413-here-to-srv-you-with.html) - SelvaKumar Kuppusamy - March 30, 2022
 * [Installing Percona Server for MongoDB on Red Hat Enterprise Linux and CentOS](https://news.descreated.com/edukasi/1697/installing-percona-server-for-mongodb-on-red-hat-enterprise-linux-and-centos/202203211325/) - Ryan - March 21, 2022
 * [Percona Backup for MongoDB with SSL/TLS](https://datablogs.medium.com/percona-backup-for-mongodb-with-ssl-tls-7e2f56f6b414) - SelvaKumar Kuppusamy - January 12, 2022
 * [Deploy Percona for MongoDB with SSL/TLS](https://datablogs.medium.com/deploy-percona-for-mongodb-with-ssl-tls-243bff653241) - SelvaKumar Kuppusamy - January 4, 2022
 
 # PMM
 
+* [Monitor your databases with this open source tool](https://opensource.com/article/22/4/percona-monitoring-management) - David Stokes - April 1, 2022
 * [What I really like about Percona PMM](https://blog.dbi-services.com/what-i-really-like-about-percona-pmm/) - Elisa Usai (@elisetta1984) - January 14, 2022
 * [Fixing Magento 2 Core MySQL performance issues using Percona Monitoring and Management (PMM)](https://yegorshytikov.medium.com/resolution-of-a-mysql-performance-issue-and-used-percona-monitoring-and-management-pmm-25a93cd5a0e2) - Yegor Shytikov - March 21, 2021
 * [Percona PMM – A beginner’s guide](https://vladmihalcea.com/percona-pmm-beginner-guide/) - Vlad Mihalcea (@vlad_mihalcea) - December 1, 2020
