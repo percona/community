@@ -8,6 +8,10 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+* [Percona Xtrabackup Backup & Recovery](https://satya-dba.blogspot.com/2021/09/percona-xtrabackup-installation.html) - Satya - February 10, 2022
+* [Installation & Usage of Percona Toolkit 3](https://satya-dba.blogspot.com/2021/09/installing-percona-toolkit-usage.html) - Satya - January 28, 2022
+* [ProxySQL 2 configuration/installation](https://satya-dba.blogspot.com/2021/09/installing-proxysql-configuration.html) - Satya - January 5, 2022
+* [Installing Percona XtraDB Cluster (PXC) 8](Installing Percona XtraDB Cluster (PXC) 8) - Satya - August 20, 2021
 * [Upgrading MySQL at Shopify](https://shopify.engineering/upgrading-mysql-shopify) - Yi Qing Sim - December 2, 2021
 * [Mitigating MySQL Downtime for big migrations](https://dev.to/ashusvirus/mitigating-mysql-downtime-for-big-migrations-2ijh) - Ashutosh Mittal - November 20, 2021
 * [Migration from HBase to MyRocks at Quora](https://quoraengineering.quora.com/Migration-from-HBase-to-MyRocks-at-Quora) - Vamsi Ponnekanti - September 14, 2021
@@ -42,6 +46,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+* [Percona Monitoring and Management (PMM)](https://satya-dba.blogspot.com/2021/09/pmm-percona-monitoring-management.html) - Satya - September 10, 2021
 * [Monitor your databases with this open source tool](https://opensource.com/article/22/4/percona-monitoring-management) - David Stokes - April 1, 2022
 * [What I really like about Percona PMM](https://blog.dbi-services.com/what-i-really-like-about-percona-pmm/) - Elisa Usai (@elisetta1984) - January 14, 2022
 * [Fixing Magento 2 Core MySQL performance issues using Percona Monitoring and Management (PMM)](https://yegorshytikov.medium.com/resolution-of-a-mysql-performance-issue-and-used-percona-monitoring-and-management-pmm-25a93cd5a0e2) - Yegor Shytikov - March 21, 2021
