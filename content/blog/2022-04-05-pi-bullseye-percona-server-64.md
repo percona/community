@@ -27,13 +27,25 @@ I wont cover installing Raspbian Bullseye, you can follow the steps here: [Insta
 
 Prereqs:
 
-1. Raspberry Pi 4, 4GB or 4GB model.
-2. Raspbian Bullseye 64bit.
+1. Raspberry Pi 4, 4GB or 8GB model.
+2. 128GB or 256GB microSD card. Of course you can go bigger.
+3. Raspbian Bullseye 64bit.
+
+You will need to install the packages listed below.
 
 ```
-sudo apt install bison pkg-config cmake devscripts debconf debhelper \
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install build-essential bison pkg-config cmake devscripts debconf debhelper \
 automake bison ca-certificates libcurl4-gnutls-dev cmake libaio-dev \
 libncurses-devlibssl-dev libtool libz-dev libgcrypt-dev \
 libev-dev lsb-release python-docutils build-essential rsync libdbd-mysql-perl \
 libnuma1 socat librtmp-dev libtinfo5 qpress liblz4-tool liblz4-1 liblz4-dev
 ```
+Once you have your packages installed let's go ahead and download the Percona Server.
+
+```
+$ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.27-18/source/tarball/percona-server-8.0.27-18.tar.gz
+```
+
+At the time of writing version 8.0.27-18 is the current version.
