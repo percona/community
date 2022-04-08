@@ -7,6 +7,7 @@ date: "2021-12-15"
 draft: false
 speakers:
   - jobin_augustine
+  - matt_yonkovit
 tags: ['PostgreSQL', 'Meetup']
 ---
 We have talked about what's been going on support side with Jobin Augustine, Senior Support Engineer at Percona, before starting to stump the expert with RDS and EC2 live tuning. This Community MeetUp for PostgreSQL is 1-hour live streaming hosted by Matt Yonkovit, The HOSS at Percona, to talk more about Optimization of PostgreSQL instances.

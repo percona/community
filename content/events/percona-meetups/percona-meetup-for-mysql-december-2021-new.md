@@ -10,6 +10,7 @@ aliases:
 speakers:
   - marcos_albe
   - fernando_laudares
+  - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---
 Listen to this Community MeetUp for MySQL hosted by Matt Yonkovit to discuss Database Tuning and Troubleshooting with Marcos Albe and Nando Camargos. They reveal some Support Cases From Hell, Database Tuning Secrets of the Stars and stump the expert Troubleshooting on RDS/Aurora.

@@ -7,6 +7,7 @@ date: "2021-11-17"
 draft: false
 speakers:
   - sergey_kuzmichev
+  - matt_yonkovit
 tags: ['PostgreSQL', 'Meetup']
 ---
 

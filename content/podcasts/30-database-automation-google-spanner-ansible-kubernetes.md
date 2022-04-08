@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-30-with-de
 youtube_id: "x1OKIxzI6kA"
 speakers:
   - derek_downey
+  - matt_yonkovit
 aliases:
     - "/podcasts/30/"
 url: "/podcasts/30-database-automation-google-spanner-ansible-kubernetes"

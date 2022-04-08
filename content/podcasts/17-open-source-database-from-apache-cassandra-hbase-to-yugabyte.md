@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-17-with-ka
 youtube_id: "UU6w0aFhHKY"
 speakers:
   - karthik_ranganathan
+  - matt_yonkovit
 aliases:
     - "/podcasts/17/"
 url: "/podcasts/17-open-source-database-from-apache-cassandra-hbase-to-yugabyte"

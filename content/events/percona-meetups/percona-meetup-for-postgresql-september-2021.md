@@ -8,6 +8,7 @@ draft: false
 speakers:
   - ibrar_ahmed
   - jobin_augustine
+  - matt_yonkovit
 tags: ['PostgreSQL', 'Meetup']
 ---
 

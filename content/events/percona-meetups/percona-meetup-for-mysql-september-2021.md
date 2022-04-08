@@ -8,6 +8,7 @@ draft: false
 speakers:
   - marcos_albe
   - fernando_laudares
+  - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---
 

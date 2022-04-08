@@ -7,6 +7,7 @@ date: "2021-10-13"
 draft: false
 speakers:
   - charly_batista
+  - matt_yonkovit
 tags: ['PostgreSQL', 'Meetup']
 ---
 

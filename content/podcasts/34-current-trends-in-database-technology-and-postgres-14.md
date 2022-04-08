@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_ep-34-bruce-mo
 youtube_id: "6TSHNFkW7r8"
 speakers:
   - bruce_momjian
+  - matt_yonkovit
 aliases:
     - "/podcasts/34/"
 url: "/podcasts/34-current-trends-in-database-technology-and-postgres-14"

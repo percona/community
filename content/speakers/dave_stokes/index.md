@@ -3,7 +3,7 @@ name: dave_stokes
 name_pronunciation: dave_stokes
 fullname: Dave Stokes
 fullname_pronounciation: Dave Stokes
-job: Oracle, MySQL Community Manager
+job: Technology Evangelist at Percona
 country: 
 tagline: 
 social:
@@ -15,5 +15,4 @@ social:
 images:
   - speakers/dave_stokes.jpg
 ---
-
-Dave Stokes is a MySQL Community Manager and the author of MySQL & JSON - A Practical Programming Guide
+Dave joined Percona last February 2022. Dave is MySQL Community Manager and the author of MySQL & JSON - A Practical Programming Guide

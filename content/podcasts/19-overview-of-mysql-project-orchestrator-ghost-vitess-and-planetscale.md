@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-19-with-sh
 youtube_id: "CmA2MZSBTgw"
 speakers:
   - shlomi_noach
+  - matt_yonkovit
 aliases:
     - "/podcasts/19/"
 url: "/podcasts/19-overview-of-mysql-project-orchestrator-ghost-vitess-and-planetscale"

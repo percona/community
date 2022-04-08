@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep-27-valerii-k
 youtube_id: "Frl0sKrrrxg"
 speakers:
   - valerii_kravchuk
+  - matt_yonkovit
 aliases:
     - "/podcasts/27/"
 url: "/podcasts/27-open-source-databases-performance-dynamic-tracing-bpftrace"

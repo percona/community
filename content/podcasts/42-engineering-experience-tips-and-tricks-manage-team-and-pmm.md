@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-42-with-st
 youtube_id: "474iAPyUGy0"
 speakers:
   - steve_hoffman
+  - matt_yonkovit
 aliases:
     - "/podcasts/42/"
 url: "/podcasts/42-engineering-experience-tips-and-tricks-manage-team-and-pmm"

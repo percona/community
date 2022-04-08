@@ -5,7 +5,7 @@ images:
   - events/osdn-conf-2021/IMG_4450.jpg
 layout: single
 date: "2021-09-18"
-tags: ['opensource', 'sponsorship']
+tags: ['opensource', 'sponsorship', 'event']
 ---
 
 Percona sponsored the OSDN Conf Kyiv which was held in person in the Nivki-hal on September 18th. It was a one-day non-commercial, volunteer-organized event centered on free and open-source software. Mykola Marzhan (Director of Server Engineering, Percona) and Evgeniy Patlan (Manager of Build & Release Engineering, Percona) are the main organizers of the conference. 

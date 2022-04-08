@@ -7,6 +7,7 @@ podbean_link: ""
 youtube_id: "BYt9T4J1aYs"
 speakers:
   - andrey_brodin
+  - daniil_bazhenov
 ---
 
 ## Transcript

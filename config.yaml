@@ -8,7 +8,7 @@ disableHugoGeneratorInject: true
 params:
   favicon: superhero.png
   images:
-  - contribute.png
+    - contribute.png
 taxonomies:
   tag: tags
 social:
@@ -127,24 +127,34 @@ menu:
       url: /contribute/articles
       parent: contribute
       weight: 1
+    - identifier: youtube_playlists
+      name: YouTube Playlists
+      url: /contribute/youtube_playlists
+      parent: contribute
+      weight: 3
     - identifier: coc
       name: Code of Conduct
       url: /contribute/coc
       parent: contribute
-      weight: 2
+      weight: 6
     - identifier: documentation
       name: Documentation
       url: /contribute/documentation
       parent: contribute
-      weight: 3
+      weight: 7
     - identifier: opentopics
       name: Open Topics
       url: /contribute/opentopics
       parent: contribute
-      weight: 4
+      weight: 2
     - identifier: emm
       name: Engineering Meetings
       url: /contribute/engineeringmeetings
+      parent: contribute
+      weight: 4
+    - identifier: surveys
+      name: Testimonials & Surveys
+      url: /contribute/surveys
       parent: contribute
       weight: 5
 
@@ -169,6 +179,10 @@ menu:
       name: Discord
       url: http://per.co.na/discord
       weight: 5
+    - identifier: map
+      name: Sitemap
+      url: /map
+      weight: 6
 imaging:
   resampleFilter: lanczos
   quality: 90
@@ -176,3 +190,4 @@ imaging:
 permalinks:
   /: /:filename/
   blog: /blog/:year/:month/:day/:slug/
+timeout: 2m

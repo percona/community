@@ -36,6 +36,10 @@
                 {{ end }}
             {{- end -}}
         </div>
+        
         {{ partial "sharing.html" . }} 
+
+        {{ partial "disqus.html" . }}
+
     </div>
 {{ end }}

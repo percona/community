@@ -16,6 +16,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep03-talking-da
 youtube_id: "Qx-tKmucomc"
 speakers:
   - sergey_pronin
+  - matt_yonkovit
 aliases:
     - "/podcasts/3/"
 url: "/podcasts/3-kubernetes-operators-latest-trends-in the-database-space"

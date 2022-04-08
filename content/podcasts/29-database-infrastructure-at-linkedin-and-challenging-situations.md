@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-29-karthik
 youtube_id: "pwkg477XhTE"
 speakers:
   - karthik_appigatla
+  - matt_yonkovit
 aliases:
     - "/podcasts/29/"
 url: "/podcasts/29-database-infrastructure-at-linkedin-and-challenging-situations"

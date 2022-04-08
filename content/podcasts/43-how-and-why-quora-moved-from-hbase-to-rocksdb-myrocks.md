@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-ep-43-nagavamsi
 youtube_id: "Eky7zXFY3yM"
 speakers:
   - nagavamsi_ponnekanti
+  - matt_yonkovit
 aliases:
     - "/podcasts/43/"
 url: "/podcasts/43-how-and-why-quora-moved-from-hbase-to-rocksdb-myrocks"

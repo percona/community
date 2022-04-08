@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/percona-podcast-46-positioning-clou
 youtube_id: "TQWHySsN3zo"
 speakers:
   - emily_omier
+  - matt_yonkovit
 ---
 
 ## Transcript

@@ -7,6 +7,7 @@ podbean_link: "https://percona.podbean.com/e/the-hoss-talks-foss-_-ep-32-sergey-
 youtube_id: "Mj9c14cYYNs"
 speakers:
   - sergey_pronin
+  - matt_yonkovit
 aliases:
     - "/podcasts/32/"
 url: "/podcasts/32-recap-from-percona-live-and-percona-postgres-operator"

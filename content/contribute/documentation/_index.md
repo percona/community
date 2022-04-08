@@ -21,7 +21,7 @@ product documentation, you have multiple options of doing so.
 {{% typography %}}
 ## Submitting Actual Changes to the Documentation
 
-As we say in the open source world, "patches are always welcome!" - So instead
+As we say in the open source world, "patches are always welcome!" - So instead of
 submitting a request to get the documentation changed, how about submitting the
 concrete changes yourself? It's really easy but can be intimidating the first
 time. This guide should take the edge off and you'll see your changes live in a
