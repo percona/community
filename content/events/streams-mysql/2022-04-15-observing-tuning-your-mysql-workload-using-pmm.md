@@ -12,7 +12,7 @@ speakers:
 tags: ['MySQL', 'Stream']
 ---
 
-![Percona Community MySQL Live Stream & Chat - April 8th](events/streams-mysql/04-15-2022-stream-mysql.jpg)
+![Percona Community MySQL Live Stream & Chat - April 15th](events/streams-mysql/04-15-2022-stream-mysql.jpg)
 
 Join the next Community Live Stream for MySQL and learn how to increase performance of your database with our experts. Matt and Marcos will show how to optimize and tune the workload of your database using Percona Monitoring and Management. Hang out and ask questions to get answers straight forward!
 
