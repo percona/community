@@ -22,10 +22,10 @@ Percona Community is scheduling live streams dedicated to PostgreSQL starting fr
 
 Matt and Charly will cover the following topics every two weeks on Friday at 02:00 PM EDT ((07:00 PM CET): 
 
-* January 27th - [Installing PG and setting up a default configuration](https://percona.community/events/streams-pg/2022-01-27-installing-pg-and-setting-up-default-configuration/)
-* March 11th - [Observing & Tuning your PostgreSQL workload using PMM](https://percona.community/events/streams-pg/2022-03-11-observing-and-tuning-your-postgresql-workload-using-pmm/)
-* March 25th - [Setting up alerts and basic automation for PostgreSQL](https://percona.community/events/streams-pg/2022-03-25-setting-up-alert-and-basic-automation-for-postgresql/)
-* April 8th - [Setting up and scheduling regular PostgreSQL backups](https://percona.community/events/streams-pg/2022-04-08-setting-up-and-scheduling-regular-postgresql-backups/)
+* January 27th - [Installing PG and setting up a default configuration](/events/streams-pg/2022-01-27-installing-pg-and-setting-up-default-configuration/)
+* March 11th - [Observing & Tuning your PostgreSQL workload using PMM](/events/streams-pg/2022-03-11-observing-and-tuning-your-postgresql-workload-using-pmm/)
+* March 25th - [Setting up alerts and basic automation for PostgreSQL](/events/streams-pg/2022-03-25-setting-up-alert-and-basic-automation-for-postgresql/)
+* April 8th - [Setting up and scheduling regular PostgreSQL backups](/events/streams-pg/2022-04-08-setting-up-and-scheduling-regular-postgresql-backups/)
 * April 22nd - Setting up failover via a replica for PostgreSQL
 * May 6th - Migrating PostgreSQL to a new server
 * May 20th - installing and setting up PostgreSQL on Kubernetes
