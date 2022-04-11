@@ -24,7 +24,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * April, 1st -  [Installing MySQL and Setting Up a Default Configuration](/events/streams-mysql/2022-04-01-install-mysql-setting-up-configuration/)
 
-* April, 15th - Observing & Tuning Your MySQL Workload Using PMM
+* April, 15th - [Observing & Tuning Your MySQL Workload Using PMM](/events/streams-mysql/2022-04-15-observing-tuning-your-mysql-workload-using-pmm/)
 
 * April, 29th -  Setting Up Alerts and Basic Automation for MySQL
 
