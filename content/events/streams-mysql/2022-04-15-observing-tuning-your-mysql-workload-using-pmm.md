@@ -20,7 +20,7 @@ Hello,
 
 We are sorry to inform you that we have to POSTPONE our livestream with Matt and Marcos of Friday, April 15th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST.
 
-Further noticed will be announced soon.
+Subsribe to Percona channel and Further notice will be announced soon.
 
 Thank you for your understanding.
 
