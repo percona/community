@@ -2,7 +2,7 @@
 title: "Postgres Conference Silicon Valley 2022"
 description: "This time Percona Team flew to San Jose to participate in the Postgres Conference Silicon Valley from April 7th to 8th. This is a significant event for the Postgres Community on the West Coast. "
 images:
-  - events/pgconf-2021/pgconf-cover.jpg
+  - events/pgsv-2022/7.png
 layout: single
 date: "2022-04-12"
 tags: ['sponsorship', 'opensource', 'event']
