@@ -23,16 +23,16 @@ Space is limited so register today!
 
 **WHEN:**
 
-Copenhagen - April 26
-Stockholm - April 28
-Frankfurt - May 13
-Valencia - May 17
-Milan - May 31
-Paris - June 2
-Barcelona - June 14
-London - June 16
-New Delhi - September 28
-Tokyo - October 19
+* Copenhagen - April 26
+* Stockholm - April 28
+* Frankfurt - May 13
+* Valencia - May 17
+* Milan - May 31
+* Paris - June 2
+* Barcelona - June 14
+* London - June 16
+* New Delhi - September 28
+* Tokyo - October 19
 
 **AGENDA:**
 
