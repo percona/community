@@ -23,9 +23,9 @@ Friday, April 29th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST
 Matt and Marcos will get across **Observing & Tuning Your MySQL Workload Using PMM**
 
 ## Subscribe
-Watch it live on [YouTube](https://www.youtube.com/watch?v=MY6NGib5IFE), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6912798388556050432/), and [Twitch](https://www.twitch.tv/perconacommunity).
+Watch it live on [YouTube](https://www.youtube.com/watch?v=4ccEZZtjqWg), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6920320290438701056/), and [Twitch](https://www.twitch.tv/perconacommunity).
 Live chat on [Discord](http://per.co.na/discord).
-Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWJoaGU5dTM2ZmpqZ3Y1bTR0anBrOGRxN3RfMjAyMjA0MTVUMTMwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com)
+Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWJoaGU5dTM2ZmpqZ3Y1bTR0anBrOGRxN3RfMjAyMjA0MjlUMTMwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com&scp=ALL)
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups.
 
 Any comments, feedback, and suggestions are welcome to help Percona Community improve upcoming events!
