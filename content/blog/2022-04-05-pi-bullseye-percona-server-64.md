@@ -171,7 +171,9 @@ Once you have completed all the above steps. You can follow this blog post
 [The lost art of Database Server Initialization.](https://percona.community/blog/2021/09/06/lost-art-of-database-server-initialization/). Start at step 4.
 
 Thats it. You have a new Percona Server 8.0 running on your Raspberry Pi 4.
+
 This process does take some patience, but if you like the Raspberry Pi and
+
 Percona Server this is well worth the time it takes.
 
 ## Now for some screen shots.
