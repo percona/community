@@ -26,7 +26,7 @@ Matt and Charly will cover the following topics every two weeks on Friday at 02:
 * March 11th - [Observing & Tuning your PostgreSQL workload using PMM](/events/streams-pg/2022-03-11-observing-and-tuning-your-postgresql-workload-using-pmm/)
 * March 25th - [Setting up alerts and basic automation for PostgreSQL](/events/streams-pg/2022-03-25-setting-up-alert-and-basic-automation-for-postgresql/)
 * April 8th - [Setting up and scheduling regular PostgreSQL backups](/events/streams-pg/2022-04-08-setting-up-and-scheduling-regular-postgresql-backups/)
-* April 22nd - Setting up failover via a replica for PostgreSQL
+* April 21st - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-04-21-setting-up-failover-via-a-replica-for-postgresql/)
 * May 6th - Migrating PostgreSQL to a new server
 * May 20th - installing and setting up PostgreSQL on Kubernetes
 * June 3rd - PostgreSQL running on Kubernetes operations
