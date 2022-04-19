@@ -1,7 +1,9 @@
 ---
-title: "Setting Up Failover via a Replica for PostgreSQL - Percona Community PostgreSQL Live Stream & Chat - April, 21st"
+title: "Setting Up Failover via a Replica for PostgreSQL - Percona Community PostgreSQL Live Stream & Chat - May, 6th"
 description: "Learn more about setting up failover via a replica for PostgreSQL on April 21st at 3:00 pm EDT  / 08:00 PM CEST"
 draft: false
+images:
+  - events/streams-pg/PG-Stream-Week-4-may6.jpg
 weight: 1
 date: Fri, 6th May 2022, 21:00:00 +0000
 speakers:
@@ -10,9 +12,12 @@ speakers:
 tags: ['Postgres', 'Stream']
 ---
 
+![Percona Community PostgreSQL Live Stream & Chat - May 6th](events/streams-pg/PG-Stream-Week-4-may6.jpg)
+
 Interested in learning PostgreSQL? Join the Community Live stream on Friday, May 6th. This time, Matt Yonkovit (the HOSS) and Charly Batista (Postgres Tech Lead) will discuss how to set up failover via a replica for PostgreSQL correctly. It is a perfect opportunity to study from recognized experts for free. Come up with your questions and our experts will answer them live!
 
 ## Topic
+
 Thursday, May 6th at 2:00 pm EDT  / 08:00 PM CEST
 
 **Setting Up Failover via a Replica for PostgreSQL**
