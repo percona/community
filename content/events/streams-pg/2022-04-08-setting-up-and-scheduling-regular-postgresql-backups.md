@@ -12,13 +12,20 @@ speakers:
 tags: ['Postgres', 'Stream']
 ---
 
-![Percona Community MySQL Live Stream & Chat - April 8th](events/streams-pg/pg-stream-week-3-april8.jpg)
+![Percona Community PostgreSQL Live Stream & Chat - April 8th](events/streams-pg/pg-stream-week-3-april8.jpg)
 
-Join the next Community Live stream for PostgresSQL and learn about the best setting to protect and restore your data in our next. Matt and Charly will talk about database backup settings, frequency, and different types of backups. Come up with your questions and our experts will answer live.
+## Video
+
+{{% youtube youtube_id="3OeX-gsdwFc" %}}{{% /youtube %}}
+
 
 ## Topic
+
 Friday, April 8th  at 2:00 pm EDT  / 07:00 PM CEST
+
 **Setting up and scheduling regular PostgreSQL backups with Matt and Charly**
+
+Join the next Community Live stream for PostgresSQL and learn about the best setting to protect and restore your data in our next. Matt and Charly will talk about database backup settings, frequency, and different types of backups. Come up with your questions and our experts will answer live.
 
 ## Join & Chat for free!!
 Watch it live on [YouTube](https://www.youtube.com/watch?v=3OeX-gsdwFc), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6915679761314832384/), and [Twitch](https://www.twitch.tv/perconacommunity).
