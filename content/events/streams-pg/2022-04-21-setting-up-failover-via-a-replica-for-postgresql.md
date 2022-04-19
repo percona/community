@@ -23,11 +23,10 @@ Thursday, May 6th at 2:00 pm EDT  / 08:00 PM CEST
 **Setting Up Failover via a Replica for PostgreSQL**
 
 ## Join & Chat for free!!
-Watch it live on [YouTube](https://www.youtube.com/watch?v=3OeX-gsdwFc), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6915679761314832384/), and [Twitch](https://www.twitch.tv/perconacommunity).
+Watch it live on [YouTube](https://www.youtube.com/c/percona), [Linkedin](https://www.linkedin.com/company/percona/), and [Twitch](https://www.twitch.tv/perconacommunity).
 
 Live chat on [Discord](http://per.co.na/discord).
 
-Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MXNiMjllM3Vpb2o5MGJjNWQwbWJwYmJvNGFfMjAyMjA0MDhUMTgwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com).
 
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups.
 
