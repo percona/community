@@ -1,8 +1,8 @@
 ---
 title: "Liquibase Data is Git for Databases"
-date: "2022-04-24T00:00:00+00:00"
+date: "2022-04-25T00:00:00+00:00"
 draft: false
-tags: ['blog', 'PerconaLive', 'PerconaLive2022', `DevOps`]
+tags: ['blog', 'PerconaLive', 'PerconaLive2022', 'DevOps']
 images:
   - blog/2022/4/liquibase-data-gitflow-580x296.png
 authors:
