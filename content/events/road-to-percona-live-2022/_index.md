@@ -10,7 +10,7 @@ tags: ['PerconaLive', 'opensource', 'event']
 
 ![Road to Percona Live 2022](/events/road-percona-live-2022/RoadToPerconaLive2022.jpg)
 
-[Percona Live](https://www.percona.com/live/conferences) Percona Live 2022 is coming soon! Get to know the talk of the amazing speakers and best-of-breed open source database experts, who will come to Austin to present for you this year. Matt Yonkovit, the Percona’s HOSS, met some of them virtually and recorded small previews of their talks. Watch them, find out more details about the upcoming presentations and choose which ones to join during the event.
+[Percona Live 2022](https://www.percona.com/live/conferences) is coming soon! Get to know the talk of the amazing speakers and best-of-breed open source database experts, who will come to Austin to present for you this year. Matt Yonkovit, the Percona’s HOSS, met some of them virtually and recorded small previews of their talks. Watch them, find out more details about the upcoming presentations and choose which ones to join during the event.
 
 This page is constantly updated. We will add new videos here as soon as they are released on [Percona’s YouTube channel](https://www.youtube.com/playlist?list=PLWhC0zeznqkksARJUELeOWOyueaHX0k3R). Check it out to stay tuned!
 
