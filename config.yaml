@@ -154,7 +154,7 @@ menu:
       weight: 4
     - identifier: surveys
       name: Testimonials & Surveys
-      url: /contribute/surveys
+      url: /contribute/testimonials
       parent: contribute
       weight: 5
 
