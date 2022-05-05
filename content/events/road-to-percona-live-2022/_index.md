@@ -37,7 +37,7 @@ This page is constantly updated. We will add new videos here as soon as they are
 {{% /griditem %}}
 {{% griditem %}}
   {{< youtube youtube_id="hmg7LMzboNE" >}}
-    Jean da silva | Vinicius grippa - PBM -The backup OpenSource tool for MongoDB
+    Jean da Silva | Vinicius Grippa - PBM -The backup OpenSource tool for MongoDB
   {{< /youtube >}}
 {{% /griditem %}}
 {{% griditem %}}
@@ -48,6 +48,41 @@ This page is constantly updated. We will add new videos here as soon as they are
 {{% griditem %}}
   {{< youtube youtube_id="x33svv2c_X0" >}}
     Ivan Groenewold - MongoDB Monitoring & Alerting with PMM
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="Ib5r92eBLSY" >}}
+    Bruce Momjian - Mastering PostgreSQL Administration
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="SJm5VW5OfPw" >}}
+    Denis Magda - Evaluating PostgreSQL Compatibility in Distributed SQL Databases
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="ejry1Z_LNjY" >}}
+    Oleksandr Kuzminskyi - ProxySQL at Scale on AWS
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="gwsdhRstEN0" >}}
+    Road to Percona Live - Tutorial Topics May 16th
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="zug2Gl0JkYc" >}}
+    Road to Percona Live - Advanced database topics and Database 101 for Developers
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="KVuFJshdVH8" >}}
+    Road to Percona Live - Cool and exciting topics on Tuesday, May 17th
+  {{< /youtube >}}
+{{% /griditem %}}
+{{% griditem %}}
+  {{< youtube youtube_id="DuddIDBI1hc" >}}
+    Road to Percona Live -  What is your top session on Wednesday, May 18th
   {{< /youtube >}}
 {{% /griditem %}}
 {{% /grid %}}
