@@ -9,6 +9,8 @@ speakers:
   - yunus_shaikh
   - kedar_vaijanapurkar 
   - matt_yonkovit
+aliases:
+    - "/podcasts/database-performance-availability-operations-percona-podcast60-yunus-and-kedar/"
 ---
 
 ## Transcript

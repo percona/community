@@ -8,6 +8,8 @@ youtube_id: "wu3YRhJ8U0s"
 speakers:
   - alexander_korotkov
   - matt_yonkovit
+aliases:
+    - "/podcasts/orioledb-fixing-the-limitations-of-postgresqlpercona-podcast58/"
 ---
 
 ## Transcript

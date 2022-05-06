@@ -8,6 +8,8 @@ youtube_id: "F8txf0Z6e0A"
 speakers:
   - yahav_biran
   - matt_yonkovit
+aliases:
+    - "/podcasts/running-large-scale-database-applications-percona-podcast62-yahav-biran/"
 ---
 
 ## Transcript

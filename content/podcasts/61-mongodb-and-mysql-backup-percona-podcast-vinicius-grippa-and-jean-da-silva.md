@@ -9,6 +9,8 @@ speakers:
   - vinicius_grippa
   - jean_da_silva 
   - matt_yonkovit
+aliases:
+    - "/podcasts/mongodb-and-mysql-backup-percona-podcast61-vinicius-grippa-and-jean-da-silva/"
 ---
 
 ## Transcript
