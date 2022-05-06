@@ -19,6 +19,38 @@ We have so much great content on Percona Live this year (as usual, I should say)
 
 The schedule will be released soon. 
 
-If you would like to speak at the event, please fill [this form](https://forms.gle/QfQ2uBgPmB9AN4EJA) in to contact us. 
+**Important dates**
 
-Stay tuned! All updates will be published on this page.
+*CFP closes:* Wednesday, May 25th, 2022
+
+*Schedule Announcement:* Thursday, June 2nd, 2022
+
+*Video Acceptance Deadline:* Tuesday, June 7th, 2022
+
+*Event Dates:* June 21st-23d, 2022
+
+**Suggested Topics:**
+
+* MySQL database
+* PostgreSQL databaase
+* MongoDB database
+* New & Emerging Tech
+
+If you would like to speak at the event, please fill this form in to contact us. 
+
+
+
+{{< button link="https://forms.gle/QfQ2uBgPmB9AN4EJA" >}}
+Submit Your Talk
+{{< /button >}}
+
+
+
+Already on the schedule:
+
+* Flexible Indexing with Postgres by Bruce Momjian (EDB)
+* Upgrading Your Amazon RDS for PostgreSQL Databases by Jignesh Shah (Amazon Web Services)
+* PMM on Kubernetes by Denys Kondratenko (Percona)
+* The Open-Source Distributed Graph Database: Nebula Graph by Wey Gu (Vesoft)
+
+More than 20 talks to come, stay tuned! All updates will be published on this page.
