@@ -1,9 +1,9 @@
 ---
-title: "Setting Up Failover via a Replica for PostgreSQL - Percona Community PostgreSQL Live Stream & Chat - May, 6th"
-description: "Learn more about setting up failover via a replica for PostgreSQL on April 21st at 3:00 pm EDT  / 08:00 PM CEST"
+title: "Setting Up and Installing Backups With pgBackRest - Percona Community PostgreSQL Live Stream & Chat - May, 6th"
+description: "Learn more about setting up and installing backups with pgBackRest on May 6th at 3:00 pm EDT  / 08:00 PM CEST"
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Week-4-may6.jpg
+  - events/streams-pg/PG-Stream-Week-4-pgBackRest.jpg
 weight: 1
 date: Fri, 6th May 2022, 21:00:00 +0000
 speakers:
@@ -12,24 +12,16 @@ speakers:
 tags: ['Postgres', 'Stream']
 ---
 
-![Percona Community PostgreSQL Live Stream & Chat - May 6th](events/streams-pg/PG-Stream-Week-4-may6.jpg)
+![Percona Community PostgreSQL Live Stream & Chat - May 6th](events/streams-pg/PG-Stream-Week-4-pgBackRest.jpg)
 
-Interested in learning PostgreSQL? Join the Community Live stream on Friday, May 6th. This time, Matt Yonkovit (the HOSS) and Charly Batista (Postgres Tech Lead) will discuss how to set up failover via a replica for PostgreSQL correctly. It is a perfect opportunity to study from recognized experts for free. Come up with your questions and our experts will answer them live!
+Listen out to this full recording of the live stream dedicated to PostgreSQL hosted by the Head Of Open Source Strategy at Percona, Matt Yonkovit with Charly Batista, PostgreSQL Tech Lead at Percona. They took us through setting up and installing backups with pgBackRest
+This is a part of the bi-weekly Live Streaming series to discuss Postgres-related topics and go deep into technology secrets and tricks.
 
-## Topic
+## Video
 
-Thursday, May 6th at 2:00 pm EDT  / 08:00 PM CEST
+{{% youtube youtube_id="L0ft6RtGE7Q" %}}{{% /youtube %}}
 
-**Setting Up Failover via a Replica for PostgreSQL**
-
-## Join & Chat for free!!
-Watch it live on [YouTube](https://www.youtube.com/c/percona), [Linkedin](https://www.linkedin.com/company/percona/), and [Twitch](https://www.twitch.tv/perconacommunity).
-
-Live chat on [Discord](http://per.co.na/discord).
-
-
-Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups.
-
+Watch it also on [LinkedIn](https://www.linkedin.com/video/event/urn:li:ugcPost:6928401590773002240/).
 
 ## Tell Us About This Meeting
 Any comments, feedback, and suggestions are welcome to help us improve upcoming events:
