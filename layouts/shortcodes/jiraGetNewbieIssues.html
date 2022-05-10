@@ -1,0 +1,26 @@
+{{- $issuesData := getJSON "https://jira.percona.com/rest/api/2/search" "?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie" (dict "Authorization" "Basic Y29tbXVuaXR5LnRlYW06blB2S1lNWmMzMTYxdDVtaSMmZHQ=") -}}
+
+### Task list
+
+<table class="table table-striped table-sm table-responsive">
+  <thead>
+    <tr>
+        <th scope="col" style="width: 15%; min-width: 200px;">Key</th>
+        <th scope="col" style="width: 50%; min-width: 600px;">Summary</th>
+        <th scope="col">Status</th>
+        <th scope="col">Priority</th>
+    </tr>
+  </thead>
+  <tbody>  
+    {{- range first 10 (after 1 $issuesData.issues) -}}
+      <tr>
+        <td scope="row"><a href="https://jira.percona.com/browse/{{- .key -}}" target="_blank">{{- .key -}}</a></td>
+        <td><a href="https://jira.percona.com/browse/{{- .key -}}" target="_blank">{{- .fields.summary -}}</a></td>
+        <td>{{- .fields.status.name -}}</td>
+        <td>{{- .fields.priority.name -}}</td>
+      </tr>
+    {{- end -}}
+  </tbody>  
+</table>
+
+<a href="https://jira.percona.com/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie">All tasks</a> can be viewed in <a href="https://jira.percona.com/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie">Jira</a>, using the Newbie label and Open and New status search.
