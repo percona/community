@@ -16,6 +16,39 @@ This page is constantly updated. We will add new videos here as soon as they are
 
 {{% grid size=2 %}}
 {{% griditem %}}
+  {{< youtube youtube_id="ewNOMwcdJLc" >}}
+    Road to Percona Live 2022 - Robert Reeves
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="5BoJe2mWbN0" >}}
+    Road to Percona Live 2022 - Robert Reeves
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="ku17Ij1J4v8" >}}
+    Road to Percona Live 2022 - Robert Hodges
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="1jcxt7T8elA" >}}
+    Road to Percona Live 2022 - David Murphy
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="yHGFT_0nXFs" >}}
+    Road to Percona Live 2022 - Ananias Tsalouchidis
+  {{< /youtube >}}
+{{% /griditem %}}
+
+
+
+
+{{% griditem %}}
   {{< youtube youtube_id="Y_C8ZuVduNg" >}}
     Road to Percona Live 2022 - Jonathan Katz
   {{< /youtube >}}
