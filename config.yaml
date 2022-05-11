@@ -157,6 +157,11 @@ menu:
       url: /contribute/testimonials
       parent: contribute
       weight: 5
+    - identifier: help
+      name: Help Wanted
+      url: /contribute/help-wanted
+      parent: contribute
+      weight: 8
 
   footer:
     - identifier: about

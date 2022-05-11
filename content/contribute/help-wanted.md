@@ -5,7 +5,7 @@ images:
   - pages/HelpWanted.jpg
 ---
 
-Want to contribute to open source and earn a valuable gift from Percona? Help us the most wanted content and code and join the ranks of contributors. On this page, we gathered some tasks that we offer you to accomplish. In exchange for that, you will gain not only the feeling of belonging to the big open source community, but also get some enjoyable gift from Percona Community Team. Just contact us at community-team@percona.com.
+Want to contribute to open source and earn a valuable gift from Percona? Help us with the most wanted content and code, and join the ranks of contributors. On this page, we gathered some tasks that we offer you to accomplish. In exchange for that, you will gain not only the feeling of belonging to the big open source community, but also get some enjoyable gift from Percona Community Team. Just contact us at community-team@percona.com.
 
 ## Code
 
