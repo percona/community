@@ -17,13 +17,19 @@ This page is constantly updated. We will add new videos here as soon as they are
 {{% grid size=2 %}}
 {{% griditem %}}
   {{< youtube youtube_id="ewNOMwcdJLc" >}}
-    Road to Percona Live 2022 - Robert Reeves
+    Percona Live 2022 - What to do in Austin?
   {{< /youtube >}}
 {{% /griditem %}}
 
 {{% griditem %}}
   {{< youtube youtube_id="5BoJe2mWbN0" >}}
     Road to Percona Live 2022 - Robert Reeves
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="t3EzRFm9-0U" >}}
+    Road to Percona Live 2022 - Vaidyanathan
   {{< /youtube >}}
 {{% /griditem %}}
 
@@ -45,7 +51,11 @@ This page is constantly updated. We will add new videos here as soon as they are
   {{< /youtube >}}
 {{% /griditem %}}
 
-
+{{% griditem %}}
+  {{< youtube youtube_id="pp4q_qAsZZ0" >}}
+    Andreas Scherbaum - PostgreSQL Talk
+  {{< /youtube >}}
+{{% /griditem %}}
 
 
 {{% griditem %}}
@@ -55,7 +65,7 @@ This page is constantly updated. We will add new videos here as soon as they are
 {{% /griditem %}}
 {{% griditem %}}
   {{< youtube youtube_id="vAKguX5UBn0" >}}
-    Andreas Scherbaum - PostgreSQL Talk
+    Road to Percona Live 2022 - Pandit and Vijay
   {{< /youtube >}}
 {{% /griditem %}}
 {{% griditem %}}
