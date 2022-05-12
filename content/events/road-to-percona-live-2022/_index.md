@@ -22,6 +22,12 @@ This page is constantly updated. We will add new videos here as soon as they are
 {{% /griditem %}}
 
 {{% griditem %}}
+  {{< youtube youtube_id="V0Od4HQcAbs" >}}
+    Percona Live 2022 - Sveta Smirnova - MySQL Talk
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
   {{< youtube youtube_id="5BoJe2mWbN0" >}}
     Road to Percona Live 2022 - Robert Reeves
   {{< /youtube >}}
