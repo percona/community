@@ -52,5 +52,14 @@ Already on the schedule:
 * Upgrading Your Amazon RDS for PostgreSQL Databases by Jignesh Shah (Amazon Web Services)
 * PMM on Kubernetes by Denys Kondratenko (Percona)
 * The Open-Source Distributed Graph Database: Nebula Graph by Wey Gu (Vesoft)
+* 10 Deadly PostgreSQL Sins by Matt Yonkovit (Percona) and Barrett Chambers (Percona)
+* I Dropped My Database! Now What? - A Dive Into PostgreSQL Backup Using pgBackRest and How to Use it for PITR by Charly Batista (Percona)
+* The MySQL Ecosystem in 2022 by Colin Charles (Codership)
+* The Ways of Performance Schema and How to Leverage it for Troubleshooting by Leonardo Bacchi Fernandes (Percona)
+* Using PMM Alerting in Production by Francisco Bordenave (Percona)
+* The Future of MyDumper by David Ducos (Percona)
+* Database as Code. Not Only Migrations by Maksim Gramin (Independent Consultant and Researcher)
+* Cross-cloud Migrations With Databases on Kubernetes by Sergey Pronin (Percona)
+* Physical Backups With Percona Backup for MongoDB by Sergey Pronin (Percona)
 
-More than 20 talks to come, stay tuned! All updates will be published on this page.
+More talks to come, stay tuned! All updates will be published on this page.
