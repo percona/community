@@ -15,6 +15,68 @@ tags: ['PerconaLive', 'opensource', 'event']
 This page is constantly updated. We will add new videos here as soon as they are released on [Percona’s YouTube channel](https://www.youtube.com/playlist?list=PLWhC0zeznqkksARJUELeOWOyueaHX0k3R). Check it out to stay tuned!
 
 {{% grid size=2 %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="LEvnm5jlFpk" >}}
+    Percona Live 2022 - Jaime SICAM
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="IbNDEejeyls" >}}
+    Percona Live 2022 - Hamid Akhtar
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="ewNOMwcdJLc" >}}
+    Percona Live 2022 - What to do in Austin?
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="V0Od4HQcAbs" >}}
+    Percona Live 2022 - Sveta Smirnova - MySQL Talk
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="5BoJe2mWbN0" >}}
+    Road to Percona Live 2022 - Robert Reeves
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="t3EzRFm9-0U" >}}
+    Road to Percona Live 2022 - Vaidyanathan
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="ku17Ij1J4v8" >}}
+    Road to Percona Live 2022 - Robert Hodges
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="1jcxt7T8elA" >}}
+    Road to Percona Live 2022 - David Murphy
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="yHGFT_0nXFs" >}}
+    Road to Percona Live 2022 - Ananias Tsalouchidis
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="pp4q_qAsZZ0" >}}
+    Andreas Scherbaum - PostgreSQL Talk
+  {{< /youtube >}}
+{{% /griditem %}}
+
+
 {{% griditem %}}
   {{< youtube youtube_id="Y_C8ZuVduNg" >}}
     Road to Percona Live 2022 - Jonathan Katz
@@ -22,7 +84,7 @@ This page is constantly updated. We will add new videos here as soon as they are
 {{% /griditem %}}
 {{% griditem %}}
   {{< youtube youtube_id="vAKguX5UBn0" >}}
-    Andreas Scherbaum - PostgreSQL Talk
+    Road to Percona Live 2022 - Pandit and Vijay
   {{< /youtube >}}
 {{% /griditem %}}
 {{% griditem %}}
