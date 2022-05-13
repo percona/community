@@ -5,7 +5,7 @@ images:
   - events/fosdem-2021/cover.jpg
 layout: single
 date: "2021-02-06"
-tags: ['event']
+tags: ['Event', 'fosdem']
 ---
 
 Percona Team actively participated in [FOSDEM 2021](https://fosdem.org/2021/). It is a large, non-commercial free event for thousands of developers of free and open-source software from all over the world to meet, share ideas and collaborate. Traditionally held in the beautiful city of Brussels (Belgium), it took place online this year on February 6-7. FOSDEM is widely recognized as the best such conference in Europe organized by the community for the community.

@@ -1,0 +1,16 @@
+<div class="home-blocks home-blocks__posdcasts">
+    <h2>Podcasts</h2>
+    <div class="grid grid--4">
+    {{- range first 4 (where $.Page.Site.RegularPages "Section" "podcasts") -}}
+    <div class="grid__item">
+    <a href="{{ .RelPermalink }}" class="post post--preview">
+    <img src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" />
+    <h3>{{ .Title }}</h3>
+    </a>
+    </div>
+    {{- end -}}
+    </div>
+    <a href="{{ "/podcasts/" | relURL }}" >View All</a>
+    <br/>
+</div>
+

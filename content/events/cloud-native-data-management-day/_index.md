@@ -7,7 +7,7 @@ speakers:
   - sergey_pronin
 layout: single
 date: "2021-08-27"
-tags: ['Kubernetes', 'event']
+tags: ['Kubernetes', 'Event']
 ---
 
 ## MongoDB on Kubernetes with GitOps by Sergey Pronin

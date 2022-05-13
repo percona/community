@@ -1,0 +1,13 @@
+<div class="home-blocks home-blocks__streams">
+    <h2>Streams</h2>
+    <div class="grid grid--3">
+    {{ $t := slice "Stream" "stream" }}
+
+    {{- range first 3 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $t ) -}}
+    <div class="grid__item">
+    {{ partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+    </div>
+    {{- end -}}
+    </div>
+    <a href="{{ "/events/" | relURL }}" >View All</a>
+</div>
