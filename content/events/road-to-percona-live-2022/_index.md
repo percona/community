@@ -15,9 +15,28 @@ tags: ['PerconaLive', 'opensource', 'event']
 This page is constantly updated. We will add new videos here as soon as they are released on [Percona’s YouTube channel](https://www.youtube.com/playlist?list=PLWhC0zeznqkksARJUELeOWOyueaHX0k3R). Check it out to stay tuned!
 
 {{% grid size=2 %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="LEvnm5jlFpk" >}}
+    Percona Live 2022 - Jaime SICAM
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="IbNDEejeyls" >}}
+    Percona Live 2022 - Hamid Akhtar
+  {{< /youtube >}}
+{{% /griditem %}}
+
 {{% griditem %}}
   {{< youtube youtube_id="ewNOMwcdJLc" >}}
     Percona Live 2022 - What to do in Austin?
+  {{< /youtube >}}
+{{% /griditem %}}
+
+{{% griditem %}}
+  {{< youtube youtube_id="V0Od4HQcAbs" >}}
+    Percona Live 2022 - Sveta Smirnova - MySQL Talk
   {{< /youtube >}}
 {{% /griditem %}}
 
