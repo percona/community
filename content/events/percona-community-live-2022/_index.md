@@ -49,7 +49,6 @@ Submit Your Talk
 Already on the schedule:
 
 * Flexible Indexing with Postgres by Bruce Momjian (EDB)
-* Upgrading Your Amazon RDS for PostgreSQL Databases by Jignesh Shah (Amazon Web Services)
 * PMM on Kubernetes by Denys Kondratenko (Percona)
 * The Open-Source Distributed Graph Database: Nebula Graph by Wey Gu (Vesoft)
 * 10 Deadly PostgreSQL Sins by Matt Yonkovit (Percona) and Barrett Chambers (Percona)
