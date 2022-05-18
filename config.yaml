@@ -162,6 +162,11 @@ menu:
       url: /contribute/help-wanted
       parent: contribute
       weight: 8
+    - identifier: videos
+      name: Videos
+      url: /contribute/videos
+      parent: contribute
+      weight: 9
 
   footer:
     - identifier: about
