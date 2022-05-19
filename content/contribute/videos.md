@@ -7,7 +7,6 @@ Videos about Percona created by the community
 
 ## Tutorials
 
-{{% list %}}
 
 {{< youtubeList 
   youtube_id="dAP5myc9XTY" 
@@ -16,11 +15,9 @@ Videos about Percona created by the community
   authors="Matthew Grdinic"
 >}}{{< /youtubeList >}}
 
-{{% /list %}}
 
 ## Events
 
-{{% list %}}
 
 {{< youtubeList 
   youtube_id="Q7ilLu7fP1Q" 
@@ -30,12 +27,11 @@ Videos about Percona created by the community
 >}}{{< /youtubeList >}}
 
 {{< youtubeList 
-  youtube_id="Xi-h4XNd5tE?t=18276" 
+  youtube_id="Xi-h4XNd5tE" 
   title="DoK Day 2022 EU" 
   date="May 16, 2022"
   authors="Sergey Pronin (Percona)"
 >}}{{< /youtubeList >}}
 
-{{% /list %}}
 
 

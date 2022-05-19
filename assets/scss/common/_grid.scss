@@ -1,3 +1,15 @@
+.youtubeList__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin-bottom:1.5rem;
+
+  .youtubeList__img {
+    margin-right: 1rem;
+  }
+}
+
 .grid {
   display: grid;
   &--2 {
