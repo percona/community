@@ -19,6 +19,7 @@ speakers:
   - colin_charles
   - maksim_gramin
   - nebula_graph
+weight: 1
 ---
 
 Good news! We are happy to announce a new 100% virtual event coming up this summer - **Percona Community Live**! 
