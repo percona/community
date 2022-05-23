@@ -24,6 +24,10 @@ weight: 1
 
 Good news! We are happy to announce a new 100% virtual event coming up this summer - **Percona Community Live**! 
 
+<div class="landing__video">
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/LFCupizJsnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 It will take place on June 21-23 online and will be live-streamed on YouTube, LinkedIn, and Twitch. It is an excellent opportunity to learn from the best-of-breed experts directly from your home! We will focus on the latest trends in the database world, and secret tricks from the open source stars.
 
 ![Percona Community Live](events/percona-community-live/cover-start.jpg)

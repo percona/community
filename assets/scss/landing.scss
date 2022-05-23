@@ -17,6 +17,12 @@
 
 .landing {
 
+    .landing__video {
+        padding-top: 2em;  
+        padding-bottom: 2em;  
+        text-align: center;
+    }
+
     .body ul {
         @media screen and (min-width: 1000px) {
             padding-left: 8rem;
