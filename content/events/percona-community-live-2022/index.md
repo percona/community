@@ -38,7 +38,7 @@ The schedule will be released soon.
 
 ### Important dates
 
-*CFP closes:* Wednesday, May 25th, 2022
+*CFP closes:* Friday, May 27th, 2022
 
 *Schedule Announcement:* Thursday, June 2nd, 2022
 
