@@ -1,4 +1,3 @@
-
 {
   "Tutorials":[
   {
@@ -36,8 +35,19 @@
     "title": "MYSQL extra backup day 29",
     "date": "Apr 19, 2022",
     "authors": "school tab"
-  }
-  ],
+  },
+  {
+    "youtube_id": "YHK-Cq6tDBg",
+    "title": "MYSQL Percona tool day 25",
+    "date": "Apr 5, 2022",
+    "authors": "school tab"
+  },
+  {
+    "youtube_id": "UjxEMXePVRk",
+    "title": "02 - Getting Started with PostgreSQL Server for Learning env | DBA PostgreSQL",
+    "date": "Apr 4, 2022",
+    "authors": "Dimas Maryanto"
+  }],
   "Events":[
   {
     "youtube_id": "Q7ilLu7fP1Q",
