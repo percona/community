@@ -4,8 +4,7 @@ description: "Learn more about setting up and installing backups with pgbackrest
 draft: false
 images:
   - events/streams-pg/PG-Stream-Week-4-pgBackRest.jpg
-weight: 1
-date: Fri, 6th May 2022, 21:00:00 +0000
+date: "2022-05-06"
 speakers:
   - charly_batista
   - matt_yonkovit
