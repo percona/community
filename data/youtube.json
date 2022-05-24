@@ -1,4 +1,3 @@
-
 {
   "Tutorials":[
   {
@@ -12,6 +11,18 @@
     "title": "23 How to configure MySQL parallel replication practical",
     "date": "May 19, 2022",
     "authors": "Mughees Ahmed (Percona)"
+  },
+  {
+    "youtube_id": "rVIv8KqsggU",
+    "title": "MySQL Upgrade Checker | MySQL Upgrade | Percona server 5.7 to 8.0.27 | MySQL Shell utility | Percona",
+    "date": "May 8, 2022",
+    "authors": "Sri Sakthivel (Percona)"
+  },
+  {
+    "youtube_id": "aos-jIGLQl4",
+    "title": "Percona Audit Log Plugin Configurations & Operations | MySQL Monitoring | MySQL Security | Audit",
+    "date": "May 10, 2022",
+    "authors": "Sri Sakthivel (Percona)"
   },
   {
     "youtube_id": "EKCuYzJgjfg",
@@ -36,9 +47,68 @@
     "title": "MYSQL extra backup day 29",
     "date": "Apr 19, 2022",
     "authors": "school tab"
-  }
-  ],
+  },
+  {
+    "youtube_id": "YHK-Cq6tDBg",
+    "title": "MYSQL Percona tool day 25",
+    "date": "Apr 5, 2022",
+    "authors": "school tab"
+  },
+  {
+    "youtube_id": "UjxEMXePVRk",
+    "title": "02 - Getting Started with PostgreSQL Server for Learning env | DBA PostgreSQL",
+    "date": "Apr 4, 2022",
+    "authors": "Dimas Maryanto"
+  }],
   "Events":[
+  {
+    "youtube_id": "Ia3_c14LVBo",
+    "title": "Set Your Long Query Time in MySQL - Monitoring MySQL Database Tutorial",
+    "date": "May 5, 2022",
+    "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "NRlM-C321h8",
+    "title": "Tuning MySQL with PMM Pt 1 - MySQL Database tuning tutorial",
+    "date": "May 4, 2022",
+    "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "Y2I_nYJ4cCE",
+    "title": "Installing PMM on Rocky Linux Server - Monitoring Database tutorial",
+    "date": "May 3, 2022",
+    "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "B7TdzKtLwBc",
+    "title": "Backing up PostgreSQL Manually with Rsync! - PostgreSQL Tutorial",
+    "date": "Apr 29, 2022",
+    "authors": "Charly Batista (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "Db_NKUvNX9g",
+    "title": "Finding What PostgreSQL is Waiting on - PostgreSQL Tutorial",
+    "date": "Apr 28, 2022",
+    "authors": "Charly Batista (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "SEu9fMGxVQE",
+    "title": "PostgreSQL Backups using the Replication Channel - PostgreSQL Tutorial",
+    "date": "Apr 27, 2022",
+    "authors": "Charly Batista (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "H8EK-stD_z4",
+    "title": "PostgreSQL Disaster Recovery Strategies, From Backups to HA - PostgreSQL Tutorial",
+    "date": "Apr 26, 2022",
+    "authors": "Charly Batista (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "M-ujoHAZi5I",
+    "title": "Future Founders Training Session 8",
+    "date": "May 20, 2022",
+    "authors": "Matt Yonkovit (Percona)"
+  },
   {
     "youtube_id": "Q7ilLu7fP1Q",
     "title": "The Business Of Open Source : Fosdem 2022",
