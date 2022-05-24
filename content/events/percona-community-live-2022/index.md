@@ -10,7 +10,7 @@ speakers:
   - bruce_momjian
   - matt_yonkovit
   - lenz_grimmer
-  - barret_chambers
+  - barrett_chambers
   - charly_batista
   - denys_kondratenko
   - david_ducos
@@ -18,7 +18,10 @@ speakers:
   - francisco_bordenave
   - colin_charles
   - maksim_gramin
-  - nebula_graph
+  - wey_gu
+  - leonardo_bacchi_fernandes
+  - maksim_gramin
+  - gabriel_ciciliani
 weight: 1
 ---
 
@@ -38,7 +41,7 @@ The schedule will be released soon.
 
 ### Important dates
 
-*CFP closes:* Friday, May 27th, 2022
+*CFP closes:* Monday, May 29th, 2022
 
 *Schedule Announcement:* Thursday, June 2nd, 2022
 
@@ -59,7 +62,7 @@ If you would like to speak at the event, please fill this form in to contact us 
 Submit Your Talk
 {{< /button >}}
 
-## Agenda 
+## Agenda
 
 Already on the schedule:
 
