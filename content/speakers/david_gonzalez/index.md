@@ -12,5 +12,4 @@ social:
   twitter:
   github: 
   linkedin: 
-images:
 ---
