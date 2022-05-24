@@ -28,7 +28,7 @@ Matt and Charly will cover the following topics every two weeks on Friday at 02:
 * April 8th - [Setting up and scheduling regular PostgreSQL backups (Part 1)](/events/streams-pg/2022-04-08-setting-up-and-scheduling-regular-postgresql-backups/)
 * April 21st - [Setting up and scheduling regular PostgreSQL backups (Part 2)](/events/streams-pg/2022-04-21-setting-up-and-scheduling-regular-postgresql-backups-2/)
 * May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-04-21-setting-up-failover-via-a-replica-for-postgresql/)
-* June 3rd - Setting up failover via a replica for PostgreSQL
+* June 3rd - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-06-03-setting-up-failover-via-a-replica-for-postgresql/)
 * June 17th - Migrating PostgreSQL to a new server
 * July 1st - installing and setting up PostgreSQL on Kubernetes
 * July 15th - PostgreSQL running on Kubernetes operations
