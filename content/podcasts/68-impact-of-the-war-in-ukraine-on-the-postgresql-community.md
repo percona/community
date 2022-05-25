@@ -6,7 +6,7 @@ date: "2022-05-24"
 podbean_link: "https://percona.podbean.com/e/impact-of-the-war-in-ukraine-on-the-postgresql-community-%e2%80%93-hoss-talks-foss-68-with-bruce-momjian/"
 youtube_id: "apssdN9eH50"
 speakers:
-  - denis_magda
+  - matt_yonkovit
   - bruce_momjian
 ---
 
