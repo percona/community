@@ -60,7 +60,14 @@
     "date": "Apr 4, 2022",
     "authors": "Dimas Maryanto"
   }],
+  
   "Events":[
+  {
+    "youtube_id": "-iex-GVLUOc",
+    "title": "Why we created one more Operator for MySQL - Sergey Pronin (DoK Day EU 2022)",
+    "date": "May 25, 2022",
+    "authors": "Sergey Pronin (Percona)"
+  },
   {
     "youtube_id": "Ia3_c14LVBo",
     "title": "Set Your Long Query Time in MySQL - Monitoring MySQL Database Tutorial",
