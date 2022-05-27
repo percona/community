@@ -2,7 +2,7 @@
 title: "Setting Up Alerts and Basic Automation for MySQL - Percona Community MySQL Live Stream & Chat - May, 27th"
 description: "Increase the performance of your database with our experts. Matt and Marcos will show how to set up alerts and basic automation for MySQL on May, 27th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST"
 images:
-  - events/streams-mysql/Stream-MySQL-3-cover.jpg
+  - events/streams-mysql/Stream-MySQL-05-27-cover.jpg
 draft: false
 weight: 1
 date: Fri, 27th May 2022, 16:00:00 +0000
