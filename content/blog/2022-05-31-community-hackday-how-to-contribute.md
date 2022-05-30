@@ -5,7 +5,7 @@ tags: ['PMM' , 'minikube', 'CSI', 'kubernetes', 'k8s', 'operator' ]
 authors:
   - denys_kondratenko
 images:
-  - blog/2022/5/how_and_why_contribute.jpg
+  - blog/2022/5/how_and_why_contirbute.jpg
 slug: csi-minikube-multinode
 ---
 
