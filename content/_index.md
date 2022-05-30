@@ -77,12 +77,5 @@ Learn about our community, open source commitments, and how to [contribute](/con
 {{% /herotext %}}
 {{% /hero %}}
 
-{{% contentblock %}}
-
-## [Blog](/blog)
-
-{{% latest4posts %}}
-
-{{% /contentblock %}}
 
 

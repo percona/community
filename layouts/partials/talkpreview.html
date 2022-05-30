@@ -1,8 +1,10 @@
 <a href="{{ .Link }}" class="post post--preview">
-{{ with .Image }}<img src="{{ ((resources.Get .).Fill "682x384 90% jpg").RelPermalink }}" alt="" />{{ end }}
-<h2>{{ .Title }}</h2>
+{{ with .Image }}<img src="{{ ((resources.Get .).Fill "682x384 80% jpg").RelPermalink }}" alt="" />{{ end }}
+<h3>{{ .Title }}</h3>
+{{ if .Content }}
 <div class="post__content">
 <p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify  -}}</p>
 <p class="readmore">Read more &raquo;</p>
 </div>
+{{ end }}
 </a>

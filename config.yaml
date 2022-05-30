@@ -154,9 +154,19 @@ menu:
       weight: 4
     - identifier: surveys
       name: Testimonials & Surveys
-      url: /contribute/surveys
+      url: /contribute/testimonials
       parent: contribute
       weight: 5
+    - identifier: help
+      name: Help Wanted
+      url: /contribute/help-wanted
+      parent: contribute
+      weight: 8
+    - identifier: videos
+      name: Videos
+      url: /contribute/videos
+      parent: contribute
+      weight: 9
 
   footer:
     - identifier: about

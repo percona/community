@@ -7,4 +7,17 @@
 
 {{ define "mainwrapper" }}
   {{ .Content }}
+
+  <div class="contentblock">
+
+    {{ partial "home4events.html" . }}
+
+    {{ partial "home4posts.html" . }}
+
+    {{ partial "home4podcasts.html" . }}
+
+    {{ partial "home4streams.html" . }}
+  
+  </div>
 {{ end }}
+

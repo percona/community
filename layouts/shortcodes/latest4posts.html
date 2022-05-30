@@ -1,7 +1,7 @@
 <div class="grid grid--4">
 {{- range first 4 (where $.Page.Site.RegularPages "Section" "blog") -}}
 <div class="grid__item">
-{{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+{{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) ) }}
 </div>
 {{- end -}}
 </div>

@@ -1,0 +1,125 @@
+---
+title: "Running 1000’s of MySQL Instances: Vaidyanathan Subramanian, Engineering Manager at Flipkart, OpenSource Database Podcast64"
+description: "Systems and technology behind running such a large scale deployment of MySQL"
+short_text: "Vaidyanathan runs the team at Flipkart that helps build and maintain their MySQL fleet.  Join the HOSS as he talks to Vaidy his journey to his current role, and the systems and technology behind running such a large scale deployment of MySQL."
+date: "2022-05-09"
+podbean_link: "https://percona.podbean.com/e/running-1000-s-of-mysql-instances-the-hoss-64-vaidyanathan-subramanian-engineering-manager-at-flipkart/"
+youtube_id: "EHhRtuAa-QU"
+speakers:
+  - vaidyanathan_subramanian
+  - matt_yonkovit
+---
+
+## Transcript
+**Matt Yonkovit:**  
+Hey, everybody, welcome to another HOSS Talks FOSS. I'm the HOSS, Head of Open Source Strategy here at Percona. And today I'm here with Vaidy from Flipkart, who is one of India's largest e-commerce sites, and they have one of the largest e-commerce MySQL deployments in the world. And I'm really excited to have him here today to chat with us a little bit about his journey and about the stuff going on at Flipkart. How are you today, Vaidy?
+
+**Vaidyanathan Subramanian:** 
+Great, how about you, Matt?
+
+**Matt Yonkovit:**  
+I'm doing wonderful as well.  It is Tuesday. I wish it was Friday, but it's not. So I'm gonna have to just deal with the Tuesdays. So it happens. It happens, right? So, Vaidy, you’ve been in the open-source space. And I started in the MySQL space. So MySQL always has that special place in my heart. I originally started as an Oracle DBA, though, and moved to MySQL later on. Now, I'm curious, how did you get started on the MySQL side of things? Way back in the day, what was your career journey? Where did you start?
+
+**Vaidyanathan Subramanian:** 
+I think if you look at MySQL, it's probably one of the oldest software out there. And absolutely, rock-solid software. Right. And I think for a very long time, one could basically just say that, if it is a database, it is MySQL, right? I mean, before all the other new ages, kids came to the blog, right, like the NoSQL and stuff like that. It was always MySQL, which did most of the heavy lifting, I would say. So I have been in this industry for about 12 to 13 years. And I'm proud to say writing my first database was Percona. And it's still continuing to be my second book on flavor for that matter, right? It just talks about how good the product is.
+
+**Matt Yonkovit:**  
+Well, that's good. That's good. And so did you start coming out of college as a developer? Or did you start on the operation side? Did you start like admin sysadmin?  Where did that the kind of transfer from getting into that database space? What did that look like?
+
+**Vaidyanathan Subramanian:** 
+Well, I think, so I have never been a sysadmin or a DBA. ever in my life. I'm still not a DBA of the sort, right. But I started as an engineer, and for the first 12 years of my career, I have been an IC independent contributor. And it just from the past two years of the sort, I've been managing teams over here in Flipkart. But yeah, I've been mostly in the developer engineer space, I would say,
+
+**Matt Yonkovit:**  
+awesome. Okay, so you've been working with MySQL, and you've been deploying? And now at Flipkart, I'm interested, do they have a dedicated DBA team? Or do the engineering team the developers actually manage that environment?
+
+**Vaidyanathan Subramanian:** 
+I mean, it's a very good question, right? I think this is how Flipkart was before the product that we build sort of came into picture. Every team used to maintain their own MySQL databases and everything just to get very, very difficult, I would say, because not everyone knows the intricacies of Percona. Let's even say, not everyone is a subject matter expert on MySQL. And it always used to get very tough, having people who are having people in the team, so every team had to do this basically. Right. And because it was it is still, in fact, Flipkart, in fact, has two data centers and the new data centers are coming up. And we are not on the cloud where we can directly, so we have a private cloud. And there are very good reasons, monetary reasons, I would say, why we still use the private cloud. And there's no on-prem solution in a way, right, like of having a well-managed, well-oiled MySQL cluster of sort. And that is where somewhere this, this whole journey of creating the soul managed, MySQL sort of began after looking at all of these problems, I will say,
+
+**Matt Yonkovit:**  
+Okay, and so you had a lot of different teams each had their own deployments each manage them differently. Were you part of the process of trying to bring them and consolidate them a bit? And then that control because that had to have been challenging, just because if everyone's doing things a little different, how do you get them all to conform? That had to be a pretty big challenge.
+
+**Vaidyanathan Subramanian:** 
+Probably take that perspective, a little bit deeper context, are they right? I think I'm coming from Flipkart is typical as, I mean, it's an e-commerce company. And it is India's largest e-commerce company, right. And we have about 125 million users across India. And managing all of this implies there are a lot of microservices across the entire logistics supply chain and all of that, right. And typically, this whole e-commerce business logistics supply chain is very transactional in nature. And that basically means MySQL again, because it is the hero of transactional data of sort, right? So when I was part of teams, where we were using MySQL, for doing in supply chain side of things, right, eventually, I started also going into, I mean, the scale is a problem everywhere, right? So I was managing a team, which was managing test witnesses, the planet, open version, and open-source version. That was when we also as a team, contributed back to betas as well when it was not planet scale. I mean, right?
+
+**Matt Yonkovit:**  
+Yes, that was before planet scale. I mean, the Vitess was created at YouTube originally, and then open source. And it's been out there for several years now. But yeah,
+
+**Vaidyanathan Subramanian:** 
+So it was around that time, I started developing this expertise. And people also started associating me with some of these things. And it was around this time, I started this project in the supply chain side of things, saying I want to build managed MySQL, which can solve a lot of these problems of sorts. And then what I did was I actually took, I moved into the platform side of world, where I knew it would be funded of sort by the company as well, instead of working on supply chain problems, I actually started working more on this specific product for our on-prem cloud of sort, right. And as you said, the journey has, the journey was never easy of sort, right, like, so you, you get you to build it. And then it's always a very difficult task and getting your first customers first few customers have sort, right. So what we did was, we actually poached somebody from some of this accounting, some of these teams, which were heavy on MySQL, for example, the accounting teams and things like that, that reports their MySQL DB on to our team. And we just told the team that this guy will take care of your entire stack of sort, you don't need to worry, we'll ensure that your uptime, MySQL uptime is  healthy or solid. But behind the scenes, we started completely managing it behind the scenes, and that's, that's basically where it sort of started.
+
+**Matt Yonkovit:**  
+And now, you have this platform. It's a database as a service, basically, but just for the internal Flipkart teams, right. So you're enabling them to add their own databases, their own resources, and everything else. Right. Oh, excellent. That's awesome. And I saw in the description of a talk that you have coming up at Percona Live that you're at 600 clusters 1600, VMs and over a petabyte of data, it's a lot.  I'm all in the MySQL space. So one of the challenges that I've seen in this current environment is, and I'm curious if you've experienced this when you're working with those development teams, a lot of times they don't have that MySQL expertise. So they build code, or they design applications that might not be 100%, optimized to take advantage of the MySQL infrastructure. So, is that something that you run into where you have to do some coaching? Or you've got some best practices for your developers to get the most out of MySQL?
+
+**Vaidyanathan Subramanian:** 
+Yeah, I think it's part of platform teams. I mean, we call it Fonda. It is basically the philosophy, right? And in, in very Indian terms, it's called Fonda. The philosophy is basically it is core versus context. Right? So this is what we talk about as a platform, we would want other teams to focus on their code and not on the context, right. So they have to focus on their supply chain, logistics, and those kinds of business functions and leave the database aside completely so that we completely manage it. And that's been the core of this whole exercise, of the sort. The answer to your question?
+
+**Matt Yonkovit:**  
+Yeah. Yeah. So maybe another take on this is a little different like, so you're responsible for making sure that the database is taken care of, but are, are there challenges that pop up from the development teams or the different business units that you have to deal with quite a bit? I mean, I know in my experience, it's all Always the performance, there's always the architecture of the schemas, things like that tend to be sometimes questionable. And they cause more issues than the infrastructure, and a lot of cases,
+
+**Vaidyanathan Subramanian:** 
+I get your point, I think, be tried to build a just like a startup, right? Like to keep very fair. The culture is very startup, right. So what did we do? We said that they are not going to be any roadblocks initially. Initially, we were doing a lot of road blocking, right, saying why do you need this size? Of instance, why do you need so many cores? Why do you need so much memory, please go and get your footprint of last year, how your QPS was, and all of that stuff. But then we started realizing that people weren't onboarding, they felt that steam isn't very friendly enough to onboard. So that's when we said now's the time for adoption. So we remove all the barriers and say, just get whatever you want, you just get it off the table. First, we'll support whatever it takes. I think that was the first thing that we did, we brought everyone we settled in on there are no barriers, it's completely no barriers, you can just get your MySQL and start managing it for you, you don't need to worry about a lot of these things. Additionally, we also said, we said that we have a pool of DBAs also here, and we will help you with your optimizing some of your stuff. I mean, this the system, also what it did is the exposed only some variables and not all the variables, variables, which are simpler to understand, were shown to the user variables, which are slightly harder to configure, like some memory parameters, which people don't have a great idea about, we abstracted that away from the user and say, you just work with these few variables, which are well understood. Right, if you need anything, more will help you out. So that was, I think, the roadblock of the sort which we were able to help things with, which, because of which they started onboarding onto us. And our philosophy has always been that you should not need an SME in every right, if you are accepting everything, then the purpose is not being solved, really. So we are trying to help in whatever ways possible so that people on board.
+
+**Matt Yonkovit:**  
+Okay, that makes sense. And so as people add their own applications you mentioned you have clustering, what sort of clustering are you using right now? What, what technology for that?
+
+**Vaidyanathan Subramanian:** 
+I think it's a standard replication, right? The two kinds of replication that is possible today to build log-based replication on PG KD-based replication, we offer both the flavors, right, and people can create their cluster of the sort, right, whatever topology they want to create, and go ahead and create. We are not, we are not offering multi-master yet that is in the worksite. But it's still a single master of the sort. But we do offer multi-cloud solutions, multi-region solutions, and some technology that goes across multiple regions and stuff like that. So
+
+**Matt Yonkovit:**  
+Okay, and are you using some tool for automated failover? Like orchestrator or your own custom scripts?
+
+**Vaidyanathan Subramanian:** 
+Good question, I think, right, like so when we started building this piece out, right? The orchestrator, the orchestrator, I think what you're talking about, it didn't fit in with our use case of sword raid, especially given the fact that this is more of an on-prem cloud, which has its own complexities involved, which, which, which is not you can't just take it on, put it on, I mean, AWS or GCP, directly, right, like this is the on-prem solution. So we felt that there was the whole, it was not matching Well, or fitting well with our substitution. And that's when we sort of built our entire own orchestrator-of-sort orchestrator monitoring network, and all of that was built from scratch here. So it's an entirely, it's completely built into that.
+
+**Matt Yonkovit:**  
+Okay, and you mentioned you're using virtual machines. So like, some people now are starting to explore using containers for the database as a service, but you decided to stick with the virtual side.
+
+**Vaidyanathan Subramanian:** 
+So, as a company from the last, I would say one, one and a half years we are getting completely towards the Kubernetes side of things right. Before that, we were mainly on the VM world of the sort during very large base metals and stuff like that right. So this effort of making this whole product is called halted by the way I didn't mention that. So, putting Altair voting Altair to ensure that it also starts supporting becomes an operator of sorts. And that is also one of the things that we would like to open source it outside once we actually make it compatible with at least a significant
+
+**Matt Yonkovit:**  
+Yeah, because that would be great. I mean, I think that so many people are looking to Kubernetes to be an easy way of managing the mass have systems in the massive services, it makes sense to kind of fit in the database side, and we're seeing growth there as well. So we have our operators for Percona has products. So we're seeing growth there. And it's interesting that you're starting to move from the VM side to the Kubernetes side. We're seeing so many companies do that because a lot of the applications are being deployed with Kubernetes, as well. So I'm guessing a lot of the applications that you support from the database standpoint are already cloud-native; they're already deployed via Kubernetes, and are already deployed in that microservice world.
+
+**Vaidyanathan Subramanian:** 
+That's right. That's it, I think. I mean, even when we first started with the stateless migration, mostly the stateless migration of applications which don't have a state associated with because leading to Kubernetes, followed up with the staples, I don't think because staples side of things naturally brings its own complexities with it, right, it's not, not not going to be a straightforward thing to think of a lot of things, including how you're going to back up the data and everything, especially if it's on-prem. Cloud, right, you have to build some of these things yourself. Because not all products out there are completely compatible with any kind of on-prem cloud, you can't just take software and put it out there, everything will directly work, and many of them are not even compatible. So that's mainly the challenge of sort.
+
+**Matt Yonkovit:**  
+Oh, yeah, definitely.  And what's interesting is, I think some toolings. And some of these changes are driven by just the size of environments that are growing so rapidly. Now, I know you had mentioned 1600 instances or VMs running. But I'm guessing that's grown substantially over the last few years. And I mean,
+
+**Vaidyanathan Subramanian:** 
+It's a continuously growing number, right? Every day, we have onboarding. Every other day, people want to expand the cluster. And so it keeps expanding every other day as well,
+
+**Matt Yonkovit:**  
+We do a regular survey. And it was interesting two years ago, the number of people who responded to our survey that had more than 100 instances running was about 20% of the overall population.  I think it was 800 people who responded or something like that. This past year, it jumped to 40%. So it went from 20% to 40, for more than 100. And for more than 1000. It went from like 11 to 20%. So I mean, like in one year, right? So that's a pretty significant spike. And I think it's driven by everyone wants their own applications, there are more of these platform requirements where you need each individual system to be managed, and everybody wants their own. So you need these platforms built internally or adopt a cloud platform where you can automatically empower those developers to move fast, because when I started, I mean, to build a database system, and to build a database setup, it could be a couple of days, it'd be like you set up some Okay, in a week, I'll get back to you with the instance. No, no, you need that, like, within like minutes. Right and I think that that has completely changed the paradigm of everything that we've been doing in the tech space is that move fast get things now, nobody wants to wait, and nobody can afford to wait. Make sense? So I'm curious like this big deployment you're deploying this platform, what was maybe highlight a couple of the interesting things that you learned during this journey? Maybe there were one or two things that you're like, oh, I didn't, I didn't know that that was gonna happen, or that was a that was much weirder than I thought it would be. Is there a couple of those that you might be able to share with us?
+
+**Vaidyanathan Subramanian:** 
+Yeah, absolutely. I think maybe I can share two instances, probably.
+
+**Matt Yonkovit:**  
+Okay, sure. No problem.
+
+**Vaidyanathan Subramanian:** 
+At least I didn't know about it. And we sort of figured it out. Maybe this is specific to MySQL as well, right. In MySQL, we started in a typical master multi slave architecture of sort, right. Eventually, as people started using their data stores of sort, somewhere down the line, we started seeing that everyone reported higher disk usage on slaves. So we keep debugging, debugging finding out why, what, exactly, and there's no clear answer of the sort. It would organically just keep happening, you keep trimming it down, you keep optimizing data, and again, after some time, it sort of increases. And we did a good amount of experiments have sought to figure out what kind of schemas or what kind of query patterns or what kind of data is causing this and we did roundabout to some sort of stuff sort of idea that these are the kinds of schemas which are causing some of these, this ever-increasing disc divergence is what we're calling right. And if only we got so frustrated that it's got to be something. So we asked Percona outs the open-source community expecting to get some answers, but then the answer that we got, there was yes, this is expected. And there is no other way except rebuilding a rebuilding not completely. So that way, we were sort of happy that we did our due diligence, and then eventually figured out that actually is the problem, and there's no way around it. And so today, we have an automated way of the slaves also keep rebuilding every time the difference between master and slave, if it causes a certain percentage for the same amount of data, if there is more than, say, 10% increase in sites, then we automatically start rebuilding it of sorts. So that is something we have started doing.
+
+**Matt Yonkovit:**  
+Okay, so, so basically what you're saying is like that the, maybe the changes in the system left some empty space, they left some junk out there, and just they just need to be cleaned up regularly,
+
+**Vaidyanathan Subramanian:** 
+In some way. But it's always been that Master is low and slave is IVF. Seen, maybe 5% of the use cases where the slave was less than the master was. Also, we weren't able to figure out why that happened. But this is something I can share with one more exciting incident or thing we have seen. And these are things that you can only experience in our on-prem solution, right? Because people will not be exposed to a lot of these things if they are using cloud services or something. So there's this case, where you try to their maintenance is happening all the time on the private cloud, right, like content cloud, that they will still have racks, their money shapes and things like that. So we understand a lot of those constructs in the application. We know there is a network, switch another door, which is getting rebooted or something, our application basically detects setting on the database server is not any longer available immediately, and then does failover to the standby and the customer comes up. And applications are continuously writing, they don't even face a downtime because we also using a DNS in this case. So typically, they keep writing. And then what happens is, once the network is taught or something is back from maintenance, the old, old master, which was supposed to have been taken down, also starts taking rights. You have a split, right? You have a split-brain problem. These are some of the things I think were very interesting to solve in this whole space, which you typically don't see people solving a lot of these things because you don't see that sort of scale. And when you operate at this sort of scale, you also see a lot of these edge cases race conditions, and all of these sorts of things.
+
+**Matt Yonkovit:**  
+Yeah, yeah. Yeah. I mean, it is difficult. I mean, I think that that has led to this whole new kind of industry on observability, right. And it's a big buzzword. Because now when you've got when you have a couple of dozen servers, a couple of dozen databases, it's easier to get a handle on things. Maybe you have some scripts, you get some emails now and then or whatever, they maybe throw a monitoring tool out there. Great. But when you've got 1000s, how do you find the one or the set of servers that is causing the problem? When it's only, it could be a dozen? It could be one, it could be out of 1000? And that becomes challenging? How are you approaching it?  What sort of tooling are you using for monitoring, right now, to try and find those problems when they occur?
+
+**Vaidyanathan Subramanian:** 
+So we have something called Cosmos here. It is equivalent to Prometheus, we don't have Prometheus yet. But it's a very parallel software, it's a time-series database. And possibly, there are teams also using Prometheus. But the idea is the same, right? We do keep ingesting a lot of these metrics onto the systems we, we have a lot of these scheduled rules or alerts, right which, which, which, which you configure it with a certain threshold. And the moment one of these parameters basically goes above the threshold alert is sort of neat. So that is the alerting part of this thing. And the monitoring part we have created pre-created a lot of these dashboards for all of our customers so that they don't have to sit and recreate a lot of these things. So we have cluster-level metrics, member-level metrics, I know DB level metric system metrics, kernel metrics Same, and a lot of these things are already pre-plotted and everything is done. So people just have to, they don't have to really do anything. They just have to go to the platform. And they get all of these graphing and alerting and everything.
+
+**Matt Yonkovit:**  
+Now Awesome, awesome. Well, buddy, I want to thank you for coming on today to chat with me for a while about your MySQL deployments and talk to us a little about the challenge. And those who are listening. Vaidy is going to be giving a talk where he's gonna go a little deeper into how they've overcome some of these issues at Percona live. So if you can make it, May 16 through 18th. That'd be great. But everybody, I just wanted to say how much I appreciate having you today.
+
+**Vaidyanathan Subramanian:** 
+Let's go, thanks a lot for having me today.
+
+**Matt Yonkovit:**  
+Haha, right. And for those who are watching, if you liked this video, go ahead and like it subscribes to the videos, subscribe to the podcast, and let us know what sort of content he'd like to see, and we'll try and make sure we fill that order. But we appreciate you hanging out with us today everyone and until next time.
+
+

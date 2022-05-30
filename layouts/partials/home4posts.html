@@ -1,0 +1,11 @@
+<div class="home-blocks home-blocks__streams">
+    <h2>Community Blog</h2>
+    <div class="grid grid--4">
+    {{- range first 4 (where $.Page.Site.RegularPages "Section" "blog") -}}
+    <div class="grid__item">
+    {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) ) }}
+    </div>
+    {{- end -}}
+    </div>
+    <a href="{{ "/blog/" | relURL }}" >View All</a>
+</div>

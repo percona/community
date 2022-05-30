@@ -5,7 +5,7 @@ images:
   - events/mergeconf-2021/mergeconf-2021.jpg
 layout: single
 date: "2021-11-13"
-tags: ['opensource', 'russia', 'event']
+tags: ['opensource', 'russia', 'Event']
 speakers:
   - peter_zaitsev
   - maria_azizova

@@ -1,0 +1,75 @@
+.speaker .post {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.speaker img {
+    border-radius: 500px;
+    border: 2px solid rgba(0,0,0,.1);
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.downloadbtn button {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.landing {
+
+    .landing__video {
+        padding-top: 2em;  
+        padding-bottom: 2em;  
+        text-align: center;
+    }
+
+    .body ul {
+        @media screen and (min-width: 1000px) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+    }
+
+    .body p {
+        @media screen and (min-width: 1000px) {
+            padding-right: 8rem;
+            padding-left: 8rem;
+        }
+    }
+
+    figure {
+        padding-top: 2em;  
+        padding-bottom: 2em;  
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top:1.5rem;
+        margin-bottom:1rem;
+        font-weight: normal;
+
+        @media screen and (min-width: 760px) {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          margin-top:1.5rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          margin-top: 3rem;
+        }
+        @media screen and (min-width: 1400px) {
+          font-size: 3rem;
+          line-height: 3.5rem;
+          margin-top: 3rem;
+          margin-bottom: 1em;  
+        }
+    }
+
+    h2, h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}

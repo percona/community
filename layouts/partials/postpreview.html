@@ -1,12 +1,14 @@
 <a href="{{ .Link }}" class="post post--preview">
 {{ with .Image }}<img src="{{ ((resources.Get .).Fill "682x384 90% jpg").RelPermalink }}" alt="" />{{ end }}
-<h2>{{ .Title }}</h2>
+<h3>{{ .Title }}</h3>
+{{ if .Content }}
 <div class="post__content">
-{{ if .Excerpt -}}
+{{ if .Excerpt }}
 {{- .Excerpt | markdownify -}}
 {{ else }}
 <p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape  -}}</p>
 {{ end }}
 {{ if not .Hideread }}<p class="readmore">Read more &raquo;</p>{{ end }}
 </div>
+{{ end }}
 </a>
