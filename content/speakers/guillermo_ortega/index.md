@@ -12,4 +12,6 @@ social:
   twitter:
   github: 
   linkedin: 
+images:
+  - speakers/guillermo_ortega.png
 ---
