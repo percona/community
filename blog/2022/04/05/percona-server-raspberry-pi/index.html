@@ -28,13 +28,17 @@ $ tar -zxvf boost_1_78_0.tar.gz
 $ https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.27-19/source/tarball/percona-xtrabackup-8.0.27-19.tar.gz
 $ tar -zxvf percona-xtrabackup-8.0.27-19.tar.gz
 </code></pre></div><h2 id=build-percona-server>Build Percona Server</h2><p>At the time of writing 8.0.27-18 is the current version.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ cd percona-server-8.0.27-18
-$ cmake -DFORCE_INSOURCE_BUILD=1 -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql .
+$ mkdir arm64-build
+$ cd arm64-build
+$ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
 $ sudo make -j1
 $ sudo make install
 </code></pre></div><p>You will notice that I used make -j1 above. I found that when using make -j2 or -j3
 that the Raspberry Pi 4 would be come unresponsive around 80% into the build. So dropping to
 -j1 took the build a little longer and complete.</p><h2 id=build-xtrabackup>Build XtraBackup</h2><p>At the time of writing 8.0.27-19 is the current version.</p><div class=highlight><pre class=chroma><code class=language-fallback data-lang=fallback>$ cd percona-xtrabackup-8.0.27-19
-$ cmake -DFORCE_INSOURCE_BUILD=1 -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/xtraback .
+$ mkdir arm64-build
+$ cd arm64-build
+$ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/xtrabackup
 $ sudo make -j1
 $ sudo make install
 </code></pre></div><p>Once again I had to use -j1 for the build. Took longer to build but it completed.
