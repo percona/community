@@ -1,11 +1,11 @@
 ---
-title: "How and why contribute to communities"
-date: "2022-05-31T00:00:00+00:00"
+title: "How and Why Contribute to Communities"
+date: "2022-05-30T00:00:00+00:00"
 tags: ['PMM' , 'minikube', 'CSI', 'kubernetes', 'k8s', 'operator' ]
 authors:
   - denys_kondratenko
 images:
-  - superhero.png
+  - blog/2022/5/how_and_why_contirbute.jpg
 slug: csi-minikube-multinode
 ---
 
@@ -57,21 +57,21 @@ Percona engineering management came with idea of dedicating a Focus day (we have
 
 I run with my `minikube` multi-node issue as an example of both day to day work and what could be achieved during one community hackday.
 
-### day to day community hacking
+### Day to day community hacking
 
 `minikube` issue affects me as a developer so I spent a day to investigate it and half a day to find out workaround and next steps.
 
-First I spent quite a time to understand what is going one and if that issue of `minikube` or DBaaS, or maybe operator's issue. It was interesting detective work and I found out that it is indeed `minikube` related issue and similar issue already exists in GitHub: [kubernetes/minikube #12360](https://github.com/kubernetes/minikube/issues/12360).
+First I spent quite a time to understand what is going on and if that issue of `minikube` or DBaaS, or maybe operator's issue. It was interesting detective work and I found out that it is indeed `minikube` related issue and similar issue already exists in GitHub: [kubernetes/minikube #12360](https://github.com/kubernetes/minikube/issues/12360).
 
 I have described my findings in [this comment](https://github.com/kubernetes/minikube/issues/12360#issuecomment-1123247475) and later found workaround that enables me and my colleagues to continue to use `minikube` in [multi-node setup](https://github.com/kubernetes/minikube/issues/12360#issuecomment-1123794143).
 
-That was day to day community hacking, I also spend a little time to find out how to fix it correctly and joined [Minikube Triage party](https://minikube.sigs.k8s.io/docs/contrib/triage/) to discuss the issue (sorry folks, still need to find time to join it regularly and help with triaging).
+That was day to day community hacking, I also spent a little time to find out how to fix it correctly and joined [Minikube Triage party](https://minikube.sigs.k8s.io/docs/contrib/triage/) to discuss the issue (sorry folks, still need to find time to join it regularly and help with triaging).
 
 And there I left it to the next opportunity to contribute.
 
-### hackday
+### Hackday
 
-Opportunity presented itself quite quickly with new Community Hackday initiative and I decided that would be a great time to fix part of the issue as the complete fix would take longer than a day.
+Opportunity presented itself quite quickly with new Community Hackday initiative and I decided that it would be a great time to fix part of the issue as the complete fix would take longer than a day.
 
 First step in fixing [kubernetes/minikube #12360](https://github.com/kubernetes/minikube/issues/12360) is to fix [kubernetes-csi/csi-driver-host-path](https://github.com/kubernetes-csi/csi-driver-host-path) to support unprivileged containers.
 
@@ -158,7 +158,7 @@ localhost/hostpathplugin                   latest           f36f889fb57b  2 minu
 
 It appears to be super easy, I had Go 1.18 and podman already setup on my machine.
 
-So I have an image and need now to reproduce the issue. I need k8s cluster, setup CSI driver and upload my custom container:
+So I have an image and now need to reproduce the issue. I need k8s cluster, setup CSI driver and upload my custom container:
 
 ```sh
 $ minikube start --nodes=2 --cpus=2 --memory=2G
@@ -271,7 +271,7 @@ NAME                       READY   STATUS    RESTARTS   AGE     IP            NO
 csi-hostpath-socat-0       1/1     Running   0          24h     10.244.1.13   minikube-m02   <none>           <none>
 csi-hostpathplugin-fnhvr   4/4     Running   0          2m27s   10.244.0.24   minikube       <none>           <none>
 csi-hostpathplugin-w5rxt   4/4     Running   0          2m30s   10.244.1.55   minikube-m02   <none>           <none>
-perm-test-0                1/1     Error     0          2m18s   10.244.1.56   minikube-m02   <none>           <none>
+perm-test-0                0/1     Error     0          2m18s   10.244.1.56   minikube-m02   <none>           <none>
 ```
 
 If we put `sleep 3600` before `exit 1` we actually could jump into the container and inspect the permissions:
@@ -282,10 +282,16 @@ $ id
 uid=65534(nobody) gid=65534(nobody) groups=65534(nobody)
 
 $ stat /mnt/perm_test 
-File: /mnt/perm_test Size: 40 Blocks: 0 IO Block: 4096 directory Device: 10h/16d Inode: 82570 Links: 2 Access: (0755/drwxr-xr-x) Uid: ( 0/ root) Gid: ( 0/ root) Access: 2022-05-27 13:21:56.905860356 +0000 Modify: 2022-05-27 13:21:56.905860356 +0000 Change: 2022-05-27 13:21:56.905860356 +0000
+File: /mnt/perm_test 
+Size: 40 Blocks: 0 IO Block: 4096 directory 
+Device: 10h/16d Inode: 82570 Links: 2 
+Access: (0755/drwxr-xr-x) Uid: ( 0/ root) Gid: ( 0/ root) 
+Access: 2022-05-27 13:21:56.905860356 +0000 
+Modify: 2022-05-27 13:21:56.905860356 +0000 
+Change: 2022-05-27 13:21:56.905860356 +0000
 ```
 
-As we see that directory has `Access: (0755/drwxr-xr-x)` and when we would like to write to it we have not enough permissions for `nobody` user and creating file fails. We also could see that there are couple of pods running for the CSI plugin that actually provision PV/Cs.
+As we see that directory has `Access: (0755/drwxr-xr-x)` and when we would like to write to it we have not enough permissions for `nobody` user and file creation fails. We also could see that there are couple of pods running for the CSI plugin that actually provision PV/Cs.
 
 Clean up:
 
@@ -322,7 +328,7 @@ $ kubectl set image ds/csi-hostpathplugin hostpath=localhost/hostpathplugin:late
 
 Another way to modify DeamonSet is to run edit `$ kubectl edit ds csi-hostpathplugin`, and change something. For example I was changing `-v=6` and back to `-v=5` so it would restart all containers with new image (that I uploaded).
 
-> **stuck**: I actually spent 2h trying to understand why I don't see logs that I have added, and that actually led to learn `glog`, but it was quite simple. By default `kubectl logs csi-hostpathplugin-w5rxt` shows logs for default container, not for hostpath. So I just needed to path right parameters `kubectl logs csi-hostpathplugin-w5rxt -c hostpath` 
+> **stuck**: I actually spent 2h trying to understand why I don't see logs that I have added, and that actually led me to learn `glog`, but it was quite simple. By default `kubectl logs csi-hostpathplugin-w5rxt` shows logs for default container, not for hostpath. So I just needed to path right parameters `kubectl logs csi-hostpathplugin-w5rxt -c hostpath` 
 
 Adding volume to the pod happens in couple of stages, `hostpath.go` creates directory on a needed node and `nodeserver.go` publishes this volume to the pod by `bind` mounting target pod `mount` directory to the volume directory created by `hostpath.go`.
 Please check [Spec](https://github.com/container-storage-interface/spec/blob/master/spec.md).
@@ -344,7 +350,9 @@ I0528 07:07:57.543195       1 hostpath.go:187] mode info: -rwxr-xr-x for user: 0
 
 So actually mode is 0755 instead of 0777 as requested in MkdirAll, and documentation clarifies:
 ```
-MkdirAll creates a directory named path, along with any necessary parents, and returns nil, or else returns an error. The permission bits perm (before umask) are used for all directories that MkdirAll creates. If path is already a directory, MkdirAll does nothing and returns nil.
+MkdirAll creates a directory named path, along with any necessary parents, and returns nil, or else returns an error. 
+The permission bits perm (before umask) are used for all directories that MkdirAll creates. 
+If path is already a directory, MkdirAll does nothing and returns nil.
 ```
 
 Lets check umask for the root user (`minikube ssh -n minikube-m02`):
