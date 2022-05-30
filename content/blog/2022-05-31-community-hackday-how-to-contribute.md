@@ -1,11 +1,11 @@
 ---
-title: "How and why contribute to communities"
-date: "2022-05-31T00:00:00+00:00"
+title: "How and Why Contribute to Communities"
+date: "2022-05-30T00:00:00+00:00"
 tags: ['PMM' , 'minikube', 'CSI', 'kubernetes', 'k8s', 'operator' ]
 authors:
   - denys_kondratenko
 images:
-  - superhero.png
+  - blog/2022/5/how_and_why_contribute.jpg
 slug: csi-minikube-multinode
 ---
 
@@ -57,7 +57,7 @@ Percona engineering management came with idea of dedicating a Focus day (we have
 
 I run with my `minikube` multi-node issue as an example of both day to day work and what could be achieved during one community hackday.
 
-### day to day community hacking
+### Day to day community hacking
 
 `minikube` issue affects me as a developer so I spent a day to investigate it and half a day to find out workaround and next steps.
 
@@ -69,7 +69,7 @@ That was day to day community hacking, I also spend a little time to find out ho
 
 And there I left it to the next opportunity to contribute.
 
-### hackday
+### Hackday
 
 Opportunity presented itself quite quickly with new Community Hackday initiative and I decided that would be a great time to fix part of the issue as the complete fix would take longer than a day.
 
