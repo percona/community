@@ -22,6 +22,7 @@ speakers:
   - leonardo_bacchi_fernandes
   - maksim_gramin
   - gabriel_ciciliani
+  - ravikumar_buragapu
 weight: 1
 ---
 
@@ -78,5 +79,6 @@ Already on the schedule:
 * Database as Code. Not Only Migrations by **Maksim Gramin** (Independent Consultant and Researcher)
 * Cross-cloud Migrations With Databases on Kubernetes by **Sergey Pronin** (Percona)
 * Physical Backups With Percona Backup for MongoDB by **Sergey Pronin** (Percona)
+* Database Resiliency by **Ravikumar Buragapu** (Adobe) 
 
 More talks to come, stay tuned! All updates will be published on this page.
