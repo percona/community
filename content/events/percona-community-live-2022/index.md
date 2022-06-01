@@ -28,10 +28,6 @@ weight: 1
 
 Good news! We are happy to announce a new 100% virtual event coming up this summer - **Percona Community Live**! 
 
-<div class="landing__video">
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/LFCupizJsnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 It will take place on June 21-23 online and will be live-streamed on YouTube, LinkedIn, and Twitch. It is an excellent opportunity to learn from the best-of-breed experts directly from your home! We will focus on the latest trends in the database world, and secret tricks from the open source stars.
 
 ![Percona Community Live](events/percona-community-live/cover-start.jpg)
@@ -40,36 +36,13 @@ We have so much great content on Percona Live this year (as usual, I should say)
 
 The schedule will be released soon. 
 
-### Important dates
-
-*CFP closes:* Monday, May 29th, 2022
-
-*Schedule Announcement:* Thursday, June 2nd, 2022
-
-*Video Acceptance Deadline:* Tuesday, June 7th, 2022
-
-*Event Dates:* June 21st-23d, 2022
-
-### Suggested Topics
-
-* MySQL database
-* PostgreSQL databaase
-* MongoDB database
-* New & Emerging Tech
-
-If you would like to speak at the event, please fill this form in to contact us (community-team@percona.com). 
-
-{{< button link="https://forms.gle/QfQ2uBgPmB9AN4EJA" >}}
-Submit Your Talk
-{{< /button >}}
-
 ## Agenda
 
 Already on the schedule:
 
 * Flexible Indexing with Postgres by **Bruce Momjian** (EDB)
 * PMM on Kubernetes by **Denys Kondratenko** (Percona)
-* The Open-Source Distributed Graph Database: **Nebula Graph by Wey Gu** (Vesoft)
+* The Open-Source Distributed Graph Database: Nebula Graph by **Wey Gu** (Vesoft)
 * 10 Deadly PostgreSQL Sins by **Matt Yonkovit** (Percona) and **Barrett Chambers** (Percona)
 * I Dropped My Database! Now What? - A Dive Into PostgreSQL Backup Using pgBackRest and How to Use it for PITR by **Charly Batista** (Percona)
 * The MySQL Ecosystem in 2022 by **Colin Charles** (Codership)
@@ -80,5 +53,22 @@ Already on the schedule:
 * Cross-cloud Migrations With Databases on Kubernetes by **Sergey Pronin** (Percona)
 * Physical Backups With Percona Backup for MongoDB by **Sergey Pronin** (Percona)
 * Database Resiliency by **Ravikumar Buragapu** (Adobe) 
+* Percona Database Distributions - An Overview by **Lenz Grimmer** (Percona)
+* Emulate Block Device Incidents With IO Scheduler by **Yang Keao** (PinCAP)
+* How We Keep Metrics for a Long Time in VictoriaMetrics - **Anton Bystrov** (Percona - Simbirsoft)
+* Making Databases as Easy as Legos: No code, No problem! by **Farokh Shahabi** (Formaloo)
+* How to Build Percona Server 8 on Raspberry Pi 4 by **Wayne Leutwyler** (Optum)
+* Git for Databases: How to Version and Collaborate on Databases with Liquibase by **Robert Reeves** (Liquidbase)
+* The Journey to Achieve 1000x TPS for a Real-World Core Banking Application on TiDB by **Sidney Chen** (PingCAP)
+* Overview of Different ALTER Algorithms and Its Locking Scenarios in MySQL (DEMO) by **Sri Sakthivel M.D.** (Percona)
+* MySQL Query Tuning and Optimizer Internals by **Gabriel Ciciliani** (Independent consultant)
+* Optimization Techniques in MySQL by **Yunus Shaikh** (Percona)
+* Database Reliability Engineering for MySQL by **Matthias Crauwels** (Pythian)
+* PostgreSQL and Artificial intelligence by **Ibrar Ahmed** (Percona)
+* The Low Hanging Fruits of MySQL by **Kedar Vaijanapurkar** (Percona)
+* Production with ProxySQL and Consul by **Alawi Assaggaf** (8x8)
+* PMM Development Process by **Denys Kondratenko** (Percona)
+* Percona Pstress: A Concurrency and Crash Recovery Testing Tool to Test MySQL by **Rahul Malik** (Percona)
+* PostgreSQL Query Performance Insights by **Hamid Akhtar** (Percona)
+* PostgreSQL Replication Conflicts: Avoiding Pitfalls by **Hamid Akhtar** (Percona)
 
-More talks to come, stay tuned! All updates will be published on this page.
