@@ -4,7 +4,7 @@ description: "Percona Live 2022 will take place in Austin on May 16th-18th. Watc
 images:
   - events/road-percona-live-2022/RoadToPerconaLive2022.jpg
 layout: single
-weight: 1
+date: "2022-05-16"
 tags: ['PerconaLive', 'opensource', 'event']
 ---
 

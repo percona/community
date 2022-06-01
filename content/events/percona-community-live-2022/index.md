@@ -20,7 +20,6 @@ speakers:
   - maksim_gramin
   - wey_gu
   - leonardo_bacchi_fernandes
-  - maksim_gramin
   - gabriel_ciciliani
   - ravikumar_buragapu
 weight: 1
