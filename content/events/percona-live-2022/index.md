@@ -2,7 +2,7 @@
 title: "Percona Live 2022"
 description: " Percona Live 2022 took place in Austin, TX on May 16th-18th, and it was an amazing 3-day event. Attendees learned about how open source database technology can power applications, improve websites, secure data, and solve critical database issues."
 layout: csv
-date: "2022-05-16"
+date: "2022-05-18"
 tags: ['opensource', 'event']
 csv_talks: "assets/csv/PL2022-Talks.csv"
 csv_speakers: "assets/csv/Percona-Live-2022-Speakers.csv"

@@ -4,7 +4,7 @@ description: "Join the new regular series of monthly Online MeetUp for each comm
 layout: list
 images:
   - events/streams-pg/Stream-Cover.jpg
-weight: 1
+weight: 4
 ---
 
 {{% hero %}}
