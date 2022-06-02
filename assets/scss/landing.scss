@@ -17,6 +17,22 @@
 
 .landing {
 
+    .dataTables_filter,
+    .dataTables_length {
+        margin-bottom: 0.5em;
+    }
+
+    .dataTables_filter input,
+    .dataTables_length select {
+        padding: 7px;
+        font-size: 1em;
+    }
+
+    .landing__table  tr,
+    .landing__table  td {
+        font-size: 1em;
+    }
+
     .landing__video {
         padding-top: 2em;  
         padding-bottom: 2em;  
