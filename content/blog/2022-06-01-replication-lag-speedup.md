@@ -101,7 +101,7 @@ will enable more transactions to be synced at one time to disk. This will reduce
 ## replica_parallel_type = logical_clock
 
 **As of version 8.0.27 the default value is logical_clock.**
-Transaction will be applied in parrallel on the replica based on the source timestamp in the binlog. 
+Transaction will be applied in parrallel on the replica based on the source timestamp in the binlog.
 
 ## replica_parallel_workers = 4
 
