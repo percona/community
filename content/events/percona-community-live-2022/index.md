@@ -22,6 +22,21 @@ speakers:
   - leonardo_bacchi_fernandes
   - gabriel_ciciliani
   - ravikumar_buragapu
+  - yang_Keao
+  - anton_bystrov
+  - farokh_shahabi
+  - wayne_leutwyler
+  - robert_reeves
+  - sri_sakthivel
+  - yunus_shaikh
+  - matthias_crauwels
+  - divyanshu_soni
+  - ibrar_ahmed
+  - kedar_vaijanapurkar
+  - alawi_assaggaf
+  - rahul_malik
+  - hamid_akhtar
+  - naveed_shaikh
 weight: 1
 ---
 
