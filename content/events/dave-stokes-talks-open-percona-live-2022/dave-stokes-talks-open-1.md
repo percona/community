@@ -4,7 +4,7 @@ description: "Listen to the interviews from PerconaLive 2022. David Stokes invit
 images:
   - events/dave-stokes-talks-open-percona-live-2022/DSTO-1.jpg
 draft: false
-date: "2022-04-01"
+date: "2022-05-30"
 speakers:
   - dave_stokes
   - alkin_tezuysal
