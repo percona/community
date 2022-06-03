@@ -30,7 +30,21 @@
 
     .landing__table  tr,
     .landing__table  td {
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+
+    .landing-table__description {
+        padding:  0.7rem;
+    }
+
+    .landing-table__speaker {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .landing-table__description p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
     }
 
     .landing__video {
