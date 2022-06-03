@@ -90,9 +90,9 @@ The -downsampling.period key is responsible for the work. Example: the frequency
 
 Deduplication is a technology that allows you to analyze duplicate data and replace it with an appropriate reference. The use of deduplication can significantly reduce the amount of data. It is used when Prometheus or vmagent are working in HA mode and write to one VictoriaMetrics instance.
 
-In this case, we definitely need deduplication, since the database stores overlapping data, which significantly increases its volume and, in case of large volumes, the data request time. The -dedup.minScrapeInterval key is responsible for the operation of deduplication.
+In this case, we definitely need deduplication, since the database stores overlapping data, which significantly increases its volume and, in case of large volumes, the data request time. The `dedup.minScrapeInterval` key is responsible for the operation of deduplication.
 
-For example, `-dedup.minScrapeInterval=60s` means that within the same time series, all data will be collapsed and only the first point within 60 seconds will be saved.
+For example, `-dedup.minScrapeInterval=60s` means that within the same time series, all data will be collapsed and only the first point within 60 seconds will be saved. Since version 1.77 leave the last raw sample per each -dedup.minScrapeInterval discrete interval.
 
 It is recommended to set this parameter to scrape_interval for metrics. According to best practice, scrape_interval should be the same for all metrics, but this is a topic is for a separate post.
 
