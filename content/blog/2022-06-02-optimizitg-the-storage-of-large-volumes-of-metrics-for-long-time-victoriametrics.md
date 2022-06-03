@@ -4,7 +4,7 @@ date: "2022-06-02T00:00:00+00:00"
 draft: false
 tags: ['blog', 'metrics', 'VictoriaMetrics']
 images:
-    - superhero.png
+  - blog/2022/6/VictoriaMetrics.jpg
 authors:
   - anton_bystrov
 slug: 'long-time-keeping-metrics-victoriametrics'
