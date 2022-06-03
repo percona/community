@@ -6,6 +6,8 @@ images:
 layout: single
 date: "2022-05-12"
 tags: ['Event', 'meetup']
+speakers:
+  - ege_gunes
 ---
 
 ![DoK](/events/dok-istanbul-meetup-2022/5.png)

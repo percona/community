@@ -74,6 +74,17 @@ menu:
       url: /contribute
       weight: 8
 
+    - identifier: hoss
+      name: HOSS Talks
+      url: /podcasts/
+      parent: podcasts
+      weight: 1
+    - identifier: dsto
+      name: Dave Stokes
+      url: /events/dave-stokes-talks-open-percona-live-2022/
+      parent: podcasts
+      weight: 2
+
     - identifier: kubernetes
       name: Kubernetes Operators
       url: /projects/operators/
@@ -162,6 +173,11 @@ menu:
       url: /contribute/help-wanted
       parent: contribute
       weight: 8
+    - identifier: videos
+      name: Videos
+      url: /contribute/videos
+      parent: contribute
+      weight: 9
 
   footer:
     - identifier: about

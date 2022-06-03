@@ -1,0 +1,111 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/landing.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "meta" }}
+  {{- if (isset .Params "speakers") -}}
+    {{ range $key, $author := .Params.authors -}}
+      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+        <meta name="author" content="{{ .Params.fullname }}" />
+      {{- end }}{{ if $key }}, {{ end -}}
+    {{- end -}}
+  {{- end -}}
+
+  <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+{{ end }}
+
+{{ define "main" }}
+
+
+<div class="landing text">
+  
+    <h1>{{ .Title }}</h1>
+
+    <div class="body">
+      {{ partial "content.html" . }}
+    </div>
+
+    {{ $Talks := getCSV "," "assets/csv/Percona-Community-Live-Talks.csv" }}
+
+    <h2>Agenda</h2>
+
+    <table id="example" class="display landing__table " style="width:100%">
+        <thead>
+            <tr>
+                <th width="70%">Talk</th>
+                <th width="30%">Speakers</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $i, $r := $Talks }}
+            {{ if ge $i 1 }}
+            <tr>
+                <td>{{ index $r 0 }}</td>
+                <td><b>{{ index $r 1 }}</b> ({{ index $r 2 }})
+                  {{ if index $r 4 }}
+                      <br/><b>{{ index $r 4 }}</b> ({{ index $r 5 }})
+                  {{ end }}
+                </td>
+            </tr>
+            {{ end }}
+            {{ end }}
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Talk</th>
+                <th>Speakers</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+
+      $(document).ready(function () {
+          $('#example').DataTable({
+            //  scrollY: 800,
+            paging: false,
+            // search: {
+            //   smart: false
+            // }
+          });
+      });
+
+    </script>
+
+    <div class="video">
+        {{ partial "video.html" . }} 
+    </div>
+
+   {{ if (isset .Params "speakers")}}
+    <h2>Speakers</h2>
+    <div class="grid grid--3 speakers">
+        {{ range $key, $author := .Params.speakers }}
+          {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+            <div class="grid__item speaker">
+               {{- if isset .Params "images" -}}
+                    {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Image" (index .Params.images 0) "Content" .Content "Job" .Params.job) -}}
+                {{- else -}}
+                    {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Content" .Content "Name" .Params.full_name) -}}
+                {{- end -}}
+            </div>
+          {{- end }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+</div>
+
+  <br/><br/>
+  {{ partial "sharing.html" . }}
+
+  <br/><br/>
+  {{ partial "disqus.html" . }}
+  
+{{ end }}

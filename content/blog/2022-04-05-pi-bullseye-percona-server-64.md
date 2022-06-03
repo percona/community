@@ -61,7 +61,9 @@ $ tar -zxvf percona-xtrabackup-8.0.27-19.tar.gz
 At the time of writing 8.0.27-18 is the current version.
 ```
 $ cd percona-server-8.0.27-18
-$ cmake -DFORCE_INSOURCE_BUILD=1 -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql .
+$ mkdir arm64-build
+$ cd arm64-build
+$ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
 $ sudo make -j1
 $ sudo make install
 ```
@@ -73,7 +75,9 @@ that the Raspberry Pi 4 would be come unresponsive around 80% into the build. So
  At the time of writing 8.0.27-19 is the current version.
  ```
  $ cd percona-xtrabackup-8.0.27-19
- $ cmake -DFORCE_INSOURCE_BUILD=1 -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/xtraback .
+ $ mkdir arm64-build
+ $ cd arm64-build
+ $ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_78_0 -DCMAKE_INSTALL_PREFIX=/usr/local/xtrabackup
  $ sudo make -j1
  $ sudo make install
  ```

@@ -4,8 +4,7 @@ description: "Learn more about backups setting with experienced Percona experts 
 images:
   - events/streams-pg/pg-stream-week-3-cover-2.jpg
 draft: false
-weight: 1
-date: Thu, 21st April 2022, 21:00:00 +0000
+date: "2022-04-21"
 speakers:
   - charly_batista
   - matt_yonkovit
