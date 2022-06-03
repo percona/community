@@ -36,48 +36,132 @@
 
     <h2>Agenda</h2>
 
-    <table id="example" class="display landing__table " style="width:100%">
+    <table id="example2" class="display" style="width:100%">
         <thead>
             <tr>
-                <th width="70%">Talk</th>
-                <th width="30%">Speakers</th>
+                <th width="5%"></th>
+                <th width="50%">Talk</th>
+                <th>Speaker</th>
+                <th width="10%">Date</th>
             </tr>
         </thead>
-        <tbody>
-            {{ range $i, $r := $Talks }}
-            {{ if ge $i 1 }}
-            <tr>
-                <td>{{ index $r 0 }}</td>
-                <td><b>{{ index $r 1 }}</b> ({{ index $r 2 }})
-                  {{ if index $r 4 }}
-                      <br/><b>{{ index $r 4 }}</b> ({{ index $r 5 }})
-                  {{ end }}
-                </td>
-            </tr>
-            {{ end }}
-            {{ end }}
-        </tbody>
         <tfoot>
             <tr>
-                <th>Talk</th>
-                <th>Speakers</th>
+                <th></th>
+                <th>Talks</th>
+                <th>Speaker</th>
+                <th>Date</th>
             </tr>
         </tfoot>
     </table>
 
-    <script>
+    <script type="text/javascript">
 
-      $(document).ready(function () {
-          $('#example').DataTable({
-            //  scrollY: 800,
-            paging: false,
-            // search: {
-            //   smart: false
-            // }
-          });
-      });
+        function format(d) {
+            // `d` is the original data object for the row
+
+            var string = '<div class="landing-table__description"><p>';
+
+            if (d.desciption) {
+                string = string + d.desciption;
+            }
+
+            if (d.speaker1) {
+                string = string + 
+                        '<br/><br/><span class="landing-table__speaker">' + 
+                        d.speaker1 + ' (' + d.company1 + ')</span><br/>' +
+                        d.bio1;
+            }               
+
+            if (d.speaker2) {
+                string = string + 
+                    '<br/><br/><span class="landing-table__speaker">' + 
+                    d.speaker2 + ' (' + d.company2 + ')</span><br/>' +
+                    d.bio2; 
+            } 
+                  
+            string = string + '</p></div>';
+
+            return string;
+        }
+
+        function Talk ( title, speaker1, company1, bio1, speaker2, company2, bio2, desciption, date, time, duration, label ) {
+
+            if (speaker2) {
+                var speaker = '<b>' + speaker1 + '</b> (' + company1 + '), <br/>' +
+                              '<b>' + speaker2 + '</b> (' + company2 + ')';
+            } else {
+                var speaker = '<b>' + speaker1 + '</b> (' + company1 + ')';                
+            }
+ 
+            this.title = title;
+            this.speaker = speaker;
+            this.speaker1 = speaker1;
+            this.bio1 = bio1;
+            this.company1 = company1;
+            this.speaker2 = speaker2;
+            this.bio2 = bio2;
+            this.company2 = company2;
+            this.date = date;
+            this.desciption = desciption;
+        };
+
+        $(document).ready(function () {
+
+            var data_obj = [{{ range $i, $r := $Talks }}{{ if ge $i 1 }}
+               new Talk(
+                "{{ index $r 0 }}",
+                "{{ index $r 1 }}", 
+                "{{ index $r 2 }}",
+                "{{ index $r 3 }}",
+                "{{ index $r 4 }}", 
+                "{{ index $r 5 }}",
+                "{{ index $r 6 }}",
+                "{{ index $r 7 }}", 
+                "{{ index $r 8 }}",
+                "{{ index $r 9 }}",
+                "{{ index $r 10 }}",
+                "{{ index $r 11 }}", 
+                "{{ index $r 12 }}"
+                ),
+               {{ end }}{{ end }}];
+
+            var table = $('#example2').DataTable({
+                data: data_obj ,
+                columns: [
+                    {
+                        className: 'dt-control',
+                        orderable: false,
+                        data: null,
+                        defaultContent: '',
+                    },
+                    { data: 'title' },
+                    { data: 'speaker' },
+                    { data: 'date' }
+                ],
+                order: [[3, 'asc']],
+                paging: false
+            });
+         
+            // Add event listener for opening and closing details
+            $('#example2 tbody').on('click', 'td.dt-control', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+         
+                if (row.child.isShown()) {
+                    // This row is already open - close it
+                    row.child.hide();
+                    tr.removeClass('shown');
+                } else {
+                    // Open this row
+                    row.child(format(row.data())).show();
+                    tr.addClass('shown');
+                }
+            });
+        });     
 
     </script>
+
 
     <div class="video">
         {{ partial "video.html" . }} 
