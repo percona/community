@@ -139,5 +139,19 @@
     "title": "Point-in-time query tuning and observability with pg_stat_statements | Citus Con 2022",
     "date": "Apr 12, 2022",
     "authors": "Ryan Rooz"
+  }],
+
+  "PMM Demo":[
+  {
+    "youtube_id": "MzZVFAZPlt8",
+    "title": "2022-02-15 - Platform Teams - PMM Demo 26",
+    "date": "Jun 2, 2022",
+    "authors": "Taras Kozub (Percona)"
+  },
+  {
+    "youtube_id": "fJOrI5l8jvY",
+    "title": "2022-02-01 - Platform Teams - PMM Demo 25",
+    "date": "May 27, 2022",
+    "authors": "Taras Kozub (Percona)"
   }]
 }
