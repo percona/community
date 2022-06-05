@@ -4,8 +4,7 @@ description: "Join Percona Community Live Stream and learn more about Setting up
 draft: false
 images:
   - events/streams-pg/PG-Stream-Week-5-cover.jpg
-weight: 1
-date: Fri, 3rd June 2022, 21:00:00 +0000
+date: "2022-06-03"
 speakers:
   - charly_batista
   - matt_yonkovit
