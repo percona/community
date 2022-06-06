@@ -1,5 +1,11 @@
 {
   "Tutorials":[
+    {
+      "youtube_id": "CRgC1buHYXA",
+      "title": "PostgreSQL For MySQL DBAs - Episode 02",
+      "date": "June 6, 2022",
+      "authors": "Dave Stokes (Percona)"
+    },
   {
     "youtube_id": "gL_4J1Ro84M",
     "title": "Best practice to run Percona Operator for MySQL",
@@ -60,9 +66,17 @@
     "date": "Apr 4, 2022",
     "authors": "Dimas Maryanto"
   }],
+
+  
   
   "Events":[
-  {
+    {
+      "youtube_id": "DhLg4tMvHuI",
+      "title": "Setting Up Failover via a Replica for PostgreSQL - Percona Community Live Stream",
+      "date": "June 3, 2022",
+      "authors": "Charly Batista (Percona), Matt Yonkovit (Percona)"
+    },
+    {
     "youtube_id": "-iex-GVLUOc",
     "title": "Why we created one more Operator for MySQL - Sergey Pronin (DoK Day EU 2022)",
     "date": "May 25, 2022",
@@ -140,6 +154,8 @@
     "date": "Apr 12, 2022",
     "authors": "Ryan Rooz"
   }],
+
+
 
   "PMM Demo":[
   {
