@@ -17,6 +17,10 @@
 
 .landing {
 
+    .dt-control {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .dataTables_filter,
     .dataTables_length {
         margin-bottom: 0.5em;
@@ -30,7 +34,7 @@
 
     .landing__table  tr,
     .landing__table  td {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     .landing-table__description {
@@ -38,12 +42,12 @@
     }
 
     .landing-table__speaker {
-        font-size: 0.8rem;
+        font-size: 0.9em;
         font-weight: bold;
     }
 
     .landing-table__description p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         line-height: 1.5rem;
     }
 
