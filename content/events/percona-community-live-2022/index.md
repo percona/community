@@ -4,6 +4,7 @@ description: "Percona Community Live will take place on June 21-23 and will be l
 images:
   - events/percona-community-live/cover-start.jpg
 layout: landing
+csv: "assets/csv/Percona-Community-Live-Talks.csv"
 date: "2022-04-18"
 tags: ['opensource', 'event']
 speakers:

@@ -32,17 +32,18 @@
       {{ partial "content.html" . }}
     </div>
 
-    {{ $Talks := getCSV "," "assets/csv/Percona-Community-Live-Talks.csv" }}
+    {{ $Talks := getCSV "," .Params.csv }}
 
     <h2>Agenda</h2>
 
-    <table id="example2" class="display" style="width:100%">
+    <table id="example2" class="display landing__table" style="width:100%">
         <thead>
             <tr>
-                <th width="5%"></th>
-                <th width="50%">Talk</th>
+                <th width="3%"></th>
+                <th width="40%">Talk</th>
                 <th>Speaker</th>
-                <th width="10%">Date</th>
+                <th width="12%">Time EST</th>
+                <th width="10%">Time CET</th>
             </tr>
         </thead>
         <tfoot>
@@ -50,7 +51,8 @@
                 <th></th>
                 <th>Talks</th>
                 <th>Speaker</th>
-                <th>Date</th>
+                <th width="12%">Time EST</th>
+                <th width="10%">Time CET</th>
             </tr>
         </tfoot>
     </table>
@@ -63,12 +65,12 @@
             var string = '<div class="landing-table__description"><p>';
 
             if (d.desciption) {
-                string = string + d.desciption;
+                string = string + d.desciption + '<br/><br/>';
             }
 
             if (d.speaker1) {
                 string = string + 
-                        '<br/><br/><span class="landing-table__speaker">' + 
+                        '<span class="landing-table__speaker">' + 
                         d.speaker1 + ' (' + d.company1 + ')</span><br/>' +
                         d.bio1;
             }               
@@ -85,7 +87,7 @@
             return string;
         }
 
-        function Talk ( title, speaker1, company1, bio1, speaker2, company2, bio2, desciption, date, time, duration, label ) {
+        function Talk ( title, speaker1, company1, bio1, speaker2, company2, bio2, desciption, date, sorting, time1, time2, close2, duration, label ) {
 
             if (speaker2) {
                 var speaker = '<b>' + speaker1 + '</b> (' + company1 + '), <br/>' +
@@ -102,7 +104,8 @@
             this.speaker2 = speaker2;
             this.bio2 = bio2;
             this.company2 = company2;
-            this.date = date;
+            this.time1 = time1;
+            this.time2 = time2;
             this.desciption = desciption;
         };
 
@@ -121,8 +124,11 @@
                 "{{ index $r 8 }}",
                 "{{ index $r 9 }}",
                 "{{ index $r 10 }}",
-                "{{ index $r 11 }}", 
-                "{{ index $r 12 }}"
+                "{{ index $r 11 }}",
+                "{{ index $r 12 }}",
+                "{{ index $r 13 }}",
+                "{{ index $r 14 }}", 
+                "{{ index $r 15 }}"
                 ),
                {{ end }}{{ end }}];
 
@@ -137,9 +143,10 @@
                     },
                     { data: 'title' },
                     { data: 'speaker' },
-                    { data: 'date' }
+                    { data: 'time1' },
+                    { data: 'time2' }
                 ],
-                order: [[3, 'asc']],
+                order: [[4, 'asc']],
                 paging: false
             });
          
