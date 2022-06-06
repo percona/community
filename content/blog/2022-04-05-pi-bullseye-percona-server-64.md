@@ -55,8 +55,8 @@ libudev-dev libev-dev libev4
 Let's download Percona Server and some additional tools.
 
 ```
-$ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.27-18/source/tarball/percona-server-8.0.27-18.tar.gz
-$ tar -zxvf percona-server-8.0.27-18.tar.gz
+$ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.28-19/source/tarball/percona-server-8.0.28-19.tar.gz
+$ tar -zxvf percona-server-8.0.28-19.tar.gz
 $ wget https://boostorg.jfrog.io/artifactory/main/release/1.73.0/source/boost_1_73_0.tar.gz
 $ tar -zxvf boost_1_73_0.tar.gz
 $ wget https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.28-21/source/tarball/percona-xtrabackup-8.0.28-21.tar.gz
@@ -67,7 +67,7 @@ $ tar -zxvf percona-xtrabackup-8.0.28-21.tar.gz
 At the time of writing 8.0.28-21 is the current version. If you an USB 3 external drive, you might find the build will perform better from that device. In my build I used a 250GB SSD drive for the build.
 
 ```
-$ cd percona-server-8.0.28-21
+$ cd percona-server-8.0.28-19
 $ mkdir arm64-build
 $ cd arm64-build
 $ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=/home/pi/boost_1_73_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
@@ -77,7 +77,7 @@ $ sudo make install
 With the 4GB swap file you created above you can use make -j2 for the compile. Depending on which Pi you are using build time should be around 3 hours.
 
  ## Build XtraBackup
- At the time of writing 8.0.27-19 is the current version.
+ At the time of writing 8.0.28-21 is the current version.
  ```
  $ cd percona-xtrabackup-8.0.28-21
  $ mkdir arm64-build
