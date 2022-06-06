@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/myonk/
 images:
   - speakers/matt.jpg
 ---
