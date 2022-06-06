@@ -23,8 +23,8 @@ Fast forward to 2022 and we now have the resources to build Percona Server 8.0 o
 
 Prereqs:
 
-1. Raspberry Pi 4, 4GB or 8GB model.
-2. 128GB or 256GB microSD card. Of course you can go bigger.
+1. Raspberry Pi 3B+, Pi 4 (any memory size will work).
+3. 128GB or 256GB microSD card. Of course you can go bigger.
 
 I won't cover installing Raspbian Bullseye, you can follow the steps here:
 [Install Raspberry Pi OS Bullseye on Raspberry Pi](https://raspberrytips.com/install-raspbian-raspberry-pi/)
@@ -48,7 +48,9 @@ You will need to install these additional packages listed below:
 ```
 $ sudo apt update
 $ sudo apt upgrade
-$ sudo apt install build-essential pkg-config devscripts debconf debhelper automake bison ca-certificates libcurl4-gnutls-dev cmake libaio-dev libncurses-dev libssl-dev libtool libgcrypt20-dev zlib1g-dev lsb-release python3-docutils rsync libdbd-mysql-perl libnuma1 socat librtmp-dev libtinfo5 liblz4-tool liblz4-1 liblz4-dev libldap2-dev libsasl2-dev libsasl2-modules-gssapi-mit libkrb5-dev lib-readline-dev
+$ sudo apt install build-essential pkg-config cmake devscripts debconf debhelper automake bison ca-certificates libcurl4-gnutls-dev libaio-dev libncurses-dev libssl-dev libtool libgcrypt20-dev zlib1g-dev lsb-release python3-docutils build-essential rsync libdbd-mysql-perl libnuma1 socat librtmp-dev libtinfo5 liblz4-tool liblz4-1 liblz4-dev libldap2-dev libsasl2-dev libsasl2-modules-gssapi-mit libkrb5-dev apt-get libreadline-dev
+libudev-dev libev-dev libev4
+
 ```
 Let's download Percona Server and some additional tools.
 
@@ -57,27 +59,27 @@ $ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Ser
 $ tar -zxvf percona-server-8.0.27-18.tar.gz
 $ wget https://boostorg.jfrog.io/artifactory/main/release/1.73.0/source/boost_1_73_0.tar.gz
 $ tar -zxvf boost_1_73_0.tar.gz
-$ https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.27-19/source/tarball/percona-xtrabackup-8.0.27-19.tar.gz
-$ tar -zxvf percona-xtrabackup-8.0.27-19.tar.gz
+$ wget https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.28-21/source/tarball/percona-xtrabackup-8.0.28-21.tar.gz
+$ tar -zxvf percona-xtrabackup-8.0.28-21.tar.gz
 ```
 
 ## Build Percona Server
-At the time of writing 8.0.27-18 is the current version. If you an USB 3 external drive, you might find the build will perform better from that device. In my build I used a 250GB SSD drive for the build.
+At the time of writing 8.0.28-21 is the current version. If you an USB 3 external drive, you might find the build will perform better from that device. In my build I used a 250GB SSD drive for the build.
 
 ```
-$ cd percona-server-8.0.27-18
+$ cd percona-server-8.0.28-21
 $ mkdir arm64-build
 $ cd arm64-build
 $ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=/home/pi/boost_1_73_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
 $ sudo make -j2
 $ sudo make install
 ```
-With the 4GB swap file you created above you can use make -j2 for the compile.
+With the 4GB swap file you created above you can use make -j2 for the compile. Depending on which Pi you are using build time should be around 3 hours.
 
  ## Build XtraBackup
  At the time of writing 8.0.27-19 is the current version.
  ```
- $ cd percona-xtrabackup-8.0.27-19
+ $ cd percona-xtrabackup-8.0.28-21
  $ mkdir arm64-build
  $ cd arm64-build
  $ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_73_0 -DCMAKE_INSTALL_PREFIX=/usr/local/xtrabackup
@@ -124,8 +126,7 @@ skip-external-locking
 skip-name-resolve
 table_open_cache=500
 thread_cache_size=16
-open_files_limit=1000
-table_open_cache=1000
+thread_pool_size=16
 
 innodb_data_home_dir = /data0/mysql/data
 innodb_log_group_home_dir = /data0/mysql/data
@@ -137,8 +138,7 @@ innodb_flush_log_at_trx_commit = 2
 innodb_lock_wait_timeout = 50
 innodb_flush_method = O_DIRECT
 innodb_file_per_table = 1
-innodb_buffer_pool_instances = 2
-thread_pool_size=16
+
 ```
 You will want to set the following setting to match your needs.
 
