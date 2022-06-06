@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/keao-yang-06a59317a/
 images:
   - speakers/yang_keao.png
 ---

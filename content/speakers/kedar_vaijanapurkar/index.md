@@ -10,7 +10,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin:
+  linkedin: https://www.linkedin.com/in/kedarvaijanapurkar/
 images:
   - speakers/kedar_vaijanapurkar.jpg
 ---

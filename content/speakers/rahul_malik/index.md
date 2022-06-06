@@ -11,7 +11,7 @@ social:
   facebook:
   twitter: 
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/rahul-malik-48986589/
 images:
   - speakers/rahul_malik.png
 ---

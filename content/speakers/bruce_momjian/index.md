@@ -10,7 +10,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin:
+  linkedin: https://www.linkedin.com/in/bruce-momjian-74ab7b1/
 images:
   - speakers/bruce_momjian.jpg
 ---

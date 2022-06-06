@@ -12,7 +12,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/alawiassaggaf/
 images:
   - speakers/alawi_assaggaf.png
 ---
