@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/barrettchambers/
 images:
   - speakers/barrett_chambers.png
 ---
