@@ -12,4 +12,5 @@
 </div>
 {{end}}
 {{end}}
+<div class="json" style="display: none;">{{ .Site.Data.youtube | jsonify }}</div>
 {{ .Inner }}
