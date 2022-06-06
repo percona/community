@@ -35,7 +35,7 @@ One step I have found which will help to increase the speed and success of your 
 
 In my build I have the source code sitting on a USB 3 SSD storage.
 
-Create a new swap file. I found that a 4GB file worked just fine.
+Create a new swap file. I found that a 4GB file worked just fine. I created the swap file on the / partition.
 
 ```
 $ sudo dd if=/dev/zero of=/swapfile4GB bs=1M count=4096
@@ -48,14 +48,14 @@ You will need to install these additional packages listed below:
 ```
 $ sudo apt update
 $ sudo apt upgrade
-$ sudo apt install build-essential bison pkg-config cmake devscripts debconf debhelper automake bison ca-certificates libcurl4-gnutls-dev cmake libaio-dev libncurses-dev libssl-dev libtool libgcrypt20-dev zlib1g-dev lsb-release python3-docutils build-essential rsync libdbd-mysql-perl libnuma1 socat librtmp-dev libtinfo5 liblz4-tool liblz4-1 liblz4-dev libldap2-dev openldap libldap-dev libsasl2-dev libsasl2-modules-gssapi-mit libkrb5-dev
+$ sudo apt install build-essential pkg-config devscripts debconf debhelper automake bison ca-certificates libcurl4-gnutls-dev cmake libaio-dev libncurses-dev libssl-dev libtool libgcrypt20-dev zlib1g-dev lsb-release python3-docutils rsync libdbd-mysql-perl libnuma1 socat librtmp-dev libtinfo5 liblz4-tool liblz4-1 liblz4-dev libldap2-dev libsasl2-dev libsasl2-modules-gssapi-mit libkrb5-dev lib-readline-dev
 ```
 Let's download Percona Server and some additional tools.
 
 ```
 $ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.27-18/source/tarball/percona-server-8.0.27-18.tar.gz
 $ tar -zxvf percona-server-8.0.27-18.tar.gz
-wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_73_0.tar.gz
+$ wget https://boostorg.jfrog.io/artifactory/main/release/1.73.0/source/boost_1_73_0.tar.gz
 $ tar -zxvf boost_1_73_0.tar.gz
 $ https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.27-19/source/tarball/percona-xtrabackup-8.0.27-19.tar.gz
 $ tar -zxvf percona-xtrabackup-8.0.27-19.tar.gz
@@ -68,7 +68,7 @@ At the time of writing 8.0.27-18 is the current version. If you an USB 3 externa
 $ cd percona-server-8.0.27-18
 $ mkdir arm64-build
 $ cd arm64-build
-$ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_73_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
+$ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=/home/pi/boost_1_73_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
 $ sudo make -j2
 $ sudo make install
 ```
