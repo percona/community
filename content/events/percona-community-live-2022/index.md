@@ -38,6 +38,7 @@ speakers:
   - rahul_malik
   - hamid_akhtar
   - naveed_shaikh
+  - sidney_chen
 weight: 1
 ---
 
