@@ -23,7 +23,7 @@ speakers:
   - leonardo_bacchi_fernandes
   - gabriel_ciciliani
   - ravikumar_buragapu
-  - yang_Keao
+  - yang_keao
   - anton_bystrov
   - farokh_shahabi
   - wayne
