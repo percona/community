@@ -42,8 +42,8 @@
                 <th width="3%"></th>
                 <th width="40%">Talk</th>
                 <th>Speaker</th>
-                <th width="12%">Time EST</th>
-                <th width="10%">Time CET</th>
+                <th width="12%">Time EDT</th>
+                <th width="12%">Time CEST</th>
             </tr>
         </thead>
         <tfoot>
@@ -51,8 +51,8 @@
                 <th></th>
                 <th>Talks</th>
                 <th>Speaker</th>
-                <th width="12%">Time EST</th>
-                <th width="10%">Time CET</th>
+                <th width="12%">Time EDT</th>
+                <th width="12%">Time CEST</th>
             </tr>
         </tfoot>
     </table>
@@ -87,26 +87,19 @@
             return string;
         }
 
-        function Talk ( title, speakersHtml, speaker1, company1, bio1, speaker2, company2, bio2, desciption, date, sorting, time1, time2, close2, duration, label, speakers ) {
-
-            if (speaker2) {
-                var speaker = '<b>' + speaker1 + '</b> (' + company1 + '), <br/>' +
-                              '<b>' + speaker2 + '</b> (' + company2 + ')';
-            } else {
-                var speaker = '<b>' + speaker1 + '</b> (' + company1 + ')';                
-            }
+        function Talk ( title, speakersHtml, titleHtml, speaker1, company1, bio1, speaker2, company2, bio2, desciption, time1, time2 ) {
  
             this.title = title;
+            this.titleHtml = titleHtml;
             this.speakersHtml = speakersHtml;
-            this.speaker = speaker;
             this.speaker1 = speaker1;
             this.bio1 = bio1;
             this.company1 = company1;
             this.speaker2 = speaker2;
             this.bio2 = bio2;
             this.company2 = company2;
-            this.time1 = time1;
-            this.time2 = time2;
+            this.time1 = '<span class="time1">' + time1 + '</span>';
+            this.time2 = '<span class="time2">' + time2 + '</span>';
             this.desciption = desciption;
 
         };
@@ -117,21 +110,16 @@
                new Talk(
                 "{{ index $r 0 }}",
                 {{ partial "landingSpeakersHtml.html" (dict "Pages" $.Site.Pages "string" $r ) }},
+                {{ partial "landingTitleHtml.html" (dict "Pages" $.Site.Pages "string" $r ) }},
                 "{{ index $r 1 }}", 
                 "{{ index $r 2 }}",
                 "{{ index $r 3 }}",
                 "{{ index $r 4 }}", 
                 "{{ index $r 5 }}",
                 "{{ index $r 6 }}",
-                "{{ index $r 7 }}", 
-                "{{ index $r 8 }}",
-                "{{ index $r 9 }}",
+                "{{ index $r 7 }}",
                 "{{ index $r 10 }}",
                 "{{ index $r 11 }}",
-                "{{ index $r 12 }}",
-                "{{ index $r 13 }}",
-                "{{ index $r 14 }}", 
-                "{{ index $r 15 }}"
                 ),
                {{ end }}{{ end }}];
 
@@ -144,7 +132,7 @@
                         data: null,
                         defaultContent: '',
                     },
-                    { data: 'title' },
+                    { data: 'titleHtml' },
                     { data: 'speakersHtml' },
                     { data: 'time1' },
                     { data: 'time2' }

@@ -1,5 +1,5 @@
 ---
-title: "Database Reliability Engineering for MySQL"
+title: "Database Reliability Engineering for MySQL "
 description: "Standardized approach for traffic redirection, a topology management tool, for master failover/switchover, and some additional tools"
 images:
   -  events/percona-community-live/cards/Community-Live-Day-2-Matthias-Crauwels.jpg

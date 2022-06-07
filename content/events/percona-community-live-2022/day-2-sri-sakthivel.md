@@ -1,5 +1,5 @@
 ---
-title: "Overview of Different ALTER Algorithms and Its Locking Scenarios in MySQL DEMO"
+title: "Overview of Different ALTER Algorithms and Its Locking Scenarios in MySQL (DEMO)"
 description: "A demo session on describing the different MySQL ALTER Algorithms"
 images:
   -  events/percona-community-live/cards/Community-Live-Day-2-Sri-Sakthivel.jpg
