@@ -34,7 +34,7 @@
 
     {{ $Talks := getCSV "," .Params.csv }}
 
-    <h2>Agenda</h2>
+    <h2 id="agenda">Agenda</h2>
 
     <table id="example2" class="display landing__table" style="width:100%">
         <thead>
@@ -177,7 +177,8 @@
         {{ partial "video.html" . }} 
     </div>
 
-   {{ if (isset .Params "speakers")}}
+    {{ if (isset .Params "speakers")}}
+
     <h2>Speakers</h2>
     <div class="grid grid--3 speakers">
         {{ range $key, $author := .Params.speakers }}
@@ -196,10 +197,43 @@
 
 </div>
 
-  <br/><br/>
-  {{ partial "sharing.html" . }}
+    <div class="contentblock">
 
-  <br/><br/>
-  {{ partial "disqus.html" . }}
+        <h2 id="talks">Talks</h2>
+
+        <div class="grid grid--2">
+            {{- $pages := .Pages -}}
+            {{- $paginator := .Paginate $pages }}
+            {{- range $paginator.Pages -}} 
+                <div class="grid__item">
+                    {{- if isset .Params "images" -}}
+                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
+                    {{- else -}}
+                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
+        {{- if gt $paginator.TotalPages 1 -}}
+        <div class="paginator">
+            {{- if $paginator.HasPrev -}}
+                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+            {{- end -}}
+            {{- range $paginator.Pagers -}}
+                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+            {{- end -}}
+            {{- if $paginator.HasNext -}}
+                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+            {{- end -}}
+        </div>
+        {{- end -}}
+
+
+    </div>
+
+    <br/><br/>
+    {{ partial "sharing.html" . }}
+    <br/><br/>
+    {{ partial "disqus.html" . }}
   
 {{ end }}
