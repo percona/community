@@ -1,0 +1,15 @@
+---
+title: "Physical Backups with Percona Backup for MongoDB"
+description: "Reduce Recovery Time Objective with new Physical Backups functionality in Percona Backup for MongoDB"
+images:
+  -  events/percona-community-live/cards/Community-Live-Day-3-Sergey-Pronin-2.jpg
+PublishedDate: "2022-06-23"
+draft: false
+speakers:
+  - sergey_pronin
+tags: ['MongoDB', 'PBM']
+---
+
+Reduce Recovery Time Objective with new Physical Backups functionality in Percona Backup for MongoDB (PBM). We will explain the value, the limitations of our solution and go deeper into the mechanics of how it works.
+
+![Physical Backups with Percona Backup for MongoDB](events/percona-community-live/cards/Community-Live-Day-3-Sergey-Pronin-2.jpg)
