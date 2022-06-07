@@ -21,6 +21,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     .dataTables_filter,
     .dataTables_length {
         margin-bottom: 0.5em;
@@ -106,4 +107,19 @@
         font-size: 2rem;
         text-align: center;
     }
+
+    @media screen and (max-width: 600px) {
+        .time1::after {
+            content: ' EDT';
+        }
+
+        .time2::after {
+            content: ' CEST';
+        }
+
+        .landing-agenda__title::before {
+            content: 'Talk: ';
+        }
+    }
+
 }

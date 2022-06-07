@@ -1,0 +1,7 @@
+{{ $title := index .string 0 }}
+
+{{ range where .Pages "Section" "events" }}
+    {{ if eq .Params.title $title }}
+        <a q="{{- .Params.title -}}" href="{{ .RelPermalink }}" target="_blank" class="landing-agenda__title">{{- .Params.title -}}</a>
+    {{ end }}
+{{ end }}
