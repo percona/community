@@ -26,7 +26,7 @@ speakers:
   - yang_Keao
   - anton_bystrov
   - farokh_shahabi
-  - wayne_leutwyler
+  - wayne
   - robert_reeves
   - sri_sakthivel
   - yunus_shaikh

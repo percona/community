@@ -1,6 +1,6 @@
 ---
 name: matthias_crauwels
-name_pronunciation: Matthias Crauwels
+name_pronunciation: matthias_crauwels
 fullname: Matthias Crauwels
 fullname_pronounciation: Matthias Crauwels
 job: Lead Database Consultant, Pythian
