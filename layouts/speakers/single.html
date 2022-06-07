@@ -14,7 +14,24 @@
         {{- end -}}
 
         <h1>{{ .Params.fullname }}</h1>
-        <p><i>{{ .Params.job }}</i><br/>
+
+
+
+        <p>
+
+        {{ if .Params.job }}<i>{{ .Params.job }}</i><br/><br/>{{ end }}
+
+        {{ if .Params.social.linkedin }}
+            <a style="float: left;" href="{{ .Params.social.linkedin }}" target="_blank"><img  style="float: left; margin: 0 0.5em 0 0 ;" width="30px" height="30px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} LinkedIn" /> Linkedin </a>
+        {{ end }}
+        {{ if .Params.social.twitter }}
+            <a  style="float: left;" href="{{ .Params.social.twitter }}" target="_blank"><img  style="float: left; margin: 0 0.5em 0 1em ;" width="30px" height="30px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} Twitter" /> Twitter </a>
+        {{ end }}
+        {{ if .Params.social.github }}
+            <a  style="float: left;" href="{{ .Params.social.github }}" target="_blank"><img  style="float: left; margin: 0 0.5em 0 1em ;" width="30px" height="30px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} GitHub" /> GitHub </a>
+        {{ end }}
+        </p><br/><br/>
+        <p style="float: left;">
         {{- .Content -}}
         <p>
     </div></div>

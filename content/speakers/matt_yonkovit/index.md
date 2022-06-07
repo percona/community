@@ -9,8 +9,8 @@ tagline:
 social:
   website: 
   facebook:
-  twitter:
-  github: 
+  twitter: https://twitter.com/MYonkovit
+  github: https://github.com/TheYonk
   linkedin: https://www.linkedin.com/in/myonk/
 images:
   - speakers/matt.jpg
