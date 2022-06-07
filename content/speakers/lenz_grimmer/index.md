@@ -11,7 +11,7 @@ social:
   facebook:
   twitter: https://twitter.com/LenzGrimmer
   github: 
-  linkedin: https://www.linkedin.com/in/heingo/
+  linkedin: https://www.linkedin.com/in/lenzgrimmer/
 images:
   - speakers/lenz_grimmer.jpg
 ---

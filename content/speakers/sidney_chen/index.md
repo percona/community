@@ -11,5 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin:
+  linkedin: https://www.linkedin.com/in/sidney-chen-92b6536/
+images:
+  - speakers/sidney_chen.jpg
 ---

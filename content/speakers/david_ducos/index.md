@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/david-ducos/
 images:
   - speakers/david_ducos.png
 ---
