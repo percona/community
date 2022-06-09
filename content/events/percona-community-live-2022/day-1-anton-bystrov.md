@@ -4,6 +4,7 @@ description: "What is VictoriaMetrics? Why we choose it. Some data with compare 
 images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Anton-Bystrov.jpg
 PublishedDate: "2022-06-21"
+day: "June 21"
 draft: false
 speakers:
   - anton_bystrov

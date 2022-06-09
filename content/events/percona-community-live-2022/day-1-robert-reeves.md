@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Robert-Reeves.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - robert_reeves
 tags: ['Databases',' Liquibase', 'MySQL', 'PostgreSQL', 'Percona Community Live']

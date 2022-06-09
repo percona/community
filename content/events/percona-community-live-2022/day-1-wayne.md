@@ -6,6 +6,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Wayne-Leutwyler.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - wayne
 tags: ['Postgres',' PostgreSQL', 'Percona Community Live']

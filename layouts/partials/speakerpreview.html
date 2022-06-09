@@ -1,6 +1,6 @@
 <a href="{{ .Link }}" class="post post--preview">
 {{ with .Image }}<img src="{{ ((resources.Get .).Fill "300x300 90% jpg").RelPermalink }}" alt="" />{{ end }}
-<h2>{{ .Name }}</h2>
+<h3>{{ .Name }}</h3>
 <div class="post__content">
 <p>{{ .Job }}</p>
 <p class="readmore">Read more &raquo;</p>

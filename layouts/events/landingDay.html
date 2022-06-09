@@ -26,24 +26,10 @@
 
 <div class="landing text">
   
-    <h1>{{ .Title }}</h1>
+    <h1 class="landing__title">{{ .Title }}</h1>
 
     <div class="body">
       {{ partial "content.html" . }}
-    </div>
-
-    <h2 id="days">Days</h2>
-
-    <div class="grid grid--3">
-        {{ range where $.Site.Pages "Params.layout" "landingDay" }}
-            <div class="grid__item">
-                {{- if isset .Params "images" -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
-                {{- else -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                {{- end -}}
-            </div>
-        {{- end -}}
     </div>
 
     {{ $Talks := getCSV "," .Params.csv }}
@@ -102,7 +88,6 @@
         }
 
         function Talk ( title, speakersHtml, titleHtml, speaker1, company1, bio1, speaker2, company2, bio2, desciption, time1, time2 ) {
- 
             this.title = title;
             this.titleHtml = titleHtml;
             this.speakersHtml = speakersHtml;
@@ -115,12 +100,13 @@
             this.time1 = '<span class="time1">' + time1 + '</span>';
             this.time2 = '<span class="time2">' + time2 + '</span>';
             this.desciption = desciption;
-
         };
+
+        {{ $date := .Params.csv_filter }}
 
         $(document).ready(function () {
 
-            var data_obj = [{{ range $i, $r := $Talks }}{{ if ge $i 1 }}
+            var data_obj = [{{ range $i, $r := $Talks }}{{ if ge $i 1 }}{{ if eq $date (index $r 8) }}
                new Talk(
                 "{{ index $r 0 }}",
                 {{ partial "landingSpeakersHtml.html" (dict "Pages" $.Site.Pages "string" $r ) }},
@@ -135,7 +121,7 @@
                 "{{ index $r 10 }}",
                 "{{ index $r 11 }}",
                 ),
-               {{ end }}{{ end }}];
+               {{ end }}{{ end }}{{ end }}];
 
             var table = $('#example2').DataTable({
                 data: data_obj ,
@@ -179,9 +165,28 @@
         {{ partial "video.html" . }} 
     </div>
 
+</div>
+
+<div class="landing">
+
+    <h2 id="talks">Talks</h2>
+
+    <div class="grid grid--2">
+        {{ range where $.Site.Pages "Params.day" .Params.csv_filter }}
+            <div class="grid__item">
+                {{- if isset .Params "images" -}}
+                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
+                {{- else -}}
+                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
+                {{- end -}}
+            </div>
+        {{- end -}}
+    </div>
+
     {{ if (isset .Params "speakers")}}
 
-    <h2>Speakers</h2>
+    <h2 id="speakers">Speakers</h2>
+
     <div class="grid grid--4 speakers">
         {{ range $key, $author := .Params.speakers }}
           {{- with $.Site.GetPage (print "/speakers/" $author) -}}
@@ -197,41 +202,21 @@
     </div>
     {{ end }}
 
-</div>
+    <h2 id="days">Days</h2>
 
-    <div class="contentblock">
-
-        <h2 id="talks">Talks</h2>
-
-        <div class="grid grid--2">
-            {{- $pages := .Pages -}}
-            {{- $paginator := .Paginate $pages }}
-            {{- range $paginator.Pages -}} 
-                <div class="grid__item">
-                    {{- if isset .Params "images" -}}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
-                    {{- else -}}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                    {{- end -}}
-                </div>
-            {{- end -}}
-        </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
+    <div class="grid grid--2">
+        {{ range where $.Site.Pages "Params.layout" "landingDay" }}
+            <div class="grid__item">
+                {{- if isset .Params "images" -}}
+                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
+                {{- else -}}
+                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
+                {{- end -}}
+            </div>
         {{- end -}}
-
-
     </div>
+
+</div>
 
     <br/><br/>
     {{ partial "sharing.html" . }}

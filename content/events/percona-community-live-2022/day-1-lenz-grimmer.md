@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Lenz-Grimmer.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - lenz_grimmer
 tags: ['Postgres', 'MongoDB', 'MySQL', 'Percona Community Live']

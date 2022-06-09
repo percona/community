@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-2-Gabriel-Ciciliani.jpg
 PublishedDate: "2022-06-22"
 draft: false
+day: "June 22"
 speakers:
   - gabriel_ciciliani
 tags: ['MySQL', 'Stream']
