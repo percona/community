@@ -11,7 +11,12 @@ speakers:
 tags: ['TiDB', PingCAP', 'Stream']
 ---
 
+
+This session is presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
+
 Performance tuning is complicated, especially with a distributed database like TiDB. It becomes even more challenging when the whole system is running on arm64-based servers.
 
 
 ![The Journey to Achieve 1000x TPS for a Real-World Core Banking Application on TiDB](events/percona-community-live/cards/Community-Live-Day-2-Sidney-Chen.jpg)
+
+Check out the full schedule of [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022
