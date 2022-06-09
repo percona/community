@@ -40,6 +40,7 @@ speakers:
   - hamid_akhtar
   - naveed_shaikh
   - sidney_chen
+  - daniel_seybold
 weight: 1
 ---
 
@@ -49,5 +50,4 @@ It will take place on June 21-23 online and will be live-streamed on YouTube, Li
 
 We have so much great content on Percona Live this year (as usual, I should say). A lot of good speakers submitted talks, and we did not manage to find a slot for each excellent topic in the schedule. So we sat down and decided to run one more event! And we totally understand that travel is still challenging, that’s why it will be held virtually. All attendees will be able to ask their questions and chat on Discord. 
 
-The schedule will be released soon. 
 
