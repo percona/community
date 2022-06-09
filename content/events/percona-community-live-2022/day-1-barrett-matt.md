@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Two-Day-1-Barret-Matt-16x9.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - barrett_chambers
   - matt_yonkovit

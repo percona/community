@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-2-Francisco-Bordenave.jpg
 PublishedDate: "2022-06-22"
 draft: false
+day: "June 22"
 speakers:
   - francisco_bordenave
 tags: ['PMM', 'Stream']

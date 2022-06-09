@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-3-Colin-Charles.jpg
 PublishedDate: "2022-06-23"
 draft: false
+day: "June 23"
 speakers:
   - colin_charles
 tags: ['MySQL', 'MariaDB']

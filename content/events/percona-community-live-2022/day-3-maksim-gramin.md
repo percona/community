@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-3-Maksim-Gramin.jpg
 PublishedDate: "2022-06-23"
 draft: false
+day: "June 23"
 speakers:
   - maksim_gramin
 tags: ['Code', 'Database']

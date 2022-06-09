@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Matt-Yonkovit.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - matt_yonkovit
 tags: ['Databases',' PostgreSQL', 'MySQL', 'Percona Community Live']

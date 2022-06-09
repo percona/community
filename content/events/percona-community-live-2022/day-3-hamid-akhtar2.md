@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-3-Hamid-Akhtar-2.jpg
 PublishedDate: "2022-06-23"
 draft: false
+day: "June 23"
 speakers:
   - hamid_akhtar
 tags: ['PostgreSQL', 'stream']

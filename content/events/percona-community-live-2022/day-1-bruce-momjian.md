@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Bruce-Momjian-EBD.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - bruce_momjian
 tags: ['Postgres',' PostgreSQL', 'Percona Community Live']

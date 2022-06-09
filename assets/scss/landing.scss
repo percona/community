@@ -17,6 +17,11 @@
 
 .landing {
 
+    .speaker img {
+        width: 180px;
+        height: 180px;
+    }
+
     .dt-control {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -103,9 +108,39 @@
         }
     }
 
-    h2, h3 {
+    .landing__title {
+        font-size: 1.5rem;
+
+        @media screen and (min-width: 760px) {
+          font-size: 1.5rem;
+          line-height: 3rem;
+          margin-top:1.5rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 2rem;
+          line-height: 3rem;
+          margin-top: 3rem;
+        }
+        @media screen and (min-width: 1400px) {
+          font-size: 2.5rem;
+          line-height: 3.5rem;
+          margin-top: 3rem;
+          margin-bottom: 1em;  
+        }
+    }
+
+    .grid__item h3 {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h2 {
         font-size: 2rem;
         text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     @media screen and (max-width: 600px) {

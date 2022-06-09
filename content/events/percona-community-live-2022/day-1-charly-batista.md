@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Charly-Batista.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - charly_batista
 tags: ['Postgres',' PostgreSQL', 'Percona Community Live']

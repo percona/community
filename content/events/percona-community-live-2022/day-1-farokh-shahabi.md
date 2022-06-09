@@ -5,6 +5,7 @@ images:
   -  events/percona-community-live/cards/Community-Live-Day-1-Farokh-Shahabi.jpg
 PublishedDate: "2022-06-21"
 draft: false
+day: "June 21"
 speakers:
   - farokh_shahabi
 tags: ['Databases', 'Percona Community Live']
