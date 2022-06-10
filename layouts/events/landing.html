@@ -7,6 +7,7 @@
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/landing.scss") | safeCSS) -}}
 {{- end }}
 
+
 {{ define "meta" }}
   {{- if (isset .Params "speakers") -}}
     {{ range $key, $author := .Params.authors -}}
@@ -19,10 +20,18 @@
   <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+    {{ $Talks := getCSV "," .Params.csv }}
+
+    {{ range $i, $r := $Talks }}{{ if ge $i 1 }}
+        <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}"/>
+    {{ end }}{{ end }}
+
 {{ end }}
 
 {{ define "main" }}
 
+{{ $Talks := getCSV "," .Params.csv }}
 
 <div class="landing text">
   
@@ -45,8 +54,6 @@
             </div>
         {{- end -}}
     </div>
-
-    {{ $Talks := getCSV "," .Params.csv }}
 
     <h2 id="agenda">Agenda</h2>
 
