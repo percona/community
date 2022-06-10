@@ -1,11 +1,35 @@
 {
   "Tutorials":[
-    {
-      "youtube_id": "CRgC1buHYXA",
-      "title": "PostgreSQL For MySQL DBAs - Episode 02",
-      "date": "June 6, 2022",
-      "authors": "Dave Stokes (Percona)"
-    },
+  {
+    "youtube_id": "YjhAF6xbt08",
+    "title": "Debugging Problems when Setting up PostgreSQL Replication - PostgreSQL Replication Tutorial",
+    "date": "Jun 9, 2022",
+    "authors": "Charly Batista (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "kHg8_l0g84M",
+    "title": "How to setup MySQL Alerts in PMM? MySQL Database Monitoring and Alerts Tutorial",
+    "date": "Jun 8, 2022",
+    "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "X9TZVxtMRBM",
+    "title": "What should I monitor and alert on in MySQL? - MySQL Database Monitoring Tutorial",
+    "date": "Jun 7, 2022",
+    "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "CRgC1buHYXA",
+    "title": "PostgreSQL For MySQL DBAs - Episode 02",
+    "date": "June 6, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "S7jEJ9o9o2o",
+    "title": "PostgreSQL For MySQL DBAs - Dave Stokes, Technical Evangelist at percona - PostgreSQL Tutorial",
+    "date": "Jun 3, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
   {
     "youtube_id": "gL_4J1Ro84M",
     "title": "Best practice to run Percona Operator for MySQL",
@@ -67,9 +91,19 @@
     "authors": "Dimas Maryanto"
   }],
 
-  
-  
   "Events":[
+    {
+      "youtube_id": "yTbt0GENqMg",
+      "title": "Света Смирнова: \"Современному хайлоду - современные решения: MySQL 8.0 и улучшения Percona\" #OSTconf",
+      "date": "Jun 9, 2022",
+      "authors": "Sveta Smirnova (Percona)"
+    },
+    {
+      "youtube_id": "cafKbPwTFTA",
+      "title": "Анатомия Kubernetes Operator для базы данных / Сергей Пронин (Percona)",
+      "date": "Jun 9, 2022",
+      "authors": "Sergey Pronin (Percona)"
+    },
     {
       "youtube_id": "DhLg4tMvHuI",
       "title": "Setting Up Failover via a Replica for PostgreSQL - Percona Community Live Stream",
@@ -158,6 +192,18 @@
 
 
   "PMM Demo":[
+  {
+    "youtube_id": "OQep9Ke8za4",
+    "title": "Percona Monitoring and Management PMM Demo 36 - Platform Teams - 2022-06-07",
+    "date": "Jun 10, 2022",
+    "authors": "Taras Kozub (Percona)"
+  },
+  {
+    "youtube_id": "Vgf0bnBqll0",
+    "title": "Percona Monitoring and Management PMM Demo 35 - Platform Teams - 2022-05-31",
+    "date": "Jun 8, 2022",
+    "authors": "Taras Kozub (Percona)"
+  },
   {
     "youtube_id": "MzZVFAZPlt8",
     "title": "2022-02-15 - Platform Teams - PMM Demo 26",
