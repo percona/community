@@ -11,7 +11,7 @@ social:
   facebook:
   twitter: 
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/sergeypronin/
 images:
   - speakers/sergey_pronin.jpg
 ---

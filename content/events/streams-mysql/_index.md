@@ -4,7 +4,7 @@ description: "Percona Community Team hosts a series of live-streamed event on My
 layout: list
 images:
   - events/streams-mysql/Stream-MySQL-cover.jpg
-weight: 1
+weight: 3
 ---
 
 {{% hero %}}
@@ -28,7 +28,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * May, 27th -  [Setting Up Alerts and Basic Automation for MySQL](/events/streams-mysql/2022-05-27-setting-up-alerts-and-basic-automation-for-mysql/)
 
-* June, 10th- Setting Up Backups and Scheduling Regular MySQL Backups
+* June, 10th- [Setting Up Backups and Scheduling Regular MySQL Backups](/events/streams-mysql/2022-06-10-setting-up-backups-and-scheduling-regular-mysql-backups/)
 
 * June, 24th - Setting Up Failover via a Replica for MySQL
 

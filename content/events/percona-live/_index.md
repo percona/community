@@ -4,7 +4,7 @@ description: "Percona Community worked together with other communities to organi
 layout: category
 images:
   - events/percona-live/percona-live-2021-cover.jpg
-weight: 4
+tags: ['map']
 ---
 
 {{% hero %}}

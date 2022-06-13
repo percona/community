@@ -12,7 +12,7 @@
     <div class="contentblock">
 
         <div class="grid grid--2">
-            {{- $pages := .Sections -}}
+            {{- $pages := .Pages -}}
             {{- $paginator := .Paginate $pages }}
             {{- range $paginator.Pages -}} 
                 <div class="grid__item">

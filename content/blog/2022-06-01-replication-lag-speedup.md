@@ -10,7 +10,8 @@ images:
 slug: Speed-Up-Replication-Lag
 ---
 
-Replication Lag is just a fact of life with async-replication. We can't stop lag, but we can help to reduce it. Many times the Seconds_Behind_Source can be very deciving, I have seen it go from 1 hour behind to 0 lag in blink of the eye. There are many factors that can add to replica lag. Some of these are:
+
+Replication Lag is just a fact of life with async-replication. We can't stop lag, but we can help to reduce it. Many times the Seconds_Behind_Source can be very deciving, I have seen it go from 1 hour behind to 0 lag in the blink of an eye. There are many factors that can add to replica lag. Some of these are:
 
 - Network IO
 - Disk IO
@@ -23,19 +24,19 @@ In this blog we will look a few database settings to help reduce lag. The settin
  2. binlog_group_commit_sync_delay
  3. replica_parallel_type
  4. replica_parallel_workers
-  
-## Hardware
+
+### Hardware:
 
 1. Two Raspberry Pi 4 with 8GB of RAM.
 2. Sandisk 128GB Extreme microSDXC card.
 
-## Software
+### Software:
 
 1. OS Raspbian Bullseye 64bit.
 2. Percona Server version 8.0.26.
 3. Sysbench 1.0.20.
 
-## Testing data
+## Testing Setup
 
 Using Sysbench I set up 10 tables with 250,000 rows of data. If interested here is the command I used:
 
@@ -96,6 +97,12 @@ Make the following changes on your replica:
 ```
 
 I repeated the test from above. At the end of this test, replicacation lag was **6 minutes** behind the primary.
+
+## blinlog_transaction_dependency_tracking = writeset
+
+I repeated the test from above. At the end of this test, replication lag was **6 minutes** behind the primary.
+
+## Setting Details:
 
 ## blinlog_transaction_dependency_tracking = writeset
 

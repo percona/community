@@ -1,0 +1,20 @@
+{{ $speaker1 := index .string 1 }}
+{{ $speaker2 := index .string 4 }}
+
+{{ range where .Pages "Section" "speakers" }}
+    {{ if eq .Params.fullname $speaker1 }}
+        <a href="{{ .RelPermalink }}" target="_blank">{{- .Params.fullname_pronounciation -}}</a>
+
+        {{ if .Params.social.linkedin }}
+            <a href="{{ .Params.social.linkedin }}" target="_blank"><img width="20px" height="20px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} LinkedIn" /></a>{{- if $speaker2 -}},<br/>{{- end -}}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{- range where .Pages "Section" "speakers" -}}
+    {{ if eq .Params.fullname $speaker2 }}<a href="{{ .RelPermalink }}" target="_blank">{{ .Params.fullname_pronounciation }}</a>
+        {{ if .Params.social.linkedin }}
+            <a href="{{ .Params.social.linkedin }}" target="_blank"><img width="20px" height="20px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} LinkedIn" /></a>
+        {{ end }}
+    {{ end }}
+{{- end -}}

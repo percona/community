@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/ibrarahmed74/
 images:
   - speakers/ibrar_ahmed.jpg
 ---

@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/yunushaikh/
 images:
   - speakers/yunus_shaikh.png
 ---

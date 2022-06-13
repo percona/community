@@ -11,7 +11,7 @@ social:
   facebook:
   twitter:
   github: 
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/charlybatista/
 images:
   - speakers/charly_batista.jpg
 ---

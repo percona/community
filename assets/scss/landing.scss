@@ -1,0 +1,160 @@
+.speaker .post {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.speaker img {
+    border-radius: 500px;
+    border: 2px solid rgba(0,0,0,.1);
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.downloadbtn button {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.landing {
+
+    .speaker img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .dt-control {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .dataTables_filter,
+    .dataTables_length {
+        margin-bottom: 0.5em;
+    }
+
+    .dataTables_filter input,
+    .dataTables_length select {
+        padding: 7px;
+        font-size: 1em;
+    }
+
+    .landing__table  tr,
+    .landing__table  td {
+        font-size: 0.9em;
+    }
+
+    .landing-table__description {
+        padding:  0.7rem;
+    }
+
+    .landing-table__speaker {
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+
+    .landing-table__description p {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+    }
+
+    .landing__video {
+        padding-top: 2em;  
+        padding-bottom: 2em;  
+        text-align: center;
+    }
+
+    .body ul {
+        @media screen and (min-width: 1000px) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+    }
+
+    .body p {
+        @media screen and (min-width: 1000px) {
+            padding-right: 8rem;
+            padding-left: 8rem;
+        }
+    }
+
+    figure {
+        padding-top: 2em;  
+        padding-bottom: 2em;  
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top:1.5rem;
+        margin-bottom:1rem;
+        font-weight: normal;
+
+        @media screen and (min-width: 760px) {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          margin-top:1.5rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 2.5rem;
+          line-height: 3rem;
+          margin-top: 3rem;
+        }
+        @media screen and (min-width: 1400px) {
+          font-size: 3rem;
+          line-height: 3.5rem;
+          margin-top: 3rem;
+          margin-bottom: 1em;  
+        }
+    }
+
+    .landing__title {
+        font-size: 1.5rem;
+
+        @media screen and (min-width: 760px) {
+          font-size: 1.5rem;
+          line-height: 3rem;
+          margin-top:1.5rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 2rem;
+          line-height: 3rem;
+          margin-top: 3rem;
+        }
+        @media screen and (min-width: 1400px) {
+          font-size: 2.5rem;
+          line-height: 3.5rem;
+          margin-top: 3rem;
+          margin-bottom: 1em;  
+        }
+    }
+
+    .grid__item h3 {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        .time1::after {
+            content: ' EDT';
+        }
+
+        .time2::after {
+            content: ' CEST';
+        }
+
+        .landing-agenda__title::before {
+            content: 'Talk: ';
+        }
+    }
+
+}

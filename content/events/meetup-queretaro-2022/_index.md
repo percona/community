@@ -6,6 +6,12 @@ images:
 layout: single
 date: "2022-05-06"
 tags: ['opensource', 'meetup', 'event']
+speakers:
+  - peter_zaitsev
+  - michael_coburn
+  - eduardo_krieg
+  - david_gonzalez
+  - guillermo_ortega
 ---
 ![MeetUp Queretaro 2022](/events/meetup-queretaro/1.jpg)
 

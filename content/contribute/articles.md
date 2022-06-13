@@ -39,6 +39,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+* [Percona backup for MongoDB caveats](https://medium.com/@k5350153197/percona-backup-for-mongodb-caveats-1240985f8f8f) - Ilshat - May 10, 2022
 * [MongoDB 4.4.13 : Here to SRV you with easier replica set connections](https://www.datablogs.in/2022/03/mongodb-4413-here-to-srv-you-with.html) - SelvaKumar Kuppusamy - March 30, 2022
 * [Installing Percona Server for MongoDB on Red Hat Enterprise Linux and CentOS](https://news.descreated.com/edukasi/1697/installing-percona-server-for-mongodb-on-red-hat-enterprise-linux-and-centos/202203211325/) - Ryan - March 21, 2022
 * [Percona Backup for MongoDB with SSL/TLS](https://datablogs.medium.com/percona-backup-for-mongodb-with-ssl-tls-7e2f56f6b414) - SelvaKumar Kuppusamy - January 12, 2022

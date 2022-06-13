@@ -1,0 +1,107 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/landing.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "meta" }}
+  {{- if (isset .Params "speakers") -}}
+    {{ range $key, $author := .Params.authors -}}
+      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+        <meta name="author" content="{{ .Params.fullname }}" />
+      {{- end }}{{ if $key }}, {{ end -}}
+    {{- end -}}
+  {{- end -}}
+
+  <meta name="talks_data" content="{{ .Params.csv_talks | absURL }}" />
+  <meta name="speakers_data" content="{{ .Params.csv_speakers | absURL }}" />
+{{ end }}
+
+
+{{ define "main" }}
+
+{{ $dataC := getCSV "," .Params.csv_talks }}
+{{ $dataS := getCSV "," .Params.csv_speakers }}
+
+<div class="text">
+  
+    <h1>{{ .Title }}</h1>
+
+    <div class="body">
+      {{ partial "content.html" . }}
+
+      <h2>Talks</h2>
+
+      <table class="table table-striped table-sm table-responsive">
+          <tbody>
+          {{ range $i, $r := $dataC }}
+          {{ if ge (index $r 0) 1 }}
+
+            {{ $speaker := index $r 2 }}
+
+            {{ $time := time (index $r 5) }}
+            <tr class="talks__row">
+              <td width="70%">
+                <b class="talk__title">{{ index $r 1 }}</b></br>
+                <span class="talk__description">{{ safeHTML (index $r 8) }}</span>
+              </td>
+              <td><span class="talk__speaker">
+                  <b><span class="talk__speaker-name">{{ $speaker }}</span></b></br>
+                  {{ range $si, $sd := $dataS }}
+                    {{ if eq $speaker (index $sd 0) }}
+                    <div>
+                      <div>
+                        <i class="talk__speaker-title">{{ index $sd 2 }}</i></br>
+                        <i class="talk__speaker-company">{{ index $sd 1 }}</i></br>
+                      </div>
+                      <div>
+                        <!-- <img width="100px" src="{{ index $sd 5 }}" alt="" /> -->
+                      </div>
+                    </div>
+                    {{ end }}
+                  {{ end }}
+                  </span><br/>
+                  <i><span class="talk__date">{{ $time.Format "January 2, 2006 15:04" }}</span><br/>
+                  {{ index $r 7 }}<br/>
+                  {{ index $r 9 }}</i>
+              </td>
+            </tr>
+          {{ end }}
+          {{ end }}
+          </tbody>
+        </table>
+    </div>
+
+    <div class="video">
+        {{ partial "video.html" . }} 
+    </div>
+
+   {{ if (isset .Params "speakers")}}
+    <h2>Speakers</h2>
+    <div class="grid grid--3 speakers">
+        {{ range $key, $author := .Params.speakers }}
+          {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+            <div class="grid__item speaker">
+               {{- if isset .Params "images" -}}
+                    {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Image" (index .Params.images 0) "Content" .Content "Job" .Params.job) -}}
+                {{- else -}}
+                    {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Content" .Content "Name" .Params.full_name) -}}
+                {{- end -}}
+            </div>
+          {{- end }}
+        {{ end }}
+    </div>
+    {{ end }}
+
+</div>
+
+  <br/><br/>
+  {{ partial "sharing.html" . }}
+
+  <br/><br/>
+  {{ partial "disqus.html" . }}
+  
+{{ end }}
