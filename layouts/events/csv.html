@@ -49,13 +49,13 @@
                 <span class="talk__description">{{ safeHTML (index $r 8) }}</span>
               </td>
               <td>
-                  <b><span class="talk__speaker">{{ $speaker }}</span></b></br>
+                  <b><span class="talk__speaker-name">{{ $speaker }}</span></b></br>
                   {{ range $si, $sd := $dataS }}
                     {{ if eq $speaker (index $sd 0) }}
                     <div>
                       <div>
                         <i class="talk__speaker-title">{{ index $sd 2 }}</i></br>
-                        <i>{{ index $sd 1 }}</i></br>
+                        <i class="talk__speaker-company">{{ index $sd 1 }}</i></br>
                       </div>
                       <div>
                         <!-- <img width="100px" src="{{ index $sd 5 }}" alt="" /> -->
@@ -64,7 +64,7 @@
                     {{ end }}
                   {{ end }}
                   <br/>
-                  <i><span class="talk__date">{{ $time.Format "January 2, 15:04" }}</span><br/>
+                  <i><span class="talk__date">{{ $time.Format "January 2, 2006 15:04" }}</span><br/>
                   {{ index $r 7 }}<br/>
                   {{ index $r 9 }}</i>
               </td>
