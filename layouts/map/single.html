@@ -110,11 +110,13 @@
 
     <h2>Events</h2>
 
+ 
     <ul>
 
-    {{ $t := slice "event" "events" }}
 
-    {{ range where .Site.Pages "Section" "events" }}
+    {{ $tags := slice "map" }}
+
+    {{ range where (where .Site.Pages "Section" "events") "Params.tags" "intersect" $tags }}
 
         <li class="event"><a href="{{ .Permalink }}">{{ .Title }}</a>
             {{- if (isset .Params "speakers") -}}
