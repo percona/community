@@ -79,12 +79,22 @@ In the second test we will apply the new setting to help reduce replication lag 
 you will want to make these changes on both primary and replica. Make sure to stop replication on the replica
 before applying the changes. Once changes are applied restart replication on the repliica.
 
+Make the following settings on your primary:
+
 ```text
  mysql >set global binlog_transaction_dependency_tracking = 'writeset';
- mysql >set global binlog_group_commit_sync_delay = 3000;
  mysql >set global replica_parallel_type = 'LOGICAL_CLOCK';
  mysql >set global replica_parallel_workers = 4;
  ```
+
+Make the following changes on your replica:
+
+```text
+ mysql >set global binlog_group_commit_sync_delay = 3000;
+ mysql >set global replica_parallel_type = 'LOGICAL_CLOCK';
+ mysql >set global replica_parallel_workers = 4;
+ mysql >set global replica_preserve_commit_order ='ON';
+```
 
 I repeated the test from above. At the end of this test, replicacation lag was **6 minutes** behind the primary.
 
