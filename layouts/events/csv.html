@@ -48,7 +48,7 @@
                 <b class="talk__title">{{ index $r 1 }}</b></br>
                 <span class="talk__description">{{ safeHTML (index $r 8) }}</span>
               </td>
-              <td>
+              <td><span class="talk__speaker">
                   <b><span class="talk__speaker-name">{{ $speaker }}</span></b></br>
                   {{ range $si, $sd := $dataS }}
                     {{ if eq $speaker (index $sd 0) }}
@@ -63,7 +63,7 @@
                     </div>
                     {{ end }}
                   {{ end }}
-                  <br/>
+                  </span><br/>
                   <i><span class="talk__date">{{ $time.Format "January 2, 2006 15:04" }}</span><br/>
                   {{ index $r 7 }}<br/>
                   {{ index $r 9 }}</i>
