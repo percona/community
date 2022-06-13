@@ -93,7 +93,6 @@ Make the following changes on your replica:
  mysql >set global binlog_group_commit_sync_delay = 3000;
  mysql >set global replica_parallel_type = 'LOGICAL_CLOCK';
  mysql >set global replica_parallel_workers = 4;
- mysql >set global replica_preserve_commit_order ='ON';
 ```
 
 I repeated the test from above. At the end of this test, replicacation lag was **6 minutes** behind the primary.
