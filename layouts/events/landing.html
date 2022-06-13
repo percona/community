@@ -24,7 +24,7 @@
     {{ $Talks := getCSV "," .Params.csv }}
 
     {{ range $i, $r := $Talks }}{{ if ge $i 1 }}
-        <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}"/>
+        <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}" time="{{ index $r 9 }}" />
     {{ end }}{{ end }}
 
 {{ end }}
