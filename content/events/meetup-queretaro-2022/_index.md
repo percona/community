@@ -5,7 +5,7 @@ images:
   - events/meetup-queretaro/meetup.jpg
 layout: single
 date: "2022-05-06"
-tags: ['opensource', 'meetup', 'event']
+tags: ['opensource', 'Event']
 speakers:
   - peter_zaitsev
   - michael_coburn
@@ -13,6 +13,7 @@ speakers:
   - david_gonzalez
   - guillermo_ortega
 ---
+
 ![MeetUp Queretaro 2022](/events/meetup-queretaro/1.jpg)
 
 On May 6th, Percona together with MedTrainer organized a meetup for the local community in Queretaro, Mexico. It took place in a wonderful location - Holiday Inn Zona Krystal Meeting Room. 

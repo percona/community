@@ -5,7 +5,7 @@ images:
   - events/road-percona-live-2022/RoadToPerconaLive2022.jpg
 layout: single
 date: "2022-05-16"
-tags: ['PerconaLive', 'opensource', 'event']
+tags: ['PerconaLive', 'opensource', 'event', 'dashboard']
 ---
 
 ![Road to Percona Live 2022](/events/road-percona-live-2022/RoadToPerconaLive2022.jpg)
