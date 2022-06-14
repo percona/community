@@ -7,7 +7,7 @@ layout: landing
 weight: 1
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
 Date: "2022-05-21"
-tags: ['opensource', 'event', 'Percona Community Live', 'map']
+tags: ['opensource', 'event', 'Percona Community Live', 'dashboard']
 speakers:
   - bruce_momjian
   - matt_yonkovit
