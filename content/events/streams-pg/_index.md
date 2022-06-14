@@ -29,22 +29,23 @@ Matt and Charly will cover the following topics every two weeks on Friday at 02:
 * April 21st - [Setting up and scheduling regular PostgreSQL backups (Part 2)](/events/streams-pg/2022-04-21-setting-up-and-scheduling-regular-postgresql-backups-2/)
 * May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-04-21-setting-up-failover-via-a-replica-for-postgresql/)
 * June 3rd - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-06-03-setting-up-failover-via-a-replica-for-postgresql/)
-* June 17th - Migrating PostgreSQL to a new server
-* July 1st - installing and setting up PostgreSQL on Kubernetes
-* July 15th - PostgreSQL running on Kubernetes operations
-* July 29th - Exploring the scalability limits of PostgreSQL on Kubernetes
-* August 12th - Designing a schema
-* August 26th - How to benchmark your PostgreSQL database
-* September 9th - How to secure PostgreSQL
-* September 23rd - Setting up a PostgreSQL connection pool
-* October 7th - Using PG and Redis to boost Performance
-* October 21st - Finding poorly designed schema’s and how to fix them
-* November 4th - Archiving PG data
-* November 18th - Auditing PostgreSQL
-* December 2nd - Setting up and Optimizing PG Aurora
-* December 16th - Replicating PostgreSQL cross-cloud
-* December 30th - Cross K8 cluster PG replication
-* January 13th - Kubernetes for DBA’s
+* June 16th - [Setting Up and Using Patroni to Automate Failover in PostgreSQL](/events/streams-pg/2022-06-16-setting-up-and-using-patroni-to-automate-failover-in-postgresql)
+* June 30th - Migrating PostgreSQL to a new server
+* July 14th - installing and setting up PostgreSQL on Kubernetes
+* July 28th - PostgreSQL running on Kubernetes operations
+* August 11th - Exploring the scalability limits of PostgreSQL on Kubernetes
+* August 25th - Designing a schema
+* September 8th - How to benchmark your PostgreSQL database
+* September 22nd - How to secure PostgreSQL
+* October 6th - Setting up a PostgreSQL connection pool
+* October 20th - Using PG and Redis to boost Performance
+* November 3d - Finding poorly designed schema’s and how to fix them
+* November 17th - Archiving PG data
+* December 1st - Auditing PostgreSQL
+* December 15th - Setting up and Optimizing PG Aurora
+* December 29th - Replicating PostgreSQL cross-cloud
+* January 12th - Cross K8 cluster PG replication
+* January 26th - Kubernetes for DBA’s
 
 ## Follow Us
 
