@@ -41,6 +41,7 @@ speakers:
   - naveed_shaikh
   - sidney_chen
   - daniel_seybold
+  - javier_fernandez
 weight: 1
 ---
 
