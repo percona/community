@@ -1,5 +1,5 @@
 ---
-title: "Production with ProxySQL and Consul"
+title: "Production with ProxySQL and Orchestrator"
 description: "use case scenarios to implement HA utilizing ProxySQL, Orchestrator and Load Balancers in production environments"
 images:
   -  events/percona-community-live/cards/Community-Live-Day-2-Alawi-Assaggaf.jpg
