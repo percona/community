@@ -14,6 +14,15 @@ tags: ['Percona Community Live']
 
 This session is presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
 
+## Watch This Talk Here
+
+The talk will be live-streamed on several platforms. No registration is required. Feel free to ask your questions in chat. Follow the links now and subscribe to notifications not to miss anything!
+
+* [YouTube](https://www.youtube.com/watch?v=JBZSWDNmO9M)
+* [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
+* [Twitter @PerconaBytes](https://twitter.com/PerconaBytes)
+* [Twitch PerconaCommunity](https://www.twitch.tv/perconacommunity)
+
 Block device incidents are frequent and frightening in production. To achieve high availability, distributed databases usually have fault tolerant strategies to handle these incidents. As the system gets more complicated, it's even hard to prove whether these strategies are working. For example, if the execution and distribution of scheduling commands also depend on the hanging storage, it will have no effect.
 
 In order to help developers verify the performance of their databases under storage disasters, we designed a Linux IO scheduler called IOEM to emulate the properties of block devices.

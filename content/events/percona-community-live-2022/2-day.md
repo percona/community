@@ -25,6 +25,15 @@ speakers:
 
 We invite you to come to the second day of the Percona Community Live stream! Learn about banking applications on TiDB, optimization techniques in MySQL, database reliability engineering, PostgreSQL and artificial intelligence, etc., on June 22nd. Join us on June 21st and June 23d for more fantastic content!
 
+## Watch Day 2 (June 22nd) Here
+
+The event will be live-streamed on several platforms. No registration is required. Feel free to ask your questions in chat. Follow the links now and subscribe to notifications not to miss anything!
+
+* [YouTube](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
+* [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
+* [Twitter @PerconaBytes](https://twitter.com/PerconaBytes)
+* [Twitch PerconaCommunity](https://www.twitch.tv/perconacommunity)
+
 Full information about the event can be found here: [Percona Community Live](/events/percona-community-live-2022/)!
 
 
