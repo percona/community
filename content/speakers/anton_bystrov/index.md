@@ -3,7 +3,7 @@ name: anton_bystrov
 name_pronunciation: anton_bystrov
 fullname: Anton Bystrov
 fullname_pronounciation: Anton Bystrov
-job: Dasboard Engineer, Percona / Simbirsoft
+job: Dashboard Engineer, Percona / Simbirsoft
 country: 
 tagline: 
 social:
