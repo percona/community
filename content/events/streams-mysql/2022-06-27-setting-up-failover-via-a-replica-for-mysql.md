@@ -12,7 +12,7 @@ tags: ['MySQL', 'Stream']
 ---
 ![Percona Community MySQL Live Stream June 24th](events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg)
 
-The Next Community Livestream will focus on Failover and Replicaset for MySQL. Our experts Dave Stokes and Marcos Albe will take us through the setting to make it easier and answer your question straight forward.
+The Next Community Livestream will focus on Failover and Replica for MySQL. Our experts Dave Stokes and Marcos Albe will take us through the setting to make it easier and answer your question straight forward.
 
 ## Join us Live & Ask Questions
 Friday, June 24th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST
