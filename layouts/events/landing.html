@@ -108,7 +108,7 @@
             return string;
         }
 
-        function Talk ( title, speakersHtml, titleHtml, speaker1, company1, bio1, speaker2, company2, bio2, desciption, time1, time2 ) {
+        function Talk ( title, speakersHtml, titleHtml, speaker1, company1, bio1, speaker2, company2, bio2, desciption, sortable, time1, time2 ) {
  
             this.title = title;
             this.titleHtml = titleHtml;
@@ -119,8 +119,8 @@
             this.speaker2 = speaker2;
             this.bio2 = bio2;
             this.company2 = company2;
-            this.time1 = '<span class="time1">' + time1 + '</span>';
-            this.time2 = '<span class="time2">' + time2 + '</span>';
+            this.time1 = '<span value="' + sortable + '" class="time1">' + time1 + '</span>';
+            this.time2 = '<span value="' + sortable + '" class="time2">' + time2 + '</span>';
             this.desciption = desciption;
 
         };
@@ -139,6 +139,7 @@
                 "{{ index $r 5 }}",
                 "{{ index $r 6 }}",
                 "{{ index $r 7 }}",
+                "{{ index $r 9 }}",
                 "{{ index $r 10 }}",
                 "{{ index $r 11 }}",
                 ),
@@ -155,7 +156,7 @@
                     },
                     { data: 'titleHtml' },
                     { data: 'speakersHtml' },
-                    { data: 'time1' },
+                    { data: 'time1', orderable: false},
                     { data: 'time2' }
                 ],
                 order: [[4, 'asc']],
