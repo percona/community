@@ -30,7 +30,13 @@ We invite you to come to the second day of the Percona Community Live stream! Le
 The event will be live-streamed on several platforms. No registration is required. Feel free to ask your questions in chat. Follow the links now and subscribe to notifications not to miss anything!
 
 * [YouTube](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
+  * [Part 1 Link](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
+  * [Part 2 Link](https://www.youtube.com/watch?v=sXaBwHv8lf0)
+  * [Part 3 Link](https://www.youtube.com/watch?v=xNvx_VjjzZ4)
 * [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
+  * [Part 1 Link](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
+  * [Part 2 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945357069013188608/)
+  * [Part 3 Link](hhttps://www.linkedin.com/feed/update/urn:li:ugcPost:6945369007084494848)
 * [Twitter @PerconaBytes](https://twitter.com/PerconaBytes)
 * [Twitch PerconaCommunity](https://www.twitch.tv/perconacommunity)
 
