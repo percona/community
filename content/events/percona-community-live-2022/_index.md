@@ -65,7 +65,7 @@ The event will be live-streamed on several platforms. No registration is require
   * [Part 1 Link](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
   * [Part 2 Link](https://www.youtube.com/watch?v=sXaBwHv8lf0)
   * [Part 3 Link](https://www.youtube.com/watch?v=NHHyBbyjG20)
-  * [Part 4 Link](https://www.youtube.com/watch?v=CWs-omcpVUA)
+  * [Part 4 Link](https://www.youtube.com/watch?v=bdaG5DvPI8k)
 * [Day 3 : June 23d](https://www.youtube.com/watch?v=RXexzG_L47A)
 
 **LinkedIn:**
@@ -75,7 +75,7 @@ The event will be live-streamed on several platforms. No registration is require
   * [Part 1 Link](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
   * [Part 2 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945357069013188608/)
   * [Part 3 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945423420683689985/)
-  * [Part 4 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945380342996373505/)
+  * [Part 4 Link](https://www.linkedin.com/feed/update/urn:li:ugcPost:6945436938506035200)
 * [Day 3 : June 23d](https://www.linkedin.com/video/event/urn:li:ugcPost:6940255935252631552/)
 
 Twitter - [@PerconaBytes](https://twitter.com/PerconaBytes)
