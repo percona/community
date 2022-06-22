@@ -33,10 +33,12 @@ The event will be live-streamed on several platforms. No registration is require
   * [Part 1 Link](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
   * [Part 2 Link](https://www.youtube.com/watch?v=sXaBwHv8lf0)
   * [Part 3 Link](https://www.youtube.com/watch?v=xNvx_VjjzZ4)
+  * [Part 4 Link](https://www.youtube.com/watch?v=CWs-omcpVUA)
 * [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
   * [Part 1 Link](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
   * [Part 2 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945357069013188608/)
-  * [Part 3 Link](hhttps://www.linkedin.com/feed/update/urn:li:ugcPost:6945369007084494848)
+  * [Part 3 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945369007084494848/)
+  * [Part 3 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945380342996373505/)
 * [Twitter @PerconaBytes](https://twitter.com/PerconaBytes)
 * [Twitch PerconaCommunity](https://www.twitch.tv/perconacommunity)
 
