@@ -4,7 +4,7 @@ description: "Follow the expert lead to set up your backups and Scheduling Regul
 images:
   - events/streams-mysql/Stream-MySQL-4-2022-06-10.jpg
 draft: false
-weight: 1
+date: "2022-06-10"
 speakers:
   - marcos_albe
   - matt_yonkovit

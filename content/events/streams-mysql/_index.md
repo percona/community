@@ -30,7 +30,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * June, 10th- [Setting Up Backups and Scheduling Regular MySQL Backups](/events/streams-mysql/2022-06-10-setting-up-backups-and-scheduling-regular-mysql-backups/)
 
-* June, 24th - Setting Up Failover via a Replica for MySQL
+* June, 24th - [Setting Up Failover via a Replica for MySQL](/events/streams-mysql/2022-06-27-setting-up-failover-via-a-replica-for-mysql/)
 
 * July, 8th - Migrating MySQL to a New Server
 
