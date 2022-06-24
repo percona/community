@@ -1,12 +1,12 @@
 ---
-title: "Tigris Data - Percona Database Podcast 75 /w Ovais Tariq"
-description: "After Percona Live, Ovais Tariq, Co-Founder & CEO - of Tigris Data, joined Matt Yonkovit, The Head of Open Source Strategy at Percona, to give more feedback about the event. Ovais explains more about the back end of Tigris Data, the trend in open source, and upcoming talks in the community. Learn more, join and contribute on tigrisdata.com"
-date: "2022-06-16"
-podbean_link: "https://percona.podbean.com/e/tigris-data-percona-database-podcast-75-w-ovais-tariq/"
-youtube_id: "0WsfiKiqz_k"
+title: "All things Open Source Database Advocacy and AlloyDB - Percona Database Podcast 76 /w Gabe Weiss"
+description: "Gabe Weiss, Developer Advocacy Manager at Google, is at the Percona Podcast The HOSS Talks FOSS with Matt Yonokit, The Head of Open Source Strategy ‘HOSS’ at Percona. Gabe is talking about how he got started in database advocacy and explains more about the DevRel motivation besides Marketing, products team, solution architect, and sales. They tackle advocacy success, the trend in particularly adoption of the open-source on the cloud, and Postgres growth before diving into AlloyDB."
+date: "2022-06-23"
+podbean_link: "https://percona.podbean.com/e/all-things-open-source-database-advocacy-and-alloydb-percona-database-podcast-76-w-gabe-weiss/"
+youtube_id: "PbVkDhf9T5o"
 speakers:
   - matt_yonkovit
-  - ovais_tariq
+  - gabe_weiss
 ---
 
 ## Transcript
