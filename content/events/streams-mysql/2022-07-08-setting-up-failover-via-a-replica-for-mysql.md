@@ -12,6 +12,22 @@ tags: ['MySQL', 'Stream']
 ---
 ![Percona Community MySQL Live Stream June 24th](events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg)
 
+----------------
+
+Hello,
+
+Thank you for you visit.
+This event is postponed on Friday, July 8th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST
+Subscribe to our channel to be informed of all upcoming events.
+
+Thank you
+Percona Community Team
+
+----------------
+
+
+
+
 The Next Community Livestream will focus on Failover and Replica for MySQL. Our experts Dave Stokes and Marcos Albe will take us through the setting to make it easier and answer your question straight forward.
 
 ## Join us Live & Ask Questions
