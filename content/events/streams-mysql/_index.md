@@ -30,39 +30,39 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * June, 10th- [Setting Up Backups and Scheduling Regular MySQL Backups](/events/streams-mysql/2022-06-10-setting-up-backups-and-scheduling-regular-mysql-backups/)
 
-* June, 24th - [Setting Up Failover via a Replica for MySQL](/events/streams-mysql/2022-06-27-setting-up-failover-via-a-replica-for-mysql/)
+* July, 8th - [Setting Up Failover via a Replica for MySQL](/events/streams-mysql/2022-07-08-setting-up-failover-via-a-replica-for-mysql/)
 
-* July, 8th - Migrating MySQL to a New Server
+* July, 22nd - Migrating MySQL to a New Server
 
-* July, 22nd  - Installing and Setting Up MySQL on Kubernetes
+* August, 5th  - Installing and Setting Up MySQL on Kubernetes
 
-* August, 5th - MySQL Running on Kubernetes Operations
+* August, 19th - MySQL Running on Kubernetes Operations
 
-* August, 19th -  Exploring the Scalability Limits of MySQL on Kubernetes
+* September, 2nd -  Exploring the Scalability Limits of MySQL on Kubernetes
 
-* September, 2nd - Designing a Schema
+* September, 16th - Designing a Schema
 
-* September, 16th - How to Benchmark Your MySQL Database 
+* September, 30th - How to Benchmark Your MySQL Database 
 
-* September, 30th - How to Secure MySQL
+* October, 14th - How to Secure MySQL
 
-* October, 14th - Setting Up a MySQL Connection Pool
+* October, 28th - Setting Up a MySQL Connection Pool
 
-* October, 28th - Using MySQL and Redis to Boost Performance 
+* November, 11th - Using MySQL and Redis to Boost Performance 
 
-* November, 11th - Finding Poorly Designed Schema’s and How to Fix Them
+* November, 25th - Finding Poorly Designed Schema’s and How to Fix Them
 
-* November, 25th - Archiving MySQL Data
+* December, 9th - Archiving MySQL Data
 
-* December, 9th - Auditing MySQL 
+* December, 23rd - Auditing MySQL 
 
-* December, 23rd - Setting Up and Optimizing MySQL Aurora 
+* January, 6th - Setting Up and Optimizing MySQL Aurora 
 
-* January, 6th - Replicating MySQL Cross-Cloud
+* January, 20th - Replicating MySQL Cross-Cloud
 
-* January, 20th - Cross K8 Cluster MySQL Replication 
+* February, 3rd - Cross K8 Cluster MySQL Replication 
 
-* February, 3rd - Kubernetes for DBA’s
+* February, 17th - Kubernetes for DBA’s
 
 The attendance is free and open to the public. Subscribe to our channels on [YouTube](https://www.youtube.com/channel/UCLJ0Ok4HeUBrRYF4irturVA) and [Twitch](https://www.twitch.tv/perconacommunity).
 
