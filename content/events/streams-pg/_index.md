@@ -20,7 +20,7 @@ Percona Community is scheduling live streams dedicated to PostgreSQL starting fr
 
 ## Bi-Weekly Talk List
 
-Matt and Charly will cover the following topics every two weeks on Friday at 02:00 PM EDT ((07:00 PM CET): 
+Matt and Charly will cover the following topics every two weeks on Thursday, at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST: 
 
 * January 27th - [Installing PG and setting up a default configuration](/events/streams-pg/2022-01-27-installing-pg-and-setting-up-default-configuration/)
 * March 11th - [Observing & Tuning your PostgreSQL workload using PMM](/events/streams-pg/2022-03-11-observing-and-tuning-your-postgresql-workload-using-pmm/)
@@ -30,7 +30,7 @@ Matt and Charly will cover the following topics every two weeks on Friday at 02:
 * May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-04-21-setting-up-failover-via-a-replica-for-postgresql/)
 * June 3rd - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-06-03-setting-up-failover-via-a-replica-for-postgresql/)
 * June 16th - [Setting Up and Using Patroni to Automate Failover in PostgreSQL](/events/streams-pg/2022-06-16-setting-up-and-using-patroni-to-automate-failover-in-postgresql)
-* June 30th - Migrating PostgreSQL to a new server
+* June 30th - [Migrating PostgreSQL to a new server](/events/streams-pg/2022-06-30-migrating-postgresql-to-a-new-server/)
 * July 14th - installing and setting up PostgreSQL on Kubernetes
 * July 28th - PostgreSQL running on Kubernetes operations
 * August 11th - Exploring the scalability limits of PostgreSQL on Kubernetes
