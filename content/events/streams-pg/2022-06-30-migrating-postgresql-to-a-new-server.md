@@ -18,7 +18,7 @@ Join the next Percona Community Live Stream if you ever had a problem migrating 
 ## Topic
 
 Thursday, June 30th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST
-**Migrating PostgreSQL to a new server** Dave Stokes and Charly Batista
+**Migrating PostgreSQL to a new server** by Dave Stokes and Charly Batista
 
 
 ## Join & Chat for Free
