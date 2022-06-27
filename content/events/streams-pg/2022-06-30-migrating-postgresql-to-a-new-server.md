@@ -4,7 +4,6 @@ description: "Come up to Percona Community Live Stream and find out more about h
 draft: false
 images:
   - events/streams-pg/PG-Stream-Week-9-Cover.jpg
-date: "2022-06-30"
 speakers:
   - charly_batista
   - dave_stokes
