@@ -2,6 +2,7 @@
 title: "Migrating PostgreSQL to a New Server - Percona Community PostgreSQL Live Stream & Chat - June, 30th"
 description: "Come up to Percona Community Live Stream and find out more about how Migrating PostgreSQL to a new server with Percona Experts on Thursday, June 30th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
 draft: false
+date: Thu, 30th June 2022, 19:00:00 +0000
 images:
   - events/streams-pg/PG-Stream-Week-9-Cover.jpg
 speakers:
