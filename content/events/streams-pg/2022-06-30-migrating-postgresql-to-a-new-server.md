@@ -4,14 +4,14 @@ description: "Come up to Percona Community Live Stream and find out more about h
 draft: false
 images:
   - events/streams-pg/PG-Stream-Week-9-Cover.jpg
-date: "2022-06-30"
+date: Thu, 30th June 2022, 19:00:00 +0000
 speakers:
   - charly_batista
   - dave_stokes
 tags: ['Postgres', 'Stream']
 ---
 
-![Percona Community PostgreSQL Live Stream & Chat - June 30th](events/streams-pg/PG-Stream-Week-9-Cover)
+![Percona Community PostgreSQL Live Stream & Chat - June 30th](events/streams-pg/PG-Stream-Week-9-Cover.jpg)
 
 Join the next Percona Community Live Stream if you ever had a problem migrating PostgreSQL to a New server. Our experts, Charly and Dave, will give some tips to take you through the process without any problems. Ask a question and get an answer right away
 
