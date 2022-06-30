@@ -18,6 +18,12 @@
     "date": "Jun 7, 2022",
     "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
   },
+    {
+    "youtube_id": "ObOyGzSooOA",
+    "title": "PostgreSQL Tutorial - PostgresSQL for MySQL DBAs - Episode 05 - PSQL Sequences",
+    "date": "Jun 29, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
   {
     "youtube_id": "37lSf-RjE1k",
     "title": "PostgreSQL Tutorial - PostgresSQL for MySQL DBAs - Episode 04 - PSQL Commands",
@@ -211,6 +217,102 @@
     "title": "Point-in-time query tuning and observability with pg_stat_statements | Citus Con 2022",
     "date": "Apr 12, 2022",
     "authors": "Ryan Rooz"
+  }
+  {
+    "youtube_id": "JnPuIdLh16U",
+    "title": "The Future of MyDumper - David Ducos - Percona - Percona Community Live - Database Tutorial",
+    "date": "June 23, 2022",
+    "authors": "David Ducos (Percona)"
+  },
+  {
+    "youtube_id": "JnPuIdLh16U",
+    "title": "The Future of MyDumper - David Ducos - Percona - Percona Community Live - Database Tutorial",
+    "date": "June 23, 2022",
+    "authors": "David Ducos (Percona)"
+  },
+  {
+    "youtube_id": "y8-ecVLcaaY",
+    "title": "The Low Hanging Fruits of MySQL - Kedar Vaijanapurkar - Percona - Percona Community Live 2022",
+    "date": "June 23, 2022",
+    "authors": "Kedar Vaijanapurkar (Percona)"
+  },
+  {
+    "youtube_id": "u4X-gJ0lUgA",
+    "title": "PostgreSQL and Artificial intelligence - Ibrar Ahmed - Percona - Percona Community Live 2022",
+    "date": "June 23, 2022",
+    "authors": "Ibrar Ahmed (Percona)"
+  },
+  {
+    "youtube_id": "T26F10te-BQ",
+    "title": "Walking Through Identifying and Drilling Into a Slow Down in MongoDB - Divyanshu Soni",
+    "date": "June 23, 2022",
+    "authors": "Divyanshu Soni  (Percona)"
+  },  
+  {
+    "youtube_id": "B6xKTQy_kIQ",
+    "title": "ProxySQL 2021 Dev Submit - Javier Jaramago Fernández - ProxySQL - Percona Community Live 2022",
+    "date": "June 30, 2022",
+    "authors": "Javier Jaramago Fernández (ProxySQL)"
+  },
+  {
+    "youtube_id": "AbfjW5HhG6I",
+    "title": "Liquibase Data: Version Control and Collaboration for the Database - Robert Reeves - Liquibase",
+    "date": "June 30, 2022",
+    "authors": "Robert Reeves (Liquibase)"
+  },  
+  {
+    "youtube_id": "bjQ9i1y49IM",
+    "title": "How to Build Percona Server 8 on Raspberry Pi 4 - Wayne Leutwyler - Optum - Percona Community Live",
+    "date": "June 30, 2022",
+    "authors": "Wayne Leutwyler (Optum)"
+  },
+  {
+    "youtube_id": "AbYBlTomQus",
+    "title": "I Dropped My Database! Now What? - A Dive Into PostgreSQL Backup Using pgBackRest - Charly Batista",
+    "date": "June 29, 2022",
+    "authors": "Charly Batista  (Percona)"
+  },
+  {
+    "youtube_id": "vKfFmyjVmRc",
+    "title": "The 10 Deadly PostgreSQL Sins - Matt Yonkovit - Percona - Percona Community Live",
+    "date": "June 30, 2022",
+    "authors": "Matt Yonkovit (Percona)"
+  },
+  {
+    "youtube_id": "QQ1eyBcphEs",
+    "title": "Flexible Indexing With Postgres - Bruce Momjian - EDB - Percona Community Live - PostgreSQL tutorial",
+    "date": "June 29, 2022",
+    "authors": "Bruce Momjian (EDB)"
+  },
+  {
+    "youtube_id": "SGZjY7xgDwE",
+    "title": "How do We Keep Metrics for a Long Time in VictoriaMetrics - Anton Bystrov - Percona Community Live",
+    "date": "June 30, 2022",
+    "authors": "Anton Bystrov (Percona - Simbirsoft) "
+  },
+  {
+    "youtube_id": "LQHxt3DtQxk",
+    "title": "Emulate Block Device Incidents With IO Scheduler - Yang Keao - PingCAP - Percona Community Live 2022",
+    "date": "June 30, 2022",
+    "authors": "Yang Keao (PingCAP)"
+  },
+  {
+    "youtube_id": "e98EqK6YBKs",
+    "title": "Data Wrangling With MongoDB - Jean Joseph - Allied World - Percona Community Live 2022",
+    "date": "June 30, 2022",
+    "authors": "Jean Joseph (Allied World)"
+  },
+  {
+    "youtube_id": "vXpzF-zoru8",
+    "title": "Database Resiliency - Ravikumar Buragapu - Adobe - Percona Community Live - Database tutorials",
+    "date": "June 29, 2022",
+    "authors": "Ravikumar Buragapu (Adobe Inc.)"
+  },
+  {
+    "youtube_id": "4ub1Q7IuG18",
+    "title": "Percona Database Distributions - An Overview - Lenz Grimmer - Percona - Percona Community Live 2022",
+    "date": "June 29, 2022",
+    "authors": "Lenz Grimmer (Percona)"
   }],
 
 
