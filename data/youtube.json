@@ -105,6 +105,18 @@
 
   "Events":[
     {
+      "youtube_id": "2Z6sffhsdcQ",
+      "title": "Private DBaaS on Kubernetes - DoK Talks #139",
+      "date": "Jun 27, 2022",
+      "authors": "Sergey Pronin (Percona), Bart Farrell (Data on Kubernetes Community)"
+    },
+    {
+      "youtube_id": "diOOmK_gxf0",
+      "title": "Economic Uncertainty and the Open Source Ecosystem",
+      "date": "Jun 30, 2022",
+      "authors": "Matt Yonkovit (Percona)"
+    },
+    {
       "youtube_id": "yTbt0GENqMg",
       "title": "Света Смирнова: \"Современному хайлоду - современные решения: MySQL 8.0 и улучшения Percona\" #OSTconf",
       "date": "Jun 9, 2022",
