@@ -16,7 +16,7 @@ tags: ['Databases', 'Percona Community Live']
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
 
 
-## Watch Video of The Talk Here
+## Watch Video Here
 
 {{% youtube youtube_id="e98EqK6YBKs" %}}{{% /youtube %}}
 
