@@ -15,6 +15,7 @@ tags: ['Databases', 'Percona Community Live']
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
 
+This presentation is based on data wrangling with MongoDB. After this presentation, you will have the mindset of data wrangling. It is 70% demo, and 30% talk. Jean covers the goal of data wrangling, how to think about data wrangling, and then the technical tips for data wrangling in MongoDB.
 
 ## Watch Video Here
 
