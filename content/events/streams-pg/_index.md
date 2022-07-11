@@ -31,7 +31,7 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * June 3rd - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-06-03-setting-up-failover-via-a-replica-for-postgresql/)
 * June 16th - [Setting Up and Using Patroni to Automate Failover in PostgreSQL](/events/streams-pg/2022-06-16-setting-up-and-using-patroni-to-automate-failover-in-postgresql)
 * June 30th - [Migrating PostgreSQL to a new server](/events/streams-pg/2022-06-30-migrating-postgresql-to-a-new-server/)
-* July 14th - installing and setting up PostgreSQL on Kubernetes
+* July 14th - [Installing and Setting Up PostgreSQL on Kubernetes](/events/streams-pg/2022-07-14-installing-and-setting-up-postgresql-on-kubernetes/)
 * July 28th - PostgreSQL running on Kubernetes operations
 * August 11th - Exploring the scalability limits of PostgreSQL on Kubernetes
 * August 25th - Designing a schema
