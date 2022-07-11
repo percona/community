@@ -11,18 +11,22 @@ speakers:
 tags: ['MongoDB', 'Stream']
 ---
 
-
-This session is presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
-
-## Watch This Talk Here
-
-The talk will be live-streamed on several platforms. No registration is required. Feel free to ask your questions in chat. Follow the links now and subscribe to notifications not to miss anything!
-
-* [YouTube](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
-* [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
-* [Twitter @PerconaBytes](https://twitter.com/PerconaBytes)
-* [Twitch PerconaCommunity](https://www.twitch.tv/perconacommunity)
-
 ![Walking Through Identifying and Drilling Into a Slow Down in MongoDB](events/percona-community-live/cards/Community-Live-Day-2-Divyanshu-Soni.jpg)
 
-Check out the full schedule of [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022
+This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
+
+Divyanshu Soni, MongoDB DBA II in Managed Services at Percona, is talking about walking through identifying and drilling into a slowdown in MongoDB. Dive into the different reasons behind that and how you can overcome all issues that you might face in your database. This video is going through the best practices: 
+- Always follow proper and systematic approach while initiating your troubleshooting 
+- The reasons behind slowdown and performance issues, the root causes and symptoms 
+- Few PMM dashboards, Percona Monitoring and Management dashboards, which is our open source monitoring tool to help identify where the issues could arise 
+- Exploring query Analytics 
+- Need for scalability 
+- And last, but not the least, is improving the best practices
+
+
+## Watch Video Here
+
+{{% youtube youtube_id="T26F10te-BQ" %}}{{% /youtube %}}
+
+## Transcript
+
