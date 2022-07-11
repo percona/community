@@ -20,7 +20,7 @@ Dave and Marcos will talk more about **Setting Up Failover via a Replica for MyS
 
 
 ## Subscribe
-Watch it live on [YouTube](https://www.youtube.com/watch?v=HEVdBeO03Ws), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6946075568589209600/), and [Twitch](https://www.twitch.tv/perconacommunity).
+Watch it live on [YouTube](https://www.youtube.com/watch?v=c5tj-0THNLI), [Linkedin](https://www.linkedin.com/video/live/urn:li:ugcPost:6951157152971444224/), and [Twitch](https://www.twitch.tv/perconacommunity).
 Live chat on [Discord](http://per.co.na/discord).
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWJoaGU5dTM2ZmpqZ3Y1bTR0anBrOGRxN3RfMjAyMjA3MDhUMTMwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com)
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups.
