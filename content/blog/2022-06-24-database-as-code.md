@@ -104,7 +104,6 @@ dbt provide also:
 - Templating with [Jinja](https://jinja.palletsprojects.com)
 - Relationships management between queries
 - Relationships visualization 
-- etc
 
 
 
@@ -149,4 +148,4 @@ Check it out on [GitHub](https://github.com/mgramin/malewicz) and try [online de
 
 ## Conclusion
 
-Database as Code things are not fantastic things and ...
+In the database world, we already have a great universal language with marvelous history, and it's SQL. SQL allows you standardized declarative access not only to relational DB, but to non-relational DB, streaming platforms, files, clouds and so on. However, unfortunately, we often see that the SQL-code is often considered as a kind of [bytecode](https://gramin.pro/posts/sql-is-not-a-bytecode-for-data). But we say - SQL-code is a *normal* code and all SQL-code needs version control, review, testing, CI/CD and all this stuff.
