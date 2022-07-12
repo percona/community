@@ -19,20 +19,38 @@
     "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
   },
   {
+    "youtube_id": "F5cHnLHZDJw",
+    "title": "Tutorial - PostgresSQL for MySQL DBAs - Ep 06 - Explain",
+    "date": "Jul 11, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "ObOyGzSooOA",
+    "title": "Tutorial - PostgresSQL for MySQL DBAs - Ep 05 - Sequences",
+    "date": "Jun 29, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
     "youtube_id": "37lSf-RjE1k",
-    "title": "PostgreSQL Tutorial - PostgresSQL for MySQL DBAs - Episode 04 - PSQL Commands",
+    "title": "Tutorial - PostgresSQL for MySQL DBAs - Ep 04 - PSQL Commands",
     "date": "Jun 20, 2022",
     "authors": "Dave Stokes (Percona)"
   },
   {
+    "youtube_id": "LxLhqdhCdZ4",
+    "title": "Tutorial - PostgreSQL For MySQL DBAs - Ep 03 - Backup and Restoration",
+    "date": "June 17, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
     "youtube_id": "CRgC1buHYXA",
-    "title": "PostgreSQL For MySQL DBAs - Episode 02",
+    "title": "Tutorial - PostgreSQL For MySQL DBAs - Ep 02 - Adding a user and exploring the database",
     "date": "June 6, 2022",
     "authors": "Dave Stokes (Percona)"
   },
   {
     "youtube_id": "S7jEJ9o9o2o",
-    "title": "PostgreSQL For MySQL DBAs - Dave Stokes, Technical Evangelist at percona - PostgreSQL Tutorial",
+    "title": "Tutorial - PostgreSQL For MySQL DBAs - Ep 01, with Dave Stokes ",
     "date": "Jun 3, 2022",
     "authors": "Dave Stokes (Percona)"
   },
