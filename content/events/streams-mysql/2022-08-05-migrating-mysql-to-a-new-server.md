@@ -1,8 +1,8 @@
 ---
-title: "Migrating MySQL to a New Server - Percona Community MySQL Live Stream & Chat - July 22nd"
-description: "Find out more tips on moving a MySQL database to a new server with Dave Stokes and Marcos Albe. Join Percona Community Live Stream on Friday, July 22nd at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST"
+title: "Migrating MySQL to a New Server - Percona Community MySQL Live Stream & Chat - JAugust 5th"
+description: "Find out more tips on moving a MySQL database to a new server with Dave Stokes and Marcos Albe. Join Percona Community Live Stream on Friday, August 5th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST"
 images:
-  - events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave.jpg
+  - events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg
 draft: false
 weight: 1
 speakers:
@@ -10,12 +10,12 @@ speakers:
   - dave_stokes
 tags: ['MySQL', 'Stream']
 ---
-![Percona Community MySQL Live Stream July 22nd](events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave.jpg)
+![Percona Community MySQL Live Stream August 5th](events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg)
 
 Our experts will run a demo and take us through all steps to migrate MySQL database to a new server. Get more tips to improve your database skill from Dave Stokes and Marcos Albe. They will answer all your questions straight forward.
 
 ## Join us Live & Ask Questions
-Friday, July 22nd at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST
+Friday, August 5th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST
 Find out more about **Migrating MySQL to a New Server** with  Dave Stokes and Marcos Albe
 
 
