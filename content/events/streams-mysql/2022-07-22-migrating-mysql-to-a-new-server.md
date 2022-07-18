@@ -20,7 +20,7 @@ Find out more about **Migrating MySQL to a New Server** with  Dave Stokes and Ma
 
 
 ## Subscribe
-Watch it live on [YouTube](https://www.youtube.com/watch?v=tJarnF_e2iU), Linkedin, and [Twitch](https://www.twitch.tv/perconacommunity).
+Watch it live on [YouTube](https://www.youtube.com/watch?v=tJarnF_e2iU), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6954698542053502976/), and [Twitch](https://www.twitch.tv/perconacommunity).
 Live chat on [Discord](http://per.co.na/discord).
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWJoaGU5dTM2ZmpqZ3Y1bTR0anBrOGRxN3RfMjAyMjA3MjJUMTMwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com)
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups.
