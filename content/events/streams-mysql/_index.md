@@ -32,7 +32,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * July, 8th - [Setting Up Failover via a Replica for MySQL](/events/streams-mysql/2022-07-08-setting-up-failover-via-a-replica-for-mysql/)
 
-* July, 22nd - Migrating MySQL to a New Server
+* July, 22nd - [Migrating MySQL to a New Server](/events/streams-mysql/2022-07-22-migrating-mysql-to-a-new-server/)
 
 * August, 5th  - Installing and Setting Up MySQL on Kubernetes
 

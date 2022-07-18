@@ -4,7 +4,6 @@ description: "Get some tips and tricks from our experts to easily set up a Failo
 images:
   - events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg
 draft: false
-weight: 1
 speakers:
   - marcos_albe
   - dave_stokes
