@@ -36,11 +36,13 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+* [PostgreSQL Person of the Week](https://postgresql.life/post/charly_batista/) - Charly Batista (Percona) - July 11, 2022
 * [pg_stat_monitor :: Younger sibling of pg_stat_statements with more knowledge](https://sujithtee.medium.com/pg-stat-monitor-younger-sibling-of-pg-stat-statements-with-more-knowledge-736afb1f05ac) - Sujith Thiravium - October 19, 2021
 * [Setup Percona Postgresql Through the Awsesome(OSM) Ansible Role](https://medium.com/opstree-technology/setup-percona-postgresql-through-the-awsesome-osm-ansible-role-86fe0a5fe1a5) - Abhishek Vishwakarma - October 5, 2022
 
 # MongoDB
 
+* [Deploying a custom MongoDB operator using Helm Charts](https://dev.to/devtron_/deploying-a-custom-mongodb-operator-using-helm-charts-5hg2) - Devtron - June 28, 2022
 * [Percona backup for MongoDB caveats](https://medium.com/@k5350153197/percona-backup-for-mongodb-caveats-1240985f8f8f) - Ilshat - May 10, 2022
 * [MongoDB 4.4.13 : Here to SRV you with easier replica set connections](https://www.datablogs.in/2022/03/mongodb-4413-here-to-srv-you-with.html) - SelvaKumar Kuppusamy - March 30, 2022
 * [Installing Percona Server for MongoDB on Red Hat Enterprise Linux and CentOS](https://news.descreated.com/edukasi/1697/installing-percona-server-for-mongodb-on-red-hat-enterprise-linux-and-centos/202203211325/) - Ryan - March 21, 2022
