@@ -32,37 +32,37 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * July, 8th - [Setting Up Failover via a Replica for MySQL](/events/streams-mysql/2022-07-08-setting-up-failover-via-a-replica-for-mysql/)
 
-* July, 22nd - [Migrating MySQL to a New Server](/events/streams-mysql/2022-07-22-migrating-mysql-to-a-new-server/)
+* August, 5th - [Migrating MySQL to a New Server](/events/streams-mysql/2022-08-05-migrating-mysql-to-a-new-server/)
 
-* August, 5th  - Installing and Setting Up MySQL on Kubernetes
+* August, 19th - Installing and Setting Up MySQL on Kubernetes
 
-* August, 19th - MySQL Running on Kubernetes Operations
+* September, 2nd - MySQL Running on Kubernetes Operations
 
-* September, 2nd -  Exploring the Scalability Limits of MySQL on Kubernetes
+* September, 16th -  Exploring the Scalability Limits of MySQL on Kubernetes
 
-* September, 16th - Designing a Schema
+* September, 30th - Designing a Schema
 
-* September, 30th - How to Benchmark Your MySQL Database 
+* October, 14th - How to Benchmark Your MySQL Database 
 
-* October, 14th - How to Secure MySQL
+* October, 28th - How to Secure MySQL
 
-* October, 28th - Setting Up a MySQL Connection Pool
+* November, 11th - Setting Up a MySQL Connection Pool
 
-* November, 11th - Using MySQL and Redis to Boost Performance 
+* November, 25th - Using MySQL and Redis to Boost Performance 
 
-* November, 25th - Finding Poorly Designed Schema’s and How to Fix Them
+* December, 9th - Finding Poorly Designed Schema’s and How to Fix Them
 
-* December, 9th - Archiving MySQL Data
+* December, 23rd - Archiving MySQL Data
 
-* December, 23rd - Auditing MySQL 
+* January, 6th - Auditing MySQL 
 
-* January, 6th - Setting Up and Optimizing MySQL Aurora 
+* January, 20th - Setting Up and Optimizing MySQL Aurora 
 
-* January, 20th - Replicating MySQL Cross-Cloud
+* February, 3rd - Replicating MySQL Cross-Cloud
 
-* February, 3rd - Cross K8 Cluster MySQL Replication 
+* February, 17th - Cross K8 Cluster MySQL Replication 
 
-* February, 17th - Kubernetes for DBA’s
+* March, 3rd - Kubernetes for DBA’s
 
 The attendance is free and open to the public. Subscribe to our channels on [YouTube](https://www.youtube.com/channel/UCLJ0Ok4HeUBrRYF4irturVA) and [Twitch](https://www.twitch.tv/perconacommunity).
 
