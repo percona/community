@@ -135,6 +135,18 @@
 
   "Events":[
   {
+    "youtube_id": "Fn6QadkHG6k",
+    "title": "Uptime Speaker Chat with David Stokes",
+    "date": "Jun 18, 2022",
+    "authors": "David Stokes (Percona)"
+  },
+  {
+    "youtube_id": "xxgVLPrVyRA",
+    "title": "Why are Operators paramount to running stateful workloads on Kubernetes?",
+    "date": "Jun 20, 2022",
+    "authors": "Sergey Pronin (Percona), Nic Vermandé (Ondat), Julian Fischer (anynines)"
+  },
+  {
     "youtube_id": "2Z6sffhsdcQ",
     "title": "Private DBaaS on Kubernetes - DoK Talks #139",
     "date": "Jun 27, 2022",
