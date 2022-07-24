@@ -18,7 +18,13 @@
     "date": "Jun 7, 2022",
     "authors": "Marcos Albe (Percona), Matt Yonkovit (Percona)"
   },
-    {
+  {
+    "youtube_id": "Weu4EK7Jgd8",
+    "title": "Tutorial - PostgresSQL for MySQL DBAs - Ep 08 - Materialized Views",
+    "date": "Jul 21, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
     "youtube_id": "H_2gixUSHU8",
     "title": "Tutorial - PostgresSQL for MySQL DBAs - Ep 07 - Vacuum",
     "date": "Jul 12, 2022",
