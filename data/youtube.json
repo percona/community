@@ -259,6 +259,12 @@
 
   "PMM Demo":[
   {
+    "youtube_id": "5ExzIrWFVTk",
+    "title": "PMM Demo 40 - Platform Teams Percona Monitoring and Management - 2022-07-19",
+    "date": "Jul 29, 2022",
+    "authors": "Taras Kozub (Percona)"
+  },
+  {
     "youtube_id": "YCQWJmVExKE",
     "title": "Percona Monitoring and Management PMM Demo 38 - Platform Teams - 2022-07-05",
     "date": "Jul 20, 2022",
