@@ -135,6 +135,12 @@
 
   "Events":[
   {
+    "youtube_id": "YNC7CgIwje8",
+    "title": "Managing Production Grade Percona XtraDB Cluster in Kubernetes using KubeDB",
+    "date": "Jun 27, 2022",
+    "authors": "Alif Biswas"
+  },
+  {
     "youtube_id": "Fn6QadkHG6k",
     "title": "Uptime Speaker Chat with David Stokes",
     "date": "Jun 18, 2022",
@@ -252,6 +258,12 @@
 
 
   "PMM Demo":[
+  {
+    "youtube_id": "5ExzIrWFVTk",
+    "title": "PMM Demo 40 - Platform Teams Percona Monitoring and Management - 2022-07-19",
+    "date": "Jul 29, 2022",
+    "authors": "Taras Kozub (Percona)"
+  },
   {
     "youtube_id": "YCQWJmVExKE",
     "title": "Percona Monitoring and Management PMM Demo 38 - Platform Teams - 2022-07-05",
