@@ -7,7 +7,6 @@ images:
 speakers:
   - charly_batista
   - dave_stokes
-weight: 1
 tags: ['Postgres', 'Stream']
 ---
 
