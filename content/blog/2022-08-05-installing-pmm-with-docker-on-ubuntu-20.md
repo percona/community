@@ -10,7 +10,7 @@ images:
 slug: installing-pmm-with-docker-on-ubuntu-20
 ---
 
-I started at Percona a few weeks ago and was looking for a quick way to learn about PMM (Percona Monitoring and Management), which is one of my favorite technologies within Percona to monitor the health of our database infrastructure, explore new patterns in the database behavior, manage and improve the performance of our databases, all with customizable dashboards and real-time alerts using [Grafana](https://github.com/grafana/grafana) and [VictoriaMetrics](https://github.com/VictoriaMetrics/VictoriaMetrics).
+I started at Percona a few weeks ago and was looking for a quick way to learn about PMM (Percona Monitoring and Management), which is one of my favorite technologies within Percona to monitor the health of our database infrastructure, explore new patterns in the database behavior, manage and improve the performance of our databases, all with customizable dashboards and real-time alerts using [Grafana](https://grafana.com/) and [VictoriaMetrics](https://victoriametrics.com/).
 
 The best of all is that PMM is Open Source, you can check the [PMM repository](https://github.com/percona/pmm) in case you want to contribute.
 
