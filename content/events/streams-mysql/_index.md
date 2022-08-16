@@ -34,7 +34,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * August, 5th - [Migrating MySQL to a New Server](/events/streams-mysql/2022-08-05-migrating-mysql-to-a-new-server/)
 
-* August, 19th - Installing and Setting Up MySQL on Kubernetes
+* August, 19th - [Installing and Setting Up MySQL on Kubernetes](/events/streams-mysql/2022-08-19-installing-and-setting-up-mysql-on-kubernetes)
 
 * September, 2nd - MySQL Running on Kubernetes Operations
 
