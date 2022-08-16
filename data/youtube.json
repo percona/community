@@ -287,5 +287,16 @@
     "title": "2022-02-01 - Platform Teams - PMM Demo 25",
     "date": "May 27, 2022",
     "authors": "Taras Kozub (Percona)"
+  }],
+
+
+
+  "Interviews":[
+  {
+    "youtube_id": "c-xroKEKf6k",
+    "title": "Exitable Business Podcast - Interview With Peter Zaitsev",
+    "date": "July 22, 2022",
+    "authors": "Peter Zaitsev (Percona)"
   }]
+
 }
