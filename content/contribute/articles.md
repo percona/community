@@ -62,7 +62,8 @@ Thank you to users of our products, customers, communities, and authors for your
 * [Monitor Cassandra Clusters with Percona PMM - JMX Grafana and Prometheus](https://thedataguy.in/monitor-cassandra-clusters-with-percona-pmm-jmx-grafana-and-prometheus/) - Bhuvanesh - May 16, 2019
 * [Tune your databases. Spick and Span](https://www.admin-magazine.com/Archive/2020/59/Tune-your-databases) - Mayank Sharma - December 2, 2020
 * [Thanks Percona for this great product called PMM (Percona Monitoring & Management Server)](https://fatdba.com/2020/12/02/thanks-percona-for-this-great-product-called-pmm-percona-monitoring-management-server/) - Prashant Dixit - December 2, 2020
-* [Configure PMM2 for Azure MySQL Database with SSL](https://niravshah2705.medium.com/configure-pmm2-for-azure-mysql-database-with-ssl-82e631fe0f90) - NIRAV SHAH - June 18, 2021
+* [Configure PMM2 for Azure MySQL Database with SSL](https://niravshah2705.medium.com/configure-pmm2-for-azure-mysql-database-with-ssl-82e631fe0f90) - Nirav Shah - June 18, 2021
+* [The Single Free Database Tool to Improve and Monitor Performance. Every MySQL, PostgreSQL, or MongoDB Admin Should Know It](https://typeshare.co/tmotyl/posts/the-single-free-database-tool-im-using-to-improve-and-monitor-performance-every-mysql-postgresql-or-mongodb-admin-should-know-it-cacz) - Tymoteusz Motylewski - August 14, 2022
 
 # Kubernetes
 
