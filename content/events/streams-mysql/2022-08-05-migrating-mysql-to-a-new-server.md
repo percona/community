@@ -11,7 +11,7 @@ tags: ['MySQL', 'Stream']
 ---
 ![Percona Community MySQL Live Stream August 5th](events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg)
 
-Our experts will run a demo and take us through all steps to migrate MySQL database to a new server. Get more tips to improve your database skill from Dave Stokes and Marcos Albe. They will answer all your questions straight forward.
+Our experts run a demo and took us through all steps to migrate MySQL database to a new server. Get more tips to improve your database skill with Dave Stokes and Marcos Albe.
 
 
 ## Video
