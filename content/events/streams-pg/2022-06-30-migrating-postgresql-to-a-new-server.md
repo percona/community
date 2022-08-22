@@ -1,39 +1,171 @@
 ---
 title: "Migrating PostgreSQL to a New Server - Percona Community PostgreSQL Live Stream & Chat - June, 30th"
-description: "Come up to Percona Community Live Stream and find out more about how Migrating PostgreSQL to a new server with Percona Experts on Thursday, June 30th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
+description: "Find out more about how Migrating PostgreSQL to a new server with Percona Experts"
 draft: false
 images:
   - events/streams-pg/PG-Stream-Week-9-Cover.jpg
 speakers:
   - charly_batista
   - dave_stokes
-weight: 1
 tags: ['Postgres', 'Stream']
 ---
 
-![Percona Community PostgreSQL Live Stream & Chat - June 30th](events/streams-pg/PG-Stream-Week-9-Cover.jpg)
-
-Join the next Percona Community Live Stream if you ever had a problem migrating PostgreSQL to a New server. Our experts, Charly and Dave, will give some tips to take you through the process without any problems. Ask a question and get an answer right away
-
-## Topic
-
-Thursday, June 30th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST
-**Migrating PostgreSQL to a new server** by Dave Stokes and Charly Batista
+Listen out to this Percona Community Live Stream if you ever had a problem migrating PostgreSQL to a New server. Charly and Dave, gave some tips to take you through the process without any problems.
 
 
-## Join & Chat for Free
+## Video
 
-Watch it live on [YouTube](https://www.youtube.com/watch?v=ML_wWD-KCcM), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6947229995735941121/), and [Twitch](https://www.twitch.tv/perconacommunity)
-Live chat on [Discord](http://per.co.na/discord)
-Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=a251OWMxdmY2cnNxdnUxOGExc2x2aTJhbXFfMjAyMjA2MzBUMTYwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com)
-Follow us on [Twitter](https://twitter.com/PerconaBytes) and get notified of all upcoming meetups
+{{% youtube youtube_id="ML_wWD-KCcM" %}}{{% /youtube %}}
 
-## Tell us About This Meeting
+## Transcript
 
-Any comments, feedback, and suggestions are welcome to help us improve upcoming events:
+**Dave Stokes**  
+Good morning good afternoon, good evening, good whatever you are, welcome back to Another dream for the ricotta community live stream. I am Dave Stokes; I am in Texas. And through the magic of the internet, which is catching on, we have Charlie Batista. There noticed Chino was actually in another hemisphere. And today, we're talking about migrating Postgres to a new server. Well, Charlie, what's, what's the big news? I'll just run Yum or apt update and sit back. And it all goes perfectly the first time.
 
-What did you like?
+**Charly Batista**  
+Hey, there, hey, how you doing, man? Doing good? Yeah, awesome. Awesome. Yeah, today, we're going to talk about how we can move the database to another server, right? So we will try not to break the server this time as you are here. So I hope they think it works better. We will see that we have few options to move the database to another server, we have some that are more automated than others, right? So we can always do things manually, you can enjoy, like, you're spending a lot of time if you're here to database, you can always do it manually, you can, you know, you can do a database dump, and then copied it up over the network, spinning up a new database, and then restart it up on the audit database. These used to be things we did in the past, right, so whole never did it before moving your database.
 
-What didn't you like? (Be honest!)
+**Dave Stokes**  
+We used to do all sorts of updates, but the cloud and everything else. Don't you just create a new container and hit the go button?
 
-What do you want to see next time?
+**Charly Batista**  
+Well, it's possible. It's possible. I think, during our lives here, we're gonna talk about Kubernetes containers, right? And this is one possible way. It's not what we're going to use today differently. Today, we're going to stick still using some alternatives. But we don't need to do the old-style dump ater right, we can still do things better. The last week I talked to whether it was not last week, the last stream of math, we use it by trying to do some automation our database to do the failover process and make our system more available by attorneys that amazing tool is really cool is really nice. And we can use it by trying to move the database to another source as well, right? So we have alternatives. So basically, what we need to do to develop the database, so we need to do a copy of the database, right, so you need to do a copy of the database, we can do a cold copy or a hot copy. For example, if we use a container, it's easy, but the problem is to be sure you have consistency, you need to shut down the container before we move the contents to another box, right? Because you want your database to have integrity. And if you still write into your database, when you're moving the data, the things around, you may have problems may lose some data, or you may even end up with an inconsistent database that cannot even be an able start, right that's a problem. That's one of the problems. So we can do a code copy; you can just start stopping your database. If you're using a cloud solution, you can stop your database. And then you can just move around your instance. You can write. So you can also have a copy of your whole file system. So if you stop, your database can do our sink. Or you can use tools like the Btrfs to move the file system from a place on r1. So there are a lot of alternatives. Those are when you are working with cold data. So if you can afford to start the database, it's all it's really simple. You just are seeing or copying or whatever do from the devices and perspective. However, most people they cannot afford to stop the database when they're migrating. Right, and that's when it comes to a problem. So what do you do if you cannot afford to stop your database and you still need to remove the data? What can you do that?
+
+**Dave Stokes**  
+Well, I grew up in an age where I had to do an update or wait until Sunday evening when no one was on the system. The logins to zero and did it the old-fashioned way. Around so I'm used to well, you just replicate it over to another server and do the upgrade on the replica and then make that as your primary,
+
+**Charly Batista**  
+that's a very good approach, right? This is one of the approaches that we're probably going to use today. So one of the approaches that we can use is just what you mentioned. So we can spin up a new replica, where I want to move the database, right? You just spin up the replica and waits for the replication to keep up. And when the replication is done, it's up to speed. You just do the cutover and stop the database and move the application to the new database. Right. So this is one of the solutions we got to implement today. And we have two options on the reports with water, we can use the name PG base backup. So we used it here before we did some. The first time we use the PG base backup, yeah, we failed miserably. I should tell you, so you need to be prepared because you know, those things have
+
+**Dave Stokes**  
+miserably. It's an unsuccessful, unsuccessful attempt, or a learning opportunity.
+
+**Charly Batista**  
+It was a really great learning opportunity. We learned a lot if we got better. Yeah, I agree with you. So this is probably the best option that we have. Right? So you spin up any replica. And then we wait for that replica to keep up. And that goes; we have the PG base backup. So this comes around with Postgres. You don't need to install anything. It's there. It's reliable; it usually works when we do not mess up like I did last night. It usually works right. And then you have the automation of those tools. For example, we can use PG back raft; this is a third-party tool that can automate the process for you. So the advantage of pgbs the PG backrest is that you can use an old backup. So like, for example, do you work with the incremental backup, right? You do your backup on Sunday, and then you do incremental backups every day. And then you do a full backup on Sunday again, and things move that this way. So you can use those backups. Actually, you can spin a new replica with the full backup, you apply all the incremental backups, and then you point that note to your primary. So you can save time, right? So for plotting things, you don't need to backup from your primary because you already have that backup. So just spin up a new node with that one, and then point it to your primary. So this process can be done if we don't mess up too much. And we have time today; we can try to do it today. If not we can; we can always record a video and post it later. So it's an interesting exercise to do with Jabez maca; both are probably the best options we have today if we cannot afford to stop your database, right? So we will start with just making a copy that should be simple and plain. We just use PG base backup, build that replica, and have our database, and then it just stops ready to listen to your application to decide, right? And now is when comes about a problem. Usually, you don't have all your primary; you have your primary replicas, right? So if you move your primary database to another place, how do you do with the traffic as what do you do?
+
+**Dave Stokes**  
+Well, what I've done in the past, as I always had a series of very badly written scripts that would change the IP. I also did a lot of work with DNS. So it was one of those things where I knew how to do a zone reload. But I have a feeling with the databases that we're running now, especially in the Postgres world. It's not that simple.
+
+**Charly Batista**  
+Yeah, because we have another problem. When on my SQL, the replication MySQL uses logical replication, right? So if it doesn't really do a shack with the data consistency, right? So, whatever point that wherever delta you are replicant to go to the primary tool. If a Delta replica looks I want to start on this binary live on the position number 1000. Minor log one position number 1000. It will try to replicate doesn't matter if what happens before on the replica on Postgres, it doesn't work this way because Postgres uses physical replication by default. This is a thunder most of the people that are using physical replication. I don't have numbers, but if I have a guess, I'll probably guess like at least 75% of the setups do use Physical replication, right? So it's the majority of the setups use physical replication. And the problem is on the physical replication, as the name implies, we physically replicate the whole dataset, the bytes that we have there on the transactions, right? It's not just the stream of data is not just the data itself. Because on my score, even when you use the not the case, you have two types, right? You have the one that sends this declares itself; I forgot the name.
+
+**Dave Stokes**  
+Well, the two types, the row-based replication and the one that just seems to Delta,
+
+**Charly Batista**  
+exactly, and online, so even when you have the row-based replication, which is the safest one, you still only send the data itself. You don't send anything else on Postgres. You're sending the bytes. So on, you have the binary files that the wall files the bytes on the primary. So the change that you do on the bytes itself is why it has been replicated. It's like an art sync process; by simplistically saying, You are syncing everything from the parameter rock. So the rapid is a full real copy of what you have on your primary, talking about the data that you write. So is this the default? That's why it's so complicated on all screens. When you have on primary, one version and a different version, a special major version on the replica, usually it doesn't work. And when it works, you have a lot of problems, right? So my score is fine. You can replicate from five, seven to five, six, right? So it's supported. If your primary is a major version, this diversion is newer than the replica theoretically, that's supposed to work, right? Of course, we have a desktop through your navigating really dark. See, if you tried to replicate in from a major version to an automated version of PostgreSQL. It may work, not saying that doesn't work all the time, but you might have a lot of problems because you're sending the data, we're replicating the device itself, right, not only the data. So and that's the problem. You cannot just point to the replica or whatever the primary, you need to point to the replica for a copy of the primary that you had said the complication. So now you have a problem. If you use, for example, the dump, if you use the dump, you're gonna build a totally full new primary, right, and all the replicas that you had, they're gone, they're laughing, they're doing nothing. So this strategy doesn't really work. When you have this setup you have rapid press on your setup. So you need to be a bit smarter. And that's why the PG-based backup and solutions are basic on the physical replication, they are battered for this problem when they need to move your primary somewhere else, because you're a copier fully caught up in the day-to-day, literally copying bytes by bytes. And the PG base backup. It does this, it copies all the data here, and it corrupts the wall files all files on Postgres are the binary logs, and the binary logs out from MySQL. It has some border information. But on this, what works for us in our discussion today, we can make this correlation between the will file and the binary logs. So it moves everything and that you have a real copy of your data here from the previous reverse roll primary. And so when you stop the primary, the old primary for this new one, it will keep everything. So let's say we, let's let me share my screen here gonna be a big banner. Or I use my Just a sec. And so can you see my screen?
+
+**Dave Stokes**  
+Let me turn it on. And there we go. Okay. Yeah, we can see it.
+
+**Charly Batista**  
+So how is it that the font size is fine?
+
+**Dave Stokes**  
+I'm an old timer, and I'm having to squint and lean forward. That's a lot better. Keep going. There we go.
+
+**Charly Batista**  
+Okay. So let me change the order to they're going to use a mode run here. I think they're,
+
+**Dave Stokes**  
+by the way, if you have any questions, I monitor the chat on YouTube. And Gonzalo says Hi, folks. So, Louise
+
+**Charly Batista**  
+Xaro Hey, Gonzalo. Hi, everybody. Okay, so I have my primary here. So as I was saying, Here, I have my primary. And this is those are the servers that I've been working with that just to give you a context. So here we have one primary and two replicas, right? So I have and we are using Patrone here. So I can do just a second. So I should have a screen running. Because yeah, so this is the same setup from the COVID. Stop it last time. So we have everything here. We have mathrani running if I should have pathogenicity at least here. Yeah, I have. So I have this PG one. That's the one that I'm connected to. Now. It's my primary is the leader. Right? So it says that the primary of this cluster, I have a cluster with one primary and two replicas running. Right? So here I have I've been we've been walking halfway in this, this is a good as a good situation because, well, if I want to move these primary here to whatever one of this replica is going to be really easy for me. Using pathfinding is even easier because we have some columns on port 20 that you can use, to move the replicas around. It's really easy, right? And but it doesn't explain how we solve that problem of the replicas right like let's, for example, I gonna forcefully kill these this guy here right I want to say forcefully kill I really the first week you never do it at home
+
+**Dave Stokes**  
+this is a trained professional folk that you do not do this at home and without
+
+**Charly Batista**  
+an adult needs to be at least 14 years old or
+
+**Dave Stokes**  
+that much depends on your local laws and jurisdiction
+
+**Charly Batista**  
+and love those small letters. So that should be grepped I don't want to try to combine wrap itself up, I grown man, I want to get on the second parameter, which is the PID, and I going to do a cube x nine. See, it's a very dangerous thing. Right? So there's nothing else here, no posts with no Spectronic Nothing. So this here, because we have mathrani What we should see here when Shaq the least is while we should move the somewhere else my replica. It will take a few seconds. Yeah, it's that fire that the primary is gone. So now we have a new leader. Say I told you it's really simple to move. So we are done today, right? That's the call. Okay. So, what will happen to this replica here? If we trust and really if I Trani we have a new primary this one is the PG three if I'm not mistaken PG three actually is this note here this is PG three so bash I so if I squeamish X? Yeah. See it says I am the PG three. I am the leader. This is old. So we have a new leader. If I go here, connect to my database. I can see we have a few databases here. We have database stats that you can connect to this database. Right? I can check my tables. I have two tables here. I have data that you want the ability to I'm going to create another table CREATE TABLE key three, right? Going to be just a simple table. I integer that's it. Nothing fancy. I got a searched nice tall tea tree. So to start from, we have this nice January function and postcards because it generates a series of numbers. So it's sort of a sequence. They're gonna insert here 1 million rolls. So, at this point, I should be able to have 1 million rolls on this table. Goodness. I want to count, not select all of them. Okay, I have 1 million roles on this. Remember, this is my primary, right? And if we go back to our info here, where are we? On the? Yeah, this is the one that we killed. We are still left with one replica. What happened to the replica? Do we have the data inside of this replica? You should have. But why we didn't do anything? Right. We didn't move anything. So yeah, we believe the training will do that for us. Right. So we should have the data. Yeah, I agree with you. If we believe that Spectronic does a good job. And let's check. So this is my replica. See, I am the secondary and PDQ, following a new leader. This is a good thing. It says it's following the leader that's aged three. Before it was boys following the leader, that was a big one. So let's check. So this is the replica. And we are on the test.
+
+Select count star from T three. And yeah, there you go. We have an event. So it looks magic, right? It's awesome. Because while that worked, the thing is, how does it work? How does petroleum oil screen or whoever does this thing? How does that work? Because remember, what happened is that we killed one primary node, and that node was moved to somewhere else. This is somewhere else; node B was elected to the new primary. But we are still left when replica and this replica was moved to that new primary. And remember that what I told you on post VISIT US fiscal replication, right? So it's not as easy as simple as it should be like MySQL, but like, it was quite easy. So what is the trick? What is magic? How does that work? And you guys know, okay, that's fine. That's why I would be really surprised if I said Yes. Because well, would be you know, you would have killed my groove. If you said yes, okay, let me come back here for the old, old primary. So I'm going to the data G, my data, G is viral leave all screens SQL 213 Main. So this is my data here; I have all my data here. And one very important folder is this folder here, PG wall. This is where we have the wall files or the binary logs. And one thing that we have here, if we can check here if you pay attention, all the files, you start with this 000 Blah, blah, blah, one. See, we have 01 histories. And then there's the one with everything else, right? If we now go to the new primary, let me go here to Yeah, I'm already on the list. Please, 13 may be cheap. Well, we will see something different here. We will see files with a new starting point that are those zero tube seeking. We still have some 01 left here, but now we have a 02. So this is what we call a post with timelines. So the passwords it has, every time that you promote one replica to a primary, it creates a new timeline. That's a timeline for that primary So, um, for example, we have in this cluster here we have three, three nodes, right? So our first primary was this one when a bootstrap and closer, what was this one? So everything started on the timeline. Number one. This is the beginning of the history of this cluster is timeline number one, right? So that both the primary and all the replicas will be on the same timeline. Timeline. Number one, they always follow the same timeline. Right? Something happens, and they need to promote another node like this one. The timeline will be incremented in one. So because we were on timeline number two, now this one, here is the timeline. Remember, we're in timeline number one. Now this one here is on the timeline. Number two. What happens if I kill this database? Remember that cue Coleman that was pretty nice. I will copy and paste it because I don't want to type it again. I can save some time. So remember, this is my new primary. Right? So what are you going to do is I'm going just to kill my new primary. What is your guest after this point? The other one will be promoted, will not be promoted, will crash? What do you guess?
+
+**Dave Stokes**  
+Traditionally, with the InnoDB cluster, you need three nodes for high availability for basic looping and long mode. And I'm guessing the third one, in this case, will be promoted.
+
+**Charly Batista**  
+So sorry for you, I guess. No, it will well; some operations are not permitted here. Let's see what we. Maybe we crashed now. Yeah, it's good. It killed everything. Okay, so if we go to the audit node here, where's the information on pertronic? Okay. It didn't realize it yet. But now it realized that, that they didn't just realize it now that the other note was gone. So, it's not the primary; it's not saying I am the primary. I mean, I'm the leader, just like the other one said the leader, right? Okay. And this what happens is, just like on the InnoDB cluster, remember that you need to have the majority to have consensus. If we have three nodes, and one crashes, you are left with two out of three nodes, right? We're not left with a cluster of two nodes; because our one crashed, it didn't leave the cluster. If another node crashes, we're left with one out of three nodes in the cluster.
+Stop this for now. Because now that you only have one node out of three in the cluster, you lost the primary component because you don't have a majority anymore to make a voting for those votes. So you can have a split-brain situation, right? This is the same problem that we have here. So the last one is left. With a crashed cluster, this is different. For example, if you leave the cluster in a good way, not crashing, you can just go there and tell Patrone look, I want to stop this node and not crash. Right, I want to stop this. Oh, so the node size going to be downsized. I mean, the cluster size is not at all because the size will be downsides, right? Now instead of having three nodes in the cluster, you have a queue. And you can still leave the odd one can leave as well, in this in this sense. So the downsizing then, we're not left with a cluster with no points. This is a very important difference. Crash and when you gracefully leave the cluster if you gracefully leave the cluster. That's okay. If you crash, then you have a problem. Okay, now, I stopped at all of them here as well. So we should not have groceries running here. Right, so we don't have any posters running here. Ah, I going to start posters here manually. Because I don't want part 22 messing up with our tests at the demo, for now, I want to start it manually here. So it's just started at the post office. We have a post squeeze here without Patrone. So I can repeat SQL to the database test. So our table is still here. Remember the table treat three that we created. So what if I, I don't know, I create another table? Let me just drop this statement to the dropped table. Tea tree? What happens if I press enter here?
+
+**Dave Stokes**  
+Since it's not part of the Patrone cluster, it should only work on that one node. I'm hoping
+
+**Charly Batista**  
+what if I tell you it doesn't work at all? Well, I did. And it did because it was promoted. Ah, you know, so I, ideally, what would happen like, is this no not be promoted? Because envy, we can double-check if it was promoted, because remember, what I told you, if the node was promoted will change that number instead of 200. Previous now, we should have three; see, it has a new storyline. So this note was promoted. And for what we're doing here, actually, it's not a good thing. It's a bad thing. It's probably because I have some of my configuration files for part 20 has an issue here because it was not supposed to be promoted. It's something we'll take a look at later. So ideally, we should get you should have left these here with no with with with erotica, but I going to do it again. What you will do is start mathrani Right, so if I start Patrone here, always make a tiny, okay, we just stop at 20 a year. So it is the leader I bought. Start by 20 here as well.
+
+And here, I don't have the attorney, Coleman. I can just copy from here. That's easy. Because we didn't put these on systemctl for those two notes, only the other one is something we need to fix but not now. Oh, I copied the wrong one. Now we might have a split-brain situation. That could be really fun. And nice to investigate. So I want to start by trying to hear Anna's ok. So it's falling the leader. That's fine. What I want to do is I want to stop at 20 here, and I want to stop at 20 here because I don't want 20 messing up our tests. So here we are, we're left with a replica right I got just to restart my database. Nothing fancy. And okay, it looks like a habit.
+
+so remember that we dropped the table, right?
+
+**Dave Stokes**  
+Yes, sir.
+
+**Charly Batista**  
+Let's try to create that table again. So credit they will go. Yeah, that's what I was expecting to get. It's a stand-alone mode. Remember that they stopped everything. But Tron is not running here for fun is running here. So this is the only one running with mathrani. Right. So we have a standalone node here. And if I didn't have my tiny, How can I promote this note here? Let's Let's go. So first of all, let's check our borrow lead. Pools degrees. 13 may teach you will. So let's check our timelines. We are on timeline number four. Okay, okay. Ah, Postgres has commerce that we can use. Is PG promoted, if I'm not mistaken.
+
+Where are you? So my is selected each year. So these will promote. And I think it's a function; it will promote this node for primary. Yeah, it promotes this to a primary. And because if promoted is no two primaries, remember what I said? You have a Neil and your timeline because we have a new primary database here, right every time that we do. And this is what will help the replicas to follow the primary. So if I, this replica here, I can manually change it. Let's go, let's do what I'm saying. I have some configurations file here.
+
+I should have copied that before. That was not a smart move. By the way, if you do
+
+**Dave Stokes**  
+have questions, I am monitoring the chat on the YouTube feed with this talk as we are life. If you have questions long after this is recorded, we do check back occasionally. But you can ping me on Twitter. I'm at Stoker. And we'll try to answer your questions as quickly as possible.
+
+**Charly Batista**  
+So here, Postgres has this configuration file that we can tell the database we need; we want to replicate for another database. The first thing we need to tell the database is that this is on standby, we are in standby mode. And for Postgres is as simple as on version 13. And 14, as simple as creating this file. Stand by.ca. So, during this, I'm telling the database, this is a standby; this is not a primary, right? So if I start this database here, restart. And my files are still here. If I do appear squirrel, create a database, and test tree, for example. It creates my database das tree does not last you. And now we have a huge problem. We had a split-brain situation. That was supposed to be the next topic. But let's deal with this topic. We made a mistake just like I did here; I didn't create my configuration file to tell this database that that is the replica and where it will recover from and all my primary. Oops. Here on my primary look, I have the database test and test you. And on this node here, I have the database test student test three, right? I have my split brain situation; let's make it even worse. That's true. And then create the evil key one on test three, an integer. Right. So two key ones.
+
+series one. I have 1000 rows here, or 100,000 rows here, not 1 million. So I have a huge split-brain situation on this case here. I made a huge mistake. I have data on this database. And they don't have data in this order database. I don't even have the whole database here. I just missing one whole database of all the tables and everything. So I got to this point that I have this problem here. And my question is, what would you do yesterday?
+
+**Dave Stokes**  
+Well, what I've done before on other databases is quickly make a dump file of the test three database, take it over to the primary, and turn off replication on the third machine. Install it on the first machine, let it replicate over the second, and then block it from getting on the third or make the backup leave it off the third Put it on the primary and let it filter through with replication.
+
+**Charly Batista**  
+Yeah, you mentioned something important like on Posterous, the way that we are here using physical replication, there is no other way than having a third database, just like you mentioned, create a third database, and then do some mixing of the data together. Right? So and remember, here, I created a new database insert to the table; this is the best case because, well, we have data here that all the Database A, that we don't have on database B, right? You don't have conflicting ones is easy. And what happens if we have conflicting data? Let's, for example, what happens if we are I have a webshop, I sell T-shirts. And I have this split-brain situation. And one, I have this very special t-shirt that was like $1,000. And the customer paid for that T-shirt using one database, and another customer paid for the same T-shirt using an all database. So I updated the same roll with different data on those two databases. That's nasty situation, right? Yeah. And that's why you should be so careful when we were moving data and moving database around because we kept ending up with sorry, with this type of situation, we split by situation. Right? It was not supposed to be the topic of today. But it's good to give an example. Or how problematic is if we do not be picked actions, we cannot care, right? So in my case here, I can do like let's, for example, I realized this is wrong. I don't want anything on this database. I can just stop my database here. And I can use a tool named PG rewind. It's not on the path. Which PG CTL. It's not going to Bev either. Find. Seriously, peachy real.
+
+So let me find where the two are. Okay. Both of us have this tool here. That what it does is remember our timeline things. Right. So it will check the latest timeline here that is up to date with the timeline of the server and rebuild the database visit on those timelines. So we're making this database, another copy of the other one. This is what can be done with could you rewind, so very, it's a dangerous tool because I going to lose all the change that I've done here. If I do now, we're going to use a feature rewind here because I want just to come back I realize that they made a mistake. And these data I can just ignore, right they can be discarded. This data is not important. But if it's important data, one thing that we should have done is create a third database like this one here and consolidate the data; we can use logical replication in Postgres to consolidate the data, so keep replication for both databases for some point for some time. And then we make this one, the primary database again, and everybody going to follow but it's, it's a manual approach. There is no automation to solve problems with a split-brain situation. Depending on the problem with the split brain situation is complex to solve. We eventually want to lose some data, right? So and this is why we need to be careful. Well, okay. So what I want to do here is to use the video, rewind, and never remember the parameters. So we need to tell there's another problem with using video, rewind; we have some parameters. When we start the database, the configuration that they probably have not set to true here. So So, the dash t, this is the full squeeze and 13 Min This is our data here, and dash H is the IP of this guy we're going to copy from sold IP here. Hope oops, what just happened here
+
+**Dave Stokes**  
+change the format this a little. Yeah, a little better, so people don't have our pictures over the
+
+**Charly Batista**  
+dash age okay dash pa because they want you to have data configuration asking him to write down the configuration for the application. And that's it. So we can do a dash n as a dry run to see, okay, oh we need to send each the full common to that Peachey rewind
+
+just get an example here as I never remember on top of my head, and that's why it's so good to have
+
+okay
+
+we have a national source dash server equal. Why is that again
+
+we can specify the port. We can specify the user and the user here.
+
+we're going to create users Charlie, especially because they don't remember the user we have here. So create user Charlie is empty fired by not identified that may be boss watch your wizard 123 Very secure password. If Trainwreck exists, then we use ALTER USER so let's try here.
+
+oops, an extra bash
+
+course, I need to tell you that this is the host range host and host calls for service hope that's all okay. Okay, that worked after, but I mean, it's trying, so now if we go here, Where's this one sold? Let's go here if we go too far, the PostgreSQL 13 Main. So we have to find a few things. One of them is remembered is the standby signal is still here. And the Postgres out to the shack this one Over here it didn't create
+
+it was supposed to create the Recover file
+
+right here, okay, we would create manually. It's okay so, but difficult to jpg wall files, so we'll see our history. Remember, it was on history number five right now. Our timeline is back to timeline number four also; if we do in on start here and we try to check the databases didn't rely on our my random database
+
+don't do any error message. Did it!
+
+or is it that you're required just to run
+
+fullscreen is main here. So is sending to there it did come to checkpoint back to the timeline we have here. If we check here is sort of four or five here
+
+Yep, it didn't do what we expected it to be done.
+
+And, yeah, I suppose our database is in there. And if you go there, our theories are there. Oh, no. Well, at least it dropped at the table. Okay. Well,
+
+**Dave Stokes**  
+we've been on the air for 58 minutes and an hour. So thank you, Charlie. This has been very educational for me and very entertaining. We're going to do these every two weeks. For those you're Miss missing, Matt, you're not going to get the Hoss. He has been traveling so much right now that it is amazing. I'm not quite sure where he is. I'm sure he's sure where he is. But at the end of July, we will all be well. He and I will be at the scale Southern California Linux Expo. I'm moderating the MySQL track. There's also a Postgres track. This used to be the biggest show on the Left Coast of America. And hopefully, you can see us there and talk to me. Also, if you have suggested shows, let us know. And I want to thank Charlie for giving us this guided tour of using Patrone and how all this replication works. And if you have any questions, please reach out and contact us. And with that, I want to say good day and thank you.
+
+**Charly Batista**  
+Thanks for the two have a great day. Bye bye
