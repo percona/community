@@ -70,8 +70,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Working at Percona
 
-- [My first month in Percona as a Technology Evangelist](https://dev.to/edithpuclla/my-first-month-in-percona-as-a-technology-evangelist-40gg)
-  Edith Puclla - August 11, 2022
+- [My first month in Percona as a Technology Evangelist](https://dev.to/edithpuclla/my-first-month-in-percona-as-a-technology-evangelist-40gg) - Edith Puclla - August 11, 2022
 
 # Other
 
