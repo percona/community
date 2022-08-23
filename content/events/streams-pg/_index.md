@@ -33,7 +33,7 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * June 30th - [Migrating PostgreSQL to a new server](/events/streams-pg/2022-06-30-migrating-postgresql-to-a-new-server/)
 * July 28th - [Installing and Setting Up PostgreSQL on Kubernetes](/events/streams-pg/2022-07-28-installing-and-setting-up-postgresql-on-kubernetes/)
 * August 11th - [PostgreSQL running on Kubernetes operations](/events/streams-pg/2022-08-11-postgresql-running-on-kubernetes-operations/)
-* August 25th - Exploring the scalability limits of PostgreSQL on Kubernetes
+* August 25th - [Exploring the scalability limits of PostgreSQL on Kubernetes](/events/streams-pg/2022-08-25-exploring-the-scalability-limits-of-postgresql-on-kubernetes)
 * September 8th - Designing a schema
 * September 22nd - How to benchmark your PostgreSQL database
 * October 6th - How to secure PostgreSQL
