@@ -1,14 +1,17 @@
 ---
-title: "Artifacts and repositories"
-description: "List of artifacts and repositories from the community related to Percona products."
+title: "Developer Artifacts and Useful Repositories"
+description: "Here you can find a list of artifacts, useful repositories and tools from the community related to Percona software."
 ---
 
-List of useful artifacts and repositories related to Percona products.
+Here you can find useful artifacts from the community related to Percona software. This is a collection of tools and repositories that **ease the life of the engineer** working with PMM (Percona Monitoring and Management) and other Percona products. We really hope that you will like them. Feel free to add yours to the list and share them with the community! 
+
+We welcome:
 
 * Custom PMM dashboards
 * Advisors
-* Ansible/Terraform/other IaaC code to deploy and manage Percona Product X
-* Other stuff that we use as a developer/DBA to use Percona Products
+* Ansible/Terraform/other IaaC code to deploy and manage Percona products
+* Other stuff that you use as a developer/DBA with Percona products
+
 
 # PMM
 
