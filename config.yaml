@@ -158,11 +158,6 @@ menu:
       url: /contribute/opentopics
       parent: contribute
       weight: 2
-    - identifier: emm
-      name: Engineering Meetings
-      url: /contribute/engineeringmeetings
-      parent: contribute
-      weight: 4
     - identifier: surveys
       name: Testimonials & Surveys
       url: /contribute/testimonials
@@ -178,6 +173,11 @@ menu:
       url: /contribute/videos
       parent: contribute
       weight: 9
+    - identifier: dev
+      name: Repositories and Artifacts
+      url: /contribute/dev
+      parent: contribute
+      weight: 10
 
   footer:
     - identifier: about
