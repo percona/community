@@ -4,7 +4,6 @@ description: "Join us at Percona Community Live Stream, and we will talk about M
 images:
   - events/streams-mysql/2022-09-02-stream-mysql-marcos-and-dave.jpg
 draft: false
-date: "2022-09-02"
 weight: 1
 speakers:
   - marcos_albe
