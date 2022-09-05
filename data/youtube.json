@@ -141,6 +141,12 @@
 
   "Events":[
   {
+    "youtube_id": "Ocp0L6YEIyI",
+    "title": "Creating Docker Extensions for an Open Source Project",
+    "date": "Sept 2, 2022",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
     "youtube_id": "YNC7CgIwje8",
     "title": "Managing Production Grade Percona XtraDB Cluster in Kubernetes using KubeDB",
     "date": "Jun 27, 2022",
