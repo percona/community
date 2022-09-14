@@ -38,31 +38,31 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * September, 2nd - [Designing a Schema](/events/streams-mysql/2022-09-02-designing-a-schema/)
 
-* September, 16th -  How to Benchmark Your MySQL Database 
+* September, 30th -  Finding Poorly Designed Schema's and How to Fix Them
 
-* September, 30th - How to Secure MySQL
+* October, 14th- How to Benchmark Your MySQL Database 
 
-* October, 14th - Setting Up a MySQL Connection Pool
+* October, 28th - How to Secure MySQL
 
-* October, 28th - Using MySQL and Redis to Boost Performance 
+* November, 11th- Setting Up a MySQL Connection Pool
 
-* November, 11th - Finding Poorly Designed Schema’s and How to Fix Them
+* November, 25th - Using MySQL and Redis to Boost Performance 
 
-* November, 25th - Archiving MySQL Data
+* December, 9th - Archiving MySQL Data
 
-* December, 9th - Auditing MySQL 
+* December, 23rd - Auditing MySQL 
 
-* December, 23rd - Setting Up and Optimizing MySQL Aurora 
+* January, 6th - Setting Up and Optimizing MySQL Aurora 
 
-* January, 6th - Replicating MySQL Cross-Cloud
+* January, 20th - Replicating MySQL Cross-Cloud
 
-* January, 20th - Cross K8 Cluster MySQL Replication 
+* February, 3rd - Cross K8 Cluster MySQL Replication 
 
-* February, 3rd - Kubernetes for DBA’s
+* September, 2nd - Kubernetes for DBA’s
 
-* September, 2nd - MySQL Running on Kubernetes Operations
+* February, 17th - MySQL Running on Kubernetes Operations
 
-* February, 17th - Exploring the Scalability Limits of MySQL on Kubernetes
+* March, 3d - Exploring the Scalability Limits of MySQL on Kubernetes
 
 
 The attendance is free and open to the public. Subscribe to our channels on [YouTube](https://www.youtube.com/channel/UCLJ0Ok4HeUBrRYF4irturVA) and [Twitch](https://www.twitch.tv/perconacommunity).
