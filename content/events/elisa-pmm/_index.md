@@ -18,4 +18,4 @@ Elisa is an amazing speaker. She give an overview of the tool, explained how eas
 
 ![Elisa](/events/elisa-pmm/1_2.jpeg)
 
-Thank you, Elisa, for the talk and big thanks to Flora Barriele for pisctures!
+Thank you, [Elisa](https://twitter.com/elisetta1984), for the talk and big thanks to [Flora Barriele](https://twitter.com/floo_bar) for pictures!
