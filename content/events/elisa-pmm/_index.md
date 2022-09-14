@@ -1,6 +1,6 @@
 ---
 title: "Elisa Usai at POUG 2022"
-description: "FOSDEM is an awesome conference in Europe organized by the community for the community. Percona experts actively participated in it this year."
+description: "Elisa Usai from dbi participated in POUG 2022 and gave a talk about Percona Monitoring and Management. She give an overview of the tool, explained how easy it is to install and turn on monitoring."
 images:
   - events/elisa-pmm/1_1.jpeg
 layout: single
