@@ -20,6 +20,9 @@ You can find the following information on the website:
 	b. [PostgreSQL](https://percona.community/postgresql/)
 	c. [MongoDB](https://percona.community/mongodb/)
 	d. [PMM](https://percona.community/projects/pmm/) 
+- [Articles](https://percona.community/contribute/articles/) - articles by the community. If you have written an article, add a link to it on this page.
+- [Videos](https://percona.community/contribute/videos/) - videos by the community. If you recorded a video or gave a talk at an event, add a link to the video to this page.
+- [Developer Artifacts and Useful Repositories](https://percona.community/contribute/dev/).
 
 ### Contributing
 
