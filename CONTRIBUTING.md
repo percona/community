@@ -11,18 +11,21 @@ We will highlight the folders that you will most likely touch if you are contrib
 ```
 > .github
 > archetypes
-> assets            ## pictures and CSS
-    > blog          ## add blog post pictures here
-        ...         ## pick the right year
-        > authors   ## add your author picture here
+> assets              ## pictures and CSS
+    > blog            ## add blog post pictures here
+        ...           ## pick the right year
+        > authors     ## add your author picture here
     ...
 > content
-    > authors       ## create new folder for yourself here
+    > authors         ## create new folder for yourself here
         > ...
-        > <you>     ## folder with your name, add _index.md file
-          _index.md ## copy from other author, change to your details
-    > blog          ## add your post here, follow naming pattern
-    > contribute
+        > <you>       ## folder with your name, add _index.md file
+          _index.md   ## copy from other author, change to your details
+    > blog            ## add your post here, follow naming pattern
+    > contribute    
+        > articles.md ## add your article here
+        > videos.md   ## add your video here
+        > dev.md      ## add your custom dashboards, configuration files, etc.
     > ...
     ...
 > layouts
