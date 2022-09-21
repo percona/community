@@ -7,7 +7,7 @@ layout: landingDay
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
 weight: 3
 csv_filter: "June 23"
-date: "2022-04-18"
+date: "2022-06-23"
 tags: ['opensource', 'event', 'Percona Community Live']
 speakers:
   - wey_gu
