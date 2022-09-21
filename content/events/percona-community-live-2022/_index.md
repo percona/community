@@ -4,9 +4,8 @@ description: "Percona Community Live will take place on June 21-23 and will be l
 images:
   - events/percona-community-live/cover-start.jpg
 layout: landing
-weight: 1
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
-Date: "2022-05-21"
+date: "2022-06-21"
 tags: ['opensource', 'event', 'Percona Community Live', 'dashboard']
 speakers:
   - bruce_momjian
@@ -42,7 +41,6 @@ speakers:
   - sidney_chen
   - daniel_seybold
   - javier_fernandez
-weight: 1
 ---
 
 Good news! We are happy to announce a new 100% virtual event coming up this summer - **Percona Community Live**! 

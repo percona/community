@@ -5,7 +5,6 @@ images:
   - events/dave-stokes-talks-open-percona-live-2022/DSTO-Cover.jpg
 draft: false
 date: "2022-05-18"
-weight: 2
 layout: list
 speakers:
   - dave_stokes

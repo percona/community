@@ -24,6 +24,10 @@ Watch it live on [YouTube](https://www.youtube.com/watch?v=RYHPWjzZF2Q), [Linked
 Live chat on [Discord](http://per.co.na/discord)
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MWdoZmZsY2VwbWlqZWo0bWlncXVya2MzM3UgY19zbGhubmkyMXZvcDZyNjFrdDhhaTI2bDY0Z0Bn&tmsrc=c_slhnni21vop6r61kt8ai26l64g%40group.calendar.google.com).
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups.
+
+You can also watch the stream immediately on our website here
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.restream.io/?token=01e0ee98f9e04542addd42055f1a6033" allow="autoplay" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"/></iframe></div>
  
 ## Tell Us About This Live Stream
 Any comments, feedback, and suggestions are welcome to help us improve upcoming events

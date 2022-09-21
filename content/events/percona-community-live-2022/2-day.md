@@ -7,7 +7,7 @@ layout: landingDay
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
 weight: 2
 csv_filter: "June 22"
-date: "2022-04-18"
+date: "2022-06-22"
 tags: ['opensource', 'event']
 speakers:
   - sidney_chen

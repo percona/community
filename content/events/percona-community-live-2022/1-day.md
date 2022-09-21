@@ -7,7 +7,7 @@ layout: landingDay
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
 weight: 1
 csv_filter: "June 21"
-date: "2022-04-18"
+date: "2022-06-21"
 tags: ['opensource', 'event']
 speakers:
   - bruce_momjian
