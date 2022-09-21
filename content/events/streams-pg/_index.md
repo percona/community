@@ -35,7 +35,7 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * August 11th - [PostgreSQL running on Kubernetes operations](/events/streams-pg/2022-08-11-postgresql-running-on-kubernetes-operations/)
 * August 25th - [Exploring the scalability limits of PostgreSQL on Kubernetes](/events/streams-pg/2022-08-25-exploring-the-scalability-limits-of-postgresql-on-kubernetes)
 * September 8th - [Designing a schema](2022-09-08-postgresql-designing-a-schema/)
-* September 22nd - How to benchmark your PostgreSQL database
+* September 22nd - [How to benchmark your PostgreSQL database](2022-09-22-how-to-benchmark-your-postgresql-database)
 * October 6th - How to secure PostgreSQL
 * October 20th - Setting up a PostgreSQL connection pool
 * November 3rd - Using PG and Redis to boost Performance
