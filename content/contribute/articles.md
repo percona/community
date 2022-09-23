@@ -10,6 +10,7 @@ Thank you to users of our products, customers, communities, and authors for your
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - September 15, 2022
 - [1.1 million comments from Hacker News: small data full-text / analytics test](https://dev.to/sanikolaev/11-million-comments-from-hacker-news-small-data-full-text-analytics-test-43c3) - Sergey Nikolaev - May 30, 2022
 - [Percona Xtrabackup Backup & Recovery](https://satya-dba.blogspot.com/2021/09/percona-xtrabackup-installation.html) - Satya - February 10, 2022
+- [MySQL Percona innobackupex 和 XtraBackup 有何不同?](https://blog.longwin.com.tw/2022/09/mysql-percona-innobackupex-xtrabackup-different-2022/) - Tsung - Spetember 14, 2022
 - [Installation & Usage of Percona Toolkit 3](https://satya-dba.blogspot.com/2021/09/installing-percona-toolkit-usage.html) - Satya - January 28, 2022
 - [ProxySQL 2 configuration/installation](https://satya-dba.blogspot.com/2021/09/installing-proxysql-configuration.html) - Satya - January 5, 2022
 - [Installing Percona XtraDB Cluster (PXC) 8](Installing Percona XtraDB Cluster (PXC) 8) - Satya - August 20, 2021
@@ -35,12 +36,14 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [Interview with Percona - PGConf.EU](https://2022.pgconf.eu/sponsor-interviews/percona/) - Umair Shahid - September 22, 2022
 - [PostgreSQL Person of the Week](https://postgresql.life/post/charly_batista/) - Charly Batista (Percona) - July 11, 2022
 - [pg_stat_monitor :: Younger sibling of pg_stat_statements with more knowledge](https://sujithtee.medium.com/pg-stat-monitor-younger-sibling-of-pg-stat-statements-with-more-knowledge-736afb1f05ac) - Sujith Thiravium - October 19, 2021
 - [Setup Percona Postgresql Through the Awsesome(OSM) Ansible Role](https://medium.com/opstree-technology/setup-percona-postgresql-through-the-awsesome-osm-ansible-role-86fe0a5fe1a5) - Abhishek Vishwakarma - October 5, 2022
 
 # MongoDB
 
+- [6 Best MongoDB Backup Tools](https://www.comparitech.com/net-admin/best-mongodb-backup-tools/) - Stephen Cooper - September 12, 2022
 - [Deploying a custom MongoDB operator using Helm Charts](https://dev.to/devtron_/deploying-a-custom-mongodb-operator-using-helm-charts-5hg2) - Devtron - June 28, 2022
 - [Percona backup for MongoDB caveats](https://medium.com/@k5350153197/percona-backup-for-mongodb-caveats-1240985f8f8f) - Ilshat - May 10, 2022
 - [MongoDB 4.4.13 : Here to SRV you with easier replica set connections](https://www.datablogs.in/2022/03/mongodb-4413-here-to-srv-you-with.html) - SelvaKumar Kuppusamy - March 30, 2022
@@ -50,6 +53,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/deploy-percona-docker/) - Jack Wallen - September 20, 2022
 - [Percona Monitoring and Management (PMM)](https://satya-dba.blogspot.com/2021/09/pmm-percona-monitoring-management.html) - Satya - September 10, 2021
 - [Monitor your databases with this open source tool](https://opensource.com/article/22/4/percona-monitoring-management) - David Stokes - April 1, 2022
 - [What I really like about Percona PMM](https://blog.dbi-services.com/what-i-really-like-about-percona-pmm/) - Elisa Usai (@elisetta1984) - January 14, 2022
