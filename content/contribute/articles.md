@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - September 15, 2022
 - [1.1 million comments from Hacker News: small data full-text / analytics test](https://dev.to/sanikolaev/11-million-comments-from-hacker-news-small-data-full-text-analytics-test-43c3) - Sergey Nikolaev - May 30, 2022
 - [Percona Xtrabackup Backup & Recovery](https://satya-dba.blogspot.com/2021/09/percona-xtrabackup-installation.html) - Satya - February 10, 2022
 - [Installation & Usage of Percona Toolkit 3](https://satya-dba.blogspot.com/2021/09/installing-percona-toolkit-usage.html) - Satya - January 28, 2022
