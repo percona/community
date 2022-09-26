@@ -10,8 +10,6 @@ images:
   - blog/2022/9/Blog-Meetup-Cover.jpg
 ---
 
-# Monthly Percona Developer Meetup
-
 ## What is this?
 
 This new meetup is your chance to get a behind-the-scenes view and to interact directly in person with our engineers. You can jump into the session and discuss with our engineers without any barriers in between. If you do have questions, new ideas, enhancements, or are just curious to learn more, you’re welcome to join our call. 
