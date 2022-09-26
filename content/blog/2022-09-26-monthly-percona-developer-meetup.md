@@ -1,10 +1,13 @@
 ---
 title: "Monthly Percona Developer Meetup"
 date: "2022-09-26T00:00:00+00:00"
+description: "This new meetup is your chance to get a behind-the-scenes view and to interact directly in person with our engineers. You can jump into the session and discuss with our engineers without any barriers in between."
 tags: ['Community', 'Meetup', 'Engineering', 'Developer']
 authors:
   - kai_wagner
 slug: monthly-percona-developer-meetup
+images:
+  - blog/2022/9/Blog-Meetup-Cover.jpg
 ---
 
 # Monthly Percona Developer Meetup
