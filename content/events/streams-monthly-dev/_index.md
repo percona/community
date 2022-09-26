@@ -24,7 +24,7 @@ We’ll discuss development practices, tools, projects, frameworks, and many mor
 
 The event takes place once a month. Here is the list of the past and upcoming meetups:
 
-* September 26 - [Hacktoberfest with Percona - We Want You!](/events/streams-monthly-dev/2022-09-26-hacktoberfest/)
+* September 28 - [Hacktoberfest with Percona - We Want You!](/events/streams-monthly-dev/2022-09-26-hacktoberfest/)
 
 ## FOLLOW US
 
