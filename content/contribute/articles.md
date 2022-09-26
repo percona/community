@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [Install and Configure Percona XtraDB Cluster on Rocky Linux 8](https://www.computingpost.com/install-and-configure-percona-xtradb-cluster-on-rocky-linux-8) - Shafiq Ur Rehman - September 25, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - September 15, 2022
 - [1.1 million comments from Hacker News: small data full-text / analytics test](https://dev.to/sanikolaev/11-million-comments-from-hacker-news-small-data-full-text-analytics-test-43c3) - Sergey Nikolaev - May 30, 2022
 - [Percona Xtrabackup Backup & Recovery](https://satya-dba.blogspot.com/2021/09/percona-xtrabackup-installation.html) - Satya - February 10, 2022
@@ -53,6 +54,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [Monitor Percona MySQL / Percona XtraDB Cluster With Prometheus & Grafana](https://www.computingpost.com/monitor-percona-mysql-percona-xtradb-cluster-with-prometheus-grafana) - Shafiq Ur Rehman - September 25, 2022
 - [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/deploy-percona-docker/) - Jack Wallen - September 20, 2022
 - [Percona Monitoring and Management (PMM)](https://satya-dba.blogspot.com/2021/09/pmm-percona-monitoring-management.html) - Satya - September 10, 2021
 - [Monitor your databases with this open source tool](https://opensource.com/article/22/4/percona-monitoring-management) - David Stokes - April 1, 2022
