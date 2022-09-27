@@ -15,4 +15,4 @@ images:
 ---
 
 Kai joined Percona in 2022 as an Engineering Manager responsible for the PostgreSQL development team. Before joining Percona,
-he worked as a team lead and as a software engineer SUSE Linux. He is now focusing on the coordination of the PostgreSQL development at Percona as well as acting as an open source evangelist. .
+he worked as a team lead and as a software engineer at SUSE Linux. He is now focusing on the coordination of the PostgreSQL development at Percona as well as acting as an open source evangelist.
