@@ -38,7 +38,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * September, 2nd - [Designing a Schema](/events/streams-mysql/2022-09-02-designing-a-schema/)
 
-* September, 30th -  Finding Poorly Designed Schema's and How to Fix Them
+* September, 30th -  [Finding Poorly Designed Schema's and How to Fix Them](/events/streams-mysql/2022-09-30-finding-poorly-designed-schema/)
 
 * October, 14th- How to Benchmark Your MySQL Database 
 
