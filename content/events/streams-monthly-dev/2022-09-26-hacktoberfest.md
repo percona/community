@@ -34,11 +34,11 @@ The aim of Hacktoberfest is to provide support to open source projects and teams
 
 Join the online stream here:
 
-* [YouTube](https://www.youtube.com/watch?v=8MODxiG4G6o)
-* [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6979017359084683264)
+* [YouTube](https://www.youtube.com/watch?v=1R4dhON3TPs)
+* [LinkedIn](https://www.linkedin.com/video/event/urn:li:ugcPost:6980866018935984128/)
 * [Twitch](https://www.twitch.tv/perconacommunity)
 
-**And jump into the session** on [Restream](https://app.restream.io/new-event-invitation/TkVBR1BNefre07kxq0HVhpI-fvBvAHo/email) to chat with every one! We welcome every community member and love to hear directly from you. Tell everyone about your experience in an open converstion.
+**And jump into the session** on [Restream](https://app.restream.io/new-event-invitation/TkVBR1BNeebtnHkGZ0UarVEj_WDCNAA/email) to chat with every one! We welcome every community member and love to hear directly from you. Tell everyone about your experience in an open converstion.
 
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWpzaHJjc3ZkODcxdTVkaGdwaW5vcGszZ3MgYWxla3NhbmRyYS5hYnJhbW92YUBwZXJjb25hLmNvbQ&tmsrc=aleksandra.abramova%40percona.com) to get notified.
 
