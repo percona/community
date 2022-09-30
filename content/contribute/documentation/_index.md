@@ -28,25 +28,21 @@ time. This guide should take the edge off and you'll see your changes live in a
 matter of hours!
 
 * Similar to our software, our documentation is open source and is managed using
-  the same tools and processes that we use to incorporate changes to our code
-  base.
-* Several of our manuals already provide an "Edit this page" link that you can
+  the same tools that we use to manage changes to our code base.
+* All of our manuals provide an "Edit this page" option that you can
   use to perform the actual documentation changes that you would like to see in
   your web browser. Note that this process requires having an account on GitHub
   and some basic understanding of the [code submission and review
   process](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests)
   on this platform.
-* The location of where the documentation for a specific product is maintained
-  differs from product to product. For some products/project, we maintain the
-  documentation files in the same git repository that is also used for the
-  project's source code. For other products, the documentation is maintained in
-  a dedicated git repository. See [Location of Documentation and
-  Sources](./locations) for details about the location of the documentation for
-  each product.
+* The documentation for each product is maintained in dedicated git repositories
+  per product. See [Location of Documentation and Sources](./locations) for
+  details about the location of the documentation for each product.
 * Most of these locations contain a file called `CONTRIBUTING.md` that outlines
-  the steps required to submit a change for the documentation. This process may
-  be different from product to product, so make sure to follow these
-  instructions.
+  the steps required to submit a change for the documentation.
+* We try to maintain a consistent style across our documentation. If you're
+  making changes to the documentation, please follow the guidelines outlined in
+  the [Percona Documentation Style Guide](https://docs.percona.com/style-guide/).
 
 ## Submitting a Jira ticket
 
