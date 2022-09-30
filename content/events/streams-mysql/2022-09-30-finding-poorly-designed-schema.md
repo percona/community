@@ -17,7 +17,8 @@ Percona Community Live Stream for MySQL will focus on Finding Poorly Designed Sc
 
 ## Join Us Live & Ask Questions
 Friday, September 30th at 9:00 AM EDT / 03:00 PM CEST/ 06:30 PM IST
-Dave Stokes and Marcos Albe will talk about **Finding Poorly Designed Schema's and How to Fix Them**
+
+Edith Puclla, Mario Garcia and Marcos Albe will talk about **Finding Poorly Designed Schema's and How to Fix Them**
 
 Watch it live on [YouTube](https://www.youtube.com/watch?v=PDYWBDGLBE0), [LinkedIn](https://www.linkedin.com/video/event/urn:li:ugcPost:6980504951860948992/), and [Twitch](https://www.twitch.tv/perconacommunity).
 
