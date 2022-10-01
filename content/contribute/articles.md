@@ -83,3 +83,4 @@ Thank you to users of our products, customers, communities, and authors for your
 
 - [Don’t miss these talks on the Google community track at Percona Live Online](https://medium.com/google-cloud/dont-miss-these-talks-on-the-google-community-track-at-percona-live-online-12b097a64f10) -
   Jan Kleinert - March 3, 2021
+  -[Batch Processing Intro to beginner](https://lokeshprgit.blogspot.com/2022/09/batch-process-intro-to-beginner.html)
