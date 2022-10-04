@@ -1,5 +1,5 @@
 ---
-title: "How to Benchmark Your PostgreSQL Database - Percona Community PostgreSQL Live Stream & Chat - Sept, 22nd"
+title: "How to Secure PostgreSQL  - Percona Community PostgreSQL Live Stream & Chat - Oct, 6th"
 description: "Join us at Percona Community Live Stream, and we will talk about how to secure your PostgreSQL database with database experts on Thursday, October 6th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
 draft: false
 images:
