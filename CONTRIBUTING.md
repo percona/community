@@ -72,25 +72,25 @@ Here you will learn how to edit the HTML and CSS templates of the site to change
 
 - Create a separate branch for your changes.
 
-![Install Hugo](images/contributing/InstallHugoRunServer.png)
+![Install Hugo](assets/images/contributing/InstallHugoRunServer.png)
 
-![Run Hugo Localy](images/contributing/RunLocal.png)
+![Run Hugo Localy](assets/images/contributing/RunLocal.png)
 
 ### Editing CSS
 
 - Find the CSS file you need. In the developer tools of your browser see the source code of the page you want to edit. Find the desired element and its CSS Class.
 
-![Browser](images/contributing/FindClass.png)
+![Browser](assets/images/contributing/FindClass.png)
 
 - Use the file search in `/assets/scss/` directory to find the right file that contains the CSS for the class you want. For example, the CSS of a post card on a blog page is edited in `/assets/scss/common/_post.scss` . SCSS files are grouped by logical meaning and application on pages. 
 
-![Search results](images/contributing/SearchResults.png)
+![Search results](assets/images/contributing/SearchResults.png)
 
 - Edit the CSS and immediately see the changes on your local copy of the site (localhost:1313).
 
-![Edit](images/contributing/EditCSS.png)
+![Edit](assets/images/contributing/EditCSS.png)
 
-![Test Result](images/contributing/TestResults.png)
+![Test Result](assets/images/contributing/TestResults.png)
 
 Test the results for Desktop and mobile devices. Make changes in a separate branch and send a Pull Request for review
 
