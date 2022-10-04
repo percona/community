@@ -323,6 +323,12 @@
 
   "Interviews":[
   {
+    "youtube_id": "UZE0F_N0WeU",
+    "title": "2022-10-04 - Your Company’s Database Problem With Peter Zaitsev, CEO of Percona",
+    "date": "October 04, 2022",
+    "authors": "Peter Zaitsev"
+  },
+  {
     "youtube_id": "NrlmRUYBTd8",
     "title": "2022-08-29 - Sergey Pronin on Byte Relay with Andrey Borodin",
     "date": "August 29, 2022",
