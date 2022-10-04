@@ -58,3 +58,47 @@ hugo serve --disableFastRender
 ```
 
 For more options on how to run Hugo, check out the official [Hugo documentation](https://gohugo.io/commands/hugo_server/). In your terminal, Hugo will point you to a URL, most likely `http://localhost:1313/`. You should be able to click on it or simply type the URL into your browser and see the built website. You can now add your contribution, test whether everything is working, and then submit a pull request that we will review within a few days.
+
+
+## How to modify the design and theme
+
+Here you will learn how to edit the HTML and CSS templates of the site to change the theme and appearance.
+
+### Install Hugo and Dev Environment
+
+- Install [Hugo engine](https://gohugo.io/getting-started/installing/)
+
+- Run the Hugo server in the source code folder of the site with the command hugo server -D and open a local copy of the site in your browser at localhost:1313
+
+- Create a separate branch for your changes.
+
+![Install Hugo](images/contributing/InstallHugoRunServer.png)
+
+![Run Hugo Localy](images/contributing/RunLocal.png)
+
+### Editing CSS
+
+- Find the CSS file you need. In the developer tools of your browser see the source code of the page you want to edit. Find the desired element and its CSS Class.
+
+![Browser](images/contributing/FindClass.png)
+
+- Use the file search in `/assets/scss/` directory to find the right file that contains the CSS for the class you want. For example, the CSS of a post card on a blog page is edited in `/assets/scss/common/_post.scss` . SCSS files are grouped by logical meaning and application on pages. 
+
+![Search results](images/contributing/SearchResults.png)
+
+- Edit the CSS and immediately see the changes on your local copy of the site (localhost:1313).
+
+![Edit](images/contributing/EditCSS.png)
+
+![Test Result](images/contributing/TestResults.png)
+
+Test the results for Desktop and mobile devices. Make changes in a separate branch and send a Pull Request for review
+
+### Editing HTML and theme templates
+
+- Explore Hugo's documentation on creating and editing templates: [Templates](https://gohugo.io/templates/)
+
+- All website templates are located in the 'layouts' folder
+
+
+
