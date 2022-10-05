@@ -54,6 +54,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [Perconal Monitoring With Postgres Docker on Local Environment](https://dev.to/vuong/perconal-monitoring-with-postgres-docker-on-local-environment-24op) - Vuong - October 2, 2022
 - [Monitor Percona MySQL / Percona XtraDB Cluster With Prometheus & Grafana](https://www.computingpost.com/monitor-percona-mysql-percona-xtradb-cluster-with-prometheus-grafana) - Shafiq Ur Rehman - September 25, 2022
 - [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/deploy-percona-docker/) - Jack Wallen - September 20, 2022
 - [Percona Monitoring and Management (PMM)](https://satya-dba.blogspot.com/2021/09/pmm-percona-monitoring-management.html) - Satya - September 10, 2021
