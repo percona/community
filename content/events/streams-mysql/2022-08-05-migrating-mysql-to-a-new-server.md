@@ -4,6 +4,7 @@ description: "Find out more tips on moving a MySQL database to a new server with
 images:
   - events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg
 draft: false
+date: "2022-08-05"
 speakers:
   - marcos_albe
   - dave_stokes

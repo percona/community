@@ -4,7 +4,7 @@ description: "Join us at Percona Community Live Stream, and we will talk about F
 images:
   - events/streams-mysql/Stream-MySQL-10-Marcos-with-SQL.jpg
 draft: false
-weight: 1
+date: "2022-09-30"
 speakers:
   - marcos_albe
   - edith_puclla

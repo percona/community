@@ -5,7 +5,7 @@ images:
   - events/elisa-pmm/1_1.jpeg
 layout: single
 date: "2022-09-09"
-tags: ['Event']
+tags: ['Event', 'dashboard']
 speakers:
   - elisa_usai
 ---

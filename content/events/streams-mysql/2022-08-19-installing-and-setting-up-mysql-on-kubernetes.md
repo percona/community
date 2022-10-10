@@ -4,6 +4,7 @@ description: "Learn more Installing and Setting Up MySQL on Kubernetes in this s
 images:
   - events/streams-mysql/2022-08-19-stream-mysql-marcos-and-dave.jpg
 draft: false
+date: "2022-08-19"
 speakers:
   - marcos_albe
   - dave_stokes
