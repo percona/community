@@ -4,7 +4,7 @@ description: "Join us at Percona Community Live Stream, and we will talk about h
 draft: false
 images:
   - events/streams-pg/PG-Stream-Dave-Chino-Secure.jpg
-weight: 1
+date: "2022-10-06"
 speakers:
   - charly_batista
   - dave_stokes
@@ -18,7 +18,6 @@ Percona Community Live Stream for PostgreSQL will focus on How to Secure Postgre
 ## VIDEO
 
 {{% youtube youtube_id="ZBD3HaoBTPs" %}}{{% /youtube %}}
-
 
 ## TRANSCRIPT
 

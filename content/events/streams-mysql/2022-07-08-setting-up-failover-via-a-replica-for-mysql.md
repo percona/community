@@ -4,6 +4,7 @@ description: "Get some tips and tricks to easily set up a Failover via a Replica
 images:
   - events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg
 draft: false
+date: "2022-07-08"
 speakers:
   - marcos_albe
   - dave_stokes

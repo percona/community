@@ -1,5 +1,5 @@
 ---
-title: "Chernihiv.IT Conf: Tech Front”"
+title: "Chernihiv.IT Conf: Tech Front"
 description: "Percona sponsored an amazing event organized by Chernihiv.IT Cluster - Chernihiv.IT Conf: Tech Front. It was an online event organized in support to Chernihiv and IT industry in this city."
 images:
   - events/chernihiv-it-conf-2022/4.png

@@ -2,6 +2,7 @@
 title: "Installing and Setting Up PostgreSQL on Kubernetes - Percona Community PostgreSQL Live Stream & Chat - July, 28th"
 description: "Percona Community Live Stream has talked about Installing and Setting Up PostgreSQL on Kubernetes on Thursday, July 28th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
 draft: false
+date: "2022-07-28"
 images:
   - events/streams-pg/pg-stream-cover-week-10-july-28.jpg
 speakers:

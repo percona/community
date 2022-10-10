@@ -4,6 +4,7 @@ description: "This event was all about running PostgreSQL on Kubernetes Operatio
 draft: false
 images:
   - events/streams-pg/PG-Stream-Cover-Week-11-August-11.jpg
+date: "2022-08-11"
 speakers:
   - charly_batista
   - dave_stokes

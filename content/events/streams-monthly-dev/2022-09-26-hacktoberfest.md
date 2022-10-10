@@ -3,7 +3,7 @@ title: "Hacktoberfest with Percona - We Want You! - September 2022"
 description: "This new meetup is your chance to get a behind-the-scenes view and to directly interact in person with our engineers. We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona."
 images:
   - events/streams-monthly-dev/Developer-Meetup-Kai.jpg
-weight: 1
+date: "2022-09-26"
 draft: false
 speakers:
   - kai_wagner
