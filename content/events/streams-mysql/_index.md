@@ -11,7 +11,7 @@ weight: 2
 
 # Community MySQL Live Stream & Chat
 
-Community Team starts a series of live-streamed meetings on MySQL. They start on April, 1st and take place every 2 weeks. Marcos Albe, Principal Support Engineer at Percona, will discuss with Matt Yonkovit, Head of Open Source Strategy, all the secrets of working with MySQL. All sessions have time dedicated for Q&A.
+Community Team starts a series of live-streamed meetings on MySQL. They start on April, 1st and take place every 2 weeks. Marcos Albe, Principal Support Engineer at Percona, will discuss with Percona's Technical Evangelists all the secrets of working with MySQL. All sessions have time dedicated for Q&A.
 
 {{% /hero %}}
 
@@ -40,7 +40,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * September, 30th -  [Finding Poorly Designed Schema's and How to Fix Them](/events/streams-mysql/2022-09-30-finding-poorly-designed-schema/)
 
-* October, 14th- How to Benchmark Your MySQL Database 
+* October, 14th- [How to Benchmark Your MySQL Database](/events/streams-mysql/2022-10-14-how-to-benchmark-your-mysql-database/)
 
 * October, 28th - How to Secure MySQL
 
