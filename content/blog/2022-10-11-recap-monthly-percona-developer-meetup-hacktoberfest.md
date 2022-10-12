@@ -20,9 +20,9 @@ The topic of the first Monthly Percona Developer Meetup was [Hacktoberfest](http
 
 **What is Hacktoberfest?** Hacktoberfest is an annual event hosted by DigitalOcean that encourages people to contribute to Open Source throughout October. It is inclusive, everyone can join to work on Open Source projects, and you can participate by choosing your favorite project.
 
-You need two essential things to participate. First, register on the Hacktopberfest website anytime between September 26 and October 31, 2022. Second, look through the participating projects, choose your favorites, and consult the documentation guiding you to send your first contribution.
+You need two essential things to participate. First, register on the Hacktoberfest website anytime between September 26 and October 31, 2022. Second, look through the participating projects, choose your favorites, and consult the documentation guiding you to send your first contribution.
 
-Forty thousand participants who complete Hacktoberfest and have at least our pull/merge requests accepted between October 1 and October 31 can have a tree planted in their name or the Hacktoberfest T-shirt. In that case, you can pick a tree planted in your name or the Hacktoberfest 2022 T-shirt.
+Forty thousand participants who complete Hacktoberfest and have at least four pull/merge requests accepted between October 1 and October 31 can have a tree planted in their name or the Hacktoberfest T-shirt. In that case, you can pick a tree planted in your name or the Hacktoberfest 2022 T-shirt.
 
 Let's ask the Percona experts!
 
