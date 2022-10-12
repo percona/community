@@ -27,7 +27,7 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * March 25th - [Setting up alerts and basic automation for PostgreSQL](/events/streams-pg/2022-03-25-setting-up-alert-and-basic-automation-for-postgresql/)
 * April 8th - [Setting up and scheduling regular PostgreSQL backups (Part 1)](/events/streams-pg/2022-04-08-setting-up-and-scheduling-regular-postgresql-backups/)
 * April 21st - [Setting up and scheduling regular PostgreSQL backups (Part 2)](/events/streams-pg/2022-04-21-setting-up-and-scheduling-regular-postgresql-backups-2/)
-* May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-04-21-setting-up-failover-via-a-replica-for-postgresql/)
+* May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-05-06-setting-up-and-installing-backups-with-pgbackrest/)
 * June 3rd - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-06-03-setting-up-failover-via-a-replica-for-postgresql/)
 * June 16th - [Setting Up and Using Patroni to Automate Failover in PostgreSQL](/events/streams-pg/2022-06-16-setting-up-and-using-patroni-to-automate-failover-in-postgresql)
 * June 30th - [Migrating PostgreSQL to a new server](/events/streams-pg/2022-06-30-migrating-postgresql-to-a-new-server/)
