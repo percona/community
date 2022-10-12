@@ -31,9 +31,10 @@ footer.page {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       margin-bottom: 0;
       height:1.5rem;
-      line-height:1.5rem;
+      line-height:0.5rem;
       a {
         height:1.3rem;
         line-height:1.3rem;
@@ -81,5 +82,22 @@ footer.page {
   }
   .page-footer {
     @include menu-color-light;
+  }
+}
+
+
+@media  screen and (max-width: 570px) {
+  footer.page{
+    aside{
+        margin-top: 10%;
+    }
+  }
+}
+
+@media  screen and (max-width: 370px) {
+  footer.page{
+    aside{
+        margin-top: 20%;
+    }
   }
 }
