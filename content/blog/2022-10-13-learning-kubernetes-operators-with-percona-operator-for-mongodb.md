@@ -66,7 +66,7 @@ As prerequisites, we need [Google Cloud shell and Kubectl](https://docs.percona.
 gcloud container clusters create my-cluster-name --project percona-product --zone us-central1-a --cluster-version 1.23 --machine-type n1-standard-4 --num-nodes=3
 ```
 
-![Overview](blog/2022/13/1.png)
+![Overview](blog/2022/13/1-operators-gcloud.png)
 
 - Now you should configure the command-line access to your newly created cluster to make kubectl able to use it.
 
@@ -74,7 +74,7 @@ gcloud container clusters create my-cluster-name --project percona-product --zon
 gcloud container clusters get-credentials my-cluster-name --zone us-central1-a --project percona-product
 ```
 
-![Overview](blog/2022/13/2.png)
+![Overview](blog/2022/13/2-operators-get-credentials.png)
 
 - Finally, use your [Cloud Identity and Access Management [Cloud IAM]](https://cloud.google.com/iam) to control access to the cluster. The following command will give you the ability to create Roles and RoleBindings:
 
@@ -82,7 +82,7 @@ gcloud container clusters get-credentials my-cluster-name --zone us-central1-a -
 kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value core/account)
 ```
 
-![Overview](blog/2022/13/3.png)
+![Overview](blog/2022/13/3-kubectl-create-cluisterrolebinding.png)
 
 ### Install the Operator and deploy your MongoDB cluster
 
@@ -92,7 +92,7 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-ad
 kubectl create namespace percona-demo-namespace
 ```
 
-![Overview](blog/2022/13/4.png)
+![Overview](blog/2022/13/4-kubectl-create-namespace.png)
 
 - Set the context for the namespace
 
@@ -100,7 +100,7 @@ kubectl create namespace percona-demo-namespace
 kubectl config set-context $(kubectl config current-context) --namespace=percona-demo-namespace
 ```
 
-![Overview](blog/2022/13/5.png)
+![Overview](blog/2022/13/5-kubectl-config-set-contex.png)
 
 - Deploy the Operator
 
@@ -108,7 +108,7 @@ kubectl config set-context $(kubectl config current-context) --namespace=percona
 kubectl apply -f https://raw.githubusercontent.com/percona/percona-server-mongodb-operator/v1.13.0/deploy/bundle.yaml
 ```
 
-![Overview](blog/2022/13/6.png)
+![Overview](blog/2022/13/6-kubectl-apply-f-bundle.png)
 
 - The operator has been started, and you can deploy your MongoDB cluster:
 
@@ -116,7 +116,7 @@ kubectl apply -f https://raw.githubusercontent.com/percona/percona-server-mongod
 kubectl apply -f https://raw.githubusercontent.com/percona/percona-server-mongodb-operator/v1.13.0/deploy/cr.yaml
 ```
 
-![Overview](blog/2022/13/7.png)
+![Overview](blog/2022/13/7-kubectl-apply-f-cr.png)
 
 - When the process is over, your cluster will obtain the ready status. Check with:
 
@@ -124,7 +124,7 @@ kubectl apply -f https://raw.githubusercontent.com/percona/percona-server-mongod
   kubectl get psmdb.
 ```
 
-![Overview](blog/2022/13/8.png)
+![Overview](blog/2022/13/8-kubectl-get-psmdb.png)
 
 **Note:** “psmdb” stands for [Percona Server for MongoDB](https://www.percona.com/software/mongodb/percona-server-for-mongodb)
 
@@ -136,15 +136,15 @@ kubectl apply -f https://raw.githubusercontent.com/percona/percona-server-mongod
 kubectl get secret my-cluster-name-secrets -o yaml
 ```
 
-![Overview](blog/2022/13/9.png)
+![Overview](blog/2022/13/9-kubectl-get-secret.png)
 
 - Bring it back to a human-readable form to **MONGODB_DATABASE_ADMIN_PASSWORD** and **MONGODB_DATABASE_ADMIN_USER**
 
-![Overview](blog/2022/13/10.png)
+![Overview](blog/2022/13/10-decode.png)
 
 - We check the details of the Services, before testing the connection to the cluster
 
-![Overview](blog/2022/13/11.png)
+![Overview](blog/2022/13/11-get-services.png)
 
 - Run a Docker container with a MongoDB client and connect its console output to your terminal. The following command will do this, naming the new Pod percona-client:
 
@@ -152,7 +152,7 @@ kubectl get secret my-cluster-name-secrets -o yaml
 kubectl run -i --rm --tty percona-client --image=percona/percona-server-mongodb:4.4.16-16 --restart=Never -- bash -il
 ```
 
-![Overview](blog/2022/13/12.png)
+![Overview](blog/2022/13/12-run-docker-container.png)
 
 - Now run mongo tool in the percona-client command shell using the login (which is normally clusterAdmin)
 
@@ -160,7 +160,7 @@ kubectl run -i --rm --tty percona-client --image=percona/percona-server-mongodb:
 mongo "mongodb://clusterAdmin:Dgqjc1HElUvvGnH9@my-cluster-name-mongos.percona-demo-namespace.svc.cluster.local/admin?ssl=false"
 ```
 
-![Overview](blog/2022/13/13.png)
+![Overview](blog/2022/13/13-mongo.png)
 
 **Woolaaa!** We have deployed MongoDB in Kubernetes using Operator, It works! **:)**
 
