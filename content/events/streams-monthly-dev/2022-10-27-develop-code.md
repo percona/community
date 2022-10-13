@@ -35,3 +35,4 @@ Live chat with Percona community is always available on [Discord](http://per.co.
 
 ![Meetup](events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Code.jpg)
 
+
