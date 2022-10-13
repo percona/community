@@ -2,7 +2,7 @@
 title: "How Do We Develop Code? Live Coding Session Into Our DBaaS Controller- October 2022"
 description: "This new meetup is your chance to get a behind-the-scenes view and to directly interact in person with our engineers. We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona."
 images:
-  - events//streams-monthly-dev/monthly-percona-developer-meetup-code.jpg
+  - events/streams-monthly-dev/monthly-percona-developer-meetup-code.jpg
 date: "2022-10-12"
 draft: false
 speakers:
@@ -10,6 +10,7 @@ speakers:
   - kai_wagner
 tags: ['Stream']
 ---
+![Meetup](events/streams-monthly-dev/monthly-percona-developer-meetup-code.jpg)
 
 **AGENDA**
 
