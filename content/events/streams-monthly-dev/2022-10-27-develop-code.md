@@ -8,11 +8,8 @@ draft: false
 speakers:
   - andrey_minkin
   - kai_wagner
-tags: ['Stream']
+tags: ['opensource','PMM','Stream']
 ---
-![Meetup](events/streams-monthly-dev/monthly-percona-developer-meetup-code.jpg)
-
-**AGENDA**
 
 Have you always wanted to know what and how a developer is working? What do they do, how do they start looking into issues and how do they finally turn that into code? It’s your time to get a behind the scenes view into the daily life of a developer from Percona! 
 
@@ -35,4 +32,6 @@ You can also watch the stream immediately on our website:
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.restream.io/?token=1820632d6b004d84a0723632e6ba9980" allow="autoplay" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"/></iframe></div>
 
 Live chat with Percona community is always available on [Discord](http://per.co.na/discord).
+
+![Meetup](events/streams-monthly-dev/monthly-percona-developer-meetup-code.jpg)
 
