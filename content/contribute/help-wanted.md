@@ -19,4 +19,4 @@ Pick up the theme from the list and write a blog post. Publish it yourself follo
 
 ## Video
 
-Record a video tutorial on one of the following topics, post it on your YouTube channel and send us a link.
+Record a video tutorial on one of the [following topics](https://percona.community/contribute/opentopics/), post it on your YouTube channel and send us a link.
