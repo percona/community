@@ -18,21 +18,13 @@ Percona Community Live Stream for MySQL will focus on benchmarking a MySQL datab
 
 **JOIN US LIVE & ASK QUESTIONS**
 
-This event has been postponed until further notice. Do apologize to attendees.
+⚠️ This event has been postponed until further notice. Do apologize to attendees.
 
 Percona's Technical Evangelists Edith Puclla and Mario Garcia together with Marcos Albe will talk about **benchmarking a MySQL database**.
 
 **WHERE**
 
-Watch it live:
-
-- [YouTube](https://www.youtube.com/watch?v=7WKoKRFXFCw)
-- [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:6985258367539646464/)
-- [Twitch](https://www.twitch.tv/perconacommunity)
-
-The stream is also available direclty on this page:
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.restream.io/?token=9c03bb35eeed427eb8ecbd7d0b6b8b9e" allow="autoplay" allowfullscreen frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"/></iframe></div>
+⚠️ We will be posting a new date soon.
 
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MmY1c3Ruc3Judm41dGY1ZHUxbDI1ZWdvMm8gYWxla3NhbmRyYS5hYnJhbW92YUBwZXJjb25hLmNvbQ&tmsrc=aleksandra.abramova%40percona.com).
 
