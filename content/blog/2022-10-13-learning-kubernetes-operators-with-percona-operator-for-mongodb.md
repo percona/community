@@ -7,7 +7,7 @@ authors:
   - edith_puclla
 images:
   - blog/2022/13/with-operators.png
-slug: recap-monthly-percona-developer-meetup-hacktoberfest
+slug: learning-kubernetes-operators-with-percona-operator-for-mongodb
 ---
 
 One of the topics that have resonated a lot for me since the first KubeCon I attended in 2018 is **Kubernetes Operators**.
