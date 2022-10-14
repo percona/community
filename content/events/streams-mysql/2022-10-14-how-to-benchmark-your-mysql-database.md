@@ -24,9 +24,7 @@ Percona's Technical Evangelists Edith Puclla and Mario Garcia together with Marc
 
 **WHERE**
 
-⚠️ We will be posting a new date soon.
-
-Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MmY1c3Ruc3Judm41dGY1ZHUxbDI1ZWdvMm8gYWxla3NhbmRyYS5hYnJhbW92YUBwZXJjb25hLmNvbQ&tmsrc=aleksandra.abramova%40percona.com).
+⚠️ We will be posting a new date for this event soon.
 
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups. Join our chat on [Discord](http://per.co.na/discord).
 
