@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "d3J4ZpNnC94",
+    "title": "How Do I Migrate MySQL Data to an Aurora MySQL DB Cluster Using Amazon S3?",
+    "date": "Oct 7, 2022",
+    "authors": "AWS Knowledge Center Videos"
+  },
+  {
     "youtube_id": "YjhAF6xbt08",
     "title": "Debugging Problems when Setting up PostgreSQL Replication - PostgreSQL Replication Tutorial",
     "date": "Jun 9, 2022",
