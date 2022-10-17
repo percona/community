@@ -147,6 +147,12 @@
 
   "Events":[
   {
+    "youtube_id": "9qwynoy_bfU&t",
+    "title": "PostgresOpenTalks - PostgreSQL and Artificial intelligence",
+    "date": "Oct 13, 2022",
+    "authors": "Ibrar Ahmed (Percona)"
+  },
+  {
     "youtube_id": "4MUWz4cGKHg",
     "title": "Chernihiv.IT CONF: TECH FRONT",
     "date": "Oct 1, 2022",
