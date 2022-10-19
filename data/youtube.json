@@ -1,5 +1,11 @@
 {
   "Tutorials":[
+    {
+    "youtube_id": "pgDUG59iXFQ",
+    "title": "Install Percona Monitoring and Management - Free Open Source Monitoring for Your Database",
+    "date": "Aug 23, 2022",
+    "authors": "Edith Puclla (Percona)"
+  },
   {
     "youtube_id": "d3J4ZpNnC94",
     "title": "How Do I Migrate MySQL Data to an Aurora MySQL DB Cluster Using Amazon S3?",
