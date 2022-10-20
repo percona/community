@@ -4,16 +4,16 @@
 
 We welcome everyone to Percona community for developing, installing, running, optimizing, and learning everything around open source databases and infrastructure. 
 
-This is a repository for [Community Website](http://percona.community/). It contains information about Percona community events, activities, and ways you could contribute to Percona open source software and participate in the life of the community.
+This is a repository for [Community Website](https://percona.community/). It contains information about Percona community events, activities, and ways you could contribute to Percona open source software and participate in the life of the community.
 
 ### Website Structure
 
 You can find the following information on the website:
 
-- [Community Blog](http://percona.community/blog/) - a technical blog about open source where everyone can post their content.
-- [Community Events](http://percona.community/events/) - information about events for community organized by Percona.
-- [The HOSS Talks FOSS Podcast](http://percona.community/podcasts/) - videos of the podcast with technical experts talking about open source technologies.
-- [Community Meetups for MySQL, MongoDB, Postgres, and PMM (Percona Monitoring and Management)](http://percona.community/events/percona-meetups/) - videos, transcripts and announcements of live-streamed meetups with experts.
+- [Community Blog](https://percona.community/blog/) - a technical blog about open source where everyone can post their content.
+- [Community Events](https://percona.community/events/) - information about events for community organized by Percona.
+- [The HOSS Talks FOSS Podcast](https://percona.community/podcasts/) - videos of the podcast with technical experts talking about open source technologies.
+- [Community Meetups for MySQL, MongoDB, Postgres, and PMM (Percona Monitoring and Management)](https://percona.community/events/percona-meetups/) - videos, transcripts and announcements of live-streamed meetups with experts.
 - [Surveys](https://percona.community/contribute/surveys/) - fill some of them in and participate in swag giveaway.
 - Information about contributing to Percona open source software if you are found of:
 	a. [MySQL](https://percona.community/mysql/)
