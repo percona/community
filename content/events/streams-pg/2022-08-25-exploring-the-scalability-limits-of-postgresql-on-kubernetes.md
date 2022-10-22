@@ -2,6 +2,7 @@
 title: "Exploring the scalability limits of PostgreSQL on Kubernetes - Percona Community Live Stream August 25th"
 description: "Catch up with Percona Community Live Stream, and explore the Scalability limits of Postgres on Kubernetes"
 draft: false
+date: "2022-08-25"
 images:
   - events/streams-pg/PG-Stream-Cover-Week-12-August-25.jpg
 speakers:

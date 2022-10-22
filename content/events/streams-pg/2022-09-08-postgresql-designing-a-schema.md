@@ -4,7 +4,7 @@ description: "Join us at Percona Community Live Stream, and we will talk about P
 draft: false
 images:
   - events/streams-pg/PG-Stream-Cover-Week-13-sept-8th.jpg
-weight: 1
+date: "2022-09-08"
 speakers:
   - charly_batista
   - dave_stokes
@@ -18,7 +18,6 @@ Percona Community Live Stream for PostgreSQL focused on Designing a Schema. This
 ## Video
 
 {{% youtube youtube_id="3-hntRj6J4I" %}}{{% /youtube %}}
-
 
 ## Transcript
 

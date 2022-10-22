@@ -27,7 +27,7 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * March 25th - [Setting up alerts and basic automation for PostgreSQL](/events/streams-pg/2022-03-25-setting-up-alert-and-basic-automation-for-postgresql/)
 * April 8th - [Setting up and scheduling regular PostgreSQL backups (Part 1)](/events/streams-pg/2022-04-08-setting-up-and-scheduling-regular-postgresql-backups/)
 * April 21st - [Setting up and scheduling regular PostgreSQL backups (Part 2)](/events/streams-pg/2022-04-21-setting-up-and-scheduling-regular-postgresql-backups-2/)
-* May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-04-21-setting-up-failover-via-a-replica-for-postgresql/)
+* May 6th - [Setting up and installing backups with pgBackRest](/events/streams-pg/2022-05-06-setting-up-and-installing-backups-with-pgbackrest/)
 * June 3rd - [Setting up failover via a replica for PostgreSQL](/events/streams-pg/2022-06-03-setting-up-failover-via-a-replica-for-postgresql/)
 * June 16th - [Setting Up and Using Patroni to Automate Failover in PostgreSQL](/events/streams-pg/2022-06-16-setting-up-and-using-patroni-to-automate-failover-in-postgresql)
 * June 30th - [Migrating PostgreSQL to a new server](/events/streams-pg/2022-06-30-migrating-postgresql-to-a-new-server/)
@@ -36,8 +36,8 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * August 25th - [Exploring the scalability limits of PostgreSQL on Kubernetes](/events/streams-pg/2022-08-25-exploring-the-scalability-limits-of-postgresql-on-kubernetes)
 * September 8th - [Designing a schema](2022-09-08-postgresql-designing-a-schema/)
 * September 22nd - [How to benchmark your PostgreSQL database](2022-09-22-how-to-benchmark-your-postgresql-database)
-* October 6th - How to secure PostgreSQL
-* October 20th - Setting up a PostgreSQL connection pool
+* October 6th - [How to secure PostgreSQL](2022-10-06-how-to-secure-postgresql)
+* October 20th - [Setting up a PostgreSQL connection pool](2022-10-20-setting-up-postgresql-connection-pool)
 * November 3rd - Using PG and Redis to boost Performance
 * November 17th - Finding poorly designed schema’s and how to fix them
 * December 1st - Archiving PG data

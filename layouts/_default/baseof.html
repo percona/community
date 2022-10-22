@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ .Site.Language }}" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
@@ -140,20 +140,26 @@
       <p class="aria-only" id="footer-heading" aria-hidden="false">Footer</p>
       <div class="page-footer">
         <nav class="footer">
-          <ul>
-            {{ range .Site.Menus.footer }}
+          <div class="abc">
+
+            <ul>
+              {{ range .Site.Menus.footer }}
               <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                 <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
                   {{ .Pre }}
                   <span>{{ .Name }}</span>
                 </a>
               </li>
-            {{ end }}
+              {{ end }}
               <li><a class="cmp-revoke-consent">Revoke Consent</a></li>
-          </ul>
+            </ul>
+          </div>
         </nav>
       </div>
-      {{ with .Site.Copyright | default .Site.Title }}<aside> {{ . | safeHTML }} </aside>{{ end }}
+      <div>
+
+        {{ with .Site.Copyright | default .Site.Title }}<aside> {{ . | safeHTML }} </aside>{{ end }}
+      </div>
     </footer>
 
     {{ $js := resources.Get "js/aria.js" }}

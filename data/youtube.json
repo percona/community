@@ -1,5 +1,17 @@
 {
   "Tutorials":[
+    {
+    "youtube_id": "pgDUG59iXFQ",
+    "title": "Install Percona Monitoring and Management - Free Open Source Monitoring for Your Database",
+    "date": "Aug 23, 2022",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
+    "youtube_id": "d3J4ZpNnC94",
+    "title": "How Do I Migrate MySQL Data to an Aurora MySQL DB Cluster Using Amazon S3?",
+    "date": "Oct 7, 2022",
+    "authors": "AWS Knowledge Center Videos"
+  },
   {
     "youtube_id": "YjhAF6xbt08",
     "title": "Debugging Problems when Setting up PostgreSQL Replication - PostgreSQL Replication Tutorial",
@@ -140,6 +152,18 @@
   }],
 
   "Events":[
+  {
+    "youtube_id": "9qwynoy_bfU&t",
+    "title": "PostgresOpenTalks - PostgreSQL and Artificial intelligence",
+    "date": "Oct 13, 2022",
+    "authors": "Ibrar Ahmed (Percona)"
+  },
+  {
+    "youtube_id": "4MUWz4cGKHg",
+    "title": "Chernihiv.IT CONF: TECH FRONT",
+    "date": "Oct 1, 2022",
+    "authors": "Peter Zaitsev and Lenz Grimmer (Percona)"
+  },
   {
     "youtube_id": "Ocp0L6YEIyI",
     "title": "Creating Docker Extensions for an Open Source Project",
@@ -316,6 +340,12 @@
 
 
   "Interviews":[
+  {
+    "youtube_id": "UZE0F_N0WeU",
+    "title": "2022-10-04 - Your Company’s Database Problem With Peter Zaitsev, CEO of Percona",
+    "date": "October 04, 2022",
+    "authors": "Peter Zaitsev"
+  },
   {
     "youtube_id": "NrlmRUYBTd8",
     "title": "2022-08-29 - Sergey Pronin on Byte Relay with Andrey Borodin",

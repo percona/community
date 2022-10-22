@@ -4,6 +4,7 @@ description: "Find out more about how Migrating PostgreSQL to a new server with 
 draft: false
 images:
   - events/streams-pg/PG-Stream-Week-9-Cover.jpg
+date: "2022-06-30"
 speakers:
   - charly_batista
   - dave_stokes
