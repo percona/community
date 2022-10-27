@@ -38,14 +38,14 @@ Matt and Charly will cover the following topics every two weeks on Thursday, at 
 * September 22nd - [How to benchmark your PostgreSQL database](2022-09-22-how-to-benchmark-your-postgresql-database)
 * October 6th - [How to secure PostgreSQL](2022-10-06-how-to-secure-postgresql)
 * October 20th - [Setting up a PostgreSQL connection pool](2022-10-20-setting-up-postgresql-connection-pool)
-* November 3rd - Using PG and Redis to boost Performance
-* November 17th - Finding poorly designed schema’s and how to fix them
-* December 1st - Archiving PG data
-* December 15th - Auditing PostgreSQL
-* December 29th - Setting up and Optimizing PG Aurora
-* January 12th - Replicating PostgreSQL cross-cloud
-* January 26th - Cross K8 cluster PG replication
-* February 9th - Kubernetes for DBA’s
+* November 17th - Using PG and Redis to boost Performance
+* December 1st - Finding poorly designed schema’s and how to fix them
+* December 15th - Archiving PG data
+* December 29th - Auditing PostgreSQL
+* January 12th  - Setting up and Optimizing PG Aurora
+* January 26th - Replicating PostgreSQL cross-cloud
+* February 9th - Cross K8 cluster PG replication
+* February 23d - Kubernetes for DBA’s
 
 ## Follow Us
 
