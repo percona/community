@@ -1,6 +1,12 @@
 {
   "Tutorials":[
-    {
+  {
+    "youtube_id": "qPcshKfQPfg",
+    "title": "Why should we run MySQL with Percona on Kubernetes",
+    "date": "Oct 27, 2022",
+    "authors": "Yashharth Mani Tripathi"
+  },
+  {
     "youtube_id": "pgDUG59iXFQ",
     "title": "Install Percona Monitoring and Management - Free Open Source Monitoring for Your Database",
     "date": "Aug 23, 2022",
