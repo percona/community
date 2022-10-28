@@ -38,7 +38,7 @@ Here are the quick steps to publish the post. You can find the detailed descript
 
 The site runs on Hugo engine. It turns Markdown pages into HTML very quickly and easily. We also use GitHub and GitHub Pages for free website hosting.
 
-- Fork our repository ["percona/community"](https://github.com/percona/community/) and git clone that fork on your computer.
+- Fork our repository ["percona/community"](https://github.com/percona/community/) and git clone that fork on your computer. If you just want to make a simple contribution, consider performing a [shallow clone](https://www.atlassian.com/git/tutorials/big-repositories) instead of a full local clone of the repo. This notably reduces the size of the local repo.
 - (Optional) install [Hugo engine](https://gohugo.io/getting-started/installing/)
 - Run the Hugo server in the source code folder of the site with the command `hugo server -D` and open a local copy of the site in your browser at `localhost:1313`
 - Create a separate branch for your changes.
