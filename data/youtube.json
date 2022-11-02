@@ -159,6 +159,36 @@
 
   "Events":[
   {
+    "youtube_id": "VDehaXLwndA",
+    "title": "CakeFest 2022 - MySQL Indexes and Histograms to Speed Up Your Queries",
+    "date": "Oct 6, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "5tvsklDOQRE&t",
+    "title": "KolesaConf 2022 - В тимлиды и обратно. Ретроспектива 8 лет.",
+    "date": "Oct 27, 2022",
+    "authors": "Andrew Minkin (Percona)"
+  },
+  {
+    "youtube_id": "_v--hrLmuBs",
+    "title": "DevOps Stage 2022 - Open Source Databases on Kubernetes: Best Practices",
+    "date": "Oct 10, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
+    "youtube_id": "WZxSgv5FBAA",
+    "title": "Open Source Summit Europe 2022 -  The Business Of Open Source: How Big Money, Investors, and Greed are Changing Open Source Forever",
+    "date": "Oct 9, 2022",
+    "authors": "Donnie Berkholz (Percona)"
+  },
+  {
+    "youtube_id": "WZxSgv5FBAA",
+    "title": "SouthEast Linux Fest 2022 -  Open Source: For Love? Money? Or Both",
+    "date": "Jun 16, 2022",
+    "authors": "Matt Yonkovit"
+  },
+  {
     "youtube_id": "xijQMTJbHkA",
     "title": "Chernihiv.IT Marketing CRASH COURSE - Getting a Head Start in Marketing in 2023",
     "date": "Oct 29, 2022",

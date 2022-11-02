@@ -22,6 +22,10 @@ Percona Community Live Stream for MySQL will focus on benchmarking a MySQL datab
 
 {{% youtube youtube_id="OOp8vy1Wxko" %}}{{% /youtube %}}
 
+## SLIDES
+
+Check out Marcos' slides [HERE](https://drive.google.com/file/d/1BBaRYMu0gN555Q37T6sKVCaNa6YCevbr/view?usp=sharing). 
+
 ## TRANSCRIPT
 
 **Mario Garcia:**  
