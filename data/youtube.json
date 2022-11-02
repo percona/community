@@ -159,6 +159,24 @@
 
   "Events":[
   {
+    "youtube_id": "ptIYYI1KLBI",
+    "title": "Open Source Summit Latin America 2022 - From a Database in Container to DBaaS on Kubernetes",
+    "date": "Sept 7, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
+    "youtube_id": "5zB_ZZOvna0",
+    "title": "PGConf.Brasil 2022 - Efficiently Deploying PostgreSQL Instances",
+    "date": "Oct 14, 2022",
+    "authors": "Agustín Gallego (Percona)"
+  },
+  {
+    "youtube_id": "MkXrDTIqClc",
+    "title": "Open Source Summit Europe 2022 - Pod Through a Magnifying Glass",
+    "date": "Oct 9, 2022",
+    "authors": "Chetan Shivashankar (Percona)"
+  },
+  {
     "youtube_id": "VDehaXLwndA",
     "title": "CakeFest 2022 - MySQL Indexes and Histograms to Speed Up Your Queries",
     "date": "Oct 6, 2022",
@@ -177,7 +195,7 @@
     "authors": "Peter Zaitsev (Percona)"
   },
   {
-    "youtube_id": "WZxSgv5FBAA",
+    "youtube_id": "s1W7cjnuh-U",
     "title": "Open Source Summit Europe 2022 -  The Business Of Open Source: How Big Money, Investors, and Greed are Changing Open Source Forever",
     "date": "Oct 9, 2022",
     "authors": "Donnie Berkholz (Percona)"
