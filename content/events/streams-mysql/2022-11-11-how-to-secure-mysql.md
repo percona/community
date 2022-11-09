@@ -1,6 +1,6 @@
 ---
 title: "How to Benchmark Your MySQL Database - Percona Community MySQL Live Stream & Chat - Nov 11th"
-description: "Join us at Percona Community Live Stream, and we will talk about benchmarking your MySQL database with database experts on Friday, October 28th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST."
+description: "Join us at Percona Community Live Stream, and we will talk about how to secure MySQL database with database experts on Friday, November 11th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST."
 images:
   - events/streams-mysql/Stream-MySQL-Marcos-Secure-11-11.jpg
 draft: false
