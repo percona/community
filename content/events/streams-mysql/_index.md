@@ -42,7 +42,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * October, 28th- [How to Benchmark Your MySQL Database](/events/streams-mysql/2022-10-28-how-to-benchmark-your-mysql-database/)
 
-* November, 11th - How to Secure MySQL
+* November, 11th - [How to Secure MySQL](/events/streams-mysql/2022-11-11-how-to-secure-mysql/)
 
 * November, 25th - Setting Up a MySQL Connection Pool
 
