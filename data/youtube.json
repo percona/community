@@ -159,6 +159,18 @@
 
   "Events":[
   {
+    "youtube_id": "GDKtFw6wi68",
+    "title": "AWS Summit SP 2022 - Porque escolher um banco de dados nativo da nuvem? ",
+    "date": "Nov 2, 2022",
+    "authors": "Angie Nombre Cocharero (AWS), Leonardo Ciccone (AWS), Thais Santos (Banco Inter)"
+  },
+  {
+    "youtube_id": "b_COgWA1lvk",
+    "title": "DoK Day North America 2022- Open Source Databases on Kubernetes: Best Practices",
+    "date": "Nov 2, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
     "youtube_id": "ptIYYI1KLBI",
     "title": "Open Source Summit Latin America 2022 - From a Database in Container to DBaaS on Kubernetes",
     "date": "Sept 7, 2022",
