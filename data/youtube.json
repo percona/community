@@ -159,6 +159,12 @@
 
   "Events":[
   {
+    "youtube_id": "mmY83fUZ1wI",
+    "title": "GDG - A Hands-On Introduction To Docker Containers",
+    "date": "Nov 2, 2022",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
     "youtube_id": "GDKtFw6wi68",
     "title": "AWS Summit SP 2022 - Porque escolher um banco de dados nativo da nuvem? ",
     "date": "Nov 2, 2022",
