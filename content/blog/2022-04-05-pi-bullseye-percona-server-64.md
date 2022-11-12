@@ -14,26 +14,24 @@ I love the Raspberry Pi, and I love Percona server. The combination of the two c
 
 I did a my first blog post on installing Percona Server 5.7 on the Raspberry Pi 3+.
 
-You can read that blog post here:
+You can read that blog post here: 
 [How to Build a Percona Server "Stack" on a Raspberry Pi 3+](https://percona.community/blog/2019/08/01/how-to-build-a-percona-server-stack-on-a-raspberry-pi-3/)
 
-Fast forward to 2022 and we now have the resources to build Percona Server 8.0 on the Raspberry Pi 4. In this post I will cover building and installing Percona Server 8.0.30 and Percona XtraBackup 8.0.30.
-
-**One Warning!** The builds will take sometime.
+Fast forward to 2022 and we now have the resources to build Percona Server 8.0 64-bit on the Raspberry Pi. In this post I will cover building and installing Percona Server 8.0.29 and Percona XtraBackup 8.0.29.
 
 Prereqs:
 
 1. Raspberry Pi 3B+, 4 or 400 (any memory size will work).
 2. 128GB or 256GB microSD card. Of course you can go bigger.
 
-I won't cover installing Raspbian Bullseye, you can follow the steps here:
+When installing the Raspberry Pi OS on a Pi 4 or 400 make sure to choose the 64-bit image.
 [Install Raspberry Pi OS Bullseye on Raspberry Pi](https://raspberrytips.com/install-raspbian-raspberry-pi/)
 
 ## The Builds
 
-One step I have found which will help to increase the speed and success of your build is to add larger swap file.
+One step I found which will help to increase the speed and success of your build is to add larger swap file.
 
-Create a new swap file. I found that a 4GB file worked just fine. I created the swap file on the / partition.
+Create a new swap file. A 4GB swap file worked just fine. I created the swap file on the / partition.
 
 ```
 $ sudo dd if=/dev/zero of=/swapfile4GB bs=1M count=4096
@@ -56,19 +54,19 @@ libreadline-dev libudev-dev libev-dev libev4 libprocps-dev
 Let's download Percona Server and some additional tools.
 
 ```
-$ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/percona-server-8.0.30-22/source/tarball/percona-server-8.0.30-22.tar.gz
-$ tar -zxvf percona-server-8.0.30-22.tar.gz
+$ wget https://downloads.percona.com/downloads/Percona-Server-LATEST/Percona-Server-8.0.29-21/source/tarball/percona-server-8.0.29-21.tar.gz
+$ tar -zxvf percona-server-8.0.29-21.tar.gz
 $ wget https://boostorg.jfrog.io/artifactory/main/release/1.77.0/source/boost_1_77_0.tar.gz
 $ tar -zxvf boost_1_77_0.tar.gz
-$ wget https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/percona-xtrabackup-8.0.30-23/source/tarball/percona-xtrabackup-8.0.30-23.tar.gz
-$ tar -zxvf percona-xtrabackup-8.0.30-23.tar.gz
+$ wget https://downloads.percona.com/downloads/Percona-XtraBackup-LATEST/Percona-XtraBackup-8.0.29-22/source/tarball/percona-xtrabackup-8.0.29-22.tar.gz
+$ tar -zxvf percona-xtrabackup-8.0.29-22.tar.gz
 ```
 
 ## Build Percona Server
-At the time of writing 8.0.30-22 is the current version. If you have a USB 3 external drive, you might find the build will perform better from that device. In my build I used a 500GB SSD drive.
+At the time of writing 8.0.29-21 is the current version. If you have a USB 3 external drive, you might find the build will perform better from that device. In my build I used a 500GB SSD drive.
 
 ```
-$ cd percona-server-8.0.30-22
+$ cd percona-server-8.0.29-21
 $ mkdir arm64-build
 $ cd arm64-build
 $ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=/home/pi/boost_1_77_0 -DCMAKE_INSTALL_PREFIX=/usr/local/mysql
@@ -78,9 +76,9 @@ $ sudo make install
 With the 4GB swap file you created above you can use make -j2 for the compile. Depending on which Pi you are using build time should be around 3 hours.
 
  ## Build XtraBackup
- At the time of writing 8.0.28-21 is the current version.
+ At the time of writing 8.0.29-22 is the current version.
  ```
- $ cd percona-xtrabackup-8.0.30-23
+ $ cd percona-xtrabackup-8.0.29-22
  $ mkdir arm64-build
  $ cd arm64-build
  $ cmake .. -DCMAKE_BUILD_TYPE=Release -DWITH_BOOST=$HOME/boost_1_77_0 -DCMAKE_INSTALL_PREFIX=/usr/local/xtrabackup
