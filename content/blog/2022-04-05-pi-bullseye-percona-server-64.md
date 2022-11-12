@@ -10,7 +10,7 @@ images:
 slug: Percona-Server-Raspberry-Pi
 ---
 
-I love the Raspberry Pi, and I love Percona server. The combination of the two can provide a nice home database. I have been running a Percona Server database since 2019 to hold all the weather information. That I collect from several of my Weather Stations.
+I love the Raspberry Pi, and I love Percona server. The combination of the two can provide a nice home database. I have been running a Percona Server database since 2019 to hold all the weather information, that I collect from several of my Weather Stations.
 
 I did a my first blog post on installing Percona Server 5.7 on the Raspberry Pi 3+.
 
