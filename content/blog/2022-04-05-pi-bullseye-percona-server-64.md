@@ -29,7 +29,7 @@ When installing the Raspberry Pi OS on a Pi 4 or 400 make sure to choose the 64-
 
 ## The Builds
 
-One step I found which will help to increase the speed and success of your build is to add larger swap file.
+One step I found which will help to increase the speed and success of your build is to add a larger swap file.
 
 Create a new swap file. A 4GB swap file worked just fine. I created the swap file on the / partition.
 
