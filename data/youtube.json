@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "PsMbpDHg_oU",
+    "title": "Manage Percona XtraDB Cluster Day-2 Operations using KubeDB",
+    "date": "Oct 10, 2022",
+    "authors": "Md. Alif Biswas"
+  },
+  {
     "youtube_id": "qPcshKfQPfg",
     "title": "Why should we run MySQL with Percona on Kubernetes",
     "date": "Oct 27, 2022",
