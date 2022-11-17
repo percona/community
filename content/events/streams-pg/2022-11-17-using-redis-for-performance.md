@@ -1,5 +1,5 @@
 ---
-title: "Using PG and Redis to Boost Performance - Percona Community PostgreSQL Live Stream & Chat - November 17th"
+title: "Using PostgreSQL and Redis to Boost Performance - Percona Community PostgreSQL Live Stream & Chat - November 17th"
 description: "Join us at Percona Community Live Stream, and we will talk about how to use PG and Redis to boost performance with database experts on Thursday, November 17th at 10:00 AM EST / 04:00 PM CET / 08:30 PM IST"
 draft: false
 images:
