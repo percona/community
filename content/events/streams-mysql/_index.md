@@ -44,7 +44,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * November, 11th - [How to Secure MySQL](/events/streams-mysql/2022-11-11-how-to-secure-mysql/)
 
-* November, 25th - Setting Up a MySQL Connection Pool
+* November, 25th - [MySQL performance troubleshooting with PMM](/events/streams-mysql/2022-11-25-mysql-performance-troubleshooting)
 
 * December, 9th - Using MySQL and Redis to Boost Performance 
 
@@ -67,7 +67,7 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 The attendance is free and open to the public. Subscribe to our channels on [YouTube](https://www.youtube.com/channel/UCLJ0Ok4HeUBrRYF4irturVA) and [Twitch](https://www.twitch.tv/perconacommunity).
 
-Add these events to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWJoaGU5dTM2ZmpqZ3Y1bTR0anBrOGRxN3RfMjAyMjA0MDFUMTMwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com&scp=ALL).
+Add these events to your [Google Calendar](https://calendar.google.com/calendar/u/0?cid=Y19zbGhubmkyMXZvcDZyNjFrdDhhaTI2bDY0Z0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
 
 {{% /typography %}}
 {{% /contentblock %}}
