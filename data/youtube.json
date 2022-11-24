@@ -165,6 +165,24 @@
 
   "Events":[
   {
+    "youtube_id": "-uOKf-6nFUA",
+    "title": "OSA Con 2022 - Panel Discussion: HTAP vs OLTP/OLAP",
+    "date": "Nov 15, 2022",
+    "authors": "Peter Zaitsev (Percona), Ed Huang (PingCAP), Alexander Zaitsev (Altinity), and Robert Hodges (Altinity)"
+  },
+  {
+    "youtube_id": "hJsJ8SHqmts",
+    "title": "OSA Con 2022 - Building an Analytic Extension to MySQL with ClickHouse and Open Source",
+    "date": "Nov 15, 2022",
+    "authors": "Vadim Tkachenko (Percona) and Kanthi Subramanian (Altinity)"
+  },
+  {
+    "youtube_id": "SsWOzobFTIQ",
+    "title": "OSA Con 2022 - Keynote: State of Open Source Databases",
+    "date": "Nov 15, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
     "youtube_id": "mmY83fUZ1wI",
     "title": "GDG - A Hands-On Introduction To Docker Containers",
     "date": "Nov 2, 2022",
