@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "HQaSNpweWqU",
+    "title": "Physical Database Backup Percona XtraBackup",
+    "date": "Oct 28, 2022",
+    "authors": "Site Support :: Method Lab"
+  },
+  {
     "youtube_id": "PsMbpDHg_oU",
     "title": "Manage Percona XtraDB Cluster Day-2 Operations using KubeDB",
     "date": "Oct 10, 2022",
@@ -471,6 +477,16 @@
     "title": "Exitable Business Podcast - Interview With Peter Zaitsev",
     "date": "July 22, 2022",
     "authors": "Peter Zaitsev (Percona)"
+  }],
+
+
+
+  "Other":[
+  {
+    "youtube_id": "jLUfW__su_w",
+    "title": "Charm in the Wild | October 2022",
+    "date": "Nov 3, 2022",
+    "authors": "Bashbunny"
   }]
 
 }
