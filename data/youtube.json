@@ -171,6 +171,18 @@
 
   "Events":[
   {
+    "youtube_id": "lj1ICyfCXpw",
+    "title": "Uptime by Aiven 2022 - Monitoring Your Open Source Database with Percona Monitoring And Management for Beginners",
+    "date": "Sept 15, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "lUdg9Rj5Hz0",
+    "title": "Open Infra Day Vietnam 2022 - MySQL on Kubernetes With Percona Kubernetes Operators",
+    "date": "Aug 27, 2022",
+    "authors": "Dinh Tuan Phong (Percona)"
+  },
+  {
     "youtube_id": "-uOKf-6nFUA",
     "title": "OSA Con 2022 - Panel Discussion: HTAP vs OLTP/OLAP",
     "date": "Nov 15, 2022",
