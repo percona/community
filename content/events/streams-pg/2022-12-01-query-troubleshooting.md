@@ -1,6 +1,6 @@
 ---
 title: "End of the Year Session: Query Troubleshooting - Percona Community PostgreSQL Live Stream & Chat - December 1st"
-description: "JJoin us at Percona Community Live Stream. We will have End of the year session: Query troubleshooting with database experts on Thursday, December 1st at 10:00 AM EST / 04:00 PM CET / 08:30 PM IST"
+description: "Join us at Percona Community Live Stream. We will have End of the year session: Query troubleshooting with database experts on Thursday, December 1st at 10:00 AM EST / 04:00 PM CET / 08:30 PM IST"
 draft: false
 images:
   - events/streams-pg/PG-Stream-Dave-Chino-December.jpg
