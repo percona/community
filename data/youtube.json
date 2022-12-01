@@ -171,6 +171,12 @@
 
   "Events":[
   {
+    "youtube_id": "taO_hSr8PxE",
+    "title": "Open Source Experience 2022 - Managing, Growing, and Scaling Open Source Databases at SaaS Scale",
+    "date": "Nov 09, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
     "youtube_id": "lj1ICyfCXpw",
     "title": "Uptime by Aiven 2022 - Monitoring Your Open Source Database with Percona Monitoring And Management for Beginners",
     "date": "Sept 15, 2022",
