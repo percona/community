@@ -27,6 +27,7 @@ The event takes place once a month. Here is the list of the past and upcoming me
 * September 28 - [Hacktoberfest with Percona - We Want You!](/events/streams-monthly-dev/2022-09-26-hacktoberfest/)
 * October 27 - [How Do We Develop Code? Live Coding Session Into Our DBaaS Controller](/events/streams-monthly-dev/2022-10-27-develop-code/)
 * November 24 - [pgpool - What, Why, and Where?](/events/streams-monthly-dev/2022-11-24-pgpool/)
+* December 15 - [Securing Your Data Using PostgreSQL](/events/streams-monthly-dev/2022-12-15-securing-data/)
 
 ## FOLLOW US
 
