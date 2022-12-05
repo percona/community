@@ -16,3 +16,8 @@ We welcome:
 # PMM
 
 - [Awesome PMM](https://github.com/percona/awesome-pmm) - A curated list of awesome Percona Monitoring and Management (PMM) free and open-source software, libraries and resources. - Daniil Bazhenov (Percona)
+
+# Percona XtraBackup
+
+- [XtraBackupAutomation](https://github.com/phildoesdev/xtrabackupautomator) - A simple program that allows for the scheduling of MySQL backups using systemd and Percona's XtraBackup tool.
+- [pyxbackup](https://github.com/dotmanila/pyxbackup) - A backup script. 
