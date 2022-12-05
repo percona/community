@@ -1,6 +1,18 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "L86BEnFekJU",
+    "title": "Achieving Compliance with MongoDB Security",
+    "date": "Nov 29, 2022",
+    "authors": "Madhu Sai (Mydbops Team)"
+  },
+  {
+    "youtube_id": "jYCrYjagsMU",
+    "title": "MySQL Percona XtraDB High Available Cluster And PMM",
+    "date": "Nov 28, 2022",
+    "authors": "AnirbanIT"
+  },
+  {
     "youtube_id": "HQaSNpweWqU",
     "title": "Physical Database Backup Percona XtraBackup",
     "date": "Oct 28, 2022",
@@ -170,6 +182,12 @@
   }],
 
   "Events":[
+  {
+    "youtube_id": "bqPIMHw5W08",
+    "title": "All Things Open 2022 - Becoming Cloudy with Kubernetes",
+    "date": "Nov 29, 2022",
+    "authors": "Burr Sutter (Red Hat)"
+  },
   {
     "youtube_id": "taO_hSr8PxE",
     "title": "Open Source Experience 2022 - Managing, Growing, and Scaling Open Source Databases at SaaS Scale",
