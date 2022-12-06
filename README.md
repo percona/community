@@ -15,7 +15,7 @@ You can find the following information on the website:
 - [The HOSS Talks FOSS Podcast](https://percona.community/podcasts/) - videos of the podcast with technical experts talking about open source technologies.
 - [Community Meetups for MySQL, MongoDB, Postgres, and PMM (Percona Monitoring and Management)](https://percona.community/events/percona-meetups/) - videos, transcripts and announcements of live-streamed meetups with experts.
 - [Surveys](https://percona.community/contribute/surveys/) - fill some of them in and participate in swag giveaway.
-- Information about contributing to Percona open source software if you are found of:
+- Information about contributing to Percona open source software if you are fond of:
 	a. [MySQL](https://percona.community/mysql/)
 	b. [PostgreSQL](https://percona.community/postgresql/)
 	c. [MongoDB](https://percona.community/mongodb/)
