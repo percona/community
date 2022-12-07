@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
 - [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) -  Tibor Köröcz and Francisco Bordenave - November 7, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - October 20, 2022
 - [Backing Up MySQL Part 2: Percona XtraBackup](https://www.red-gate.com/simple-talk/blogs/backing-up-mysql-part-2-percona-xtrabackup/) - Lukas Vileikis - November 16, 2022
@@ -41,6 +42,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [10 Common PostgreSQL Mistakes and How to Avoid Them](https://www.infoworld.com/article/3681655/10-common-postgresql-mistakes-and-how-to-avoid-them.html) - Hamid Akhtar - December 6, 2022
 - [Interview with Percona - PGConf.EU](https://2022.pgconf.eu/sponsor-interviews/percona/) - Umair Shahid - September 22, 2022
 - [PostgreSQL Person of the Week](https://postgresql.life/post/charly_batista/) - Charly Batista (Percona) - July 11, 2022
 - [pg_stat_monitor :: Younger sibling of pg_stat_statements with more knowledge](https://sujithtee.medium.com/pg-stat-monitor-younger-sibling-of-pg-stat-statements-with-more-knowledge-736afb1f05ac) - Sujith Thiravium - October 19, 2021
