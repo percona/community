@@ -18,8 +18,6 @@ Percona Community Live Stream for MySQL will focus on benchmarking a MySQL datab
 
 ## VIDEO
 
-**WHERE**
-
 {{% youtube youtube_id="OOp8vy1Wxko" %}}{{% /youtube %}}
 
 ## SLIDES

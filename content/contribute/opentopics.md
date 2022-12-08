@@ -6,7 +6,7 @@ layout: topics
 
 {{% hero background="purplegalaxy.jpg" %}}
 {{% herotext %}}
-You can find our list of topics here. We are excited to hear back from you if you would like to speak on any of these topics at a conference or meetup, or if you are interested in creating content such as blog posts, guides, videos, podcasts, or whatever else you can think of.
+You can find our list of topics here. We are excited to hear from you if you would like to speak on any of these topics at a conference or meetup, or if you are interested in creating content such as blog posts, guides, videos, podcasts, or whatever else you can think of.
 {{% /herotext %}}
 {{% /hero %}}
 
@@ -55,7 +55,7 @@ You can find our list of topics here. We are excited to hear back from you if yo
 ### Metrics
 
 * Measure your open source project success
-* Bug squashing dong right
+* Bug squashing done right
 
 {{% /griditem %}}
 

@@ -1,6 +1,30 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "L86BEnFekJU",
+    "title": "Achieving Compliance with MongoDB Security",
+    "date": "Nov 29, 2022",
+    "authors": "Madhu Sai (Mydbops Team)"
+  },
+  {
+    "youtube_id": "jYCrYjagsMU",
+    "title": "MySQL Percona XtraDB High Available Cluster And PMM",
+    "date": "Nov 28, 2022",
+    "authors": "AnirbanIT"
+  },
+  {
+    "youtube_id": "HQaSNpweWqU",
+    "title": "Physical Database Backup Percona XtraBackup",
+    "date": "Oct 28, 2022",
+    "authors": "Site Support :: Method Lab"
+  },
+  {
+    "youtube_id": "PsMbpDHg_oU",
+    "title": "Manage Percona XtraDB Cluster Day-2 Operations using KubeDB",
+    "date": "Oct 10, 2022",
+    "authors": "Md. Alif Biswas"
+  },
+  {
     "youtube_id": "qPcshKfQPfg",
     "title": "Why should we run MySQL with Percona on Kubernetes",
     "date": "Oct 27, 2022",
@@ -159,6 +183,84 @@
 
   "Events":[
   {
+    "youtube_id": "bqPIMHw5W08",
+    "title": "All Things Open 2022 - Becoming Cloudy with Kubernetes",
+    "date": "Nov 29, 2022",
+    "authors": "Burr Sutter (Red Hat)"
+  },
+  {
+    "youtube_id": "taO_hSr8PxE",
+    "title": "Open Source Experience 2022 - Managing, Growing, and Scaling Open Source Databases at SaaS Scale",
+    "date": "Nov 09, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "lj1ICyfCXpw",
+    "title": "Uptime by Aiven 2022 - Monitoring Your Open Source Database with Percona Monitoring And Management for Beginners",
+    "date": "Sept 15, 2022",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "lUdg9Rj5Hz0",
+    "title": "Open Infra Day Vietnam 2022 - MySQL on Kubernetes With Percona Kubernetes Operators",
+    "date": "Aug 27, 2022",
+    "authors": "Dinh Tuan Phong (Percona)"
+  },
+  {
+    "youtube_id": "-uOKf-6nFUA",
+    "title": "OSA Con 2022 - Panel Discussion: HTAP vs OLTP/OLAP",
+    "date": "Nov 15, 2022",
+    "authors": "Peter Zaitsev (Percona), Ed Huang (PingCAP), Alexander Zaitsev (Altinity), and Robert Hodges (Altinity)"
+  },
+  {
+    "youtube_id": "hJsJ8SHqmts",
+    "title": "OSA Con 2022 - Building an Analytic Extension to MySQL with ClickHouse and Open Source",
+    "date": "Nov 15, 2022",
+    "authors": "Vadim Tkachenko (Percona) and Kanthi Subramanian (Altinity)"
+  },
+  {
+    "youtube_id": "SsWOzobFTIQ",
+    "title": "OSA Con 2022 - Keynote: State of Open Source Databases",
+    "date": "Nov 15, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
+    "youtube_id": "mmY83fUZ1wI",
+    "title": "GDG - A Hands-On Introduction To Docker Containers",
+    "date": "Nov 2, 2022",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
+    "youtube_id": "GDKtFw6wi68",
+    "title": "AWS Summit SP 2022 - Porque escolher um banco de dados nativo da nuvem? ",
+    "date": "Nov 2, 2022",
+    "authors": "Angie Nombre Cocharero (AWS), Leonardo Ciccone (AWS), Thais Santos (Banco Inter)"
+  },
+  {
+    "youtube_id": "b_COgWA1lvk",
+    "title": "DoK Day North America 2022- Open Source Databases on Kubernetes: Best Practices",
+    "date": "Nov 2, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
+    "youtube_id": "ptIYYI1KLBI",
+    "title": "Open Source Summit Latin America 2022 - From a Database in Container to DBaaS on Kubernetes",
+    "date": "Sept 7, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
+    "youtube_id": "5zB_ZZOvna0",
+    "title": "PGConf.Brasil 2022 - Efficiently Deploying PostgreSQL Instances",
+    "date": "Oct 14, 2022",
+    "authors": "Agustín Gallego (Percona)"
+  },
+  {
+    "youtube_id": "MkXrDTIqClc",
+    "title": "Open Source Summit Europe 2022 - Pod Through a Magnifying Glass",
+    "date": "Oct 9, 2022",
+    "authors": "Chetan Shivashankar (Percona)"
+  },
+  {
     "youtube_id": "VDehaXLwndA",
     "title": "CakeFest 2022 - MySQL Indexes and Histograms to Speed Up Your Queries",
     "date": "Oct 6, 2022",
@@ -177,7 +279,7 @@
     "authors": "Peter Zaitsev (Percona)"
   },
   {
-    "youtube_id": "WZxSgv5FBAA",
+    "youtube_id": "s1W7cjnuh-U",
     "title": "Open Source Summit Europe 2022 -  The Business Of Open Source: How Big Money, Investors, and Greed are Changing Open Source Forever",
     "date": "Oct 9, 2022",
     "authors": "Donnie Berkholz (Percona)"
@@ -383,6 +485,12 @@
 
   "Interviews":[
   {
+    "youtube_id": "gDvodhwOOFU",
+    "title": "The Hacking Open Source Business Podcast - Bootstrapping your Startup, Stepping down as CEO, What's Next In Open Source",
+    "date": "November 30, 2022",
+    "authors": "Matt Yonkovit"
+  },
+  {
     "youtube_id": "UZE0F_N0WeU",
     "title": "2022-10-04 - Your Company’s Database Problem With Peter Zaitsev, CEO of Percona",
     "date": "October 04, 2022",
@@ -411,6 +519,16 @@
     "title": "Exitable Business Podcast - Interview With Peter Zaitsev",
     "date": "July 22, 2022",
     "authors": "Peter Zaitsev (Percona)"
+  }],
+
+
+
+  "Other":[
+  {
+    "youtube_id": "jLUfW__su_w",
+    "title": "Charm in the Wild | October 2022",
+    "date": "Nov 3, 2022",
+    "authors": "Bashbunny"
   }]
 
 }

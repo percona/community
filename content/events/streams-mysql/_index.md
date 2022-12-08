@@ -42,32 +42,32 @@ Matt and Marcos will cover the following topics every two weeks on Friday at at 
 
 * October, 28th- [How to Benchmark Your MySQL Database](/events/streams-mysql/2022-10-28-how-to-benchmark-your-mysql-database/)
 
-* November, 11th - How to Secure MySQL
+* November, 11th - [How to Secure MySQL](/events/streams-mysql/2022-11-11-how-to-secure-mysql/)
 
-* November, 25th - Setting Up a MySQL Connection Pool
+* December, 16th - [MySQL performance troubleshooting with PMM](/events/streams-mysql/2022-12-16-mysql-performance-troubleshooting)
 
-* December, 9th - Using MySQL and Redis to Boost Performance 
+* January, 6th - Using MySQL and Redis to Boost Performance 
 
-* December, 23rd - Archiving MySQL Data
+* January, 20th - Archiving MySQL Data
 
-* January, 6th - Auditing MySQL 
+* February, 3rd - Auditing MySQL 
 
-* January, 20th - Setting Up and Optimizing MySQL Aurora 
+* February, 17th - Setting Up and Optimizing MySQL Aurora 
 
-* February, 3rd - Replicating MySQL Cross-Cloud
+* March, 3d - Replicating MySQL Cross-Cloud
 
-* September, 2nd - Cross K8 Cluster MySQL Replication 
+* March 17th - Cross K8 Cluster MySQL Replication 
 
-* February, 17th - Kubernetes for DBA’s
+* March, 31st - Kubernetes for DBA’s
 
-* March, 3d - MySQL Running on Kubernetes Operations
+* April, 14th - MySQL Running on Kubernetes Operations
 
-* March 17th - Exploring the Scalability Limits of MySQL on Kubernetes
+* April, 28th - Exploring the Scalability Limits of MySQL on Kubernetes
 
 
 The attendance is free and open to the public. Subscribe to our channels on [YouTube](https://www.youtube.com/channel/UCLJ0Ok4HeUBrRYF4irturVA) and [Twitch](https://www.twitch.tv/perconacommunity).
 
-Add these events to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NWJoaGU5dTM2ZmpqZ3Y1bTR0anBrOGRxN3RfMjAyMjA0MDFUMTMwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com&scp=ALL).
+Add these events to your [Google Calendar](https://calendar.google.com/calendar/u/0?cid=Y19zbGhubmkyMXZvcDZyNjFrdDhhaTI2bDY0Z0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
 
 {{% /typography %}}
 {{% /contentblock %}}

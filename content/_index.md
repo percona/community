@@ -3,6 +3,9 @@ title: "Run Percona: Embrace Open"
 description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 ---
 
+
+{{% banner_home  %}}{{% /banner_home %}}
+
 {{% bannerwithicon background="purplegalaxy.jpg" icon="home/Stickers-Percona-Polyglots-250.png" %}}
 
 <h1>Welcome to Percona Community</h1>
@@ -67,6 +70,7 @@ Use Percona Toolkit to get the most out of your MySQL and MongoDB database setup
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% /grid %}}
+
 {{% /contentblock %}}
 
 {{% hero background="contribute.png" %}}
@@ -76,6 +80,4 @@ Data is the main component of almost every larger application, which is why you 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!
 {{% /herotext %}}
 {{% /hero %}}
-
-
 

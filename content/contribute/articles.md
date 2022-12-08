@@ -1,5 +1,5 @@
 ---
-title: "Articles about Percona products"
+title: "Articles About Percona Software"
 description: "We collect links to articles that are written on various resources."
 ---
 
@@ -7,6 +7,11 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
+- [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) -  Tibor Köröcz and Francisco Bordenave - November 7, 2022
+- [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - October 20, 2022
+- [Backing Up MySQL Part 2: Percona XtraBackup](https://www.red-gate.com/simple-talk/blogs/backing-up-mysql-part-2-percona-xtrabackup/) - Lukas Vileikis - November 16, 2022
+- [Deploy and Manage Percona XtraDB in Amazon Elastic Kubernetes Service (Amazon EKS) Using KubeDB](https://blog.byte.builders/post/deploy-and-manage-percona-in-aws/) - Dipta Roy - November 17, 2022
 - [Install and Configure Percona XtraDB Cluster on Rocky Linux 8](https://www.computingpost.com/install-and-configure-percona-xtradb-cluster-on-rocky-linux-8) - Shafiq Ur Rehman - September 25, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - September 15, 2022
 - [1.1 million comments from Hacker News: small data full-text / analytics test](https://dev.to/sanikolaev/11-million-comments-from-hacker-news-small-data-full-text-analytics-test-43c3) - Sergey Nikolaev - May 30, 2022
@@ -37,6 +42,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [10 Common PostgreSQL Mistakes and How to Avoid Them](https://www.infoworld.com/article/3681655/10-common-postgresql-mistakes-and-how-to-avoid-them.html) - Hamid Akhtar - December 6, 2022
 - [Interview with Percona - PGConf.EU](https://2022.pgconf.eu/sponsor-interviews/percona/) - Umair Shahid - September 22, 2022
 - [PostgreSQL Person of the Week](https://postgresql.life/post/charly_batista/) - Charly Batista (Percona) - July 11, 2022
 - [pg_stat_monitor :: Younger sibling of pg_stat_statements with more knowledge](https://sujithtee.medium.com/pg-stat-monitor-younger-sibling-of-pg-stat-statements-with-more-knowledge-736afb1f05ac) - Sujith Thiravium - October 19, 2021
@@ -82,5 +88,9 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [The Future for Open Source Lies in Platforms, not Projects](https://digitalisationworld.com/blogs/57156/the-future-for-open-source-lies-in-platforms-not-projects) - Ann Schlemmer
+- [The Future of Open Source in 2023](https://www.openaccessgovernment.org/the-future-of-open-source-in-2023/147776) - Ann Schlemmer - November 18, 2022
+- [Deploying and Managing Open Source Databases](https://techstrong.tv/videos/interviews/deploying-and-managing-open-source-databases-ann-schlemmer-percona) - Ann Schlemmer and Mike Vizard
+- [Peter Zaitsev Of Percona: 5 Things I Wish Someone Told Me Before I Became a CEO](https://medium.com/authority-magazine/peter-zaitsev-of-percona-5-things-i-wish-someone-told-me-before-i-became-a-ceo-83de276dd551) - Peter Zaitsev - November 14, 2022
 - [Don’t miss these talks on the Google community track at Percona Live Online](https://medium.com/google-cloud/dont-miss-these-talks-on-the-google-community-track-at-percona-live-online-12b097a64f10) -
   Jan Kleinert - March 3, 2021
