@@ -70,6 +70,7 @@ Use Percona Toolkit to get the most out of your MySQL and MongoDB database setup
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% /grid %}}
+
 {{% /contentblock %}}
 
 {{% hero background="contribute.png" %}}
@@ -79,6 +80,4 @@ Data is the main component of almost every larger application, which is why you 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!
 {{% /herotext %}}
 {{% /hero %}}
-
-
 
