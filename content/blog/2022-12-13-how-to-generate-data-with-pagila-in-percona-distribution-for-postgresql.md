@@ -6,7 +6,7 @@ tags: ["Docker", "PostgreSQL", "Pagila", "Database"]
 authors:
   - edith_puclla
 images:
-  - blog/2022/8/pmm-ubuntu-overview.png
+  - blog/2022/12/percona-pagila.png
 slug: how-to-generate-data-with-pagila-in-percona-distribution-for-postgresql
 ---
 
@@ -24,9 +24,9 @@ Let's start it!
   - You can install Docker by following this [guide](https://docs.docker.com/engine/install/ubuntu/).
   - Manage Docker as a non-root user: **_sudo usermod -aG docker $USER_**
 
-## Installing Percona Distribution Postgresql
+## Installing Percona Distribution for PostgreSQL
 
-1. On your terminal, pull the Percona PostgreSQL image. I am using the 12.13 version.
+1. On your terminal, pull the Percona Distribution for PostgreSQL image. I am using the 12.13 version.
 
 ```bash
 docker pull perconalab/percona-distribution-postgresql:12.13
@@ -71,25 +71,33 @@ We will execute the script pagila-schema.sql inside percona-postgres container. 
 cat pagila-schema.sql | docker exec -i percona-postgres psql -U postgres -d perconadb
 ```
 
-5. Insert all data:
+![Output](blog/2022/12/pagila-schema-output.png)
+
+5. Insert all data.
    We will execute pagila-data.sql script inside the container to insert data in all the tables we created before.
 
 ```bash
 cat pagila-data.sql | docker exec -i percona-postgres psql -U postgres -d perconadb
 ```
 
-6. Validate the data; let’s check if the tables were created and if it is populated with data
+![Output](blog/2022/12/pagila-data-output.png)
+
+6. Validate the data; let’s check if the tables were created and if it is populated with data.
 
 ```bash
 docker exec -it percona-postgres psql -U postgres
-\c pagila
+\c perconadb
 \dt
 
 ```
 
+![Output](blog/2022/12/dt-output.png)
+
 ```postgresql
 SELECT * FROM inventory;
 ```
+
+![Output](blog/2022/12/inventory-output.png)
 
 You are ready! The data is there and ready to be used.
 You can refer to the official documentation of [Percona Distribution for PostgreSQL](https://www.percona.com/software/postgresql-distribution) if you want to know the entire collection of tools to help you manage your PostgreSQL database system.
