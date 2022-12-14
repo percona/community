@@ -88,6 +88,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Data Protection Predictions from Experts for 2023](https://solutionsreview.com/backup-disaster-recovery/data-protection-predictions-from-experts-for-2023/) - Timothy King - December 13, 2022
 - [Trend-Setting Products in Data and Information Management for 2023](https://www.dbta.com/Editorial/Trends-and-Applications/Trend-Setting-Products-in-Data-and-Information-Management-for-2023-156187.aspx) - Stephanie Simone - December 8, 2022
 - [The Future for Open Source Lies in Platforms, not Projects](https://digitalisationworld.com/blogs/57156/the-future-for-open-source-lies-in-platforms-not-projects) - Ann Schlemmer
 - [The Future of Open Source in 2023](https://www.openaccessgovernment.org/the-future-of-open-source-in-2023/147776) - Ann Schlemmer - November 18, 2022
