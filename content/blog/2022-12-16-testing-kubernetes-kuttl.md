@@ -2,10 +2,12 @@
 title: "Testing Kubernetes with KUTTL"
 date: "2022-12-16T00:00:00+00:00"
 draft: false
-tags: ['blog', 'PMM', 'DBaaS', 'KUTTL', 'testing']
+tags: ['PMM', 'DBaaS', 'KUTTL', 'testing']
 authors:
   - andrew_minkin
 slug: 'testing-kubernetes-with-kuttl'
+images:
+  - blog/2022/12/K8S-KUTTL.jpg
 ---
 
 Automated testing is the only way to be sure that your code works. Enabling automated testing can be hard and we say a lot of tools to write automated tests in the industry since the beginning. Some veterans in the industry may remember Selenium,  Cucumber frameworks that help automate testing in the browser. However, testing in Kubernetes can be hard.
@@ -58,6 +60,7 @@ e2e-tests
 
 2 directories, 19 files
 ```
+
 Let's discuss these YAML files more
 
 1. kind.yml contains settings to run [Kind](https://kind.sigs.k8s.io/)
@@ -77,6 +80,7 @@ artifactsDir: /tmp/             # Path to a directory to store artifacts such as
 testDirs:
 - e2e-tests/tests               # Path to directories that have test steps
 ```
+
 Kind config is quite easy
 
 ```yaml
@@ -92,6 +96,7 @@ containerdConfigPatches:
   [plugins."io.containerd.grpc.v1.cri".registry.mirrors."localhost:5000"]
     endpoint = ["http://kind-registry:5000"]
 ```
+
 The aforementioned config will use local registry and will create 3 k8s worker nodes controlled by control plane
 
 ## Writing tests
@@ -106,6 +111,7 @@ timeout: 10 # Timeout for the test step
 commands:
   - command: kubectl apply -f https://raw.githubusercontent.com/percona/percona-xtradb-cluster-operator/v${PXC_OPERATOR_VERSION}/deploy/bundle.yaml -n "${NAMESPACE}"
 ```
+
 KUTTL test steps easily extensible with [commands](https://kuttl.dev/docs/testing/reference.html#commands). One can run even scripts as a prerequisite for a test case. PXC operator installs CRDs and creates a deployment and here's an example of assertion.
 
 ```
@@ -157,6 +163,7 @@ status:
   replicas: 1
   updatedReplicas: 1
 ```
+
 Our first test is ready and one needs to run `kubectl kuttl test --config ./e2e-tests/kuttl.yml` to run kuttl.
 
 ## More advanced tests
@@ -200,6 +207,7 @@ func (r *DatabaseReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return controller.Complete(r)
 }
 ```
+
 The `controller.Owns` sets up a controller to watch specified resources and once they were changed it'll run a reconciliation loop to sync changes. Also, it checks that operator is present in the cluster by checking that deployment and CRDs are available. It means that to make the operator work correctly in tests we need to choose from the following options
 
 1. Restart operator once upsteam operator was installed by sending `HUP` signal
