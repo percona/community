@@ -183,6 +183,18 @@
 
   "Events":[
   {
+    "youtube_id": "3rQZpq_HXhY",
+    "title": "PGConf NYC 2022 - A Deep Dive into PostgreSQL Indexing",
+    "date": "Sept 23, 2022",
+    "authors": "Ibrar Ahmed (Percona)"
+  },
+  {
+    "youtube_id": "_i4MLU4_fAQ",
+    "title": "PGConf NYC 2022 - PostgreSQL Replication Conflicts: Avoiding Pitfalls",
+    "date": "Sept 22, 2022",
+    "authors": "Hamid Quddus Akhtar (Percona)"
+  },
+  {
     "youtube_id": "bqPIMHw5W08",
     "title": "All Things Open 2022 - Becoming Cloudy with Kubernetes",
     "date": "Nov 29, 2022",
