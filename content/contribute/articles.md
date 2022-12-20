@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - december 12, 2022
 - [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
 - [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) -  Tibor Köröcz and Francisco Bordenave - November 7, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - October 20, 2022
