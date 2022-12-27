@@ -51,6 +51,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [Migrating MongoDB to Kubernetes](https://dok.community/blog/migrating-mongodb-to-kubernetes/) - Sergey Pronin - December 10, 2022
 - [6 Best MongoDB Backup Tools](https://www.comparitech.com/net-admin/best-mongodb-backup-tools/) - Stephen Cooper - September 12, 2022
 - [Deploying a custom MongoDB operator using Helm Charts](https://dev.to/devtron_/deploying-a-custom-mongodb-operator-using-helm-charts-5hg2) - Devtron - June 28, 2022
 - [Percona backup for MongoDB caveats](https://medium.com/@k5350153197/percona-backup-for-mongodb-caveats-1240985f8f8f) - Ilshat - May 10, 2022
