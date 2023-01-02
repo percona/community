@@ -22,17 +22,17 @@ Your community hub for installing, running, optimizing, and learning everything 
 
 {{% grid size=3 %}}
 {{% griditem %}}
-{{< postpreview link="/mongodb/" title="MongoDB" image="home/galaxy-leaf.jpg" >}}
+{{< postpreview link="/mongodb/" title="MongoDB" >}}
 Learn about Percona's Distribution for MongoDB and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/mysql/" title="MySQL" image="home/galaxy-dolphin.jpg" >}}
+{{< postpreview link="/mysql/" title="MySQL" >}}
 Learn about Percona's Distribution for MySQL and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/postgresql/" title="PostgreSQL" image="home/galaxy-elephant.jpg" >}}
+{{< postpreview link="/postgresql/" title="PostgreSQL" >}}
 Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
