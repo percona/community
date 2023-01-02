@@ -90,6 +90,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Solutions Review Names 9 Data Management Vendors to Watch, 2023](https://solutionsreview.com/data-management/solutions-review-names-data-management-vendors-to-watch-2023/) - Timothy King - December 15, 2022
 - [Data Protection Predictions from Experts for 2023](https://solutionsreview.com/backup-disaster-recovery/data-protection-predictions-from-experts-for-2023/) - Timothy King - December 13, 2022
 - [Trend-Setting Products in Data and Information Management for 2023](https://www.dbta.com/Editorial/Trends-and-Applications/Trend-Setting-Products-in-Data-and-Information-Management-for-2023-156187.aspx) - Stephanie Simone - December 8, 2022
 - [The Future for Open Source Lies in Platforms, not Projects](https://digitalisationworld.com/blogs/57156/the-future-for-open-source-lies-in-platforms-not-projects) - Ann Schlemmer
