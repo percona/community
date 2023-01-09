@@ -1,6 +1,18 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "aliR9DWZFZU",
+    "title": "How To Generate Data With Pagila in Percona Distribution for PostgreSQL",
+    "date": "January 5, 2022",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
+    "youtube_id": "ca-yAbbec1c",
+    "title": "PostgreSQL Minor Version Upgrade on Redhat – Percona PostgreSQL Tutorial",
+    "date": "January 5, 2022",
+    "authors": "Jobin Augustine (Percona)"
+  },
+  {
     "youtube_id": "Nut7jN0o7Rs",
     "title": "Encryption with Percona Server for MySQL - Percona Virtual Tech Days",
     "date": "Dec 15, 2022",
@@ -566,6 +578,18 @@
 
 
   "Other":[
+  {
+    "youtube_id": "7gV5Utw4QAQ",
+    "title": "Learn More About Percona and Open Source",
+    "date": "January 6, 2023",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
+    "youtube_id": "6j85YNYab9s",
+    "title": "Percona Swag Unboxing | Hacktoberfest 2022",
+    "date": "January 6, 2023",
+    "authors": "Cyber Security10"
+  },
   {
     "youtube_id": "jLUfW__su_w",
     "title": "Charm in the Wild | October 2022",
