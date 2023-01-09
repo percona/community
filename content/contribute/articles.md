@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - december 12, 2022
 - [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
 - [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) -  Tibor Köröcz and Francisco Bordenave - November 7, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - October 20, 2022
@@ -50,6 +51,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [Migrating MongoDB to Kubernetes](https://dok.community/blog/migrating-mongodb-to-kubernetes/) - Sergey Pronin - December 10, 2022
 - [6 Best MongoDB Backup Tools](https://www.comparitech.com/net-admin/best-mongodb-backup-tools/) - Stephen Cooper - September 12, 2022
 - [Deploying a custom MongoDB operator using Helm Charts](https://dev.to/devtron_/deploying-a-custom-mongodb-operator-using-helm-charts-5hg2) - Devtron - June 28, 2022
 - [Percona backup for MongoDB caveats](https://medium.com/@k5350153197/percona-backup-for-mongodb-caveats-1240985f8f8f) - Ilshat - May 10, 2022
@@ -88,6 +90,10 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Facing Data Dilemmas: Is There A Simple Fix For CIOs?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/01/05/facing-data-dilemmas-is-there-a-simple-fix-for-cios/) - Ann Schlemmer - January 5, 2023
+- [Solutions Review Names 9 Data Management Vendors to Watch, 2023](https://solutionsreview.com/data-management/solutions-review-names-data-management-vendors-to-watch-2023/) - Timothy King - December 15, 2022
+- [Data Protection Predictions from Experts for 2023](https://solutionsreview.com/backup-disaster-recovery/data-protection-predictions-from-experts-for-2023/) - Timothy King - December 13, 2022
+- [Trend-Setting Products in Data and Information Management for 2023](https://www.dbta.com/Editorial/Trends-and-Applications/Trend-Setting-Products-in-Data-and-Information-Management-for-2023-156187.aspx) - Stephanie Simone - December 8, 2022
 - [The Future for Open Source Lies in Platforms, not Projects](https://digitalisationworld.com/blogs/57156/the-future-for-open-source-lies-in-platforms-not-projects) - Ann Schlemmer
 - [The Future of Open Source in 2023](https://www.openaccessgovernment.org/the-future-of-open-source-in-2023/147776) - Ann Schlemmer - November 18, 2022
 - [Deploying and Managing Open Source Databases](https://techstrong.tv/videos/interviews/deploying-and-managing-open-source-databases-ann-schlemmer-percona) - Ann Schlemmer and Mike Vizard

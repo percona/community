@@ -22,17 +22,17 @@ Your community hub for installing, running, optimizing, and learning everything 
 
 {{% grid size=3 %}}
 {{% griditem %}}
-{{< postpreview link="/mongodb/" title="MongoDB" image="home/galaxy-leaf.jpg" >}}
+{{< postpreview link="/mongodb/" title="MongoDB" >}}
 Learn about Percona's Distribution for MongoDB and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/mysql/" title="MySQL" image="home/galaxy-dolphin.jpg" >}}
+{{< postpreview link="/mysql/" title="MySQL" >}}
 Learn about Percona's Distribution for MySQL and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/postgresql/" title="PostgreSQL" image="home/galaxy-elephant.jpg" >}}
+{{< postpreview link="/postgresql/" title="PostgreSQL" >}}
 Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{< /postpreview >}}
 {{% /griditem %}}
@@ -70,6 +70,7 @@ Use Percona Toolkit to get the most out of your MySQL and MongoDB database setup
 {{< /postpreview >}}
 {{% /griditem %}}
 {{% /grid %}}
+
 {{% /contentblock %}}
 
 {{% hero background="contribute.png" %}}
@@ -79,6 +80,4 @@ Data is the main component of almost every larger application, which is why you 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!
 {{% /herotext %}}
 {{% /hero %}}
-
-
 

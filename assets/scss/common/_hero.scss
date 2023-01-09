@@ -72,11 +72,11 @@
       }
     }
     background-color: transparent;
-    color: $light;
+    color: $dark;
     a {
-      color: $light;
+      color: $dark;
       &:hover {
-        color: $light;
+        color: $dark;
       }
     }
   }
@@ -128,5 +128,10 @@
     border-radius: 0.75rem;
     &.opaque {
       background: rgba(0,0,0,0.95);
+      color: $light;
+
+      a {
+        color: $light;   
+      }
     }
 }
