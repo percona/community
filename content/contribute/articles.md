@@ -90,6 +90,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Facing Data Dilemmas: Is There A Simple Fix For CIOs?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/01/05/facing-data-dilemmas-is-there-a-simple-fix-for-cios/) - Ann Schlemmer - January 5, 2023
 - [Solutions Review Names 9 Data Management Vendors to Watch, 2023](https://solutionsreview.com/data-management/solutions-review-names-data-management-vendors-to-watch-2023/) - Timothy King - December 15, 2022
 - [Data Protection Predictions from Experts for 2023](https://solutionsreview.com/backup-disaster-recovery/data-protection-predictions-from-experts-for-2023/) - Timothy King - December 13, 2022
 - [Trend-Setting Products in Data and Information Management for 2023](https://www.dbta.com/Editorial/Trends-and-Applications/Trend-Setting-Products-in-Data-and-Information-Management-for-2023-156187.aspx) - Stephanie Simone - December 8, 2022
