@@ -339,8 +339,24 @@ Execution time depends on the CPU cores available on your machine. I'm running t
 Once the script finishes, you can check the data in the database.
 
 ### MySQL and PostgreSQL
+
+Connect to the `company` database.
+
+MySQL:
+
 ```sql
 use company;
+```
+
+PostgreSQL:
+
+```sql
+\c company
+```
+
+Then, get the number of records.
+
+```sql
 select count(*) from employees;
 ```
 
