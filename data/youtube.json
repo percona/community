@@ -207,6 +207,12 @@
 
   "Events":[
   {
+    "youtube_id": "Bon9us7YBjY",
+    "title": "Uptime by Aiven 2022 - A Journey to MySQL in K8s",
+    "date": "Jan 6, 2023",
+    "authors": "Elisa Usai (dbi services)"
+  },
+  {
     "youtube_id": "eIRCeIMOomc",
     "title": "KCD Spain 2022 - From Unemployed to Technology Evangelist in the Open Source World",
     "date": "Nov 15, 2022",
