@@ -90,6 +90,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [What to Expect in the World of Open-Source Databases](https://vmblog.com/archive/2023/01/11/percona-2023-predictions-what-to-expect-in-the-world-of-open-source-databases.aspx#.Y77s0uxBx_S) - Donnie Berkholz - January 11, 2023
 - [Facing Data Dilemmas: Is There A Simple Fix For CIOs?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/01/05/facing-data-dilemmas-is-there-a-simple-fix-for-cios/) - Ann Schlemmer - January 5, 2023
 - [Solutions Review Names 9 Data Management Vendors to Watch, 2023](https://solutionsreview.com/data-management/solutions-review-names-data-management-vendors-to-watch-2023/) - Timothy King - December 15, 2022
 - [Data Protection Predictions from Experts for 2023](https://solutionsreview.com/backup-disaster-recovery/data-protection-predictions-from-experts-for-2023/) - Timothy King - December 13, 2022
