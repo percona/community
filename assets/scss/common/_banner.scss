@@ -1,17 +1,5 @@
 @import "variables";
 
-.home_banner {
-
-  .home_banner__content
-  {
-    max-width: $width-max;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .banner {
   background-color: $palette2;
   background-position: center;
