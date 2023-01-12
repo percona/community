@@ -3,7 +3,6 @@ title: "Run Percona: Embrace Open"
 description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 ---
 
-
 {{% banner_home  %}}{{% /banner_home %}}
 
 {{% bannerwithicon background="purplegalaxy.jpg" icon="home/Stickers-Percona-Polyglots-250.png" %}}
