@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "uGADVJTodYE",
+    "title": "Creating a Hoppscotch Docker Extension for API Development",
+    "date": "January 10, 2022",
+    "authors": "Edith Puclla (Percona), James Spurin (DiveInto)"
+  },
+  {
     "youtube_id": "aliR9DWZFZU",
     "title": "How To Generate Data With Pagila in Percona Distribution for PostgreSQL",
     "date": "January 5, 2022",
@@ -584,6 +590,12 @@
 
 
   "Other":[
+  {
+    "youtube_id": "Co_gVUFlGdA",
+    "title": "Docker Community Updates and Awards",
+    "date": "January 10, 2023",
+    "authors": "Eva Bojorges and Alba Roza (Docker)"
+  },
   {
     "youtube_id": "7gV5Utw4QAQ",
     "title": "Learn More About Percona and Open Source",
