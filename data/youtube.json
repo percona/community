@@ -588,6 +588,80 @@
   }],
 
 
+  "Percona University Istanbul 2022 (Türkiye)":[
+    {
+    "youtube_id": "HGhFVOabIJM",
+    "title": "Percona University - Istanbul Türkiye November 2022",
+    "date": "November 5, 2022",
+    "authors": "Percona"
+  },
+  {
+    "youtube_id": "7vn70SQLhqo",
+    "title": "MySQL Cookbook: Recipes for Developers",
+    "date": "November 5, 2022",
+    "authors": "Alkin Tezuysal (ChistaData) and Sveta Smirnova (Percona)"
+  },
+  {
+    "youtube_id": "kOpuWk8UX4o",
+    "title": "State of Open Source Databases and How Percona Contributes",
+    "date": "November 5, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
+    "youtube_id": "uYOv2fk3FY4",
+    "title": "Easy Way of Application Monitoring",
+    "date": "November 5, 2022",
+    "authors": "Cihan Tunali (SmartMessage)"
+  },
+  {
+    "youtube_id": "_PI30Ayzdq8",
+    "title": "Building an Open Source MongoDB-Compatible Database on Top of PostgreSQL",
+    "date": "November 5, 2022",
+    "authors": "Alexey Palazhchenko (FerretDB)"
+  },
+  {
+    "youtube_id": "4enCgmXnqSY",
+    "title": "Whether Tuning MySQL Configuration Important?",
+    "date": "November 5, 2022",
+    "authors": "Roman Agabekov (Releem)"
+  },
+  {
+    "youtube_id": "0O-bkL0CmBU",
+    "title": "Private DBaaS: Why You Need it, How to Build It",
+    "date": "November 5, 2022",
+    "authors": "Sergey Pronin (Percona)"
+  },
+  {
+    "youtube_id": "kBwK-DGiRIc",
+    "title": "Getting Started with Percona Monitoring and Management",
+    "date": "November 5, 2022",
+    "authors": "Sergey Krupnik (HostedPMM)"
+  },
+  {
+    "youtube_id": "M6hQTHwXvIk",
+    "title": "Chaos Testing of a Postgres Cluster on Kubernetes",
+    "date": "November 5, 2022",
+    "authors": "Nikolay Sivko (Coroot)"
+  },
+  {
+    "youtube_id": "5UmSzmZY85U",
+    "title": "All About Postgres Security",
+    "date": "November 5, 2022",
+    "authors": "Ibrar Ahmed (Percona)"
+  },
+  {
+    "youtube_id": "-Kc30kHY6XU",
+    "title": "MySQL Performance for DevOps",
+    "date": "November 5, 2022",
+    "authors": "Sveta Smirnova (Percona)"
+  },
+  {
+    "youtube_id": "fVbtNxMrpgI",
+    "title": "Running MySQL on K8s. Deployment, Scaling, Backups and Advanced Configuration",
+    "date": "November 5, 2022",
+    "authors": "Ananias Tsalouchidis (Percona)"
+  }],
+
 
   "Other":[
   {
