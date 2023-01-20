@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "4NcNYVNUeog",
+    "title": "MySQL Up and Running in 30 Minutes",
+    "date": "January 10, 2022",
+    "authors": "Vinicius Grippa (Percona), Sergey Kuzmichev (Investing.com)"
+  },
+  {
     "youtube_id": "uGADVJTodYE",
     "title": "Creating a Hoppscotch Docker Extension for API Development",
     "date": "January 10, 2022",
