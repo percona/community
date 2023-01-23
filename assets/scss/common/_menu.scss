@@ -23,22 +23,22 @@
     }
 
     img {
-      height:$height-header - ($height-menu-underline*2);
+      height:$height-header-img;
     }
   }
 }
 
 @mixin menu-color-light {
   a {
-    color: $dark;
-    border-bottom: 0 solid $palette3;
+    color: $light;
+    border-bottom: 0 solid $header-color;
 
     &:hover {
       color: $palette2;
-      border-bottom-color: $palette2;
+      border-bottom-color: $palette4;
     }
     &:visited {
-      color: $dark;
+      color: $light;
     }
   }
 }

@@ -1,5 +1,6 @@
-$font-sans: Arial, sans-serif;
-$font-serif: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
+$font-sans: "Poppins",Helvetica,Arial,Lucida,sans-serif;
+$font-heading: "Poppins",Helvetica,Arial,Lucida,sans-serif;
+$font-serif: "Poppins",Helvetica,Arial,Lucida,sans-serif;
 $font-mono: "Lucida Console", Monaco, monospace;
 $font-heading: $font-serif;
 
@@ -9,8 +10,11 @@ $padding-right-page: 1.5rem;
 $transition-length: .233s;
 
 $width-max:1200px;
-$height-header:3rem;
+$height-header: 3.2rem;
+$height-header-img: 1rem;
 $height-menu-underline: 0.2rem;
+
+$header-color: #00162b;
 
 $size-h2: 1.5rem;
 $size-h3: 1.25rem;
@@ -23,7 +27,10 @@ $border-radius: 0.2rem;
 
 /* colors */
 $palette1: #fe7f2d;
-$palette2: #004966;
+$palette2: #42536d;
 $palette3: #fefefe;
+$palette4: #00BDA5;
+
+$meta: #8897b3;
 $light: #ffffff;
 $dark: #333333;

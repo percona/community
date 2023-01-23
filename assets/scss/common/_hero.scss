@@ -1,5 +1,53 @@
 @import "variables";
 
+.hero-blog {
+  background: linear-gradient(168.7deg, #00162b 19.55%, #006a5d 110.59%);
+  background-blend-mode: overlay, darken, normal;
+}
+
+.hero-blog-text {
+    color: #ced5e3 !important; 
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 5%;
+
+    p {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    p:first-child {margin-top: 0;}
+
+    small {font-size: 0.8rem;}
+
+    h1 {
+      font-family: $font-sans;
+      font-size: 3.2rem;
+      line-height: 1em;
+      font-weight: 400;
+    }
+
+    a {
+      color: #ced5e3 !important;
+    }
+
+    &.opaque {
+      background: rgba(0,0,0,0.95);
+      color: $light;
+    }
+  
+  @media screen and (max-width: 760px) {
+
+    text-align: left;
+    
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1em;
+    }
+
+  }
+}
+
 .hero {
   background-color: $palette2;
   background-position: center;
@@ -112,6 +160,7 @@
     }
   }
 }
+
 
 .contentblock {
     padding-top: 2rem;

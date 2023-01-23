@@ -61,6 +61,8 @@ hr {
   position: relative;
 
   .meta {
+    color: $meta;
+    font-weight: 600;
     font-variant: small-caps;
     .byline {
       display:none;
@@ -71,6 +73,11 @@ hr {
     .calendar {
       display: none;
     }
+
+    a {
+      color: $meta;
+      text-decoration-color: $meta;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -79,8 +86,8 @@ hr {
 
   p, ul, ol, figure, dl, hr {
     margin-top: 0.75rem;
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
   }
 
   q {
@@ -144,26 +151,27 @@ hr {
 
   h1 {
     font-size:2rem;
-    font-weight: normal;
-    line-height:2.5rem;
+    font-weight: 600;
+    line-height:2rem;
     margin-top:1.5rem;
+    margin-bottom:1rem;
 
     @media screen and (min-width: 760px) {
       font-size: 2rem;
-      line-height: 2.5rem;
+      line-height: 2rem;
       margin-top: 1.5rem;
     }
     @media screen and (min-width: 900px) {
-      font-size: 2.5rem;
-      line-height: 3rem;
+      font-size: 2rem;
+      line-height: 2rem;
       margin-top: 3rem;
     }
     @media screen and (min-width: 1200px) {
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 2rem;
+      line-height: 2rem;
       margin-top: 3rem;
     }
-    margin-bottom:0;
+
   }
 
 
