@@ -9,7 +9,7 @@ images:
 slug: k8s-app-db-binding
 ---
 
-[dbaas-operator](https://github.com/percona/dbaas-operator) is Yeat Another DBaaS Kubernetes Operator (need to suggest yadbko as a name) that tries to simplify and unify Database Cluster deployments by building a higher abstraction layer on top of [Percona Kubernetes Operators](https://www.percona.com/software/percona-kubernetes-operators).
+[dbaas-operator](https://github.com/percona/dbaas-operator) is Yet Another DBaaS Kubernetes Operator (need to suggest yadbko as a name) that tries to simplify and unify Database Cluster deployments by building a higher abstraction layer on top of [Percona Kubernetes Operators](https://www.percona.com/software/percona-kubernetes-operators).
 
 So it becomes much easier to deploy the DB cluster with `dbaas-operator` and [PMM DBaaS](https://docs.percona.com/percona-monitoring-and-management/get-started/dbaas.html) on top of it.
 
@@ -115,7 +115,7 @@ spring-petclinic-f7f587c5c-rvq2v                     0/1     CrashLoopBackOff   
 
 As we didn't create a binding yet, the application can't connect to the database and thus fails.
 
-Let us connect it and verify it is working:
+Let us bind application to the database and verify it is working:
 
 ```sh
 $ cat <<EOF | kubectl apply -f -
