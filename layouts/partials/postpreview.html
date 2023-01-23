@@ -8,7 +8,10 @@
 {{ else }}
 <p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape  -}}</p>
 {{ end }}
-{{ if not .Hideread }}<p class="readmore">Read more &raquo;</p>{{ end }}
+<div class="bottom">
+    <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+    <p class="post-type">Article</p>
+</div>
 </div>
 {{ end }}
 </a>
