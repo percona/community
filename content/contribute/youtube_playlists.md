@@ -4,18 +4,15 @@ description: "Talks and Webinars With Percona Experts"
 layout: topics
 ---
 
+{{% hero-gradient class="night" %}}
 
-{{% hero background="purplegalaxy.jpg" %}}
-{{% herotext %}}
-
-## Learn From the Leading Database Experts Talks and Share Your Knowledge With Others
+# Learn From the Leading Database Experts Talks and Share Your Knowledge With Others
 
 Here we gathered together videos with talks, webinars and tutorials from Percona experts and community members about Percona software. They are organized in YouTube playlists. 
 
 Help us expand this knowledgebase! Share and like videos, participate in live streams, record your own video tutorials and send them to us. 
 
-{{% /herotext %}}
-{{% /hero %}}
+{{% /hero-gradient %}}
 
 {{% contentblock %}}
 

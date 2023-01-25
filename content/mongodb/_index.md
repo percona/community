@@ -1,11 +1,11 @@
 ---
 title: MongoDB
 description: "Run Percona: Embrace Open with Percona Distribution for MongoDB"
+hero_title: "MongoDB"
+hero_description: "How can you help?"
 images:
     - /mongodb/cover-social.jpg
 ---
-
-*How can you help?*
 
 ## Download, Try, Give Feedback, &  Enhance:
 

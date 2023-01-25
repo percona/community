@@ -3,14 +3,13 @@ title: "Percona Community"
 description: "Percona Community - Contributions and Contributors"
 ---
 
-{{% hero background="purplegalaxy.jpg" %}}
-{{% herotext %}}
+{{% hero-gradient class="aqua" %}}
 
-## Percona Community
+# Percona Community
 
 We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more - we also contribute to other open source projects and communities! Let's make technology better!
-{{% /herotext %}}
-{{% /hero %}}
+
+{{% /hero-gradient %}}
 
 {{% hero %}}
 
@@ -31,14 +30,14 @@ For content inspiration, please check the [open topics](/contribute/opentopics) 
 
 {{% /hero %}}
 
-{{% hero background="orangegalaxy.jpg" %}}
-{{% herotext %}}
+{{% hero-gradient class="night" %}}
 
 ## Code of Conduct
 
 Our community members care about integrating optimized databases efficiently into their overall architecture. There is no place for harassment of any kind. Please refer to our [Code of Conduct](/contribute/coc) for more information.
-{{% /herotext %}}
-{{% /hero %}}
+
+{{% /hero-gradient %}}
+
 
 {{% hero %}}
 
@@ -87,11 +86,10 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% /grid %}}
 {{% /hero %}}
 
-{{% hero background="contribute.png" %}}
-{{% herotext class="opaque" %}}
+{{% hero-gradient class="aqua" %}}
 
 ## Engineering Monthly Meeting
 
 Our monthly [Engineering meetings](/contribute/engineeringmeetings) take place on [Discord](http://per.co.na/discord) in the voice channel. Join us and let's chat about technical topics, open pull requests, bugs, and plans!
-{{% /herotext %}}
-{{% /hero %}}
+
+{{% /hero-gradient %}}

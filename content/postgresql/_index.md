@@ -1,11 +1,12 @@
 ---
 title: "PostgreSQL"
 description: "Run Percona: Embrace Open with Percona Distribution for PostgreSQL"
+hero_title: "PostgreSQL"
+hero_description: "How can you help?"
 images:
 - postgresql/social-cover.jpg
 ---
 
-*How can you help?*
 
 ## Download, Try, Give Feedback, & Enhance
 

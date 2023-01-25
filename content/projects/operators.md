@@ -1,9 +1,10 @@
 ---
 title: "Percona Kubernetes Operators"
 description: "If you are using Kubernetes, you might have wondered how to best deal with database clusters. This is done by controllers in Kubernetes configuration files - our Kubernetes Operators allow you to easily manage complex deployments by extending the Kubernetes API with custom resources."
+blog_tags: ["Kubernetes","Cloud","Operators"]
+hero_description: "How can you help?"
+hero_title: "Percona Kubernetes Operators"
 ---
-
-*How can you help?*
 
 ## Download, Try, Give Feedback, & Enhance
 
@@ -59,4 +60,3 @@ Also, our team gratefully receives all the reviews and loves to read them.
 
 *   [TrustRadius](https://www.trustradius.com/reviews/new?product=percona-kubernetes-operator-for-mysql-and-mongodb#product)
 
-{{% blogpostsbytags tags="Kubernetes,Cloud,Operators" %}}
