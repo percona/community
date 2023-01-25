@@ -219,6 +219,12 @@
 
   "Events":[
   {
+    "youtube_id": "6qLC9nftVEY",
+    "title": "#CCOSS 11.22 - Mi viaje en open source contribuidor a evangelizador técnico",
+    "date": "Jan 24, 2023",
+    "authors": "Mario García (Percona)"
+  },
+  {
     "youtube_id": "Bon9us7YBjY",
     "title": "Uptime by Aiven 2022 - A Journey to MySQL in K8s",
     "date": "Jan 6, 2023",
