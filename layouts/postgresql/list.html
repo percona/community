@@ -2,16 +2,23 @@
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
 {{ end }}
 
-{{ define "main" }}
+{{ define "mainwrapper" }}
     {{ if or .Title .Content }}
 
-        <div class="text">
+        <div class="hero hero-gradient night"><div class="contentblock">
+            <div class="hero-text">
+                <h1>{{ .Params.hero_title }}</h1>
+                <p>{{ .Params.hero_description }}</p>
+            </div>
+        </div></div>
 
-            <h1>{{ .Title }}</h1>
-            <div class="body">
-                {{ .Content }}
+        <div class="page-main">
+            <div class="text body">
+            
+            {{ .Content }}
 
-                {{ partial "sharing.html" . }} 
+            {{ partial "sharing.html" . }} 
+
             {{ range where .Pages "Params.block" "postgresql-links" }}
 
                 <h2>{{ .Title }}</h2>
@@ -21,7 +28,7 @@
                 {{ range where .Site.Pages.ByWeight "Params.lessons" "postgresql" }}
 
                     <h3>{{ .Title }}</h3>
-                    <div class="postgresql-links">
+                    <div class="postgresql-links branded">
                         <h4>Blog posts</h4>
 
                         <div class="grid-links grid-links--4 ">
@@ -54,10 +61,12 @@
 
             {{ end }}
             </div>
-        </div>
 
         {{ partial "sharing.html" . }} 
+
+        </div>
         
+        <div class="contentblock branded">
         <h2>Community Blog Posts</h2>
         <div class="grid grid--3">
 
@@ -65,9 +74,10 @@
 
             {{- range first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $t ) -}}
                 <div class="grid__item">
-                {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+                {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content  "PublishDate" .PublishDate) }}
                 </div>
             {{- end -}}
+        </div>
         </div>
     {{ end }}
 {{ end }}

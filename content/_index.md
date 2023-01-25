@@ -72,11 +72,12 @@ Use Percona Toolkit to get the most out of your MySQL and MongoDB database setup
 
 {{% /contentblock %}}
 
-{{% hero background="contribute.png" %}}
-{{% herotext class="opaque" %}}
+{{% hero-gradient class="aqua" %}}
+
 Data is the main component of almost every larger application, which is why you will find various guides, blog posts, and other information around software architecture as well as in-depth knowledge about databases in this community.
 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!
-{{% /herotext %}}
-{{% /hero %}}
+
+{{% /hero-gradient %}}
+
 

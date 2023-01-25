@@ -25,6 +25,36 @@ html, body {
   }
 }
 
+.body {
+  
+  .meta {
+    padding-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 760px) {
+    padding: 2rem;
+
+    .body {
+      padding: 1rem 4rem;    
+    }
+  } 
+
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+p:empty {display:none;}
+
+.branded {
+
+  h2 {
+    color: $color-branded-h2; 
+  }
+
+}
+
 hr {
   border:0;
   height:2px;
@@ -60,26 +90,6 @@ hr {
 @mixin typography($text-width, $text-margin-left) {
   position: relative;
 
-  .meta {
-    color: $meta;
-    font-weight: 600;
-    font-variant: small-caps;
-    .byline {
-      display:none;
-    }
-    .line {
-      display:inline-block;
-    }
-    .calendar {
-      display: none;
-    }
-
-    a {
-      color: $meta;
-      text-decoration-color: $meta;
-    }
-  }
-
   h1, h2, h3, h4, h5, h6 {
     @include heading;
   }
@@ -88,6 +98,11 @@ hr {
     margin-top: 0.75rem;
     font-size: 0.75rem;
     line-height: 1.5rem;
+  }
+
+  a {
+    color: $link;
+    text-decoration-color: $link;
   }
 
   q {
@@ -158,17 +173,12 @@ hr {
 
     @media screen and (min-width: 760px) {
       font-size: 2rem;
-      line-height: 2rem;
+      line-height: 2.5rem;
       margin-top: 1.5rem;
     }
     @media screen and (min-width: 900px) {
       font-size: 2rem;
-      line-height: 2rem;
-      margin-top: 3rem;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 2rem;
-      line-height: 2rem;
+      line-height: 2.5rem;
       margin-top: 3rem;
     }
 
@@ -202,6 +212,30 @@ hr {
 
   em {
     font-style: italic;
+  }
+
+  .meta {
+    color: $meta;
+    font-weight: 600;
+    font-variant: small-caps;
+    .byline {
+      display:none;
+    }
+    .line {
+      display:inline-block;
+    }
+    .calendar {
+      display: none;
+    }
+
+    a {
+      color: $meta;
+      text-decoration-color: $meta;
+    }
+    a:hover {
+      color: $link-hover;
+      text-decoration-color: $link-hover;
+    }
   }
 
   code {

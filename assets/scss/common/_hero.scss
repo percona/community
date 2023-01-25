@@ -1,15 +1,26 @@
 @import "variables";
 
-.hero-blog {
-  background: linear-gradient(168.7deg, #00162b 19.55%, #006a5d 110.59%);
-  background-blend-mode: overlay, darken, normal;
+
+.hero {
+
+  .contentblock {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+
 }
 
-.hero-blog-text {
-    color: #ced5e3 !important; 
+.hero-text {
+    font-family: $font-sans;
+    color: $hero-text; 
     text-align: center;
-    font-size: 1.2rem;
     padding: 0 5%;
+
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1em;
+      font-weight: 400;
+    }
 
     p {
       font-size: 1rem;
@@ -20,15 +31,14 @@
 
     small {font-size: 0.8rem;}
 
-    h1 {
-      font-family: $font-sans;
-      font-size: 3.2rem;
-      line-height: 1em;
-      font-weight: 400;
+    a {
+      color: $hero-text;
+      text-decoration-color: $hero-text;
     }
 
-    a {
-      color: #ced5e3 !important;
+    a:hover {
+      color: $link-hover;
+      text-decoration-color: $link-hover;
     }
 
     &.opaque {
@@ -39,16 +49,31 @@
   @media screen and (max-width: 760px) {
 
     text-align: left;
-    
+
     h1 {
       font-size: 2.5rem;
       line-height: 1em;
     }
 
-  }
+  }  
 }
 
-.hero {
+.aqua {
+    background: linear-gradient(168.7deg,#006A5D -2.9%,#00162B 110.59%);
+    background-blend-mode: darken;
+
+    .hero-text {
+      color: $light; 
+    }
+}
+
+.night {
+  background: linear-gradient(168.7deg, #00162b 19.55%, #006a5d 110.59%);
+  background-blend-mode: overlay, darken, normal;
+}
+
+
+.hero-old {
   background-color: $palette2;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,13 +186,7 @@
   }
 }
 
-
-.contentblock {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.herotext {
+.herotext-old {
     font-size: 1.2rem;
     background: rgba(0,0,0,0.7);
     padding: 1.5rem;

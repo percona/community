@@ -6,13 +6,13 @@ images:
   - events/percona-meetup/category-cover-682.jpg
 ---
 
-{{% hero %}}
+{{% hero-gradient class="night" %}}
 
 # Percona Community MeetUps
 
 See you on Percona Community MeetUp!
 
-{{% /hero %}}
+{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

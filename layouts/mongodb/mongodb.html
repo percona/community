@@ -2,16 +2,20 @@
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
 {{ end }}
 
-{{ define "main" }}
+{{ define "mainwrapper" }}
     {{ if or .Title .Content }}
 
-        <div class="text">
+        <div class="hero hero-gradient night"><div class="contentblock">
+            <div class="hero-text">
+                <h1>{{ .Params.hero_title }}</h1>
+                <p>{{ .Params.hero_description }}</p>
+            </div>
+        </div></div>
 
-            <h1>{{ .Title }}</h1>
+        <div class="page-main">
+            <div class="text body">
 
-            <div class="body">
-
-                {{ .Content }}
+            {{ .Content }}
 
             {{ partial "sharing.html" . }} 
 
@@ -20,7 +24,6 @@
                 <h2>{{ .Title }}</h2>
 
                 {{- .Content -}}
-
 
                 {{ range where .Site.Pages.ByWeight "Params.lessons" "mongodb-lessons" }}
 
@@ -64,9 +67,12 @@
 
             {{ end }}
             </div>
-        </div>
 
         {{ partial "sharing.html" . }} 
+
+        </div>
+
+        <div class="contentblock branded">
         <h2>Community Blog Posts</h2>
         <div class="grid grid--3">
             {{ $t := slice "MongoDB" "mongodb" }}
@@ -77,6 +83,6 @@
                 </div>
             {{- end -}}
         </div>
-
+        </div>
     {{ end }}
 {{ end }}

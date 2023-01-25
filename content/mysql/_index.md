@@ -3,9 +3,12 @@ title: "MySQL"
 description: "Run Percona: Embrace Open with Percona Distribution for MySQL"
 images:
 - mysql-graphic.png
+hero_title: "MySQL"
+hero_description: "How can you help?"
 ---
 
-*How can you help?*
+{{% contentblock %}}
+{{% typography-body %}}
 
 ## Download, Try, Give Feedback, & Enhance
 
@@ -96,4 +99,9 @@ The Percona Distribution for MySQL contains **either MySQL or XtraDB Cluster** (
 
 ![Percona Distribution for MySQL features illustration](mysql-graphic.png)
 
-{{% blogpostsbytags tags="MySQL,mysql" %}}
+{{% /typography-body %}}
+
+{{% blogpostsbytags tags="MySQL,mysql" %}}{{% /blogpostsbytags %}}
+
+{{% /contentblock %}}
+

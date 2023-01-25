@@ -10,7 +10,7 @@
 {{ end }}
 <div class="bottom">
     <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
-    <p class="post-type">Article</p>
+    {{ if not .Hideread }}<p class="post-type">Article</p>{{ end }}
 </div>
 </div>
 {{ end }}

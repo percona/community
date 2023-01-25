@@ -4,12 +4,10 @@ description: "Events organized by the Percona Community or other open source dat
 layout: category
 ---
 
-{{% hero %}}
-
-# Percona Community Events!
+{{% hero-gradient class="night" %}}
+<h1>Events</h1>
 
 Events organized by the Percona Community or other open source database communities
 
 Full list of speakers on [the Speakers page](/speakers).
-
-{{% /hero %}}
+{{% /hero-gradient %}}

@@ -7,7 +7,7 @@ images:
 tags: ['Event']
 ---
 
-{{% hero %}}
+{{% hero-gradient class="night" %}}
 
 # Percona Live Community Rooms
 
@@ -17,4 +17,4 @@ Select a room to watch the content.
 
 Full list of speakers on [the Speakers page](/speakers).
 
-{{% /hero %}}
+{{% /hero-gradient %}}

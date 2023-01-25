@@ -7,7 +7,7 @@ images:
 weight: 1
 ---
 
-{{% hero %}}
+{{% hero-gradient class="night" %}}
 
 # Monthly Percona Developer Meetup
 
@@ -15,7 +15,7 @@ This new meetup is your chance to get a behind-the-scenes view and to **directly
 
 We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona. It will be fantastic! 
 
-{{% /hero %}}
+{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}
