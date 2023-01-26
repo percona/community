@@ -8,16 +8,27 @@
 {{ define "mainwrapper" }}
   {{ .Content }}
 
-  <div class="contentblock">
+  <div class="block">
+    <div class="block__content">
 
     {{ partial "home4events.html" . }}
 
-    {{ partial "home4posts.html" . }}
+    </div>  
+  </div>
 
+  <div class="block">
+    <div class="block__content"> 
+    {{ partial "home4posts.html" . }}
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block__content">  
     {{ partial "home4podcasts.html" . }}
 
     {{ partial "home4streams.html" . }}
-  
+    </div>  
   </div>
+
 {{ end }}
 

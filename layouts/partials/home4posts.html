@@ -1,11 +1,11 @@
-<div class="home-blocks home-blocks__streams">
+<div class="home-blocks home-blocks__streams branded">
     <h2>Community Blog</h2>
     <div class="grid grid--4">
     {{- range first 4 (where $.Page.Site.RegularPages "Section" "blog") -}}
     <div class="grid__item">
-    {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) ) }}
+    {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate) }}
     </div>
     {{- end -}}
     </div>
-    <a href="{{ "/blog/" | relURL }}" >View All</a>
+    <a class="view-all" href="{{ "/blog/" | relURL }}" >View All</a>
 </div>

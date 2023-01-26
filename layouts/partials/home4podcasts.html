@@ -1,4 +1,4 @@
-<div class="home-blocks home-blocks__posdcasts">
+<div class="home-blocks home-blocks__posdcasts branded">
     <h2>Podcasts</h2>
     <div class="grid grid--4">
     {{- range first 4 (where $.Page.Site.RegularPages "Section" "podcasts") -}}
@@ -10,7 +10,7 @@
     </div>
     {{- end -}}
     </div>
-    <a href="{{ "/podcasts/" | relURL }}" >View All</a>
+    <a class="view-all" href="{{ "/podcasts/" | relURL }}" >View All</a>
     <br/>
 </div>
 
