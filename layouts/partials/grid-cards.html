@@ -1,0 +1,17 @@
+<a href="{{ .Link }}" class="post post--preview">
+{{ with .Image }}<img src="{{ ((resources.Get .)).RelPermalink }}" alt="" />{{ end }}
+<h3>{{ .Title }}</h3>
+{{ if .Content }}
+<div class="post__content">
+{{ if .Excerpt }}
+{{- .Excerpt | markdownify -}}
+{{ else }}
+<p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape  -}}</p>
+{{ end }}
+<div class="bottom">
+    <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+    {{ if not .Hideread }}<p class="post-type">Article</p>{{ end }}
+</div>
+</div>
+{{ end }}
+</a>

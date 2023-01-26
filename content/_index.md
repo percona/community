@@ -5,7 +5,7 @@ description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 
 {{% banner_home  %}}{{% /banner_home %}}
 
-{{% bannerwithicon background="purplegalaxy.jpg" icon="home/Stickers-Percona-Polyglots-250.png" %}}
+{{% banner-gradient-icon-right class="night" icon="icons/logo.svg" %}}
 
 <h1>Welcome to Percona Community</h1>
 
@@ -13,64 +13,62 @@ Your community hub for installing, running, optimizing, and learning everything 
 
 <small>Were you looking for Percona, the company? [Percona](https://percona.com/) offers best of class software and services around databases.</small>
 
-{{% /bannerwithicon %}}
+{{% /banner-gradient-icon-right %}}
 
-{{% contentblock %}}
+{{% block class="dark-purlple databases" %}}
 
-## Databases
+## Databases and projects
 
-{{% grid size=3 %}}
+{{% grid size=2 %}}
 {{% griditem %}}
-{{< postpreview link="/mongodb/" title="MongoDB" >}}
+{{< database icon="icons/mongodb-white.svg" link="/mongodb/" title="MongoDB" >}}
 Learn about Percona's Distribution for MongoDB and additional tooling.
-{{< /postpreview >}}
+{{< /database >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/mysql/" title="MySQL" >}}
+{{< database icon="icons/mysql-white.svg" link="/mysql/" title="MySQL" >}}
 Learn about Percona's Distribution for MySQL and additional tooling.
-{{< /postpreview >}}
+{{< /database >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/postgresql/" title="PostgreSQL" >}}
+{{< database icon="icons/postgresql-white.svg" link="/postgresql/" title="PostgreSQL" >}}
 Learn about Percona's Distribution for PostgreSQL and additional tooling.
-{{< /postpreview >}}
+{{< /database >}}
+{{% /griditem %}}
+{{% griditem %}}
+{{< database icon="icons/kubernetes-white.svg" link="/projects/operators/" title="Kubernetes Operators" >}}
+Learn about MySQL, PostgreSQL, and MongoDB clusters on Kubernetes.
+{{< /database >}}
 {{% /griditem %}}
 {{% /grid %}}
-{{% /contentblock %}}
 
-{{% bannerwithicon background="orangegalaxy.jpg" icon="home/Stickers-Percona-Cloud-230.png" %}}
+{{% /block %}}
 
-## Projects - PMM, Kubernetes, and more
+{{% block class=" branded projects" %}}
 
-We also create, contribute to, and use various open source projects. 
+##  Projects - PMM, Kubernetes, and more
 
-Check out our [Projects](/projects).
-
-{{% /bannerwithicon %}}
-
-{{% contentblock %}}
-
-## Projects
+We also create, contribute to, and use various open source projects. Check out our [Projects](/projects).
 
 {{% grid size=3 %}}
 {{% griditem %}}
-{{< postpreview link="/projects/operators" title="Percona Kubernetes Operators" image="home/galaxy-operators.jpg" >}}
+{{< database-grid link="/projects/operators" title="Percona Kubernetes Operators" icon="icons/kubernetes-color.svg" hideread="true" >}}
 Learn about Percona's Kubernetes Operators and how to best use them.
-{{< /postpreview >}}
+{{< /database-grid >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/projects/pmm" title="Percona Monitoring and Management" image="home/galaxy-pmm.jpg" >}}
+{{< database-grid link="/projects/pmm" title="Percona Monitoring and Management" icon="icons/pmm-color.svg" hideread="true" >}}
 Find out more about how you can monitor and manage your database effectively with PMM.
-{{< /postpreview >}}
+{{< /database-grid >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< postpreview link="/projects/toolkit" title="Percona Toolkit for MySQL and MongoDB" image="home/galaxy-toolkit.jpg" >}}
+{{< database-grid link="/projects/toolkit" title="Percona Toolkit for MySQL and MongoDB" icon="icons/toolkit-color.svg" hideread="true" >}}
 Use Percona Toolkit to get the most out of your MySQL and MongoDB database setups.
-{{< /postpreview >}}
+{{< /database-grid >}}
 {{% /griditem %}}
 {{% /grid %}}
 
-{{% /contentblock %}}
+{{% /block %}}
 
 {{% hero-gradient class="aqua" %}}
 

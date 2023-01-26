@@ -12,7 +12,6 @@
 
 .hero-text {
     font-family: $font-sans;
-    color: $hero-text; 
     text-align: center;
     padding: 0 5%;
 
@@ -30,16 +29,6 @@
     p:first-child {margin-top: 0;}
 
     small {font-size: 0.8rem;}
-
-    a {
-      color: $hero-text;
-      text-decoration-color: $hero-text;
-    }
-
-    a:hover {
-      color: $link-hover;
-      text-decoration-color: $link-hover;
-    }
 
     &.opaque {
       background: rgba(0,0,0,0.95);
@@ -59,19 +48,76 @@
 }
 
 .aqua {
+
+    background-color: $aqua;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     background: linear-gradient(168.7deg,#006A5D -2.9%,#00162B 110.59%);
     background-blend-mode: darken;
 
-    .hero-text {
+    color: $light; 
+
+    a {
       color: $light; 
+      text-decoration-color: $light; 
+
+      &:hover, &:visited:hover {
+        color: $link-hover;
+        text-decoration-color: $link-hover;
+      }
     }
 }
 
-.night {
-  background: linear-gradient(168.7deg, #00162b 19.55%, #006a5d 110.59%);
-  background-blend-mode: overlay, darken, normal;
+.blue-yellow {
+  background: linear-gradient(0deg,#E8ECF3,#E8ECF3),linear-gradient(155.02deg,#472F65 12.31%,#906B20 86.51%);
+  background-blend-mode: multiply;
 }
 
+.gray-blue {
+  background: linear-gradient(168.28deg,#232832 35.64%,#5F3E86 100.45%);
+  mix-blend-mode: normal;
+}
+
+.dark-purlple {
+
+  color: $hero-text; 
+
+  a {
+    color: $link;
+    text-decoration-color: $link;
+  }
+
+  background: linear-gradient(180deg,#35234C 0%,#232832 100%);
+}
+
+.night {
+  background-color: $night;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background: linear-gradient(168.7deg, #00162b 19.55%, #006a5d 110.59%);
+  background-blend-mode: overlay, darken, normal;
+    
+  color: $hero-text; 
+
+  a {
+    color: $hero-text;
+    text-decoration-color: $hero-text;
+
+    &:hover, &:visited:hover {
+      color: $light;
+      text-decoration-color: $light;
+    }
+  }
+
+}
+
+.dark {
+  background: linear-gradient(135.94deg,rgba(0,22,43,0.55) 39.63%,rgba(53,35,76,0.55) 99.19%),linear-gradient(180deg,#00162B 0%,#008E7C 31.77%,#00162B 67.19%,#A86FEF 100%);
+}
 
 .hero-old {
   background-color: $palette2;
