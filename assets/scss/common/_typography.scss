@@ -53,6 +53,12 @@ p:empty {display:none;}
     color: $color-branded-h2; 
   }
 
+  .view-all {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: $link;
+    text-decoration-color: $link;
+  }
 }
 
 hr {

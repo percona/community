@@ -88,6 +88,19 @@
 
   }
 
+  .grid--4 {
+
+    @media screen and (min-width: 760px) {
+      .grid__item {
+        border-right: 1px solid #e8ecf3;
+      }
+
+      .grid__item:nth-child(4) {
+        border: none;
+      }
+    }
+
+  }
 }
 
 
