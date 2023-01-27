@@ -48,7 +48,7 @@ Learn about MySQL, PostgreSQL, and MongoDB clusters on Kubernetes.
 
 ##  Projects - PMM, Kubernetes, and more
 
-We also create, contribute to, and use various open source projects. Check out our [Projects](/projects).
+We also create, participate in, and work with many open source projects. Check out our [Projects](/projects).
 
 {{% grid size=3 %}}
 {{% griditem %}}
