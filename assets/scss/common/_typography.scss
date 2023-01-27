@@ -54,11 +54,14 @@ p:empty {display:none;}
   }
 
   .view-all {
-    font-size: 0.75rem;
-    font-weight: 400;
     color: $link;
     text-decoration-color: $link;
   }
+}
+
+.view-all {
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 hr {

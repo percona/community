@@ -148,13 +148,13 @@
             <ul>
               {{ range .Site.Menus.footer }}
               <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel=" noreferrer"{{ end }}>
                   {{ .Pre }}
                   <span>{{ .Name }}</span>
                 </a>
               </li>
               {{ end }}
-              <li><a class="cmp-revoke-consent">Revoke Consent</a></li>
+              <li><a class="cmp-revoke-consent" style="padding-left: 0.75rem!important; padding-right: 0.75rem!important;">Revoke Consent</a></li>
             </ul>
           </div>
         </nav>
