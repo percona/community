@@ -1,11 +1,24 @@
 ---
-title: "Help Wanted"
-description: "We welcome open source contributors in Percona community and encourage participating in different activities: contributing code and fixing bugs, writing blog posts and creating video content. We also offer valuable gifts for contributing."
+title: "Get Involved"
+description: "We welcome open source contributors in Percona community and encourage participating in different activities: contributing code and fixing bugs, writing blog posts and creating video content."
 images:
   - pages/HelpWanted.jpg
 ---
 
-Want to contribute to open source and earn a valuable gift from Percona? Help us with the most wanted content and code, and join the ranks of contributors. On this page, we gathered some tasks that we offer you to accomplish. In exchange for that, you will gain not only the feeling of belonging to the big open source community, but also get some enjoyable gift from Percona Community Team. Just contact us at community-team@percona.com.
+All of Percona's software is open source, which means we accept and value contributions. We also know that open source is more than code, so we emphasize all kinds of contributions, including:
+
+- Writing a blog post
+- Answering questions on the [Percona Forum](https://forums.percona.com/)
+- Creating a video tutorial or giving a talk on how to use Percona software
+- Contributing to documentation
+- Submitting and helping close bug reports 
+
+
+Ready to join the ranks of contributors? 
+
+On this page we have a few ideas but don't feel limited to what's listed here. We also like to reward contributors from time to time with Percona swag and other tokens of our gratitude. 
+
+Need help contributing? Have questions? Just contact the Percona Community Team at community-team@percona.com.
 
 ## Code
 
