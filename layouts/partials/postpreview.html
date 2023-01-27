@@ -1,17 +1,23 @@
 <a href="{{ .Link }}" class="post post--preview">
 {{ with .Image }}<img src="{{ ((resources.Get .).Fill "682x384 90% jpg").RelPermalink }}" alt="" />{{ end }}
+<div class="post__text">
 <h3>{{ .Title }}</h3>
 {{ if .Content }}
 <div class="post__content">
 {{ if .Excerpt }}
 {{- .Excerpt | markdownify -}}
 {{ else }}
-<p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape  -}}</p>
+<p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 100  -}} <small>...</small></p>
 {{ end }}
 <div class="bottom">
     <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
     {{ if not .Hideread }}<p class="post-type">Article</p>{{ end }}
 </div>
 </div>
+{{ else }}
+<div class="bottom">
+    <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+</div>
 {{ end }}
+</div>
 </a>

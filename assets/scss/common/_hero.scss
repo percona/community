@@ -119,6 +119,24 @@
   background: linear-gradient(135.94deg,rgba(0,22,43,0.55) 39.63%,rgba(53,35,76,0.55) 99.19%),linear-gradient(180deg,#00162B 0%,#008E7C 31.77%,#00162B 67.19%,#A86FEF 100%);
 }
 
+.blue {
+
+  color: $light; 
+
+  background: linear-gradient(272.68deg,#00396F 12.61%,#0070D8 90.99%);
+  background-blend-mode: multiply,multiply,normal;
+
+  a {
+    color: $light;  
+    text-decoration-color: $light;
+
+    &:hover, &:visited:hover {
+      color: $hero-text;
+      text-decoration-color: $hero-text;
+    }
+  }
+}
+
 .hero-old {
   background-color: $palette2;
   background-position: center;
