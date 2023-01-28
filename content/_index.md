@@ -37,7 +37,7 @@ Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{% /griditem %}}
 {{% griditem %}}
 {{< database icon="icons/kubernetes-white.svg" link="/projects/operators/" title="Kubernetes Operators" >}}
-Learn about MySQL, PostgreSQL, and MongoDB clusters on Kubernetes.
+Learn about running MySQL, PostgreSQL, and MongoDB on Kubernetes.
 {{< /database >}}
 {{% /griditem %}}
 {{% /grid %}}
@@ -46,7 +46,7 @@ Learn about MySQL, PostgreSQL, and MongoDB clusters on Kubernetes.
 
 {{% block class=" branded projects" %}}
 
-##  Projects - PMM, Kubernetes, and more
+##  Projects &ndash; PMM, Kubernetes Operators, and Percona Toolkit 
 
 We also create, participate in, and work with many open source projects. Check out our [Projects](/projects).
 
@@ -57,7 +57,7 @@ Learn about Percona's Kubernetes Operators and how to best use them.
 {{< /database-grid >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< database-grid link="/projects/pmm" title="Percona Monitoring and Management" icon="icons/pmm-color.svg" hideread="true" >}}
+{{< database-grid link="/projects/pmm" title="Percona Monitoring and Management (PMM)" icon="icons/pmm-color.svg" hideread="true" >}}
 Find out more about how you can monitor and manage your database effectively with PMM.
 {{< /database-grid >}}
 {{% /griditem %}}
@@ -77,5 +77,3 @@ Data is the main component of almost every larger application, which is why you 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!
 
 {{% /hero-gradient %}}
-
-

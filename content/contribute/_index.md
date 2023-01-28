@@ -7,7 +7,7 @@ description: "Percona Community - Contributions and Contributors"
 
 # Percona Community
 
-We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more - we also contribute to other open source projects and communities! Let's make technology better!
+We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more &ndash; we also contribute to other open source projects and communities! Let's make technology better!
 
 {{% /hero-gradient %}}
 
@@ -15,13 +15,11 @@ We welcome all kinds of contributions, from code to documentation to visuals, aw
 
 ## Contributing
 
-![](projects-salute-small.png)
-
 {{% typography %}}
 
-Each of our projects has its own contribution guidelines. You will find them in their [respective GitHub repositories](https://github.com/percona/). There are many ways our community can thrive: people engaging with and listening to each other, writing and reviewing content, writing and reviewing code, and raising awareness for the topics we all care about.
+Each of our projects has its own contribution guidelines. You will find them in the [GitHub repositories](https://github.com/percona/) in the `CONTRIBUTING.md` file.  
 
-Participation in this community may come in many forms: whether it's written, more visual (illustrations, comics, videos, logos), or auditive (podcasts, talks, music), supporting each other or having fun. We had people write jingles and raps as well as drawing superheroes and a vast amount of great articles, talks, and human connection.
+Code contributions are welcome, but code is only one way to contribute! Answering questions on the Percona Forum, writing or contributing fixes to documentation, new blogs, giving talks or video tutorials about using MySQL, MongoDB, PostgreSQL, etc. All of those things help build and support other open source database users.
 
 If you're interested in producing content for this community (examples: blog post, guide, [documentation](/contribute/documentation), talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
 
