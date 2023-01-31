@@ -36,7 +36,6 @@ Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{< /database >}}
 {{% /griditem %}}
 {{% griditem %}}
-<<<<<<< HEAD
 {{< database icon="icons/platform-white.svg" link="/projects/platform/" title="Percona Platform" >}}
 Discover Percona Platform - Move faster in increasingly complex environments.
 {{< /database >}}
@@ -46,37 +45,19 @@ Discover Percona Platform - Move faster in increasingly complex environments.
 {{% /block %}}
 
 {{% block class=" branded projects" %}}
-
-##  Projects - PMM, Kubernetes, and more
-
-=======
-{{< database icon="icons/kubernetes-white.svg" link="/projects/operators/" title="Kubernetes Operators" >}}
-Learn about running MySQL, PostgreSQL, and MongoDB on Kubernetes.
-{{< /database >}}
-{{% /griditem %}}
-{{% /grid %}}
-
-{{% /block %}}
-
-{{% block class=" branded projects" %}}
-
+  
 ##  Projects &ndash; PMM, Kubernetes Operators, and Percona Toolkit 
 
->>>>>>> 1f04128d798758075f38faa6e9b11fa54c7b109c
 We also create, participate in, and work with many open source projects. Check out our [Projects](/projects).
 
 {{% grid size=3 %}}
 {{% griditem %}}
 {{< database-grid link="/projects/operators" title="Percona Kubernetes Operators" icon="icons/kubernetes-color.svg" hideread="true" >}}
-Learn about Percona's Kubernetes Operators and how to best use them.
+Learn about running MySQL, PostgreSQL, and MongoDB on Kubernetes.
 {{< /database-grid >}}
 {{% /griditem %}}
 {{% griditem %}}
-<<<<<<< HEAD
-{{< database-grid link="/projects/pmm" title="Percona Monitoring and Management" icon="icons/pmm-color.svg" hideread="true" >}}
-=======
 {{< database-grid link="/projects/pmm" title="Percona Monitoring and Management (PMM)" icon="icons/pmm-color.svg" hideread="true" >}}
->>>>>>> 1f04128d798758075f38faa6e9b11fa54c7b109c
 Find out more about how you can monitor and manage your database effectively with PMM.
 {{< /database-grid >}}
 {{% /griditem %}}
@@ -96,3 +77,5 @@ Data is the main component of almost every larger application, which is why you 
 Learn about our community, open source commitments, and how to [contribute](/contribute)!
 
 {{% /hero-gradient %}}
+
+
