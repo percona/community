@@ -7,7 +7,8 @@
 
 {{ define "mainwrapper" }}
 
-
+{{- $pages := .Pages -}}
+{{- $paginator := .Paginate $pages 15 }}
 
 <div class="hero hero-gradient aqua "><div class="contentblock">
 
@@ -17,17 +18,17 @@
     <p>If you're interested in contributing, you can submit a pull request on <a href="https://github.com/percona/community">GitHub</a> with either your own topic or pick one of our <a href="/contribute/opentopics">open topics</a>.</p>
 </div>
 
-{{ if eq .Paginator.PageNumber 1 }}
+{{- if eq $paginator.PageNumber 1 -}}
 <div class="featured__wrapper">
     <div class="grid grid--2">
 
         <div class="featured__left featured__one branded">
 
-            {{ $posts :=  first 1 (where $.Page.Site.RegularPages "Section" "blog") }}
+            {{- $one := first 1 (where $.Page.Site.RegularPages "Section" "blog") -}}
 
-            {{- range $posts -}}
+            {{- range $one -}}
 
-            {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .PublishDate) -}}  
+                {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .PublishDate) -}}  
  
             {{- end -}}
 
@@ -36,22 +37,51 @@
         <div class="featured__right featured__list">
 
             <h2 class="title-wrap">FEATURED POSTS</h2>
-            {{ $posts :=  first 3 (shuffle (where $.Page.Site.RegularPages "Section" "blog")) }}
+            {{- $shuffle :=  first 3 (shuffle (where $.Page.Site.RegularPages "Section" "blog")) -}}
 
-            {{- range $posts -}}
+            {{- range $shuffle -}}
 
-            {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate) -}}    
+                {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate) -}}    
 
             {{- end -}}
 
         </div>
     </div>
 </div>
-{{ end }}
+{{- end -}}
 </div></div>
-
 
     {{- .Content -}}
 
-    {{- partial "blogpostslist" . -}}
+    <div class="contentblock branded">
+        <h2>Latest articles</h2>
+        <div class="grid grid--3">
+            {{- range $paginator.Pages -}}
+                <div class="grid__item">
+                    {{- $excerpt := "" -}}
+                    {{- if isset .Params "excerpt" }}
+                        {{- $excerpt = .Params.excerpt -}}
+                    {{- end -}}
+                    {{- if isset .Params "images" -}}
+                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
+                    {{- else -}}
+                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
+        {{- if gt $paginator.TotalPages 1 -}}
+        <div class="paginator">
+            {{- if $paginator.HasPrev -}}
+                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+            {{- end -}}
+            {{- range $paginator.Pagers -}}
+                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+            {{- end -}}
+            {{- if $paginator.HasNext -}}
+                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+            {{- end -}}
+        </div>
+        {{- end -}}
+    </div>
 {{ end }}
