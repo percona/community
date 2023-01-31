@@ -11,14 +11,13 @@ We welcome all kinds of contributions, from code to documentation to visuals, aw
 
 {{% /hero-gradient %}}
 
-{{% hero %}}
+{{% block class=" grid-6-3" %}}
 
 ## Contributing
 
-![](projects-salute-small.png)
-
+{{% grid size=2 %}}
+{{% griditem %}}
 {{% typography %}}
-
 Each of our projects has its own contribution guidelines. You will find them in their [respective GitHub repositories](https://github.com/percona/). There are many ways our community can thrive: people engaging with and listening to each other, writing and reviewing content, writing and reviewing code, and raising awareness for the topics we all care about.
 
 Participation in this community may come in many forms: whether it's written, more visual (illustrations, comics, videos, logos), or auditive (podcasts, talks, music), supporting each other or having fun. We had people write jingles and raps as well as drawing superheroes and a vast amount of great articles, talks, and human connection.
@@ -27,8 +26,12 @@ If you're interested in producing content for this community (examples: blog pos
 
 For content inspiration, please check the [open topics](/contribute/opentopics) or send a pull request with your topic idea.
 {{% /typography %}}
-
-{{% /hero %}}
+{{% /griditem %}}
+{{% griditem %}}
+![](projects-salute-small.png)
+{{% /griditem %}}
+{{% /grid %}}
+{{% /block %}}
 
 {{% hero-gradient class="night" %}}
 
@@ -39,7 +42,7 @@ Our community members care about integrating optimized databases efficiently int
 {{% /hero-gradient %}}
 
 
-{{% hero %}}
+{{% block class=" " %}}
 
 ## Forums
 
@@ -49,34 +52,33 @@ Head over to our [forums](https://forums.percona.com/), search for answers, or a
 Check out the latest 5 forums posts:
 
 {{% getforumposts %}}
+
 {{% /typography %}}
 
-{{% /hero %}}
+{{% /block %}}
 
-{{% hero %}}
+{{% block class=" dark-purlple" %}}
 
 ## Bug Reports
-{{% typography %}}
-Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://jira.percona.com) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
-{{% /typography %}}
-{{% /hero %}}
 
-{{% hero %}}
+Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://jira.percona.com) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
+
+{{% /block %}}
+
+{{% block class=" grid-6-3" %}}
 
 ## Let's Chat
 
-![](mongodb-sit-small.png)
-
 {{% grid size=2 %}}
+{{% griditem %}}
+
+{{% grid size=2 class=" social" %}}
 {{% griditem %}}
 {{% socialblock pic="icon-discord.svg" alt="Community Discord" url="http://per.co.na/discord" %}}
 {{% /griditem %}}
 {{% griditem %}}
 {{% socialblock pic="icon-youtube.svg" alt="Percona YouTube" url="https://www.youtube.com/user/PerconaMySQL" %}}
 {{% /griditem %}}
-{{% /grid %}}
-
-{{% grid size=2 %}}
 {{% griditem %}}
 {{% socialblock pic="icon-twitter.svg" alt="@percona" url="https://twitter.com/percona" %}}
 {{% /griditem %}}
@@ -84,7 +86,15 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% socialblock pic="icon-twitter.svg" alt="@perconabytes" url="https://twitter.com/perconabytes" %}}
 {{% /griditem %}}
 {{% /grid %}}
-{{% /hero %}}
+{{% /griditem %}}
+
+{{% griditem %}}
+![](mongodb-sit-small.png)
+{{% /griditem %}}
+
+{{% /grid %}}
+
+{{% /block %}}
 
 {{% hero-gradient class="aqua" %}}
 

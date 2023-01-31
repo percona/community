@@ -1,3 +1,11 @@
+.grid--2 .social {
+    grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 768px) {
+      display: grid;
+  }
+}
+
 a.socialblock {
   display: block;
   border: 0;
@@ -6,7 +14,7 @@ a.socialblock {
   text-align: center;
 }
 
-.hero a.socialblock img {
+a.socialblock img {
   float: none;
   display:block;
   margin-left:auto;
@@ -14,7 +22,6 @@ a.socialblock {
   height: 3rem;
   width: 3rem;
 }
-
 
 .sharing {
 

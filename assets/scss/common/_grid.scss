@@ -28,7 +28,9 @@
   margin-top:1.5rem;
 
   img {
-    max-width:100%;
+    margin: auto;
+    max-width: 100%;
+    display: block;
   }
 
   h2 {
@@ -52,6 +54,23 @@
 
 .contentblock.branded {
   padding-top: 1rem;
+}
+
+.grid-3-6 {
+  .grid {
+    &--2 {
+      grid-template-columns: 3fr 6fr;
+    }
+  }
+
+}
+
+.grid-6-3 {
+  .grid {
+    &--2 {
+      grid-template-columns: 6fr 3fr;
+    }
+  }
 }
 
 .branded {
