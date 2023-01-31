@@ -6,6 +6,51 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
+
+
+
+<div class="hero hero-gradient aqua "><div class="contentblock">
+
+<div class="hero-text">
+    <h1>Welcome to the Percona Community blog!</h1>
+
+    <p>If you're interested in contributing, you can submit a pull request on <a href="https://github.com/percona/community">GitHub</a> with either your own topic or pick one of our <a href="/contribute/opentopics">open topics</a>.</p>
+</div>
+
+{{ if eq .Paginator.PageNumber 1 }}
+<div class="featured__wrapper">
+    <div class="grid grid--2">
+
+        <div class="featured__left featured__one branded">
+
+            {{ $posts :=  first 1 (where $.Page.Site.RegularPages "Section" "blog") }}
+
+            {{- range $posts -}}
+
+            {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .PublishDate) -}}  
+ 
+            {{- end -}}
+
+        </div>
+
+        <div class="featured__right featured__list">
+
+            <h2 class="title-wrap">FEATURED POSTS</h2>
+            {{ $posts :=  first 3 (shuffle (where $.Page.Site.RegularPages "Section" "blog")) }}
+
+            {{- range $posts -}}
+
+            {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate) -}}    
+
+            {{- end -}}
+
+        </div>
+    </div>
+</div>
+{{ end }}
+</div></div>
+
+
     {{- .Content -}}
 
     {{- partial "blogpostslist" . -}}

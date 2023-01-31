@@ -209,3 +209,161 @@ a.post--preview, a.post--preview * {
     }
   }
 }
+
+.featured__wrapper {
+  
+  margin-top: 2.5rem;
+
+  .featured__left, .featured__right {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .title-wrap {
+    font-size: 14px;
+    font-weight: 600;
+    color: #697793;
+    padding: 0;
+    border-bottom: 2px solid #e8ecf3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 0.02em;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .featured__left {
+      margin-bottom: 1rem;
+    }
+  }
+
+}
+
+.featured__one {
+
+  .post--preview {
+    display: block;
+    padding: 0rem;
+
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .post--preview h3 {
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.4;
+      transition: all 0.3s ease-in-out;
+  }
+
+  position: relative;
+  padding-bottom: 35px;
+
+  .post__content {
+    height: calc(100% - 320px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .bottom {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+}
+
+.featured-grid-list-item:hover .featured-grid-list-inner .context h2 {
+    color: $link !important;
+}
+
+.featured__list {
+
+  .featured-grid-list-item {
+
+    border-bottom: 1px solid #e8ecf3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+  }
+
+}
+
+.featured-grid-list-inner {
+
+    display: grid;
+    gap: 0rem 0rem;
+    grid-template-columns: 3fr 6fr;
+
+    .thumbnail {
+
+      height: 130px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      a {
+        width: 100%;
+        display: block;
+        height: 100%;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .context {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5px 20px;
+
+      a {
+        text-decoration: none;
+        color: $dark;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+     .bottom {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      p {
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: #8897b3;
+      }
+
+    }
+}

@@ -1,0 +1,18 @@
+<div class="blog-featured-articles-item">
+    <div class="blog-featured-article-inner">
+        <div class="thumbnail">
+            <a href="{{ .Link }}">
+                <img src="{{ ((resources.Get .Image).Fill "682x384 90% jpg").RelPermalink }}" alt="{{ .Title }}">
+            </a>
+        </div>
+        <div class="context">
+            <a href="{{ .Link }}">
+                <h2>{{ .Title }}</h2>
+            </a>
+            <div class="excerpt">{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 100  -}} <small>...</small></div>
+            <div class="bottom">
+                <p>{{ .PublishDate.Format "January 2, 2006" }}</p>
+            </div>
+        </div>
+    </div>
+</div>
