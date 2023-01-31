@@ -21,7 +21,7 @@
                 {{- .Content -}}
             </div>
 
-
+            {{ if .Params.blog_tags }}
             <div class="branded">
                 <h2>Community Blog Posts</h2>
                 <div class="grid grid--3">
@@ -34,5 +34,6 @@
                     {{- end -}}
                 </div>
             </div>
+            {{ end }}
         </div>
 {{ end }}

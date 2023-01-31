@@ -91,11 +91,16 @@ menu:
       url: /projects/pmm/
       parent: projects
       weight: 2
+    - identifier: platform
+      name: Percona Platform
+      url: /projects/platform/
+      parent: projects
+      weight: 3
     - identifier: subtoolkit
       name: Percona Toolkit
       url: /projects/toolkit/
       parent: projects
-      weight: 3
+      weight: 4
     - identifier: allprojects
       name: All projects
       url: /projects

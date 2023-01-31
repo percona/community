@@ -36,8 +36,8 @@ Learn about Percona's Distribution for PostgreSQL and additional tooling.
 {{< /database >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< database icon="icons/kubernetes-white.svg" link="/projects/operators/" title="Kubernetes Operators" >}}
-Learn about MySQL, PostgreSQL, and MongoDB clusters on Kubernetes.
+{{< database icon="icons/platform-white.svg" link="/projects/platform/" title="Percona Platform" >}}
+Discover Percona Platform - Move faster in increasingly complex environments.
 {{< /database >}}
 {{% /griditem %}}
 {{% /grid %}}
