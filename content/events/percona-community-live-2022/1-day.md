@@ -5,10 +5,9 @@ images:
   - events/percona-community-live/days/Day-1.jpg
 layout: landingDay
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
-weight: 1
 csv_filter: "June 21"
 date: "2022-06-21"
-tags: ['opensource', 'event']
+tags: ['opensource']
 speakers:
   - bruce_momjian
   - anton_bystrov

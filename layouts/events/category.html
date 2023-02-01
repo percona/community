@@ -7,13 +7,62 @@
 
 {{ define "mainwrapper" }}
 
+    {{- $pages := .Pages -}}
+    {{- $paginator := .Paginate $pages 12 }}
+
+    {{ if eq .Section "events"}}
+        <div class="hero hero-gradient night "><div class="contentblock">
+
+        <div class="hero-text">
+            <h1>Events</h1>
+            <p>Events organized by the Percona Community or other open source database communities</p>
+            <p>Full list of speakers on <a href="/speakers">the Speakers page</a>.</p>
+        </div>
+
+        {{- if eq $paginator.PageNumber 1 -}}
+        <div class="featured__wrapper">
+            <div class="grid grid--2">
+
+                <div class="featured__left featured__one branded">
+
+                    {{ $t := slice "Promo" "promo" }}
+
+                    {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $t ) -}}
+
+
+                    {{- range $one -}}
+                        {{ if isset .Params "images" }}
+                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .Date) -}}  
+                        {{ else }}
+                         {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "PublishDate" .Date) -}}          
+                        {{ end }}
+                    {{- end -}}
+                </div>
+
+                <div class="featured__right featured__list">
+                    <h2 class="title-wrap">FEATURED EVENTS</h2>
+
+                    {{- $shuffle :=  first 3 (shuffle (where $.Page.Site.Pages "Section" "events")) -}}
+
+                    {{- range $shuffle -}}
+                        {{ if isset .Params "images" }}
+                        {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .Date) -}} 
+                        {{ else }}
+                        {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title  "PublishDate" .Date) -}}         
+                        {{ end }}
+                    {{- end -}}
+                </div>
+            </div>
+        </div>
+        {{- end -}}
+        </div></div>
+    {{- end -}}
+
     {{- .Content -}}
 
     <div class="contentblock branded">
 
-        <div class="grid grid--2">
-            {{- $pages := .Pages -}}
-            {{- $paginator := .Paginate $pages }}
+        <div class="grid grid--3">
             {{- range $paginator.Pages -}} 
                 <div class="grid__item">
                     {{- if isset .Params "images" -}}
@@ -40,6 +89,24 @@
 
         {{ partial "sharing.html" . }}
     </div>
+
+    <div class="block blue"><div class="block__content"> 
+    <div class="blog__featured ">
+        <h2>Community Blog</h2>
+        <div class="grid grid--4">
+        {{ $t := slice "Meetup" "Conference" }}
+
+        {{- $posts := first 4 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $t ) -}}
+
+        {{- range $posts -}}
+        <div class="grid__item">
+        {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate ) }}
+        </div>
+        {{- end -}}
+        </div>
+        <a class="view-all" href="{{ "/blog/" | relURL }}" >Ream more</a>
+    </div>
+    </div></div>
 
 {{ end }}
 

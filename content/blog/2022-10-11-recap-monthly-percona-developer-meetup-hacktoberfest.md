@@ -2,7 +2,7 @@
 title: "Recap Monthly Percona Developer Meetup Hacktoberfest"
 date: "2022-10-05T00:00:00+00:00"
 draft: false
-tags: ["hacktoberfest", "percona", "databases"]
+tags: ["hacktoberfest", "percona", "databases", "Meetup"]
 authors:
   - edith_puclla
 images:

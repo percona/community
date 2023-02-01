@@ -7,7 +7,7 @@
 {{ if .Excerpt }}
 {{- .Excerpt | markdownify -}}
 {{ else }}
-<p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 100  -}} <small>...</small></p>
+<p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 200  -}} <small>...</small></p>
 {{ end }}
 <div class="bottom">
     <p>{{ .PublishDate.Format "January 2, 2006" }}</p>

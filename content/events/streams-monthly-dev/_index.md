@@ -4,7 +4,7 @@ description: "This new meetup is your chance to get a behind-the-scenes view and
 layout: list
 images:
   - events/streams-monthly-dev/Developer-Meetup-Kai.jpg
-weight: 1
+date: "2022-09-26"
 ---
 
 {{% hero-gradient class="night" %}}

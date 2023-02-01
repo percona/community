@@ -4,7 +4,7 @@ description: "Percona Community Team hosts a series of live-streamed event on My
 layout: list
 images:
   - events/streams-mysql/Stream-MySQL-cover.jpg
-weight: 2
+date: "2022-04-01"
 ---
 
 {{% hero-gradient class="night" %}}

@@ -4,7 +4,6 @@ description: "Join us at Percona Community Live Stream. We will have End of the 
 draft: false
 images:
   - events/streams-pg/PG-Stream-Dave-Chino-December.jpg
-weight: 1
 speakers:
   - charly_batista
   - mario_garcia
@@ -13,6 +12,7 @@ speakers:
   - jobin_augustine
   - muhammad_usama
 tags: ['Postgres', 'Stream']
+date: "2022-12-01"
 ---
 ![Percona Community PostgreSQL Live Stream & Chat](events/streams-pg/PG-Stream-Dave-Chino-December.jpg)
  
