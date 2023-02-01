@@ -105,7 +105,7 @@ menu:
       name: All projects
       url: /projects
       parent: projects
-      weight: 4
+      weight: 5
 
     - identifier: communityevents
       name: Community Events

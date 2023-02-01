@@ -28,7 +28,7 @@ For content inspiration, please check the [open topics](/contribute/opentopics) 
 {{% /typography %}}
 {{% /griditem %}}
 {{% griditem %}}
-![](projects-salute-small.png)
+![](/images/contributing/projects-salute-small.png)
 {{% /griditem %}}
 {{% /grid %}}
 {{% /block %}}
@@ -89,7 +89,7 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% /griditem %}}
 
 {{% griditem %}}
-![](mongodb-sit-small.png)
+![](/images/contributing/mongodb-sit-small.png)
 {{% /griditem %}}
 
 {{% /grid %}}
