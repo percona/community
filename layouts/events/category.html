@@ -29,12 +29,11 @@
 
                     {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $t ) -}}
 
-
                     {{- range $one -}}
                         {{ if isset .Params "images" }}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .Date) -}}  
+                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Date" .Date) -}}  
                         {{ else }}
-                         {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "PublishDate" .Date) -}}          
+                         {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Date" .Date) -}}          
                         {{ end }}
                     {{- end -}}
                 </div>
@@ -66,7 +65,8 @@
             {{- range $paginator.Pages -}} 
                 <div class="grid__item">
                     {{- if isset .Params "images" -}}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
+
+                        {{ partial "talkpreview" (dict "Link" .RelPermalink "Date" .Params.date "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
                     {{- else -}}
                         {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
                     {{- end -}}

@@ -6,6 +6,8 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
+
+<div class="home">
   {{ .Content }}
 
   <div class="block">
@@ -27,6 +29,6 @@
       {{ partial "home4streams.html" . }}
     </div>  
   </div>
-
+</div>
 {{ end }}
 

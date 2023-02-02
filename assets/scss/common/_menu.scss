@@ -49,3 +49,26 @@
    position: relative !important;
    padding: 0px !important;
 }
+
+.call-to-action {
+  padding-top: 12px;
+
+  a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 19px;
+    height: 20px;
+    line-height: 1rem;
+    background: #00BDA5;
+    border-radius: 100px;  
+    border-bottom: none;
+    border-top: none;
+
+    &:hover {
+      background: #FFFFFF;
+      border-bottom: none;  
+      color: #00BDA5;
+    }
+  }
+
+}

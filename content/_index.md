@@ -3,20 +3,21 @@ title: "Run Percona: Embrace Open"
 description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 ---
 
-{{% banner-gradient-icon-right class="night" icon="icons/logo.svg" %}}
+{{% block class="blue-linear" %}}
+
+{{% wrapper class="homepage-hero" %}}
 
 <h1>Welcome to Percona Community</h1>
 
 Your community hub for installing, running, optimizing, and learning everything around databases and software architectures.
 
-<small>Were you looking for Percona, the company? [Percona](https://percona.com/) offers best of class software and services around databases.</small>
+<small>[Percona](https://percona.com/) offers best of class software and services around databases.</small>
 
-{{% /banner-gradient-icon-right %}}
+{{% wrapper class="homepage-hero-icon" %}}![](/home/denver.svg){{% /wrapper %}}
 
-{{% banner_home  %}}{{% /banner_home %}}
+{{% /wrapper %}}
 
-{{% block class="dark-purlple databases" %}}
-
+{{% wrapper class="databases" %}}
 ## Databases and projects
 
 {{% grid size=2 %}}
@@ -42,6 +43,7 @@ Discover Percona Platform - Move faster in increasingly complex environments.
 {{% /griditem %}}
 {{% /grid %}}
 
+{{% /wrapper %}}
 {{% /block %}}
 
 {{% block class=" branded projects" %}}

@@ -250,7 +250,7 @@ a.post--preview, a.post--preview * {
 
   img {
     width: 100%;
-    height: 300px;
+
     margin-bottom: 20px;
     border-radius: 4px;
     overflow: hidden;
@@ -273,11 +273,12 @@ a.post--preview, a.post--preview * {
     justify-content: space-between;
 
     .bottom {
+      bottom: 20px;
       margin-top: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      width: calc(100% - 48px);
     }
   }
 
@@ -366,4 +367,32 @@ a.post--preview, a.post--preview * {
       }
 
     }
+}
+
+.youtube__block {
+  
+  iframe {
+    width: 715px;
+    height: 400px;
+
+    @media (max-width: 768px) {
+      width: 320px;
+      height: 180px;
+    }
+  }
+
+
+}
+
+.branded {
+
+  .grid__item {
+    position: relative;
+  }
+
+  .bottom {
+      position: absolute;
+      bottom: 0px;
+      width: calc(100% - 48px);
+  }
 }

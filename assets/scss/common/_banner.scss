@@ -99,6 +99,13 @@
 
 .databases {
   
+  color: #ffffff; 
+
+  a {
+    color: $link;
+    text-decoration-color: $link;
+  }
+
   .grid__item {
     background-color: #00162b;
     background-size: cover;

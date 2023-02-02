@@ -1,0 +1,20 @@
+
+.blue-linear {
+
+    background: #232832;
+    background: linear-gradient(171.89deg, #232832 -5.91%, #0070D8 97.54%);
+}
+
+
+.dark-purlple {
+
+  color: $hero-text; 
+
+  a {
+    color: $link;
+    text-decoration-color: $link;
+  }
+
+  background: linear-gradient(180deg,#35234C 0%,#232832 100%);
+
+}
