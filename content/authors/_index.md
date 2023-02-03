@@ -3,8 +3,8 @@ title: "Authors"
 description: "Percona Community Blog Authors"
 ---
 
-{{% hero %}}
+{{% hero-gradient %}}
 
 # Percona Community Blog Authors!
 
-{{% /hero %}}
+{{% /hero-gradient %}}

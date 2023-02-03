@@ -1,7 +1,0 @@
-<div class="grid grid--3">
-{{- range first 3 (where $.Page.Site.RegularPages "Section" "blog") -}}
-<div class="grid__item">
-{{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
-</div>
-{{- end -}}
-</div>

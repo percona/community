@@ -13,34 +13,33 @@
     border-top: $height-menu-underline solid transparent;
     border-bottom: $height-menu-underline solid transparent;
 
+    color: $light;
+    border-bottom: 0 solid $header-color;
+
     &:hover {
-      color: $palette2;
-      border-bottom: $height-menu-underline solid $palette2;
+      color: $link-green;
+      border-bottom-color: $link-green;
+      border-bottom: $height-menu-underline solid $link-green;
     }
 
     &:hover span {
-      color: $palette2;
+      color: $link-green;
+    }
+
+    &:visited {
+      color: $light;
     }
 
     img {
       height:$height-header-img;
     }
   }
+
+
 }
 
 @mixin menu-color-light {
-  a {
-    color: $light;
-    border-bottom: 0 solid $header-color;
 
-    &:hover {
-      color: $palette2;
-      border-bottom-color: $palette4;
-    }
-    &:visited {
-      color: $light;
-    }
-  }
 }
 
 .cmp-revoke-consent {

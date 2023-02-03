@@ -9,7 +9,6 @@ header {
 
 .page-header {
   @include menu;
-  @include menu-color-light;
 
   a {
     display: block;
@@ -29,6 +28,10 @@ header {
       text-decoration: none;
       display: block;
       border: none;
+
+      &:visited {
+        border: none;   
+      }
     }
   }
 }

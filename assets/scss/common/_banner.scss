@@ -99,11 +99,11 @@
 
 .databases {
   
-  color: #ffffff; 
+  color: $light; 
 
   a {
-    color: $link;
-    text-decoration-color: $link;
+    color: $link-green;
+    text-decoration-color: $link-green;
   }
 
   .grid__item {
@@ -155,9 +155,8 @@
   }
 
   a.database__preview:hover {
-
     p {
-      color: $palette1;
+      color: $link-orange-hover;
     }
   }
 

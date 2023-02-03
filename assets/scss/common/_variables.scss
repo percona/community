@@ -14,8 +14,6 @@ $height-header: 3.2rem;
 $height-header-img: 1rem;
 $height-menu-underline: 0.2rem;
 
-$header-color: #00162b;
-
 $size-body-font: 1rem;
 
 $size-h2: 1.5rem;
@@ -25,24 +23,30 @@ $size-h5: 0.8rem;
 $size-h6: 0.6rem;
 $size-lead: 1.1rem;
 
-
 $border-radius: 0.2rem;
 
 /* colors */
-$palette1: #fe7f2d; // orange
-$palette2: #42536d;
-$palette3: #fefefe;
-$palette4: #00BDA5; // green
+$header-color: #00162b; // Maastricht Blue
 
-$night: #0e1a53;
-$aqua: #006A5D;
+$palette1: #fe7f2d; //  Princeton Orange
+$palette2: #42536d; // Violet blue
+$palette3: #fefefe; // White - Traffic white
 
-$hero-text: #ced5e3;
+$night: #0e1a53; // Oxford Blue
+$aqua: #006A5D; // Green - Tropical Rain Forest
 
-$link: #00BDA5;
-$link-hover: #42536d;
+$hero-text: #ced5e3; // grey - Columbia Blue
 
-$color-branded-h2: #697793;
+$link-orange: #E67117; // Orange
+$link-orange-hover: #fe7f2d; //  Princeton Orange
+
+$link-green: #00BDA5; // Green - Tiffany Blue
+$link-green-hover: #42536d; // Violet blue
+
+$link: #00BDA5; // Green - Tiffany Blue
+$link-hover: #42536d; // Violet blue
+
+$color-branded-h2: #697793; // Slate Gray
 
 $meta: #8897b3;
 $light: #ffffff;
