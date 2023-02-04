@@ -53,7 +53,7 @@ docker run -d \
 
 >On some systems, the timex collector requires an additional Docker flag, --cap-add=SYS_TIME, in order to access the required syscalls.
 
-So right away, we can see that additional privileges are needed. More interestingly, access to the `/proc` and `/sys` is required, but to the whole `/`. Also, some additional capabilities are needed.
+So right away, we can see that additional privileges are needed. More interestingly, not only access to the `/proc` and `/sys` is required, but to the whole `/`. Also, some additional capabilities are needed.
 
 If we will look briefly at the `node_exporter` code, we will indeed find different technics it uses to gather data:
 
@@ -128,7 +128,7 @@ wlp3s0: 3869584887 6162652    0 88037    0     0          0         0 1639861087
 cni-podman0:    3688      53    0    0    0     0          0        53    22094     163    0    0    0     0       0          0
 ```
 
-As you can see, network interfaces are different (`net`) and hostnames (`uts` namespace, 0d514d31c0a3 in the container and denlen in the host).
+As you can see, network interfaces are different (`net`) and hostnames (`uts` namespace, `0d514d31c0a3` in the container and `denlen` in the host).
 
 ## Linux Capabilities and seccomp
 
