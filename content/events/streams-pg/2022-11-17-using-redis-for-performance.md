@@ -4,11 +4,11 @@ description: "Join us at Percona Community Live Stream, and we will talk about h
 draft: false
 images:
   - events/streams-pg/PG-Stream-Dave-Chino-Redis.jpg
-weight: 1
 speakers:
   - charly_batista
   - mario_garcia
 tags: ['Postgres', 'Stream']
+date: "2022-11-17"
 ---
 ![Percona Community PostgreSQL Live Stream & Chat](events/streams-pg/PG-Stream-Dave-Chino-Redis.jpg)
  

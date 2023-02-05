@@ -11,9 +11,10 @@ speakers:
   - mario_garcia
 ---
 
+On November 30th, Percona's Technical Evangelists Edith Puclla and Mario García participated in the [International Day of Computer Security](https://www.eventbrite.com.mx/e/dia-internacional-de-la-seguridad-informatica-ufi-tickets-467767554347). An event organized by [Comunidad Tecnológica Tapachula](https://www.facebook.com/CTTAPMX/) together with [Universidad Filantrópica Internacional](https://www.facebook.com/UFItapachula/), in Tapachula, Mexico.
+
 ![International Day of Computer Security 2022](/events/international-day-of-computer-security-2022/header.jpg)
 
-On November 30th, Percona's Technical Evangelists Edith Puclla and Mario García participated in the [International Day of Computer Security](https://www.eventbrite.com.mx/e/dia-internacional-de-la-seguridad-informatica-ufi-tickets-467767554347). An event organized by [Comunidad Tecnológica Tapachula](https://www.facebook.com/CTTAPMX/) together with [Universidad Filantrópica Internacional](https://www.facebook.com/UFItapachula/), in Tapachula, Mexico.
 
 ![International Day of Computer Security 2022](/events/international-day-of-computer-security-2022/1.JPG)
 

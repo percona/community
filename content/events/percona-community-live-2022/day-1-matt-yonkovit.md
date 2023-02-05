@@ -6,6 +6,7 @@ images:
 PublishedDate: "2022-06-21"
 draft: false
 day: "June 21"
+date: "2022-06-21"
 speakers:
   - matt_yonkovit
 tags: ['Databases',' PostgreSQL', 'MySQL', 'Percona Community Live']

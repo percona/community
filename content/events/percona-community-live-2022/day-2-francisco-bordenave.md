@@ -6,6 +6,7 @@ images:
 PublishedDate: "2022-06-22"
 draft: false
 day: "June 22"
+date: "2022-06-22"
 speakers:
   - francisco_bordenave
 tags: ['PMM', 'Stream']

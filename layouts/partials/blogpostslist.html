@@ -1,4 +1,5 @@
-<div class="contentblock">
+<div class="contentblock branded">
+    <h2>Latest articles</h2>
     <div class="grid grid--3">
         {{- $pages := .Pages -}}
         {{- $paginator := .Paginate $pages 15 }}
@@ -9,7 +10,7 @@
                     {{- $excerpt = .Params.excerpt -}}
                 {{- end -}}
                 {{- if isset .Params "images" -}}
-                    {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt) -}}
+                    {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
                 {{- else -}}
                     {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
                 {{- end -}}

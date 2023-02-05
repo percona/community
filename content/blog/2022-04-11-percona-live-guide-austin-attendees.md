@@ -2,7 +2,7 @@
 title: "A Quick Guide To Austin For Percona Live 2022 Attendees"
 date: "2022-04-11T00:00:00+00:00"
 draft: false
-tags: ['blog', 'PerconaLive', 'PerconaLive2022']
+tags: ['blog', 'PerconaLive', 'PerconaLive2022', "Conference"]
 images:
   - blog/2022/4/Guide-PL-2022.jpg
 authors:

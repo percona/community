@@ -6,6 +6,7 @@ images:
 PublishedDate: "2022-06-23"
 draft: false
 day: "June 23"
+date: "2022-06-23"
 speakers:
   - hamid_akhtar
 tags: ['PostgreSQL', 'database']

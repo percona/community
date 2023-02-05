@@ -1,137 +1,126 @@
 @import "variables";
 
+
 .hero {
-  background-color: $palette2;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: $light;
-  h1 {
-    margin-bottom:1.5rem;
-    line-height: 2.5rem;
+
+  .contentblock {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
   }
 
-  h2 {
-    margin-top: 1rem;
-    margin-bottom:1rem;
-  }
-
-  h2 {
-    margin-top: 1rem;
-    margin-bottom:1rem;
-  }
-
-  a {
-    color: $light;
-    font-weight: bold;
-    border-bottom: 2px solid $palette2;
-    text-decoration: none;
-    transition:color $transition-length ease-out, border-bottom-color $transition-length ease-out;
-    &:hover, &:visited:hover {
-      color: $light;
-      border-bottom-color: $palette1;
-    }
-  }
-
-  figure {
-    @media screen and (max-width: 767px) {
-      position:relative;
-      text-align: center;
-    }
-  }
-
-  img {
-    float:left;
-    margin-right:1.5rem;
-    max-width:100%;
-    @media screen and (max-width: 767px) {
-      float:none;
-      margin-left:auto;
-      margin-right:auto;
-      display:block;
-    }
-  }
-
-  h2 + p + figure img {
-    position:relative;
-    top:-3rem;
-    @media screen and (max-width: 767px) {
-      top:0;
-    }
-  }
-
-  &:nth-child(4n+2), &:nth-child(4n+4) {
-    img {
-      float:right;
-      margin-right:0;
-      margin-left:1.5rem;
-      @media screen and (max-width: 767px) {
-        float:none;
-        margin-left:auto;
-        margin-right:auto;
-      }
-    }
-    background-color: transparent;
-    color: $dark;
-    a {
-      color: $dark;
-      &:hover {
-        color: $dark;
-      }
-    }
-  }
-  &:nth-child(4n+3) {
-    background-color: $palette1;
-  }
-
-  &--bio {
-    .contentblock {
-      text-align: center;
-      img {
-        text-align:center;
-        float:none;
-        margin-bottom:1.5rem;
-      }
-      p {
-        text-align:left;
-      }
-    }
-  }
-  @media (min-width: 769px) {
-    &--bio {
-      .contentblock {
-        min-height: 240px;
-        text-align:left;
-
-        img {
-          float: right;
-          margin-left: 1.5rem;
-          margin-bottom:0;
-        }
-      }
-    }
-  }
 }
 
-.contentblock {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+.hero-text {
+    font-family: $font-sans;
+    text-align: center;
+    padding: 0 5%;
 
-.herotext {
-    font-size: 1.2rem;
-    background: rgba(0,0,0,0.7);
-    padding: 1.5rem;
-    p {margin-top: 1.5rem;}
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1em;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+
     p:first-child {margin-top: 0;}
+
     small {font-size: 0.8rem;}
-    border-radius: 0.75rem;
+
     &.opaque {
       background: rgba(0,0,0,0.95);
       color: $light;
+    }
+  
+  @media screen and (max-width: 760px) {
 
-      a {
-        color: $light;   
+    text-align: left;
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1em;
+    }
+
+  }  
+}
+
+.homepage-hero {
+    position: relative;
+    .homepage-hero-icon {
+      position: absolute;
+      bottom: -3rem;
+      right: -3rem;
+
+      img {
+        height: 320px;
+        opacity: 0.4;
+
+        @media screen and (max-width: 900px) {
+
+          height: 200px;
+        }
       }
+
+      @media screen and (max-width: 760px) {
+
+        display: none;
+      }
+
+    }
+
+    font-family: $font-sans;
+    color: #ffffff; 
+
+    a {
+      color: $link-orange;
+      text-decoration-color: $link-orange;
+    }
+
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 87px;
+      line-height: 1em;
+      font-weight: 400;
+    }
+
+    p {
+      width: 60%;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    p:first-child {margin-top: 0;}
+
+    small {font-size: 0.8rem;}
+
+    &.opaque {
+      background: rgba(0,0,0,0.95);
+      color: $light;
+    }
+  
+    @media screen and (max-width: 760px) {
+
+      p {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1em;
+      }
+
+    }  
+
+    @media screen and (max-width: 960px) {
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1em;
+      }
+
     }
 }

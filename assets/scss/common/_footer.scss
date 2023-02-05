@@ -1,11 +1,19 @@
 @import "base";
 @import "variables";
 @import "menu";
+
 footer.page {
+
   margin-top:1.5rem;
+
   h2 {
     font-size:1rem;
   }
+}
+
+.footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media not print {
@@ -17,14 +25,13 @@ footer.page {
 
   .page-footer {
     @include container;
-    font-size: 0.7rem;
+    font-size: 12px;
     line-height: 1.5rem;
 
     ul {
       margin-bottom:1.5rem;
     }
 
-    @include menu;
 
     nav ul {
       display: flex;
@@ -35,14 +42,26 @@ footer.page {
       margin-bottom: 0;
       height:1.5rem;
       line-height:0.5rem;
+
       a {
+        color: $light;
+        text-decoration: none;
         height:1.3rem;
         line-height:1.3rem;
         text-align:center;
         display: block;
         padding-left:0.75rem;
         padding-right:0.75rem;
-        border-bottom:.2rem solid transparent;
+
+        &:visited {
+          color: $link;
+        }
+
+        &:hover {
+          color: $palette1;
+          border-bottom: 0;
+        }
+
         @media (min-width: 768px) {
           padding-left:1.5rem;
           padding-right:1.5rem;
@@ -66,22 +85,22 @@ footer.page {
 }
 
 footer.page {
-  border-top:2px solid $palette1;
+  border-top:2px solid #aab7cf;
   margin-top:-2px;
   aside {
     text-align: center;
     font-size: 0.6rem;
     line-height: 1.5rem;
-    color: #333;
+    color: #aab7cf;
   }
 }
 
 @media screen {
   footer.page {
-    background-color: $palette3;
+    background-color: $header-color;
   }
   .page-footer {
-    @include menu-color-light;
+
   }
 }
 

@@ -13,11 +13,11 @@ tags: ['PerconaLive2022', 'Podcast']
 ---
 
 
-{{% hero %}}
+{{% hero-gradient class="night" %}}
 
 # Dave Stokes Talks Open on Percona Live 2022
 
-{{% /hero %}}
+{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

@@ -3,7 +3,7 @@ title: "Securing Your Data Using PostgreSQL - January 12, 2022 Developer Meetup"
 description: "This meetup is your chance to get a behind-the-scenes view and to directly interact in person with our engineers. We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona."
 images:
   - events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Secure-Jan.jpg
-date: "2022-12-02"
+date: "2023-01-12"
 draft: false
 speakers:
   - kai_wagner
@@ -11,13 +11,13 @@ speakers:
   - edith_puclla
   - mario_garcia
   - charly_batista
-tags: ['opensource','securing','Stream']
+tags: ['Promo', 'Stream', 'opensource','securing']
 aliases: 2022-12-15-securing-data
 ---
 
-![Percona Community Dev Monthly](events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Secure-Jan.jpg)
-
 When we talk about database security, it encompasses different modules of different distinct areas. It is a very vast topic because it requires securing your (1) **Network**, (2) **Network Node**, (3) **Data**, (4) **Database**, (5) **Users** and (6) **Application**. 
+
+![Percona Community Dev Monthly](events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Secure-Jan.jpg)
 
 A secure system or a database means it is secured by all means. The main pillars of security are **A(Authentication)**, **A (Authorization)**, and **A (Accounting)**. PostgreSQL provides different levels of security. Sometimes it takes effort to learn how to use different types of authentication, what it is and authorization, and how to do auditing and accounting. This talk will cover all the available security techniques used in PostgreSQL based on the AAA model. It will not only cover how to use that but as well as the pros and cons of all these methods. 
 

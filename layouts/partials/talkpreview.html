@@ -4,7 +4,21 @@
 {{ if .Content }}
 <div class="post__content">
 <p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify  -}}</p>
-<p class="readmore">Read more &raquo;</p>
+<div class="bottom">
+    {{ if .Date }}
+    <p>{{ .Date.Format "January 2, 2006" }}</p>
+    {{ else }}
+    <p class="readmore">Read more &raquo;</p>
+    {{ end }}
 </div>
+</div>
+{{ else }}
+{{ if .Date }}
+<div class="post__content">
+    <div class="bottom">
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
+    </div>
+</div>
+{{ end }}
 {{ end }}
 </a>

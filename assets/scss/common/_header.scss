@@ -3,9 +3,12 @@
 
 $mobile-breaking-point: 1000px;
 
+header {
+  background-color: $header-color;
+}
+
 .page-header {
   @include menu;
-  @include menu-color-light;
 
   a {
     display: block;
@@ -21,10 +24,14 @@ $mobile-breaking-point: 1000px;
     font-variant: small-caps;
 
     a {
-      margin-top: 0.2rem;
+      margin-top: 0.4rem;
       text-decoration: none;
       display: block;
       border: none;
+
+      &:visited {
+        border: none;   
+      }
     }
   }
 }
@@ -54,12 +61,12 @@ $mobile-breaking-point: 1000px;
   }
   .hamburger-bar {
     height:0.2rem;
-    background: $dark;
+    background: $light;
     margin-top:0.2rem;
     display:block;
   }
   #show-mobile-menu + .mobile-toggle + .mobile-menu nav {
-    background: $palette3;
+    background: $header-color;
   }
   #show-mobile-menu + .mobile-toggle {
     .hamburger-bar {
@@ -207,7 +214,7 @@ $mobile-breaking-point: 1000px;
     }
 
     nav li {
-      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     nav li.active a {
@@ -268,9 +275,10 @@ $mobile-breaking-point: 1000px;
 .page-header nav ul.submenu__list {
     display: none;
     flex-direction: column;
-    background: #fff;
+    background: $header-color;
     position: absolute;
     left: 0;
+    border-top: 1px solid #aab7cf;
 }
 
 .page-header nav ul.submenu__list li {

@@ -1,5 +1,5 @@
 ---
-title: 'Percona Live Europe Presents: ClickHouse at Messagebird: Analysing Billions of Events in Real-Time*'
+title: 'Percona Live Europe Presents: ClickHouse at Messagebird: Analysing Billions of Events in Real-Time\*'
 date: Mon, 29 Oct 2018 17:28:38 +0000
 draft: false
 tags: ['author_felix', 'author_aleksandar', 'big data', 'ClickHouse', 'Events', 'MySQL', 'Percona Live Europe 2018']
@@ -11,9 +11,9 @@ authors:
 slug: clickhouse-at-messagebird-analysing-billions-of-events-in-real-time
 ---
 
-[![MessageBird Logo](blog/2018/10/message-bird.png)](https://www.messagebird.com/en)
+![MessageBird Logo](blog/2018/10/message-bird.png)
 
-We'll look into how Clickhouse allows us to ingest a large amount of data and run complex analytical interactive queries at [MessageBird](https://www.messagebird.com/en). We also present the business needs that brought ClickHouse to our attention and detail the journey to its deployment. We cover the problems we faced, and how we dealt with them. We talk about our current Cloud production setup and how we deployed and use it. 
+We'll look into how Clickhouse allows us to ingest a large amount of data and run complex analytical interactive queries at [MessageBird](https://www.messagebird.com/en). We also present the business needs that brought ClickHouse to our attention and detail the journey to its deployment. We cover the problems we faced, and how we dealt with them. We talk about our current Cloud production setup and how we deployed and use it. 
 
 We are really enthusiastic to share a use case of Clickhouse, how it helped us to scale our analytics stack with the good, the bad and the ugly. 
 

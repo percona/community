@@ -1,5 +1,6 @@
-$font-sans: Arial, sans-serif;
-$font-serif: Georgia, "Palatino Linotype", "Book Antiqua", Palatino, "Times New Roman", serif;
+$font-sans: "Poppins",Helvetica,Arial,Lucida,sans-serif;
+$font-heading: "Poppins",Helvetica,Arial,Lucida,sans-serif;
+$font-serif: "Poppins",Helvetica,Arial,Lucida,sans-serif;
 $font-mono: "Lucida Console", Monaco, monospace;
 $font-heading: $font-serif;
 
@@ -9,8 +10,11 @@ $padding-right-page: 1.5rem;
 $transition-length: .233s;
 
 $width-max:1200px;
-$height-header:3rem;
+$height-header: 3.2rem;
+$height-header-img: 1rem;
 $height-menu-underline: 0.2rem;
+
+$size-body-font: 1rem;
 
 $size-h2: 1.5rem;
 $size-h3: 1.25rem;
@@ -22,8 +26,28 @@ $size-lead: 1.1rem;
 $border-radius: 0.2rem;
 
 /* colors */
-$palette1: #fe7f2d;
-$palette2: #004966;
-$palette3: #fefefe;
+$header-color: #00162b; // Maastricht Blue
+
+$palette1: #fe7f2d; //  Princeton Orange
+$palette2: #42536d; // Violet blue
+$palette3: #fefefe; // White - Traffic white
+
+$night: #0e1a53; // Oxford Blue
+$aqua: #006A5D; // Green - Tropical Rain Forest
+
+$hero-text: #ced5e3; // grey - Columbia Blue
+
+$link-orange: #E67117; // Orange
+$link-orange-hover: #fe7f2d; //  Princeton Orange
+
+$link-green: #00BDA5; // Green - Tiffany Blue
+$link-green-hover: #42536d; // Violet blue
+
+$link: #00BDA5; // Green - Tiffany Blue
+$link-hover: #42536d; // Violet blue
+
+$color-branded-h2: #697793; // Slate Gray
+
+$meta: #8897b3;
 $light: #ffffff;
 $dark: #333333;

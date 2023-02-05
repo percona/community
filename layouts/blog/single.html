@@ -19,7 +19,7 @@
 
 {{ define "main" }}
 
-  <article class="text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
+  <article class="text blog-post{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
     {{ if $.PublishDate }}
       {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
       <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
@@ -78,7 +78,7 @@
 
   {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
   {{ with $related }}
-    <div class="recommendations">
+    <div class="recommendations branded">
       <h2>Did you like this post? Why not read more?</h2>
       {{ $recommendationCount := 3 }}
       <div class="grid grid--{{ $recommendationCount }}">

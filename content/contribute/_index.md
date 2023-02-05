@@ -3,44 +3,46 @@ title: "Percona Community"
 description: "Percona Community - Contributions and Contributors"
 ---
 
-{{% hero background="purplegalaxy.jpg" %}}
-{{% herotext %}}
+{{% hero-gradient class="aqua" %}}
 
-## Percona Community
+# Percona Community
 
-We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more - we also contribute to other open source projects and communities! Let's make technology better!
-{{% /herotext %}}
-{{% /hero %}}
+We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more &ndash; we also contribute to other open source projects and communities! Let's make technology better!
 
-{{% hero %}}
+{{% /hero-gradient %}}
+
+{{% block class=" grid-6-3" %}}
 
 ## Contributing
 
-![](projects-salute-small.png)
-
+{{% grid size=2 %}}
+{{% griditem %}}
 {{% typography %}}
+Each of our projects has its own contribution guidelines. You will find them in the [GitHub repositories](https://github.com/percona/) in the `CONTRIBUTING.md` file.
 
-Each of our projects has its own contribution guidelines. You will find them in their [respective GitHub repositories](https://github.com/percona/). There are many ways our community can thrive: people engaging with and listening to each other, writing and reviewing content, writing and reviewing code, and raising awareness for the topics we all care about.
-
-Participation in this community may come in many forms: whether it's written, more visual (illustrations, comics, videos, logos), or auditive (podcasts, talks, music), supporting each other or having fun. We had people write jingles and raps as well as drawing superheroes and a vast amount of great articles, talks, and human connection.
+Code contributions are welcome, but code is only one way to contribute! Answering questions on the Percona Forum, writing or contributing fixes to documentation, new blogs, giving talks or video tutorials about using MySQL, MongoDB, PostgreSQL, etc. All of those things help build and support other open source database users.
 
 If you're interested in producing content for this community (examples: blog post, guide, [documentation](/contribute/documentation), talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
 
 For content inspiration, please check the [open topics](/contribute/opentopics) or send a pull request with your topic idea.
 {{% /typography %}}
+{{% /griditem %}}
+{{% griditem %}}
+![](/images/contributing/projects-salute-small.png)
+{{% /griditem %}}
+{{% /grid %}}
+{{% /block %}}
 
-{{% /hero %}}
-
-{{% hero background="orangegalaxy.jpg" %}}
-{{% herotext %}}
+{{% hero-gradient class="night" %}}
 
 ## Code of Conduct
 
 Our community members care about integrating optimized databases efficiently into their overall architecture. There is no place for harassment of any kind. Please refer to our [Code of Conduct](/contribute/coc) for more information.
-{{% /herotext %}}
-{{% /hero %}}
 
-{{% hero %}}
+{{% /hero-gradient %}}
+
+
+{{% block class=" " %}}
 
 ## Forums
 
@@ -50,34 +52,33 @@ Head over to our [forums](https://forums.percona.com/), search for answers, or a
 Check out the latest 5 forums posts:
 
 {{% getforumposts %}}
+
 {{% /typography %}}
 
-{{% /hero %}}
+{{% /block %}}
 
-{{% hero %}}
+{{% block class=" dark-purlple" %}}
 
 ## Bug Reports
-{{% typography %}}
-Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://jira.percona.com) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
-{{% /typography %}}
-{{% /hero %}}
 
-{{% hero %}}
+Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://jira.percona.com) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
+
+{{% /block %}}
+
+{{% block class=" grid-6-3" %}}
 
 ## Let's Chat
 
-![](mongodb-sit-small.png)
-
 {{% grid size=2 %}}
+{{% griditem %}}
+
+{{% grid size=2 class=" social" %}}
 {{% griditem %}}
 {{% socialblock pic="icon-discord.svg" alt="Community Discord" url="http://per.co.na/discord" %}}
 {{% /griditem %}}
 {{% griditem %}}
 {{% socialblock pic="icon-youtube.svg" alt="Percona YouTube" url="https://www.youtube.com/user/PerconaMySQL" %}}
 {{% /griditem %}}
-{{% /grid %}}
-
-{{% grid size=2 %}}
 {{% griditem %}}
 {{% socialblock pic="icon-twitter.svg" alt="@percona" url="https://twitter.com/percona" %}}
 {{% /griditem %}}
@@ -85,13 +86,20 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% socialblock pic="icon-twitter.svg" alt="@perconabytes" url="https://twitter.com/perconabytes" %}}
 {{% /griditem %}}
 {{% /grid %}}
-{{% /hero %}}
+{{% /griditem %}}
 
-{{% hero background="contribute.png" %}}
-{{% herotext class="opaque" %}}
+{{% griditem %}}
+![](/images/contributing/mongodb-sit-small.png)
+{{% /griditem %}}
+
+{{% /grid %}}
+
+{{% /block %}}
+
+{{% hero-gradient class="aqua" %}}
 
 ## Engineering Monthly Meeting
 
 Our monthly [Engineering meetings](/contribute/engineeringmeetings) take place on [Discord](http://per.co.na/discord) in the voice channel. Join us and let's chat about technical topics, open pull requests, bugs, and plans!
-{{% /herotext %}}
-{{% /hero %}}
+
+{{% /hero-gradient %}}

@@ -5,10 +5,9 @@ images:
   - events/percona-community-live/days/Day-2.jpg
 layout: landingDay
 csv: "assets/csv/Percona-Community-Live-Talks.csv"
-weight: 2
 csv_filter: "June 22"
 date: "2022-06-22"
-tags: ['opensource', 'event']
+tags: ['opensource']
 speakers:
   - sidney_chen
   - sri_sakthivel

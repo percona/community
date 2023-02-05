@@ -1,7 +1,7 @@
 ---
 title: "How and Why Contribute to Communities"
 date: "2022-05-30T00:00:00+00:00"
-tags: ['PMM' , 'minikube', 'CSI', 'kubernetes', 'k8s', 'operator' ]
+tags: ['PMM' , 'minikube', 'CSI', 'kubernetes', 'k8s', 'operator']
 authors:
   - denys_kondratenko
 images:

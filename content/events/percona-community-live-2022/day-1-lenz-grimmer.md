@@ -6,6 +6,7 @@ images:
 PublishedDate: "2022-06-21"
 draft: false
 day: "June 21"
+date: "2022-06-21"
 speakers:
   - lenz_grimmer
 tags: ['Postgres', 'MongoDB', 'MySQL', 'Percona Community Live']

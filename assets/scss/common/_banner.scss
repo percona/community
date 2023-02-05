@@ -1,15 +1,6 @@
 @import "variables";
 
 .banner {
-  background-color: $palette2;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: $light;
-
-  h1 {
-    margin-bottom:1.5rem;
-  }
 
   .banner__content
   {
@@ -37,18 +28,20 @@
   }
 
   .banner__text {
-    font-size: 1.2rem;
-    background: rgba(0,0,0,0.7);
+
     padding: 1.5rem;
-    border-radius: .75rem;
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      line-height: 2rem;
     }
 
-    p {margin-top: 1.5rem;}
+    p {
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    }
+
     p:first-child {margin-top: 0;}
-    small {font-size: 0.8rem;}
 
     &.opaque {
       background: rgba(0,0,0,0.95);
@@ -60,26 +53,135 @@
   }
 
   .banner__icon {
-    float:right;
-    text-align: center;
+    align-self: center;
+    margin: auto;
+
     @media screen and (max-width: 1000px)
     {
         display: none;
     }
 
-  }
-
-  a {
-    color: $light;
-    font-weight: bold;
-    border-bottom: 2px solid $palette2;
-    text-decoration: none;
-    transition:color $transition-length ease-out, border-bottom-color $transition-length ease-out;
-    &:hover, &:visited:hover {
-      color: $light;
-      border-bottom-color: $palette1;
+    img {
+      height: 240px;    
     }
   }
 
+
 }
 
+.img_banner {
+  img {
+    display: block;
+  }
+}
+
+.block  {
+
+
+}
+
+
+
+.block__content {
+    @include container;
+
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+
+}
+
+.databases {
+  
+  color: $light; 
+
+  a {
+    color: $link-green;
+    text-decoration-color: $link-green;
+  }
+
+  .grid__item {
+    background-color: #00162b;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 0 solid #333;
+    border-radius: 0;
+    overflow: hidden;
+    border-left-width: 2px;
+    border-left-color: #f7d592;
+  }
+
+  .database__grid {
+    display: grid;
+    gap: 1.5rem 1.5rem;
+    grid-template-columns: 3fr 6fr;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .database__image {
+    align-self: center;
+    margin: auto;
+    padding-left: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    display:block;
+  }
+
+  a.database__preview, a.database__preview * {
+    text-decoration: none;
+  }
+
+  .database__content {
+    padding-right: 1rem;  
+
+    h4 {
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      color: $light;
+    }
+  }
+
+  a.database__preview:hover {
+    p {
+      color: $link-orange-hover;
+    }
+  }
+
+  .post-type {
+    margin-top: 0rem;
+    display: block;
+    float: right;
+
+    small {
+      color: $link;
+    }
+  }
+}
+
+
+.projects {
+  
+  .post--preview {
+    text-align: center;
+  }
+
+  .post--preview img {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

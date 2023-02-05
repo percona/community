@@ -1,0 +1,39 @@
+{{ define "css" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/projects.scss") | safeCSS) -}}
+    {{- if in .Content "<pre class=\"chroma\">" -}}
+        {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+    {{- end -}}
+{{- end -}}
+
+{{ define "mainwrapper" }}
+
+        <div class="hero hero-gradient night">
+            <div class="contentblock">
+                <div class="hero-text">
+                    <h1>{{ .Title }}</h1>
+                    <p>{{ .Params.hero_description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-main">
+            <div class="text body">
+                {{- .Content -}}
+            </div>
+
+            {{ if .Params.blog_tags }}
+            <div class="branded">
+                <h2>Community Blog Posts</h2>
+                <div class="grid grid--3">
+                    {{ $t := .Params.blog_tags }}
+
+                    {{- range first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $t ) -}}
+                        <div class="grid__item">
+                        {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+                        </div>
+                    {{- end -}}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+{{ end }}

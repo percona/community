@@ -3,13 +3,13 @@ title: "Percona’s HOSS Talks FOSS: The Open Source Database Podcast"
 description: "Percona’s HOSS Talks FOSS: The Open Source Database Podcast"
 ---
 
-{{% bannerwithicon background="purplegalaxy.jpg" icon="podcasts/matt-hero-290.png" %}}
+{{% banner-gradient-icon-right class="night" icon="podcasts/matt-hero-290.png" %}}
 
 # Community Podcast
 
 Want to spend your spare time with pleasure and benefit? We prepared for you a Percona Community-focused podcast “The HOSS talks FOSS” hosted by the HOSS (Head of Open Source Software) Matt Yonkovit. 
 
-{{% /bannerwithicon %}}
+{{% /banner-gradient-icon-right %}}
 
 {{% contentblock %}}
 {{% typography %}}

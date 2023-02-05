@@ -4,10 +4,10 @@ description: "This new meetup is your chance to get a behind-the-scenes view and
 layout: list
 images:
   - events/streams-monthly-dev/Developer-Meetup-Kai.jpg
-weight: 1
+date: "2022-09-26"
 ---
 
-{{% hero %}}
+{{% hero-gradient class="night" %}}
 
 # Monthly Percona Developer Meetup
 
@@ -15,7 +15,7 @@ This new meetup is your chance to get a behind-the-scenes view and to **directly
 
 We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona. It will be fantastic! 
 
-{{% /hero %}}
+{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

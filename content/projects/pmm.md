@@ -1,9 +1,10 @@
 ---
 title: "PMM - Percona Monitoring and Management"
 description: "PMM - Percona Monitoring and Management for database observability"
+blog_tags: ["PMM", "Monitoring", "Prometheus"]
+hero_description: "How can you help?"
+hero_title: "PMM - Percona Monitoring and Management"
 ---
-
-*How can you help?*
 
 ## Download, Try, Give Feedback, & Enhance
 
@@ -90,8 +91,4 @@ Here is a feed of early previews that could be tested before release:
 
 {{% blogpostsbytags tags="PMM_prev" %}}
 
-
-## PMM related blog posts
-
-{{% blogpostsbytags tags="Monitoring,PMM,Prometheus" %}}
 

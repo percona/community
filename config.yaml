@@ -41,38 +41,34 @@ markup:
     tabWidth: 4
 menu:
   main:
-    - identifier: MongoDB
-      name: MongoDB
-      url: /mongodb
+    - identifier: contribute
+      name: Contribute
+      url: /contribute
       weight: 1
-    - identifier: MySQL
-      name: MySQL
-      url: /mysql
+    - identifier: events
+      name: Events
+      url: /events
       weight: 2
-    - identifier: PostgreSQL
-      name: PostgreSQL
-      url: /postgresql
+    - identifier: blog
+      name: Blog
+      url: /blog
       weight: 3
     - identifier: projects
       name: Projects
       url: /projects
       weight: 4
-    - identifier: podcasts
-      name: Podcasts
-      url: /podcasts
+    - identifier: MySQL
+      name: MySQL
+      url: /mysql
       weight: 5
-    - identifier: events
-      name: Events
-      url: /events
+    - identifier: PostgreSQL
+      name: PostgreSQL
+      url: /postgresql
       weight: 6
-    - identifier: blog
-      name: Blog
-      url: /blog
+    - identifier: MongoDB
+      name: MongoDB
+      url: /mongodb
       weight: 7
-    - identifier: contribute
-      name: Contribute
-      url: /contribute
-      weight: 8
 
     - identifier: hoss
       name: HOSS Talks
@@ -95,32 +91,37 @@ menu:
       url: /projects/pmm/
       parent: projects
       weight: 2
+    - identifier: platform
+      name: Percona Platform
+      url: /projects/platform/
+      parent: projects
+      weight: 3
     - identifier: subtoolkit
       name: Percona Toolkit
       url: /projects/toolkit/
       parent: projects
-      weight: 3
+      weight: 4
     - identifier: allprojects
       name: All projects
       url: /projects
       parent: projects
-      weight: 4
+      weight: 5
 
     - identifier: communityevents
       name: Community Events
       url: /events
       parent: events
       weight: 1
-    - identifier: engineeringmeetings
-      name: Engineering Meetings
-      url: /contribute/engineeringmeetings
-      parent: events
-      weight: 2
     - identifier: speakers
       name: Speakers
       url: /speakers
       parent: events
       weight: 3
+    - identifier: podcasts
+      name: Podcasts
+      url: /podcasts
+      parent: events
+      weight: 4
 
     - identifier: posts
       name: Posts
@@ -133,41 +134,42 @@ menu:
       parent: blog
       weight: 2
 
-    - identifier: articles
-      name: Articles
-      url: /contribute/articles
+    - identifier: involved 
+      name: How to Get Involved
+      url: /contribute/how-to-get-involved
       parent: contribute
       weight: 1
-    - identifier: youtube_playlists
-      name: YouTube Playlists
-      url: /contribute/youtube_playlists
-      parent: contribute
-      weight: 3
     - identifier: coc
       name: Code of Conduct
       url: /contribute/coc
       parent: contribute
-      weight: 6
-    - identifier: documentation
-      name: Documentation
-      url: /contribute/documentation
-      parent: contribute
-      weight: 7
+      weight: 2
     - identifier: opentopics
       name: Open Topics
       url: /contribute/opentopics
       parent: contribute
-      weight: 2
+      weight: 3
+    - identifier: articles
+      name: Articles
+      url: /contribute/articles
+      parent: contribute
+      weight: 4
+    - identifier: youtube_playlists
+      name: YouTube Playlists
+      url: /contribute/youtube_playlists
+      parent: contribute
+      weight: 5
+    - identifier: documentation
+      name: Documentation
+      url: /contribute/documentation
+      parent: contribute
+      weight: 6
     - identifier: surveys
       name: Testimonials & Surveys
       url: /contribute/testimonials
       parent: contribute
-      weight: 5
-    - identifier: help
-      name: Help Wanted
-      url: /contribute/help-wanted
-      parent: contribute
-      weight: 8
+      weight: 7
+
     - identifier: videos
       name: Videos
       url: /contribute/videos

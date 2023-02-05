@@ -2,13 +2,19 @@
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
 {{ end }}
 
-{{ define "main" }}
+{{ define "mainwrapper" }}
     {{ if or .Title .Content }}
-        <div class="text">
-            <h1>{{ .Title }}</h1>
-            <div class="body">
-                {{ .Content }}
+
+        <div class="hero hero-gradient night">
+            <div class="contentblock">
+                <div class="hero-text">
+                    <h1>{{ if .Params.hero_title }}{{ .Params.hero_title }}{{ else }}{{ .Title }}{{ end }}</h1>
+                    {{ if .Params.hero_description }}<p>{{ .Params.hero_description }}</p>{{ end }}
+                </div>
             </div>
         </div>
+
+        {{ .Content }}
+
     {{ end }}
 {{ end }}
