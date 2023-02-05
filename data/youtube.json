@@ -225,6 +225,12 @@
     "authors": "Mario García (Percona)"
   },
   {
+    "youtube_id": "EXqEzZPm4I0",
+    "title": "KubeCon + CloudNativeCon 2019 - How Container Networking Affects Database Performance",
+    "date": "Nov 23, 2019",
+    "authors": "Tyler Duzan & Vadim Tkachenko (Percona)"
+  },
+  {
     "youtube_id": "Bon9us7YBjY",
     "title": "Uptime by Aiven 2022 - A Journey to MySQL in K8s",
     "date": "Jan 6, 2023",
