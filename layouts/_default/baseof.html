@@ -8,8 +8,6 @@
     <meta name="description" content="{{ with .Description }}{{ . | truncate 159 }}{{ else }}{{if .IsPage}}{{ .Summary | truncate 159 }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ if .Site.Params.favicon }}
     <link rel="shortcut icon" href="{{ (resources.Get "icons/cropped-percona-favicon-32x32.png").RelPermalink }}" type="image/png" />
-    <link rel="icon" href="https://redesign.percona.com/wp-content/uploads/2023/01/cropped-percona-favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="https://redesign.percona.com/wp-content/uploads/2023/01/cropped-percona-favicon-192x192.png" sizes="192x192">
     {{ end }}
 
     {{ if .Params.canonical -}}

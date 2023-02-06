@@ -8,7 +8,7 @@ disableHugoGeneratorInject: true
 params:
   favicon: superhero.png
   images:
-    - contribute.png
+    - contribute.jpg
 taxonomies:
   tag: tags
 social:
