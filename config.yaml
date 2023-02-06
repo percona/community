@@ -57,18 +57,26 @@ menu:
       name: Projects
       url: /projects
       weight: 4
+    - identifier: databases
+      name: Databases
+      url: 
+      weight: 5
+
     - identifier: MySQL
       name: MySQL
       url: /mysql
-      weight: 5
+      parent: databases
+      weight: 1
     - identifier: PostgreSQL
       name: PostgreSQL
       url: /postgresql
-      weight: 6
+      parent: databases
+      weight: 2
     - identifier: MongoDB
       name: MongoDB
       url: /mongodb
-      weight: 7
+      parent: databases
+      weight: 3
 
     - identifier: hoss
       name: HOSS Talks
