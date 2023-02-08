@@ -2,7 +2,7 @@
 title: 'Enabling KMS encryption for a running Amazon RDS instance'
 date: Fri, 08 Jun 2018 11:40:02 +0000
 draft: false
-tags: ['renato-losio', 'Amazon RDS', 'AWS', 'encryption', 'KMS encryption', 'MySQL']
+tags: ['renato-losio', 'Amazon RDS', 'AWS', 'encryption', 'KMS encryption', 'MySQL', 'Labs']
 authors:
   - renato_losio
 images:

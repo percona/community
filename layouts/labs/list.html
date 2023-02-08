@@ -1,0 +1,11 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+    {{ if or .Title .Content }}
+
+        {{ .Content }}
+
+    {{ end }}
+{{ end }}
