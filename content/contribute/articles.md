@@ -91,6 +91,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [The Future For Open Source](https://www.forbes.com/sites/adrianbridgwater/2023/02/06/the-future-for-open-source/?sh=5d0684414b4f) - Adrian Bridgwater - February 6, 2023
 - [IT Leaders' Tech Predictions for 2023](https://www.itprotoday.com/it-operations-and-management/it-leaders-tech-predictions-2023#Percona) - Rick Dagley - January 13, 2023
 - [Why a DataOps Team Needs a Database Reliability Engineer](https://thenewstack.io/why-a-dataops-team-needs-a-database-reliability-engineer/) - Jennifer Riggins - January 16, 2023
 - [What to Expect in the World of Open-Source Databases](https://vmblog.com/archive/2023/01/11/percona-2023-predictions-what-to-expect-in-the-world-of-open-source-databases.aspx#.Y77s0uxBx_S) - Donnie Berkholz - January 11, 2023
