@@ -29,4 +29,4 @@ With Percona Terraform Provider you can:
 
 We support both AWS and Google Cloud.
 Source code and examples are:
-[Percona-Lab/terraform-provider-percona: Terraform modules to deploy Percona Server and Percona XtraDB Cluster (github.com)](Percona-Lab/terraform-provider-percona: Terraform modules to deploy Percona Server and Percona XtraDB Cluster (github.com))
+[Percona-Lab/terraform-provider-percona](https://github.com/Percona-Lab/terraform-provider-percona)
