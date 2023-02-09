@@ -66,14 +66,14 @@ menu:
       url: 
       weight: 6
 
-    - identifier: neon
-      name: Neon
-      url: /labs/neon
+    - identifier: serverless-postgresql
+      name: Serverless PostgreSQL
+      url: /labs/serverless-postgresql
       parent: labs
       weight: 1
     - identifier: terraform
-      name: terraform
-      url: /labs/terraform
+      name: Terraform Provider
+      url: /labs/terraform-provider
       parent: labs
       weight: 2
 
