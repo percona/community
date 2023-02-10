@@ -1,5 +1,5 @@
 ---
-title: "Nurturing, Motivating and Recognizing None Code Contributions"
+title: "Nurturing, Motivating and Recognizing Non Code Contributions"
 date: "2023-02-08T00:00:00+00:00"
 tags: ["contributions", "community", "non_code", "PMM"]
 authors:
@@ -14,7 +14,7 @@ Non-code contributions may be of different types. You can learn more about them 
 
 In this article, we will look more into what could we do to bring in more non code contributions. 
 
-## Why You Need Non Code Contributions?
+## Why Do You Need Non Code Contributions?
 
 - It gives you resources to fill the gaps. It is not a secret that developers often do not adore writing documentation. Or you may not have resources for testing or designing things, improving usability or localization for different markets. Coding is super important, but that is not always enough. 
 - It helps you to become more visible on socials and on software marketplaces where people come to choose a tool for their project and motivate people to try your software, for example, for their pet/student project. 
