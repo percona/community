@@ -1,6 +1,6 @@
 ---
 title: "Percona Labs"
-description: "Percona Community - Contributions and Contributors"
+description: "Percona Labs projects are focused on bringing innovations to the world of open source databases. The project is led by Percona’s CTO Vadim Tkachenko. The aim is to increase agility, improve scalability, reduce cost, and enable easy integration."
 images:
     - images/labs/labs.jpg
 ---
