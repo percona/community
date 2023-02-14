@@ -1,29 +1,31 @@
 ---
-title: "Percona Community"
+title: "Percona Labs"
 description: "Percona Community - Contributions and Contributors"
+images:
+    - images/labs/labs.jpg
 ---
 
 {{% hero-gradient class="aqua" %}}
 
 # Percona Labs
 
-We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more &ndash; we also contribute to other open source projects and communities! Let's make technology better!
+Participate in Percona research and innovation projects. Let’s make open source world better together!
 
 {{% /hero-gradient %}}
 
-{{% block class=" branded projects" %}}
+{{% block class=" branded" %}}
 
-## Title
+## What is Percona Labs?
 
-We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more &ndash; we also contribute to other open source projects and communities! Let's make technology better!
+In Percona we want to support the culture of innovation. Percona Labs projects are focused on bringing innovations to the world of open source databases. The project is led by Percona’s CTO Vadim Tkachenko. The aim is to increase agility, improve scalability, reduce cost, enable easy integration, and upgrade the speed and efficiency of your organization's development processes. 
 
 {{% /block %}}
 
-{{% block class=" branded" %}}
+{{% block class=" branded projects" %}}
   
-##  Projects
+##  How Can I Participate?
 
-We also create.
+We highly encourage you to try our lab projects out and take part in their development to bring in new technologies and broaden your horizons. We welcome contributions of all kinds - from code ones to providing feedback and sharing your ideas about project development. Let’s foster a culture of experimentation, learning and progress together! 
 
 {{% grid size=2 %}}
 {{% griditem %}}
@@ -41,12 +43,10 @@ Find out more about how you can monitor and manage your database effectively wit
 
 {{% hero-gradient class="dark-purlple" %}}
 
-Here you can write something motivating or explaining. For example, you could talk about the goals or principles of the lab.
-
-You can also provide contact information.
+We encourage you to think creatively and come up with new ideas. Share with us your new products, processes, or services by contacting us at labs@percona.com.
 
 {{% /hero-gradient %}}
 
 {{% block class="" %}}
-{{% blogpostsbytags Title="Blog Posts about Labs projects" tags="Labs, labs, Neon, Terraform" %}}
+{{% blogpostsbytags Title="Blog Posts about Labs projects" tags="Labs,labs,Serverless,MySQL,Terraform,PostgreSQL,Postgres" %}}
 {{% /block %}}

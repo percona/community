@@ -63,7 +63,7 @@ menu:
       weight: 5
     - identifier: labs
       name: Labs
-      url: 
+      url: /labs
       weight: 6
 
     - identifier: serverless-postgresql
