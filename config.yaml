@@ -61,6 +61,21 @@ menu:
       name: Databases
       url: 
       weight: 5
+    - identifier: labs
+      name: Labs
+      url: /labs
+      weight: 6
+
+    - identifier: serverless-postgresql
+      name: Serverless PostgreSQL
+      url: /labs/serverless-postgresql
+      parent: labs
+      weight: 1
+    - identifier: terraform
+      name: Terraform Provider
+      url: /labs/terraform-provider
+      parent: labs
+      weight: 2
 
     - identifier: MySQL
       name: MySQL
