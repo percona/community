@@ -219,6 +219,12 @@
 
   "Events":[
   {
+    "youtube_id": "rIfWASEoXC8",
+    "title": "P99 CONF 2022 - A Deep Dive into Query Performance",
+    "date": "Oct 20, 2022",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
     "youtube_id": "6qLC9nftVEY",
     "title": "#CCOSS 11.22 - Mi viaje en open source contribuidor a evangelizador técnico",
     "date": "Jan 24, 2023",
