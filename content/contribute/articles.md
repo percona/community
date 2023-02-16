@@ -20,7 +20,7 @@ Thank you to users of our products, customers, communities, and authors for your
 - [MySQL Percona innobackupex 和 XtraBackup 有何不同?](https://blog.longwin.com.tw/2022/09/mysql-percona-innobackupex-xtrabackup-different-2022/) - Tsung - Spetember 14, 2022
 - [Installation & Usage of Percona Toolkit 3](https://satya-dba.blogspot.com/2021/09/installing-percona-toolkit-usage.html) - Satya - January 28, 2022
 - [ProxySQL 2 configuration/installation](https://satya-dba.blogspot.com/2021/09/installing-proxysql-configuration.html) - Satya - January 5, 2022
-- [Installing Percona XtraDB Cluster (PXC) 8](Installing Percona XtraDB Cluster (PXC) 8) - Satya - August 20, 2021
+- [Installing Percona XtraDB Cluster (PXC) 8](https://satya-dba.blogspot.com/2021/08/installing-percona-xtradb-cluster.html) - Satya - August 20, 2021
 - [Upgrading MySQL at Shopify](https://shopify.engineering/upgrading-mysql-shopify) - Yi Qing Sim - December 2, 2021
 - [Mitigating MySQL Downtime for big migrations](https://dev.to/ashusvirus/mitigating-mysql-downtime-for-big-migrations-2ijh) - Ashutosh Mittal - November 20, 2021
 - [Migration from HBase to MyRocks at Quora](https://quoraengineering.quora.com/Migration-from-HBase-to-MyRocks-at-Quora) - Vamsi Ponnekanti - September 14, 2021
@@ -43,6 +43,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [AWS dragged over lengthy downtime to migrate PostgreSQL DBaaS](https://www.theregister.com/2023/02/14/aws_slammed_for_postgresql_dbaas/) - Lindsay Clark - February 14, 2023
 - [10 Common PostgreSQL Mistakes and How to Avoid Them](https://www.infoworld.com/article/3681655/10-common-postgresql-mistakes-and-how-to-avoid-them.html) - Hamid Akhtar - December 6, 2022
 - [Interview with Percona - PGConf.EU](https://2022.pgconf.eu/sponsor-interviews/percona/) - Umair Shahid - September 22, 2022
 - [PostgreSQL Person of the Week](https://postgresql.life/post/charly_batista/) - Charly Batista (Percona) - July 11, 2022
