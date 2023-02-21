@@ -17,6 +17,7 @@
         <h2>Latest articles</h2>
         <div class="grid grid--3">
             {{- range $paginator.Pages -}}
+            {{- if isset .Params "date" }}
                 <div class="grid__item">
                     {{- $excerpt := "" -}}
                     {{- if isset .Params "excerpt" }}
@@ -27,6 +28,7 @@
                     {{- else -}}
                         {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
                     {{- end -}}
+            {{- end -}}
                 </div>
             {{- end -}}
         </div>
