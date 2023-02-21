@@ -4,8 +4,9 @@
 
 .text {
   .chroma {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border-radius: $border-radius;
+    line-height: 1rem;
 
     .lntd {
       vertical-align: top;
@@ -36,27 +37,27 @@
   }
 
   .chroma {
-    color: #272822;
+    color: #ffffff;
     @media screen {
-      background-color: #fafafa;
+      background-color: #3b3d45;
     }
     .err {
-      color: #960050;
+      color: #df442a;
     }
     .lntd {
     }
     .lntable {
     }
     .hl {
-      background-color: #ffffcc;
+      background-color: #3b3b31;
     }
     .lnt {
       margin-right: 0.4em;
       padding: 0 0.4em 0 0.4em;
-      color: #7f7f7f;
+      color: #cac7c7;
     }
     .ln {
-      color: #7f7f7f;
+      color: #cac7c7;
     }
     .k {
       color: #00a8c8;
@@ -80,16 +81,16 @@
       color: #00a8c8;
     }
     .n {
-      color: #111111;
+      color: #dfe7f7;
     }
     .na {
-      color: #75af00;
+      color: #e1d7ad;
     }
     .nb {
-      color: #111111;
+      color: #e1d7ad;
     }
     .bp {
-      color: #111111;
+      color: #b6c7e9;
     }
     .nc {
       color: #75af00;
@@ -101,7 +102,7 @@
       color: #75af00;
     }
     .ni {
-      color: #111111;
+      color: #b6c7e9;
     }
     .ne {
       color: #75af00;
@@ -110,37 +111,37 @@
       color: #75af00;
     }
     .fm {
-      color: #111111;
+      color: #b6c7e9;
     }
     .nl {
-      color: #111111;
+      color: #b6c7e9;
     }
     .nn {
-      color: #111111;
+      color: #b6c7e9;
     }
     .nx {
       color: #75af00;
     }
     .py {
-      color: #111111;
+      color: #b6c7e9;
     }
     .nt {
       color: #f92672;
     }
     .nv {
-      color: #111111;
+      color: #b6c7e9;
     }
     .vc {
-      color: #111111;
+      color: #b6c7e9;
     }
     .vg {
-      color: #111111;
+      color: #b6c7e9;
     }
     .vi {
-      color: #111111;
+      color: #b6c7e9;
     }
     .vm {
-      color: #111111;
+      color: #b6c7e9;
     }
     .l {
       color: #ae81ff;
@@ -218,28 +219,28 @@
       color: #f92672;
     }
     .p {
-      color: #111111;
+      color: #ae81ff;
     }
     .c {
-      color: #75715e;
+      color: #b1ac92;
     }
     .ch {
-      color: #75715e;
+      color: #b1ac92;
     }
     .cm {
-      color: #75715e;
+      color: #b1ac92;
     }
     .c1 {
-      color: #75715e;
+      color: #b1ac92;
     }
     .cs {
-      color: #75715e;
+      color: #b1ac92;
     }
     .cp {
-      color: #75715e;
+      color: #b1ac92;
     }
     .cpf {
-      color: #75715e;
+      color: #b1ac92;
     }
     .g {
     }

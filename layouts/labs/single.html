@@ -17,5 +17,34 @@
     </div>
   </article>
 
+ {{ if (isset .Params "tags")}}
+
+
+  {{- $pages := where (where $.Page.Site.RegularPages "Section" "labs") "Params.tags" "intersect" .Params.tags -}}
+
+  {{- if $pages -}}
+    <div class="contentblock branded">
+          <h2>Latest articles</h2>
+          <div class="grid grid--3">
+              {{- range $pages -}}
+                  {{- if isset .Params "date" }}
+                  <div class="grid__item">
+                      {{- $excerpt := "" -}}
+                      {{- if isset .Params "excerpt" }}
+                          {{- $excerpt = .Params.excerpt -}}
+                      {{- end -}}
+                      {{- if isset .Params "images" -}}
+                          {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
+                      {{- else -}}
+                          {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+                      {{- end -}}
+                  </div>
+                  {{- end -}}
+              {{- end -}}
+          </div>
+      </div>
+     {{- end -}}
+ {{ end }}
+
   {{ partial "sharing.html" . }} 
 {{ end }}

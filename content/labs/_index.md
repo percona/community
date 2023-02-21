@@ -46,7 +46,3 @@ Find out more about how you can monitor and manage your database effectively wit
 We encourage you to think creatively and come up with new ideas. Share with us your new products, processes, or services by contacting us at labs@percona.com.
 
 {{% /hero-gradient %}}
-
-{{% block class="" %}}
-{{% blogpostsbytags Title="Blog Posts about Labs projects" tags="Labs,labs,Serverless,MySQL,Terraform,PostgreSQL,Postgres" %}}
-{{% /block %}}

@@ -3,6 +3,7 @@ title: "Percona Terraform Provider"
 description: "Percona offers Terraform provider for easy installation of Percona Server for MySQL and PMM in AWS and Google Cloud. You can install single Percona Server for MySQL instance or in async replication mode with 2 or more instances, use Group Replication and much more! "
 images:
  - images/labs/percona-terraform-provider.jpg
+tags: ['Labs','Terraform']
 ---
 
 Percona offers Terraform provider for easy installation of Percona Server for MySQL and PMM in AWS and Google Cloud.
