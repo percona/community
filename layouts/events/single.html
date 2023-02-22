@@ -27,16 +27,9 @@
     <h1{{ if $.PublishDate }} itemprop="name headline"{{ end }}>{{ .Title }}</h1>
     {{ if $.PublishDate }}
       <div class="meta">
-        <time datetime="{{ $.PublishDate }}"{{ if $.PublishDate }} itemprop="datePublished"{{ end }}>
-          <span class="line">{{ $.PublishDate.Format "January 2, 2006" }}</span>
-          <span class="calendar">
-            <span class="day">{{ $.PublishDate.Day}}</span>
-            <span class="month-year">{{ substr $.PublishDate.Month 0 3 }} {{ $.PublishDate.Year}}</span>
-          </span>
-        </time>
-        <span class="authors">
+        <span class="authors">Speakers:&nbsp;
           {{- if (isset .Params "speakers") -}}
-            by {{ range $key, $author := .Params.speakers -}}
+             {{ range $key, $author := .Params.speakers -}}
               {{- with $.Site.GetPage (print "/speakers/" $author) -}}
                 {{ if $key }}, {{ end -}}
                 <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
@@ -55,8 +48,10 @@
       {{ partial "video.html" . }}  
     </div>
 
+
    {{ if (isset .Params "speakers")}}
       <div class="bios">
+        <h2>Speakers</h2>
       {{ range $key, $author := .Params.speakers -}}
         <div class="bios__bio">
           {{- with $.Site.GetPage (print "/speakers/" $author) -}}

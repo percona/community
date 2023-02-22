@@ -5,7 +5,7 @@ images:
   - events/prefosdem-2023/18.jpg
 layout: single
 date: "2023-02-16"
-tags: ['Event', 'fosdem']
+tags: ['Event', 'fosdem', 'Promo']
 speakers:
   - peter_zaitsev
   - dmitry_lenev
