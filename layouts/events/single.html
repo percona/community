@@ -27,16 +27,17 @@
     <h1{{ if $.PublishDate }} itemprop="name headline"{{ end }}>{{ .Title }}</h1>
     {{ if $.PublishDate }}
       <div class="meta">
+        {{- if (isset .Params "speakers") -}}
         <span class="authors">Speakers:&nbsp;
-          {{- if (isset .Params "speakers") -}}
+
              {{ range $key, $author := .Params.speakers -}}
               {{- with $.Site.GetPage (print "/speakers/" $author) -}}
                 {{ if $key }}, {{ end -}}
                 <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
               {{- end }} 
             {{- end -}}
-          {{- end -}}
         </span>
+        {{- end -}}
       </div>
     {{ end }}
 
