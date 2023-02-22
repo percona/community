@@ -11,7 +11,7 @@ speakers:
   - edith_puclla
   - mario_garcia
   - charly_batista
-tags: ['Promo', 'Stream', 'opensource','securing']
+tags: ['Stream', 'opensource','securing']
 aliases: 2022-12-15-securing-data
 ---
 

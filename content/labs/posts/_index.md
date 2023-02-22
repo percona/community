@@ -5,5 +5,3 @@ images:
     - images/labs/labs.jpg
 layout: posts
 ---
-
-Test

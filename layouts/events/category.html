@@ -25,9 +25,8 @@
 
                 <div class="featured__left featured__one branded">
 
-                    {{ $t := slice "Promo" "promo" }}
-
-                    {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $t ) -}}
+                    {{- $array := split "Promo" "," -}}
+                    {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $array ) -}}
 
                     {{- range $one -}}
                         {{ if isset .Params "images" }}
