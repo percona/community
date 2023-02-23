@@ -2,7 +2,7 @@
 title: "FOSDEM 2023"
 description: "FOSDEM is an awesome conference in Europe organized by the community for the community. Percona experts actively participated in it this year."
 images:
-  - events/fosdem-2022/cover.jpg
+  - /events/fosdem-2023/1.jpg
 layout: single
 date: "2023-02-22"
 tags: ['Event', 'fosdem']
