@@ -1,5 +1,5 @@
 ---
-title: "How to test code blocks in documentationr"
+title: "How to test code blocks in documentation"
 date: "2023-02-28T00:00:00+00:00"
 tags: ["Documentation","Testing", "Pandoc"]
 authors:
@@ -33,7 +33,7 @@ For example, recent [Podman](https://github.com/percona/pmm-doc/blob/main/docs/s
     !!! caution alert alert-warning "Important"
         Ensure that you modify PMM_TAG in `~/.config/pmm-server/env` and update it regularly as Percona cannot update it. It needs to be done by you.
 
-3. Enable and Start.
+1. Enable and Start.
 
     ```sh
     systemctl --user enable --now pmm-server
