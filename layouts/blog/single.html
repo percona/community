@@ -1,8 +1,6 @@
 {{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
-  {{- if in .Content "<pre class=\"chroma\">" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
-  {{ end }}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/bio.scss") | safeCSS) -}}
 {{- end }}
 
