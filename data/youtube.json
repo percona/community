@@ -219,6 +219,12 @@
 
   "Events":[
   {
+    "youtube_id": "O4MzmtNahho",
+    "title": "SOOCon23 - Cloud of Serfdom vs Cloud of Freedom: Why Open Source will Win in the Cloud Age",
+    "date": "Feb 20, 2023",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
     "youtube_id": "rIfWASEoXC8",
     "title": "P99 CONF 2022 - A Deep Dive into Query Performance",
     "date": "Oct 20, 2022",
