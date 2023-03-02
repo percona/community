@@ -52,6 +52,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [Percona Backup for MongoDB Docker](https://bobcares.com/blog/percona-backup-for-mongodb-docker/) - Amritha V - December 29, 2022
 - [Migrating MongoDB to Kubernetes](https://dok.community/blog/migrating-mongodb-to-kubernetes/) - Sergey Pronin - December 10, 2022
 - [6 Best MongoDB Backup Tools](https://www.comparitech.com/net-admin/best-mongodb-backup-tools/) - Stephen Cooper - September 12, 2022
 - [Deploying a custom MongoDB operator using Helm Charts](https://dev.to/devtron_/deploying-a-custom-mongodb-operator-using-helm-charts-5hg2) - Devtron - June 28, 2022
@@ -63,6 +64,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/how-to-deploy-percona-docker/) - Jack Wallen - February 24, 2023
 - [Monitoring With - Percona Monitoring and Management](https://blogsbyrishav.ml/monitoring-with-percona-monitoring-and-management) - Rishav Mehra - February 12, 2023
 - [Perconal Monitoring With Postgres Docker on Local Environment](https://dev.to/vuong/perconal-monitoring-with-postgres-docker-on-local-environment-24op) - Vuong - October 2, 2022
 - [Monitor Percona MySQL / Percona XtraDB Cluster With Prometheus & Grafana](https://www.computingpost.com/monitor-percona-mysql-percona-xtradb-cluster-with-prometheus-grafana) - Shafiq Ur Rehman - September 25, 2022
@@ -93,6 +95,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [The Spectrum Of IT Partnerships](https://www.forbes.com/sites/adrianbridgwater/2023/02/26/the-spectrum-of-it-partnerships/) - Adrian Bridgwater - February 26, 2023
+- [Entrepreneurship for Engineers: 4 Lessons about Revenue](https://thenewstack.io/entrepreneurship-for-engineers-4-lessons-in-raising-revenue-startups/) - Emily Omier - February 24, 2023
 - [With interest in cloud repatriation on the rise, platform engineering eases developers’ pain of on-prem database provisioning](https://sdtimes.com/software-development/with-interest-in-cloud-repatriation-on-the-rise-platform-engineering-eases-developers-pain-of-on-prem-database-provisioning/) - Donnie Berkholz - February 10, 2023
 - [The Future For Open Source](https://www.forbes.com/sites/adrianbridgwater/2023/02/06/the-future-for-open-source/?sh=5d0684414b4f) - Adrian Bridgwater - February 6, 2023
 - [IT Leaders' Tech Predictions for 2023](https://www.itprotoday.com/it-operations-and-management/it-leaders-tech-predictions-2023#Percona) - Rick Dagley - January 13, 2023
