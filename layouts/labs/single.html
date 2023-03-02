@@ -8,17 +8,49 @@
 
 
 {{ define "main" }}
+
+
   <article class="text">
 
     <h1>{{ .Title }}</h1>
 
+    {{ if eq .Parent.Title "Documentation" }}
+      <p class="small"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a>{{ if .CurrentSection.Parent }} / <a href="{{ .CurrentSection.Parent.RelPermalink }}">{{ .CurrentSection.Parent.Title }}</a> {{ end }}{{ if .Parent }} / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>{{ end }}</p>
+
+    {{ else if .Parent }}
+      <p class="small"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+    {{ end }}
+
     <div class="body">
       {{ partial "content.html" . }}
     </div>
+
+
+    {{ if eq .Parent.Title "Documentation" }}
+    <div class="contentblock documentation">
+        <h2>Read also</h2>
+
+        <div class="grid grid--2">
+            {{ $title := .Title }}
+            {{ range .CurrentSection.Pages }}
+            {{ if ne .Title $title }}
+            <a class="link__wrapper grid__item post post--preview" href="{{ .RelPermalink }}">
+                <h3>{{ .Title }}</h3>
+                <p>{{ .Description }}</p>
+            </a>
+            {{ end }}
+            {{ end }}
+        </div>
+
+        <p class="small"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a>{{ if .CurrentSection.Parent }} / <a href="{{ .CurrentSection.Parent.RelPermalink }}">{{ .CurrentSection.Parent.Title }}</a> {{ end }}{{ if .Parent }} / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>{{ end }}</p>
+    </div>
+    {{ else if .Parent }}
+      <p class="small"><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
+    {{ end }}
+
   </article>
 
- {{ if (isset .Params "tags")}}
-
+  {{ if (isset .Params "tags")}}
 
   {{- $pages := where (where $.Page.Site.RegularPages "Section" "labs") "Params.tags" "intersect" .Params.tags -}}
 
@@ -44,7 +76,7 @@
           </div>
       </div>
      {{- end -}}
- {{ end }}
+  {{ end }}
 
   {{ partial "sharing.html" . }} 
 {{ end }}

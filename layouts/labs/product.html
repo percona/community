@@ -1,0 +1,71 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+    <div class="hero hero-gradient night">
+        <div class="contentblock">
+            <div class="hero-text">
+                <h1>{{ if .Params.hero_title }}{{ .Params.hero_title }}{{ else }}{{ .Title }}{{ end }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-main">
+        <article class="text">
+              {{ .Content }}
+        </article>
+    </div>
+
+
+    {{- $docs := .Pages -}}
+    {{ if $docs }}
+    <div class="contentblock documentation">
+        <h2>Documentation</h2>
+            {{- range $docs -}}
+                {{ if .CurrentSection.Pages }}
+                <div class="grid grid--2">
+                    {{- range .CurrentSection.Pages -}}
+                    <a class="link__wrapper grid__item post post--preview" href="{{ .RelPermalink }}">
+                        <h3>{{ .Title }}</h3>
+                        <p>{{ .Description }}</p>
+                    </a>
+                    {{- end -}}
+                {{ end }}
+                </div>
+
+                <a class="small" href="{{ .RelPermalink }}">View all</a>
+            {{- end -}}
+    </div>
+    {{ end }}
+
+  {{ if (isset .Params "tags")}}
+
+      {{- $pages := where (where $.Page.Site.RegularPages "Section" "labs") "Params.tags" "intersect" .Params.tags -}}
+
+      {{- if $pages -}}
+        <div class="contentblock branded">
+              <h2>Latest articles</h2>
+              <div class="grid grid--3">
+                  {{- range $pages -}}
+                      {{- if isset .Params "date" }}
+                      <div class="grid__item">
+                          {{- $excerpt := "" -}}
+                          {{- if isset .Params "excerpt" }}
+                              {{- $excerpt = .Params.excerpt -}}
+                          {{- end -}}
+                          {{- if isset .Params "images" -}}
+                              {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
+                          {{- else -}}
+                              {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+                          {{- end -}}
+                      </div>
+                      {{- end -}}
+                  {{- end -}}
+              </div>
+          </div>
+         {{- end -}}
+  {{ end }}
+  
+{{ end }}

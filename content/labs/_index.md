@@ -1,6 +1,7 @@
 ---
 title: "Percona Labs"
 description: "Percona Labs projects are focused on bringing innovations to the world of open source databases. The project is led by Percona’s CTO Vadim Tkachenko. The aim is to increase agility, improve scalability, reduce cost, and enable easy integration."
+layout: home
 images:
     - images/labs/labs.jpg
 ---
@@ -43,6 +44,6 @@ Find out more about how you can monitor and manage your database effectively wit
 
 {{% hero-gradient class="dark-purlple" %}}
 
-We encourage you to think creatively and come up with new ideas. Share with us your new products, processes, or services by contacting us at labs@percona.com.
+We encourage you to think creatively and come up with new ideas. Share with us your new products, processes, or services by contacting us at labs@percona.com or [form](/labs/contacts/).
 
 {{% /hero-gradient %}}

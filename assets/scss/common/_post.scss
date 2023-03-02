@@ -380,8 +380,6 @@ a.post--preview, a.post--preview * {
       height: 180px;
     }
   }
-
-
 }
 
 .branded {
@@ -394,5 +392,26 @@ a.post--preview, a.post--preview * {
       position: absolute;
       bottom: 0px;
       width: calc(100% - 48px);
+  }
+}
+
+.documentation {
+  
+  margin-top: 2rem;
+  margin-bottom: 2rem; 
+
+  .link__wrapper {
+    display: block;
+  }
+
+  h3 {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  
+  .grid__item {
+    padding: 15px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 22, 43, 0.09);
+    border-radius: 8px;
   }
 }
