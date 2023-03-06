@@ -569,6 +569,12 @@
 
   "Interviews":[
   {
+    "youtube_id": "curz6Tx81FU",
+    "title": "Postgres.tv Interviews - Peter Zaitsev, Founder of Percona",
+    "date": "Feb 28, 2023",
+    "authors": "Peter Zaitsev and Nikolay Samokhvalov"
+  }, 
+  {
     "youtube_id": "87GbzfecjL4",
     "title": "Getting Started In DevRel: Talking with Edith Puclla From Percona",
     "date": "Feb, 17 2023",

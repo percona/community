@@ -95,6 +95,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Arm has legs: VMware's Bitnami starts packaging apps for Graviton and Ampere](https://www.theregister.com/2023/02/27/bitnami_arm_support/) - Simon Sharwood - February 27, 2023
 - [The Spectrum Of IT Partnerships](https://www.forbes.com/sites/adrianbridgwater/2023/02/26/the-spectrum-of-it-partnerships/) - Adrian Bridgwater - February 26, 2023
 - [Entrepreneurship for Engineers: 4 Lessons about Revenue](https://thenewstack.io/entrepreneurship-for-engineers-4-lessons-in-raising-revenue-startups/) - Emily Omier - February 24, 2023
 - [With interest in cloud repatriation on the rise, platform engineering eases developers’ pain of on-prem database provisioning](https://sdtimes.com/software-development/with-interest-in-cloud-repatriation-on-the-rise-platform-engineering-eases-developers-pain-of-on-prem-database-provisioning/) - Donnie Berkholz - February 10, 2023
