@@ -569,6 +569,12 @@
 
   "Interviews":[
   {
+    "youtube_id": "QJUOIAYyhY0&t=875s",
+    "title": "Is It Observable? - What Happened at Civo Navigate",
+    "date": "Mar 2, 2023",
+    "authors": "Barrett Chambers and Henrik Rexed"
+  }, 
+  {
     "youtube_id": "curz6Tx81FU",
     "title": "Postgres.tv Interviews - Peter Zaitsev, Founder of Percona",
     "date": "Feb 28, 2023",
