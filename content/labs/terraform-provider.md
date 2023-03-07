@@ -29,3 +29,5 @@ With Percona Terraform Provider you can:
 We support both AWS and Google Cloud.
 
 Source code and examples are: [Percona-Lab/terraform-provider-percona](https://github.com/Percona-Lab/terraform-provider-percona)
+
+Ask your questions on the [Percona Community Forum](https://forums.percona.com/c/percona-labs/percona-terraform-provider/77). 

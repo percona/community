@@ -24,3 +24,6 @@ Have you ever wanted the ability to fork your data set and work on it independen
 If you would like to talk with us about builds for Serverless PostgreSQL or stay in touch for future update - leave your contact details below.
 
 [Contact form](/labs/contacts)
+
+## Forum
+Join our [Percona Community Forum](https://forums.percona.com/c/percona-labs/serverless-postgresql/78) for discussion.

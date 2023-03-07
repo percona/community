@@ -10,7 +10,7 @@ This solution provides a serverless experience for PostgreSQL by dividing the co
 
 At this point the binaries are **EXPERIMENTAL and ONLY for TESTING** purposes. Percona does not provide official support for the build at this moment.
 
-For the feedback and questions please use our Forums: (LINK)
+For the feedback and questions, please use our [Forum](https://forums.percona.com/c/percona-labs/serverless-postgresql/78).
 
 ## Binary releases location
 

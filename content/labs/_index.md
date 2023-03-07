@@ -24,7 +24,7 @@ In Percona we want to support the culture of innovation. Percona Labs projects a
 
 {{% block class=" branded projects" %}}
   
-##  How Can I Participate?
+## How Can I Participate?
 
 We highly encourage you to try our lab projects out and take part in their development to bring in new technologies and broaden your horizons. We welcome contributions of all kinds - from code ones to providing feedback and sharing your ideas about project development. Let’s foster a culture of experimentation, learning and progress together! 
 
@@ -44,6 +44,6 @@ Find out more about how you can monitor and manage your database effectively wit
 
 {{% hero-gradient class="dark-purlple" %}}
 
-We encourage you to think creatively and come up with new ideas. Share with us your new products, processes, or services by contacting us at labs@percona.com or [form](/labs/contacts/).
+We encourage you to think creatively and come up with new ideas. Share with us your new products, processes, or services by contacting us at labs@percona.com, with the help of the [contact form](/labs/contacts/) or on the [Percona Community Forum](https://forums.percona.com/c/percona-labs/76).
 
 {{% /hero-gradient %}}
