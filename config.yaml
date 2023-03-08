@@ -231,7 +231,7 @@ menu:
       weight: 6
 imaging:
   resampleFilter: lanczos
-  quality: 90
+  quality: 60
   anchor: smart
 permalinks:
   /: /:filename/

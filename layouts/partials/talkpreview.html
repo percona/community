@@ -1,5 +1,5 @@
 <a href="{{ .Link }}" class="post post--preview">
-{{ with .Image }}<img src="{{ ((resources.Get .).Fill "682x384 80% jpg").RelPermalink }}" alt="" />{{ end }}
+{{ with .Image }}<img width="100%" height="100%" src="{{ ((resources.Get .).Fill "682x384 60% jpg").RelPermalink }}" alt="" />{{ end }}
 <h3>{{ .Title }}</h3>
 {{ if .Content }}
 <div class="post__content">
