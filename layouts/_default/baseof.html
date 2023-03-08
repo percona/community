@@ -45,8 +45,7 @@
     <style>{{ $css.Content | safeCSS }}</style>
 
     {{ block "head" . }}{{ end }}
-    <link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext&amp;display=swap" type="text/css" media="all">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-343802-37"></script>
     <script>
@@ -61,20 +60,6 @@
     <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
   </head>
   <body>
-    <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
-    <script>
-    (function () {
-      var s = document.createElement('script');
-      s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk.js';
-      s.setAttribute('data-tenant-uuid', '2ea5dc1c-c928-410b-a379-78d825d2eb0c');
-      s.setAttribute('data-domain-uuid', '2f40096a-75c8-4af2-aec3-42db0231a457');
-      s.setAttribute('data-backend-url', 'https://app.securiti.ai');
-      s.defer = true;
-      var parent_node = document.head || document.body;
-      parent_node.appendChild(s);
-      s.addEventListener('load', function() { window.initCmp(); });
-    })()
-    </script>
     <header>
       <div class="page-header">
         <div class="logo"><a href="/">
@@ -120,11 +105,6 @@
             </ul>
           </nav>
         </div>
-<!--         <div class="call-to-action">
-            <a href="/contribute/how-to-get-involved/">
-              Get involved
-            </a>
-        </div> -->
       </div>
     </header>
 
@@ -135,8 +115,6 @@
         </div>
       {{ end }}
     </main>
-
-    <div class="img_banner"><div class="img_banner__content"><a href="https://www.percona.com/live/conferences" target="_blank"><img style="width: 100%" src="{{ (resources.Get "home/PL-Registration.jpg").RelPermalink }}" alt="Percona Live 2023 - Registration is now open!" /></a></div></div>
 
     {{ block "edit" . }}
       {{ with .File }}
@@ -176,6 +154,20 @@
 
     {{ $js := resources.Get "js/aria.js" }}
     {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-    <script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+    <script async type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+    <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
+    <script async>
+    (function () {
+      var s = document.createElement('script');
+      s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk.js';
+      s.setAttribute('data-tenant-uuid', '2ea5dc1c-c928-410b-a379-78d825d2eb0c');
+      s.setAttribute('data-domain-uuid', '2f40096a-75c8-4af2-aec3-42db0231a457');
+      s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+      s.defer = true;
+      var parent_node = document.head || document.body;
+      parent_node.appendChild(s);
+      s.addEventListener('load', function() { window.initCmp(); });
+    })()
+    </script>
   </body>
 </html>
