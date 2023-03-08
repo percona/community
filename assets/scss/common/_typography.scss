@@ -224,9 +224,10 @@ hr {
   }
 
   .meta {
+
     color: $meta;
-    font-weight: 600;
-    font-variant: small-caps;
+    font-style: italic;
+
     .byline {
       display:none;
     }
@@ -492,11 +493,12 @@ hr {
 
 .text {
   @include typography(760px, 5rem);
+}
 
+.text {
   .chroma {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     border-radius: $border-radius;
-    line-height: 1rem;
 
     .lntd {
       vertical-align: top;
@@ -527,27 +529,27 @@ hr {
   }
 
   .chroma {
-    color: #ffffff;
+    color: #272822;
     @media screen {
-      background-color: #3b3d45;
+      background-color: #fafafa;
     }
     .err {
-      color: #df442a;
+      color: #960050;
     }
     .lntd {
     }
     .lntable {
     }
     .hl {
-      background-color: #3b3b31;
+      background-color: #ffffcc;
     }
     .lnt {
       margin-right: 0.4em;
       padding: 0 0.4em 0 0.4em;
-      color: #cac7c7;
+      color: #7f7f7f;
     }
     .ln {
-      color: #cac7c7;
+      color: #7f7f7f;
     }
     .k {
       color: #00a8c8;
@@ -571,16 +573,16 @@ hr {
       color: #00a8c8;
     }
     .n {
-      color: #dfe7f7;
+      color: #111111;
     }
     .na {
-      color: #e1d7ad;
+      color: #75af00;
     }
     .nb {
-      color: #e1d7ad;
+      color: #111111;
     }
     .bp {
-      color: #b6c7e9;
+      color: #111111;
     }
     .nc {
       color: #75af00;
@@ -592,7 +594,7 @@ hr {
       color: #75af00;
     }
     .ni {
-      color: #b6c7e9;
+      color: #111111;
     }
     .ne {
       color: #75af00;
@@ -601,37 +603,37 @@ hr {
       color: #75af00;
     }
     .fm {
-      color: #b6c7e9;
+      color: #111111;
     }
     .nl {
-      color: #b6c7e9;
+      color: #111111;
     }
     .nn {
-      color: #b6c7e9;
+      color: #111111;
     }
     .nx {
       color: #75af00;
     }
     .py {
-      color: #b6c7e9;
+      color: #111111;
     }
     .nt {
       color: #f92672;
     }
     .nv {
-      color: #b6c7e9;
+      color: #111111;
     }
     .vc {
-      color: #b6c7e9;
+      color: #111111;
     }
     .vg {
-      color: #b6c7e9;
+      color: #111111;
     }
     .vi {
-      color: #b6c7e9;
+      color: #111111;
     }
     .vm {
-      color: #b6c7e9;
+      color: #111111;
     }
     .l {
       color: #ae81ff;
@@ -709,28 +711,28 @@ hr {
       color: #f92672;
     }
     .p {
-      color: #ae81ff;
+      color: #111111;
     }
     .c {
-      color: #b1ac92;
+      color: #75715e;
     }
     .ch {
-      color: #b1ac92;
+      color: #75715e;
     }
     .cm {
-      color: #b1ac92;
+      color: #75715e;
     }
     .c1 {
-      color: #b1ac92;
+      color: #75715e;
     }
     .cs {
-      color: #b1ac92;
+      color: #75715e;
     }
     .cp {
-      color: #b1ac92;
+      color: #75715e;
     }
     .cpf {
-      color: #b1ac92;
+      color: #75715e;
     }
     .g {
     }
