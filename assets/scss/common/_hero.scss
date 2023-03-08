@@ -1,13 +1,10 @@
 @import "variables";
 
-
 .hero {
-
   .contentblock {
       padding-top: 2rem;
       padding-bottom: 2rem;
   }
-
 }
 
 .hero-text {
@@ -36,14 +33,12 @@
     }
   
   @media screen and (max-width: 760px) {
-
     text-align: left;
 
     h1 {
       font-size: 2rem;
       line-height: 1em;
     }
-
   }  
 }
 
@@ -52,7 +47,7 @@
     .homepage-hero-icon {
       position: absolute;
       bottom: -3rem;
-      right: -3rem;
+      right: 0rem;
 
       img {
         height: 320px;
@@ -112,7 +107,6 @@
         font-size: 2rem;
         line-height: 1em;
       }
-
     }  
 
     @media screen and (max-width: 960px) {
@@ -121,6 +115,5 @@
         font-size: 2rem;
         line-height: 1em;
       }
-
     }
 }
