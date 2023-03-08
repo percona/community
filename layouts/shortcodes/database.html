@@ -1,4 +1,4 @@
-<div class="database__grid">{{ with (.Get "icon") }}<div class="database__image"><img src="{{ ((resources.Get .)).RelPermalink }}" /></div>{{ end }}<div class="database__content"><a class="database__preview" href="{{ .Get "link" }}">
+<div class="database__grid"><div class="database__image"><img alt="{{ .Get "title" }}" src="{{ with (.Get "icon") }}{{ ((resources.Get .)).RelPermalink }}{{ end }}" /></div><div class="database__content"><a class="database__preview" href="{{ .Get "link" }}">
 <h4>{{ .Get "title" }}</h4>
 <p>{{ .Inner }}</p>
 <p class="post-type"><small>Read more</small></p></a>

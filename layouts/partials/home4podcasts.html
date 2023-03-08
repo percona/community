@@ -4,7 +4,7 @@
     {{- range first 4 (where $.Page.Site.RegularPages "Section" "podcasts") -}}
     <div class="grid__item">
     <a href="{{ .RelPermalink }}" class="post post--preview">
-    <img  width="100%" height="100%" src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" />
+    <img  width="100%" height="100%" src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="{{ .Title }}" />
     <h3>{{ .Title }}</h3>
     </a>
     </div>
