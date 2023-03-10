@@ -1,6 +1,18 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "jwTSo9WvCCg",
+    "title": "How to Use Percona XtraBackup Tool for Taking Backup and Restore Backup - Complete Guide",
+    "date": "March 6, 2023",
+    "authors": "DBA Experiments"
+  },
+  {
+    "youtube_id": "6SwG619GOOM",
+    "title": "Building an Analytic Extension to MySQL with ClickHouse and Open Source",
+    "date": "March 6, 2023",
+    "authors": "Vadim Tkachenko (Percona), Kanthi Subramanian (Altinity)"
+  },
+  {
     "youtube_id": "4NcNYVNUeog",
     "title": "MySQL Up and Running in 30 Minutes",
     "date": "January 10, 2022",
