@@ -5,7 +5,7 @@ tags: ["Labs","kubernetes", "operators", "databases", "PMM", "DBaaS", "minikube"
 authors:
   - denys_kondratenko
 images:
-  - blog/2023/2/petclinic.png
+  - blog/2023/02/petclinic.png
 slug: k8s-app-db-binding
 ---
 
@@ -183,7 +183,7 @@ test-pxc-cluster-haproxy.default
 
 Check the url that was exposed by minikube:
 
-![Pet Clinic](/blog/2023/2/petclinic.png)
+![Pet Clinic](/blog/2023/02/petclinic.png)
 
 ## Summary
 
