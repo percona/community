@@ -10,10 +10,10 @@ images:
 slug: backups-for-mysql-with-mysqldump
 ---
 
-![Backup](/blog/2023/03/backup.jpg "Backup by Nick Youngson CC BY-SA 3.0 Pix4free")
-
 ## Basic Usage
 [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) is a client utility that can be used for doing logical backups. It will generate the necessary SQL statements to reproduce the original database.
+
+![Backup](/blog/2023/03/backup.jpg "Backup by Nick Youngson CC BY-SA 3.0 Pix4free")
 
 The following statements are some common uses of mysqldump:
 
@@ -96,7 +96,7 @@ As explained [here](https://mysqldump.guru/how-to-use-a-where-clause-with-mysqld
 
 For example, in a database with the following schema, built from the [Movienet](https://movienet.github.io/) dataset:
 
-![Movienet Database](/blog/2023/03/movienet-model.png "Movienet Database")
+![Movienet Database](/blog/2023/03/movienet_model.png "Movienet Database")
 
 If you want to back up the movies produced in a specific country, like Mexico, a way to do it is by running mysqldump with a `WHERE` clause.
 
@@ -168,7 +168,7 @@ If you only need the schema, you can run mysqldump with the --no-data option. Bu
 cat dump.sql | grep -v ^INSERT | mysql -u username -p
 ```
 
-The above command will restore the schema of your database, skipping the SQL statements for inserting the data. It works well when you backup a single database, but there’s no reason to use it as you can get the schema with the --no-data option, instead of removing the inserts.
+The above command will restore the schema of your database, skipping the SQL statements for inserting the data. It works well when you backup a single database, but there’s no reason to use it as you can get the schema with the `--no-data` option, instead of removing the inserts.
 
 What happens if you try to run this command with a backup that includes all the databases in your server? You must be careful as this will try to overwrite the system schema in the `mysql` database which is dangerous. This database store authentication details and overriding the data will make you lose access to your server.
 
