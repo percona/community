@@ -64,6 +64,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [3 Ways To Set Up A PMM Server](https://www.hostedpmm.com/3-ways-to-set-up-a-pmm-server/) - Cloudpress - January 16, 2023
 - [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March  7, 2023
 - [How To Set Up Alerts Using PMM](https://www.hostedpmm.com/how-to-set-up-alerts-using-pmm/) - Stanislav Levchenko - March  7, 2023
 - [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/how-to-deploy-percona-docker/) - Jack Wallen - February 24, 2023
