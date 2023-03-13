@@ -581,6 +581,18 @@
 
   "Interviews":[
   {
+    "youtube_id": "r7zechCs5nE",
+    "title": "The Hacking Open Source Business Podcast - Which Conferences Should You Attend, Speak at, and Sponsor",
+    "date": "Mar 7, 2023",
+    "authors": "Peter Zaitsev, Matt Yonkovit and Avi Press"
+  }, 
+  {
+    "youtube_id": "s5YMo5ZfnUU",
+    "title": "The Hacking Open Source Business Podcast - Not So Open Source Licenses",
+    "date": "Mar 8, 2023",
+    "authors": "Peter Zaitsev, Matt Yonkovit and Avi Press"
+  }, 
+  {
     "youtube_id": "QJUOIAYyhY0&t=875s",
     "title": "Is It Observable? - What Happened at Civo Navigate",
     "date": "Mar 2, 2023",
