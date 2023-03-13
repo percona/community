@@ -64,6 +64,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March  7, 2023
+- [How To Set Up Alerts Using PMM](https://www.hostedpmm.com/how-to-set-up-alerts-using-pmm/) - Stanislav Levchenko - March  7, 2023
 - [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/how-to-deploy-percona-docker/) - Jack Wallen - February 24, 2023
 - [Monitoring With - Percona Monitoring and Management](https://blogsbyrishav.ml/monitoring-with-percona-monitoring-and-management) - Rishav Mehra - February 12, 2023
 - [Perconal Monitoring With Postgres Docker on Local Environment](https://dev.to/vuong/perconal-monitoring-with-postgres-docker-on-local-environment-24op) - Vuong - October 2, 2022
