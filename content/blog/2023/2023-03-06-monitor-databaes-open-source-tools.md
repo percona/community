@@ -122,7 +122,7 @@ PMM helps you monitor the number of [disk I/O operations](https://docs.percona.c
 
 **PMM** helps you monitor the number of [active database connections](https://docs.percona.com/percona-monitoring-and-management/details/dashboards/dashboard-mysql-user-details.html) and determine if your user connection is sized appropriately. If you limit the number of users that should connect to your database, this panel will show you when you are reaching that limit so that you can increase the number.
 
-![User Conexion](/blog/2023/3/06-user-conexion.jpg)
+![User Conexion](/blog/2023/03/06-user-conexion.jpg)
 
 ### Data growth
 
