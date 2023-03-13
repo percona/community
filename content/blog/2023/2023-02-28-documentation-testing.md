@@ -5,7 +5,7 @@ tags: ["Documentation","Testing", "Pandoc"]
 authors:
   - denys_kondratenko
 images:
-  - blog/2023/2/doc-testing.jpg
+  - blog/2023/02/doc-testing.jpg
 slug: doc-testing
 ---
 

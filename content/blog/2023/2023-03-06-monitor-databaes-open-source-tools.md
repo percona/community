@@ -6,7 +6,7 @@ tags: ["Monitor", "PMM", "Databases", "Percona", "Open Source"]
 authors:
   - edith_puclla
 images:
-  - blog/2023/3/00-moni-cover.jpg
+  - blog/2023/03/00-moni-cover.jpg
 slug: monitor-your-databases-with-open-source-tools-like-pmm
 ---
 
@@ -69,7 +69,7 @@ There are three levels of depth:
 - Graphs
 - Metrics
 
-![Interface](/blog/2023/3/01-interface.jpg)
+![Interface](/blog/2023/03/01-interface.jpg)
 
 ## Metrics & Database Monitoring
 
@@ -96,7 +96,7 @@ Let’s analyze each of them, and they will also answer your questions at the be
 **PMM** helps you monitor the performance of individual queries and identify slow-performing queries that need to be optimized.
 We can use [Query Analytics in PMM](https://docs.percona.com/percona-monitoring-and-management/get-started/query-analytics.html) to visualize all the queries running in our database; we can inspect each of them and see which is the one sending more queries per second and much longer it takes to execute it. Also, **PMM** will show you suggestions to fix or improve queries.
 
-![Long query Response](/blog/2023/3/02-long-query-response.jpg)
+![Long query Response](/blog/2023/03/02-long-query-response.jpg)
 
 ### High CPU Utilization
 
@@ -104,19 +104,19 @@ We can use [Query Analytics in PMM](https://docs.percona.com/percona-monitoring-
 
 In the section on CPU utilization, you will see how much of your CPU is being used in a period of time. This is very useful when you need to increase your resources.
 
-![High Cpu Utilization](/blog/2023/3/03-high-cpu-utilization.jpg)
+![High Cpu Utilization](/blog/2023/03/03-high-cpu-utilization.jpg)
 
 ### High Memory usage
 
 **PMM** helps you [monitor the amount of memory](https://docs.percona.com/percona-monitoring-and-management/details/dashboards/dashboard-memory-details.html) being used by the database and determine if you need to add more memory or optimize your database configuration.
 
-![High Memory Usage](/blog/2023/3/04-high-memory-usage.jpg)
+![High Memory Usage](/blog/2023/03/04-high-memory-usage.jpg)
 
 ### Disk I/O
 
 PMM helps you monitor the number of [disk I/O operations](https://docs.percona.com/percona-monitoring-and-management/details/dashboards/dashboard-disk-details.html) performed by the database and identify any potential performance bottlenecks. See here the panel of Disk IO Latency!
 
-![Disk Io](/blog/2023/3/05-disk-io.jpg)
+![Disk Io](/blog/2023/03/05-disk-io.jpg)
 
 ### User connections
 
@@ -128,7 +128,7 @@ PMM helps you monitor the number of [disk I/O operations](https://docs.percona.c
 
 PMM helps you monitor [your database growth](https://docs.percona.com/percona-monitoring-and-management/details/dashboards/dashboard-mysql-table-details.html) over time and plan for capacity and performance needs. This dashboard helps to see the time period in which your database is growing and to be able to learn about performance issues or issues as they occur.
 
-![Data Grown](/blog/2023/3/07-data-grown.jpg)
+![Data Grown](/blog/2023/03/07-data-grown.jpg)
 
 ### Summary
 

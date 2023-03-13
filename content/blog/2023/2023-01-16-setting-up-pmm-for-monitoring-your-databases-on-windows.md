@@ -6,7 +6,7 @@ tags: ['PMM', 'MySQL', 'PostgreSQL', 'MongoDB', 'Monitoring']
 authors:
   - mario_garcia
 images:
-  - blog/2023/1/pmm-login-screen.png
+  - blog/2023/01/pmm-login-screen.png
 slug: setting-up-pmm-for-monitoring-your-databases-on-windows
 ---
 
@@ -59,7 +59,7 @@ $ docker exec -t pmm-server change-admin-password <new_password>
 
 Once PMM Server is installed, open the browser and visit https://localhost. You will see the PMM login screen.
 
-![PMM Login Screen](/blog/2023/1/pmm-login-screen.png "PMM Login Screen")
+![PMM Login Screen](/blog/2023/01/pmm-login-screen.png "PMM Login Screen")
 
 Now that the server is up and running, you need to get its IP address before connecting the client to the server. To get the IP address, you need the name or container ID. You can get it by running:
 
@@ -124,7 +124,7 @@ Now that the client is connected to the server, you must configure PMM for monit
 
 Once PMM is configured, the Home Dashboard will show the databases that are being monitored. For more information and advanced configuration, check the [documentation](https://docs.percona.com/percona-monitoring-and-management/index.html).
 
-  ![PMM Home Dashboard](/blog/2023/1/pmm-home-dashboard.png "PMM Home Dashboard")
+  ![PMM Home Dashboard](/blog/2023/01/pmm-home-dashboard.png "PMM Home Dashboard")
 
 ### MySQL Installation
 

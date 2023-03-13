@@ -5,7 +5,7 @@ tags: ["kubernetes", "node_exporter", "monitoring", "PMM", "DBaaS", "containers"
 authors:
   - denys_kondratenko
 images:
-  - blog/2023/3/Container-Denys.jpg
+  - blog/2023/03/Container-Denys.jpg
 slug: node-metrics-container
 ---
 

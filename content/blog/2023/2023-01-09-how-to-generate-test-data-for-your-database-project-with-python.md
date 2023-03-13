@@ -6,7 +6,7 @@ tags: ['Python', 'MySQL', 'PostgreSQL', 'MongoDB']
 authors:
   - mario_garcia
 images:
-  - blog/2023/1/testing_data.png
+  - blog/2023/01/testing_data.png
 slug: how-to-generate-test-data-for-your-database-project-with-python
 ---
 
@@ -329,11 +329,11 @@ Or:
 $ python mongodb.py
 ```
 
-![Multiprocessing](/blog/2023/1/multiprocessing.png)
+![Multiprocessing](/blog/2023/01/multiprocessing.png)
 
 Execution time depends on the CPU cores available on your machine. I'm running this script on an Intel i7 1260P that has 16 cores, but using 15.
 
-![CPU Utilization](/blog/2023/1/cpu-utilization.png)
+![CPU Utilization](/blog/2023/01/cpu-utilization.png)
 
 ## Query Your Data
 Once the script finishes, you can check the data in the database.

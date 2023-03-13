@@ -5,7 +5,7 @@ tags: ["contributions", "community", "non_code", "PMM"]
 authors:
   - aleksandra_abramova
 images:
-  - blog/2023/2/Alex-Fosdem-Non-Code.jpg
+  - blog/2023/02/Alex-Fosdem-Non-Code.jpg
 ---
 
 When discussing contributions, we still see a lot of emphasis on the code contributions into project repositories. But the open source world is extensive and diverse, and everyone can find their place there. Your project will benefit from various experiences that non-coders can bring to the table. Isn’t that cool when you receive an issue with an interesting bug from the community, read about a user case in a blog or a review, or someone makes a video guide for your product? And more!
@@ -27,16 +27,16 @@ Offer a small reward for the completion of particular tasks (that you find are i
 
 Participate in different challenges like Hacktoberfest. In 2022, Hacktoberfest made an emphasis on bringing more non-code contributions and recognizing them too. Percona also participated in it, we had 20 contributions to our repositories and half (!) of them were non-code ones.
 
-![Non Code](/blog/2023/2/non_code.png)
+![Non Code](/blog/2023/02/non_code.png)
 
 For your swag gifts, try to offer personalization if possible. For example, you can add individual messages on the t-shirt if you use print-on-demand providers. People share those opportunities around with their circle and pictures of provided swag on social media and spread the word about your open source project/brand. So they not only left a review or fixed several typos during Hacktoberfest, but also tweeted about you - their contribution became larger and you did not even had to ask them about that!
 
-![Non Code](/blog/2023/2/non_code1.png)
+![Non Code](/blog/2023/02/non_code1.png)
 
 Make reward visible and document it for the history. [Publish blog posts/social media posts](https://www.percona.com/blog/hacktoberfest-results-percona-honors-the-contributors/) to thank people who did a great job - those who reported issues or provided important suggestions included in the latest release, contributed during Hacktoberfest, etc. 
 We also publish all contributions ([community videos](https://percona.community/contribute/videos/), [blog posts](https://percona.community/contribute/articles/) that mention Percona) on our website percona.community and social networks (tweet about them, tagging authors) and the community likes the recognition.
 
-![Non Code](/blog/2023/2/non_code2.png)
+![Non Code](/blog/2023/02/non_code2.png)
 
 Make sure to have guides on how to contribute and/or at least an email to contact. Involve non-coders from your team in testing interfaces and writing guides on how to contribute. [Offer simple guides with clear screenshots and instructions](https://percona.community/blog/2022/02/10/how-to-publish-blog-post/) or even guides for different level of experience - for those who have code experience and for those who have a few. Offer video guides. Simplify the process as much as you can. Try to use simple IDEs or tools. Leave a contact email everywhere for any questions or doubts people may have. 
 
@@ -49,5 +49,5 @@ If you have Community Advocate program or reward Contributor of the Year, make s
 In your messaging, emphasize why it matters. Why non-code contribution matters. And 
 explain that it is a contribution INDEED. Recognize it as a contribution. Non-coders tend to underestimate what they do (like - oh, I did not do anything special, everyone can do that - send a tweet or correct a spelling mistake in docs). That’s a mistake. Not everyone actually can and not everyone will actually do, stop by and pay attention, spend time on that.
 
-![Non Code](/blog/2023/2/non_code3.png)
+![Non Code](/blog/2023/02/non_code3.png)
 
