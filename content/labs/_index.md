@@ -28,7 +28,7 @@ In Percona we want to support the culture of innovation. Percona Labs projects a
 
 We highly encourage you to try our lab projects out and take part in their development to bring in new technologies and broaden your horizons. We welcome contributions of all kinds - from code ones to providing feedback and sharing your ideas about project development. Let’s foster a culture of experimentation, learning and progress together! 
 
-{{% grid size=2 %}}
+{{% grid size=3 %}}
 {{% griditem %}}
 {{< database-grid icon="images/labs/serverless-postgres-cover.jpg" link="/labs/serverless-postgresql" title="Percona Build for Serverless PostgreSQL" hideread="true" >}}
 Percona offers builds for Serverless PostgreSQL which are based on Neon.
@@ -39,8 +39,15 @@ Percona offers builds for Serverless PostgreSQL which are based on Neon.
 Find out more about how you can monitor and manage your database effectively with PMM.
 {{< /database-grid >}}
 {{% /griditem %}}
+{{% griditem %}}
+{{< database-grid icon="images/labs/dbaas-infrastructure-creator.jpg" link="/labs/dbaas-infrastructure-creator" title="Percona DBaaS Infrastructure Creator"  hideread="true" >}}
+It will help you to choose the right types of instances, create and deploy clusters and Kubernetes operators.
+{{< /database-grid >}}
+{{% /griditem %}}
 {{% /grid %}}
 {{% /block %}}
+
+
 
 {{% hero-gradient class="dark-purlple" %}}
 

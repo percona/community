@@ -76,6 +76,13 @@ menu:
       url: /labs/terraform-provider
       parent: labs
       weight: 2
+    - identifier: dbaas-infrastructure-creator
+      name: DBaaS Infrastructure Creator
+      url: /labs/dbaas-infrastructure-creator
+      parent: labs
+      weight: 3
+
+
 
     - identifier: MySQL
       name: MySQL
