@@ -127,20 +127,20 @@
     margin-bottom:1rem;
   }
 
-  .grid--2 {
+  .grid--2, .grid--3, .grid--4 {
     display: block;
   }
 }
 
 @media (max-width: 1200px) {
   .grid--3 {
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 1200px) {
   .grid--4 {
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -209,12 +209,12 @@
 
 @media (max-width: 1000px) {
   .grid-links--3 {
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 1000px) {
   .grid-links--4 {
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 }
