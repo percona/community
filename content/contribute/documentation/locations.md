@@ -28,5 +28,5 @@ for details on how to submit or suggest changes to the docs.
 | [Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/) | https://github.com/percona/pbm-docs | [`CONTRIBUTING.md`](https://github.com/percona/pbm-docs/blob/main/CONTRIBUTING.md) |
 | [Percona Toolkit](https://docs.percona.com/percona-toolkit/) | https://github.com/percona/percona-toolkit/tree/3.x/docs/ | [`CONTRIBUTING.md`](https://github.com/percona/percona-toolkit/blob/3.x/CONTRIBUTING.md) |
 | [Percona Software Repositories Documentation](https://docs.percona.com/percona-software-repositories/) | https://github.com/percona/repo-config-docs | [`CONTRIBUTING.md`](https://github.com/percona/repo-config-docs/blob/master/CONTRIBUTING.md) |
-| [ProxySQL and ProxySQL Admin Tool](https://docs.percona.com/proxysql/) | https://github.com/percona/proxysql-admin-tool-doc/ | N/A |
+| [ProxySQL and ProxySQL Admin Tool](https://docs.percona.com/proxysql/) | https://github.com/percona/proxysql-admin-tool-doc/ | [`contributing.md`](https://github.com/percona/proxysql-admin-tool-doc/blob/main/contributing.md) |
 | [Percona Documentation Style Guide](https://docs.percona.com/style-guide/) | https://github.com/percona/doc-style-guide | N/A
