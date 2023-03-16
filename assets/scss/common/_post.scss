@@ -110,8 +110,13 @@ a.post--preview, a.post--preview * {
   padding-top: 2em;
   font-family: $font-sans;
 
+  .notes {
+    margin-bottom: 1em;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
   h2 {
-    color: $color-branded-h2; 
     padding-bottom: 1em;
   }
 
