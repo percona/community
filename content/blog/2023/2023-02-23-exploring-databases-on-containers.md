@@ -147,3 +147,5 @@ Now let’s share some tips to run databases on containers:
 We explored how databases work on containers. Volumes are the important thing to persist the data.
 
 What is next? Watch this fantastic talk by Peter Zaitsev [Open Source Databases on Kubernetes](https://www.youtube.com/watch?v=b_COgWA1lvk&t=145s)
+
+Thanks for reading this! You can install Percona Server for MySQL from our [Docker Repository](https://hub.docker.com/r/percona/percona-server/tags??utm_source=percona-community&utm_medium=blog&utm_campaign=edith) and if you have doubts write us in our [Percona community forum](https://forums.percona.com/?utm_source=percona-community&utm_medium=blog&utm_campaign=edith).
