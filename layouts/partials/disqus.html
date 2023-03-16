@@ -1,11 +1,13 @@
+
 <div class="comments">
 <div id='discourse-comments'></div>
-<meta name='discourse-username' content='DISCOURSE_USERNAME'>
+
+<meta name='discourse-username' content='daniil.bazhenov'>
 
 <script type="text/javascript">
   DiscourseEmbed = {
     discourseUrl: 'https://forums.percona.com/',
-    discourseEmbedUrl: '{{ .Params.canonical }}',
+    discourseEmbedUrl: '{{ $.Permalink }}',
     // className: 'CLASS_NAME',
   };
 
