@@ -274,6 +274,9 @@ hr {
       background: $light;
       border-radius: $border-radius;
       max-width:100%;
+      @media screen and (min-width: 768px) {
+        max-width:70%;
+      }
     }
     table {
       min-width:75%;
