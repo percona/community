@@ -5,6 +5,7 @@ layout: product
 images:
     - images/labs/dbaas-infrastructure-creator.jpg
 tags: ['Labs','Creator', 'DBaaS']
+aliases: "dbaas-infrastructure-creator"
 ---
 
 
