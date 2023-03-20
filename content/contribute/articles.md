@@ -98,6 +98,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Executive Interview – The Future of Platform Engineering](https://hostingjournalist.com/executive-interview-the-future-of-platform-engineering/) - Editorial Team HostingJournalist - March 16, 2023
 - [Open Source Software: Top Sites](https://www.datamation.com/open-source/open-source-software-top-59-sites/) - Emma Crockett - March 15, 2023
 - [Arm has legs: VMware's Bitnami starts packaging apps for Graviton and Ampere](https://www.theregister.com/2023/02/27/bitnami_arm_support/) - Simon Sharwood - February 27, 2023
 - [The Spectrum Of IT Partnerships](https://www.forbes.com/sites/adrianbridgwater/2023/02/26/the-spectrum-of-it-partnerships/) - Adrian Bridgwater - February 26, 2023
