@@ -40,7 +40,7 @@ Find out more about how you can monitor and manage your database effectively wit
 {{< /database-grid >}}
 {{% /griditem %}}
 {{% griditem %}}
-{{< database-grid icon="images/labs/dbaas-infrastructure-creator.jpg" link="/labs/dbaas-infrastructure-creator" title="Percona DBaaS Infrastructure Creator"  hideread="true" >}}
+{{< database-grid icon="images/labs/dbaas-infrastructure-creator.jpg" link="/labs/dbaas-creator" title="Percona DBaaS Infrastructure Creator"  hideread="true" >}}
 It will help you to choose the right types of instances, create and deploy clusters and Kubernetes operators.
 {{< /database-grid >}}
 {{% /griditem %}}
