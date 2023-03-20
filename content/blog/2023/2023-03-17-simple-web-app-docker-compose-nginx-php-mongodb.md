@@ -1,5 +1,5 @@
 ---
-title: "How to Develop a Simple Web Application Using Docker, Nginx, PHP, and MongoDB "
+title: "How to Develop a Simple Web Application Using Docker, Nginx, PHP, and Percona Server for MongoDB "
 date: "2023-03-17T00:00:00+00:00"
 draft: false
 tags: ["MongoDB", "Databases", "Percona", "PHP", "Docker"]
@@ -15,7 +15,7 @@ I'm developing an application that takes data from different sources, processes 
 
 The application I develop gets data from GitHub, Jira, and websites via API, processes it and creates reports according to the desired requirements. 
 
-The application is developed with PHP version 8+ and Nginx as a web server, and MongoDB as a database. For local development, I use Docker and Docker-compose. 
+The application is developed with PHP version 8+ and Nginx as a web server, and [Percona Server for MongoDB](https://www.percona.com/software/mongodb/percona-server-for-mongodb?utm_source=percona-community&utm_medium=blog&utm_campaign=daniil) as a database. For local development, I use Docker and Docker-compose. 
 
 I use PHP and Nginx because I'm familiar with them, and it's a popular stack with lots of documentation and examples. Docker was chosen for the same reason. I used to install Nginx/Apache + PHP + Database in the same container, but over time I found Docker-compose and separate containers more convenient, so now I use docker-compose. 
 
@@ -323,7 +323,7 @@ If we run localhost in the browser, our application will write 1,000 documents f
 
 ## Connecting to MongoDB via MongoDB Compass
 
-MongoDB Compass is a handy desktop application to work with MongoDB. I use it to browse databases and collections and create indexes. 
+[MongoDB Compass](https://www.mongodb.com/products/compass) is a handy desktop application to work with MongoDB. I use it to browse databases and collections and create indexes. 
 
 This is a quick way to conveniently look through written data and check errors.
 
@@ -376,7 +376,7 @@ We set up an environment and developed a PHP script to work with MongoDB.
 In my opinion, it was simple. All the source code you can see and use from my [GitHub](https://github.com/dbazhenov/nginx-php-mongodb-docker-compose)
 
 To summarize: 
-1. We have now installed standalone MongoDB using Docker-compose locally. However, it is recommended to use ReplicaSet with at least one node for production. We will definitely try this on a separate server using AWS as an example.
+1. We have now installed standalone [Percona Server for MongoDB](https://www.percona.com/software/mongodb/percona-server-for-mongodb?utm_source=percona-community&utm_medium=blog&utm_campaign=daniil) using Docker-compose locally. However, it is recommended to use ReplicaSet with at least one node for production. We will definitely try this on a separate server using AWS as an example.
 2. For production applications, it is recommended to use ReplicaSet with several nodes. We will definitely do that too.
 3. We will install PMM to monitor database, see how our script loads the database, and see database queries with QAN and other PMM features.
 
