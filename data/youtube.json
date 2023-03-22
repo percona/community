@@ -231,6 +231,18 @@
 
   "Events":[
   {
+    "youtube_id": "9K01PjNc-Cs",
+    "title": "PGConf India 2023 - Highly Effective Troubleshooting a PostgreSQL Server",
+    "date": "Feb 22, 2023",
+    "authors": "Jobin Augustine (Percona)"
+  },
+  {
+    "youtube_id": "JH7jFf9XTUY",
+    "title": "PGConf India 2023 - Reducing PostgreSQL Costs in the Cloud",
+    "date": "Feb 22, 2023",
+    "authors": "Jobin Augustine (Percona)"
+  },
+  {
     "youtube_id": "O4MzmtNahho",
     "title": "SOOCon23 - Cloud of Serfdom vs Cloud of Freedom: Why Open Source will Win in the Cloud Age",
     "date": "Feb 20, 2023",
@@ -736,6 +748,12 @@
 
 
   "Other":[
+  {
+    "youtube_id": "ZH9dF-BdgQw",
+    "title": "Welcome/Intro to DoK Explorers Day",
+    "date": "March 15, 2023",
+    "authors": "Edith Puclla (Percona) and Bart Farrell (DoKC)"
+  },
   {
     "youtube_id": "Co_gVUFlGdA",
     "title": "Docker Community Updates and Awards",
