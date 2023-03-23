@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "0-gVO-f7940",
+    "title": "How to Use Percona Toolkit (pt-archiver,pt-query-digiest,pt-fingerprint,pt-show-grants)",
+    "date": "March 16, 2023",
+    "authors": "DBA Experiments"
+  },
+  {
     "youtube_id": "jwTSo9WvCCg",
     "title": "How to Use Percona XtraBackup Tool for Taking Backup and Restore Backup - Complete Guide",
     "date": "March 6, 2023",
