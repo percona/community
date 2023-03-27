@@ -6,46 +6,27 @@ weight: 1
 
 Percona provides binary builds for Serverless PostgreSQL based on [the Neon: Serverless Postgres](https://github.com/neondatabase/neon).
 
-This solution provides a serverless experience for PostgreSQL by dividing the compute nodes and storage nodes, allowing the storage to be scaled as your data grows and making the process transparent for end-users.
+This solution provides a serverless experience for PostgreSQL by separating the compute nodes and storage nodes. This allows scaling your storage as your data grows and makes the process transparent for end users.
 
-At this point the binaries are **EXPERIMENTAL and ONLY for TESTING** purposes. Percona does not provide official support for the build at this moment.
+At this point, the builds are **EXPERIMENTAL and for TESTING PURPOSES ONLY**. Percona does not provide official support for the builds at the moment.
 
-For the feedback and questions, please use our [Forum](https://forums.percona.com/c/percona-labs/serverless-postgresql/78).
+Share your feedback and questions on [Percona Community Forum](https://forums.percona.com/c/percona-labs/serverless-postgresql/78).
 
-## Binary releases location
+## Binary Releases Location
 
-The binaries for releases are hosted on github release page
+Get binary releases on our [GitHub release page](https://github.com/Percona-Lab/neon/releases).
 
-[Releases · Percona-Lab/neon (github.com)](https://github.com/Percona-Lab/neon/releases)
+## Architecture
 
-## Architectural overview
+The build consists of the following main components:
 
-The build provides multiple components necessary to start Serverless PostgreSQL. The primary components are:
+- **Pageserver:** This is a storage server that stores data pages and WAL records.
+- **Compute nodes:** They handle user queries and send requests for data pages to a page server.
+- **Safekeeper(s):** They store WAL records durably before the page server can process them. Several safekeepers comprise a WAL service. To make sure that all WAL records are sent to the pageserver and avoid data loss, we recommend creating at least 3 safekeeper instances.
+- **Storage broker:** It coordinates processing of WAL records between the WAL service and the page server.
 
-1. Storage Broker
-2. Page Server
-3. Safe Keeper
-4. Compute Nodes
+![Percona - Serverless Postgres - WAL records](/images/labs/docs/serverless/introduction/architecture.png)
 
-## The relation between components
+Compute nodes send requests to the page server. The pageserver responds with pages from the repository. WAL records that contain the changes to the data are sent to the WAL service, where the Paxos protocol distributes them between safekeepers thus reducing latency and ensuring data consistency. Safekeepers store the WAL records in memory until the storage broker sends them to the pageserver for further processing and storing in the repository.
 
-### WAL records
-
-Compute nodes write WAL records to the WAL Service, which consists of safekeepers. To provide low-latency operations, safekeepers keep records only in memory. However, there are three of them combined in a consistent group.
-
-For permanent storage, WAL records are shipped later to Pageserver.
-
-![Percona - Serverless Postgres - WAL records](/images/labs/docs/serverless/introduction/image1.png)
-
-### Data pages
-
-The Pageserver listens for GetPage@LSN requests from the Compute Nodes, and responds with pages from the repository. 
-
-![Percona - Serverless Postgres - Data pages](/images/labs/docs/serverless/introduction/image2.png)
-
-### Storage Broker
-
-Storage Broker is a coordination component between WAL Service and Pageserver
-
-![Percona - Serverless Postgres - Storage Broker](/images/labs/docs/serverless/introduction/image3.png)
-
+![Percona - Serverless Postgres - Storage Broker](/images/labs/docs/serverless/introduction/listen-request.png)
