@@ -89,6 +89,6 @@ Release notes under development are in our [pmm-doc repo](https://github.com/per
 
 Here is a feed of early previews that could be tested before release:
 
-{{% blogpostsbytags tags="PMM_prev" %}}
+{{% blogpostsbytags tags="PMM_prev" /%}}
 
 

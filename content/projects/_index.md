@@ -24,17 +24,15 @@ We create, contribute to, and use various open source projects. Contributing bac
 
 {{% /griditem %}}
 {{% griditem %}}
-
 ## Projects Where We Contribute Back
 
 * [Grafana](https://grafana.com/)
 * [MySQL](https://www.mysql.com/)
 * [PostgreSQL](https://www.postgresql.org/)
 * *... and many more*
-
+{{% /griditem %}}
 {{% /grid %}}
-
 {{% /contentblock %}}
 
 
-{{% blogpostsbytags tags="Kubernetes,PMM,Toolkit,toolkit" Title="Featured posts" %}}
+{{% blogpostsbytags tags="Kubernetes,PMM,Toolkit,toolkit" Title="Featured posts" /%}}
