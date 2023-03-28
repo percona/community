@@ -7,6 +7,8 @@ authors:
   - daniil_bazhenov
 images:
   - blog/2023/03/PHP-1.jpg
+aliases:
+  - how-to-develop-a-simple-web-application-using-docker-nginx-php-and-mongodb
 ---
 
 I'm developing an application that takes data from different sources, processes it, and prepares reports. In this series of articles, I will explain how to install and configure the tools, application, and database to develop and run the application. 
