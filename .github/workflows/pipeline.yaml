@@ -1,61 +1,39 @@
 name: Build and Deploy
 on:
   push:
-    branches-ignore:
-      - gh-pages
+    branches:
+      - main  
+
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v2
-
-      - name: Checkout gh-pages
-        uses: actions/checkout@v2
-        if: github.ref == 'refs/heads/main'
+      - uses: actions/checkout@v3
         with:
-          ref: gh-pages
-          path: public
+          submodules: false  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Cache resources
-        uses: actions/cache@v1
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          path: resources
-          key: hugo-resources
-          restore-keys: hugo-resources
+          hugo-version: '0.110.0'
+          extended: true
 
-      - name: Cache hugo deb
-        uses: actions/cache@v1
+      - uses: actions/cache@v2
         with:
-          path: /tmp/hugo.deb
-          key: hugo-deb
-          restore-keys: hugo-deb
-
-      - name: Setup hugo
-        run: |
-          set -euo pipefail
-          if [ ! -f /tmp/hugo.deb ]; then
-            wget https://github.com/gohugoio/hugo/releases/download/v0.81.0/hugo_extended_0.81.0_Linux-64bit.deb -O /tmp/hugo.deb
-          fi
-          sudo dpkg -i /tmp/hugo.deb
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
 
       - name: Build
         run: hugo --minify
 
       - name: Deploy
-        if: github.ref == 'refs/heads/main'
-        run: |
-          set -euo pipefail
-          cd public
-          git config user.name "GitHub Actions"
-          git config user.email noreply@github.com
-          git add .
-          if ! git diff-index --quiet HEAD --; then
-            git commit -m "Website publish"
-            git push --set-upstream --force origin gh-pages
-          else
-            echo -e "No changes found."
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
