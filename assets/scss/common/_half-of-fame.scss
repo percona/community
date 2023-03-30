@@ -1,0 +1,92 @@
+.introduction {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f5f2f2;
+
+    .hero-text p {
+        padding: 0 4rem;
+    }
+
+    @media screen and (max-width: 760px) {
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+
+        .hero-text p {
+            padding: 0 0rem;
+        }
+
+    }  
+}
+
+.inductees {
+    
+    margin: 2rem;
+
+    h2 {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 760px) {
+
+        h2 {
+            text-align: left;
+            padding: 1rem;
+        }
+
+    }  
+
+}
+
+.inductees {
+    
+    h3 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    img {
+        max-height: 600px;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: auto;
+    }
+
+    .intro {
+        vertical-align: middle;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+
+    @media screen and (max-width: 760px) {
+
+        .intro {
+            vertical-align: middle;
+            padding: 1rem;
+            margin: 0rem 0;
+        }
+
+        h2 {
+            text-align: left;
+            padding: 1rem;
+        }
+
+        h3 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+    } 
+}
+
+.ceremony {
+    .grid {
+        margin-top: 0rem;
+    }
+}
