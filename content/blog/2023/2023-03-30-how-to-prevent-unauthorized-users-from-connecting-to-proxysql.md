@@ -17,7 +17,7 @@ To understand what follows, you have to bear in mind how ProxySQL connects to My
 
 Something is missing, isn't it?
 
-Yes, the host associated with each MySQL user is missing !
+Yes, the host associated with each MySQL user is missing!
 
 In MySQL, users are configured to only be able to connect from ProxySQL. In ProxySQL we don't have this information. By default, all users can therefore connect to ProxySQL from any IP address and ProxySQL will open connections to MySQL for them. As I specified in the introduction, ProxySQL provides a Firewall to overcome this problem, but this one is not really satisfactory.
 
@@ -31,19 +31,19 @@ In MySQL, user *bob* was created like this:
 CREATE USER 'bob'@'IP_PROXYSQL' IDENTIFIED BY 'PASSWORD';
 ```
 
-In ProxySQL, let's create *bob* like this :
+In ProxySQL, let's create *bob* like this:
 ```sql
 INSERT INTO mysql_users(username,password,default_hostgroup) VALUES ('bob','PASSWORD',0);
 LOAD MYSQL USERS TO RUNTIME;
 SAVE MYSQL USERS TO DISK;
 ```
-and declare the MySQL server like this :
+and declare the MySQL server like this:
 ```sql
 INSERT INTO mysql_servers(hostgroup_id,hostname) VALUES (1,'mysql_server');
 LOAD MYSQL SERVERS TO RUNTIME;
 SAVE MYSQL SERVERS TO DISK;
 ```
-As you may have noticed, I didn't declare the same hostgroup when creating the user and the server. Hostgroup 0 does not correspond to any MySQL server; by default, our user bob will therefore be able to connect to ProxySQL but his queries will not be redirected to any MySQL server. Let's move on to host management. I will declare each authorized host in the mysql_query_rules table. In ProxySQL, this table is used, among other things, to assign different parameters to a connection. You see what I mean ? Let's declare our rule!
+As you may have noticed, I didn't declare the same hostgroup when creating the user and the server. Hostgroup 0 does not correspond to any MySQL server. By default, our user bob will therefore be able to connect to ProxySQL but his queries will not be redirected to any MySQL server. Let's move on to host management. I will declare each authorized host in the mysql_query_rules table. In ProxySQL, this table is used, among other things, to assign different parameters to a connection. You see what I mean? Let's declare our rule!
 ```sql
 INSERT INTO mysql_query_rules (rule_id,active,username,client_addr,destination_hostgroup,apply) VALUES (1,1,'bob','IP_1',1,1);
 LOAD MYSQL QUERY RULES TO RUNTIME;
@@ -72,19 +72,19 @@ mysql -u$PROXYSQL_USERNAME -p$PROXYSQL_PASSWORD -h$PROXYSQL_HOSTNAME -P$PROXYSQL
     fi
 done
 ```
-This script lists all the connections opened in ProxySQL on hostgroup 0. It then checks whether the connected user/host pair is authorized using the mysql_query_rules table. If not, the connection is killed. Let's activate the scheduler in ProxySQL :
+This script lists all the connections opened in ProxySQL on hostgroup 0. It then checks whether the connected user/host pair is authorized using the mysql_query_rules table. If not, the connection is killed. Let's activate the scheduler in ProxySQL:
 ```sql
 INSERT INTO scheduler(filename, arg1, arg2, interval_ms) VALUES ('kill_connections.sh','proxysql_admin_user','proxysql_admin_password', 1000);
 LOAD SCHEDULER TO RUNTIME;
 SAVE SCHEDULER TO DISK;
 ```
-Now, any connection opened in ProxySQL but not authorized will be automatically killed !
+Now, any connection opened in ProxySQL but not authorized will be automatically killed!
 
 >  **_WARNING:_**  unfortunately, the ProxySQL scheduler does not work like the MySQL scheduler. It is necessary to open the connection from a .sh file and therefore to indicate the ProxySQL administration credentials. These identifiers will then be visible by monitoring the list of server processes. To avoid this problem, I advise you to indicate the identifiers directly in the .sh file and to protect this file correctly on your server.
 
 ## Additional Information
 
-When I deploy ProxySQL, I always create a rule with a very high rule_id to block unauthorized connections; this is an additional barrier in case I forget something :
+When I deploy ProxySQL, I always create a rule with a very high rule_id to block unauthorized connections; this is an additional barrier in case I forget something:
 ```sql
 INSERT INTO mysql_query_rules (rule_id,active,error_msg,destination_hostgroup) VALUES (999999999,1,'ProxySQL : Access denied',0);
 LOAD MYSQL QUERY RULES TO RUNTIME;
