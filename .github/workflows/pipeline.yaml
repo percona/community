@@ -21,12 +21,19 @@ jobs:
           hugo-version: '0.110.0'
           extended: true
 
-      - uses: actions/cache@v2
+      - name: Cache resources
+        uses: actions/cache@v1
         with:
-          path: /tmp/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
+          path: resources
+          key: hugo-resources
+          restore-keys: hugo-resources
+
+      - name: Cache hugo deb
+        uses: actions/cache@v1
+        with:
+          path: /tmp/hugo.deb
+          key: hugo-deb
+          restore-keys: hugo-deb
 
       - name: Build
         run: hugo --minify
