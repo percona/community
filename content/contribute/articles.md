@@ -53,6 +53,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [10 Best Practices for Every MongoDB Deployment](https://www.infoworld.com/article/3691136/10-best-practices-for-every-mongodb-database.html) - Zelmar Michelini - April 5, 2023
 - [Percona Backup for MongoDB Docker](https://bobcares.com/blog/percona-backup-for-mongodb-docker/) - Amritha V - December 29, 2022
 - [Migrating MongoDB to Kubernetes](https://dok.community/blog/migrating-mongodb-to-kubernetes/) - Sergey Pronin - December 10, 2022
 - [6 Best MongoDB Backup Tools](https://www.comparitech.com/net-admin/best-mongodb-backup-tools/) - Stephen Cooper - September 12, 2022
