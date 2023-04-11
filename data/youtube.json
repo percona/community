@@ -1,6 +1,19 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "vwnGP104568",
+    "title": "My Worst Day as a Developer (French)",
+    "date": "April 3, 2023",
+    "authors": "Parfaitement Web"
+  },
+  {
+    "youtube_id": "Pg7N4qfDdJk",
+    "title": "How to Install XtraDB Cluster 5.7 in RedHat 7 AWS Machine ?",
+    "date": "April 8, 2023",
+    "authors": "DBA Experiments"
+  },
+
+  {
     "youtube_id": "0-gVO-f7940",
     "title": "How to Use Percona Toolkit (pt-archiver,pt-query-digiest,pt-fingerprint,pt-show-grants)",
     "date": "March 16, 2023",
