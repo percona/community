@@ -90,6 +90,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [5 Challenges for Databases on Kubernetes](https://vmblog.com/archive/2023/04/10/5-challenges-for-databases-on-kubernetes.aspx#.ZDT9kOxBykq) - Joe Brockmeier - April 10, 2023
 - [Choosing a Kubernetes Operator for PostgreSQL](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/) - Bhavin Shah (Cloud Native BU, Pure Storage) - March 18, 2022
 - [Deploying Percona Kubernetes Operators using OpenEBS Local Storage](https://dev.to/sudip_sg/deploying-percona-kubernetes-operators-using-openebs-local-storage-4ai9) - Sudip Sengupta - June 5, 2021
 
