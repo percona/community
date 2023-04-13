@@ -7,6 +7,13 @@
     margin: 0;
 }
 
+
+.blog-post .body {
+  @media screen and (min-width: 768px) {
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}
+
 .post--preview {
   display: block;
 
