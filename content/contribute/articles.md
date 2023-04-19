@@ -101,6 +101,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [FerretDB 1.0 Offers Fresh Approach to Open Source Document Databases](https://www.theregister.com/2023/04/14/ferretdb_10_ga/) - Lindsay Clark - April 14, 2023
 - [Challenging Yourself Through Open Source with Peter Zaitsev of Percona](https://www.emilyomier.com/podcast/peter-zaitsev) - Emily Omier - March 22, 2023
 - [Executive Interview – The Future of Platform Engineering](https://hostingjournalist.com/executive-interview-the-future-of-platform-engineering/) - Editorial Team HostingJournalist - March 16, 2023
 - [Open Source Software: Top Sites](https://www.datamation.com/open-source/open-source-software-top-59-sites/) - Emma Crockett - March 15, 2023
