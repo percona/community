@@ -101,6 +101,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Percona Engineering Lead: Into the ‘Open’ Database Universe](https://www.computerweekly.com/blog/Open-Source-Insider/Percona-engineering-lead-Into-the-open-database-universe) - Barrett Chambers and Adrian Bridgwater - April 14, 2023
 - [FerretDB 1.0 Offers Fresh Approach to Open Source Document Databases](https://www.theregister.com/2023/04/14/ferretdb_10_ga/) - Lindsay Clark - April 14, 2023
 - [Challenging Yourself Through Open Source with Peter Zaitsev of Percona](https://www.emilyomier.com/podcast/peter-zaitsev) - Emily Omier - March 22, 2023
 - [Executive Interview – The Future of Platform Engineering](https://hostingjournalist.com/executive-interview-the-future-of-platform-engineering/) - Editorial Team HostingJournalist - March 16, 2023
