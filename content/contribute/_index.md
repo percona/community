@@ -22,7 +22,7 @@ Each of our projects has its own contribution guidelines. You will find them in 
 
 Code contributions are welcome, but code is only one way to contribute! Answering questions on the Percona Forum, writing or contributing fixes to documentation, new blogs, giving talks or video tutorials about using MySQL, MongoDB, PostgreSQL, etc. All of those things help build and support other open source database users.
 
-If you're interested in producing content for this community (examples: blog post, guide, [documentation](/contribute/documentation), talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
+If you're interested in producing content for this community (examples: [blog post](/blog/2022/02/10/how-to-publish-blog-post/), guide, [documentation](/contribute/documentation), talk, course), we can help you with ideas, English editing, and verifying your content's technical viability. Don't worry if you're not a native speaker - we got you covered and will help you improve your English writing skills with tips and suggestions.
 
 For content inspiration, please check the [open topics](/contribute/opentopics) or send a pull request with your topic idea.
 {{% /typography %}}
