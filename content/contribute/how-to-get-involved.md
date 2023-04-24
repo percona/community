@@ -7,12 +7,11 @@ images:
 
 All of Percona's software is open source, which means we accept and value contributions. We also know that open source is more than code, so we emphasize all kinds of contributions, including:
 
-- Writing a blog post
+- [Writing a blog post](/blog/2022/02/10/how-to-publish-blog-post/)
 - Answering questions on the [Percona Forum](https://forums.percona.com/)
 - Creating a video tutorial or giving a talk on how to use Percona software
-- Contributing to documentation
+- [Contributing to documentation](/contribute/documentation)
 - Submitting and helping close bug reports 
-
 
 Ready to join the ranks of contributors? 
 
@@ -28,7 +27,7 @@ Contribute a fix for one of these Jira issues and notify us at community-team@pe
 
 ## Blog
 
-Pick up the theme from the list and write a blog post. Publish it yourself following [the guide](http://percona.community/blog/2022/02/10/how-to-publish-blog-post/), or send us the text at community-team@percona.com.
+Pick up the theme from the list and write a blog post. Publish it yourself following [the guide](/blog/2022/02/10/how-to-publish-blog-post/), or send us the text at community-team@percona.com.
 
 ## Video
 
