@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "_qyq7Y1QQb0",
+    "title": "How to Install Percona XtraDB Cluster on Rocky Linux 9",
+    "date": "April 10, 2023",
+    "authors": "CentLinux"
+  },
+  {
     "youtube_id": "vwnGP104568",
     "title": "My Worst Day as a Developer (French)",
     "date": "April 3, 2023",

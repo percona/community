@@ -90,6 +90,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19. 2023
 - [5 Challenges for Databases on Kubernetes](https://vmblog.com/archive/2023/04/10/5-challenges-for-databases-on-kubernetes.aspx#.ZDT9kOxBykq) - Joe Brockmeier - April 10, 2023
 - [Choosing a Kubernetes Operator for PostgreSQL](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/) - Bhavin Shah (Cloud Native BU, Pure Storage) - March 18, 2022
 - [Deploying Percona Kubernetes Operators using OpenEBS Local Storage](https://dev.to/sudip_sg/deploying-percona-kubernetes-operators-using-openebs-local-storage-4ai9) - Sudip Sengupta - June 5, 2021
@@ -101,6 +102,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Percona Engineering Lead: Into the ‘Open’ Database Universe](https://www.computerweekly.com/blog/Open-Source-Insider/Percona-engineering-lead-Into-the-open-database-universe) - Barrett Chambers and Adrian Bridgwater - April 14, 2023
+- [FerretDB 1.0 Offers Fresh Approach to Open Source Document Databases](https://www.theregister.com/2023/04/14/ferretdb_10_ga/) - Lindsay Clark - April 14, 2023
 - [Challenging Yourself Through Open Source with Peter Zaitsev of Percona](https://www.emilyomier.com/podcast/peter-zaitsev) - Emily Omier - March 22, 2023
 - [Executive Interview – The Future of Platform Engineering](https://hostingjournalist.com/executive-interview-the-future-of-platform-engineering/) - Editorial Team HostingJournalist - March 16, 2023
 - [Open Source Software: Top Sites](https://www.datamation.com/open-source/open-source-software-top-59-sites/) - Emma Crockett - March 15, 2023
