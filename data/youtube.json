@@ -1,6 +1,18 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "AlYHUNQQVGg",
+    "title": "MongoDB vs PostgreSQL: Which is more suitable for your project in 2023?",
+    "date": "April 13, 2023",
+    "authors": "Let's Talk Dev"
+  },
+  {
+    "youtube_id": "n8EfzZkPADg",
+    "title": "HA MySQL Cluster. PERCONA XtraDB. Installation and configuration.",
+    "date": "April 19, 2023",
+    "authors": "RomNero"
+  },
+  {
     "youtube_id": "_qyq7Y1QQb0",
     "title": "How to Install Percona XtraDB Cluster on Rocky Linux 9",
     "date": "April 10, 2023",
@@ -255,6 +267,18 @@
   }],
 
   "Events":[
+  {
+    "youtube_id": "eJ6sm-LLhOc",
+    "title": "Conf42 Python 2023 - How To Generate Test Data for Your Database Project",
+    "date": "April 12, 2023",
+    "authors": "Mario Garcia (Percona)"
+  },
+  {
+    "youtube_id": "dF5TYJSbP9A",
+    "title": "MySQL Summit 2023 - JSON Data Improvements in MySQL 8.0",
+    "date": "March 30, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
   {
     "youtube_id": "a-AXGO9yCME",
     "title": "Saint TeamLead Conf 2022 - My Way to Team Leads and Back. What I Have Learned in 8 Years of Leadership",
@@ -683,6 +707,12 @@
 
 
   "Interviews":[
+  {
+    "youtube_id": "esz7OOYxCIc",
+    "title": "Percona’s Steve Hoffman on the Ease of Platform Engineering",
+    "date": "April 20, 2023",
+    "authors": "Steve Hoffman (Percona) and James Maguire (eWEEK)"
+  }, 
   {
     "youtube_id": "r7zechCs5nE",
     "title": "The Hacking Open Source Business Podcast - Which Conferences Should You Attend, Speak at, and Sponsor",
