@@ -102,6 +102,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Why Platform Engineering?](https://www.infoworld.com/article/3694869/why-platform-engineering.html) - Isaac Sacolick - May 1, 2023
 - [After the Docker Free Team Episode: How to Sunset a Free Feature](https://thenewstack.io/after-the-docker-free-team-episode-how-to-sunset-a-free-feature/) - Emily Omier - April 24, 2023
 - [Percona Engineering Lead: Into the ‘Open’ Database Universe](https://www.computerweekly.com/blog/Open-Source-Insider/Percona-engineering-lead-Into-the-open-database-universe) - Barrett Chambers and Adrian Bridgwater - April 14, 2023
 - [FerretDB 1.0 Offers Fresh Approach to Open Source Document Databases](https://www.theregister.com/2023/04/14/ferretdb_10_ga/) - Lindsay Clark - April 14, 2023
