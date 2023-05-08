@@ -55,11 +55,10 @@ Using MongoDB:      6.0.42
 Using Mongosh:      1.8.0
 
 (the remaining output was omitted for brevity)
-
-
-
-    Entering some very basic MongoDB commands work as expected. Well, for the most part. 
 ```
+
+Entering some very basic MongoDB commands work as expected. Well, for the most part. 
+
 ```
 test> db
 test

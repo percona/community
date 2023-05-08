@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . | truncate 60 }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5CSKN7X');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="description" content="{{ with .Description }}{{ . | truncate 159 }}{{ else }}{{if .IsPage}}{{ .Summary | truncate 159 }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ if .Site.Params.favicon }}
     <link rel="shortcut icon" href="{{ (resources.Get "icons/cropped-percona-favicon-32x32.png").RelPermalink }}" type="image/png" />
@@ -60,6 +69,10 @@
     <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CSKN7X"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
       <div class="page-header">
         <div class="logo"><a href="/">
