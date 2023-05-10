@@ -72,10 +72,7 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% grid size=2 %}}
 {{% griditem %}}
 
-{{% grid size=2 class=" social" %}}
-{{% griditem %}}
-{{% socialblock pic="icon-discord.svg" alt="Community Discord" url="http://per.co.na/discord" %}}
-{{% /griditem %}}
+{{% grid size=3 class=" social" %}}
 {{% griditem %}}
 {{% socialblock pic="icon-youtube.svg" alt="Percona YouTube" url="https://www.youtube.com/user/PerconaMySQL" %}}
 {{% /griditem %}}
@@ -96,10 +93,3 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 
 {{% /block %}}
 
-{{% hero-gradient class="aqua" %}}
-
-## Engineering Monthly Meeting
-
-Our monthly [Engineering meetings](/contribute/engineeringmeetings) take place on [Discord](http://per.co.na/discord) in the voice channel. Join us and let's chat about technical topics, open pull requests, bugs, and plans!
-
-{{% /hero-gradient %}}

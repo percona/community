@@ -35,7 +35,7 @@ File a Bug<br/>
 
 ## Ask Questions and Get Answers
 
-Have questions about Percona software? Don’t hesitate to ask them on our [Community Forum](https://forums.percona.com/c/postgresql/25) and [Discord channel](http://per.co.na/discord)! There you can get answers and advice from other Community members and Percona experts, chat on databases, open source and Percona software. 
+Have questions about Percona software? Don’t hesitate to ask them on our [Community Forum](https://forums.percona.com/c/postgresql/25)! There you can get answers and advice from other Community members and Percona experts, chat on databases, open source and Percona software. 
 
 ![Download, Try, Give Feedback, & Enhance](/postgresql/cover-line-2.jpg)
 

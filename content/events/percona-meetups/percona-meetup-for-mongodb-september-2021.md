@@ -202,7 +202,7 @@ MongoDB is a database which came into light around the mid-2000s used by compani
 Join for an hour MeetUp for MongoDB
 
 * Day: Wednesday Sept 22nd, 2021 at 11:00am EDT (5:00 pm CEST or 8:30 pm IST)
-* Location: [Discord](http://per.co.na/discord)
+
 * Live streaming on [YouTube](https://www.youtube.com/watch?v=s7v8hAC55iw) and [Twitch](https://www.twitch.tv/perconacommunity)
 
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MDdsOWozZ2dxZ2Rxcmg1czhja2RiNjZ1cTUgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)

@@ -540,7 +540,6 @@ You are expected at The first Percona Community Meetup for PostgreSQL 2022 to ta
 
 * Day: **Thursday, January 27th, 2022 at 10:00 am EST (4:00 pm CET or 8:30 pm IST)**
 * Live stream on **[YouTube](https://www.youtube.com/watch?v=dPZ3vHMdKzw)** and **[Twitch](https://www.twitch.tv/perconalive)**
-* Live chat on **[Discord](http://per.co.na/discord)**
 * Add this event to your **[Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NGI1OGdxZG9xMTdwM2M2bHBjMDhwaDE2NjQgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)**
 
 ## We will talk about: 

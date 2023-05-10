@@ -366,7 +366,6 @@ Come to chat and stump the expert with your questions about Postgres during the 
 Join us for an hour MeetUp for **PostgreSQL**
 
 * Date: Wednesday Dec 15th, 2021 at 12:00 pm EST (6:00 pm CET or 10:30 pm IST)
-* Live Chat: on [Discord](http://per.co.na/discord)
 * Live stream on [YouTube](https://www.youtube.com/watch?v=BZNw5HHXnW0) and [Twitch](https://www.twitch.tv/perconalive)
 * Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NnJzbWd1ZGJqOGhudTZlOWJtcGJ2NWNsdmQgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)
 

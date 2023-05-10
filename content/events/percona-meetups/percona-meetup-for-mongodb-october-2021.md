@@ -222,8 +222,6 @@ Join us for an-hour MeetUp for MongoDB:
 
 * Date: Wednesday Oct 20th, 2021 at 11:00 am EST / 5:00 pm CEST / 8:30 pm IST
 
-* Live Chat: on [Discord](http://per.co.na/discord)
-
 * Live stream on [YouTube](https://www.youtube.com/watch?v=YnQu2Ock2d8) and [Twitch](https://www.twitch.tv/perconacommunity)
 
 * Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NThiMGw5Mmw0azkzZzc3a2s5ajZvMGNvcnVfMjAyMTEwMjBUMTUwMDAwWiBjX3A3ZmF2NGNzaWk1ajV2ZHNvaGkwcTh2aTQ4QGc&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com&scp=ALL)

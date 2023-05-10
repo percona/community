@@ -311,8 +311,6 @@ MeetUp for PostgreSQL
 
 * Date: Wednesday Nov 17th, 2021 at 11:00am EST / 5:00pm CEST
 
-* Live Chat : on [Discord](http://per.co.na/discord)
-
 * Live stream on [YouTube](https://www.youtube.com/watch?v=PtWQFkTt1Bo) and [Twitch](https://www.twitch.tv/perconalive)
 
 * Add this event to  your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NDd1YjZtaHZzOGVsb2pwZ3RxZ25pb25jNXEgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)

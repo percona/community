@@ -34,7 +34,6 @@ Join us in The Percona Community MeetUp and walk with us through the installatio
 
 * Day: **Thursday, Feb 24th, 11 am EST (5:00 pm CEST /  9:30 pm IST)**
 * Live stream on **[YouTube](https://www.youtube.com/watch?v=rYs2l6oFOYA)** and **[Twitch](https://www.twitch.tv/perconalive)**
-* Live chat on **[Discord](http://per.co.na/discord)**
 * Add this event to your **[Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MnRybGhmdGJpaWRlNDZzcWY3bXRsdW52dWogY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)**
 
 ## We Will Talk About:
