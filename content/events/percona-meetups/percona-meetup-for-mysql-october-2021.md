@@ -349,8 +349,6 @@ Join for an hour MeetUp for MySQL
 
 * Live stream on [YouTube](https://www.youtube.com/watch?v=KULzKh2H8XA) and [Twitch](https://www.twitch.tv/perconalive)
 
-* Live chat on [Discord](http://per.co.na/discord)
-
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NjIzMGF1YTgyZnRzdTZqNmg1ZmN2bTZzZGNfMjAyMTEwMDZUMTUwMDAwWiBjX3A3ZmF2NGNzaWk1ajV2ZHNvaGkwcTh2aTQ4QGc&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com&scp=ALL)
 
 ## Agenda 

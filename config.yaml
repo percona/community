@@ -232,10 +232,6 @@ menu:
       name: Forums
       url: https://forums.percona.com
       weight: 4
-    - identifier: discord
-      name: Discord
-      url: http://per.co.na/discord
-      weight: 5
     - identifier: map
       name: Sitemap
       url: /map

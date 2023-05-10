@@ -192,7 +192,6 @@ By publishing your post on our blog, you will become a full contributor to the r
 
 If you have any questions, please contact us:
 - [GitHub Issues](https://github.com/percona/community/issues)
-- [Discord](https://per.co.na/discord)
 - [Forum](https://forums.percona.com)
 - Email: community-team@percona.com 
 

@@ -132,7 +132,7 @@ Below is a list of arguably the most popular Open Source communities on Twitter 
 
  - [FreeCodeCamp](https://discord.gg/freecodecamp-org-official-fi-fo-692816967895220344) 
 
- - [Percona](https://per.co.na/discord)
+ - [Percona](https://forums.percona.com/)
 
  - [EddieHub](http://discord.eddiehub.org/) Everything Open Source (contributions, hackathons, first timers, etc). 
 

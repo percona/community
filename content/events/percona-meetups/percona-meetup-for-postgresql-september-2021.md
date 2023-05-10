@@ -223,8 +223,6 @@ PostgreSQL counts more than 20 years of community development.The Percona Commun
 
 * Day: Wednesday Sept 15th, 2021 at 11:00am EST
 
-* Location : on [Discord](http://per.co.na/discord)
-
 * Live streaming on [YouTube](https://www.youtube.com/watch?v=B_U3rYue0iQ) and [Twitch](https://www.twitch.tv/perconacommunity)
 
 * Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N2pmaDgxdnZwaHE1ZW5wam5mdDE5NDZuN28gY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)
