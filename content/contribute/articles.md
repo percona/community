@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [If you don't brush and floss, you're gonna get an abscess – same with MySQL updates](https://www.theregister.com/2023/05/11/mysql_5_7_support/) - Lindsay Clark - May 11, 2023
 - [MySQL and Planning For End of Life - What Do You Need to Know?](https://devm.io/databases/mysql-update-eol) - Dave Stokes - March, 2023 
 - [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - December 12, 2022
 - [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
@@ -102,6 +103,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [How Database Automation ‘Liberates’ Software Developers](https://www.forbes.com/sites/adrianbridgwater/2023/05/15/how-database-automation-liberates-software-developers/?sh=57277294bdf3) - Adrian Bridgwater - May 10, 2023
 - [Why Platform Engineering?](https://www.infoworld.com/article/3694869/why-platform-engineering.html) - Isaac Sacolick - May 1, 2023
 - [After the Docker Free Team Episode: How to Sunset a Free Feature](https://thenewstack.io/after-the-docker-free-team-episode-how-to-sunset-a-free-feature/) - Emily Omier - April 24, 2023
 - [Percona Engineering Lead: Into the ‘Open’ Database Universe](https://www.computerweekly.com/blog/Open-Source-Insider/Percona-engineering-lead-Into-the-open-database-universe) - Barrett Chambers and Adrian Bridgwater - April 14, 2023
