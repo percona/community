@@ -44,6 +44,9 @@ matter of hours!
   making changes to the documentation, please follow the guidelines outlined in
   the [Percona Documentation Style Guide](https://docs.percona.com/style-guide/).
 
+{{% youtube youtube_id="3bNBzgd1qxI" %}}{{% /youtube %}}
+
+
 ## Submitting a Jira ticket
 
 If your suggestion is bigger than what you can personally handle or you would
