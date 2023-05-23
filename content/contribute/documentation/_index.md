@@ -44,8 +44,7 @@ matter of hours!
   making changes to the documentation, please follow the guidelines outlined in
   the [Percona Documentation Style Guide](https://docs.percona.com/style-guide/).
 
-{{% youtube youtube_id="3bNBzgd1qxI" %}}{{% /youtube %}}
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3bNBzgd1qxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Submitting a Jira ticket
 
