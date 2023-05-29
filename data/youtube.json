@@ -274,6 +274,36 @@
 
   "Events":[
   {
+    "youtube_id": "AJJ8WC_wj5o",
+    "title": "Open Source Summit North America 2023 - Are Containers Ready for Production Databases?",
+    "date": "May 25, 2023",
+    "authors": "Ann Schlemmer (Percona)"
+  },
+  {
+    "youtube_id": "cW1Iaah0HFA",
+    "title": "Open Source Summit North America 2023 - Creating a Profitable Open Source Company Without Venture Capital",
+    "date": "May 25, 2023",
+    "authors": "Joe Brockmeier (Percona)"
+  },
+  {
+    "youtube_id": "E-DDUDj36hg",
+    "title": "Open Source Summit North America 2023 - Open Source Is Winning but We Can Still Lose",
+    "date": "May 25, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "l5AWWgyPiug",
+    "title": "Open Source Summit North America 2023 - ”You’re Badass”, One Woman’s Journey to becoming a CEO",
+    "date": "May 25, 2023",
+    "authors": "Ann Schlemmer (Percona)"
+  },
+  {
+    "youtube_id": "ttvL0BwDXEQ",
+    "title": "Open Source Summit North America 2023 - Everything You Need to Know about Vim and Text on Linux",
+    "date": "May 25, 2023",
+    "authors": "Joe Brockmeier (Percona)"
+  },
+  {
     "youtube_id": "TmDdkBPW_hI",
     "title": "Kubecon Eu 2023 - Kubernetes Database Operators Landscape (Panel)",
     "date": "May 1, 2023",
