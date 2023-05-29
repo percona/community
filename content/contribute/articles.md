@@ -7,6 +7,9 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+
+- [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
+- [Achieving end to end Database management with PERCONA XtraDB cluster](https://www.sigmoid.com/blogs/achieving-end-to-end-database-management-with-percona-xtradb-cluster/) - Akansha Immanuel - May 18, 2023
 - [If you don't brush and floss, you're gonna get an abscess – same with MySQL updates](https://www.theregister.com/2023/05/11/mysql_5_7_support/) - Lindsay Clark - May 11, 2023
 - [MySQL and Planning For End of Life - What Do You Need to Know?](https://devm.io/databases/mysql-update-eol) - Dave Stokes - March, 2023 
 - [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - December 12, 2022
@@ -103,6 +106,9 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [“Above the Trend Line” – Your Industry Rumor Central for 5/22/2023](https://insidebigdata.com/2023/05/22/above-the-trend-line-your-industry-rumor-central-for-5-22-2023/) - Daniel Gutierrez - May 22, 2023
+- [How do you balance ever-increasing amounts of data while optimising operational costs?](https://fintechherald.com/how-do-you-balance-ever-increasing-amounts-of-data-while-optimising-operational-costs/) - Ann Schlemmer - May 22. 2023
+- [93% of organizations have database management tools in place](https://www.securitymagazine.com/articles/99395-93-of-organizations-have-database-management-tools-in-place) - May 25, 2023
 - [How Database Automation ‘Liberates’ Software Developers](https://www.forbes.com/sites/adrianbridgwater/2023/05/15/how-database-automation-liberates-software-developers/?sh=57277294bdf3) - Adrian Bridgwater - May 10, 2023
 - [Why Platform Engineering?](https://www.infoworld.com/article/3694869/why-platform-engineering.html) - Isaac Sacolick - May 1, 2023
 - [After the Docker Free Team Episode: How to Sunset a Free Feature](https://thenewstack.io/after-the-docker-free-team-episode-how-to-sunset-a-free-feature/) - Emily Omier - April 24, 2023
