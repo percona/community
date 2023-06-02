@@ -8,6 +8,7 @@ Thank you to users of our products, customers, communities, and authors for your
 # MySQL
 
 
+- [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
 - [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
 - [Achieving end to end Database management with PERCONA XtraDB cluster](https://www.sigmoid.com/blogs/achieving-end-to-end-database-management-with-percona-xtradb-cluster/) - Akansha Immanuel - May 18, 2023
 - [If you don't brush and floss, you're gonna get an abscess – same with MySQL updates](https://www.theregister.com/2023/05/11/mysql_5_7_support/) - Lindsay Clark - May 11, 2023
@@ -106,6 +107,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Percona survey: little movement in database market](https://www.techzine.eu/news/infrastructure/106335/percona-survey-little-movement-in-database-market/) - Sander Almekinders - May 23, 2023
 - [“Above the Trend Line” – Your Industry Rumor Central for 5/22/2023](https://insidebigdata.com/2023/05/22/above-the-trend-line-your-industry-rumor-central-for-5-22-2023/) - Daniel Gutierrez - May 22, 2023
 - [How do you balance ever-increasing amounts of data while optimising operational costs?](https://fintechherald.com/how-do-you-balance-ever-increasing-amounts-of-data-while-optimising-operational-costs/) - Ann Schlemmer - May 22. 2023
 - [93% of organizations have database management tools in place](https://www.securitymagazine.com/articles/99395-93-of-organizations-have-database-management-tools-in-place) - May 25, 2023
