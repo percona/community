@@ -71,6 +71,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [Optimizing the databases at Quora](https://quoraengineering.quora.com/Optimizing-the-databases-at-Quora) - Vamsi Ponnekanti - March 1, 2023
 - [3 Ways To Set Up A PMM Server](https://www.hostedpmm.com/3-ways-to-set-up-a-pmm-server/) - Cloudpress - January 16, 2023
 - [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March  7, 2023
 - [How To Set Up Alerts Using PMM](https://www.hostedpmm.com/how-to-set-up-alerts-using-pmm/) - Stanislav Levchenko - March  7, 2023
@@ -104,6 +105,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 - [Climbing Pico de Orizaba](https://peterzaitsev.com/climbing-pico-de-orizaba/) - Peter Zaitsev - December 2022
 - [My first month in Percona as a Technology Evangelist](https://dev.to/edithpuclla/my-first-month-in-percona-as-a-technology-evangelist-40gg) - Edith Puclla - August 11, 2022
+- [A Leader’s Guide to Cultivating Culture in the Age of Remote-first Work](https://www.spiceworks.com/hr/future-work/guest-article/cultivating-culture-in-the-age-of-remote-first-work/) - Ann Schlemmer - June 9, 2023
 
 # Other
 
