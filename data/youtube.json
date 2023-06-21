@@ -1,6 +1,43 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "sTgGQCenljs",
+    "title": "Installing Percona MongoDB Server on Centos",
+    "date": "May 5, 2023",
+    "authors": "Coding Studio"
+  },
+  {
+    "youtube_id": "AlYHUNQQVGg",
+    "title": "MongoDB vs PostgreSQL: Which is more suitable for your project in 2023?",
+    "date": "April 13, 2023",
+    "authors": "Let's Talk Dev"
+  },
+  {
+    "youtube_id": "n8EfzZkPADg",
+    "title": "HA MySQL Cluster. PERCONA XtraDB. Installation and configuration.",
+    "date": "April 19, 2023",
+    "authors": "RomNero"
+  },
+  {
+    "youtube_id": "_qyq7Y1QQb0",
+    "title": "How to Install Percona XtraDB Cluster on Rocky Linux 9",
+    "date": "April 10, 2023",
+    "authors": "CentLinux"
+  },
+  {
+    "youtube_id": "vwnGP104568",
+    "title": "My Worst Day as a Developer (French)",
+    "date": "April 3, 2023",
+    "authors": "Parfaitement Web"
+  },
+  {
+    "youtube_id": "Pg7N4qfDdJk",
+    "title": "How to Install XtraDB Cluster 5.7 in RedHat 7 AWS Machine ?",
+    "date": "April 8, 2023",
+    "authors": "DBA Experiments"
+  },
+
+  {
     "youtube_id": "0-gVO-f7940",
     "title": "How to Use Percona Toolkit (pt-archiver,pt-query-digiest,pt-fingerprint,pt-show-grants)",
     "date": "March 16, 2023",
@@ -236,6 +273,102 @@
   }],
 
   "Events":[
+  {
+    "youtube_id": "AJJ8WC_wj5o",
+    "title": "Open Source Summit North America 2023 - Are Containers Ready for Production Databases?",
+    "date": "May 25, 2023",
+    "authors": "Ann Schlemmer (Percona)"
+  },
+  {
+    "youtube_id": "cW1Iaah0HFA",
+    "title": "Open Source Summit North America 2023 - Creating a Profitable Open Source Company Without Venture Capital",
+    "date": "May 25, 2023",
+    "authors": "Joe Brockmeier (Percona)"
+  },
+  {
+    "youtube_id": "E-DDUDj36hg",
+    "title": "Open Source Summit North America 2023 - Open Source Is Winning but We Can Still Lose",
+    "date": "May 25, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "l5AWWgyPiug",
+    "title": "Open Source Summit North America 2023 - ”You’re Badass”, One Woman’s Journey to becoming a CEO",
+    "date": "May 25, 2023",
+    "authors": "Ann Schlemmer (Percona)"
+  },
+  {
+    "youtube_id": "ttvL0BwDXEQ",
+    "title": "Open Source Summit North America 2023 - Everything You Need to Know about Vim and Text on Linux",
+    "date": "May 25, 2023",
+    "authors": "Joe Brockmeier (Percona)"
+  },
+  {
+    "youtube_id": "TmDdkBPW_hI",
+    "title": "Kubecon Eu 2023 - Kubernetes Database Operators Landscape (Panel)",
+    "date": "May 1, 2023",
+    "authors": "Xing Yang (VMware), Melissa Logan (Constantia.io), Sergey Pronin (Percona), Alvaro Hernandez (OnGres)"
+  },
+  {
+    "youtube_id": "eJ6sm-LLhOc",
+    "title": "Conf42 Python 2023 - How To Generate Test Data for Your Database Project",
+    "date": "April 12, 2023",
+    "authors": "Mario Garcia (Percona)"
+  },
+  {
+    "youtube_id": "dF5TYJSbP9A",
+    "title": "MySQL Summit 2023 - JSON Data Improvements in MySQL 8.0",
+    "date": "March 30, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "a-AXGO9yCME",
+    "title": "Saint TeamLead Conf 2022 - My Way to Team Leads and Back. What I Have Learned in 8 Years of Leadership",
+    "date": "September 26, 2022",
+    "authors": "Andrey Minkin (Percona)"
+  },
+  {
+    "youtube_id": "ReYon0HLj2k",
+    "title": "SCaLE 20x - From LAMP Stack to Kube - Moving Your Old Websites into the Cloud Without Leaving Chemical Trails",
+    "date": "March 11, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "aJd4ICzEYHI",
+    "title": "SCaLE 20x - Pgpool-II - What, Why, and Where?",
+    "date": "March 10, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "hVqX_IzM_3Y",
+    "title": "SCaLE 20x - Building Your Own PostgreSQL DBAs From Available Materials",
+    "date": "March 9, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "e3im5jFlU90",
+    "title": "SCaLE 20x - PostgreSQL Replication Conflicts: Avoiding Pitfalls",
+    "date": "March 10, 2023",
+    "authors": "Hamid Akhtar (Percona)"
+  },
+  {
+    "youtube_id": "X7ANrcuZXJg",
+    "title": "SCaLE 20x - Using JSON in a Relational Database Best Practices",
+    "date": "March 10, 2023",
+    "authors": "Dave Stokes (Percona)"
+  },
+  {
+    "youtube_id": "iTjNGpzZr20",
+    "title": "SCaLE 20x - Tune PostgreSQL for Read/Write Scalability",
+    "date": "March 10, 2023",
+    "authors": "Ibrar Ahmed (Percona)"
+  },
+  {
+    "youtube_id": "XfH-HjdXFg8",
+    "title": "SCaLE 20x - State of MySQL Security in 2023",
+    "date": "March 10, 2023",
+    "authors": "Peter Zaitsev (Percona)"
+  },
   {
     "youtube_id": "5MAw4FYHa04",
     "title": "TestDriven Conf 2022 - How to Nest a Bug: Reproducing Database Problems (MySQL/PostgreSQL/MongoDB)",
@@ -616,6 +749,18 @@
 
 
   "Interviews":[
+  {
+    "youtube_id": "8GLKwju9YDk",
+    "title": "Women in IT – Ann Schlemer, CEO of Percona",
+    "date": "May 3, 2023",
+    "authors": "Ann Schelmmer (Percona) and Phil Alsop (DiverseIT)"
+  }, 
+  {
+    "youtube_id": "esz7OOYxCIc",
+    "title": "Percona’s Steve Hoffman on the Ease of Platform Engineering",
+    "date": "April 20, 2023",
+    "authors": "Steve Hoffman (Percona) and James Maguire (eWEEK)"
+  }, 
   {
     "youtube_id": "r7zechCs5nE",
     "title": "The Hacking Open Source Business Podcast - Which Conferences Should You Attend, Speak at, and Sponsor",

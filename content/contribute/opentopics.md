@@ -78,7 +78,7 @@ You can find our list of topics here. We are excited to hear from you if you wou
 
 {{% hero-gradient class="night" %}}
 
-Let us know on [Discord](http://per.co.na/discord) or via e-mail to [community-team@percona.com](mailto:community-team@percona.com) if you need support or if you've already published one of these topics on your own.
+Let us know via e-mail to [community-team@percona.com](mailto:community-team@percona.com) if you need support or if you've already published one of these topics on your own.
 
 
 We're always looking forward to pull requests on our [GitHub repository](https://github.com/percona/community).

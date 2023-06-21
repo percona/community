@@ -145,6 +145,6 @@ Thanks, everybody, for joining us. Thank you, Marco for all you have to share to
 
 
 
-Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups. Join our chat on [Discord](http://per.co.na/discord).
+Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups. 
 
 Any comments, feedback, and suggestions are welcome to help Percona Community improve upcoming events!

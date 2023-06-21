@@ -34,7 +34,6 @@ The aim of Hacktoberfest is to provide support to open source projects and teams
 
 {{% youtube youtube_id="1R4dhON3TPs" %}}{{% /youtube %}}
 
-Live chat with Percona community is always available on [Discord](http://per.co.na/discord).
 
  
 

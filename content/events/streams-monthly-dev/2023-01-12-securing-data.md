@@ -30,8 +30,5 @@ Securing the data over the wire and on disk is a key security feature, and Postg
 Download Ibrar's slides [here](https://drive.google.com/file/d/1Q_IMBYsZynK5yArwRtF3uCnMcvoQHf1o/view?usp=share_link).
 
 
-Live chat with Percona community is always available on [Discord](http://per.co.na/discord).
-
-
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups.
 

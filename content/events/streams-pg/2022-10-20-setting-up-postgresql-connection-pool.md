@@ -104,5 +104,3 @@ Well, we don't have any questions in the chat. So I think we can finish. And rea
 
 
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups.
-
-Live chat with Percona community is always available on [Discord](http://per.co.na/discord).

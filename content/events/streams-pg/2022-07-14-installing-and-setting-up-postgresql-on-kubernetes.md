@@ -31,7 +31,6 @@ Thursday, July 14th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST
 
 ## Join & Chat for free!!
 Watch it live on [YouTube](https://www.youtube.com/watch?v=jzJ9UfNwZJI), [Linkedin](https://www.linkedin.com/video/event/urn:li:ugcPost:6952248159553167360/), and [Twitch](https://www.linkedin.com/video/event/urn:li:ugcPost:6952248159553167360/).
-Live chat on [Discord](http://per.co.na/discord)
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=a251OWMxdmY2cnNxdnUxOGExc2x2aTJhbXFfMjAyMjA3MTRUMTYwMDAwWiBmcmVkZWwubWFtaW5kcmFAcGVyY29uYS5jb20&tmsrc=fredel.mamindra%40percona.com).
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups
 

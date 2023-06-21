@@ -62,7 +62,6 @@ By contributing, you become a Percona Community member and agree to our [Code of
 
 If you have any questions, please contact us:
 - [GitHub Issues](https://github.com/percona/community/issues)
-- [Discord](https://per.co.na/discord)
 - [Forum](https://forums.percona.com)
 - Email: community-team@percona.com 
 

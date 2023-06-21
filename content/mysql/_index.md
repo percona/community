@@ -20,7 +20,7 @@ Looking to submit a PR, contribute code, or submit a bug?
 
 ## Ask Questions and Get Answers
 
-If you face any situation you are not sure how to proceed with, ask your questions on our [Community Forum](https://forums.percona.com/c/mysql-mariadb/36) and get answers from other users and Percona experts! Also, join our [Discord channel](http://per.co.na/discord) to chat on databases, open source and Percona software.
+If you face any situation you are not sure how to proceed with, ask your questions on our [Community Forum](https://forums.percona.com/c/mysql-mariadb/36) and get answers from other users and Percona experts! 
 
 ## Help Others to Choose and Leave an Unbiased Tech Review
 

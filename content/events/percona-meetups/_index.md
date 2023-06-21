@@ -44,7 +44,7 @@ Attendance is free and open to the public including:
 * Interested in the specific database
 
 Subscribe to our channels on [YouTube](https://www.youtube.com/watch?v=hTSHb0NU_1E) and [Twitch](https://www.twitch.tv/perconacommunity)
-Add each event to your Google Calendar. Join our Community on [Discord](http://per.co.na/discord).
+Add each event to your Google Calendar. 
 
 If you have any suggestions on how to make community meetings even more exciting, please share with us. You are always welcome and we love to see you and receive your feedback.
 

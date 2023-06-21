@@ -20,4 +20,4 @@ We appreciate your help. Thank You!
 
 ---
 
-Please also check out our Engineering Monthly Meetings https://percona.community/contribute/engineeringmeetings/ and join us on our journey in OpenSource! Contact us in [per.co.na/discord](https://per.co.na/discord).
+Please also check out our Engineering Monthly Meetings https://percona.community/contribute/engineeringmeetings/ and join us on our journey in OpenSource! Contact us at community-team@percona.com .

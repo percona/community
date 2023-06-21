@@ -44,7 +44,7 @@ You can contribute in several ways: coding, documentation, testing, design, disc
 
 ## How can you reach the Percona team?
 
-The best way to do it is directly in the Percona projects, or you can join our community slack, [Discord](https://discord.com/channels/808660945513611334/1019608914683244635), or write us in our [Community Forum](https://forums.percona.com/).
+The best way to do it is directly in the Percona projects, or you can join our [Community Forum](https://forums.percona.com/).
 
 ![Overview](blog/2022/10/recap-mdpdm-hacktoberfest-repositories.png)
 
@@ -70,7 +70,7 @@ Our next project is [percona/pg_stat_monitor](https://github.com/percona/pg_stat
 **In summary**, those are some of our projects that are in Hacktoberfest.
 This month is Open Source month; it's Hacktoberfest month party!
 
-Remember that you can interact with the maintainers of each project through [GitHub](https://github.com/search?q=org%3Apercona+hacktoberfest)/[Jira](https://jira.percona.com/browse/DISTMYSQL-228?filter=-4)/[Discord](https://discord.com/channels/808660945513611334/1019608914683244635) or our [Community Forum](https://forums.percona.com/).
+Remember that you can interact with the maintainers of each project through [GitHub](https://github.com/search?q=org%3Apercona+hacktoberfest)/[Jira](https://jira.percona.com/browse/DISTMYSQL-228?filter=-4) or our [Community Forum](https://forums.percona.com/).
 
 If you haven't sent a PR, this is the time to do it. Write us at community-team@percona.com if you have any questions.
 

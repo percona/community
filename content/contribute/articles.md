@@ -7,7 +7,13 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
-- [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - december 12, 2022
+
+- [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
+- [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
+- [Achieving end to end Database management with PERCONA XtraDB cluster](https://www.sigmoid.com/blogs/achieving-end-to-end-database-management-with-percona-xtradb-cluster/) - Akansha Immanuel - May 18, 2023
+- [If you don't brush and floss, you're gonna get an abscess – same with MySQL updates](https://www.theregister.com/2023/05/11/mysql_5_7_support/) - Lindsay Clark - May 11, 2023
+- [MySQL and Planning For End of Life - What Do You Need to Know?](https://devm.io/databases/mysql-update-eol) - Dave Stokes - March, 2023 
+- [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - December 12, 2022
 - [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
 - [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) -  Tibor Köröcz and Francisco Bordenave - November 7, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - October 20, 2022
@@ -52,6 +58,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [10 Best Practices for Every MongoDB Deployment](https://www.infoworld.com/article/3691136/10-best-practices-for-every-mongodb-database.html) - Zelmar Michelini - April 5, 2023
 - [Percona Backup for MongoDB Docker](https://bobcares.com/blog/percona-backup-for-mongodb-docker/) - Amritha V - December 29, 2022
 - [Migrating MongoDB to Kubernetes](https://dok.community/blog/migrating-mongodb-to-kubernetes/) - Sergey Pronin - December 10, 2022
 - [6 Best MongoDB Backup Tools](https://www.comparitech.com/net-admin/best-mongodb-backup-tools/) - Stephen Cooper - September 12, 2022
@@ -64,6 +71,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [Optimizing the databases at Quora](https://quoraengineering.quora.com/Optimizing-the-databases-at-Quora) - Vamsi Ponnekanti - March 1, 2023
 - [3 Ways To Set Up A PMM Server](https://www.hostedpmm.com/3-ways-to-set-up-a-pmm-server/) - Cloudpress - January 16, 2023
 - [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March  7, 2023
 - [How To Set Up Alerts Using PMM](https://www.hostedpmm.com/how-to-set-up-alerts-using-pmm/) - Stanislav Levchenko - March  7, 2023
@@ -88,6 +96,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19. 2023
+- [5 Challenges for Databases on Kubernetes](https://vmblog.com/archive/2023/04/10/5-challenges-for-databases-on-kubernetes.aspx#.ZDT9kOxBykq) - Joe Brockmeier - April 10, 2023
 - [Choosing a Kubernetes Operator for PostgreSQL](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/) - Bhavin Shah (Cloud Native BU, Pure Storage) - March 18, 2022
 - [Deploying Percona Kubernetes Operators using OpenEBS Local Storage](https://dev.to/sudip_sg/deploying-percona-kubernetes-operators-using-openebs-local-storage-4ai9) - Sudip Sengupta - June 5, 2021
 
@@ -95,9 +105,21 @@ Thank you to users of our products, customers, communities, and authors for your
 
 - [Climbing Pico de Orizaba](https://peterzaitsev.com/climbing-pico-de-orizaba/) - Peter Zaitsev - December 2022
 - [My first month in Percona as a Technology Evangelist](https://dev.to/edithpuclla/my-first-month-in-percona-as-a-technology-evangelist-40gg) - Edith Puclla - August 11, 2022
+- [A Leader’s Guide to Cultivating Culture in the Age of Remote-first Work](https://www.spiceworks.com/hr/future-work/guest-article/cultivating-culture-in-the-age-of-remote-first-work/) - Ann Schlemmer - June 9, 2023
 
 # Other
 
+- [DBTA 100 2023: The Companies That Matter Most in Data](https://www.dbta.com/Editorial/Trends-and-Applications/DBTA-100-2023-The-Companies-That-Matter-Most-in-Data-158927.aspx) - Stephanie Simone - June 7, 2023
+- [Top 10 Open-Source Monitoring Tools for Modern DevOps Teams in 2023](https://medium.com/statuspal/top-10-open-source-monitoring-tools-for-modern-devops-teams-in-2023-1558e941bc80#f01d) - Eduardo Messuti - June 5, 2023
+- [Percona survey: little movement in database market](https://www.techzine.eu/news/infrastructure/106335/percona-survey-little-movement-in-database-market/) - Sander Almekinders - May 23, 2023
+- [“Above the Trend Line” – Your Industry Rumor Central for 5/22/2023](https://insidebigdata.com/2023/05/22/above-the-trend-line-your-industry-rumor-central-for-5-22-2023/) - Daniel Gutierrez - May 22, 2023
+- [How do you balance ever-increasing amounts of data while optimising operational costs?](https://fintechherald.com/how-do-you-balance-ever-increasing-amounts-of-data-while-optimising-operational-costs/) - Ann Schlemmer - May 22. 2023
+- [93% of organizations have database management tools in place](https://www.securitymagazine.com/articles/99395-93-of-organizations-have-database-management-tools-in-place) - May 25, 2023
+- [How Database Automation ‘Liberates’ Software Developers](https://www.forbes.com/sites/adrianbridgwater/2023/05/15/how-database-automation-liberates-software-developers/?sh=57277294bdf3) - Adrian Bridgwater - May 10, 2023
+- [Why Platform Engineering?](https://www.infoworld.com/article/3694869/why-platform-engineering.html) - Isaac Sacolick - May 1, 2023
+- [After the Docker Free Team Episode: How to Sunset a Free Feature](https://thenewstack.io/after-the-docker-free-team-episode-how-to-sunset-a-free-feature/) - Emily Omier - April 24, 2023
+- [Percona Engineering Lead: Into the ‘Open’ Database Universe](https://www.computerweekly.com/blog/Open-Source-Insider/Percona-engineering-lead-Into-the-open-database-universe) - Barrett Chambers and Adrian Bridgwater - April 14, 2023
+- [FerretDB 1.0 Offers Fresh Approach to Open Source Document Databases](https://www.theregister.com/2023/04/14/ferretdb_10_ga/) - Lindsay Clark - April 14, 2023
 - [Challenging Yourself Through Open Source with Peter Zaitsev of Percona](https://www.emilyomier.com/podcast/peter-zaitsev) - Emily Omier - March 22, 2023
 - [Executive Interview – The Future of Platform Engineering](https://hostingjournalist.com/executive-interview-the-future-of-platform-engineering/) - Editorial Team HostingJournalist - March 16, 2023
 - [Open Source Software: Top Sites](https://www.datamation.com/open-source/open-source-software-top-59-sites/) - Emma Crockett - March 15, 2023

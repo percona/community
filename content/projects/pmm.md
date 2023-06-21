@@ -18,7 +18,7 @@ Enjoy how it is to communicate with the Percona community. Submitting a PR, leav
 
 ## Ask Questions and Get Answers.
 
-If you have any doubts, there are places you can go! You are free to seek advice and ask any questions you might have on our [Community Forum](https://forums.percona.com/c/percona-monitoring-and-management-pmm/30/none). There you can get help from other Percona software users and experienced Percona experts. Share your knowledge as well! Answer other people’s questions, communicate, and watch the community growing. We also have a [Discord](http://per.co.na/discord) channel, a perfect place to chat about open source, databases, and other tech topics!
+If you have any doubts, there are places you can go! You are free to seek advice and ask any questions you might have on our [Community Forum](https://forums.percona.com/c/percona-monitoring-and-management-pmm/30/none). There you can get help from other Percona software users and experienced Percona experts. Share your knowledge as well! Answer other people’s questions, communicate, and watch the community growing.
 
 
 ## Help Others to Choose and Leave an Unbiased Tech Review
@@ -89,6 +89,6 @@ Release notes under development are in our [pmm-doc repo](https://github.com/per
 
 Here is a feed of early previews that could be tested before release:
 
-{{% blogpostsbytags tags="PMM_prev" %}}
+{{% blogpostsbytags tags="PMM_prev" /%}}
 
 

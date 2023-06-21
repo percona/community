@@ -18,7 +18,7 @@ If you’re interested in contributing, please check out our page on contributin
 
 ## Ask Questions and Get Answers
 
-Faced an issue and not sure what to do with it? Need advice on Percona Toolkit from an experienced user? You can seek it any time on our [Community Forum](https://forums.percona.com/c/polyglot-projects/percona-toolkit/13) or [Discord channel](http://per.co.na/discord) and get help from our Percona experts and other community users. It is a perfect place for you to communicate on databases and Percona software products. Share your expertise there as well and help other engineers! We love to see your answers!
+Faced an issue and not sure what to do with it? Need advice on Percona Toolkit from an experienced user? You can seek it any time on our [Community Forum](https://forums.percona.com/c/polyglot-projects/percona-toolkit/13) and get help from our Percona experts and other community users. It is a perfect place for you to communicate on databases and Percona software products. Share your expertise there as well and help other engineers! We love to see your answers!
 
 ## About Percona Toolkit 
 

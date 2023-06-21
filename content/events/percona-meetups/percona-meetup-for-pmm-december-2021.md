@@ -591,8 +591,6 @@ Yeah, yeah. So Alright, everybody. Thanks for showing up. I appreciate you hangi
 
 * Date: Wednesday, Dec 1st, 2021 at 11:00 am EST (5:00 pm CET or 9:30 pm IST)
 
-* Live chat on [Discord](http://per.co.na/discord)
-
 * Live stream on [YouTube](https://www.youtube.com/watch?v=Ax5McTZifmw) and [Twitch](https://www.twitch.tv/perconalive)
 
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=N2ZqcmFxYnBiZjNrN2JuYjMxaHNjdmgxN2wgY19wN2ZhdjRjc2lpNWo1dmRzb2hpMHE4dmk0OEBn&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com)

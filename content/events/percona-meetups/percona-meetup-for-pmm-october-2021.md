@@ -307,8 +307,6 @@ Join us for an hour MeetUp for PMM
 
 * Live streaming on [YouTube](https://www.youtube.com/watch?v=7_BF0-1o0WU) and [Twitch](https://www.twitch.tv/perconacommunity)
 
-* Live chatting on [Discord](http://per.co.na/discord)
-
 Add this event to your [Google Calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=MmxyZ2FqaDFqMmFzbzJkN2g1bjVvM2U3NDhfMjAyMTEwMjdUMTUwMDAwWiBjX3A3ZmF2NGNzaWk1ajV2ZHNvaGkwcTh2aTQ4QGc&tmsrc=c_p7fav4csii5j5vdsohi0q8vi48%40group.calendar.google.com&scp=ALL)
 
 ## Agenda 

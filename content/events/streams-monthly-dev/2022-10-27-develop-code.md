@@ -21,6 +21,3 @@ In this session, Andrew is going to implement the db engine configuration suppor
 
 {{% youtube youtube_id="m-FKVdzYm6k&t" %}}{{% /youtube %}}
 
-Live chat with Percona community is always available on [Discord](http://per.co.na/discord).
-
-

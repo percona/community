@@ -1,6 +1,6 @@
 # Contributing
 
-Are you looking to become a member of Percona Community? We have a site dedicated to [contributions](https://percona.community/contribute). For questions, you can best reach us on our [forums](https://forums.percona.com) or chat with us on [Discord](http://per.co.na/discord). By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
+Are you looking to become a member of Percona Community? We have a site dedicated to [contributions](https://percona.community/contribute). For questions, you can best reach us on our [forums](https://forums.percona.com). By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
 
 If you've already looked at those and just want to get started, continue reading.
 
@@ -35,7 +35,7 @@ We will highlight the folders that you will most likely touch if you are contrib
 
 ## How to Submit a Pull Request or Report a Bug/Issue
 
-If you would like to report a bug/issue or add a suggestion for future consideration, let us know on [Discord](https://discord.gg/mQEyGPkNbR) or open an [issue](https://github.com/percona/community/issues).
+If you would like to report a bug/issue or add a suggestion for future consideration, let us know at community-team@percona.com or open an [issue](https://github.com/percona/community/issues).
 
 Our mission is to keep open source open which is why we are dedicated to making contributions as free from barriers as possible.
 
