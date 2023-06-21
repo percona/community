@@ -3,157 +3,142 @@ title: "Installation"
 description: "Packages, Resource planning, Deployment steps"
 weight: 2
 ---
-
-Right now we have tar.gz packages 
+## Installation Packages
+Packages are shipped with PostgreSQL 14 or PostgreSQL 15 and for systems with glibc2.31 (Ubuntu 20.04) or glibc2.35:
 
 * [neondatabase-neon-PG14-1.0.0-Linux-x86_64.glibc2.31.tar.gz](https://github.com/Percona-Lab/neon/releases/download/v1.0.0/neondatabase-neon-PG14-1.0.0-Linux-x86_64.glibc2.31.tar.gz)
 * [neondatabase-neon-PG14-1.0.0-Linux-x86_64.glibc2.35.tar.gz](https://github.com/Percona-Lab/neon/releases/download/v1.0.0/neondatabase-neon-PG14-1.0.0-Linux-x86_64.glibc2.35.tar.gz)
 * [neondatabase-neon-PG15-1.0.0-Linux-x86_64.glibc2.31.tar.gz](https://github.com/Percona-Lab/neon/releases/download/v1.0.0/neondatabase-neon-PG15-1.0.0-Linux-x86_64.glibc2.31.tar.gz)
 * [neondatabase-neon-PG15-1.0.0-Linux-x86_64.glibc2.35.tar.gz](https://github.com/Percona-Lab/neon/releases/download/v1.0.0/neondatabase-neon-PG15-1.0.0-Linux-x86_64.glibc2.35.tar.gz)
 
-We ship packages either with PostgreSQL 14 or PostgreSQL 15 and for systems with glibc2.31 (Ubuntu 20.04) or glibc2.35
-
 The packages contain all binaries to start and evaluate the deployment.
 
-## Resource planning
+## Resource Planning
 
-Given the distributed nature of the deployment, we need separate systems (either bare metal, virtual images, or cloud instances) for the following components:
+Given the distributed nature of the deployment and depending on the type of use, separate systems—bare metal, virtual images, or cloud instances—are required. In the table below, you can see how many instances of each are required for using Percona Builds for Neon for testing and production.
 
-1. Storage broker
-2. Page server
-3. Safekeeper (3 instances)
-4. Compute nodes
+| Component | Testing Environment | Production Environment |
+| ---- | ----| ---- | 
+| Storage broker | 1 instance | 1 instance |
+| Pageserver | 1 instance | 1 instance |
+| Safe keeper | 1 instance | 3 instances |
+| Compute nodes | 1 instance per tenant | Dynamic, depends on your scaling needs |
 
 Some components can be hosted together, and for testing purposes, you can use only a single safekeeper, so all components can be hosted on the same single server. However, this is not recommended for the production environment.
 
-For reference, we provide ansible scripts that you can use to see the sequence of operations and exact commands to deploy the system.
+For your convenience, we provide Ansible scripts that you can use to see the sequence of operations and exact commands to deploy the system.
 
 [Percona-Lab/serverless-postgresql-ansible: Ansible playbook to deploy serverless PostgreSQL (github.com)](https://github.com/Percona-Lab/serverless-postgresql-ansible)
 
-## Deployment steps
+## Percona Builds for Neon using Docker
+### Prerequisites
+- Docker image with all components in Docker Hub
+- Hostnames for each instance of storage broker, pageserver, and safekeepers that can communicate with each other through the network.
 
-Let’s assume we have  hosts with names `storagebroker`, `safekeeper1`, `safekeeper2`, `safekeeper3`, `pageserver` and they all can communicate with each over network
+Deployment of Percona Builds for Neon using Docker consists of two parts:
+1. Deploying core components: pageserver, storage broker, and safekeepers.
+2. Deploying compute nodes using one of the following combinations:
+	- Compute node with new tenant and timeline
+	- Compute node with existing tenant and timeline
+	- Compute node with branching from existing tenant and timeline
+### 1. Deploying core components
+**To deploy storage broker, safekeepers, and pageserver:**
+1. Start the storage broker by running the following command:
+	```
+	docker run -d -t --name storagebroker --net=host
+	--entrypoint "storage_broker"
+	perconalab/neon:latest -l 0.0.0.0:50051
+	```
+2. Start safekeepers by doing the following:
+	1. In /data/skdata, create **datadir**.
+	2. For each safekeeper instance, run the following command:
+	```
+		docker run -d -t --name safekeeper<N> --net=host
+		--entrypoint "safekeeper"
+		perconalab/neon:latest
+		--id=N -D /data --broker-endpoint=http://<0.0.0.0>:50051
+		-l <0.0.0.0>:5454 --listen-http=<0.0.0.0>:7676
+		```
+	Where 
+	*safekeeper<N>* is the name of a safekeeper. Depending on the number of safekeepers you want to configure, it can be *safekeeper1*, *safekeeper2*, or *safekeeper3*.
+	*N* is the ID of a safekeeper. Depending on the number of safekeepers you want to configure, it can be *1*, *2*, or *3*.
+	*<0.0.0.0>* is the IP address of the machine on which the configuration is being set up.
+3. Start the pageserver by doing the following:
+	1. In /data/neondata, create **datadir**.
+	2. Run the following command:
+		```
+		docker run -d -t --name pageserver --net=host
+		--entrypoint "pageserver"
+		perconalab/neon:latest
+		-D /data -c "id=1" -c "broker_endpoint='http://<0.0.0.0>:50051'"
+		-c "listen_pg_addr='0.0.0.0:6400'" -c "listen_http_addr='0.0.0.0:9898'"
+		-c "pg_distrib_dir='/opt/neondatabase-neon/pg_install'"
+	```
+The core components are running. You can proceed to deploying compute nodes.
 
-### 1. Start storage broker
+### 2. Deploying compute nodes
+There are several ways of deploying compute nodes based on a tenant-timeline combination that you need:
+- Deploying a compute node with a new tenant and timeline.
+- Deploying a compute node with the existing tenant and timeline.
+- Deploying a compute node with branching from the existing tenant and timeline.
 
-On the server storagebroker execute:
-
+#### Deploying a compute node with a new tenant and timeline
+**To deploy a compute node with a new tenant and timeline:**
+Run the following command:
 ```
-storage_broker -l 0.0.0.0:50051
+docker run -d -t --name compute<N>
+--entrypoint "/compute.sh"
+-p55432:55432 -e PAGESERVER=<0.0.0.0>
+-e SAFEKEEPERS=<0.0.0.0>:5454 perconalab/neon:latest
 ```
+Where 
+*compute<N>* is the name of the new compute node. For example, *compute1*.
+*<0.0.0.0>* is the IP address of the machine where the pageserver and safekeepers are located.
+The compute node is running. It can act as a normal PostgreSQL server.
+You can connect it to with PostgreSQL client via the 55432 port by running the following command:
+psql -p55433 -h 127.0.0.1 -U cloud_admin postgres
 
-### 2. Start safekeepers
-
-Create datadir for safekeepers in `/data/skdata`
-
-And for each safekeeper execute (vary N from 1 to amount you have)
-
-```
-safekeeper --id=N -D /data/skdata  --broker-endpoint=http://storagebroker:50051 -l safekeeperN:5454 --listen-http=0.0.0.0:7676
-```
-
-### 3. Start pageserver
-
-Create datadir for pageserver in `/data/neondata`
-
-Execute
-
-```
-pageserver -D /data/neondata -c "id=1" -c "broker_endpoint='http://storagebroker:50051'" -c "listen_pg_addr='0.0.0.0:6400'" -c "listen_http_addr='0.0.0.0:9898'"
-```
-
-### 4. Initialize compute nodes
-
-This is the most involving step as we need to do some preparation
-
-The Neon instance supports multiple tenants and each tenant can have multiple branches (timelines) 
-
-The first step is to create tenant, this is done by REST API call to pageserver:
-
-```
-echo "Create a tenant"
-PARAMS=(
-     -sb 
-     -X POST
-     -H "Content-Type: application/json"
-     -d "{}"
-     http://pageserver:9898/v1/tenant/
-)
-tenant_id=$(curl "${PARAMS[@]}" | sed 's/"//g')
-echo "Tenant id: $tenant_id"
-```
-
-Now, having `tenant_id`, we create a timeline (branch) for this tenant:
-
-```
-tenant_id=$1
-
-PARAMS=(
-     -sb 
-     -X POST
-     -H "Content-Type: application/json"
-     -d "{\"tenant_id\":\"${tenant_id}\", \"pg_version\": 14}"
-     "http://pageserver:9898/v1/tenant/${tenant_id}/timeline/"
-)
-
-result=$(curl "${PARAMS[@]}")
-echo $result | jq .
-
-tenant_id=$(echo ${result} | jq -r .tenant_id)
-timeline_id=$(echo ${result} | jq -r .timeline_id)
-
-echo "Tenant id: $tenant_id"
-echo "Timeline id: $timeline_id"
-```
-
-The next step is to prepare a specification json file for the compute node. The easiest way it to take template
-
-[serverless-postgresql-ansible/spec.prep.json.j2 at main · Percona-Lab/serverless-postgresql-ansible (github.com)](https://github.com/Percona-Lab/serverless-postgresql-ansible/blob/main/templates/spec.prep.json.j2)
-
-And set the proper values in the following sections:
-
+#### Deploying a compute node with the existing tenant and timeline
+To deploy a compute node with the existing tenant and timeline
+1. In docker logs compute, locate the tenant and timeline values. For example:
 ```
 {
-   "name": "neon.safekeepers",
-   "value": "{{ groups['safekeeper'] | map('extract', hostvars, ['ansible_'+networkinterface, 'ipv4', 'address']) | join(':5454,')  }}:5454",
-   "vartype": "string"
+"name": "neon.timeline_id",
+"value": "4b4541ad75370114cd7956e457cc875f",
+"vartype": "string"
 },
 {
-   "name": "neon.timeline_id",
-   "value": "TIMELINE_ID",
-   "vartype": "string"
-},
-{
-   "name": "neon.tenant_id",
-   "value": "TENANT_ID",
-   "vartype": "string"
-},
-{
-   "name": "neon.pageserver_connstring",
-   "value": "host={{hostvars[groups['pageserver'][0]]['ansible_facts'][networkinterface]['ipv4']['address']}} port=6400",
-   "vartype": "string"
+"name": "neon.tenant_id",
+"value": "6c92c037a54c0e3a005cdd4a69d6e997",
+"vartype": "string"
 },
 ```
-Create datadir for computenode in `/data/compute-pgdata`
-
-And then start a compute node as
-
+Where the timeline value is *4b4541ad75370114cd7956e457cc875f* and the tenant value is *6c92c037a54c0e3a005cdd4a69d6e997*.
+2. Run the following command:
 ```
-echo "Start compute node"
-compute_ctl --pgdata /data/compute-pgdata \
-     -C "postgresql://cloud_admin@localhost:55433/postgres"  \
-     -b <PATH_TO_PG_FROM_TARGZ>/postgres         \
-     -S spec.json
+docker run -d -t --name compute<N>
+--entrypoint "/compute.sh" -p55433:55432
+-e PAGESERVER=<0.0.0.0> -e SAFEKEEPERS=<0.0.0.0>:5454
+-e TENANT=<value> -e TIMELINE=<value>
+perconalab/neon:latest
 ```
+Where
+*compute<N>* is the name of the compute node. For example, *compute2*.
+*<0.0.0.0>* is the IP address of the machine where the page server and safekeepers are located.
+*<value>* is the corresponding tenant or timeline value from `docker logs`.
 
-Where postgres should be taken from our tar.gz packages
-
-If all steps were execute successfully at this stage we should have running a compute node,
-which can act as a normal postgresql server.
-
-So we can connect it to with psql client:
-
-`psql -p55433 -h 127.0.0.1 -U cloud_admin postgres`
-
-
-
+#### Deploying a compute node with branching from the existing tenant and timeline
+**To deploy a compute node with branching from the existing tenant and timeline:**
+Run the following command:
+```
+docker run -d -t --name compute<N>
+--entrypoint "/compute.sh" -p55435:55432
+-e PAGESERVER=<0.0.0.0>
+-e SAFEKEEPERS=<0.0.0.0>:5454
+-e TENANT=<value> -e TIMELINE=<value>
+-e "CREATE_BRANCH=1" perconalab/neon:latest
+```
+Where
+*compute<N>* is the name of the new compute node. For example, *compute3*.
+*<0.0.0.0>* is the IP address of the machine where the page server and safekeepers are located.
+*<value>* is the corresponding tenant or timeline value from `docker logs`.
