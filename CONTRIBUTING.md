@@ -22,7 +22,7 @@ We will highlight the folders that you will most likely touch if you are contrib
         > <you>       ## folder with your name, add _index.md file
           _index.md   ## copy from other author, change to your details
     > blog            ## add your post here, follow naming pattern
-    > contribute    
+    > contribute
         > articles.md ## add your article here
         > videos.md   ## add your video here
         > dev.md      ## add your custom dashboards, configuration files, etc.
@@ -59,7 +59,6 @@ hugo serve --disableFastRender
 
 For more options on how to run Hugo, check out the official [Hugo documentation](https://gohugo.io/commands/hugo_server/). In your terminal, Hugo will point you to a URL, most likely `http://localhost:1313/`. You should be able to click on it or simply type the URL into your browser and see the built website. You can now add your contribution, test whether everything is working, and then submit a pull request that we will review within a few days.
 
-
 ## How to modify the design and theme
 
 Here you will learn how to edit the HTML and CSS templates of the site to change the theme and appearance.
@@ -68,7 +67,7 @@ Here you will learn how to edit the HTML and CSS templates of the site to change
 
 - Install [Hugo engine](https://gohugo.io/getting-started/installing/)
 
-- Run the Hugo server in the source code folder of the site with the command hugo server -D and open a local copy of the site in your browser at localhost:1313
+- Run the Hugo server in the source code folder of the site with the command `hugo server -D` and open a local copy of the site in your browser at localhost:1313
 
 - Create a separate branch for your changes.
 
@@ -82,7 +81,7 @@ Here you will learn how to edit the HTML and CSS templates of the site to change
 
 ![Browser](assets/images/contributing/FindClass.png)
 
-- Use the file search in `/assets/scss/` directory to find the right file that contains the CSS for the class you want. For example, the CSS of a post card on a blog page is edited in `/assets/scss/common/_post.scss` . SCSS files are grouped by logical meaning and application on pages. 
+- Use the file search in `/assets/scss/` directory to find the right file that contains the CSS for the class you want. For example, the CSS of a post card on a blog page is edited in `/assets/scss/common/_post.scss` . SCSS files are grouped by logical meaning and application on pages.
 
 ![Search results](assets/images/contributing/SearchResults.png)
 
@@ -99,6 +98,3 @@ Test the results for Desktop and mobile devices. Make changes in a separate bran
 - Explore Hugo's documentation on creating and editing templates: [Templates](https://gohugo.io/templates/)
 
 - All website templates are located in the 'layouts' folder
-
-
-
