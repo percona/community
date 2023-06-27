@@ -109,6 +109,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [The Past & Future Of Data Storage: An Analysis By Joe Brockmeier Of Percona](https://www.websiteplanet.com/blog/the-past-future-of-data-storage-an-analysis-by-joe-brockmeier-of-percona/) - Bethenny Carl - June, 2023
 - [DBTA 100 2023: The Companies That Matter Most in Data](https://www.dbta.com/Editorial/Trends-and-Applications/DBTA-100-2023-The-Companies-That-Matter-Most-in-Data-158927.aspx) - Stephanie Simone - June 7, 2023
 - [Top 10 Open-Source Monitoring Tools for Modern DevOps Teams in 2023](https://medium.com/statuspal/top-10-open-source-monitoring-tools-for-modern-devops-teams-in-2023-1558e941bc80#f01d) - Eduardo Messuti - June 5, 2023
 - [Percona survey: little movement in database market](https://www.techzine.eu/news/infrastructure/106335/percona-survey-little-movement-in-database-market/) - Sander Almekinders - May 23, 2023
