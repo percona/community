@@ -7,7 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
-
+- [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
 - [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
 - [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
 - [Achieving end to end Database management with PERCONA XtraDB cluster](https://www.sigmoid.com/blogs/achieving-end-to-end-database-management-with-percona-xtradb-cluster/) - Akansha Immanuel - May 18, 2023
@@ -109,6 +109,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Developer eXperience series - Percona: DX starts with open source](https://www.computerweekly.com/blog/CW-Developer-Network/Developer-eXperience-series-Percona-DX-starts-with-open-source) - Joe Brockmeier - July 3, 2023
+- [DBA Appreciation Day: Are you still relevant in the face of DevOps and AI/ML?](https://datacentrereview.com/2023/07/dba-appreciation-day-are-you-still-relevant-in-the-face-of-devops-and-ai-ml/) - Joe Brockmeier - July 7, 2023
 - [The Past & Future Of Data Storage: An Analysis By Joe Brockmeier Of Percona](https://www.websiteplanet.com/blog/the-past-future-of-data-storage-an-analysis-by-joe-brockmeier-of-percona/) - Bethenny Carl - June, 2023
 - [DBTA 100 2023: The Companies That Matter Most in Data](https://www.dbta.com/Editorial/Trends-and-Applications/DBTA-100-2023-The-Companies-That-Matter-Most-in-Data-158927.aspx) - Stephanie Simone - June 7, 2023
 - [Top 10 Open-Source Monitoring Tools for Modern DevOps Teams in 2023](https://medium.com/statuspal/top-10-open-source-monitoring-tools-for-modern-devops-teams-in-2023-1558e941bc80#f01d) - Eduardo Messuti - June 5, 2023
