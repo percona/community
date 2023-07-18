@@ -109,6 +109,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Red Hat’s code restrictions draw mostly sympathetic response from open-source providers](https://siliconangle.com/2023/07/13/red-hats-code-restrictions-draw-mostly-sympathetic-response-open-source-providers/) - Paul Gillin - July 13, 2023
+- [Putting LLMs into production is a monumental task – vector databases could light the way](https://www.theregister.com/2023/07/11/vector_databases/) - Lindsay Clark - July 11, 2023
 - [The importance of mentorship](https://www.shecancode.io/blog/the-importance-of-mentorship) - SHECANCODE with Ann Schlemmer - June 27, 2023
 - [Developer eXperience series - Percona: DX starts with open source](https://www.computerweekly.com/blog/CW-Developer-Network/Developer-eXperience-series-Percona-DX-starts-with-open-source) - Joe Brockmeier - July 3, 2023
 - [DBA Appreciation Day: Are you still relevant in the face of DevOps and AI/ML?](https://datacentrereview.com/2023/07/dba-appreciation-day-are-you-still-relevant-in-the-face-of-devops-and-ai-ml/) - Joe Brockmeier - July 7, 2023
