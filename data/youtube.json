@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "12hhmIN-O58",
+    "title": "MySQL: Instalação MySQL, Percona e MariaDB",
+    "date": "July 10, 2023",
+    "authors": "Portilho (Power Tuning)"
+  },
+  {
     "youtube_id": "sTgGQCenljs",
     "title": "Installing Percona MongoDB Server on Centos",
     "date": "May 5, 2023",
@@ -273,6 +279,12 @@
   }],
 
   "Events":[
+  {
+    "youtube_id": "U6RyuKZ8EMI",
+    "title": "DevConf.CZ 2023 - Open Source Databases on Kubernetes: Best Practices",
+    "date": "June 16, 2023",
+    "authors": "Ege Güneş (Percona)"
+  },
   {
     "youtube_id": "AJJ8WC_wj5o",
     "title": "Open Source Summit North America 2023 - Are Containers Ready for Production Databases?",
