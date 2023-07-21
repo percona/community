@@ -12,7 +12,6 @@ speakers:
 tags: ['PerconaLive2022', 'Podcast']
 ---
 
-
 {{% hero-gradient class="night" %}}
 
 # Dave Stokes Talks Open on Percona Live 2023
