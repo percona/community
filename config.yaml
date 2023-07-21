@@ -239,7 +239,7 @@ menu:
 imaging:
   resampleFilter: lanczos
   quality: 60
-  anchor: smart
+  anchor: Center
 permalinks:
   /: /:filename/
   blog: /blog/:year/:month/:day/:slug/
