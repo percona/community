@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
 - [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
 - [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
