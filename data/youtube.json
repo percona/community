@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "CLD0ltIfvW0",
+    "title": "Kubernetes Architecture Explained in 3 minutes",
+    "date": "July 28, 2023",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
     "youtube_id": "12hhmIN-O58",
     "title": "MySQL: Instalação MySQL, Percona e MariaDB",
     "date": "July 10, 2023",
