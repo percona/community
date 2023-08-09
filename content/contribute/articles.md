@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
 - [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
 - [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
@@ -96,6 +97,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [Multi-cluster databases with Sergey Pronin](https://podcasters.spotify.com/pod/show/madhuri-yechuri/episodes/Multi-cluster-databases-with-Sergey-Pronin-e2747dj?%24web_only=true&_branch_match_id=1069334716792630316&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9VPsyz1M07LLqt0SgIAhGbATDAAAAA%3D) - Madhuri Yechuri - July 19, 2023
 - [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19. 2023
 - [5 Challenges for Databases on Kubernetes](https://vmblog.com/archive/2023/04/10/5-challenges-for-databases-on-kubernetes.aspx#.ZDT9kOxBykq) - Joe Brockmeier - April 10, 2023
 - [Choosing a Kubernetes Operator for PostgreSQL](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/) - Bhavin Shah (Cloud Native BU, Pure Storage) - March 18, 2022
@@ -109,6 +111,12 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Open Source Software Maintainers and Organizations in Conflict](https://techstrong.tv/videos/interviews/open-source-software-maintainers-and-organizations-in-conflict-joe-brockmeier-percona) -  Mike Vizard, Techstrong - August 3, 2023
+- [What Is The Role Of Open Source During Economic Downturns?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/07/31/what-is-the-role-of-open-source-during-economic-downturns/) - Ann Schlemmer - July 31, 2023
+- [Bad News for Open Source: EU Committee Approves the Cyber Resilience Act](https://fossforce.com/2023/07/bad-news-for-open-source-eu-committee-approves-the-cyber-resilience-act/) - Christine Hall - July 21, 2023
+- [EU Cyber Resilence Act moves to next stage, “impending tragedy” for open source?](https://devclass.com/2023/07/21/eu-cyber-resilence-act-moves-to-next-stage-impending-tragedy-for-open-source/) - Tim Anderson - July 21, 2023
+- [AI, open source and data - the shape of things to come](https://www.thestack.technology/ai-open-source-and-data-the-shape-of-things-to-come/) - Peter Zaitsev - July 25, 2023
+- [Off with their head! Why more tech firms are ditching their HQs](https://erp.today/off-with-their-head-why-more-tech-firms-are-ditching-their-hqs/) - Christine Horton - July 2023
 - [Red Hat’s code restrictions draw mostly sympathetic response from open-source providers](https://siliconangle.com/2023/07/13/red-hats-code-restrictions-draw-mostly-sympathetic-response-open-source-providers/) - Paul Gillin - July 13, 2023
 - [Putting LLMs into production is a monumental task – vector databases could light the way](https://www.theregister.com/2023/07/11/vector_databases/) - Lindsay Clark - July 11, 2023
 - [The importance of mentorship](https://www.shecancode.io/blog/the-importance-of-mentorship) - SHECANCODE with Ann Schlemmer - June 27, 2023
