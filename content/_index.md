@@ -20,7 +20,7 @@ Your community hub for installing, running, optimizing, and learning everything 
 {{% wrapper class="databases" %}}
 ## Databases and projects
 
-{{% grid size=2 %}}
+{{% grid size=3 %}}
 {{% griditem %}}
 {{< database icon="icons/mongodb-white.svg" link="/mongodb/" title="MongoDB" >}}
 Learn about Percona's Distribution for MongoDB and additional tooling.
@@ -34,11 +34,6 @@ Learn about Percona's Distribution for MySQL and additional tooling.
 {{% griditem %}}
 {{< database icon="icons/postgresql-white.svg" link="/postgresql/" title="PostgreSQL" >}}
 Learn about Percona's Distribution for PostgreSQL and additional tooling.
-{{< /database >}}
-{{% /griditem %}}
-{{% griditem %}}
-{{< database icon="icons/platform-white.svg" link="/projects/platform/" title="Percona Platform" >}}
-Discover Percona Platform - Move faster in increasingly complex environments.
 {{< /database >}}
 {{% /griditem %}}
 {{% /grid %}}

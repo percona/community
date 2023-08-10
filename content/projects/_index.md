@@ -19,7 +19,6 @@ We create, contribute to, and use various open source projects. Contributing bac
 
 * [Kubernetes Operators](/projects/operators)
 * [Percona Monitoring and Management](/projects/pmm)
-* [Percona Platform](/projects/platform)
 * [Percona Toolkit](/projects/toolkit)
 
 {{% /griditem %}}
@@ -32,7 +31,9 @@ We create, contribute to, and use various open source projects. Contributing bac
 * *... and many more*
 {{% /griditem %}}
 {{% /grid %}}
-{{% /contentblock %}}
 
 
 {{% blogpostsbytags tags="Kubernetes,PMM,Toolkit,toolkit" Title="Featured posts" /%}}
+
+{{% /contentblock %}}
+
