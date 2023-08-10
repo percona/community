@@ -80,8 +80,6 @@
 
 }
 
-
-
 .block__content {
     @include container;
 
@@ -125,12 +123,26 @@
     margin-top: 1.5rem;
     margin-bottom: 1rem;
 
-    @media screen and (max-width: 760px)
+  }
+
+    @media screen and (max-width: 1200px)
     {
-        margin-bottom: 0.5rem;
+        .grid--3 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 
-  }
+    @media screen and (max-width: 1000px)
+    {
+        .grid--3 {
+            display: block;
+            
+            .grid__item {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
 
   .database__image {
     align-self: center;
