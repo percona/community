@@ -8,6 +8,8 @@ authors:
 images:
   - blog/2021/07/query-exporter.png
 slug: create-your-own-exporter-in-go
+aliases:
+    - /blog/create-your-own-exporter-in-go/
 ---
 
 ## Overview

@@ -8,6 +8,8 @@ authors:
 images:
   - blog/2020/10/image5.png
 slug: how-to-build-a-high-performance-application-on-tarantool-from-scratch
+aliases:
+    - /blog/how-to-build-a-high-performance-application-on-tarantool-from-scratch/
 ---
 
 ![tarantool start](blog/2020/10/image1.jpg) 
