@@ -8,6 +8,8 @@ authors:
 images:
   - blog/2020/08/social-forums-postgresql-general-discussion.jpg
 slug: fixing-common-postgresql-performance-bottlenecks
+aliases:
+    - /blog/fixing-common-postgresql-performance-bottlenecks/
 ---
 
 Overview
