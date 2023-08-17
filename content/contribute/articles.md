@@ -111,6 +111,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Analysis: HashiCorp prioritizes its business with BSL license switch, but community upset cannot be ignored](https://www.itpro.com/software/open-source/analysis-hashicorp-prioritizes-its-business-with-bsl-license-switch-but-community-upset-cannot-be-ignored) - Richard Speed, ITPro - August 14, 2023
 - [Open Source Software Maintainers and Organizations in Conflict](https://techstrong.tv/videos/interviews/open-source-software-maintainers-and-organizations-in-conflict-joe-brockmeier-percona) -  Mike Vizard, Techstrong - August 3, 2023
 - [What Is The Role Of Open Source During Economic Downturns?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/07/31/what-is-the-role-of-open-source-during-economic-downturns/) - Ann Schlemmer - July 31, 2023
 - [Bad News for Open Source: EU Committee Approves the Cyber Resilience Act](https://fossforce.com/2023/07/bad-news-for-open-source-eu-committee-approves-the-cyber-resilience-act/) - Christine Hall - July 21, 2023
