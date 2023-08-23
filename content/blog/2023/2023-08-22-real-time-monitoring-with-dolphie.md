@@ -7,14 +7,13 @@ authors:
   - charles_thompson
 images: 
   - blog/2023/08/dolphie_header.jpeg
-slug: 
 ---
+
 For as long as I can remember, [Innotop](https://github.com/innotop/innotop) has been the go-to terminal tool for real-time MySQL monitoring. It is an invaluable addition to any DBA's toolkit, but unfortunately, it's not really actively maintained these days, except for addressing critical issues, and it hasn't kept pace with the evolving capabilities of modern terminals. With no viable alternatives except for [InnotopGo](https://github.com/lefred/innotopgo), which is also no longer actively maintained and limited to MySQL 8 (while many still use 5.7), I decided to build my own in Python. 
 
-<center>I call it, Dolphie
-<br />
-<img src="/blog/2023/08/dolphie.png" width="150">
-</center>
+<center>I call it, Dolphie</center>
+
+![image](/blog/2023/08/dolphie-150.png)
 
 Initially, I relied on Python's Rich package for the user interface. However, I recently stumbled upon [Textual](https://textual.textualize.io) a few months ago, and it piqued my interest. It's a framework that extends the capabilities of Rich, opening up a world of possibilities in the terminal. After experimenting with it for a few days, it inspired me to redevelop Dolphie with it, and I've been thoroughly pleased with the results. It has allowed me to showcase many of the features that will be displayed in this blog post!
 
