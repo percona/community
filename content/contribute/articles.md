@@ -97,6 +97,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [Civo Navigate charts further Kubernetes ecosystem progress](https://www.computerweekly.com/blog/Open-Source-Insider/Civo-Navigate-charts-further-Kubernetes-ecosystem-progress) - Adrian Bridgwater - August 18, 2023
+- [The Business Value of Running Databases on Kubernetes ](https://www.odbms.org/2023/08/the-business-value-of-running-databases-on-kubernetes/) - Sergey Pronin - August 23, 2023
 - [Multi-cluster databases with Sergey Pronin](https://podcasters.spotify.com/pod/show/madhuri-yechuri/episodes/Multi-cluster-databases-with-Sergey-Pronin-e2747dj?%24web_only=true&_branch_match_id=1069334716792630316&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9VPsyz1M07LLqt0SgIAhGbATDAAAAA%3D) - Madhuri Yechuri - July 19, 2023
 - [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19. 2023
 - [5 Challenges for Databases on Kubernetes](https://vmblog.com/archive/2023/04/10/5-challenges-for-databases-on-kubernetes.aspx#.ZDT9kOxBykq) - Joe Brockmeier - April 10, 2023
@@ -111,6 +113,10 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [More Fintech Players Cashing in on Open-Source Offerings](https://www.linuxinsider.com/story/more-fintech-players-cashing-in-on-open-source-offerings-177138.html) - Jack M. Germain - August 10, 2023
+- [Data resilience - high availability and disaster recovery planning for your data](https://sdc-channel.news/blogs/57531/data-resilience-high-availability-and-disaster-recovery-planning-for-your-data) - Charly Batista - August, 2023
+- [The 13-Types Of Ops](https://www.forbes.com/sites/adrianbridgwater/2023/08/18/the-13-types-of-ops/) - Adrian Bridgwater - August 18, 2023
+- [What is the EU’s Cyber Resilience Act (CRA)?](https://www.itpro.com/business/policy-and-legislation/what-is-the-eus-cyber-resilience-act-cra) - Kate O'Flaherty - August 18, 2023
 - [Analysis: HashiCorp prioritizes its business with BSL license switch, but community upset cannot be ignored](https://www.itpro.com/software/open-source/analysis-hashicorp-prioritizes-its-business-with-bsl-license-switch-but-community-upset-cannot-be-ignored) - Richard Speed, ITPro - August 14, 2023
 - [Open Source Software Maintainers and Organizations in Conflict](https://techstrong.tv/videos/interviews/open-source-software-maintainers-and-organizations-in-conflict-joe-brockmeier-percona) -  Mike Vizard, Techstrong - August 3, 2023
 - [What Is The Role Of Open Source During Economic Downturns?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/07/31/what-is-the-role-of-open-source-during-economic-downturns/) - Ann Schlemmer - July 31, 2023
