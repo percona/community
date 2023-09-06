@@ -113,6 +113,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Your Data is Critical - Do You Have the Right Strategy in Place for Resilience](https://technative.io/data-critical-right-strategy-resilience/) - Charly Batista - September, 2023
+- [EU Cyber Resilience Act antagonises, troubles open-source sector](https://www.thestack.technology/eu-cyber-resilience-bill-frustrates-the-opensource-sector/) - Azania Imitaz Patel - September 4, 2023
 - [More Fintech Players Cashing in on Open-Source Offerings](https://www.linuxinsider.com/story/more-fintech-players-cashing-in-on-open-source-offerings-177138.html) - Jack M. Germain - August 10, 2023
 - [Data resilience - high availability and disaster recovery planning for your data](https://sdc-channel.news/blogs/57531/data-resilience-high-availability-and-disaster-recovery-planning-for-your-data) - Charly Batista - August, 2023
 - [The 13-Types Of Ops](https://www.forbes.com/sites/adrianbridgwater/2023/08/18/the-13-types-of-ops/) - Adrian Bridgwater - August 18, 2023
