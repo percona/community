@@ -113,6 +113,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Considering Long-Term Data Strategies – Why a Database Is for Life, Not Just for Christmas](https://www.architectureandgovernance.com/applications-technology/considering-long-term-data-strategies-why-a-database-is-for-life-not-just-for-christmas/) - Dave Stokes - September 6, 2023
+- [20 Essential Changes To Make To Your Remote Onboarding Processes](https://www.forbes.com/sites/forbesbusinesscouncil/2023/09/05/20-essential-changes-to-make-to-your-remote-onboarding-processes/?sh=3c7109663376) - Forbes Business Council - September 5, 2023
 - [Your Data is Critical - Do You Have the Right Strategy in Place for Resilience](https://technative.io/data-critical-right-strategy-resilience/) - Charly Batista - September, 2023
 - [EU Cyber Resilience Act antagonises, troubles open-source sector](https://www.thestack.technology/eu-cyber-resilience-bill-frustrates-the-opensource-sector/) - Azania Imitaz Patel - September 4, 2023
 - [More Fintech Players Cashing in on Open-Source Offerings](https://www.linuxinsider.com/story/more-fintech-players-cashing-in-on-open-source-offerings-177138.html) - Jack M. Germain - August 10, 2023
