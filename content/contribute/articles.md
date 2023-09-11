@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [Percona MySQL Encryption - Part 1](https://www.linkedin.com/pulse/percona-mysql-encryption-part-1-umair-hassan/) - Umair Hassan - December 31, 2022
 - [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
 - [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
@@ -113,6 +114,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Server storage snafu stuffs up supernational supply chain](https://www.thestack.technology/toyota-factories-outage-server-storage-oops/) - Ed Targett - September 7, 202
 - [Your Data is Critical - Do You Have the Right Strategy in Place for Resilience](https://technative.io/data-critical-right-strategy-resilience/) - Charly Batista - September, 2023
 - [EU Cyber Resilience Act antagonises, troubles open-source sector](https://www.thestack.technology/eu-cyber-resilience-bill-frustrates-the-opensource-sector/) - Azania Imitaz Patel - September 4, 2023
 - [More Fintech Players Cashing in on Open-Source Offerings](https://www.linuxinsider.com/story/more-fintech-players-cashing-in-on-open-source-offerings-177138.html) - Jack M. Germain - August 10, 2023
