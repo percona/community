@@ -7,6 +7,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [XtraDB Cluster 5.7 (MySQL)](https://linuxquery.com/index.php/2023/09/07/xtradb-cluster-5-7-mysql/) - Meenakshi - September 7б 2023
 - [Percona MySQL Encryption - Part 1](https://www.linkedin.com/pulse/percona-mysql-encryption-part-1-umair-hassan/) - Umair Hassan - December 31, 2022
 - [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
