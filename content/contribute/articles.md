@@ -52,6 +52,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [PostgreSQL brings more performance, security to open-source database](https://venturebeat.com/ai/postgresql-brings-more-performance-security-to-open-source-database/) - Sean Michael Kerner - September 14, 2023
 - [AWS dragged over lengthy downtime to migrate PostgreSQL DBaaS](https://www.theregister.com/2023/02/14/aws_slammed_for_postgresql_dbaas/) - Lindsay Clark - February 14, 2023
 - [10 Common PostgreSQL Mistakes and How to Avoid Them](https://www.infoworld.com/article/3681655/10-common-postgresql-mistakes-and-how-to-avoid-them.html) - Hamid Akhtar - December 6, 2022
 - [Interview with Percona - PGConf.EU](https://2022.pgconf.eu/sponsor-interviews/percona/) - Umair Shahid - September 22, 2022
@@ -99,10 +100,11 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [There are lots of ways to put a database in the cloud – here's what to consider](https://www.theregister.com/2023/09/15/cloud_database_dilemmas/) - Lindsay Clark - September 15, 2023
 - [Civo Navigate charts further Kubernetes ecosystem progress](https://www.computerweekly.com/blog/Open-Source-Insider/Civo-Navigate-charts-further-Kubernetes-ecosystem-progress) - Adrian Bridgwater - August 18, 2023
 - [The Business Value of Running Databases on Kubernetes ](https://www.odbms.org/2023/08/the-business-value-of-running-databases-on-kubernetes/) - Sergey Pronin - August 23, 2023
 - [Multi-cluster databases with Sergey Pronin](https://podcasters.spotify.com/pod/show/madhuri-yechuri/episodes/Multi-cluster-databases-with-Sergey-Pronin-e2747dj?%24web_only=true&_branch_match_id=1069334716792630316&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9VPsyz1M07LLqt0SgIAhGbATDAAAAA%3D) - Madhuri Yechuri - July 19, 2023
-- [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19. 2023
+- [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19, 2023
 - [5 Challenges for Databases on Kubernetes](https://vmblog.com/archive/2023/04/10/5-challenges-for-databases-on-kubernetes.aspx#.ZDT9kOxBykq) - Joe Brockmeier - April 10, 2023
 - [Choosing a Kubernetes Operator for PostgreSQL](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/) - Bhavin Shah (Cloud Native BU, Pure Storage) - March 18, 2022
 - [Deploying Percona Kubernetes Operators using OpenEBS Local Storage](https://dev.to/sudip_sg/deploying-percona-kubernetes-operators-using-openebs-local-storage-4ai9) - Sudip Sengupta - June 5, 2021
@@ -115,6 +117,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Open source can't win: Complacency has its price](https://www.computing.co.uk/opinion/4124530/open-source-win-complacency-price) - Joe Brockmeier, Percona - September 12, 2023
+- [Onboarding remote employees doesn't have to be hard](https://www.computerworld.com/article/3706448/onboarding-remote-employees-doesnt-have-to-be-hard.html) -  Steven J. Vaughan-Nichols, Computerworld - September 12, 2023
 - [Server storage snafu stuffs up supernational supply chain](https://www.thestack.technology/toyota-factories-outage-server-storage-oops/) - Ed Targett - September 7, 202
 - [Your Data is Critical - Do You Have the Right Strategy in Place for Resilience](https://technative.io/data-critical-right-strategy-resilience/) - Charly Batista - September, 2023
 - [EU Cyber Resilience Act antagonises, troubles open-source sector](https://www.thestack.technology/eu-cyber-resilience-bill-frustrates-the-opensource-sector/) - Azania Imitaz Patel - September 4, 2023
