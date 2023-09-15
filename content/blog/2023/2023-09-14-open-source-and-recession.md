@@ -178,7 +178,3 @@ But, if those people who contribute to open source are actually getting benefite
 ## Conclusion
 
 Booms and recessions were repeating on regular intervals earlier, however over the period, due to economic advancements, recessions became infrequent and started repeating after several years. It is not necessary that all countries may face economic slowdown at the same time, also reasons for slowdowns may differ as well. During such a period, organizations have to bear loss and fall in revenues, however open source becomes more adoptive during recessions. Also, it is possible that open source is keeping recessions away, but there is no data to back this claim.
-![image](/blog/2023/08/dolphie_errant_transaction.png)
-
-
-You can find Dolphie on its [GitHub](https://github.com/charles-001/dolphie)
