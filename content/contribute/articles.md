@@ -117,6 +117,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Software License Changes and Contributors - What You Need to Know?](https://hackernoon.com/software-license-changes-and-contributors-what-you-need-to-know) - Peter Zaotsev, Percona - September 20, 2023
+- [20 Best MySQL Blogs and Websites](https://blog.feedspot.com/mysql_blogs/) - FeedSpot - September 21, 2023
 - [Open source can't win: Complacency has its price](https://www.computing.co.uk/opinion/4124530/open-source-win-complacency-price) - Joe Brockmeier, Percona - September 12, 2023
 - [Onboarding remote employees doesn't have to be hard](https://www.computerworld.com/article/3706448/onboarding-remote-employees-doesnt-have-to-be-hard.html) -  Steven J. Vaughan-Nichols, Computerworld - September 12, 2023
 - [Server storage snafu stuffs up supernational supply chain](https://www.thestack.technology/toyota-factories-outage-server-storage-oops/) - Ed Targett - September 7, 202
