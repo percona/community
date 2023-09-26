@@ -117,6 +117,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [How to choose the right storage medium for your organization’s backup strategy](https://www.itpro.com/infrastructure/backup/how-to-choose-the-right-storage-medium-for-your-organizations-backup-strategy) - David Howell, ITPro - September 29, 2023
 - [Open source can't win: Complacency has its price](https://www.computing.co.uk/opinion/4124530/open-source-win-complacency-price) - Joe Brockmeier, Percona - September 12, 2023
 - [Onboarding remote employees doesn't have to be hard](https://www.computerworld.com/article/3706448/onboarding-remote-employees-doesnt-have-to-be-hard.html) -  Steven J. Vaughan-Nichols, Computerworld - September 12, 2023
 - [Server storage snafu stuffs up supernational supply chain](https://www.thestack.technology/toyota-factories-outage-server-storage-oops/) - Ed Targett - September 7, 202
