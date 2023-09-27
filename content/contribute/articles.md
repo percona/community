@@ -52,6 +52,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [26 Years Since its Inception, Postgres is Just Getting Started](https://insidebigdata.com/2023/09/20/26-years-since-its-inception-postgres-is-just-getting-started/) - Charly Batista, Percona - September 20, 2023
 - [PostgreSQL brings more performance, security to open-source database](https://venturebeat.com/ai/postgresql-brings-more-performance-security-to-open-source-database/) - Sean Michael Kerner - September 14, 2023
 - [AWS dragged over lengthy downtime to migrate PostgreSQL DBaaS](https://www.theregister.com/2023/02/14/aws_slammed_for_postgresql_dbaas/) - Lindsay Clark - February 14, 2023
 - [10 Common PostgreSQL Mistakes and How to Avoid Them](https://www.infoworld.com/article/3681655/10-common-postgresql-mistakes-and-how-to-avoid-them.html) - Hamid Akhtar - December 6, 2022
