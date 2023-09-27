@@ -52,6 +52,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PostgreSQL
 
+- [26 Years Since its Inception, Postgres is Just Getting Started](https://insidebigdata.com/2023/09/20/26-years-since-its-inception-postgres-is-just-getting-started/) - Charly Batista, Percona - September 20, 2023
 - [PostgreSQL brings more performance, security to open-source database](https://venturebeat.com/ai/postgresql-brings-more-performance-security-to-open-source-database/) - Sean Michael Kerner - September 14, 2023
 - [AWS dragged over lengthy downtime to migrate PostgreSQL DBaaS](https://www.theregister.com/2023/02/14/aws_slammed_for_postgresql_dbaas/) - Lindsay Clark - February 14, 2023
 - [10 Common PostgreSQL Mistakes and How to Avoid Them](https://www.infoworld.com/article/3681655/10-common-postgresql-mistakes-and-how-to-avoid-them.html) - Hamid Akhtar - December 6, 2022
@@ -119,6 +120,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 - [Software License Changes and Contributors - What You Need to Know?](https://hackernoon.com/software-license-changes-and-contributors-what-you-need-to-know) - Peter Zaotsev, Percona - September 20, 2023
 - [20 Best MySQL Blogs and Websites](https://blog.feedspot.com/mysql_blogs/) - FeedSpot - September 21, 2023
+- [How to choose the right storage medium for your organization’s backup strategy](https://www.itpro.com/infrastructure/backup/how-to-choose-the-right-storage-medium-for-your-organizations-backup-strategy) - David Howell, ITPro - September 29, 2023
 - [Open source can't win: Complacency has its price](https://www.computing.co.uk/opinion/4124530/open-source-win-complacency-price) - Joe Brockmeier, Percona - September 12, 2023
 - [Onboarding remote employees doesn't have to be hard](https://www.computerworld.com/article/3706448/onboarding-remote-employees-doesnt-have-to-be-hard.html) -  Steven J. Vaughan-Nichols, Computerworld - September 12, 2023
 - [Server storage snafu stuffs up supernational supply chain](https://www.thestack.technology/toyota-factories-outage-server-storage-oops/) - Ed Targett - September 7, 202
