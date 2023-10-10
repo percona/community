@@ -118,6 +118,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [What software developers should know about SQL](https://www.infoworld.com/article/3708291/what-software-developers-should-know-about-sql.html) - Charly Batista, Percona - October 10, 2023
 - [Software License Changes and Contributors - What You Need to Know?](https://hackernoon.com/software-license-changes-and-contributors-what-you-need-to-know) - Peter Zaotsev, Percona - September 20, 2023
 - [20 Best MySQL Blogs and Websites](https://blog.feedspot.com/mysql_blogs/) - FeedSpot - September 21, 2023
 - [How to choose the right storage medium for your organization’s backup strategy](https://www.itpro.com/infrastructure/backup/how-to-choose-the-right-storage-medium-for-your-organizations-backup-strategy) - David Howell, ITPro - September 29, 2023
