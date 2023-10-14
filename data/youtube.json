@@ -286,6 +286,12 @@
 
   "Events":[
   {
+    "youtube_id": "YTr8l3jfbkM",
+    "title": "MariaDB Server Fest 2023 - MySQL 8 vs MariaDB 10.11",
+    "date": "October 3, 2023",
+    "authors": "Peter Zaitsev (Percona)"
+  },
+  {
     "youtube_id": "U6RyuKZ8EMI",
     "title": "DevConf.CZ 2023 - Open Source Databases on Kubernetes: Best Practices",
     "date": "June 16, 2023",
