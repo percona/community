@@ -8,11 +8,11 @@ images:
 - images/everest/cover.png
 ---
 
-Percona Everest is an open source private database-as-a-service that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead while regaining control over their data, database configuration, and DBaaS costs. Try Percona Everest in action and help us to drive it forward. Check out the ways how you can contribute on this page.
+Percona Everest is an open source private Database-as-a-Service (DBaaS) that's in development. Percona Everest's goal is to help developers deploy code faster, scale deployments rapidly, and reduce database administration overhead while regaining control over their data, database configuration, and DBaaS costs. Try Percona Everest in action and help us to drive it forward. Want to help with Percona Everest's development? Check out some of the ways you can contribute.
 
 ## Percona Everest Components 
 
-We encourage you to install, try, build, share and contribute code to Percona Everest and its components.
+We encourage you to install, try, build, share, and contribute code to Percona Everest and its components.
 
 Percona Everest App is an application with a web interface. It consists of two major components:
 
@@ -20,19 +20,19 @@ Percona Everest App is an application with a web interface. It consists of two m
 
 * Percona Everest Backend is the backend API that processes requests from the frontend app and sends them to the Kubernetes API. It is developed in Golang using the Echo framework. 
 
-Percona Everest App is a single built application in a container ready to run in Kubernetes or Docker. It requires a PostgreSQL database and a public Kuberentes Cluster.
+Percona Everest App is an application in a container ready to run in Kubernetes or Docker. It requires a PostgreSQL database and a public Kuberentes Cluster.
 
 Percona Everest CLI (everestctl) is a console tool used to provision and install Percona Everest operators and components to your Kubernetes Cluster where Percona Everest will create and manage database clusters. Everestctl is developed in Golang language and it is as a built executable file.
 
 Also, Percona Everest uses:
 
-* Everest Operator that rely on underlying operators for deploying DB clusters of a given engine type.
+* Everest Operator that relies on underlying Percona Kubernetes Operators for deploying DB clusters of a given engine type.
 
 * Everest Catalog - an internal tool for everestcli.
 
 ## GitHub
 
-You can find Percona Everest code in GitHub repositories: 
+You can find Percona Everest code in these GitHub repositories: 
 
 * [Percona Everest Frontend](https://github.com/percona/percona-everest-frontend)
 
