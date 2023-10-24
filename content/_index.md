@@ -43,14 +43,19 @@ Learn about Percona's Distribution for PostgreSQL and additional tooling.
 
 {{% block class=" branded projects" %}}
   
-##  Projects &ndash; PMM, Kubernetes Operators, and Percona Toolkit 
+##  Projects &ndash; PMM, Kubernetes Operators, Percona Everest, and Percona Toolkit 
 
 We also create, participate in, and work with many open source projects. Check out our [Projects](/projects).
 
-{{% grid size=3 %}}
+{{% grid size=4 %}}
 {{% griditem %}}
 {{< database-grid link="/projects/operators" title="Percona Kubernetes Operators" icon="icons/kubernetes-color.svg" hideread="true" >}}
 Learn about running MySQL, PostgreSQL, and MongoDB on Kubernetes.
+{{< /database-grid >}}
+{{% /griditem %}}
+{{% griditem %}}
+{{< database-grid link="/projects/everest" title="Percona Everest" icon="icons/everest-color.svg" hideread="true" >}}
+Try an open source private database-as-a-service and regain control over your data, database configuration, and DBaaS costs.
 {{< /database-grid >}}
 {{% /griditem %}}
 {{% griditem %}}

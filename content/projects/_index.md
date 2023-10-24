@@ -17,6 +17,7 @@ We create, contribute to, and use various open source projects. Contributing bac
 
 ## Our Open Source Projects
 
+* [Percona Everest](/projects/everest)
 * [Kubernetes Operators](/projects/operators)
 * [Percona Monitoring and Management](/projects/pmm)
 * [Percona Toolkit](/projects/toolkit)
