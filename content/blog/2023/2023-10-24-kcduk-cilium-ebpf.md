@@ -12,7 +12,7 @@ slug: kcduk-cilium-ebpf
 
 This week, at [Kubernetes Community Days UK](https://community.cncf.io/events/details/cncf-kcd-uk-presents-kubernetes-community-days-uk-2023/) in London. **Liz Rice**, Chief Open Source Officer at Isovalent, delivered a keynote on Cilium, eBPF, and the new feature of Cilium: Mutual Authentication.
 
-![lizrice-keynote-01](blog/2023/10/kcduk-01.png)
+![lizrice-keynote-01](blog/2023/10/kcduk-01.jpg)
 
 _Figure 1. Liz Rice Keynote KCD UK, London. Tuesday 17, 2023_
 
