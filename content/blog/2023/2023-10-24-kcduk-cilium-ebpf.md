@@ -6,7 +6,7 @@ tags: ["ckd", "kubernetes", "cilium", "ebpf"]
 authors:
   - edith_puclla
 images:
-  - blog/2023/10/kcduk-01.png
+  - blog/2023/10/kcduk-01.jpg
 slug: kcduk-cilium-ebpf
 ---
 
