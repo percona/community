@@ -118,6 +118,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Linux Foundation Adopting Terraform Fork Provokes Ire of HashiCorp CEO](https://thenewstack.io/linux-foundation-adopting-terraform-fork-provokes-ire-of-hashicorp-ceo/) - Steven J. Vaughan-Nichols, The New Stack - October 25th, 2025
+- [Can Gen AI Tune The Database Or Create Better Queries?] - Swapnil Bhartiya and Emily Nicholls, TFiR: Let’s Talk About AI - October 20th, 2023
 - [What Software License is Better - BSL, Source Available or Open Core?](https://devm.io/open-source/software-licenses-bsl-open-core) - Peter Zaitsev, Percona - - October 4th, 2023  
 - [Open Source Fights Back: OpenTofu Is the Entrée We Need](https://thenewstack.io/open-source-fights-back-opentofu-is-the-entree-we-need/) - Joe Brockmeier, Percona - October 5th, 2023 
 - [Software License Changes and Contributors - What You Need to Know?](https://hackernoon.com/software-license-changes-and-contributors-what-you-need-to-know) - Peter Zaotsev, Percona - September 20, 2023
