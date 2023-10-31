@@ -286,6 +286,12 @@
 
   "Events":[
   {
+    "youtube_id": "lwK9E15ErhA",
+    "title": "Nerdearla 2023 - 10 cosas que los desarrolladores deberian saber de las BD",
+    "date": "October 5, 2023",
+    "authors": "Carlos Tutte (Percona)"
+  },
+  {
     "youtube_id": "YTr8l3jfbkM",
     "title": "MariaDB Server Fest 2023 - MySQL 8 vs MariaDB 10.11",
     "date": "October 3, 2023",
@@ -774,10 +780,16 @@
 
   "Interviews":[
   {
+    "youtube_id": "g9TY8kw18A",
+    "title": "Can Gen AI Tune The Database Or Create Better Queries?",
+    "date": "October 20, 2023",
+    "authors": "Peter Zaitsev (Percona) and TFiR"
+  },
+  {
     "youtube_id": "8GLKwju9YDk",
     "title": "Women in IT – Ann Schlemer, CEO of Percona",
     "date": "May 3, 2023",
-    "authors": "Ann Schelmmer (Percona) and Phil Alsop (DiverseIT)"
+    "authors": "Ann Schlemmer (Percona) and Phil Alsop (DiverseIT)"
   }, 
   {
     "youtube_id": "esz7OOYxCIc",
