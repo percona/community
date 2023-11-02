@@ -48,3 +48,11 @@ Agenda includes talks from industry experts:
 Agenda is subject to change. 
 
 The event FREE for all attendees. The capacity of the venue is limited, [register](https://www.eventbrite.com/e/percona-university-athens-open-source-databases-meetup-2023-tickets-732823433617) now to save your spot!
+
+![Percona University Athens](/events/percona-university-athens-2023/2.jpg)
+![Percona University Athens](/events/percona-university-athens-2023/3.jpg)
+![Percona University Athens](/events/percona-university-athens-2023/4.jpg)
+![Percona University Athens](/events/percona-university-athens-2023/5.jpg)
+![Percona University Athens](/events/percona-university-athens-2023/6.jpg)
+![Percona University Athens](/events/percona-university-athens-2023/7.jpg)
+![Percona University Athens](/events/percona-university-athens-2023/8.jpg)
