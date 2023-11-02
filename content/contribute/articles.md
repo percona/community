@@ -118,6 +118,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Safeguarding Your Data – How to Harden Your Systems](https://openssf.org/blog/2023/10/30/safeguarding-your-data-how-to-harden-your-systems/) - Sonia Valeja and Michal Nosek, Percona - October 30, 2023
+- [How much is enough to support those who maintain open source?](https://www.computerweekly.com/news/366557073/How-much-is-enough-to-support-those-who-maintain-open-source) - Cliff Saran, ComputerWeekly.com - October 31, 2023
 - [Linux Foundation Adopting Terraform Fork Provokes Ire of HashiCorp CEO](https://thenewstack.io/linux-foundation-adopting-terraform-fork-provokes-ire-of-hashicorp-ceo/) - Steven J. Vaughan-Nichols, The New Stack - October 25th, 2025
 - [Can Gen AI Tune The Database Or Create Better Queries?] - Swapnil Bhartiya and Emily Nicholls, TFiR: Let’s Talk About AI - October 20th, 2023
 - [What Software License is Better - BSL, Source Available or Open Core?](https://devm.io/open-source/software-licenses-bsl-open-core) - Peter Zaitsev, Percona - - October 4th, 2023  
