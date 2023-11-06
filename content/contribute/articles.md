@@ -110,6 +110,10 @@ Thank you to users of our products, customers, communities, and authors for your
 - [Choosing a Kubernetes Operator for PostgreSQL](https://portworx.com/blog/choosing-a-kubernetes-operator-for-postgresql/) - Bhavin Shah (Cloud Native BU, Pure Storage) - March 18, 2022
 - [Deploying Percona Kubernetes Operators using OpenEBS Local Storage](https://dev.to/sudip_sg/deploying-percona-kubernetes-operators-using-openebs-local-storage-4ai9) - Sudip Sengupta - June 5, 2021
 
+# Percona Everest
+
+- [Building an Open Source Private DBaaS](https://thenewstack.io/building-an-open-source-private-dbaas/) - Piotr Szczepaniak, Percona - November 2, 2023
+
 # Working at Percona
 
 - [Climbing Pico de Orizaba](https://peterzaitsev.com/climbing-pico-de-orizaba/) - Peter Zaitsev - December 2022
