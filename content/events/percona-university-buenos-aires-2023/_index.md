@@ -6,6 +6,14 @@ images:
 layout: single
 date: "2023-10-13"
 tags: ['Event', 'sponsorship', 'opensource']
+speakers:
+  - peter_zaitsev
+  - david_ducos
+  - fernando_mattera
+  - francisco_bordenave
+  - ivan_groenwold
+  - sergio_ostapowicz
+  - diego_feito
 ---
 ![Percona University Buenos Aires](/events/percona-university-buenos-aires-2023/1.jpg)
 

@@ -6,6 +6,13 @@ images:
 layout: single
 date: "2023-10-13"
 tags: ['Event', 'sponsorship', 'opensource']
+speakers:
+  - peter_zaitsev
+  - marcos_albe
+  - carlos_tutte
+  - agustin_gallego
+  - ignacio_nin
+  - javier_borkenztain
 ---
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/1.jpg)
 
