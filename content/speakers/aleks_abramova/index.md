@@ -3,7 +3,7 @@ name: aleks_abramova
 name_pronunciation: aleks_abramova
 fullname: Aleks Abramova
 fullname_pronounciation: Aleks Abramova
-job: Community Specialist
+job: Global Events Specialist
 country: 
 tagline: 
 social:

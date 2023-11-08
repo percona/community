@@ -3,7 +3,7 @@ name: ibrar_ahmed
 name_pronunciation: ibrar_ahmed
 fullname: Ibrar Ahmed
 fullname_pronounciation: Ibrar Ahmed
-job: Sr. Software Architect, Percona
+job: Principal Engineer, pgEdge
 country: 
 tagline: 
 social:

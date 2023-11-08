@@ -122,6 +122,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Vector databases in LLMs and search](https://www.infoworld.com/article/3709912/vector-databases-in-llms-and-search.html) - Isaac Sacolick, InfoWorld - November 6, 2023
 - [Safeguarding Your Data – How to Harden Your Systems](https://openssf.org/blog/2023/10/30/safeguarding-your-data-how-to-harden-your-systems/) - Sonia Valeja and Michal Nosek, Percona - October 30, 2023
 - [How much is enough to support those who maintain open source?](https://www.computerweekly.com/news/366557073/How-much-is-enough-to-support-those-who-maintain-open-source) - Cliff Saran, ComputerWeekly.com - October 31, 2023
 - [Linux Foundation Adopting Terraform Fork Provokes Ire of HashiCorp CEO](https://thenewstack.io/linux-foundation-adopting-terraform-fork-provokes-ire-of-hashicorp-ceo/) - Steven J. Vaughan-Nichols, The New Stack - October 25th, 2025
