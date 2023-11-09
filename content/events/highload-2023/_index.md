@@ -1,6 +1,6 @@
 ---
 title: "HighLoad++ Serbia 2023"
-description: "Percona team participated in the HighLoad ++ Spring conference in Moscow on May 17-18, 2021"
+description: "This summer Percona Team traveled to Belgrade in Serbia to participate in 2 events - Highload++ Serbia 2023 and Percona University Belgrade. "
 images:
   - events/highload-2023/1.jpg
 layout: single

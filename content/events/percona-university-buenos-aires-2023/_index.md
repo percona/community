@@ -15,9 +15,12 @@ speakers:
   - sergio_ostapowicz
   - diego_feito
 ---
+
+Percona University came to Buenos Aires on October 20th. Percona University is a series of database meetups that we organize worldwide in different locations. 
+
 ![Percona University Buenos Aires](/events/percona-university-buenos-aires-2023/1.jpg)
 
-Percona University took place in Buenos Aires on October 20th. Percona University is a series of database meetups that we organize worldwide in different locations. It is a wonderful opportunity to discover more about open source software, databases, and services, and speak to recognised experts and featured speakers. Build your knowledge and get up to speed on hot database topics.
+It is a wonderful opportunity to discover more about open source software, databases, and services, and speak to recognised experts and featured speakers. Build your knowledge and get up to speed on hot database topics.
 
 ![Percona University Buenos Aires](/events/percona-university-buenos-aires-2023/2.jpg)
 
