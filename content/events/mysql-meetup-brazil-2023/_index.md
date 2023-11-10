@@ -14,9 +14,9 @@ speakers:
   - ricardo_rodrigues
 ---
 
-![MySQL MeetUp 2023](/events/mysql-meetup-brazil-2023/1.jpg)
-
 Join us in São Paulo on [MySQL Meetup](https://anotherboringtechblog.com/2023/10/mysql-meetup-brazil-informacoes-do-evento-e-agenda/) on December 2nd. It is a free database event that Oracle and Percona organize together. 
+
+![MySQL MeetUp 2023](/events/mysql-meetup-brazil-2023/1.jpg)
 
 **Date:** December 2nd, Saturday, 2023
 

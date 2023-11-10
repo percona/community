@@ -14,9 +14,12 @@ speakers:
   - ignacio_nin
   - javier_borkenztain
 ---
+
+We bring international speakers and invite local ones to help you to build your knowledge and get up to speed on hot database topics.
+
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/1.jpg)
 
-Percona University came to in Montevideo at October 24th. Percona University is a free database meetup open to everyone in the community. We bring international speakers and invite local ones to help you to build your knowledge and get up to speed on hot database topics.
+ Percona University came to in Montevideo at October 24th. Percona University is a free database meetup open to everyone in the community. 
 
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/17.jpg)
 
