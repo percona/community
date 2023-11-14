@@ -10,7 +10,8 @@ images:
 slug: data-on-kubernetes
 ---
 
-If you've attended one of the Kubecon talks or related events, you've likely encountered the phrase "Data in Kubernetes." To understand what "Data in Kubernetes" means, let's explore some fundamental concepts related to **Kubernetes**, **workload**, **stateless**, and **stateful** applications.
+If you've attended one of the Kubecon talks or related events, you've likely encountered the phrase **Data on Kubernetes**.
+To understand what this means, let's explore some fundamental concepts related to **Kubernetes**, **workload**, **stateless**, and **stateful** applications.
 
 ## Kubernetes, workload, stateless and stateful applications
 
