@@ -286,6 +286,12 @@
 
   "Events":[
   {
+    "youtube_id": "mbL1NmGtvVU",
+    "title": "Meet Magento UK 2023 - How To Monitor The Performance Of A Magento Instance",
+    "date": "October 25, 2023",
+    "authors": "Alin Alexandru, Innobyte.com"
+  },
+  {
     "youtube_id": "G4qkCPdV56M",
     "title": "DOK Day North America 2023 - Stop Worrying and Keep Querying, Using Automated Multi-Region Disaster Recovery",
     "date": "November 10, 2023",
