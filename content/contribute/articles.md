@@ -122,6 +122,9 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [More Than a Refresh - Episode 39: Dave Stokes, Technology Evangelist @ Percona](https://www.commandprompt.com/about/more-than-a-refresh/#episode-39-dave-stokes-technology-evangelist-percona) - November 16 2023
+- [Attending Percona University in Athens 2023](https://mariadb.org/attending-percona-university-in-athens-2023/) - Vicențiu Ciorbaru, MariaDB Foundation - November 11, 2023
+- [License to thrill BSL refuseniks? Sentry introduces Functional Source License](https://www.theregister.com/2023/11/20/sentry_introduces_the_functional_source/) - Richard Speed, The Register - November 20, 2023 
 - [How To Create A Profitable Open-Source Company Without Venture Capital](https://www.forbes.com/sites/forbesbusinesscouncil/2023/11/08/how-to-create-a-profitable-open-source-company-without-venture-capital/?sh=256c893892a3) - Ann Schlemmer, Percona - November 8, 2023
 - [Vector databases in LLMs and search](https://www.infoworld.com/article/3709912/vector-databases-in-llms-and-search.html) - Isaac Sacolick, InfoWorld - November 6, 2023
 - [Safeguarding Your Data – How to Harden Your Systems](https://openssf.org/blog/2023/10/30/safeguarding-your-data-how-to-harden-your-systems/) - Sonia Valeja and Michal Nosek, Percona - October 30, 2023
