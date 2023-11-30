@@ -122,6 +122,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Heard on the Street – 11/27/2023](https://insidebigdata.com/2023/11/27/heard-on-the-street-11-27-2023/) - Daniel Gutierrez, InsideBIGDATA - November 27, 2023
 - [More Than a Refresh - Episode 39: Dave Stokes, Technology Evangelist @ Percona](https://www.commandprompt.com/about/more-than-a-refresh/#episode-39-dave-stokes-technology-evangelist-percona) - November 16 2023
 - [Attending Percona University in Athens 2023](https://mariadb.org/attending-percona-university-in-athens-2023/) - Vicențiu Ciorbaru, MariaDB Foundation - November 11, 2023
 - [License to thrill BSL refuseniks? Sentry introduces Functional Source License](https://www.theregister.com/2023/11/20/sentry_introduces_the_functional_source/) - Richard Speed, The Register - November 20, 2023 
