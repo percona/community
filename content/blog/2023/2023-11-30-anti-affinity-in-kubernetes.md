@@ -6,7 +6,7 @@ tags: ["kubernetes", "anti-affinity", "mongodb", "percona"]
 authors:
   - edith_puclla
 images:
-  - blog/2023/11/intro.png
+  - blog/2023/11/affinity-intro.png
 slug: anti-affinity-in-kubernetes
 ---
 
