@@ -70,7 +70,7 @@ Our next project is [percona/pg_stat_monitor](https://github.com/percona/pg_stat
 **In summary**, those are some of our projects that are in Hacktoberfest.
 This month is Open Source month; it's Hacktoberfest month party!
 
-Remember that you can interact with the maintainers of each project through [GitHub](https://github.com/search?q=org%3Apercona+hacktoberfest)/[Jira](https://jira.percona.com/browse/DISTMYSQL-228?filter=-4) or our [Community Forum](https://forums.percona.com/).
+Remember that you can interact with the maintainers of each project through [GitHub](https://github.com/search?q=org%3Apercona+hacktoberfest)/[Jira](https://perconadev.atlassian.net/browse/DISTMYSQL-228?filter=-4) or our [Community Forum](https://forums.percona.com/).
 
 If you haven't sent a PR, this is the time to do it. Write us at community-team@percona.com if you have any questions.
 

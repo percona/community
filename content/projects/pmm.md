@@ -81,9 +81,9 @@ If you're interested in contributing, please check out our page on [contributing
 
 ## PMM Roadmap and Releases
 
-Please check out the PMM Roadmap on this [Dashboard](https://jira.percona.com/secure/Dashboard.jspa?selectPageId=13502), choose the project "Percona Monitoring and Management (PMM)" in All Product Issues/Roadmap picker.
+Please check out the PMM Roadmap on this [Dashboard](https://perconadev.atlassian.net/secure/Dashboard.jspa?selectPageId=13502), choose the project "Percona Monitoring and Management (PMM)" in All Product Issues/Roadmap picker.
 
-Check the tickets to be included in the next [Release](https://jira.percona.com/issues/?jql=project%20%3D%20%22Percona%20Monitoring%20and%20Management%22%20and%20fixVersion%20%3D%20earliestUnreleasedVersion()). 
+Check the tickets to be included in the next [Release](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22Percona%20Monitoring%20and%20Management%22%20and%20fixVersion%20%3D%20earliestUnreleasedVersion()). 
 
 Release notes under development are in our [pmm-doc repo](https://github.com/percona/pmm-doc/labels/RN).
 

@@ -51,21 +51,21 @@ matter of hours!
 If your suggestion is bigger than what you can personally handle or you would
 like to solicit some feedback on your proposal before submitting it, no problem!
 Similar to the software engineers working on our various products, we use our
-[public instance of Atlassian Jira](https://jira.percona.com/) for tracking our
+[public instance of Atlassian Jira](https://perconadev.atlassian.net/) for tracking our
 Documentation work as well.
 
 * If you have a **product-specific** suggestion, please submit your request in
   the corresponding product's Jira project (e.g.
-  [PS](https://jira.percona.com/projects/PS/) for Percona Server for MySQL,
-  [PMM](https://jira.percona.com/projects/PMM/) for PMM,
-  [PSMDB](https://jira.percona.com/projects/PSMDB/) for Percona Server for
+  [PS](https://perconadev.atlassian.net/projects/PS/) for Percona Server for MySQL,
+  [PMM](https://perconadev.atlassian.net/projects/PMM/) for PMM,
+  [PSMDB](https://perconadev.atlassian.net/projects/PSMDB/) for Percona Server for
   MongoDB).
 * Make sure to **select "Documentation" as the Component** when submitting your
   request and please **include a link to the public location** of the
   documentation page that you would like to get changed.
 * If you would like to suggest an improvement or change that affects all of
   Percona's documentation (e.g. a structural or stylistic change), there's a
-  [dedicated DOCS Jira project](https://jira.percona.com/projects/DOCS/) that
+  [dedicated DOCS Jira project](https://perconadev.atlassian.net/projects/DOCS/) that
   tracks overarching documentation issues.
 {{% /typography %}}
 {{% /hero %}}

@@ -29,7 +29,7 @@ Help deploy and run in Kubernetes<br/>
 {{% /griditem %}}
 {{% griditem %}}
 File a Bug<br/>
-[Jira](https://jira.percona.com/projects/DISTPG/issues/DISTPG-246?filter=allopenissues)
+[Jira](https://perconadev.atlassian.net/projects/DISTPG/issues/DISTPG-246?filter=allopenissues)
 {{% /griditem %}}
 {{% /gridlinks %}}
 

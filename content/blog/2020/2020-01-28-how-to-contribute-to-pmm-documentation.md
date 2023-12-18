@@ -20,7 +20,7 @@ Some context
 1.  It's something you can do without feeling you need stellar programming skills
 2.  It is useful for a large number of users.
 
-By the way, if you aren't sure where to start, there are currently more than 50 PMM documentation improvement tasks listed in [JIRA,](https://jira.percona.com/browse/PMM-5333?jql=project%20%3D%20PMM%20AND%20resolution%20%3D%20Unresolved%20AND%20component%20%3D%20Documentation) Percona's fault recording system. Once you have checked out a few of those and become familiar with the documentation structure and style, you'll probably be able to find more issues to report... or think of your own improvements. 
+By the way, if you aren't sure where to start, there are currently more than 50 PMM documentation improvement tasks listed in [JIRA,](https://perconadev.atlassian.net/browse/PMM-5333?jql=project%20%3D%20PMM%20AND%20resolution%20%3D%20Unresolved%20AND%20component%20%3D%20Documentation) Percona's fault recording system. Once you have checked out a few of those and become familiar with the documentation structure and style, you'll probably be able to find more issues to report... or think of your own improvements. 
 
 Even enhancements that help only a few users are very welcome.
 
@@ -36,7 +36,7 @@ My work plan...
 
 Having decided I was going to be a contributor, too, I created a simple outline of what I needed to do. Here it is:
 
-1.  Find an existing task or create a new one. PMM is an excellent product, but it has known [documentation issues.](https://jira.percona.com/issues/?jql=project+%3D+PMM+AND+component+%3D+Documentation) that I can help with
+1.  Find an existing task or create a new one. PMM is an excellent product, but it has known [documentation issues.](https://perconadev.atlassian.net/issues/?jql=project+%3D+PMM+AND+component+%3D+Documentation) that I can help with
 2.  Find the repository and install the PMM documentation on my computer so I can work out how to make changes
 3.  Make the changes and test them.
 4.  Send the changes to the PMM repository.
@@ -48,11 +48,11 @@ If you're ready to jump in, though, let's take a look step-by-step at what's inv
 
 ### 1. Find an existing task or create a new one
 
-Percona has identified over [50 specific documentation needs for PMM](https://jira.percona.com/issues/?jql=project%20%3D%20PMM%20AND%20resolution%20%3D%20Unresolved%20AND%20component%20%3D%20Documentation) as shown in [Percona’s JIRA repository of all PMM development tasks](https://jira.percona.com/projects/PMM/issues/PMM-5075?filter=allopenissues). Create an account and log in to JIRA, then you can choose a current task, or create a new report to start contributing to PMM. 
+Percona has identified over [50 specific documentation needs for PMM](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20PMM%20AND%20resolution%20%3D%20Unresolved%20AND%20component%20%3D%20Documentation) as shown in [Percona’s JIRA repository of all PMM development tasks](https://perconadev.atlassian.net/projects/PMM/issues/PMM-5075?filter=allopenissues). Create an account and log in to JIRA, then you can choose a current task, or create a new report to start contributing to PMM. 
 
 In fact, for the sake of this example, while I liked the look of quite a few of the existing tasks I wanted to take the first step quickly. So I identified an improvement for the main documentation page and created a new record in JIRA. Here it is:
 
-*   [https://jira.percona.com/browse/PMM-5012](https://jira.percona.com/browse/PMM-5012)
+*   [https://perconadev.atlassian.net/browse/PMM-5012](https://perconadev.atlassian.net/browse/PMM-5012)
 
 **It's really important that you use JIRA as the starting point for any changes**. This is the only way for the PMM team to find out what your intentions are and to advise you of the best approach. Through JIRA, too, you can discuss the task before you start work. If you want to work on an existing report, then I recommend that you contact the author of the task through comments in JIRA. ![](blog/2020/01/PMM-Contribute-2.png)
 

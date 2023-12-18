@@ -33,7 +33,7 @@ minikube-m04   Ready    <none>                 2d22h   v1.22.3
 
 I usually run integration test with `--driver=kvm` and some simple sanity tests with `--driver=podman`.
 
-During my testing I found out that I can't deploy operators with DBaaS on `minikube` multi-node cluster and I found similar [Jira issue about it](https://jira.percona.com/browse/K8SPXC-879):
+During my testing I found out that I can't deploy operators with DBaaS on `minikube` multi-node cluster and I found similar [Jira issue about it](https://perconadev.atlassian.net/browse/K8SPXC-879):
 ```console
 $ kubectl get pods
 NAME                                               READY   STATUS                  RESTARTS     AGE

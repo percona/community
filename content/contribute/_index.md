@@ -61,7 +61,7 @@ Check out the latest 5 forums posts:
 
 ## Bug Reports
 
-Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://jira.percona.com) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
+Found a bug? Check out the relevant GitHub repository and file an issue or report it to our [bug tracker](https://perconadev.atlassian.net) on Jira. Most of our GitHub repositories have issues disabled in order to be able to provide answers quicker via Jira.
 
 {{% /block %}}
 
