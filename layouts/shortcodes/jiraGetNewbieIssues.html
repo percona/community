@@ -1,4 +1,4 @@
-{{- $issuesData := getJSON "https://jira.percona.com/rest/api/2/search" "?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie" (dict "Authorization" "Basic Y29tbXVuaXR5LnRlYW06blB2S1lNWmMzMTYxdDVtaSMmZHQ=") -}}
+{{- $issuesData := getJSON "https://perconadev.atlassian.net/rest/api/2/search" "?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie" (dict "Authorization" "Basic Y29tbXVuaXR5LnRlYW06blB2S1lNWmMzMTYxdDVtaSMmZHQ=") -}}
 
 ### Task list
 
@@ -14,8 +14,8 @@
   <tbody>  
     {{- range first 10 (after 1 $issuesData.issues) -}}
       <tr>
-        <td scope="row"><a href="https://jira.percona.com/browse/{{- .key -}}" target="_blank">{{- .key -}}</a></td>
-        <td><a href="https://jira.percona.com/browse/{{- .key -}}" target="_blank">{{- .fields.summary -}}</a></td>
+        <td scope="row"><a href="https://perconadev.atlassian.net/browse/{{- .key -}}" target="_blank">{{- .key -}}</a></td>
+        <td><a href="https://perconadev.atlassian.net/browse/{{- .key -}}" target="_blank">{{- .fields.summary -}}</a></td>
         <td>{{- .fields.status.name -}}</td>
         <td>{{- .fields.priority.name -}}</td>
       </tr>
@@ -23,4 +23,4 @@
   </tbody>  
 </table>
 
-<a href="https://jira.percona.com/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie">All tasks</a> can be viewed in <a href="https://jira.percona.com/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie">Jira</a>, using the Newbie label and Open and New status search.
+<a href="https://perconadev.atlassian.net/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie">All tasks</a> can be viewed in <a href="https://perconadev.atlassian.net/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie">Jira</a>, using the Newbie label and Open and New status search.

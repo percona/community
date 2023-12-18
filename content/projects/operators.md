@@ -17,20 +17,20 @@ Welcome to Percona’s Community Page for Kubernetes Operators! The Percona Kube
 ### Percona Operator for MySQL
 *   [Documentation](https://www.percona.com/doc/kubernetes-operator-for-pxc/index.html)
 *   [GitHub](https://github.com/percona/percona-xtradb-cluster-operator)
-*   [Jira](https://jira.percona.com/projects/K8SPXC/issues/)
+*   [Jira](https://perconadev.atlassian.net/projects/K8SPXC/issues/)
 
 {{% /griditem %}}
 {{% griditem %}}
 ### Percona Operator for MongoDB
 *   [Documentation](https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html)
 *   [GitHub](https://github.com/percona/percona-server-mongodb-operator)
-*   [Jira](https://jira.percona.com/projects/K8SPSMDB/issues/)
+*   [Jira](https://perconadev.atlassian.net/projects/K8SPSMDB/issues/)
 {{% /griditem %}}
 {{% griditem %}}
 ### Percona Operator for PostgreSQL
 *   [Documentation](https://www.percona.com/doc/kubernetes-operator-for-postgresql/index.html)
 *   [GitHub](https://github.com/percona/percona-postgresql-operator)
-*   [Jira](https://jira.percona.com/projects/K8SPG/issues/)
+*   [Jira](https://perconadev.atlassian.net/projects/K8SPG/issues/)
 {{% /griditem %}}
 {{% /grid %}}
 

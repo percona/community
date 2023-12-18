@@ -15,7 +15,7 @@ MySQL 8.0.32 came out recently and had some important bugfixes contributed by Pe
 
 Marcelo Altmann (Senior Software Engineer) fixed the bug when data and GTIDs backed up by mysqldump were inconsistent. It happened when the options --single-transaction and --set-gtid-purged=ON were both used because GTIDs on the server could have already increased between the start of the transaction by mysqldump and the fetching of GTID_EXECUTED. Marcelo developed a patch, and it was partially included in the release. Now, in MySQL 8.0.32, a FLUSH TABLES WITH READ LOCK is performed before fetching GTID_EXECUTED, to ensure its value is consistent with the snapshot taken by mysqldump. However, Percona Server for MySQL includes the entire patch, which does not require FLUSH TABLE WITH READ LOCK to work.
 
-Marcelo also corrected the issue when the MySQL server [exits on ALTER TABLE created an assertion failure: dict0mem.h:2498:pos < n_def](https://jira.percona.com/browse/PS-8303).
+Marcelo also corrected the issue when the MySQL server [exits on ALTER TABLE created an assertion failure: dict0mem.h:2498:pos < n_def](https://perconadev.atlassian.net/browse/PS-8303).
 
 ## Fixing garbled UTF characters
 

@@ -118,8 +118,8 @@ Well, the best solution would be to fix the bugs below. I claim Bug#74602 is not
 
 *   [Bug#74602: Optimizer prefers wrong index because of low_limit](https://bugs.mysql.com/bug.php?id=74602)
 *   [Bug#78612: Optimizer chooses wrong index for ORDER BY](https://bugs.mysql.com/bug.php?id=78612)
-*   [PS-1653: Optimizer chooses wrong index for ORDER BY DESC](https://jira.percona.com/browse/PS-1653)
-*   [PS-4935: Optimizer choosing full table scan (instead of index range scan) on query order by primary key with limit.](https://jira.percona.com/browse/PS-4935)
+*   [PS-1653: Optimizer chooses wrong index for ORDER BY DESC](https://perconadev.atlassian.net/browse/PS-1653)
+*   [PS-4935: Optimizer choosing full table scan (instead of index range scan) on query order by primary key with limit.](https://perconadev.atlassian.net/browse/PS-4935)
 
 PS-4935 is a duplicate of PS-1653 that I opened a few months ago. In that report, I mention a query that is taking 12 minutes because of a bad choice by the optimizer (when using the good plan, the query is taking less than 0.1 second). 
 

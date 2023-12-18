@@ -30,7 +30,7 @@ You need to:
 What kind of contribution should I make?
 ----------------------------------------
 
-Of course, this is the first question to decide. PMM is a great product that many developers are working on. PMM uses [JIRA](https://jira.percona.com/projects/PMM/issues/PMM-4923?filter=allopenissues) to track development tasks. You can:
+Of course, this is the first question to decide. PMM is a great product that many developers are working on. PMM uses [JIRA](https://perconadev.atlassian.net/projects/PMM/issues/PMM-4923?filter=allopenissues) to track development tasks. You can:
 
 1.  Explore the tasks and choose an interesting one
 2.  Create your own task from scratch
@@ -57,7 +57,7 @@ I opened JIRA and created a task where I described what I would do:
 
 **Tooltips: Prometheus dashboards: Head Block: Update graph panel description** 
 
-[https://jira.percona.com/browse/PMM-5053](https://jira.percona.com/browse/PMM-5053) 
+[https://perconadev.atlassian.net/browse/PMM-5053](https://perconadev.atlassian.net/browse/PMM-5053) 
 
 ![PMM Dashboards Jira Issue](blog/2020/05/Contribute_to_dashboards_4.png)
 
@@ -205,7 +205,7 @@ My references
 Home page of the PMM contributor: [https://www.percona.com/community/contributions/pmm](https://www.percona.com/community/contributions/pmm) 
 
 An article on how to become a documentation contributor: 
-*  Instructions for Contributors: Issue at JIRA: [https://jira.percona.com/browse/PMM-5053](https://jira.percona.com/browse/PMM-5053) 
+*  Instructions for Contributors: Issue at JIRA: [https://perconadev.atlassian.net/browse/PMM-5053](https://perconadev.atlassian.net/browse/PMM-5053) 
 * A branch in my repository: [https://github.com/dbazhenov/grafana-dashboards/tree/PMM-5053_dbazhenov_tooltip](https://github.com/dbazhenov/grafana-dashboards/tree/PMM-5053_dbazhenov_tooltip) 
 * Pull Request to PMM repository [https://github.com/percona/grafana-dashboards/pull/524](https://github.com/percona/grafana-dashboards/pull/524) 
 * Confirmed by CLA: [https://cla-assistant.percona.com/percona/grafana-dashboards?pullRequest=524](https://cla-assistant.percona.com/percona/grafana-dashboards?pullRequest=524)
