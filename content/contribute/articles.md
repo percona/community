@@ -7,7 +7,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
-- [XtraDB Cluster 5.7 (MySQL)](https://linuxquery.com/index.php/2023/09/07/xtradb-cluster-5-7-mysql/) - Meenakshi - September 7б 2023
+- [Percona Streaming Backup](https://blog.min.io/percona-streaming-backup/) - AJ on DevOps - October 17, 2023
+- [XtraDB Cluster 5.7 (MySQL)](https://linuxquery.com/index.php/2023/09/07/xtradb-cluster-5-7-mysql/) - Meenakshi - September 7, 2023
 - [Percona MySQL Encryption - Part 1](https://www.linkedin.com/pulse/percona-mysql-encryption-part-1-umair-hassan/) - Umair Hassan - December 31, 2022
 - [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
@@ -122,6 +123,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Navigating the Evolving Landscape of Cloud Database-as-a-Service (DBaaS) in 2024](https://vmblog.com/archive/2023/12/14/percona-2024-predictions-navigating-the-evolving-landscape-of-cloud-database-as-a-service-dbaas-in-2024.aspx) - Aleksandra Mitroshkina, VMblog.com - December 14, 2023
 - [Is DevOps dying as a discipline?](https://www.thestack.technology/is-devops-dying-as-a-discipline/?ref=the-stack-newsletter) - The Stack - November 29, 2023
 - [Heard on the Street – 11/27/2023](https://insidebigdata.com/2023/11/27/heard-on-the-street-11-27-2023/) - Daniel Gutierrez, InsideBIGDATA - November 27, 2023
 - [More Than a Refresh - Episode 39: Dave Stokes, Technology Evangelist @ Percona](https://www.commandprompt.com/about/more-than-a-refresh/#episode-39-dave-stokes-technology-evangelist-percona) - November 16 2023
