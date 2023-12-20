@@ -1,6 +1,18 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "jDfQ6Lqn6qw",
+    "title": "Percona XtraDB Cluster | Installation | Configuration | Galera cluster | MySQL | Tutorial | Part 1",
+    "date": "September 10, 2023",
+    "authors": "Sri Sakthivel (Sri Vlogs)"
+  },
+  {
+    "youtube_id": "ev3U645RJVk",
+    "title": "PMM for MySQL | Monitoring | Installation |Alert configuration to Slack | Custom dashboard | Percona",
+    "date": "October 27, 2023",
+    "authors": "Sri Sakthivel (Sri Vlogs)"
+  },
+  {
     "youtube_id": "CLD0ltIfvW0",
     "title": "Kubernetes Architecture Explained in 3 minutes",
     "date": "July 28, 2023",
