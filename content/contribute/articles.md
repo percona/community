@@ -7,19 +7,30 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
+- [MySQL Master-Master Replication Error: “Error Connecting to Master” Error 2003](https://medium.com/@fixitblog/solved-mysql-master-master-replication-error-quot-error-connecting-to-master-quot-error-2003-fcc1c9fb1324) by Ted James - Dec 22, 2023
+- [Detecting unutilized indexes in MySQL](https://samuel-wekesa.medium.com/detecting-unutilized-indexes-in-mysql-a4054aa71477) by Samuel N Wekesa - Sep 12, 2023
+- [MYSQL Database Backup Using Percona XtraBackup](https://blog.devgenius.io/mysql-database-backup-using-percona-xtrabackup-59c251d0bfd0) by Mohamad Mahmood - Oct 26, 2023
+
+- [How to use pt-mysql-summary to understand your MySQL database server better?](https://blog.fourninecloud.com/how-to-use-pt-mysql-summary-to-understand-your-mysql-database-server-better-124f3c4f920b) by Virinchi T - Oct 10, 2023
+- [SMS: Schema Migration Solution for MySQL](https://medium.com/@jaiswalvinny9/sms-a-schema-migration-solution-for-mysql-with-tungsten-clustering-a7dd40f1c127) with Tungsten Clustering by Vinay Jaiswal - Jul 31, 2023
+- [Navigating the MySQL Wire-Compatible Database Landscape Overview](https://medium.com/@shenli3514/the-landscape-of-mysql-wire-compatible-database-c7d1838f79ef) by Li Shen - May 24, 2023
+- [Achieving end to end Database management with PERCONA XtraDB cluster ](https://sigmoidanalytics.medium.com/achieving-end-to-end-database-management-with-percona-xtradb-cluster-53163f8d675c) by Sigmoid, May 16, 2023
 - [Percona Streaming Backup](https://blog.min.io/percona-streaming-backup/) - AJ on DevOps - October 17, 2023
 - [XtraDB Cluster 5.7 (MySQL)](https://linuxquery.com/index.php/2023/09/07/xtradb-cluster-5-7-mysql/) - Meenakshi - September 7, 2023
 - [Percona MySQL Encryption - Part 1](https://www.linkedin.com/pulse/percona-mysql-encryption-part-1-umair-hassan/) - Umair Hassan - December 31, 2022
 - [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
+- [Boosting Database Performance with MySQL Indexing: Unraveling the Magic Behind Efficient Queries](https://blog.devgenius.io/boosting-database-performance-with-mysql-indexing-unraveling-the-magic-behind-efficient-queries-7de3caed0e06) by Rishabh Gupta, Jul 27, 2023
+- [3 ways to speed backups of MySQL](https://medium.com/@fabriciojorge/3-ways-to-speed-backups-of-mysql-609f40ac46f2) by Fabricio Pedroso Jorge - Jun 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
 - [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
 - [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
 - [Achieving end to end Database management with PERCONA XtraDB cluster](https://www.sigmoid.com/blogs/achieving-end-to-end-database-management-with-percona-xtradb-cluster/) - Akansha Immanuel - May 18, 2023
 - [If you don't brush and floss, you're gonna get an abscess – same with MySQL updates](https://www.theregister.com/2023/05/11/mysql_5_7_support/) - Lindsay Clark - May 11, 2023
-- [MySQL and Planning For End of Life - What Do You Need to Know?](https://devm.io/databases/mysql-update-eol) - Dave Stokes - March, 2023 
+- [MySQL and Planning For End of Life - What Do You Need to Know?](https://devm.io/databases/mysql-update-eol) - Dave Stokes - March, 2023
+- [MySQL Incremental Backup & Restore Part-I](https://solutionamardba.medium.com/mysql-incremental-backup-restore-part-i-3c49ba28e1be)by solutionamardba - Jan 17, 2023
 - [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - December 12, 2022
 - [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
-- [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) -  Tibor Köröcz and Francisco Bordenave - November 7, 2022
+- [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) - Tibor Köröcz and Francisco Bordenave - November 7, 2022
 - [MySQL/MariaDB Database Performance Monitoring with Percona on Ubuntu Server](https://www.linuxbabe.com/ubuntu/mysql-mariadb-database-performance-monitoring-percona) - Xiao Guoan - October 20, 2022
 - [Backing Up MySQL Part 2: Percona XtraBackup](https://www.red-gate.com/simple-talk/blogs/backing-up-mysql-part-2-percona-xtrabackup/) - Lukas Vileikis - November 16, 2022
 - [Deploy and Manage Percona XtraDB in Amazon Elastic Kubernetes Service (Amazon EKS) Using KubeDB](https://blog.byte.builders/post/deploy-and-manage-percona-in-aws/) - Dipta Roy - November 17, 2022
@@ -64,6 +75,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [Running Percona Backup for MongoDB with Docker](https://dev.to/mattdark/running-percona-backup-for-mongodb-with-docker-ep4) - Mario García (@mariogmd) - December 27, 2023
+- [Percona backup for MongoDB](https://blog.thecloudside.com/percona-backup-for-mongodb-75b34501f1cd) by Writtick Sengupta - July 7, 2023
 - [10 Best Practices for Every MongoDB Deployment](https://www.infoworld.com/article/3691136/10-best-practices-for-every-mongodb-database.html) - Zelmar Michelini - April 5, 2023
 - [Percona Backup for MongoDB Docker](https://bobcares.com/blog/percona-backup-for-mongodb-docker/) - Amritha V - December 29, 2022
 - [Migrating MongoDB to Kubernetes](https://dok.community/blog/migrating-mongodb-to-kubernetes/) - Sergey Pronin - December 10, 2022
@@ -77,10 +90,12 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
+- [Monitor Databases with Percona Monitoring and Management](https://medium.com/@sambasiva1112/monitor-databases-with-percona-monitoring-and-management-738eeaa57135) by Samba Shiva, July 9, 2023
+
 - [Optimizing the databases at Quora](https://quoraengineering.quora.com/Optimizing-the-databases-at-Quora) - Vamsi Ponnekanti - March 1, 2023
 - [3 Ways To Set Up A PMM Server](https://www.hostedpmm.com/3-ways-to-set-up-a-pmm-server/) - Cloudpress - January 16, 2023
-- [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March  7, 2023
-- [How To Set Up Alerts Using PMM](https://www.hostedpmm.com/how-to-set-up-alerts-using-pmm/) - Stanislav Levchenko - March  7, 2023
+- [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March 7, 2023
+- [How To Set Up Alerts Using PMM](https://www.hostedpmm.com/how-to-set-up-alerts-using-pmm/) - Stanislav Levchenko - March 7, 2023
 - [How to deploy the Percona database performance monitor with Docker](https://www.techrepublic.com/article/how-to-deploy-percona-docker/) - Jack Wallen - February 24, 2023
 - [Monitoring With - Percona Monitoring and Management](https://blogsbyrishav.ml/monitoring-with-percona-monitoring-and-management) - Rishav Mehra - February 12, 2023
 - [Perconal Monitoring With Postgres Docker on Local Environment](https://dev.to/vuong/perconal-monitoring-with-postgres-docker-on-local-environment-24op) - Vuong - October 2, 2022
@@ -104,6 +119,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 - [There are lots of ways to put a database in the cloud – here's what to consider](https://www.theregister.com/2023/09/15/cloud_database_dilemmas/) - Lindsay Clark - September 15, 2023
 - [Civo Navigate charts further Kubernetes ecosystem progress](https://www.computerweekly.com/blog/Open-Source-Insider/Civo-Navigate-charts-further-Kubernetes-ecosystem-progress) - Adrian Bridgwater - August 18, 2023
+
+- [A Drop in the Sea: Running Drupal on Kubernetes](https://medium.com/@Initlab/a-drop-in-the-sea-running-drupal-on-kubernetes-ce4a56ae2ae0) by Initlab - Aug 8, 2023
 - [The Business Value of Running Databases on Kubernetes ](https://www.odbms.org/2023/08/the-business-value-of-running-databases-on-kubernetes/) - Sergey Pronin - August 23, 2023
 - [Multi-cluster databases with Sergey Pronin](https://podcasters.spotify.com/pod/show/madhuri-yechuri/episodes/Multi-cluster-databases-with-Sergey-Pronin-e2747dj?%24web_only=true&_branch_match_id=1069334716792630316&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9VPsyz1M07LLqt0SgIAhGbATDAAAAA%3D) - Madhuri Yechuri - July 19, 2023
 - [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19, 2023
@@ -123,25 +140,27 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Other
 
+- [Benchmark databases in Docker: MySQL, PostgreSQL, SQL Server Plus MariaDB, Percona and TimescaleDB](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) by Petr Jahoda -
+  Jan 7, 2021
 - [Navigating the Evolving Landscape of Cloud Database-as-a-Service (DBaaS) in 2024](https://vmblog.com/archive/2023/12/14/percona-2024-predictions-navigating-the-evolving-landscape-of-cloud-database-as-a-service-dbaas-in-2024.aspx) - Aleksandra Mitroshkina, VMblog.com - December 14, 2023
 - [Is DevOps dying as a discipline?](https://www.thestack.technology/is-devops-dying-as-a-discipline/?ref=the-stack-newsletter) - The Stack - November 29, 2023
 - [Heard on the Street – 11/27/2023](https://insidebigdata.com/2023/11/27/heard-on-the-street-11-27-2023/) - Daniel Gutierrez, InsideBIGDATA - November 27, 2023
 - [More Than a Refresh - Episode 39: Dave Stokes, Technology Evangelist @ Percona](https://www.commandprompt.com/about/more-than-a-refresh/#episode-39-dave-stokes-technology-evangelist-percona) - November 16 2023
 - [Attending Percona University in Athens 2023](https://mariadb.org/attending-percona-university-in-athens-2023/) - Vicențiu Ciorbaru, MariaDB Foundation - November 11, 2023
-- [License to thrill BSL refuseniks? Sentry introduces Functional Source License](https://www.theregister.com/2023/11/20/sentry_introduces_the_functional_source/) - Richard Speed, The Register - November 20, 2023 
+- [License to thrill BSL refuseniks? Sentry introduces Functional Source License](https://www.theregister.com/2023/11/20/sentry_introduces_the_functional_source/) - Richard Speed, The Register - November 20, 2023
 - [How To Create A Profitable Open-Source Company Without Venture Capital](https://www.forbes.com/sites/forbesbusinesscouncil/2023/11/08/how-to-create-a-profitable-open-source-company-without-venture-capital/?sh=256c893892a3) - Ann Schlemmer, Percona - November 8, 2023
 - [Vector databases in LLMs and search](https://www.infoworld.com/article/3709912/vector-databases-in-llms-and-search.html) - Isaac Sacolick, InfoWorld - November 6, 2023
 - [Safeguarding Your Data – How to Harden Your Systems](https://openssf.org/blog/2023/10/30/safeguarding-your-data-how-to-harden-your-systems/) - Sonia Valeja and Michal Nosek, Percona - October 30, 2023
 - [How much is enough to support those who maintain open source?](https://www.computerweekly.com/news/366557073/How-much-is-enough-to-support-those-who-maintain-open-source) - Cliff Saran, ComputerWeekly.com - October 31, 2023
 - [Linux Foundation Adopting Terraform Fork Provokes Ire of HashiCorp CEO](https://thenewstack.io/linux-foundation-adopting-terraform-fork-provokes-ire-of-hashicorp-ceo/) - Steven J. Vaughan-Nichols, The New Stack - October 25th, 2025
 - [Can Gen AI Tune The Database Or Create Better Queries?] - Swapnil Bhartiya and Emily Nicholls, TFiR: Let’s Talk About AI - October 20th, 2023
-- [What Software License is Better - BSL, Source Available or Open Core?](https://devm.io/open-source/software-licenses-bsl-open-core) - Peter Zaitsev, Percona - - October 4th, 2023  
-- [Open Source Fights Back: OpenTofu Is the Entrée We Need](https://thenewstack.io/open-source-fights-back-opentofu-is-the-entree-we-need/) - Joe Brockmeier, Percona - October 5th, 2023 
+- [What Software License is Better - BSL, Source Available or Open Core?](https://devm.io/open-source/software-licenses-bsl-open-core) - Peter Zaitsev, Percona - - October 4th, 2023
+- [Open Source Fights Back: OpenTofu Is the Entrée We Need](https://thenewstack.io/open-source-fights-back-opentofu-is-the-entree-we-need/) - Joe Brockmeier, Percona - October 5th, 2023
 - [Software License Changes and Contributors - What You Need to Know?](https://hackernoon.com/software-license-changes-and-contributors-what-you-need-to-know) - Peter Zaotsev, Percona - September 20, 2023
 - [20 Best MySQL Blogs and Websites](https://blog.feedspot.com/mysql_blogs/) - FeedSpot - September 21, 2023
 - [How to choose the right storage medium for your organization’s backup strategy](https://www.itpro.com/infrastructure/backup/how-to-choose-the-right-storage-medium-for-your-organizations-backup-strategy) - David Howell, ITPro - September 29, 2023
 - [Open source can't win: Complacency has its price](https://www.computing.co.uk/opinion/4124530/open-source-win-complacency-price) - Joe Brockmeier, Percona - September 12, 2023
-- [Onboarding remote employees doesn't have to be hard](https://www.computerworld.com/article/3706448/onboarding-remote-employees-doesnt-have-to-be-hard.html) -  Steven J. Vaughan-Nichols, Computerworld - September 12, 2023
+- [Onboarding remote employees doesn't have to be hard](https://www.computerworld.com/article/3706448/onboarding-remote-employees-doesnt-have-to-be-hard.html) - Steven J. Vaughan-Nichols, Computerworld - September 12, 2023
 - [Server storage snafu stuffs up supernational supply chain](https://www.thestack.technology/toyota-factories-outage-server-storage-oops/) - Ed Targett - September 7, 202
 - [Your Data is Critical - Do You Have the Right Strategy in Place for Resilience](https://technative.io/data-critical-right-strategy-resilience/) - Charly Batista - September, 2023
 - [EU Cyber Resilience Act antagonises, troubles open-source sector](https://www.thestack.technology/eu-cyber-resilience-bill-frustrates-the-opensource-sector/) - Azania Imitaz Patel - September 4, 2023
@@ -150,7 +169,7 @@ Thank you to users of our products, customers, communities, and authors for your
 - [The 13-Types Of Ops](https://www.forbes.com/sites/adrianbridgwater/2023/08/18/the-13-types-of-ops/) - Adrian Bridgwater - August 18, 2023
 - [What is the EU’s Cyber Resilience Act (CRA)?](https://www.itpro.com/business/policy-and-legislation/what-is-the-eus-cyber-resilience-act-cra) - Kate O'Flaherty - August 18, 2023
 - [Analysis: HashiCorp prioritizes its business with BSL license switch, but community upset cannot be ignored](https://www.itpro.com/software/open-source/analysis-hashicorp-prioritizes-its-business-with-bsl-license-switch-but-community-upset-cannot-be-ignored) - Richard Speed, ITPro - August 14, 2023
-- [Open Source Software Maintainers and Organizations in Conflict](https://techstrong.tv/videos/interviews/open-source-software-maintainers-and-organizations-in-conflict-joe-brockmeier-percona) -  Mike Vizard, Techstrong - August 3, 2023
+- [Open Source Software Maintainers and Organizations in Conflict](https://techstrong.tv/videos/interviews/open-source-software-maintainers-and-organizations-in-conflict-joe-brockmeier-percona) - Mike Vizard, Techstrong - August 3, 2023
 - [What Is The Role Of Open Source During Economic Downturns?](https://www.forbes.com/sites/forbesbusinesscouncil/2023/07/31/what-is-the-role-of-open-source-during-economic-downturns/) - Ann Schlemmer - July 31, 2023
 - [Bad News for Open Source: EU Committee Approves the Cyber Resilience Act](https://fossforce.com/2023/07/bad-news-for-open-source-eu-committee-approves-the-cyber-resilience-act/) - Christine Hall - July 21, 2023
 - [EU Cyber Resilence Act moves to next stage, “impending tragedy” for open source?](https://devclass.com/2023/07/21/eu-cyber-resilence-act-moves-to-next-stage-impending-tragedy-for-open-source/) - Tim Anderson - July 21, 2023
