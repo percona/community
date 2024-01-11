@@ -55,6 +55,8 @@ Our goal as a community is to develop a fully automated solution to prevent thes
 
 We invite those interested, especially in this particular project, to join us. This is an opportunity to be at the forefront of shaping the automated scaling solutions in Kubernetes. You can join the [Data on Kubernetes community](https://join.slack.com/t/dokcommunity/shared_invite/zt-2a0ahuhsh-MdZ4OpF4nr_s4kyOwTurVw) on Slack, specifically on the #SIG-Operator.
 
-**Once a new solution is validated and proven functional, it will benefit many communities, enabling them to integrate it with their operators. Additionally, it will present an excellent opportunity for Percona to incorporate it into our Operators, enhancing efficiency and facilitating automated storage scaling.**
+## Final Thoughts
 
-Explore more about our open-source [Percona Kubernetes Operators for databases](https://www.percona.com/software/percona-kubernetes-operators).
+Once a new solution is validated and proven functional, it will benefit many communities, enabling them to integrate it with their operators. Additionally, it will present an excellent opportunity for Percona to incorporate it into our Operators, enhancing efficiency and facilitating automated storage scaling.
+
+Are you interested in understanding Storage Autoscaling in databases? Explore our detailed example of [Storage Autoscaling using the Percona Operator for MongoDB](https://www.percona.com/blog/storage-autoscaling-with-percona-operator-for-mongodb/). For questions or discussions, feel free to join our experts on the [Percona Community Forum](https://forums.percona.com/)
