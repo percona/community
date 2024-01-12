@@ -51,12 +51,20 @@ As you can see, there are some limitations to performing Automated storage scali
 
 We're tackling the significant challenge of unexpected disk usage alerts and potential system shutdowns due to insufficient volume space, a common issue in Kubernetes-based databases.
 
-Our goal as a community is to develop a fully automated solution to prevent these inconveniences and failures.
+## Possible Solutions
 
-We invite those interested, especially in this particular project, to join us. This is an opportunity to be at the forefront of shaping the automated scaling solutions in Kubernetes. You can join the [Data on Kubernetes community](https://join.slack.com/t/dokcommunity/shared_invite/zt-2a0ahuhsh-MdZ4OpF4nr_s4kyOwTurVw) on Slack, specifically on the #SIG-Operator.
+The following possible solutions were proposed:
+
+1. Operators must be capable of changing the storage size when Custom Resource is changed.
+2. Operators must create resources following certain standards, like applying annotations with indications of which fields should be changed
+3. 3rd party component (Scaler) will take care of monitoring the storage consumption and changing the field in the CR of the DB
+
+Our goal as a community is to develop a fully automated solution to prevent these inconveniences and failures.
 
 ## Final Thoughts
 
 Once a new solution is validated and proven functional, it will benefit many communities, enabling them to integrate it with their operators. Additionally, it will present an excellent opportunity for Percona to incorporate it into our Operators, enhancing efficiency and facilitating automated storage scaling.
+
+We invite those interested, especially in this particular project, to join us. This is an opportunity to be at the forefront of shaping the automated scaling solutions in Kubernetes. You can join the [Data on Kubernetes community](https://join.slack.com/t/dokcommunity/shared_invite/zt-2a0ahuhsh-MdZ4OpF4nr_s4kyOwTurVw) on Slack, specifically on the #SIG-Operator.
 
 Are you interested in understanding Storage Autoscaling in databases? Explore our detailed example of [Storage Autoscaling using the Percona Operator for MongoDB](https://www.percona.com/blog/storage-autoscaling-with-percona-operator-for-mongodb/). For questions or discussions, feel free to join our experts on the [Percona Community Forum](https://forums.percona.com/)
