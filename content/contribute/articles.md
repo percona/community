@@ -7,27 +7,27 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MySQL
 
-- [MySQL Master-Master Replication Error: “Error Connecting to Master” Error 2003](https://medium.com/@fixitblog/solved-mysql-master-master-replication-error-quot-error-connecting-to-master-quot-error-2003-fcc1c9fb1324) by Ted James - Dec 22, 2023
-- [Detecting unutilized indexes in MySQL](https://samuel-wekesa.medium.com/detecting-unutilized-indexes-in-mysql-a4054aa71477) by Samuel N Wekesa - Sep 12, 2023
-- [MYSQL Database Backup Using Percona XtraBackup](https://blog.devgenius.io/mysql-database-backup-using-percona-xtrabackup-59c251d0bfd0) by Mohamad Mahmood - Oct 26, 2023
-
-- [How to use pt-mysql-summary to understand your MySQL database server better?](https://blog.fourninecloud.com/how-to-use-pt-mysql-summary-to-understand-your-mysql-database-server-better-124f3c4f920b) by Virinchi T - Oct 10, 2023
-- [SMS: Schema Migration Solution for MySQL](https://medium.com/@jaiswalvinny9/sms-a-schema-migration-solution-for-mysql-with-tungsten-clustering-a7dd40f1c127) with Tungsten Clustering by Vinay Jaiswal - Jul 31, 2023
-- [Navigating the MySQL Wire-Compatible Database Landscape Overview](https://medium.com/@shenli3514/the-landscape-of-mysql-wire-compatible-database-c7d1838f79ef) by Li Shen - May 24, 2023
-- [Achieving end to end Database management with PERCONA XtraDB cluster ](https://sigmoidanalytics.medium.com/achieving-end-to-end-database-management-with-percona-xtradb-cluster-53163f8d675c) by Sigmoid, May 16, 2023
+- [How to perform compressed back of InnoDB Cluster?](https://dev.to/shiviyer/how-to-perform-compressed-back-of-innodb-cluster-3d7e) - Shiv Iyer - January 6, 2024
+- [MySQL Master-Master Replication Error: “Error Connecting to Master” Error 2003](https://medium.com/@fixitblog/solved-mysql-master-master-replication-error-quot-error-connecting-to-master-quot-error-2003-fcc1c9fb1324) - Ted James - December 22, 2023
+- [Detecting unutilized indexes in MySQL](https://samuel-wekesa.medium.com/detecting-unutilized-indexes-in-mysql-a4054aa71477) - Samuel N Wekesa - September 12, 2023
+- [MYSQL Database Backup Using Percona XtraBackup](https://blog.devgenius.io/mysql-database-backup-using-percona-xtrabackup-59c251d0bfd0) - Mohamad Mahmood - October 26, 2023
+- [How to use pt-mysql-summary to understand your MySQL database server better?](https://blog.fourninecloud.com/how-to-use-pt-mysql-summary-to-understand-your-mysql-database-server-better-124f3c4f920b)  - Virinchi T - Oct 10, 2023
+- [SMS: Schema Migration Solution for MySQL](https://medium.com/@jaiswalvinny9/sms-a-schema-migration-solution-for-mysql-with-tungsten-clustering-a7dd40f1c127) -  Tungsten Clustering by Vinay Jaiswal - Jul 31, 2023
+- [Navigating the MySQL Wire-Compatible Database Landscape Overview](https://medium.com/@shenli3514/the-landscape-of-mysql-wire-compatible-database-c7d1838f79ef) - Li Shen - May 24, 2023
+- [Achieving end to end Database management with PERCONA XtraDB cluster](https://sigmoidanalytics.medium.com/achieving-end-to-end-database-management-with-percona-xtradb-cluster-53163f8d675c) -  Sigmoid - May 16, 2023
 - [Percona Streaming Backup](https://blog.min.io/percona-streaming-backup/) - AJ on DevOps - October 17, 2023
 - [XtraDB Cluster 5.7 (MySQL)](https://linuxquery.com/index.php/2023/09/07/xtradb-cluster-5-7-mysql/) - Meenakshi - September 7, 2023
 - [Percona MySQL Encryption - Part 1](https://www.linkedin.com/pulse/percona-mysql-encryption-part-1-umair-hassan/) - Umair Hassan - December 31, 2022
 - [The Five Best Books on MySQL](https://five.co/blog/the-five-best-books-on-mysql/) - Dominik Keller - April 10, 2023
-- [Boosting Database Performance with MySQL Indexing: Unraveling the Magic Behind Efficient Queries](https://blog.devgenius.io/boosting-database-performance-with-mysql-indexing-unraveling-the-magic-behind-efficient-queries-7de3caed0e06) by Rishabh Gupta, Jul 27, 2023
-- [3 ways to speed backups of MySQL](https://medium.com/@fabriciojorge/3-ways-to-speed-backups-of-mysql-609f40ac46f2) by Fabricio Pedroso Jorge - Jun 10, 2023
+- [Boosting Database Performance with MySQL Indexing: Unraveling the Magic Behind Efficient Queries](https://blog.devgenius.io/boosting-database-performance-with-mysql-indexing-unraveling-the-magic-behind-efficient-queries-7de3caed0e06) - Rishabh Gupta - Jul 27, 2023
+- [3 ways to speed backups of MySQL](https://medium.com/@fabriciojorge/3-ways-to-speed-backups-of-mysql-609f40ac46f2) - Fabricio Pedroso Jorge - Jun 10, 2023
 - [Update or migrate? Planning for MySQL 5.7 EOL](https://www.infoworld.com/article/3699117/update-or-migrate-planning-for-mysql-5-7-eol.html) - Dave Stokes - June 22, 2023
 - [Oracle Support for MySQL 5.7 Ends Soon, Key Upgrades in 8.0](https://thenewstack.io/oracle-support-for-mysql-5-7-ends-soon-key-upgrades-in-8-0/) - Jelani Harper - May 30, 2023
 - [Are you planning ahead for the MySQL 5.7 end of life? [Q&A]](https://betanews.com/2023/05/22/are-you-planning-ahead-for-the-mysql-5-7-end-of-life-qa/) - Ian Barker - May 22, 2023
 - [Achieving end to end Database management with PERCONA XtraDB cluster](https://www.sigmoid.com/blogs/achieving-end-to-end-database-management-with-percona-xtradb-cluster/) - Akansha Immanuel - May 18, 2023
 - [If you don't brush and floss, you're gonna get an abscess – same with MySQL updates](https://www.theregister.com/2023/05/11/mysql_5_7_support/) - Lindsay Clark - May 11, 2023
 - [MySQL and Planning For End of Life - What Do You Need to Know?](https://devm.io/databases/mysql-update-eol) - Dave Stokes - March, 2023
-- [MySQL Incremental Backup & Restore Part-I](https://solutionamardba.medium.com/mysql-incremental-backup-restore-part-i-3c49ba28e1be)by solutionamardba - Jan 17, 2023
+- [MySQL Incremental Backup & Restore Part-I](https://solutionamardba.medium.com/mysql-incremental-backup-restore-part-i-3c49ba28e1be) - solutionamardba - Jan 17, 2023
 - [How to Backup Mysql Databases on Amazon RDS](https://dev.to/sudoconsultants/how-to-backup-mysql-databases-on-amazon-rds-1bo4) - Sidra Saleem - December 12, 2022
 - [MySQL Security Best Practices: a Checklist](https://dev.to/breachdirectory/mysql-security-best-practices-a-checklist-54g9) - BreachDirectory - November 12, 2022
 - [10 More Essential MySQL Performance Tuning Tips](https://www.infoworld.com/article/3675552/10-more-essential-mysql-performance-tuning-tips.html) - Tibor Köröcz and Francisco Bordenave - November 7, 2022
@@ -75,6 +75,7 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # MongoDB
 
+- [Cost savings by migrating from MongoDB on Atlas to Self-Managed](https://klouddb.io/case-study-on-running-mongodb-on-atlas-v-s-self-managed/) - KloudDB Nivas - November 4, 2023
 - [Running Percona Backup for MongoDB with Docker](https://dev.to/mattdark/running-percona-backup-for-mongodb-with-docker-ep4) - Mario García (@mariogmd) - December 27, 2023
 - [Percona backup for MongoDB](https://blog.thecloudside.com/percona-backup-for-mongodb-75b34501f1cd) by Writtick Sengupta - July 7, 2023
 - [10 Best Practices for Every MongoDB Deployment](https://www.infoworld.com/article/3691136/10-best-practices-for-every-mongodb-database.html) - Zelmar Michelini - April 5, 2023
@@ -90,8 +91,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # PMM
 
-- [Monitor Databases with Percona Monitoring and Management](https://medium.com/@sambasiva1112/monitor-databases-with-percona-monitoring-and-management-738eeaa57135) by Samba Shiva, July 9, 2023
-
+- [Efficient Dockerized Database Monitoring with Dockerized PMM](https://hackernoon.com/efficient-dockerized-database-monitoring-with-dockerized-pmm) by David E. @sagekage - July 31, 2023
+- [Monitor Databases with Percona Monitoring and Management](https://medium.com/@sambasiva1112/monitor-databases-with-percona-monitoring-and-management-738eeaa57135) by Samba Shiva - July 9, 2023
 - [Optimizing the databases at Quora](https://quoraengineering.quora.com/Optimizing-the-databases-at-Quora) - Vamsi Ponnekanti - March 1, 2023
 - [3 Ways To Set Up A PMM Server](https://www.hostedpmm.com/3-ways-to-set-up-a-pmm-server/) - Cloudpress - January 16, 2023
 - [DB Performance Troubleshooting Workflow Using Percona PMM](https://www.hostedpmm.com/db-performance-troubleshooting-workflow-using-percona-pmm/) - - Stanislav Levchenko - March 7, 2023
@@ -120,7 +121,7 @@ Thank you to users of our products, customers, communities, and authors for your
 - [There are lots of ways to put a database in the cloud – here's what to consider](https://www.theregister.com/2023/09/15/cloud_database_dilemmas/) - Lindsay Clark - September 15, 2023
 - [Civo Navigate charts further Kubernetes ecosystem progress](https://www.computerweekly.com/blog/Open-Source-Insider/Civo-Navigate-charts-further-Kubernetes-ecosystem-progress) - Adrian Bridgwater - August 18, 2023
 
-- [A Drop in the Sea: Running Drupal on Kubernetes](https://medium.com/@Initlab/a-drop-in-the-sea-running-drupal-on-kubernetes-ce4a56ae2ae0) by Initlab - Aug 8, 2023
+- [A Drop in the Sea: Running Drupal on Kubernetes](https://medium.com/@Initlab/a-drop-in-the-sea-running-drupal-on-kubernetes-ce4a56ae2ae0) - Initlab - Aug 8, 2023
 - [The Business Value of Running Databases on Kubernetes ](https://www.odbms.org/2023/08/the-business-value-of-running-databases-on-kubernetes/) - Sergey Pronin - August 23, 2023
 - [Multi-cluster databases with Sergey Pronin](https://podcasters.spotify.com/pod/show/madhuri-yechuri/episodes/Multi-cluster-databases-with-Sergey-Pronin-e2747dj?%24web_only=true&_branch_match_id=1069334716792630316&utm_source=web&utm_campaign=web-share&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq0zMS87IL9ItT03SSywo0MvJzMvWT9VPsyz1M07LLqt0SgIAhGbATDAAAAA%3D) - Madhuri Yechuri - July 19, 2023
 - [Databases on Kubernetes - Support Your Cloud Native Strategy With Open Source Kubernetes Operators](https://betanews.com/2023/04/19/databases-on-kubernetes/) - Sergey Pronin - April 19, 2023
