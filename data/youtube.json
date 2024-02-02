@@ -1,6 +1,36 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "GAmNeVGjvtU",
+    "title": "Desplegando MySQL en Kubernetes con XtraDB Cluster Percona",
+    "date": "January 10, 2024",
+    "authors": "José Manuel"
+  },
+  {
+    "youtube_id": "-_JK5AFCc_w",
+    "title": "Omnistrate Demo on MySQL with Percona monitoring and management",
+    "date": "January 10, 2024",
+    "authors": "Omnistrate"
+  },
+  {
+    "youtube_id": "4km0_52r9SI",
+    "title": "Percona Cluster",
+    "date": "January 10, 2024",
+    "authors": "Clive Gwyther"
+  },
+  {
+    "youtube_id": "Fxq2MVwv-pM",
+    "title": "Operadores de Kubernetes 101 - Edith Puclla, Percona",
+    "date": "February 1, 2024",
+    "authors": "Edith Puclla (Percona)"
+  },
+  {
+    "youtube_id": "Z1hj5Herj8c",
+    "title": "Minio和Percona Xtrabackup打造高效备份与存储解决方案",
+    "date": "January 27, 2024",
+    "authors": "DBA_RP.S"
+  },
+  {
     "youtube_id": "jDfQ6Lqn6qw",
     "title": "Percona XtraDB Cluster | Installation | Configuration | Galera cluster | MySQL | Tutorial | Part 1",
     "date": "September 10, 2023",
@@ -297,6 +327,12 @@
   }],
 
   "Events":[
+  {
+    "youtube_id": "sRqvb1JK2fw",
+    "title": "DoKC Town Hall: Ecosystem Day",
+    "date": "January 18, 2024",
+    "authors": "Edith Puclla (Percona)"
+  },
   {
     "youtube_id": "mbL1NmGtvVU",
     "title": "Meet Magento UK 2023 - How To Monitor The Performance Of A Magento Instance",
