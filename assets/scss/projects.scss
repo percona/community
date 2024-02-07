@@ -1,1 +1,191 @@
 @import "common/common";
+
+.wide {
+
+    hr {
+        margin-top: 0;
+        height: 1px;
+        background: #e8ecf3;
+    }
+
+    .branded {
+        margin-top: 4rem;
+        @media screen and (max-width: 760px) {
+            margin-top: 2rem;
+        }
+    }
+
+    .section {
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        @media screen and (max-width: 760px) {
+            padding-left: 2rem;
+            padding-right: 2rem; 
+        }
+    }
+
+    .grid {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .section__text {
+        max-width: 1200px;
+        margin: auto;
+
+        p {
+            line-height: 2rem !important;
+        }
+
+        @media screen and (max-width: 760px) {
+            padding-left: 2rem;
+            padding-right: 2rem; 
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+
+            .button__second {
+                margin-top: 40px;
+            }
+        }
+ 
+    }
+
+    .block_left {
+        padding-top: 0rem;
+
+        @media screen and (max-width: 760px) {
+            padding-top: 0rem;
+        }
+
+    }
+
+    .block_right {
+
+        padding-top: 0rem;
+
+        @media screen and (max-width: 760px) {
+            padding-top: 0rem;
+        }
+    }
+
+    .intro figure{
+        text-align: left;
+    }
+
+    .intro img {
+        display: inline;
+        width: 400px;
+        padding-top: 30px;
+        padding-bottom: 30px;      
+    }
+
+    .img-wide img {
+        max-width: 90%;
+    }
+
+    .img-small img {
+        max-width: 40%;
+    }
+
+    @media screen and (max-width: 760px) {
+        .img-wide img {
+            max-width: 100%;
+        }
+
+        .img-small img {
+            max-width: 70%;
+        }
+    }
+
+    .gray {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: #f5f2f2;
+    }
+
+    .highlight {
+
+    }
+
+    .text p, .text ul, .text ol, .text figure, .text dl, .text hr {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        hyphens: manual !important;
+    }
+
+
+    .buttons {
+        padding-top: 40px;
+        min-height: 60px;
+
+        @media screen and (max-width: 760px) {
+            padding-top: 0px;
+        }
+    }
+
+    .intro .buttons {
+        min-height: 110px;
+    }
+
+    .section__text .buttons {
+        @media screen and (max-width: 760px) {
+            min-height: 100px;
+        }  
+    }
+
+    .button__main, .button__second {
+        float: left;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        a {
+            font-size: 1rem;
+            font-weight: 700!important;
+            text-transform: uppercase!important;
+            padding-top: 20px!important;
+            padding-right: 26px!important;
+            padding-bottom: 20px!important;
+            padding-left: 26px!important;  
+            border: 2px solid; 
+            border-radius: 100px;
+        }
+
+        a:hover {
+            background-color: #fef7eb !important;   
+        }
+
+        @media screen and (max-width: 760px) {
+            a {
+                font-size: 0.75rem;
+                padding-top: 10px!important;
+                padding-right: 16px!important;
+                padding-bottom: 10px!important;
+                padding-left: 16px!important;  
+            }
+        }
+    }
+
+    .button__main {
+        a {
+            color: #00162B!important;
+            border-width: 1px!important;
+            border-color: #f0b336;
+            background-color: #f0b336;
+        }
+    }
+
+    .button__second {
+        a {
+            color: #00162B!important;
+            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+}
