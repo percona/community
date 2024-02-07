@@ -6,7 +6,7 @@ layout: everest
 hero_description: "How can you help?"
 hero_title: "Percona Everest (Alpha)"
 images:
-- images/everest/cover.png
+- images/everest/cover.jpg
 ---
 
 {{% wrapper class="section" %}}
