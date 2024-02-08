@@ -99,7 +99,7 @@ Effortlessly create, scale, back up, and restore databases without the hassle of
 
 The Everestctl CLI tool ensures a simplified installation by deploying all necessary components in your Kubernetes cluster. Simply select the desired namespace and databases, and you're all set up.
 
-*Percona Everest does not supply a Kubernetes cluster; you'll need to use your own for the deployment*.
+*Percona Everest does not supply a Kubernetes cluster; you'll need to use your own for the deployment. [Prerequisites](https://docs.percona.com/everest/quickstart-guide/qs-prerequisites.html)*.
 
 {{% /wrapper %}}
 {{% /griditem %}}
@@ -238,7 +238,7 @@ Customize your infrastructure to meet your application's evolving demands, lever
 Exercise precise control over your database environment with advanced configuration features.
 
 <div class="buttons">
-{{% button-second link="https://docs.percona.com/everest/index.html" %}}Explore documentation{{% /button-second %}}
+{{% button-second link="https://docs.percona.com/everest/configure/db_engine_config.html" %}}Explore documentation{{% /button-second %}}
 </div>
 
 {{% /wrapper %}}

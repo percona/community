@@ -1,6 +1,12 @@
 {
   "Tutorials":[
   {
+    "youtube_id": "DU0B4KS2CmM",
+    "title": "What is a Database Kubernetes Operator?",
+    "date": "February 4, 2024",
+    "authors": "Inel Pandzic (Percona)"
+  },
+  {
     "youtube_id": "GAmNeVGjvtU",
     "title": "Desplegando MySQL en Kubernetes con XtraDB Cluster Percona",
     "date": "January 10, 2024",
@@ -338,6 +344,12 @@
     "title": "Meet Magento UK 2023 - How To Monitor The Performance Of A Magento Instance",
     "date": "October 25, 2023",
     "authors": "Alin Alexandru, Innobyte.com"
+  },
+  {
+    "youtube_id": "sK5tUmNvxmo",
+    "title": "stackconf 2023 | Database Infrastructure with Open Source Kubernetes Database Operators",
+    "date": "October 10, 2023",
+    "authors": "Inel Pandzic (Percona)"
   },
   {
     "youtube_id": "G4qkCPdV56M",

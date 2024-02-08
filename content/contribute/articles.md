@@ -5,6 +5,8 @@ description: "We collect links to articles that are written on various resources
 
 Thank you to users of our products, customers, communities, and authors for your research, studies, reviews, and articles. If you wrote a post abour Percona product, feel free to add it on this page with the **Edit this page on GitHub** button below. We would love to see it and send you a piece of Swag!
 
+Tags: [MySQL](#mysql), [PostgreSQL](#postgresql), [MongoDB](#mongodb), [PMM](#pmm), [Kubernetes](#kubernetes), [Percona Everest](#percona-everest), [Working at Percona](#working-at-percona), [Other](#other)
+
 # MySQL
 
 - [How to perform compressed back of InnoDB Cluster?](https://dev.to/shiviyer/how-to-perform-compressed-back-of-innodb-cluster-3d7e) - Shiv Iyer - January 6, 2024
@@ -118,6 +120,8 @@ Thank you to users of our products, customers, communities, and authors for your
 
 # Kubernetes
 
+- [What is a Database Kubernetes Operator?](https://inelpandzic.com/videos/what-is-a-database-kubernetes-operator/) - Inel Pandzic (Percona) - February 4, 2024
+- [Database Infrastructure with Open Source Kubernetes Operators](https://inelpandzic.com/articles/database-infrastructure-with-open-source-kubernetes-operators/) - Inel Pandzic (Percona) - October 10, 2023
 - [There are lots of ways to put a database in the cloud – here's what to consider](https://www.theregister.com/2023/09/15/cloud_database_dilemmas/) - Lindsay Clark - September 15, 2023
 - [Civo Navigate charts further Kubernetes ecosystem progress](https://www.computerweekly.com/blog/Open-Source-Insider/Civo-Navigate-charts-further-Kubernetes-ecosystem-progress) - Adrian Bridgwater - August 18, 2023
 
