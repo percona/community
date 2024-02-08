@@ -1,5 +1,15 @@
+<p>Tags: 
+{{ $len := (len .Site.Data.youtube) }}
+{{ $num := 1 }}
 {{ range $category, $list := .Site.Data.youtube }}
-<h2>{{ $category }}</h2>
+{{ $s := replace $category " " "-" }}
+<a href="#{{ $s }}">{{ $category }}</a>{{ if ne $num $len }}, {{ end }}
+{{ $num = add $num 1 }}
+{{end}}
+</p>
+{{ range $category, $list := .Site.Data.youtube }}
+{{ $s := replace $category " " "-" }}
+<h2 id="{{ $s }}">{{ $category }}</h2>
 {{ range $list }}
 <div class="youtubeList__container">
 <div class="youtubeList__img">
