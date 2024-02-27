@@ -1,10 +1,10 @@
 ---
-title: "Percona Everest  (Alpha)"
+title: "Percona Everest"
 description: "Check out Percona Everest - a cloud-native database platform to deploy and manage enterprise-grade PostgreSQL, MongoDB and MySQL database clusters."
 blog_tags: ["Everest","DBaaS","Kubernetes","Cloud","Operators"]
 layout: everest
 hero_description: "How can you help?"
-hero_title: "Percona Everest (Alpha)"
+hero_title: "Percona Everest"
 images:
 - images/everest/cover.jpg
 ---
@@ -16,7 +16,7 @@ images:
 
 ![Percona Everest Logo](/images/everest/Percona-Everest-Logo.png)
 
-Percona Everest is currently in Alpha. Be an early adopter and join us in driving its progress!
+Percona Everest is currently in Beta. Be an early adopter and join us in driving its progress!
 
 Your feedback is crucial to enhancing the software, and we highly value and rely on your input.
 
@@ -80,50 +80,6 @@ Effortlessly create, scale, back up, and restore databases without the hassle of
 {{% griditem %}}
 {{% wrapper class="img-wide" %}}
 ![Percona Everest Start](/images/everest/everest-07-2-start.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
-{{% /grid %}}
-
-<hr />
-
-{{% grid size=2 %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Install](/images/everest/everest-07-3-install.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="block_right" %}}
-
-### Streamlined installation with a single command
-
-The Everestctl CLI tool ensures a simplified installation by deploying all necessary components in your Kubernetes cluster. Simply select the desired namespace and databases, and you're all set up.
-
-*Percona Everest does not supply a Kubernetes cluster; you'll need to use your own for the deployment. [Prerequisites](https://docs.percona.com/everest/quickstart-guide/qs-prerequisites.html)*.
-
-{{% /wrapper %}}
-{{% /griditem %}}
-{{% /grid %}}
-
-<hr />
-
-{{% grid size=2 %}}
-{{% griditem %}}
-{{% wrapper class="block_left" %}}
-
-### Cloud-native application
-
-Everest installs inside the cluster, and harnesses Cloud-Native resources only.
-
-Database provisioning is facilitated through the installation of OLM and Percona Kubernetes Operators.
-
-[Quick install](https://docs.percona.com/everest/quickstart-guide/qs-overview.html)
-
-{{% /wrapper %}}
-{{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Cloud Native](/images/everest/everest-07-4-native.jpg)
 {{% /wrapper %}}
 {{% /griditem %}}
 {{% /grid %}}
@@ -245,6 +201,54 @@ Exercise precise control over your database environment with advanced configurat
 {{% /griditem %}}
 {{% /grid %}}
 
+
+<hr />
+
+{{% grid size=2 %}}
+{{% griditem %}}
+{{% wrapper class="block_right" %}}
+
+### Streamlined installation with a single command
+
+The Everestctl CLI tool ensures a simplified installation by deploying all necessary components in your Kubernetes cluster. Simply select the desired namespace and databases, and you're all set up.
+
+*Percona Everest does not supply a Kubernetes cluster; you'll need to use your own for the deployment. [Prerequisites](https://docs.percona.com/everest/quickstart-guide/qs-prerequisites.html)*.
+
+{{% /wrapper %}}
+{{% /griditem %}}
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Install](/images/everest/everest-07-3-install.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+{{% /grid %}}
+
+<hr />
+
+{{% grid size=2 %}}
+
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Cloud Native](/images/everest/everest-07-4-native.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+
+{{% griditem %}}
+{{% wrapper class="block_left" %}}
+
+### Cloud-native application
+
+Everest installs inside the cluster, and harnesses Cloud-Native resources only.
+
+Database provisioning is facilitated through the installation of OLM and [Percona Kubernetes Operators](https://www.percona.com/software/percona-operators).
+
+[Quick install](https://docs.percona.com/everest/quickstart-guide/qs-overview.html)
+
+{{% /wrapper %}}
+{{% /griditem %}}
+
+{{% /grid %}}
+
 {{% /wrapper %}}
 
 {{% wrapper class="introduction" %}}
@@ -324,7 +328,7 @@ PITR enables you to restore your database to a precise point in time, keeping it
 
 {{% grid size=2 %}}
 {{% griditem %}}
-{{% wrapper class="img-small" %}}
+{{% wrapper class="img-wide" %}}
 ![Percona Everest Management](/images/everest/everest-07-13-management.jpg)
 {{% /wrapper %}}
 {{% /griditem %}}
@@ -401,6 +405,7 @@ We look for early adopters and contributors to drive it forward - we need your f
 
 * [Guide how to make a contribution](https://docs.percona.com/everest/contribute.html)
 
+
 ### Share Feedback and Ask Your Questions on the Forum
 
 [Percona Forum - Percona Everest category](https://forums.percona.com/c/percona-everest/81)
@@ -413,7 +418,15 @@ If you need help or want to share something, email community-team@percona.com.
 
 ### Watch Percona Everest tutorials 
 
-[YouTube Playlist](https://www.youtube.com/playlist?list=PLWhC0zeznqkny4ehPTejdPwCnZ_RS3_Np)
+1. [Deploy a Kubernetes cluster on Amazon EKS](https://youtu.be/CmSGLg-TJgQ)
+2. [Install Percona Everest and provision a MongoDB cluster](https://youtu.be/EJeHTptcVZw)
+3. [Configure an S3 bucket and enable backups](https://youtu.be/xWo7WmdkcDU)
+4. [Install PMM and enable database monitoring](https://youtu.be/Xko8AAIxL-A)
+5. [Connect to MongoDB cluster created using Percona Everest](https://youtu.be/XtJSYnYOOCA)
+6. [Restore a MongoDB database from a backup](https://youtu.be/PovljEDSOyg)
+7. [Clear the test environment and remove the EKS cluster](https://youtu.be/dZD8IiXm-qU)
+
+[Full Playlist](https://www.youtube.com/playlist?list=PLWhC0zeznqklUaogWnSNMjutkVdi8TjYl)
 
 ### Contribute Code
 
