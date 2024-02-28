@@ -19,19 +19,21 @@
         padding-left: 4rem;
         padding-right: 4rem;
 
+        max-width: 1600px;
+        margin: 0 auto;
+
         @media screen and (max-width: 760px) {
             padding-left: 2rem;
             padding-right: 2rem; 
         }
-    }
 
-    .grid {
-        margin-bottom: 2rem;
-        margin-top: 2rem;
     }
 
     .section__text {
-        max-width: 1200px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        max-width: 1100px;
         margin: auto;
 
         p {
@@ -53,6 +55,17 @@
         }
  
     }
+
+    .section__padding {
+        padding-bottom: 2rem;
+    }
+
+    .grid {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+
 
     .block_left {
         padding-top: 0rem;
@@ -118,6 +131,15 @@
         hyphens: manual !important;
     }
 
+    .header__center h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 3rem;
+
+        @media screen and (max-width: 760px) {
+            font-size: 1.5rem;
+        }
+    }
 
     .buttons {
         padding-top: 40px;
@@ -142,6 +164,7 @@
         float: left;
         margin-right: 20px;
         margin-top: 20px;
+        margin-bottom: 20px;
 
         a {
             font-size: 1rem;
