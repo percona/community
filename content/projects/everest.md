@@ -49,7 +49,7 @@ Your databases will come pre-configured with optimal parameters and settings tai
 {{% /wrapper %}}
 {{% /wrapper %}}
 
-{{% wrapper class="section__text" %}}
+{{% wrapper class="section__text header__center section__padding" %}}
 
 ## Who is Percona Everest for?
 
@@ -59,11 +59,12 @@ Your databases will come pre-configured with optimal parameters and settings tai
 
 If you require highly available database clusters with multiple nodes in Kubernetes, Percona Everest is designed to meet your needs.
 
-## What is Percona Everest?
-
 {{% /wrapper %}}
+<hr />
 
-{{% wrapper class="section" %}}
+{{% wrapper class="section header__center section__padding" %}}
+
+## What is Percona Everest?
 
 {{% grid size=2 %}}
 {{% griditem %}}
