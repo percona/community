@@ -88,6 +88,13 @@ Effortlessly create, scale, back up, and restore databases without the hassle of
 <hr />
 
 {{% grid size=2 %}}
+
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Databases](/images/everest/everest-07-6-db.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+
 {{% griditem %}}
 {{% wrapper class="block_left" %}}
 
@@ -100,7 +107,7 @@ Create clusters of various open-source databases:
 
 Everest leverages Percona Operators to deploy Cloud-Native Percona Distributions.
 
-*You don't have to be a seasoned Kubernetes engineer; Everest streamlines the process of running databases in Kubernetes.*
+*You don't have to be a seasoned Kubernetes engineer; Percona Everest streamlines the process of running databases in Kubernetes.*
 
 <div class="buttons">
 {{% button-main link="https://docs.percona.com/everest/quickstart-guide/qs-overview.html" %}}INSTALL NOW{{% /button-main %}}
@@ -108,21 +115,13 @@ Everest leverages Percona Operators to deploy Cloud-Native Percona Distributions
 
 {{% /wrapper %}}
 {{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Databases](/images/everest/everest-07-6-db.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
+
 {{% /grid %}}
 
 <hr />
 
 {{% grid size=2 %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Storage Class](/images/everest/everest-07-7-storage-class.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
+
 {{% griditem %}}
 {{% wrapper class="block_right" %}}
 
@@ -134,11 +133,25 @@ Efficiently allocate resources to strike the right balance between optimal perfo
 
 {{% /wrapper %}}
 {{% /griditem %}}
+
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Storage Class](/images/everest/everest-07-7-storage-class.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+
 {{% /grid %}}
 
 <hr />
 
 {{% grid size=2 %}}
+
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Resources](/images/everest/everest-07-8-resources.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+
 {{% griditem %}}
 {{% wrapper class="block_left" %}}
 
@@ -151,21 +164,13 @@ Customize your infrastructure to meet your application's evolving demands, lever
 
 {{% /wrapper %}}
 {{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Resources](/images/everest/everest-07-8-resources.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
+
 {{% /grid %}}
 
 <hr />
 
 {{% grid size=2 %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Advanced Configuration](/images/everest/everest-07-9-advanced.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
+
 {{% griditem %}}
 {{% wrapper class="block_right" %}}
 
@@ -179,12 +184,26 @@ Exercise precise control over your database environment with advanced configurat
 
 {{% /wrapper %}}
 {{% /griditem %}}
+
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Advanced Configuration](/images/everest/everest-07-9-advanced.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+
 {{% /grid %}}
 
 
 <hr />
 
 {{% grid size=2 %}}
+
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Install](/images/everest/everest-07-3-install.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+
 {{% griditem %}}
 {{% wrapper class="block_right" %}}
 
@@ -196,22 +215,12 @@ The Everestctl CLI tool ensures a simplified installation by deploying all neces
 
 {{% /wrapper %}}
 {{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Install](/images/everest/everest-07-3-install.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
+
 {{% /grid %}}
 
 <hr />
 
 {{% grid size=2 %}}
-
-{{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Cloud Native](/images/everest/everest-07-4-native.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
 
 {{% griditem %}}
 {{% wrapper class="block_left" %}}
@@ -222,31 +231,19 @@ Everest installs inside the cluster, and harnesses Cloud-Native resources only.
 
 Database provisioning is facilitated through the installation of OLM and [Percona Kubernetes Operators](https://www.percona.com/software/percona-operators).
 
-[Quick install](https://docs.percona.com/everest/quickstart-guide/qs-overview.html)
+<div class="buttons">
+{{% button-second link="https://docs.percona.com/everest/quickstart-guide/qs-overview.html" %}}Quick install{{% /button-second %}}
+</div>
 
 {{% /wrapper %}}
 {{% /griditem %}}
-{{% /grid %}}
 
-<hr />
-
-{{% grid size=2 %}}
 {{% griditem %}}
 {{% wrapper class="img-wide" %}}
-![Percona Everest Login](/images/everest/everest-07-5-login.jpg)
+![Percona Everest Cloud Native](/images/everest/everest-07-4-native.jpg)
 {{% /wrapper %}}
 {{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="block_right" %}}
 
-### Immediate browser access
-
-*Upon installation, securely log into your provisioned Percona Everest instance using an authorization token.*
-
-*Ongoing development is underway for user and role management functionalities.*
-
-{{% /wrapper %}}
-{{% /griditem %}}
 {{% /grid %}}
 
 {{% /wrapper %}}
@@ -444,11 +441,11 @@ You can find Percona Everest code in these GitHub repositories:
 
 * [Percona Everest-CLI (everestctl)](https://github.com/percona/percona-everest-cli)
 
-* [Everest Operator](https://github.com/percona/everest-operator)
+* [Percona Everest Operator](https://github.com/percona/everest-operator)
 
-* [Everest Catalog](https://github.com/percona/everest-catalog)
+* [Percona Everest Catalog](https://github.com/percona/everest-catalog)
 
-* [Everest Docs](https://github.com/percona/everest-doc)
+* [Percona Everest Docs](https://github.com/percona/everest-doc)
 
 In repositories, you can find the detailed information on building and launching components. Also, you can report issues directly in repositories. 
 
