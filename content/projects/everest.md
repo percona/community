@@ -89,27 +89,6 @@ Effortlessly create, scale, back up, and restore databases without the hassle of
 
 {{% grid size=2 %}}
 {{% griditem %}}
-{{% wrapper class="img-wide" %}}
-![Percona Everest Login](/images/everest/everest-07-5-login.jpg)
-{{% /wrapper %}}
-{{% /griditem %}}
-{{% griditem %}}
-{{% wrapper class="block_right" %}}
-
-### Immediate browser access
-
-*Upon installation, securely log into your provisioned Everest instance using an authorization token.*
-
-*Ongoing development is underway for user and role management functionalities.*
-
-{{% /wrapper %}}
-{{% /griditem %}}
-{{% /grid %}}
-
-<hr />
-
-{{% grid size=2 %}}
-{{% griditem %}}
 {{% wrapper class="block_left" %}}
 
 ### Support for diverse database technologies
@@ -247,7 +226,27 @@ Database provisioning is facilitated through the installation of OLM and [Percon
 
 {{% /wrapper %}}
 {{% /griditem %}}
+{{% /grid %}}
 
+<hr />
+
+{{% grid size=2 %}}
+{{% griditem %}}
+{{% wrapper class="img-wide" %}}
+![Percona Everest Login](/images/everest/everest-07-5-login.jpg)
+{{% /wrapper %}}
+{{% /griditem %}}
+{{% griditem %}}
+{{% wrapper class="block_right" %}}
+
+### Immediate browser access
+
+*Upon installation, securely log into your provisioned Percona Everest instance using an authorization token.*
+
+*Ongoing development is underway for user and role management functionalities.*
+
+{{% /wrapper %}}
+{{% /griditem %}}
 {{% /grid %}}
 
 {{% /wrapper %}}
@@ -469,9 +468,9 @@ Percona Everest App is an application with a web interface. It consists of two m
 
 Also, Percona Everest uses:
 
-* Everest Operator that rely on underlying operators for deploying DB clusters of a given engine type.
+* Percona Everest Operator that rely on underlying operators for deploying DB clusters of a given engine type.
 
-* Everest Catalog - an internal tool for everestcli.
+* Percona Everest Catalog - an internal tool for everestcli.
 
 ![Percona Everest Kubernetes Native](/images/everest/everest-k8s-native.jpg)
 
