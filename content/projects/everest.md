@@ -3,7 +3,7 @@ title: "Percona Everest"
 description: "Check out Percona Everest - a cloud-native database platform to deploy and manage enterprise-grade PostgreSQL, MongoDB and MySQL database clusters."
 blog_tags: ["Everest","DBaaS","Kubernetes","Cloud","Operators"]
 layout: everest
-hero_description: "How can you help?"
+hero_description: "Check out Percona Everest - a cloud-native database platform to deploy and manage enterprise-grade PostgreSQL, MongoDB and MySQL database clusters."
 hero_title: "Percona Everest"
 images:
 - images/everest/cover.jpg
@@ -435,11 +435,7 @@ We encourage you to install, try, build, share and contribute code to Percona Ev
 
 You can find Percona Everest code in these GitHub repositories: 
 
-* [Percona Everest Frontend](https://github.com/percona/percona-everest-frontend)
-
-* [Percona Everest Backend](https://github.com/percona/percona-everest-backend)
-
-* [Percona Everest-CLI (everestctl)](https://github.com/percona/percona-everest-cli)
+* [Percona Everest Repository](https://github.com/percona/everest)
 
 * [Percona Everest Operator](https://github.com/percona/everest-operator)
 
@@ -455,19 +451,19 @@ We encourage you to contribute code and report issues to improve Percona Everest
 
 Percona Everest App is an application with a web interface. It consists of two major components:
 
-* [Percona Everest Frontend](https://github.com/percona/percona-everest-frontend) is a frontend application developed using the Vite framework, React library and TypeScript language.
+* [Percona Everest UI](https://github.com/percona/everest/tree/main/ui) is a frontend application developed using the Vite framework, React library and TypeScript language.
 
-* [Percona Everest Backend](https://github.com/percona/percona-everest-backend) is the backend API that processes requests from the frontend app and sends them to the Kubernetes API. It is developed in Golang using the Echo framework. 
+* [Percona Everest Backend](https://github.com/everest) is the backend API that processes requests from the frontend app and sends them to the Kubernetes API. It is developed in Golang using the Echo framework. 
 
-[Percona Everest CLI (everestctl)](https://github.com/percona/percona-everest-cli) is a console tool used to provision and install Percona Everest operators and components to your Kubernetes Cluster where Percona Everest will create and manage database clusters. Everestctl is developed in Golang language, and it is as a built executable file.
+[Percona Everest CLI (everestctl)](https://github.com/percona/everest/releases) is a console tool used to provision and install Percona Everest operators and components to your Kubernetes Cluster where Percona Everest will create and manage database clusters. Everestctl is developed in Golang language, and it is as a built executable file.
 
 ![Percona Everest Structure](/images/everest/everest-structure.jpg)
 
 Also, Percona Everest uses:
 
-* Percona Everest Operator that rely on underlying operators for deploying DB clusters of a given engine type.
+* [Percona Everest Operator](https://github.com/percona/everest-operator) that rely on underlying operators for deploying DB clusters of a given engine type.
 
-* Percona Everest Catalog - an internal tool for everestcli.
+* [Percona Everest Catalog](https://github.com/percona/everest-catalog) - an internal tool for everestcli.
 
 ![Percona Everest Kubernetes Native](/images/everest/everest-k8s-native.jpg)
 
