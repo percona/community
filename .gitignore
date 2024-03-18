@@ -3,3 +3,4 @@ resources/_gen
 .DS_Store
 .hugo_build.lock
 hugo.exe
+public
