@@ -6,7 +6,7 @@ tags: ["mongodb", "backups", "percona"]
 authors:
   - edith_puclla
 images:
-  - blog/2024/03/intro.png
+  - blog/2024/03/mongodb-open-doors.png
 ---
 
 Let’s talk about MongoDB!
