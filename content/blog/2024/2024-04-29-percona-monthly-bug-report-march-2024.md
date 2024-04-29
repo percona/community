@@ -166,25 +166,25 @@ Fixed Version: 8.0.36-28
 
 [PT-2190](https://perconadev.atlassian.net/browse/PT-2190):The [pt-show-grants](https://docs.percona.com/percona-toolkit/pt-show-grants.html) use SHOW CREATE USER command to obtain grants from the MySQL server. By default, this query returns values as they are stored in the mysql.user table. When using caching_sha256_password, such hash of the password could contain a special character. Therefore, it would not be possible to use output printed by pt-show-grants to re-create users in the database. Since version 3.6.0, pt-show-grants checks if it runs against MySQL version 8.0.17 or higher and sets session option [print_identified_as_hex](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_print_identified_with_as_hex) to true before running SHOW CREATE USER command. This allows to print commands that could be used to re-create users.
 
-Reported Affected Version/s: [3.5.1](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PT%22%20AND%20affectedVersion%20%3D%20%223.5.1%22)
+Reported Affected Version/s: 3.5.1
 
-Fixed Version: [3.6.0](https://perconadev.atlassian.net/projects/PT/versions/14345/tab/release-report-all-issues) [It is expected to be released soon]
+Fixed Version: 3.6.0 [It is expected to be released soon]
 
 [PT-2215](https://perconadev.atlassian.net/browse/PT-2215): pt-table-sync does not recognize the privileges in roles for MariaDB
 
-Reported Affected Version/s: [3.5.](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PT%22%20AND%20affectedVersion%20%3D%20%223.5.1%22)2
+Reported Affected Version/s: 3.5.2
 
 Fixed Version: The fix is expected to be included in an upcoming release of Percona ToolKit.
 
 [PT-2316](https://perconadev.atlassian.net/browse/PT-2316): pt-config-diff with --pid option is broken with "Can't locate object method "make_PID_file" via package "Daemon" at /usr/bin/pt-config-diff line 5522" on Ubuntu 20.04
 
-Reported Affected Version/s: [3.5.7](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PT%22%20AND%20affectedVersion%20%3D%20%223.5.7%22)
+Reported Affected Version/s: 3.5.7
 
 Fixed Version: The fix is expected to be included in an upcoming release of Percona ToolKit.
 
 [PT-2314](https://perconadev.atlassian.net/browse/PT-2314): pt-online-schema-change fails due to duplicate constraint names when it attempts to make a table copy for alteration.
 
-Reported Affected Version/s: [3.5.7](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PT%22%20AND%20affectedVersion%20%3D%20%223.5.7%22)
+Reported Affected Version/s: 3.5.7
 
 Fixed Version: The fix is expected to be included in an upcoming release of Percona ToolKit.
 
@@ -192,7 +192,7 @@ Workaround/Fix: Do not duplicate constraints name.
 
 [PT-2322](https://perconadev.atlassian.net/browse/PT-2322): pt-mysql-summary does not detect jemalloc when installed as systemd.
 
-Reported Affected Version/s: [3.5.6, 3.5.7](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PT%22%20AND%20affectedVersion%20%3D%20%223.5.7%22)
+Reported Affected Version/s: 3.5.6, 3.5.7
 
 Fixed Version: The fix is expected to be included in an upcoming release of Percona ToolKit.
 
@@ -218,13 +218,13 @@ Fixed Version: 2.41.3 [It is expected to be released soon]
 
 [PMM-12880](https://perconadev.atlassian.net/browse/PMM-12880): pmm-admin [--tls-skip-verify](https://docs.percona.com/percona-monitoring-and-management/details/commands/pmm-admin.html#mongodb) does not work when [x509 authentication](https://dev.mysql.com/doc/mysql-secure-deployment-guide/5.7/en/secure-deployment-user-accounts.html) is used.
 
-Reported Affected Version/s: [2.41.0](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PMM%22%20AND%20affectedVersion%20%3D%20%222.41.0%22)
+Reported Affected Version/s: 2.41.0
 
 Fixed Version: 2.41.3 [It is expected to be released soon]
 
 [PMM-12989](https://perconadev.atlassian.net/browse/PMM-12989): PMM agent logs flooded with wrong log entries when monitoring auth-enabled arbiters. Please note this issue specifically affects MongoDB monitoring.
 
-Reported Affected Version/s: [2.41.](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PMM%22%20AND%20affectedVersion%20%3D%20%222.41.0%22)1
+Reported Affected Version/s: 2.41.1
 
 Fixed Version: 2.41.3 [It is expected to be released soon]
 
@@ -232,7 +232,7 @@ Fixed Version: 2.41.3 [It is expected to be released soon]
 
 [PXB-3251](https://perconadev.atlassian.net/browse/PXB-3251): When PXB fails to load the encryption key, the xtrabackup_logfile is still created in the target dir. This causes a second attempt at running PXB to fail with a new error. The [xtrabackup_logfile](https://docs.percona.com/percona-xtrabackup/8.0/xtrabackup-files.html?h=xtrabackup_logfile) file contains data needed to run the --prepare process. The bigger this file is, the longer the --prepare process will take to finish. So, PXB should not create any files on disk until the encryption key is loaded.
 
-Reported Affected Version/s: [8.0.35-30](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22PXB%22%20AND%20affectedVersion%20%3D%20%228.0.35-30%22)
+Reported Affected Version/s: 8.0.35-30
 
 Fixed Version: The fix is expected to be included in future releases of PXB
 
@@ -240,9 +240,9 @@ Fixed Version: The fix is expected to be included in future releases of PXB
 
 [K8SPG-496](https://perconadev.atlassian.net/browse/K8SPG-496): When a PostgreSQL Database is set to a paused state via spec, the operator waits until all backups for the Database finish. After the backups finish, the PostgreSQL Database shall be paused, which is not happening.
 
-Reported Affected Version/s: [2.3.0](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22K8SPG%22%20AND%20affectedVersion%20%3D%20%222.3.0%22)
+Reported Affected Version/s: 2.3.0
 
-Fixed Version: [2.3.1](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.3.1.html)
+Fixed Version: 2.3.1
 
 [K8SPG-494](https://perconadev.atlassian.net/browse/K8SPG-494): High vulnerabilities found for pgbackrest, Postgres & pgbouncer package.
 
@@ -250,19 +250,19 @@ For pgbackrest and postgres: [CVE-2023-38408](https://nvd.nist.gov/vuln/detail/C
 
 For pgbouncer: [CVE-2023-32067](https://nvd.nist.gov/vuln/detail/CVE-2023-32067)
 
-Reported Affected Version/s: [2.3.0](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22K8SPG%22%20AND%20affectedVersion%20%3D%20%222.3.0%22)
+Reported Affected Version/s: 2.3.0
 
-Fixed Version: [2.3.1](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.3.1.html)
+Fixed Version: 2.3.1
 
 [K8SPG-521](https://perconadev.atlassian.net/browse/K8SPG-521): The upgrade path described in the [documentation](https://docs.percona.com/percona-operator-for-postgresql/2.0/update.html#update-database-and-operator-version-2x) leads to disabled built-in extensions(pg_stat_monitor, pg_audit).
 
-Reported Affected Version/s: [2.3.](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22K8SPG%22%20AND%20affectedVersion%20%3D%20%222.3.0%22)1
+Reported Affected Version/s: 2.3.1
 
 Fixed Version: 2.4.0 [It is expected to be released soon]
 
 [K8SPG-522](https://perconadev.atlassian.net/browse/K8SPG-522): Cluster is broken if PG_VERSION file is missing during the upgrade from 2.2.0 to 2.3.1.
 
-Reported Affected Version/s: [2.3.](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22K8SPG%22%20AND%20affectedVersion%20%3D%20%222.3.0%22)1
+Reported Affected Version/s: 2.3.1
 
 Fixed Version: 2.4.0 [It is expected to be released soon]
 
@@ -321,7 +321,7 @@ Workaround/Fix: In order to fix the issue, please do the following:
 
 [K8SPG-547](https://perconadev.atlassian.net/browse/K8SPG-547): The pgbackrest container can't use pgbackrest 2.50. This is because pgbackrest 2.50 requires libssh2.so.1, which requires epel. Without that fix, microdnf installs pgbackrest 2.48, which creates inconsistency with the Postgresql container.
 
-Reported Affected Version/s: [2.](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22K8SPG%22%20AND%20affectedVersion%20%3D%20%222.3.0%22)2.0
+Reported Affected Version/s: 2.2.0
 
 Fixed Version: 2.4.0 [It is expected to be released soon]
 
