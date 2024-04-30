@@ -6,6 +6,8 @@ tags: ["ProxySQL", "Upgrades"]
 authors:
   - isobel_smith
 slug: using-proxysql-query-mirroring-to-test-query-peromance-on-a-new-cluster
+images:
+  - blog/2024/04/proxysql-query-mirroring.png
 ---
 
 ProxySQL is an SQL aware proxy, which gives DBA's fine grained control over clients’ access to the MySQL cluster. A key part of our DBA team’s process in testing and preparing for major MySQL version upgrades is comparing query plans using [ProxySQL query mirroring](https://proxysql.com/documentation/mirroring/). This feature allows us to mirror queries to another cluster / host, by configuring query rules. What makes mirroring particularly useful is the ability to selectively mirror queries based on the query digest, or client user. Results from the queries that are mirrored are not returned to the client, and are sent to /dev/null.
