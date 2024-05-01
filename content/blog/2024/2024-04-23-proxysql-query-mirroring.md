@@ -1,6 +1,6 @@
 ---
 title: "Using ProxySQL Query Mirroring to test query performance on a new cluster"
-date: "2024-04-23T00:00:00+00:00"
+date: "2024-05-01T00:00:00+00:00"
 draft: false
 tags: ["ProxySQL", "Upgrades"]
 authors:
