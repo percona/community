@@ -1,5 +1,5 @@
 ---
-title: "How to Provision a MongoDB Cluster in Kubernetes"
+title: "How to Provision a MongoDB Cluster in Kubernetes with Percona Everest Summary"
 date: "2024-05-02T00:00:00+00:00"
 draft: false
 tags: ["everest", "percona", "databases"]
