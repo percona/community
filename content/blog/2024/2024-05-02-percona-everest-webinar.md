@@ -2,7 +2,7 @@
 title: "How to Provision a MongoDB Cluster in Kubernetes"
 date: "2024-05-02T00:00:00+00:00"
 draft: false
-tags: ["everest", "percona", "windows", "databases"]
+tags: ["everest", "percona", "databases"]
 authors:
   - edith_puclla
 images:
