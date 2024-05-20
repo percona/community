@@ -21,27 +21,27 @@ First, let me state that I have no connection to the website or its author. I di
 
 There are seven groups of exercises - Basic, Joins and Subqueries, Modifying Data, Aggregates, Date, String, and Recursive. The author recommends Learning SQL by Alan Beaulieu as a reference text. Any essential book, Structured Query Language, will serve you well.
 
-![](blog/2024/05/image2.jpg)
+![Learn SQL. Learn PostgreSQL.](blog/2024/05/image2.jpg)
 
 ## First Exercise
 
 The first exercise asks you to retrieve all the data from a specific table.
 
-![](blog/2024/05/image4.jpg)
+![Learn SQL. First Exercise 1](blog/2024/05/image4.jpg)
 
 At the top of the screen is an entity relationship map of the tables in the database. The table requested in the exercise is named cd.facilities.
 
 If you use the hint button (next to the Your Answer line) you will see the following:
 
-![](blog/2024/05/image3.jpg)
+![Learn SQL. First Exercise 2](blog/2024/05/image3.jpg)
 
 This should be enough of a clue to allow you, with the aid of your SQL reference, to find the answer. Enter your query and click on the Eun Query button.
 
-![](blog/2024/05/image1.jpg)
+![Learn SQL. First Exercise 3](blog/2024/05/image1.jpg)
 
 The green check means that the answer is correct. But what if you did not get it correct. Scroll down and select the Answers and Discussion button.
 
-![](blog/2024/05/image5.jpg)
+![Learn SQL. First Exercise 4](blog/2024/05/image5.jpg)
 
 Not only do you see the answer to the question, but there is a detailed analysis of the answer.
 
