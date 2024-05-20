@@ -6,7 +6,7 @@ description: "Want to learn PostgreSQL? What if you could learn PostgreSQL witho
 authors:
   - david_stokes
 images:
-  - blog/2024/05/Roundup-May-15.jpg
+  - blog/2024/05/Cover-PG.jpg
 ---
 
 Learn PostgreSQL and SQL Quickly and Free
