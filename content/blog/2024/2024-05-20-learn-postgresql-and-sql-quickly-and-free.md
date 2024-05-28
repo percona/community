@@ -17,7 +17,7 @@ First, let me state that I have no connection to the website or its author. I di
 
 ## Learn SQL. Learn PostgreSQL.
 
-[PGexercises.com](PGexercises.com) is based on increasingly complex exercises based on a provided dataset. As you progress, the questions get trickier. You do not have to download and load the available data into a server to do the exercises.  
+[PGexercises.com](https://pgexercises.com/) is based on increasingly complex exercises based on a provided dataset. As you progress, the questions get trickier. You do not have to download and load the available data into a server to do the exercises.  
 
 There are seven groups of exercises - Basic, Joins and Subqueries, Modifying Data, Aggregates, Date, String, and Recursive. The author recommends Learning SQL by Alan Beaulieu as a reference text. Any essential book, Structured Query Language, will serve you well.
 
