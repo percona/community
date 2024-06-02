@@ -132,4 +132,8 @@ The MySQL Clone Plugin offers several benefits, including:
 5. Automated Cloning Process:
     - Automates many steps involved in the cloning process, reducing the potential for human error and increasing efficiency.
 
-<a href="https://www.freepik.com/free-photo/dna-microscopic-view_854596.htm#fromView=search&page=1&position=1&uuid=b58a4350-e1ba-44f8-9c0a-0c4498e84ac5">Image by kjpargeter on Freepik</a>
+## Reference
+
+[The Clone Plugin](https://dev.mysql.com/doc/refman/8.0/en/clone-plugin.html)
+
+[Image by kjpargeter on Freepik](https://www.freepik.com/free-photo/dna-microscopic-view_854596.htm#fromView=search&page=1&position=1&uuid=b58a4350-e1ba-44f8-9c0a-0c4498e84ac5)
