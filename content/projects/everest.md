@@ -415,15 +415,35 @@ If you need help or want to share something, email community-team@percona.com.
 
 ### Watch Percona Everest tutorials 
 
-1. [Deploy a Kubernetes cluster on Amazon EKS](https://youtu.be/CmSGLg-TJgQ)
-2. [Install Percona Everest and provision a MongoDB cluster](https://youtu.be/EJeHTptcVZw)
-3. [Configure an S3 bucket and enable backups](https://youtu.be/xWo7WmdkcDU)
-4. [Install PMM and enable database monitoring](https://youtu.be/Xko8AAIxL-A)
-5. [Connect to MongoDB cluster created using Percona Everest](https://youtu.be/XtJSYnYOOCA)
-6. [Restore a MongoDB database from a backup](https://youtu.be/PovljEDSOyg)
-7. [Clear the test environment and remove the EKS cluster](https://youtu.be/dZD8IiXm-qU)
+- [How To Use Percona Everest UI to Manage Databases](https://www.youtube.com/watch?v=KRlZPaUbLIA)
+- [How to Backup/Restore Databases With Percona Everest](https://www.youtube.com/watch?v=Q9Mmr8QtASY)
+- [How to Use PMM (Percona Monitoring & Management) to Monitor your Percona Everest Databases](https://www.youtube.com/watch?v=Wov2C2YDCvs)
+- [How to Scale Databases in Percona Everest](https://www.youtube.com/watch?v=8srO2jtzkRQ)
+- [Deploy a Kubernetes cluster on Amazon EKS](https://youtu.be/CmSGLg-TJgQ)
+- [Install Percona Everest and provision a MongoDB cluster](https://youtu.be/EJeHTptcVZw)
+- [Configure an S3 bucket and enable backups](https://youtu.be/xWo7WmdkcDU)
+- [Install PMM and enable database monitoring](https://youtu.be/Xko8AAIxL-A)
+- [Connect to MongoDB cluster created using Percona Everest](https://youtu.be/XtJSYnYOOCA)
+- [Restore a MongoDB database from a backup](https://youtu.be/PovljEDSOyg)
+- [Clear the test environment and remove the EKS cluster](https://youtu.be/dZD8IiXm-qU)
 
 [Full Playlist](https://www.youtube.com/playlist?list=PLWhC0zeznqklUaogWnSNMjutkVdi8TjYl)
+
+### Articles about Percona Everest
+
+We invite you to read articles from the community
+
+- [Getting to know Percona Everest [Beta] — a tool for managing database clusters
+](https://prog.world/getting-to-know-percona-everest-beta-a-tool-for-managing-database-clusters/) - by Andrew Fishday
+- [A Love Letter to Our Favorite Open Source Projects](https://www.lyrid.io/post/a-love-letter-to-our-favorite-open-source-projects#:~:text=Percona) by Tyler Au
+- [Setting Up Your Environment for Kubernetes Operators Using Docker, kubectl, and k3d](https://percona.community/blog/2024/03/04/setting-up-your-environment-for-kubernetes-operators-using-docker-kubectl-and-k3d/)by Edith Puclla
+- [Percona Everest: Transforma la gestión de bases de datos cloud native](https://jgsendeavors.com/percona-everest-base-de-datos-cloud-native/)by Julian Garcia
+- [A New Way to Provision Databases on Kubernetes](https://dev.to/dbazhenov/a-new-way-to-provision-databases-on-kubernetes-126h)by Daniil Bazhenov
+- [Lyrid Bare Metal Kubernetes Performance Benchmarking](https://www.lyrid.io/post/lyrid-bare-metal-kubernetes-performance-benchmarking)by Handoyo Sutanto (Lyrid)
+- [Introduction to the New Percona Everest Beta](https://anotherboringtechblog.com/2024/02/percona-everest-beta-impressions/)by Vinicius Grippa
+- [Building an Open Source Private DBaaS](https://thenewstack.io/building-an-open-source-private-dbaas/)by Piotr Szczepaniak
+
+We look forward to your reviews and articles about Percona Everest. 
 
 ### Contribute Code
 
