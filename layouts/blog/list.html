@@ -37,9 +37,11 @@
         <div class="featured__right featured__list">
 
             <h2 class="title-wrap">FEATURED POSTS</h2>
-            {{- $shuffle :=  first 3 (shuffle (where $.Page.Site.RegularPages "Section" "blog")) -}}
 
-            {{- range $shuffle -}}
+            {{- $array := slice "Featured" "featured" "top" -}}
+            {{- $featured := first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $array) -}}
+
+            {{- range $featured -}}
 
                 {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate) -}}    
 

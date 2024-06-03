@@ -9,6 +9,7 @@ Tags: [MySQL](#mysql), [PostgreSQL](#postgresql), [MongoDB](#mongodb), [PMM](#pm
 
 # MySQL
 
+- [Percona XtraDB Multi-Master Replication cluster setup between 3 nodes](https://bidhankhatri.com.np/system/percona-xtradb-multi-master-replication-cluster-setup-between-3-nodes/) - Bidhan Khatri - April 22, 2024
 - [How to perform compressed back of InnoDB Cluster?](https://dev.to/shiviyer/how-to-perform-compressed-back-of-innodb-cluster-3d7e) - Shiv Iyer - January 6, 2024
 - [MySQL Master-Master Replication Error: “Error Connecting to Master” Error 2003](https://medium.com/@fixitblog/solved-mysql-master-master-replication-error-quot-error-connecting-to-master-quot-error-2003-fcc1c9fb1324) - Ted James - December 22, 2023
 - [Detecting unutilized indexes in MySQL](https://samuel-wekesa.medium.com/detecting-unutilized-indexes-in-mysql-a4054aa71477) - Samuel N Wekesa - September 12, 2023
@@ -135,7 +136,16 @@ Tags: [MySQL](#mysql), [PostgreSQL](#postgresql), [MongoDB](#mongodb), [PMM](#pm
 
 # Percona Everest
 
+- [Getting to know Percona Everest [Beta] — a tool for managing database clusters
+](https://prog.world/getting-to-know-percona-everest-beta-a-tool-for-managing-database-clusters/) - Andrew Fishday - May 30, 2024
+- [A Love Letter to Our Favorite Open Source Projects](https://www.lyrid.io/post/a-love-letter-to-our-favorite-open-source-projects#:~:text=Percona) - Tyler Au - February 14, 2024
+- [Setting Up Your Environment for Kubernetes Operators Using Docker, kubectl, and k3d](https://percona.community/blog/2024/03/04/setting-up-your-environment-for-kubernetes-operators-using-docker-kubectl-and-k3d/) - Edith Puclla - March 4, 2024
+- [Percona Everest: Transforma la gestión de bases de datos cloud native](https://jgsendeavors.com/percona-everest-base-de-datos-cloud-native/) - Julian Garcia - March 3, 2024
+- [A New Way to Provision Databases on Kubernetes](https://dev.to/dbazhenov/a-new-way-to-provision-databases-on-kubernetes-126h) - Daniil Bazhenov - March 13, 2024
+- [Lyrid Bare Metal Kubernetes Performance Benchmarking](https://www.lyrid.io/post/lyrid-bare-metal-kubernetes-performance-benchmarking) - Handoyo Sutanto (Lyrid) - March 14, 2024
+- [Introduction to the New Percona Everest Beta](https://anotherboringtechblog.com/2024/02/percona-everest-beta-impressions/) - Vinicius Grippa - February 28, 2024
 - [Building an Open Source Private DBaaS](https://thenewstack.io/building-an-open-source-private-dbaas/) - Piotr Szczepaniak, Percona - November 2, 2023
+
 
 # Working at Percona
 
