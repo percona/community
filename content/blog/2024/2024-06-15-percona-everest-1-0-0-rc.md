@@ -15,6 +15,8 @@ Hi, the Percona Everest 1.0.0-rc1 release was published on [GitHub](https://gith
 
 I want to tell you how to install it so you can try it out. 
 
+**RC builds aren't meant for the general public; we don't support upgrading from RC to stable versions. This means that this is only for testing and familiarizing yourself with the features. RC builds are not stable and are often buggy. There will be no upgrade. :)**
+
 To get started, you will need a Kubernetes cluster. Right now, [Percona Everest](https://docs.percona.com/everest/index.html) is in Beta. Don't use production clusters; use test clusters in the cloud like GKE or local in Minikube, k3d, or Kind. 
 
 I created a test cluster in GKE with the command:
