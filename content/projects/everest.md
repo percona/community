@@ -16,7 +16,7 @@ images:
 
 ![Percona Everest Logo](/images/everest/Percona-Everest-Logo.png)
 
-Percona Everest is currently in Beta. Be an early adopter and join us in driving its progress!
+Be an early adopter and join us in driving its progress!
 
 Your feedback is crucial to enhancing the software, and we highly value and rely on your input.
 
