@@ -18,24 +18,22 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.123.7'
+          hugo-version: '0.110.0'
           extended: true
 
       - name: Cache resources
-        uses: actions/cache@v3
+        uses: actions/cache@v1
         with:
           path: resources
-          key: hugo-resources-${{ runner.os }}-${{ hashFiles('**/resources/**') }}
-          restore-keys: |
-            hugo-resources-${{ runner.os }}-
+          key: hugo-resources
+          restore-keys: hugo-resources
 
       - name: Cache hugo deb
-        uses: actions/cache@v3
+        uses: actions/cache@v1
         with:
           path: /tmp/hugo.deb
-          key: hugo-deb-${{ runner.os }}-${{ hashFiles('/tmp/hugo.deb') }}
-          restore-keys: |
-            hugo-deb-${{ runner.os }}-
+          key: hugo-deb
+          restore-keys: hugo-deb
 
       - name: Build
         run: hugo --minify
