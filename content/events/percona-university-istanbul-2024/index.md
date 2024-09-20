@@ -26,6 +26,7 @@ The agenda featured a diverse range of topics from industry leaders:
 * Peter Zaitsev, Founder of Percona, delivered the **Opening talk: State of Open Source Databases**.
 
 ![Percona University Istanbul](/events/percona-university-istanbul-2024/5.jpg)
+
 ![Percona University Istanbul](/events/percona-university-istanbul-2024/10.jpg)
 
 * Peter Farkas, CEO and Co-Founder of FerretDB, discussed **Moving MongoDB Workloads to Postgres**.
@@ -60,7 +61,7 @@ Alkin personally signed the books for the lucky winners, adding a personal touch
 
 To celebrate a successful day, the Percona team gathered for a team dinner, reflecting on the event and strengthening the bonds within the community.
 
-![Percona University Istanbul](/events/percona-university-istanbul-2024/1.JPG)
+![Percona University Istanbul](/events/percona-university-istanbul-2024/1.jpg)
 
 We’re grateful to everyone who attended and contributed to making Percona University Istanbul an unforgettable experience.
 
