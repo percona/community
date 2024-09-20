@@ -12,7 +12,7 @@ speakers:
   - peter_zaitsev
   - dmitry_kostiuk
   - dmitry_lenev
-tags: ['Promo','Event','fosdem']
+tags: ['Event','fosdem']
 ---
 
 FOSDEM is very special: people from all over the world come to Brussels to participate in the biggest open source event in Europe. How many people? FOSDEM attracts more than 5000 attendees to the ULB Solbosch campus.
