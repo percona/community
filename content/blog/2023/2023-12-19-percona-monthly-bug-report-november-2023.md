@@ -1,5 +1,5 @@
 ---
-title: "Percona Monthly Bug Report: November 2023"
+title: "Percona Bug Report: November 2023"
 date: "2023-12-19T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'PMM', 'Kubernetes', 'MySQL']
 authors:
