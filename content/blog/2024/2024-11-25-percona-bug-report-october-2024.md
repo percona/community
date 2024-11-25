@@ -16,7 +16,6 @@ In this edition of our bug report, we have the following list of bugs,
 
 ## Percona Server/MySQL Bugs
 
-### [PS-8057](https://perconadev.atlassian.net/browse/PS-8057)
 
 [PS-8057](https://perconadev.atlassian.net/browse/PS-8057): When max_slowlog_size is set to above 4096, then it  gets reset to 1073741824. This overwrites the slow log file path with a different file name, which becomes like node_name.log.000001. Due to this issue, your path defined at slow_query_log_file won`t be useful. This issue has started happening since MySQL Version 8.0.32.
 
@@ -33,7 +32,7 @@ max_slowlog_size = 510000000
 ```
 
 Check the log_file path:
-
+```
 mysql [localhost:8036] {msandbox} ((none)) > show global variables like "%slow_query_log_file%";
 +---------------------+------------------------------------------------------------+
 | Variable_name       | Value                                                      |
@@ -41,7 +40,7 @@ mysql [localhost:8036] {msandbox} ((none)) > show global variables like "%slow_q
 | slow_query_log_file | /home/adi/sandboxes/msb_ps8_0_36/data/localhost.log.000001 |
 +---------------------+------------------------------------------------------------+
 1 row in set (0.00 sec)
-
+```
 Interestingly, you will see that this file,/home/user/sandboxes/msb_ps8_0_36/data/localhost.log, 000001, was not even created.
 
 ```
@@ -64,25 +63,23 @@ mysql [localhost:8036] {msandbox} ((none)) >  show global variables like "%slow_
 1 row in set (0.01 sec)
 ```
 
-Reported Affected Version/s: 5.7.36-39, 8.0.35-27, 8.0.36-28
+**Reported Affected Version/s:** 5.7.36-39, 8.0.35-27, 8.0.36-28
 
-Fixed Version: PS  8.0.39-30, 8.4.2-2
+**Fixed Version:** PS 8.0.39-30, 8.4.2-2
 
-Workaround/Fix: Use "set global slow_query_log_file ='<correct slow query log file>';"
+**Workaround/Fix:** Use "set global slow_query_log_file ='<correct slow query log file>';"
 
-### [PS-9214](https://perconadev.atlassian.net/browse/PS-9214)
 
 [PS-9214](https://perconadev.atlassian.net/browse/PS-9214): INPLACE ALTER TABLE might fail with a duplicate key error if concurrent insertions occur; there have been many bugs reported here and in MySQL bugs regarding duplicate key errors while doing an online alter table operation on tables with primary and unique keys indexes. The bug is not as easy to reproduce but involves ONLY the primary key and includes an atomic sequence that cannot create a duplicate.  It seems to be related to page splits/merges.
 
-Reported Affected Version/s: 8.0.35-27, 8.0.36-28
+**Reported Affected Version/s:** 8.0.35-27, 8.0.36-28
 
-Fixed Version: 8.0.39-30, 8.4.2-2
+**Fixed Version:** PS 8.0.39-30, 8.4.2-2
 
-Upstream Bug:  [115511](https://bugs.mysql.com/bug.php?id=115511)
+**Upstream Bug:**  [115511](https://bugs.mysql.com/bug.php?id=115511)
 
-Workaround/Fix: Use ALTER TABLE ... ALGORITHM=COPY instead.
+**Workaround/Fix:** Use ALTER TABLE ... ALGORITHM=COPY instead.
 
-### [PS-9275](https://perconadev.atlassian.net/browse/PS-9275)
 
 [PS-9275](https://perconadev.atlassian.net/browse/PS-9275): When querying based on a function, MySQL does not use the available functional index when using the LIKE operator, which results inconsistent query plans when functional Indexes are used.
 
@@ -116,27 +113,25 @@ mysql> explain select MONTHNAME(FROM_UNIXTIME(a)) from test  WHERE `!hidden!test
 1 row in set, 1 warning (0,00 sec)
 ```
 
-Reported Affected Version/s: 8.0.36-28, 8.4.X
+**Reported Affected Version/s:** 8.0.36-28, 8.4.X
 
-Upstream Bug:  [104713](https://bugs.mysql.com/bug.php?id=104713)
+**Upstream Bug:**  [104713](https://bugs.mysql.com/bug.php?id=104713)
 
-Workaround/Fix: Use the indexes created on virtual fields explicitly.
+**Workaround/Fix:** Use the indexes created on virtual fields explicitly.
 
-### [PS-9286](https://perconadev.atlassian.net/browse/PS-9286)
 
 [PS-9286:](https://perconadev.atlassian.net/browse/PS-9286) [KMIP](https://docs.oasis-open.org/kmip/spec/v1.4/kmip-spec-v1.4.html#:~:text=Limits%20Attribute%20Rules-,3.22%20State,-This%20attribute%20is) Component leaves keys in a pre-active state.
 
-Reported Affected Version/s: 8.0.X, 8.3.0-1, 8.4.0-1
+**Reported Affected Version/s:** 8.0.X, 8.3.0-1, 8.4.0-1
 
-Fixed Version: 8.0.39-30, 8.4.2-2
+**Fixed Version:** PS 8.0.39-30, 8.4.2-2
 
-### [PS-9314](https://perconadev.atlassian.net/browse/PS-9314)
 
 [PS-9314:](https://perconadev.atlassian.net/browse/PS-9314) The database crashed due to the SELECT statement. Since the JSON is invalid, the command should return ERROR 3146, an Invalid data type for JSON, but unfortunately, it crashed the instance with Signal 11 using JSON_TABLE.
 
-Reported Affected Version/s: 8.0.36-28, 8.0.37-29, 8.0.39-30
+**Reported Affected Version/s:** 8.0.36-28, 8.0.37-29, 8.0.39-30
 
-Fixed Version: 8.0.39-30, 8.4.2-2
+**Fixed Version:** PS 8.0.39-30, 8.4.2-2
 
 E.g.:
 
@@ -162,53 +157,48 @@ ERROR:
 Can't connect to the server
 ```
 
-### [PS-9369](https://perconadev.atlassian.net/browse/PS-9369)
 
 [PS-9369:](https://perconadev.atlassian.net/browse/PS-9369) The audit plugin causes memory exhaustion after a few days; disconnecting threads and disabling the audit plugin is undesirable. This workaround can not be used since it requires scheduling an application outage. Even when small, it's a recurrent event.
 
-Reported Affected Version/s: 8.0.37-29
+**Reported Affected Version/s:** 8.0.37-29
 
-Fixed Version: 8.0.40-31
+**Fixed Version:** PS 8.0.40-31 [Yet to Release]
 
 ## Percona Xtradb Cluster
 
-### [PXC-4453](https://perconadev.atlassian.net/browse/PXC-4453)
 
 [PXC-4453:](https://perconadev.atlassian.net/browse/PXC-4453) In 3 Node PXC cluster, node01 has active flow control(FC). Active FC blocks user sessions to insert a message into the channel queue (session waits on send monitor (conn->sm)); send monitor is blocked because FC is active. The idea behind the logic is that applier threads, when consuming messages from the queue conn->recv_q, should check if FC is active, and if the queue level is below conn->lower_limit, FC should be disabled, and the user connection thread waiting on the sending monitor should be woken up. In other words, disabling the FC signal is driven by the consumption of events from recv_q by applier threads.
 
 In this case, it seems that recv_q is empty, but FC is active, so nothing can be added to recv_q. We have a vicious circle of some kind of deadlock, and due to this race condition, we are seeing cluster hangs.
 
-Reported Affected Version/s: 5.7.25, 5.7.44,  8.0.36-28
+**Reported Affected Version/s:** 5.7.25, 5.7.44,  8.0.36-28
 
-Fixed Version: 8.0.37-29, 8.4.0
+**Fixed Version:** PXC 8.0.37-29, 8.4.0
 
-### [PXC-4404](https://perconadev.atlassian.net/browse/PXC-4404)
 
 [PXC-4404:](https://perconadev.atlassian.net/browse/PXC-4404) wsrep_preordered=ON causes protocol violations, which cause a node to crash when the group view changes on a cluster with a node acting as an async replica.
 
-Reported Affected Version/s: 5.7.44-31
+**Reported Affected Version/s:** 5.7.44-31
 
-Workaround/Fix: Set wsrep_preordered=OFF; however, you may experience a delay in async replication.
+**Workaround/Fix:** Set wsrep_preordered=OFF; however, you may experience a delay in async replication.
 
 Note: Option [wsrep_preordered](https://galeracluster.com/library/documentation/mysql-wsrep-options.html#wsrep-preordered) is deprecated in MySQL-wsrep: 8.0.19-26.3, MariaDB: 10.1.1
 
-### [PXC-4362](https://perconadev.atlassian.net/browse/PXC-4362)
 
 [PXC-4362:](https://perconadev.atlassian.net/browse/PXC-4362) The PXC node evicted when creating a function by the user doesn`t have the super privilege, and binary logging is enabled.
 
-Reported Affected Version/s: 8.0.34-26
+**Reported Affected Version/s:** 8.0.34-26
 
-Fixed Version: 8.0.36-28, 8.4.0
+**Fixed Version:** PXC 8.0.36-28, 8.4.0
 
-Workaround/Fix: Setting log_bin_trust_function_creators is the workaround. Note that log_bin_trust_function_creators is deprecated by MySQL 8.0.34 and will be removed in the future.
+**Workaround/Fix:** Setting log_bin_trust_function_creators is the workaround. Note that log_bin_trust_function_creators is deprecated by MySQL 8.0.34 and will be removed in the future.
 
-### [PXC-4365](https://perconadev.atlassian.net/browse/PXC-4365)
 
 [PXC-4365](https://perconadev.atlassian.net/browse/PXC-4365): PXC nodes leave clusters when the row size is too large and have more than 3 nvarchar columns.
 
-Reported Affected Version/s: 8.0.35-27
+**Reported Affected Version/s:** 8.0.35-27
 
-Fixed Version: 8.0.36-28, 8.3.0
+**Fixed Version:** PXC 8.0.36-28, 8.3.0
 
 ## Percona Toolkit
 
@@ -253,9 +243,8 @@ AND `data`=CAST('{"baz": "quux"}' AS JSON)
 LIMIT 1;
 ```
 
-Reported Affected Version/s: 3.5.7
+**Reported Affected Version/s:** 3.5.7
 
-### [PT-2329](https://perconadev.atlassian.net/browse/PT-2329)
 
 [PT-2329](https://perconadev.atlassian.net/browse/PT-2329): During the run, pt-archiver will ignore columns that are camelCase during the insert, but it will get all the columns during select.
 
@@ -275,45 +264,40 @@ SELECT /*!40001 SQL_NO_CACHE */ `addressLine1`,`addressLine2`,`city`,`state`,`po
 INSERT INTO `classicmodels`.`addresses`(`city`,`state`,`country`) VALUES (?,?,?)
 ```
 
-Reported Affected Version/s: 3.5.7
+**Reported Affected Version/s:** 3.5.7
 
-Workaround/Fix: The solution is to include all columns in lowercase in the param --columns until the bug is fixed.
+**Workaround/Fix:** The solution is to include all columns in lowercase in the param --columns until the bug is fixed.
 
-### [PT-2344](https://perconadev.atlassian.net/browse/PT-2344)
 
 [PT-2344](https://perconadev.atlassian.net/browse/PT-2344): pt-config-diff compares mysqld options, but it fails if the [mysqld] section is in uppercase, even though that is a valid way of setting mysqld variables. Since [MYSQLD] is acceptable for MySQL, pt-config-diff should compare the options under that section.
 
-Reported Affected Version/s: 3.5.7
+**Reported Affected Version/s:** 3.5.7
 
-Workaround/Fix: Use [mysqld] as lowercase until the bug is fixed.
+**Workaround/Fix:** Use [mysqld] as lowercase until the bug is fixed.
 
-### [PT-2355](https://perconadev.atlassian.net/browse/PT-2355)
 
 [PT-2355](https://perconadev.atlassian.net/browse/PT-2355): Table data is lost if we accidentally resume a previously failed job that has null boundaries. pt-online-schema-change should not resume a job with empty boundaries.
 
-Reported Affected Version/s: 3.6.0
+**Reported Affected Version/s:** 3.6.0
 
-Fixed Version: 3.7.1
+**Fixed Version:** PT 3.7.1
 
-Workaround/Fix: Do not run pt-online-schema-change with job id having null boundaries.
+**Workaround/Fix:** Do not run pt-online-schema-change with job id having null boundaries.
 
-### [PT-2356](https://perconadev.atlassian.net/browse/PT-2356)
 
 [PT-2356](https://perconadev.atlassian.net/browse/PT-2356): If you run pt-online-schema-change, which results in an error, then subsequent runs will create new tables that won`t be cleaned up.
 
-Reported Affected Version/s: 3.6.0
+**Reported Affected Version/s:** 3.6.0
 
-### [PT-2349](https://perconadev.atlassian.net/browse/PT-2349)
 
 [PT-2349](https://perconadev.atlassian.net/browse/PT-2349): pt-table-sync is failing to sync data from PXC to the async environment, and trigger errors include "WSREP detected deadlock/conflict and aborted the transaction."
 
-Reported Affected Version/s: 3.3.1, 3.5.2, 3.6.0
+**Reported Affected Version/s:** 3.3.1, 3.5.2, 3.6.0
 
-### [PT-1726](https://perconadev.atlassian.net/browse/PT-1726)
 
 [PT-1726](https://perconadev.atlassian.net/browse/PT-1726): pt-query-digest is not distinguishing queries when an alias is used
 
-Reported Affected Version/s: 3.6.0
+**Reported Affected Version/s:** 3.6.0
 
 E.g.:
 
@@ -341,13 +325,11 @@ The fingerprints for the above queries are the same, which is incorrect behaviou
 select a,b,c from table? as t? where t?=? and t?=?
 ```
 
-### [PT-2374](https://perconadev.atlassian.net/browse/PT-2374)
 
 [PT-2374](https://perconadev.atlassian.net/browse/PT-2374): If we say --ignore=bob, every combination of the bob user will be ignored. This includes bob@localhost, bob@::1, bob@foobar, etc. But this is not the case. Only bob@% is ignored; pt-show-grants --ignore does not ignore all accounts.
 
-Reported Affected Version/s: 3.6.0
+**Reported Affected Version/s:** 3.6.0
 
-### [PT-2375](https://perconadev.atlassian.net/browse/PT-2375)
 
 [PT-2375](https://perconadev.atlassian.net/browse/PT-2375): When pt-table-sync is used on a table with a GENERATED AS column, it fails because we cannot REPLACE/INSERT values into a GENERATED column.
 
@@ -360,33 +342,29 @@ ERROR 3105 (HY000): The value specified for generated column 'requestStatus' in 
 
 The ----ignore-columns parameter specifically states that if a REPLACE/INSERT is needed, all columns will be used. Due to this, the pt-table-sync does not work with the generated columns.
 
-Reported Affected Version/s: 3.6.0
+**Reported Affected Version/s:** 3.6.0
 
 ## PMM [Percona Monitoring and Management]
 
-### [PMM-12013](https://perconadev.atlassian.net/browse/PMM-12013)
 
 [PMM-12013:](https://perconadev.atlassian.net/browse/PMM-12013) If we add many RDS instances to the PMM server, say 200+, and Change the prom scrape.maxScrapeSize to the value that allows the VM to parse the reply from the exporter, then the metrics are gathered unreliably, there are gaps, and the exporter`s RSS feed goes to like 5GB for instance. This concludes that rds_exporter is unreliable for large deployments.
 
-Reported Affected Version/s: 2.35.0
+**Reported Affected Version/s:** 2.35.0
 
-Fixed Version: 3.0.0-beta [Yet to Release]
+**Fixed Version:** PMM 3.0.0-Beta available as Tech Preview]
 
-### [PMM-12161](https://perconadev.atlassian.net/browse/PMM-12161)
 
 [PMM-12161:](https://perconadev.atlassian.net/browse/PMM-12161) In the Mongodb cluster summary page, Under QPS of Config Services dashboard, it is being clubbed configRS, mongoS and mongod servers. This results in too many configuration services under the QPS of the Config Services dashboard.
 
-Reported Affected Version/s: 2.42.0
+**Reported Affected Version/s:** 2.42.0
 
-Fixed Version: 3\. 1 [Yet to Release]
+**Fixed Version:** PMM 3.1 [Yet to Release]
 
-### [PMM-12993](https://perconadev.atlassian.net/browse/PMM-12993)
 
 [PMM-12993:](https://perconadev.atlassian.net/browse/PMM-12993) In PMM, CPU metrics have a label "mode" to identify between CPU info: sys, iowait, nice, user, idle, etc. With 1 rds instance, the metric is perfectly fine. However, after adding more instances, the CPU metric is still collected, but the "mode" label is empty, which breaks the graphs in the Advanced Data Exploration dashboard.
 
-Reported Affected Version/s: 2.41.1, 2.41.2
+**Reported Affected Version/s:** 2.41.1, 2.41.2
 
-### [PMM-13148](https://perconadev.atlassian.net/browse/PMM-13148)
 
 [PMM-13148](https://perconadev.atlassian.net/browse/PMM-13148): If we run the queries without using the schema name, then we don`t see such queries in the QAN.
 
@@ -399,11 +377,10 @@ Rows matched: 1  Changed: 1  Warnings: 0
 
 Here, we can see we did not explicitly select the database name using the USE <database> command and executed the query directly. This results in QAN not being able to capture such queries for analytics.
 
-Reported Affected Version/s: 2.41.2
+**Reported Affected Version/s:** 2.41.2
 
-Workaround/Fix: Run queries with USE <dbname>; <Query>;
+**Workaround/Fix:** Run queries with USE <dbname>; <Query>;
 
-### [PMM-13252](https://perconadev.atlassian.net/browse/PMM-13252)
 
 [PMM-13252:](https://perconadev.atlassian.net/browse/PMM-13252) A 500 error message is returned while creating the role with the existing name.
 
@@ -421,11 +398,10 @@ E.g.:
   in logs: msg="RPC /accesscontrol.v1beta1.AccessControlService/CreateRole done in 1.409839ms with unexpected error: pq: duplicate key value violates unique constraint "roles_title_key""
   ```
 
-Reported Affected Version/s: 2.42.0
+**Reported Affected Version/s:** 2.42.0
 
-Workaround/Fix: It is expected to be fixed in PMM 3
+**Workaround/Fix:** It is expected to be fixed in PMM 3
 
-### [PMM-13277](https://perconadev.atlassian.net/browse/PMM-13277)
 
 [PMM-13277](https://perconadev.atlassian.net/browse/PMM-13277): When we try to launch PMM using AWS AMI as mentioned in our docs. However, the AWS webpage works fine, and it logins, but every graph and details are blank with "Server error 502" The same can be seen in the log for Victoria metrics:
 
@@ -436,13 +412,12 @@ The following error will be seen:
 panic: FATAL: cannot read "/srv/victoriametrics/data/indexdb/17D6772949F4A234/17D6772B9FDF298D/metadata.json": open /srv/victoriametrics/data/indexdb/17D6772949F4A234/17D6772B9FDF298D/metadata.json: no such file or directory
 ```
 
-Reported Affected Version/s: 2.42.0
+**Reported Affected Version/s:** 2.42.0
 
-Fixed Version: 2.43.0
+**Fixed Version:** PMM 2.43.0
 
 ## Percona XtraBackup
 
-### [PXB-3302](https://perconadev.atlassian.net/browse/PXB-3302)
 
 [PXB-3302](https://perconadev.atlassian.net/browse/PXB-3302): If the number of GTID sets is absolutely large on a MySQL instance, the output "GTID of the last change" in the Xtrabackup log is truncated compared to the full output in xtrabackup_binlog_info and xtrabackup_info. This can be an issue for external tools obtaining the GTID coordinates from the log as it would be impractical to get the coordinates from  xtrabackup_binlog_info or xtrabackup_info on a large, compressed xbstream file.
 
@@ -458,11 +433,10 @@ Snippet of xtrabackup_binlog_info:
 mysql-bin.000002        10197   ** REDACTED **,9fdd9048-214f-11ef-871f-b445068273a0:1,9fe138a3-214f-11ef-871f-b445068273a0:1,9fe4c3d8-214f-11ef-871f-b445068273a0:1,9fe82e39-214f-11ef-871f-b445068273a0:1
 ```
 
-Reported Affected Version/s: 8.0.35-30
+**Reported Affected Version/s:** 8.0.35-30
 
-Fixed Version: 8.4.0-1, 8.0.35-32
+**Fixed Version:** PXB 8.4.0-1, 8.0.35-32
 
-### [PXB-3283](https://perconadev.atlassian.net/browse/PXB-3283)
 
 [PXB-3283](https://perconadev.atlassian.net/browse/PXB-3283): When xtrabackup takes a backup and exports a tablespace,  xtrabackup gets the wrong table definition from the ibd for tables that have changed the charset-collation in MySQL before backup.
 
@@ -507,11 +481,10 @@ When xtrabackup exports the tablespace, the collation_id is 224 in ibd. Xtraback
 
 When MySQL imports a tablespace, MySQL gets an error Column %s precise type mismatch because the collation_id of MySQL does not match that of xtrabackup.
 
-Reported Affected Version/s: 8.0.35-30
+**Reported Affected Version/s:** 8.0.35-30
 
-Fixed Version: 8.4.0-1, 8.0.35-31
+**Fixed Version:** PXB 8.4.0-1, 8.0.35-31
 
-### [PXB-2797](https://perconadev.atlassian.net/browse/PXB-2797)
 
 [PXB-2797](https://perconadev.atlassian.net/browse/PXB-2797): When importing a single table (IMPORT TABLESPACE) from a backup made using xtrabackup and the table contains a full-text index, the import process will error out with:
 
@@ -519,11 +492,10 @@ Fixed Version: 8.4.0-1, 8.0.35-31
 ERROR 1808 (HY000) at line 132: Schema mismatch (Index xxxxxx field xxxxxx is ascending which does not match metadata file which is descending)
 ```
 
-Reported Affected Version/s: 8.0.28-20
+**Reported Affected Version/s:** 8.0.28-20
 
-Fixed Version: 8.0.35-31
+**Fixed Version:** PXB 8.0.35-31
 
-### [PXB-3210](https://perconadev.atlassian.net/browse/PXB-3210)
 
 [PXB-3210](https://perconadev.atlassian.net/browse/PXB-3210): PXB fails to build on macOS since 8.0.33-28 due to FIND_PROCPS()
 
@@ -536,11 +508,10 @@ Call Stack (most recent call first):
   storage/innobase/xtrabackup/src/CMakeLists.txt:24 (FIND_PROCPS)
 ```
 
-Reported Affected Version/s: 8.0.33-28, 8.0.34-29, 8.0.35-30
+**Reported Affected Version/s:** 8.0.33-28, 8.0.34-29, 8.0.35-30
 
-Fixed Version: 8.0.35-31
+**Fixed Version:** PXB 8.0.35-31
 
-### [PXB-3130](https://perconadev.atlassian.net/browse/PXB-3130)
 
 [PXB-3130](https://perconadev.atlassian.net/browse/PXB-3130): Performing upgrade from PS 8.0.30 -> PS 8.0.33 using PXB
 
@@ -558,13 +529,12 @@ Which results in the Assertion:
 I0825 22:33:01.738917 05155 ???:1] xtrabackup80-apply-log(stderr) - InnoDB: Assertion failure: log0recv.cc:4353:log.m_files.find(recovered_lsn) != log.m_files.end()
 ```
 
-Reported Affected Version/s:8.0.30
+**Reported Affected Version/s:** 8.0.30
 
-Fixed Version: 8.0.35-31
+**Fixed Version:** PXB 8.0.35-31
 
 ## Percona Kubernetes Operator
 
-### [K8SPXC-1398:](https://perconadev.atlassian.net/browse/K8SPXC-1398)
 
 [K8SPXC-1398:](https://perconadev.atlassian.net/browse/K8SPXC-1398) Scheduled PXC backup job pod fails to complete the process successfully in a random/sporadic fashion.
 
@@ -578,21 +548,19 @@ Terminating processProcess completed with error: /usr/bin/run_backup.sh: 4 (Inte
 + exit 4
 ```
 
-Reported Affected Version/s: 1.13.0
+**Reported Affected Version/s:** 1.13.0
 
-Fixed Version: 1.16.0 [Yet to Release]
+**Fixed Version:** PXCO 1.16.0 [Yet to Release]
 
 Note: Since we don`t have steps to reproduce the issue, it is hard to confirm whether the fix is working as expected. Please feel free to provide feedback or create a Jira if required.
 
-### [K8SPXC-1397](https://perconadev.atlassian.net/browse/K8SPXC-1397)
 
 [K8SPXC-1397:](https://perconadev.atlassian.net/browse/K8SPXC-1397) The operator`s default configuration makes the cluster unusable if TDE (Transparent data encryption) is used; the entry point of the PXC container configures the parameter binlog_rotate_encryption_master_key_at_startup. As a workaround, binlog_rotate_encryption_master_key_at_startup should be disabled. However, it has security implications.
 
-Reported Affected Version/s: 1.12.0
+**Reported Affected Version/s:** 1.12.0
 
-Fixed Version: 1.16.0 [Yet to Release]
-
-### [K8SPXC-1222](https://perconadev.atlassian.net/browse/K8SPXC-1222) 
+**Fixed Version:** PXCO 1.16.0 [Yet to Release]
+ 
 
 [K8SPXC-1222:](https://perconadev.atlassian.net/browse/K8SPXC-1222) Upgrading Cluster Fails When Dataset Has Large Number Of Tables. When the operator replaces the first pod with one with the new version, it fails to start up and gets stuck in a loop that restarts every 120 seconds.
 
@@ -608,13 +576,12 @@ for i in {120..0}; do
         done
 ```
 
-Reported Affected Version/s: 1.11.0, 1.12.0
+**Reported Affected Version/s:** 1.11.0, 1.12.0
 
-Fixed Version: 1.16.0 [Yet to Release]
+**Fixed Version:** PXCO 1.16.0 [Yet to Release]
 
-Orchestrator
+## Orchestrator
 
-### [DISTMYSQL-406](https://perconadev.atlassian.net/browse/DISTMYSQL-406)
 
 [DISTMYSQL-406](https://perconadev.atlassian.net/browse/DISTMYSQL-406): Orchestrator 3.2.6-11 shows the MySQLOrchestratorPassword variable value in the error log and when accessing the web interface.
 
@@ -642,9 +609,9 @@ On node1, there are several messages showing the backend password:
 Feb 28 23:26:03 XX-XX-node1 orchestrator[4262]: 2024-02-28 23:26:03 ERROR 2024-02-28 23:26:03 ERROR QueryRowsMap(orchestrator_srv:orc_server_password@tcp(10.124.33.138:3306)/orchestrator?timeout=1s&readTimeout=30s&rejectReadOnly=false&interpolateParams=true) select hostname, token, first_seen_active, last_seen_Active from active_node where anchor = 1: dial tcp 10.124.33.138:3306: connect: connection refused
 ```
 
-Reported Affected Version/s: 8.0.36(PS)
+**Reported Affected Version/s:** 8.0.36(PS)
 
-Fixed Version: 8.4.0(PS)
+**Fixed Version:** 8.4.0(PS)
 
 ## Summary
 
