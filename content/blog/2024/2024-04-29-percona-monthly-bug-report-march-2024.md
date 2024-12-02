@@ -1,5 +1,5 @@
 ---
-title: "Percona Monthly Bug Report: February/March 2024"
+title: "Percona Bug Report: April 2024"
 date: "2024-04-29T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'PMM', 'Kubernetes', 'MySQL', 'PostgreSQL']
 authors:
