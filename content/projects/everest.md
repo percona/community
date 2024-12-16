@@ -6,8 +6,13 @@ layout: everest
 hero_description: "Check out Percona Everest - a cloud-native database platform to deploy and manage enterprise-grade PostgreSQL, MongoDB and MySQL database clusters."
 hero_title: "Percona Everest"
 images:
-- images/everest/cover.jpg
+    - images/everest/cover.jpg
 ---
+
+<script>
+    // 301 redirect to the product page on the main Percona website
+    window.location.replace("https://www.percona.com/software/percona-everest");
+</script>
 
 {{% wrapper class="section" %}}
 {{% grid size=2 %}}
