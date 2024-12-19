@@ -18,7 +18,7 @@ We're excited to announce the Tech Preview (Beta) release of **Percona Monitorin
 
 ## Release notes
 
-**To see the full list of changes, check out the [3.0.0-Beta - Tech Preview Release Notes](https://pmm-doc-3-0.onrender.com/release-notes/3.0.0_Beta.html)**
+**To see the full list of changes, check out the [3.0.0-Beta - Tech Preview Release Notes](https://pmm-doc-3.onrender.com/release-notes/3.0.0_Beta.html)**
 
 ## Installation options
 
@@ -28,12 +28,12 @@ We're excited to announce the Tech Preview (Beta) release of **Percona Monitorin
 #### Docker
 
 - [Server](https://hubgw.docker.com/r/perconalab/pmm-server/tags?name=3.0.0-beta): `docker pull perconalab/pmm-server:3.0.0-beta`
-- [Docker installation guide](https://pmm-doc-3-0.onrender.com/install-pmm/install-pmm-server/baremetal/docker/easy-install.html)
+- [Docker installation guide](https://pmm-doc-3.onrender.com/install-pmm/install-pmm-server/baremetal/docker/easy-install.html)
 
 #### VM
 
 - [Download OVA file](https://percona-vm.s3.amazonaws.com/PMM3-Server-2024-11-26-1307.ova)
-- [VM Installation guide](https://pmm-doc-3-0.onrender.com/install-pmm/install-pmm-server/baremetal/virtual/index.html)
+- [VM Installation guide](https://pmm-doc-3.onrender.com/install-pmm/install-pmm-server/baremetal/virtual/index.html)
 
 
 ### PMM Client
