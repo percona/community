@@ -5,7 +5,7 @@ tags: ["PMM", "Technical Preview", "Monitoring", "Percona", "Databases", ]
 authors:
   - ondrej_patocka
 images:
-  - images/pmm/pmm-blog-post-cover.png
+  - blog/2025/01/pmm-blog-post-cover.jpg
 slug: percona-monitoring-management-technical-preview
 ---
 
@@ -35,7 +35,7 @@ Percona Monitoring and Management (PMM) 3.0.0 Release Notes:
 
 -   **Deployment Options**:
 
-    -   Official ARM support, allowing the use of PMM on ARM architecture devices.
+    -   Official PMM Client ARM support, allowing the use of PMM on ARM architecture devices.
 
     -   Rootless deployments using Podman, providing flexibility and security.
 
