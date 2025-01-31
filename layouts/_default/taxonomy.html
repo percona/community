@@ -2,22 +2,28 @@
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
 {{ end }}
 
-{{ define "mainwrapper" }}
+{{ define "main" }}
 
-  <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
 
-  {{ .Content }}
+    {{ .Content }}
   
-  {{ range .Data.Terms.ByCount }}
-    <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</h2>
-  {{ end }}
 
-  {{ if .Pages }}
-    <ul>
-      {{ range .Pages }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
-  {{ end }}
+    {{ if .Data.Terms }}
+
+        {{ range .Data.Terms.ByCount }}
+        <h3><a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a> ({{ .Count }})</h3>
+        {{ end }}
+
+    {{ else if .Pages }}
+
+        <ul>
+            {{ range .Pages }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    {{ else }}
+        <p>No content available.</p>
+    {{ end }}
 
 {{ end }}
