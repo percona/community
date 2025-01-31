@@ -1,18 +1,18 @@
 ---
-title: "Percona Monitoring and Management 3.0.0-GA - Tech Preview"
+title: "Percona Monitoring and Management 3.0.0 (GA)"
 date: "2025-01-29T00:00:00+00:00"
-tags: ["PMM", "Technical Preview", "Monitoring", "Percona", "Databases", ]
+tags: ["PMM", "Monitoring", "Percona", "Databases", ]
 authors:
   - ondrej_patocka
 images:
   - blog/2025/01/pmm-blog-post-cover.jpg
-slug: percona-monitoring-management-technical-preview
+slug: percona-monitoring-management-3-ga
+aliases:
+  - /percona-monitoring-management-technical-preview
+  - /blog/2025/01/29/percona-monitoring-management-technical-preview
 ---
 
-
-We're excited to announce the Tech Preview release of **Percona Monitoring and Management (PMM) 3.0.0 (GA)**.
-
-*This release is intended for testing environments only, as it's not yet production-ready. The public release will be available through standard channels in upcoming days.*
+We're excited to announce the release of **Percona Monitoring and Management (PMM) 3.0.0 (GA)**.
 
 The Percona Monitoring and Management (PMM) 3.0.0 release delivers major security and stability enhancements. Notable security improvements include rootless deployments and encryption of sensitive data, along with improved API authentication using Grafana service accounts. Deployment options have expanded with official ARM support and the ability to use Podman for rootless deployments, providing flexibility and better security. Additionally, the introduction of containerized architecture has increased stability, and a streamlined upgrade process ensures reliability and ease of maintenance.
 
@@ -20,7 +20,7 @@ User experience has been significantly improved with more flexible monitoring co
 
 ## Release notes
 
-**To see the full list of changes, check out the [3.0.0-GA - Tech Preview Release Notes](https://pmm-release-3-0-pr-3431.onrender.com/release-notes/3.0.0.html)**
+**To see the full list of changes, check out the [3.0.0-GA - Release Notes](https://pmm-release-3-0-pr-3431.onrender.com/release-notes/3.0.0.html)**
 
 
 Percona Monitoring and Management (PMM) 3.0.0 Release Notes:
@@ -88,9 +88,6 @@ We invite you to install and try the new PMM 3.0
 - [Download AMD 64 tarball](https://s3.us-east-2.amazonaws.com/pmm-build-cache/PR-BUILDS/pmm-client/pmm-client-latest-250.tar.gz)
 - [Download ARM 64 tarball](https://s3.us-east-2.amazonaws.com/pmm-build-cache/PR-BUILDS/pmm-client-arm/pmm-client-latest-255.tar.gz)
 
-**Package Manager installation**
-1. Enable testing repository via [percona-release](https://docs.percona.com/percona-software-repositories/percona-release.html): `percona-release enable pmm3-client testing`
-1. Install relevant `pmm-client` package using your system's package manager
 
 
 ---
