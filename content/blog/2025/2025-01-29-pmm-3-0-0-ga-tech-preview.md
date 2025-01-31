@@ -20,7 +20,7 @@ User experience has been significantly improved with more flexible monitoring co
 
 ## Release notes
 
-**To see the full list of changes, check out the [3.0.0-GA - Release Notes](https://pmm-release-3-0-pr-3431.onrender.com/release-notes/3.0.0.html)**
+**To see the full list of changes, check out the [3.0.0-GA - Release Notes](https://docs.percona.com/percona-monitoring-and-management/3/release-notes/3.0.0.html)**
 
 
 Percona Monitoring and Management (PMM) 3.0.0 Release Notes:
