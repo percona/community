@@ -67,7 +67,7 @@ We invite you to install and try the new PMM 3.0
 
 **Docker**
 
-- [Server image](https://hubgw.docker.com/r/perconalab/pmm-server/tags?name=3.0.0-rc): `docker pull perconalab/pmm-server:3.0.0-rc`
+- [Server image](https://hubgw.docker.com/r/perconalab/pmm-server/tags?name=3.0.0): `docker pull perconalab/pmm-server:3.0.0`
 - [Docker installation guide](https://pmm-release-3-0-pr-3431.onrender.com/quickstart.html)
 
 **VM**
@@ -80,7 +80,7 @@ We invite you to install and try the new PMM 3.0
 
 **Docker**
 
-- [AMD 64 + ARM 64 images](https://hubgw.docker.com/r/perconalab/pmm-client/tags?name=3.0.0-rc): `docker pull perconalab/pmm-client:3.0.0-rc`
+- [AMD 64 + ARM 64 images](https://hubgw.docker.com/r/perconalab/pmm-client/tags?name=3.0.0): `docker pull perconalab/pmm-client:3.0.0`
 
 
 **Binary packages**
@@ -94,4 +94,4 @@ We invite you to install and try the new PMM 3.0
 
 
 ---
-Contact us on the [Percona Community Forums](https://forums.percona.com/c/percona-monitoring-and-management-pmm).
+Contact us on the [Percona Community Forums](https://forums.percona.com/c/percona-monitoring-and-management-pmm/pmm-3/84).
