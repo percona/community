@@ -2,8 +2,8 @@
 title: "Data on Kubernetes Community initiatives: Automated storage scaling"
 date: "2024-01-10T00:00:00+00:00"
 draft: false
-tags:
-  ["edith_puclla", "sergey_pronin", "kubernetes", "dok", "storage", "operators"]
+tags: ["edith_puclla", "sergey_pronin", "kubernetes", "dok", "storage", "operators"]
+categories: ['Community']
 authors:
   - sergey_pronin
   - edith_puclla

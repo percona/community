@@ -2,6 +2,7 @@
 title: "Release Roundup April 30, 2024"
 date: "2024-04-30T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'MongoDB', 'MySQL', 'releases']
+categories: ['MongoDB', 'MySQL']
 description: "Percona software releases and updates April 17 - April 30, 2024."
 authors:
   - david_quilty

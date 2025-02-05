@@ -4,6 +4,7 @@ date: "2023-10-30T00:00:00+00:00"
 description: "Digging deeper into the architecture of an open source product"
 draft: false
 tags: ["everest", "kubernetes", "opensource", "dbaas"]
+categories: ['Cloud']
 authors:
   - daniil_bazhenov
 images:

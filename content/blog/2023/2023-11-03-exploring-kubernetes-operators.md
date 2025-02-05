@@ -3,6 +3,7 @@ title: "Exploring Kubernetes Operators"
 date: "2023-11-03T00:00:00+00:00"
 draft: false
 tags: ["cncf", "kubernetes", "operators", "databases"]
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

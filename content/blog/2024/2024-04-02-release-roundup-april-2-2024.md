@@ -2,6 +2,7 @@
 title: "Release Roundup April 2, 2024"
 date: "2024-04-02T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'XtraBackup', 'MongoDB', 'MySQL', 'PMM', 'releases']
+categories: ['MongoDB', 'MySQL', 'PMM']
 description: "Percona software releases and updates March 18 - April 2, 2024."
 authors:
   - david_quilty

@@ -2,6 +2,7 @@
 title: "Release Roundup March 4, 2024"
 date: "2024-03-04T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'PostgreSQL']
+categories: ['PostgreSQL']
 description: "Percona software releases and updates February 21 - March 4, 2024."
 authors:
   - david_quilty

@@ -2,6 +2,7 @@
 title: "Percona Bug Report: October 2024"
 date: "2024-11-25T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'PMM', 'Kubernetes', 'MySQL', 'PostgreSQL']
+categories: ['PMM', 'Cloud', 'MySQL', 'PostgreSQL']
 authors:
   - aaditya_dubey
 images:

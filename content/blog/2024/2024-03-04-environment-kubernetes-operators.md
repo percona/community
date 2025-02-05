@@ -3,7 +3,7 @@ title: "Setting Up Your Environment for Kubernetes Operators Using Docker, kubec
 date: "2024-03-04T00:00:00+00:00"
 draft: false
 tags: ["edith_puclla", "kubernetes", "operators", "k3d", "docker"]
-
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

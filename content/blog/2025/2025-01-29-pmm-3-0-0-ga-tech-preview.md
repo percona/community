@@ -2,6 +2,7 @@
 title: "Percona Monitoring and Management 3.0.0-GA - Tech Preview"
 date: "2025-01-29T00:00:00+00:00"
 tags: ["PMM", "Technical Preview", "Monitoring", "Percona", "Databases", ]
+categories: ["PMM"]
 authors:
   - ondrej_patocka
 images:

@@ -3,6 +3,7 @@ title: 'Unexpected Stalled Upgrade to MySQL 8.0'
 date: "2024-01-26T00:00:00+00:00"
 draft: false
 tags: ['author_alexandre', 'Intermediate Level', 'MySQL', 'Percona Server for MySQL', 'upgrade']
+categories: ['MySQL']
 authors:
   - alexandre_vaniachine
 images:

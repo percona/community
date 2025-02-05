@@ -3,6 +3,7 @@ title: "The Importance of Anti-Affinity in Kubernetes"
 date: "2023-11-30T00:00:00+00:00"
 draft: false
 tags: ["kubernetes", "anti-affinity", "mongodb", "percona"]
+categories: ['Cloud', 'MongoDB']
 authors:
   - edith_puclla
 images:

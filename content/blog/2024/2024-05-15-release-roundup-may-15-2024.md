@@ -2,6 +2,7 @@
 title: "Release Roundup May 15, 2024"
 date: "2024-05-15T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'MongoDB', 'MySQL', 'XtraDB', 'releases']
+categories: ['MongoDB', 'MySQL']
 description: "Percona software releases and updates April 30 - May 15, 2024."
 authors:
   - david_quilty

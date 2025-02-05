@@ -12,12 +12,12 @@
     <div class="contentblock branded">
     {{ .Content }}
 
-    {{ if .Pages }}
-        <ul>
-            {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ if .Data.Terms }}
+        <div class="tagList">
+            {{ range .Data.Terms.ByCount }}
+            <a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} ({{ .Count }})</a>
             {{ end }}
-        </ul>
+        </div>
     {{ else }}
         <p>No content available.</p>
     {{ end }}

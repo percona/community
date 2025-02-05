@@ -1,0 +1,52 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "main" }}
+
+    <div class="hero-text">
+        <h1># {{ .Title }}</h1>
+    </div>
+
+    <div class="contentblock branded">
+    {{ .Content }}
+
+    {{ if .Pages }}
+
+        {{- $pages := .Pages -}}
+        {{- $paginator := .Paginate $pages 9 }}
+
+        <div class="grid grid--3">
+            {{- range $paginator.Pages -}}
+                <div class="grid__item">
+                    {{- $excerpt := "" -}}
+                    {{- if isset .Params "excerpt" }}
+                        {{- $excerpt = .Params.excerpt -}}
+                    {{- end -}}
+                    {{- if isset .Params "images" -}}
+                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
+                    {{- else -}}
+                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
+        {{- if gt $paginator.TotalPages 1 -}}
+        <div class="paginator">
+            {{- if $paginator.HasPrev -}}
+                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+            {{- end -}}
+            {{- range $paginator.Pagers -}}
+                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+            {{- end -}}
+            {{- if $paginator.HasNext -}}
+                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+            {{- end -}}
+        </div>
+        {{- end -}}
+
+    {{ else }}
+        <p>No content available.</p>
+    {{ end }}
+    </div>
+{{ end }}

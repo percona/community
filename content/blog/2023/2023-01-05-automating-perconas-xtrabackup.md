@@ -3,6 +3,7 @@ title: "Automating Percona's XtraBackup"
 date: "2023-01-04T00:00:00+00:00"
 draft: false
 tags: ['XtraBackup', 'automation', 'xtrabackupautomator']
+categories: ['MySQL']
 authors:
   - phil_plachta
 images:

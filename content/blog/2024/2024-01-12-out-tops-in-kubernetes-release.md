@@ -3,6 +3,7 @@ title: "Our Top Picks from the Kubernetes 1.29 Release"
 date: "2024-01-12T00:00:00+00:00"
 draft: false
 tags: ["edith_puclla", "sergey_pronin", "kubernetes", "release"]
+categories: ['Cloud']
 authors:
   - sergey_pronin
   - edith_puclla

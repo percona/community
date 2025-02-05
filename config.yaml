@@ -11,6 +11,7 @@ params:
     - contribute.jpg
 taxonomies:
   tag: tags
+  category: categories
 social:
   twitter: Percona
 sitemap:
