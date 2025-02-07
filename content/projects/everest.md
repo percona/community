@@ -9,10 +9,10 @@ images:
     - images/everest/cover.jpg
 ---
 
-<script>
+<!-- <script>
     // 301 redirect to the product page on the main Percona website
     window.location.replace("https://www.percona.com/software/percona-everest");
-</script>
+</script> -->
 
 {{% wrapper class="section" %}}
 {{% grid size=2 %}}
