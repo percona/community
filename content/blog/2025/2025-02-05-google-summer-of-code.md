@@ -150,6 +150,43 @@ It is expected that project delivers an architecture diagram of the testing envi
     * https://github.com/ncw/swift
     * https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/openstack
 
+## Percona Server for MySQL and Percona XtraDB Cluster
+
+### Automating Code Merges with AI
+
+The regular and manual merge from Oracle’s GitHub repository process is time-consuming, complex, and prone to errors, particularly due to merge conflicts. Careful attention is required to avoid introducing regressions into Percona’s open-source products. While this project is specific to Percona’s needs, it addresses a common challenge in open-source software development, as many projects rely on upstream repositories for their code. Therefore, the solution can be generalized and could benefit other open-source projects with similar code integration needs.
+
+This GSoC project aims to develop an intelligent system using Artificial Intelligence to automate the MySQL fork merge process. Percona has been performing these merges for 18 years, accumulating a wealth of historical data (code changes, merge resolutions, conflict histories, test results) that can be leveraged to train an AI model.
+
+The core objective is to create a tool that can:
+
+Analyze upstream changes: Process and understand the changes introduced by Oracle in their MySQL repository.
+Identify merge conflicts: Identify conflicts between upstream changes and Percona’s modifications.
+Suggest merge resolutions: Propose solutions for resolving identified conflicts, drawing on patterns from historical merge data.
+Automate merges: Automatically apply upstream changes with the suggested merge resolutions.
+Learn and adapt: Continuously improve its performance and accuracy by learning from new merge data and feedback.
+
+**Deliverables:**
+
+Reduced merge time and effort: Automating the merge process will free up developer time for other critical tasks.
+Improved merge accuracy: AI can potentially identify subtle conflicts that might be missed by manual review.
+Faster release cycles: Streamlining the merge process will enable quicker releases of updated Percona products.
+Open-source contribution: The resulting tool will be open-sourced, benefiting other projects that maintain forks of MySQL or similar databases. This problem is not unique to Percona; other open-source projects facing similar merging challenges can utilize this solution.
+As a result of this project, you’re expected to deliver:
+* A working prototype of the AI-powered merge tool.
+* Well-documented code and training data.
+* Comprehensive test suite and evaluation results.
+* A report detailing the project’s methodology, findings, and future directions.
+
+**Required/preferred skills:** Python, Machine Learning libraries and frameworks (e.g., TensorFlow, PyTorch, scikit-learn), C++, Git, database systems
+**Duration:** 350 hours
+**Difficulty level:** Hard
+**Mentors:** Julia Vural, Oleksiy Lukin
+**Relevant repositories and resources:**
+
+* GitHub - [percona/percona-server: Percona Server](https://github.com/percona/percona-server)
+* GitHub - [percona/percona-xtradb-cluster: A High Scalability Solution for MySQL Clustering and High Availability](https://github.com/percona/percona-xtradb-cluster)
+* [https://github.com/mysql/mysql-servermetal/docs/installing/openstack](https://github.com/mysql/mysql-servermetal/docs/installing/openstack)
 
 ## Percona Monitoring and Management (PMM)
 
