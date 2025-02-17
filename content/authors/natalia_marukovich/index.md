@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/natalia-marukovich-86555239/
 images:
-  - blog/authors/natalia_marukovich.jpeg
+  - blog/authors/natalia_marukovich.jpg
 ---
 
 Software Engineer at Percona
