@@ -1,9 +1,11 @@
 ---
 title: "How to Use IAM Roles for Service Accounts (IRSA) with Percona Operator for MongoDB on AWS"
-date: "2025-02-20T00:00:00+00:00"
-tags: ['Percona', 'opensource', 'Kubernetes', 'MongoDB']
+date: "2025-02-17T00:00:00+00:00"
+tags: ['Kubernetes', 'MongoDB']
 authors:
   - natalia_marukovich
+images:
+  - blog/2025/02/mongo-aws-iam.jpg
 ---
 
 Introduction
