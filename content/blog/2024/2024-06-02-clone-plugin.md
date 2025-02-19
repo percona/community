@@ -1,7 +1,7 @@
 ---
 title: "Take a Clone it will last longer"
 date: "2024-06-02T00:00:00+00:00"
-tags: ['Percona', 'opensource', 'clone', 'replication','MySQL',]
+tags: ['Percona', 'opensource', 'clone', 'replication','MySQL']
 categories: ['MySQL']
 description: "Want to learn more about MySQL and Cloning?"
 authors:

@@ -5,6 +5,7 @@ tags: ['Percona', 'opensource', 'Kubernetes', 'MongoDB']
 categories: ["Cloud"]
 authors:
   - sergey_pronin
+  - daniil_bazhenov
 images:
   - blog/2025/01/operator-1-19.jpg
 ---

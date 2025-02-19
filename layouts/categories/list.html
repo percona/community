@@ -4,9 +4,12 @@
 
 {{ define "mainwrapper" }}
 
-    <div class="hero-text">
-        <h1># {{ .Title }}</h1>
-    </div>
+    <div class="hero hero-gradient aqua "><div class="contentblock">
+
+        <div class="hero-text">
+            <h1>#{{ .Title }} articles</h1>
+        </div>
+    </div></div>     
 
     <div class="contentblock branded">
     {{ .Content }}
@@ -16,21 +19,32 @@
         {{- $pages := .Pages -}}
         {{- $paginator := .Paginate $pages 9 }}
 
-        <div class="grid grid--3">
-            {{- range $paginator.Pages -}}
-                <div class="grid__item">
-                    {{- $excerpt := "" -}}
-                    {{- if isset .Params "excerpt" }}
-                        {{- $excerpt = .Params.excerpt -}}
-                    {{- end -}}
-                    {{- if isset .Params "images" -}}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
-                    {{- else -}}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+        <div class="contentblock branded">
+            <div class="blog-list">
+                <div class="main-content">
+                    <ul class="post-list">
+                        {{- range $paginator.Pages -}}
+                            <li class="post-item">
+                                {{- partial "postpreview-list" . -}}                         
+                            </li>
+                        {{- end -}}
+                    </ul>
+                    {{- if gt $paginator.TotalPages 1 -}}
+                    <div class="paginator">
+                        {{- if $paginator.HasPrev -}}
+                            <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+                        {{- end -}}
+                        {{- range $paginator.Pagers -}}
+                            <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+                        {{- end -}}
+                        {{- if $paginator.HasNext -}}
+                            <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+                        {{- end -}}
+                    </div>
                     {{- end -}}
                 </div>
-            {{- end -}}
-        </div>
+            </div>
+        </div>    
         {{- if gt $paginator.TotalPages 1 -}}
         <div class="paginator">
             {{- if $paginator.HasPrev -}}

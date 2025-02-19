@@ -54,36 +54,48 @@
 </div></div>
 
     {{- .Content -}}
-
     <div class="contentblock branded">
-        <h2>Latest articles</h2>
-        <div class="grid grid--3">
-            {{- range $paginator.Pages -}}
-                <div class="grid__item">
-                    {{- $excerpt := "" -}}
-                    {{- if isset .Params "excerpt" }}
-                        {{- $excerpt = .Params.excerpt -}}
+        <div class="blog-list">
+            <div class="main-content">
+                <h2>Latest articles</h2>
+                <ul class="post-list">
+                    {{- range $paginator.Pages -}}
+                        <li class="post-item">
+                            {{- partial "postpreview-list" . -}}                         
+                        </li>
                     {{- end -}}
-                    {{- if isset .Params "images" -}}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
-                    {{- else -}}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+                </ul>
+                {{- if gt $paginator.TotalPages 1 -}}
+                <div class="paginator">
+                    {{- if $paginator.HasPrev -}}
+                        <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+                    {{- end -}}
+                    {{- range $paginator.Pagers -}}
+                        <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+                    {{- end -}}
+                    {{- if $paginator.HasNext -}}
+                        <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
                     {{- end -}}
                 </div>
-            {{- end -}}
+                {{- end -}}
+            </div>
+            <div class="sidebar">
+                <h2>Categories</h2>
+                <ul class="category-list">
+                    {{ range sort .Site.Taxonomies.categories.ByCount }}
+                    <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+                    {{ end }}
+                </ul>
+                <h2>Tags</h2>
+                <ul class="tag-list">
+                    {{ range sort .Site.Taxonomies.tags.ByCount }}
+                    {{- if gt .Count 1 -}}
+                    <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
+                    {{- end -}}
+                    {{ end }}
+                </ul>
+            </div>
         </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
-        {{- end -}}
-    </div>
+    </div>    
+    
 {{ end }}

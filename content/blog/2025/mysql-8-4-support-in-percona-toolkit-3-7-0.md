@@ -1,7 +1,7 @@
 ---
 title: "MySQL 8.4 Support in Percona Toolkit 3.7.0"
 date: "2025-01-06T00:00:00+00:00"
-tags: ['Percona', 'opensource', 'Toolkit', 'MySQL']
+tags: ['Percona', 'opensource', 'Toolkit', 'MySQL', "Featured"]
 categories: ["MySQL", "Toolkit"]
 authors:
   - sveta_smirnova

@@ -19,6 +19,109 @@
   }
 }
 
+.blog-list {
+  display: flex;
+  flex-direction: row;
+  
+  .main-content {
+    flex: 3;
+    margin-right: 1.5rem;
+
+    h2 {
+      margin-bottom: 1rem; // Добавление отступа между заголовком "Latest articles" и списком постов
+    }
+
+    .post-list {
+      list-style: none;
+      padding: 0;
+
+      .post-item {
+        margin-bottom: 0.5rem; // Уменьшение отступа между постами
+        border-bottom: 1px solid #e8ecf3;
+        padding-bottom: 0.5rem;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .paginator {
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+
+      .active {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .sidebar {
+    flex: 1;
+    background: #f7f7f7;
+    padding: 1rem;
+
+    h2 {
+      margin-bottom: 1rem; // Добавление отступа между заголовком и тегами
+      font-size: 24px;
+    }
+
+    .tag-list, .category-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+
+      li {
+        line-height: 1;
+      }
+
+      .tag, .category {
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 12px; // Размер шрифта 12px
+        text-decoration: none;
+        color: #333;
+        line-height: 1;
+
+        &:hover {
+          background-color: #e1e1e1;
+        }
+      }
+
+    }
+
+    .tag-list {
+      gap: 5px; 
+    }
+
+    .category-list {
+      margin-bottom: 1rem;
+      gap: 10px; 
+
+      .category {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  .blog-list {
+    flex-direction: column;
+
+    .main-content {
+      margin-right: 0;
+    }
+  }
+}
+
+
 .text .post h3 {
     font-size: 16px;
     font-weight: 600;
@@ -442,4 +545,127 @@ a.post--preview, a.post--preview * {
     box-shadow: 0px 0px 10px 4px rgba(0, 22, 43, 0.09);
     border-radius: 8px;
   }
+}
+
+
+
+// Определение переменных для цветов
+$main-color: #333;
+$secondary-color: #8897b3;
+$border-color: #d3d3d3;
+$tag-background-color: #f5f5f5;
+$title-hover: #1059c0;
+
+.post--list {
+  display: flex;
+  padding: 1rem 0rem;
+
+  .post__image {
+    flex: 0 0 240px; // Ширина изображения
+    margin-right: 1rem;
+
+    img {
+      width: 100%;
+      height: auto; // Сохранение пропорций изображения
+      max-height: 384px; // Ограничение высоты до 384px
+    }
+  }
+
+  .post__details {
+    flex: 1;
+    
+    .post__title-link {
+      text-decoration: none;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: $main-color;
+
+        &:hover {
+          color: $title-hover;
+        }
+      }
+    }
+
+    .post__meta {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+
+      .post__author {
+        display: flex;
+        align-items: center;
+        margin: 0; // Уменьшение отступов сверху и снизу
+
+        .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+          border: 2px solid $border-color; // Серый бордюр
+        }
+
+        .author-link {
+          text-decoration: none;
+          color: $main-color;
+          font-size: 14px; // Уменьшение шрифта имени автора
+          margin-right: 0.5rem; // Отступ справа для каждого автора
+
+          &:not(:last-child)::after {
+            content: '';
+          }
+        }
+      }
+    }
+
+    .post__content {
+      margin-top: 0.5rem;
+
+      p {
+        color: $main-color;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+      }
+
+      .post__tags-date {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        .post__date,
+        .post__tags {
+          font-size: 14px; // Установление одинакового размера шрифта
+          font-weight: 400; // Установление одинаковой жирности шрифта
+          line-height: 1.2; // Установление одинаковой высоты строки
+          color: $secondary-color; // Установление одинакового цвета шрифта
+        }
+
+        .post__tags {
+          margin-left: 1rem; // Отступ между датой и тегами
+
+          a {
+            margin-right: 0rem; // Отступ между тегами
+            color: $secondary-color; // Установление цвета для ссылок тегов
+            text-decoration: none; // Убрать подчеркивание
+            padding: 2px 6px; // Внутренние отступы для обеспечения одинакового размера
+            border: 1px solid transparent; // Прозрачный бордюр для обеспечения одинакового размера
+            border-radius: 5px; // Закругленные уголки
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: $tag-background-color;
+              border-color: $border-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

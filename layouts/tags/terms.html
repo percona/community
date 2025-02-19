@@ -4,10 +4,11 @@
 
 {{ define "main" }}
 
-    <div class="hero-text">
-        <h1># {{ .Title }}</h1>
-
-    </div>
+    <div class="hero"><div class="contentblock">
+        <div class="hero-text">
+            <h1>#{{ .Title }}</h1>
+        </div>
+    </div></div>
 
     <div class="contentblock branded">
     {{ .Content }}
