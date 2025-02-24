@@ -8,6 +8,9 @@
         </a>
     </div>
     <div class="post__details">
+        <a href="{{ .RelPermalink }}" class="post__title-link">
+            <h3>{{ .Title }}</h3>
+        </a>
         <div class="post__meta">
             {{ if and (isset .Params "authors") (gt (len .Params.authors) 0) }}
                 <div class="post__author">
@@ -22,23 +25,22 @@
                 </div>
             {{ end }}
         </div>
-        <a href="{{ .RelPermalink }}" class="post__title-link">
-            <h3>{{ .Title }}</h3>
-        </a>
         {{ if .Content }}
             <div class="post__content">
+                <a class="post-content__link" href="{{ .RelPermalink }}">
                 {{ if .Params.excerpt }}
                     {{- .Params.excerpt | markdownify -}}
                 {{ else }}
                     <p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 200  -}} <small>...</small></p>
                 {{ end }}
+                </a>
                 <div class="post__tags-date">
-                    <p class="post__date">{{ .PublishDate.Format "January 2" }}</p>
                     {{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
                         <p class="post__tags">
+                           <span class="post__date">{{ .PublishDate.Format "January 2" }}</span>
                         {{ range $index, $tag := .Params.tags }}
-                            {{ if lt $index 4 }}
-                                <a href="{{ "/tags/" }}{{ $tag }}">#{{- substr  $tag 0 16  -}}</a>
+                            {{ if lt $index 2 }}
+                                <a href="{{ "/tags/" }}{{ $tag }}">#{{- substr  $tag 0 20  -}}</a>
                             {{ end }}
                         {{ end }}
                         </p>
@@ -52,8 +54,8 @@
                     {{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
                         <p class="post__tags">
                         {{ range $index, $tag := .Params.tags }}
-                            {{ if lt $index 4 }}
-                                <a href="{{ "/tags/" }}{{ $tag }}">#{{- substr  $tag 0 16  -}}</a>
+                            {{ if lt $index 2 }}
+                                <a href="{{ "/tags/" }}{{ $tag }}">#{{- substr  $tag 0 20  -}}</a>
                             {{ end }}
                         {{ end }}
                         </p>

@@ -122,6 +122,153 @@
 }
 
 
+
+$main-color: #333;
+$secondary-color: #8897b3;
+$border-color: #d3d3d3;
+$tag-background-color: #f5f5f5;
+$title-hover: #1059c0;
+
+.post--list {
+  display: flex;
+  padding: 1rem 0rem;
+
+  .post__image {
+    flex: 0 0 240px; // Ширина изображения
+    margin-right: 1rem;
+
+    img {
+      width: 100%;
+      height: auto; // Сохранение пропорций изображения
+      max-height: 384px; // Ограничение высоты до 384px
+    }
+  }
+
+  .post__details {
+    flex: 1;
+    
+    .post__title-link {
+      text-decoration: none;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5em;
+        color: $main-color;
+
+        &:hover {
+          color: $title-hover;
+        }
+      }
+    }
+
+    .post__meta {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+
+      .post__author {
+        display: flex;
+        align-items: center;
+        margin: 0; // Уменьшение отступов сверху и снизу
+
+        .avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+          border: 2px solid $border-color; // Серый бордюр
+        }
+
+        .author-link {
+          text-decoration: none;
+          color: $main-color;
+          font-size: 14px; // Уменьшение шрифта имени автора
+          margin-right: 0.5rem; // Отступ справа для каждого автора
+
+          &:not(:last-child)::after {
+            content: '';
+          }
+        }
+      }
+    }
+
+    .post__content {
+      margin-top: 0.5rem;
+
+      .post-content__link {
+        text-decoration: none;
+      }
+
+      p {
+        color: $main-color;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+      }
+
+      .post__tags-date {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        .post__date,
+        .post__tags {
+          font-size: 14px; // Установление одинакового размера шрифта
+          font-weight: 400; // Установление одинаковой жирности шрифта
+          line-height: 1.5; // Установление одинаковой высоты строки
+          color: $secondary-color; // Установление одинакового цвета шрифта
+        }
+
+        .post__date {
+          padding-right: 0.5rem;
+        }
+        .post__tags {
+          margin-left: 0rem; // Отступ между датой и тегами
+
+          @media (max-width: 768px) {
+            margin-left: 0rem; 
+          }
+
+          a {
+            margin-right: 0rem; // Отступ между тегами
+            color: $secondary-color; // Установление цвета для ссылок тегов
+            text-decoration: none; // Убрать подчеркивание
+            padding: 2px 6px; // Внутренние отступы для обеспечения одинакового размера
+            border: 1px solid transparent; // Прозрачный бордюр для обеспечения одинакового размера
+            border-radius: 5px; // Закругленные уголки
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: $tag-background-color;
+              border-color: $border-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media query для мобильных устройств
+@media (max-width: 768px) {
+  .post--list {
+    padding: 0.2rem 0;
+  }
+
+  .post__date {
+   // display: none; 
+  }
+
+  .post__image {
+    display: none; // Скрытие изображений на мобильной версии
+  }
+}
+
 .text .post h3 {
     font-size: 16px;
     font-weight: 600;
@@ -545,127 +692,4 @@ a.post--preview, a.post--preview * {
     box-shadow: 0px 0px 10px 4px rgba(0, 22, 43, 0.09);
     border-radius: 8px;
   }
-}
-
-
-
-// Определение переменных для цветов
-$main-color: #333;
-$secondary-color: #8897b3;
-$border-color: #d3d3d3;
-$tag-background-color: #f5f5f5;
-$title-hover: #1059c0;
-
-.post--list {
-  display: flex;
-  padding: 1rem 0rem;
-
-  .post__image {
-    flex: 0 0 240px; // Ширина изображения
-    margin-right: 1rem;
-
-    img {
-      width: 100%;
-      height: auto; // Сохранение пропорций изображения
-      max-height: 384px; // Ограничение высоты до 384px
-    }
-  }
-
-  .post__details {
-    flex: 1;
-    
-    .post__title-link {
-      text-decoration: none;
-
-      h3 {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.5em;
-        color: $main-color;
-
-        &:hover {
-          color: $title-hover;
-        }
-      }
-    }
-
-    .post__meta {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-bottom: 0.5rem;
-
-      .post__author {
-        display: flex;
-        align-items: center;
-        margin: 0; // Уменьшение отступов сверху и снизу
-
-        .avatar {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          margin-right: 0.5rem;
-          border: 2px solid $border-color; // Серый бордюр
-        }
-
-        .author-link {
-          text-decoration: none;
-          color: $main-color;
-          font-size: 14px; // Уменьшение шрифта имени автора
-          margin-right: 0.5rem; // Отступ справа для каждого автора
-
-          &:not(:last-child)::after {
-            content: '';
-          }
-        }
-      }
-    }
-
-    .post__content {
-      margin-top: 0.5rem;
-
-      p {
-        color: $main-color;
-        font-size: 14px;
-        line-height: 1.5em;
-        font-weight: 400;
-      }
-
-      .post__tags-date {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 0.5rem;
-
-        .post__date,
-        .post__tags {
-          font-size: 14px; // Установление одинакового размера шрифта
-          font-weight: 400; // Установление одинаковой жирности шрифта
-          line-height: 1.2; // Установление одинаковой высоты строки
-          color: $secondary-color; // Установление одинакового цвета шрифта
-        }
-
-        .post__tags {
-          margin-left: 1rem; // Отступ между датой и тегами
-
-          a {
-            margin-right: 0rem; // Отступ между тегами
-            color: $secondary-color; // Установление цвета для ссылок тегов
-            text-decoration: none; // Убрать подчеркивание
-            padding: 2px 6px; // Внутренние отступы для обеспечения одинакового размера
-            border: 1px solid transparent; // Прозрачный бордюр для обеспечения одинакового размера
-            border-radius: 5px; // Закругленные уголки
-            transition: all 0.3s ease;
-
-            &:hover {
-              background-color: $tag-background-color;
-              border-color: $border-color;
-            }
-          }
-        }
-      }
-    }
-  }
-
 }
