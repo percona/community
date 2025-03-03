@@ -46,14 +46,18 @@ menu:
       name: Contribute
       url: /contribute
       weight: 1
-    - identifier: events
-      name: Events
-      url: /events
-      weight: 2
     - identifier: blog
       name: Blog
       url: /blog
+      weight: 2
+    - identifier: forum
+      name: Forum
+      url: https://forums.percona.com/
       weight: 3
+    - identifier: events
+      name: Events
+      url: /events
+      weight: 4
     - identifier: databases
       name: Databases
       url: 
