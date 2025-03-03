@@ -22,18 +22,20 @@ jobs:
           extended: true
 
       - name: Cache resources
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: resources
-          key: hugo-resources
-          restore-keys: hugo-resources
+          key: hugo-resources-${{ hashFiles('**/*.md') }}
+          restore-keys: |
+            hugo-resources
 
       - name: Cache hugo deb
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: /tmp/hugo.deb
-          key: hugo-deb
-          restore-keys: hugo-deb
+          key: hugo-deb-${{ runner.os }}-${{ hashFiles('**/hugo.deb') }}
+          restore-keys: |
+            hugo-deb-${{ runner.os }}-
 
       - name: Build
         run: hugo --minify
