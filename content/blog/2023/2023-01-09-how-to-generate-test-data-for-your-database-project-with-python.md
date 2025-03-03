@@ -2,7 +2,7 @@
 title: 'How To Generate Test Data for Your Database Project With Python'
 date: "2023-01-09T00:00:00+00:00"
 draft: false
-tags: ['Python', 'MySQL', 'PostgreSQL', 'MongoDB']
+tags: ['Python', "Dev", 'MySQL', 'PostgreSQL', 'MongoDB']
 categories: ['MySQL', 'PostgreSQL', 'MongoDB']
 authors:
   - mario_garcia

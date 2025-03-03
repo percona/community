@@ -2,7 +2,7 @@
 title: "Kubernetes Community Days UK: Keynote Cilium and eBPF"
 date: "2023-10-24T00:00:00+00:00"
 draft: false
-tags: ["ckd", "kubernetes", "cilium", "ebpf"]
+tags: ["Events", "Kubernetes"]
 categories: ['Community']
 authors:
   - edith_puclla

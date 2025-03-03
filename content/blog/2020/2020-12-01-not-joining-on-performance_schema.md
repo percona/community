@@ -2,7 +2,7 @@
 title: 'Not JOINing on PERFORMANCE_SCHEMA'
 date: Tue, 01 Dec 2020 19:22:46 +0000
 draft: false
-tags: ['author_kohntopp', 'MySQL', 'Open Source Databases', 'Tools']
+tags: ['MySQL', 'Open Source Databases', 'Tools']
 authors:
   - koehntopp
 images:

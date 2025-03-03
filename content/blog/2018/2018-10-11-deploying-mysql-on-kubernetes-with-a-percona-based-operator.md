@@ -2,7 +2,8 @@
 title: 'Deploying MySQL on Kubernetes with a Percona-based Operator'
 date: Thu, 11 Oct 2018 17:03:04 +0000
 draft: false
-tags: ['author_flavius', 'Advanced Level', 'auto-scaling', 'automated deployments', 'Containers', 'Deployment', 'DevOps', 'GitHub', 'Kubernetes', 'MySQL', 'Orchestrator', 'Percona Server for MySQL', 'scalability']
+tags: ['Advanced Level', 'auto-scaling', 'automated deployments', 'Containers', 'Deployment', 'DevOps', 'GitHub', 'Kubernetes', 'MySQL', 'Orchestrator', 'Percona Server for MySQL', 'Scalability']
+categories: ['MySQL', 'Community']
 images: 
   - blog/2018/10/kubernetes-mysql-operator.png
 authors:

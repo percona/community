@@ -2,7 +2,7 @@
 title: 'Matt Yonkovit: It''s a crazy world, and these trends are disrupting and breaking your database infrastructure'
 date: Fri, 12 Jun 2020 15:30:28 +0000
 draft: false
-tags: ['author_lawrence', 'Cloud', 'DBA Tools', 'DBaaS', 'Kubernetes', 'Kubernetes', 'MongoDB', 'MongoDB', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Percona Monitoring and Management', 'PMM', 'Postgres', 'PostgreSQL', 'Tools']
+tags: ['Cloud', 'DBA Tools', 'DBaaS', 'Kubernetes', 'Kubernetes', 'MongoDB', 'MongoDB', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Percona Monitoring and Management', 'PMM', 'Postgres', 'PostgreSQL', 'Tools']
 authors: 
   - cate_lawrence
 images:

@@ -2,7 +2,7 @@
 title: 'London Open Source Database Community Meetup'
 date: Fri, 15 Mar 2019 09:24:30 +0000
 draft: false
-tags: ['author_federico', 'Events', 'MariaDB', 'MongoDB', 'MySQL', 'PostgreSQL']
+tags: ['Events', 'MariaDB', 'MongoDB', 'MySQL', 'PostgreSQL']
 authors:
   - federico_razzoli
 images:

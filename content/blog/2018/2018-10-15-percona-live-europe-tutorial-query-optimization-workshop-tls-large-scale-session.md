@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Tutorial: Query Optimization and TLS at Large Scale'
 date: Mon, 15 Oct 2018 14:05:06 +0000
 draft: false
-tags: ['author_jaime', 'Events', 'MariaDB', 'MySQL', 'Open Source Databases', 'Percona Live Europe 2018', 'query optimization', 'TLS at scale']
+tags: ['Events', 'MariaDB', 'MySQL', 'Open Source Databases', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/MySQL-at-scale.jpg
 authors:

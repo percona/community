@@ -2,7 +2,7 @@
 title: 'Percona Projects for Google Summer of Code - 2020'
 date: Thu, 04 Jun 2020 11:38:43 +0000
 draft: false
-tags: ['author_puneet', 'Community', 'Events', 'Google Summer of Code', 'GSoC', 'Information', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Percona Monitoring and Management', 'PMM', 'Tools']
+tags: [ 'Community', 'Events', 'Google Summer of Code', 'GSoC', 'Information', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Percona Monitoring and Management', 'PMM', 'Tools']
 authors:
   - puneet_kala
 images:

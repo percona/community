@@ -1,7 +1,8 @@
 ---
 title: "Node metrics available inside of a container"
 date: "2023-02-06T00:00:00+00:00"
-tags: ["kubernetes", "node_exporter", "monitoring", "PMM", "DBaaS", "containers"]
+tags: ["Kubernetes", "Monitoring", "PMM", "DBaaS", "Containers"]
+categories: ['Cloud', 'PMM']
 authors:
   - denys_kondratenko
 images:

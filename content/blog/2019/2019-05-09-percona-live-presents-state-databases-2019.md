@@ -2,7 +2,7 @@
 title: 'Percona Live Presents: The State of Databases in 2019'
 date: Thu, 09 May 2019 10:20:27 +0000
 draft: false
-tags: ['author_dinesh', 'Events', 'Open Source Databases', 'Percona Live 2019']
+tags: [ 'Events', 'Open Source Databases', 'Percona Live 2019']
 images:
   - blog/2019/05/state-of-databases-2019.jpg
 authors:

@@ -2,7 +2,7 @@
 title: 'Impact of innodb_file_per_table Option On Crash Recovery Time'
 date: Tue, 23 Jul 2019 13:34:14 +0000
 draft: false
-tags: ['author_timur', 'MySQL', 'MySQL', 'MySQL Crash Recovery', 'Open Source Databases']
+tags: [ 'MySQL', 'MySQL', 'MySQL Crash Recovery', 'Open Source Databases']
 authors:
   - timur_solodovnikov
 images:

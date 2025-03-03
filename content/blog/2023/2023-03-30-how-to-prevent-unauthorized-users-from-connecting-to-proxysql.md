@@ -2,7 +2,8 @@
 title: "How to prevent unauthorized users from connecting to ProxySQL"
 date: "2023-03-30T00:00:00+00:00"
 draft: false
-tags: ["Databases", "Percona", "ProxySQL", "LoadBalancer"]
+tags: ["Databases", "MySQL", "ProxySQL", "LoadBalancer"]
+categories: ['MySQL', "Community"]
 authors:
   - valentin_traen
 images:

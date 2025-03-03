@@ -1,8 +1,8 @@
 ---
 title: "Percona Operator for MongoDB 1.19: Remote Backups, Auto-Generated Passwords, and More!"
 date: "2025-01-31T00:00:00+00:00"
-tags: ['Kubernetes', 'MongoDB', 'Percona', 'opensource']
-categories: ["Cloud"]
+tags: ['Kubernetes', 'MongoDB', 'Percona', 'Opensource']
+categories: ["Cloud", 'MongoDB']
 authors:
   - sergey_pronin
 images:

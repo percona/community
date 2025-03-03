@@ -2,7 +2,7 @@
 title: "Percona Joins Community Over Code 2024 in Bratislava, Slovakia"
 date: "2024-06-21T00:00:00+00:00"
 draft: false
-tags: ["community-over-code", "percona-everest", "kubernetes", "databases", "Featured"]
+tags: ["Percona Everest", "Kubernetes", "Databases", "Events"]
 categories: ['PostgreSQL', 'Community']
 authors:
   - edith_puclla

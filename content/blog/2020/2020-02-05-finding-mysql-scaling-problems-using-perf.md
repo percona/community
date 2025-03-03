@@ -2,7 +2,7 @@
 title: 'Finding MySQL Scaling Problems Using perf'
 date: Wed, 05 Feb 2020 16:18:14 +0000
 draft: false
-tags: ['author.daniel', 'cacheline', 'MariaDB', 'MySQL', 'perf', 'performance', 'POWER']
+tags: ['cacheline', 'MariaDB', 'MySQL', 'perf', 'performance', 'POWER']
 authors:
   - daniel_black
 images:

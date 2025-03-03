@@ -1,8 +1,8 @@
 ---
 title: "Percona Bug Report: October 2024"
 date: "2024-11-25T00:00:00+00:00"
-tags: ['Percona', 'opensource', 'PMM', 'Kubernetes', 'MySQL', 'PostgreSQL']
-categories: ['PMM', 'Cloud', 'MySQL', 'PostgreSQL']
+tags: ['PMM', 'Kubernetes', 'MySQL', 'PostgreSQL', 'Percona', 'Opensource']
+categories: ['PMM', 'Cloud', 'MySQL', 'PostgreSQL', 'Toolkit']
 authors:
   - aaditya_dubey
 images:
@@ -16,7 +16,6 @@ We constantly update our [bug reports](https://jira.percona.com/) and monitor [o
 In this edition of our bug report, we have the following list of bugs,
 
 ## Percona Server/MySQL Bugs
-
 
 [PS-8057](https://perconadev.atlassian.net/browse/PS-8057): When max_slowlog_size is set to above 4096, then it  gets reset to 1073741824. This overwrites the slow log file path with a different file name, which becomes like node_name.log.000001. Due to this issue, your path defined at slow_query_log_file won`t be useful. This issue has started happening since MySQL Version 8.0.32.
 

@@ -3,6 +3,7 @@ title: "How To Generate Data With Pagila in Percona Distribution for PostgreSQL"
 date: "2022-12-13T00:00:00+00:00"
 draft: false
 tags: ["Docker", "PostgreSQL", "Pagila", "Database"]
+categories: ["PostgreSQL"]
 authors:
   - edith_puclla
 images:

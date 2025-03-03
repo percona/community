@@ -2,7 +2,8 @@
 title: "Using the JSON data type with MySQL 8"
 date: "2023-03-13T00:00:00+00:00"
 draft: false
-tags: ["json", "mysql", "Databases", "Percona", "Open Source"]
+tags: ["JSON", "MySQL", "Databases", "Open Source"]
+categories: ["MySQL"]
 authors:
   - edith_puclla
 images:

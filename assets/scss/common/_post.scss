@@ -29,7 +29,7 @@
 
     h2 {
       font-size: 24px;
-      margin-bottom: 1rem; // Добавление отступа между заголовком "Latest articles" и списком постов
+      margin-bottom: 1rem; 
     }
 
     .post-list {
@@ -37,7 +37,7 @@
       padding: 0;
 
       .post-item {
-        margin-bottom: 0.5rem; // Уменьшение отступа между постами
+        margin-bottom: 0.5rem; 
         border-bottom: 1px solid #e8ecf3;
         padding-bottom: 0.5rem;
 
@@ -66,7 +66,7 @@
     padding: 1rem;
 
     h2 {
-      margin-bottom: 1rem; // Добавление отступа между заголовком и тегами
+      margin-bottom: 1rem; 
       font-size: 24px;
     }
 
@@ -84,7 +84,7 @@
         background-color: #f1f1f1;
         border-radius: 5px;
         padding: 5px 10px;
-        font-size: 12px; // Размер шрифта 12px
+        font-size: 12px; 
         text-decoration: none;
         color: #333;
         line-height: 1;
@@ -113,8 +113,8 @@
 
 .select-container {
   display: none;
-  justify-content: flex-start; /* Выравнивание по левому краю */
-  gap: 1rem; /* Отступ между селектами */
+  justify-content: flex-start; 
+  gap: 1rem; 
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #ccc;
@@ -140,14 +140,13 @@
   }
 
   .sidebar {
-    display: none; /* Скрытие сайдбара на мобильной версии */
+    display: none; 
   }
 
   .select-container {
-    display: flex; /* Отображение селектбоксов на мобильной версии */
+    display: flex; 
   }
 }
-
 
 $main-color: #333;
 $secondary-color: #8897b3;
@@ -158,16 +157,16 @@ $title-hover: #1059c0;
 .post--list {
   display: flex;
   padding: 0.5rem 0rem;
-  flex-direction: column; /* Для мобильной версии */
+  flex-direction: column; 
 
   .post__image {
-    flex: 0 0 240px; // Ширина изображения
+    flex: 0 0 240px; 
     margin-right: 1rem;
 
     img {
       width: 100%;
-      height: auto; // Сохранение пропорций изображения
-      max-height: 384px; // Ограничение высоты до 384px
+      height: auto; 
+      max-height: 384px;
     }
   }
 
@@ -200,21 +199,21 @@ $title-hover: #1059c0;
       .post__author {
         display: flex;
         align-items: center;
-        margin: 0; // Уменьшение отступов сверху и снизу
+        margin: 0; 
 
         .avatar {
           width: 32px;
           height: 32px;
           border-radius: 50%;
           margin-right: 0.5rem;
-          border: 2px solid $border-color; // Серый бордюр
+          border: 2px solid $border-color; 
         }
 
         .author-link {
           text-decoration: none;
           color: $main-color;
-          font-size: 14px; // Уменьшение шрифта имени автора
-          margin-right: 0.5rem; // Отступ справа для каждого автора
+          font-size: 14px; 
+          margin-right: 0.5rem; 
 
           &:not(:last-child)::after {
             content: '';
@@ -245,17 +244,17 @@ $title-hover: #1059c0;
 
         .post__date,
         .post__tags {
-          font-size: 14px; // Установление одинакового размера шрифта
-          font-weight: 400; // Установление одинаковой жирности шрифта
-          line-height: 1.5; // Установление одинаковой высоты строки
-          color: $secondary-color; // Установление одинакового цвета шрифта
+          font-size: 14px; 
+          font-weight: 400; 
+          line-height: 1.5; 
+          color: $secondary-color; 
         }
 
         .post__date {
           padding-right: 0.5rem;
         }
         .post__tags {
-          margin-left: 0rem; // Отступ между датой и тегами
+          margin-left: 0rem; 
 
           @media (max-width: 768px) {
             margin-left: 0rem; 
@@ -263,12 +262,12 @@ $title-hover: #1059c0;
 
 
           a {
-            margin-right: 0rem; // Отступ между тегами
-            color: $secondary-color; // Установление цвета для ссылок тегов
-            text-decoration: none; // Убрать подчеркивание
-            padding: 2px 6px; // Внутренние отступы для обеспечения одинакового размера
-            border: 1px solid transparent; // Прозрачный бордюр для обеспечения одинакового размера
-            border-radius: 5px; // Закругленные уголки
+            margin-right: 0rem; 
+            color: $secondary-color; 
+            text-decoration: none; 
+            padding: 2px 6px;
+            border: 1px solid transparent;
+            border-radius: 5px;  
             transition: all 0.3s ease;
 
             &:hover {
@@ -282,10 +281,9 @@ $title-hover: #1059c0;
   }
 }
 
-// Media query для мобильных устройств
 @media (max-width: 768px) {
   .post--list {
-    flex-direction: column; /* Для мобильной версии */
+    flex-direction: column;
 
     .post-item {
       padding-bottom: 0.5rem;
@@ -297,17 +295,15 @@ $title-hover: #1059c0;
     
     .post__image {
       flex: 0 0 auto;
-      width: 100%; /* Ширина на весь экран */
-      margin: 0; /* Удаление белой рамки */
+      width: 100%; 
+      margin: 0; 
     }
   }
 }
 
-
-// Media query для десктопных устройств
 @media (min-width: 769px) {
   .post--list {
-    flex-direction: row; /* Для десктопной версии */
+    flex-direction: row;
 
     .post__image {
       flex: 0 0 240px;
@@ -332,7 +328,7 @@ $title-hover: #1059c0;
     font-size: 16px;
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Отступ между иконкой и текстом */
+    gap: 0.5rem; 
     text-decoration: none;
     color: #1059c0;
     transition: color 0.3s ease;
@@ -343,8 +339,8 @@ $title-hover: #1059c0;
   }
 
   .rss-icon {
-    width: 20px; /* Уменьшение размера иконки */
-    height: 20px; /* Уменьшение размера иконки */
+    width: 20px; 
+    height: 20px;
   }
 }
 
@@ -376,7 +372,7 @@ $title-hover: #1059c0;
   code {
     padding: .2em .4em;
     margin: 0;
-    font-size: 85%;
+    font-size: 16px;
     white-space: break-spaces;
     background-color: #818b981f;
     border-radius: 6px;
@@ -390,6 +386,12 @@ $title-hover: #1059c0;
     margin: 1rem 0;
     padding: 1rem 1rem 1rem;
     background-color: #f6f8fa;
+
+    code {
+      padding: 0;
+      background: none;
+      border: none;
+    }
   }
 
   h2 {
@@ -424,8 +426,6 @@ $title-hover: #1059c0;
     }
   }
 }
-
-
 
 .post--preview {
   display: block;

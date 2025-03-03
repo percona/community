@@ -2,7 +2,8 @@
 title: "Monitor your databases with Open Source tools like PMM"
 date: "2023-03-06T00:00:00+00:00"
 draft: false
-tags: ["Monitor", "PMM", "Databases", "Percona", "Open Source"]
+tags: ["Monitor", "PMM", "Databases", "Open Source"]
+categories: ["PMM"]
 authors:
   - edith_puclla
 images:

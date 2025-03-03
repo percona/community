@@ -1,7 +1,7 @@
 ---
 title: "Percona Monitoring and Management 3.0.0-Beta - Tech Preview"
 date: "2024-12-02T00:00:00+00:00"
-tags: ["PMM", "Technical Preview", "Monitoring", "Percona", "Databases", ]
+tags: ["PMM", "Technical Preview", "Monitoring", "Percona", "Databases" ]
 categories: ['PMM']
 authors:
   - ondrej_patocka

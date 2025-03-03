@@ -2,7 +2,8 @@
 title: 'TiSpark: More Data Insights, No More ETL'
 date: Mon, 18 Jun 2018 13:41:53 +0000
 draft: false
-tags: ['author_pingcap', 'ETL', 'extract transform and load', 'NewSQL', 'Open Source Databases', 'TiDB', 'TiSpark']
+tags: ['TiDB', 'ETL', 'NewSQL', 'Open Source']
+categories: ['Community']
 authors:
   - pingcap
 images:

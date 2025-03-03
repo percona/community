@@ -2,7 +2,7 @@
 title: 'Percona Live Presents: The MySQL Query Optimizer Explained Through Optimizer Trace'
 date: Wed, 24 Apr 2019 16:16:09 +0000
 draft: false
-tags: ['author_oystein', 'Events', 'MySQL', 'Percona Live 2019']
+tags: ['Events', 'MySQL', 'Percona Live 2019']
 images:
   - blog/2019/04/oysteing3.jpg
 authors:

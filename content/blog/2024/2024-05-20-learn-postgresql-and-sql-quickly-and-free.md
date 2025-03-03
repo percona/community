@@ -1,7 +1,8 @@
 ---
 title: "Learn PostgreSQL and SQL Quickly and Free"
 date: "2024-05-20T00:00:00+00:00"
-tags: ['Percona', 'opensource', 'PostgreSQL', 'Postgres']
+tags: ['Percona', 'Opensource', 'PostgreSQL', 'SQL']
+categories: ['PostgreSQL']
 description: "Want to learn PostgreSQL? What if you could learn PostgreSQL without having to install the database, load data, find sample data, and it was free?"
 authors:
   - david_stokes

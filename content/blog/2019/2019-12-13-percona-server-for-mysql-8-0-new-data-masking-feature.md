@@ -2,7 +2,7 @@
 title: 'Percona Server for MySQL 8.0 – New Data Masking Feature'
 date: Fri, 13 Dec 2019 10:43:14 +0000
 draft: false
-tags: ['author_francisco', 'data masking', 'data obfuscation', 'data privacy', 'identity protection', 'Intermediate Level', 'MySQL', 'Percona Server for MySQL']
+tags: ['data obfuscation', 'data privacy', 'identity protection', 'Intermediate Level', 'MySQL', 'Percona Server for MySQL']
 authors:
   - francisco_miguel
 images:

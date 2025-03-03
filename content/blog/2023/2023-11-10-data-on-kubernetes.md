@@ -2,8 +2,8 @@
 title: "Data On Kubernetes"
 date: "2023-11-10T00:00:00+00:00"
 draft: false
-tags: ["kubernetes", "dok", "databases"]
-categories: ['Community']
+tags: ["Kubernetes", "DoK", "Databases"]
+categories: ['Cloud', 'Community']
 authors:
   - edith_puclla
 images:

@@ -2,7 +2,8 @@
 title: 'A Nice Feature in MariaDB 10.3: no InnoDB Buffer Pool in Core Dumps'
 date: Thu, 28 Jun 2018 12:28:58 +0000
 draft: false
-tags: ['author_jfgagne', 'core dump', 'InnoDB', 'InnoDB Buffer Pool', 'MariaDB', 'MariaDB 10.3', 'MariaDB Server', 'MySQL', 'MySQL', 'operations', 'Percona Server for MySQL']
+tags: ['core dump', 'InnoDB', 'InnoDB Buffer Pool', 'MariaDB', 'MySQL']
+categories: ['Community']
 images:
   - blog/2018/06/InnoDB-buffer-pool-size.jpg
 authors:

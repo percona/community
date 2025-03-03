@@ -2,7 +2,7 @@
 title: 'IoT Performance Bottlenecks & Open Source Databases'
 date: Thu, 03 Sep 2020 17:35:59 +0000
 draft: false
-tags: ['author_gaurav', 'MongoDB', 'MySQL', 'Open Source Databases', 'Tools']
+tags: ['MongoDB', 'MySQL', 'Open Source Databases', 'Tools']
 images:
   - blog/2020/08/iot1-scaled.jpg
 authors:

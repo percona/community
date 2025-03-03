@@ -2,6 +2,7 @@
 title: "PMM development and testing with help of minikube"
 date: "2021-12-20T00:00:00+00:00"
 tags: ['PMM', 'PostgreSQL', 'PG', 'pg_stat_monitor', 'minikube', 'podman']
+categories: ["PostgreSQL"]
 authors:
   - denys_kondratenko
 images:

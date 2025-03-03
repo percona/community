@@ -2,7 +2,8 @@
 title: "How To Optimize the Structure of a Simple PHP Application as Your Project Grows"
 date: "2023-03-28T00:00:00+00:00"
 draft: false
-tags: ["Databases", "Percona", "PHP", "Docker"]
+tags: ["Databases", "Dev", "PHP", "Docker"]
+categories: ["Community"]
 authors:
   - daniil_bazhenov
 images:

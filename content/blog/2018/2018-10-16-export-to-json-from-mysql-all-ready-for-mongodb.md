@@ -2,7 +2,7 @@
 title: 'Export to JSON from MySQL All Ready for MongoDB'
 date: Tue, 16 Oct 2018 15:18:36 +0000
 draft: false
-tags: ['author_aftabkhan', 'Entry Level', 'export data', 'MongoDB', 'MySQL', 'tools', 'Tools']
+tags: ['Entry Level', 'export data', 'MongoDB', 'MySQL', 'tools', 'Tools']
 authors:
   - aftab_khan
 images:

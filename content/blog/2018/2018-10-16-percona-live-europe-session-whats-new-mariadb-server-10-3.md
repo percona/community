@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Session: What''s New in MariaDB Server 10.3'
 date: Tue, 16 Oct 2018 12:42:19 +0000
 draft: false
-tags: ['author_arjen', 'Events', 'MariaDB', 'Percona Live Europe 2018']
+tags: ['Events', 'MariaDB', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/MariaDB-Foundation-vertical.png
 authors:

@@ -2,7 +2,7 @@
 title: 'Percona Live ONLINE: MySQL on Google Cloud: War and Peace! by Akshay Suryawanshi & Jeremy Cole'
 date: Tue, 02 Jun 2020 16:12:51 +0000
 draft: false
-tags: ['author_lawrence', 'DevOps', 'Google', 'Kubernetes', 'Kubernetes', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Shopify']
+tags: [ 'DevOps', 'Google', 'Kubernetes', 'Kubernetes', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Shopify']
 images:
   - blog/2020/06/SC-3-Matt-Percona.jpg
 authors:

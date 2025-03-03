@@ -3,7 +3,7 @@ title: 'MySQL: Tracing a single query with PERFORMANCE_SCHEMA'
 description: "My task is to collect performance data about a single query, using `PERFORMANCE_SCHEMA` (P_S for short) in MySQL, to ship it elsewhere for integration with other data."
 date: "2022-10-18"
 draft: false
-tags: ['author_kohntopp', 'mysql']
+tags: ['MySQL']
 authors:
   - koehntopp
 images:

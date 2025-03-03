@@ -2,7 +2,7 @@
 title: "Open Door MongoDB Chats"
 date: "2024-03-26T00:00:00+00:00"
 draft: false
-tags: ["mongodb", "backups", "percona"]
+tags: ["MongoDB", "Backups", "Percona", "Events"]
 categories: ['MongoDB']
 authors:
   - edith_puclla

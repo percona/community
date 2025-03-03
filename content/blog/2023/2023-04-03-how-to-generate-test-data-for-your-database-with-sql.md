@@ -3,6 +3,7 @@ title: 'How To Generate Test Data for Your Database With SQL'
 date: "2023-03-30T00:00:00+00:00"
 draft: false
 tags: ['SQL']
+categories: ['Community']
 authors:
   - maksim_gramin
 images:

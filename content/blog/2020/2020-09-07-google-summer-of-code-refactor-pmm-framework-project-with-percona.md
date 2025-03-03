@@ -2,7 +2,7 @@
 title: 'Google Summer of Code Refactor PMM Framework Project with Percona'
 date: Mon, 07 Sep 2020 11:08:19 +0000
 draft: false
-tags: ['author_patel', 'Entry Level', 'Google Summer of Code', 'GSoC', 'MySQL', 'MySQL', 'Open Source Databases', 'PMM', 'Tools']
+tags: ['Entry Level', 'Google Summer of Code', 'GSoC', 'MySQL', 'MySQL', 'Open Source Databases', 'PMM', 'Tools']
 authors:
   - meet_patel
 images:

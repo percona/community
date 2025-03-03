@@ -3,6 +3,7 @@ title: 'Fixing Common PostgreSQL Performance Bottlenecks'
 date: Fri, 04 Dec 2020 20:26:50 +0000
 draft: false
 tags: ['Michael.Aboagye', 'PostgreSQL']
+categories: ["PostgreSQL"]
 authors:
   - michael_aboagye
 images:

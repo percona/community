@@ -2,7 +2,8 @@
 title: '7 Checks to Successfully Upgrade MongoDB Replica Set in Production'
 date: Wed, 29 Aug 2018 10:23:20 +0000
 draft: false
-tags: ['author_atishandhare', 'MongoDB', 'Open Source Databases', 'replica set', 'upgrade']
+tags: ['MongoDB', 'Open Source Databases', 'Replication', 'Upgrade']
+categories: ['MongoDB']
 authors:
   - atish_a
 images:

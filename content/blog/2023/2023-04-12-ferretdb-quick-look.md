@@ -2,7 +2,8 @@
 title: "FerretDB - A Quick Look"
 date: "2023-04-12T00:00:00+00:00"
 draft: false
-tags: ["FerretDB", "MongoDB", "Databases", "Open Source"]
+tags: ["FerretDB", "MongoDB", "Databases", "Opensource"]
+categories: ['PostgreSQL', "MongoDB", "Community"]
 authors:
   - david_stokes
 images:

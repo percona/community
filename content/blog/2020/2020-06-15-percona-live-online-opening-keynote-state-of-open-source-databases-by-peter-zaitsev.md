@@ -2,7 +2,7 @@
 title: 'Percona Live ONLINE Opening Keynote: State of Open Source Databases by Peter Zaitsev'
 date: Mon, 15 Jun 2020 15:44:28 +0000
 draft: false
-tags: ['author_lawrence', 'AWS', 'DBaaS', 'Kubernetes', 'Kubernetes', 'MariaDB', 'MongoDB', 'MongoDB', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'opensource', 'Percona', 'PostgreSQL', 'Tools']
+tags: ['AWS', 'DBaaS', 'Kubernetes', 'Kubernetes', 'MariaDB', 'MongoDB', 'MongoDB', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'opensource', 'Percona', 'PostgreSQL', 'Tools']
 images:
   - blog/2020/06/SC-3-Matt-Percona.jpg
 authors:

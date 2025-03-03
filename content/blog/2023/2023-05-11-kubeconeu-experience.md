@@ -2,7 +2,8 @@
 title: "​My Experience at Kubecon Europe in Amsterdam"
 date: "2023-05-11T00:00:00+00:00"
 draft: false
-tags: ["kubeconeu", "opensource", "cncf", "kuberentes", "percona", "docker"]
+tags: ["Events", "Opensource", "CNCF", "Kuberentes"]
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

@@ -2,7 +2,8 @@
 title: 'Question about Semi-Synchronous Replication: the Answer with All the Details'
 date: Thu, 23 Aug 2018 12:49:59 +0000
 draft: false
-tags: ['author_jfgagne', 'Galera', 'Group Replication', 'InnoDB', 'InnoDB Crash Recovery', 'Lossless Semi-Synchronous Replication', 'MariaDB', 'MariaDB Server', 'MySQL', 'MySQL Crash Recovery', 'Percona Server', 'Percona XtraDB Cluster', 'Replication']
+tags: ['Galera', 'InnoDB', 'MariaDB', 'MySQL', 'Percona Server', 'Percona XtraDB Cluster', 'Replication']
+categories: ['MySQL']
 authors:
   - jeff_gagne
 images: 

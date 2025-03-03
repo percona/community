@@ -2,7 +2,7 @@
 title: 'DBdeployer, the Community Edition – Percona Live ONLINE Talk Preview'
 date: Wed, 14 Oct 2020 18:44:09 +0000
 draft: false
-tags: ['author-giuseppe', 'Events', 'MySQL', 'PLO-2020-10']
+tags: ['Events', 'MySQL', 'PLO-2020-10']
 authors:
   - giuseppe
 images:

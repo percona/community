@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Presents: MariaDB System-Versioned Tables'
 date: Wed, 17 Oct 2018 16:14:38 +0000
 draft: false
-tags: ['author_federico', 'Events', 'MariaDB', 'MySQL', 'Percona Live Europe 2018']
+tags: ['Events', 'MariaDB', 'MySQL', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/PLE-Frankfurt-Logo.png
 authors:

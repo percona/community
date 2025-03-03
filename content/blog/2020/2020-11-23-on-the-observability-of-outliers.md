@@ -2,7 +2,7 @@
 title: 'On the Observability of Outliers'
 date: Mon, 23 Nov 2020 17:41:16 +0000
 draft: false
-tags: ['author_kohntopp', 'Honeycomb', 'Monitoring', 'MySQL', 'Open Source Databases', 'SolarWinds', 'Tools']
+tags: ['Honeycomb', 'Monitoring', 'MySQL', 'Open Source Databases', 'SolarWinds', 'Tools']
 authors:
   - koehntopp
 images:

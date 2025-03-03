@@ -2,7 +2,7 @@
 title: 'Percona Live ONLINE: Anti-cheating tools for massive multiplayer games using Amazon Aurora and Amazon ML services'
 date: Thu, 11 Jun 2020 14:21:08 +0000
 draft: false
-tags: ['author_lawrence', 'Amazon', 'Amazon RDS', 'AWS', 'aws', 'ML', 'MySQL', 'mysql-and-variants', 'PostgreSQL', 'SQL', 'Tools']
+tags: ['Amazon', 'Amazon RDS', 'AWS', 'aws', 'ML', 'MySQL', 'mysql-and-variants', 'PostgreSQL', 'SQL', 'Tools']
 images:
   - blog/2020/06/image4.jpg
 authors:

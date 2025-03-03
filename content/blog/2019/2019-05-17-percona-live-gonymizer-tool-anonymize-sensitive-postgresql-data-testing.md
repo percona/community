@@ -2,7 +2,8 @@
 title: 'Percona Live Presents: Gonymizer, A Tool to Anonymize Sensitive PostgreSQL Data Tables for Use in QA and Testing'
 date: Fri, 17 May 2019 11:11:58 +0000
 draft: false
-tags: ['author_junkert', 'Events', 'Kubernetes', 'PostgreSQL']
+tags: ['Events', 'Kubernetes', 'PostgreSQL']
+categories: ["PostgreSQL"]
 images:
   - blog/2019/05/gonymizer-postgres-data-anonymizer.jpg
 authors:

@@ -3,7 +3,7 @@ title: "Using ProxySQL Query Mirroring to test query performance on a new cluste
 date: "2024-05-01T00:00:00+00:00"
 draft: false
 tags: ["ProxySQL", "Upgrades"]
-categories: ['MySQL']
+categories: ['MySQL','Community']
 authors:
   - isobel_smith
 slug: using-proxysql-query-mirroring-to-test-query-peromance-on-a-new-cluster

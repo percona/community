@@ -2,7 +2,7 @@
 title: 'The Concept of Materialized Views in MongoDB Sharded Clusters'
 date: Tue, 16 Jul 2019 10:14:41 +0000
 draft: false
-tags: ['author_antonios', 'MongoDB']
+tags: ['MongoDB']
 authors:
   - antonios_giannopoulos
 images:

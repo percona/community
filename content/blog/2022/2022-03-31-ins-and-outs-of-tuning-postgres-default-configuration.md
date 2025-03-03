@@ -3,6 +3,7 @@ title: "The Ins and Outs of PostgreSQL Default Configuration Tuning"
 date: "2022-03-31T00:00:00+00:00"
 draft: false
 tags: ['Postgres', 'PostgreSQL', 'MySQL']
+categories: ["PostgreSQL"]
 images:
     - blog/2022/3/Meetups-PG-1.jpg
 authors:

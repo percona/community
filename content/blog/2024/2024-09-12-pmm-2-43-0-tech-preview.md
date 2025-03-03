@@ -1,7 +1,7 @@
 ---
 title: "Percona Monitoring and Management 2.43.0 Preview Release"
 date: "2024-09-12T00:00:00+00:00"
-tags: ['PMM']
+tags: ['PMM', "Release"]
 categories: ['PMM']
 authors:
   - ondrej_patocka

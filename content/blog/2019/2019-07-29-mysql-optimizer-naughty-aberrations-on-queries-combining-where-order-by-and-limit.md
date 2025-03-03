@@ -2,7 +2,7 @@
 title: 'MySQL Optimizer: Naughty Aberrations on Queries Combining WHERE, ORDER BY and LIMIT'
 date: Mon, 29 Jul 2019 11:50:51 +0000
 draft: false
-tags: ['author_jfgagne', 'bugs', 'MySQL', 'optimizer', 'performance']
+tags: ['bugs', 'MySQL', 'optimizer', 'performance']
 images:
   - blog/2019/07/mysql-optimizer-choose-wrong-path.jpg
 authors:

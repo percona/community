@@ -3,7 +3,7 @@ title: "Building and Running Percona Everest From Source Code"
 date: "2023-10-30T00:00:00+00:00"
 description: "Digging deeper into the architecture of an open source product"
 draft: false
-tags: ["everest", "kubernetes", "opensource", "dbaas"]
+tags: ["Percona Everest", "Kubernetes", "Opensource", "DBaaS"]
 categories: ['Cloud']
 authors:
   - daniil_bazhenov

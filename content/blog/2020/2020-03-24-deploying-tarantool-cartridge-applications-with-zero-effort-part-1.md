@@ -2,7 +2,7 @@
 title: 'Deploying Tarantool Cartridge Applications with Zero Effort (Part 1)'
 date: Tue, 24 Mar 2020 14:04:32 +0000
 draft: false
-tags: ['author_pavel', 'Open Source Databases', 'Tarantool', 'Tools']
+tags: [ 'Open Source Databases', 'Tarantool', 'Tools']
 images:
   - blog/2020/02/tarantool-new-instances-scaled.png
 authors:

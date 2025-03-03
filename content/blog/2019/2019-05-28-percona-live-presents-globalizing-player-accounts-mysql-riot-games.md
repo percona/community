@@ -2,7 +2,7 @@
 title: 'Percona Live Presents: Globalizing Player Accounts with MySQL at Riot Games'
 date: Tue, 28 May 2019 16:48:15 +0000
 draft: false
-tags: ['author_tyler', 'Events', 'MySQL', 'Open Source Databases', 'Percona Live 2019']
+tags: ['Events', 'MySQL', 'Open Source Databases', 'Percona Live 2019']
 images:
   - blog/2019/05/riot-games.jpg
 authors:

@@ -8,4 +8,7 @@ layout: category
 
 # Percona Community Speakers!
 
+</br>
+Speakers who have spoken or participated in <a href="/events">events</a> organized with the participation of the Percona Community team. 
+
 {{% /hero %}}

@@ -2,7 +2,7 @@
 title: 'Unexpected slow ALTER TABLE in MySQL 5.7'
 date: Thu, 23 Apr 2020 15:47:21 +0000
 draft: false
-tags: ['author_alexander', 'author_alexandre', 'Intermediate Level', 'MySQL', 'Percona Server for MySQL', 'performance']
+tags: ['Intermediate Level', 'MySQL', 'Percona Server for MySQL', 'performance']
 authors:
   - alexander_rubin
   - alexandre_vaniachine

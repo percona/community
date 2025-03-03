@@ -2,7 +2,7 @@
 title: 'Disk of Yesteryear Compared to Today’s SSD Drives'
 date: Fri, 17 Jan 2020 16:48:46 +0000
 draft: false
-tags: ['author_wayne', 'MySQL', 'Open Source Databases', 'Percona Server for MySQL']
+tags: ['MySQL', 'Open Source Databases', 'Percona Server for MySQL']
 authors:
   - wayne
 images:

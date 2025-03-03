@@ -2,7 +2,7 @@
 title: 'Are your Database Backups Good Enough?'
 date: Fri, 20 Sep 2019 15:32:00 +0000
 draft: false
-tags: ['author_jaime', 'amsterdam', 'automation', 'backups', 'database', 'Events', 'InnoDB', 'mariabackup', 'mydumper', 'MySQL', 'MySQL', 'Percona Live 2019', 'perconalive', 'recovery', 'wikimedia', 'wikipedia', 'xtrabackup']
+tags: ['amsterdam', 'automation', 'backups', 'database', 'Events', 'InnoDB', 'mariabackup', 'mydumper', 'MySQL', 'MySQL', 'Percona Live 2019', 'perconalive', 'recovery', 'wikimedia', 'wikipedia', 'xtrabackup']
 authors:
   - jaime_crespo
 images:
