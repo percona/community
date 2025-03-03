@@ -2,7 +2,8 @@
 title: "Creating a Standby Cluster With the Percona Operator for PostgreSQL"
 date: "2024-03-27T00:00:00+00:00"
 draft: false
-tags: ["postgresql", "backups", "percona", "stanby-cluster"]
+tags: ["PostgreSQL", "Backups", "Percona"]
+categories: ['PostgreSQL', 'Cloud']
 authors:
   - edith_puclla
 images:

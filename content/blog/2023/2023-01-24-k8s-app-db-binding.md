@@ -1,7 +1,8 @@
 ---
 title: "Binding your application to the database in the Kubernetes cluster"
 date: "2023-01-24T00:00:00+00:00"
-tags: ["Labs","kubernetes", "operators", "databases", "PMM", "DBaaS", "minikube"]
+tags: ["Labs", "Kubernetes", "Operators", "Databases", "PMM", "DBaaS", "Minikube"]
+categories: ['Cloud']
 authors:
   - denys_kondratenko
 images:

@@ -2,7 +2,8 @@
 title: 'How to Automate Minor Version Upgrades for MySQL on RDS'
 date: Tue, 10 Jul 2018 12:19:11 +0000
 draft: false
-tags: ['renato-losio', 'Amazon RDS', 'AWS', 'devops', 'MySQL', 'RDS', 'upgrade']
+tags: ['Amazon RDS', 'AWS', 'DevOps', 'MySQL', 'RDS', 'Upgrade']
+categories: ['MySQL', 'Cloud']
 images:
   - blog/2018/07/upgrade-minor-versions-MySQL-Amazon-RDS.jpg
 authors:

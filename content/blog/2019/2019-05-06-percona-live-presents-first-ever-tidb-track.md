@@ -2,7 +2,7 @@
 title: 'Percona Live Presents: The First Ever TiDB Track'
 date: Mon, 06 May 2019 20:45:41 +0000
 draft: false
-tags: ['author_pingcap', 'Kubernetes', 'MySQL', 'Open Source Databases', 'Percona Live 2019']
+tags: ['Kubernetes', 'MySQL', 'Open Source Databases', 'Percona Live 2019']
 images:
   - blog/2019/05/state-of-databases-2019.jpg
 authors:

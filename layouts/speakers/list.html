@@ -8,10 +8,10 @@
 {{ define "mainwrapper" }}
     {{- .Content -}}
     <div class="contentblock">
-        <div class="grid grid--3 speakers">
+        <div class="grid grid--4 speakers">
             {{- $pages := .Pages -}}
 
-            {{- $paginator := .Paginate $pages 15 }}
+            {{- $paginator := .Paginate $pages 200 }}
 
             {{- range $paginator.Pages -}} 
                 <div class="grid__item speaker">

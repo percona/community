@@ -2,7 +2,7 @@
 title: 'Making a Tarantool-Based Investment Business Core for Alfa-Bank'
 date: Fri, 19 Jun 2020 13:23:49 +0000
 draft: false
-tags: ['author_drynkin', 'Advanced Level', 'DevOps', 'Information', 'Open Source Databases', 'Tarantool', 'Tools']
+tags: ['Advanced Level', 'DevOps', 'Information', 'Open Source Databases', 'Tarantool', 'Tools']
 authors:
   - vladimir_drynkin
 images:

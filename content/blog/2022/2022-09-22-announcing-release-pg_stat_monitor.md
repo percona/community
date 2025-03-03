@@ -3,6 +3,7 @@ title: "Announcing the release of pg_stat_monitor 1.1.0"
 date: "2022-09-22T00:00:00+00:00"
 description: "Percona is happy to announce the 1.1.0 release of pg_stat_monitor. pg_stat_monitor is a Query Performance Monitoring tool for PostgreSQL. It attempts to provide a more holistic picture by providing much-needed query performance insights in a single view."
 tags: ['Postgres', 'PostgreSQL','Developer']
+categories: ["PostgreSQL"]
 images:
   - blog/2022/9/pg_stat_monitor.jpeg
 ---

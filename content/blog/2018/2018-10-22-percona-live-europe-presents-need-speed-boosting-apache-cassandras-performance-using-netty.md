@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Presents: Need for speed - Boosting Apache Cassandra''s performance using Netty'
 date: Mon, 22 Oct 2018 08:34:35 +0000
 draft: false
-tags: ['author_dinesh', 'DevOps', 'Events', 'MySQL', 'Percona Live Europe 2018']
+tags: [ 'DevOps', 'Events', 'MySQL', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/apache-cassandra-logo-3.png
 authors:

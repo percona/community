@@ -2,7 +2,7 @@
 title: 'Mayastor: Lightning Fast Storage for Kubernetes'
 date: Fri, 23 Oct 2020 14:03:08 +0000
 draft: false
-tags: ['author_matheson', 'Kubernetes', 'Kubernetes', 'MayaData', 'Mayastor', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Tools']
+tags: ['Kubernetes', 'Kubernetes', 'MayaData', 'Mayastor', 'MySQL', 'MySQL', 'mysql-and-variants', 'Open Source Databases', 'Tools']
 authors:
   - brian_matheson
 images:

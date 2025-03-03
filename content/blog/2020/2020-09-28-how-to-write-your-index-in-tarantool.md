@@ -2,7 +2,7 @@
 title: 'How to Write Your Index in Tarantool'
 date: Mon, 28 Sep 2020 17:23:02 +0000
 draft: false
-tags: ['author_babin', 'Databases', 'Information', 'Intermediate Level', 'Open Source Databases', 'Tarantool', 'Tools']
+tags: [ 'Databases', 'Information', 'Intermediate Level', 'Open Source Databases', 'Tarantool', 'Tools']
 images:
   - blog/2020/09/tarantool_cover.png
 authors:

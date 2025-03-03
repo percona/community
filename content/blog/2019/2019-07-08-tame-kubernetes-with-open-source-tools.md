@@ -2,7 +2,7 @@
 title: 'Tame Kubernetes with These Open-Source Tools'
 date: Mon, 08 Jul 2019 13:03:15 +0000
 draft: false
-tags: ['author_gaurav', 'DevOps', 'Kubernetes', 'Tools']
+tags: ['DevOps', 'Kubernetes', 'Tools']
 authors:
   - gaurav_belani
 images:

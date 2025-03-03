@@ -2,7 +2,8 @@
 title: "Deploying Percona Everest on GCP with Kubectl for Windows 11 Users"
 date: "2024-04-19T00:00:00+00:00"
 draft: false
-tags: ["everest", "percona", "windows", "databases"]
+tags: ["Percona Everest", "Windows", "Databases"]
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

@@ -3,6 +3,7 @@ title: 'Setting Up PMM For Monitoring Your Databases on Windows'
 date: "2023-01-16T00:00:00+00:00"
 draft: false
 tags: ['PMM', 'MySQL', 'PostgreSQL', 'MongoDB', 'Monitoring']
+categories: ['PMM', 'PostgreSQL']
 authors:
   - mario_garcia
 images:

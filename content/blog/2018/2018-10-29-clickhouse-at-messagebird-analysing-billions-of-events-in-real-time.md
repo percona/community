@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Presents: ClickHouse at Messagebird: Analysing Billions of Events in Real-Time\*'
 date: Mon, 29 Oct 2018 17:28:38 +0000
 draft: false
-tags: ['author_felix', 'author_aleksandar', 'big data', 'ClickHouse', 'Events', 'MySQL', 'Percona Live Europe 2018']
+tags: ['big data', 'ClickHouse', 'Events', 'MySQL', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/PLE-Frankfurt-Logo.png
 authors:

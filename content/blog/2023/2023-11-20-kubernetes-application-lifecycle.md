@@ -2,7 +2,8 @@
 title: "Day 02: The Kubernetes Application Lifecycle"
 date: "2023-11-20T00:00:00+00:00"
 draft: false
-tags: ["kubernetes", "operators", "day02", "percona"]
+tags: ["Kubernetes", "Operators", "Percona"]
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

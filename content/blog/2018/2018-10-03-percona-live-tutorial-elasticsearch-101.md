@@ -2,7 +2,8 @@
 title: 'Percona Live Europe Tutorial: Elasticsearch 101'
 date: Wed, 03 Oct 2018 07:17:53 +0000
 draft: false
-tags: ['author_antonios', 'Elasticsearch', 'Events', 'MariaDB', 'MongoDB', 'MySQL', 'Percona Live Europe 2018', 'Tools', 'tutorial']
+tags: ['Elasticsearch', 'Events', 'MariaDB', 'MongoDB', 'MySQL', 'Percona Live Europe 2018', 'Tools', 'Tutorial']
+categories: ['Community']
 images:
   - blog/2018/10/MySQL-at-scale.jpg
 authors:

@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Presents: The Latest MySQL Replication Features'
 date: Fri, 19 Oct 2018 15:06:19 +0000
 draft: false
-tags: ['author_tiago', 'Events', 'MySQL', 'Oracle', 'Percona Live Europe 2018']
+tags: ['Events', 'MySQL', 'Oracle', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/PLE-Frankfurt-Logo.png
 authors:

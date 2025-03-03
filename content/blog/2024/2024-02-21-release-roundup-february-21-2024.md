@@ -2,6 +2,7 @@
 title: "Release Roundup February 21, 2024"
 date: "2024-02-21T00:00:00+00:00"
 tags: ['Percona', 'opensource', 'MySQL', 'MongoDB']
+categories: ['MySQL', 'MongoDB']
 description: "Percona software releases and updates February 5 - February 21, 2024."
 authors:
   - david_quilty

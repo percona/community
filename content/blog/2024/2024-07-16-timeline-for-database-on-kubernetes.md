@@ -2,7 +2,8 @@
 title: "Timeline for Database on Kubernetes"
 date: "2024-07-16T00:00:00+00:00"
 draft: false
-tags: ["CNCF", "percona-everest", "kubernetes", "databases", "dok"]
+tags: ["CNCF", "Percona Everest", "Kubernetes", "DoK", "Databases"]
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

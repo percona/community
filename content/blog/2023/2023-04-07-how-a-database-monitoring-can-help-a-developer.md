@@ -3,6 +3,7 @@ title: 'How a Database Monitoring Tool Can Help a Developer. The Story of One Mi
 date: "2023-04-07T00:00:00+00:00"
 draft: false
 tags: ['PMM', 'Monitoring']
+categories: ['PMM']
 authors:
   - daniil_bazhenov
 images:

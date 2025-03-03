@@ -2,7 +2,8 @@
 title: 'Percona Live Europe Presents: pg_chameleon MySQL to PostgreSQL Replica Made Easy'
 date: Fri, 26 Oct 2018 14:42:12 +0000
 draft: false
-tags: ['author-federico-pg', 'Events', 'MySQL', 'Percona Live Europe 2018', 'PostgreSQL', 'Tools']
+tags: ['Events', 'MySQL', 'Percona Live Europe 2018', 'PostgreSQL', 'Tools']
+categories: ["PostgreSQL"]
 images:
   - blog/2018/10/igor_small.png
 authors:

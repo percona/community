@@ -2,7 +2,8 @@
 title: 'Open Source And Recession – An Economic Outlook'
 date: "2023-09-14T00:00:00+00:00"
 draft: false
-tags: ['Percona', 'opensource', 'general']
+tags: ['Opensource', 'Community']
+categories: ['Community']
 authors:
   - ninad_shah
 images: 

@@ -2,7 +2,7 @@
 title: 'Percona Live Europe ''19: MongoDB 4.2'
 date: Wed, 18 Sep 2019 15:22:25 +0000
 draft: false
-tags: ['author_antonios', 'Events', 'MongoDB', 'Percona Live Europe 2019']
+tags: ['Events', 'MongoDB', 'Percona Live Europe 2019']
 images:
   - blog/2019/09/percona-live-europe2019.jpg
 authors:

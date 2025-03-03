@@ -2,7 +2,8 @@
 title: 'Minimize MySQL Deadlocks with 3 Steps'
 date: Mon, 24 Sep 2018 10:49:35 +0000
 draft: false
-tags: ['author_aftabkhan', 'application development', 'deadlock', 'Entry Level', 'MySQL']
+tags: ['Dev', 'Deadlock', 'Entry Level', 'MySQL']
+categories: ['MySQL', 'Community']
 authors:
   - aftab_khan
 images:

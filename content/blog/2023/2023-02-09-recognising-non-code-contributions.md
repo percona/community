@@ -1,7 +1,8 @@
 ---
 title: "Nurturing, Motivating and Recognizing Non-Code Contributions"
 date: "2023-02-08T00:00:00+00:00"
-tags: ["contributions", "community", "non_code", "PMM"]
+tags: ["Contributions", "Community", "PMM"]
+categories: ['Cloud', 'PMM']
 authors:
   - aleksandra_abramova
 images:

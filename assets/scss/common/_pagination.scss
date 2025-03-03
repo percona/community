@@ -1,11 +1,12 @@
 @import "variables";
 
 .paginator {
-  margin-top:1.5rem;
-  margin-bottom:1rem;
-  text-align:center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
   a {
-    display:inline-block;
+    display: inline-block;
     text-decoration: none;
     border-radius: 3px;
     color: $dark;
@@ -14,29 +15,20 @@
       0.2s background-color ease-in-out,
       0.2s color ease-in-out,
       0.2s border-color ease-in-out;
-    &:hover,&.active {
+
+    &:hover,
+    &.active {
       background: $palette2;
       color: $palette3;
       border: 1px solid $palette2;
     }
 
-    height:1.5rem;
-    width:1.5rem;
-    line-height:1.5rem;
-    font-size:1rem;
-    margin-left:0.2rem;
-    margin-right:0.2rem;
-    @media screen and (min-width: 768px) {
-      height:1.5rem;
-      width:1.5rem;
-      line-height:1.5rem;
-      font-size:1rem;
-    }
-    @media screen and (min-width: 900px) {
-      height:3rem;
-      width:3rem;
-      line-height:3rem;
-      font-size:1.2rem;
-    }
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem; 
+    font-size: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
   }
 }

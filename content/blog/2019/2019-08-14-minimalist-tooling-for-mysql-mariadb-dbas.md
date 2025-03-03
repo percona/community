@@ -2,7 +2,7 @@
 title: 'Minimalist Tooling for MySQL/MariaDB DBAs'
 date: Wed, 14 Aug 2019 14:21:10 +0000
 draft: false
-tags: ['author_geoff', 'DBA Tools', 'MariaDB', 'MySQL', 'Tools']
+tags: [ 'DBA Tools', 'MariaDB', 'MySQL', 'Tools']
 images:
   - blog/2019/08/dba-tools-minimalist-mysql-tooling.jpg
 authors:

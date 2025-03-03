@@ -2,7 +2,7 @@
 title: 'MySQL Setup at Hostinger Explained'
 date: Tue, 11 Dec 2018 15:27:45 +0000
 draft: false
-tags: ['author_donatas', 'hosting', 'MySQL', 'ProxySQL', 'Tools', 'Zookeeper Cluster']
+tags: ['hosting', 'MySQL', 'ProxySQL', 'Tools', 'Zookeeper Cluster']
 authors:
   - donatas_abraitis
 images:

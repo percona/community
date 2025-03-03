@@ -2,7 +2,8 @@
 title: "Exploring Databases on Containers with Percona Server for MySQL"
 date: "2023-02-23T00:00:00+00:00"
 draft: false
-tags: ["Docker", "MySQL", "Volume", "Percona"]
+tags: ["Docker", "MySQL", "Volume"]
+categories: ["MySQL"]
 authors:
   - edith_puclla
 images:

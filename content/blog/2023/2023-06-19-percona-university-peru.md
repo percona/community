@@ -4,14 +4,13 @@ date: "2023-06-20T00:00:00+00:00"
 draft: false
 tags:
   [
-    "percona",
-    "university",
-    "peru",
-    "kubernetes",
-    "peterinperu",
-    "operators",
-    "databases",
+    "Events",
+    "Kubernetes",
+    "Toolkit",
+    "Operators",
+    "PMM",
   ]
+categories: ['Community', "Toolkit", "PMM"]
 authors:
   - edith_puclla
 images:

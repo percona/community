@@ -2,7 +2,8 @@
 title: "Easy Way to Start Contributing to Open Source With PMM Documentation"
 date: "2023-05-18T00:00:00+00:00"
 draft: false
-tags: ["opensource", "documentation", "percona"]
+tags: ["Opensource", "Documentation"]
+categories: ['Community', 'PMM']
 authors:
   - aleksandra_abramova
 images:

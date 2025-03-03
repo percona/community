@@ -3,6 +3,7 @@ title: "PostgreSQL: Query Optimization With Python and PgBouncer"
 date: "2023-04-25T00:00:00+00:00"
 draft: false
 tags: ["PostgreSQL", "Python"]
+categories: ['PostgreSQL']
 authors:
   - mario_garcia
 images:

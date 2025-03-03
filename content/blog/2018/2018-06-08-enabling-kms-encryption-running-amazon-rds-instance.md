@@ -2,7 +2,8 @@
 title: 'Enabling KMS encryption for a running Amazon RDS instance'
 date: Fri, 08 Jun 2018 11:40:02 +0000
 draft: false
-tags: ['renato-losio', 'Amazon RDS', 'AWS', 'encryption', 'KMS encryption', 'MySQL', 'Labs']
+tags: ['Amazon RDS', 'AWS', 'Encryption', 'MySQL', 'Labs']
+categories: ['MySQL', 'Cloud']
 authors:
   - renato_losio
 images:
@@ -114,18 +115,21 @@ Let's assume the existing instance is called test-rds01 and a master user rdsmas
     
     1 row in set (1.01 sec)
     ```
+
 10.  We can now check the Slave_IO_State calling show slave status. Once the database catches up —Seconds_Behind_Master is down to zero — we have finally a new encrypted _test-rds01-encrypted_ instance in sync with the original unencrypted _test-rds01_ RDS instance.
+
 11.  We can now restart the replica on the unencrypted RDS read replica _test-rds01-not-encrypted_ that is still in a stopped status in the very same way to make sure that the binary logs on the master get finally purged and do not keep accumulating.
-    ```
-    mysql> CALL mysql.rds_start_replication;
-    +-------------------------+
-    | Message |
-    +-------------------------+
-    | Slave running normally. |
-    +-------------------------+
-    
-    1 row in set (1.01 sec)
-    ```
+```
+mysql> CALL mysql.rds_start_replication;
++-------------------------+
+| Message |
++-------------------------+
+| Slave running normally. |
++-------------------------+
+
+1 row in set (1.01 sec)
+```
+
 12.  It is is time to promote the read replica and have our application switching to the new encrypted _test-rds01-encrypted_ instance. Our downtime starts here and as a very first step we want to make _test-rds01-encrypted_ a standalone instance calling the RDS procedure:
     ```
     CALL mysql.rds_reset_external_master

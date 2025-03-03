@@ -3,15 +3,14 @@ title: "​What experts said at Kubecon about Data on Kubernetes"
 date: "2023-05-31T00:00:00+00:00"
 draft: false
 tags: [
-    "kubeconeu",
-    "opensource",
-    "cncf",
-    "kuberentes",
-    content/blog/2023/2023-05-31-panel-discution-kubecon-dok.md
-    "percona",
-    "dok",
-    "operators",
+    "Kubeconeu",
+    "Opensource",
+    "CNCF",
+    "Kuberentes",
+    "DoK",
+    "Operators",
   ]
+categories: ['Community', "Cloud"]
 authors:
   - edith_puclla
 images:

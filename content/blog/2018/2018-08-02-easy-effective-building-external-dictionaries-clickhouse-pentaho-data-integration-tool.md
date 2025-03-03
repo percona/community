@@ -2,7 +2,8 @@
 title: 'Easy and Effective Way of Building External Dictionaries for ClickHouse with Pentaho Data Integration Tool'
 date: Thu, 02 Aug 2018 16:09:26 +0000
 draft: false
-tags: ['author_timur', 'ClickHouse', 'data warehouse', 'MySQL', 'Open Source Databases', 'tools']
+tags: ['ClickHouse', 'Data Warehouse', 'MySQL', 'Open Source Databases', 'Tools']
+categories: ['Community']
 authors:
   - timur_solodovnikov
 images:

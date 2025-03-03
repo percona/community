@@ -2,7 +2,8 @@
 title: "DoKC Operator SIG Update"
 date: "2023-08-14T00:00:00+00:00"
 draft: false
-tags: ["dok", "kubernetes", "sig", "operators"]
+tags: ["DoK", "Kubernetes", "Operators"]
+categories: ['Cloud']
 authors:
   - edith_puclla
 images:

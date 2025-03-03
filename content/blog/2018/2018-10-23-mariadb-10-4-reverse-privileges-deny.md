@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Presents: MariaDB 10.4 Reverse Privileges (DENY)'
 date: Tue, 23 Oct 2018 11:41:48 +0000
 draft: false
-tags: ['author_vicentiu', 'Events', 'MariaDB', 'MySQL', 'Percona Live Europe 2018']
+tags: ['Events', 'MariaDB', 'MySQL', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/MariaDB-Foundation-vertical.png
 authors:

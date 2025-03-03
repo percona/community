@@ -3,6 +3,7 @@ title: "Volunteering as a Program Committee Member for Data on Kubernetes Day Eu
 date: "2024-01-10T00:00:00+00:00"
 draft: false
 tags: ["edith_puclla", "kubernetes", "dok", "kubecon", "europe"]
+categories: ['Community']
 authors:
   - edith_puclla
 images:

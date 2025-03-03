@@ -2,7 +2,8 @@
 title: "How to Make HTTP Requests to API in PHP App Using GitHub API Example and Write to Percona Server for MongoDB"
 date: "2023-03-20T00:00:00+00:00"
 draft: false
-tags: ["MongoDB", "Databases", "Percona", "PHP", "Docker"]
+tags: ["MongoDB", "Databases", "PHP", "Docker"]
+categories: ["Community", "MongoDB"]
 authors:
   - daniil_bazhenov
 images:

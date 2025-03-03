@@ -2,7 +2,7 @@
 title: 'How to build a high-performance application on Tarantool from scratch'
 date: Fri, 30 Oct 2020 14:44:18 +0000
 draft: false
-tags: ['author_anderson', 'Advanced Level', 'Code', 'DevOps', 'Lua', 'Open Source Databases', 'Programming', 'Tarantool', 'Tools']
+tags: [ 'Advanced Level', 'Code', 'DevOps', 'Lua', 'Open Source Databases', 'Programming', 'Tarantool', 'Tools']
 authors: 
   - mons_anderson
 images:

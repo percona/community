@@ -2,7 +2,7 @@
 title: 'Some Notes on MariaDB system-versioned Tables'
 date: Fri, 14 Dec 2018 14:53:29 +0000
 draft: false
-tags: ['author_federico', 'MariaDB', 'MySQL', 'system-versioned tables']
+tags: [ 'MariaDB', 'MySQL', 'system-versioned tables']
 authors:
   - federico_razzoli
 images:

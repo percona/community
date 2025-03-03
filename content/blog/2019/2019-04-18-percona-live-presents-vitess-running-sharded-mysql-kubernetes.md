@@ -2,7 +2,7 @@
 title: 'Percona Live Presents: Vitess – Running Sharded MySQL on Kubernetes'
 date: Thu, 18 Apr 2019 17:19:49 +0000
 draft: false
-tags: ['author.sugu', 'Events', 'MySQL', 'Percona Live 2019']
+tags: ['Events', 'MySQL', 'Percona Live 2019']
 images:
   - blog/2019/04/sugu_sougoumarane.jpg
 authors:

@@ -2,7 +2,8 @@
 title: "Some Notable Bugfixes in MySQL 8.0.32"
 date: "2023-03-15T00:00:00+00:00"
 draft: false
-tags: ["mysql", "Databases", "Percona", "Open Source"]
+tags: ["MySQL", "Databases", "Open Source", "Release"]
+categories: ["MySQL"]
 authors:
   - aleksandra_abramova
 images:

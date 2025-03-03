@@ -3,6 +3,7 @@ title: 'Database Schema Management Via Liquibase'
 date: Thu, 01 Oct 2020 22:30:04 +0000
 draft: false
 tags: ['ronak.rahman', 'MySQL', 'PostgreSQL', 'Tools']
+categories: ["PostgreSQL", "Community"]
 authors:
   - ronak_rahman
 images:

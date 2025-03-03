@@ -12,78 +12,94 @@
 
 <div class="hero hero-gradient aqua "><div class="contentblock">
 
+{{- if eq $paginator.PageNumber 1 -}}
 <div class="hero-text">
     <h1>Welcome to the Percona Community blog!</h1>
-
-    <p>If you're interested in contributing, you can submit a pull request on <a href="https://github.com/percona/community">GitHub</a> with either your own topic or pick one of our <a href="/contribute/opentopics">open topics</a>.</p>
+    <p>Articles about technology, databases and open source for community by community. We welcome you to <a href="/blog/2022/02/10/how-to-publish-blog-post/">become an author</a> with your own topics or look for ideas in <a href="/contribute/opentopics">open topics</a>.</p>
 </div>
-
-{{- if eq $paginator.PageNumber 1 -}}
-<div class="featured__wrapper">
-    <div class="grid grid--2">
-
-        <div class="featured__left featured__one branded">
-
-            {{- $one := first 1 (where $.Page.Site.RegularPages "Section" "blog") -}}
-
-            {{- range $one -}}
-
-                {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .PublishDate) -}}  
- 
-            {{- end -}}
-
-        </div>
-
-        <div class="featured__right featured__list">
-
-            <h2 class="title-wrap">FEATURED POSTS</h2>
-
-            {{- $array := slice "Featured" "featured" "top" -}}
-            {{- $featured := first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $array) -}}
-
-            {{- range $featured -}}
-
-                {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .PublishDate) -}}    
-
-            {{- end -}}
-
-        </div>
-    </div>
+{{- else -}}
+<div class="hero-text">
+    <h1>Percona Community blog: Page {{ $paginator.PageNumber }}</h1>
 </div>
 {{- end -}}
+
 </div></div>
 
     {{- .Content -}}
-
     <div class="contentblock branded">
-        <h2>Latest articles</h2>
-        <div class="grid grid--3">
-            {{- range $paginator.Pages -}}
-                <div class="grid__item">
-                    {{- $excerpt := "" -}}
-                    {{- if isset .Params "excerpt" }}
-                        {{- $excerpt = .Params.excerpt -}}
+        <div class="select-container">
+            <select id="categories-select" onchange="navigateToPage(this)" >
+                <option value="">Categories</option>
+                {{ range first 10 (sort .Site.Taxonomies.categories.ByCount) }}
+                    <option value="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</option>
+                {{ end }}
+            </select>
+            <select id="tags-select" onchange="navigateToPage(this)">
+                <option value="">Tags</option>
+                {{ range first 20 (sort .Site.Taxonomies.tags.ByCount) }}
+                    {{- if gt .Count 1 -}}
+                    <option value="{{ .Page.Permalink }}">{{- substr  .Page.Title 0 20  -}} ({{ .Count }})</option>
                     {{- end -}}
-                    {{- if isset .Params "images" -}}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
-                    {{- else -}}
-                        {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
+                {{ end }}
+            </select>
+        </div>
+        <div class="blog-list">
+            <div class="main-content">
+                {{- if eq $paginator.PageNumber 1 -}}
+                <h2>Latest articles</h2>
+                {{- end -}}
+                <ul class="post-list">
+                    {{- range $paginator.Pages -}}
+                        <li class="post-item">
+                            {{- partial "postpreview-list" . -}}                         
+                        </li>
+                    {{- end -}}
+                </ul>
+                {{- if gt $paginator.TotalPages 1 -}}
+                <div class="paginator">
+                    {{- if $paginator.HasPrev -}}
+                        <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+                    {{- end -}}
+                    {{- range $paginator.Pagers -}}
+                        <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+                    {{- end -}}
+                    {{- if $paginator.HasNext -}}
+                        <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
                     {{- end -}}
                 </div>
-            {{- end -}}
+                {{- end -}}
+            </div>
+            <div class="sidebar">
+                <h2>Categories</h2>
+                <ul class="category-list">
+                    {{ range sort .Site.Taxonomies.categories.ByCount }}
+                    <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+                    {{ end }}
+                </ul>
+                <div class="rss-feed">
+                    <p>Add our <a href="/blog/index.xml">RSS feed</a> to your favorite reader and never miss an update!</p>
+                    <a href="/blog/index.xml" class="rss-feed__link">
+                        <img src="data:image/svg+xml;base64,{{ (resources.Get "icons/rss-icon.svg").Content | base64Encode}}" alt="RSS Community Blog" class="rss-icon" />
+                        Subscribe to RSS Feed
+                    </a>
+                </div>                                         
+                <h2>Tags</h2>
+                <ul class="tag-list">
+                    {{ range sort .Site.Taxonomies.tags.ByCount }}
+                    {{- if gt .Count 1 -}}
+                    <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
+                    {{- end -}}
+                    {{ end }}
+                </ul>
+            </div>
         </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
-        {{- end -}}
-    </div>
+    </div>    
+    <script>
+        function navigateToPage(select) {
+            var url = select.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script> 
 {{ end }}

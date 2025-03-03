@@ -2,7 +2,8 @@
 title: 'Dolphie, your real-time MySQL monitoring assistant'
 date: "2023-08-22T00:00:00+00:00"
 draft: false
-tags: ['Percona', 'MySQL', 'monitoring', 'performance', 'Python']
+tags: ['Dev', 'MySQL', 'Monitoring', 'Python']
+categories: ['MySQL']
 authors:
   - charles_thompson
 images: 

@@ -3,6 +3,7 @@ title: 'How To Contribute to PMM Documentation'
 date: Tue, 28 Jan 2020 16:43:38 +0000
 draft: false
 tags: ['daniil.bazhenov', 'contributing', 'contributions', 'contributors', 'documentation', 'Open Source Databases', 'Percona Monitoring and Management', 'Tools']
+categories: ["PMM"]
 authors: 
   - daniil_bazhenov
 images:

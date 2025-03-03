@@ -2,7 +2,8 @@
 title: 'Multi-master with MariaDB 10 - a tutorial'
 date: Mon, 10 Sep 2018 13:57:46 +0000
 draft: false
-tags: ['author_aurelien', 'MariaDB', 'multi-master', 'MySQL', 'Open Source Databases', 'Replication']
+tags: ['MariaDB', 'MySQL', 'Open Source Databases', 'Replication']
+categories: ['MySQL', 'Community']
 authors:
   - aurelien_lequoy
 images:

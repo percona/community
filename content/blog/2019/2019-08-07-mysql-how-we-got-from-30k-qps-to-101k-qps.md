@@ -2,7 +2,7 @@
 title: 'MySQL 5.6/Maria 10.1 : How we got from 30k qps to 101k qps.....'
 date: Wed, 07 Aug 2019 07:52:45 +0000
 draft: false
-tags: ['author_gurnish', 'MariaDB', 'MySQL', 'performance']
+tags: ['MariaDB', 'MySQL', 'performance']
 authors:
   - gurnish_anand
 images: 

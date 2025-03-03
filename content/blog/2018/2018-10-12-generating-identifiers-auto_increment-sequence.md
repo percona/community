@@ -2,7 +2,8 @@
 title: 'Generating Identifiers – from AUTO_INCREMENT to Sequence'
 date: Fri, 12 Oct 2018 11:00:58 +0000
 draft: false
-tags: ['author-devart', 'auto_increment', 'dbForge', 'developer tools', 'Entry Level', 'generate id', 'GUI tools', 'MariaDB', 'MyISAM', 'MySQL', 'primary key', 'sequence', 'Tools', 'trigger']
+tags: ['MariaDB', 'MySQL', 'dbForge', 'Entry Level', 'GUI tools', 'MyISAM', 'Tools']
+categories: ['MySQL', 'Community']
 authors:
   - alexey_mikotkin
 images:

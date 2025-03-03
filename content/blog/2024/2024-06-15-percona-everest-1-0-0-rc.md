@@ -1,7 +1,8 @@
 ---
 title: "Let's take a look at Percona Everest 1.0.0 RC"
 date: "2024-06-14T00:00:00+00:00"
-tags: ['Percona Everest', 'opensource', 'Kubernetes', 'MySQL', 'PostgreSQL', 'MongoDB']
+tags: ['Percona Everest', 'Opensource', 'Kubernetes', 'MySQL', 'PostgreSQL', 'MongoDB']
+categories: ['Cloud', 'MySQL', 'PostgreSQL', 'MongoDB']
 description: "Percona Everest is the first open source cloud-native platform for provisioning and managing PostgreSQL, MongoDB and MySQL database clusters."
 authors:
   - daniil_bazhenov

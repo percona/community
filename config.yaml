@@ -11,6 +11,7 @@ params:
     - contribute.jpg
 taxonomies:
   tag: tags
+  category: categories
 social:
   twitter: Percona
 sitemap:
@@ -53,34 +54,18 @@ menu:
       name: Blog
       url: /blog
       weight: 3
-    - identifier: projects
-      name: Projects
-      url: /projects
-      weight: 4
     - identifier: databases
       name: Databases
       url: 
       weight: 5
-    - identifier: labs
-      name: Labs
-      url: /labs
+    - identifier: projects
+      name: Projects
+      url: /projects
       weight: 6
-
-    - identifier: serverless-postgresql
-      name: Serverless PostgreSQL
-      url: /labs/serverless-postgresql
-      parent: labs
-      weight: 1
-    - identifier: terraform
-      name: Terraform Provider
-      url: /labs/terraform-provider
-      parent: labs
-      weight: 2
-    - identifier: dbaas-infrastructure-creator
-      name: DBaaS Infrastructure Creator
-      url: /labs/dbaas-infrastructure-creator
-      parent: labs
-      weight: 3
+    - identifier: other
+      name: ...
+      url: 
+      weight: 7
 
     - identifier: MySQL
       name: MySQL
@@ -98,42 +83,31 @@ menu:
       parent: databases
       weight: 3
 
-    - identifier: hoss
-      name: HOSS Talks
-      url: /podcasts/
-      parent: podcasts
-      weight: 1
-    - identifier: dsto
-      name: Dave Stokes
-      url: /events/dave-stokes-talks-open-percona-live-2022/
-      parent: podcasts
-      weight: 2
-
     - identifier: kubernetes
       name: Kubernetes Operators
       url: /projects/operators/
       parent: projects
-      weight: 1
+      weight: 4
     - identifier: everest
       name: Percona Everest
       url: /projects/everest
       parent: projects
-      weight: 2
+      weight: 5
     - identifier: pmm
       name: Percona Monitoring and Management
       url: /projects/pmm/
       parent: projects
-      weight: 3
+      weight: 6
     - identifier: subtoolkit
       name: Percona Toolkit
       url: /projects/toolkit/
       parent: projects
-      weight: 4
+      weight: 7
     - identifier: allprojects
       name: All projects
       url: /projects
       parent: projects
-      weight: 5
+      weight: 8
 
     - identifier: communityevents
       name: Community Events
@@ -145,17 +119,6 @@ menu:
       url: /speakers
       parent: events
       weight: 3
-    - identifier: podcasts
-      name: Podcasts
-      url: /podcasts
-      parent: events
-      weight: 4
-    - identifier: open-source-database-hall-of-fame
-      name: Open Source Database Hall of Fame
-      url: /open-source-database-hall-of-fame
-      parent: events
-      weight: 5
-
 
     - identifier: posts
       name: Posts
@@ -214,6 +177,27 @@ menu:
       url: /contribute/dev
       parent: contribute
       weight: 10
+
+    - identifier: labs
+      name: Percona Labs
+      parent: other
+      url: /labs
+      weight: 1
+    - identifier: open-source-database-hall-of-fame
+      name: Open Source Database Hall of Fame
+      url: /open-source-database-hall-of-fame
+      parent: other
+      weight: 2
+    - identifier: dsto
+      name: Dave Talks Open (Archive)
+      url: /events/dave-stokes-talks-open-percona-live-2022/
+      parent: other
+      weight: 3
+    - identifier: podcasts
+      name: HOSS Talks (Archive)
+      url: /podcasts
+      parent: other
+      weight: 4
 
   footer:
     - identifier: about

@@ -2,7 +2,7 @@
 title: 'Embracing the Stream'
 date: Thu, 10 Dec 2020 10:33:29 +0000
 draft: false
-tags: ['author_kohntopp', 'centos', 'DevOps', 'GitHub', 'Gitlab', 'koehntopp', 'Linux', 'Open Source Databases', 'RedHat', 'Tools']
+tags: [ 'centos', 'DevOps', 'GitHub', 'Gitlab', 'koehntopp', 'Linux', 'Open Source Databases', 'RedHat', 'Tools']
 authors:
   - koehntopp
 images:

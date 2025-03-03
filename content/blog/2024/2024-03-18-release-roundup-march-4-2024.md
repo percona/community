@@ -1,7 +1,8 @@
 ---
 title: "Release Roundup March 18, 2024"
 date: "2024-03-18T00:00:00+00:00"
-tags: ['Percona', 'opensource', 'PostgreSQL', 'MongoDB', 'MySQL', 'releases']
+tags: ['Opensource', 'PostgreSQL', 'MongoDB', 'MySQL', 'Releases']
+categories: ['MongoDB', 'PostgreSQL', 'MongoDB', 'MySQL']
 description: "Percona software releases and updates March 5 - March 18, 2024."
 authors:
   - david_quilty

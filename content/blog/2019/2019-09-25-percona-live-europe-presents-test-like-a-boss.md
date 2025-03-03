@@ -2,7 +2,7 @@
 title: 'Percona Live Europe Presents: Test Like a Boss'
 date: Wed, 25 Sep 2019 06:31:58 +0000
 draft: false
-tags: ['author-giuseppe', 'conferences', 'dbdeployer', 'Events', 'MySQL', 'testing', 'Tools']
+tags: ['conferences', 'dbdeployer', 'Events', 'MySQL', 'testing', 'Tools']
 images:
   - blog/2019/09/dbdeployer.jpg
 authors:

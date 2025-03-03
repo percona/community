@@ -1,0 +1,68 @@
+{{ $alt := .Title }}
+<div class="post post--list">
+    <div class="post__image">
+        <a href="{{ .RelPermalink }}">
+            {{ with .Params.images }}
+                <img src="{{ ((resources.Get (index . 0)).Fill "682x420 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
+            {{ end }}
+        </a>
+    </div>
+    <div class="post__details">
+        <a href="{{ .RelPermalink }}" class="post__title-link">
+            <h3>{{ .Title }}</h3>
+        </a>
+        <div class="post__meta">
+            {{ if and (isset .Params "authors") (gt (len .Params.authors) 0) }}
+                <div class="post__author">
+                    {{ range $author := .Params.authors -}}
+                        {{- with $.Site.GetPage (print "/authors/" $author) -}}
+                            {{- with .Params.images -}}
+                                <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "32x32 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
+                            {{- end -}}
+                            <a href="{{ .RelPermalink }}" class="author-link">{{- .Params.fullname -}}</a>
+                        {{- end }}
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+        {{ if .Content }}
+            <div class="post__content">
+                <a class="post-content__link" href="{{ .RelPermalink }}">
+                {{ if .Params.excerpt }}
+                    {{- .Params.excerpt | markdownify -}}
+                {{ else }}
+                    <p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 160  -}} <small>...</small></p>
+                {{ end }}
+                </a>
+                <div class="post__tags-date">
+                    {{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
+                        <p class="post__tags">
+                           <span class="post__date">{{ .PublishDate.Format "January 2" }}</span>
+                        {{ range $index, $tag := .Params.tags }}
+                            {{ if lt $index 4 }}
+                                <a href="{{ "/tags/" }}{{ $tag }}"  {{ if gt $index 1 }}class="mobile_hide"{{ end }}>#{{- substr  $tag 0 20  -}}</a>
+                            {{ end }}
+                        {{ end }}
+                        </p>
+                    {{ end }}
+                </div>
+            </div>
+        {{ else }}
+            <div class="post__content">
+                <div class="post__tags-date">
+                    <p class="post__date">{{ .PublishDate.Format "January 2" }}</p>
+                    {{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
+                        <p class="post__tags">
+                        {{ range $index, $tag := .Params.tags }}
+                            {{ if lt $index 2 }}
+                                <a href="{{ "/tags/" }}{{ $tag }}">#{{- substr  $tag 0 20  -}}</a>
+                            {{ end }}
+                        {{ end }}
+                        </p>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
+

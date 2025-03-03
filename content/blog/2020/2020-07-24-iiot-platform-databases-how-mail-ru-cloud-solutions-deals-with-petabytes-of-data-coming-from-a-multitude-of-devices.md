@@ -2,7 +2,7 @@
 title: 'IIoT platform databases - How Mail.ru Cloud Solutions deals with petabytes of data coming from a multitude of devices'
 date: Fri, 24 Jul 2020 14:11:14 +0000
 draft: false
-tags: ['author_sergev', 'Advanced Level', 'Cache', 'ClickHouse', 'DevOps', 'IoT', 'Kubernetes', 'Kubernetes', 'Lua', 'NoSQL', 'Open Source Databases', 'SQL', 'Tarantool', 'Tools']
+tags: [ 'Advanced Level', 'Cache', 'ClickHouse', 'DevOps', 'IoT', 'Kubernetes', 'Kubernetes', 'Lua', 'NoSQL', 'Open Source Databases', 'SQL', 'Tarantool', 'Tools']
 images: 
   - blog/2020/07/image6.png
 authors:

@@ -2,7 +2,8 @@
 title: 'How to Build a Percona Server "Stack" on a Raspberry Pi 3+'
 date: Thu, 01 Aug 2019 12:50:36 +0000
 draft: false
-tags: ['author_wayne', 'MySQL', 'Percona Server for MySQL', 'Raspberry Pi', 'Toolkit']
+tags: ['MySQL', 'Percona Server for MySQL', 'Raspberry Pi', 'Toolkit']
+categories: ['MySQL', 'Toolkit']
 authors:
   - wayne
 images:
