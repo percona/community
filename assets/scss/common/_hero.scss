@@ -3,7 +3,7 @@
 .hero {
   .contentblock {
       padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
   }
 }
 
@@ -34,10 +34,17 @@
   
   @media screen and (max-width: 760px) {
     text-align: left;
+    padding: 0;
+
+    p {
+      font-size: 0.75rem;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
 
     h1 {
-      font-size: 2rem;
-      line-height: 1em;
+      font-size: 1.5rem;
+      line-height: 1.2;
     }
   }  
 }

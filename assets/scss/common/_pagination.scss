@@ -23,25 +23,12 @@
       border: 1px solid $palette2;
     }
 
-    height: 1rem; // Уменьшение высоты
-    width: 1rem; // Уменьшение ширины
-    line-height: 1rem; // Уменьшение высоты строки
-    font-size: 0.75rem; // Уменьшение размера шрифта
+    height: 1.5rem; // Уменьшение высоты
+    width: 1.5rem; // Уменьшение ширины
+    line-height: 1.5rem; // Уменьшение высоты строки
+    font-size: 1rem; // Уменьшение размера шрифта
     margin-left: 0.2rem;
     margin-right: 0.2rem;
-
-    @media screen and (min-width: 768px) {
-      height: 1.2rem; // Уменьшение высоты
-      width: 1.2rem; // Уменьшение ширины
-      line-height: 1.2rem; // Уменьшение высоты строки
-      font-size: 0.85rem; // Уменьшение размера шрифта
-    }
-
-    @media screen and (min-width: 900px) {
-      height: 1.5rem; // Уменьшение высоты
-      width: 1.5rem; // Уменьшение ширины
-      line-height: 1.5rem; // Уменьшение высоты строки
-      font-size: 1rem; // Уменьшение размера шрифта
-    }
+    margin-bottom: 0.2rem;
   }
 }

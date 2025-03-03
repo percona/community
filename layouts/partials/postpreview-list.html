@@ -17,7 +17,7 @@
                     {{ range $author := .Params.authors -}}
                         {{- with $.Site.GetPage (print "/authors/" $author) -}}
                             {{- with .Params.images -}}
-                                <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "40x40 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
+                                <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "32x32 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
                             {{- end -}}
                             <a href="{{ .RelPermalink }}" class="author-link">{{- .Params.fullname -}}</a>
                         {{- end }}
@@ -31,7 +31,7 @@
                 {{ if .Params.excerpt }}
                     {{- .Params.excerpt | markdownify -}}
                 {{ else }}
-                    <p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 200  -}} <small>...</small></p>
+                    <p>{{- substr (replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify | htmlUnescape) 0 160  -}} <small>...</small></p>
                 {{ end }}
                 </a>
                 <div class="post__tags-date">
@@ -39,8 +39,8 @@
                         <p class="post__tags">
                            <span class="post__date">{{ .PublishDate.Format "January 2" }}</span>
                         {{ range $index, $tag := .Params.tags }}
-                            {{ if lt $index 2 }}
-                                <a href="{{ "/tags/" }}{{ $tag }}">#{{- substr  $tag 0 20  -}}</a>
+                            {{ if lt $index 4 }}
+                                <a href="{{ "/tags/" }}{{ $tag }}"  {{ if gt $index 1 }}class="mobile_hide"{{ end }}>#{{- substr  $tag 0 20  -}}</a>
                             {{ end }}
                         {{ end }}
                         </p>
@@ -65,3 +65,4 @@
         {{ end }}
     </div>
 </div>
+

@@ -4,19 +4,23 @@
 
 {{ define "main" }}
 
+    {{- $pages := .Pages -}}
+    {{- $paginator := .Paginate $pages 15 }}
+
     <div class="hero"><div class="contentblock">
         <div class="hero-text">
-            <h1>#{{ .Title }} articles and events</h1>
+            {{- if eq $paginator.PageNumber 1 -}}
+                <h1>#{{ .Title }} articles and events</h1>
+            {{- else -}}
+                <h1>#{{ .Title }} articles and events: Page {{ $paginator.PageNumber }}</h1>
+            {{- end -}}
         </div>
     </div></div>
 
-    <div class="contentblock branded">
+    <div class="branded">
     {{ .Content }}
 
     {{ if .Pages }}
-
-        {{- $pages := .Pages -}}
-        {{- $paginator := .Paginate $pages 15 }}
 
         <div class="grid grid--3">
             {{- range $paginator.Pages -}}

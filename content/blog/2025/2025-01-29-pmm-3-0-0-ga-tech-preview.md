@@ -13,7 +13,7 @@ slug: percona-monitoring-management-technical-preview
 
 We're excited to announce the Tech Preview release of **Percona Monitoring and Management (PMM) 3.0.0 (GA)**.
 
-*This release is intended for testing environments only, as it's not yet production-ready. The public release will be available through standard channels in upcoming days.*
+> *This release is intended for testing environments only, as it's not yet production-ready. The public release will be available through standard channels in upcoming days.*
 
 The Percona Monitoring and Management (PMM) 3.0.0 release delivers major security and stability enhancements. Notable security improvements include rootless deployments and encryption of sensitive data, along with improved API authentication using Grafana service accounts. Deployment options have expanded with official ARM support and the ability to use Podman for rootless deployments, providing flexibility and better security. Additionally, the introduction of containerized architecture has increased stability, and a streamlined upgrade process ensures reliability and ease of maintenance.
 

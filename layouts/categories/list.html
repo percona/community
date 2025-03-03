@@ -4,10 +4,16 @@
 
 {{ define "mainwrapper" }}
 
-    <div class="hero hero-gradient aqua "><div class="contentblock">
+    {{- $pages := .Pages -}}
+    {{- $paginator := .Paginate $pages 9 }}
 
+    <div class="hero hero-gradient aqua "><div class="contentblock">
         <div class="hero-text">
-            <h1>#{{ .Title }} articles</h1>
+            {{- if eq $paginator.PageNumber 1 -}}
+                <h1>#{{ .Title }} articles</h1>
+            {{- else -}}
+                <h1>#{{ .Title }} articles: Page {{ $paginator.PageNumber }}</h1>
+            {{- end -}}
         </div>
     </div></div>     
 
@@ -16,35 +22,18 @@
 
     {{ if .Pages }}
 
-        {{- $pages := .Pages -}}
-        {{- $paginator := .Paginate $pages 9 }}
-
-        <div class="contentblock branded">
-            <div class="blog-list">
-                <div class="main-content">
-                    <ul class="post-list">
-                        {{- range $paginator.Pages -}}
-                            <li class="post-item">
-                                {{- partial "postpreview-list" . -}}                         
-                            </li>
-                        {{- end -}}
-                    </ul>
-                    {{- if gt $paginator.TotalPages 1 -}}
-                    <div class="paginator">
-                        {{- if $paginator.HasPrev -}}
-                            <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-                        {{- end -}}
-                        {{- range $paginator.Pagers -}}
-                            <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-                        {{- end -}}
-                        {{- if $paginator.HasNext -}}
-                            <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-                        {{- end -}}
-                    </div>
+        <div class="blog-list">
+            <div class="main-content">
+                <ul class="post-list">
+                    {{- range $paginator.Pages -}}
+                        <li class="post-item">
+                            {{- partial "postpreview-list" . -}}                         
+                        </li>
                     {{- end -}}
-                </div>
+                </ul>
             </div>
-        </div>    
+        </div>
+
         {{- if gt $paginator.TotalPages 1 -}}
         <div class="paginator">
             {{- if $paginator.HasPrev -}}
