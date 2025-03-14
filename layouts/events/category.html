@@ -19,7 +19,7 @@
             <p>Full list of speakers on <a href="/speakers">the Speakers page</a>.</p>
         </div>
 
-        {{- if eq $paginator.PageNumber 1 -}}
+        {{- if eq 1 2 -}}
         <div class="featured__wrapper">
             <div class="grid grid--2">
 
@@ -65,7 +65,8 @@
                 <div class="grid__item">
                     {{- if isset .Params "images" -}}
 
-                        {{ partial "talkpreview" (dict "Link" .RelPermalink "Date" .Params.date "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+                            {{ partial "talkpreview" (dict "Link" .RelPermalink "Date" .Params.date "EventDate" .Params.EventDate "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+
                     {{- else -}}
                         {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
                     {{- end -}}
