@@ -5,7 +5,7 @@
 
     {{- range first 8 (where (where $.Page.Site.Pages "Section" "events") "Params.tags" "intersect" $t ) -}}
     <div class="grid__item">
-    {{ partial "talkpreview" (dict "Link" .RelPermalink "Date" .Params.date "Title" .Title "Image" (index .Params.images 0) ) }}
+    {{ partial "talkpreview" (dict "Link" .RelPermalink "Date" .Params.date "EventDate" .Params.EventDate "Title" .Title "Image" (index .Params.images 0) ) }}
     </div>
     {{- end -}}
     </div>

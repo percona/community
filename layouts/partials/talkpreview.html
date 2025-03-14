@@ -6,7 +6,9 @@
 <div class="post__content">
 <p>{{- replace (index (split .Content "</p>") 0) "<p>" "" | safeHTML | plainify  -}}</p>
 <div class="bottom">
-    {{ if .Date }}
+    {{ if .EventDate }}
+    <p>{{ .EventDate}}</p>
+    {{ else if .Date }}
     <p>{{ .Date.Format "January 2, 2006" }}</p>
     {{ else }}
     <p class="readmore">Read more &raquo;</p>
@@ -14,7 +16,13 @@
 </div>
 </div>
 {{ else }}
-{{ if .Date }}
+{{ if .EventDate }}
+<div class="post__content">
+    <div class="bottom">
+        <p>{{ .EventDate}}</p>
+    </div>
+</div>
+{{ else if .Date }}
 <div class="post__content">
     <div class="bottom">
         <p>{{ .Date.Format "January 2, 2006" }}</p>
