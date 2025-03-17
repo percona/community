@@ -15,7 +15,7 @@ Join Our Online Stream: War story. Removing Offensive Language from Percona Tool
 
 **Date:** March 27, 2025  
 **Time:** 13:30 GMT / 9:30 ET
-**Streaming Live on:** [LinkedIn](https://www.linkedin.com/company/percona/) and [YouTube](https://www.youtube.com/@percona/streams)
+**Streaming Live on:** [LinkedIn](https://www.linkedin.com/events/removingoffensivelanguagefrompe7307408691371077632/theater/) and [YouTube](https://www.youtube.com/live/JOEpIQL7cXM)
 
 ### About the Event
 
@@ -48,7 +48,7 @@ Sveta will cover the challenges she faced while renewing legacy code, including 
 
 ### How to Join
 
-Tune in on March 27, 2025, at 13:30 GMT / 9:30 ET, and watch the live stream on [LinkedIn](https://www.linkedin.com/company/percona/) and [YouTube](https://www.youtube.com/@percona/streams). Don't miss this chance to enhance your understanding of MySQL and Percona Toolkit while gaining practical insights from one of the best in the field.
+Tune in on March 27, 2025, at 13:30 GMT / 9:30 ET, and watch the live stream on [LinkedIn](https://www.linkedin.com/events/removingoffensivelanguagefrompe7307408691371077632/theater/) and [YouTube](https://www.youtube.com/live/JOEpIQL7cXM). Don't miss this chance to enhance your understanding of MySQL and Percona Toolkit while gaining practical insights from one of the best in the field.
 
 Mark your calendars, spread the word, and get ready for an informative session!
 
@@ -57,8 +57,8 @@ We look forward to seeing you there!
 If you have any questions or need further information, feel free to reach out to us.
 
 📅 Add to Calendar  
-🔗 [Join the LinkedIn Stream](https://www.linkedin.com/company/percona/)
-🔗 [Join the YouTube Stream](https://www.youtube.com/@percona/streams)
+🔗 [Join the LinkedIn Stream](https://www.linkedin.com/events/removingoffensivelanguagefrompe7307408691371077632/theater/)
+🔗 [Join the YouTube Stream](https://www.youtube.com/live/JOEpIQL7cXM)
 
 
 
