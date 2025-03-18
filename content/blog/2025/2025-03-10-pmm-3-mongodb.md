@@ -149,8 +149,7 @@ Now you can open PMM in your browser at http://localhost. Use admin/admin as the
 
 Now, PMM 3 is successfully running using Docker Compose.
 
-
-Step Two: Starting MongoDB 
+## Step Two: Starting MongoDB 
 
 We start by launching a standalone MongoDB service. This simple configuration allows us to quickly understand how it operates before moving on to a more advanced setup with a Replica Set.
 
