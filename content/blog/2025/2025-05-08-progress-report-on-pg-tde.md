@@ -1,7 +1,7 @@
 ---
 title: "Progress report on pg_tde - GA extension is nearer every day!"
 date: "2025-05-08T00:00:00+00:00"
-tags: ['PG_TDE', 'Postgres', 'Opensource']
+tags: ['PG_TDE', 'Postgres', 'Opensource', 'pg_jan']
 categories: ["PostgreSQL"]
 authors:
   - jan_wieremjewicz
