@@ -27,7 +27,7 @@ Our nightly builds are always there if you want to keep up with the latest updat
 
 ## When to expect RC2?
 
-This post is just a heads-up. The actual release is planned for early next week (after May 12, 2025). Keep an eye out.
+This post is just a heads-up. The actual release is planned for early next week (after May 12, 2025). [Keep an eye out](https://github.com/percona/postgres).
 
 In the meantime, feel free to check what’s coming in RC2. And if you'd like to benefit from these improvements right away, nightly builds are the way to go.
 
