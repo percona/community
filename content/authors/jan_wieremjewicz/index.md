@@ -14,6 +14,10 @@ images:
   - blog/authors/jan_wieremjewicz.jpg
 ---
 
-During my career I have built up a vast experience within IT. From IT systems administration and data migration through business analysis, solution architecture, project management and product management.
+Jan is a Senior Product Manager at Percona, leading the products for PostgreSQL. He has vast experience in the development, deployment and maintenance of enterprise systems. 
 
-I have had a pleasure of working with quite a few implementations of Agile workflows with both teams on site and remote ones. I still find it very motivating that with each team and each software development process there is place for improvement and that each situation brings opportunity for both business and personal growth.
+Professionally, he is passionate about simple solutions that solve complicated problems and user experience that maximizes the product potential. 
+
+Privately he is a foodie by day, a tech geek into graphic novels, video and board games by night and parent/spouse in between. 
+
+Having spent already almost three years in Percona, most of us learned that he has enough energy and topics to fill in any space and time.
