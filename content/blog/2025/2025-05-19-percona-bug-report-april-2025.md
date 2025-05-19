@@ -32,6 +32,7 @@ In this edition of our bug report, we have the following list of bugs.
 [PS-9609](https://perconadev.atlassian.net/browse/PS-9609): The audit_log_filter can't be installed when the server is using component_keyring_kmip
 
 **Reported Affected Version/s**: 8.0.39-30\
+
 **Upstream Bug**: Not Available
 
 **Workaround/Fix**: Not Available
@@ -225,7 +226,8 @@ When other nodes apply the DML and DDL, the applier threads will get an MDL BF-B
 
 [PT-2322](https://perconadev.atlassian.net/browse/PT-2322): The issue reports that pt-mysql-summary does not correctly detect and display the jemalloc memory management library, even when it is enabled. Despite jemalloc being loaded and visible in the process memory map (/proc/<mysqld_pid>/maps), the output from pt-mysql-summary is missing this information in some cases, unlike version 3.2.1, which correctly identifies and reports it.
 
-**Reported Affected Version/s**: 3.5.6, 3.5.7\
+**Reported Affected Version/s**: 3.5.6, 3.5.7
+
 **Upstream Bug**: Not Applicable
 
 **Workaround/Fix**: Not Available
@@ -240,7 +242,8 @@ This behavior can lead to significant issues when running multiple schema change
 
 Additionally, if a migration is paused and later resumed, this lack of key constraint can result in only a subset of the data being correctly copied to the new table, potentially leading to partial data loss or corruption when the final table swap occurs.
 
-**Reported Affected Version/s**: 3.5.6, 3.5.7\
+**Reported Affected Version/s**: 3.5.6, 3.5.7
+
 **Upstream Bug**: Not Applicable
 
 **Workaround/Fix**: Not Available
@@ -251,19 +254,11 @@ Additionally, if a migration is paused and later resumed, this lack of key const
 
 [PT-2442](https://perconadev.atlassian.net/browse/PT-2442): Multiple security vulnerabilities have been identified in the latest version of Percona Toolkit, including:
 
-<hr>
-
 [CVE-2024-56171](https://nvd.nist.gov/vuln/detail/CVE-2024-56171): Use-After-Free Vulnerability in libxml2
-
-<hr>
 
 [CVE-2024-12797](https://nvd.nist.gov/vuln/detail/CVE-2024-12797): OpenSSL Raw Public Key Authentication Vulnerability
 
-<hr>
-
 [CVE-2022-37967](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-37967): Windows Kerberos Elevation of Privilege Vulnerability
-
-<hr>
 
 [CVE-2025-24928](https://nvd.nist.gov/vuln/detail/CVE-2025-24928): Stack-Based Buffer Overflow in libxml2
 
@@ -283,7 +278,8 @@ It is recommended that the associated advisories be reviewed and the necessary p
 
 [PMM-13694](https://perconadev.atlassian.net/browse/PMM-13694): When using a non-default pg_stat_statements.max value, the calculated QPS displayed in QAN may be wrong.
 
-**Reported Affected Version/s**: 2.38.0, 2.44.0\
+**Reported Affected Version/s**: 2.38.0, 2.44.0
+
 **Upstream Bug**: Not Available
 
 **Workaround/Fix**: Not Available
@@ -307,6 +303,14 @@ It is recommended that the associated advisories be reviewed and the necessary p
 [PMM-13847](https://perconadev.atlassian.net/browse/PMM-13847): PMM 3.0 doesn't support running on a different uid/gid in Kubernetes
 
 **Reported Affected Version/s**: 3.0.0
+
+**Upstream Bug**: Not Available
+
+**Workaround/Fix**: Not Available
+
+**Fixed/Planned Version/s**: To Be Determined
+
+<hr>
 
 [PMM-13984](https://perconadev.atlassian.net/browse/PMM-13984): Percona Monitoring and Management (PMM) version 3.1 with OVA image currently cannot be imported into VMware environments.
 
@@ -449,6 +453,8 @@ This indicates that the expected ServiceImport kind is not available in the spec
 **Workaround/Fix**: Not Available
 
 **Fixed/Planned Version/s**: 1.18.0
+
+<hr>
 
 ## PBM (Percona Backup for MongoDB)
 
