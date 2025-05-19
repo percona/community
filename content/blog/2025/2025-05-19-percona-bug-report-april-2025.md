@@ -31,7 +31,7 @@ In this edition of our bug report, we have the following list of bugs.
 
 [PS-9609](https://perconadev.atlassian.net/browse/PS-9609): The audit_log_filter can't be installed when the server is using component_keyring_kmip
 
-**Reported Affected Version/s**: 8.0.39-30\
+**Reported Affected Version/s**: 8.0.39-30
 
 **Upstream Bug**: Not Available
 
@@ -223,6 +223,8 @@ When other nodes apply the DML and DDL, the applier threads will get an MDL BF-B
 **Workaround/Fix**: Not Available
 
 **Fixed/Planned Version/s**: 3.7.1
+
+<hr>
 
 [PT-2322](https://perconadev.atlassian.net/browse/PT-2322): The issue reports that pt-mysql-summary does not correctly detect and display the jemalloc memory management library, even when it is enabled. Despite jemalloc being loaded and visible in the process memory map (/proc/<mysqld_pid>/maps), the output from pt-mysql-summary is missing this information in some cases, unlike version 3.2.1, which correctly identifies and reports it.
 
