@@ -232,3 +232,6 @@ permalinks:
   /: /:contentbasename/
   blog: /blog/:year/:month/:day/:slug/
 timeout: 2m
+caches:
+  images:
+    dir: :cacheDir/images
