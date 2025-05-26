@@ -89,7 +89,7 @@ jobs:
         with:
           path: ./public
 
-  # Deployment job
+  # Deployment job - Publishes the site to GitHub Pages
   deploy:
     environment:
       name: github-pages
@@ -100,3 +100,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GH_PAGES_TOKEN }}
