@@ -42,7 +42,7 @@
     {{- .Page.Scratch.Set "css" "" -}}
     {{- block "css" . -}}{{- end -}}
     {{- $cssPath := printf "%s%s" .RelPermalink "page.css" -}}
-    {{- $css := (.Page.Scratch.Get "css" | resources.FromString $cssPath | resources.ToCSS | resources.Minify) -}}
+    {{- $css := (.Page.Scratch.Get "css" | resources.FromString $cssPath | css.Sass | resources.Minify) -}}
     <style>{{ $css.Content | safeCSS }}</style>
 
     {{ block "head" . }}{{ end }}
