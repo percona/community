@@ -1,4 +1,4 @@
-{{ $csv := .Get "data" }}
+{{ $csv := resources.Get .Params.csv | transform.Unmarshal }}
 
 <table id="reviews" class="display" style="width:100%">
     <thead>
@@ -10,8 +10,7 @@
         </tr>
     </thead>
     <tbody>
-    {{ $reviews := getCSV "," $csv }}
-    {{ range $i, $r := $reviews }}
+    {{ range $i, $r := $csv }}
         {{ if ge $i 1 }}
         <tr class="review__row">
             <td>

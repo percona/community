@@ -21,7 +21,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-    {{ $Talks := getCSV "," .Params.csv }}
+    {{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
+
 
     {{ range $i, $r := $Talks }}{{ if ge $i 1 }}
         <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}" time="{{ index $r 9 }}" />
@@ -31,7 +32,7 @@
 
 {{ define "main" }}
 
-{{ $Talks := getCSV "," .Params.csv }}
+{{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
 
 <div class="landing text">
   

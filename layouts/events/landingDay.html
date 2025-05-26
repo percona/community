@@ -32,7 +32,7 @@
       {{ partial "content.html" . }}
     </div>
 
-    {{ $Talks := getCSV "," .Params.csv }}
+    {{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
 
     <h2 id="agenda">Agenda</h2>
 
