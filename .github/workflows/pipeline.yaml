@@ -102,4 +102,3 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GH_PAGES_TOKEN }}
-          branch: gh-pages  # Specify deployment branch
