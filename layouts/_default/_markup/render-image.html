@@ -3,22 +3,25 @@
 {{ with .Title }}
     {{ $caption = . | safeHTML }}
 {{ end }}
+
 {{ $image := resources.Get .Destination }}
+
+{{- if $image -}}
+<figure>
 {{- if or (strings.HasSuffix .Destination ".svg") (strings.HasSuffix .Destination ".gif") -}}
-<figure>
-<img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
-{{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
-</figure>
+    <img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+{{- else if gt $image.Width 1400 -}}
+    {{ $small := $image.Resize "480x" }}
+    {{ $medium := $image.Resize "768x" }}
+    {{ $big := $image.Resize "1400x" }}
+    <img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1400w" 
+         src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
 {{- else -}}
-<figure>
-{{- if gt $image.Width 1400 -}}
-{{ $small := $image.Resize "480x" }}
-{{ $medium := $image.Resize "768x" }}
-{{ $big := $image.Resize "1400x" }}
-<img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} 1400w" src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
-{{- else -}}
-<img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
+    <img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
 {{- end -}}
-{{ if $caption }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}{{ end }}
+
+{{- if $caption -}}
+    <figcaption>{{ $caption | markdownify }}</figcaption>
+{{- end -}}
 </figure>
-{{ end }}
+{{- end -}}
