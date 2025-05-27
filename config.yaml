@@ -229,6 +229,9 @@ imaging:
   quality: 60
   anchor: Center
 permalinks:
-  /: /:filename/
+  /: /:contentbasename/
   blog: /blog/:year/:month/:day/:slug/
 timeout: 2m
+caches:
+  images:
+    dir: :cacheDir/images

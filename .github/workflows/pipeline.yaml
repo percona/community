@@ -1,48 +1,104 @@
-name: Build and Deploy
+name: Deploy Hugo site to Pages
+
 on:
+  # Runs on pushes targeting the default branch
   push:
     branches:
-      - main  
+      - main
+
+  # Allows manual triggering from GitHub Actions tab
+  workflow_dispatch:
+
+# Permissions for deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevents multiple deployments from interfering
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.147.5
+      HUGO_ENVIRONMENT: production
+      TZ: America/Los_Angeles
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: false  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.110.0'
-          extended: true
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
 
-      - name: Cache resources
-        uses: actions/cache@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          path: resources
-          key: hugo-resources-${{ hashFiles('**/*.md') }}
-          restore-keys: |
-            hugo-resources
+          submodules: recursive
+          fetch-depth: 0
 
-      - name: Cache hugo deb
-        uses: actions/cache@v3
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+
+      - name: Restore Hugo Cache
+        id: cache-restore
+        uses: actions/cache/restore@v4
         with:
-          path: /tmp/hugo.deb
-          key: hugo-deb-${{ runner.os }}-${{ hashFiles('**/hugo.deb') }}
-          restore-keys: |
-            hugo-deb-${{ runner.os }}-
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
 
-      - name: Build
-        run: hugo --minify
+      - name: Configure Git
+        run: git config core.quotepath false
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Build with Hugo
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+
+      - name: Save Hugo Cache
+        id: cache-save
+        uses: actions/cache/save@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # Deployment job - Publishes the site to GitHub Pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GH_PAGES_TOKEN }}

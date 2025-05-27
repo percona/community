@@ -23,8 +23,8 @@
 
 {{ define "main" }}
 
-{{ $dataC := getCSV "," .Params.csv_talks }}
-{{ $dataS := getCSV "," .Params.csv_speakers }}
+{{ $dataC := resources.Get "data/talks.csv" | transform.Unmarshal }}
+{{ $dataS := resources.Get "data/speakers.csv" | transform.Unmarshal }}
 
 <div class="text">
   
