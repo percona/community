@@ -9,9 +9,10 @@ images:
   - blog/2025/05/jan-pg-18-cover.jpg
 ---
 
-So the [Beta1 is available for PostgreSQL 18](https://www.postgresql.org/about/news/postgresql-18-beta-1-released-3070/) and while not all the [features](https://www.postgresql.org/docs/18/release-18.html) have to make it to GA, we can surely hope they do!
 
 ![Postgres 18 is coming!](blog/2025/05/pg18img.png)
+
+So the [Beta1 is available for PostgreSQL 18](https://www.postgresql.org/about/news/postgresql-18-beta-1-released-3070/) and while not all the [features](https://www.postgresql.org/docs/18/release-18.html) have to make it to GA, we can surely hope they do!
 
 Taking a close look at [what’s coming](https://www.postgresql.org/docs/18/release-18.html), here below is the selection of what excites me in particular:
 
