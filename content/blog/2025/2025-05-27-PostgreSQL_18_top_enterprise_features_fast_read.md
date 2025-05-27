@@ -14,7 +14,7 @@ So the [Beta1 is available for PostgreSQL 18](https://www.postgresql.org/about/n
 ![Postgres 18 is coming!](blog/2025/05/pg18img.png)
 
 Taking a close look at [what’s coming](https://www.postgresql.org/docs/18/release-18.html), here below is the selection of what excites me in particular:
-:w
+
 
 ## 1. OAuth 2.0 authentication support
 
