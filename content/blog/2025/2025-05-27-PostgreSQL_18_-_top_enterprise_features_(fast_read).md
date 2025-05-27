@@ -1,6 +1,7 @@
 # PostgreSQL 18 - top enterprise features (fast read)
 
 So the ~[Beta1 is available for PostgreSQL 18](https://www.postgresql.org/about/news/postgresql-18-beta-1-released-3070/)~ and while not all the ~[features](https://www.postgresql.org/docs/18/release-18.html)~ have to make it to GA, we can surely hope they do!
+
 ![](2025-05-27-PostgreSQL_18_-_top_enterprise_features_%28fast_read%29/2025-05-22_15-59-43%20copy%20%283%29.png)
 
 Taking a close look at ~[what’s coming](https://www.postgresql.org/docs/18/release-18.html)~, here below is the selection of what excites me in particular:
