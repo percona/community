@@ -11,9 +11,9 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/catalinaadam/
 images: 
-  - blog/authors/catalina_adam.jpeg
+  - blog/authors/catalina_adam.png
 ---
 
-I’m a technical writer with over 10 years of experience in the IT industry. I have a master's degree in Technical Communication from the University of Portsmouth, UK, and I know my way around a wide range of content authoring tools—DITA, GitHub, MKDocs, Visual Studio Code, Oxygen, wikis, SDL LiveContent, FrameMaker, Flare, RoboHelp, and more.
+Catalina Adam is a Senior Technical Writer at Percona, where she blends AI-driven content strategies with docs-as-code workflows to make open-source database technologies more accessible. 
 
-I specialize in making complex information clear, structured, and easy to understand so that users and teams can work with technology seamlessly. Whether it’s documentation, technical guides, or knowledge bases, I love transforming messy information into something accessible and useful.
+With over a decade of experience in technical communication, she loves turning complex, messy information into clear, useful documentation.
