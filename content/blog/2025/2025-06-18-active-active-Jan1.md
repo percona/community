@@ -9,10 +9,7 @@ images:
   - blog/2025/06/jan-aa1-cover1.jpeg
 ---
 
-## PostgreSQL active-active replication, do you really need it?
-
-
-### Before we start, what is active-active?
+## Before we start, what is active-active?
 
 **Active-active**, also referred to as **multi-primary**, is a setup where multiple database nodes can accept writes at the same time and propagate those changes to the others. In comparison, regular streaming replication in PostgreSQL allows only one node (the primary) to accept writes. All other nodes (replicas) are read-only and follow changes.
 
@@ -27,7 +24,7 @@ That last point is the hardest one. PostgreSQL was not designed for concurrent w
 While simple in concept, implementing an active-active configuration is challenging.
 
 
-### pgactive to the rescue?
+## pgactive to the rescue?
 
 Last week, Amazon [open-sourced its active-active replication extension](https://aws.amazon.com/about-aws/whats-new/2025/06/open-sourcing-pgactive-active-active-replication-extension-postgresql/), pgactive ([https://github.com/aws/pgactive](https://github.com/aws/pgactive)). While [the extension has been generally available on AWS RDS since October 2023](https://aws.amazon.com/about-aws/whats-new/2023/10/pgactive-active-active-replication-extension-postgre-sql-amazon-rds/), there are unfortunately not many stories about it being used in production available. To be fair, I was not able to find any 😟
 
@@ -36,7 +33,7 @@ We often see both users and customers come asking for active-active or multi-mas
 As it is an open-source extension now, it immediately raised my interest. It seems that it could cover this ask from users I often speak with about their pains and needs. As a product manager, when I hear an ask, I always try to understand the reasons—whether it is a requirement, a need, or actually a solution that addresses one. For multi-master, my strong opinion is that it is a solution.
 
 
-### Key question: do you need it?
+## Key question: do you need it?
 
 I like the opening of [the talk Johnathan Katz gave on PGConf Europe 2023 in Prague](https://www.youtube.com/watch?v=Es9ZNbgVUsc):
 
@@ -47,7 +44,7 @@ That is exactly the first question I ask when I hear someone asking for active-a
 So, what are the reasons to use active-active? I do not claim to be able to cover all scenarios, but I hope this post raises enough eyebrows and sparks enough discussion to eventually have solid reading material for anyone considering active-active that will help them make an informed decision.
 
 
-### What are “good” reasons?
+## What are “good” reasons?
 
 These are some of the situations where active-active might actually make sense. While there may be more, here’s my top 5:
 
@@ -113,5 +110,6 @@ These are some of the situations where active-active might actually make sense. 
 
     In edge computing, retail stores, ships, or military use cases, you might want each node to function independently to address intermittent connectivity. In such scenarios, you will still be able to write locally when the network is not available. When the network comes back, the changes are going to be synced. While conflict avoidance may be the strategy you go for, in the end, it’s going to become a cost of conflict resolution.
 
-### What's next?
+## What's next?
+
 In the next blog post I will focus on the bad reasons to consider active-active replication and on the cost that should not be forgotten. Stay tuned!
