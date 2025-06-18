@@ -122,7 +122,7 @@
   select {
     width: 40%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
@@ -355,7 +355,7 @@ $title-hover: #1059c0;
 .blog-post .body {
 
   p {
-    font-size: 16px;
+    font-size: 0.75rem;
     line-height: 1.5;
   }
 
@@ -372,7 +372,7 @@ $title-hover: #1059c0;
   code {
     padding: .2em .4em;
     margin: 0;
-    font-size: 16px;
+    font-size: 0.75rem;
     white-space: break-spaces;
     background-color: #818b981f;
     border-radius: 6px;
@@ -441,7 +441,7 @@ $title-hover: #1059c0;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 1.5em;
   }
@@ -599,7 +599,7 @@ a.post--preview, a.post--preview * {
 
     p {
       font-weight: 400;
-      font-size: 16px;
+      font-size: 0.75rem;
       line-height: 150%;
       letter-spacing: 0.01em;
       color: #00162b;
