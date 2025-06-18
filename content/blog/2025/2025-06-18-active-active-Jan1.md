@@ -9,7 +9,7 @@ images:
   - blog/2025/06/jan-aa1-cover1.jpeg
 ---
 
-# PostgreSQL active-active replication, do you really need it?
+## PostgreSQL active-active replication, do you really need it?
 
 
 ### Before we start, what is active-active?
@@ -18,9 +18,9 @@ images:
 
 In an active-active setup:
 
-* There is no single point of write.
-* Applications can write to any node.
-* The database needs a way to sort out conflicts when two nodes try to concurrently change the same data.
+  * There is no single point of write.
+  * Applications can write to any node.
+  * The database needs a way to sort out conflicts when two nodes try to concurrently change the same data.
 
 That last point is the hardest one. PostgreSQL was not designed for concurrent writes from multiple nodes; it's not a distributed database and does not leverage proprietary dedicated storage capabilities. So, every multi-primary implementation has to solve the issue of conflicting concurrent writes somehow. Some resolve conflicts using timestamps or priorities. Some push conflict resolution to the application. Some avoid it altogether by writing to separate subsets of data.
 
