@@ -6,7 +6,7 @@ categories: ['PostgreSQL']
 authors:
   - jan_wieremjewicz
 images:
-  - blog/2025/06/jan-aa1-cover.jpeg
+  - blog/2025/06/jan-aa1-cover1.jpeg
 ---
 
 # PostgreSQL active-active replication, do you really need it?
@@ -83,7 +83,7 @@ These are some of the situations where active-active might actually make sense. 
       * [Facebook DNS and BGP misconfiguration in 2021](https://blog.cloudflare.com/october-2021-facebook-outage/) made their domains unreachable and left millions of users in the dark.
       * That day, Twitter (rest in peace) [greeted the internet](https://www.aljazeera.com/news/2021/10/5/hello-everyone-twitter-pokes-fun-at-facebook-owned-app-outage):
 
-        ![Twitter](blog/2025/06/twitter.jpeg)
+        ![Twitter](blog/2025/06/twitter1.jpeg)
 
     All jokes aside, these are serious risks. If this kind of failure is unacceptable for your business, and you are willing to take on the operational weight and cost (we will get to that), active-active may be the right tool.
 
