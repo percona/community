@@ -71,12 +71,14 @@ And this fall, on September 21, we're hosting a women's charity run - [CODE PINK
 
 We keep our community engaged via newsletters, [Meetup](https://www.meetup.com/geeks-go-peaks-club/), [Slack](https://geeksgopeaks.slack.com/join/shared_invite/zt-35ofu5wqo-MQLEe6TZyc6JMGUTkfIl6A#), [Telegram](http://t.me/geeksgopeaks), and [Strava](https://www.strava.com/clubs/geeksgopeaks) - where we train together.. Our Slack platform lets members discuss training plans, gear, and expedition prep, making us more than just a club, but a true community united by shared passions.
 
+![Geeks Go Peaks](blog/2025/06/geeks-blog-8.jpg)
+
 Anyone can suggest an adventure they'd like to be part of! We're always excited about exploring new countries and trying new activities, sporty or not. Our goal is to help people find like-minded adventurers to reach new heights and share unforgettable experiences together!
 
 Join us to explore the world, meet incredible people, and create stories you'll tell for years.
 
 Let's adventure together!
 
-![Geeks Go Peaks](blog/2025/06/geeks-blog-8.jpg)
+![Geeks Go Peaks](blog/2025/06/geeks-blog-9.jpg)
 
 
