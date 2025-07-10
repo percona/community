@@ -1,5 +1,5 @@
 ---
-title: " Active-active replication - the hidden costs and complexities"
+title: "Active-active replication - the hidden costs and complexities"
 date: "2025-07-10T00:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan']
 categories: ['PostgreSQL']
@@ -34,7 +34,7 @@ The most common approaches applied:
    * Source priority (some nodes win conflicts).
    * Application-defined merge logic.
 They all come with trade-offs. None of them are free.
-![](blog/2025/06/PG_conflict.png)
+![](blog/2025/07/PG_conflict.png)
 Consider how other systems handle this is very often not conflict handling but conflict avoidance:
    * CockroachDB avoids exposing raw conflict handling to users by using strict serializability and sacrificing performance
    * Oracle RAC handles it via centralized locking over a shared-disk architecture (and even that causes headaches)
@@ -56,7 +56,7 @@ Beyond setup, day-2 operations are where the real pain begins:
 Let’s be honest, what was hard before is now harder, and even the routine becomes risky.
 ## Don’t kill the messenger
 I love food. Cooking, eating, talking about it. Anyone I’ve worked with can vouch that I’m a foodie at heart. I like spicy food, really spicy. In my kitchen, you’ll find everything from Sichuan pepper to naga jolokia “ghost pepper”, from kala namak to asafoetida. These aren’t ingredients you throw into every dish. The right spice, at the wrong time, ruins everything. The same spice, used precisely, can turn something ordinary into magic.
-![](blog/2025/06/PG_chili.png)
+![](blog/2025/07/PG_chili.png)
 What’s exactly how active-active works. It’s not bad by nature, it’s just very specific. You need to understand the dish, the eater, and the context. If you add ghost pepper to scrambled eggs because someone said it’s “cool,” you’re very likely going to regret it. Same goes for multi-primary setups.
 Know what you’re in for. Use the right tool for the right reason. And don’t reach for active-active just because it sounds hot.
 (And if you *do* pull it off successfully, please send me your config. I owe you a beer.)
