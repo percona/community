@@ -1,6 +1,6 @@
 ---
 title: "GitOps Journey: Part 3 – Deploying a Load Generator and Connecting to PostgreSQL"
-date: "2025-07-21T00:00:00+00:00"
+date: "2025-07-22T00:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'GitOps', 'ArgoCD']
 categories: ['PostgreSQL']
 authors:

@@ -1,6 +1,6 @@
 ---
 title: "GitOps Journey: Part 4 – Observability and Monitoring with Coroot in Kubernetes"
-date: "2025-07-21T00:00:00+00:00"
+date: "2025-07-23T00:00:00+00:00"
 tags: ['PostgreSQL', 'Coroot', 'GitOps', 'ArgoCD']
 categories: ['PostgreSQL']
 authors:
@@ -21,8 +21,10 @@ We’ll deploy it using **Helm via ArgoCD**, continuing with our GitOps workflow
 
 This is Part 4 in our series. Previously, we:
 
-1. Set up ArgoCD and a GitHub repository for declarative manifests  
+1. Set up ArgoCD and a GitHub repository for declarative manifests 
+
 2. Installed a PostgreSQL cluster using Percona Operator  
+
 3. Deployed a demo application to simulate traffic and interact with the database
 
 All infrastructure is defined declaratively and deployed from the GitHub repository, following GitOps practices.
@@ -355,11 +357,18 @@ We’ve installed and tested a solid monitoring tool, and it really makes a diff
 Across this 4-part series, we walked through the GitOps journey step by step:
 
 1. Created a Kubernetes cluster, installed ArgoCD, and set up a GitHub repository.
+
 2. Deployed a PostgreSQL cluster using Percona Operator for PostgreSQL.
-3. Managed the cluster through GitHub and ArgoCD — scaled replicas, created users, resized volumes, configured access, and more.
+
 4. Deployed a demo app via ArgoCD using Helm.
+
 5. Installed and tested **Coroot**, an excellent open-source observability tool.
 
-Thank you for reading — I hope this series was helpful.  
+Managed the cluster through GitHub and ArgoCD — scaled replicas, created users, resized volumes, configured access, and more.
+
+Thank you for reading — I hope this series was helpful.
+
+The project files are available in my repository https://github.com/dbazhenov/percona-argocd-pg-coroot
+
 I’d love to hear your questions, feedback, and suggestions for improvement.
 
