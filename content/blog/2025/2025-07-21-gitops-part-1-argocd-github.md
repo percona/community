@@ -1,6 +1,6 @@
 ---
 title: "GitOps Journey: Part 1 – Getting Started with ArgoCD and GitHub"
-date: "2025-07-20T00:00:00+00:00"
+date: "2025-07-22T00:00:10+00:00"
 tags: ['PostgreSQL', 'Opensource', 'GitOps', 'ArgoCD']
 categories: ['PostgreSQL']
 authors:

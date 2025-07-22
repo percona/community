@@ -1,6 +1,6 @@
 ---
 title: "GitOps Journey: Part 4 – Observability and Monitoring with Coroot in Kubernetes"
-date: "2025-07-23T00:00:00+00:00"
+date: "2025-07-22T00:01:00+00:00"
 tags: ['PostgreSQL', 'Coroot', 'GitOps', 'ArgoCD']
 categories: ['PostgreSQL']
 authors:

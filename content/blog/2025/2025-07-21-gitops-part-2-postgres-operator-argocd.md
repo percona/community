@@ -1,6 +1,6 @@
 ---
 title: "GitOps Journey: Part 2 – Deploying PostgreSQL with GitOps and ArgoCD"
-date: "2025-07-21T00:00:00+00:00"
+date: "2025-07-22T00:00:30+00:00"
 tags: ['PostgreSQL', 'Opensource', 'GitOps', 'ArgoCD']
 categories: ['PostgreSQL']
 authors:
