@@ -19,19 +19,22 @@ We’ll start from scratch: prepare a cluster, deploy a PostgreSQL database, run
 ## What We'll Build
 
 - **ArgoCD** — syncs manifests from a GitHub repository to your cluster  
+
 - **PostgreSQL** — a production-ready database using Percona Operator  
-- **Demo App** — a real Go-based web app connected to the database  
+
+- **Demo App** — a real Go-based web app connected to the database 
+
 - **Coroot** — an open-source tool for monitoring performance, logs, and service behavior
 
 This series is for anyone new to GitOps or Kubernetes.  
 Each part includes clear steps, real-world YAML, and examples you can run yourself.
 
 > **This is Part 1 of the GitOps Journey.**  
-If you already have ArgoCD and a working Kubernetes cluster, you can skip ahead:
-
-- [Part 2 – Deploying PostgreSQL with Percona Operator](#link-to-part-2)  
-- [Part 3 – Connecting a Real App to the Cluster](#link-to-part-3)  
-- [Part 4 – Observability with Coroot](#link-to-part-4)
+> If you already have ArgoCD and a working Kubernetes cluster, you can skip ahead:
+> 
+> - [Part 2 – Deploying PostgreSQL with Percona Operator](/blog/2025/07/22/gitops-journey-part-2-deploying-postgresql-with-gitops-and-argocd/)  
+> - [Part 3 – Connecting a Real App to the Cluster](/blog/2025/07/22/gitops-journey-part-3-deploying-a-load-generator-and-connecting-to-postgresql/)  
+> - [Part 4 – Observability with Coroot](/blog/2025/07/22/gitops-journey-part-4-observability-and-monitoring-with-coroot-in-kubernetes/)
 
 > Copilot assisted with formatting, Markdown structure, and translation.  
 > All ideas, architecture decisions, and hands-on implementation were created by Daniil Bazhenov.
@@ -269,6 +272,6 @@ We’ve prepared everything to launch our GitOps-powered infrastructure:
 
 * GitHub repo ready
 
-In the next posts, we’ll deploy the PostgreSQL cluster, the demo app, and add Coroot monitoring. 
+In the next posts, we’ll deploy [the PostgreSQL cluster](/blog/2025/07/22/gitops-journey-part-2-deploying-postgresql-with-gitops-and-argocd/), [the demo app](/blog/2025/07/22/gitops-journey-part-3-deploying-a-load-generator-and-connecting-to-postgresql/), and add [Coroot monitoring](/blog/2025/07/22/gitops-journey-part-4-observability-and-monitoring-with-coroot-in-kubernetes/). 
 
 Stay tuned!

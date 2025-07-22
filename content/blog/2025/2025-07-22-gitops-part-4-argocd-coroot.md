@@ -21,7 +21,7 @@ We’ll deploy it using **Helm via ArgoCD**, continuing with our GitOps workflow
 
 This is Part 4 in our series. Previously, we:
 
-1. Set up ArgoCD and a GitHub repository for declarative manifests 
+1. Set up ArgoCD and a GitHub repository for declarative manifests ([Part 1](/blog/2025/07/22/gitops-journey-part-1-getting-started-with-argocd-and-github/))
 
 2. Installed a PostgreSQL cluster using Percona Operator  
 
@@ -356,15 +356,15 @@ We’ve installed and tested a solid monitoring tool, and it really makes a diff
 
 Across this 4-part series, we walked through the GitOps journey step by step:
 
-1. Created a Kubernetes cluster, installed ArgoCD, and set up a GitHub repository.
+1. [Part 1](/blog/2025/07/22/gitops-journey-part-1-getting-started-with-argocd-and-github/) - Created a Kubernetes cluster, installed ArgoCD, and set up a GitHub repository. 
 
-2. Deployed a PostgreSQL cluster using Percona Operator for PostgreSQL.
+2. [Part 2](/blog/2025/07/22/gitops-journey-part-2-deploying-postgresql-with-gitops-and-argocd/) - Deployed a PostgreSQL cluster using Percona Operator for PostgreSQL.
 
-4. Deployed a demo app via ArgoCD using Helm.
+4. [Part 3](/blog/2025/07/22/gitops-journey-part-3-deploying-a-load-generator-and-connecting-to-postgresql/) - Deployed a demo app via ArgoCD using Helm.
 
 5. Installed and tested **Coroot**, an excellent open-source observability tool.
 
-Managed the cluster through GitHub and ArgoCD — scaled replicas, created users, resized volumes, configured access, and more.
+Managed the PG cluster through GitHub and ArgoCD — scaled replicas, created users, resized volumes, configured access, and more.
 
 Thank you for reading — I hope this series was helpful.
 

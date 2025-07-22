@@ -13,7 +13,7 @@ We’re now ready to deploy **PostgreSQL 17** using GitOps — with ArgoCD, GitH
 
 If you're a DBA, developer, DevOps engineer, or engineering manager, this part focuses on GitOps in action: deploying and managing a real database cluster using declarative infrastructure.
 
-In [Part 1](/blog/2025-07-21-gitops-part-1-argocd-github), we set up the Kubernetes environment and installed ArgoCD.  
+In [Part 1](/blog/2025/07/22/gitops-journey-part-1-getting-started-with-argocd-and-github/), we set up the Kubernetes environment and installed ArgoCD.  
 Now it’s time to define and launch the PostgreSQL cluster — fully versioned and synced through Git.
 
 We’ll follow the official [Percona Operator documentation](https://docs.percona.com/percona-operator-for-postgresql/2.0/gke.html) and reference the [GitHub repository](https://github.com/percona/percona-postgresql-operator) to build out a production-grade setup.
@@ -356,5 +356,5 @@ To continue experimenting:
 2. [Manage Users](https://docs.percona.com/percona-operator-for-postgresql/2.0/users.html). Note: the default user does not have SUPERUSER privileges. If your app requires creating databases, you’ll need to configure appropriate roles.
 3. [Expose the Cluster](https://docs.percona.com/percona-operator-for-postgresql/2.0/expose.html). So you can connect from external clients or apps.
 
-We'll do exactly that in the next part — by deploying a demo application and connecting it to the database using GitOps.
+We'll do exactly that in [the next part](/blog/2025/07/22/gitops-journey-part-3-deploying-a-load-generator-and-connecting-to-postgresql/) — by deploying a demo application and connecting it to the database using GitOps.
 

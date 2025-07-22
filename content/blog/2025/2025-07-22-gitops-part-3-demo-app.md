@@ -12,8 +12,8 @@ images:
 We’ll deploy a demo application into the Kubernetes cluster using ArgoCD to simulate load on the PostgreSQL cluster.
 
 This is a series of articles, in previous parts we:
-1. [Part 1]() - Prepared the environment and installed ArgoCD and GitHub repository.
-2. [Part 2]() - Installed Percona Operator for Postgres and created a Postgres cluster.
+1. [Part 1](/blog/2025/07/22/gitops-journey-part-1-getting-started-with-argocd-and-github/) - Prepared the environment and installed ArgoCD and GitHub repository.
+2. [Part 2](/blog/2025/07/22/gitops-journey-part-2-deploying-postgresql-with-gitops-and-argocd/) - Installed Percona Operator for Postgres and created a Postgres cluster.
 
 The application is a custom Go-based service that generates traffic for PostgreSQL, MongoDB, or MySQL.  
 
@@ -309,5 +309,5 @@ In this part, we:
 - Managed PostgreSQL users and access via GitHub and GitOps
 - Imported a dataset and activated the traffic generator through the web UI
 
-In Part 4, we’ll deploy **Coroot** for observability and profiling.  
+In [Part 4](/blog/2025/07/22/gitops-journey-part-4-observability-and-monitoring-with-coroot-in-kubernetes/), we’ll deploy **Coroot** for observability and profiling.  
 It’s an impressive tool for diagnosing behavior across services in the Kubernetes cluster.
