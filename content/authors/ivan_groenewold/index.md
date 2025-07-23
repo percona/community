@@ -3,9 +3,9 @@ name: ivan_groenewold
 name_pronunciation: ivan_groenewold
 fullname: Ivan Groenewold
 fullname_pronounciation: Ivan Groenewold
-tagline: MongoDB Tech Lead, Percona | Open source enthusiast 
+tagline: MongoDB Tech Lead, Percona | Open source enthusiast
 social:
-  website: 
+  website:
   facebook:
   twitter: https://twitter.com/igroenew
   github: https://github.com/igroene
