@@ -11,6 +11,8 @@ images:
 
 When running MongoDB replica sets in containerized environments like Docker or Kubernetes, making nodes reachable from inside the cluster as well as from external clients can be a challenge. To solve this problem, this post is going to explain the horizons feature of [Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb).
 
+![Using_replicaSetHorizons_in_MongoDB](blog/2025/07/ivan_cover.png)
+
 Let's start by looking at what happens behind the scenes when you connect to a replicaset URI.
 
 ## Node auto-discovery
