@@ -13,7 +13,7 @@ images:
 ![Percona pg_tde: A Security Review Reveals Robust Encryption](blog/2025/07/pg-tde-security-audit-small.jpeg)
 
 
-At Percona, we are committed to providing robust and secure database solutions. We recently engaged Longterm Security for an in-depth review of our Transparent Data Encryption (TDE) feature for PostgreSQL, known as **pg_tde**. This comprehensive assessment included a cryptographic design evaluation, an application security review for coding errors, and extensive fuzz testing. We're excited to share the key takeaways from this engagement, highlighting both pg_tde's strengths and areas for continued improvement.
+At Percona, we are committed to providing robust and secure database solutions. We recently engaged [Longterm Security](https://longterm.io/) for an in-depth review of our Transparent Data Encryption (TDE) feature for PostgreSQL, known as **pg_tde**. This comprehensive assessment included a cryptographic design evaluation, an application security review for coding errors, and extensive fuzz testing. We're excited to share the key takeaways from this engagement, highlighting both pg_tde's strengths and areas for continued improvement.
 
 ---
 
