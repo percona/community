@@ -7,6 +7,13 @@ layout: single
 date: "2025-08-04"
 EventDate: "August 28, 2025"
 tags: ['PostgreSQL', 'MongoDB', 'MySQL', 'PMM', 'Event', 'PerconaUniversity', 'Yerevan']
+speakers:
+  - peter_zaitsev
+  - konstantin_trushin
+  - zlex_demidoff
+  - zlexey_palazhchenko
+  - emma_saroyan
+  - dmitrii_kochetov
 ---
 
 Percona and **PG Armenia** invite you to a **free, in-person event** in Yerevan, Armenia, as part of **Percona University**!
@@ -22,24 +29,24 @@ This one-day gathering will feature **hands-on sessions, sharp technical talks, 
 🎟️ **Cost:** Free – everyone is welcome!  
 🔗 [Register and Learn More](https://percona.university/event/percona-university-yerevan-armenia)
 
-## 🎤 Speakers & Talks
+## Speakers & Talks
 
 ![Speakers](/events/pg-armenia-percona-university-yerevan-2025/2.jpeg)
 
-## 🧠 What to Expect
+## What to Expect
 
 - In-depth tech sessions and live demos
 - Real use cases and implementation guidance
 - Conversations on open-source, database trends, and cloud-native observability
 - Community networking and collaboration opportunities
 
-## 🎯 Who Should Attend?
+## Who Should Attend?
 
 Whether you're a developer, DBA, DevOps engineer, or just curious about databases, this event is for you. We welcome **students, professionals, and open-source fans** alike.
 
 
 
-### 💬 Why Attend?
+### Why Attend?
 
 - **Meet Experts:** Talk directly with database engineers and industry leaders  
 - **Learn By Doing:** See how PostgreSQL, MongoDB, and MySQL are used in modern stacks  
@@ -48,7 +55,7 @@ Whether you're a developer, DBA, DevOps engineer, or just curious about database
 
 
 
-### 📅 How to Join
+### How to Join
 
 Register for free at the link below and be part of this exciting day in Yerevan.
 
@@ -58,5 +65,5 @@ Register for free at the link below and be part of this exciting day in Yerevan.
 
 
 
-### 🏷️ Tags  
+### Tags  
 `#PerconaUniversity` `#PGArmenia` `#OpenSource` `#PostgreSQL` `#MongoDB` `#MySQL` `#PMM` `#YerevanEvents`
