@@ -7,13 +7,6 @@ layout: single
 date: "2025-08-04"
 EventDate: "August 28, 2025"
 tags: ['PostgreSQL', 'MongoDB', 'MySQL', 'PMM', 'Event', 'PerconaUniversity', 'Yerevan']
-speakers:
-  - Peter Zaitsev
-  - Konstantin Trushin
-  - Alex Demidoff
-  - Alexey Palazhchenko
-  - Emma Saroyan 
-  - Dmitrii Kochetov
 ---
 
 Percona and **PG Armenia** invite you to a **free, in-person event** in Yerevan, Armenia, as part of **Percona University**!
