@@ -11,9 +11,15 @@ speakers:
   - peter_zaitsev
   - konstantin_trushin
   - zlex_demidoff
-  - zlexey_palazhchenko
+  - alexey_palazhchenko
   - emma_saroyan
   - dmitrii_kochetov
+  - andrey_borodin
+  - eugene_klimov
+  - alexander_zaitsev
+  - kim_saroyan
+
+
 ---
 
 Percona and **PG Armenia** invite you to a **free, in-person event** in Yerevan, Armenia, as part of **Percona University**!
@@ -31,7 +37,7 @@ This one-day gathering will feature **hands-on sessions, sharp technical talks, 
 
 ## Speakers & Talks
 
-![Speakers](/events/pg-armenia-percona-university-yerevan-2025/2.jpeg)
+![Speakers](/events/pg-armenia-percona-university-yerevan-2025/2.jpg)
 
 ## What to Expect
 
