@@ -1,6 +1,6 @@
 ---
 title: "pg_stat_monitor Needs You! Join the Feedback Phase"
-date: "2025-08-12T00:00:00+00:00"
+date: "2025-08-13T00:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'pg_stat_monitor', 'monitoring']
 categories: ['PostgreSQL']
 authors:
