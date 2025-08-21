@@ -13,7 +13,7 @@ At Percona, we believe that great open source software is built *with* the Commu
 
 In open source, the community isn’t just a user base, it’s the most important stakeholder. While we set the vision, your feedback is the compass that guides us. Your experiences, bug reports, and feature requests are what validate our direction and keep us focused on what matters most. Without your active involvement, it’s impossible to build a tool that truly solves the problems you face every day. Your input ensures pg_stat_monitor evolves in a way that is both innovative and genuinely useful.
 
-![](blog/2025/08/jan-ask_not_PostgreSQL.png)
+![](blog/2025/08/jan-ask_not_PostgreSQL.jpg)
 
 ## Your Feedback Is the Compass
 
