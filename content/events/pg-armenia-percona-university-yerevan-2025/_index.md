@@ -10,7 +10,7 @@ tags: ['PostgreSQL', 'MongoDB', 'MySQL', 'PMM', 'Event', 'PerconaUniversity', 'Y
 speakers:
   - peter_zaitsev
   - konstantin_trushin
-  - zlex_demidoff
+  - alex_demidoff
   - alexey_palazhchenko
   - emma_saroyan
   - dmitrii_kochetov
@@ -18,6 +18,8 @@ speakers:
   - eugene_klimov
   - alexander_zaitsev
   - kim_saroyan
+  - aya_guseinova
+  - piotr_kalmukhya
 
 
 ---
@@ -37,7 +39,10 @@ This one-day gathering will feature **hands-on sessions, sharp technical talks, 
 
 ## Speakers & Talks
 
-![Speakers](/events/pg-armenia-percona-university-yerevan-2025/2.jpg)
+![Speakers](/events/pg-armenia-percona-university-yerevan-2025/01armenia.jpg)
+
+
+![Speakers](/events/pg-armenia-percona-university-yerevan-2025/02armenia.jpg)
 
 ## What to Expect
 
