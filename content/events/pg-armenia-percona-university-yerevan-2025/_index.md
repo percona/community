@@ -39,10 +39,10 @@ This one-day gathering will feature **hands-on sessions, sharp technical talks, 
 
 ## Speakers & Talks
 
-![Speakers](/events/pg-armenia-percona-university-yerevan-2025/01armenia.jpg)
+![Speakers](/events/pg-armenia-percona-university-yerevan-2025/01armenia.png)
 
 
-![Speakers](/events/pg-armenia-percona-university-yerevan-2025/02armenia.jpg)
+![Speakers](/events/pg-armenia-percona-university-yerevan-2025/02armenia.png)
 
 ## What to Expect
 
