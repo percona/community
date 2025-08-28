@@ -1,4 +1,4 @@
-{{- $issuesData := resources.GetRemote "https://perconadev.atlassian.net/rest/api/2/search?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie" (dict "timeout" "5s") | transform.Unmarshal -}}
+{{- $issuesData := resources.GetRemote "https://perconadev.atlassian.net/rest/api/3/search/jql?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie" (dict "timeout" "5s") | transform.Unmarshal -}}
 
 ### Task list
 
