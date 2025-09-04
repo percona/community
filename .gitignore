@@ -4,4 +4,5 @@ resources/_gen
 .hugo_build.lock
 hugo.exe
 public
-.swp
+*.swp
+.*.swp
