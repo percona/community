@@ -6,29 +6,34 @@ hero_description: "How can you help?"
 hero_title: "PMM - Percona Monitoring and Management"
 ---
 
-## Download, Try, Give Feedback, & Enhance
+## Start monitoring today, help build tomorrow
 
-Need to easily monitor and troubleshoot your databases? PMM is the solution we highly encourage you to try to and give feedback on. It is free, open-source and supports various databases (MySQL, MongoDB, PostgreSQL, MariaDB), and allows you to view and monitor all of your open source databases easily in one place. Give it a try and help us improve it with your feedback! 
+Looking for an easier way to monitor and troubleshoot your databases? **PMM is a free, open-source solution** designed for exactly that. It supports multiple database technologies (MySQL, MongoDB, PostgreSQL, MariaDB) and lets you view and monitor them all in one place.  
 
-Enjoy how it is to communicate with the Percona community. Submitting a PR, leaving a review, reporting a bug or helping other users on the forum - all it matters to promote open source and keep it free and open. 
+We encourage you to try PMM, share your experience, and help us make it better with your feedback!  
 
+Be part of the Percona community: submit a PR, leave a review, report a bug, or help others in the forum. Every contribution matters and helps keep open source software free and accessible to all!
 
 {{% pmmtable %}}
 
 
-## Ask Questions and Get Answers.
+## Ask questions and get answers
 
-If you have any doubts, there are places you can go! You are free to seek advice and ask any questions you might have on our [Community Forum](https://forums.percona.com/c/percona-monitoring-and-management-pmm/30/none). There you can get help from other Percona software users and experienced Percona experts. Share your knowledge as well! Answer other people’s questions, communicate, and watch the community growing.
+Have questions or need guidance? Visit our [Community Forum](https://forums.percona.com/c/percona-monitoring-and-management-pmm/30/none), where you can get help from other Percona users and experienced experts.
 
+It’s also a great place to give back: share your knowledge, answer questions, and connect with others. Every contribution helps strengthen the community and keeps it growing.
 
-## Help Others to Choose and Leave an Unbiased Tech Review
-One of the great ways to help the open source community users with no coding involved is to leave a review on one of the popular app marketplaces. If Percona software has been good for you, your recommendation can also help others achieve similar success and find the right solution for their business situation. 
+## Help others choose: Leave an honest review
+
+Not a developer? You can still make a big impact by leaving an unbiased review of Percona software on popular app marketplaces.
+
+If PMM or other Percona tools have worked well for you, your recommendation can help others make informed decisions and discover the right solution for their needs.
 
 {{% grid size=4 %}}
 {{% griditem %}}
 <!-- Begin SF Tag -->
 <div class="sf-root" data-id="3260615" data-variant-id="sf" data-badge="leader-badge-black" data-metadata="achievement=leader-2020" style="width:180px" data-project-url="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/">
-    <a href="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/" target="_blank">Percona Monitoring and Management Reviews</a>
+    <a href="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/" target="_blank">Percona Monitoring and Management reviews</a>
 </div>
 <script type="text/javascript">(function () {var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3260615&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
 </script>
@@ -37,7 +42,7 @@ One of the great ways to help the open source community users with no coding inv
 {{% griditem %}}
 <!-- Begin SF Tag -->
 <div class="sf-root" data-id="3260615" data-variant-id="sf" data-badge="leader-winter-white" data-metadata="achievement=leader-seasonal-2021-winter" style="width:180px" data-project-url="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/">
-    <a href="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/" target="_blank">Percona Monitoring and Management Reviews</a>
+    <a href="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/" target="_blank">Percona Monitoring and Management reviews</a>
 </div>
 <script type="text/javascript">(function () {var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3260615&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
 </script>
@@ -46,7 +51,7 @@ One of the great ways to help the open source community users with no coding inv
 {{% griditem %}}
 <!-- Begin SF Tag -->
 <div class="sf-root" data-id="3260615" data-variant-id="sf" data-badge="leader-spring-white" data-metadata="achievement=leader-seasonal-2021-spring" style="width:180px" data-project-url="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/">
-    <a href="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/" target="_blank">Percona Monitoring and Management Reviews</a>
+    <a href="https://sourceforge.net/software/product/Percona-Monitoring-and-Management/" target="_blank">Percona Monitoring and Management reviews</a>
 </div>
 <script type="text/javascript">(function () {var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3260615&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
 </script>
@@ -57,9 +62,10 @@ One of the great ways to help the open source community users with no coding inv
 {{% /griditem %}}
 {{% /grid %}}
 
-Introduce as many details as you can, suggest mentioning the operating system, CPU, memory, volumes of data, engines, programming languages, applications, versions, configurations, performance, etc.  
+Our team carefully reads every review and truly values your feedback. When leaving a review, include as many technical and practical details as possible. 
+You could mention the operating system, CPU, memory, volumes of data, engines, programming languages, applications, versions, configurations, performance, etc.  
 
-Our team carefully read all the reviews and highly appreciate all the feedback!
+Your review not only helps us improve but can also make a real difference for someone evaluating PMM in a production environment.
 
 | Percona Software | Capterra | G2 | SourceForge | TrustRadius |
 |:----------------:|:--------:|:--:|:-----------:|:-----------:|
@@ -67,7 +73,9 @@ Our team carefully read all the reviews and highly appreciate all the feedback!
 
 ## Which databases can PMM monitor?
 
-PMM is fully open source. That means you can not only contribute to the software itself but also create tooling around it. We have created the following exporters to provide metrics to PMM:
+PMM is fully open source. This means that you can monitor your databases and contribute to the software itself, as well as have the freedom to extend its capabilities and build your own tooling around it.
+
+Out of the box, PMM provides a rich set of exporters to collect and expose metrics, including:
 
 * MongoDB Exporter
 * MySQL Server Exporter
@@ -75,20 +83,16 @@ PMM is fully open source. That means you can not only contribute to the software
 * ProxySQL Server Exporter
 * Amazon RDS Exporter
 
-For more details, please refer to our [Architecture](https://www.percona.com/doc/percona-monitoring-and-management/2.x/details/architecture.html).
+For a deeper look at how these exporters fit into the system, see [PMM Architecture](https://www.percona.com/doc/percona-monitoring-and-management/2.x/details/architecture.html).
 
-If you're interested in contributing, please check out our page on [contributing](/contribute) as well as the [main PMM repository](https://github.com/percona/pmm) that also lists all our exporter repositories.
+If you'd like to get involved, we welcome contributions! Check out our [Contributing guide](/contribute) and explore the [main PMM repository](https://github.com/percona/pmm), which also lists all our exporter repositories.
 
-## PMM Roadmap and Releases
+## Next release preview
 
-Please check out the PMM Roadmap on this [Dashboard](https://perconadev.atlassian.net/secure/Dashboard.jspa?selectPageId=13502), choose the project "Percona Monitoring and Management (PMM)" in All Product Issues/Roadmap picker.
+Get an early look at what's coming in the next PMM version:
 
-Check the tickets to be included in the next [Release](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22Percona%20Monitoring%20and%20Management%22%20and%20fixVersion%20%3D%20earliestUnreleasedVersion()). 
+- [Upcoming features & fixes](https://perconadev.atlassian.net/issues/?jql=project%20%3D%20%22Percona%20Monitoring%20and%20Management%22%20and%20fixVersion%20%3D%20earliestUnreleasedVersion) - Browse tickets scheduled for the next release
+- [Release Notes](https://github.com/percona/pmm/tree/v3/documentation) - Follow our transparent release documentation process in the PMM repository
 
-Release notes under development are in our [pmm-doc repo](https://github.com/percona/pmm-doc/labels/RN).
-
-Here is a feed of early previews that could be tested before release:
-
-{{% blogpostsbytags tags="PMM_prev" /%}}
 
 
