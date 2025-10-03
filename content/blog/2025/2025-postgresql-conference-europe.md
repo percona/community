@@ -37,43 +37,45 @@ Our experts are taking the stage across multiple tracks to share insights, hands
 ### Wednesday, October 22, 2025
 
 
-- 09:25 – 10:15 | Room: Beta | Track: Sponsors
- 
-  **Lessons from two decades of hacking the proprietary value into open source databases**
+![All Things Open 2021](/blog/2025/10/all.png)
+
+
+- **Lessons from two decades of hacking the proprietary value into open source databases**
 
   👤 Michal Nosek (Percona)
 
-  <img src="/blog/2025/10/michal-nosek.png" alt="All Things Open 2021" width="200">
+  09:25 – 10:15 | Room: Beta | Track: Sponsors
+  
+  
 
 
-
-
-- 10:25 – 10:55 | Room: Omega 2 | Track: DBA (25 minutes)
-
-  **Kubernetes from the Database Out**
+- **Kubernetes from the Database Out**
 
   👤 Alastair Turner (Percona)
 
-  <img src="/blog/2025/10/alastair-turner.png" alt="All Things Open 2021" width="200">
+  10:25 – 10:55 | Room: Omega 2 | Track: DBA (25 minutes)
+
+  
 
 
-- 11:25 – 12:15 | Room: Beta | Track: Sponsors
 
-  **TDE as an Extension: A Different Path for PostgreSQL Encryption**
+- **TDE as an Extension: A Different Path for PostgreSQL Encryption** 
   
   👤 Zsolt Parragi (Percona)
 
-  <img src="/blog/2025/10/zsolt-parragi.png" alt="All Things Open 2021" width="190">
+  11:25 – 12:15 | Room: Beta | Track: Sponsors
 
 
 
-- 16:05 – 16:55 | Room: Alfa | Track: Community (45 minutes)
-
-  **What implementing pg_tde taught us about PostgreSQL**
- 
+- **What implementing pg_tde taught us about PostgreSQL**
+  
   👤 Jan Wieremjewicz (Percona)
+  
+  16:05 – 16:55 | Room: Alfa | Track: Community (45 minutes)
+ 
+  
 
-  <img src="/blog/2025/10/jan-wieremjewicz.png" alt="All Things Open 2021" width="190">
+
 
 
 
