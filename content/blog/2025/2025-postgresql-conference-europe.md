@@ -35,45 +35,44 @@ Our experts are taking the stage across multiple tracks to share insights, hands
 
 ![All Things Open 2021](/blog/2025/10/all.png)
 
+### Wednesday, October 22
 
-### Wednesday, October 22, 2025z
 
-
-- **What implementing pg_tde taught us about PostgreSQL**
+- **[What implementing pg_tde taught us about PostgreSQL](https://www.postgresql.eu/events/pgconfeu2025/schedule/session/7056-what-implementing-pg_tde-taught-us-about-postgresql/)**
   
-  👤 Jan Wieremjewicz (Percona)
+  👤 **Jan Wieremjewicz**
   
-  16:05 – 16:55 | Room: Alfa | Track: Community (45 minutes)
+  ⏰ 16:05 – 16:55 | Room: Alfa | Track: Community (45 minutes)
 
 
 ### Thursday, October 23
-- **Kubernetes from the Database Out**
+- **[Kubernetes from the Database Out](https://www.postgresql.eu/events/pgconfeu2025/schedule/session/7134-kubernetes-from-the-database-out/)**
 
-  👤 Alastair Turner (Percona)
+  👤 **Alastair Turner**
 
-  10:25 – 10:55 | Room: Omega 2 | Track: DBA (25 minutes)
+  ⏰ 10:25 – 10:55 | Room: Omega 2 | Track: DBA (25 minutes)
 
 
-- **TDE as an Extension: A Different Path for PostgreSQL Encryption** 
-  
-  👤 Zsolt Parragi (Percona)
+- **[TDE as an Extension: A Different Path for PostgreSQL Encryption](https://www.postgresql.eu/events/pgconfeu2025/schedule/session/7191-tde-as-an-extension-a-different-path-for-postgresql-encryption/)**
 
-  11:25 – 12:15 | Room: Beta | Track: Sponsors
+  👤 **Zsolt Parragi**
 
-- **Why PostgreSQL took the crown from MySQL and what lies ahead**
+  ⏰ 11:25 – 12:15 | Room: Beta | Track: Sponsors
 
-  👤 Peter Zaitsev (Percona)
+- **[Why PostgreSQL took the crown from MySQL and what lies ahead](https://www.postgresql.eu/events/pgconfeu2025/schedule/session/7189-why-postgresql-took-the-crown-from-mysql-and-what-lies-ahead/)**
 
-  17:20 – 17:35 | Room: Omega 1 | Track: Platinum Sponsor Keynotes
+  👤 **Peter Zaitsev**
+
+  ⏰ 17:20 – 17:35 | Room: Omega 1 | Track: Platinum Sponsor Keynotes
 
 
 ### Friday, October 24
 
-- **Lessons from two decades of hacking the proprietary value into open source databases**
+- **[Lessons from two decades of hacking the proprietary value into open source databases](https://www.postgresql.eu/events/pgconfeu2025/schedule/session/7192-lessons-from-two-decades-of-hacking-the-proprietary-value-into-open-source-databases/)**
 
-  👤 Michal Nosek (Percona)
+  👤 **Michal Nosek**
 
-  09:25 – 10:15 | Room: Beta | Track: Sponsors
+  ⏰ 09:25 – 10:15 | Room: Beta | Track: Sponsors
   
 
 
