@@ -33,30 +33,25 @@ PGConf.EU is a unique chance for European PostgreSQL users and developers to cat
 
 Our experts are taking the stage across multiple tracks to share insights, hands-on experience, and forward-looking innovations:
 
-
-### Wednesday, October 22, 2025
-
-
 ![All Things Open 2021](/blog/2025/10/all.png)
 
 
-- **Lessons from two decades of hacking the proprietary value into open source databases**
+### Wednesday, October 22, 2025z
 
-  👤 Michal Nosek (Percona)
 
-  09:25 – 10:15 | Room: Beta | Track: Sponsors
+- **What implementing pg_tde taught us about PostgreSQL**
   
+  👤 Jan Wieremjewicz (Percona)
   
+  16:05 – 16:55 | Room: Alfa | Track: Community (45 minutes)
 
 
+### Thursday, October 23
 - **Kubernetes from the Database Out**
 
   👤 Alastair Turner (Percona)
 
   10:25 – 10:55 | Room: Omega 2 | Track: DBA (25 minutes)
-
-  
-
 
 
 - **TDE as an Extension: A Different Path for PostgreSQL Encryption** 
@@ -65,13 +60,32 @@ Our experts are taking the stage across multiple tracks to share insights, hands
 
   11:25 – 12:15 | Room: Beta | Track: Sponsors
 
+- **Why PostgreSQL took the crown from MySQL and what lies ahead**
+
+  👤 Peter Zaitsev (Percona)
+
+  17:20 – 17:35 | Room: Omega 1 | Track: Platinum Sponsor Keynotes
 
 
-- **What implementing pg_tde taught us about PostgreSQL**
+### Friday, October 24
+
+- **Lessons from two decades of hacking the proprietary value into open source databases**
+
+  👤 Michal Nosek (Percona)
+
+  09:25 – 10:15 | Room: Beta | Track: Sponsors
   
-  👤 Jan Wieremjewicz (Percona)
+
+
   
-  16:05 – 16:55 | Room: Alfa | Track: Community (45 minutes)
+
+
+
+
+
+
+
+
  
   
 
