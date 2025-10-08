@@ -244,8 +244,8 @@ In this post, we explored a range of filter examples—from the most permissive 
 By tailoring filters to specific operational needs, administrators can significantly reduce log volume, improve performance, and focus on high-value security and compliance events. The result is a leaner, more informative audit log that provides actionable insight into how users and applications interact with your MySQL environment—without the burden of unnecessary data.
 
 ### Reference
-  *
-  *
+  * blah
+  * blah
 
 ### Special Thanks to:
   Yura Sorokin for the collabotration to making this blog post happen.
