@@ -103,11 +103,11 @@ SELECT audit_log_filter_set_filter('log_minimum', '{
 
 Purpose: provides visibility into who connected, from where, and when.
 
-2. "class": "table_access" with "event": [...]
+2. "class": "table_access" with "event":
     * Limits logging to specific table access events:
-      *  "delete" → when rows are deleted.
-      * "insert" → when new rows are added.
-      * "update" → when existing rows are modified.
+      *  "delete" when rows are deleted.
+      * "insert" when new rows are added.
+      * "update" when existing rows are modified.
     * Read operations (like SELECT) and metadata queries are excluded.
 
 #### What It Does Functionally
@@ -244,8 +244,9 @@ In this post, we explored a range of filter examples—from the most permissive 
 By tailoring filters to specific operational needs, administrators can significantly reduce log volume, improve performance, and focus on high-value security and compliance events. The result is a leaner, more informative audit log that provides actionable insight into how users and applications interact with your MySQL environment—without the burden of unnecessary data.
 
 ### Reference
-  * blah
-  * blah
+  * [Audit Log Filter Overview](https://docs.percona.com/percona-server/8.4/audit-log-filter-overview.html)
+  * [Write audit_log_filter definitons](https://docs.percona.com/percona-server/8.4/write-filter-definitions.html)
 
-### Special Thanks to:
-  Yura Sorokin for the collabotration to making this blog post happen.
+### Special Thanks
+
+**Yura Sorokin** for the collaboration that made this blog post possible.
