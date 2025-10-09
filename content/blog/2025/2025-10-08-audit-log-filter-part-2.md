@@ -287,6 +287,7 @@ By tailoring filters to specific operational needs, administrators can significa
 ### Reference
   * [Audit Log Filter Overview](https://docs.percona.com/percona-server/8.4/audit-log-filter-overview.html)
   * [Write audit_log_filter definitons](https://docs.percona.com/percona-server/8.4/write-filter-definitions.html)
+  * [Audit log filter functions, options, and variables](https://docs.percona.com/percona-server/8.4/audit-log-filter-variables.html#audit-log-filter-functions)
 
 ### Special Thanks
 
