@@ -152,13 +152,18 @@ SELECT audit_log_filter_set_filter('log_connections', '{
 ```
 #### Included Event Classes
 1. "class": "connection"
-This class captures events related to user sessions and authentication.
+    * This class captures events related to user sessions and authentication.
 
 2. "event": ["connect", "disconnect"]
     * connect, Logged when a client establishes a connection to the MySQL server.
     Includes details like username, host, client program, IP address, and connection method.
     * disconnect, Logged when that client session ends or times out.
     Useful for tracking session duration and identifying abnormal terminations.
+
+3. Important Note on pre_authenticate Events
+    * The pre_authenticate events are not included in the examples above.
+    * These events occur before the MySQL server has received authentication information from the client—meaning no user account details are available at this stage of the connection    lifecycle. Because of that, if a filter that includes pre_authenticate events is assigned to a specific user (rather than a wildcard like %) using audit_log_filter_set_user(), those events will not be filtered or logged.
+    * This behavior often leads to confusion, as users may expect pre_authenticate events to appear in user-specific logs. Several reports and support cases have been filed on this topic, but it is expected behavior due to the timing of authentication during connection initialization.
 
 #### Why Use This Filter
 
@@ -216,6 +221,42 @@ SELECT audit_log_filter_set_user('%', 'log_full_table_access');), MySQL will log
   * Connection lifecycle events (connect, disconnect)
   * All DML statements (SELECT, INSERT, UPDATE, DELETE, TRUNCATE)
   * All DDL statements that create, modify, or remove tables (CREATE TABLE, ALTER TABLE, DROP TABLE)
+  * A full list of SQL_COMMANDS can be obtained from:
+```
+SELECT NAME FROM performance_schema.setup_instruments WHERE NAME LIKE 'statement/sql/%' ORDER BY NAME;
+```
+
+```
++-----------------------------------------------+
+| NAME                                          |
++-----------------------------------------------+
+| statement/sql/alter_db                        |
+| statement/sql/alter_event                     |
+| statement/sql/alter_function                  |
+| statement/sql/alter_instance                  |
+| statement/sql/alter_procedure                 |
+| statement/sql/alter_resource_group            |
+| statement/sql/alter_server                    |
+| statement/sql/alter_table                     |
+| statement/sql/alter_tablespace                |
+| statement/sql/alter_user                      |
+| statement/sql/alter_user_default_role         |
+| statement/sql/analyze                         |
+| statement/sql/assign_to_keycache              |
+| statement/sql/begin                           |
+| statement/sql/binlog                          |
+| statement/sql/call_procedure                  |
+| statement/sql/change_db                       |
+| statement/sql/change_repl_filter              |
+| statement/sql/change_replication_source       |
+| statement/sql/check                           |
+| statement/sql/checksum                        |
+| statement/sql/commit                          |
+| statement/sql/create_compression_dictionary   |
+[...]
++-----------------------------------------------+
+168 rows in set (0.07 sec)
+```
 
 Everything else — administrative commands, stored procedure calls, replication control, etc. — will be excluded.
 
