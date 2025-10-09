@@ -1,5 +1,6 @@
 @import "variables";
 
+
 .hero {
   .contentblock {
       padding-top: 2rem;
@@ -51,27 +52,36 @@
 
 .homepage-hero {
     position: relative;
-    .homepage-hero-icon {
-      position: absolute;
-      bottom: -3rem;
-      right: 0rem;
+    overflow: hidden;
 
-      img {
-        height: 320px;
-        opacity: 0.4;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 600px;
+        height: 340px;
+        background-image: url('/home/denver.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left;
+        opacity: 0.6;
+        pointer-events: none;
+        z-index: 0;
+      }
 
-        @media screen and (max-width: 900px) {
-
-          height: 200px;
-        }
+      // Контент поверх фона
+      > * {
+        position: relative;
+        z-index: 1;
       }
 
       @media screen and (max-width: 760px) {
-
-        display: none;
+        &::before {
+          display: none;
+        }
       }
 
-    }
 
     font-family: $font-sans;
     color: #ffffff; 
@@ -90,12 +100,11 @@
     }
 
     p {
-      width: 60%;
       font-size: 1rem;
       margin-top: 1.5rem;
     }
 
-    p:first-child {margin-top: 0;}
+    p:first-child {margin-top: 3rem;}
 
     small {font-size: 0.8rem;}
 
@@ -123,4 +132,89 @@
         line-height: 1em;
       }
     }
+}
+
+.form-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  .form-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #333;
+    text-align: center;
+  }
+
+  .hbspt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border-color 0.2s ease;
+
+      &:focus {
+        border-color: #0073e6;
+        outline: none;
+      }
+    }
+
+    .hs-button {
+      background-color: #0073e6;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #005bb5;
+      }
+    }
+
+    .hs-error-msg {
+      color: #d32f2f;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+  }
+}
+
+.form-section {
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .hbspt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }

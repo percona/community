@@ -182,44 +182,55 @@ menu:
       parent: contribute
       weight: 10
 
+    - identifier: newsletter
+      name: Community Newsletter
+      url: /contribute/newsletter
+      parent: other
+      weight: 1
     - identifier: labs
       name: Percona Labs
       parent: other
       url: /labs
-      weight: 1
+      weight: 2
     - identifier: open-source-database-hall-of-fame
       name: Open Source Database Hall of Fame
       url: /open-source-database-hall-of-fame
       parent: other
-      weight: 2
+      weight: 3
     - identifier: dsto
       name: Dave Talks Open (Archive)
       url: /events/dave-stokes-talks-open-percona-live-2022/
       parent: other
-      weight: 3
+      weight: 4
     - identifier: podcasts
       name: HOSS Talks (Archive)
       url: /podcasts
       parent: other
-      weight: 4
+      weight: 5
+
 
   footer:
+    - identifier: newsletter
+      name: Community Newsletter
+      url: /contribute/newsletter
+      parent: other
+      weight: 1
     - identifier: about
       name: About
       url: https://www.percona.com/about-percona
-      weight: 1
+      weight: 2
     - identifier: legal
       name: Legal
       url: https://www.percona.com/legal
-      weight: 2
+      weight: 3
     - identifier: contact
       name: Contact
       url: https://www.percona.com/about-percona/contact
-      weight: 3
+      weight: 4
     - identifier: forums
       name: Forums
       url: https://forums.percona.com
-      weight: 4
+      weight: 5
     - identifier: map
       name: Sitemap
       url: /map

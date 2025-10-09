@@ -9,11 +9,36 @@ description: "Percona Community - DevOps, MySQL, MongoDB, PostgreSQL, and more"
 
 <h1>Welcome to Percona Community</h1>
 
+{{% grid size=2 %}}
+{{% griditem %}}
 Your community hub for installing, running, optimizing, and learning everything around databases and software architectures.
 
-<small>[Percona](https://percona.com/) offers best of class software and services around databases.</small>
+[Percona](https://percona.com/) offers best of class software and services around databases.
 
-{{% wrapper class="homepage-hero-icon" %}}![](/home/denver.svg){{% /wrapper %}}
+<p class="newsletter-intro">
+  Subscribe using the form — we’ll send you open source news, community updates, and nothing else.
+</p>
+
+{{% /griditem %}}
+
+{{% griditem %}}
+<div class="form-wrapper">
+
+<h2 class="form-title">Join the Percona community newsletter</h2>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+
+<script>
+hbspt.forms.create({
+    portalId: "758664",
+    formId: "0aa7bbd4-0185-496a-a4a3-57e6bd60cbfb",
+    region: "na1"
+});
+</script>
+
+</div>
+
+{{% /griditem %}}
+{{% /grid %}}
 
 {{% /wrapper %}}
 
