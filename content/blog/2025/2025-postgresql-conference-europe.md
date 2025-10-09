@@ -1,7 +1,7 @@
 ---
 title: "Percona at PostgreSQL Conference Europe 2025"
-date: "2025-10-03"
-tags: ['sponsorship', 'opensource', 'Event']
+date: "2025-10-03T11:00:00+00:00"
+tags: ["sponsorship", "opensource", "Event"]
 category: ["PostgreSQL"]
 authors:
   - edith_puclla
@@ -11,17 +11,18 @@ images:
 ---
 
 We’re proud to announce that Percona is a Platinum Sponsor of [PostgreSQL Conference Europe (PGConf.EU) 2025](https://2025.pgconf.eu/), taking place October 21–24, 2025 in Riga, Latvia 🇱🇻 at the Radisson Blu Latvija Conference Center.
-As a Platinum Sponsor, you can find Percona in a prime main exhibit floor location; a chance to connect directly with our PostgreSQL experts from around the world. Visitors stopping by our booth will be able to:
-Enter raffles and win Percona & PostgreSQL SWAG
-Watch live demos and learn from expert-led sessions
-Explore open source PostgreSQL solutions built for scalability, performance, and security
 
+As a Platinum Sponsor, you can find Percona in a prime main exhibit floor location; a chance to connect directly with our PostgreSQL experts from around the world. Visitors stopping by our booth will be able to:
+
+- Enter raffles and win Percona & PostgreSQL SWAG
+
+- Watch live demos and learn from expert-led sessions
+
+- Explore open source PostgreSQL solutions built for scalability, performance, and security
 
 ![All Things Open 2021](/blog/2025/10/intro.png)
 
 As a leader in open source database management and services, Percona supports innovation, collaboration, and the sharing of knowledge that drives the open source ecosystem forward. By [participating in PostgreSQL Conference Europe](https://2025.pgconf.nyc/), Percona connects with developers, contributors, and industry leaders to discuss the latest trends, challenges, and advancements. We look forward to further showcasing Percona’s dedication to empowering organizations with robust, scalable, and secure open source database solutions.
-
-
 
 ## About the event
 
@@ -36,7 +37,6 @@ Our experts are taking the stage across multiple tracks to share insights, hands
 ![All Things Open 2021](/blog/2025/10/all.png)
 
 ### Wednesday, October 22
-
 
 - **[What implementing pg_tde taught us about PostgreSQL](https://www.postgresql.eu/events/pgconfeu2025/schedule/session/7056-what-implementing-pg_tde-taught-us-about-postgresql/)**
   
@@ -75,23 +75,6 @@ Our experts are taking the stage across multiple tracks to share insights, hands
   ⏰ 09:25 – 10:15 | Room: Beta | Track: Sponsors
   
 
-
-  
-
-
-
-
-
-
-
-
- 
-  
-
-
-
-
-
 See the full agenda [here](https://www.postgresql.eu/events/pgconfeu2025/schedule/).
 
 ## Community Leadership – Kai Wagner
@@ -100,7 +83,5 @@ We are also proud that [Kai Wagner](https://www.linkedin.com/in/kai-wagner-b1b66
 Kai is a long-time open source contributor and speaker, actively involved in projects like Ceph, openATTIC, and PostgreSQL. As a community builder and PGConf Germany organizer, he helps shape the PostgreSQL ecosystem and ensure diverse, impactful content is represented at the conference.
 
  ![All Things Open 2021](/blog/2025/10/kai-wagner.png)
-
-
 
 Join us in Riga this October to connect, learn, and celebrate PostgreSQL with Percona and the wider open source community!

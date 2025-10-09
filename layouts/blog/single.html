@@ -7,9 +7,9 @@
 {{ define "meta" }}
   {{- if (isset .Params "authors") -}}
     {{ range $key, $author := .Params.authors -}}
-      {{- with $.Site.GetPage (print "/authors/" $author) -}}
-        <meta name="author" content="{{ .Params.fullname }}" />
-      {{- end }}{{ if $key }}, {{ end -}}
+        {{- with $.Site.GetPage (print "/authors/" $author) -}}
+          <meta name="author" content="{{ .Params.fullname }}" />
+        {{- end }}
     {{- end -}}
   {{- end -}}
 {{ end }}
