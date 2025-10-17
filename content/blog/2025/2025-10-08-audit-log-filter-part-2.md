@@ -175,7 +175,7 @@ This filter is particularly useful when you need to:
 
 In short the log_connections filter provides a focused, low-overhead auditing strategy that records only connection lifecycle events. It’s ideal for environments where you primarily need to know who connected to the database, when, and from where without capturing every SQL statement or table access.
 
-### Examaple 5
+### Example 5
 ```
 SELECT audit_log_filter_set_filter('log_full_table_access', '{
   "filter": {
