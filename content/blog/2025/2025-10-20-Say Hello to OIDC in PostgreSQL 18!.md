@@ -13,7 +13,7 @@ If you’ve ever wondered how to set up OpenID Connect (OIDC) authentication in 
 We’ve spent some time exploring what it would take to make OIDC easier and more reliable to use with PostgreSQL. And now, we’re happy to share the first results of that work.
 ### Why OIDC, and why now?
 We’ve spoken to some of our customers and noticed a trend of moving away from LDAP to OIDC. Our MongoDB product is already providing OIDC integration and the team working on PostgreSQL products saw an opportunity coming with PostgreSQL 18.
-As some of you may have noticed ****PostgreSQL 18 has introduced improvements to authentication that include OAuth 2.0 support. It’s not a long step from OAuth 2.0 support that OIDC is. So we set out to test PostgreSQL 18’s integration with one of the most common OIDC providers: Okta.
+As some of you may have noticed ****PostgreSQL 18 has introduced improvements to authentication that include OAuth 2.0 support. It’s a small step from OAuth 2.0 to OIDC, which builds directly on top of it. So we set out to test PostgreSQL 18’s integration with one of the most common OIDC providers: Okta.
 That’s when we discovered a missing piece. While PostgreSQL 18 includes the underlying support for OAuth 2.0, it still lacks a validator library required to successfully complete an OIDC configuration.
 So… we built it.
 ### Closing the gap for enterprise needs
@@ -44,7 +44,7 @@ We’re excited to share that the beta version of the OIDC [validator library is
 * Introductory documentation for getting started, and
 * Links to examples and test configurations.
 
-More detailed guides, including how OIDC works under the hood and how to use it in real PostgreSQL deployments, are coming soon in follow up blog posts and documentation articles.
+More detailed guides, including how OIDC works under the hood and how to use it in real PostgreSQL deployments, as well as direct integration guides are coming soon in follow up blog posts and documentation articles.
 ### We’d love your feedback
 If you’re experimenting with PostgreSQL 18 or exploring modern authentication options, give the [OIDC validator library](https://github.com/Percona-Lab/pg_oidc_validator/releases/tag/latest) a try and [let us know what you think](https://github.com/Percona-Lab/pg_oidc_validator/discussions)!
 Your input will help us make this capability more robust, portable, and enterprise-ready while keeping it open source and accessible to everyone.
