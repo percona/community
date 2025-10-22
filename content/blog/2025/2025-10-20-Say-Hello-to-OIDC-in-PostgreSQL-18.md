@@ -49,6 +49,6 @@ We’re excited to share that the beta version of the OIDC [validator library is
 * Links to examples and test configurations.
 
 More detailed guides, including how OIDC works under the hood and how to use it in real PostgreSQL deployments, as well as direct integration guides are coming soon in follow up blog posts and documentation articles.
-### We’d love your feedback
+### We’d love your feedback!
 If you’re experimenting with PostgreSQL 18 or exploring modern authentication options, give the [OIDC validator library](https://github.com/Percona-Lab/pg_oidc_validator/releases/tag/latest) a try and [let us know what you think](https://github.com/Percona-Lab/pg_oidc_validator/discussions)!
 Your input will help us make this capability more robust, portable, and enterprise-ready while keeping it open source and accessible to everyone.
