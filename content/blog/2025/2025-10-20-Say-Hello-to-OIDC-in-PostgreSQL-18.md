@@ -13,17 +13,21 @@ If you’ve ever wondered how to set up OpenID Connect (OIDC) authentication in 
 We’ve spent some time exploring what it would take to make OIDC easier and more reliable to use with PostgreSQL. And now, we’re happy to share the first results of that work.
 ### Why OIDC, and why now?
 We’ve spoken to some of our customers and noticed a trend of moving away from LDAP to OIDC. Our MongoDB product is already providing OIDC integration and the team working on PostgreSQL products saw an opportunity coming with PostgreSQL 18.
+
 As some of you may have noticed **PostgreSQL 18** has introduced improvements to authentication that include OAuth 2.0 support. It’s a small step from OAuth 2.0 to OIDC, which builds directly on top of it. So we set out to test PostgreSQL 18’s integration with one of the most common OIDC providers: Okta.
+
 That’s when we discovered a missing piece. While PostgreSQL 18 includes the underlying support for OAuth 2.0, it still lacks a validator library required to successfully complete an OIDC configuration.
 So… we built it.
 ### Closing the gap for enterprise needs
 Percona is known for our Support, Managed, and Consulting services for open source databases. But while our services are commercial, our mission remains deeply open source.
-We don’t differentiate users by the size of their wallets. We want everyone using open source databases to succeed, grow, and benefit from the same quality foundations that enterprises rely on.
-Services is what finances our open source investments, what we believe is truly honest and sustainable open source development.
+
+We don’t differentiate users by the size of their wallets. We want everyone using open source databases to succeed, grow, and benefit from the same quality foundations that enterprises rely on. Services is what finances our open source investments, what we believe is truly honest and sustainable open source development.
+
 OIDC is a great example of how real-world enterprise needs and community innovation come together. PostgreSQL 18 introduced OAuth thanks to community efforts, but OIDC that helps organizations handle compliance and scale was still not supported. With the work on OIDC validator we want to close the gap between these two while keeping the solution open source.
 ### The power is in testing
 It would be great if integrating with one OIDC provider meant it works with all of them. Unfortunately, real world implementations differ, sometimes significantly.
 That’s why compatibility testing matters. That’s also why often particular providers we find require independent approach and some custom handling in the code.
+
 So far, we’ve done some preliminary tests of the library. It’s not production-ready yet. It’s a first release that’s shared with users and Community to get feedback while in the meantime our engineers will put it through rigorous testing regimen.
 We’ve so far tested the validator library compatibility with:
 
