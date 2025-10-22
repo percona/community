@@ -7,6 +7,9 @@ authors:
   - jan_wieremjewicz
 images:
   - blog/2025/10/Slonik-passport.png
+aliases:
+  - /blog/2025/10/20/say-hello-to-oidc-in-postgresql-18/
+  - /blog/2025/10/20/say-hello-to-oidc-in-postgresql-18
 ---
 
 If you’ve ever wondered how to set up OpenID Connect (OIDC) authentication in PostgreSQL, the wait is almost over.
