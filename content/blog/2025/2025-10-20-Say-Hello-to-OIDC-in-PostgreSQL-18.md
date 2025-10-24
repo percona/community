@@ -54,7 +54,7 @@ The broader the testing, the stronger the solution. This is where we hope the Co
 
 ### Try the OIDC validator library now!
 
-We’re excited to share that the beta version of the OIDC [validator library is now available](https://github.com/Percona-Lab/pg_oidc_validator/releases/tag/latest) for your feedback.
+We’re excited to share that the first release of the OIDC [validator library is now available](https://github.com/Percona-Lab/pg_oidc_validator/releases/tag/latest) for your feedback.
 [The repository includes](https://github.com/Percona-Lab/pg_oidc_validator/tree/main):
 
 * Basic setup instructions in the README,
