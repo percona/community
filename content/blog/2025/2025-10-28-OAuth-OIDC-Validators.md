@@ -20,7 +20,7 @@ In this series of blog posts, I'll try to help with this task.
 First, by clearing up all the terminology and details in this article.
 Later, I'll provide vendor-specific setup instructions for some of the popular providers, using our `pg_oidc_validator` plugin.
 
-### OAuth, OIDC, what's even the difference?
+### OAuth 2.0, OIDC, what's even the difference?
 
 From news and other sources you might have heard that PostgreSQL 18 now has support for OIDC.
 But if you look at the [PostgreSQL documentation about it](https://www.postgresql.org/docs/current/auth-oauth.html), or the variables/configuration options PostgreSQL provides, it's clear that is about OAuth everywhere.
@@ -75,12 +75,12 @@ if the user has a valid access token, we treat them as our admin user and procee
 
 The question is, of course, more complex than this:
 * Our validator plugin supports the more generic scenario. It has to work with user identities from the provider, so it requires OIDC features.
-  That's why we called it `pg_oidc_validator` and not `pg_oauth_validator`, even though other configuration parameters in PostgreSQL all have OAuth in their name.
+  That's why we called it `pg_oidc_validator` and not `pg_oauth_validator`.
 * While the server and wire protocol can work with any OAuth flow, currently the only client that implements a login mechanism using it is `libpq` (and with that, the `psql` command).
   And while the `psql` command also uses parameters with OAuth in their name, internally it relies on a feature called OIDC discovery -- which, as the name suggests, is part of the OIDC standard, not OAuth.
 
-To summarize: in practice, right now anyone who wants to log in to a PostgreSQL server using OAuth has to use a provider that also supports the OIDC protocol.
-But this isn't a practical restriction, as OIDC is commonly supported.
+To summarize: in practice, right now anyone who wants to log in to a PostgreSQL server using OAuth and `psql` has to use a provider that also supports the OIDC protocol.
+In practice this isn't a restriction, since OIDC is commonly supported.
 
 ### Why do we need this validator?
 
@@ -146,7 +146,7 @@ These standards never define what an access token is.
 It can be something completely opaque, only interpretable by the original issuer.
 Or it can be something completely transparent -- a proper JSON document with a digital signature that guarantees it was issued by the issuer, usually called a `JWT`.
 
-Many providers implement JWT tokens, but not all of them.
+Many OAuth providers implement JWT tokens, but not all of them.
 And even with JWT tokens, there are differences between providers.
 Since it's not standardized, the content might differ between vendors.
 There's also the question of signature validation, where some providers have differences and require special handling.
@@ -178,7 +178,7 @@ With all these details and choices, it's definitely better to leave the options 
 ### What do we offer?
 
 The Percona validator in its current form focuses on providers working with JWT tokens.
-We can't guarantee it works with all providers using JWT tokens -- as mentioned above, the exact format of these tokens isn't standardized -- but we implemented logic that can handle all the providers we tested, in some cases allowing customization with GUC variables.
+We can't guarantee it works with all providers using JWT tokens -- as mentioned above, the exact format of these tokens isn't standardized -- but we implemented logic that can handle all the providers we tested, in some cases allowing customization with configuration variables.
 
 In the future, we might add support for providers using opaque tokens or additional optional checks for token revocation, but these weren't in scope for the first version.
 
