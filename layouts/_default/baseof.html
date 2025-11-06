@@ -57,6 +57,13 @@
       gtag('config', 'UA-343802-37');
     </script>
 
+{{ if .Store.Get "hasMermaid" }}
+      <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+      </script>
+{{ end }}
+
     <meta name="color-scheme" content="dark light" />
     <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
   </head>
