@@ -1,15 +1,13 @@
 ---
 title: "OAuth, OIDC, validators, what is all this about?"
-date: "2025-11-07:00:00+00:00"
+date: "2025-11-07T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_zsolt', 'OIDC', 'Security']
 categories: ['PostgreSQL']
-authors:
-  - zsolt_parragi
 images:
   - blog/2025/11/oidc1.jpg
-aliases:
-  - /blog/2025/11/07/OAuth-OIDC-validators
-  - /blog/2025/11/07/OAuth-OIDC-validators/
+authors:
+  - zsolt_parragi
+slug: oauth-oidc-validators
 ---
 
 Somebody might tell you, "let's configure PostgreSQL 18 with OIDC, it should be simple, only takes a few minutes!"
