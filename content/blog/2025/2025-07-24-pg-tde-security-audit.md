@@ -4,7 +4,6 @@ date: "2025-07-24T00:00:00+00:00"
 tags: ["Percona", "pg_tde", "pg_zsolt", "PostgreSQL", "Encryption", "Security", "Compliance", "Open Source"]
 categories: ['PostgreSQL']
 authors:
-  - zsolt_parragi
   - kai_wagner
 images:
   - blog/2025/07/pg-tde-security-audit.jpg
