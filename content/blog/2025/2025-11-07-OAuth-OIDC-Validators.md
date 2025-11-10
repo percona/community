@@ -1,6 +1,6 @@
 ---
 title: "OAuth, OIDC, validators, what is all this about?"
-date: "2025-11-07T11:00:00+00:00"
+date: "2025-11-07T10:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_zsolt', 'OIDC', 'Security']
 categories: ['PostgreSQL']
 images:
