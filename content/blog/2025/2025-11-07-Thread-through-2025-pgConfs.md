@@ -1,6 +1,6 @@
 ---
 title: "A thread through my 2025 Postgres events"
-date: "2025-11-07T11:00:00+00:00"
+date: "2025-11-10T07:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_alastair', 'Community']
 categories: ['PostgreSQL']
 images:
