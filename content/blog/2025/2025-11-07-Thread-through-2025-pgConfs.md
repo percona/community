@@ -4,7 +4,7 @@ date: "2025-11-07T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_alastair', 'Community']
 categories: ['PostgreSQL']
 images:
-  - blog/2025/11/blue_threads.jpg
+  - blog/2025/11/cover-map-blue.jpg
 authors:
   - alastair_turner
 slug: thread-through-2025-pgconfs
