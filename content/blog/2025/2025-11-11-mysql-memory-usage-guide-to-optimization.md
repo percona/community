@@ -1,6 +1,6 @@
 ---
 title: "MySQL Memory Usage: A Guide to Optimization"
-date: "2025-11-30T00:00:00+00:00"
+date: "2025-11-11T00:00:00+00:00"
 tags: ['MySQL', 'MariaDB', 'Percona', 'DBA Tools']
 categories: ["MySQL"]
 authors:
