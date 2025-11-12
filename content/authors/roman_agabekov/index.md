@@ -3,7 +3,7 @@ name: roman_agabekov
 name_pronunciation: roman_agabekov
 fullname: Roman Agabekov
 fullname_pronounciation: Roman Agabekov
-tagline: 
+tagline: Founder & CEO at Releem Inc.
 social:
   website: https://releem.com
   facebook: 
