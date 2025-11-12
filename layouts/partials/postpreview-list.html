@@ -19,7 +19,10 @@
                             {{- with .Params.images -}}
                                 <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "32x32 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
                             {{- end -}}
-                            <a href="{{ .RelPermalink }}" class="author-link">{{- .Params.fullname -}}</a>
+                            <a href="{{ .RelPermalink }}" class="author-link">
+                                {{ .Params.fullname }}
+                                {{ with .Params.tagline }}<em>({{ . }})</em>{{ end }}
+                            </a>
                         {{- end }}
                     {{ end }}
                 </div>
