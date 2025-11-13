@@ -21,5 +21,5 @@ In a world where “PostgreSQL compatible” is often a vague claim, initiatives
 
 Special thanks to Mayur, whose initiative is helping define a clear, standardized framework for PostgreSQL compatibility.
 
-> The test run was done against [Percona Server for PostgreSQL 17.6.1](https://docs.percona.com/postgresql/17/index.html). [Click for test result](https://github.com/secp256k1-sha256/postgres-compatibility-index/blob/main/postgres-compatibility-index/outputs/Percona.json) 
+> The test run was done against [Percona Server for PostgreSQL 17.6.1](https://docs.percona.com/postgresql/17/index.html). [Click for test result](https://github.com/secp256k1-sha256/postgres-compatibility-index/blob/main/postgres-compatibility-index/outputs/Percona.json). Percona Server for PostgreSQL is a binary-compatible, open source drop-in replacement for PostgreSQL with the currently needed enhancements, to make [Transparent Data Encryption (TDE)](https://docs.percona.com/pg-tde/index.html) work.  
 
