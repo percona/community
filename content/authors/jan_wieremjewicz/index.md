@@ -3,7 +3,7 @@ name: jan_wieremjewicz
 name_pronunciation: jan_wieremjewicz
 fullname: Jan Wieremjewicz
 fullname_pronounciation: Jan Wieremjewicz
-tagline: Senior Product Manager, Percona | Open source enthusiast | Driving B2B products growth
+tagline: Senior Product Manager, Percona
 social:
   website: 
   facebook:
