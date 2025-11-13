@@ -1,12 +1,14 @@
 ---
 title: "PGScorecard - PostgreSQL Compatibility Index"
-date: "2025-11-12T00:00:00+00:00"
+date: "2025-11-13T00:00:00+00:00"
 tags: ["Percona", "pg_tde", "pg_kwagner", "PostgreSQL", "Compliance", "Open Source"]
 categories: ['PostgreSQL']
 authors:
   - kai_wagner
 images:
-  - blog/2025/11/pci-pgscorecard.png 
+  - blog/2025/11/pci-pgscorecard.png
+aliases:
+  - /blog/2025/11/12/pgscorecard-postgresql-compatibility-index/
 ---
 
 We’re excited to share that our recent test run using the [Postgres Compatibility Index (PCI)](https://github.com/secp256k1-sha256/postgres-compatibility-index/blob/main/readme.md) achieved 100% compatibility.
