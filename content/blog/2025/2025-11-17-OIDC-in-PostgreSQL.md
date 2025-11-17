@@ -1,6 +1,6 @@
 ---
 title: "OIDC in PostgreSQL: How It Works and Staying Secure"
-date: "2025-11-14T11:00:00+00:00"
+date: "2025-11-17T09:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_zsolt', 'OIDC', 'Security']
 categories: ['PostgreSQL']
 authors:
