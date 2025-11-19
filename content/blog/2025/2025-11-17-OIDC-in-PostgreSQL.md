@@ -9,7 +9,7 @@ images:
   - blog/2025/11/oidc2.png
 ---
 
-In the previous blog post about the topic, [OAuth, OIDC and validators](/blog/2025/10/28/OAuth-OIDC-validators/), we discussed basic terminologies to understand the differences between the protocols and how they relate to PostgreSQL.
+In the previous blog post about the topic, [OAuth, OIDC and validators](/blog/2025/11/07/oauth-oidc-validators/), we discussed basic terminologies to understand the differences between the protocols and how they relate to PostgreSQL.
 
 In this second part, we'll go one step further and see how OIDC works exactly in other software and in PostgreSQL, and what OAuthBearer is about. We also focus on the possible attacks and dangers in this flow with some examples to showcase why it's important to use a properly configured secure provider and to teach our users not to just skim through the authorization process.
 
