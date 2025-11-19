@@ -1,13 +1,13 @@
 ---
-title: "Open Source Unlocked: Exploring the Journey from Redis to Valkey – October 30, 2025"
+title: "Open Source Unlocked: Exploring the Journey from Redis to Valkey – October 29, 2025"
 description: "Join us in Boston to connect with AWS, Percona, and Valkey experts."
 images:
   - events/2025-aws-connected-community/intro.png
 layout: single
 date: "2025-10-06"
-EventDate: "October 30, 2025, at 11:30 – 17:15 EDT (15:30 – 21:15 GMT)"
+EventDate: "October 29, 2025, at 08:45 - 15:30 GMT-4 (17:45 - 00:30 GMT+5)"
 speakers:
-  - peter_zaitsev
+  - laura_czajkowski
   - michal_nosek
 tags: ['Valkey', 'Event', 'Percona']
 ---
@@ -21,8 +21,8 @@ That’s why [Percona](https://www.percona.com/), together with AWS, is hosting 
 
 ## **Event Details**  
 
-**📅 Thursday, October 30, 2025**  
-**🕐 11:30 – 17:15 EDT (15:30 – 21:15 GMT)**  
+**📅 Wednesday 29th October 2025**  
+**🕐 08:45 - 15:30 GMT-4 (17:45 - 00:30 GMT+5)**  
 **📍 Boston – Row 34, Seaport | 383 Congress St, Boston, MA 02210**
 
 
@@ -50,8 +50,6 @@ This event is for:
 - IT Decision-Makers  
 - Cloud & Solutions Architects  
 - SREs and DevOps Professionals  
-
-
 
 ## 🗓️ Event Flow (Highlights)
 - **11:30 – 12:00:** Registration & Networking  
