@@ -45,10 +45,17 @@
         </div>
         <div class="blog-list">
             <div class="main-content">
-                {{- if eq $paginator.PageNumber 1 -}}
-                <h2>Latest articles</h2>
-                {{- end -}}
-                <ul class="post-list">
+                  <div class="blog-heading-row{{ if eq $paginator.PageNumber 1 }} has-title{{ end }}">
+                    {{- if eq $paginator.PageNumber 1 -}}
+                    <h2>Latest articles</h2>
+                    {{- end -}}
+                    <div class="blog-search-inline">
+                        <label for="blog-search-input" class="sr-only">Search blog posts</label>
+                        <input id="blog-search-input" class="blog-search-input" type="search" placeholder="Search articles" autocomplete="off" />
+                    </div>
+                </div>
+                <p class="blog-search-status" data-search-status aria-live="polite"></p>
+		<ul class="post-list">
                     {{- range $paginator.Pages -}}
                         <li class="post-item">
                             {{- partial "postpreview-list" . -}}                         
@@ -102,4 +109,111 @@
             }
         }
     </script> 
+    {{- $blogPages := where .Site.RegularPages "Section" "blog" -}}
+    {{- $searchIndex := slice -}}
+    {{- range $blogPages -}}
+        {{- $excerpt := "" -}}
+        {{- with .Params.excerpt -}}
+            {{- $excerpt = (.| markdownify | plainify) -}}
+        {{- end -}}
+        {{- $content := (.Content | plainify) -}}
+        {{- $tags := "" -}}
+        {{- with .Params.tags -}}
+            {{- $tags = (delimit . " ") -}}
+        {{- end -}}
+        {{- $authors := "" -}}
+        {{- with .Params.authors -}}
+            {{- $authors = (delimit . " ") -}}
+        {{- end -}}
+        {{- $searchText := printf "%s %s %s %s %s" .Title $excerpt $tags $authors $content | plainify | lower -}}
+        {{- $html := printf "%s" (partial "postpreview-list" .) -}}
+        {{- $searchIndex = $searchIndex | append (dict "html" $html "searchText" $searchText) -}}
+    {{- end -}}
+    <script type="application/json" id="blog-posts-data">{{- $searchIndex | jsonify | safeJS -}}</script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            const searchDataEl = document.getElementById("blog-posts-data");
+            const searchInput = document.getElementById("blog-search-input");
+            const postList = document.querySelector(".post-list");
+            const paginator = document.querySelector(".paginator");
+            const statusEl = document.querySelector("[data-search-status]");
+
+            if (!searchDataEl || !searchInput || !postList) {
+                return;
+            }
+
+            let postsData = [];
+
+            try {
+                postsData = JSON.parse(searchDataEl.textContent);
+            } catch (error) {
+                console.error("Unable to parse blog search index", error);
+            }
+
+            const defaultListMarkup = postList.innerHTML;
+
+            const renderMatches = (matches) => {
+                if (!matches.length) {
+                    postList.innerHTML = '<li class="post-item post-item--empty">No matching posts found.</li>';
+                    statusEl && (statusEl.textContent = "No posts found");
+                    return;
+                }
+
+                const items = matches.map((post) => `<li class="post-item">${post.html}</li>`).join("");
+                postList.innerHTML = items;
+                if (statusEl) {
+                    const label = matches.length === 1 ? "result" : "results";
+                    statusEl.textContent = `Showing ${matches.length} ${label}`;
+                }
+            };
+
+            const resetList = () => {
+                postList.innerHTML = defaultListMarkup;
+                statusEl && (statusEl.textContent = "");
+                paginator && paginator.classList.remove("is-hidden");
+            };
+
+            const parseQueryTokens = (rawValue) => {
+                if (!rawValue) {
+                    return [];
+                }
+
+                const lowered = rawValue.toLowerCase();
+                const tokens = [];
+                const phraseRegex = /"([^"]+)"/g;
+                let remainder = lowered;
+
+                remainder = remainder.replace(phraseRegex, (_, phrase) => {
+                    const trimmed = phrase.trim();
+                    if (trimmed) {
+                        tokens.push(trimmed);
+                    }
+                    return " ";
+                });
+
+                remainder
+                    .split(/\s+/)
+                    .map((part) => part.trim())
+                    .filter(Boolean)
+                    .forEach((part) => tokens.push(part));
+
+                return tokens;
+            };
+
+            searchInput.addEventListener("input", function (event) {
+                const tokens = parseQueryTokens(event.target.value.trim());
+
+                if (!tokens.length) {
+                    resetList();
+                    return;
+                }
+
+                paginator && paginator.classList.add("is-hidden");
+                const matches = postsData.filter((post) =>
+                    tokens.some((token) => post.searchText.includes(token))
+                );
+                renderMatches(matches);
+            });
+        });
+    </script>
 {{ end }}
