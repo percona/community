@@ -163,6 +163,14 @@
   font-size: 0.95rem;
   border: 1px solid #e8ecf3;
   border-radius: 6px;
+  background: #fff;
+  color: #1f2736;
+  caret-color: #1f2736;
+  color-scheme: light;
+
+  &::placeholder {
+    color: #6c7586;
+  }
 }
 
 .blog-search-status {
