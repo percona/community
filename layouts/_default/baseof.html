@@ -180,5 +180,61 @@
       s.addEventListener('load', function() { window.initCmp(); });
     })()
     </script>
+    {{ if .Store.Get "hasCopyableCode" }}
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var buttons = document.querySelectorAll('.code-block__copy');
+        if (!buttons.length) return;
+
+        function copyWithClipboardAPI(text) {
+          if (!navigator.clipboard || !navigator.clipboard.writeText) return Promise.resolve(false);
+          return navigator.clipboard.writeText(text).then(function(){ return true; }).catch(function(){ return false; });
+        }
+
+        function copyWithExecCommand(text) {
+          var textarea = document.createElement('textarea');
+          textarea.value = text;
+          textarea.setAttribute('readonly', '');
+          textarea.style.position = 'absolute';
+          textarea.style.left = '-9999px';
+          document.body.appendChild(textarea);
+          textarea.select();
+          var success = document.execCommand('copy');
+          document.body.removeChild(textarea);
+          return success;
+        }
+
+        function markCopied(button) {
+          button.classList.add('is-copied');
+          window.clearTimeout(Number(button.dataset.copyTimeout));
+          var timeoutId = window.setTimeout(function() {
+            button.classList.remove('is-copied');
+          }, 2000);
+          button.dataset.copyTimeout = timeoutId;
+        }
+
+        function getCodeText(targetId) {
+          var container = document.getElementById(targetId);
+          if (!container) return '';
+          var code = container.querySelector('pre') || container;
+          return (code.innerText || '').replace(/\s+$/, '');
+        }
+
+        buttons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            var targetId = button.getAttribute('data-copy-target');
+            if (!targetId) return;
+            var text = getCodeText(targetId);
+            if (!text) return;
+
+            copyWithClipboardAPI(text).then(function(success) {
+              if (!success) success = copyWithExecCommand(text);
+              if (success) markCopied(button);
+            });
+          });
+        });
+      });
+    </script>
+    {{ end }}
   </body>
 </html>
