@@ -1,3 +1,95 @@
 // This file should be included on every page that displays code segments.
 
 @import "common/variables";
+
+.code-block {
+  position: relative;
+  border: 1px solid #e1e6ed;
+  border-radius: 6px;
+  background: #f6f8fa;
+  margin: 1.25rem 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.code-block__header {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 0.75rem;
+}
+
+.code-block__lang {
+  font-family: $font-mono;
+  color: $palette2;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: none;
+}
+
+.code-block__copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid #d0d7de;
+  background: #f6f8fa;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #1f2736;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  transition: background-color $transition-length, border-color $transition-length, color $transition-length;
+}
+
+.code-block__copy:hover {
+  background: #e9eef5;
+}
+
+.code-block__copy:active {
+  background: #dbe3ed;
+}
+
+.code-block__copy:focus-visible {
+  outline: 2px solid $link;
+  outline-offset: 2px;
+}
+
+.code-block__copy-success {
+  display: none;
+}
+
+.code-block__copy.is-copied {
+  color: $link;
+  border-color: $link;
+  background: #e6f7f4;
+}
+
+.code-block__copy.is-copied .code-block__copy-default {
+  display: none;
+}
+
+.code-block__copy.is-copied .code-block__copy-success {
+  display: inline;
+}
+
+.code-block__content {
+  padding: 1.75rem 0.75rem 0.9rem;
+  overflow-x: auto;
+}
+
+.code-block__content pre {
+  margin: 0;
+  font-size: 0.85rem;
+  background: transparent;
+}
+
+.code-block__content pre code {
+  background: none;
+}

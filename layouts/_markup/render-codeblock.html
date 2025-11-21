@@ -1,0 +1,19 @@
+{{- $lang := .Type | default "text" -}}
+{{- $options := .Options | default (dict) -}}
+{{- $codeID := printf "codeblock-%d" .Ordinal -}}
+{{- $highlighted := transform.Highlight .Inner $lang $options -}}
+{{- .Page.Store.Set "hasCopyableCode" true -}}
+<div class="code-block">
+  <div class="code-block__header">
+    {{- with .Type -}}
+      <span class="code-block__lang">{{ . }}</span>
+    {{- end -}}
+    <button class="code-block__copy" type="button" data-copy-target="{{ $codeID }}" aria-label="Copy code to clipboard">
+      <span class="code-block__copy-default">Copy</span>
+      <span class="code-block__copy-success" aria-hidden="true">Copied!</span>
+    </button>
+  </div>
+  <div class="code-block__content" id="{{ $codeID }}">
+    {{ $highlighted | safeHTML }}
+  </div>
+</div>
