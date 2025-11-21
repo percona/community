@@ -7,6 +7,7 @@ layout: single
 date: "2025-11-21"
 EventDate: "Monday, February 2, 2026, at 10:30 Brussels Time (CET) / 09:30 GMT"
 speakers:
+  - vadim_tkachenko
   - peter_zaitsev
 tags: ['MySQL', 'Community', 'Event']
 ---
@@ -49,13 +50,15 @@ Unlike traditional MySQL conferences that focus on end users and best practices,
 
 Together, we'll explore how to support MySQL's long-term health, and we welcome diverse voices to help shape that future.
 
-## Led by Peter Zaitsev
+## Led by Vadim Tkachenko
 
-The summit will be led by **Peter Zaitsev**, co-founder of Percona and a long-time leader in the MySQL community. Peter has been a driving force behind open-source database innovation, a frequent speaker at global conferences, and an advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will help guide the discussions and shape the summit's direction.
+The summit will be led by **Vadim Tkachenko**, co‑founder of Percona and a key figure in the MySQL world. Vadim served for many years as Percona’s CTO, contributed to the development of MySQL‑based products, and is a respected author and speaker in the open‑source database community. His deep technical expertise and long‑standing commitment to MySQL make him an ideal guide for this summit.
 
-## Who You'll Meet
+## Who You’ll Meet
 
-We expect participation from engineers and contributors working on MySQL and its ecosystem, including developers from Percona and other MySQL-focused teams. This is a unique opportunity to connect directly with the people building the tools, infrastructure, and community around MySQL.
+We expect participation from engineers and contributors working on MySQL and its ecosystem, including developers from Percona and other MySQL‑focused teams. This is a unique opportunity to connect directly with the people building the tools, infrastructure, and community around MySQL.
+
+Among the participants, you’ll also meet **Peter Zaitsev**, co‑founder of Percona and a long‑time leader in the MySQL community. Peter has been a driving force behind open‑source database innovation, a frequent speaker at global conferences, and an advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will enrich the discussions and connections at the summit.
 
 ## Agenda
 
