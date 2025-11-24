@@ -12,7 +12,7 @@ speakers:
 tags: ['MySQL', 'Community', 'Event']
 ---
 
-We're gathering in *Brussels* on *February 2nd* for a focused, in-person summit dedicated to strengthening the MySQL ecosystem through collaboration, contribution, and community building.
+We're gathering in **Brussels** on **February 2nd** for a focused, in-person summit dedicated to strengthening the MySQL ecosystem through collaboration, contribution, and community building.
 
 -   Location: Rue Auguste Orts, Grand Place 3-7, 1000 Bruxelles, Belgium
 
@@ -58,7 +58,11 @@ The summit will be led by **Vadim Tkachenko**, co‑founder of Percona and a key
 
 We expect participation from engineers and contributors working on MySQL and its ecosystem, including developers from Percona and other MySQL‑focused teams. This is a unique opportunity to connect directly with the people building the tools, infrastructure, and community around MySQL.
 
-Among the participants, you’ll also meet **Peter Zaitsev**, co‑founder of Percona and a long‑time leader in the MySQL community. Peter has been a driving force behind open‑source database innovation, a frequent speaker at global conferences, and an advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will enrich the discussions and connections at the summit.
+**Among the participants and speakers:**
+
+* **Mykola Marzhan** — Director of Engineering / Data Platform at Canonical. An engineering leader with 20 years of experience in database cluster management, managed services, monitoring, backups, and automated deployment systems. With a longstanding love of MySQL, he is focused on building the best DBaaS Platform.
+
+* **Peter Zaitsev** — co‑founder of Percona and a long‑time leader in the MySQL community. A driving force behind open‑source database innovation, frequent speaker at global conferences, and advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will enrich the discussions and connections at the summit.
 
 ## Agenda
 
