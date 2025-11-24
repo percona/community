@@ -8,6 +8,7 @@ date: "2025-11-21"
 EventDate: "Monday, February 2, 2026, at 10:30 Brussels Time (CET) / 09:30 GMT"
 speakers:
   - vadim_tkachenko
+  - mykola_marzhan
   - peter_zaitsev
 tags: ['MySQL', 'Community', 'Event']
 ---
