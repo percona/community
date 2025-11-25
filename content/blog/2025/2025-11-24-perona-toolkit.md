@@ -347,5 +347,71 @@ pt-mysql-summary >> percona-server-summary.txt
 ## PT Online Schema Change
 A Percona Toolkit utility that performs non-blocking, online ALTER TABLE operations by creating a shadow copy of the table, applying the schema changes there, and incrementally syncing data using triggers before swapping it with the original table. This approach minimizes locking and downtime, making it safe to modify large tables in production without disrupting application workloads.
 
+### Examples
+
+#### Adding a New Column
+```
+pt-online-schema-change \
+  --alter "ADD COLUMN status TINYINT NOT NULL DEFAULT 0" \
+  D=mydb,t=orders \
+  --execute
+```
+This safely introduces a new column to a busy table without blocking reads or writes. The tool handles the copy, synchronization, and final table swap automatically.
+
+#### Modifying a Column Type
+```
+pt-online-schema-change \
+  --alter "MODIFY COLUMN price DECIMAL(10,2)" \
+  D=shop,t=products \
+  --execute
+```
+Changing column definitions—especially on large datasets—can be disruptive using standard SQL. With pt-osc, the migration happens online, keeping applications responsive throughout the operation.
+
+#### Dropping an Unused Column
+```
+pt-online-schema-change \
+  --alter "DROP COLUMN old_flag" \
+  D=analytics,t=events \
+  --execute
+```
+Column drops can require a full table rebuild, making them great candidates for pt-osc. This example removes a legacy column while avoiding table locks.
+
+#### Adding an Index
+```
+pt-online-schema-change \
+  --alter "ADD INDEX idx_user_id (user_id)" \
+  D=app,t=logins \
+  --execute
+```
+Index creation is another expensive operation for large tables. Here, pt-osc allows the index to be added online, improving performance without interrupting the application.
+
+#### Changing a Primary Key
+```
+pt-online-schema-change \
+  --alter "DROP PRIMARY KEY, ADD PRIMARY KEY(id, created_at)" \
+  D=orders,t=order_items \
+  --execute
+```
+Primary key modifications usually require a full table rewrite. pt-osc makes this process safer and easier on production systems by performing the change on a temporary shadow table.
+
+#### Performing a Dry Run
+```
+pt-online-schema-change \
+  --alter "ADD COLUMN test INT" \
+  D=mydb,t=mytable \
+  --dry-run
+```
+A dry run allows you to validate the plan and review the process without making any actual changes—a critical safeguard when preparing for production schema work.
+
+#### Printing SQL Changes Before Execution
+```
+pt-online-schema-change \
+  --alter "ADD COLUMN updated_at TIMESTAMP NULL" \
+  D=crm,t=customers \
+  --print \
+  --execute
+```
+Using --print provides transparency into the SQL operations the tool will perform. This is particularly useful during code reviews or change-control processes.
+
 ## PT Show Grants
 A Percona Toolkit utility that extracts MySQL user accounts and privileges and outputs them as clean, executable CREATE USER and GRANT statements. It normalizes and orders the privileges for readability, making it valuable for auditing security, documenting access, migrating users between servers, or preparing accurate privilege information for support and compliance purposes.
