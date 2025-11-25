@@ -17,10 +17,10 @@ In this post, I’ll highlight several of the most practical and commonly used u
 ## PT Summary
 A Percona Toolkit utility that provides a concise, high-level overview of a system’s hardware, OS configuration and performance-related metrics. It’s designed to quickly capture the essential details needed for diagnostics or support cases—CPU, memory, disk layout, kernel parameters and more all in a single, easy-to-read report.
 
-### Examples
-Run pt-summary with no arguments to print a full system summary:
+### Example
+Run pt-summary with no arguments to generate a full system summary. When possible, run it with sudo to allow the tool to collect additional details that require elevated privileges:
 ```
-pt-summary
+sudo pt-summary
 # Percona Toolkit System Summary Report ######################
         Date | 2025-11-24 17:15:19 UTC (local TZ: EST -0500)
     Hostname | pi16gb
@@ -342,7 +342,7 @@ pt-mysql-summary >> percona-server-summary.txt
 ```
 
 ## PT Online Schema Change
-A Percona Toolkit utility that performs non-blocking, online ALTER TABLE operations by creating a shadow copy of the table, applying the schema changes there, and incrementally syncing data using triggers before swapping it with the original table. This approach minimizes locking and downtime, making it safe to modify large tables in production without disrupting application workloads.
+A Percona Toolkit utility that performs online ALTER TABLE operations by creating a shadow copy of the table, applying the schema change to that copy, and keeping it in sync with the original using triggers until it is ready to swap. This workflow minimizes locking and reduces downtime, allowing large production tables to be altered safely with minimal impact on applications. However, it’s important to remind users that long-running queries or transactions holding metadata locks (MDL) on the table will still block the final swap, potentially delaying completion of the schema change.
 
 ### Examples
 
@@ -453,3 +453,17 @@ For cleanup scripts or custom inventory reports, skip built-in MySQL accounts:
 pt-show-grants --ignore='mysql.sys@localhost,mysql.infoschema@localhost'
 ```
 This focuses output on only the accounts relevant to your application.
+
+## Summary
+
+This post highlights the importance of using the right tool for the job—both in woodworking and in database engineering. For MySQL and Percona Server environments, the Percona Toolkit offers a set of powerful utilities that simplify diagnostics, troubleshooting, schema changes, and security audits.
+
+It introduces four key tools:
+
+- pt-summary – Generates a high-level report of system hardware, OS settings, filesystems, networking, and performance metrics. Useful for support cases and quick environment overviews.
+
+- pt-mysql-summary – Produces a structured snapshot of a MySQL instance, including configuration, performance counters, replication status, storage engine details, and important variables. Ideal for tuning and issue analysis.
+
+- pt-online-schema-change – Enables online ALTER TABLE operations by copying and syncing the table in the background, minimizing downtime. Several examples show how to add, drop, or modify columns and indexes safely.
+
+- pt-show-grants – Extracts all MySQL users and privileges into clean, reproducible CREATE USER and GRANT statements. Helpful for audits, migrations, backups, and security reviews.
