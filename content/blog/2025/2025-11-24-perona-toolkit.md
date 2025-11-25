@@ -20,7 +20,7 @@ A Percona Toolkit utility that provides a concise, high-level overview of a syst
 ### Examples
 Run pt-summary with no arguments to print a full system summary:
 ```
-> pt-summary
+pt-summary
 # Percona Toolkit System Summary Report ######################
         Date | 2025-11-24 17:15:19 UTC (local TZ: EST -0500)
     Hostname | pi16gb
@@ -131,13 +131,12 @@ Redirect output to a file.
 > pt-summary > server-summary.txt
 ```
 
-
 ## PT MySQL Summary
 A Percona Toolkit utility that collects and displays a concise overview of a MySQL or Percona Server instance, including key configuration settings, performance metrics, storage engine details, replication status, buffer pool usage, and important global variables. It provides a fast, structured snapshot of the database environment, making it ideal for troubleshooting, tuning, and preparing information for support teams.
 
 ### Example
 ```
-> ./pt-mysql-summary
+pt-mysql-summary
 # Percona Toolkit MySQL Summary Report #######################
               System time | 2025-11-24 17:45:54 UTC (local TZ: EST -0500)
 # Instances ##################################################
@@ -333,11 +332,9 @@ jemalloc is not enabled in mysql config for process with id 788
 # The End ####################################################
 ```
 Redirect output to file.
-
 ```
 pt-mysql-summary > percona-server.txt
 ```
-
 Capture both pt-summary and pt-mysql-summary into a single file.
 ```
 pt-summary > percona-server-summary.txt
@@ -415,3 +412,44 @@ Using --print provides transparency into the SQL operations the tool will perfor
 
 ## PT Show Grants
 A Percona Toolkit utility that extracts MySQL user accounts and privileges and outputs them as clean, executable CREATE USER and GRANT statements. It normalizes and orders the privileges for readability, making it valuable for auditing security, documenting access, migrating users between servers, or preparing accurate privilege information for support and compliance purposes.
+
+### Examples
+
+#### Dump All Grants for All Users
+The simplest and most common use case is generating a complete privilege snapshot:
+```
+pt-show-grants
+```
+This returns normalized CREATE USER and GRANT statements for every account in the instance. It’s ideal for audits, environment comparisons, and creating human-readable privilege reports.
+
+#### Show Grants for a Specific User
+If you want to inspect privileges for a single account, you can filter by user/host:
+```
+pt-show-grants --accounts='user@localhost'
+```
+This makes privilege debugging and user-level audits quick and targeted.
+
+#### Export All Grants to a File
+To create a reusable backup of every user account:
+```
+pt-show-grants > grants.sql
+```
+The resulting file is a set of CREATE USER and GRANT statements that can be restored simply by executing:
+```
+mysql < grants.sql
+```
+This is an excellent practice before server upgrades, user cleanup, or major permission changes.
+
+#### Show Grants for Multiple Accounts
+You can provide a comma-separated list of accounts to extract only what you need:
+```
+pt-show-grants --accounts='app@%,reporting@localhost,backup@localhost'
+```
+This is ideal for teams that manage groups of service accounts across environments.
+
+#### Ignore Specific System Accounts
+For cleanup scripts or custom inventory reports, skip built-in MySQL accounts:
+```
+pt-show-grants --ignore='mysql.sys@localhost,mysql.infoschema@localhost'
+```
+This focuses output on only the accounts relevant to your application.
