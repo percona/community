@@ -58,7 +58,7 @@ We expect participation from engineers and contributors working on MySQL and its
 
 ## Thanks to PlanetScale
 
-<img src="/events/2026-summit-mysql-community-eu/planetscale-logo-full-black.png" alt="PlanetScale" style="height:60px;"/>
+<img src="https://brand.psdb.co/assets/logo/PNG/planetscale-logo-full-black.png" alt="PlanetScale" style="height:60px;"/>
 
 We thank **PlanetScale** for providing the venue at South Park in San Francisco. 
 
