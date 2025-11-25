@@ -9,6 +9,7 @@ EventDate: "Monday, February 2, 2026, at 10:30 Brussels Time (CET) / 09:30 GMT"
 speakers:
   - vadim_tkachenko
   - mykola_marzhan
+  - mohamed_wadie_nsiri
   - peter_zaitsev
 tags: ['MySQL', 'Community', 'Event']
 ---
@@ -63,7 +64,10 @@ We expect participation from engineers and contributors working on MySQL and its
 
 * **Mykola Marzhan** — Director of Engineering / Data Platform at Canonical. An engineering leader with 20 years of experience in database cluster management, managed services, monitoring, backups, and automated deployment systems. With a longstanding love of MySQL, he is focused on building the best DBaaS Platform.
 
+* **Mohamed Wadie Nsiri** — Product Manager of Data Platforms at Canonical. He brings about 15 years of experience in the IT industry, with strong expertise in data stores, storage, and distributed systems. His focus on building reliable and scalable data platforms reflects a deep passion for advancing open‑source infrastructure and supporting the MySQL ecosystem.
+
 * **Peter Zaitsev** — co‑founder of Percona and a long‑time leader in the MySQL community. A driving force behind open‑source database innovation, frequent speaker at global conferences, and advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will enrich the discussions and connections at the summit.
+
 
 ## Agenda
 
