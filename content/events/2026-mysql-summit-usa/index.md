@@ -10,7 +10,7 @@ speakers:
   - vadim_tkachenko
   - sam_lambert
   - peter_zaitsev
-tags: ['MySQL', 'Community', 'Event']
+tags: ['MySQL-Summit', 'MySQL', 'Community', 'Events']
 ---
 
 We’re gathering in **San Francisco** on **January 14** for a focused, in‑person summit dedicated to strengthening the MySQL ecosystem through collaboration and contribution.
@@ -75,3 +75,8 @@ Please complete [the registration form](https://forms.gle/QEygfDzesMk83TB96) to 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsOLrM2wsbqateZBSP5_3cDvLeZrqq1eYShXjYgZzLoufJpw/viewform?embedded=true" width="700" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 We will review submissions within one week of receiving them. Confirmed participants will receive a follow‑up email with logistical details and agenda updates.
+
+## Also in Brussels
+
+The MySQL Community Summit will also take place in Brussels, February 2, 2026. If attending in Europe is more convenient for you, we warmly invite you to join us there. [Link](/events/2026-summit-mysql-eu/)
+
