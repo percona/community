@@ -11,6 +11,7 @@ speakers:
   - mykola_marzhan
   - mohamed_wadie_nsiri
   - sunny_bains
+  - geir_hoydalsvik
   - peter_zaitsev
 tags: ['MySQL-Summit', 'MySQL', 'Community', 'Events']
 ---
@@ -69,8 +70,9 @@ We expect participation from engineers and contributors working on MySQL and its
 
 * **Sunny Bains** — Software Architect at PingCAP. Database engineer with decades of experience in MySQL internals. Former Senior Director at Oracle leading the MySQL/InnoDB team, known for major contributions to InnoDB performance and features such as Full Text Search and parallel B+Tree reads.
 
-* **Peter Zaitsev** — co‑founder of Percona and a long‑time leader in the MySQL community. A driving force behind open‑source database innovation, frequent speaker at global conferences, and advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will enrich the discussions and connections at the summit.
+* **Geir Høydalsvik** — Independent MySQL Advocate. With long experience in database engineering, including 15 years at Oracle leading MySQL development, he continues to share deep expertise in MySQL internals and performance.
 
+* **Peter Zaitsev** — co‑founder of Percona and a long‑time leader in the MySQL community. A driving force behind open‑source database innovation, frequent speaker at global conferences, and advocate for collaborative development. His deep experience in MySQL performance, scalability, and community engagement will enrich the discussions and connections at the summit.
 
 ## Agenda
 
