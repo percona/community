@@ -12,7 +12,7 @@ speakers:
   - mohamed_wadie_nsiri
   - sunny_bains
   - peter_zaitsev
-tags: ['MySQL', 'Community', 'Event']
+tags: ['MySQL-Summit', 'MySQL', 'Community', 'Events']
 ---
 
 We're gathering in **Brussels** on **February 2nd** for a focused, in-person summit dedicated to strengthening the MySQL ecosystem through collaboration, contribution, and community building.
@@ -87,6 +87,10 @@ Please complete [the registration form](https://forms.gle/L9qQdGesGpVjSjhRA) to 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdCa1j2vCCE_TIB9o-udhF9ysgKYm_Dxno0BLbODKxD44JHkw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 We will review submissions within one week of receiving them, but we'll do our best to respond sooner. Confirmed participants will receive a follow-up email with logistical details and agenda updates.
+
+## Also in USA
+
+The MySQL Community Summit will also be held in San Francisco, USA, January 14, 2026. If traveling to the United States works better for you, we would be delighted to welcome you there. 👉 [Link](/events/2026-mysql-summit-usa/)
 
 We look forward to hearing from you and to building the future of MySQL together.
 
