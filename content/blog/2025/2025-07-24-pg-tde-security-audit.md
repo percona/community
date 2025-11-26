@@ -1,7 +1,7 @@
 ---
 title: "Percona pg_tde: A Security Review Reveals Robust Encryption"
 date: "2025-07-24T00:00:00+00:00"
-tags: ["Percona", "pg_tde", "PostgreSQL", "Encryption", "Security", "Compliance", "Open Source"]
+tags: ["Percona", "pg_tde", "pg_zsolt", "PostgreSQL", "Encryption", "Security", "Compliance", "Open Source"]
 categories: ['PostgreSQL']
 authors:
   - kai_wagner

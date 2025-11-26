@@ -213,7 +213,6 @@ menu:
     - identifier: newsletter
       name: Community Newsletter
       url: /contribute/newsletter
-      parent: other
       weight: 1
     - identifier: about
       name: About

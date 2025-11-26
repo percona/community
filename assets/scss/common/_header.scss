@@ -208,7 +208,7 @@ header {
 
     nav ul {
       display: flex;
-      align-items: end;
+      align-items: center;
       justify-content: flex-end;
       flex-direction: row;
     }
@@ -298,4 +298,20 @@ header {
     .page-header nav ul.submenu__list li a {
         font-weight: 400;
     }
+}
+
+.percona-ca a {
+    padding: 12px 19px;
+    background: #00bda5;
+    border-radius: 100px;
+    line-height: 1;
+    height: 20px;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.percona-ca a:hover {
+    background: #fff;
+    color: #00bda5;
+    border-bottom: none;
 }

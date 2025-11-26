@@ -76,22 +76,23 @@
   {{ partial "sharing.html" . }}
   
   <div class="recommendations branded">
-    <h2>Did you like this post? Why not read more?</h2>
+    <h2>Take a look at our events</h2>
     {{ $recommendationCount := 3 }}
     <div class="grid grid--{{ $recommendationCount }}">
-      {{- $recommendations := first 0 (where $.Page.Site.RegularPages "Section" "events") }}
-      {{- if isset .Params "recommendations" -}}
-        {{ range $key, $recommendation := .Params.recommendations -}}
-          {{- with $.Site.GetPage $recommendation -}}
-            {{- $recommendations = $recommendations | append . -}}
+        {{- $recommendations := first 0 (where $.Page.Site.RegularPages "Section" "events") }}
+        {{- if isset .Params "recommendations" -}}
+          {{ range $key, $recommendation := .Params.recommendations -}}
+            {{- with $.Site.GetPage $recommendation -}}
+              {{- $recommendations = $recommendations | append . -}}
+            {{- end -}}
           {{- end -}}
         {{- end -}}
-      {{- end -}}
 
-      {{- $missingPosts := sub $recommendationCount (len $recommendations) }}
-      {{- range first $missingPosts (where $.Page.Site.RegularPages "Section" "events") }}
-        {{- $recommendations = $recommendations | append . -}}
-      {{- end -}}
+        {{- $missingPosts := sub $recommendationCount (len $recommendations) }}
+        {{- $fromDate := time "2025-01-01" }}
+        {{- range first $missingPosts (where (where $.Page.Site.RegularPages "Section" "events") "Date" "ge" $fromDate) }}
+          {{- $recommendations = $recommendations | append . -}}
+        {{- end -}}
 
       {{- range $recommendations -}}
         <div class="grid__item">

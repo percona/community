@@ -39,7 +39,10 @@
             by {{ range $key, $author := .Params.authors -}}
               {{- with $.Site.GetPage (print "/authors/" $author) -}}
                 {{ if $key }}, {{ end -}}
-                <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
+                <a href="{{ .RelPermalink }}">
+                  {{ .Params.fullname }}
+                  {{ with .Params.tagline }} <em>({{ . }})</em>{{ end }}
+                </a>
               {{- end }} 
             {{- end -}}
           {{- end -}}
@@ -74,19 +77,22 @@
 
   {{ partial "sharing.html" . }}
 
-  {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" | first 3 }}
-  {{ with $related }}
-    <div class="recommendations branded">
-      <h2>Did you like this post? Why not read more?</h2>
-      {{ $recommendationCount := 3 }}
-      <div class="grid grid--{{ $recommendationCount }}">
+    {{ $related := $.Page.Site.RegularPages.RelatedIndices . "tags" "date" }}
+    {{ $recent := where $related "Date" ">" (time "2025-01-01") }}
+    {{ $limited := first 3 $recent }}
 
+    {{ with $limited }}
+      <div class="recommendations branded">
+        <h2>Did you like this post? Why not read more?</h2>
+        {{ $recommendationCount := len . }}
+        <div class="grid grid--{{ $recommendationCount }}">
           {{ range . }}
-          <div class="grid__item">
-            {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
-          </div>
+            <div class="grid__item">
+              {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+            </div>
           {{ end }}
+        </div>
       </div>
-    </div>
-  {{ end }}
+    {{ end }}
+
 {{ end }}

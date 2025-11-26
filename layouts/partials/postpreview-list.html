@@ -1,4 +1,7 @@
 {{ $alt := .Title }}
+{{ $publishDate := .PublishDate }}
+{{ $currentYear := (now.Format "2006") }}
+{{ $displayDate := cond (eq ($publishDate.Format "2006") $currentYear) ($publishDate.Format "January 2") ($publishDate.Format "January 2, 2006") }}
 <div class="post post--list">
     <div class="post__image">
         <a href="{{ .RelPermalink }}">
@@ -19,7 +22,10 @@
                             {{- with .Params.images -}}
                                 <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "32x32 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
                             {{- end -}}
-                            <a href="{{ .RelPermalink }}" class="author-link">{{- .Params.fullname -}}</a>
+                            <a href="{{ .RelPermalink }}" class="author-link">
+                                {{ .Params.fullname }}
+                                {{ with .Params.tagline }}<em>({{ . }})</em>{{ end }}
+                            </a>
                         {{- end }}
                     {{ end }}
                 </div>
@@ -37,7 +43,7 @@
                 <div class="post__tags-date">
                     {{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
                         <p class="post__tags">
-                           <span class="post__date">{{ .PublishDate.Format "January 2" }}</span>
+                           <span class="post__date">{{ $displayDate }}</span>
                         {{ range $index, $tag := .Params.tags }}
                             {{ if lt $index 4 }}
                                 <a href="{{ "/tags/" }}{{ $tag }}"  {{ if gt $index 1 }}class="mobile_hide"{{ end }}>#{{- substr  $tag 0 20  -}}</a>
@@ -50,7 +56,7 @@
         {{ else }}
             <div class="post__content">
                 <div class="post__tags-date">
-                    <p class="post__date">{{ .PublishDate.Format "January 2" }}</p>
+                    <p class="post__date">{{ $displayDate }}</p>
                     {{ if and (isset .Params "tags") (gt (len .Params.tags) 0) }}
                         <p class="post__tags">
                         {{ range $index, $tag := .Params.tags }}
@@ -65,4 +71,3 @@
         {{ end }}
     </div>
 </div>
-
