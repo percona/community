@@ -128,7 +128,7 @@ Unable to collect information
 ```
 Redirect output to a file.
 ```
-> pt-summary > server-summary.txt
+pt-summary > server-summary.txt
 ```
 
 ## PT MySQL Summary
