@@ -40,7 +40,7 @@ We’ll walk through the release and what it means for the community, with a foc
 ## Speakers
 
 - **Marco Tusa**, MySQL Technical Leader, Percona  
-- **Ege Güneş**, Software Engineer, Cloud Team, Percona  
+- **Ege Güneş**, Senior Software Engineer, Cloud Team, Percona  
 
 Both speakers worked closely on the technology behind the new MySQL Operator with Group Replication and will share insights from engineering, real-world testing, and operator design.
 
