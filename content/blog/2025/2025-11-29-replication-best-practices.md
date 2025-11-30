@@ -88,7 +88,12 @@ ORDER BY table_name, ordinal_position;
 Execute this query on each server and diff the results. Update mydb to match the database whose schema metadata you want to examine.
 
 #### Approach C — pt-table-checksum (data only)
-This doesn't compare schemas—but it catches data drift and should be run monthly.
+This doesn’t compare schemas — it catches data drift.
+You should consider running it on a schedule such as:
+- high-change OLTP DBs run weekly or even daily
+- huge multi-TB DBs run quarterly
+- some sensitive systems avoid running it during peak hours
+
 ```
 pt-table-checksum --replicate=percona.checksums
 ```
@@ -140,7 +145,11 @@ If your primary has multiple writers or many concurrent transactions, in your my
 replica_parallel_type=LOGICAL_CLOCK
 replica_parallel_workers=4
 ```
-Rule of thumb: workers = number of CPU cores on the replica.
+A good starting point is 4–8 workers, or up to the number of CPU cores for highly concurrent OLTP workloads.
+
+- Many workloads see diminishing returns after 4–8 workers.
+- A replica with 16 cores won’t always benefit from 16 workers.
+- Memory footprint increases per worker.
 
 This can reduce replication lag by 80–90%.
 
@@ -151,6 +160,8 @@ source_ssl=1
 source_ssl_ca=/path/ca.pem
 ```
 Replication traffic is sensitive—protect it.
+
+In older MySQL versions these variables were named master_ssl_*.
 
 ## Final Summary
 
