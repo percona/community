@@ -100,3 +100,4 @@ You can fix drift with:
 ```
 pt-table-sync --execute --replicate=percona.checksums
 ```
+Schema checks + data checks = safe replication.
