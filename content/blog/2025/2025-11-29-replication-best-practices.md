@@ -26,7 +26,7 @@ Enable it everywhere:
 ```
 gtid_mode=ON
 enforce_gtid_consistency=ON
-log_slave_updates=ON
+log_replica_updates=ON
 ```
 Once GTIDs are on, never mix in non-GTID replication again.
 
@@ -61,6 +61,7 @@ This can lead to:
 ```
 Error 1032: Can't find record in table
 ```
+If you want stable, fast, predictable, and safe replication, every table needs a primary key.
 
 ### Keep Your Schema Consistent Across All Servers
 Replication assumes the primary and replicas share the same schema.
@@ -122,7 +123,7 @@ GRANT REPLICATION REPLICA ON *.* TO 'repl'@'%';
 ```
 Avoid using application accounts—one mistake can break replication.
 
-### Monitor Replication Lag (But Don’t Trust Seconds_Behind_Master Alone)
+### Monitor Replication Lag (But Don’t Trust Seconds_Behind_Source Alone)
 Seconds_Behind_Source often lies, especially with parallel replication.
 
 Better options:
