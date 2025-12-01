@@ -8,8 +8,6 @@ authors:
 images:
   - blog/2025/12/mysql-replication-best-practice.png
 ---
-MySQL Replication Best Practices: How to Keep Your Replicas Sane (and Your Nights Quiet)
-
 MySQL replication has been around forever, and yet… people still manage to set it up in ways that break at the worst possible moment. Even in 2025, you can get burned by tiny schema differences, missing primary keys, or one forgotten config flag. I’ve seen replicas drift so far out of sync they might as well live in a different universe.
 
 This guide covers the practical best practices—the stuff real DBAs use every day to keep replication stable, predictable, and boring. (Boring is a compliment in database land.)
