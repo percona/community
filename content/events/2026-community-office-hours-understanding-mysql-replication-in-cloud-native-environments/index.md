@@ -22,7 +22,7 @@ If you’re a MySQL engineer, DevOps practitioner, SRE, or someone passionate ab
 
 📅 **Date:** December 3, 2025  
 🕒 **Time:** 14:00 GMT  
-🎥 **Platforms:** LinkedIn Live & YouTube Live (links TBA) 
+🎥 **Platforms:** Please register using [this LINK](https://event.on24.com/wcc/r/5167605/165F7109DA5AF47EB3E79DA81E9F57A0)
 
 ## What’s This Session About?
 
@@ -45,6 +45,4 @@ We’ll walk through the release and what it means for the community, with a foc
 Both speakers worked closely on the technology behind the new MySQL Operator with Group Replication and will share insights from engineering, real-world testing, and operator design.
 
 ## How to Join
-
-🔗 LinkedIn Live: To Be Announced  
-🔗 YouTube Live: To Be Announced
+[Register now here](https://event.on24.com/wcc/r/5167605/165F7109DA5AF47EB3E79DA81E9F57A0)
