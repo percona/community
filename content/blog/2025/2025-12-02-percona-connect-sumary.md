@@ -76,7 +76,12 @@ The conversations continue in the Percona Community! You can reach out directly 
 - Dennis Kittrell (MySQL Product Manager) [LinkedIn](https://www.linkedin.com/in/kittrell/)
 - Alastair Turner (Postgres Community Advocate) [LinkedIn](https://www.linkedin.com/in/decodableminion/)
 - Takis Stathopoulos (Enterprise Architect) [LinkedIn](https://www.linkedin.com/in/pgstathopoulos/)
+- Andre Pons (Enterprise Sales Manager) [LinkedIn](https://www.linkedin.com/in/andre-pons-8b4a1013/)
 
+
+
+
+![Percona Connect London 2025](/blog/2025/12/img7.jpeg)
 ![Percona Connect London 2025](/blog/2025/12/img6.jpeg)
 
 Join the Percona Community Conversation!
