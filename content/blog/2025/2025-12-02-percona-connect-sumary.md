@@ -43,10 +43,8 @@ images:
 
 **Alastair Turner**, Postgres Community Advocate, introduced the new Native Transparent Data Encryption (TDE) for PostgreSQL.
 
-- **Need for TDE**: Encryption is necessary for data security, privacy protection, breach prevention, and meeting compliance requirements.
-- **The pg_tde Extension**: This open-source TDE solution for PostgreSQL is designed to meet strict compliance rules (like PCI DSS 4.0.1) by ensuring the encryption key is controlled by the database, not just the operating system.
-- **Community Development**: Percona is building this feature as an extension and plans to submit parts of the work to the upstream PostgreSQL community.
 
+![Percona Connect London 2025](/blog/2025/12/extra.png)
 ![Percona Connect London 2025](/blog/2025/12/img4.png)
 
 ## 4. The Future of MySQL: Vector Search & Binlog Server
