@@ -21,7 +21,7 @@ If you’re a MySQL engineer, DevOps practitioner, SRE, or someone passionate ab
 ## Event Details
 
 📅 **Date:** December 3, 2025  
-🕒 **Time:** 14:00 GMT  
+🕒 **Time:** 14:00 EST
 🎥 **Platforms:** Please register using [this LINK](https://event.on24.com/wcc/r/5167605/165F7109DA5AF47EB3E79DA81E9F57A0)
 
 ## What’s This Session About?
