@@ -4,7 +4,7 @@ name: ege_gunes
 name_pronunciation: ege_gunes
 fullname: Ege Güneş
 fullname_pronounciation: Ege Güneş
-job: Percona, Software Engineer
+job: Percona, Senior Software Engineer
 country: 
 tagline: 
 social:

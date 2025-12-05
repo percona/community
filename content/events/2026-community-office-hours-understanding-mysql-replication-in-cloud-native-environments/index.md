@@ -1,8 +1,8 @@
 ---
-title: "Community Office Hours: Understanding MySQL Replication in Cloud Native Environments - December 3, 2025"
+title: "Community Office Hours: Understanding MySQL Replication in Cloud Native Environments - December 4, 2025"
 description: "Deep-dive office hours on Percona Operator for MySQL with native Group Replication on Kubernetes—replication models, HA design, and practical ops."
 images:
-  - events/2026-community-office-hours-understanding-mysql-replication-in-cloud-native-environments/intro.png
+  - events/2026-community-office-hours-understanding-mysql-replication-in-cloud-native-environments/intro.jpg
 layout: single
 date: "2025-11-28"
 EventDate: "December 3, 2025, at 14:00 GMT"
@@ -20,9 +20,9 @@ If you’re a MySQL engineer, DevOps practitioner, SRE, or someone passionate ab
 
 ## Event Details
 
-📅 **Date:** December 3, 2025  
-🕒 **Time:** 14:00 GMT  
-🎥 **Platforms:** LinkedIn Live & YouTube Live (links TBA) 
+📅 **Date:** December 4, 2025
+🕒 **Time:** 14:00 GMT, 9:00 AM EST!
+🎥 **Platforms:** Please register using [this LINK](https://event.on24.com/wcc/r/5167605/165F7109DA5AF47EB3E79DA81E9F57A0)
 
 ## What’s This Session About?
 
@@ -45,6 +45,4 @@ We’ll walk through the release and what it means for the community, with a foc
 Both speakers worked closely on the technology behind the new MySQL Operator with Group Replication and will share insights from engineering, real-world testing, and operator design.
 
 ## How to Join
-
-🔗 LinkedIn Live: To Be Announced  
-🔗 YouTube Live: To Be Announced
+[Register now here](https://event.on24.com/wcc/r/5167605/165F7109DA5AF47EB3E79DA81E9F57A0)
