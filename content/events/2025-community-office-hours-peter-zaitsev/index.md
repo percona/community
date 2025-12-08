@@ -1,5 +1,5 @@
 ---
-title: "Community Office Hours: Why PostgreSQL took the crown from MySQL and what lies ahead — December 16, 2025"
+title: "Community Office Hours: Why PostgreSQL took the crown from MySQL and what lies ahead - December 16, 2025"
 description: "Peter will share his practical insights from years of working closely with both MySQL and PostgreSQL communities"
 images:
   - events/2025-community-office-hours-peter-zaitsev/intropeter.jpg
@@ -17,7 +17,7 @@ After participating in Percona PGConf.EU in Riga, Peter is bringing this session
 
 - 📅 **Date/Time:** 16 December, **2:00 PM EST**
 - 👤 **Speaker:** Peter Zaitsev, Percona
-- 🔗 **[Register here](https://event.on24.com/wcc/r/5175851/69D2DFDC0516CC9A24E8399BF739DD57)** Don't forget to and add it in your 
+- 🔗 **[Register here](https://event.on24.com/wcc/r/5175851/69D2DFDC0516CC9A24E8399BF739DD57)**
 
 ## What This Talk Is About
 
