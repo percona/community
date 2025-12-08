@@ -1,5 +1,5 @@
 ---
-title: "Community Office Hours: Understanding MySQL Replication in Cloud Native Environments - December 4, 2025"
+title: "Community Office Hours: MySQL Replication in Cloud Native Environments - December 4, 2025"
 description: "Deep-dive office hours on Percona Operator for MySQL with native Group Replication on Kubernetes—replication models, HA design, and practical ops."
 images:
   - events/2026-community-office-hours-understanding-mysql-replication-in-cloud-native-environments/intro.jpg
