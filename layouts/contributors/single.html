@@ -1,0 +1,108 @@
+{{ define "title" -}}{{ .Params.fullname }} | {{ .CurrentSection.Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "css" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/speakers.scss") | safeCSS) -}}
+    {{- if in .Content "<pre class=\"chroma\">" -}}
+        {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+    {{ end }}
+{{- end }}
+
+{{ define "mainwrapper" }}
+
+    <div class="hero hero-gradient night grid-6-3">
+        <div class="contentblock">
+        <div class="grid grid--2">
+
+            <div class="person__bio">
+                   <h1>{{ .Params.fullname }}</h1>     
+                    {{ if .Params.job }}<i>{{ .Params.job }}</i><br/><br/>{{ end }}
+
+
+                    {{ if .Params.social.linkedin }}
+                        <a style="float: left;" href="{{ .Params.social.linkedin }}" target="_blank"><img  style="float: left; margin: 0 0.5em 0 0 ;" width="30px" height="30px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} LinkedIn" /> Linkedin </a>
+                    {{ end }}
+                    {{ if .Params.social.twitter }}
+                        <a  style="float: left;" href="{{ .Params.social.twitter }}" target="_blank"><img  style="float: left; margin: 0 0.5em 0 1em ;" width="30px" height="30px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} Twitter" /> Twitter </a>
+                    {{ end }}
+                    {{ if .Params.social.github }}
+                        <a  style="float: left;" href="{{ .Params.social.github }}" target="_blank"><img  style="float: left; margin: 0 0.5em 0 1em ;" width="30px" height="30px" src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode}}" alt="{{ .Params.fullname }} GitHub" /> GitHub </a>
+                    {{ end }}
+
+                    {{- .Content -}}
+            </div>
+
+            {{- with .Params.images -}}
+            <div class="person__image">
+                <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
+            </div>
+            {{- end -}}
+        </div>
+        </div>
+    </div>
+
+{{- $contributor_name := .Params.name -}}
+
+  {{/* Collect blog posts authored by this contributor */}}
+  {{ $posts := slice }}
+  {{ range $.Page.Site.RegularPages }}
+    {{ if (isset .Params "authors") }}
+      {{ if in .Params.authors $contributor_name }}
+        {{ $posts = $posts | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $posts_count := len $posts }}
+
+  {{/* Collect talks given by this contributor */}}
+  {{ $talks := slice }}
+  {{ range $.Page.Site.RegularPages }}
+    {{ if (isset .Params "speakers") }}
+      {{ if in .Params.speakers $contributor_name }}
+        {{ $talks = $talks | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $talks_count := len $talks }}
+
+  <div class="contentblock branded">
+    <nav class="section-nav">
+      <ul>
+        {{ if gt $posts_count 0 }}<li><a href="#posts">Blog Posts ({{ $posts_count }})</a></li>{{ end }}
+        {{ if gt $talks_count 0 }}<li><a href="#talks">Talks ({{ $talks_count }})</a></li>{{ end }}
+      </ul>
+    </nav>
+
+    {{ if gt $posts_count 0 }}
+      <h2 id="posts">Latest Blog Posts (showing 10 of {{ $posts_count }})</h2>
+      <div class="grid grid--2">
+        {{ range first 10 $posts }}
+          <div class="grid__item">
+            {{ if isset .Params "images" }}
+              {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+            {{ else }}
+              {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ if gt $talks_count 0 }}
+      <h2 id="talks">Latest Talks (showing 10 of {{ $talks_count }})</h2>
+      <div class="grid grid--2">
+        {{ range first 10 $talks }}
+          <div class="grid__item">
+            {{ if isset .Params "images" }}
+              {{ partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+            {{ else }}
+              {{ partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ partial "sharing.html" . }}
+  </div>
+
+{{ end }}
