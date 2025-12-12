@@ -98,8 +98,7 @@ Press Ctrl+C to stop
 
 Now you can edit the site, add new posts and immediately see the result in your browser.
 
-![Browser](/blog/2022/2/3-Website-Browser.png)
-
+![Browser](/blog/2022/2/5-Browser-Test.png)
 
 ## How to Publish a Post
 
@@ -110,10 +109,9 @@ Our website works with text and posts marked up in [Markdown](https://www.markdo
 **Quick Steps**
 
 1. Create a separate branch for your changes.
-2. Add information about you to the `content/authors/` folder.
-3. Add your photo to the folder `assets/blog/authors`.
-5. Add your post in Markdown to the `content/blog` directory. Please, specify the name of your file according to the example: "Date-name-in-style-URL" ('2022-02-12-how-to-post.md').
-
+2. Add information about you to the `content/contributors/` folder.
+3. Add your photo to the folder `assets/contributors`.
+4. Add your post in Markdown to the `content/blog` directory.
 
 **Detailed Instructions**
 
@@ -123,11 +121,12 @@ Our website works with text and posts marked up in [Markdown](https://www.markdo
 
 `git checkout -b dbazhenov_post` 
 
-3. Create an author card to the `content/authors/` folder. You need to create a folder with your name and an index.md file. You can find many examples, such as `/percona-community/content/authors/jeff_gagne/index.md` ([GitHub link](https://raw.githubusercontent.com/percona/community/main/content/authors/jeff_gagne/index.md))
+3. Create a contributor card in the `content/contributors/` folder.  
+   You need to create a folder with your name and an index.md file.  
+   You can find many examples in `/content/contributors/`.
 
-4. Add your photo to the folder `assets/blog/authors`. This is your avatar. Specify its address in your author profile file in the images field.
-
-![Author Profile](/blog/2022/2/4-Author-Profile.png)
+4. Add your photo to the folder `assets/contributors`.  
+   This is your avatar. Specify its address in your contributor profile file in the `images` field.
 
 5. If your post contains images, load the pre-made images into the `assets/blog/[YEAR]/[month]` directory. If there is no directory, create one. 
 
