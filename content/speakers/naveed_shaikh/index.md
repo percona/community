@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/naveed-shaikh-062797111/
 images:
-  - speakers/naveed_shaikh.png
+  - contributors/naveed_shaikh.png
 ---

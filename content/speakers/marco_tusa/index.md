@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/marco_tusa.jpg
+  - contributors/marco_tusa.jpg
 ---

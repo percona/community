@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/tiago_alves.jpg
+  - contributors/tiago_alves.jpg
 ---
 
 Tiago is a software engineering manager for MySQL NDB Cluster. Tiago is passionate about software engineering with focus on software quality.

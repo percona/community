@@ -11,7 +11,7 @@ social:
   github:
   linkedin: 
 images:
-  - blog/authors/rasika_chivate.png
+  - contributors/rasika_chivate.png
 ---
 
 Technical Writer, PMM

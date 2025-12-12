@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/alawiassaggaf/
 images:
-  - speakers/alawi_assaggaf.png
+  - contributors/alawi_assaggaf.png
 ---
 
 MySQL DBA with 10 years experience in the industry.

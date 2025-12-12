@@ -11,7 +11,7 @@ social:
   github:
   linkedin: 
 images:
-  - blog/authors/ondrej_patocka.png
+  - contributors/ondrej_patocka.png
 ---
 
 Agile Facilitator, PMM

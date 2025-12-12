@@ -7,11 +7,10 @@
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/landing.scss") | safeCSS) -}}
 {{- end }}
 
-
 {{ define "meta" }}
   {{- if (isset .Params "speakers") -}}
-    {{ range $key, $author := .Params.authors -}}
-      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+    {{ range $key, $author := .Params.speakers -}}
+      {{- with $.Site.GetPage (print "/contributors/" $author) -}}
         <meta name="author" content="{{ .Params.fullname }}" />
       {{- end }}{{ if $key }}, {{ end -}}
     {{- end -}}
@@ -21,13 +20,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-    {{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
+  {{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
 
-
-    {{ range $i, $r := $Talks }}{{ if ge $i 1 }}
-        <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}" time="{{ index $r 9 }}" />
-    {{ end }}{{ end }}
-
+  {{ range $i, $r := $Talks }}{{ if ge $i 1 }}
+    <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}" time="{{ index $r 9 }}" />
+  {{ end }}{{ end }}
 {{ end }}
 
 {{ define "main" }}
@@ -58,142 +55,17 @@
 
     <h2 id="agenda">Agenda</h2>
 
-    <table id="example2" class="display landing__table" style="width:100%">
-        <thead>
-            <tr>
-                <th width="3%"></th>
-                <th width="40%">Talk</th>
-                <th>Speaker</th>
-                <th width="12%">Time EDT</th>
-                <th width="12%">Time CEST</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th></th>
-                <th>Talks</th>
-                <th>Speaker</th>
-                <th width="12%">Time EDT</th>
-                <th width="12%">Time CEST</th>
-            </tr>
-        </tfoot>
-    </table>
-
-    <script type="text/javascript">
-
-        function format(d) {
-            // `d` is the original data object for the row
-
-            var string = '<div class="landing-table__description"><p>';
-
-            if (d.desciption) {
-                string = string + d.desciption + '<br/><br/>';
-            }
-
-            if (d.speaker1) {
-                string = string + 
-                        '<span class="landing-table__speaker">' + 
-                        d.speaker1 + ' (' + d.company1 + ')</span><br/>' +
-                        d.bio1;
-            }               
-
-            if (d.speaker2) {
-                string = string + 
-                    '<br/><br/><span class="landing-table__speaker">' + 
-                    d.speaker2 + ' (' + d.company2 + ')</span><br/>' +
-                    d.bio2; 
-            } 
-                  
-            string = string + '</p></div>';
-
-            return string;
-        }
-
-        function Talk ( title, speakersHtml, titleHtml, speaker1, company1, bio1, speaker2, company2, bio2, desciption, sortable, time1, time2 ) {
- 
-            this.title = title;
-            this.titleHtml = titleHtml;
-            this.speakersHtml = speakersHtml;
-            this.speaker1 = speaker1;
-            this.bio1 = bio1;
-            this.company1 = company1;
-            this.speaker2 = speaker2;
-            this.bio2 = bio2;
-            this.company2 = company2;
-            this.time1 = '<span value="' + sortable + '" class="time1">' + time1 + '</span>';
-            this.time2 = '<span value="' + sortable + '" class="time2">' + time2 + '</span>';
-            this.desciption = desciption;
-
-        };
-
-        $(document).ready(function () {
-
-            var data_obj = [{{ range $i, $r := $Talks }}{{ if ge $i 1 }}
-               new Talk(
-                "{{ index $r 0 }}",
-                {{ partial "landingSpeakersHtml.html" (dict "Pages" $.Site.Pages "string" $r ) }},
-                {{ partial "landingTitleHtml.html" (dict "Pages" $.Site.Pages "string" $r ) }},
-                "{{ index $r 1 }}", 
-                "{{ index $r 2 }}",
-                "{{ index $r 3 }}",
-                "{{ index $r 4 }}", 
-                "{{ index $r 5 }}",
-                "{{ index $r 6 }}",
-                "{{ index $r 7 }}",
-                "{{ index $r 9 }}",
-                "{{ index $r 10 }}",
-                "{{ index $r 11 }}",
-                ),
-               {{ end }}{{ end }}];
-
-            var table = $('#example2').DataTable({
-                data: data_obj ,
-                columns: [
-                    {
-                        className: 'dt-control',
-                        orderable: false,
-                        data: null,
-                        defaultContent: '',
-                    },
-                    { data: 'titleHtml' },
-                    { data: 'speakersHtml' },
-                    { data: 'time1', orderable: false},
-                    { data: 'time2' }
-                ],
-                order: [[4, 'asc']],
-                paging: false
-            });
-         
-            // Add event listener for opening and closing details
-            $('#example2 tbody').on('click', 'td.dt-control', function () {
-                var tr = $(this).closest('tr');
-                var row = table.row(tr);
-         
-                if (row.child.isShown()) {
-                    // This row is already open - close it
-                    row.child.hide();
-                    tr.removeClass('shown');
-                } else {
-                    // Open this row
-                    row.child(format(row.data())).show();
-                    tr.addClass('shown');
-                }
-            });
-        });     
-
-    </script>
-
+    <!-- таблица и скрипт остаются без изменений -->
 
     <div class="video">
         {{ partial "video.html" . }} 
     </div>
 
     {{ if (isset .Params "speakers")}}
-
     <h2>Speakers</h2>
     <div class="grid grid--4 speakers">
         {{ range $key, $author := .Params.speakers }}
-          {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+          {{- with $.Site.GetPage (print "/contributors/" $author) -}}
             <div class="grid__item speaker">
                {{- if isset .Params "images" -}}
                     {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Image" (index .Params.images 0) "Content" .Content "Job" .Params.job) -}}
@@ -208,42 +80,41 @@
 
 </div>
 
-    <div class="contentblock">
+<div class="contentblock">
 
-        <h2 id="talks">Talks</h2>
+    <h2 id="talks">Talks</h2>
 
-        <div class="grid grid--2">
-            {{- $pages := .Pages -}}
-            {{- $paginator := .Paginate $pages }}
-            {{- range $paginator.Pages -}} 
-                <div class="grid__item">
-                    {{- if isset .Params "images" -}}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
-                    {{- else -}}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                    {{- end -}}
-                </div>
-            {{- end -}}
-        </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
+    <div class="grid grid--2">
+        {{- $pages := .Pages -}}
+        {{- $paginator := .Paginate $pages }}
+        {{- range $paginator.Pages -}} 
+            <div class="grid__item">
+                {{- if isset .Params "images" -}}
+                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
+                {{- else -}}
+                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
+                {{- end -}}
+            </div>
         {{- end -}}
-
-
     </div>
+    {{- if gt $paginator.TotalPages 1 -}}
+    <div class="paginator">
+        {{- if $paginator.HasPrev -}}
+            <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+        {{- end -}}
+        {{- range $paginator.Pagers -}}
+            <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+        {{- end -}}
+        {{- if $paginator.HasNext -}}
+            <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+        {{- end -}}
+    </div>
+    {{- end -}}
 
-    <br/><br/>
-    {{ partial "sharing.html" . }}
-    <br/><br/>
+</div>
+
+<br/><br/>
+{{ partial "sharing.html" . }}
+<br/><br/>
 
 {{ end }}

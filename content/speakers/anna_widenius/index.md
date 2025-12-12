@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/anna_widenius.jpg
+  - contributors/anna_widenius.jpg
 ---
 
 Anna Widenius is a Chief of Sta in the MariaDB Foundation.

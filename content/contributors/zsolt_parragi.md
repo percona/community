@@ -1,0 +1,35 @@
+---
+name: zsolt_parragi
+name_pronunciation: zsolt_parragi
+fullname: Zsolt Parragi
+tagline: Software Engineer, Percona
+social:
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
+images:
+- contributors/zsolt_parragi.png
+# Auto-generated fields below. Do not edit manually.
+contributor_tag:
+- Cloud
+- PostgreSQL
+events_tags: []
+blog_tags:
+- Backups
+- OIDC
+- Opensource
+- Percona
+- PostgreSQL
+- Security
+- pg_zsolt
+posts_count: 3
+talks_count: 0
+podcasts_count: 0
+contributor_type:
+- blog
+---
+Zsolt joined Percona as a software developer in 2017 and has been working on Percona's database products ever since, initially focusing on MySQL and later switching to PostgreSQL.
+
+He likes to focus on things that make life easier and safer: encryption, authentication, extensibility, testing, and tooling.

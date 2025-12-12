@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/rahul-malik-48986589/
 images:
-  - speakers/rahul_malik.png
+  - contributors/rahul_malik.png
 ---
 
 C++ Software Engineer in Percona

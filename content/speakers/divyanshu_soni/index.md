@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/divyanshu-soni-597577110/
 images:
-  - speakers/divyanshu_soni.png
+  - contributors/divyanshu_soni.png
 ---

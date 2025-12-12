@@ -11,7 +11,7 @@ social:
   github: https://github.com/gywndi, https://github.com/go-gywn
   linkedin: 
 images:
-  - blog/authors/dongchan_sung.png
+  - contributors/dongchan_sung.png
 ---
 
 MySQL DBA, KakaoBank

@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/beinan_wang.jpg
+  - contributors/beinan_wang.jpg
 ---
 
 Beinan builds large scale distributed SQL systems (presto&hive) for Twitter's data platform team.

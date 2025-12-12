@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/aleks-abramova/
 images:
-  - blog/authors/aleksandra_abramova.png
+  - contributors/aleksandra_abramova.png
 ---
 
 Aleksandra joined Percona Community Team in 2021 as a Community Specialist. Before joining Percona,

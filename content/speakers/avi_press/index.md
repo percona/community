@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/avi-press-4437a356/
 images:
-  - speakers/avi_press.png
+  - contributors/avi_press.png
 ---
 
 Avi is the founder & CEO of Scarf, a software engineer, and open-source advocate.

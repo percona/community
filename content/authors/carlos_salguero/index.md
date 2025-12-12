@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/carlos_salguero.jpg
+  - contributors/carlos_salguero.jpg
 ---
 
 Software Engineer, PMM, Percona Toolkit

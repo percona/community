@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/david_murphy.jpg
+  - contributors/david_murphy.jpg
 ---
 
 

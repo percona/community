@@ -11,7 +11,7 @@ social:
   github: https://github.com/gen1us2k/
   linkedin:
 images:
-  - blog/authors/andrew_minkin.jpeg
+  - contributors/andrew_minkin.jpeg
 ---
 
 Software Engineer, PMM

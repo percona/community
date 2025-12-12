@@ -12,6 +12,8 @@ params:
 taxonomies:
   tag: tags
   category: categories
+  contributor_type: "contributor_type"
+  contributor_tag: "contributor_tag"
 social:
   twitter: Percona
 sitemap:

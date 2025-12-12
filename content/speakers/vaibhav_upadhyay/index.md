@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/vaibhav_upadhyay.jpg
+  - contributors/vaibhav_upadhyay.jpg
 ---
 
 Vaibhav Upadhyay is a Lead Database Administrator at ROKA

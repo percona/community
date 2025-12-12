@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/andrey_minkin.png
+  - contributors/andrey_minkin.png
 ---

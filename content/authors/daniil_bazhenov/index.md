@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/daniil_bazhenov.png
+  - contributors/daniil_bazhenov.png
 ---
 
 I am proud to work for the Percona Community Team.

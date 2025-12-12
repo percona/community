@@ -13,6 +13,6 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/robert_bernier.jpg
+  - contributors/robert_bernier.jpg
 ---
 

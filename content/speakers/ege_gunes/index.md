@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/ege_gunes.jpg
+  - contributors/ege_gunes.jpg
 ---
 
 Ege Güneş is Senior Software Engineer at Percona.

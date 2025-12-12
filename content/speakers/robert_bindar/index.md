@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/robert_bindar.jpg
+  - contributors/robert_bindar.jpg
 ---
 
 Robert started working for the MariaDB Foundation in 2018 as a server developer. His main focus is divided between server development and helping the community contribute faster and more efficiently to the MariaDB codebase. Robert is based mostly in Brasov, Romania.

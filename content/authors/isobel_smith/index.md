@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/isobel_smith.jpeg
+  - contributors/isobel_smith.jpeg
 ---
 
 Isobel is a MySQL DBA at New Work SE, using async replication, Galera, and ProxySQL.

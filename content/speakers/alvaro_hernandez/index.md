@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/alvaro_hernandez.jpg
+  - contributors/alvaro_hernandez.jpg
 ---
 
 Alvaro Hernandez is a passionate database and software developer. After several unsuccessful ventures, Alvaro founded and work as the CEO of OnGres, a PostGres startup set to disrupt the database market. He has been dedicated to PostgreSQL and R&D in databases since two decades ago.

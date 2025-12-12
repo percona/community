@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/iuliia-slobodian/
 images:
-  - blog/authors/iuliia_slobodian.jpeg
+  - contributors/iuliia_slobodian.jpeg
 ---
 
 Founder of Triangle Repairs LLC & Turtle Seat

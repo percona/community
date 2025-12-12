@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/guillermo_ortega.png
+  - contributors/guillermo_ortega.png
 ---

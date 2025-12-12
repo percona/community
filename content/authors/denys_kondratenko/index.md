@@ -11,7 +11,7 @@ social:
   github: https://github.com/denisok/
   linkedin: https://www.linkedin.com/in/kondratenko/
 images:
-  - blog/authors/denys_kondratenko.png
+  - contributors/denys_kondratenko.png
 ---
 
 Engineering Manager, PMM

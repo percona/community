@@ -14,5 +14,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/borky/
 images:
-  - speakers/javier_borkenztain.jpg
+  - contributors/javier_borkenztain.jpg
 ---

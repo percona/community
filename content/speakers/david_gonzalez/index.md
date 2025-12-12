@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/david_gonzalez.png
+  - contributors/david_gonzalez.png
 ---

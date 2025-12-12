@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/shashank181/
 images:
-  - speakers/shashank_agarwal.jpg
+  - contributors/shashank_agarwal.jpg
 ---
 
 Googld Cloud Architect with experience of working with bigdata complex, distributed applications based. Experience in designing and implementing solutions. Also certified GCP Cloud Architect, Java Developer and Web Components Developer.

@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/jean_da_silva.jpg
+  - contributors/jean_da_silva.jpg
 ---
 
 Jean joined Percona as a Support Engineer in 2020. Before joining the team, he worked in a mission-critical environment for 4 years, helping administrate databases like MySQL, MongoDB, and Oracle DB. Specializing in Database Engineering, and Big Data, he likes to watch Formula 1 in his free time.

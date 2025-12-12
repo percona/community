@@ -13,7 +13,7 @@ social:
   github: https://github.com/dmitrypol
   linkedin: https://www.linkedin.com/in/dmitrypol/
 images:
-  - speakers/dmitry_polyakovsky.jpeg
+  - contributors/dmitry_polyakovsky.jpeg
 ---
 
 Dmitry Polyakovsky is a Consulting Member of Technical Staff at Oracle Cloud and has been working with Redis for over a decade. Throughout his career, he has explored Redis in various applications, contributed open-source libraries, written insightful blog articles, and shared his expertise through conference talks and podcast interviews.

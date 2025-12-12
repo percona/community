@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/roman-agabekov/
 images:
-  - blog/authors/roman_agabekov.jpg
+  - contributors/roman_agabekov.jpg
 ---
 
 Founder & CEO at Releem Inc., Software Engineer, MySQL & MariaDB Consultant, Entrepreneur passionate about database performance and automation.

@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/emily_omier.jpg
+  - contributors/emily_omier.jpg
 ---
 
 Emily Omier is specializing in helping startups in the cloud native ecosystem and/or built around an open source project create the right set of assumptions so that prospects and customers understand the product's value immediately.

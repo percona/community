@@ -11,7 +11,7 @@ social:
   github: capri1989
   linkedin: https://www.linkedin.com/in/kai-wagner-b1b661152/
 images:
-  - blog/authors/kai_wagner.jpg
+  - contributors/kai_wagner.jpg
 ---
 
 Kai joined Percona in 2022 as an Engineering Manager responsible for the PostgreSQL development team. Before joining Percona,

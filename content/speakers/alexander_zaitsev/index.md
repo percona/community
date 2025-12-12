@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/alexander_zaitsev.jpeg
+  - contributors/alexander_zaitsev.jpeg
 ---
 
 Alexander is a co-founder of Altinity. He has 20 years of engineering and engineering management experience in several international companies. Alexander is an expert in high scale analytics systems design and implementation. He designed and deployed petabyte-scale data warehouses, including one of the earliest ClickHouse deployments outside of Yandex.

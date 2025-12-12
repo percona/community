@@ -13,7 +13,7 @@ social:
   github: 
   linkedin:
 images:
-  - speakers/ananias_tsalouchidis.jpg
+  - contributors/ananias_tsalouchidis.jpg
 ---
 Ananias Tsalouchidis is a Principal MySQL DBA who joined Percona on May 2017.
 He holds a BSc and a MSc in computer science and has a 10+ years working experience as a systems and databases administrator.

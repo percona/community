@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/ricardo-rodrigues-45386525/
 images:
-  - speakers/ricardo_rodrigues.jpg
+  - contributors/ricardo_rodrigues.jpg
 ---

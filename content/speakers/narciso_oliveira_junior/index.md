@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/narcisooliveira/
 images:
-  - speakers/narciso_oliveira_junior.jpg
+  - contributors/narciso_oliveira_junior.jpg
 ---

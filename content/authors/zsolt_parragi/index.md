@@ -11,7 +11,7 @@ social:
   github:
   linkedin:
 images:
-  - blog/authors/zsolt_parragi.png
+  - contributors/zsolt_parragi.png
 ---
 
 Zsolt joined Percona as a software developer in 2017 and has been working on Percona's database products ever since, initially focusing on MySQL and later switching to PostgreSQL.

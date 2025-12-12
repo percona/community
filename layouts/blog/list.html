@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <p class="blog-search-status" data-search-status aria-live="polite"></p>
-		<ul class="post-list">
+		        <ul class="post-list">
                     {{- range $paginator.Pages -}}
                         <li class="post-item">
                             {{- partial "postpreview-list" . -}}                         
@@ -123,7 +123,13 @@
         {{- end -}}
         {{- $authors := "" -}}
         {{- with .Params.authors -}}
-            {{- $authors = (delimit . " ") -}}
+            {{- $names := slice -}}
+            {{- range . -}}
+                {{- with $.Site.GetPage (print "/contributors/" .) -}}
+                    {{- $names = $names | append .Params.fullname -}}
+                {{- end -}}
+            {{- end -}}
+            {{- $authors = (delimit $names " ") -}}
         {{- end -}}
         {{- $searchText := printf "%s %s %s %s %s" .Title $excerpt $tags $authors $content | plainify | lower -}}
         {{- $html := printf "%s" (partial "postpreview-list" .) -}}

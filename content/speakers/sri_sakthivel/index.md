@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/sri-sakthivel-m-d-68abb8112/
 images:
-  - speakers/sri_sakthivel.png
+  - contributors/sri_sakthivel.png
 ---

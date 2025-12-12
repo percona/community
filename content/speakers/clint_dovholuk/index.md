@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/clint-dovholuk/
 images:
-  - speakers/clint_dovholuk.jpg
+  - contributors/clint_dovholuk.jpg
 ---
 
 Experienced Director Of Software Development with a demonstrated history of working in the computer software industry. Strong professional skilled in IoT, java, golang, dotnet and a proven track record delivering high-quality features on-time. Clint enjoy being a mentor and others with technical challenges.
