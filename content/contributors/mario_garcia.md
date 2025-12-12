@@ -13,7 +13,7 @@ social:
 images:
 - contributors/mario_garcia.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 - MySQL
 - PMM
@@ -41,7 +41,7 @@ blog_tags:
 posts_count: 7
 talks_count: 9
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

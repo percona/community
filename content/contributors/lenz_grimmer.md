@@ -15,7 +15,7 @@ social:
 images:
 - contributors/lenz_grimmer.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 - MySQL
 events_tags:
@@ -30,7 +30,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 4
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 - talks
 ---

@@ -13,7 +13,7 @@ social:
 images:
 - blog/2018/10/vicentiu_ciorbaru-m18-2s.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Community Track
@@ -23,7 +23,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 4
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Vicențiu works at the [MariaDB Foundation](https://mariadb.org/) as a Software Engineer. He focuses on Optimizer development, but has also worked on other parts of the MariaDB Server. Notable projects include: Window Functions in MariaDB, Custom Aggregate Functions in MariaDB, Roles in MariaDB

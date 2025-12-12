@@ -15,7 +15,7 @@ social:
 images:
 - contributors/ivan_groenwold.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Event
 - opensource
@@ -24,7 +24,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 - talks
 ---

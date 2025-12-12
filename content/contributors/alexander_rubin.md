@@ -13,7 +13,7 @@ social:
 images:
 - contributors/person-using-laptop.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Intermediate Level
@@ -23,7 +23,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Alexander has worked with MySQL since 2000 as a DBA and Application Developer. He has performed MySQL consulting as a principal consultant/architect for over 13 years, starting with MySQL AB in 2006, then Sun Microsystems, then Oracle and then Percona. Alex has helped many customers design large, scalable, and highly available MySQL systems and optimize MySQL performance. He has also helped customers design Big Data stores with Apache Hadoop and related technologies. Currently, Alexander is a Director of Data Architecture at VirtualHealth.

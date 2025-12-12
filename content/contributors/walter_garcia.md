@@ -15,13 +15,13 @@ social:
 images:
 - contributors/walter_garcia.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Walter has worked as a DBA since 2010 in few companies like social gaming company in Latin America and other company in Spain. He lives in Mendoza, Argentina, He likes play football and he is learning to play guitar in his free time.

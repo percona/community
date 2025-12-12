@@ -13,7 +13,7 @@ social:
 images:
 - blog/2018/10/jaime_crespo_2018.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Events
@@ -37,7 +37,7 @@ blog_tags:
 posts_count: 2
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Jaime is the Senior DBA of the Wikimedia Foundation, managing Wikipedia databases.

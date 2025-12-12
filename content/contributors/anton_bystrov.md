@@ -15,7 +15,7 @@ social:
 images:
 - contributors/anton_bystrov.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - PMM
 events_tags:
 - Percona Community Live
@@ -33,7 +33,7 @@ blog_tags:
 posts_count: 3
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

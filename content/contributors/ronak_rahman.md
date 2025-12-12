@@ -13,7 +13,7 @@ social:
 images:
 - blog/2020/10/ronak-profile.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MySQL
 - PostgreSQL
@@ -30,7 +30,7 @@ blog_tags:
 posts_count: 2
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Liquibase Developer Advocate. Background in DevOps, Customer Success, and Solution Architecture. Current project: Supporting and organizing the Liquibase community answering questions. Follow Ronak on Twitter or LinkedIn.

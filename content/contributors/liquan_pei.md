@@ -15,13 +15,13 @@ social:
 images:
 - contributors/liquan_pei.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Liquan Pei is currently a Senior Software Engineer, Database Kernel at PingCAP.

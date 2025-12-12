@@ -13,7 +13,7 @@ social:
 images:
 - contributors/aleksandra_abramova.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Cloud
 - Community
 - MySQL
@@ -44,7 +44,7 @@ blog_tags:
 posts_count: 8
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

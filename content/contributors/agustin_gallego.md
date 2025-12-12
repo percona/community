@@ -16,7 +16,7 @@ social:
 images:
 - contributors/agustin_gallego.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Event
 - Postgres
@@ -27,7 +27,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 2
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Agustín joined Percona's Support team in December 2013, after being part of the Administrative team from February 2012. He has previously worked as a Cambridge IT examinations Supervisor and as a Junior BI, SQL & C# developer. He is currently a Computer Analyst, and continues studying to get a Computer Systems Engineer degree at the Universidad de la República, in Uruguay.

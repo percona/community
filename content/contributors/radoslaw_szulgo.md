@@ -13,7 +13,7 @@ social:
 images:
 - contributors/radoslaw_szulgo.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - GSoC
@@ -24,7 +24,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Senior Product Manager at Percona

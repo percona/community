@@ -15,7 +15,7 @@ social:
 images:
 - contributors/vicentiu_ciorbaru.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Community Track
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 4
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Vicentiu works at the MariaDB Foundation as a Software Engineer and Team Lead. He focuses on optimizer development, but has also worked on other parts of the MariaDB Server. Vicențiu has been part of the MariaDB ecosystem since 2013, where he first contributed Roles to MariaDB.

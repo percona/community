@@ -15,7 +15,7 @@ social:
 images:
 - contributors/sergey_pronin.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Cloud
 - Community
 - MongoDB
@@ -50,7 +50,7 @@ blog_tags:
 posts_count: 4
 talks_count: 7
 podcasts_count: 3
-type:
+contributor_type:
 - blog
 - podcasts
 - talks

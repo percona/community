@@ -15,13 +15,13 @@ social:
 images:
 - contributors/avi_press.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Avi is the founder & CEO of Scarf, a software engineer, and open-source advocate.

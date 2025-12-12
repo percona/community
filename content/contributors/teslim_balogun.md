@@ -13,7 +13,7 @@ social:
 images:
 - contributors/teslim_balogun.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - beginners
@@ -23,7 +23,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Teslim Balogun is a frontend developer, technical writer, and a big fan of Open Source.

@@ -13,7 +13,7 @@ social:
 images:
 - contributors/kai_wagner.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 - PMM
 - PostgreSQL
@@ -41,7 +41,7 @@ blog_tags:
 posts_count: 3
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

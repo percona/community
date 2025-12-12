@@ -15,7 +15,7 @@ social:
 images:
 - contributors/giuseppe_maxia.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Community Track
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Formerly at MySQL AB, and then through acquisitions at Sun Microsystems and Oracle, and currently at VMware through a merge.

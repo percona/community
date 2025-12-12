@@ -15,7 +15,7 @@ social:
 images:
 - contributors/carlos_tutte.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Event
 - opensource
@@ -24,7 +24,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Computer engineer from Montevideo, Uruguay, joined Percona on February 2018, first as a support engineer, then moving to the consulting team. Working in complex IT solutions for more than 10 years, Carlos now specializes in MySQL and related technologies.

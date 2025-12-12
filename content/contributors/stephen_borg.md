@@ -15,7 +15,7 @@ social:
 images:
 - contributors/stephen_borg.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Stephen has had a career in technology for online and retail gambling, having worked close to business for a number of B2C and B2B providers. Sound background in technology, delivering affiliate and gambling platforms using both .NET and Java frameworks.

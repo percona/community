@@ -15,7 +15,7 @@ social:
 images:
 - contributors/jeremy_frenay.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Community Track
 - Kubernetes
@@ -24,7 +24,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Jeremy Frenay is an Engineering manager at Babylon Health. He has been leading Babylon’s Data Operations efforts since late 2017, building the Kafka based data infrastructure, the automation and the tooling required to support teams of software and data engineers working on data integration pipelines in a cloud-native environment.

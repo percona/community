@@ -15,7 +15,7 @@ social:
 images:
 - contributors/srini_kadamati.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 I'm a Senior Data Scientist that's on a mission to enable more people to work with data effectively. I spent 5 years building an online learning platform specifically to help people learn existing data tools before turning my attention to improving the data tools themselves. I now am a Developer Advocate at Preset.io, the main company driving and helping grow the Apache Superset project.

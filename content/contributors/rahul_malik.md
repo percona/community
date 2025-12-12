@@ -15,7 +15,7 @@ social:
 images:
 - contributors/rahul_malik.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Database
@@ -28,7 +28,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 C++ Software Engineer in Percona

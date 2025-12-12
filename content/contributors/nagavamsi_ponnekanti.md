@@ -15,13 +15,13 @@ social:
 images:
 - contributors/nagavamsi_ponnekanti.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Nagavamsi Ponnekanti is Software Engineer at Quora.

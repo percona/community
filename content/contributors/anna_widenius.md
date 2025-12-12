@@ -15,7 +15,7 @@ social:
 images:
 - contributors/anna_widenius.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Community Track
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 2
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Anna Widenius is a Chief of Sta in the MariaDB Foundation.

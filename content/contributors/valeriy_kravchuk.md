@@ -13,7 +13,7 @@ social:
 images:
 - contributors/valeriy_kravchuk.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Events
@@ -25,7 +25,7 @@ blog_tags:
 posts_count: 2
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Valeriy Kravchuk has supported MySQL users since 2005, in MySQL AB, Sun, Oracle, Percona and (since 2016) MariaDB Corporation.

@@ -13,7 +13,7 @@ social:
 images:
 - contributors/elizaveta_dokshina.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Open Source Databases
@@ -22,7 +22,7 @@ blog_tags:
 posts_count: 2
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Developer working on Tarantool. Several years of experience in solution implementation, focused in high performance tasks. Current projects include Tarantool Cartridge (a framework for creating distributed apps), an Ansible role for it to deploy these apps, and a command-line utility for the framework.

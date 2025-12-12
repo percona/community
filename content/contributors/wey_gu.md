@@ -15,7 +15,7 @@ social:
 images:
 - contributors/wey_gu.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Graph
 - Nebula
@@ -27,7 +27,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Wey is a software engineer living in Shanghai, China. He enjoys building things with magic and scaling the magic to the wizard community in the day time and sings sometime at night.

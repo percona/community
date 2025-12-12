@@ -14,7 +14,7 @@ social:
 images:
 - contributors/karthik_satchitanand.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Community Track
 - Kubernetes
@@ -23,7 +23,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Karthik Satchitanand is one of the maintainers of the CNCF sandbox project LitmusChaos. He is passionate about all things Kubernetes, and is generally interested in DevOps, storage performance/benchmarking & chaos engineering.

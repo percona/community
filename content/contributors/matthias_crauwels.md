@@ -15,7 +15,7 @@ social:
 images:
 - contributors/matthias_crauwels.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Percona Community Live
@@ -27,7 +27,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 - talks
 ---

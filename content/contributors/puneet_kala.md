@@ -13,7 +13,7 @@ social:
 images:
 - contributors/puneet_kala.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Community
@@ -30,7 +30,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Frontend Web Automation Quality Assurance at Percona

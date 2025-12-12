@@ -17,13 +17,13 @@ PRIMARY_FIELDS = [
 
 # Aggregates
 all_categories = set()
-author_tags = defaultdict(set)         # categories + matching event/podcast tags
-author_events_tags = defaultdict(set)  # unique event/podcast tags not in categories
-author_blog_tags = defaultdict(set)    # all tags from posts
+author_contributor_tags = defaultdict(set)   # categories + matching event/podcast tags
+author_events_tags = defaultdict(set)        # unique event/podcast tags not in categories
+author_blog_tags = defaultdict(set)          # all tags from posts
 author_posts_count = defaultdict(int)
 author_talks_count = defaultdict(int)
 author_podcasts_count = defaultdict(int)
-author_types = defaultdict(set)
+author_contributor_types = defaultdict(set)
 
 def load_md(path):
     try:
@@ -73,12 +73,12 @@ for root, _, files in os.walk(BLOG_DIR):
             author = a.strip()
             for c in categories:
                 if isinstance(c, str) and c.strip():
-                    author_tags[author].add(c.strip())
+                    author_contributor_tags[author].add(c.strip())
             for t in tags:
                 if isinstance(t, str) and t.strip():
                     author_blog_tags[author].add(t.strip())
             author_posts_count[author] += 1
-            author_types[author].add("blog")
+            author_contributor_types[author].add("blog")
 
 # Step 2: events
 for root, _, files in os.walk(EVENTS_DIR):
@@ -96,14 +96,14 @@ for root, _, files in os.walk(EVENTS_DIR):
                 continue
             speaker = s.strip()
             author_talks_count[speaker] += 1
-            author_types[speaker].add("talks")
+            author_contributor_types[speaker].add("talks")
             for tag in ev_tags:
                 if tag in all_categories:
-                    author_tags[speaker].add(tag)
+                    author_contributor_tags[speaker].add(tag)
                 else:
                     author_events_tags[speaker].add(tag)
 
-# Step 3: podcasts (flat folder)
+# Step 3: podcasts
 for fname in os.listdir(PODCASTS_DIR):
     if not fname.endswith(".md"):
         continue
@@ -118,10 +118,10 @@ for fname in os.listdir(PODCASTS_DIR):
             continue
         speaker = s.strip()
         author_podcasts_count[speaker] += 1
-        author_types[speaker].add("podcasts")
+        author_contributor_types[speaker].add("podcasts")
         for tag in p_tags:
             if tag in all_categories:
-                author_tags[speaker].add(tag)
+                author_contributor_tags[speaker].add(tag)
             else:
                 author_events_tags[speaker].add(tag)
 
@@ -142,23 +142,23 @@ for root, _, files in os.walk(CONTRIB_DIR):
         key = name.strip()
 
         auto_fields = {
-            "tags": sorted(author_tags[key]),
+            "contributor_tag": sorted(author_contributor_tags[key]),
             "events_tags": sorted(author_events_tags[key]),
             "blog_tags": sorted(author_blog_tags[key]),
             "posts_count": int(author_posts_count[key]),
             "talks_count": int(author_talks_count[key]),
             "podcasts_count": int(author_podcasts_count[key]),
-            "type": sorted(author_types[key]) if author_types[key] else []
+            "contributor_type": sorted(author_contributor_types[key]) if author_contributor_types[key] else []
         }
 
         dump_contributor(contrib, path, auto_fields)
         updated += 1
         print(
-            f"Updated {path}: tags={auto_fields['tags']}, "
+            f"Updated {path}: contributor_tag={auto_fields['contributor_tag']}, "
             f"events_tags={auto_fields['events_tags']}, "
             f"blog_tags={auto_fields['blog_tags']}, "
             f"posts={auto_fields['posts_count']}, talks={auto_fields['talks_count']}, "
-            f"podcasts={auto_fields['podcasts_count']}, type={auto_fields['type']}"
+            f"podcasts={auto_fields['podcasts_count']}, contributor_type={auto_fields['contributor_type']}"
         )
 
 print(f"Done. Updated {updated} contributor file(s).")

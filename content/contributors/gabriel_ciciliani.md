@@ -15,7 +15,7 @@ social:
 images:
 - contributors/gabriel_ciciliani.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Percona Community Live
@@ -27,7 +27,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Gabriel has been dedicated to databases as a DBA and consultant for the last 15 years. He has led and participated in multiple projects across many technologies, including Oracle, MySQL, SQL Server and MongoDB. Gabriel defines himself as an automation super fan and he contributed to the development of two custom DBaaS platforms.

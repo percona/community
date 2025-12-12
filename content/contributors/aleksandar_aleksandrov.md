@@ -13,7 +13,7 @@ social:
 images:
 - blog/2018/10/Aleksandar.Aleksandrov.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - ClickHouse
@@ -24,7 +24,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Aleksandar is a Data Engineer at MessageBird, an IT Telecom Startup based in Amsterdam. His mission is to bring accessible data to every nook and cranny in the business. In the data team in MessageBird he is working on designing, building and maintaining the data infrastructure with a focus on scaling it as the business grows.

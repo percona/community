@@ -13,7 +13,7 @@ social:
 images:
 - contributors/donatas_abraitis.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - MySQL
@@ -24,7 +24,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 I’m a Systems engineer at Hostinger. I love solving non-trivial issues. You can find more posts I wrote on

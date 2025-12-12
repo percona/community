@@ -15,13 +15,13 @@ social:
 images:
 - contributors/corey_hulen.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 0
-type: []
+contributor_type: []
 ---
 Corey is CTO and Co-Founder of Mattermost, Inc. which is an enterprise messaging workspace for teams to collaborate securely and effectively.
 He previously founded Tempo AI, an artificial intelligence startup. Earlier in his career, Corey served as engineering manager and architect for Microsoft Office. He was also an architect for VerticalNet, a publicly traded enterprise software company providing supply chain management solutions for the Global 2000.

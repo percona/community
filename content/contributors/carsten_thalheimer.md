@@ -15,7 +15,7 @@ social:
 images:
 - contributors/carsten_thalheimer.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Community Track
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 2
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Carsten Thalheimer has worked for over 20 years in IT industry world-leading technology companies, focusing on many aspects of a technology business. He worked for Integrata AG, SCO Group Inc., Tarantella Inc. and Sun Microsystems Inc. His long-standing passion for open-source technology led him to Open-/Star Oce and Cloud Oce in Sun Microsystems/Oracle. In 2011 he joined the MySQL GBU as a Solution Engineer helping leading customers across EMEA to successfully shape their projects.

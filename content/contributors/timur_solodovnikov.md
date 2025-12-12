@@ -13,7 +13,7 @@ social:
 images:
 - contributors/timur_solodovnikov.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 events_tags: []
 blog_tags:
@@ -26,7 +26,7 @@ blog_tags:
 posts_count: 2
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 For the last 10 years, Timur has worked in various telco companies. He has hands-on experience in databases, system and network engineering. Currently Timur works as a Senior DBA for Five9, Inc., the leading provider of cloud contact center software. He lives in California, US with wife and daughter.

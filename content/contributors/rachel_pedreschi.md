@@ -15,7 +15,7 @@ social:
 images:
 - contributors/rachel_pedreschi.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 A “Big Data Geek-ette,” No stranger to the world of high-performance databases and data warehouses, Rachel has more than 20 years of business intelligence and data engineering experience, and is a Cassandra, Vertica, Informix and Redbrick certified DBA on top of her work with Druid. Rachel has an M.B.A. from San Francisco State University and a B.A. in Mathematics from University of California, Santa Cruz.

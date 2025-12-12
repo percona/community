@@ -15,7 +15,7 @@ social:
 images:
 - contributors/peter_zaitsev.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MongoDB
 - MySQL
@@ -40,7 +40,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 17
 podcasts_count: 2
-type:
+contributor_type:
 - podcasts
 - talks
 ---

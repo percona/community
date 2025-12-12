@@ -16,13 +16,13 @@ social:
 images:
 - contributors/emily_omier.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Emily Omier is specializing in helping startups in the cloud native ecosystem and/or built around an open source project create the right set of assumptions so that prospects and customers understand the product's value immediately.

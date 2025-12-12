@@ -15,13 +15,13 @@ social:
 images:
 - contributors/steve_hoffman.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Technology leader who thrives in challenging, fast-paced environments committed to delivering solutions and value to both the internal and external customer. Rich mix of business management and technology coupled with demonstrated ability to lead multiple development teams on multiple platforms focusing on meeting performance, operational and financial objectives.

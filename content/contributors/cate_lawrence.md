@@ -13,7 +13,7 @@ social:
 images:
 - contributors/icon.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - AWS
@@ -44,7 +44,7 @@ blog_tags:
 posts_count: 4
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 I’m a tech journalist and reporter, who has experience in marketing and content strategy, and I have undertaken multiple projects internationally for enterprise clients.

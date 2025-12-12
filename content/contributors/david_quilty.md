@@ -13,7 +13,7 @@ social:
 images:
 - contributors/david_quilty.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 - MySQL
 - PMM
@@ -33,7 +33,7 @@ blog_tags:
 posts_count: 7
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Self-motivated, detail-oriented marketing professional with more than 17 years of remote work experience. Skilled in copyediting, content marketing, social media, SEO, strategy, and project management. Strong interpersonal skills and extensive client-facing experience. Excellent organizational and time-management skills, with expertise in efficiently handling multiple projects simultaneously. Proven team collaboration and community-building experience.

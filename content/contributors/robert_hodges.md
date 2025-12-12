@@ -15,7 +15,7 @@ social:
 images:
 - contributors/robert_hodges.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 - talks
 ---

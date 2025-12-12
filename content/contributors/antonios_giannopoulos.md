@@ -13,7 +13,7 @@ social:
 images:
 - contributors/antonios_giannopoulos.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 events_tags: []
 blog_tags:
@@ -29,7 +29,7 @@ blog_tags:
 posts_count: 3
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Antonios Giannopoulos is a Senior Database Administrator at [ObjectRocket](https://www.objectrocket.com/) supporting MongoDB, Elastic and CockroachDB. Antonios has 18 years of experience in databases and system engineering. He really enjoys challenges in sharding and schema design and loves migrations from Relational to NoSQL world.

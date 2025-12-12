@@ -15,7 +15,7 @@ social:
 images:
 - contributors/alexey_milovidov.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Alexey Milovidov was the original designer of ClickHouse, starting from its inception in 2008. He is an expert on high-performance C++, analytic applications, and SQL databases. Alexey is the lead committer of the ClickHouse open source project on Github. He leads the ClickHouse development team at Yandex and speaks regularly at community events

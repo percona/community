@@ -13,7 +13,7 @@ social:
 images:
 - contributors/daniil_bazhenov.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Cloud
 - Community
 - MongoDB
@@ -59,7 +59,7 @@ blog_tags:
 posts_count: 16
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - blog
 - podcasts
 ---

@@ -13,7 +13,7 @@ social:
 images:
 - blog/2020/05/yoav.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - AWS
@@ -23,7 +23,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Yoav is Senior Product Manager for Amazon Relational Database Service and Amazon Aurora. He joined AWS in 2016 after holding product roles for several years at Oracle and other technology companies. At AWS, he managed the launches of Aurora PostgreSQL, Aurora Serverless, Aurora Global Database, and other major features. Yoav currently focuses on new capabilities for the MySQL and PostgreSQL database engines.

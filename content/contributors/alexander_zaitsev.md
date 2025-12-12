@@ -15,7 +15,7 @@ social:
 images:
 - contributors/alexander_zaitsev.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 - MySQL
 - PMM
@@ -32,7 +32,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Alexander is a co-founder of Altinity. He has 20 years of engineering and engineering management experience in several international companies. Alexander is an expert in high scale analytics systems design and implementation. He designed and deployed petabyte-scale data warehouses, including one of the earliest ClickHouse deployments outside of Yandex.

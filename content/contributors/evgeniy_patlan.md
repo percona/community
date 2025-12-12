@@ -15,7 +15,7 @@ social:
 images:
 - contributors/evgeniy_patlan.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 - MySQL
 - PMM
@@ -32,7 +32,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 - talks
 ---

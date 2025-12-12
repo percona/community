@@ -15,7 +15,7 @@ social:
 images:
 - contributors/ovais_tariq.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - PerconaLive2022
 - PerconaLive2023
@@ -24,7 +24,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 2
 podcasts_count: 2
-type:
+contributor_type:
 - podcasts
 - talks
 ---

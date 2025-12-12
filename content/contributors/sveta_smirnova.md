@@ -15,7 +15,7 @@ social:
 images:
 - contributors/sveta_smirnova.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MySQL
 - PMM
@@ -34,7 +34,7 @@ blog_tags:
 posts_count: 3
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

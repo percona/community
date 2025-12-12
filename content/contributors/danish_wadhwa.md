@@ -13,7 +13,7 @@ social:
 images:
 - contributors/danish_wadhwa.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Entry Level
@@ -23,7 +23,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Danish Wadhwa is a doyen of governing the digital content to assemble good relationships for enterprises or individuals. He is specialized in digital marketing, cloud computing, web designing and offers other valuable IT services for organizations, eventually enhancing their shape by delivering stupendous solutions to their business problems.

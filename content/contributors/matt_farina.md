@@ -15,13 +15,13 @@ social:
 images:
 - contributors/matt_farina.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Matt Farina is a Distinguished Engineer, driving development of new open source solutions and supporting open source software leveraged by SUSE. Matt is a software engineer and architect primarily focused on cloud applications, web applications, and services. He is also and author and speaker.

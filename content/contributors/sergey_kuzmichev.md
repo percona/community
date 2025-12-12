@@ -15,7 +15,7 @@ social:
 images:
 - contributors/sergey_kuzmichev.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - PostgreSQL
 events_tags:
 - Meetup
@@ -23,7 +23,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 2
-type:
+contributor_type:
 - podcasts
 - talks
 ---

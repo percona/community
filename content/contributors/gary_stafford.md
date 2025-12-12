@@ -15,7 +15,7 @@ social:
 images:
 - contributors/gary_stafford.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Community Track
 - Percona Live 2021
@@ -24,7 +24,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Gary is a solutions architect at AWS where he works with some of the world's largest Enterprise customers to understand their business drivers, assess application portfolios, and design reliable and cost-effective cloud native architectures. Previously he was an enterprise architect at Paychex and a Sr. Manager of Technology Architecture Delivery at Accenture. He holds 8 AWS certifications.

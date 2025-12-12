@@ -15,7 +15,7 @@ social:
 images:
 - contributors/mykola_marzhan.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MySQL
 events_tags:
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Mykola is an engineering leader with 20 years of experience in making database cluster management boring. His career has centred on building managed services, monitoring, backups, and automated deployment and upgrade systems. He has a longstanding love of MySQL and intends to build the best DBaaS Platform.

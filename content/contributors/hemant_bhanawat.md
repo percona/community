@@ -15,7 +15,7 @@ social:
 images:
 - contributors/hemant_bhanawat.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Community Track
 - Kubernetes
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Founded Falarica Analytics which was acquired by YugabyteDB. Founding engineer with SnappyData which was acquired by TIBCO. More than 18 years of experience in building and delivering products like distributed databases, distributed query processing engines and distributed KV stores.

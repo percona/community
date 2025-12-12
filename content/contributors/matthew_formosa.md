@@ -15,7 +15,7 @@ social:
 images:
 - contributors/matthew_formosa.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Matthew is an experienced Data Engineer having worked on several Big Data applications within various domains, including Gaming and FinTech. Being an AWS certified solutions architect, he is naturally highly comfortable working with AWS solutions, as well as Apache Spark, Apache Kafka, and the Hadoop Ecosystem amongst other technologies.

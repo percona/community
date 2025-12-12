@@ -15,7 +15,7 @@ social:
 images:
 - contributors/vaibhav_upadhyay.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Meetup
@@ -23,7 +23,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Vaibhav Upadhyay is a Lead Database Administrator at ROKA

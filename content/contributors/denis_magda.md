@@ -15,13 +15,13 @@ social:
 images:
 - contributors/denis_magda.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Denis Magda has spent half of his career working on distributed systems, applications, and databases. His experience spans from the development of distributed database engines and high-performance applications to training and education on the topic of distributed and cloud computing.

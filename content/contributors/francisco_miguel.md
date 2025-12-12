@@ -13,7 +13,7 @@ social:
 images:
 - contributors/francisco_miguel.png
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Intermediate Level
@@ -25,7 +25,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Principal Data Engineer at UnitedHealth Group, for Oracle and MySQL. When he is not working or coding, Fran likes to backpack visiting new places and experiencing different cultures.

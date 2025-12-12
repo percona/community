@@ -15,7 +15,7 @@ social:
 images:
 - contributors/mohamed_wadie_nsiri.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MySQL
 events_tags:
@@ -25,7 +25,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 With 15 years of IT industry experience, he is deeply knowledgeable and passionate about data stores, storage, and distributed systems.

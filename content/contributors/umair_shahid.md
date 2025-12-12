@@ -15,16 +15,13 @@ social:
 images:
 - contributors/umair_shahid.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Umair counts 20 years experience in PostgreSQL and open source experience serving some of the highly competitive technology markets in USA & Europe in roles of increasing responsibility. Proven track record of the unique ability to bridge the gap between business objectives and engineering :
-- Product management, with a focus on growth
-- Data-driven business development
-- Leadership skills with the ability to rally a geographically dispersed team

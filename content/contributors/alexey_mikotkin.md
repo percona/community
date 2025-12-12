@@ -13,7 +13,7 @@ social:
 images:
 - contributors/person-using-laptop.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MySQL
 events_tags: []
@@ -28,7 +28,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Alexey Mikotkin is a software engineer at Devart. He leads a team that develops SQL Server, MySQL, and Oracle tools. The team's main development environment is .NET. Alexey has a great experience in development of applications (backend/frontend). New technologies are the focus of Alexey's interest.

@@ -13,7 +13,7 @@ social:
 images:
 - blog/2020/12/Michael-Aboagye.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - PostgreSQL
 events_tags: []
 blog_tags:
@@ -22,7 +22,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Michael is a freelance database consultant, back-end data engineer and founder of technical writing firm @BytesDaten. He is based in Accra, Ghana and has worked with startups in the eCommerce and healthcare industry. His tech stack includes but not limited to Kafka, Hadoop, Storm, Python, Rails, Cassandra, Postgres, Elastic Search, Redis and Zookeeper. Follow him on twitter @kwaku_mikey

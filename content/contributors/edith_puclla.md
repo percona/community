@@ -15,7 +15,7 @@ social:
 images:
 - contributors/edith_puclla.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Cloud
 - Community
 - MongoDB
@@ -85,7 +85,7 @@ blog_tags:
 posts_count: 31
 talks_count: 7
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

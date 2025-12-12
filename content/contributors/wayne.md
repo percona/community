@@ -13,7 +13,7 @@ social:
 images:
 - contributors/Wayne_Leutwyler.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Community
 - MySQL
 - PostgreSQL
@@ -54,7 +54,7 @@ blog_tags:
 posts_count: 14
 talks_count: 4
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

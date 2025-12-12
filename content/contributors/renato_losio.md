@@ -13,7 +13,7 @@ social:
 images:
 - contributors/renato_losio.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Cloud
 - MySQL
 events_tags: []
@@ -35,7 +35,7 @@ blog_tags:
 posts_count: 4
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Renato Losio is a software and cloud architect, a digital nomad and an accidental speaker. He has many years of experience as a software engineer, tech lead and cloud services specialist in Italy, UK, Portugal and Germany. He currently lives in Berlin and works remotely as principal cloud architect for Funambol inc. Location-based services and relational databases are his main working interests. A certified AWS professional, he holds an MSc degree in Physics and an MSc in Computing Science.

@@ -16,13 +16,13 @@ social:
 images:
 - contributors/joshua_drake.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 President of Command Prompt, Inc., the oldest Postgres Company. We specialize in Full Stack Postgres Support and consulting including Oracle to Postgres Migrations. I am also Co-Chair of Postgres Conference (PostgresConf), the largest non-profit Postgres Community and Ecosystem conference. Connect with us to find out how we can help your business either with Oracle Migrations, 24x7 Postgres Support, Professional Services or build a relationship around your company success with PostgresConf.

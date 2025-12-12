@@ -13,7 +13,7 @@ social:
 images:
 - contributors/jan_wieremjewicz.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - PostgreSQL
 events_tags:
 - PerconaLive2023
@@ -36,7 +36,7 @@ blog_tags:
 posts_count: 11
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 - talks
 ---

@@ -15,7 +15,7 @@ social:
 images:
 - contributors/beinan_wang.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags:
 - Community Track
 - Percona Live 2021
@@ -24,7 +24,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 1
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Beinan builds large scale distributed SQL systems (presto&hive) for Twitter's data platform team.

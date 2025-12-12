@@ -15,13 +15,13 @@ social:
 images:
 - contributors/gabi_ferrara.jpg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
 podcasts_count: 1
-type:
+contributor_type:
 - podcasts
 ---
 Hi, I am Gabi! I am a Data Engineer working as a Developer Advocate.

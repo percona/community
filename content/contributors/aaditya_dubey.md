@@ -13,7 +13,7 @@ social:
 images:
 - contributors/aaditya_dubey.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - Cloud
 - MongoDB
 - MySQL
@@ -33,7 +33,7 @@ blog_tags:
 posts_count: 6
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Database Bug Analyst @ Percona | Ex - Oracle

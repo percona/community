@@ -16,7 +16,7 @@ social:
 images:
 - contributors/dmitry_lenev.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MySQL
 events_tags:
 - Event
@@ -26,7 +26,7 @@ blog_tags: []
 posts_count: 0
 talks_count: 3
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
 Principal Software Engineer at Percona Corporation. Part of the team which develops Percona Server for MySQL, Percona's fork of Oracle's MySQL Server. Before that, member of MySQL Runtime Team at Oracle for 19 years, involved in development of New Data Dictionary in MySQL 8.0, MetaData Locking subsystem in MySQL 5.7 and several other areas (DDL, Triggers, ...).

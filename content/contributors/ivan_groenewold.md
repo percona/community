@@ -13,7 +13,7 @@ social:
 images:
 - contributors/ivan_groenewold.jpg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 events_tags: []
 blog_tags:
@@ -22,7 +22,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Passionate about technology, Ivan Groenewold is a seasoned professional with extensive experience in database management, cloud infrastructure, and software development. 

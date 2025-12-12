@@ -13,7 +13,7 @@ social:
 images:
 - contributors/mayank_sharma.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags: []
+contributor_tag: []
 events_tags: []
 blog_tags:
 - Cassandra
@@ -36,6 +36,6 @@ blog_tags:
 posts_count: 3
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---

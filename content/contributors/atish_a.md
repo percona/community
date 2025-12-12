@@ -13,7 +13,7 @@ social:
 images:
 - contributors/atish_a.jpeg
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 events_tags: []
 blog_tags:
@@ -24,7 +24,7 @@ blog_tags:
 posts_count: 1
 talks_count: 0
 podcasts_count: 0
-type:
+contributor_type:
 - blog
 ---
 Atish is a Distributed Database Systems Engineer, and works in a DevOps team focusing on operational Databases and Data Infrastructure. He is passionate about highly available, scalable database systems & data pipelines. He's a data engineering enthusiast and a MongoDB certified professional.

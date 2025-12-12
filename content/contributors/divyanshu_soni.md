@@ -15,7 +15,7 @@ social:
 images:
 - contributors/divyanshu_soni.png
 # Auto-generated fields below. Do not edit manually.
-tags:
+contributor_tag:
 - MongoDB
 events_tags:
 - Percona Community Live
@@ -27,6 +27,6 @@ blog_tags: []
 posts_count: 0
 talks_count: 2
 podcasts_count: 0
-type:
+contributor_type:
 - talks
 ---
