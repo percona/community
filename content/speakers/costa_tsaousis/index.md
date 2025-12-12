@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/costatsaousis/
 images:
-  - speakers/costa_tsaousis.jpg
+  - contributors/costa_tsaousis.jpg
 ---

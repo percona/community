@@ -13,7 +13,7 @@ social:
   github:
   linkedin: https://www.linkedin.com/in/sergeypronin/
 images:
-  - speakers/sergey_pronin.jpg
+  - contributors/sergey_pronin.jpg
 ---
 
 Sergey is a product leader at Percona focusing on delivering robust open-source database and cloud-native solutions. Prior to Percona Sergey led product management and engineering teams in other organizations with a primary focus on products in infrastructure and platforms space.

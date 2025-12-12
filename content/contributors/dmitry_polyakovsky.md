@@ -4,18 +4,29 @@ name_pronunciation: dmitry_polyakovsky
 fullname: Dmitry Polyakovsky
 fullname_pronounciation: Dmitry Polyakovsky
 job: Consulting Member of Technical Staff at Oracle Cloud
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
+  facebook: null
   github: https://github.com/dmitrypol
   linkedin: https://www.linkedin.com/in/dmitrypol/
+  twitter: null
+  website: null
 images:
-  - speakers/dmitry_polyakovsky.jpeg
+- contributors/dmitry_polyakovsky.jpeg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- Rust
+- Valkey
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Dmitry Polyakovsky is a Consulting Member of Technical Staff at Oracle Cloud and has been working with Redis for over a decade. Throughout his career, he has explored Redis in various applications, contributed open-source libraries, written insightful blog articles, and shared his expertise through conference talks and podcast interviews.
 
 Currently, Dmitry leads the OCI Cache service at Oracle Cloud and is excited to be part of the Valkey project.

@@ -4,14 +4,29 @@ name_pronunciation: david_gonzalez
 fullname: David Gonzalez
 fullname_pronounciation: David Gonzalez
 job: PostgreSQL DBA, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/david_gonzalez.png
+- contributors/david_gonzalez.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Data Gravity
+- Event
+- Podcast
+- Postgres
+- Stream
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---

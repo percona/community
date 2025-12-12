@@ -13,6 +13,6 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/fernandomattera/
 images:
-  - speakers/fernando_mattera.jpg
+  - contributors/fernando_mattera.jpg
 ---
 

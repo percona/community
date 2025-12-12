@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images: 
-  - blog/authors/federico_campoli.jpg
+  - contributors/federico_campoli.jpg
 ---
 
 Federico is the author of [pg_chameleon](http://www.pgchameleon.org/) a replication tool from MySQL to PostgreSQL developed in Python 3.3+

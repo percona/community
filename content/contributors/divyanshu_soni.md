@@ -4,14 +4,29 @@ name_pronunciation: divyanshu_soni
 fullname: Divyanshu Soni
 fullname_pronounciation: Divyanshu Soni
 job: MongoDB DBA
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/divyanshu-soni-597577110/
+  twitter: null
+  website: null
 images:
-  - speakers/divyanshu_soni.png
+- contributors/divyanshu_soni.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MongoDB
+events_tags:
+- Percona Community Live
+- Stream
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 2
+podcasts_count: 0
+type:
+- talks
 ---

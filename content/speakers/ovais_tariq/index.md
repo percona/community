@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/ovais_tariq.png
+  - contributors/ovais_tariq.png
 ---
 
 Engineering leader with 15 years of experience in database infrastructure and site reliability engineering. Currently building the core storage platform and leading production engineering for storage at Uber.

@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/nagavamsi-ponnekanti-2110701/
 images:
-  - speakers/nagavamsi_ponnekanti.jpeg
+  - contributors/nagavamsi_ponnekanti.jpeg
 ---
 
 Nagavamsi Ponnekanti is Software Engineer at Quora.

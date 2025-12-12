@@ -6,13 +6,25 @@ fullname: Javier Borkenztain
 fullname_pronounciation: Javier Borkenztain
 job: Co-founder and CEO, Fiter
 country: Uruguay
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/borky/
+  twitter: null
+  website: null
 images:
-  - speakers/javier_borkenztain.jpg
+- contributors/javier_borkenztain.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

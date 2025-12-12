@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/aaditya-dubey/
 images:
-  - blog/authors/aaditya_dubey.jpeg
+  - contributors/aaditya_dubey.jpeg
 ---
 
 Database Bug Analyst @ Percona | Ex - Oracle

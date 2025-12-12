@@ -5,13 +5,24 @@ fullname: Ricardo Rodrigues
 fullname_pronounciation: Ricardo Rodrigues
 job: DBA, 2Com Consulting
 country: Brazil
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/ricardo-rodrigues-45386525/
+  twitter: null
+  website: null
 images:
-  - speakers/ricardo_rodrigues.jpg
+- contributors/ricardo_rodrigues.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

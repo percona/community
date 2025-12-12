@@ -5,13 +5,24 @@ fullname: Iuliia (Julie) Slobodian
 fullname_pronounciation: Iuliia (Julie) Slobodian
 tagline: Geeks Go Peaks CEO
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/iuliia-slobodian/
+  twitter: null
+  website: null
 images:
-  - blog/authors/iuliia_slobodian.jpeg
+- contributors/iuliia_slobodian.jpeg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- Community
+events_tags: []
+blog_tags:
+- Adventure
+- GeeksGoPeaks
+posts_count: 1
+talks_count: 0
+podcasts_count: 0
+type:
+- blog
 ---
-
 Founder of Triangle Repairs LLC & Turtle Seat

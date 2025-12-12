@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/gabidavila/
 images:
-  - speakers/gabi_ferrara.jpg
+  - contributors/gabi_ferrara.jpg
 ---
 
 Hi, I am Gabi! I am a Data Engineer working as a Developer Advocate.

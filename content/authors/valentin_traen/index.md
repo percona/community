@@ -11,7 +11,7 @@ social:
   github:
   linkedin: https://www.linkedin.com/in/valentin-tra%C3%ABn-a6553b89/
 images:
-  - blog/authors/valentin_traen.jpg
+  - contributors/valentin_traen.jpg
 ---
 
 MySQL DBA at Virtual Expo in France.

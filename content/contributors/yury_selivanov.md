@@ -4,17 +4,25 @@ name_pronunciation: yury_selivanov
 fullname: Yury Selivanov
 fullname_pronounciation: Yury Selivanov
 job: CEO of EdgeDB
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/yury_selivanov.jpg
+- contributors/yury_selivanov.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 Yury Selivanov is Co-founder and CEO at EdgeDB. Bringing state-of-the-art database technology to the masses.
 EdgeDB is an open-source object-relational database built on top of PostgreSQL. The goal of EdgeDB is to empower its users to build safe and efficient software with less effort.

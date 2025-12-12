@@ -4,18 +4,33 @@ name_pronunciation: daniel_black
 fullname: Daniel Black
 fullname_pronounciation: Daniel Black
 job: Chief Innovation Officer, MariaDB Foundation
-country: 
+country: null
 tagline: Chief Innovation Officer, MariaDB Foundation
 social:
-  website: 
-  facebook: 
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - contributors/daniel_black.jpg
+- contributors/daniel_black.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags:
+- MariaDB
+- MySQL
+- POWER
+- cacheline
+- perf
+- performance
+posts_count: 1
+talks_count: 0
+podcasts_count: 1
+type:
+- blog
+- podcasts
 ---
-
 After a reasonable amount of time doing development and IT security work, Daniel landed a DBA Consultant job and loved it.
 
 After writing a few too many bug fixes without a client to bill them to, he joined IBM to make MariaDB and MySQL scale on IBM POWER.

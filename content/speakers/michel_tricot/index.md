@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/michel_tricot.jpg
+  - contributors/michel_tricot.jpg
 ---
 
 Michel has been working in data engineering for the past 15 years. As head of integrations and engineering director at Liveramp (NYSE: RAMP), he grew the team responsible for building and scaling the data ingestion and data distribution connectors, syncing 100s TB every day.

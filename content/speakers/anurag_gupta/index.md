@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/anurag_gupta.jpg
+  - contributors/anurag_gupta.jpg
 ---
 
 

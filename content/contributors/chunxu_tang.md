@@ -4,16 +4,27 @@ name_pronunciation: chunxu_tang
 fullname: Chunxu Tang
 fullname_pronounciation: Chunxu Tang
 job: Twitter, Software Engineer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/chunxu_tang.jpg
+- contributors/chunxu_tang.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Percona Live 2021
+- Presto
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Chunxu is a software engineer in Twitter's Interactive Query team where he works on developing and maintaining Presto and Druid services. He received his doctoral degree from Syracuse University, where he did research on machine learning and distributed collaboration systems.

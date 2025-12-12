@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/ninad_shah.jpeg
+  - contributors/ninad_shah.jpeg
 ---
 
 16 yrs experience with database technologies, 9+ years experience with PostgreSQL technology

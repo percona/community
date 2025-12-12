@@ -5,14 +5,25 @@ fullname: Fernando Mattera
 fullname_pronounciation: Fernando Mattera
 job: MySQL DBA I, Percona
 country: Argentina
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/fernandomattera/
+  twitter: null
+  website: null
 images:
-  - speakers/fernando_mattera.jpg
+- contributors/fernando_mattera.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-

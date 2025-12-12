@@ -4,16 +4,31 @@ name_pronunciation: rahul_malik
 fullname: Rahul Malik
 fullname_pronounciation: Rahul Malik
 job: Software Engineer, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/rahul-malik-48986589/
+  twitter: null
+  website: null
 images:
-  - speakers/rahul_malik.png
+- contributors/rahul_malik.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+events_tags:
+- Database
+- Percona
+- Percona Community Live
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---
-
 C++ Software Engineer in Percona

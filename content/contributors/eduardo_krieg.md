@@ -4,14 +4,25 @@ name_pronunciation: eduardo_krieg
 fullname: Eduardo Krieg
 fullname_pronounciation: Eduardo Krieg
 job: MySQL DBA, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/eduardo_krieg.png
+- contributors/eduardo_krieg.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/bennyvasquez
 images:
-  - speakers/benny_vasquez.jpeg
+  - contributors/benny_vasquez.jpeg
 ---
 
 benny is the Chair of the AlmaLinux OS Foundation, with a long history in business and community building and an undying love of open source.

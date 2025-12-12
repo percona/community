@@ -4,18 +4,26 @@ name_pronunciation: henrik_ingo
 fullname: Henrik Ingo
 fullname_pronounciation: Henrik Ingo
 job: Chief of Staff, Engineering at DataStax
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/henrik_ingo.jpg
+- contributors/henrik_ingo.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 Open Source expert, with 13+ years experience with open source databases. One of the leading European experts both in MySQL and MongoDB databases. Particular interest in distributed systems and performance. I also have experience from several business management roles, such as managing 25 mobile developers and as COO and Advisor at 2 startups in the MySQL space.
 
 I've contributed code to Linux, Drupal and impress.js. I've volunteered on the OSI license review process almost from the beginning. I'm the author of a book "Open Life: The Philosophy of Open Source"

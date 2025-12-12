@@ -12,7 +12,7 @@ social:
   github: 
   linkedin:
 images:
-  - speakers/kenny_gryp.jpg
+  - contributors/kenny_gryp.jpg
 ---
 
 MySQL Product Manager focussing on InnoDB, Replication and all things High Availability.

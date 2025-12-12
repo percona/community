@@ -4,14 +4,25 @@ name_pronunciation: dmitry_kostiuk
 fullname: Dmitry Kostiuk
 fullname_pronounciation: Dmitry Kostiuk
 job: Senior Technical Writer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/dmitry_kostiuk.jpg
+- contributors/dmitry_kostiuk.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- fosdem
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

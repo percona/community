@@ -4,16 +4,24 @@ name_pronunciation: patrick_mcfadin
 fullname: Patrick McFadin
 fullname_pronounciation: Patrick McFadin
 job: VP Developer Relations, Datastax
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
+  facebook: null
+  github: null
+  linkedin: null
   twitter: https://twitter.com/PatrickMcFadin
-  github: 
-  linkedin: 
+  website: null
 images:
-  - speakers/patrick_mcfadin.jpg
+- contributors/patrick_mcfadin.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 2
+type:
+- podcasts
 ---
-
 Patrick McFadin is one of the leading experts of Apache Cassandra and data modeling techniques. As the Chief Evangelist for Apache Cassandra and consultant for DataStax, he has helped build some of the largest and exciting deployments in production. Previous to DataStax, he was Chief Architect at Hobsons and an Oracle DBA/Developer for over 15 years.

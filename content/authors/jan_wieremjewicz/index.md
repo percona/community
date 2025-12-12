@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/janwie/
 images:
-  - blog/authors/jan_wieremjewicz.jpg
+  - contributors/jan_wieremjewicz.jpg
 ---
 
 Jan is a Senior Product Manager at Percona, leading the products for PostgreSQL. He has vast experience in the development, deployment and maintenance of enterprise systems. 

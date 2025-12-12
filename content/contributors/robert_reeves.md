@@ -4,18 +4,40 @@ name_pronunciation: robert_reeves
 fullname: Robert Reeves
 fullname_pronounciation: Robert Reeves
 job: CTO at Liquibase
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/robertreeves/
+  twitter: null
+  website: null
 images:
-  - speakers/robert_reeves.jpg
+- contributors/robert_reeves.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+- PostgreSQL
+events_tags:
+- Databases
+- Liquibase
+- Percona Community Live
+- dashboard
+- event
+- opensource
+blog_tags:
+- DevOps
+- PerconaLive
+- PerconaLive2022
+- blog
+posts_count: 1
+talks_count: 3
+podcasts_count: 1
+type:
+- blog
+- podcasts
+- talks
 ---
-
 Robert Reeves is currently CTO at Liquibase
 
 Robert leads Liquibase’s technology strategy. His is as passionate about supporting everyone he can with Liquibase as he is about punk rock and comic books. Prior to co-founding Liquibase, he was a Director at the Austin Technology Incubator and co-founded Phurnace Software, inventing their flagship product for middleware and infrastructure management. A US Army veteran, Robert holds an Economics degree from the University of Texas at Austin and an MS degree in Science and Technology Commercialization from the McCombs School of Business.

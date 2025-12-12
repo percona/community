@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/aftabakhan/
 images:
-  - blog/authors/person-using-laptop.jpg
+  - contributors/person-using-laptop.jpg
 ---
 
 IT professional with 10+ years experience, mainly in large commercial environments. Expertise in MySQL, MariaDB, Big Data, Bash , Unix systems and Python development. Aftab's LinkedIn Profile

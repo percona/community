@@ -5,16 +5,29 @@ name_pronunciation: javier_fernandez
 fullname: Javier Jaramago Fernández
 fullname_pronounciation: Javier Jaramago Fernández
 job: ProxySQL, Software Engineer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/javier-jaramago-fern%C3%A1ndez-545a9343/
+  twitter: null
+  website: null
 images:
-  - speakers/javier_fernandez.png
+- contributors/javier_fernandez.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Databases
+- Percona Community Live
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 2
+podcasts_count: 0
+type:
+- talks
 ---
-
 Systems engineer, OpenSource contributor, currently at ProxySQL. Interested in systems programming, databases, distributed and critical systems.

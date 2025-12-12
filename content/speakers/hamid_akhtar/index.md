@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/engineeredvirus/
 images:
-  - speakers/hamid_akhtar.png
+  - contributors/hamid_akhtar.png
 ---

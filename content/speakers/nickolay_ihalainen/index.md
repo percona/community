@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/nickolay-ihalainen-b8a35838/
 images:
-  - speakers/nickolay_ihalainen.jpg
+  - contributors/nickolay_ihalainen.jpg
 ---
 
 Nickolay Ihalainen is currently working as a Senior Technical Support Engineer at Percona

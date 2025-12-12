@@ -4,18 +4,35 @@ name_pronunciation: maksim_gramin
 fullname: Maksim Gramin
 fullname_pronounciation: Maksim Gramin
 job: Independent consultant and researcher
-country: 
-tagline: 
+country: null
+tagline: null
 social:
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
   website: gramin.pro
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
 images:
-  - speakers/maksim_gramin.png
+- contributors/maksim_gramin.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- Community
+events_tags:
+- Code
+- Database
+- Percona Community Live
+- dashboard
+- event
+- opensource
+blog_tags:
+- SQL
+posts_count: 3
+talks_count: 3
+podcasts_count: 0
+type:
+- blog
+- talks
 ---
-
 Maksim Gramin is a software consultant, researcher and developer passionate about Databases and SQL
 
 Maksim has been working with various database sysytems for about 15 years. He was a SQL developer on big distributed teams, writing tons of nontrivial SQL-queries and implementing tons of complex and tricky business logic on the database side. And he also worked as a “classical” Java developer and architect, where people interacted with any databases through ORM's.

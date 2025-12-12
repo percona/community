@@ -3,15 +3,27 @@ name: andrew_minkin
 name_pronunciation: andrew_minkin
 fullname: Andrew Minkin
 fullname_pronounciation: Andrew Minkin
-tagline:
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
+  facebook: null
   github: https://github.com/gen1us2k/
-  linkedin:
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - blog/authors/andrew_minkin.jpeg
+- contributors/andrew_minkin.jpeg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags:
+- DBaaS
+- KUTTL
+- PMM
+- testing
+posts_count: 1
+talks_count: 0
+podcasts_count: 0
+type:
+- blog
 ---
-
 Software Engineer, PMM

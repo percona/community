@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/shachar_guz.jpg
+  - contributors/shachar_guz.jpg
 ---
 
 Shachar is a product manager at Google Cloud, he works on the Cloud Database Migration Service. Shachar worked in various product and engineering roles and shares a true passion about data and helping customers get the most out of their data. 

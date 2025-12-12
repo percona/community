@@ -4,14 +4,26 @@ name_pronunciation: costa_tsaousis
 fullname: Costa Tsaousis
 fullname_pronounciation: Costa Tsaousis
 job: Founder and CEO of Netdata
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/costatsaousis/
+  twitter: null
+  website: null
 images:
-  - speakers/costa_tsaousis.jpg
+- contributors/costa_tsaousis.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

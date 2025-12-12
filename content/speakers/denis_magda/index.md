@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/denis_magda.jpg
+  - contributors/denis_magda.jpg
 ---
 
 Denis Magda has spent half of his career working on distributed systems, applications, and databases. His experience spans from the development of distributed database engines and high-performance applications to training and education on the topic of distributed and cloud computing.

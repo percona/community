@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/dmitry_kostiuk.jpg
+  - contributors/dmitry_kostiuk.jpg
 ---

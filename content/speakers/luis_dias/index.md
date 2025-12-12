@@ -12,7 +12,7 @@ social:
   github: 
   linkedin:
 images:
-  - speakers/luis_dias.jpg
+  - contributors/luis_dias.jpg
 ---
 
 Oracle dba last 15 years

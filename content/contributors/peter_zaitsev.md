@@ -4,17 +4,44 @@ name_pronunciation: peter_zaitsev
 fullname: Peter Zaitsev
 fullname_pronounciation: Peter Zaitsev
 job: Co‑founder of Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/peter_zaitsev.jpg
+- contributors/peter_zaitsev.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- Community
+- MongoDB
+- MySQL
+- PMM
+- PostgreSQL
+events_tags:
+- Event
+- Events
+- Home
+- Kubernetes
+- MySQL-Summit
+- PerconaUniversity
+- Promo
+- Yerevan
+- devops
+- event
+- fosdem
+- opensource
+- russia
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 17
+podcasts_count: 2
+type:
+- podcasts
+- talks
 ---
-
 Co‑founder of Percona and one of the foremost experts on MySQL strategy and optimization. Peter leveraged both his technical vision and entrepreneurial skills to grow Percona from a two‑person shop to one of the most respected open source companies in the business. A serial entrepreneur, he co‑founded his first startup while attending Moscow State University where he majored in Computer Science. He is a co‑author of High Performance MySQL: Optimization, Backups, and Replication, one of the most popular books on MySQL performance. Peter frequently speaks as an expert lecturer at open source database conferences and has contributed articles to outlets such as Fortune and DZone.
-

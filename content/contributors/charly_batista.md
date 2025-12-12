@@ -4,17 +4,39 @@ name_pronunciation: charly_batista
 fullname: Charly Batista
 fullname_pronounciation: Charly Batista
 job: Percona, PostgreSQL Tech Lead
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/charlybatista/
+  twitter: null
+  website: null
 images:
-  - speakers/charly_batista.jpg
+- contributors/charly_batista.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- PostgreSQL
+events_tags:
+- Meetup
+- Percona Community Live
+- PerconaLive2022
+- Podcast
+- Postgres
+- Stream
+- dashboard
+- databases
+- event
+- opensource
+- pgpool
+- securing
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 29
+podcasts_count: 0
+type:
+- talks
 ---
-
 Charly Batista is currently PostgreSQL Tech Lead at Percona. 
 Possesses over twelve (12) years of experience in various areas of IT including Database Administration, Data Analysis, Systems Analysis and Software Development. Strong analytical skills combined with experience in object oriented programming techniques. Technical Leader for more than four (4) years for the Developer Team. Born in Brazil and now living in Shanghai-China.

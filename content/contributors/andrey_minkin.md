@@ -4,14 +4,26 @@ name_pronunciation: andrey_minkin
 fullname: Andrey Minkin
 fullname_pronounciation: Andrey Minkin
 job: Sr. Backend Engineer, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/andrey_minkin.png
+- contributors/andrey_minkin.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- PMM
+events_tags:
+- Stream
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

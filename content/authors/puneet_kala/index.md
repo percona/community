@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/puneet_kala.png
+  - contributors/puneet_kala.png
 ---
 
 Frontend Web Automation Quality Assurance at Percona

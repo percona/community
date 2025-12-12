@@ -12,5 +12,5 @@ social:
   github: 
   linkedin:
 images:
-  - speakers/kai_wagner.jpeg
+  - contributors/kai_wagner.jpeg
 ---

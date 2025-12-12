@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images: 
-  - blog/authors/icon.png
+  - contributors/icon.png
 ---
 
 I’m a tech journalist and reporter, who has experience in marketing and content strategy, and I have undertaken multiple projects internationally for enterprise clients.

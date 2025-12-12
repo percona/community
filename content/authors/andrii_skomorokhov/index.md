@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/andrii_skomorokhov.jpg
+  - contributors/andrii_skomorokhov.jpg
 ---
 
 Software Engineer, PMM

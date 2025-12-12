@@ -5,13 +5,27 @@ fullname: Marco Tusa
 fullname_pronounciation: Marco Tusa
 job: MySQL Tech Lead, Percona
 country: Italy
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/marco_tusa.jpg
+- contributors/marco_tusa.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+events_tags:
+- Event
+- Kubernetes
+- Promo
+- fosdem
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---

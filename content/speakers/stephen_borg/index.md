@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/stephen_borg.jpg
+  - contributors/stephen_borg.jpg
 ---
 
 Stephen has had a career in technology for online and retail gambling, having worked close to business for a number of B2C and B2B providers. Sound background in technology, delivering affiliate and gambling platforms using both .NET and Java frameworks.

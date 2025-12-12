@@ -8,7 +8,6 @@
         <meta name="image" property="og:image" content="{{ ((resources.Get .).Resize "1200x jpg 90%").Permalink }}" />
     {{ end }}
 {{ else -}}
-
     {{ with $.Params.youtube_id }}
         <meta name="image" property="og:image" content="https://img.youtube.com/vi/{{ $.Params.youtube_id }}/hqdefault.jpg"/>
     {{ else }}
@@ -48,7 +47,7 @@
 
 {{- if .IsPage }}
     {{ range .Params.authors }}
-        {{ with $.Site.GetPage (print "/authors/" .) -}}
+        {{ with $.Site.GetPage (print "/contributors/" .) -}}
             {{ with .Params.social.facebook }}
                 <meta property="article:author" content="https://www.facebook.com/{{ . }}" />
             {{ end }}

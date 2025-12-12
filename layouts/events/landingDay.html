@@ -9,8 +9,8 @@
 
 {{ define "meta" }}
   {{- if (isset .Params "speakers") -}}
-    {{ range $key, $author := .Params.authors -}}
-      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+    {{ range $key, $author := .Params.speakers -}}
+      {{- with $.Site.GetPage (print "/contributors/" $author) -}}
         <meta name="author" content="{{ .Params.fullname }}" />
       {{- end }}{{ if $key }}, {{ end -}}
     {{- end -}}
@@ -183,13 +183,12 @@
         {{- end -}}
     </div>
 
+
     {{ if (isset .Params "speakers")}}
-
     <h2 id="speakers">Speakers</h2>
-
     <div class="grid grid--4 speakers">
         {{ range $key, $author := .Params.speakers }}
-          {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+          {{- with $.Site.GetPage (print "/contributors/" $author) -}}
             <div class="grid__item speaker">
                {{- if isset .Params "images" -}}
                     {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Image" (index .Params.images 0) "Content" .Content "Job" .Params.job) -}}

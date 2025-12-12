@@ -11,7 +11,7 @@ social:
   github: 
   linkedin:
 images:
-  - blog/authors/tom_basil.jpeg
+  - contributors/tom_basil.jpeg
 ---
 
 Tom Basil is Chief of Staff at Percona.

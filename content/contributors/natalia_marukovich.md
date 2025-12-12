@@ -3,15 +3,25 @@ name: natalia_marukovich
 name_pronunciation: natalia_marukovich
 fullname: Natalia Marukovich
 fullname_pronounciation: Natalia Marukovich
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/natalia-marukovich-86555239/
+  twitter: null
+  website: null
 images:
-  - blog/authors/natalia_marukovich.jpg
+- contributors/natalia_marukovich.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags:
+- Kubernetes
+- MongoDB
+posts_count: 1
+talks_count: 0
+podcasts_count: 0
+type:
+- blog
 ---
-
 Software Engineer at Percona

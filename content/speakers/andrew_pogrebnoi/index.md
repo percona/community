@@ -13,7 +13,7 @@ social:
   github: 
   linkedin:
 images:
-  - speakers/andrew_pogrebnoi.jpg
+  - contributors/andrew_pogrebnoi.jpg
 ---
 
 Andrew Pogrebnoi is Principal Software Engineer at Percona.

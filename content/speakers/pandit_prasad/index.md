@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/pandit_prasad.jpg
+  - contributors/pandit_prasad.jpg
 ---
 
 Pandit Prasad is a Principal Product Manager at Amazon RDS. He brings with him 28 years of Hi-Tech industry experience.

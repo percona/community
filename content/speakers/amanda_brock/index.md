@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/amandabrocktech
 images:
-  - speakers/amanda_brock.jpg
+  - contributors/amanda_brock.jpg
 ---
 
 

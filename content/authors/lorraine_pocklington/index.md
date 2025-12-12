@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/lorraine.jpeg
+  - contributors/lorraine.jpeg
 ---
 
 Community Manager for Percona

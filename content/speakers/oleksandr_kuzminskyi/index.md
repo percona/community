@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/oleksandr_kuzminskyi.jpg
+  - contributors/oleksandr_kuzminskyi.jpg
 ---
 
 Aleks works at Pinterest on automating its MySQL fleet operation. Before, he worked for Box, Dropbox, and Percona. He believes in Infrastructure as a Code principle and CI/CD with a goal to exterminate toil.

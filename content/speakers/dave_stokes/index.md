@@ -13,6 +13,6 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/dave_stokes.jpg
+  - contributors/dave_stokes.jpg
 ---
 Dave joined Percona last February 2022. Dave is MySQL Community Manager and the author of MySQL & JSON - A Practical Programming Guide

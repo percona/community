@@ -5,17 +5,59 @@ fullname: Denys Kondratenko
 fullname_pronounciation: Denys Kondratenko
 job: Director of Software Engineering, Percona
 country: Germany
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook: 
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/kondratenko/
+  twitter: null
+  website: null
 images:
-  - contributors/denys_kondratenko.png
+- contributors/denys_kondratenko.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- Cloud
+- Community
+- MySQL
+- PMM
+- PostgreSQL
+events_tags:
+- Kubernetes
+- Percona Community Live
+- dashboard
+- event
+- opensource
+blog_tags:
+- CSI
+- Containers
+- DBaaS
+- Databases
+- Documentation
+- Kubernetes
+- Labs
+- Minikube
+- Monitoring
+- Operator
+- Operators
+- PG
+- PMM
+- Pandoc
+- PostgreSQL
+- Testing
+- docker
+- docker-compose
+- goreleaser
+- k8s
+- minikube
+- pg_stat_monitor
+- podman
+posts_count: 7
+talks_count: 4
+podcasts_count: 0
+type:
+- blog
+- talks
 ---
-
 I am Engineering Manager in Percona working on Percona Monitoring and Management solution.
  
  My past experience is:

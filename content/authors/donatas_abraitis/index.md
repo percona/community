@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/donatas_abraitis.png
+  - contributors/donatas_abraitis.png
 ---
 
 I’m a Systems engineer at Hostinger. I love solving non-trivial issues. You can find more posts I wrote on 

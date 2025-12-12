@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/mjonss/
 images:
-  - speakers/matthias_jonsson.jpg
+  - contributors/matthias_jonsson.jpg
 ---

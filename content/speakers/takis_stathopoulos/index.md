@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/pgstathopoulos/
 images:
-  - speakers/takis_stathopoulos.jpg
+  - contributors/takis_stathopoulos.jpg
 ---

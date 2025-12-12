@@ -4,14 +4,27 @@ name_pronunciation: muhammad_usama
 fullname: Muhammad Usama
 fullname_pronounciation: Muhammad Usama
 job: Senior Software Engineer, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/muhammadusama/
+  twitter: null
+  website: null
 images:
-  - speakers/muhammad_usama.png
+- contributors/muhammad_usama.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Postgres
+- Stream
+- opensource
+- pgpool
+blog_tags: []
+posts_count: 0
+talks_count: 2
+podcasts_count: 0
+type:
+- talks
 ---

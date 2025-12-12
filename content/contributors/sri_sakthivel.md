@@ -4,14 +4,29 @@ name_pronunciation: sri_sakthivel
 fullname: Sri Sakthivel M.D.
 fullname_pronounciation: Sri Sakthivel M.D.
 job: MySQL DBA, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/sri-sakthivel-m-d-68abb8112/
+  twitter: null
+  website: null
 images:
-  - speakers/sri_sakthivel.png
+- contributors/sri_sakthivel.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+events_tags:
+- Percona Community Live
+- Stream
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---

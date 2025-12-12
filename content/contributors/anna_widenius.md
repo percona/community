@@ -4,16 +4,28 @@ name_pronunciation: anna_widenius
 fullname: Anna Widenius
 fullname_pronounciation: Anna Widenius
 job: MariaDB Foundation, Chief of Staff
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/anna_widenius.jpg
+- contributors/anna_widenius.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+events_tags:
+- Community Track
+- MariaDB
+- Percona Live 2021
+blog_tags: []
+posts_count: 0
+talks_count: 2
+podcasts_count: 0
+type:
+- talks
 ---
-
 Anna Widenius is a Chief of Sta in the MariaDB Foundation.

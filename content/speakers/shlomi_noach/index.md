@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/shlomi_noach.jpg
+  - contributors/shlomi_noach.jpg
 ---
 
 Engineer and database geek, works at PlanetScale as a maintainer for open source Vitess. Previously at GitHub.

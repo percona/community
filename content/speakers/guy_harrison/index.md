@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/guy_harrison.jpg
+  - contributors/guy_harrison.jpg
 ---
 
 

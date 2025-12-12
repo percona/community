@@ -4,14 +4,25 @@ name_pronunciation: narciso_oliveira_junior
 fullname: Narciso Oliveira Júnior
 fullname_pronounciation: Narciso Oliveira Júnior
 job: LATAM Cloud Evangelist, Oracle
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/narcisooliveira/
+  twitter: null
+  website: null
 images:
-  - speakers/narciso_oliveira_junior.jpg
+- contributors/narciso_oliveira_junior.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

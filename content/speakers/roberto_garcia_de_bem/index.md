@@ -14,5 +14,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/roberto-de-bem/
 images:
-  - speakers/roberto_garcia_de_bem.jpg
+  - contributors/roberto_garcia_de_bem.jpg
 ---

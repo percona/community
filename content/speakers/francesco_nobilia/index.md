@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/francesco_nobilia.jpg
+  - contributors/francesco_nobilia.jpg
 ---
 
 Francesco is an enthusiastic engineer focused on building the next generation of a self-service and cost-effective streaming data platform. Event-Drive addicted. Apache Kafka fun. Kafka Summit and Meetup speaker. Currently, he is Principal Engineer at Nutmeg.

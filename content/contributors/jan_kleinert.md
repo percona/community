@@ -5,16 +5,28 @@ name_pronunciation: jan_kleinert
 fullname: Jan Kleinert
 fullname_pronounciation: Jan Kleinert
 job: Google, Developer Advocate
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/jan_kleinert.jpg
+- contributors/jan_kleinert.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Google
+- Kubernetes
+- Percona Live 2021
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Jan Kleinert leads a team of Developer Advocates as part of Google Cloud, focusing on Compute and Databases. Prior to joining Google, she worked in a variety of roles ranging from developer relations to web analytics and conversion optimization.

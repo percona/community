@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/charlybatista/
 images:
-  - speakers/charly_batista.jpg
+  - contributors/charly_batista.jpg
 ---
 
 Charly Batista is currently PostgreSQL Tech Lead at Percona. 

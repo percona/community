@@ -4,16 +4,30 @@ name_pronunciation: sai_kondapalli
 fullname: Sai Kondapalli
 fullname_pronounciation: Sai Kondapalli
 job: AWS, Database Specialist SA
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/sai_kondapalli.jpg
+- contributors/sai_kondapalli.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Kubernetes
+- Percona Live 2021
+- PerconaLive2023
+- Podcast
+- Presto
+blog_tags: []
+posts_count: 0
+talks_count: 2
+podcasts_count: 0
+type:
+- talks
 ---
-
 Sai Kondapalli is a Database Specialist Solutions Architect at Amazon Web Services specializing on MySQL services and assists customers to migrate and optimize their workloads on RDS MySQL, MariaDB and Aurora MySQL.

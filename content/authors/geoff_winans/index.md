@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/geoff_winans.png
+  - contributors/geoff_winans.png
 ---
 
 I have held the role of MySQL DBA for the last eight years. Prior to 2012, I was a Linux admin who worked with RHEL and CentOS. Today, I work for CVS as part of their Open Source team, specifically the lead engineer for MySQL/MariaDB.

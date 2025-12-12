@@ -3,15 +3,26 @@ name: carlos_salguero
 name_pronunciation: carlos_salguero
 fullname: Carlos Salguero
 fullname_pronounciation: Carlos Salguero
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - blog/authors/carlos_salguero.jpg
+- contributors/carlos_salguero.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags:
+- exporter
+- node_exporter
+- pmm
+posts_count: 1
+talks_count: 0
+podcasts_count: 0
+type:
+- blog
 ---
-
 Software Engineer, PMM, Percona Toolkit

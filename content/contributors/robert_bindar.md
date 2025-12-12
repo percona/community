@@ -4,16 +4,28 @@ name_pronunciation: robert_bindar
 fullname: Robert Bindar
 fullname_pronounciation: Robert Bindar
 job: MariaDB Foundation, Server Developer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/robert_bindar.jpg
+- contributors/robert_bindar.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+events_tags:
+- Community Track
+- MariaDB
+- Percona Live 2021
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Robert started working for the MariaDB Foundation in 2018 as a server developer. His main focus is divided between server development and helping the community contribute faster and more efficiently to the MariaDB codebase. Robert is based mostly in Brasov, Romania.

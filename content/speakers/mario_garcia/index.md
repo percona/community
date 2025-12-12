@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/mario_garcia.png
+  - contributors/mario_garcia.png
 ---

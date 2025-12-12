@@ -4,16 +4,24 @@ name_pronunciation: alexander_korotkov
 fullname: Alexander Korotkov
 fullname_pronounciation: Alexander Korotkov
 job: Founder & CEO at OrioleDB
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/alexander_korotkov.jpg
+- contributors/alexander_korotkov.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 Alexander Korotkov is a PostgreSQL Major Contributor & Committer, and Ph.D. in computer science. He contributed many fields of PostgreSQL including indexing, statistics, concurrency, extensibility, and more. In 2015 Alexander co-founded and became the technical chief and development officer at Postgres Professional in Moscow. He is the inventor behind OrioleDB who seeks to deliver the solutions to PostgreSQL wicked problems.

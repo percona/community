@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/chunxu_tang.jpg
+  - contributors/chunxu_tang.jpg
 ---
 
 Chunxu is a software engineer in Twitter's Interactive Query team where he works on developing and maintaining Presto and Druid services. He received his doctoral degree from Syracuse University, where he did research on machine learning and distributed collaboration systems.

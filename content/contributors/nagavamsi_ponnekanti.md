@@ -4,17 +4,25 @@ name_pronunciation: nagavamsi_ponnekanti
 fullname: Nagavamsi Ponnekanti
 fullname_pronounciation: Nagavamsi Ponnekanti
 job: Software Engineer at Quora
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/nagavamsi-ponnekanti-2110701/
+  twitter: null
+  website: null
 images:
-  - speakers/nagavamsi_ponnekanti.jpeg
+- contributors/nagavamsi_ponnekanti.jpeg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 Nagavamsi Ponnekanti is Software Engineer at Quora.
 Vamsi has more than 20 years experience with databases

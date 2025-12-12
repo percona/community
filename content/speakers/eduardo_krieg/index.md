@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/eduardo_krieg.png
+  - contributors/eduardo_krieg.png
 ---

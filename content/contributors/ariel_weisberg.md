@@ -4,18 +4,29 @@ name_pronunciation: ariel_weisberg
 fullname: Ariel Weisberg
 fullname_pronounciation: Ariel Weisberg
 job: Facebook, Software Engineer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/ariel_weisberg.jpg
+- contributors/ariel_weisberg.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Percona Live 2021
+- Presto
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Currently working on Presto @ Facebook.
 
 Previous was Apache Cassandra committer and PMC member

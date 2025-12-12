@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/ivan_groenwold.jpg
+  - contributors/ivan_groenwold.jpg
 ---
 
 More than 15 years providing support to mission critical environments for first line companies.

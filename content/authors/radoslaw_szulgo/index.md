@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/radoslaw-szulgo/
 images:
-  - blog/authors/radoslaw_szulgo.jpeg
+  - contributors/radoslaw_szulgo.jpeg
 ---
 
 Senior Product Manager at Percona

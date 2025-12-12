@@ -4,17 +4,24 @@ name_pronunciation: bart_farrell
 fullname: Bart Farrell
 fullname_pronounciation: Bart Farrell
 job: Data on Kubernetes community (Dok)
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
+  facebook: null
+  github: null
+  linkedin: null
   twitter: https://twitter.com/birthmarkbart
-  github: 
-  linkedin: 
+  website: null
 images:
-  - speakers/bart_farrell.jpg
+- contributors/bart_farrell.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
-
-CNCF Ambassador. Data on Kubernetes (@Dokcommunity) Community Leader, amateur rapper, tech from the human side. My bananas are my own. 
+CNCF Ambassador. Data on Kubernetes (@Dokcommunity) Community Leader, amateur rapper, tech from the human side. My bananas are my own.

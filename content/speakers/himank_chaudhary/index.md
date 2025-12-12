@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/himank_chaudhary.jpg
+  - contributors/himank_chaudhary.jpg
 ---
 
 Himank is the Tech Lead of Docstore at Uber. His primary focus area is building distributed databases that scale along with Uber's hyper-growth. Prior to Uber, he worked at Yahoo in the mail backend team to build a metadata store. Himank holds a master's degree in Computer Science from the State University of New York with a specialization in distributed systems.

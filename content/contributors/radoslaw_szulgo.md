@@ -3,15 +3,28 @@ name: radoslaw_szulgo
 name_pronunciation: radoslaw_szulgo
 fullname: Radoslaw Szulgo
 fullname_pronounciation: Radoslaw Szulgo
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/radoslaw-szulgo/
+  twitter: null
+  website: null
 images:
-  - blog/authors/radoslaw_szulgo.jpeg
+- contributors/radoslaw_szulgo.jpeg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags:
+- GSoC
+- MongoDB
+- Opensource
+- PMM
+- Percona
+posts_count: 1
+talks_count: 0
+podcasts_count: 0
+type:
+- blog
 ---
-
 Senior Product Manager at Percona

@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/david_zhao.jpg
+  - contributors/david_zhao.jpg
 ---
 
 Zhao Wei (David Zhao) has been working on database kernels throughout his career. He worked on Oracle Berkeley DB and MySQL in the two outstanding global teams in Oracle during 2007 and 2015, and he worked in Tencent to upgrade its TDSQL from a table sharding solution to a full-fledged distributed DBMS.

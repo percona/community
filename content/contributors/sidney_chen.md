@@ -4,14 +4,30 @@ name_pronunciation: sidney_chen
 fullname: Sidney Chen
 fullname_pronounciation: Sidney Chen
 job: Performance Engineer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/sidney-chen-92b6536/
+  twitter: null
+  website: null
 images:
-  - speakers/sidney_chen.jpg
+- contributors/sidney_chen.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Percona Community Live
+- PingCAP'
+- Stream
+- TiDB
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---

@@ -4,16 +4,55 @@ name_pronunciation: sergey_pronin
 fullname: Sergey Pronin
 fullname_pronounciation: Sergey Pronin
 job: Product Owner, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/sergeypronin/
+  twitter: null
+  website: null
 images:
-  - speakers/sergey_pronin.jpg
+- contributors/sergey_pronin.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- Cloud
+- Community
+- MongoDB
+events_tags:
+- Database
+- Event
+- Kubernetes
+- Meetup
+- Mongo
+- PBM
+- Percona
+- Percona Community Live
+- dashboard
+- event
+- k8s
+- opensource
+blog_tags:
+- Docker
+- HELM
+- Kubernetes
+- MongoDB
+- Opensource
+- PMM
+- Percona
+- dok
+- edith_puclla
+- kubernetes
+- operators
+- release
+- sergey_pronin
+- storage
+posts_count: 4
+talks_count: 7
+podcasts_count: 3
+type:
+- blog
+- podcasts
+- talks
 ---
-
 Sergey is a passionate technology "driver". After graduation worked in various fields: internet service provider, financial sector and M&A business. Main focal points were infrastructure and products around it. At Percona as a Product Owner drives forward Kubernetes and Cloud databases solutions.

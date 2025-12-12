@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/daniel_black.png
+  - contributors/daniel_black.png
 ---
 
 After a reasonable amount of time doing development and IT security work, Daniel landed a DBA Consultant job and loved it.

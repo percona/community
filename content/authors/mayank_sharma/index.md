@@ -11,5 +11,5 @@ social:
   github: 
   linkedin: 
 images: 
-  - blog/authors/mayank_sharma.jpeg
+  - contributors/mayank_sharma.jpeg
 ---

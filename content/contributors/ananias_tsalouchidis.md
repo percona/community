@@ -5,15 +5,23 @@ name_pronunciation: Ananias Tsalouchidis
 fullname: Ananias Tsalouchidis
 fullname_pronounciation: Ananias Tsalouchidis
 job: Principal DBA, Percona
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin:
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/ananias_tsalouchidis.jpg
+- contributors/ananias_tsalouchidis.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 0
+type: []
 ---
 Ananias Tsalouchidis is a Principal MySQL DBA who joined Percona on May 2017.
 He holds a BSc and a MSc in computer science and has a 10+ years working experience as a systems and databases administrator.

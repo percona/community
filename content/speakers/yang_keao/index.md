@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/keao-yang-06a59317a/
 images:
-  - speakers/yang_keao.png
+  - contributors/yang_keao.png
 ---
 
 Yang Keao is a developer at PingCAP and a maintainer of Chaos Mesh, a

@@ -4,16 +4,28 @@ name_pronunciation: hemant_bhanawat
 fullname: Hemant Bhanawat
 fullname_pronounciation: Hemant Bhanawat
 job: Yugabyte, Engineering
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/hemant_bhanawat.jpg
+- contributors/hemant_bhanawat.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Kubernetes
+- Percona Live 2021
+- Presto
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Founded Falarica Analytics which was acquired by YugabyteDB. Founding engineer with SnappyData which was acquired by TIBCO. More than 18 years of experience in building and delivering products like distributed databases, distributed query processing engines and distributed KV stores.

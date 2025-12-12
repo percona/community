@@ -1,21 +1,31 @@
 ---
 name: vaibhav_upadhyay
 name_pronunciation: vaibhav_upadhyay
-fullname: Vaibhav Upadhyay 
-fullname_pronounciation: Vaibhav Upadhyay 
+fullname: Vaibhav Upadhyay
+fullname_pronounciation: Vaibhav Upadhyay
 job: Lead Database Administrator, ROKA
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook: 
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/vaibhav_upadhyay.jpg
+- contributors/vaibhav_upadhyay.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MySQL
+events_tags:
+- Meetup
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Vaibhav Upadhyay is a Lead Database Administrator at ROKA
 I am working with Techmojo solutions as a lead for production Support & DBA
 Like to play sports particularly Snooker and Cricket

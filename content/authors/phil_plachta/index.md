@@ -11,7 +11,7 @@ social:
   github: https://www.github.com/phildoesdev/
   linkedin: https://www.linkedin.com/in/philip-plachta-a2496aba/
 images:
-  - blog/authors/person-using-laptop.jpg
+  - contributors/person-using-laptop.jpg
 ---
 
 Phil is a full stack web developer with experience in a variety of languages and technologies. He is currently the lead developer for an IoT company involved with the remote monitoring of generators and other devices.

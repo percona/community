@@ -4,16 +4,29 @@ name_pronunciation: leonardo_bacchi_fernandes
 fullname: Leonardo Bacchi Fernandes
 fullname_pronounciation: Leonardo Bacchi Fernandes
 job: Support Engineer, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/leonardo_bacchi_fernandes.png
+- contributors/leonardo_bacchi_fernandes.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- Percona Community Live
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---
-
 Leonardo joined Percona as a Support Engineer in 2019 where he works mainly with MySQL and MongoDB. Leonardo has a Bachelor's degree in Computer Science and has been working with databases for the last 8 years.

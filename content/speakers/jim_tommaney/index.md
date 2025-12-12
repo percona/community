@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/jim_tommaney.jpg
+  - contributors/jim_tommaney.jpg
 ---
 
 Currently performance tuning at Databricks. Previously architect of InniDB (now available as MariaDB Columnstore)

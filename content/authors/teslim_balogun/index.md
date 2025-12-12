@@ -11,7 +11,7 @@ social:
   github: https://github.com/slim-codes
   linkedin: https://linkedin/in/slimcodes
 images:
-  - blog/authors/teslim_balogun.jpg
+  - contributors/teslim_balogun.jpg
 ---
 
 Teslim Balogun is a frontend developer, technical writer, and a big fan of Open Source.

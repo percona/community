@@ -4,14 +4,25 @@ name_pronunciation: guillermo_ortega
 fullname: Guillermo Ortega
 fullname_pronounciation: Guillermo Ortega
 job: Technical Lead, MedTrainer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/guillermo_ortega.png
+- contributors/guillermo_ortega.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

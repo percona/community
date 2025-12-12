@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/giuseppe_maxia.jpg
+  - contributors/giuseppe_maxia.jpg
 ---
 
 Formerly at MySQL AB, and then through acquisitions at Sun Microsystems and Oracle, and currently at VMware through a merge.

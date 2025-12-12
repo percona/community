@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/ariel_weisberg.jpg
+  - contributors/ariel_weisberg.jpg
 ---
 
 Currently working on Presto @ Facebook.

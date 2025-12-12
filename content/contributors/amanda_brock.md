@@ -4,19 +4,26 @@ name_pronunciation: amanda_brock
 fullname: Amanda Brock
 fullname_pronounciation: Amanda Brock
 job: CEO, OpenUK
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: https://openuk.uk/
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/amandabrocktech
+  twitter: null
+  website: https://openuk.uk/
 images:
-  - speakers/amanda_brock.jpg
+- contributors/amanda_brock.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
-
 Amanda is CEO of OpenUK, (@amandabrockUK @openuk_UK), representing the business of Open Technology in the UK. That's open source software, open hardware and open data”;  OpenUK; European Representative of the world’s biggest defensive patent pool, the Open Invention Network;  OASIS Open Projects' Advisory Council Member (open source and open standards); Advisory Board Member KDE;  Charity Trustee Creative Crieff; and a member of various commercial and start up Advisory Boards including Mimoto as well as mentoring C Suite individuals.
 
 Amanda has previously been the Chair of the Open Source and Intellectual Property (IP) Advisory Group of the United Nations Technology Innovation Labs; CEO of the Trustable Software Engineering Project, focused on solutions to risk in Open Source Software; a member of the UK's Cabinet Office Advisory on Open Source; General Counsel of Canonical, one of the world’s biggest open source companies and the commercial sponsor of Ubuntu, setting up the global legal team and running this for 5 years. As a senior lawyer she worked across a range of sectors including hardware, mobile, ISP, data centre and digital financial services in Emerging Markets. She has worked internationally since 2000 across EMEA, US, AsiaPac and Emerging Markets, based out of both the UK and Amsterdam.

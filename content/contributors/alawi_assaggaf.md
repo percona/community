@@ -4,17 +4,31 @@ name: alawi_assaggaf
 name_pronunciation: Alawi Assaggaf
 fullname: Alawi Assaggaf
 fullname_pronounciation: Alawi Assaggaf
-job: 
-country: 
-tagline: 
+job: null
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/alawiassaggaf/
+  twitter: null
+  website: null
 images:
-  - speakers/alawi_assaggaf.png
+- contributors/alawi_assaggaf.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Percona Community Live
+- ProxySQL
+- Stream
+- dashboard
+- event
+- opensource
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---
-
 MySQL DBA with 10 years experience in the industry.

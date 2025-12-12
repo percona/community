@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/ravikumar-buragapu-a966292/
 images:
-  - speakers/ravikumar_buragapu.png
+  - contributors/ravikumar_buragapu.png
 ---

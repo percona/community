@@ -5,16 +5,24 @@ name_pronunciation: joshua_drake
 fullname: Joshua Drake
 fullname_pronounciation: Joshua Drake
 job: President of Command Prompt Inc
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: https://twitter.com/linuxhiker
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/postgres/
+  twitter: https://twitter.com/linuxhiker
+  website: null
 images:
-  - speakers/joshua_drake.jpg
+- contributors/joshua_drake.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 President of Command Prompt, Inc., the oldest Postgres Company. We specialize in Full Stack Postgres Support and consulting including Oracle to Postgres Migrations. I am also Co-Chair of Postgres Conference (PostgresConf), the largest non-profit Postgres Community and Ecosystem conference. Connect with us to find out how we can help your business either with Oracle Migrations, 24x7 Postgres Support, Professional Services or build a relationship around your company success with PostgresConf.

@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/farokhshahabi/
 images:
-  - speakers/farokh_shahabi.png
+  - contributors/farokh_shahabi.png
 ---
 
 Co-founder & CEO of Formaloo

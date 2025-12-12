@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/vicentiu_ciorbaru.jpg
+  - contributors/vicentiu_ciorbaru.jpg
 ---
 
 Vicentiu works at the MariaDB Foundation as a Software Engineer and Team Lead. He focuses on optimizer development, but has also worked on other parts of the MariaDB Server. Vicențiu has been part of the MariaDB ecosystem since 2013, where he first contributed Roles to MariaDB.

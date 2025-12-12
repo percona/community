@@ -4,18 +4,29 @@ name_pronunciation: himank_chaudhary
 fullname: Himank Chaudhary
 fullname_pronounciation: Himank Chaudhary
 job: Staff Software Engineer, Uber Technologies
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/himank_chaudhary.jpg
+- contributors/himank_chaudhary.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- PerconaLive2023
+- Podcast
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 1
+type:
+- podcasts
+- talks
 ---
-
 Himank is the Tech Lead of Docstore at Uber. His primary focus area is building distributed databases that scale along with Uber's hyper-growth. Prior to Uber, he worked at Yahoo in the mail backend team to build a metadata store. Himank holds a master's degree in Computer Science from the State University of New York with a specialization in distributed systems.
 Himank has proven ability to learn challenging concepts quickly and he has developed competencies in diverse areas. He easily adapt to change and welcome the opportunity of a new environment.
 

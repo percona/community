@@ -4,14 +4,26 @@ name_pronunciation: ignacio_nin
 fullname: Ignacio Nin
 fullname_pronounciation: Ignacio Nin
 job: Staff SRE, Remind
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/ignacio-nin/
+  twitter: null
+  website: null
 images:
-  - speakers/ignacio_nin.jpg
+- contributors/ignacio_nin.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

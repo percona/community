@@ -4,14 +4,29 @@ name_pronunciation: naveed_shaikh
 fullname: Naveed Shaikh
 fullname_pronounciation: Naveed Shaikh
 job: PostgreSQL DBA, Percona
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/naveed-shaikh-062797111/
+  twitter: null
+  website: null
 images:
-  - speakers/naveed_shaikh.png
+- contributors/naveed_shaikh.png
+# Auto-generated fields below. Do not edit manually.
+tags:
+- PostgreSQL
+events_tags:
+- Percona Community Live
+- dashboard
+- event
+- opensource
+- stream
+blog_tags: []
+posts_count: 0
+talks_count: 3
+podcasts_count: 0
+type:
+- talks
 ---

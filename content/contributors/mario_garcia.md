@@ -5,13 +5,44 @@ fullname: Mario García
 fullname_pronounciation: Mario García
 tagline: Technical Evangelist, Percona
 social:
-  website:
-  facebook:
-  twitter: https://twitter.com/mariogmd
+  facebook: null
   github: https://github.com/mattdark
   linkedin: https://www.linkedin.com/in/mariogmd/
+  twitter: https://twitter.com/mariogmd
+  website: null
 images:
-  - blog/authors/mario_garcia.jpg
+- contributors/mario_garcia.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- MongoDB
+- MySQL
+- PMM
+- PostgreSQL
+events_tags:
+- Event
+- Postgres
+- Stream
+- opensource
+- securing
+blog_tags:
+- AWS
+- Amazon EKS
+- Backup
+- Conference
+- Dev
+- Kubernetes
+- Linux
+- MongoDB
+- Monitoring
+- MySQL
+- PMM
+- PostgreSQL
+- Python
+posts_count: 7
+talks_count: 9
+podcasts_count: 0
+type:
+- blog
+- talks
 ---
-
 Mario has been an active Open Source contributor for more than 15 years. Technical Evangelist @ Percona. Python developer with experience automating stuff and web development. Speaker at tech and innovation events since 2008. DevOps enthusiast. Member of GitLab Heroes, GitKraken Ambassadors and HashiCorp Ambassadors.

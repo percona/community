@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/vinicius_grippa.jpg
+  - contributors/vinicius_grippa.jpg
 ---
 
 Vinicius Grippa is a Senior Support Engineer at Percona.

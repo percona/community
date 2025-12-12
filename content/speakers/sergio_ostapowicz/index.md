@@ -14,5 +14,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/sergioostapowicz/
 images:
-  - speakers/sergio_ostapowicz.jpg
+  - contributors/sergio_ostapowicz.jpg
 ---

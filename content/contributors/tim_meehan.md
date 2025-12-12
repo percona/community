@@ -4,16 +4,27 @@ name_pronunciation: tim_meehan
 fullname: Tim Meehan
 fullname_pronounciation: Tim Meehan
 job: Facebook, Software Engineer
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/tim_meehan.jpg
+- contributors/tim_meehan.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Percona Live 2021
+- Presto
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
 Tim is a Software Engineer at Facebook working on Presto and is also a Presto Foundation Technical Steering Committee member and Committer. His interests are in Presto reliability and scalability.

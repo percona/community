@@ -4,18 +4,26 @@ name_pronunciation: anurag_gupta
 fullname: Anurag Gupta
 fullname_pronounciation: Anurag Gupta
 job: Calyptia, Product Manager
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website:
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/anurag_gupta.jpg
+- contributors/anurag_gupta.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Community Track
+- Kubernetes
+- Percona Live 2021
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-
-
-
-

@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/seybold-benchant/
 images:
-  - speakers/daniel_seybold.png
+  - contributors/daniel_seybold.png
 ---

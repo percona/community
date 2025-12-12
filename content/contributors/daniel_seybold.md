@@ -4,14 +4,29 @@ name_pronunciation: daniel_seybold
 fullname: Daniel Seybold
 fullname_pronounciation: Daniel Seybold
 job: Co-Founder & Product Development, benchANT
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/seybold-benchant/
+  twitter: null
+  website: null
 images:
-  - speakers/daniel_seybold.png
+- contributors/daniel_seybold.png
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Percona Community Live
+- dashboard
+- event
+- opensource
+- performance
+- ranking
+blog_tags: []
+posts_count: 0
+talks_count: 2
+podcasts_count: 0
+type:
+- talks
 ---

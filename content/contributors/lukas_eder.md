@@ -4,16 +4,24 @@ name_pronunciation: lukas_eder
 fullname: Lukas Eder
 fullname_pronounciation: Lukas Eder
 job: CEO and founder, Data Geekery GmbH
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
+  facebook: null
+  github: null
+  linkedin: null
   twitter: https://twitter.com/lukaseder
-  github: 
-  linkedin: 
+  website: null
 images:
-  - speakers/lukas_eder.jpg
+- contributors/lukas_eder.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 Lukas Eder is the CEO and founder of Data Geekery GmbH, the company behind JooQ an open source Java framework that gives you an API that allows you to write SQL statements through natural Java api calls.

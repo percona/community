@@ -5,16 +5,24 @@ name_pronunciation: jono_bacon
 fullname: Jono Bacon
 fullname_pronounciation: Jono Bacon
 job: Community & Collaboration Consultant and Author
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/jono_bacon.jpg
+- contributors/jono_bacon.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags: []
+blog_tags: []
+posts_count: 0
+talks_count: 0
+podcasts_count: 1
+type:
+- podcasts
 ---
-
 Jono is the author of 'People Powered: How communities can supercharge your business, brand, and teams', and 'The Art of Community'.  Jono has also written on community for Forbes, Harvard Business Review, Fortune, and elsewhere. Listen into this dive into building and managing communities.

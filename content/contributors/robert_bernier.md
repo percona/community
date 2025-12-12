@@ -3,16 +3,27 @@ name: robert_bernier
 name_pronunciation: robert_bernier
 fullname: Robert Bernier
 fullname_pronounciation: Robert Bernier
-job: 
+job: null
 country: USA
-tagline: 
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
-  linkedin: 
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
 images:
-  - speakers/robert_bernier.jpg
+- contributors/robert_bernier.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- event
+- opensource
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---
-

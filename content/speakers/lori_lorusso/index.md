@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/lorilorusso/
 images:
-  - speakers/lori_lorusso.jpeg
+  - contributors/lori_lorusso.jpeg
 ---
 
 Open Source Advocate | Community Organizer | Program Manager | Speaker

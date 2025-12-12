@@ -5,14 +5,26 @@ name_pronunciation: Achilleas Mantzios
 fullname: Achilleas Mantzios
 fullname_pronounciation: Achilleas Mantzios
 job: DBA, System/SW Engineer, Team leader, Analyst
-country: 
-tagline: 
+country: null
+tagline: null
 social:
-  website: 
-  facebook:
-  twitter:
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/mantzios/
+  twitter: null
+  website: null
 images:
-  - speakers/achilleas_mantzios.jpg
+- contributors/achilleas_mantzios.jpg
+# Auto-generated fields below. Do not edit manually.
+tags: []
+events_tags:
+- Event
+- opensource
+- sponsorship
+blog_tags: []
+posts_count: 0
+talks_count: 1
+podcasts_count: 0
+type:
+- talks
 ---

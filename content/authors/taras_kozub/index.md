@@ -11,7 +11,7 @@ social:
   github:
   linkedin: 
 images:
-  - blog/authors/taras_kozub.png
+  - contributors/taras_kozub.png
 ---
 
 Agile Facilitator, PMM

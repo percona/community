@@ -5,15 +5,41 @@ fullname: Jan Wieremjewicz
 fullname_pronounciation: Jan Wieremjewicz
 tagline: Senior Product Manager, Percona
 social:
-  website: 
-  facebook:
-  twitter: 
-  github: 
+  facebook: null
+  github: null
   linkedin: https://www.linkedin.com/in/janwie/
+  twitter: null
+  website: null
 images:
-  - blog/authors/jan_wieremjewicz.jpg
+- contributors/jan_wieremjewicz.jpg
+# Auto-generated fields below. Do not edit manually.
+tags:
+- PostgreSQL
+events_tags:
+- PerconaLive2023
+- Podcast
+blog_tags:
+- Event
+- OIDC
+- Opensource
+- PG_TDE
+- Percona
+- PostgreSQL
+- Postgres
+- SQL
+- Security
+- monitoring
+- opensource
+- pg_jan
+- pg_stat_monitor
+- sponsorship
+posts_count: 11
+talks_count: 1
+podcasts_count: 0
+type:
+- blog
+- talks
 ---
-
 Jan is a Senior Product Manager at Percona, leading the products for PostgreSQL. He has vast experience in the development, deployment and maintenance of enterprise systems. 
 
 Professionally, he is passionate about simple solutions that solve complicated problems and user experience that maximizes the product potential. 
