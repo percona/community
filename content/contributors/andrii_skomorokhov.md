@@ -22,8 +22,7 @@ blog_tags:
 - Prometheus
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Software Engineer, PMM

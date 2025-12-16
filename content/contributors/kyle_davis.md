@@ -24,10 +24,8 @@ events_tags:
 - Percona Live 2021
 blog_tags: []
 posts_count: 0
-talks_count: 5
-podcasts_count: 1
+talks_count: 6
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Kyle Davis is the Senior Developer Advocate with Open Distro for Elasticsearch at AWS. While being a relative newcomer to AWS, Kyle has a long history with software development and databases. When not working, Kyle enjoys 3D printing, and getting his hand dirty in his Edmonton, Alberta-based home garden.

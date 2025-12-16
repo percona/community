@@ -24,8 +24,7 @@ blog_tags:
 - identity protection
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Principal Data Engineer at UnitedHealth Group, for Oracle and MySQL. When he is not working or coding, Fran likes to backpack visiting new places and experiencing different cultures.

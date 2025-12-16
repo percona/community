@@ -22,8 +22,7 @@ blog_tags:
 - Upgrades
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Isobel is a MySQL DBA at New Work SE, using async replication, Galera, and ProxySQL.

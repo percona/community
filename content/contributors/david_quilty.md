@@ -32,9 +32,8 @@ blog_tags:
 - opensource
 posts_count: 7
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Self-motivated, detail-oriented marketing professional with more than 17 years of remote work experience. Skilled in copyediting, content marketing, social media, SEO, strategy, and project management. Strong interpersonal skills and extensive client-facing experience. Excellent organizational and time-management skills, with expertise in efficiently handling multiple projects simultaneously. Proven team collaboration and community-building experience.
 

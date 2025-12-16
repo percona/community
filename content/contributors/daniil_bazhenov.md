@@ -57,10 +57,9 @@ blog_tags:
 - online meetups
 - percona speakers
 posts_count: 16
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- blog
-- podcasts
+- author
+- speaker
 ---
 I am proud to work for the Percona Community Team.

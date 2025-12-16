@@ -23,9 +23,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Dmitry Polyakovsky is a Consulting Member of Technical Staff at Oracle Cloud and has been working with Redis for over a decade. Throughout his career, he has explored Redis in various applications, contributed open-source libraries, written insightful blog articles, and shared his expertise through conference talks and podcast interviews.
 

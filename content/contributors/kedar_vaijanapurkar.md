@@ -24,10 +24,8 @@ events_tags:
 - opensource
 blog_tags: []
 posts_count: 0
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Kedar is an experienced Database Consultant with a demonstrated history of working in the information technology and services industry. He's been working with MySQL ecosystem and interested in expanding his knowledge in Cloud Databases. He lives in Vadodara, India with kids, Aarya & Rudra and a better half, Madhumita.

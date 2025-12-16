@@ -23,8 +23,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Computer engineer from Montevideo, Uruguay, joined Percona on February 2018, first as a support engineer, then moving to the consulting team. Working in complex IT solutions for more than 10 years, Carlos now specializes in MySQL and related technologies.

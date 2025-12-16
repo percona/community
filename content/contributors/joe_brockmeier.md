@@ -22,8 +22,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Joe Brockmeier is Head of Community for Percona. He has been involved in open source and technology for more than 20 years. His background includes leadership and community facing roles at Intel, Red Hat, Citrix and SUSE. He is a member of the Apache Software Foundation and has been a contributor to numerous open source projects including Fedora, Apache CloudStack, Project Atomic and CentOS.

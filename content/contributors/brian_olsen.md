@@ -24,8 +24,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Brian is a U.S. Marine turned software engineer and developer advocate working to foster the open-source Trino community. Brian spent four years as a data engineer at a cybersecurity company working on pipeline maintenance and query optimization. While in this role, Brian was responsible for maintaining data pipelines and migrations to include replacing some legacy data warehousing systems to use open-source Trino. Brian is a published author in ACM and IEEE geospatial database conferences.

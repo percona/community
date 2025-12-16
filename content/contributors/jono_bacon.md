@@ -20,9 +20,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Jono is the author of 'People Powered: How communities can supercharge your business, brand, and teams', and 'The Art of Community'.  Jono has also written on community for Forbes, Harvard Business Review, Fortune, and elsewhere. Listen into this dive into building and managing communities.

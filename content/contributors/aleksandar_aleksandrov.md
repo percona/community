@@ -23,8 +23,7 @@ blog_tags:
 - big data
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Aleksandar is a Data Engineer at MessageBird, an IT Telecom Startup based in Amsterdam. His mission is to bring accessible data to every nook and cranny in the business. In the data team in MessageBird he is working on designing, building and maintaining the data infrastructure with a focus on scaling it as the business grows.

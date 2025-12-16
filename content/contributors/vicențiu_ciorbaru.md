@@ -22,8 +22,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 4
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Vicențiu works at the [MariaDB Foundation](https://mariadb.org/) as a Software Engineer. He focuses on Optimizer development, but has also worked on other parts of the MariaDB Server. Notable projects include: Window Functions in MariaDB, Custom Aggregate Functions in MariaDB, Roles in MariaDB

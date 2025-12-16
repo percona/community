@@ -26,9 +26,7 @@ events_tags:
 - stream
 blog_tags: []
 posts_count: 0
-talks_count: 4
-podcasts_count: 1
+talks_count: 5
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---

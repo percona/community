@@ -22,8 +22,7 @@ blog_tags:
 - percona
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Teslim Balogun is a frontend developer, technical writer, and a big fan of Open Source.

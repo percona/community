@@ -21,8 +21,7 @@ blog_tags:
 - GeeksGoPeaks
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Founder of Triangle Repairs LLC & Turtle Seat

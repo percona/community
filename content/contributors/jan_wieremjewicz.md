@@ -35,10 +35,9 @@ blog_tags:
 - sponsorship
 posts_count: 11
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Jan is a Senior Product Manager at Percona, leading the products for PostgreSQL. He has vast experience in the development, deployment and maintenance of enterprise systems. 
 

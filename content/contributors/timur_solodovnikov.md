@@ -25,8 +25,7 @@ blog_tags:
 - Tools
 posts_count: 2
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 For the last 10 years, Timur has worked in various telco companies. He has hands-on experience in databases, system and network engineering. Currently Timur works as a Senior DBA for Five9, Inc., the leading provider of cloud contact center software. He lives in California, US with wife and daughter.

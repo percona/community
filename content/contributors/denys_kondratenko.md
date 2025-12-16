@@ -53,10 +53,9 @@ blog_tags:
 - podman
 posts_count: 7
 talks_count: 4
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 I am Engineering Manager in Percona working on Percona Monitoring and Management solution.
  

@@ -25,9 +25,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 2
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Andrew Pogrebnoi is Principal Software Engineer at Percona.
 He says: “I like to make fast, reliable and valuable things. Try to keep it working, consistent and available. Enjoyed with compilers, databases, distributed systems, and performance.”

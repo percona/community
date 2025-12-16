@@ -48,11 +48,9 @@ blog_tags:
 - sergey_pronin
 - storage
 posts_count: 4
-talks_count: 7
-podcasts_count: 3
+talks_count: 10
 contributor_type:
-- blog
-- podcasts
-- talks
+- author
+- speaker
 ---
 Sergey is a passionate technology "driver". After graduation worked in various fields: internet service provider, financial sector and M&A business. Main focal points were infrastructure and products around it. At Percona as a Product Owner drives forward Kubernetes and Cloud databases solutions.

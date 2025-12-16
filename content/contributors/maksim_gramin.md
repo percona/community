@@ -28,10 +28,9 @@ blog_tags:
 - SQL
 posts_count: 3
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Maksim Gramin is a software consultant, researcher and developer passionate about Databases and SQL
 

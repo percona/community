@@ -21,8 +21,7 @@ blog_tags:
 - lorraine.pocklington
 posts_count: 2
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Community Manager for Percona

@@ -26,8 +26,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 2
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Sai Kondapalli is a Database Specialist Solutions Architect at Amazon Web Services specializing on MySQL services and assists customers to migrate and optimize their workloads on RDS MySQL, MariaDB and Aurora MySQL.

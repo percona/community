@@ -25,9 +25,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Ian first came across MySQL in the 90s, upgrading from mSQL while developing South Africas' first online grocery store, and teaching and developing internet programming courses. He was lead developer for South Africa’s largest media company from 2000, and wrote the book Mastering MySQL 4 in 2002. He wrote regular columns on MySQL and web programming in the 2000s, before founding and developing an online organic food co-operative in 2005.
 

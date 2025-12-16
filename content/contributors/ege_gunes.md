@@ -26,9 +26,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Ege Güneş is Senior Software Engineer at Percona.
 Ege has both developer and DevOps background, managing Kubernetes clusters and databases in the past. He started as a software developer in 2016. He joined the Cloud Engineering Team as a Golang Developer to help with Kubernetes Operators development. He has contributed actively to the development of Percona Server for MongoDB (PSMDB), especially the cross cluster replication.

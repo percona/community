@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Valerii Kravchuk helps MySQL and MariaDB users and DBAs to resolve their problems since 2005. Worked in MySQL AB, Sun, Oracle, Percona and, since 2016, in MariaDB Corporation. MySQL Community Contributor of the year 2019.

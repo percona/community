@@ -43,10 +43,9 @@ blog_tags:
 - tuning
 posts_count: 8
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Aleksandra joined Percona Community Team in 2021 as a Community Specialist. Before joining Percona,
 she worked as a support specialist and as a technical writer in Simtech Development. She is now focusing on communicating with the opensource community, building awareness about Percona products and services, and event organizing.

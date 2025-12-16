@@ -24,8 +24,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Georgi "Joro" Kodinov has been working on MySQL for more than 10 years. He's leading the Server General team that deals with security, performance monitoring and the mysql client server protocol. Before working on databases Joro was serving as an IT manager for a Bulgarian bank.

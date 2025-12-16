@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Jean joined Percona as a Support Engineer in 2020. Before joining the team, he worked in a mission-critical environment for 4 years, helping administrate databases like MySQL, MongoDB, and Oracle DB. Specializing in Database Engineering, and Big Data, he likes to watch Formula 1 in his free time.

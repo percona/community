@@ -22,11 +22,9 @@ events_tags:
 - Podcast
 blog_tags: []
 posts_count: 0
-talks_count: 2
-podcasts_count: 2
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Engineering leader with 15 years of experience in database infrastructure and site reliability engineering. Currently building the core storage platform and leading production engineering for storage at Uber.
 

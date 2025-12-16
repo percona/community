@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Aleks works at Pinterest on automating its MySQL fleet operation. Before, he worked for Box, Dropbox, and Percona. He believes in Infrastructure as a Code principle and CI/CD with a goal to exterminate toil.

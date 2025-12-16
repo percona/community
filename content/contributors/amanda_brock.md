@@ -19,10 +19,9 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Amanda is CEO of OpenUK, (@amandabrockUK @openuk_UK), representing the business of Open Technology in the UK. That's open source software, open hardware and open data”;  OpenUK; European Representative of the world’s biggest defensive patent pool, the Open Invention Network;  OASIS Open Projects' Advisory Council Member (open source and open standards); Advisory Board Member KDE;  Charity Trustee Creative Crieff; and a member of various commercial and start up Advisory Boards including Mimoto as well as mentoring C Suite individuals.
 

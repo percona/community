@@ -25,11 +25,10 @@ blog_tags:
 - PostgreSQL
 - david.zhao
 posts_count: 1
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- blog
-- podcasts
+- author
+- speaker
 ---
 Zhao Wei (David Zhao) has been working on database kernels throughout his career. He worked on Oracle Berkeley DB and MySQL in the two outstanding global teams in Oracle during 2007 and 2015, and he worked in Tencent to upgrade its TDSQL from a table sharding solution to a full-fledged distributed DBMS.
 

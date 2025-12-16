@@ -24,8 +24,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Vijay Karumajj is a Senior Database Specialist Solutions Architect at Amazon Web Services. He has worked as a SQL Server DBA at Blue Cross Blue Shield, Verizon, and Southwest Airlines. He holds a Bachelor’s degree in computer science from Andhra University and a Master’s degree in computer science from the University of Wolverhampton.

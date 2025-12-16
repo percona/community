@@ -22,8 +22,7 @@ blog_tags:
 - Tools
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 I have held the role of MySQL DBA for the last eight years. Prior to 2012, I was a Linux admin who worked with RHEL and CentOS. Today, I work for CVS as part of their Open Source team, specifically the lead engineer for MySQL/MariaDB.

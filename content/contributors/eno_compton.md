@@ -25,8 +25,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Eno is a Developer Relations Engineer at Google working on Cloud SQL. He is one of the maintainers of the Cloud SQL Auth proxy. He is also a total language nerd with a Ph.D. in Classical Chinese and Japanese and a decade of experience in nearly a dozen computer languages. Nowadays he works exclusively in Go and loves network programming, delightful APIs, and deleting code in pursuit of simplicity.

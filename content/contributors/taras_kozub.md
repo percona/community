@@ -22,8 +22,7 @@ blog_tags:
 - Releases
 posts_count: 15
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Agile Facilitator, PMM

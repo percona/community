@@ -26,8 +26,7 @@ blog_tags:
 - Tools
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Architect of the S3 compatible object storage by Mail.ru Cloud Solutions. Technical product manager at Tarantool. 20+ years of experience in programming, 8+ years in high-performance applications based on Tarantool.

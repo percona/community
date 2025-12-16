@@ -21,8 +21,7 @@ blog_tags:
 - XtraBackup
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Phil is a full stack web developer with experience in a variety of languages and technologies. He is currently the lead developer for an IoT company involved with the remote monitoring of generators and other devices.

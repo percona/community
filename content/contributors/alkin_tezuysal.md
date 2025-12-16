@@ -21,11 +21,9 @@ events_tags:
 - Podcast
 blog_tags: []
 posts_count: 0
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Alkin Tezuysal has extensive experience in enterprise relational databases, working in various sectors for large corporations. With more than 20 years of industry experience, he has acquired skills for managing large projects from the ground up to production. For the past decade, he's been focused on e-commerce, SaaS, and MySQL technologies. Alkin has managed and architected database topologies for high-volume sites at eBay Intl. He has several years of experience in 24X7 support and operational tasks and improving database systems for major companies. He has led global operations teams on Tier 1/2/3 support for MySQL customers.
 In late 2020, he joined PlanetScale's expert engineering team over Vitess.

@@ -24,8 +24,7 @@ blog_tags:
 - valeriy.kravchuk
 posts_count: 2
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Valeriy Kravchuk has supported MySQL users since 2005, in MySQL AB, Sun, Oracle, Percona and (since 2016) MariaDB Corporation.

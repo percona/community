@@ -20,6 +20,5 @@ events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
-podcasts_count: 0
 contributor_type: []
 ---

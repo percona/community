@@ -122,7 +122,7 @@ menu:
       weight: 1
     - identifier: speakers
       name: Speakers
-      url: /speakers
+      url: /contributor_type/speaker/
       parent: events
       weight: 3
 
@@ -133,7 +133,7 @@ menu:
       weight: 1
     - identifier: authors
       name: Authors
-      url: /authors
+      url: /contributor_type/author/
       parent: blog
       weight: 2
 

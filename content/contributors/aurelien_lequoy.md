@@ -24,8 +24,7 @@ blog_tags:
 - Replication
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Founder & CEO at 68 Koncept Inc, MySQL Expert, Entrepreneur, Author of Glial (PHP framework) & PmaControl (MySQL Tools)

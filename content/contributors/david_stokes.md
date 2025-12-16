@@ -35,8 +35,7 @@ blog_tags:
 - pg_jan
 posts_count: 4
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 David Stokes is a Technology Evangelist for Percona Corporation, is the author of MySQL & JSON - A Practical Programming Guide, and resides in Texas.

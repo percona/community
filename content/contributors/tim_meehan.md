@@ -23,8 +23,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Tim is a Software Engineer at Facebook working on Presto and is also a Presto Foundation Technical Steering Committee member and Committer. His interests are in Presto reliability and scalability.

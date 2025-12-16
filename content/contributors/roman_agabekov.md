@@ -23,8 +23,7 @@ blog_tags:
 - Percona
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Founder & CEO at Releem Inc., Software Engineer, MySQL & MariaDB Consultant, Entrepreneur passionate about database performance and automation.

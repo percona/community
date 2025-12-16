@@ -24,9 +24,8 @@ blog_tags:
 - Ubuntu
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 As a Software Engineering Manager at Percona, I have over 23 years of experience in software development, leadership, and innovation. 
 

@@ -22,8 +22,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Jean Joseph is a Data Engineer/DBA, Speaker, IT Event Planner, Blogger, Data Driven Community Builder, Founder & main organizer of Cloud Data Driven User Group & Future Data Driven Summit, highly experienced in Traditional Database, and Big Data technologies with a history of successes in designing, implementing complex technical projects for diverse businesses in various stages of their development.

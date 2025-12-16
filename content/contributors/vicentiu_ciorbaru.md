@@ -24,9 +24,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 4
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Vicentiu works at the MariaDB Foundation as a Software Engineer and Team Lead. He focuses on optimizer development, but has also worked on other parts of the MariaDB Server. Vicențiu has been part of the MariaDB ecosystem since 2013, where he first contributed Roles to MariaDB.
 Over the years, Vicențiu has coded numerous features and helped with the packaging of MariaDB for various distributions. Recently, Vicențiu has also been involved in the QA process of MariaDB, by contributing to https://buildbot.mariadb.org as well as mariadb.org/download infrastructure

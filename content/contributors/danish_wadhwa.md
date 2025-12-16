@@ -22,8 +22,7 @@ blog_tags:
 - poster_danish
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Danish Wadhwa is a doyen of governing the digital content to assemble good relationships for enterprises or individuals. He is specialized in digital marketing, cloud computing, web designing and offers other valuable IT services for organizations, eventually enhancing their shape by delivering stupendous solutions to their business problems.

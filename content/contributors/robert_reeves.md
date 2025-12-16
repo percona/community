@@ -31,12 +31,10 @@ blog_tags:
 - PerconaLive2022
 - blog
 posts_count: 1
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- blog
-- podcasts
-- talks
+- author
+- speaker
 ---
 Robert Reeves is currently CTO at Liquibase
 

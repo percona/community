@@ -19,10 +19,9 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Yury Selivanov is Co-founder and CEO at EdgeDB. Bringing state-of-the-art database technology to the masses.
 EdgeDB is an open-source object-relational database built on top of PostgreSQL. The goal of EdgeDB is to empower its users to build safe and efficient software with less effort.

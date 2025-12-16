@@ -20,7 +20,6 @@ events_tags: []
 blog_tags: []
 posts_count: 0
 talks_count: 0
-podcasts_count: 0
 contributor_type: []
 ---
 Ananias Tsalouchidis is a Principal MySQL DBA who joined Percona on May 2017.

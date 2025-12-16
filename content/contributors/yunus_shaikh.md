@@ -25,10 +25,8 @@ events_tags:
 - opensource
 blog_tags: []
 posts_count: 0
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Yunus is experienced Database administrator currently working in Percona as MySQL DBA II. He lives in Mumbai, India. Always keen to explore new open source tools.

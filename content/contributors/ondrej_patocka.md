@@ -26,8 +26,7 @@ blog_tags:
 - Technical Preview
 posts_count: 4
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Agile Facilitator, PMM

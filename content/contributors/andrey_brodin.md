@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Andrey is a software engineer, computer scientist, developer at Yandex, Ph.D., associated professor  at Ural Federal University, co-founder of Octonica company. He is interested in backup technologies and data indexing and also teaches at Yandex School for Data Analysis and UrFU. His recent talk at Percona Live featured the architecture of point in time recovery with WAL-G in the cloud.

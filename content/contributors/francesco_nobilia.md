@@ -23,8 +23,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Francesco is an enthusiastic engineer focused on building the next generation of a self-service and cost-effective streaming data platform. Event-Drive addicted. Apache Kafka fun. Kafka Summit and Meetup speaker. Currently, he is Principal Engineer at Nutmeg.

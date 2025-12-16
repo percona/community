@@ -21,11 +21,9 @@ events_tags:
 - Podcast
 blog_tags: []
 posts_count: 0
-talks_count: 1
-podcasts_count: 1
+talks_count: 2
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Himank is the Tech Lead of Docstore at Uber. His primary focus area is building distributed databases that scale along with Uber's hyper-growth. Prior to Uber, he worked at Yahoo in the mail backend team to build a metadata store. Himank holds a master's degree in Computer Science from the State University of New York with a specialization in distributed systems.
 Himank has proven ability to learn challenging concepts quickly and he has developed competencies in diverse areas. He easily adapt to change and welcome the opportunity of a new environment.

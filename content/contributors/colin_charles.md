@@ -29,10 +29,9 @@ blog_tags:
 - MariaDB
 posts_count: 1
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Businessperson, open source consultant, technical architect, experienced community builder based in Kuala Lumpur, Malaysia.
 

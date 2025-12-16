@@ -21,8 +21,7 @@ blog_tags:
 - performance
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Gurnish's career has been with Oracle, in Technical Management, and now with MySQL. On the personal front, I live/work in San Francisco, and in my free time I zip around in single engine airplanes around the bay!

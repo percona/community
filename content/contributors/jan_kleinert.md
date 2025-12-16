@@ -25,8 +25,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Jan Kleinert leads a team of Developer Advocates as part of Google Cloud, focusing on Compute and Databases. Prior to joining Google, she worked in a variety of roles ranging from developer relations to web analytics and conversion optimization.

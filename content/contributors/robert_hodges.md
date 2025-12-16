@@ -23,10 +23,8 @@ events_tags:
 - Percona Live 2021
 blog_tags: []
 posts_count: 0
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Robert Hodges has worked on database systems since 1983. During that he has loved, worked on, and occasionally despised 20 dierent DBMS types. His technical interests include data, distributed systems, virtualization technology, and security. He is currently CEO of Altinity, which supports and runs ClickHouse for enterprises.

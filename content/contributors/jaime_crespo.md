@@ -36,8 +36,7 @@ blog_tags:
 - xtrabackup
 posts_count: 2
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Jaime is the Senior DBA of the Wikimedia Foundation, managing Wikipedia databases.

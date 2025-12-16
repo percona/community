@@ -24,8 +24,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 With 15 years of IT industry experience, he is deeply knowledgeable and passionate about data stores, storage, and distributed systems.

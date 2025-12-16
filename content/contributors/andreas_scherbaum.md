@@ -19,10 +19,9 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Andreas Scherbaum is working with PostgreSQL since 1997. He is involved in several PostgreSQL related community projects, member of the Board of Directors of the European PostgreSQL User Group and also wrote a PostgreSQL book (in German).
 Since 2011 he was working for EMC/Greenplum/Pivotal and tackled very big databases. Nowadays he does the same - but with maybe even more and bigger databases - for Adjust GmbH in Berlin.

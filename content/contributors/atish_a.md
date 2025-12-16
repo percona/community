@@ -23,8 +23,7 @@ blog_tags:
 - Upgrade
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Atish is a Distributed Database Systems Engineer, and works in a DevOps team focusing on operational Databases and Data Infrastructure. He is passionate about highly available, scalable database systems & data pipelines. He's a data engineering enthusiast and a MongoDB certified professional.

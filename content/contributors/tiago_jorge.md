@@ -22,8 +22,7 @@ blog_tags:
 - Percona Live Europe 2018
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Tiago is a Senior Software Developer at Oracle and Technical Lead for Group Communication System in Group Replication.

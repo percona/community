@@ -21,8 +21,7 @@ blog_tags:
 - emily.gorcenski
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Emily Gorcenski is Head of Data for ThoughtWorks, Germany.

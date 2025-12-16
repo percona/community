@@ -24,9 +24,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Nickolay Ihalainen is currently working as a Senior Technical Support Engineer at Percona
 He handled emergency and data recovery cases, and for the last several years helped Percona's customers with complex performance issues and MySQL crashes.

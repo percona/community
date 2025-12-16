@@ -28,8 +28,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 4
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Francisco has been working in MySQL since 2006, he has worked for several companies which includes Health Care industry to Gaming. Over the last years he has been working as a database architect which help him to acquire a lot of technical and multi-cultural skills

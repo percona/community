@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 CNCF Ambassador. Data on Kubernetes (@Dokcommunity) Community Leader, amateur rapper, tech from the human side. My bananas are my own.

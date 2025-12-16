@@ -24,8 +24,7 @@ blog_tags:
 - Tools
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Federico is the author of [pg_chameleon](http://www.pgchameleon.org/) a replication tool from MySQL to PostgreSQL developed in Python 3.3+

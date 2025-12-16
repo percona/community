@@ -53,9 +53,8 @@ blog_tags:
 - toolkit
 posts_count: 14
 talks_count: 4
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 When I'm not working with MySQL or other Open-source software packages. I like to do woodworking, 3D design and Printing, listening to all forms of Metal music and electronic projects with Raspberry PI, Arduino. Wayne lives in Powell Ohio, with his wife, daughter, 6 cats and 2 dogs.

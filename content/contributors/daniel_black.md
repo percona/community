@@ -25,11 +25,10 @@ blog_tags:
 - perf
 - performance
 posts_count: 1
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- blog
-- podcasts
+- author
+- speaker
 ---
 After a reasonable amount of time doing development and IT security work, Daniel landed a DBA Consultant job and loved it.
 

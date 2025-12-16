@@ -22,8 +22,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 benny is the Chair of the AlmaLinux OS Foundation, with a long history in business and community building and an undying love of open source.

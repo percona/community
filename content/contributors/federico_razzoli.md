@@ -32,10 +32,9 @@ blog_tags:
 - system-versioned tables
 posts_count: 3
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Relational databases lover and open source supporter. I wrote "Mastering MariaDB" in 2014, and I was a MariaDB Community Ambassador. I am an independent consultant based in London
 

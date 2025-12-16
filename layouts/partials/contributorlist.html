@@ -1,0 +1,61 @@
+<div class="contentblock branded">
+  <div class="select-container">
+    <select id="categories-select" onchange="navigateToPage(this)">
+      <option value="">Categories</option>
+      {{ range first 10 (sort .page.Site.Taxonomies.contributor_type.ByCount) }}
+        <option value="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</option>
+      {{ end }}
+    </select>
+    <select id="tags-select" onchange="navigateToPage(this)">
+      <option value="">Tags</option>
+      {{ range first 20 (sort .page.Site.Taxonomies.contributor_tag.ByCount) }}
+        {{- if gt .Count 1 -}}
+          <option value="{{ .Page.Permalink }}">{{ substr .Page.Title 0 20 }} ({{ .Count }})</option>
+        {{- end -}}
+      {{ end }}
+    </select>
+  </div>
+
+  <div class="contributors">
+    <div class="main-content">
+      <div class="contributors-list">
+        {{ range .paginator.Pages }}
+          <div class="contributors-item">
+            {{ partial "contributorpreview.html" . }}
+          </div>
+        {{ end }}
+      </div>
+
+      {{ if gt .paginator.TotalPages 1 }}
+        <div class="paginator">
+          {{ if .paginator.HasPrev }}
+            <a href="{{ .paginator.Prev.URL }}" rel="prev">&laquo;</a>
+          {{ end }}
+          {{ range .paginator.Pagers }}
+            <a href="{{ .URL }}"{{ if eq . $.paginator }}class="active"{{ end }}>{{ .PageNumber }}</a>
+          {{ end }}
+          {{ if .paginator.HasNext }}
+            <a href="{{ .paginator.Next.URL }}" rel="next">&raquo;</a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="sidebar">
+      <h2>Categories</h2>
+      <ul class="category-list">
+        {{ range sort .page.Site.Taxonomies.contributor_type.ByCount }}
+          <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+      </ul>
+      <h2>Tags</h2>
+      <ul class="tag-list">
+        {{ range sort .page.Site.Taxonomies.contributor_tag.ByCount }}
+          {{ if gt .Count 1 }}
+            <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>

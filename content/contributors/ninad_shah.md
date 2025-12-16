@@ -21,8 +21,7 @@ blog_tags:
 - Opensource
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 16 yrs experience with database technologies, 9+ years experience with PostgreSQL technology

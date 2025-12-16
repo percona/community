@@ -22,11 +22,9 @@ events_tags:
 - sponsorship
 blog_tags: []
 posts_count: 0
-talks_count: 1
-podcasts_count: 1
+talks_count: 2
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 More than 15 years providing support to mission critical environments for first line companies.
 Experience in various on-prem and cloud platforms running Oracle, MySQL and MongoDB databases.

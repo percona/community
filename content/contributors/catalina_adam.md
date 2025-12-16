@@ -23,9 +23,8 @@ blog_tags:
 - Percona
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Catalina Adam is a Senior Technical Writer at Percona, where she blends AI-driven content strategies with docs-as-code workflows to make open-source database technologies more accessible. 
 

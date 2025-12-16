@@ -25,9 +25,8 @@ blog_tags:
 - Python
 posts_count: 1
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Charles Thompson is a DBA with a passion for maximizing MySQL database performance. He combines this expertise with his proficiency in Python to craft tools that automate tasks in his daily life along with contributing to open-source projects benefiting the community. Currently serving as a Senior Database Engineer at DigitalOcean.

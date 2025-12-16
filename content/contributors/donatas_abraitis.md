@@ -23,8 +23,7 @@ blog_tags:
 - hosting
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 I’m a Systems engineer at Hostinger. I love solving non-trivial issues. You can find more posts I wrote on

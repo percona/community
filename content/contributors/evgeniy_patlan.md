@@ -30,10 +30,8 @@ events_tags:
 - pgpool
 blog_tags: []
 posts_count: 0
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Evgeniy Patlan is Manager, Build & Release Engineering Team at Percona. He is experienced Build And Release Engineer, Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Perl, JavaScript, Python, Session Initiation Protocol (SIP), SOAP, and Linux System Administration. Strong engineering professional with a specialist focused in Computer systems, Programming, System Administrating, Network Technologies.

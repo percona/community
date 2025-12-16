@@ -1,19 +1,17 @@
 ---
 name: edith_puclla
-name_pronunciation: edith_puclla
+name_pronunciation: eidht_puclla
 fullname: Edith Puclla
 fullname_pronounciation: Edith Puclla
-job: Technical Evangelist, Percona
-country: null
-tagline: null
+tagline: Technical Evangelist, Percona
 social:
   facebook: null
-  github: null
-  linkedin: null
-  twitter: null
-  website: null
+  github: https://github.com/edithturn
+  linkedin: https://www.linkedin.com/in/edithpuclla/
+  twitter: https://twitter.com/EdithPuclla
+  website: https://edithpuclla.com/
 images:
-- contributors/edith_puclla.png
+- contributors/edith_puclla.jpeg
 # Auto-generated fields below. Do not edit manually.
 contributor_tag:
 - Cloud
@@ -84,8 +82,9 @@ blog_tags:
 - storage
 posts_count: 31
 talks_count: 7
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
+
+Edith Puclla is a Technology Evangelist of Percona Corporation, studied at 42 Silicon Valley School in California in 2020, and was part of the Outreachy Internship in 2021. She has a background in DevOps and is a Docker and Kubernetes enthusiast.

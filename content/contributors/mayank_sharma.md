@@ -35,7 +35,6 @@ blog_tags:
 - security
 posts_count: 3
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---

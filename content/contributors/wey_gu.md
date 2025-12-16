@@ -26,8 +26,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Wey is a software engineer living in Shanghai, China. He enjoys building things with magic and scaling the magic to the wizard community in the day time and sings sometime at night.

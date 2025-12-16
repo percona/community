@@ -26,8 +26,7 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Gabriel has been dedicated to databases as a DBA and consultant for the last 15 years. He has led and participated in multiple projects across many technologies, including Oracle, MySQL, SQL Server and MongoDB. Gabriel defines himself as an automation super fan and he contributed to the development of two custom DBaaS platforms.

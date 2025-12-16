@@ -23,8 +23,7 @@ blog_tags:
 - rosik
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Tarantool Solution Engineer and Software Developer. I have used Lua since 2007. For the last three years this has been my primary programming language professionally. I used it for video streaming business logic and now within Tarantool to develop an in-memory database and a Lua application server.

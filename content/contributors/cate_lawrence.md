@@ -43,8 +43,7 @@ blog_tags:
 - opensource
 posts_count: 4
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 I’m a tech journalist and reporter, who has experience in marketing and content strategy, and I have undertaken multiple projects internationally for enterprise clients.

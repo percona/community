@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Lorna Mitchell is currently working as ead of Developer Relations at Aiven. Lorna is a Developer Experience and Open Source specialist. She writes, speaks, and codes, enabling and educating developers everywhere.

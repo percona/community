@@ -28,8 +28,7 @@ blog_tags:
 - tools
 posts_count: 2
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 IT professional with 10+ years experience, mainly in large commercial environments. Expertise in MySQL, MariaDB, Big Data, Bash , Unix systems and Python development. Aftab's LinkedIn Profile

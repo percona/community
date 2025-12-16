@@ -24,9 +24,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Yang Keao is a developer at PingCAP and a maintainer of Chaos Mesh, a
 cloud native chaos engineering platform for Kubernetes. He also helps the

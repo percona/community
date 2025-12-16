@@ -19,10 +19,9 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 Nagavamsi Ponnekanti is Software Engineer at Quora.
 Vamsi has more than 20 years experience with databases

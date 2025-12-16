@@ -28,10 +28,8 @@ events_tags:
 - opensource
 blog_tags: []
 posts_count: 0
-talks_count: 4
-podcasts_count: 1
+talks_count: 5
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Lenz Grimmer supports and leads the engineering teams at Percona that work on server products like Percona Server for MongoDB, MySQL, PostgreSQL and related components. He's been involved in Linux and Open Source technologies in various roles and capacities since the mid-90s and has worked at companies like SUSE, MySQL, Sun Microsystems and Oracle.

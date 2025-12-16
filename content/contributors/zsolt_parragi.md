@@ -26,9 +26,8 @@ blog_tags:
 - pg_zsolt
 posts_count: 3
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Zsolt joined Percona as a software developer in 2017 and has been working on Percona's database products ever since, initially focusing on MySQL and later switching to PostgreSQL.
 

@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 1
+talks_count: 1
 contributor_type:
-- podcasts
+- speaker
 ---
 David Duncan is helpful answering questions or solving problems involving Cloud systems and the use of support tools on Fedora and Fedora Cloud images. He is currently working as Principal Partner Solutions Architect and technical Linux lead focused on Platform Ecosystem Partners. Keenly focused on open source software and upstream contributions. Strong connection to development and configuration process.

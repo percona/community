@@ -1,55 +1,50 @@
 {{ define "css" }}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
 {{ end }}
 
 {{ define "mainwrapper" }}
 
-    {{- $pages := .Pages -}}
-    {{- $paginator := .Paginate $pages 9 }}
+{{- $pages := .Pages -}}
+{{- if eq .Data.Term "author" -}}
+  {{- $pages = sort $pages ".Params.posts_count" "desc" -}}
+{{- else if eq .Data.Term "speaker" -}}
+  {{- $pages = sort $pages ".Params.talks_count" "desc" -}}
+{{- else -}}
+  {{- $pages = sort $pages "Title" "asc" -}} <!-- fallback: alphabetical -->
+{{- end -}}
 
-    <div class="hero hero-gradient aqua "><div class="contentblock">
-        <div class="hero-text">
-            {{- if eq $paginator.PageNumber 1 -}}
-                <h1>#{{ .Title }} articles</h1>
-            {{- else -}}
-                <h1>#{{ .Title }} articles: Page {{ $paginator.PageNumber }}</h1>
-            {{- end -}}
-        </div>
-    </div></div>     
+{{- $paginator := .Paginate $pages 9 -}}
 
-    <div class="contentblock branded">
-    {{ .Content }}
-
-    {{ if .Pages }}
-
-        <div class="blog-list">
-            <div class="main-content">
-                <ul class="post-list">
-                    {{- range $paginator.Pages -}}
-                        <li class="post-item">
-                            {{- partial "postpreview-list" . -}}                         
-                        </li>
-                    {{- end -}}
-                </ul>
-            </div>
-        </div>
-
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
+<div class="hero hero-gradient aqua">
+  <div class="contentblock">
+    <div class="hero-text">
+      {{- if eq .Data.Term "speaker" -}}
+        <h1>Percona Community Speakers</h1>
+        <p>
+          Speakers who have spoken or participated in
+          <a href="/events">events</a> organized with the participation of the Percona Community team.
+        </p>
+      {{- else if eq .Data.Term "author" -}}
+        <h1>Percona Community Blog Authors</h1>
+        <p>
+          Thank you to <a href="/blog">our blog</a> authors for their contributions.
+        </p>
+        <p>
+          We welcome you to <a href="/blog/2022/02/10/how-to-publish-blog-post/">become an author</a>
+          with your own topics about development, databases, technology and open source,
+          or look for ideas in <a href="/contribute/opentopics">open topics</a>.
+        </p>
+      {{- else -}}
+        {{- if eq $paginator.PageNumber 1 -}}
+          <h1>#{{ .Title }}</h1>
+        {{- else -}}
+          <h1>#{{ .Title }}: Page {{ $paginator.PageNumber }}</h1>
         {{- end -}}
-
-    {{ else }}
-        <p>No content available.</p>
-    {{ end }}
+      {{- end }}
     </div>
+  </div>
+</div>
+
+{{ partial "contributorlist.html" (dict "paginator" $paginator "page" .) }}
+
 {{ end }}

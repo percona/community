@@ -21,8 +21,7 @@ blog_tags:
 - Percona Live Europe 2018
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Making stuff work. Solving problems. Organising things. Connecting people. Coming up with new angles.

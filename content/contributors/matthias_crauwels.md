@@ -25,10 +25,8 @@ events_tags:
 - opensource
 blog_tags: []
 posts_count: 0
-talks_count: 3
-podcasts_count: 1
+talks_count: 4
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Matthias Crauwels is Experienced Database Consultant with a demonstrated history of working in the information technology and services industry. Strong information technology professional skilled in MySQL, PHP, Go and several scripting languages. He brought a talk about "MySQL Backup Solutions in 2021" during the Percona Live 2021.

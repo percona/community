@@ -30,8 +30,7 @@ blog_tags:
 - Tools
 posts_count: 1
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Team lead and developer working on various e-commerce and IOT products. Over 3 years of experience in Lamoda, one of the largest e-commerce site in Russia. Current project is a new IOT platform for rapid development fast effective scalable IOT and IIOT solutions.

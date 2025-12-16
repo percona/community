@@ -19,9 +19,8 @@ contributor_tag: []
 events_tags: []
 blog_tags: []
 posts_count: 0
-talks_count: 0
-podcasts_count: 2
+talks_count: 2
 contributor_type:
-- podcasts
+- speaker
 ---
 Patrick McFadin is one of the leading experts of Apache Cassandra and data modeling techniques. As the Chief Evangelist for Apache Cassandra and consultant for DataStax, he has helped build some of the largest and exciting deployments in production. Previous to DataStax, he was Chief Architect at Hobsons and an Oracle DBA/Developer for over 15 years.

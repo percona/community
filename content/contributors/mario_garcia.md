@@ -40,9 +40,8 @@ blog_tags:
 - Python
 posts_count: 7
 talks_count: 9
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Mario has been an active Open Source contributor for more than 15 years. Technical Evangelist @ Percona. Python developer with experience automating stuff and web development. Speaker at tech and innovation events since 2008. DevOps enthusiast. Member of GitLab Heroes, GitKraken Ambassadors and HashiCorp Ambassadors.

@@ -31,8 +31,7 @@ blog_tags:
 - koehntopp
 posts_count: 5
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Senior Scalability Engineer at Booking.com.

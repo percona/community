@@ -32,9 +32,8 @@ blog_tags:
 - monitoring
 posts_count: 3
 talks_count: 3
-podcasts_count: 0
 contributor_type:
-- blog
-- talks
+- author
+- speaker
 ---
 Dashboards engineer, Percona Monitoring and Management.

@@ -24,9 +24,8 @@ events_tags:
 blog_tags: []
 posts_count: 0
 talks_count: 1
-podcasts_count: 0
 contributor_type:
-- talks
+- speaker
 ---
 Stephen has had a career in technology for online and retail gambling, having worked close to business for a number of B2C and B2B providers. Sound background in technology, delivering affiliate and gambling platforms using both .NET and Java frameworks.
 

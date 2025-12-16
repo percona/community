@@ -48,11 +48,9 @@ blog_tags:
 - sergey_pronin
 - storage
 posts_count: 4
-talks_count: 7
-podcasts_count: 3
+talks_count: 10
 contributor_type:
-- blog
-- podcasts
-- talks
+- author
+- speaker
 ---
 Sergey is a product leader at Percona focusing on delivering robust open-source database and cloud-native solutions. Prior to Percona Sergey led product management and engineering teams in other organizations with a primary focus on products in infrastructure and platforms space.

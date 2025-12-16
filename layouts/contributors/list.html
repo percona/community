@@ -1,40 +1,33 @@
-{{ define "css" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/speakers.scss") | safeCSS) -}}
-    {{- if in .Content "<pre class=\"chroma\">" -}}
-        {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
-    {{ end }}
-{{- end }}
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+{{ end }}
 
 {{ define "mainwrapper" }}
-    {{- .Content -}}
-    <div class="contentblock">
-        <div class="grid grid--4 contributors speakers">
-            {{- $pages := .Pages -}}
 
-            {{- $paginator := .Paginate $pages 16 }}
+{{- $pages := .Pages -}}
+{{- $pages = sort $pages "Title" "asc" -}} <!-- alphabetical sort -->
 
-            {{- range $paginator.Pages -}} 
-                <div class="grid__item contributor speaker">
-                    {{- if isset .Params "images" -}}
-                        {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Image" (index .Params.images 0) "Content" .Content "Job" .Params.job) -}}
-                    {{- else -}}
-                        {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Content" .Content) -}}
-                    {{- end -}}
-                </div>
-            {{- end -}}
-        </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
-        {{- end -}}
+{{- $paginator := .Paginate $pages 9 -}}
+
+<div class="hero hero-gradient aqua">
+  <div class="contentblock">
+    <div class="hero-text">
+      <h1>Percona Community Contributors!</h1>
+      <p>
+        This section brings together speakers who have presented at 
+        <a href="/events">community events</a> and authors who have written for our 
+        <a href="/blog">blog</a>.
+      </p>
+      <p>
+        We thank all contributors for sharing their expertise and passion for open source technologies.
+      </p>
+      <p>
+        You can also <a href="/contribute/opentopics">join as a contributor</a> by proposing talks or writing articles on databases, cloud, and development.
+      </p>
     </div>
+  </div>
+</div>
+
+{{ partial "contributorlist.html" (dict "paginator" $paginator "page" .) }}
+
 {{ end }}

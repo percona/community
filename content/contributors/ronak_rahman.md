@@ -29,8 +29,7 @@ blog_tags:
 - ronak.rahman
 posts_count: 2
 talks_count: 0
-podcasts_count: 0
 contributor_type:
-- blog
+- author
 ---
 Liquibase Developer Advocate. Background in DevOps, Customer Success, and Solution Architecture. Current project: Supporting and organizing the Liquibase community answering questions. Follow Ronak on Twitter or LinkedIn.

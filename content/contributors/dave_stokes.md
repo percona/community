@@ -31,10 +31,8 @@ events_tags:
 - sponsorship
 blog_tags: []
 posts_count: 0
-talks_count: 33
-podcasts_count: 1
+talks_count: 34
 contributor_type:
-- podcasts
-- talks
+- speaker
 ---
 Dave joined Percona last February 2022. Dave is MySQL Community Manager and the author of MySQL & JSON - A Practical Programming Guide
