@@ -9,7 +9,7 @@ images:
   - blog/2025/12/toolkit-371.jpg
 ---
 
-Percona Toolkit 3.7.1 has been released on **Dec 9, 2025**. The most important updates in this version are:
+Percona Toolkit 3.7.1 has been released on **Dec 17, 2025**. The most important updates in this version are:
 
 -   Finalized SSL/TLS support for MySQL
 -   Added support for Debian 13 and Amazon Linux 2023
@@ -22,11 +22,11 @@ In this blog, I will outline the most significant changes. A full list of improv
 
 # SSL/TLS support for MySQL
 
-Percona Toolkit historically did not have consistent SSL support. This was reported at <https://perconadev.atlassian.net/browse/PT-191>. In version 3.7.0, option `s` for `DSN` was introduced. This option instructs `DBD::mysql` to open a secure connection with the database. This version also adds command-line option `--mysql-ssl` and its short form `-s` to all tools. All other SSL/TLS-related options, such as `ssl-ca`, `ssl-cert`, `ssl-cipher`, etc, could be specified in the configuration file if necessary. This completes SSL/TLS support for MySQL. For more details and information check [this blog post](TBD).
+Percona Toolkit historically did not have consistent SSL support. This was reported at <https://perconadev.atlassian.net/browse/PT-191>. In version 3.7.0, option `s` for `DSN` was introduced. This option instructs `DBD::mysql` to open a secure connection with the database. This version also adds command-line option `--mysql-ssl` and its short form `-s` to all tools. All other SSL/TLS-related options, such as `ssl-ca`, `ssl-cert`, `ssl-cipher`, etc, could be specified in the configuration file if necessary. This completes SSL/TLS support for MySQL. For more details and information check [this blog post](https://www.percona.com/blog/unlocking-secure-connections-ssl-tls-support-in-percona-toolkit/).
 
 # Supported Platforms Update
 
-Percona repositories now have Percona Toolkit packages for Debian 13 and Amazon Linux 2023. To install them enable repository `pt` with the `percona-release` utility. More information on Percona repositories is available in the [User Reference Manual](https://docs.percona.com/percona-software-repositories/index.html). There is no platform deprecation in this release.
+Percona repositories now have Percona Toolkit packages for Debian 13 and Amazon Linux 2023. To install them enable repository `pt` with the `percona-release` utility. Ubuntu Focal reached its EOL and support for this platform has been removed. More information on Percona repositories is available in the [User Reference Manual](https://docs.percona.com/percona-software-repositories/index.html).
 
 # Regression Bug Fixes
 
