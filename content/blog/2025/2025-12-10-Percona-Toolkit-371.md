@@ -1,6 +1,6 @@
 ---
 title: "What is New in Percona Toolkit 3.7.1"
-date: "2025-12-10T00:00:00+00:00"
+date: "2025-12-17T00:00:00+00:00"
 tags: ['Toolkit', 'MySQL', 'Percona', 'Opensource']
 categories: ["MySQL", "Toolkit"]
 authors:
