@@ -102,7 +102,7 @@ for root, _, files in os.walk(EVENTS_DIR):
                 else:
                     author_events_tags[speaker].add(tag)
 
-# Step 3: podcasts → считаем как speaker (talks)
+# Step 3: podcasts → count as speaker (talks)
 for fname in os.listdir(PODCASTS_DIR):
     if not fname.endswith(".md"):
         continue
@@ -116,7 +116,7 @@ for fname in os.listdir(PODCASTS_DIR):
         if not isinstance(s, str) or not s.strip():
             continue
         speaker = s.strip()
-        # подкасты считаем как мероприятия
+        # podcasts are counted as events
         author_talks_count[speaker] += 1
         author_contributor_types[speaker].add("speaker")
         for tag in p_tags:

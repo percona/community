@@ -101,7 +101,7 @@
   text-align: center;
   gap: 0rem;
 
-  min-height: 420px; // одинаковая высота
+  min-height: 420px; 
   height: 100%;
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -235,7 +235,7 @@
 // Tablet breakpoint: 2 columns + sidebar visible
 @media (max-width: 1024px) {
   .contributors {
-    flex-direction: row; // оставляем row, чтобы sidebar был рядом
+    flex-direction: row; 
     .main-content {
       margin-right: 0.5rem;
       .contributors-list {
@@ -243,7 +243,7 @@
       }
     }
     .sidebar {
-      display: block; // sidebar остаётся видимым
+      display: block; 
     }
   }
 }
@@ -261,7 +261,7 @@
     }
 
     .sidebar {
-      display: none; // sidebar скрывается
+      display: none; 
     }
 
     .select-container {
@@ -361,7 +361,6 @@
     }
   }
 
-  /* 🔥 новый блок для счётчиков */
   &__counts {
     display: flex;
     gap: 1.5rem;

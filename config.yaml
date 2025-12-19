@@ -14,6 +14,8 @@ taxonomies:
   category: categories
   contributor_type: "contributor_type"
   contributor_tag: "contributor_tag"
+  talk_tags: "talk_tags"
+  talk_year: "talk_year"
 social:
   twitter: Percona
 sitemap:
@@ -120,6 +122,11 @@ menu:
       url: /events
       parent: events
       weight: 1
+    - identifier: talks
+      name: Talks
+      url: /talks
+      parent: events
+      weight: 2
     - identifier: speakers
       name: Speakers
       url: /contributor_type/speaker/
