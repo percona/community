@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/derek_downey.jpg
+  - contributors/derek_downey.jpg
 ---
 
 As a technologist excited about open source database systems and the businesses that they power, Derek is enthusiastic about efficiency through automation, Operational Visibility, and the adoption of Cloud Technologies.

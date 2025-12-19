@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/brian_walters.jpeg
+  - contributors/brian_walters.jpeg
 ---
 
 

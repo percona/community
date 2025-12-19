@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/valeriy-kravchuk-71a06a1/
 images:
-  - speakers/valerii_kravchuk.jpg
+  - contributors/valerii_kravchuk.jpg
 ---
 
 Valerii Kravchuk helps MySQL and MariaDB users and DBAs to resolve their problems since 2005. Worked in MySQL AB, Sun, Oracle, Percona and, since 2016, in MariaDB Corporation. MySQL Community Contributor of the year 2019.

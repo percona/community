@@ -11,7 +11,7 @@ social:
   github: https://github.com/igroene
   linkedin: https://www.linkedin.com/in/igroene/
 images:
-  - blog/authors/ivan_groenewold.jpg
+  - contributors/ivan_groenewold.jpg
 ---
 
 Passionate about technology, Ivan Groenewold is a seasoned professional with extensive experience in database management, cloud infrastructure, and software development. 

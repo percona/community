@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/francisco_miguel.png
+  - contributors/francisco_miguel.png
 ---
 
 Principal Data Engineer at UnitedHealth Group, for Oracle and MySQL. When he is not working or coding, Fran likes to backpack visiting new places and experiencing different cultures.

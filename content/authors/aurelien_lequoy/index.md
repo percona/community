@@ -11,7 +11,7 @@ social:
   github: 
   linkedin:
 images:
-  - blog/authors/aurelien_lequoy.jpeg
+  - contributors/aurelien_lequoy.jpeg
 ---
 
 Founder & CEO at 68 Koncept Inc, MySQL Expert, Entrepreneur, Author of Glial (PHP framework) & PmaControl (MySQL Tools)

@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/stacy.png
+  - contributors/stacy.png
 ---
 
 

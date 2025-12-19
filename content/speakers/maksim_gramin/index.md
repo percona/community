@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/maksim_gramin.png
+  - contributors/maksim_gramin.png
 ---
 
 Applicant 1: Maksim Gramin is a software consultant, researcher and developer passionate about Databases and SQL

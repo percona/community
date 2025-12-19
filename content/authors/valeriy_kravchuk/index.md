@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/valeriy_kravchuk.jpeg
+  - contributors/valeriy_kravchuk.jpeg
 ---
 
 Valeriy Kravchuk has supported MySQL users since 2005, in MySQL AB, Sun, Oracle, Percona and (since 2016) MariaDB Corporation.

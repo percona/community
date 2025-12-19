@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/matthew_formosa.jpg
+  - contributors/matthew_formosa.jpg
 ---
 
 Matthew is an experienced Data Engineer having worked on several Big Data applications within various domains, including Gaming and FinTech. Being an AWS certified solutions architect, he is naturally highly comfortable working with AWS solutions, as well as Apache Spark, Apache Kafka, and the Hadoop Ecosystem amongst other technologies.

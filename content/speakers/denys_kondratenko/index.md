@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/kondratenko/
 images:
-  - speakers/denys_kondratenko.png
+  - contributors/denys_kondratenko.png
 ---
 
 I am Engineering Manager in Percona working on Percona Monitoring and Management solution.

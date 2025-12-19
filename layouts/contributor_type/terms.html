@@ -1,0 +1,24 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "main" }}
+
+    <div class="hero-text">
+        <h1># {{ .Title }}</h1>
+    </div>
+
+    <div class="contentblock branded">
+    {{ .Content }}
+
+    {{ if .Data.Terms }}
+        <div class="tagList">
+            {{ range .Data.Terms.ByCount }}
+            <a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} ({{ .Count }})</a>
+            {{ end }}
+        </div>
+    {{ else }}
+        <p>No content available.</p>
+    {{ end }}
+    </div>
+{{ end }}

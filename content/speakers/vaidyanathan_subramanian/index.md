@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/vaidyanathan_subramanian.jpg
+  - contributors/vaidyanathan_subramanian.jpg
 ---
 
 Vaidyanathan is an Engineering Manager at India's largest e-commerce company, Flipkart. He has close to 13 years of experience working across multiple startups and larger companies like Yahoo.

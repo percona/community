@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/herbert_menezes.jpg
+  - contributors/herbert_menezes.jpg
 ---

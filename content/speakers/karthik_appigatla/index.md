@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://linkedin.com/in/appigatla/
 images:
-  - speakers/karthik_appigatla.jpg
+  - contributors/karthik_appigatla.jpg
 ---
 
 

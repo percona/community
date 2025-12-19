@@ -21,7 +21,7 @@ Check this full recording of the Percona Community MeetUp of March 10th hosted a
 ## Transcript
 
 **Matt Yonkovit:**  
-Helloб everyone out there in the stream land. Welcome to another Percona Livestream. I'm your host, Matt Yonkovit, the HOSS at Percona, Head of Open Source Strategy. If you can hear us, feel free to give us a wave on chat. We'll be following along here at the bottom of the screen. Hopefully, everyone can hear us audiovisual looks good. And today we're joined by Sergey, Sergey Pronin, our group product manager, and he's going to be talking to us about Kubernetes. Specifically the MongoDB. Operator for Kubernetes. How're you doing today, Sergey?
+Hello everyone out there in the stream land. Welcome to another Percona Livestream. I'm your host, Matt Yonkovit, the HOSS at Percona, Head of Open Source Strategy. If you can hear us, feel free to give us a wave on chat. We'll be following along here at the bottom of the screen. Hopefully, everyone can hear us audiovisual looks good. And today we're joined by Sergey, Sergey Pronin, our group product manager, and he's going to be talking to us about Kubernetes. Specifically the MongoDB. Operator for Kubernetes. How're you doing today, Sergey?
 
 **Sergey Pronin:**  
 I'm doing good. Good. Thank you. Thank you for having me today.

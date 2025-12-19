@@ -14,5 +14,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/mantzios/
 images:
-  - speakers/achilleas_mantzios.jpg
+  - contributors/achilleas_mantzios.jpg
 ---

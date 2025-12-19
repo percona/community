@@ -234,7 +234,7 @@ Yeah, it is. It is that we say it's, it's saying that it's using 750. That's too
 Exactly. It's, it's asking you please can you give me this favor? Well, I want to do this here and also in the backup the regional folder that is backup one. Okay, well, now we shouldn't be able to start right. Come on
 
 **Matt Yonkovit:**    
-Нou're missing the PID file
+Hou're missing the PID file
 
 **Charly Batista:**
 Oh, that's fine. Because here's this trying to stop. Just forget about it. It's the log starts here. Okay, it couldn't start the server. Let's check the logs right, it say that we should find information inside the logs that go to the log. I hope we don't have that many logs. Okay. 

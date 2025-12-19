@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/aleks-abramova/
 images:
-  - speakers/aleks_abramova.jpg
+  - contributors/aleks_abramova.jpg
 ---

@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/liquan-pei-13588627/
 images:
-  - speakers/liquan_pei.jpg
+  - contributors/liquan_pei.jpg
 ---
 
 Liquan Pei is currently a Senior Software Engineer, Database Kernel at PingCAP.

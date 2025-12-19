@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/ignacio-nin/
 images:
-  - speakers/ignacio_nin.jpg
+  - contributors/ignacio_nin.jpg
 ---

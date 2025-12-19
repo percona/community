@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/catalinaadam/
 images: 
-  - blog/authors/catalina_adam.png
+  - contributors/catalina_adam.png
 ---
 
 Catalina Adam is a Senior Technical Writer at Percona, where she blends AI-driven content strategies with docs-as-code workflows to make open-source database technologies more accessible. 

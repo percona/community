@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/mohamed-wadie-nsiri-235830164/
 images:
-  - speakers/mohamed_wadie_nsiri.jpeg
+  - contributors/mohamed_wadie_nsiri.jpeg
 ---
 
 With 15 years of IT industry experience, he is deeply knowledgeable and passionate about data stores, storage, and distributed systems.

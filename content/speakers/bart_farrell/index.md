@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/bart_farrell.jpg
+  - contributors/bart_farrell.jpg
 ---
 
 

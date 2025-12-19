@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/vinodh_krishnaswamy.jpg
+  - contributors/vinodh_krishnaswamy.jpg
 ---
 
 Vinodh Krishnaswamy is a Support Engineer at Percona.

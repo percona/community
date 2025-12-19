@@ -14,7 +14,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/federico_razzoli.jpg
+  - contributors/federico_razzoli.jpg
 ---
 
 Passionate with databases, automation and open source. Federico was active in MariaDB and MySQL communities for years. He started Vettabase, a database automation and consulting company.

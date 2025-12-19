@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/umair_shahid.jpg
+  - contributors/umair_shahid.jpg
 ---
 
 Umair counts 20 years experience in PostgreSQL and open source experience serving some of the highly competitive technology markets in USA & Europe in roles of increasing responsibility. Proven track record of the unique ability to bridge the gap between business objectives and engineering :

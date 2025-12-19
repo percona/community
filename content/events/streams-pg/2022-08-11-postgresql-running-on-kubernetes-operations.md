@@ -24,7 +24,7 @@ Percona Community Live Stream will share a demo and some best practices on runni
 ## Transcript
 
 **Dave Stokes:**  
-Good morning, good afternoon. Good evening. Good wherever you are. I'm Dave Stokes. And with me today is Charly Batista. Forgive meб I'm babysitting the neighbor's dogs, my dogs tend to be a little bit bigger. And by the way, if they give you any advice on databases don't believe them. They're good ones SQL Server, but nothing about Postgres or MySQL or today, Charly is gonna explain to us how Percona runs on Kubernetes.
+Good morning, good afternoon. Good evening. Good wherever you are. I'm Dave Stokes. And with me today is Charly Batista. Forgive me I'm babysitting the neighbor's dogs, my dogs tend to be a little bit bigger. And by the way, if they give you any advice on databases don't believe them. They're good ones SQL Server, but nothing about Postgres or MySQL or today, Charly is gonna explain to us how Percona runs on Kubernetes.
 
 **Charly Batista:**  
 I see you have been busy these days, right? So we may get some advice for them. I can't hear you.

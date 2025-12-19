@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: 
 images:
-  - blog/authors/colin_charles.jpeg
+  - contributors/colin_charles.jpeg
 ---
 
 Businessperson, open source consultant, technical architect, experienced community builder based in Kuala Lumpur, Malaysia.

@@ -1,0 +1,64 @@
+{{ $alt := .Params.fullname }}
+<div class="contributor-card">
+  <div class="contributor-card__image">
+    {{ with .Params.images }}
+      <a href="{{ $.RelPermalink }}">
+        <img src="{{ ((resources.Get (index . 0)).Fill "200x200 90% jpg").RelPermalink }}" alt="{{ $alt }}" class="avatar"/>
+      </a>
+    {{ end }}
+
+    <div class="social-overlay">
+      {{ with .Params.social.linkedin }}
+        <a href="{{ . }}" target="_blank" class="social-icon">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode}}" alt="LinkedIn" />
+        </a>
+      {{ end }}
+      {{ with .Params.social.twitter }}
+        <a href="{{ . }}" target="_blank" class="social-icon">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode}}" alt="Twitter" />
+        </a>
+      {{ end }}
+      {{ with .Params.social.github }}
+        <a href="{{ . }}" target="_blank" class="social-icon">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode}}" alt="GitHub" />
+        </a>
+      {{ end }}
+      {{ with .Params.social.website }}
+        <a href="{{ . }}" target="_blank" class="social-icon website">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-website.svg").Content | base64Encode}}" 
+              alt="Website" />
+        </a>
+      {{ end }}
+    </div>
+  </div>
+
+  <a href="{{ .RelPermalink }}" class="contributor-card__name-link">
+    <h3 class="contributor-card__name">{{ .Params.fullname }}</h3>
+  </a>
+
+  {{ with .Params.tagline }}
+    <p class="contributor-card__tagline">{{ . }}</p>
+  {{ end }}
+  {{ with .Params.job }}
+    <p class="contributor-card__tagline">{{ . }}</p>
+  {{ end }}
+
+  <ul class="contributor-card__counts">
+    {{ if gt .Params.posts_count 0 }}
+      <li><a href="{{ .RelPermalink }}#posts">📝 {{ .Params.posts_count }} posts</a></li>
+    {{ end }}
+    {{ if gt .Params.talks_count 0 }}
+      <li><a href="{{ .RelPermalink }}#talks">🎤 {{ .Params.talks_count }} talks</a></li>
+    {{ end }}
+  </ul>
+
+  <div class="contributor-card__tags">
+    {{ range first 3 .Params.contributor_tag }}
+      <a href="/contributors_tag/{{ . }}" class="tag" title="{{ . }}">#{{ . }}</a>
+    {{ end }}
+  </div>
+
+  <div class="contributor-card__more">
+    <a href="{{ .RelPermalink }}">View profile →</a>
+  </div>
+</div>

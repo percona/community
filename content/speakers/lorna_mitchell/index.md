@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/lornajane/
 images:
-  - speakers/lorna_mitchell.jpg
+  - contributors/lorna_mitchell.jpg
 ---
 
 Lorna Mitchell is currently working as ead of Developer Relations at Aiven. Lorna is a Developer Experience and Open Source specialist. She writes, speaks, and codes, enabling and educating developers everywhere.

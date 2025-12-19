@@ -11,7 +11,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/hulyav/
 images:
-  - blog/authors/julia_vural.jpeg
+  - contributors/julia_vural.jpeg
 ---
 
 As a Software Engineering Manager at Percona, I have over 23 years of experience in software development, leadership, and innovation. 

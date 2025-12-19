@@ -14,5 +14,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/elisausai/
 images:
-  - speakers/elisa_usai.jpeg
+  - contributors/elisa_usai.jpeg
 ---

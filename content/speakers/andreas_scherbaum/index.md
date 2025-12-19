@@ -13,7 +13,7 @@ social:
   github: 
   linkedin:
 images:
-  - speakers/andreas_scherbaum.jpg
+  - contributors/andreas_scherbaum.jpg
 ---
 
 Andreas Scherbaum is working with PostgreSQL since 1997. He is involved in several PostgreSQL related community projects, member of the Board of Directors of the European PostgreSQL User Group and also wrote a PostgreSQL book (in German).

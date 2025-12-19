@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/yury_selivanov.jpg
+  - contributors/yury_selivanov.jpg
 ---
 
 Yury Selivanov is Co-founder and CEO at EdgeDB. Bringing state-of-the-art database technology to the masses.

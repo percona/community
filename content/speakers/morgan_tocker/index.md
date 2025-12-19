@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/morgantocker/
 images:
-  - speakers/morgan_tocker.jpg
+  - contributors/morgan_tocker.jpg
 ---
 
 I joined MySQL AB in January 2006, working remotely from my home in Brisbane, Australia.

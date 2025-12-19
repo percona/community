@@ -13,7 +13,7 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/lukas_eder.jpg
+  - contributors/lukas_eder.jpg
 ---
 
 Lukas Eder is the CEO and founder of Data Geekery GmbH, the company behind JooQ an open source Java framework that gives you an API that allows you to write SQL statements through natural Java api calls.

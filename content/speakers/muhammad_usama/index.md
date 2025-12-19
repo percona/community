@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: https://www.linkedin.com/in/muhammadusama/
 images:
-  - speakers/muhammad_usama.png
+  - contributors/muhammad_usama.png
 ---

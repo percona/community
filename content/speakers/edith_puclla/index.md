@@ -13,5 +13,5 @@ social:
   github: 
   linkedin: 
 images:
-  - speakers/edith_puclla.png
+  - contributors/edith_puclla.png
 ---

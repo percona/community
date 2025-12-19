@@ -18,7 +18,7 @@
             {{ if and (isset .Params "authors") (gt (len .Params.authors) 0) }}
                 <div class="post__author">
                     {{ range $author := .Params.authors -}}
-                        {{- with $.Site.GetPage (print "/authors/" $author) -}}
+                        {{- with $.Site.GetPage (print "/contributors/" $author) -}}
                             {{- with .Params.images -}}
                                 <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "32x32 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
                             {{- end -}}
