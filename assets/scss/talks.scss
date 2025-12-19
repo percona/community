@@ -248,21 +248,21 @@
   }
 
   .talk-card__speaker-block {
-    flex-direction: row;        // аватар слева, текст справа
+    flex-direction: row;        
     align-items: flex-start;
     text-align: left;
   }
 
   .talk-card__speaker-avatar .avatar {
     margin-bottom: 0;
-    width: 64px;                // можно уменьшить аватар для компактности
+    width: 64px;                
     height: 64px;
   }
 
   .talk-card__links {
-    flex-direction: row;        // ссылки в одну строку
+    flex-direction: row;        
     justify-content: space-between;
-    flex-wrap: wrap;            // при нехватке ширины переносятся
+    flex-wrap: wrap;            
     gap: 0.5rem;
   }
 
