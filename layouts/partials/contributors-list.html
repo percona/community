@@ -21,7 +21,7 @@
       <div class="contributors-list">
         {{ range .paginator.Pages }}
           <div class="contributors-item">
-            {{ partial "contributorpreview.html" . }}
+            {{ partial "contributors-preview.html" . }}
           </div>
         {{ end }}
       </div>
@@ -42,6 +42,12 @@
     </div>
 
     <div class="sidebar">
+      <h2>Activity</h2>
+      <ul class="category-list">
+        {{ range sort .page.Site.Taxonomies.contributor_year.ByCount "Page.Title" "desc" }}
+          <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+        {{ end }}
+      </ul>
       <h2>Categories</h2>
       <ul class="category-list">
         {{ range sort .page.Site.Taxonomies.contributor_type.ByCount }}

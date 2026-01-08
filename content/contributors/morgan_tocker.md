@@ -14,14 +14,18 @@ social:
   website: null
 images:
 - contributors/morgan_tocker.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags: []
+events_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 I joined MySQL AB in January 2006, working remotely from my home in Brisbane, Australia.
 

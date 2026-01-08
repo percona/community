@@ -14,9 +14,10 @@ social:
   website: null
 images:
 - contributors/dave_stokes.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
+blog_tags: []
 events_tags:
 - Community Track
 - Oracle
@@ -29,10 +30,16 @@ events_tags:
 - event
 - opensource
 - sponsorship
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 34
+events_count: 34
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2024'
+- '2023'
+- '2022'
+- '2021'
 ---
 Dave joined Percona last February 2022. Dave is MySQL Community Manager and the author of MySQL & JSON - A Practical Programming Guide

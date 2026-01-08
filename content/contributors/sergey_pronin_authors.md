@@ -14,24 +14,11 @@ social:
   website: null
 images:
 - contributors/sergey_pronin.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
 - Community
 - MongoDB
-events_tags:
-- Database
-- Event
-- Kubernetes
-- Meetup
-- Mongo
-- PBM
-- Percona
-- Percona Community Live
-- dashboard
-- event
-- k8s
-- opensource
 blog_tags:
 - Docker
 - HELM
@@ -47,10 +34,30 @@ blog_tags:
 - release
 - sergey_pronin
 - storage
+events_tags:
+- Database
+- Event
+- Kubernetes
+- Meetup
+- Mongo
+- PBM
+- Percona
+- Percona Community Live
+- dashboard
+- event
+- k8s
+- opensource
+talks_tags: []
 posts_count: 4
-talks_count: 10
+events_count: 10
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2025'
+- '2024'
+- '2022'
+- '2021'
 ---
 Sergey is a product leader at Percona focusing on delivering robust open-source database and cloud-native solutions. Prior to Percona Sergey led product management and engineering teams in other organizations with a primary focus on products in infrastructure and platforms space.

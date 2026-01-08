@@ -12,18 +12,31 @@ social:
   website: null
 images:
 - contributors/radoslaw_szulgo.jpeg
-# Auto-generated fields below. Do not edit manually.
-contributor_tag: []
-events_tags: []
+# Auto-generated fields. Do not edit manually.
+contributor_tag:
+- Cloud
+- MongoDB
 blog_tags:
 - GSoC
 - MongoDB
 - Opensource
 - PMM
 - Percona
+events_tags: []
+talks_tags:
+- Azure
+- Cloud Native
+- DBaaS
+- Databases
+- Kubernetes
+- Opensource
 posts_count: 1
-talks_count: 0
+events_count: 0
+talks_count: 1
 contributor_type:
 - author
+- speaker
+contributor_year:
+- '2025'
 ---
 Senior Product Manager at Percona

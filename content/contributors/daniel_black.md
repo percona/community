@@ -14,9 +14,8 @@ social:
   website: null
 images:
 - contributors/daniel_black.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - MariaDB
 - MySQL
@@ -24,11 +23,17 @@ blog_tags:
 - cacheline
 - perf
 - performance
+events_tags: []
+talks_tags: []
 posts_count: 1
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2021'
+- '2020'
 ---
 After a reasonable amount of time doing development and IT security work, Daniel landed a DBA Consultant job and loved it.
 

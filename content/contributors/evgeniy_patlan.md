@@ -14,12 +14,13 @@ social:
   website: null
 images:
 - contributors/evgeniy_patlan.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
 - MySQL
 - PMM
 - PostgreSQL
+blog_tags: []
 events_tags:
 - Event
 - Meetup
@@ -28,10 +29,13 @@ events_tags:
 - devops
 - opensource
 - pgpool
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2022'
 ---
 Evgeniy Patlan is Manager, Build & Release Engineering Team at Percona. He is experienced Build And Release Engineer, Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Perl, JavaScript, Python, Session Initiation Protocol (SIP), SOAP, and Linux System Administration. Strong engineering professional with a specialist focused in Computer systems, Programming, System Administrating, Network Technologies.

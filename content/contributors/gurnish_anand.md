@@ -12,16 +12,20 @@ social:
   website: null
 images:
 - contributors/gurnish_anand.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - MariaDB
 - MySQL
 - performance
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2019'
 ---
 Gurnish's career has been with Oracle, in Technical Management, and now with MySQL. On the personal front, I live/work in San Francisco, and in my free time I zip around in single engine airplanes around the bay!

@@ -14,8 +14,9 @@ social:
   website: null
 images:
 - contributors/david_ducos.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Event
 - MyDumper
@@ -25,10 +26,14 @@ events_tags:
 - event
 - opensource
 - sponsorship
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2023'
+- '2022'
 ---
 David studied Computer Science in National University of La Plata and has worked as a DBA consultant since 2008. For 3 years he worked with a worldwide platform of free classifieds up until he joined Percona's consulting team in November 2014. David lives in La Plata, near Buenos Aires, Argentina and in his free time loves to spend time with his family. He is also the maintainer of MyDumper.

@@ -14,16 +14,20 @@ social:
   website: null
 images:
 - contributors/dipti_borkar.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Community Track
 - Percona Live 2021
 - Presto
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 2
+events_count: 2
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Dipti is the co-founder and CPO of Ahana with over 15 years experience in distributed data and database technology including relational, NoSQL and federated systems. She is also the Presto Foundation Outreach Chairperson. Prior to Ahana, Dipti held VP roles at Alluxio, Kinetica and Couchbase. At Alluxio, she was Vice President of Products and at Couchbase she held several leadership positions there including VP, Product Marketing, Head of Global Technical Sales and Head of Product Management. Earlier in her career Dipti managed development teams at IBM DB2 Distributed where she started her career as a database software engineer. Dipti holds a M.S. in Computer Science from UC San Diego, and an MBA from the Haas School of Business at UC Berkeley.

@@ -14,13 +14,17 @@ social:
   website: null
 images:
 - contributors/umair_shahid.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags: []
+events_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Umair counts 20 years experience in PostgreSQL and open source experience serving some of the highly competitive technology markets in USA & Europe in roles of increasing responsibility. Proven track record of the unique ability to bridge the gap between business objectives and engineering :

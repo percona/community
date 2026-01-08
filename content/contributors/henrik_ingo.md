@@ -14,14 +14,18 @@ social:
   website: null
 images:
 - contributors/henrik_ingo.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags: []
+events_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Open Source expert, with 13+ years experience with open source databases. One of the leading European experts both in MySQL and MongoDB databases. Particular interest in distributed systems and performance. I also have experience from several business management roles, such as managing 25 mobile developers and as COO and Advisor at 2 startups in the MySQL space.
 

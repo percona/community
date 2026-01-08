@@ -12,12 +12,9 @@ social:
   website: null
 images:
 - contributors/jan_wieremjewicz.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL
-events_tags:
-- PerconaLive2023
-- Podcast
 blog_tags:
 - Event
 - OIDC
@@ -33,11 +30,22 @@ blog_tags:
 - pg_jan
 - pg_stat_monitor
 - sponsorship
+events_tags:
+- PerconaLive2023
+- Podcast
+talks_tags:
+- Open Source
+- Security
 posts_count: 11
+events_count: 1
 talks_count: 1
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2025'
+- '2024'
+- '2023'
 ---
 Jan is a Senior Product Manager at Percona, leading the products for PostgreSQL. He has vast experience in the development, deployment and maintenance of enterprise systems. 
 

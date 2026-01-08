@@ -14,17 +14,21 @@ social:
   website: null
 images:
 - contributors/michel_tricot.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Community Track
 - Kubernetes
 - Percona Live 2021
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Michel has been working in data engineering for the past 15 years. As head of integrations and engineering director at Liveramp (NYSE: RAMP), he grew the team responsible for building and scaling the data ingestion and data distribution connectors, syncing 100s TB every day.
 

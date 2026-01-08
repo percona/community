@@ -14,9 +14,10 @@ social:
   website: null
 images:
 - contributors/charly_batista.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL
+blog_tags: []
 events_tags:
 - Meetup
 - Percona Community Live
@@ -31,11 +32,17 @@ events_tags:
 - pgpool
 - securing
 - sponsorship
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 29
+events_count: 29
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2024'
+- '2023'
+- '2022'
+- '2021'
 ---
 Charly Batista is currently PostgreSQL Tech Lead at Percona. 
 Possesses over twelve (12) years of experience in various areas of IT including Database Administration, Data Analysis, Systems Analysis and Software Development. Strong analytical skills combined with experience in object oriented programming techniques. Technical Leader for more than four (4) years for the Developer Team. Born in Brazil and now living in Shanghai-China.

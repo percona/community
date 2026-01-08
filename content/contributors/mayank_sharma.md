@@ -12,9 +12,8 @@ social:
   website: null
 images:
 - contributors/mayank_sharma.jpeg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - Cassandra
 - DBaaS
@@ -33,8 +32,13 @@ blog_tags:
 - Tools
 - mysql-and-variants
 - security
+events_tags: []
+talks_tags: []
 posts_count: 3
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2020'
 ---

@@ -14,17 +14,21 @@ social:
   website: kuaishou.com
 images:
 - contributors/amos_bird.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Altinity
 - ClickHouse
 - Community Track
 - Percona Live 2021
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Amos Bird (郑天祺) is a software engineer at KuaiShou Technologies in China. He graduated from the Institute of Computing Technology, Chinese Academy of Science, with a Doctor's degree in Database Systems. He is an active ClickHouse contributor for over more than three years, and have accomplished some major improvements such as PROJECTIONs, ClickHouse-ETL, Balanced JBOD with HA, StringHashMap, etc.

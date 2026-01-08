@@ -15,13 +15,9 @@ social:
   website: https://federico-razzoli.com/
 images:
 - contributors/federico_razzoli.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
-events_tags:
-- Community Track
-- MariaDB
-- Percona Live 2021
 blog_tags:
 - Events
 - MariaDB
@@ -30,11 +26,21 @@ blog_tags:
 - Percona Live Europe 2018
 - PostgreSQL
 - system-versioned tables
+events_tags:
+- Community Track
+- MariaDB
+- Percona Live 2021
+talks_tags: []
 posts_count: 3
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2021'
+- '2019'
+- '2018'
 ---
 Relational databases lover and open source supporter. I wrote "Mastering MariaDB" in 2014, and I was a MariaDB Community Ambassador. I am an independent consultant based in London
 

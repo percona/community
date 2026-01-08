@@ -14,17 +14,22 @@ social:
   website: null
 images:
 - contributors/vadim_tkachenko.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
 - MySQL
+blog_tags: []
 events_tags:
 - Events
 - MySQL-Summit
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2025'
+- '2021'
 ---
 Co‑founder of Percona and co‑author of High Performance MySQL. Vadim has deep expertise in database scalability and performance, with a long history in the IT and services industry. His professional skills span scalability, performance tuning, and software engineering, and his contributions — including co‑authoring one of the most influential books on MySQL optimization — have helped shape Percona into a trusted name in the open source database community. Vadim is also a frequent speaker at open source and database conferences, where he shares practical insights on performance and scalability.

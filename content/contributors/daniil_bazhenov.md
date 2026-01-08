@@ -12,7 +12,7 @@ social:
   website: null
 images:
 - contributors/daniil_bazhenov.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
 - Community
@@ -20,7 +20,6 @@ contributor_tag:
 - MySQL
 - PMM
 - PostgreSQL
-events_tags: []
 blog_tags:
 - ArgoCD
 - Coroot
@@ -56,10 +55,20 @@ blog_tags:
 - documentation
 - online meetups
 - percona speakers
+events_tags: []
+talks_tags: []
 posts_count: 16
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2025'
+- '2024'
+- '2023'
+- '2022'
+- '2021'
+- '2020'
 ---
 I am proud to work for the Percona Community Team.

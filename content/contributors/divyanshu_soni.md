@@ -14,18 +14,22 @@ social:
   website: null
 images:
 - contributors/divyanshu_soni.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
+blog_tags: []
 events_tags:
 - Percona Community Live
 - Stream
 - dashboard
 - event
 - opensource
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 2
+events_count: 2
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2022'
 ---

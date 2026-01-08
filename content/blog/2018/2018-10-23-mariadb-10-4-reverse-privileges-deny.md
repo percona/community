@@ -6,7 +6,7 @@ tags: ['Events', 'MariaDB', 'MySQL', 'Percona Live Europe 2018']
 images:
   - blog/2018/10/MariaDB-Foundation-vertical.png
 authors:
-  - vicențiu_ciorbaru
+  - vicentiu_ciorbaru
 slug: mariadb-10-4-reverse-privileges-deny
 ---
 

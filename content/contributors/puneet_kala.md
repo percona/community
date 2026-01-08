@@ -12,9 +12,8 @@ social:
   website: null
 images:
 - contributors/puneet_kala.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - Community
 - Events
@@ -27,9 +26,14 @@ blog_tags:
 - Percona Monitoring and Management
 - Tools
 - mysql-and-variants
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2020'
 ---
 Frontend Web Automation Quality Assurance at Percona

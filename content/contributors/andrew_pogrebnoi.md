@@ -14,19 +14,24 @@ social:
   website: null
 images:
 - contributors/andrew_pogrebnoi.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
+blog_tags: []
 events_tags:
 - Event
 - Meetup
 - opensource
 - sponsorship
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 2
+events_count: 2
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2024'
+- '2021'
 ---
 Andrew Pogrebnoi is Principal Software Engineer at Percona.
 He says: “I like to make fast, reliable and valuable things. Try to keep it working, consistent and available. Enjoyed with compilers, databases, distributed systems, and performance.”

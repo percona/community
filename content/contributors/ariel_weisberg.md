@@ -14,17 +14,21 @@ social:
   website: null
 images:
 - contributors/ariel_weisberg.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Community Track
 - Percona Live 2021
 - Presto
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Currently working on Presto @ Facebook.
 

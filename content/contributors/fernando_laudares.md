@@ -15,15 +15,19 @@ social:
   website: null
 images:
 - contributors/fernando_laudares.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
+blog_tags: []
 events_tags:
 - Meetup
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 2
+events_count: 2
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Fernando joined Percona in early 2013 after 8 years working for a Canadian company specialized in Linux and Open Source technologies. As a member of Percona's Support team, Fernando works closely with customers helping them troubleshoot issues with MySQL, PostgreSQL, and MongoDB servers and looking for answers to various database-related questions and challenges. He also has a personal interest in education in general and loves to read and talk about this subject.

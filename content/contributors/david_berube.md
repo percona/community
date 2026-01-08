@@ -12,11 +12,10 @@ social:
   website: http://berubeconsulting.com/
 images:
 - contributors/person-using-laptop.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
 - Toolkit
-events_tags: []
 blog_tags:
 - Collation
 - Conversion
@@ -24,9 +23,14 @@ blog_tags:
 - Migration
 - MySQL
 - Toolkit
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2018'
 ---
 David Berube is a freelance Ruby on Rails developer and MySQL performance consultant. He specializes in maintaining legacy systems. He authored the books “Practical Rails Gems” and “Practical Reporting with Ruby and Rails”, and co-authored the book “Practical Rails Plugins," and he's written for venues like Dr. Dobb's Journal, Linux Pro Magazine, and IBM DeveloperWorks. Website: berubeconsulting.com

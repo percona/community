@@ -14,17 +14,22 @@ social:
   website: null
 images:
 - contributors/ivan_groenwold.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Event
 - opensource
 - sponsorship
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 2
+events_count: 2
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2023'
+- '2022'
 ---
 More than 15 years providing support to mission critical environments for first line companies.
 Experience in various on-prem and cloud platforms running Oracle, MySQL and MongoDB databases.

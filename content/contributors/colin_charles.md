@@ -14,24 +14,29 @@ social:
   website: null
 images:
 - contributors/colin_charles.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
+blog_tags:
+- Colin.Charles
+- Events
+- MariaDB
 events_tags:
 - MariaDB
 - Percona Community Live
 - dashboard
 - event
 - opensource
-blog_tags:
-- Colin.Charles
-- Events
-- MariaDB
+talks_tags: []
 posts_count: 1
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2022'
+- '2020'
 ---
 Businessperson, open source consultant, technical architect, experienced community builder based in Kuala Lumpur, Malaysia.
 

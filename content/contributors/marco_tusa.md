@@ -14,17 +14,22 @@ social:
   website: null
 images:
 - contributors/marco_tusa.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
+blog_tags: []
 events_tags:
 - Event
 - Kubernetes
 - Promo
 - fosdem
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2025'
+- '2023'
 ---

@@ -12,17 +12,21 @@ social:
   website: null
 images:
 - blog/2020/10/torres-pix.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - MariaDB
 - PLO-2020-10
 - PostgreSQL
 - jorge.torres
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2020'
 ---
 Jorge Torres is the Co-founder & CEO of MindsDB. He is also a visiting scholar at UC Berkeley researching machine learning automation and explainability. Prior to founding MindsDB, he worked for a number of data-intensive start-ups, most recently working with Aneesh Chopra (the first CTO in the US government) building data systems that analyze billions of patients records and lead to highest savings for millions of patients. He started his work on scaling solutions using machine learning in early 2008 while working as first full time engineer at Couchsurfing where he helped grow the company from a few thousand users to a few million. Jorge had degrees in electrical engineering & computer science, including a masters degree in computer systems (with a focus on applied Machine Learning) from the Australian National University.

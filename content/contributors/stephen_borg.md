@@ -14,18 +14,22 @@ social:
   website: null
 images:
 - contributors/stephen_borg.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Altinity
 - ClickHouse
 - Community Track
 - Percona Live 2021
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Stephen has had a career in technology for online and retail gambling, having worked close to business for a number of B2C and B2B providers. Sound background in technology, delivering affiliate and gambling platforms using both .NET and Java frameworks.
 

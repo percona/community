@@ -12,11 +12,10 @@ social:
   website: null
 images:
 - contributors/person-using-laptop.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
 - MySQL
-events_tags: []
 blog_tags:
 - Deadlock
 - Dev
@@ -26,9 +25,14 @@ blog_tags:
 - Tools
 - export data
 - tools
+events_tags: []
+talks_tags: []
 posts_count: 2
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2018'
 ---
 IT professional with 10+ years experience, mainly in large commercial environments. Expertise in MySQL, MariaDB, Big Data, Bash , Unix systems and Python development. Aftab's LinkedIn Profile

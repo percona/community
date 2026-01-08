@@ -14,15 +14,19 @@ social:
   website: null
 images:
 - contributors/jean_joseph.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Databases
 - Percona Community Live
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2022'
 ---
 Jean Joseph is a Data Engineer/DBA, Speaker, IT Event Planner, Blogger, Data Driven Community Builder, Founder & main organizer of Cloud Data Driven User Group & Future Data Driven Summit, highly experienced in Traditional Database, and Big Data technologies with a history of successes in designing, implementing complex technical projects for diverse businesses in various stages of their development.

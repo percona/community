@@ -12,20 +12,24 @@ social:
   website: null
 images:
 - contributors/julia_vural.jpeg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
 - MySQL
 - PMM
 - PostgreSQL
-events_tags: []
 blog_tags:
 - Opensource
 - Ubuntu
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2025'
 ---
 As a Software Engineering Manager at Percona, I have over 23 years of experience in software development, leadership, and innovation. 
 

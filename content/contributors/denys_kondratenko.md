@@ -14,19 +14,13 @@ social:
   website: null
 images:
 - contributors/denys_kondratenko.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
 - Community
 - MySQL
 - PMM
 - PostgreSQL
-events_tags:
-- Kubernetes
-- Percona Community Live
-- dashboard
-- event
-- opensource
 blog_tags:
 - CSI
 - Containers
@@ -51,11 +45,23 @@ blog_tags:
 - minikube
 - pg_stat_monitor
 - podman
+events_tags:
+- Kubernetes
+- Percona Community Live
+- dashboard
+- event
+- opensource
+talks_tags: []
 posts_count: 7
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2023'
+- '2022'
+- '2021'
 ---
 I am Engineering Manager in Percona working on Percona Monitoring and Management solution.
  

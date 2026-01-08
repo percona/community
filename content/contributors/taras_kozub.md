@@ -12,17 +12,23 @@ social:
   website: null
 images:
 - contributors/taras_kozub.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM
-events_tags: []
 blog_tags:
 - PMM
 - Release
 - Releases
+events_tags: []
+talks_tags: []
 posts_count: 15
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2023'
+- '2022'
+- '2021'
 ---
 Agile Facilitator, PMM

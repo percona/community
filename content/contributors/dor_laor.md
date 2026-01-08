@@ -14,13 +14,17 @@ social:
   website: null
 images:
 - contributors/dor_laor.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags: []
+events_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Dor Laor is the CEO of ScyllaDB. Previously, Dor was part of the founding team of the KVM hypervisor under Qumranet that was acquired by Red Hat. At Red Hat Dor was managing the KVM and Xen development for several years. Dor holds an MSc from the Technion and a PhD in snowboarding.

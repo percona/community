@@ -12,18 +12,12 @@ social:
   website: null
 images:
 - contributors/mario_garcia.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
 - MySQL
 - PMM
 - PostgreSQL
-events_tags:
-- Event
-- Postgres
-- Stream
-- opensource
-- securing
 blog_tags:
 - AWS
 - Amazon EKS
@@ -38,10 +32,21 @@ blog_tags:
 - PMM
 - PostgreSQL
 - Python
+events_tags:
+- Event
+- Postgres
+- Stream
+- opensource
+- securing
+talks_tags: []
 posts_count: 7
-talks_count: 9
+events_count: 9
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2023'
+- '2022'
 ---
 Mario has been an active Open Source contributor for more than 15 years. Technical Evangelist @ Percona. Python developer with experience automating stuff and web development. Speaker at tech and innovation events since 2008. DevOps enthusiast. Member of GitLab Heroes, GitKraken Ambassadors and HashiCorp Ambassadors.

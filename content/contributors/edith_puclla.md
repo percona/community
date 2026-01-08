@@ -12,7 +12,7 @@ social:
   website: https://edithpuclla.com/
 images:
 - contributors/edith_puclla.jpeg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
 - Community
@@ -21,13 +21,6 @@ contributor_tag:
 - PMM
 - PostgreSQL
 - Toolkit
-events_tags:
-- Event
-- Postgres
-- Stream
-- fosdem
-- opensource
-- securing
 blog_tags:
 - Backups
 - CNCF
@@ -80,11 +73,28 @@ blog_tags:
 - sergey_pronin
 - sponsorship
 - storage
+events_tags:
+- Event
+- Postgres
+- Stream
+- fosdem
+- opensource
+- securing
+talks_tags:
+- Cloud Native
+- Kubernetes
+- Open Source
+- Operators
 posts_count: 31
-talks_count: 7
+events_count: 7
+talks_count: 2
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2025'
+- '2024'
+- '2023'
+- '2022'
 ---
-
 Edith Puclla is a Technology Evangelist of Percona Corporation, studied at 42 Silicon Valley School in California in 2020, and was part of the Outreachy Internship in 2021. She has a background in DevOps and is a Docker and Kubernetes enthusiast.

@@ -14,12 +14,13 @@ social:
   website: null
 images:
 - contributors/alexander_zaitsev.jpeg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
 - MySQL
 - PMM
 - PostgreSQL
+blog_tags: []
 events_tags:
 - Altinity
 - ClickHouse
@@ -28,10 +29,14 @@ events_tags:
 - Percona Live 2021
 - PerconaUniversity
 - Yerevan
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2025'
+- '2021'
 ---
 Alexander is a co-founder of Altinity. He has 20 years of engineering and engineering management experience in several international companies. Alexander is an expert in high scale analytics systems design and implementation. He designed and deployed petabyte-scale data warehouses, including one of the earliest ClickHouse deployments outside of Yandex.

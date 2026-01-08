@@ -12,18 +12,22 @@ social:
   website: https://releem.com
 images:
 - contributors/roman_agabekov.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
-events_tags: []
 blog_tags:
 - DBA Tools
 - MariaDB
 - MySQL
 - Percona
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2025'
 ---
 Founder & CEO at Releem Inc., Software Engineer, MySQL & MariaDB Consultant, Entrepreneur passionate about database performance and automation.

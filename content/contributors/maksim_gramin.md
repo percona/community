@@ -14,9 +14,11 @@ social:
   website: gramin.pro
 images:
 - contributors/maksim_gramin.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+blog_tags:
+- SQL
 events_tags:
 - Code
 - Database
@@ -24,13 +26,16 @@ events_tags:
 - dashboard
 - event
 - opensource
-blog_tags:
-- SQL
+talks_tags: []
 posts_count: 3
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2023'
+- '2022'
 ---
 Maksim Gramin is a software consultant, researcher and developer passionate about Databases and SQL
 

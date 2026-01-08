@@ -14,15 +14,19 @@ social:
   website: null
 images:
 - contributors/kimberly_wilkins.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
+blog_tags: []
 events_tags:
 - Meetup
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Kimberly Wilkins is MongoDB Technical Lead at Percona currently. She has over 20 years experience managing and architecting database systems. She worked with MongoDB customers of all sizes in many industries and helped them to plan, deploy, troubleshoot, tune, and horizontally shard and scale to handle heavy workloads and keep their applications running and their businesses growing.

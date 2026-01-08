@@ -15,17 +15,21 @@ social:
   website: null
 images:
 - contributors/kyle_davis.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Amazon
 - Community Track
 - OpenSearch
 - Percona Live 2021
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 6
+events_count: 6
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Kyle Davis is the Senior Developer Advocate with Open Distro for Elasticsearch at AWS. While being a relative newcomer to AWS, Kyle has a long history with software development and databases. When not working, Kyle enjoys 3D printing, and getting his hand dirty in his Edmonton, Alberta-based home garden.

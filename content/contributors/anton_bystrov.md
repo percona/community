@@ -14,15 +14,9 @@ social:
   website: null
 images:
 - contributors/anton_bystrov.jpeg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM
-events_tags:
-- Percona Community Live
-- VictoriaMetrics
-- dashboard
-- event
-- opensource
 blog_tags:
 - PMM
 - VictoriaMetrics
@@ -30,10 +24,20 @@ blog_tags:
 - dashboard
 - metrics
 - monitoring
+events_tags:
+- Percona Community Live
+- VictoriaMetrics
+- dashboard
+- event
+- opensource
+talks_tags: []
 posts_count: 3
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2022'
 ---
 Dashboards engineer, Percona Monitoring and Management.

@@ -15,8 +15,9 @@ social:
   website: null
 images:
 - contributors/alawi_assaggaf.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Percona Community Live
 - ProxySQL
@@ -24,10 +25,13 @@ events_tags:
 - dashboard
 - event
 - opensource
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2022'
 ---
 MySQL DBA with 10 years experience in the industry.

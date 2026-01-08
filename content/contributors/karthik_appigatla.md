@@ -14,14 +14,18 @@ social:
   website: null
 images:
 - contributors/karthik_appigatla.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags: []
+events_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2021'
 ---
 Karthik Appigatla has been working on various large scale data stores for a decade primarily focused on MySQL. Currently, he has been working for LinkedIn for the last 5 years. Prior to LinkedIn, he worked for Yahoo, Pythian and Percona where he was responsible for helping clients scale their databases.
 

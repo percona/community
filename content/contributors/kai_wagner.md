@@ -12,18 +12,11 @@ social:
   website: null
 images:
 - contributors/kai_wagner.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
 - PMM
 - PostgreSQL
-events_tags:
-- Hacktoberfest
-- Kubernetes
-- Postgres
-- Stream
-- opensource
-- securing
 blog_tags:
 - Community
 - Compliance
@@ -38,11 +31,24 @@ blog_tags:
 - pg_kwagner
 - pg_tde
 - pg_zsolt
+events_tags:
+- Hacktoberfest
+- Kubernetes
+- Postgres
+- Stream
+- opensource
+- securing
+talks_tags: []
 posts_count: 3
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2025'
+- '2023'
+- '2022'
 ---
 Kai joined Percona in 2022 as an Engineering Manager responsible for the PostgreSQL development team. Before joining Percona,
 he worked as a team lead and as a software engineer at SUSE Linux. He is now focusing on the coordination of the PostgreSQL development at Percona as well as acting as an open source evangelist.

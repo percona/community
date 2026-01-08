@@ -14,9 +14,10 @@ social:
   website: null
 images:
 - contributors/rahul_malik.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
+blog_tags: []
 events_tags:
 - Database
 - Percona
@@ -24,10 +25,13 @@ events_tags:
 - dashboard
 - event
 - opensource
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2022'
 ---
 C++ Software Engineer in Percona

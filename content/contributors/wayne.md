@@ -12,19 +12,12 @@ social:
   website: null
 images:
 - contributors/Wayne_Leutwyler.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
 - MySQL
 - PostgreSQL
 - Toolkit
-events_tags:
-- Meetup
-- Percona Community Live
-- Postgres
-- dashboard
-- event
-- opensource
 blog_tags:
 - 64bit
 - Audit Log
@@ -51,10 +44,27 @@ blog_tags:
 - performance
 - replication
 - toolkit
+events_tags:
+- Meetup
+- Percona Community Live
+- Postgres
+- dashboard
+- event
+- opensource
+talks_tags: []
 posts_count: 14
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2025'
+- '2024'
+- '2023'
+- '2022'
+- '2021'
+- '2020'
+- '2019'
 ---
 When I'm not working with MySQL or other Open-source software packages. I like to do woodworking, 3D design and Printing, listening to all forms of Metal music and electronic projects with Raspberry PI, Arduino. Wayne lives in Powell Ohio, with his wife, daughter, 6 cats and 2 dogs.

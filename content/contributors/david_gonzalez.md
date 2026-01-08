@@ -14,8 +14,9 @@ social:
   website: null
 images:
 - contributors/david_gonzalez.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Data Gravity
 - Event
@@ -23,9 +24,13 @@ events_tags:
 - Postgres
 - Stream
 - opensource
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2023'
+- '2022'
 ---

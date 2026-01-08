@@ -14,18 +14,22 @@ social:
   website: null
 images:
 - contributors/yang_keao.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - Percona Community Live
 - dashboard
 - event
 - opensource
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 3
+events_count: 3
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2022'
 ---
 Yang Keao is a developer at PingCAP and a maintainer of Chaos Mesh, a
 cloud native chaos engineering platform for Kubernetes. He also helps the

@@ -12,17 +12,21 @@ social:
   website: null
 images:
 - contributors/teslim_balogun.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - beginners
 - github
 - open-source
 - percona
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2022'
 ---
 Teslim Balogun is a frontend developer, technical writer, and a big fan of Open Source.

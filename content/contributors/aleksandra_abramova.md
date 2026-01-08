@@ -12,16 +12,13 @@ social:
   website: null
 images:
 - contributors/aleksandra_abramova.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
 - Community
 - MySQL
 - PMM
 - PostgreSQL
-events_tags:
-- Event
-- fosdem
 blog_tags:
 - Community
 - Contributions
@@ -41,11 +38,20 @@ blog_tags:
 - events
 - monitoring
 - tuning
+events_tags:
+- Event
+- fosdem
+talks_tags: []
 posts_count: 8
-talks_count: 1
+events_count: 1
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2023'
+- '2022'
+- '2021'
 ---
 Aleksandra joined Percona Community Team in 2021 as a Community Specialist. Before joining Percona,
 she worked as a support specialist and as a technical writer in Simtech Development. She is now focusing on communicating with the opensource community, building awareness about Percona products and services, and event organizing.

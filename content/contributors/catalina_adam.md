@@ -12,19 +12,23 @@ social:
   website: null
 images:
 - contributors/catalina_adam.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM
-events_tags: []
 blog_tags:
 - Databases
 - Monitoring
 - PMM
 - Percona
+events_tags: []
+talks_tags: []
 posts_count: 1
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2025'
 ---
 Catalina Adam is a Senior Technical Writer at Percona, where she blends AI-driven content strategies with docs-as-code workflows to make open-source database technologies more accessible. 
 

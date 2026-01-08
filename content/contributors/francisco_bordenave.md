@@ -14,9 +14,10 @@ social:
   website: null
 images:
 - contributors/francisco_bordenave.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM
+blog_tags: []
 events_tags:
 - Event
 - Percona Community Live
@@ -25,10 +26,14 @@ events_tags:
 - event
 - opensource
 - sponsorship
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2023'
+- '2022'
 ---
 Francisco has been working in MySQL since 2006, he has worked for several companies which includes Health Care industry to Gaming. Over the last years he has been working as a database architect which help him to acquire a lot of technical and multi-cultural skills

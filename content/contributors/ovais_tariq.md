@@ -14,17 +14,23 @@ social:
   website: ovaistariq.net
 images:
 - contributors/ovais_tariq.png
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
+blog_tags: []
 events_tags:
 - PerconaLive2022
 - PerconaLive2023
 - Podcast
-blog_tags: []
+talks_tags: []
 posts_count: 0
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - speaker
+contributor_year:
+- '2023'
+- '2022'
+- '2021'
 ---
 Engineering leader with 15 years of experience in database infrastructure and site reliability engineering. Currently building the core storage platform and leading production engineering for storage at Uber.
 

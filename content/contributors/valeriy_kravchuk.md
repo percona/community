@@ -12,9 +12,8 @@ social:
   website: http://mysqlentomologist.blogspot.com/
 images:
 - contributors/valeriy_kravchuk.jpeg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag: []
-events_tags: []
 blog_tags:
 - Events
 - MariaDB
@@ -22,9 +21,14 @@ blog_tags:
 - PLO-2020-10
 - perconalive
 - valeriy.kravchuk
+events_tags: []
+talks_tags: []
 posts_count: 2
+events_count: 0
 talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2020'
 ---
 Valeriy Kravchuk has supported MySQL users since 2005, in MySQL AB, Sun, Oracle, Percona and (since 2016) MariaDB Corporation.

@@ -14,10 +14,15 @@ social:
   website: null
 images:
 - contributors/robert_reeves.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
 - PostgreSQL
+blog_tags:
+- DevOps
+- PerconaLive
+- PerconaLive2022
+- blog
 events_tags:
 - Databases
 - Liquibase
@@ -25,16 +30,15 @@ events_tags:
 - dashboard
 - event
 - opensource
-blog_tags:
-- DevOps
-- PerconaLive
-- PerconaLive2022
-- blog
+talks_tags: []
 posts_count: 1
-talks_count: 4
+events_count: 4
+talks_count: 0
 contributor_type:
 - author
 - speaker
+contributor_year:
+- '2022'
 ---
 Robert Reeves is currently CTO at Liquibase
 

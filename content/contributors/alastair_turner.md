@@ -12,18 +12,29 @@ social:
   website: null
 images:
 - contributors/alastair_turner.jpg
-# Auto-generated fields below. Do not edit manually.
+# Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
 - PostgreSQL
-events_tags: []
 blog_tags:
 - Community
 - Opensource
 - PostgreSQL
 - pg_alastair
+events_tags: []
+talks_tags:
+- Cloud Native
+- CloudNative
+- Everest
+- Open Source
+- Operators
 posts_count: 1
-talks_count: 0
+events_count: 0
+talks_count: 3
 contributor_type:
 - author
+- speaker
+contributor_year:
+- '2025'
 ---
 Since 1995, Alastair has administered, programmed and supported all things database, from Access to Universe, settling on Postgres around 2002. His particular area of interest is integration between open source software, how open source communities can work together and what they can learn from each other.
