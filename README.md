@@ -42,8 +42,8 @@ The site runs on Hugo engine. It turns Markdown pages into HTML very quickly and
 - (Optional) install [Hugo engine](https://gohugo.io/getting-started/installing/)
 - Run the Hugo server in the source code folder of the site with the command `hugo server -D` and open a local copy of the site in your browser at `localhost:1313`
 - Create a separate branch for your changes.
-- Add information about you to the `content/authors/` folder.
-- Add your photo to the folder `assets/blog/authors`.
+- Add information about you to the `content/contributors/` folder.
+- Add your photo to the folder `assets/contributors`.
 - If your post contains images, load the pre-made images into the `assets/blog/[YEAR]/[month]` directory. If there is no directory, create one. 
 - Add your post in Markdown to the `content/blog` directory. Please, specify the name of your file according to the example: "Date-name-in-style-URL" ('2022-02-12-how-to-post.md').
 - Save the changes in Git and create a commit.
