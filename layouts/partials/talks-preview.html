@@ -10,7 +10,6 @@
       {{ with .Params.event_location }} • 📍 {{ . }}{{ end }}
     </p>
 
-    <!-- Спикеры -->
     <div class="talk-card__speakers">
       {{ range $speaker := .Params.speakers }}
         {{ $c := $.Site.GetPage (print "/contributors/" $speaker) }}
@@ -38,7 +37,6 @@
       {{ end }}
     </div>
 
-    <!-- Теги -->
     {{ with .Params.talk_tags }}
       <div class="talk-card__tags">
         {{ range . }}
@@ -47,7 +45,6 @@
       </div>
     {{ end }}
 
-    <!-- Ссылки -->
     <div class="talk-card__links">
       <div class="talk-card__links-left">
         {{ with .Params.slides }}

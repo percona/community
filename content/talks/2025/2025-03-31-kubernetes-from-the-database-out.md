@@ -8,16 +8,16 @@ speakers:
 talk_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-europe-london-2025/talk/RADW7C/"
 presentation_date: "2025-03-31"
 presentation_date_end: ""
-presentation_time: ""
+presentation_time: "2:00 am"
 talk_year: "2025"
 event: "Cloud Native Rejects Europe 2025"
 event_status: "Accepted"
 event_date_start: "2025-03-31"
-event_date_end: ""
-event_url: ""
+event_date_end: "2025-04-01"
+event_url: "https://cfp.cloud-native.rejekts.io/"
 event_location: "London"
 talk_tags: ['Operators', 'PostgreSQL', 'Open Source', 'Cloud Native']
-slides: ""
+slides: "https:/slides.com/slides-alastair/"
 video: "https://www.youtube.com/watch?v=5vqHVdJ2aCs"
 ---
 

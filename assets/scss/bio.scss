@@ -2,50 +2,99 @@
 
 .bios {
   &__bio {
-    overflow-y:visible;
-    margin-top:1.5rem;
-    border-top:2px solid $palette3;
-    padding-top:1.5rem;
-    margin-bottom:1.5rem;
-    position:relative;
-    display:flex;
-    flex-direction:row-reverse;
+    overflow-y: visible;
+    margin-top: 1.5rem;
+    border-top: 2px solid $palette3;
+    padding-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 1.5rem;
 
     h2 {
-      line-height:3rem;
-      margin-bottom:1.5rem;
-      margin-top:0;
+      line-height: 3rem;
+      margin-bottom: 0;
+      margin-top: 0;
+
+      span {
+        border-bottom: 2px solid $palette3;
+        padding-bottom: 0.2rem;
+      }
     }
 
-    img {
-      margin-left:1.5rem;
-      border-radius:50%;
-      height:10.5rem;
-      width:10.5rem;
+    .avatar {
+      border-radius: 50%;
+      width: 10.5rem;
+      height: 10.5rem;
+      object-fit: cover;
+      border: 2px solid #ddd;
     }
   }
 
   &__content {
-    flex:1;
+    flex: 1;
+
+    .bios__tagline {
+      font-style: italic;
+      color: #202124;
+      font-size: 1.1rem;
+      margin: 0.2rem 0 0.8rem 0;
+    }
+
+    .bios__bio-text {
+      margin: 1rem 0;
+    }
   }
 
-  @media screen and (max-width: 768px) {
-    &__bio {
-      display: block;
-      position:relative;
-      text-align:center;
-    }
-    &__content {
-      flex:none;
-      text-align:left;
-    }
-    h2 {
-      text-align:center;
-      span {
-        display: block;
+  .contributor-card__image {
+    position: relative;
+    padding-top: 0.5rem;
+
+    .social-overlay {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.3rem;
+
+      .social-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: contain;
+        }
+
+        &:hover {
+          background: #eee;
+        }
       }
     }
-    img {
+  }
+}
+
+@media (max-width: 768px) {
+  .bios {
+    &__bio {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .avatar {
+      margin: 0;
     }
   }
 }
