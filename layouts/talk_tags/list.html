@@ -5,7 +5,7 @@
 {{ define "mainwrapper" }}
 
 {{- $pages := .Pages -}}
-{{- $pages = sort $pages "Title" "asc" -}} <!-- alphabetical sort -->
+{{- $pages = sort $pages ".Params.presentation_date" "desc" -}}
 
 {{- $paginator := .Paginate $pages 9 -}}
 
