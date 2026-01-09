@@ -26,7 +26,6 @@
     
     {{ end }}   
 
-
 {{- end }}
 <meta name="twitter:title" content="{{ if (ne .Title "")}}{{ .Title }} | {{ end}}{{ .Site.Title }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
@@ -34,14 +33,9 @@
     <meta name="twitter:site" content="@{{ . }}"/>
 {{ end -}}
 {{ range .Params.authors }}
-    {{ with $.Site.GetPage (print "/authors/" .) -}}
+    {{ with $.Site.GetPage (print "/contributors/" .) -}}
         {{ with .Params.social.twitter }}
             <meta name="twitter:creator" content="@{{ . }}"/>
         {{ end -}}
     {{ end -}}
 {{ end -}}
-
-   
-
-
-

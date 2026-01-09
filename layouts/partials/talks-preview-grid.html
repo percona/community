@@ -1,0 +1,76 @@
+<div class="talk-card talk-card--grid">
+  <div class="talk-card__content">
+    <div class="talk-card__header">
+      <span class="talk-card__type-label">Talk</span>
+    </div>
+
+    <a href="{{ .RelPermalink }}" class="talk-card__title-link">
+      <h3 class="talk-card__title">{{ .Title }}</h3>
+    </a>
+
+    <div class="talk-card__meta">
+      {{ with .Params.presentation_date }}
+        <div class="talk-card__meta-date">
+          📅 {{ . | time.Format "Jan 2, 2006" }}
+          {{ with $.Params.presentation_time }}, {{ . }}{{ end }}
+        </div>
+      {{ else }}
+        {{ with .Params.event_date_start }}
+          <div class="talk-card__meta-date">
+            📅
+            {{ . | time.Format "Jan 2, 2006" }}
+            {{ if and $.Params.event_date_end (ne . $.Params.event_date_end) }}
+              – {{ $.Params.event_date_end | time.Format "Jan 2, 2006" }}
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Params.event }}
+        <div class="talk-card__meta-event">🏢 {{ . }}</div>
+      {{ end }}
+
+      {{ with .Params.event_location }}
+        <div class="talk-card__meta-location">📍 {{ . }}</div>
+      {{ end }}
+    </div>
+
+    <div class="talk-card__speakers">
+      {{ range $speaker := .Params.speakers }}
+        {{ $c := $.Site.GetPage (print "/contributors/" $speaker) }}
+        {{ with $c }}
+          <div class="talk-card__speaker-block">
+            {{ with .Params.images }}
+              {{ $img := index . 0 }}
+              <a href="{{ $c.RelPermalink }}" class="talk-card__speaker-avatar">
+                <img src="{{ ((resources.Get $img).Fill "60x60 90% jpg").RelPermalink }}" alt="{{ $c.Params.fullname }}" class="avatar"/>
+              </a>
+            {{ end }}
+            <div class="talk-card__speaker-info">
+              <a href="{{ $c.RelPermalink }}" class="talk-card__speaker-link">
+                {{ $c.Params.fullname }}
+              </a>
+              {{ with $c.Params.tagline }}
+                <p class="talk-card__speaker-tagline">{{ . }}</p>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ with .Params.talk_tags }}
+      <div class="talk-card__tags">
+        {{ range first 3 . }}
+          <a href="/talk_tags/{{ . | urlize }}/" class="tag" title="{{ . }}">#{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <div class="talk-card__links">
+      <div class="talk-card__links-right">
+        <a href="{{ .RelPermalink }}" class="talk-link">➡️ Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>

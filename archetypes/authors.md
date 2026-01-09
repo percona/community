@@ -8,7 +8,7 @@ fullname:
 fullname_pronounciation:
 # Enter a short tagline here 
 tagline: 
-# Add an avatar image to assets/authors and add the path relative to the assets directory here.
+# Add an avatar image to assets/contributors and add the path relative to the assets directory here.
 avatar: 
 # This is the alt text of the avatar picture. It should describe the person seen in the image for accessibility.
 avatar_alt: 

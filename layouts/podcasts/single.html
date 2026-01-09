@@ -8,8 +8,8 @@
 
 {{ define "meta" }}
   {{- if (isset .Params "speakers") -}}
-    {{ range $key, $author := .Params.authors -}}
-      {{- with $.Site.GetPage (print "/authors/" $author) -}}
+    {{ range $key, $author := .Params.speakers -}}
+      {{- with $.Site.GetPage (print "/contributors/" $author) -}}
         <meta name="author" content="{{ .Params.fullname }}" />
       {{- end }}{{ if $key }}, {{ end -}}
     {{- end -}}
@@ -38,7 +38,7 @@
         <span class="authors">
           {{- if (isset .Params "speakers") -}}
             by {{ range $key, $author := .Params.speakers -}}
-              {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+              {{- with $.Site.GetPage (print "/contributors/" $author) -}}
                 {{ if $key }}, {{ end -}}
                 <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
               {{- end }} 
@@ -70,7 +70,7 @@
         <div class="bios">
         {{ range $key, $author := .Params.speakers -}}
           <div class="bios__bio">
-            {{- with $.Site.GetPage (print "/speakers/" $author) -}}
+            {{- with $.Site.GetPage (print "/contributors/" $author) -}}
               {{- with .Params.images -}}
                 <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
               {{- end -}}
@@ -78,7 +78,7 @@
                 <h2><span>{{ .Params.fullname }}</span></h2>
                 <i>{{ .Params.job }}</i>
                 {{ .Content }}
-                <p><a href="/speakers/{{ $author }}">See all talks by {{ .Params.fullname }} &raquo;</a></p>
+                <p><a href="/contributors/{{ $author }}">See all podcasts by {{ .Params.fullname }} &raquo;</a></p>
               </div>
             {{- end }}
           </div>

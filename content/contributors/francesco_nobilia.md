@@ -1,0 +1,33 @@
+---
+name: francesco_nobilia
+name_pronunciation: francesco_nobilia
+fullname: Francesco Nobilia
+fullname_pronounciation: Francesco Nobilia
+job: Nutmeg, Principal Engineer
+country: null
+tagline: null
+social:
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
+images:
+- contributors/francesco_nobilia.jpg
+# Auto-generated fields. Do not edit manually.
+contributor_tag: []
+blog_tags: []
+events_tags:
+- Community Track
+- Kubernetes
+- Percona Live 2021
+talks_tags: []
+posts_count: 0
+events_count: 1
+talks_count: 0
+contributor_type:
+- speaker
+contributor_year:
+- '2021'
+---
+Francesco is an enthusiastic engineer focused on building the next generation of a self-service and cost-effective streaming data platform. Event-Drive addicted. Apache Kafka fun. Kafka Summit and Meetup speaker. Currently, he is Principal Engineer at Nutmeg.

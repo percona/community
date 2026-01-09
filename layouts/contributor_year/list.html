@@ -1,0 +1,30 @@
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+{{- $pages := .Pages -}}
+{{- $pages = sort $pages "Title" "asc" -}} <!-- alphabetical sort -->
+
+{{- $paginator := .Paginate $pages 9 -}}
+
+<div class="hero hero-gradient aqua">
+  <div class="contentblock">
+    <div class="hero-text">
+      <h1>
+        {{ if eq .Data.Term "speaker" }}
+          Percona Community Speakers #{{ .Title }}
+        {{ else if eq .Data.Term "author" }}
+          Percona Community Blog Authors #{{ .Title }}
+        {{ else }}
+          Contributors #{{ .Title }}
+        {{ end }}
+      </h1>
+    </div>
+  </div>
+</div>
+
+{{ partial "contributors-list.html" (dict "paginator" $paginator "page" .) }}
+
+{{ end }}

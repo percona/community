@@ -1,0 +1,36 @@
+---
+name: yahav_biran
+name_pronunciation: yahav_biran
+fullname: Yahav Biran
+fullname_pronounciation: Yahav Biran
+job: Principal Solutions Architect at AWS
+country: null
+tagline: null
+social:
+  facebook: null
+  github: null
+  linkedin: null
+  twitter: null
+  website: null
+images:
+- contributors/yahav_biran.jpg
+# Auto-generated fields. Do not edit manually.
+contributor_tag: []
+blog_tags:
+- AWS
+- Events
+- yahav.biran
+- yoav.eilat
+events_tags: []
+talks_tags: []
+posts_count: 1
+events_count: 1
+talks_count: 0
+contributor_type:
+- author
+- speaker
+contributor_year:
+- '2022'
+- '2020'
+---
+Yahav Biran is a Principal Solutions Architect at AWS, focused on game tech at scale. Yahav enjoys contributing to open-source projects and publishes in the AWS blog and academic journals. He currently contributes to the K8s Helm community, Percona Live, AWS databases and compute blogs, and Journal of Systems Engineering. He delivers technical presentations at technology events and works with customers to design their applications in the cloud. He received his PhD (Systems Engineering) from Colorado State University.

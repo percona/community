@@ -15,6 +15,6 @@ Percona Community worked together with other communities to organize Community T
 
 Select a room to watch the content.
 
-Full list of speakers on [the Speakers page](/speakers).
+Full list of speakers on [the Speakers page](/contributor_type/speaker/).
 
 {{% /hero-gradient %}}

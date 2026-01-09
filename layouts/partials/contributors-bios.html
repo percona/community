@@ -1,0 +1,51 @@
+<div class="bios">
+    <h2>Speaker Bios</h2>
+    {{ range $key, $author := .Params.speakers }}
+    {{ with $.Site.GetPage (print "/contributors/" $author) }}
+    <div class="bios__bio">
+        <div class="contributor-card__image">
+        {{ with .Params.images }}
+            <a href="{{ $.RelPermalink }}">
+            <img src="{{ ((resources.Get (index . 0)).Fill "200x200 90% jpg").Permalink }}" alt="{{ $.Params.fullname }}" class="avatar" />
+            </a>
+        {{ end }}
+        <div class="social-overlay">
+            {{ with .Params.social.linkedin }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="social-icon">
+                <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode }}" alt="LinkedIn" />
+            </a>
+            {{ end }}
+            {{ with .Params.social.twitter }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="social-icon">
+                <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode }}" alt="Twitter" />
+            </a>
+            {{ end }}
+            {{ with .Params.social.github }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="social-icon">
+                <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode }}" alt="GitHub" />
+            </a>
+            {{ end }}
+            {{ with .Params.social.website }}
+            <a href="{{ . }}" target="_blank" rel="noopener" class="social-icon website">
+                <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-website.svg").Content | base64Encode }}" alt="Website" />
+            </a>
+            {{ end }}
+        </div>
+        </div>
+        <div class="bios__content">
+        <h2><span><a href="{{ .RelPermalink }}">{{ .Params.fullname }}</a></span></h2>
+        {{ if .Params.tagline }}
+            <p class="bios__tagline">{{ .Params.tagline }}</p>
+        {{ end }}
+        {{ if .Params.job }}
+            <i>{{ .Params.job }}</i>
+        {{ end }}
+        <div class="bios__bio-text">
+            {{ .Content }}
+        </div>
+        <p><a href="/contributors/{{ $author }}">See all talks by {{ .Params.fullname }} &raquo;</a></p>
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>

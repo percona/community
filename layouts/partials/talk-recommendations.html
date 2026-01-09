@@ -1,0 +1,47 @@
+<div class="recommendations branded">
+  <h2>Explore More Talks</h2>
+  <div class="grid grid--3">
+    {{ $recommendationCount := 3 }}
+    {{ $currentPage := . }}
+    {{ $recommended := slice }}
+
+    {{ if .Params.speakers }}
+      {{ $bySpeakers := where (where $.Site.RegularPages "Section" "talks") ".Params.speakers" "intersect" .Params.speakers }}
+      {{ $bySpeakers = where $bySpeakers "Permalink" "!=" $currentPage.Permalink }}
+      {{ $recommended = $bySpeakers }}
+    {{ end }}
+
+    {{ if and .Params.talk_tags (lt (len $recommended) $recommendationCount) }}
+      {{ $byTags := where (where $.Site.RegularPages "Section" "talks") ".Params.talk_tags" "intersect" .Params.talk_tags }}
+      {{ $byTags = where $byTags "Permalink" "!=" $currentPage.Permalink }}
+
+      {{ $alreadyPermalinks := slice }}
+      {{ range $recommended }}
+        {{ $alreadyPermalinks = $alreadyPermalinks | append .Permalink }}
+      {{ end }}
+      {{ $byTags = where $byTags "Permalink" "not in" $alreadyPermalinks }}
+
+      {{ $recommended = $recommended | union $byTags }}
+    {{ end }}
+
+    {{ if lt (len $recommended) $recommendationCount }}
+      {{ $allExcluded := $recommended | append $currentPage }}
+      {{ $alreadyPermalinks := slice }}
+      {{ range $allExcluded }}
+        {{ $alreadyPermalinks = $alreadyPermalinks | append .Permalink }}
+      {{ end }}
+
+      {{ $latest := where (where $.Site.RegularPages "Section" "talks") "Permalink" "not in" $alreadyPermalinks }}
+      {{ $latest = $latest | first (sub $recommendationCount (len $recommended)) }}
+      {{ $recommended = $recommended | union $latest }}
+    {{ end }}
+
+    {{ $recommended = first $recommendationCount $recommended }}
+
+    {{ range $recommended }}
+      <div class="grid__item">
+        {{ partial "talks-preview-grid.html" . }}
+      </div>
+    {{ end }}
+  </div>
+</div>

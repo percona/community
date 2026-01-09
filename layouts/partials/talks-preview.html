@@ -1,0 +1,68 @@
+<div class="talk-card">
+  <div class="talk-card__content">
+    <a href="{{ .RelPermalink }}" class="talk-card__title-link">
+      <h3 class="talk-card__title">{{ .Title }}</h3>
+    </a>
+
+    <p class="talk-card__meta">
+      {{ with .Params.presentation_date }}📅 {{ . }}{{ end }}
+      {{ with .Params.event }} • 🏢 {{ . }}{{ end }}
+      {{ with .Params.event_location }} • 📍 {{ . }}{{ end }}
+    </p>
+
+    <div class="talk-card__speakers">
+      {{ range $speaker := .Params.speakers }}
+        {{ $c := $.Site.GetPage (print "/contributors/" $speaker) }}
+        {{ with $c }}
+          <div class="talk-card__speaker-block">
+            {{ $img := index .Params.images 0 }}
+            {{ with $img }}
+              <a href="{{ $c.RelPermalink }}" class="talk-card__speaker-avatar">
+                <img src="{{ ((resources.Get .).Fill "80x80 90% jpg").RelPermalink }}" alt="{{ $c.Params.fullname }}" class="avatar"/>
+              </a>
+            {{ end }}
+            <div class="talk-card__speaker-info">
+              <a href="{{ $c.RelPermalink }}" class="talk-card__speaker-link">
+                <strong>{{ $c.Params.fullname }}</strong>
+              </a>
+              {{ with $c.Params.tagline }}
+                <p class="talk-card__speaker-tagline">{{ . }}</p>
+              {{ end }}
+              {{ with $c.Params.job }}
+                <p class="talk-card__speaker-job">{{ . }}</p>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ with .Params.talk_tags }}
+      <div class="talk-card__tags">
+        {{ range . }}
+          <a href="/talks/talk_tags/{{ . }}" class="tag" title="{{ . }}">#{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <div class="talk-card__links">
+      <div class="talk-card__links-left">
+        {{ with .Params.slides }}
+          <a href="{{ . }}" target="_blank" class="talk-link">📑 Slides</a>
+        {{ end }}
+        {{ with .Params.video }}
+          <a href="{{ . }}" target="_blank" class="talk-link">🎥 Video</a>
+        {{ end }}
+      </div>
+      <div class="talk-card__links-right">
+        {{ with .Params.event_url }}
+          <a href="{{ . }}" target="_blank" class="talk-link">🌐 Event</a>
+        {{ end }}
+        {{ with .Params.talk_url }}
+          <a href="{{ . }}" target="_blank" class="talk-link">🌐 Talk</a>
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="talk-link">➡️ Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>

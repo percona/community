@@ -12,6 +12,11 @@ params:
 taxonomies:
   tag: tags
   category: categories
+  contributor_type: "contributor_type"
+  contributor_tag: "contributor_tag"
+  contributor_year: "contributor_year"
+  talk_tags: "talk_tags"
+  talk_year: "talk_year"
 social:
   twitter: Percona
 sitemap:
@@ -118,9 +123,14 @@ menu:
       url: /events
       parent: events
       weight: 1
+    - identifier: talks
+      name: Talks
+      url: /talks
+      parent: events
+      weight: 2
     - identifier: speakers
       name: Speakers
-      url: /speakers
+      url: /contributor_type/speaker/
       parent: events
       weight: 3
 
@@ -131,7 +141,7 @@ menu:
       weight: 1
     - identifier: authors
       name: Authors
-      url: /authors
+      url: /contributor_type/author/
       parent: blog
       weight: 2
 
@@ -140,36 +150,41 @@ menu:
       url: /contribute/how-to-get-involved
       parent: contribute
       weight: 1
+    - identifier: contributors
+      name: Contributors
+      url: /contributors
+      parent: contribute
+      weight: 2
     - identifier: coc
       name: Code of Conduct
       url: /contribute/coc
       parent: contribute
-      weight: 2
+      weight: 3
     - identifier: opentopics
       name: Open Topics
       url: /contribute/opentopics
       parent: contribute
-      weight: 3
+      weight: 4
     - identifier: articles
       name: Articles
       url: /contribute/articles
       parent: contribute
-      weight: 4
+      weight: 5
     - identifier: youtube_playlists
       name: YouTube Playlists
       url: /contribute/youtube_playlists
       parent: contribute
-      weight: 5
+      weight: 6
     - identifier: documentation
       name: Documentation
       url: /contribute/documentation
       parent: contribute
-      weight: 6
+      weight: 7
     - identifier: surveys
       name: Testimonials & Surveys
       url: /contribute/testimonials
       parent: contribute
-      weight: 7
+      weight: 8
 
     - identifier: videos
       name: Videos

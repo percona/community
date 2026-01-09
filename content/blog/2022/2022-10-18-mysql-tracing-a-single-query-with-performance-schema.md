@@ -19,7 +19,7 @@ And finally I will need to find a way to view the query execution in the context
 But this is about query execution in the server, and the instrumentation available to me in MySQL 8, at least to get things started.
 So we take the tour of performance schema, and then run one example query (a simple join) and see what we can find out about this query.
 
-_First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/2021/09/15/mysql-tracing-a-single-query-with-performanceschema.html) and syndicated here with permission of the [author](/authors/koehntopp/)._
+_First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/2021/09/15/mysql-tracing-a-single-query-with-performanceschema.html) and syndicated here with permission of the [author](/contributors/koehntopp/)._
 
 # Performance Schema, the 10.000 m view
 
@@ -594,4 +594,4 @@ That is good.
 I could really use a single large JSON blob containing the entire package with performance data for a query, at once - one query to trace one query.
 That is, the information from transaction, statement, stages, waits, the execution plan and the memory consumption for a given transaction or statement, in one go.
 
-_First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/2021/09/15/mysql-tracing-a-single-query-with-performanceschema.html) and syndicated here with permission of the [author](/authors/koehntopp/)._
+_First published on [https://blog.koehntopp.info/](https://blog.koehntopp.info/2021/09/15/mysql-tracing-a-single-query-with-performanceschema.html) and syndicated here with permission of the [author](/contributors/koehntopp/)._

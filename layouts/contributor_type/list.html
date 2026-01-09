@@ -1,0 +1,50 @@
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+{{- $pages := .Pages -}}
+{{- if eq .Data.Term "author" -}}
+  {{- $pages = sort $pages ".Params.posts_count" "desc" -}}
+{{- else if eq .Data.Term "speaker" -}}
+  {{- $pages = sort $pages ".Params.talks_count" "desc" -}}
+{{- else -}}
+  {{- $pages = sort $pages "Title" "asc" -}} <!-- fallback: alphabetical -->
+{{- end -}}
+
+{{- $paginator := .Paginate $pages 9 -}}
+
+<div class="hero hero-gradient aqua">
+  <div class="contentblock">
+    <div class="hero-text">
+      {{- if eq .Data.Term "speaker" -}}
+        <h1>Percona Community Speakers</h1>
+        <p>
+          Speakers who have spoken or participated in
+          <a href="/events">events</a> organized with the participation of the Percona Community team.
+        </p>
+      {{- else if eq .Data.Term "author" -}}
+        <h1>Percona Community Blog Authors</h1>
+        <p>
+          Thank you to <a href="/blog">our blog</a> authors for their contributions.
+        </p>
+        <p>
+          We welcome you to <a href="/blog/2022/02/10/how-to-publish-blog-post/">become an author</a>
+          with your own topics about development, databases, technology and open source,
+          or look for ideas in <a href="/contribute/opentopics">open topics</a>.
+        </p>
+      {{- else -}}
+        {{- if eq $paginator.PageNumber 1 -}}
+          <h1>#{{ .Title }}</h1>
+        {{- else -}}
+          <h1>#{{ .Title }}: Page {{ $paginator.PageNumber }}</h1>
+        {{- end -}}
+      {{- end }}
+    </div>
+  </div>
+</div>
+
+{{ partial "contributors-list.html" (dict "paginator" $paginator "page" .) }}
+
+{{ end }}

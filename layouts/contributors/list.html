@@ -1,0 +1,33 @@
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+{{- $pages := .Pages -}}
+{{- $pages = sort $pages "Title" "asc" -}} <!-- alphabetical sort -->
+
+{{- $paginator := .Paginate $pages 9 -}}
+
+<div class="hero hero-gradient aqua">
+  <div class="contentblock">
+    <div class="hero-text">
+      <h1>Percona Community Contributors!</h1>
+      <p>
+        This section brings together speakers who have presented at 
+        <a href="/events">community events</a> and authors who have written for our 
+        <a href="/blog">blog</a>.
+      </p>
+      <p>
+        We thank all contributors for sharing their expertise and passion for open source technologies.
+      </p>
+      <p>
+        You can also <a href="/contribute/opentopics">join as a contributor</a> by proposing talks or writing articles on databases, cloud, and development.
+      </p>
+    </div>
+  </div>
+</div>
+
+{{ partial "contributors-list.html" (dict "paginator" $paginator "page" .) }}
+
+{{ end }}

@@ -1,0 +1,195 @@
+{{ define "title" }}{{ .Params.fullname }} | {{ .CurrentSection.Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+{{- $contributor_name := .Params.name -}}
+
+{{/* Collect blog posts */}}
+{{ $posts := slice }}
+{{ range $.Site.RegularPages }}
+  {{ if and (eq .Section "blog") (isset .Params "authors") (in .Params.authors $contributor_name) }}
+    {{ $posts = $posts | append . }}
+  {{ end }}
+{{ end }}
+{{ $posts_count := len $posts }}
+{{ $recent_posts := first 3 (sort $posts ".Date" "desc") }}
+
+{{/* Collect talks (only /talks) */}}
+{{ $talks := slice }}
+{{ range $.Site.RegularPages }}
+  {{ if and (eq .Section "talks") (isset .Params "speakers") (in .Params.speakers $contributor_name) }}
+    {{ $talks = $talks | append . }}
+  {{ end }}
+{{ end }}
+{{ $talks_count := len $talks }}
+{{ $talks_sorted := sort $talks "Params.event_date_start" "desc" }}
+{{ $recent_talks := first 3 $talks_sorted }}
+
+{{/* Collect events (speakers, but NOT /talks) */}}
+{{ $events := slice }}
+{{ range $.Site.RegularPages }}
+  {{ $is_talk := eq .Section "talks" }}
+  {{ $has_speaker := and (isset .Params "speakers") (in .Params.speakers $contributor_name) }}
+  {{ if and $has_speaker (not $is_talk) }}
+    {{ $events = $events | append . }}
+  {{ end }}
+{{ end }}
+{{ $events_count := len $events }}
+{{ $recent_events := first 3 (sort $events ".Date" "desc") }}
+
+{{/* Combine all activities for deduplication */}}
+{{ $all_activities := slice }}
+{{ if $posts }}{{ $all_activities = $all_activities | union $posts }}{{ end }}
+{{ if $talks }}{{ $all_activities = $all_activities | union $talks }}{{ end }}
+{{ if $events }}{{ $all_activities = $all_activities | union $events }}{{ end }}
+{{ $all_activities = where $all_activities ".Kind" "page" }}
+
+{{/* Mark already shown items (recent 3+3+3) */}}
+{{ $seen := newScratch }}
+{{ range $recent_posts }}{{ $seen.Set .RelPermalink true }}{{ end }}
+{{ range $recent_talks }}{{ $seen.Set .RelPermalink true }}{{ end }}
+{{ range $recent_events }}{{ $seen.Set .RelPermalink true }}{{ end }}
+
+{{/* Filter remaining items */}}
+{{ $remaining := slice }}
+{{ range $all_activities }}
+  {{ if not ($seen.Get .RelPermalink) }}
+    {{ $remaining = $remaining | append . }}
+  {{ end }}
+{{ end }}
+
+{{/* Sort remaining by event_date_start (if talk) or .Date */}}
+{{ $remaining_sorted := slice }}
+{{ range $remaining }}
+  {{ $sort_date := .Date }}
+  {{ if and (eq .Section "talks") (.Params.event_date_start) }}
+    {{ $sort_date = .Params.event_date_start }}
+  {{ end }}
+  {{ $remaining_sorted = $remaining_sorted | append (dict "Page" . "SortDate" $sort_date) }}
+{{ end }}
+{{ $remaining_sorted = sort $remaining_sorted "SortDate" "desc" }}
+{{ $remaining_count := len $remaining_sorted }}
+
+<div class="profile-hero hero hero-gradient night">
+  <div class="contentblock">
+    <div class="grid grid--2">
+      <div class="profile-hero__bio">
+        <h1>{{ .Params.fullname }}</h1>
+        {{ if .Params.job }}<i>{{ .Params.job }}</i>{{ end }}
+        {{ if .Params.tagline }}<p class="profile-hero__tagline">{{ .Params.tagline }}</p>{{ end }}
+
+        <div class="profile-hero__social-overlay">
+          {{ with .Params.social.linkedin }}
+            <a href="{{ . }}" target="_blank" class="social-icon">
+              <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode}}" alt="LinkedIn" />
+            </a>
+          {{ end }}
+          {{ with .Params.social.twitter }}
+            <a href="{{ . }}" target="_blank" class="social-icon">
+              <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode}}" alt="Twitter" />
+            </a>
+          {{ end }}
+          {{ with .Params.social.github }}
+            <a href="{{ . }}" target="_blank" class="social-icon">
+              <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode}}" alt="GitHub" />
+            </a>
+          {{ end }}
+          {{ with .Params.social.website }}
+            <a href="{{ . }}" target="_blank" class="social-icon website">
+              <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-website.svg").Content | base64Encode}}" alt="Website" />
+            </a>
+          {{ end }}
+        </div>
+
+        <p>{{ .Content }}</p>
+      </div>
+
+      {{ with .Params.images }}
+      <div class="profile-hero__image">
+        <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "240x240 90% jpg").Permalink}}" alt="{{ $.Params.avatar_alt }}" />
+      </div>
+      {{ end }}
+    </div>
+
+    <nav class="profile-hero__nav">
+      <ul class="profile-hero__counts">
+        {{ if gt $posts_count 0 }}
+          <li><a href="#earlier-activities">📝 {{ $posts_count }} posts</a></li>
+        {{ end }}
+        {{ if gt $talks_count 0 }}
+          <li><a href="#earlier-activities">🎤 {{ $talks_count }} talks</a></li>
+        {{ end }}
+        {{ if gt $events_count 0 }}
+          <li><a href="#earlier-activities">🗓️ {{ $events_count }} events</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="profile-sections contentblock branded">
+
+  <!-- Latest Blog Posts -->
+  {{ if gt $posts_count 0 }}
+  <h2 id="latest-posts">Latest Blog Posts</h2>
+  <div class="grid grid--3">
+    {{ range $recent_posts }}
+      <div class="grid__item">
+        {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Latest Talks -->
+  {{ if gt $talks_count 0 }}
+  <h2 id="latest-talks">Latest Talks</h2>
+  <div class="grid grid--3">
+    {{ range $recent_talks }}
+      <div class="grid__item">
+        {{ partial "talks-preview-grid.html" . }}
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Latest Events -->
+  {{ if gt $events_count 0 }}
+  <h2 id="latest-events">Latest Events</h2>
+  <div class="grid grid--3">
+    {{ range $recent_events }}
+      <div class="grid__item">
+        {{ partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Earlier Activities (all remaining, no pagination) -->
+  {{ if gt $remaining_count 0 }}
+  <h2 id="earlier-activities">Earlier Activities</h2>
+  <div class="grid grid--3">
+    {{ range $remaining_sorted }}
+      {{ $p := .Page }}
+      <div class="grid__item">
+        {{ if eq $p.Section "talks" }}
+          {{ partial "talks-preview-grid.html" $p }}
+        {{ else if eq $p.Section "blog" }}
+          {{ partial "postpreview" (dict "Link" $p.RelPermalink "Title" $p.Title "Image" (index $p.Params.images 0) "Content" $p.Content) }}
+        {{ else }}
+          {{ partial "talkpreview" (dict "Link" $p.RelPermalink "Title" $p.Title "Image" (index $p.Params.images 0) "Content" $p.Content) }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ partial "sharing.html" . }}
+</div>
+
+{{ end }}
