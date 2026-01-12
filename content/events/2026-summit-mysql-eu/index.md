@@ -1,5 +1,5 @@
 ---
-title: "Summit for MySQL Community, EU Edition — February 2, 2026"
+title: "Summit for MySQL Community, Europe — February 2, 2026"
 description: "Exploring the future of MySQL together — insights, tools, and community connections."
 images:
   - events/2026-summit-mysql-community-eu/Summit-MySQL-Brussels.jpg
