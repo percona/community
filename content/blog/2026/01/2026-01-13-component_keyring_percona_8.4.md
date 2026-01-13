@@ -1,13 +1,12 @@
 ---
 title: "Configuring the Component Keyring in Percona Server and PXC 8.4"
-date: "2026-01-26T00:00:00+00:00"
+date: "2026-01-13T00:00:00+00:00"
 tags: ["Opensource", "Percona", "key ring", "MySQL", "Community", "Percona Server", "PXC", "Security"]
 categories: ["MySQL"]
 authors:
   - wayne
-  - stanley_lipinski
 images:
-  - blog/2025/11/vintage-toolbox-open.jpg
+  - blog/2026/01/keyring-component.png
 ---
 
 # Configuring the Component Keyring in Percona Server and PXC 8.4  
