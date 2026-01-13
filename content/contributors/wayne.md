@@ -3,7 +3,7 @@ name: wayne
 name_pronunciation: wayne
 fullname: Wayne Leutwyler
 fullname_pronounciation: Wayne Leutwyler
-tagline: null
+tagline: Technical Account Manager, Percona
 social:
   facebook: null
   github: null
