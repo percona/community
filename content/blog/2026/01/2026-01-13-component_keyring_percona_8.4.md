@@ -176,6 +176,99 @@ Do not mix legacy keyring plugins with component keyrings. They come from differ
 
 Choose one model. For MySQL 8.4 and forward, **components are the future**.
 
+## Additional Steps for Percona XtraDB Cluster (PXC)
+
+Percona XtraDB Cluster introduces one critical difference compared to standalone Percona Server: the keyring file itself is not replicated by Galera. Only metadata and transactional state are replicated. The encryption keys remain node-local filesystem artifacts and must be handled deliberately.
+
+### Node 1: Establish the Authoritative Keyring
+
+Choose a single node to initialize the keyring. This is typically Node1, but the choice itself is not important as long as you are consistent.
+
+On this node:
+
+- Complete all previous steps in this document
+- Start MySQL successfully
+- Verify the keyring component is loaded:
+
+```sql
+SELECT *
+FROM performance_schema.keyring_component_status;
+```
+
+Once this node is running, the file below will be created and populated:
+
+```swift
+/var/lib/mysql-keyring/component_keyring_file
+```
+
+This file becomes the authoritative source of encryption keys for the entire cluster.
+
+### Why the Keyring File Must Be Copied
+
+PXC ensures that encrypted data remains readable on all nodes, but it does not distribute encryption keys themselves. Each node must have access to the same key material, or encrypted tablespaces will fail to open.
+
+If a node starts without the correct keyring file, you may see:
+
+- Tablespace open failures
+- Startup errors related to encryption
+- Inconsistent behavior during SST or IST
+
+This is expected behavior and not a bug.
+
+### Distribute the Keyring File to Other Nodes
+
+On each remaining PXC node:
+
+1. Ensure MySQL is stopped
+2. Create the keyring directory if it does not exist:
+
+```bash
+sudo mkdir -p /var/lib/mysql-keyring
+sudo chown root:root /var/lib/mysql-keyring
+sudo chmod 750 /var/lib/mysql-keyring
+```
+
+1. Securely copy the keyring file from Node1:
+
+```bash
+scp /var/lib/mysql-keyring/component_keyring_file node2:/var/lib/mysql-keyring/component_keyring_file
+```
+
+**Important:**
+Do not modify the file. Do not recreate it. Do not allow MySQL to generate a new one on secondary nodes.
+
+### Start MySQL on Each Node and Verify
+
+After the keyring file is in place:
+
+```bash
+sudo systemctl start mysqld
+```
+
+Verify the component is active:
+
+```sql
+SELECT * FROM performance_schema.keyring_component_status;
+```
+
+Each node should report the component_keyring_file as loaded and active.
+
+At this point:
+
+- Encrypted tablespaces will open correctly
+- SST and IST operations will succeed
+- The cluster will behave consistently during restarts
+
+## Operational Notes and Best Practices
+
+- Treat the keyring file like a secret, not configuration
+- Restrict access to root only
+- Include the keyring file in your secure backup strategy
+- When provisioning new nodes, copy the keyring file before first startup
+- Never rotate or regenerate the keyring independently on individual nodes
+
+If the keyring is lost and encrypted data exists, recovery is not possible.
+
 ---
 
 ## Final Thoughts
