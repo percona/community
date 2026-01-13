@@ -5,6 +5,7 @@ tags: ["Opensource", "Percona", "key ring", "MySQL", "Community", "Percona Serve
 categories: ["MySQL"]
 authors:
   - wayne
+  - stan_lipinski
 images:
   - blog/2026/01/keyring-component.png
 ---
@@ -30,7 +31,7 @@ Components are registered using **JSON**, not traditional MySQL configuration sy
 Create the file:
 
 ```bash
-vi /usr/sbin/mysqld.my
+sudo vi /usr/sbin/mysqld.my
 ```
 
 Add:
@@ -60,6 +61,7 @@ This directory will hold encryption keys. Treat it accordingly.
 
 ```bash
 cd /var/lib
+sudo mkdir mysql-keyring
 sudo chown root:root mysql-keyring
 sudo chmod 750 mysql-keyring
 ```
@@ -68,7 +70,7 @@ A simple rule that saves headaches:
 
 - **Root owns the keys**
 - **MySQL is allowed to access them**
-- **Nobody else gets ideas**
+- **Nobody else gets any ideas**
 
 ---
 
@@ -83,7 +85,7 @@ cd /usr/lib64/mysql/plugin
 Create the component configuration file:
 
 ```bash
-vi component_keyring_file.cnf
+sudo vi component_keyring_file.cnf
 ```
 
 Add:
