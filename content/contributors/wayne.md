@@ -6,8 +6,8 @@ fullname_pronounciation: Wayne Leutwyler
 tagline: Technical Account Manager, Percona
 social:
   facebook: null
-  github: null
-  linkedin: null
+  github: https://github.com/cetanhota
+  linkedin: https://www.linkedin.com/in/wayne-leutwyler-63007538a/
   twitter: null
   website: null
 images:
