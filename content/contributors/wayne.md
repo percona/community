@@ -3,11 +3,11 @@ name: wayne
 name_pronunciation: wayne
 fullname: Wayne Leutwyler
 fullname_pronounciation: Wayne Leutwyler
-tagline: null
+tagline: Technical Account Manager, Percona
 social:
   facebook: null
-  github: null
-  linkedin: null
+  github: https://github.com/cetanhota
+  linkedin: https://www.linkedin.com/in/wayne-leutwyler-63007538a/
   twitter: null
   website: null
 images:
