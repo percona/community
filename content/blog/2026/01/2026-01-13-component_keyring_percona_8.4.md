@@ -163,6 +163,22 @@ FROM performance_schema.keyring_component_status;
 
 You should see the `component_keyring_file` listed and active. If it’s there, the keyring is live.
 
+```sql
++---------------------+-----------------------------------------------+
+| STATUS_KEY          | STATUS_VALUE                                  |
++---------------------+-----------------------------------------------+
+| Component_name      | component_keyring_file                        |
+| Author              | Oracle Corporation                            |
+| License             | GPL                                           |
+| Implementation_name | component_keyring_file                        |
+| Version             | 1.0                                           |
+| Component_status    | Active                                        |
+| Data_file           | /var/lib/mysql-keyring/component_keyring_file |
+| Read_only           | Yes                                           |
++---------------------+-----------------------------------------------+
+8 rows in set (0.00 sec)
+```
+
 ---
 
 ## A Note for Percona Server Users
