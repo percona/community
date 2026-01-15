@@ -68,7 +68,7 @@ sudo chmod 750 mysql-keyring
 
 A simple rule that saves headaches:
 
-- **Root owns the keys**
+- **mysql owns the keys**
 - **MySQL is allowed to access them**
 - **Nobody else gets any ideas**
 
