@@ -240,7 +240,7 @@ On each remaining PXC node:
 
 ```bash
 sudo mkdir -p /var/lib/mysql-keyring
-sudo chown root:root /var/lib/mysql-keyring
+sudo chown mysql:mysql /var/lib/mysql-keyring
 sudo chmod 750 /var/lib/mysql-keyring
 ```
 
