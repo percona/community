@@ -62,7 +62,7 @@ This directory will hold encryption keys. Treat it accordingly.
 ```bash
 cd /var/lib
 sudo mkdir mysql-keyring
-sudo chown root:root mysql-keyring
+sudo chown mysql:mysql mysql-keyring
 sudo chmod 750 mysql-keyring
 ```
 
