@@ -62,13 +62,13 @@ This directory will hold encryption keys. Treat it accordingly.
 ```bash
 cd /var/lib
 sudo mkdir mysql-keyring
-sudo chown root:root mysql-keyring
+sudo chown mysql:mysql mysql-keyring
 sudo chmod 750 mysql-keyring
 ```
 
 A simple rule that saves headaches:
 
-- **Root owns the keys**
+- **mysql owns the keys**
 - **MySQL is allowed to access them**
 - **Nobody else gets any ideas**
 
@@ -240,7 +240,7 @@ On each remaining PXC node:
 
 ```bash
 sudo mkdir -p /var/lib/mysql-keyring
-sudo chown root:root /var/lib/mysql-keyring
+sudo chown mysql:mysql /var/lib/mysql-keyring
 sudo chmod 750 /var/lib/mysql-keyring
 ```
 
