@@ -9,7 +9,7 @@ images:
   - blog/2025/11/oidc2.png
 ---
 
-We spent a long time, [two](/blog/2025/10/28/oauth-oidc-validators/) blog [posts](/blog/2025/11/17/oidc-in-postgresql/) to be specific, talking about OAuth/OIDC in theory.
+We spent a long time, [two]({{< ref "blog/2025/2025-11-07-OAuth-OIDC-Validators.md" >}}) blog [posts]({{< ref "blog/2025/2025-11-17-OIDC-in-PostgreSQL.md" >}})(/blog/2025/11/17/oidc-in-postgresql/) to be specific, talking about OAuth/OIDC in theory.
 Now we'll take a more practical look at the topic:
 how can we configure PostgreSQL with a popular open source identity provider, [Keycloak](https://www.keycloak.org/), and our [pg_oidc_validator](https://github.com/percona/pg_oidc_validator) plugin?
 
