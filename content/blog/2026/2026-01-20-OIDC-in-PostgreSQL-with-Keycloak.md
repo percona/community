@@ -1,6 +1,6 @@
 ---
 title: "OIDC in PostgreSQL: With Keycloak"
-date: "2026-01-20:00:00+00:00"
+date: "2026-01-19T00:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_zsolt', 'OIDC', 'Security', 'Keycloak']
 categories: ['PostgreSQL']
 authors:
