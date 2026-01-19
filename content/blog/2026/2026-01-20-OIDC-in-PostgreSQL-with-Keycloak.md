@@ -1,6 +1,6 @@
 ---
 title: "OIDC in PostgreSQL: With Keycloak"
-date: "2026-01-20:00:00+00:00"
+date: "2026-01-19T00:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_zsolt', 'OIDC', 'Security', 'Keycloak']
 categories: ['PostgreSQL']
 authors:
@@ -459,4 +459,4 @@ both to help diagnose possible errors with the OAuth flow in PostgreSQL, but als
 in an authentication setup not letting unauthorized people log in is just as important as successfully logging in somebody with the proper permissions.
 Stay tuned for our examples showcasing how pg_oidc_validator and PostgreSQL's OAuth support can keep your server safe!
 
-If you find any issues with our validator, or have comments / feature requests, please reach out to us in our [Github page](https://github.com/percona/pg_oidc_validator)!
+If you find any issues with our validator, or have comments / feature requests, please reach out to us in our [Github page](https://github.com/percona-lab/pg_oidc_validator)!
