@@ -17,7 +17,7 @@ We'll not only look at the PostgreSQL configuration part, but also discuss the e
 
 ### Docker containers
 
-If you are only interested in trying out a working demo installation, we have a ready-to-use Docker Compose configuration available [in our GitHub repo](LINK TODO).
+If you are only interested in trying out a working demo installation, we have a ready-to-use Docker Compose configuration available [in our GitHub repo](https://github.com/Percona-Lab/pg_oidc_validator/tree/main/examples/keycloak).
 This setup includes a Keycloak instance, a PostgreSQL server, and a utility container that runs `psql`, all running in different containers, simulating different machines.
 
 ```mermaid
@@ -319,11 +319,8 @@ In this blog post we'll focus on the actual manual steps instead.
 On the server, we need the PostgreSQL 18 server packages installed, and also the pg_oidc_validator package.
 For the validator, we currently have downloadable deb and rpm packages on our [GitHub releases page](https://github.com/percona/pg_oidc_validator/releases), and packages for SUSE can be found in the [official SUSE packages](https://software.opensuse.org/package/pg_oidc_validator).
 
-On the client side, we need the PostgreSQL 18 client along with the OAuth client package -- this is usually a separate package on most distributions and requires separate installation:
+On the client side, we need the PostgreSQL 18 client along with the OAuth client package -- this is usually a separate package named libpq-oauth on most distributions and requires separate installation
 
-* On Ubuntu it's `libpq-oauth`
-* On Oracle Linux / Rocky Linux it's TODO
-* On SUSE it's TODO
 
 #### Setting up a data directory
 
