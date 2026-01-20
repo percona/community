@@ -5,7 +5,7 @@ draft: false
 tags: ["MySQL", "Databases", "Open Source", "Release"]
 categories: ["MySQL"]
 authors:
-  - aleksandra_abramova
+  - aleks_abramova
 images:
   - blog/2023/03/mysql-bugfixes.jpg
 ---

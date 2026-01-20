@@ -17,20 +17,24 @@ images:
 - contributors/ege_gunes.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
 - MongoDB
 - MySQL
+- PostgreSQL
 blog_tags: []
 events_tags:
 - Event
+- Events
 - Kubernetes
 - Meetup
 talks_tags: []
 posts_count: 0
-events_count: 3
+events_count: 4
 talks_count: 0
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2022'
 - '2021'

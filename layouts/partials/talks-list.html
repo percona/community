@@ -44,7 +44,7 @@
     <div class="sidebar">
       <h2>Years</h2>
       <ul class="category-list">
-        {{ range sort .page.Site.Taxonomies.talk_year.ByCount }}
+        {{ range sort .page.Site.Taxonomies.talk_year.ByCount "Page.Title" "desc" }}
           <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
         {{ end }}
       </ul>

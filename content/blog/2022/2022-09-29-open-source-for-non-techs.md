@@ -4,7 +4,7 @@ date: "2022-09-29T00:00:00+00:00"
 description: "When we talk about open source contributing, we often associate it with only and exclusively code contributions made by engineers. But the open source world is extensive and diverse, and everyone can find their place there."
 tags: ['Community', 'Opensource']
 authors:
-  - aleksandra_abramova
+  - aleks_abramova
 images:
   - blog/2022/9/Non-Tech.jpg
 ---

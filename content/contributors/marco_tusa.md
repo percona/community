@@ -23,13 +23,17 @@ events_tags:
 - Kubernetes
 - Promo
 - fosdem
-talks_tags: []
+talks_tags:
+- Kubernetes
+- Open Source
 posts_count: 0
 events_count: 3
-talks_count: 0
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2023'
+- '2020'
 ---

@@ -37,7 +37,5 @@ In this talk, we’ll explore the emergent landscape of vector search in databas
 5. Measuring Performance and Quality
 • Beyond speed: Assessing the effectiveness of vector search.
 • Metrics for evaluating the quality of search results.
-
 Conclusion
-
 The session will conclude with insights into future trends and the potential impact of vector search technologies on data retrieval, AI applications, and beyond.

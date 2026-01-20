@@ -17,6 +17,7 @@ contributor_tag:
 - PostgreSQL
 blog_tags:
 - Backups
+- Keycloak
 - OIDC
 - Opensource
 - Percona
@@ -27,13 +28,14 @@ events_tags: []
 talks_tags:
 - Open Source
 - Security
-posts_count: 3
+posts_count: 4
 events_count: 0
 talks_count: 1
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 ---

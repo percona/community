@@ -23,3 +23,5 @@ video: "https://www.youtube.com/watch?v=9K01PjNc-Cs"
 ## Abstract
 
 Have you ever been in a database emergency and needed real quick pinpointing information on what is wrong with a PostgreSQL instance/database?Are you looking for a good Analysis and meaningful conclusions using the data presented by PostgreSQL performance views (pg_stat_*)Have you ever felt that there is too much performance and monitoring data and how to make sense of that?If the answer is "Yes" for any or all of these. This is a presentation for you.Content primarily targeted for DBAs and Support Engineers who need to deal with operational emergencies frequently. Understanding frequent issues will be helpful for designers and architects.
+
+Video

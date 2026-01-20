@@ -4,7 +4,7 @@ date: "2023-02-08T00:00:00+00:00"
 tags: ["Contributions", "Community", "PMM"]
 categories: ['Cloud', 'PMM']
 authors:
-  - aleksandra_abramova
+  - aleks_abramova
 images:
   - blog/2023/02/Alex-Fosdem-Non-Code.jpg
 ---
