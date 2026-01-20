@@ -22,10 +22,11 @@ blog_tags: []
 events_tags:
 - Events
 - MySQL-Summit
-talks_tags: []
+talks_tags:
+- Kubernetes
 posts_count: 0
 events_count: 3
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:

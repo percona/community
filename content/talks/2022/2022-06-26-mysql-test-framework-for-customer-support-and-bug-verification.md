@@ -15,7 +15,7 @@ event_date_start: "2022-04-28"
 event_date_end: "2022-04-29"
 event_url: "https://tdconf.ru/2022"
 event_location: "Russia"
-talk_tags: []
+talk_tags: ['MySQL']
 slides: ""
 video: "https://www.youtube.com/watch?v=cTzX6IMagnU"
 ---
@@ -37,3 +37,5 @@ With MTR you can:
 The test can be run on any machine with a MySQL, Percona, or MariaDB server.
 
 I will show how I work with MySQL Test Framework and I hope you will love this tool too.
+
+Slides, Video

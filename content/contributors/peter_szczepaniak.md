@@ -24,14 +24,16 @@ talks_tags:
 - Cloud Native
 - DBaaS
 - Databases
+- Everest
 - Kubernetes
 - Opensource
 posts_count: 0
 events_count: 0
-talks_count: 1
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
 - '2025'
+- '2024'
 ---
 k8s Expert

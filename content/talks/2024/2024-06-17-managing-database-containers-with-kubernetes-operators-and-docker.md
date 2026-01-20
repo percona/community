@@ -26,3 +26,5 @@ In this talk, we will explore the synergy between Kubernetes Operators and Docke
 We will start with an introduction to both Docker and Kubernetes Operators, explaining why they're important today and how Kubernetes Operators impact the efficiency of stateful applications. Alongside how Docker helps make this management process simpler and more efficient.
 Finally, we will share the practical benefits of integrating Kubernetes Operators with Docker, drawing on real-world examples.
 This talk aims to cut through the complexity and explore how Kubernetes Operators and Docker work together to simplify stateful application management. If you're a newcomer to Kubernetes and Docker or an experienced user, this presentation offers valuable insights into leveraging these tools for more efficient application lifecycle management.
+
+English

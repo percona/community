@@ -38,9 +38,11 @@ blog_tags:
 - Raspberry Pi
 - Recovery
 - Replication
+- Security
 - Toolkit
 - component
 - filter
+- key ring
 - performance
 - replication
 - toolkit
@@ -52,13 +54,14 @@ events_tags:
 - event
 - opensource
 talks_tags: []
-posts_count: 14
+posts_count: 15
 events_count: 4
 talks_count: 0
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

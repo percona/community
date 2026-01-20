@@ -30,10 +30,12 @@ events_tags:
 - event
 - opensource
 - sponsorship
-talks_tags: []
+talks_tags:
+- slides
+- video
 posts_count: 0
 events_count: 34
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
