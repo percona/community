@@ -6,7 +6,7 @@ categories: ["PostgreSQL"]
 authors:
   - shahid_ullah
 images:
-  - blog/2025/09/TDE-1.jpg
+  -
 ---
 
 Not every PostgreSQL installation requires encryption at rest. However, for organizations mandating strict data protection and privacy standards, it is often non-negotiable. When security policies are this rigorous, you need a strategy that protects your data without sacrificing recoverability.
@@ -89,7 +89,6 @@ sudo apt-get install -y percona-postgresql-18 percona-postgresql-contrib percona
 ### Verify Installation
 
 ```bash
-sudo -i -u postgres
 psql --version
 ```
 
