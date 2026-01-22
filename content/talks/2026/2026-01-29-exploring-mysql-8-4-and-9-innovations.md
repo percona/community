@@ -3,7 +3,7 @@ id: "2ee674d0-91f3-8044-accc-d4a2828e7701"
 title: "Exploring MySQL 8.4 and 9 Innovations"
 layout: single
 speakers:
-  - aruinjith_aravindan
+  - arunjith_aravindan
 talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
 presentation_date: "2026-01-29"
 presentation_date_end: ""
