@@ -7,7 +7,7 @@ date: "2021-09-08"
 draft: false
 speakers:
   - marcos_albe
-  - fernando_laudares
+  - fernando_laudares_camargos
   - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---

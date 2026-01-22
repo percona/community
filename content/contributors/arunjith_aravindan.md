@@ -1,8 +1,8 @@
 ---
-name: aruinjith_aravindan
-name_pronunciation: aruinjith_aravindan
-fullname: Aruinjith Aravindan
-fullname_pronounciation: Aruinjith Aravindan
+name: arunjith_aravindan
+name_pronunciation: arunjith_aravindan
+fullname: Arunjith Aravindan
+fullname_pronounciation: Arunjith Aravindan
 job: null
 tagline: Senior MySQL DBA, Percona
 social:
@@ -12,7 +12,7 @@ social:
   twitter: null
   website: null
 images:
-- contributors/aruinjith_aravindan.jpeg
+- contributors/arunjith_aravindan.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
