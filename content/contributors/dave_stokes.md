@@ -31,11 +31,13 @@ events_tags:
 - opensource
 - sponsorship
 talks_tags:
+- Databases
+- Opensource
 - slides
 - video
 posts_count: 0
 events_count: 34
-talks_count: 1
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

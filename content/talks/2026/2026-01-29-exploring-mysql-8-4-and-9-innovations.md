@@ -7,7 +7,7 @@ speakers:
 talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
 presentation_date: "2026-01-29"
 presentation_date_end: ""
-presentation_time: ""
+presentation_time: "4:40 pm"
 talk_year: "2026"
 event: "MySQL Belgian Days (preFOSDEM) 2026"
 event_status: "Accepted"

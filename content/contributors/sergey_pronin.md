@@ -3,7 +3,7 @@ name: sergey_pronin
 name_pronunciation: sergey_pronin
 fullname: Sergey Pronin
 fullname_pronounciation: Sergey Pronin
-job: Product Owner, Percona
+job: Group Product Manager, Percona
 country: null
 tagline: null
 social:
@@ -19,6 +19,7 @@ contributor_tag:
 - Cloud
 - Community
 - MongoDB
+- MySQL
 blog_tags:
 - Docker
 - HELM
@@ -47,10 +48,14 @@ events_tags:
 - event
 - k8s
 - opensource
-talks_tags: []
+talks_tags:
+- Cloud Native
+- Containers
+- Kubernetes
+- Open Source
 posts_count: 4
 events_count: 10
-talks_count: 0
+talks_count: 3
 contributor_type:
 - author
 - speaker
@@ -60,4 +65,4 @@ contributor_year:
 - '2022'
 - '2021'
 ---
-Sergey is a passionate technology "driver". After graduation worked in various fields: internet service provider, financial sector and M&A business. Main focal points were infrastructure and products around it. At Percona as a Product Owner drives forward Kubernetes and Cloud databases solutions.
+Sergey is a product leader at Percona focusing on delivering robust open-source database and cloud-native solutions. Prior to Percona Sergey led product management and engineering teams in other organizations with a primary focus on products in infrastructure and platforms space.

@@ -20,3 +20,8 @@ slides: "https://www.slideshare.net/slideshow/postgresql-on-kubernetes-using-git
 video: "https://youtu.be/XVGVt8-9g9U?t=21741"
 ---
 
+## Abstract
+
+Esta charla es en español y aborda cómo implementar Kubernetes Operator para PostgreSQL mediante GitOps y ArgoCD, destacando la automatización de despliegues para reducir errores humanos. Se describe un flujo de trabajo donde los cambios hechos en GitHub son detectados y aplicados por ArgoCD en Kubernetes, gestionando así los recursos del Operator. Se enfatiza en la importancia de la sincronización del lado del servidor y el uso de fases y olas para ordenar los despliegues. Este enfoque promueve prácticas de despliegue eficientes y seguras, aprovechando la gestión declarativa de infraestructura y aplicaciones.
+
+Review

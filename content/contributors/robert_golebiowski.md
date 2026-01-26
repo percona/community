@@ -1,10 +1,10 @@
 ---
-name: peter_szczepaniak
-name_pronunciation: peter_szczepaniak
-fullname: Peter Szczepaniak
-fullname_pronounciation: Peter Szczepaniak
+name: robert_golebiowski
+name_pronunciation: robert_golebiowski
+fullname: Robert Golebiowski
+fullname_pronounciation: Robert Golebiowski
 job: null
-tagline: Sr. Product Manager, former Perconian
+tagline: Senior Software Engineer, former Perconian
 social:
   facebook: null
   github: null
@@ -15,26 +15,17 @@ images:
 - contributors/percona.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
-- Cloud
-- MongoDB
+- MySQL
 blog_tags: []
 events_tags: []
 talks_tags:
-- Azure
-- Cloud Native
-- DBaaS
-- Databases
-- Everest
-- Kubernetes
 - Open Source
-- Opensource
 posts_count: 0
 events_count: 0
-talks_count: 3
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
-- '2025'
-- '2024'
+- '2020'
 ---
-k8s Expert
+Database Engineer
