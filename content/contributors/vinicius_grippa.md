@@ -25,7 +25,8 @@ events_tags:
 - event
 - fosdem
 - sponsorship
-talks_tags: []
+talks_tags:
+- Open Source
 posts_count: 0
 events_count: 5
 talks_count: 2

@@ -40,12 +40,15 @@ events_tags:
 - Podcast
 talks_tags:
 - Cloud Native
+- Design
 - Everest
 - Open Source
+- Opensource
 - Security
+- Tech
 posts_count: 13
 events_count: 2
-talks_count: 2
+talks_count: 4
 contributor_type:
 - author
 - speaker

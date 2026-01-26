@@ -17,18 +17,22 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- MongoDB
 - MySQL
 blog_tags: []
 events_tags:
 - Events
 - MySQL-Summit
-talks_tags: []
+talks_tags:
+- Backup
+- Open Source
 posts_count: 0
 events_count: 1
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
 - '2025'
+- '2020'
 ---
 Mykola is an engineering leader with 20 years of experience in making database cluster management boring. His career has centred on building managed services, monitoring, backups, and automated deployment and upgrade systems. He has a longstanding love of MySQL and intends to build the best DBaaS Platform.

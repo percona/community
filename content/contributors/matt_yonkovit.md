@@ -35,10 +35,12 @@ events_tags:
 - event
 - k8s
 - opensource
-talks_tags: []
+talks_tags:
+- Databases
+- Opensource
 posts_count: 0
 events_count: 113
-talks_count: 0
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:

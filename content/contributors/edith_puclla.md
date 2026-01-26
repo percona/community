@@ -91,7 +91,7 @@ talks_tags:
 - Operators
 posts_count: 31
 events_count: 7
-talks_count: 4
+talks_count: 6
 contributor_type:
 - author
 - speaker
