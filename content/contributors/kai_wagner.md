@@ -41,12 +41,13 @@ events_tags:
 talks_tags: []
 posts_count: 3
 events_count: 3
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
 - speaker
 contributor_year:
 - '2025'
+- '2024'
 - '2023'
 - '2022'
 ---

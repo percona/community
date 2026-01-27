@@ -7,7 +7,7 @@ speakers:
 talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
 presentation_date: "2026-01-29"
 presentation_date_end: ""
-presentation_time: ""
+presentation_time: "4:40 pm"
 talk_year: "2026"
 event: "MySQL Belgian Days (preFOSDEM) 2026"
 event_status: "Accepted"
@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 MySQL 8.4 LTS and the upcoming MySQL 9 series introduce a new wave of enhancements designed to boost performance, scalability, and developer efficiency. This session will explore the most impactful advancements across these versions—including improvements in transaction handling, replication, InnoDB, security, and evolving architectural patterns. Participants will gain practical insights into how these features can enhance real world deployments and how to plan future upgrades confidently and efficiently.

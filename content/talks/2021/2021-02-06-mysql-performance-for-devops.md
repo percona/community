@@ -19,4 +19,3 @@ talk_tags: ['MariaDB']
 slides: "https://archive.fosdem.org/2021/schedule/event/mariadb_devops/attachments/slides/4306/export/events/attachments/mariadb_devops/slides/4306/DevOps_perf.pdf"
 video: "https://archive.fosdem.org/2021/schedule/event/mariadb_devops/"
 ---
-

@@ -43,16 +43,19 @@ talks_tags:
 - DBaaS
 - Databases
 - Kubernetes
+- Linux
+- MariaDB
 - Open Source
 - Opensource
 - Vector Search
 - video
 posts_count: 0
 events_count: 19
-talks_count: 6
+talks_count: 10
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

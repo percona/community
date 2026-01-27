@@ -20,7 +20,6 @@ talk_tags: ['Kubernetes', 'DBaaS', 'Cloud', 'Opensource', 'Databases', 'MongoDB'
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 Think you have to choose between the convenience of Azure's managed databases and the deep control of self-hosting? Think again.
@@ -30,5 +29,3 @@ For many developers and DBAs, this is a daily struggle. Managed PaaS offerings l
 This session proves there is a better way. We'll show you how to build a superior DBaaS platform using Azure Kubernetes Service (AKS) as the foundation. We'll cut straight to the chase and demonstrate how the open-source Percona Operator for MongoDB transforms a standard Kubernetes cluster into a true DBaaS. Forget manual setups; you will see how to automate the entire database lifecycle, including provisioning, high-availability, scaling, and backups with ease. To complete the picture, we’ll showcase Percona Everest as the 'easy button' for simplifying day-2 operations across your entire database fleet.
 
 Join this session to learn how to build a flexible, powerful, and cost-efficient document database service on Azure that puts you firmly back in the driver's seat—fully on your own terms.
-
-Talk

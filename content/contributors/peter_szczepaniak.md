@@ -26,10 +26,11 @@ talks_tags:
 - Databases
 - Everest
 - Kubernetes
+- Open Source
 - Opensource
 posts_count: 0
 events_count: 0
-talks_count: 2
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

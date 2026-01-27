@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL', 'CloudNative', 'Everest']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 You already know your Postgres, but you're being asked to work with this Kubernetes thing. Do you want to focus your Kubernetes learning on only the bits which are relevant to databases? Then this is the talk for you! Skip the usual 'why run databases on Kubernetes' discussion and dive straight into what you need to know to talk Postgres on Kubernetes.
@@ -27,5 +26,3 @@ You already know your Postgres, but you're being asked to work with this Kuberne
 Using a Postgres database hosted on Kubernetes as an example, I will cover the components of Kubernetes involved in day-to-day activities - including network connectivity, storage, and the automation of restarts and upgrades.
 
 Join me for an overview of the few, core terms and concepts among the many, many pieces of the Kubernetes ecosystem you need to learn about first, to start your Data on Kubernetes journey.
-
-Talk

@@ -19,8 +19,8 @@ event_location: "London"
 talk_tags: ['Operators', 'PostgreSQL', 'Open Source', 'Cloud Native']
 slides: ""
 video: "https://www.youtube.com/watch?v=5vqHVdJ2aCs"
+youtube_id: "5vqHVdJ2aCs"
 ---
-
 ## Abstract
 
 Do you already know databases? Are you new to Kubernetes? Do you want to focus your Kubernetes learning on only the bits which are relevant to databases? Then this is the talk for you! Skip the usual 'why run databases on Kubernetes' discussion and dive straight into the 'how.' We'll show you precisely what you need to know to get started today.

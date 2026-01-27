@@ -32,7 +32,7 @@ talks_tags:
 - Operators
 posts_count: 1
 events_count: 1
-talks_count: 3
+talks_count: 4
 contributor_type:
 - author
 - speaker

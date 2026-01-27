@@ -136,6 +136,26 @@
     <!-- Abstract -->
     <div itemprop="articleBody" class="body">
       {{ partial "content.html" . }}
+      {{ if .Params.youtube_id }}
+        <div class="talk-video-section">
+          <h2>Video</h2>
+          <a href="https://youtu.be/{{ .Params.youtube_id }}" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" 
+              alt="Watch on YouTube: {{ .Title }}" 
+              loading="lazy"
+              width="480"
+              style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+            >
+          </a>
+          <p class="video-link">
+            ▶️ Watch on: 
+            <a href="https://youtu.be/{{ .Params.youtube_id }}" target="_blank" rel="noopener noreferrer">
+              YouTube
+            </a>
+          </p>
+        </div>
+      {{ end }}
     </div>
 
     <!-- Speaker Bios -->

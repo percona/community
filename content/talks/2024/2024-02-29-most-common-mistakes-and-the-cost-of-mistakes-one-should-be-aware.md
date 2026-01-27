@@ -18,10 +18,8 @@ event_location: ""
 talk_tags: ['PostgreSQL']
 slides: ""
 video: "https://www.youtube.com/watch?v=5ysqoTEEdUk&t=2s"
+youtube_id: "5ysqoTEEdUk"
 ---
-
 ## Abstract
 
 The presenter has a unique opportunity to address hundreds of real-world, escalated issues from different users as part of the job. This gave a realisation that many are often running into a group of common mistakes. It will be of great value if PostgreSQL users can understand the mistakes well ahead and avoid them during the system design, development and deployment. This presentation can give an overall idea of common pitfalls. This should enable the audience to raise the Red flags as early as possible and avoid the minefield of common mistakes and associated troubles. This will be “A Practical Guide to Avoiding Disaster”
-
-Video, Slides

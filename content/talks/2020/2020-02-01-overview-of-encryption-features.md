@@ -19,12 +19,9 @@ talk_tags: ['MariaDB', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/msyql_ecryption/"
 ---
-
 ## Abstract
 
 All three products provide some features in this space, but currently
 there isn't one product that covers all the needs (at least not available
 as FOSS). This talk will provide an overview of Data-at-Rest-Encryption
 features in MySQL, MariaDB and Percona Server for MySQL.
-
-Video

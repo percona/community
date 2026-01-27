@@ -30,13 +30,14 @@ events_tags:
 talks_tags: []
 posts_count: 1
 events_count: 3
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
 - speaker
 contributor_year:
 - '2022'
 - '2020'
+- '2018'
 ---
 Businessperson, open source consultant, technical architect, experienced community builder based in Kuala Lumpur, Malaysia.
 

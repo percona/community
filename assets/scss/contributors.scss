@@ -88,6 +88,30 @@
       }
     }
   }
+
+  .search-sidebar {
+    margin-bottom: 2rem;
+  }
+
+  .blog-search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+
+    &:focus {
+      border-color: #007cba;
+    }
+  }
+
+  .blog-search-status {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #666;
+    min-height: 1.2rem;
+  }
 }
 
 .contributor-card {

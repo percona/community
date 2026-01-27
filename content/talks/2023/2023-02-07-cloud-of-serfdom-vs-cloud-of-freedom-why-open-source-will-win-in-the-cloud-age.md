@@ -18,10 +18,8 @@ event_location: "London"
 talk_tags: ['Cloud', 'video']
 slides: ""
 video: "https://www.youtube.com/watch?v=O4MzmtNahho"
+youtube_id: "O4MzmtNahho"
 ---
-
 ## Abstract
 
 Cloud and Open Source have a very intricate relationship! In this talk we will look at the history of how the impact of Cloud on Open Source changed through the years, examine the current state as well as make a case for a particular way to use Cloud and Open Source Together. If you cherish the values of Open Source - you will do well by using Cloud as Commodity Infrastructure Provider and run Open Source Software on top of it. Consider Kubernetes in particular as your API of choice with its ubiquitous availability among all major public cloud providers and private cloud software vendors. We will show what while this ecosystem may not be as mature as proprietary solution from cloud vendors it is moving rapidly and becoming a great fit for more and more situations.
-
-Video

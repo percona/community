@@ -18,12 +18,10 @@ event_location: "Online"
 talk_tags: ['Databases']
 slides: "https://www.percona.com/sites/default/files/presentations/OS101-Home-17-Things-Developers-should-know-about-Databases-2020.pdf"
 video: "https://www.youtube.com/watch?v=HOho4HyKqTE"
+youtube_id: "HOho4HyKqTE"
 ---
-
 ## Abstract
 
 ost applications use databases, yet many fail to follow even the most basic best practices causing poor performance, downtime and security incidents.
 
 In this presentation, we will look into the foundational best practices you as a Developer should know about databases, with particular focus on the most popular Open Source Databases – MySQL, PostgreSQL, and MongoDB.
-
-Slides, Video

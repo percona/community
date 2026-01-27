@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL', 'Community', 'Open Source']
 slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7192/slides/796/Lessons%20from%20Two%20Decades%20of%20Hacking%20Proprietary%20Value%20into%20Open%20Source%20Databases.pdf"
 video: ""
 ---
-
 ## Abstract
 
 Two decades of working with different open source databases have taught us a lot about what it takes to make them enterprise-ready while keeping them truly open. Features like high availability, Transparent Data Encryption (TDE) and OpenID Connect (OIDC) aren’t just “nice to have” — they’re what determine whether a database can succeed in the Enterprise environment.
