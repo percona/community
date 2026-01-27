@@ -5,7 +5,7 @@ layout: single
 speakers:
   - jan_wieremjewicz
   - peter_szczepaniak
-talk_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/"
+talk_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/talk/YEE3KF/"
 presentation_date: "2024-11-10"
 presentation_date_end: "2024-11-11"
 presentation_time: ""

@@ -215,13 +215,13 @@ def process_talks(talks: list, extract_value, speakers_map: dict, events_map: di
         props = talk.get("properties", {})
 
         # Generate Markdown and collect list of newly created contributors
-        title, presentation_date, talk_year, md, new_speakers = build_hugo_markdown(
+        title, public_date, talk_year, md, new_speakers = build_hugo_markdown(
             talk_id, props, extract_value, speakers_map, events_map
         )
         all_new_speakers.extend(new_speakers)
 
         # Compute file paths and public URL
-        filepath, filename, new_year = generate_filename(title, presentation_date)
+        filepath, filename, new_year = generate_filename(title, public_date)
         new_slug = os.path.splitext(filename)[0]
         old_year, old_slug = get_existing_slug_and_year(props, extract_value)
         new_url = build_public_url(new_year, filename)
@@ -283,32 +283,55 @@ def build_hugo_markdown(
     speakers_map: dict,
     events_map: dict
 ) -> tuple[str, str, str, str]:
-    """Builds Hugo-compatible Markdown from Notion data."""
-    # Base talk fields
-    title = extract_value(props.get("Title"))
+    """Builds Hugo-compatible Markdown with safe YAML front matter."""
+    # Base fields
+    title = extract_value(props.get("Title")) or ""
     abstract = extract_value(props.get("Abstract"))
     slides = extract_value(props.get("Publication Slides"))
     video = extract_value(props.get("Publication Video"))
     tags_raw = extract_value(props.get("Tags"))
-    content = extract_value(props.get("Content"))
 
-    # Presentation Date (may be dict {start,end} or string)
+    # Presentation Date (real, for front matter)
     pres_date_val = extract_value(props.get("Presentation Date"))
     presentation_date = ""
     presentation_date_end = ""
+
     if isinstance(pres_date_val, dict):
         presentation_date = pres_date_val.get("start", "") or ""
         presentation_date_end = pres_date_val.get("end", "") or ""
     else:
         presentation_date = (pres_date_val or "").strip()
 
+    # Public date (for file path) — fallback to Event Date
+    public_date = presentation_date.strip()
+    public_date_end = presentation_date_end
+
+    if not public_date:
+        events_prop = props.get("Events 2024-2026", {})
+        if events_prop and events_prop.get("type") == "relation":
+            for rel in events_prop.get("relation", []):
+                rel_id = rel.get("id")
+                if rel_id in events_map:
+                    ev = events_map[rel_id]
+                    date_prop = ev.get("Date", {})
+                    if isinstance(date_prop, dict):
+                        event_start = date_prop.get("start", "") or ""
+                        event_end = date_prop.get("end", "") or ""
+                        if event_start:
+                            public_date = event_start
+                            public_date_end = event_end
+                            break
+
+    talk_year = public_date[:4] if public_date and len(public_date) >= 4 else ""
+
+    # Other fields
     presentation_time = extract_value(props.get("Presentation Time"))
     conference_url = extract_value(props.get("Conference URL"))
     event_status = extract_value(props.get("Event Status"))
 
-    # Resolve speakers (use slug) + create contributor card on the fly
+    # Speakers
     speakers = []
-    new_speakers_list = []  # 🔥 Собираем новых спикеров
+    new_speakers_list = []
     speakers_prop = props.get("Speaker", {})
     if speakers_prop and speakers_prop.get("type") == "relation":
         for rel in speakers_prop.get("relation", []):
@@ -317,7 +340,6 @@ def build_hugo_markdown(
                 speaker_data = speakers_map[rel_id]
                 slug = speaker_data.get("slug", "").strip()
 
-                # If slug is missing — generate from name
                 if not slug:
                     name = speaker_data.get("Name", "").strip()
                     if name:
@@ -328,13 +350,12 @@ def build_hugo_markdown(
 
                 name = speaker_data.get("Name", "").strip() or "Unknown"
 
-                # 🔥 Create contributor card if it doesn't exist + отслеживаем создание
                 if ensure_contributor_card(slug, speaker_data):
                     new_speakers_list.append({"name": name, "slug": slug})
 
                 speakers.append(slug)
 
-    # Resolve event from relation "Events 2024-2026"
+    # Event data
     event_title = ""
     event_date_start = ""
     event_date_end = ""
@@ -354,35 +375,25 @@ def build_hugo_markdown(
                     event_date_end = date_prop.get("end", "") or event_date_end
                 event_url = ev.get("CFP URL", "") or ev.get("URL", "") or event_url
                 event_location = ev.get("Event Location", "") or ev.get("City", "") or event_location
-
                 tech_raw = ev.get("Technology", "")
                 if tech_raw:
                     event_tech_tags.extend(_normalize_tags_str(tech_raw))
 
-    # Normalize tags
+    # Tags
     tag_list = _normalize_tags_str(tags_raw) + event_tech_tags
     seen = set()
-    tag_list_unique = []
-    for t in tag_list:
-        if t not in seen:
-            seen.add(t)
-            tag_list_unique.append(t)
-
-    # YAML arrays
+    tag_list_unique = [t for t in tag_list if not (t in seen or seen.add(t))]
     talk_tags_yaml = "[" + ", ".join([f"'{t}'" for t in tag_list_unique]) + "]" if tag_list_unique else "[]"
     speakers_yaml = "\n".join([f"  - {s}" for s in speakers]) if speakers else "  - unknown"
 
-    # Compute talk_year
-    talk_year = ""
-    if presentation_date and len(presentation_date) >= 4:
-        talk_year = presentation_date[:4]
-    elif event_date_start and len(event_date_start) >= 4:
-        talk_year = event_date_start[:4]
+    # 🔐 Safe escaping for double quotes in title
+    # Escape all internal " → \"
+    escaped_title = title.replace('\\', '\\\\').replace('"', '\\"')
 
-    # Front matter
-    front_matter = f"""---
+    # Build front matter using double quotes, now safe
+    front_matter = f'''---
 id: "{talk_id}"
-title: "{title}"
+title: "{escaped_title}"
 layout: single
 speakers:
 {speakers_yaml}
@@ -401,19 +412,15 @@ talk_tags: {talk_tags_yaml}
 slides: "{slides}"
 video: "{video}"
 ---
-"""
+'''
 
     # Body
-    body_parts = []
-    if abstract:
-        body_parts.append(f"## Abstract\n\n{abstract}\n")
-
+    body_parts = ["## Abstract\n\n" + abstract] if abstract else []
     body = "\n".join(body_parts).strip()
-
     markdown = front_matter + ("\n" + body if body else "\n")
 
-    # 🔥 Возвращаем 5 значений, но тип остаётся tuple[str, str, str, str] — Python простит
-    return title, presentation_date, talk_year, markdown, new_speakers_list
+    return title, public_date, talk_year, markdown, new_speakers_list
+
 
 
 def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
