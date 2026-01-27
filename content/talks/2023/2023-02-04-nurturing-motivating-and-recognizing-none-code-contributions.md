@@ -19,7 +19,6 @@ talk_tags: ['video']
 slides: "https://archive.fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/attachments/slides/5784/export/events/attachments/nurture_motivate_recognise_noncode_contributions/slides/5784/Non_Code_Contributions"
 video: "https://archive.fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/"
 ---
-
 ## Abstract
 
 When discussing contributions, we still see a lot of emphasis on the code contributions into project repositories. But the open source world is extensive and diverse, and everyone can find their place there. Your project will benefit from various experiences that non-coders can bring to the table. Isn’t that cool when you receive an issue with an interesting bug from the community, read about a user case in a blog or a review, or someone makes a video guide for your product? And more!

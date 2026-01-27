@@ -19,7 +19,6 @@ talk_tags: ['Opensource', 'MySQL']
 slides: ""
 video: "https://archive.fosdem.org/2015/schedule/event/benchmark_r_gpplot2/"
 ---
-
 ## Abstract
 
 When I talk or write about benchmarking, a repeated question I get asked is how to make the graphs. For some of those graphs, check the links below.

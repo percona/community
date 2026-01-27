@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['Kubernetes']
 slides: "https://www.slideshare.net/slideshow/kubernetes-operator-101-edith-puclla-258503216/258503216"
 video: "https://www.youtube.com/watch?v=Fxq2MVwv-pM"
+youtube_id: "Fxq2MVwv-pM"
 ---
-
 ## Abstract
 
 Kubernetes Operators have become a transformative influence in the world of container orchestration. In this lightning talk, I will explain the core operations of Kubernetes Operators and explore their real-world impact. In just 5 minutes, you'll discover why Kubernetes Operators matter, explore their practical use cases, and learn how they can unleash the full potential of your containerized applications.

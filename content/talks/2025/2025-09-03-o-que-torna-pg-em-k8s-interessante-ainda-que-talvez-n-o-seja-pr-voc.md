@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 Como instalar um ambiente PostgreSQL em K8s utilizando o Percona Operator e quais são os principais atrativo e os maiores desafios dessa escolha.

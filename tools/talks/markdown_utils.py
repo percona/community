@@ -284,14 +284,15 @@ def build_hugo_markdown(
     events_map: dict
 ) -> tuple[str, str, str, str]:
     """Builds Hugo-compatible Markdown with safe YAML front matter."""
+    
     # Base fields
     title = extract_value(props.get("Title")) or ""
     abstract = extract_value(props.get("Abstract"))
     slides = extract_value(props.get("Publication Slides"))
-    video = extract_value(props.get("Publication Video"))
+    video_url = extract_value(props.get("Publication Video"))
     tags_raw = extract_value(props.get("Tags"))
 
-    # Presentation Date (real, for front matter)
+    # Real presentation date (for front matter — may be empty)
     pres_date_val = extract_value(props.get("Presentation Date"))
     presentation_date = ""
     presentation_date_end = ""
@@ -302,9 +303,8 @@ def build_hugo_markdown(
     else:
         presentation_date = (pres_date_val or "").strip()
 
-    # Public date (for file path) — fallback to Event Date
+    # Public date (for file path/year) — fallback to Event Date only if presentation_date is empty
     public_date = presentation_date.strip()
-    public_date_end = presentation_date_end
 
     if not public_date:
         events_prop = props.get("Events 2024-2026", {})
@@ -316,12 +316,11 @@ def build_hugo_markdown(
                     date_prop = ev.get("Date", {})
                     if isinstance(date_prop, dict):
                         event_start = date_prop.get("start", "") or ""
-                        event_end = date_prop.get("end", "") or ""
                         if event_start:
                             public_date = event_start
-                            public_date_end = event_end
-                            break
+                            break  # Use first event's date
 
+    # Compute talk_year from public_date (for folder and URL)
     talk_year = public_date[:4] if public_date and len(public_date) >= 4 else ""
 
     # Other fields
@@ -329,7 +328,7 @@ def build_hugo_markdown(
     conference_url = extract_value(props.get("Conference URL"))
     event_status = extract_value(props.get("Event Status"))
 
-    # Speakers
+    # Resolve speakers + create contributor cards
     speakers = []
     new_speakers_list = []
     speakers_prop = props.get("Speaker", {})
@@ -355,7 +354,7 @@ def build_hugo_markdown(
 
                 speakers.append(slug)
 
-    # Event data
+    # Resolve event data — always include in front matter if exists
     event_title = ""
     event_date_start = ""
     event_date_end = ""
@@ -371,48 +370,61 @@ def build_hugo_markdown(
                 event_title = ev.get("Name", "") or event_title
                 date_prop = ev.get("Date", {})
                 if isinstance(date_prop, dict):
-                    event_date_start = date_prop.get("start", "") or event_date_start
-                    event_date_end = date_prop.get("end", "") or event_date_end
+                    # Always take the first event's date for event context
+                    if not event_date_start:
+                        event_date_start = date_prop.get("start", "") or ""
+                        event_date_end = date_prop.get("end", "") or ""
                 event_url = ev.get("CFP URL", "") or ev.get("URL", "") or event_url
                 event_location = ev.get("Event Location", "") or ev.get("City", "") or event_location
                 tech_raw = ev.get("Technology", "")
                 if tech_raw:
                     event_tech_tags.extend(_normalize_tags_str(tech_raw))
 
-    # Tags
+    # Normalize tags
     tag_list = _normalize_tags_str(tags_raw) + event_tech_tags
     seen = set()
     tag_list_unique = [t for t in tag_list if not (t in seen or seen.add(t))]
     talk_tags_yaml = "[" + ", ".join([f"'{t}'" for t in tag_list_unique]) + "]" if tag_list_unique else "[]"
-    speakers_yaml = "\n".join([f"  - {s}" for s in speakers]) if speakers else "  - unknown"
 
     # 🔐 Safe escaping for double quotes in title
-    # Escape all internal " → \"
     escaped_title = title.replace('\\', '\\\\').replace('"', '\\"')
 
-    # Build front matter using double quotes, now safe
-    front_matter = f'''---
-id: "{talk_id}"
-title: "{escaped_title}"
-layout: single
-speakers:
-{speakers_yaml}
-talk_url: "{conference_url}"
-presentation_date: "{presentation_date}"
-presentation_date_end: "{presentation_date_end}"
-presentation_time: "{presentation_time}"
-talk_year: "{talk_year}"
-event: "{event_title}"
-event_status: "{event_status}"
-event_date_start: "{event_date_start}"
-event_date_end: "{event_date_end}"
-event_url: "{event_url}"
-event_location: "{event_location}"
-talk_tags: {talk_tags_yaml}
-slides: "{slides}"
-video: "{video}"
----
-'''
+    # Extract YouTube ID from video URL
+    youtube_id = None
+    if video_url:
+        match = re.search(r'(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})', video_url)
+        youtube_id = match.group(1) if match else None
+
+    # Build front matter
+    front_matter_lines = [
+        "---",
+        f'id: "{talk_id}"',
+        f'title: "{escaped_title}"',
+        'layout: single',
+        'speakers:',
+    ]
+    front_matter_lines.extend([f"  - {s}" for s in speakers] if speakers else ["  - unknown"])
+    front_matter_lines.extend([
+        f'talk_url: "{conference_url}"',
+        f'presentation_date: "{presentation_date}"',
+        f'presentation_date_end: "{presentation_date_end}"',
+        f'presentation_time: "{presentation_time}"',
+        f'talk_year: "{talk_year}"',
+        f'event: "{event_title}"',
+        f'event_status: "{event_status}"',
+        f'event_date_start: "{event_date_start}"',
+        f'event_date_end: "{event_date_end}"',
+        f'event_url: "{event_url}"',
+        f'event_location: "{event_location}"',
+        f'talk_tags: {talk_tags_yaml}',
+        f'slides: "{slides}"',
+        f'video: "{video_url}"',
+    ])
+    if youtube_id:
+        front_matter_lines.append(f'youtube_id: "{youtube_id}"')
+    front_matter_lines.append("---")
+
+    front_matter = "\n".join(front_matter_lines)
 
     # Body
     body_parts = ["## Abstract\n\n" + abstract] if abstract else []

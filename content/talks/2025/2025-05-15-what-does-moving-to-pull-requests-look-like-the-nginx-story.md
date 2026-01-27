@@ -19,7 +19,6 @@ talk_tags: ['Community', 'PostgreSQL']
 slides: "https://www.pgevents.ca/events/pgconfdev2025/sessions/session/379/slides/70/What%20does%20moving%20to%20Pull%20Requests%20look%20like%20-the%20NGINX%20story%20-%20202505.pdf"
 video: ""
 ---
-
 ## Abstract
 
 Like Postgres, the nginx open source project ran their own source control systems and accepted patches via mailing lists, until September 2024. At this point, the project moved wholesale to GitHub - issues, discussions, pull requests, the lot.

@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 One way of looking at Kubernetes is that it is all about convenience. Considering you are using an operator, you can easily and quickly deploy a new database environment in the cloud that is highly available and comes pre-configured with backups. But do we get the same performance from our database compared to running it in the same cloud but without Kubernetes? After all, the latter implies using containers on top of an already virtualized environment, over which we have less control.

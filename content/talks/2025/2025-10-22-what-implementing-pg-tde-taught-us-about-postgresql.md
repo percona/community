@@ -19,7 +19,6 @@ talk_tags: ['Security', 'PostgreSQL', 'Open Source']
 slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7191/slides/807/PGConf%20EU%202025%20Riga%20TDE%20slides.pdf"
 video: ""
 ---
-
 ## Abstract
 
 This is a firsthand account of bringing Transparent Data Encryption to PostgreSQL through  pg_tde . From idea to patch proposals, it’s a story of navigating PostgreSQL’s internals, Community realities, and trade-offs between extension and core changes.

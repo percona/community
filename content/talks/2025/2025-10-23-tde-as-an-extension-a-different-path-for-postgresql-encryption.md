@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL', 'Security', 'Open Source']
 slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7191/slides/807/PGConf%20EU%202025%20Riga%20TDE%20slides.pdf"
 video: ""
 ---
-
 ## Abstract
 
 Transparent Data Encryption (TDE) has been a long-standing challenge in the PostgreSQL community. While proprietary solutions exist and major patch sets have been proposed, the topic continues to spark debate on the hackers mailing list, with no clear path forward.

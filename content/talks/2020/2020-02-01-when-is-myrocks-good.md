@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/myrocks_www/"
 ---
-
 ## Abstract
 
 In this talk, we'll walk through RocksDB technology and look into areas where MyRocks is a good fit by comparison to other engines such as InnoDB. We will go over internals, benchmarks, and tuning of MyRocks engine. We also aim to explore the benefits of using MyRocks within the MySQL ecosystem. Attendees will be able to conclude with the latest development of tools and integration within MySQL.

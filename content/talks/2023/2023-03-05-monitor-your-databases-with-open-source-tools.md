@@ -19,7 +19,6 @@ talk_tags: ['Databases', 'Monitoring', 'Opensource', 'video']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 We will learn about the process of monitoring databases with a single open-source monitoring tool. We will analyze the data produced in customizable dashboards and identify the metrics that show us vulnerabilities in our databases wherever they are deployed. We'll look at ways to set up real-time alerts and get the most out of monitoring dashboards.

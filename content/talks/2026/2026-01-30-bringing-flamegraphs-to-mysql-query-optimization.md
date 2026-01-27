@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 Brendan Gregg developed flame graphs, which provide a powerful way to visualize hierarchical data. Later on, Tanel Poder introduced the same concept for Oracle queries. This time, I’m bringing this idea for the first time as an open-source project to MySQL.

@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: "https://archive.fosdem.org/2014/schedule/event/15_tips_galera/attachments/slides/410/export/events/attachments/15_tips_galera/slides/410/Fosdem_15_Tips_Galera_Cluster_expanded.pdf"
 video: ""
 ---
-
 ## Abstract
 
 During this presentation, I will show how to implement several stuff that will improve your day-to-day workload.

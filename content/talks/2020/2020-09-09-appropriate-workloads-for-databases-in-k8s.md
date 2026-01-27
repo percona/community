@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['Databases', 'Kubernetes']
 slides: ""
 video: "https://www.youtube.com/watch?v=S-KF2qyjUPE"
+youtube_id: "S-KF2qyjUPE"
 ---
-
 ## Abstract
 
 As more companies are moving to Kubernetes and cloud native as a standard for developing net new functionality something has to happen to the legacy workloads. Often times we see a lift and shift mentality into Kubernetes, we will talk about how that mentality can be dangerous or cause more work than expected.

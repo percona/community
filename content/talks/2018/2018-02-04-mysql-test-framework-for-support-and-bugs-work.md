@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: "https://archive.fosdem.org/2018/schedule/event/mysql_test_framework/attachments/slides/2155/export/events/attachments/mysql_test_framework/slides/2155/MTR.pdf"
 video: "https://archive.fosdem.org/2018/schedule/event/mysql_test_framework/"
 ---
-
 ## Abstract
 
 MySQL Test Framework (MTR) provides unit test suite for MySQL. Tests in the framework are written by MySQL Server developers and contributors and run to ensure build is working correctly.

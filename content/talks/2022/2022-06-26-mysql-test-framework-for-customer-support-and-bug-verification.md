@@ -18,8 +18,8 @@ event_location: "Russia"
 talk_tags: ['MySQL']
 slides: ""
 video: "https://www.youtube.com/watch?v=cTzX6IMagnU"
+youtube_id: "cTzX6IMagnU"
 ---
-
 ## Abstract
 
 MySQL Test Framework (MTR) is a framework for MySQL regression tests. Tests for it are written by MySQL developers and run in preparation for new releases.

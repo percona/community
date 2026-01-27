@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'PostgreSQL', 'ai', 'Open Source']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 What if we want to give AI access to our database, so it is able to actually query it?

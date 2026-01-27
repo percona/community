@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/security_how_transparent_data_encryption_is_built_in_mysql_and_percona_server/"
 ---
-
 ## Abstract
 
 How Transparent Data Encryption is built in MySQL and Percona Server ? - keyrings – what are they used for ? What is the difference between using a server back-end (keyring_vault) versus file back-end (keyring_file). How it affects server startup and why? Why per server separation is needed in Vault Server?

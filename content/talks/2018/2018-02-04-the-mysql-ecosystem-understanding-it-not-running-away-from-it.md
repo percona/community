@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: "https://archive.fosdem.org/2018/schedule/event/mysql_ecosystem/attachments/slides/2691/export/events/attachments/mysql_ecosystem/slides/2691/themysqlecosystem_understandingitnotrunningawayfromit_180204102918.pdf"
 video: "https://archive.fosdem.org/2018/schedule/event/mysql_ecosystem/"
 ---
-
 ## Abstract
 
 MySQL is unique in many ways. It supports plugins. It supports storage engines. It is also owned by Oracle, thus birthing two branches of the popular opensource database: Percona Server and MariaDB. It also spawned a fork: Drizzle. You're a busy DBA having to maintain a mix of this. Or you're a CIO planning to choose one branch. How do you go about picking? Supporting multiple databases? Find out more in this talk.

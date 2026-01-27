@@ -19,7 +19,6 @@ talk_tags: ['Kubernetes', 'MySQL', 'Open Source']
 slides: ""
 video: "https://fosdem.org/2020/schedule/event/mysql_k8s/"
 ---
-
 ## Abstract
 
 Running databases in Kubernetes has come a long way. In this talk we will

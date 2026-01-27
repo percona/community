@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['MySQL', 'MariaDB']
 slides: ""
 video: "https://www.youtube.com/watch?v=YTr8l3jfbkM"
+youtube_id: "YTr8l3jfbkM"
 ---
-
 ## Abstract
 
 MySQL 8 and MariaDB 10.10 are the latest Major versions of MySQL and MariaDB. While MariaDB started by being slightly different MySQL variant, now it has grown into very much different database platform which grows more different with every release.

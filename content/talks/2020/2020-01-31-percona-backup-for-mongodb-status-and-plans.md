@@ -19,7 +19,6 @@ talk_tags: ['Backup', 'MongoDB', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/perconamongodb/"
 ---
-
 ## Abstract
 
 A brief overview of the current state of backup tool, architecture, existing features, and the roadmap.

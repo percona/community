@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'PostgreSQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 PostgreSQL has recently surpassed MySQL in popularity and community engagement, in part due to the effective structure and actions of its community. While the communities for MySQL and PostgreSQL are fundamentally different, there are valuable lessons the MySQL Community can take from the success of PostgreSQL. Let's discuss these potential takeaways.

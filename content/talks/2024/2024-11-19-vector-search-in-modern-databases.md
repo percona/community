@@ -18,8 +18,8 @@ event_location: "Virtual"
 talk_tags: ['Vector Search', 'Databases', 'Open Source']
 slides: ""
 video: "https://www.youtube.com/watch?v=KGGml9pEORM"
+youtube_id: "KGGml9pEORM"
 ---
-
 ## Abstract
 
 In this talk, we’ll explore the emergent landscape of vector search in databases, a paradigm shift in information retrieval. Vector search, traditionally the domain of specialized systems, is now being integrated into mainstream databases and search engines like Lucene, Elasticsearch, Solr, PostgreSQL, MySQL, MongoDB, and Manticore. This integration marks a significant evolution in handling complex data structures and search queries.

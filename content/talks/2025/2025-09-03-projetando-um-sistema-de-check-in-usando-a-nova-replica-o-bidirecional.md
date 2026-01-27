@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 Vamos nos preparar com antecedência; o turismo espacial está chegando!
