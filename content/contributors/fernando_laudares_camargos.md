@@ -18,20 +18,24 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
+- PostgreSQL
 blog_tags: []
 events_tags:
 - Meetup
 - event
 - opensource
 - sponsorship
-talks_tags: []
+talks_tags:
+- Open Source
+- ai
 posts_count: 0
 events_count: 2
-talks_count: 1
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
+- '2025'
 - '2022'
 - '2021'
 ---

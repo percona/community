@@ -23,5 +23,3 @@ video: "https://archive.fosdem.org/2020/schedule/event/mysql_hash_joins/"
 ## Abstract
 
 MySQL 8.0.18 comes (finally) with a long waited and desired hash-join implementation. That was already present in other pseudo MySQL distributions like MariaDb. But, what is has-join, how it works, what problems it solves, when and how to use it. Last but not least are all the different implementations doing the same things, or are they acting and performing differently. We are going to perform a short journey in hash-join implementations and answer all these questions.
-
-Video

@@ -1,4 +1,36 @@
 import sys
+import pprint
+
+def dd(*args, sep="\n", file=sys.stderr):
+    """
+    Dump and die: pretty-prints any number of variables and exits immediately.
+
+    Usage:
+        dd(my_var)
+        dd(var1, var2, "debug label", some_dict)
+
+    Args:
+        *args: Any number of objects to print
+        sep: Separator between objects (default: newline)
+        file: Output stream (default: stderr, to avoid mixing with stdout data)
+    """
+    printer = pprint.PrettyPrinter(indent=2, width=80, compact=False, stream=file)
+    for i, arg in enumerate(args):
+        if i > 0:
+            print(sep, file=file)
+        printer.pprint(arg)
+    sys.exit(1)
+
+def ddd(*args, sep="\n", file=sys.stderr):
+    """
+    Dump only: pretty-prints variables without exiting.
+    Use for temporary debugging.
+    """
+    printer = pprint.PrettyPrinter(indent=2, width=80, compact=False, stream=file)
+    for i, arg in enumerate(args):
+        if i > 0:
+            print(sep, file=file)
+        printer.pprint(arg)
 
 def print_props(props: dict, stop: bool = False):
     """

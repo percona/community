@@ -29,5 +29,3 @@ How Transparent Data Encryption is built in MySQL and Percona Server ? - keyring
 - What is KEYRING encryption and what are encryption threads?
 - How binlog encryption works in 5.7 and how it works in 8.0 ?
 - How undo log/redo log encryption works ?
-
-Video, Abstract

@@ -23,5 +23,3 @@ video: "https://www.youtube.com/watch?v=MkXrDTIqClc"
 ## Abstract
 
 Everyone who has worked on kubernetes will be familiar with Pod.But, what exactly is a pod, what are the different components that make up a pod. How exactly does this map in the Operating system which runs a Pod ( containers)? This talk will help you get a good understanding of pods by getting an overview of containers, building blocks of containers and eventually a pod. Post this talk you can relate all the cgroups,namespaces link to the pod from a practical hands-on point of view.
-
-Video

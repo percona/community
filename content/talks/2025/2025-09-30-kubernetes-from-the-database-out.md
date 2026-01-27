@@ -27,5 +27,3 @@ You already know your Postgres, but you're being asked to work with this Kuberne
 Using a Postgres database hosted on Kubernetes as an example, I will cover the components of Kubernetes involved in day-to-day activities - including network connectivity, storage, and the automation of restarts and upgrades.
 
 Join me for an overview of the few, core terms and concepts among the many, many pieces of the Kubernetes ecosystem you need to learn about first, to start your Data on Kubernetes journey.
-
-Talk

@@ -23,5 +23,3 @@ video: "https://www.youtube.com/watch?v=0gSSmdNB-Zo"
 ## Abstract
 
 This isn't your typical technical talk. We'll take you on a step-by-step adventure, starting from a humble single database in a container and adding components one by one, just like we did. You'll witness firsthand how we tackled real-world challenges, from storage and scaling to monitoring and UI design, to create an Open Source Cloud Native database platform. You'll walk away with a deep understanding of how Kubernetes can be used to orchestrate complex and stateful applications (like databases clusters). Join us and discover how you can break free from vendor lock-in, save costs, and build a database that's truly yours. This is your chance to learn from our triumphs and tribulations, and be inspired to create your own open source success story.
-
-Video, Abstract

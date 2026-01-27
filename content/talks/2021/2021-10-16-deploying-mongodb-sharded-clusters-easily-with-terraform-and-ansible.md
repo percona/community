@@ -25,5 +25,3 @@ video: "https://www.youtube.com/watch?v=XTCXDmJD3cA"
 Installing big clusters is always a challenge, and can be a very time-consuming task. At a high level, we need to provision the hardware, install the software, configure monitoring, and set up a backup process.
 In this talk we will see how to develop a complete pipeline to deploy MongoDB sharded clusters at the push of a button, that can accomplish all of these tasks for you.
 By combining Terraform for the hardware provisioning, and Ansible for the software installation, we can completely automate the process, saving time and providing a standardized reusable solution.
-
-Video

@@ -25,5 +25,3 @@ video: "https://archive.fosdem.org/2020/schedule/event/mysql8_mariadb104/"
 MySQL 8 and MariaDB 10.4 are the latest Major versions for MySQL and MariaDB. While MariaDB started by being slightly different MySQL variant, now it has grown into very much different database platforms which grows more different from every release.
 
 In this presentation, we will look into the differences between MySQL and MariaDB in the core areas such as SQL features, query optimizations, replication, storage engines, and security as well as discuss unique features and capabilities MySQL 8 and MariaDB 10.4 offers compared to each other.
-
-Video, Abstract
