@@ -6,18 +6,20 @@ categories: ["PostgreSQL"]
 authors:
   - shahid_ullah
 images:
-  -
+  - blog/2026/01/pg_tde_pgbackrest.png
 ---
 
 Not every PostgreSQL installation requires encryption at rest. However, for organizations mandating strict data protection and privacy standards, it is often non-negotiable. When security policies are this rigorous, you need a strategy that protects your data without sacrificing recoverability.
 
-This post details how to combine pgBackRest for reliable backups with percona-pg_tde for transparent data encryption, covering setups for Debian/Ubuntu.
+This post details how to combine pgBackRest for reliable backups with Percona's solution for transparent data encryption ([pg_tde](https://docs.percona.com/pg-tde/index.html)), covering setups for Debian/Ubuntu.
 
-## What is Percona pg_tde?
+## What is pg_tde?
 
-Percona pg_tde is an open source, community-driven extension that provides transparent data encryption for PostgreSQL. It ensures data on disk remains encrypted and unreadable without the proper keys. Currently, it is bundled with Percona Server for PostgreSQL and available in Percona Distribution for PostgreSQL 17+.
+Percona pg_tde is an open source, community driven extension that provides Transparent Data Encryption (TDE) for PostgreSQL. This mechanism allows data to be encrypted at the storage level without affecting application behavior.
 
-Recent Percona releases make this combination more practical than ever. With WAL encryption in pg_tde now production-ready, we need a backup strategy that respects data security. In this walkthrough, we will demonstrate how to pair it with pgBackRest to ensure fully recoverable, encrypted backups.
+Unlike standard disk encryption, which exposes data once the system boots, TDE ensures that the actual database files remain encrypted at the file system level. This protects your data, dumps, and backups even if the operating system is compromised. Currently, it is bundled with Percona Server for PostgreSQL and available in Percona Distribution for PostgreSQL 17+.
+
+Recent Percona releases make this combination more practical than ever. With WAL encryption now ready for production use, we need a backup strategy that respects data security. In this walkthrough, we will demonstrate how to pair it with pgBackRest to ensure fully recoverable, encrypted backups.
 
 ## The Use Case
 
@@ -27,19 +29,19 @@ Imagine a team that wants strong security controls without changing application 
 - Backups that are consistent, verifiable, and restorable
 - A setup that is easy to automate and explain
 
-Percona Distribution for PostgreSQL plus pg_tde and pgBackRest is a clean answer: pg_tde encrypts, pgBackRest protects.
+Percona Distribution for PostgreSQL plus pg_tde and pgBackRest closes the gaps where needed: pg_tde takes care of encryption, pgBackRest provides flexible backup/restore capabilities.
 
 ## A Quick Note on Compatibility
 
-pg_tde relies on specific hooks in the PostgreSQL core, which is why we validate this setup using the Percona Distribution for PostgreSQL.
+At this moment pg_tde cannot be yet used with Community PostgreSQL as pg_tde relies on specific hooks in the PostgreSQL core. Percona Server for PostgreSQL includes these necessary core modifications, which is why we validate this setup using the Percona Distribution for this setup.
 
-While pgBackRest is fully capable of managing TDE-enabled clusters, there are specific constraints you must respect to ensure data safety:
+While pgBackRest is fully capable of managing TDE enabled clusters, there are specific constraints you must respect to ensure data safety:
 
 - No Asynchronous Archiving: pgBackRest asynchronous archiving is not supported with encrypted WALs. You must configure your archive command to handle WALs synchronously.
 - Restore Wrappers: Standard restore commands will not work for encrypted WALs. You must use the pg_tde_restore_encrypt utility to wrap your restore process.
-- Tooling Limitations: Other common tools like Barman, pg_receivewal, and pg_createsubscriber are not currently supported for use with pg_tde WAL encryption.
 
-This guide focuses exclusively on pgBackRest because it is the primary tool verified to handle these requirements correctly in production.
+This guide currently focuses on pgBackRest because it is the backup tool that has been tested and validated with pg_tde by the pg_tde community for production backup and restore scenarios at this time.
+Other backup tools may also be viable and we are open to collaborating with other tool maintainers and their communities on a shared effort to validate and support pg_tde.
 
 ## What You Will Build
 
@@ -47,13 +49,14 @@ By the end of this post you will have:
 
 - Percona Distribution for PostgreSQL installed with pg_tde and pgBackRest
 - A key directory and key providers created
-- WAL encryption enabled
+- [WAL encryption](https://docs.percona.com/pg-tde/wal-encryption.html) enabled
 - A pgBackRest stanza configured and a full backup completed
+- Use pg_tde to [encrypt tables and indexes](https://docs.percona.com/pg-tde/test.html)
 - A simple verification that encrypted data is not readable on disk
 
 ## Prerequisites
 
-- A fresh host (or VM) on Debian/Ubuntu
+- A host (or VM) on Debian/Ubuntu
 - Network access to Percona repositories
 - Root/Sudo: You need sudo access for installing packages and editing system configuration files in `/etc`
 - Postgres User: All database commands (psql, pgbackrest) should be run as the postgres system user
@@ -116,7 +119,7 @@ sudo systemctl restart postgresql
 
 Now that the extension is loaded, we need to tell pg_tde where to store its encryption keys.
 
-For this tutorial, we will use the File Provider (storing keys in a local file). In production environments, storing encryption keys locally on the PostgreSQL server can introduce security risks. To enhance security, pg_tde supports integration with external Key Management Systems (KMS) through a Global Key Provider interface.
+For this tutorial, we will use the File Provider (storing keys in a local file). In production environments, storing encryption keys locally on the PostgreSQL server can introduce security risks. To enhance security, pg_tde supports integration with external Key Management Systems ([KMS](https://docs.percona.com/pg-tde/global-key-provider-configuration/overview.html)) through a Global Key Provider interface.
 
 > Note: While key files may be acceptable for local or testing environments, KMS integration is the recommended approach for production deployments.
 
@@ -193,7 +196,7 @@ chown postgres:postgres /var/lib/pgbackrest
 
 ## Step 4: Wire pgBackRest into PostgreSQL Archiving
 
-pg_tde encrypts WAL files on disk. To allow pgBackRest to archive them correctly, we must decrypt them on the fly using the `pg_tde_archive_decrypt` wrapper.
+pg_tde encrypts WAL files on disk. To allow pgBackRest to archive them correctly, we must decrypt them on the fly using the `[pg_tde_archive_decrypt](https://docs.percona.com/pg-tde/command-line-tools/pg-tde-archive-decrypt.html)` wrapper.
 
 Now, configure the `archive_command`. This command tells PostgreSQL to pipe the WAL file through the decryption wrapper before handing it off to pgBackRest.
 
@@ -280,7 +283,7 @@ pgbackrest --stanza=demo verify
 
 ## Step 8: Restore (pg_tde-aware)
 
-Restoring an encrypted cluster requires us to reverse the process. Since our backups are stored decrypted by pgBackRest, we use the `pg_tde_restore_encrypt` wrapper to re-encrypt the WAL files as they are written back to disk.
+Restoring an encrypted cluster requires us to reverse the process. Since our backups are stored decrypted by pgBackRest, we use the `[pg_tde_restore_encrypt](https://docs.percona.com/pg-tde/command-line-tools/pg-tde-restore-encrypt.html)` wrapper to re-encrypt the WAL files as they are written back to disk.
 
 ### 8.1 Stop the Service
 
@@ -341,6 +344,14 @@ SELECT pg_tde_is_encrypted('crypt_table');
 
 ## Wrap-up
 
-Security often comes at the cost of operational complexity, but it doesn’t have to compromise recoverability. By pairing percona-pg_tde with pgBackRest, you have established a strategy that satisfies both security auditors and operations teams: your data is transparently encrypted on disk to meet strict compliance standards, while your backups remain consistent, verifiable, and easy to restore.
+Security often comes at the cost of operational complexity, but it doesn’t have to compromise recoverability. By pairing Percona's solution for transparent data encryption (pg_tde) with pgBackRest, you have established a strategy that satisfies both security auditors and operations teams: your data is transparently encrypted on disk to meet strict compliance standards, while your backups remain consistent, verifiable, and easy to restore.
 
-This walkthrough used a local file provider for simplicity. As you move toward a production deployment, we recommend exploring a dedicated Vault solution for key management to further harden your architecture against unauthorized access.
+This walkthrough used a local file provider for simplicity. As you move toward a production deployment, we recommend exploring a dedicated [Vault](https://docs.percona.com/pg-tde/global-key-provider-configuration/overview.html) solution for key management to further harden your architecture against unauthorized access.
+
+Finally, be aware that to support archiving, the pg_tde wrapper decrypts WAL files before sending them to the repository. This means your backup repository currently holds unencrypted data. To close this security gap in production, you must ensure that encryption is enabled at the backup repository level so that your backups remain just as secure as your live database.
+
+Remember: While backup is running you should not change any configurations of WAL encryption including:
+global key providers operations (creating or changing)
+keys for WAL encryption (creating or changing)
+changing the pg_tde.wal_encrypt setting
+The reason is that standbys or standalone clusters created from backups done while such changes occurred may fail to start during WAL replay and may also lead to the corruption of encrypted data (tables, indexes, and other relations).
