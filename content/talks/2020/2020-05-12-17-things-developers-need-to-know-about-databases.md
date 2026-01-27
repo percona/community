@@ -25,5 +25,3 @@ video: "https://www.youtube.com/watch?v=HOho4HyKqTE"
 ost applications use databases, yet many fail to follow even the most basic best practices causing poor performance, downtime and security incidents.
 
 In this presentation, we will look into the foundational best practices you as a Developer should know about databases, with particular focus on the most popular Open Source Databases – MySQL, PostgreSQL, and MongoDB.
-
-Slides, Video

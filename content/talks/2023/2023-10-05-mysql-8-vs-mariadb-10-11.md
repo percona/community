@@ -24,5 +24,3 @@ video: "https://www.youtube.com/watch?v=YTr8l3jfbkM"
 
 MySQL 8 and MariaDB 10.10 are the latest Major versions of MySQL and MariaDB. While MariaDB started by being slightly different MySQL variant, now it has grown into very much different database platform which grows more different with every release.
 In this presentation, we will look into the differences between MySQL and MariaDB in the core areas such as SQL features, query optimizations, replication, storage engines, and security. We will also discuss their unique features and capabilities.
-
-Slides, Video

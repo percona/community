@@ -24,5 +24,3 @@ video: ""
 
 PostgreSQL encryption is a fundamental layer of security, essential for protecting sensitive data stored within databases. It's a multifaceted approach encompassing mechanisms like Transparent Data Encryption (TDE), Secure Sockets Layer (SSL), and Transport Layer Security (TLS). TDE encrypts stored data, making it unreadable without the right keys, while SSL/TLS secures data in transit, preventing unauthorized access during communication between client applications and the database server.
 This talk serves as a compass in PostgreSQL encryption, guiding attendees through the available options and arming them with the insights to make well-informed choices in securing their invaluable data assets.
-
-Abstract

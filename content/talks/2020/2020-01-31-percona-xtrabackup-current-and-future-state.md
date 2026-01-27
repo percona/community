@@ -27,5 +27,3 @@ What’s the future of the open-source industry-standard for MySQL hot backup?
 A brief overview of the current state of the backup tool, architecture, MySQL 8.0 support, new cloud native features, and the roadmap.
 
 During this brief lecture, I will present the roadmap for Percona XtraBackup, talk about the importance of our Cloud direction, why PXB 8.0 is a separate binary, and how PXB fits into our Percona Distribution model for 2020.
-
-Video, Slides, Abstract

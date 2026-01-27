@@ -44,5 +44,3 @@ Takeaways:
 This presentation should encourage the audience to embrace possibilities of
 running databases on Kubernetes, and provide attendees with the "do's and
 dont's" of such a deployment.
-
-Slides, Video, Abstract

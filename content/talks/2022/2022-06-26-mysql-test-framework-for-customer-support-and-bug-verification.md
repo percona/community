@@ -37,5 +37,3 @@ With MTR you can:
 The test can be run on any machine with a MySQL, Percona, or MariaDB server.
 
 I will show how I work with MySQL Test Framework and I hope you will love this tool too.
-
-Slides, Video

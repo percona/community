@@ -23,5 +23,3 @@ video: "https://www.youtube.com/watch?v=WZxSgv5FBAA"
 ## Abstract
 
 The open source landscape is changing.  More and more companies are using open source as a tool to generate valuations and buzz, sometimes to the detriment of the community.  What good is coming from this?  Some… what bad? Some as well.., lets highlight the dangers we see from the current trends in open source.
-
-Video

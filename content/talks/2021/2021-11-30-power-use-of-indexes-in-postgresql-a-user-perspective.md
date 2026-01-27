@@ -25,5 +25,3 @@ video: "https://www.youtube.com/watch?v=7UtT6jV2LEU"
 There have been many presentations about the Different Indexes in PostgreSQL ( B-Tree, HASH, GIN, GiST etc), especially from the architecture perspective. But these talks always lacked details from the user perspective on the selection of indexes.
 It is common to see that architects and developers fail to select the right types of index and the way it should be used.
 Just an overview of all types of indexes also won't help much in decision making.
-
-Video

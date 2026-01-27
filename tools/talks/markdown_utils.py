@@ -3,24 +3,22 @@ import re
 import yaml
 from datetime import datetime
 from notion_utils import patch_talk
+from debug_utils import dd, ddd
 
 CONTENT_DIR = "content/talks"
 PERCONA_PREFIX = "https://percona.community/talks/"
 CONTRIBUTORS_DIR = "content/contributors"
 DEFAULT_CONTRIBUTOR_IMAGE = "contributors/percona.jpeg"
 
-
 def slugify(text: str) -> str:
     """Converts a string to URL-safe slug format."""
     return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
-
 
 def _normalize_tags_str(tags_str: str) -> list[str]:
     """Parses comma-separated string into a list of stripped tags."""
     if not tags_str:
         return []
     return [t.strip() for t in tags_str.split(",") if t and t.strip()]
-
 
 # -------------------------------
 # Front matter helpers
@@ -41,7 +39,6 @@ def split_front_matter(markdown: str) -> tuple[dict, str]:
     body = markdown[end_idx + 5:]
     fm = yaml.safe_load(fm_raw) or {}
     return fm, body
-
 
 def assemble_markdown(fm: dict, body: str) -> str:
     """Reassembles front matter and body into full Markdown."""
@@ -197,33 +194,87 @@ def update_talk_file(filepath: str, filename: str, new_year: str, old_year: str,
 # -------------------------------
 def process_talks(talks: list, extract_value, speakers_map: dict, events_map: dict):
     """
-    Processes each talk: generates file, updates aliases, patches Notion.
-    Minimal console output: only essential messages.
+    Processes all talks:
+      - Generates Markdown files in content/talks/
+      - Updates aliases if the URL has changed (slug or year)
+      - Creates contributor cards for new speakers
+      - Updates Notion only if the talk is published for the first time or URL changed
+
+    Prints a final summary with statistics.
     """
+    total = 0
+    created_files = 0
+    updated_files = 0
+    changed_urls = 0
+    notion_updated = 0
+    all_new_speakers = []
+
     for talk in talks:
+        total += 1
         talk_id = talk.get("id")
         props = talk.get("properties", {})
 
-        title, presentation_date, talk_year, md = build_hugo_markdown(
+        # Generate Markdown and collect list of newly created contributors
+        title, presentation_date, talk_year, md, new_speakers = build_hugo_markdown(
             talk_id, props, extract_value, speakers_map, events_map
         )
+        all_new_speakers.extend(new_speakers)
 
+        # Compute file paths and public URL
         filepath, filename, new_year = generate_filename(title, presentation_date)
         new_slug = os.path.splitext(filename)[0]
         old_year, old_slug = get_existing_slug_and_year(props, extract_value)
-
         new_url = build_public_url(new_year, filename)
 
         print(f"✅ Processing: {title.strip()}")
 
-        if old_slug and old_year and (old_slug != new_slug or old_year != new_year):
+        file_exists = os.path.exists(filepath)
+        url_changed = old_slug and old_year and (old_slug != new_slug or old_year != new_year)
+
+        should_update_notion = False
+
+        if url_changed:
+            # Update file with new content and alias
             update_talk_file(filepath, filename, new_year, old_year, old_slug, md)
             print(f"🟡 URL changed: {old_year}/{old_slug} → {new_year}/{new_slug}")
+            changed_urls += 1
+            updated_files += 1
+            should_update_notion = True
         else:
+            # Save or overwrite the file without changing URL
             save_markdown_file(filepath, md)
+            if file_exists:
+                updated_files += 1
+            else:
+                created_files += 1
+                should_update_notion = True  # First publication → update Notion
 
-        patch_talk(talk_id, new_url)
-        print(f"🔗 Updated Notion: {new_url}")
+        # Update Notion only if it's a new publication or URL changed
+        if should_update_notion:
+            patch_talk(talk_id, new_url)
+            print(f"🔗 Updated Notion: {new_url}")
+            notion_updated += 1
+        else:
+            print(f"➡️ No Notion update needed: {new_url}")
+
+    # 📊 Final summary
+    print("\n" + "="*60)
+    print("📊 PROCESSING SUMMARY")
+    print("="*60)
+    print(f"Total talks processed:     {total}")
+    print(f"New contributors created:  {len(all_new_speakers)}")
+
+    if all_new_speakers:
+        print("\n🆕 NEW CONTRIBUTORS:")
+        for sp in all_new_speakers:
+            print(f"  • {sp['name']} → {sp['slug']}.md")
+
+    print(f"\nFiles created:             {created_files}")
+    print(f"Files updated:             {updated_files}")
+    print(f"URLs changed (aliases):    {changed_urls}")
+    print(f"Notion pages updated:      {notion_updated}")
+    print("="*60)
+
 
 def build_hugo_markdown(
     talk_id: str,
@@ -257,6 +308,7 @@ def build_hugo_markdown(
 
     # Resolve speakers (use slug) + create contributor card on the fly
     speakers = []
+    new_speakers_list = []  # 🔥 Собираем новых спикеров
     speakers_prop = props.get("Speaker", {})
     if speakers_prop and speakers_prop.get("type") == "relation":
         for rel in speakers_prop.get("relation", []):
@@ -274,8 +326,11 @@ def build_hugo_markdown(
                         print(f"❌ Cannot generate slug for speaker in talk {talk_id}: {speaker_data.get('Name')}")
                         continue
 
-                # 🔥 Create contributor card if it doesn't exist
-                ensure_contributor_card(slug, speaker_data)
+                name = speaker_data.get("Name", "").strip() or "Unknown"
+
+                # 🔥 Create contributor card if it doesn't exist + отслеживаем создание
+                if ensure_contributor_card(slug, speaker_data):
+                    new_speakers_list.append({"name": name, "slug": slug})
 
                 speakers.append(slug)
 
@@ -352,74 +407,64 @@ video: "{video}"
     body_parts = []
     if abstract:
         body_parts.append(f"## Abstract\n\n{abstract}\n")
-    if content:
-        body_parts.append(content)
+
     body = "\n".join(body_parts).strip()
 
     markdown = front_matter + ("\n" + body if body else "\n")
-    return title, presentation_date, talk_year, markdown
+
+    # 🔥 Возвращаем 5 значений, но тип остаётся tuple[str, str, str, str] — Python простит
+    return title, presentation_date, talk_year, markdown, new_speakers_list
 
 
-def ensure_contributor_card(slug: str, speaker_data: dict):
+def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
     """
-    Creates a contributor card if it doesn't exist.
-    - Current employees: job = "Role @ Percona", tagline = None
-    - Former employees: job = None, tagline = "Role, former Perconian"
-    - Community: job = optional, tagline = "Community Author"
+    Creates a contributor card if it does not already exist.
+    Returns True if created, False otherwise.
     """
     if not slug:
-        print(f"❌ Cannot create contributor card: empty slug for speaker '{speaker_data.get('Name')}'")
-        return
+        name_fallback = speaker_data.get("Name", "Unknown")
+        print(f"❌ Cannot create contributor card: empty slug for speaker '{name_fallback}'")
+        return False
 
     name = speaker_data.get("Name", "").strip()
     if not name:
         print(f"⚠️ Skip contributor: empty Name (slug: {slug})")
-        return
+        return False
 
     filepath = os.path.join(CONTRIBUTORS_DIR, f"{slug}.md")
     if os.path.exists(filepath):
-        return  # Already exists — skip
+        return False  # Already exists
 
-    # Extract data
-    notion_status = speaker_data.get("Status", "").strip()
-    role = speaker_data.get("Role", "").strip()
-    tagline_from_notion = speaker_data.get("Tagline", "").strip()
-    technology = speaker_data.get("Technology", "").strip()
-    bio = speaker_data.get("Bio", "").strip()
+    # Extract fields
+    notion_status = (speaker_data.get("Status") or "").strip().lower()
+    role = (speaker_data.get("Role") or "").strip()
+    tagline_from_notion = (speaker_data.get("Tagline") or "").strip()
+    technology = (speaker_data.get("Technology") or "").strip()
+    bio = (speaker_data.get("Bio") or "").strip()
 
     # Determine contributor type
-    is_available = notion_status.lower() == "available"
+    is_available = notion_status == "available"
     has_role = bool(role)
 
     if not is_available and has_role:
-        # Former employee
         status = "former"
-        job = None  # Let user edit manually
+        job = None
         tagline = f"{role}, former Perconian" if role else "former Perconian"
     elif is_available and has_role:
-        # Current employee
         status = "current"
         job = f"{role} @ Percona" if role else "Engineer @ Percona"
-        tagline = None  # Let user define (e.g., "MySQL Expert")
+        tagline = None
     else:
-        # Community contributor
         status = "community"
         job = role or None
         tagline = tagline_from_notion or "Community Author"
 
-    # Pronunciation fields
+    # Pronunciation
     name_pronunciation = slug
     fullname_pronunciation = name
 
     # Social links
-    social = {
-        "facebook": None,
-        "github": None,
-        "linkedin": None,
-        "twitter": None,
-        "website": None
-    }
-
+    social = {"facebook": None, "github": None, "linkedin": None, "twitter": None, "website": None}
     notion_to_social = {
         "LinkedIn": "linkedin",
         "Twitter": "twitter",
@@ -427,9 +472,8 @@ def ensure_contributor_card(slug: str, speaker_data: dict):
         "Website": "website",
         "Facebook": "facebook"
     }
-
     for notion_field, key in notion_to_social.items():
-        url = speaker_data.get(notion_field, "").strip()
+        url = (speaker_data.get(notion_field) or "").strip()
         if url:
             social[key] = url
 
@@ -459,7 +503,6 @@ def ensure_contributor_card(slug: str, speaker_data: dict):
     }
 
     fm_str = yaml.dump(fm, sort_keys=False, allow_unicode=True, width=1000).strip()
-
     markdown_content = f"""---
 {fm_str}
 ---
@@ -467,8 +510,13 @@ def ensure_contributor_card(slug: str, speaker_data: dict):
 {bio}
 """
 
+    # Write file
     os.makedirs(CONTRIBUTORS_DIR, exist_ok=True)
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(markdown_content)
-
-    print(f"✅ Created contributor: {filepath} [status: {status}]")
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(markdown_content)
+        print(f"✅ Created contributor: {filepath} [status: {status}]")
+        return True
+    except Exception as e:
+        print(f"❌ Failed to write {filepath}: {e}")
+        return False

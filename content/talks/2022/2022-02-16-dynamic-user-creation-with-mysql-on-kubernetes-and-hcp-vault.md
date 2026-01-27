@@ -25,5 +25,3 @@ video: "https://www.youtube.com/watch?v=z-zWTxzhEc0"
 Without dynamic credentials, organizations are susceptible to a breach due to secrets sprawl across different systems, files, and repositories. Dynamic credentials provide a secure way of connecting to the database by using a unique password for every login or service account. With Vault, these just-in-time credentials are stored securely and it is also possible to set a lifetime for them.
 
 In this talk we are going to demonstrate the integration between Percona Kubernetes Operator and HCP Vault to provide dynamic user creation for a MySQL cluster.
-
-Video

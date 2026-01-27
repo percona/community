@@ -1,23 +1,23 @@
 ---
-id: "8c97aab7-ba83-4c96-a7c5-0a29a37fccb3"
-title: "Kubernetes Operators: The Power of Automation"
+id: "f5d3869d-eb61-4224-a172-73854cf590ca"
+title: "Operadores de Kubernetes 101"
 layout: single
 speakers:
   - edith_puclla
-talk_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/talk/HUSACY/"
-presentation_date: "2023-03-18"
+talk_url: "https://community.cncf.io/events/details/cncf-kcd-spain-presents-kcd-spain-2023/"
+presentation_date: "2023-12-12"
 presentation_date_end: ""
-presentation_time: "17:45"
+presentation_time: ""
 talk_year: "2023"
-event: "Cloud Native Rejekts EU Paris 2024"
+event: "KCD Spain 2023"
 event_status: "Done"
-event_date_start: "2024-03-17"
-event_date_end: "2024-03-18"
-event_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-eu-paris-2024/schedule/"
-event_location: "Paris"
-talk_tags: ['Kubernetes', 'Containers', 'Open Source', 'Cloud Native']
-slides: ""
-video: ""
+event_date_start: "2023-12-12"
+event_date_end: ""
+event_url: "https://community.cncf.io/events/details/cncf-kcd-spain-presents-kcd-spain-2023/"
+event_location: ""
+talk_tags: ['Kubernetes']
+slides: "https://www.slideshare.net/slideshow/kubernetes-operator-101-edith-puclla-258503216/258503216"
+video: "https://www.youtube.com/watch?v=Fxq2MVwv-pM"
 ---
 
 ## Abstract

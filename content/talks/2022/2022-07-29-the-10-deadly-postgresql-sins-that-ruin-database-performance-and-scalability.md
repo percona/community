@@ -23,5 +23,3 @@ video: "https://www.youtube.com/watch?v=wWJnacgze3A"
 ## Abstract
 
 PostgreSQL is one of the most popular open source databases on the planet.  According to recent research, it is the most wanted, most loved, and the fastest growing open source database on the market today.  As people use PostgreSQL for more and more projects, many of them are falling into the same traps, problems, and issues that many others have.  Our support organization has worked with 1000’s of customers worldwide and seen every possible database problem from the easy to the complex.   While every problem has the potential to be unique, there are several we see happening over and over again.  Our mission is to prevent you from experiencing the pain so many others have experienced.  With our tips and tricks, you will be sure to exorcise the 10 deadly PostgreSQL sins from your environment.
-
-Video, Review

@@ -20,4 +20,3 @@ slides: "https://archive.fosdem.org/2021/schedule/event/mariadb_devops/attachmen
 video: "https://archive.fosdem.org/2021/schedule/event/mariadb_devops/"
 ---
 
-Review
