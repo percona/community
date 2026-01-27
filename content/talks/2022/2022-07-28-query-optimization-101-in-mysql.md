@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['MySQL']
 slides: "https://www.socallinuxexpo.org/scale/19x/presentations/query-optimization-101-mysql/"
 video: "https://www.youtube.com/watch?v=rAc3iZQPvhM"
+youtube_id: "rAc3iZQPvhM"
 ---
-
 ## Abstract
 
 Queries are essential to retrieving data from your database. How do you know if your queries are performing well? What is an index, and how does it help access the data? We will answer these questions and many more as we take our first steps into the realm of query optimization.

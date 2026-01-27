@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['MySQL', 'Kubernetes']
 slides: ""
 video: "https://www.youtube.com/watch?v=z-zWTxzhEc0"
+youtube_id: "z-zWTxzhEc0"
 ---
-
 ## Abstract
 
 Without dynamic credentials, organizations are susceptible to a breach due to secrets sprawl across different systems, files, and repositories. Dynamic credentials provide a secure way of connecting to the database by using a unique password for every login or service account. With Vault, these just-in-time credentials are stored securely and it is also possible to set a lifetime for them.

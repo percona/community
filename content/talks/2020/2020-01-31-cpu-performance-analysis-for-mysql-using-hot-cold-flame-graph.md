@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/mysql_cpu_flames/"
 ---
-
 ## Abstract
 
 Come to see some real-life examples of how you can do CPU profiling with perf and eBPF/BCC, to create FlameGraphs and ColdGraphs visualizations of the on-CPU/off-CPU time spent by the database. Based on these visualizations and reading the database source code (this is why we love Open Source\!) you can quickly gain insight about what's burning CPU (FlameGraphs) and what's causing CPU to wait (ColdGraphs), and with this knowledge you will be several steps closer to answering "what's consuming all that CPU time".

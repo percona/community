@@ -19,7 +19,6 @@ talk_tags: ['Kubernetes', 'Cloud']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 As Kubernetes celebrates its 10th anniversary, it’s an opportune moment to reflect on the significant innovations it has introduced to the world of databases.

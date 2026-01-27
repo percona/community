@@ -20,7 +20,6 @@ talk_tags: ['Kubernetes', 'DBaaS', 'Cloud', 'Opensource', 'Databases', 'MongoDB'
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 Think you have to choose between the convenience of Azure's managed databases and the deep control of self-hosting? Think again.

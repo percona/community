@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['Opensource', 'Databases']
 slides: ""
 video: "https://www.youtube.com/watch?v=E-DDUDj36hg"
+youtube_id: "E-DDUDj36hg"
 ---
-
 ## Abstract
 
 Open Source databases became more popular than their proprietary counterparts in late 2021 which is a big thing. While this may be a win there are still several areas where the commercial competitors do much better. First, there is a lot of handholding for customers during trial periods and nearly constant outreach to ensure product adoption. Second, error messages are often written by junior developers (the least skilled) that give often cryptic declarations of the issue at hand to the befuddled. And we often treat projects that drive billion dollar companies as if they are still a group of hobbyists coders. In short we may have a better product but the environment around using that product needs to be upscaled rapidly or we risk sliding back into the days of proprietary dominated software constrained lives.

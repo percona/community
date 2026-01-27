@@ -19,7 +19,6 @@ talk_tags: ['DBaaS', 'Kubernetes']
 slides: ""
 video: "https://fosdem.org/2023/schedule/event/container_kubernetes_database_dbaas/"
 ---
-
 ## Abstract
 
 Talk about all important steps that it takes to run the database on Kubernetes in production. We will answer the questions: Can you do it without operators? Can you work with k8s primitives only to run production-grade DB and then DBaaS?

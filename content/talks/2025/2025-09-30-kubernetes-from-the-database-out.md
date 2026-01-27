@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL', 'CloudNative', 'Everest']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 You already know your Postgres, but you're being asked to work with this Kubernetes thing. Do you want to focus your Kubernetes learning on only the bits which are relevant to databases? Then this is the talk for you! Skip the usual 'why run databases on Kubernetes' discussion and dive straight into what you need to know to talk Postgres on Kubernetes.

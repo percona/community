@@ -19,7 +19,6 @@ talk_tags: ['Linux', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/measure_linux_performance/"
 ---
-
 ## Abstract
 
 In this presentation, we will look at typical mistakes measuring or interpreting Linux Performance. Do you use LoadAvg to assess if your CPU is overloaded or Disk Utilization to see if your disks are overloaded? We will look into these and a number of other metrics that are often misunderstood and/or misused as well as provide suggestions for better ways to measure Linux Performance.

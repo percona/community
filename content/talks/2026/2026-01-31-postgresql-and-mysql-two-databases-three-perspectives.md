@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'PostgreSQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 In this session, four seasoned database administrators with sound knowledge of both PostgreSQL and MySQL present an unbiased comparison of the two technologies. Attendees will learn about the architectural and DX differences between the world's two most popular databases.

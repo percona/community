@@ -19,7 +19,6 @@ talk_tags: ['MariaDB', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/msyql_ecryption/"
 ---
-
 ## Abstract
 
 All three products provide some features in this space, but currently

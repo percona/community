@@ -19,8 +19,8 @@ event_location: ""
 talk_tags: ['Everest', 'Cloud Native']
 slides: ""
 video: "https://www.youtube.com/watch?v=cKXMxK1lbWI&t=2377s"
+youtube_id: "cKXMxK1lbWI"
 ---
-
 ## Abstract
 
 We’ve all heard the saying “It’s not about the destination, it’s about the journey,” well the same can be said of database Operators. It’s not about which Operator you are using to deploy your database to Kubernetes it’s about what you are trying to accomplish with what you are deploying.

@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 - What are JSON Duality Views?

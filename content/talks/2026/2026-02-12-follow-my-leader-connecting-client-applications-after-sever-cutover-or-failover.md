@@ -19,7 +19,6 @@ talk_tags: ['PostgreSQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 During a planned changeover, or after the failure of a primary, smoothly promoting a Postgres replica is not the end of the problem. It’s the start of a new phase of the problem - getting the clients connected to the right Postgres instance.

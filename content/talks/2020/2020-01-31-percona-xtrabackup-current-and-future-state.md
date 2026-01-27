@@ -19,7 +19,6 @@ talk_tags: ['MySQL', 'Backup', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/xtrabackup/"
 ---
-
 ## Abstract
 
 What’s the future of the open-source industry-standard for MySQL hot backup?

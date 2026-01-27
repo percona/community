@@ -18,8 +18,8 @@ event_location: ""
 talk_tags: ['Opensource', 'Databases']
 slides: ""
 video: "https://www.youtube.com/watch?v=taO_hSr8PxE"
+youtube_id: "taO_hSr8PxE"
 ---
-
 ## Abstract
 
 We will cover all the database-related concepts that people not working as database administrators (SREs, developers, architects, etc.) need to know about database management in a high-growth SaaS startup: from choosing the best providers to best practices in high availability/backups, etc.

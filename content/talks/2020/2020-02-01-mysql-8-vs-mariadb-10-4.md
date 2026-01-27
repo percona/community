@@ -19,7 +19,6 @@ talk_tags: ['MariaDB', 'Open Source']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/mysql8_mariadb104/"
 ---
-
 ## Abstract
 
 MySQL 8 and MariaDB 10.4 are the latest Major versions for MySQL and MariaDB. While MariaDB started by being slightly different MySQL variant, now it has grown into very much different database platforms which grows more different from every release.

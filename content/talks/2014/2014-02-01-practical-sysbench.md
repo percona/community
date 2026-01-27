@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: "https://archive.fosdem.org/2014/schedule/event/lepeterborosrulez/attachments/slides/454/export/events/attachments/lepeterborosrulez/slides/454/Practical_sysbench.pdf"
 video: "https://archive.fosdem.org/2014/schedule/event/lepeterborosrulez/"
 ---
-
 ## Abstract
 
 A session about benchmarking MySQL and disk IO subsystems with sysbench and interpreting the results. In our consulting company, I helped a reasonable number of customers with sysbench so I know the common caveats most people run into. This talk will cover benchmarking IO subsystems with fileio tests, as well as benchmarking MySQL.

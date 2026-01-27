@@ -18,8 +18,8 @@ event_location: "Athens, Greece"
 talk_tags: ['PostgreSQL', 'Security']
 slides: ""
 video: "https://www.youtube.com/watch?v=jzjmNmH7OJ0"
+youtube_id: "jzjmNmH7OJ0"
 ---
-
 ## Abstract
 
 PostgreSQL is the most popular open-source database among developers. It is one of the Top 5 databases in the world, and it is fully open source and community driven. But, PostgreSQL, the “Emperor” of databases, has no clothes! For all intents and purposes Slonik is “walking around naked” because there is no open source TDE solution to keep the elephant clothed.

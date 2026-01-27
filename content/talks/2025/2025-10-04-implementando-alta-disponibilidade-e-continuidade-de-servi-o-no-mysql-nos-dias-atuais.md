@@ -19,7 +19,6 @@ talk_tags: ['MySQL']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 A 25 anos atrás, a introdução da replicação nativa contribuiu para fazer do MySQL o banco de dados mais utilizado pelas principais aplicações movendo a Internet. A essência do conceito permanece a mesma: se algo der errado com o servidor principal, os dados continuam disponíveis “online” na réplica. Mas a maneira como essa solução é implementada evoluiu bastante. Aliás, hoje contamos com mais de uma opção.
