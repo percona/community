@@ -108,7 +108,8 @@
 </script>
 
 <!-- Build search index -->
-{{- $contributors := where site.RegularPages "Section" "contributors" -}}
+{{- $contributors := .searchPages -}}
+
 {{- $searchIndex := slice -}}
 
 {{- range $contributors -}}

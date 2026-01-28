@@ -100,7 +100,8 @@
 </script>
 
 <!-- Build search index -->
-{{- $talkPages := where site.RegularPages "Section" "talks" -}}
+{{- $talkPages := .searchPages -}}
+
 {{- $searchIndex := slice -}}
 
 {{- range $talkPages -}}

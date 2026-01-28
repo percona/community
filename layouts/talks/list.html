@@ -23,6 +23,6 @@
   </div>
 </div>
 
-{{ partial "talks-list.html" (dict "paginator" $paginator "page" .) }}
+{{ partial "talks-list.html" (dict "paginator" $paginator "page" . "searchPages" $pages) }}
 
 {{ end }}
