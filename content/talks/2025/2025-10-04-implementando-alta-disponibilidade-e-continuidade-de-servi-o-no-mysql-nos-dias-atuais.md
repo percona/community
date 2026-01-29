@@ -5,7 +5,7 @@ layout: single
 speakers:
   - fernando_laudares_camargos
 talk_url: "https://mysqlbr.com.br/agenda/"
-presentation_date: ""
+presentation_date: "2025-10-04"
 presentation_date_end: ""
 presentation_time: ""
 talk_year: "2025"

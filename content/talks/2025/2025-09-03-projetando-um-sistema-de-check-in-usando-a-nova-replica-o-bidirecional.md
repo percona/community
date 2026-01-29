@@ -5,7 +5,7 @@ layout: single
 speakers:
   - fernando_laudares_camargos
 talk_url: "https://2025.pgconf.com.br/talk?token=c508cb0d75fdc28448f68e21c249b84e"
-presentation_date: ""
+presentation_date: "2025-09-03"
 presentation_date_end: ""
 presentation_time: ""
 talk_year: "2025"

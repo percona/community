@@ -15,7 +15,7 @@ event_date_start: "2015-01-31"
 event_date_end: "2015-02-01"
 event_url: "https://archive.fosdem.org/2015/"
 event_location: "Brussels, Belgium"
-talk_tags: ['Opensource', 'MySQL']
+talk_tags: ['Opensource', 'MySQL', 'Video']
 slides: ""
 video: "https://archive.fosdem.org/2015/schedule/event/benchmark_r_gpplot2/"
 ---

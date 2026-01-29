@@ -15,7 +15,7 @@ event_date_start: "2022-09-13"
 event_date_end: "2022-09-16"
 event_url: "https://events.linuxfoundation.org/open-source-summit-europe"
 event_location: "Dublin"
-talk_tags: ['Kubernetes']
+talk_tags: ['Kubernetes', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=MkXrDTIqClc"
 youtube_id: "MkXrDTIqClc"

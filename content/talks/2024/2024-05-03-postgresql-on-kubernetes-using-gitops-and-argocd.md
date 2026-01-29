@@ -15,7 +15,7 @@ event_date_start: "2024-05-03"
 event_date_end: ""
 event_url: "https://latamops.com/"
 event_location: ""
-talk_tags: ['CloudNative', 'MySQL', '2024 Q1', 'Cloud Native', 'PostgreSQL']
+talk_tags: ['CloudNative', 'MySQL', '2024 Q1', 'Cloud Native', 'PostgreSQL', 'Video']
 slides: "https://www.slideshare.net/slideshow/postgresql-on-kubernetes-using-gitops-and-argocd/267751892"
 video: "https://youtu.be/XVGVt8-9g9U?t=21741"
 youtube_id: "XVGVt8-9g9U"

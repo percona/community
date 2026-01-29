@@ -15,7 +15,7 @@ event_date_start: "2022-07-28"
 event_date_end: "2022-07-31"
 event_url: "https://www.socallinuxexpo.org/scale/19x/"
 event_location: ""
-talk_tags: ['PostgreSQL']
+talk_tags: ['PostgreSQL', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=wWJnacgze3A"
 youtube_id: "wWJnacgze3A"

@@ -15,7 +15,7 @@ event_date_start: "2023-02-04"
 event_date_end: "2023-02-05"
 event_url: "https://fosdem.org/2023/"
 event_location: "Brussels"
-talk_tags: ['DBaaS', 'Kubernetes']
+talk_tags: ['DBaaS', 'Kubernetes', 'Video']
 slides: ""
 video: "https://fosdem.org/2023/schedule/event/container_kubernetes_database_dbaas/"
 ---

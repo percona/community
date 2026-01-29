@@ -15,7 +15,7 @@ event_date_start: "2023-02-07"
 event_date_end: "2023-02-08"
 event_url: "https://stateofopencon.com/"
 event_location: "London"
-talk_tags: ['Cloud', 'video']
+talk_tags: ['Cloud', 'video', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=O4MzmtNahho"
 youtube_id: "O4MzmtNahho"
