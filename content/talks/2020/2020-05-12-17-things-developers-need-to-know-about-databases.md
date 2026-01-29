@@ -15,7 +15,7 @@ event_date_start: "2020-05-12"
 event_date_end: ""
 event_url: "https://opensource101.com/events/at-home/"
 event_location: "Online"
-talk_tags: ['Databases']
+talk_tags: ['Databases', 'Video']
 slides: "https://www.percona.com/sites/default/files/presentations/OS101-Home-17-Things-Developers-should-know-about-Databases-2020.pdf"
 video: "https://www.youtube.com/watch?v=HOho4HyKqTE"
 youtube_id: "HOho4HyKqTE"

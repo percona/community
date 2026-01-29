@@ -15,7 +15,7 @@ event_date_start: "2022-11-08"
 event_date_end: "2022-11-09"
 event_url: "https://www.opensource-experience.com/en/"
 event_location: ""
-talk_tags: ['Opensource', 'Databases']
+talk_tags: ['Opensource', 'Databases', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=taO_hSr8PxE"
 youtube_id: "taO_hSr8PxE"

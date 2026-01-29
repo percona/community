@@ -15,7 +15,7 @@ event_date_start: "2024-02-28"
 event_date_end: "2024-03-01"
 event_url: "https://pgconf.in/conferences/pgconfin2024"
 event_location: ""
-talk_tags: ['PostgreSQL']
+talk_tags: ['PostgreSQL', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=5ysqoTEEdUk&t=2s"
 youtube_id: "5ysqoTEEdUk"

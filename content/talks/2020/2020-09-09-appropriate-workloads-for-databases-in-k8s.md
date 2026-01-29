@@ -15,7 +15,7 @@ event_date_start: "2020-09-08"
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['Databases', 'Kubernetes']
+talk_tags: ['Databases', 'Kubernetes', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=S-KF2qyjUPE"
 youtube_id: "S-KF2qyjUPE"

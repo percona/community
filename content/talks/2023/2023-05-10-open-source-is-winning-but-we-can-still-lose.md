@@ -15,7 +15,7 @@ event_date_start: "2023-05-10"
 event_date_end: "2023-05-12"
 event_url: "https://events.linuxfoundation.org/archive/2023/open-source-summit-north-america/"
 event_location: ""
-talk_tags: ['Opensource', 'Databases']
+talk_tags: ['Opensource', 'Databases', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=E-DDUDj36hg"
 youtube_id: "E-DDUDj36hg"

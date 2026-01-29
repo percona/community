@@ -15,7 +15,7 @@ event_date_start: "2022-06-10"
 event_date_end: "2022-06-12"
 event_url: "https://southeastlinuxfest.org/"
 event_location: ""
-talk_tags: ['Opensource', 'Databases']
+talk_tags: ['Opensource', 'Databases', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=WZxSgv5FBAA"
 youtube_id: "WZxSgv5FBAA"

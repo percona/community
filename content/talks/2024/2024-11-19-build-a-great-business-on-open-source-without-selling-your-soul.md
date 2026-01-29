@@ -15,7 +15,7 @@ event_date_start: "2024-11-19"
 event_date_end: "2024-11-21"
 event_url: "https://osacon.io/sessions/2024"
 event_location: "Virtual"
-talk_tags: ['Opensource', 'Open Source']
+talk_tags: ['Opensource', 'Open Source', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=h175hkuo1ZU"
 youtube_id: "h175hkuo1ZU"

@@ -15,7 +15,7 @@ event_date_start: "2023-10-04"
 event_date_end: ""
 event_url: "https://mariadb.org/fest2023/"
 event_location: ""
-talk_tags: ['MySQL', 'MariaDB']
+talk_tags: ['MySQL', 'MariaDB', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=YTr8l3jfbkM"
 youtube_id: "YTr8l3jfbkM"

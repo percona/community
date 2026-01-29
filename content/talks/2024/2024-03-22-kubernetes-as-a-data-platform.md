@@ -17,7 +17,7 @@ event_date_start: "2024-03-19"
 event_date_end: "2024-03-22"
 event_url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/"
 event_location: ""
-talk_tags: ['Kubernetes', 'Cloud Native', 'Open Source']
+talk_tags: ['Kubernetes', 'Cloud Native', 'Open Source', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=rphD1vCarNQ"
 youtube_id: "rphD1vCarNQ"

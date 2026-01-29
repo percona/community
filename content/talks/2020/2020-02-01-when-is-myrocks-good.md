@@ -15,7 +15,7 @@ event_date_start: "2020-02-01"
 event_date_end: "2020-02-02"
 event_url: "https://fosdem.org/2020/"
 event_location: "Belgium"
-talk_tags: ['MySQL', 'Open Source']
+talk_tags: ['MySQL', 'Open Source', 'Video']
 slides: ""
 video: "https://archive.fosdem.org/2020/schedule/event/myrocks_www/"
 ---

@@ -15,7 +15,7 @@ event_date_start: ""
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['Kubernetes']
+talk_tags: ['Kubernetes', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=fSgtUflRqCU"
 youtube_id: "fSgtUflRqCU"

@@ -57,37 +57,48 @@
     <!-- Sidebar -->
     <div class="sidebar">
 
-      <!-- Search input -->
-      <div class="search-sidebar">
-        <label for="talks-search-input" class="sr-only">Search talks</label>
-        <input
-          id="talks-search-input"
-          class="blog-search-input"
-          type="search"
-          placeholder="🔍 Search talks..."
-          autocomplete="off"
-        />
-        <p class="blog-search-status" data-search-status aria-live="polite"></p>
-      </div>
+          <!-- Search input -->
+          <div class="search-sidebar">
+            <label for="talks-search-input" class="sr-only">Search talks</label>
+            <input
+              id="talks-search-input"
+              class="blog-search-input"
+              type="search"
+              placeholder="🔍 Search talks..."
+              autocomplete="off"
+            />
+            <p class="blog-search-status" data-search-status aria-live="polite"></p>
+          </div>
 
-      <!-- Year list -->
-      <h2>Years</h2>
-      <ul class="category-list">
-        {{ range sort .page.Site.Taxonomies.talk_year.ByCount "Page.Title" "desc" }}
-          <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
-        {{ end }}
-      </ul>
+          <!-- Year list -->
+          <h2>Years</h2>
+          <ul class="category-list">
+            {{ range sort .page.Site.Taxonomies.talk_year.ByCount "Page.Title" "desc" }}
+              <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          </ul>
 
-      <!-- Tag list -->
-      <h2>Tags</h2>
-      <ul class="tag-list">
-        {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
-          {{ if gt .Count 1 }}
-            <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
-          {{ end }}
-        {{ end }}
-      </ul>
+          <!-- Video section -->
+          <h2>Content</h2>
+          <ul class="category-list">
+            {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
+              {{ if eq .Page.Title "Video" }}
+                <li><a href="{{ .Page.Permalink }}" class="category">Video ({{ .Count }})</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+
+          <!-- Tag list -->
+          <h2>Topics</h2>
+          <ul class="tag-list">
+            {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
+              {{ if and (ne .Page.Title "Video") (gt .Count 1) }}
+                <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
     </div>
+
   </div>
 </div>
 
@@ -131,6 +142,7 @@
   {{- $speakersStr := delimit $speakers " " -}}
 
   {{- $event := .Params.event | default "" -}}
+  {{- $event_location := .Params.event_location | default "" -}}
 
   <!-- Build search index entry -->
   {{- $searchIndex = $searchIndex | append (dict
@@ -139,6 +151,7 @@
     "speakers"  ($speakersStr | lower)
     "tags"      ($tags | lower)
     "event"     ($event | lower)
+    "event_location"     ($event_location | lower)
     "excerpt"   ($excerpt | lower)
   ) -}}
 
@@ -170,11 +183,12 @@
     const defaultListMarkup = talksList.innerHTML;
 
     /* Weighted scoring:
-       - title:     weight 5
-       - speakers:  weight 4
-       - tags:      weight 3
-       - event:     weight 2
-       - excerpt:   weight 1
+       - title:             weight 5
+       - speakers:          weight 4
+       - tags:              weight 3
+       - event:             weight 2
+       - event_location:    weight 2
+       - excerpt:           weight 1
     */
     const scoreTalk = (talk, tokens) => {
       let score = 0;
@@ -183,6 +197,7 @@
         if (talk.speakers.includes(token)) score += 4;
         if (talk.tags.includes(token)) score += 3;
         if (talk.event.includes(token)) score += 2;
+        if (talk.event_location.includes(token)) score += 2;
         if (talk.excerpt.includes(token)) score += 1;
       });
       return score;
