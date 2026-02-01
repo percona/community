@@ -9,8 +9,6 @@ images:
   - blog/2026/02/tuning_mysql_for_performance.png
 ---
 
-# Tuning MySQL for Performance: The Variables That Actually Matter
-
 There is a special kind of boredom that only database people know. The kind where you stare at a server humming along and think, *surely there is something here I can tune*. Good news: there is.
 
 This post walks through the **most important MySQL variables to tune for performance**, why they matter, and when touching them helps versus when it quietly makes things worse. This is written with **InnoDB-first workloads** in mind, because let’s be honest, that’s almost everyone.
@@ -72,6 +70,7 @@ Defines the size of redo logs. Larger logs mean fewer checkpoints and smoother w
 SHOW VARIABLES LIKE 'innodb_log_file_size';
 ```
 
+
 ### Warning
 Changing this requires a restart. Plan accordingly or accept the wrath of your on-call future self.
 
@@ -92,6 +91,7 @@ Controls how often redo logs are flushed to disk.
 ```sql
 SHOW VARIABLES LIKE 'innodb_flush_log_at_trx_commit';
 ```
+
 
 ### Reality check
 For many production systems, **`2` delivers massive performance gains** with acceptable risk, especially with reliable storage.
