@@ -26,6 +26,7 @@ events_tags:
 talks_tags:
 - Kubernetes
 - Open Source
+- Video
 posts_count: 0
 events_count: 3
 talks_count: 2

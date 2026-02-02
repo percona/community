@@ -39,6 +39,7 @@ events_tags:
 - Event
 - fosdem
 talks_tags:
+- Video
 - video
 posts_count: 6
 events_count: 1

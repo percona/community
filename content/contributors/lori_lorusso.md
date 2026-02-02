@@ -15,16 +15,24 @@ social:
 images:
 - contributors/lori_lorusso.jpeg
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- Community
+- PostgreSQL
 blog_tags: []
 events_tags:
 - Event
 - Rust
 - Valkey
-talks_tags: []
+talks_tags:
+- Everest
+- Kubernetes
+- Open Source
+- Opensource
+- Security
+- Video
 posts_count: 0
 events_count: 1
-talks_count: 0
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

@@ -16,6 +16,7 @@ images:
 contributor_tag:
 - Cloud
 - MongoDB
+- PMM
 blog_tags:
 - GSoC
 - MongoDB
@@ -28,11 +29,14 @@ talks_tags:
 - Cloud Native
 - DBaaS
 - Databases
+- Grafana
 - Kubernetes
 - Opensource
+- observability
+- pmm
 posts_count: 1
 events_count: 0
-talks_count: 1
+talks_count: 2
 contributor_type:
 - author
 - speaker
