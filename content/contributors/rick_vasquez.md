@@ -20,6 +20,7 @@ events_tags: []
 talks_tags:
 - Databases
 - Kubernetes
+- Video
 posts_count: 0
 events_count: 0
 talks_count: 1

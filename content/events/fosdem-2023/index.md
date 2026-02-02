@@ -10,7 +10,7 @@ speakers:
   - edith_puclla
   - vinicius_grippa
   - peter_zaitsev
-  - dmitry_kostiuk
+  - dmitriy_kostiuk
   - dmitry_lenev
 tags: ['Event','fosdem']
 ---

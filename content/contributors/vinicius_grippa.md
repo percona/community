@@ -27,6 +27,7 @@ events_tags:
 - sponsorship
 talks_tags:
 - Open Source
+- Video
 posts_count: 0
 events_count: 5
 talks_count: 2
