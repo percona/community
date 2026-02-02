@@ -15,11 +15,11 @@ event_date_start: "2024-11-19"
 event_date_end: "2024-11-21"
 event_url: "https://osacon.io/sessions/2024"
 event_location: "Virtual"
-talk_tags: ['Vector Search', 'Databases', 'Open Source']
+talk_tags: ['Vector Search', 'Databases', 'Open Source', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=KGGml9pEORM"
+youtube_id: "KGGml9pEORM"
 ---
-
 ## Abstract
 
 In this talk, we’ll explore the emergent landscape of vector search in databases, a paradigm shift in information retrieval. Vector search, traditionally the domain of specialized systems, is now being integrated into mainstream databases and search engines like Lucene, Elasticsearch, Solr, PostgreSQL, MySQL, MongoDB, and Manticore. This integration marks a significant evolution in handling complex data structures and search queries.
@@ -37,7 +37,5 @@ In this talk, we’ll explore the emergent landscape of vector search in databas
 5. Measuring Performance and Quality
 • Beyond speed: Assessing the effectiveness of vector search.
 • Metrics for evaluating the quality of search results.
-
 Conclusion
-
 The session will conclude with insights into future trends and the potential impact of vector search technologies on data retrieval, AI applications, and beyond.

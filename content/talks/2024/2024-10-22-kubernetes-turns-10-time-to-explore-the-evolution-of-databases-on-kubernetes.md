@@ -15,11 +15,10 @@ event_date_start: "2024-10-22"
 event_date_end: ""
 event_url: "https://community.cncf.io/events/details/cncf-kcd-uk-presents-kubernetes-community-days-uk-london-2024/"
 event_location: "London, UK"
-talk_tags: ['Kubernetes']
+talk_tags: ['Kubernetes', 'Cloud']
 slides: ""
 video: ""
 ---
-
 ## Abstract
 
 As Kubernetes celebrates its 10th anniversary, it’s an opportune moment to reflect on the significant innovations it has introduced to the world of databases.

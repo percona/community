@@ -3,24 +3,22 @@ import re
 import yaml
 from datetime import datetime
 from notion_utils import patch_talk
+from debug_utils import dd, ddd
 
 CONTENT_DIR = "content/talks"
 PERCONA_PREFIX = "https://percona.community/talks/"
 CONTRIBUTORS_DIR = "content/contributors"
 DEFAULT_CONTRIBUTOR_IMAGE = "contributors/percona.jpeg"
 
-
 def slugify(text: str) -> str:
     """Converts a string to URL-safe slug format."""
     return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
-
 
 def _normalize_tags_str(tags_str: str) -> list[str]:
     """Parses comma-separated string into a list of stripped tags."""
     if not tags_str:
         return []
     return [t.strip() for t in tags_str.split(",") if t and t.strip()]
-
 
 # -------------------------------
 # Front matter helpers
@@ -41,7 +39,6 @@ def split_front_matter(markdown: str) -> tuple[dict, str]:
     body = markdown[end_idx + 5:]
     fm = yaml.safe_load(fm_raw) or {}
     return fm, body
-
 
 def assemble_markdown(fm: dict, body: str) -> str:
     """Reassembles front matter and body into full Markdown."""
@@ -197,33 +194,87 @@ def update_talk_file(filepath: str, filename: str, new_year: str, old_year: str,
 # -------------------------------
 def process_talks(talks: list, extract_value, speakers_map: dict, events_map: dict):
     """
-    Processes each talk: generates file, updates aliases, patches Notion.
-    Minimal console output: only essential messages.
+    Processes all talks:
+      - Generates Markdown files in content/talks/
+      - Updates aliases if the URL has changed (slug or year)
+      - Creates contributor cards for new speakers
+      - Updates Notion only if the talk is published for the first time or URL changed
+
+    Prints a final summary with statistics.
     """
+    total = 0
+    created_files = 0
+    updated_files = 0
+    changed_urls = 0
+    notion_updated = 0
+    all_new_speakers = []
+
     for talk in talks:
+        total += 1
         talk_id = talk.get("id")
         props = talk.get("properties", {})
 
-        title, presentation_date, talk_year, md = build_hugo_markdown(
+        # Generate Markdown and collect list of newly created contributors
+        title, public_date, talk_year, md, new_speakers = build_hugo_markdown(
             talk_id, props, extract_value, speakers_map, events_map
         )
+        all_new_speakers.extend(new_speakers)
 
-        filepath, filename, new_year = generate_filename(title, presentation_date)
+        # Compute file paths and public URL
+        filepath, filename, new_year = generate_filename(title, public_date)
         new_slug = os.path.splitext(filename)[0]
         old_year, old_slug = get_existing_slug_and_year(props, extract_value)
-
         new_url = build_public_url(new_year, filename)
 
         print(f"✅ Processing: {title.strip()}")
 
-        if old_slug and old_year and (old_slug != new_slug or old_year != new_year):
+        file_exists = os.path.exists(filepath)
+        url_changed = old_slug and old_year and (old_slug != new_slug or old_year != new_year)
+
+        should_update_notion = False
+
+        if url_changed:
+            # Update file with new content and alias
             update_talk_file(filepath, filename, new_year, old_year, old_slug, md)
             print(f"🟡 URL changed: {old_year}/{old_slug} → {new_year}/{new_slug}")
+            changed_urls += 1
+            updated_files += 1
+            should_update_notion = True
         else:
+            # Save or overwrite the file without changing URL
             save_markdown_file(filepath, md)
+            if file_exists:
+                updated_files += 1
+            else:
+                created_files += 1
+                should_update_notion = True  # First publication → update Notion
 
-        patch_talk(talk_id, new_url)
-        print(f"🔗 Updated Notion: {new_url}")
+        # Update Notion only if it's a new publication or URL changed
+        if should_update_notion:
+            patch_talk(talk_id, new_url)
+            print(f"🔗 Updated Notion: {new_url}")
+            notion_updated += 1
+        else:
+            print(f"➡️ No Notion update needed: {new_url}")
+
+    # 📊 Final summary
+    print("\n" + "="*60)
+    print("📊 PROCESSING SUMMARY")
+    print("="*60)
+    print(f"Total talks processed:     {total}")
+    print(f"New contributors created:  {len(all_new_speakers)}")
+
+    if all_new_speakers:
+        print("\n🆕 NEW CONTRIBUTORS:")
+        for sp in all_new_speakers:
+            print(f"  • {sp['name']} → {sp['slug']}.md")
+
+    print(f"\nFiles created:             {created_files}")
+    print(f"Files updated:             {updated_files}")
+    print(f"URLs changed (aliases):    {changed_urls}")
+    print(f"Notion pages updated:      {notion_updated}")
+    print("="*60)
+
 
 def build_hugo_markdown(
     talk_id: str,
@@ -232,31 +283,54 @@ def build_hugo_markdown(
     speakers_map: dict,
     events_map: dict
 ) -> tuple[str, str, str, str]:
-    """Builds Hugo-compatible Markdown from Notion data."""
-    # Base talk fields
-    title = extract_value(props.get("Title"))
+    """Builds Hugo-compatible Markdown with safe YAML front matter."""
+    
+    # Base fields
+    title = extract_value(props.get("Title")) or ""
     abstract = extract_value(props.get("Abstract"))
     slides = extract_value(props.get("Publication Slides"))
-    video = extract_value(props.get("Publication Video"))
+    video_url = extract_value(props.get("Publication Video"))
     tags_raw = extract_value(props.get("Tags"))
-    content = extract_value(props.get("Content"))
 
-    # Presentation Date (may be dict {start,end} or string)
+    # Presentation date (for front matter) — may be empty
     pres_date_val = extract_value(props.get("Presentation Date"))
     presentation_date = ""
     presentation_date_end = ""
+
     if isinstance(pres_date_val, dict):
         presentation_date = pres_date_val.get("start", "") or ""
         presentation_date_end = pres_date_val.get("end", "") or ""
     else:
         presentation_date = (pres_date_val or "").strip()
 
+    # Public date (used for file path and year)
+    public_date = presentation_date.strip()
+
+    if not public_date:
+        events_prop = props.get("Events 2024-2026", {})
+        if events_prop and events_prop.get("type") == "relation":
+            for rel in events_prop.get("relation", []):
+                rel_id = rel.get("id")
+                if rel_id in events_map:
+                    ev = events_map[rel_id]
+                    date_prop = ev.get("Date", {})
+                    if isinstance(date_prop, dict):
+                        event_start = date_prop.get("start", "") or ""
+                        if event_start:
+                            public_date = event_start
+                            break  # Use first event's date
+
+    # Extract year for folder and URL
+    talk_year = public_date[:4] if public_date and len(public_date) >= 4 else ""
+
+    # Other fields
     presentation_time = extract_value(props.get("Presentation Time"))
     conference_url = extract_value(props.get("Conference URL"))
     event_status = extract_value(props.get("Event Status"))
 
-    # Resolve speakers (use slug) + create contributor card on the fly
+    # Resolve speakers and create contributor cards if needed
     speakers = []
+    new_speakers_list = []
     speakers_prop = props.get("Speaker", {})
     if speakers_prop and speakers_prop.get("type") == "relation":
         for rel in speakers_prop.get("relation", []):
@@ -265,7 +339,6 @@ def build_hugo_markdown(
                 speaker_data = speakers_map[rel_id]
                 slug = speaker_data.get("slug", "").strip()
 
-                # If slug is missing — generate from name
                 if not slug:
                     name = speaker_data.get("Name", "").strip()
                     if name:
@@ -274,12 +347,14 @@ def build_hugo_markdown(
                         print(f"❌ Cannot generate slug for speaker in talk {talk_id}: {speaker_data.get('Name')}")
                         continue
 
-                # 🔥 Create contributor card if it doesn't exist
-                ensure_contributor_card(slug, speaker_data)
+                name = speaker_data.get("Name", "").strip() or "Unknown"
+
+                if ensure_contributor_card(slug, speaker_data):
+                    new_speakers_list.append({"name": name, "slug": slug})
 
                 speakers.append(slug)
 
-    # Resolve event from relation "Events 2024-2026"
+    # Resolve event data — include in front matter if available
     event_title = ""
     event_date_start = ""
     event_date_end = ""
@@ -295,131 +370,127 @@ def build_hugo_markdown(
                 event_title = ev.get("Name", "") or event_title
                 date_prop = ev.get("Date", {})
                 if isinstance(date_prop, dict):
-                    event_date_start = date_prop.get("start", "") or event_date_start
-                    event_date_end = date_prop.get("end", "") or event_date_end
+                    # Take first event's date for context
+                    if not event_date_start:
+                        event_date_start = date_prop.get("start", "") or ""
+                        event_date_end = date_prop.get("end", "") or ""
                 event_url = ev.get("CFP URL", "") or ev.get("URL", "") or event_url
                 event_location = ev.get("Event Location", "") or ev.get("City", "") or event_location
-
                 tech_raw = ev.get("Technology", "")
                 if tech_raw:
                     event_tech_tags.extend(_normalize_tags_str(tech_raw))
 
     # Normalize tags
     tag_list = _normalize_tags_str(tags_raw) + event_tech_tags
+    # Add 'Video' tag if a video is available
+    if video_url:
+        tag_list.append("Video")
+
+    # Remove duplicates while preserving order
     seen = set()
-    tag_list_unique = []
-    for t in tag_list:
-        if t not in seen:
-            seen.add(t)
-            tag_list_unique.append(t)
-
-    # YAML arrays
+    tag_list_unique = [t for t in tag_list if not (t in seen or seen.add(t))]
     talk_tags_yaml = "[" + ", ".join([f"'{t}'" for t in tag_list_unique]) + "]" if tag_list_unique else "[]"
-    speakers_yaml = "\n".join([f"  - {s}" for s in speakers]) if speakers else "  - unknown"
 
-    # Compute talk_year
-    talk_year = ""
-    if presentation_date and len(presentation_date) >= 4:
-        talk_year = presentation_date[:4]
-    elif event_date_start and len(event_date_start) >= 4:
-        talk_year = event_date_start[:4]
+    # Escape quotes safely for YAML
+    escaped_title = title.replace('\\', '\\\\').replace('"', '\\"')
 
-    # Front matter
-    front_matter = f"""---
-id: "{talk_id}"
-title: "{title}"
-layout: single
-speakers:
-{speakers_yaml}
-talk_url: "{conference_url}"
-presentation_date: "{presentation_date}"
-presentation_date_end: "{presentation_date_end}"
-presentation_time: "{presentation_time}"
-talk_year: "{talk_year}"
-event: "{event_title}"
-event_status: "{event_status}"
-event_date_start: "{event_date_start}"
-event_date_end: "{event_date_end}"
-event_url: "{event_url}"
-event_location: "{event_location}"
-talk_tags: {talk_tags_yaml}
-slides: "{slides}"
-video: "{video}"
----
-"""
+    # Extract YouTube ID from video URL
+    youtube_id = None
+    if video_url:
+        match = re.search(r'(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})', video_url)
+        youtube_id = match.group(1) if match else None
+
+    # If presentation_date is empty, use event_date_start as fallback (only for front matter)
+    final_presentation_date = presentation_date or event_date_start
+
+    # Build front matter
+    front_matter_lines = [
+        "---",
+        f'id: "{talk_id}"',
+        f'title: "{escaped_title}"',
+        'layout: single',
+        'speakers:',
+    ]
+    front_matter_lines.extend([f"  - {s}" for s in speakers] if speakers else ["  - unknown"])
+    front_matter_lines.extend([
+        f'talk_url: "{conference_url}"',
+        f'presentation_date: "{final_presentation_date}"',  # May now come from event
+        f'presentation_date_end: "{presentation_date_end}"',  # Keep end only if originally present
+        f'presentation_time: "{presentation_time}"',
+        f'talk_year: "{talk_year}"',
+        f'event: "{event_title}"',
+        f'event_status: "{event_status}"',
+        f'event_date_start: "{event_date_start}"',
+        f'event_date_end: "{event_date_end}"',
+        f'event_url: "{event_url}"',
+        f'event_location: "{event_location}"',
+        f'talk_tags: {talk_tags_yaml}',
+        f'slides: "{slides}"',
+        f'video: "{video_url}"',
+    ])
+    if youtube_id:
+        front_matter_lines.append(f'youtube_id: "{youtube_id}"')
+    front_matter_lines.append("---")
+
+    front_matter = "\n".join(front_matter_lines)
 
     # Body
-    body_parts = []
-    if abstract:
-        body_parts.append(f"## Abstract\n\n{abstract}\n")
-    if content:
-        body_parts.append(content)
+    body_parts = ["## Abstract\n\n" + abstract] if abstract else []
     body = "\n".join(body_parts).strip()
-
     markdown = front_matter + ("\n" + body if body else "\n")
-    return title, presentation_date, talk_year, markdown
+
+    return title, public_date, talk_year, markdown, new_speakers_list
 
 
-def ensure_contributor_card(slug: str, speaker_data: dict):
+def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
     """
-    Creates a contributor card if it doesn't exist.
-    - Current employees: job = "Role @ Percona", tagline = None
-    - Former employees: job = None, tagline = "Role, former Perconian"
-    - Community: job = optional, tagline = "Community Author"
+    Creates a contributor card if it does not already exist.
+    Returns True if created, False otherwise.
     """
     if not slug:
-        print(f"❌ Cannot create contributor card: empty slug for speaker '{speaker_data.get('Name')}'")
-        return
+        name_fallback = speaker_data.get("Name", "Unknown")
+        print(f"❌ Cannot create contributor card: empty slug for speaker '{name_fallback}'")
+        return False
 
     name = speaker_data.get("Name", "").strip()
     if not name:
         print(f"⚠️ Skip contributor: empty Name (slug: {slug})")
-        return
+        return False
 
     filepath = os.path.join(CONTRIBUTORS_DIR, f"{slug}.md")
     if os.path.exists(filepath):
-        return  # Already exists — skip
+        return False  # Already exists
 
-    # Extract data
-    notion_status = speaker_data.get("Status", "").strip()
-    role = speaker_data.get("Role", "").strip()
-    tagline_from_notion = speaker_data.get("Tagline", "").strip()
-    technology = speaker_data.get("Technology", "").strip()
-    bio = speaker_data.get("Bio", "").strip()
+    # Extract fields
+    notion_status = (speaker_data.get("Status") or "").strip().lower()
+    role = (speaker_data.get("Role") or "").strip()
+    tagline_from_notion = (speaker_data.get("Tagline") or "").strip()
+    technology = (speaker_data.get("Technology") or "").strip()
+    bio = (speaker_data.get("Bio") or "").strip()
 
     # Determine contributor type
-    is_available = notion_status.lower() == "available"
+    is_available = notion_status == "available"
     has_role = bool(role)
 
     if not is_available and has_role:
-        # Former employee
         status = "former"
-        job = None  # Let user edit manually
+        job = None
         tagline = f"{role}, former Perconian" if role else "former Perconian"
     elif is_available and has_role:
-        # Current employee
         status = "current"
         job = f"{role} @ Percona" if role else "Engineer @ Percona"
-        tagline = None  # Let user define (e.g., "MySQL Expert")
+        tagline = None
     else:
-        # Community contributor
         status = "community"
         job = role or None
         tagline = tagline_from_notion or "Community Author"
 
-    # Pronunciation fields
+    # Pronunciation
     name_pronunciation = slug
     fullname_pronunciation = name
 
     # Social links
-    social = {
-        "facebook": None,
-        "github": None,
-        "linkedin": None,
-        "twitter": None,
-        "website": None
-    }
-
+    social = {"facebook": None, "github": None, "linkedin": None, "twitter": None, "website": None}
     notion_to_social = {
         "LinkedIn": "linkedin",
         "Twitter": "twitter",
@@ -427,9 +498,8 @@ def ensure_contributor_card(slug: str, speaker_data: dict):
         "Website": "website",
         "Facebook": "facebook"
     }
-
     for notion_field, key in notion_to_social.items():
-        url = speaker_data.get(notion_field, "").strip()
+        url = (speaker_data.get(notion_field) or "").strip()
         if url:
             social[key] = url
 
@@ -459,7 +529,6 @@ def ensure_contributor_card(slug: str, speaker_data: dict):
     }
 
     fm_str = yaml.dump(fm, sort_keys=False, allow_unicode=True, width=1000).strip()
-
     markdown_content = f"""---
 {fm_str}
 ---
@@ -467,8 +536,13 @@ def ensure_contributor_card(slug: str, speaker_data: dict):
 {bio}
 """
 
+    # Write file
     os.makedirs(CONTRIBUTORS_DIR, exist_ok=True)
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(markdown_content)
-
-    print(f"✅ Created contributor: {filepath} [status: {status}]")
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(markdown_content)
+        print(f"✅ Created contributor: {filepath} [status: {status}]")
+        return True
+    except Exception as e:
+        print(f"❌ Failed to write {filepath}: {e}")
+        return False

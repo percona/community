@@ -22,11 +22,13 @@ events_tags: []
 talks_tags: []
 posts_count: 1
 events_count: 0
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
+- speaker
 contributor_year:
 - '2025'
+- '2021'
 ---
 Passionate about technology, Ivan Groenewold is a seasoned professional with extensive experience in database management, cloud infrastructure, and software development. 
 

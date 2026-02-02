@@ -1,6 +1,6 @@
 ---
-name: aleksandra_abramova
-name_pronunciation: aleksandra_abramova
+name: aleks_abramova
+name_pronunciation: aleks_abramova
 fullname: Aleksandra Abramova
 fullname_pronounciation: Aleksandra Abramova
 tagline: Global Events Specialist
@@ -15,7 +15,6 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
-- Community
 - MySQL
 - PMM
 - PostgreSQL
@@ -23,7 +22,6 @@ blog_tags:
 - Community
 - Contributions
 - Databases
-- Documentation
 - MongoDB
 - MySQL
 - Open Source
@@ -37,14 +35,14 @@ blog_tags:
 - dashboard
 - events
 - monitoring
-- tuning
 events_tags:
 - Event
 - fosdem
-talks_tags: []
-posts_count: 8
+talks_tags:
+- video
+posts_count: 6
 events_count: 1
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
 - speaker

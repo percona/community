@@ -31,14 +31,18 @@ blog_tags:
 - monitoring
 events_tags:
 - Event
-talks_tags: []
-posts_count: 3
+talks_tags:
+- MariaDB
+posts_count: 4
 events_count: 1
-talks_count: 0
+talks_count: 3
 contributor_type:
 - author
 - speaker
 contributor_year:
 - '2025'
+- '2022'
+- '2021'
+- '2018'
 ---
 Sveta joined Percona in 2015. Her main professional interests are problem solving, working with tricky issues, bugs, finding patterns that can solve typical issues quicker and teaching others how to deal with MySQL issues, bugs and gotchas effectively. Before joining Percona Sveta worked as a Support Engineer in the MySQL Bugs Analysis Support Group in MySQL AB-Sun-Oracle. She is the author of the books "MySQL Troubleshooting" and "MySQL Cookbook, 4th Edition".

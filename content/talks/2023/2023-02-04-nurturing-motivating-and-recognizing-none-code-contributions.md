@@ -3,7 +3,7 @@ id: "e67b0fa4-5b3d-43a7-9c41-1fa80a943342"
 title: "Nurturing, Motivating and Recognizing None Code Contributions"
 layout: single
 speakers:
-  - aleksandra_abramova
+  - aleks_abramova
 talk_url: "https://fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/"
 presentation_date: "2023-02-04"
 presentation_date_end: ""
@@ -15,11 +15,10 @@ event_date_start: "2023-02-04"
 event_date_end: "2023-02-05"
 event_url: "https://fosdem.org/2023/"
 event_location: "Brussels"
-talk_tags: ['video']
+talk_tags: ['video', 'Video']
 slides: "https://archive.fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/attachments/slides/5784/export/events/attachments/nurture_motivate_recognise_noncode_contributions/slides/5784/Non_Code_Contributions"
 video: "https://archive.fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/"
 ---
-
 ## Abstract
 
 When discussing contributions, we still see a lot of emphasis on the code contributions into project repositories. But the open source world is extensive and diverse, and everyone can find their place there. Your project will benefit from various experiences that non-coders can bring to the table. Isn’t that cool when you receive an issue with an interesting bug from the community, read about a user case in a blog or a review, or someone makes a video guide for your product? And more!

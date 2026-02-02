@@ -6,7 +6,7 @@ images:
 date: "2023-02-22"
 layout: single
 speakers:
-  - aleksandra_abramova
+  - aleks_abramova
   - edith_puclla
   - vinicius_grippa
   - peter_zaitsev

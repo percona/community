@@ -15,11 +15,11 @@ event_date_start: "2021-10-17"
 event_date_end: "2021-10-19"
 event_url: "https://2021.allthingsopen.org/"
 event_location: "Raleigh"
-talk_tags: ['MongoDB']
+talk_tags: ['MongoDB', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=XTCXDmJD3cA"
+youtube_id: "XTCXDmJD3cA"
 ---
-
 ## Abstract
 
 Installing big clusters is always a challenge, and can be a very time-consuming task. At a high level, we need to provision the hardware, install the software, configure monitoring, and set up a backup process.

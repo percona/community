@@ -14,6 +14,8 @@ images:
 - contributors/jan_wieremjewicz.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
+- MySQL
 - PostgreSQL
 blog_tags:
 - Event
@@ -28,21 +30,30 @@ blog_tags:
 - monitoring
 - opensource
 - pg_jan
+- pg_oidc_validator
 - pg_stat_monitor
+- security
 - sponsorship
 events_tags:
+- Events
 - PerconaLive2023
 - Podcast
 talks_tags:
+- Cloud Native
+- Design
+- Everest
 - Open Source
+- Opensource
 - Security
-posts_count: 11
-events_count: 1
-talks_count: 1
+- Tech
+posts_count: 13
+events_count: 2
+talks_count: 4
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

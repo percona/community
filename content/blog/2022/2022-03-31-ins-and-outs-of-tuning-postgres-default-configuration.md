@@ -7,7 +7,7 @@ categories: ["PostgreSQL"]
 images:
     - blog/2022/3/Meetups-PG-1.jpg
 authors:
-  - aleksandra_abramova
+  - aleks_abramova
 ---
 
 If you're wondering what the optimal settings for a newly installed Postgres database are, here are some simple steps to take to tune it right from the start. Matt Yonkovit discussed them with Charly Batista, Postgres Tech Lead at Percona during the live-streamed meetup. Watch the [recording](https://percona.community/events/percona-meetups/2022-01-27-percona-meetup-for-postgresql/) to see how Charly tunes a default installation of Percona Distribution for PostgreSQL 13.

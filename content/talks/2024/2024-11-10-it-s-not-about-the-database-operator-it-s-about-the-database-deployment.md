@@ -5,22 +5,22 @@ layout: single
 speakers:
   - jan_wieremjewicz
   - peter_szczepaniak
-talk_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/"
+talk_url: "https://cfp.cloud-native.rejekts.io/cloud-native-rejekts-na-salt-lake-city-2024/talk/YEE3KF/"
 presentation_date: "2024-11-10"
 presentation_date_end: "2024-11-11"
 presentation_time: ""
 talk_year: "2024"
 event: "Cloud Native Rejects NA 2024"
 event_status: "Done"
-event_date_start: ""
-event_date_end: ""
+event_date_start: "2024-11-10"
+event_date_end: "2024-11-14"
 event_url: "https://cloud-native.rejekts.io/#participation"
 event_location: ""
-talk_tags: ['Everest', 'Cloud Native']
+talk_tags: ['Everest', 'Cloud Native', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=cKXMxK1lbWI&t=2377s"
+youtube_id: "cKXMxK1lbWI"
 ---
-
 ## Abstract
 
 We’ve all heard the saying “It’s not about the destination, it’s about the journey,” well the same can be said of database Operators. It’s not about which Operator you are using to deploy your database to Kubernetes it’s about what you are trying to accomplish with what you are deploying.

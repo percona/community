@@ -1,6 +1,6 @@
 ---
 name: stan_lipinski
-name_pronunciation: stan_lipinski 
+name_pronunciation: stan_lipinski
 fullname: Stan Lipinski
 fullname_pronounciation: Stan Lipinski
 tagline: Senior MySQL DBA
@@ -13,15 +13,26 @@ social:
 images:
 - contributors/stan_lipinski.jpg
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- MySQL
 blog_tags:
+- Community
+- MySQL
+- Opensource
+- PXC
+- Percona
+- Percona Server
+- Security
+- key ring
 events_tags: []
 talks_tags: []
 posts_count: 1
 events_count: 0
 talks_count: 0
 contributor_type:
+- author
 contributor_year:
+- '2026'
 ---
 MySQL Senior DBA with a passion for optimizing and managing complex database
 environments. When I’m not working with MySQL, you’ll likely find me at the beach,

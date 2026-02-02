@@ -4,10 +4,11 @@ description: "Percona supports events all over the globe. We were so happy to pa
 images:
   - events/pgconf-brazil-2022/9.jpg
 layout: single
+speakers:
+  - fernando_laudares_camargos
 date: "2022-08-28"
 tags: ['sponsorship', 'opensource', 'event']
 ---
-
 
 Percona supports events all over the globe. We were so happy to participate in a big (maybe even the largest!) Postgres event in Brazil - PGConf Brazil 2022. It is a world-class conference, which builds on the efforts of professionals and enthusiasts to expand the community of PostgreSQL, enabling participants to develop new knowledge through lectures and training. 
 

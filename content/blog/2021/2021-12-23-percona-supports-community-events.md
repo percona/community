@@ -3,7 +3,7 @@ title: "Percona Supports Community Events - Organize Yours With Us!"
 date: "2021-12-23T00:00:00+00:00"
 tags: ['PMM', 'PostgreSQL', 'PG', 'MySQL', 'MongoDB', 'events']
 authors:
-  - aleksandra_abramova
+  - aleks_abramova
 images:
   - blog/2021/12/community.jpg
 slug: community-events-support

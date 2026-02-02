@@ -1,4 +1,6 @@
 <div class="contentblock branded">
+
+  <!-- Top dropdown filters -->
   <div class="select-container">
     <select id="categories-select" onchange="navigateToPage(this)">
       <option value="">Years</option>
@@ -6,19 +8,25 @@
         <option value="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</option>
       {{ end }}
     </select>
+
     <select id="tags-select" onchange="navigateToPage(this)">
       <option value="">Tags</option>
       {{ range first 20 (sort .page.Site.Taxonomies.talk_tags.ByCount) }}
-        {{- if gt .Count 1 -}}
+        {{ if gt .Count 1 }}
           <option value="{{ .Page.Permalink }}">{{ substr .Page.Title 0 20 }} ({{ .Count }})</option>
-        {{- end -}}
+        {{ end }}
       {{ end }}
     </select>
   </div>
 
   <div class="talks">
     <div class="main-content">
-      <div class="talks-list">
+
+      <!-- Search status -->
+      <p class="blog-search-status" data-search-status aria-live="polite"></p>
+
+      <!-- Talks list -->
+      <div class="talks-list" id="talks-list-container">
         {{ range .paginator.Pages }}
           <div class="talks-item">
             {{ partial "talks-preview.html" . }}
@@ -26,14 +34,19 @@
         {{ end }}
       </div>
 
+      <!-- Pagination -->
       {{ if gt .paginator.TotalPages 1 }}
-        <div class="paginator">
+        <div class="paginator" id="talks-paginator">
           {{ if .paginator.HasPrev }}
             <a href="{{ .paginator.Prev.URL }}" rel="prev">&laquo;</a>
           {{ end }}
+
           {{ range .paginator.Pagers }}
-            <a href="{{ .URL }}"{{ if eq . $.paginator }}class="active"{{ end }}>{{ .PageNumber }}</a>
+            <a href="{{ .URL }}" {{ if eq . $.paginator }}class="active"{{ end }}>
+              {{ .PageNumber }}
+            </a>
           {{ end }}
+
           {{ if .paginator.HasNext }}
             <a href="{{ .paginator.Next.URL }}" rel="next">&raquo;</a>
           {{ end }}
@@ -41,21 +54,213 @@
       {{ end }}
     </div>
 
+    <!-- Sidebar -->
     <div class="sidebar">
-      <h2>Years</h2>
-      <ul class="category-list">
-        {{ range sort .page.Site.Taxonomies.talk_year.ByCount }}
-          <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
-        {{ end }}
-      </ul>
-      <h2>Tags</h2>
-      <ul class="tag-list">
-        {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
-          {{ if gt .Count 1 }}
-            <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
-          {{ end }}
-        {{ end }}
-      </ul>
+
+          <!-- Search input -->
+          <div class="search-sidebar">
+            <label for="talks-search-input" class="sr-only">Search talks</label>
+            <input
+              id="talks-search-input"
+              class="blog-search-input"
+              type="search"
+              placeholder="🔍 Search talks..."
+              autocomplete="off"
+            />
+            <p class="blog-search-status" data-search-status aria-live="polite"></p>
+          </div>
+
+          <!-- Year list -->
+          <h2>Years</h2>
+          <ul class="category-list">
+            {{ range sort .page.Site.Taxonomies.talk_year.ByCount "Page.Title" "desc" }}
+              <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          </ul>
+
+          <!-- Video section -->
+          <h2>Content</h2>
+          <ul class="category-list">
+            {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
+              {{ if eq .Page.Title "Video" }}
+                <li><a href="{{ .Page.Permalink }}" class="category">Video ({{ .Count }})</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+
+          <!-- Tag list -->
+          <h2>Topics</h2>
+          <ul class="tag-list">
+            {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
+              {{ if and (ne .Page.Title "Video") (gt .Count 1) }}
+                <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
     </div>
+
   </div>
 </div>
+
+<!-- Dropdown navigation -->
+<script>
+  function navigateToPage(select) {
+    const url = select.value;
+    if (url) window.location.href = url;
+  }
+</script>
+
+<!-- Build search index -->
+{{- $talkPages := .searchPages -}}
+
+{{- $searchIndex := slice -}}
+
+{{- range $talkPages -}}
+
+  {{- $title := .Title | default "" -}}
+
+  {{- $excerpt := "" -}}
+  {{- with .Params.abstract -}}
+    {{- $excerpt = (. | markdownify | plainify) -}}
+  {{- end -}}
+
+  {{- $tags := "" -}}
+  {{- with .Params.talk_tags -}}
+    {{- $tags = delimit . " " -}}
+  {{- end -}}
+
+  <!-- Resolve speaker full names -->
+  {{- $speakers := slice -}}
+  {{- with .Params.speakers -}}
+    {{- range . -}}
+      {{- $page := site.GetPage (printf "contributors/%s" .) -}}
+      {{- with $page -}}
+        {{- $speakers = $speakers | append .Params.fullname -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $speakersStr := delimit $speakers " " -}}
+
+  {{- $event := .Params.event | default "" -}}
+  {{- $event_location := .Params.event_location | default "" -}}
+
+  <!-- Build search index entry -->
+  {{- $searchIndex = $searchIndex | append (dict
+    "html"      (partial "talks-preview.html" .)
+    "title"     ($title | lower)
+    "speakers"  ($speakersStr | lower)
+    "tags"      ($tags | lower)
+    "event"     ($event | lower)
+    "event_location"     ($event_location | lower)
+    "excerpt"   ($excerpt | lower)
+  ) -}}
+
+{{- end -}}
+
+<!-- JSON index -->
+<script type="application/json" id="talks-search-data">
+  {{- $searchIndex | jsonify | safeJS -}}
+</script>
+
+<!-- Client-side search with weighted scoring -->
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("talks-search-data");
+    const searchInput = document.getElementById("talks-search-input");
+    const talksList = document.getElementById("talks-list-container");
+    const paginator = document.getElementById("talks-paginator");
+    const statusEl = document.querySelector("[data-search-status]");
+
+    if (!searchDataEl || !searchInput || !talksList) return;
+
+    let talksData = [];
+    try {
+      talksData = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultListMarkup = talksList.innerHTML;
+
+    /* Weighted scoring:
+       - title:             weight 5
+       - speakers:          weight 4
+       - tags:              weight 3
+       - event:             weight 2
+       - event_location:    weight 2
+       - excerpt:           weight 1
+    */
+    const scoreTalk = (talk, tokens) => {
+      let score = 0;
+      tokens.forEach(token => {
+        if (talk.title.includes(token)) score += 5;
+        if (talk.speakers.includes(token)) score += 4;
+        if (talk.tags.includes(token)) score += 3;
+        if (talk.event.includes(token)) score += 2;
+        if (talk.event_location.includes(token)) score += 2;
+        if (talk.excerpt.includes(token)) score += 1;
+      });
+      return score;
+    };
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        talksList.innerHTML = '<div class="talks-item"><p>No matching talks found.</p></div>';
+        if (statusEl) statusEl.textContent = "No results";
+        return;
+      }
+      talksList.innerHTML = matches.map(m => `<div class="talks-item">${m.html}</div>`).join("");
+      if (statusEl) statusEl.textContent = `Found ${matches.length} results`;
+    };
+
+    const resetList = () => {
+      talksList.innerHTML = defaultListMarkup;
+      if (statusEl) statusEl.textContent = "";
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseQueryTokens = (value) => {
+      if (!value) return [];
+      const lowered = value.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, (_, phrase) => {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder
+        .split(/\s+/)
+        .map(t => t.trim())
+        .filter(Boolean)
+        .forEach(t => tokens.push(t));
+
+      return tokens;
+    };
+
+    searchInput.addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+      const tokens = parseQueryTokens(query);
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = talksData
+        .map(talk => ({
+          ...talk,
+          score: scoreTalk(talk, tokens)
+        }))
+        .filter(t => t.score > 0)
+        .sort((a, b) => b.score - a.score);
+
+      renderMatches(matches);
+    });
+  });
+</script>

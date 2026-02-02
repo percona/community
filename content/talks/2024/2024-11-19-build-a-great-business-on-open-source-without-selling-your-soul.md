@@ -15,11 +15,11 @@ event_date_start: "2024-11-19"
 event_date_end: "2024-11-21"
 event_url: "https://osacon.io/sessions/2024"
 event_location: "Virtual"
-talk_tags: ['Opensource', 'Open Source']
+talk_tags: ['Opensource', 'Open Source', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=h175hkuo1ZU"
+youtube_id: "h175hkuo1ZU"
 ---
-
 ## Abstract
 
 Open source software is fun to work on, but building a real business is tough. We’ve all read about commercial open source companies that switched to proprietary models or flat went out of business. Our panel of three CEOs have all built successful companies on open source without resorting to licensing rug-pulls or other fauxpen source tricks that disrespect users. We’ll discuss what worked for us, what didn’t, and how we balanced our belief in open source communities with making payroll every two weeks.

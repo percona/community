@@ -1,4 +1,6 @@
 <div class="contentblock branded">
+
+  <!-- Top dropdown filters -->
   <div class="select-container">
     <select id="categories-select" onchange="navigateToPage(this)">
       <option value="">Categories</option>
@@ -6,19 +8,25 @@
         <option value="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</option>
       {{ end }}
     </select>
+
     <select id="tags-select" onchange="navigateToPage(this)">
       <option value="">Tags</option>
       {{ range first 20 (sort .page.Site.Taxonomies.contributor_tag.ByCount) }}
-        {{- if gt .Count 1 -}}
+        {{ if gt .Count 1 }}
           <option value="{{ .Page.Permalink }}">{{ substr .Page.Title 0 20 }} ({{ .Count }})</option>
-        {{- end -}}
+        {{ end }}
       {{ end }}
     </select>
   </div>
 
   <div class="contributors">
     <div class="main-content">
-      <div class="contributors-list">
+
+      <!-- Search status -->
+      <p class="blog-search-status" data-search-status aria-live="polite"></p>
+
+      <!-- Contributors list -->
+      <div class="contributors-list" id="contributors-list-container">
         {{ range .paginator.Pages }}
           <div class="contributors-item">
             {{ partial "contributors-preview.html" . }}
@@ -26,14 +34,19 @@
         {{ end }}
       </div>
 
+      <!-- Pagination -->
       {{ if gt .paginator.TotalPages 1 }}
-        <div class="paginator">
+        <div class="paginator" id="contributors-paginator">
           {{ if .paginator.HasPrev }}
             <a href="{{ .paginator.Prev.URL }}" rel="prev">&laquo;</a>
           {{ end }}
+
           {{ range .paginator.Pagers }}
-            <a href="{{ .URL }}"{{ if eq . $.paginator }}class="active"{{ end }}>{{ .PageNumber }}</a>
+            <a href="{{ .URL }}" {{ if eq . $.paginator }}class="active"{{ end }}>
+              {{ .PageNumber }}
+            </a>
           {{ end }}
+
           {{ if .paginator.HasNext }}
             <a href="{{ .paginator.Next.URL }}" rel="next">&raquo;</a>
           {{ end }}
@@ -41,19 +54,39 @@
       {{ end }}
     </div>
 
+    <!-- Sidebar -->
     <div class="sidebar">
+
+      <!-- Search input -->
+      <div class="search-sidebar">
+        <label for="contributors-search-input" class="sr-only">Search contributors</label>
+        <input
+          id="contributors-search-input"
+          class="blog-search-input"
+          type="search"
+          placeholder="🔍 Search contributors..."
+          autocomplete="off"
+        />
+        <p class="blog-search-status" data-search-status aria-live="polite"></p>
+      </div>
+
+      <!-- Activity -->
       <h2>Activity</h2>
       <ul class="category-list">
         {{ range sort .page.Site.Taxonomies.contributor_year.ByCount "Page.Title" "desc" }}
           <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
         {{ end }}
       </ul>
+
+      <!-- Categories -->
       <h2>Categories</h2>
       <ul class="category-list">
         {{ range sort .page.Site.Taxonomies.contributor_type.ByCount }}
           <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
         {{ end }}
       </ul>
+
+      <!-- Tags -->
       <h2>Tags</h2>
       <ul class="tag-list">
         {{ range sort .page.Site.Taxonomies.contributor_tag.ByCount }}
@@ -65,3 +98,165 @@
     </div>
   </div>
 </div>
+
+<!-- Dropdown navigation -->
+<script>
+  function navigateToPage(select) {
+    const url = select.value;
+    if (url) window.location.href = url;
+  }
+</script>
+
+<!-- Build search index -->
+{{- $contributors := .searchPages -}}
+
+{{- $searchIndex := slice -}}
+
+{{- range $contributors -}}
+
+  {{- $title := .Title | default "" -}}
+  {{- $fullname := .Params.fullname | default "" -}}
+  {{- $job := .Params.job | default "" -}}
+  {{- $tagline := .Params.tagline | default "" -}}
+
+  {{- $tags := "" -}}
+  {{- with .Params.contributor_tag -}}
+    {{- $tags = delimit . " " -}}
+  {{- end -}}
+
+  {{- $types := "" -}}
+  {{- with .Params.contributor_type -}}
+    {{- $types = delimit . " " -}}
+  {{- end -}}
+
+  {{- $years := "" -}}
+  {{- with .Params.contributor_year -}}
+    {{- $years = delimit . " " -}}
+  {{- end -}}
+
+  {{- $bio := .Content | markdownify | plainify | default "" -}}
+
+  {{- $searchIndex = $searchIndex | append (dict
+    "html"      (partial "contributors-preview.html" .)
+    "title"     ($title | lower)
+    "fullname"  ($fullname | lower)
+    "job"       ($job | lower)
+    "tagline"   ($tagline | lower)
+    "tags"      ($tags | lower)
+    "types"     ($types | lower)
+    "years"     ($years | lower)
+    "bio"       ($bio | lower)
+  ) -}}
+
+{{- end -}}
+
+<script type="application/json" id="contributors-search-data">
+  {{- $searchIndex | jsonify | safeJS -}}
+</script>
+
+<!-- Client-side search with weighted scoring -->
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("contributors-search-data");
+    const searchInput = document.getElementById("contributors-search-input");
+    const list = document.getElementById("contributors-list-container");
+    const paginator = document.getElementById("contributors-paginator");
+    const statusEl = document.querySelector("[data-search-status]");
+
+    if (!searchDataEl || !searchInput || !list) return;
+
+    let data = [];
+    try {
+      data = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultMarkup = list.innerHTML;
+
+    /* Weighted scoring:
+       - fullname: 6
+       - job:      5
+       - title:    4
+       - tagline:  4
+       - tags:     3
+       - types:    2
+       - years:    2
+       - bio:      1
+    */
+    const scoreItem = (item, tokens) => {
+      let score = 0;
+      tokens.forEach(token => {
+        if (item.fullname.includes(token)) score += 6;
+        if (item.job.includes(token)) score += 5;
+        if (item.title.includes(token)) score += 4;
+        if (item.tagline.includes(token)) score += 4;
+        if (item.tags.includes(token)) score += 3;
+        if (item.types.includes(token)) score += 2;
+        if (item.years.includes(token)) score += 2;
+        if (item.bio.includes(token)) score += 1;
+      });
+      return score;
+    };
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        list.innerHTML = '<div class="contributors-item"><p>No matching contributors found.</p></div>';
+        if (statusEl) statusEl.textContent = "No results";
+        return;
+      }
+      list.innerHTML = matches.map(m => `<div class="contributors-item">${m.html}</div>`).join("");
+      if (statusEl) statusEl.textContent = `Found ${matches.length} results`;
+    };
+
+    const resetList = () => {
+      list.innerHTML = defaultMarkup;
+      if (statusEl) statusEl.textContent = "";
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseTokens = (value) => {
+      if (!value) return [];
+      const lowered = value.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, (_, phrase) => {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder
+        .split(/\s+/)
+        .map(t => t.trim())
+        .filter(Boolean)
+        .forEach(t => tokens.push(t));
+
+      return tokens;
+    };
+
+    searchInput.addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+      const tokens = parseTokens(query);
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = data
+        .map(item => ({
+          ...item,
+          score: scoreItem(item, tokens)
+        }))
+        .filter(i => i.score > 0)
+        .sort((a, b) => b.score - a.score);
+
+      renderMatches(matches);
+    });
+  });
+</script>

@@ -24,13 +24,16 @@ events_tags:
 - Stream
 - opensource
 - pgpool
-talks_tags: []
+talks_tags:
+- video
 posts_count: 0
 events_count: 6
-talks_count: 0
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:
+- '2024'
+- '2023'
 - '2022'
 - '2021'
 ---

@@ -5,7 +5,7 @@ draft: false
 tags: ['PMM', 'monitoring', 'dashboard', 'VictoriaMetrics']
 authors:
   - anton_bystrov
-  - aleksandra_abramova
+  - aleks_abramova
 images:
   - blog/2022/12/Dashboards-PMM.jpg
 ---

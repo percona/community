@@ -81,13 +81,21 @@ events_tags:
 - opensource
 - securing
 talks_tags:
+- 2024 Q1
 - Cloud Native
+- CloudNative
+- Containers
+- Databases
+- Docker
 - Kubernetes
+- Monitoring
 - Open Source
+- Opensource
 - Operators
+- video
 posts_count: 31
 events_count: 7
-talks_count: 2
+talks_count: 8
 contributor_type:
 - author
 - speaker

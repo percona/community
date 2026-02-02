@@ -19,7 +19,6 @@ talk_tags: ['CloudNative', 'Kubernetes', 'Containers', 'Docker', 'Open Source']
 slides: "https://www.slideshare.net/slideshow/managing-database-containers-with-kubernetes-operators-and-docker/270337781"
 video: ""
 ---
-
 ## Abstract
 
 In this talk, we will explore the synergy between Kubernetes Operators and Docker in managing database containers with a focus on the lifecycle management of popular databases such as PostgreSQL, MySQL, and MongoDB within a Kubernetes ecosystem.

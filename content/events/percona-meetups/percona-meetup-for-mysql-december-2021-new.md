@@ -9,7 +9,7 @@ aliases:
     - "/events/percona-meetups/percona-meetup-for-mysql-december-2021/" 
 speakers:
   - marcos_albe
-  - fernando_laudares
+  - fernando_laudares_camargo
   - matt_yonkovit
 tags: ['MySQL', 'Meetup']
 ---
