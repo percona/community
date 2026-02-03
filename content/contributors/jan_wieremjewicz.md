@@ -46,6 +46,7 @@ talks_tags:
 - Opensource
 - Security
 - Tech
+- Video
 posts_count: 13
 events_count: 2
 talks_count: 4

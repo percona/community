@@ -92,6 +92,7 @@ talks_tags:
 - Open Source
 - Opensource
 - Operators
+- Video
 - video
 posts_count: 31
 events_count: 7

@@ -33,6 +33,7 @@ events_tags:
 talks_tags:
 - Databases
 - Opensource
+- Video
 - slides
 - video
 posts_count: 0
