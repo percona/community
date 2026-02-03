@@ -17,6 +17,25 @@ This post walks through the **most important MySQL variables to tune for perform
 
 ## 1. `innodb_buffer_pool_size`
 
+### Real metrics to watch
+Before touching this variable, look at these:
+
+```sql
+SHOW GLOBAL STATUS LIKE 'Innodb_buffer_pool_read%';
+```
+
+Key fields:
+- `Innodb_buffer_pool_reads` – physical reads from disk
+- `Innodb_buffer_pool_read_requests` – logical reads
+
+**Rule of thumb:**
+If `reads / read_requests` > 1–2%, your buffer pool is too small.
+
+### Example graph
+Plot `Innodb_buffer_pool_reads` over time. A healthy system shows a flat or gently rising line. Spikes that look like a city skyline usually mean memory pressure or a cold cache.
+
+
+
 If MySQL performance had a crown jewel, this would be it.
 
 ### What it does
@@ -57,6 +76,23 @@ More is not always better. Too many instances wastes memory and can hurt perform
 
 ## 3. `innodb_log_file_size`
 
+### Real metrics to watch
+
+```sql
+SHOW GLOBAL STATUS LIKE 'Innodb_log%';
+```
+
+Pay attention to:
+- `Innodb_log_waits`
+- `Innodb_log_write_requests`
+
+**If `Innodb_log_waits` is non-zero**, redo logs are too small for your write rate.
+
+### Example graph
+Graph `Innodb_log_waits` as a rate per second. Ideally, this line hugs zero like it’s afraid of heights.
+
+
+
 This variable controls how calmly MySQL handles write-heavy workloads.
 
 ### What it does
@@ -70,13 +106,29 @@ Defines the size of redo logs. Larger logs mean fewer checkpoints and smoother w
 SHOW VARIABLES LIKE 'innodb_log_file_size';
 ```
 
-
 ### Warning
 Changing this requires a restart. Plan accordingly or accept the wrath of your on-call future self.
 
 ---
 
 ## 4. `innodb_flush_log_at_trx_commit`
+
+### Real metrics to watch
+
+```sql
+SHOW GLOBAL STATUS LIKE 'Innodb_os_log_fsyncs';
+```
+
+Switching from `1` to `2` often reduces fsyncs by **orders of magnitude**.
+
+### Example graph
+Overlay two lines:
+- `Transactions per second`
+- `Innodb_os_log_fsyncs per second`
+
+On busy systems, this graph alone can justify the change to skeptical auditors.
+
+
 
 Performance versus durability, the eternal duel.
 
@@ -91,7 +143,6 @@ Controls how often redo logs are flushed to disk.
 ```sql
 SHOW VARIABLES LIKE 'innodb_flush_log_at_trx_commit';
 ```
-
 
 ### Reality check
 For many production systems, **`2` delivers massive performance gains** with acceptable risk, especially with reliable storage.
@@ -140,6 +191,23 @@ SHOW VARIABLES LIKE 'max_connections';
 
 ## 7. `thread_cache_size`
 
+### Real metrics to watch
+
+```sql
+SHOW GLOBAL STATUS LIKE 'Threads%';
+```
+
+Key fields:
+- `Threads_created`
+- `Connections`
+
+If `Threads_created / Connections` stays above a few percent, your cache is undersized.
+
+### Example graph
+Graph `Threads_created` as a counter. A healthy system shows a curve that flattens over time, not a staircase.
+
+
+
 Small change, measurable win.
 
 ### What it does
@@ -174,6 +242,27 @@ SHOW VARIABLES LIKE 'table_definition_cache';
 
 ## 9. `tmp_table_size` and `max_heap_table_size`
 
+### Real metrics to watch
+
+```sql
+SHOW GLOBAL STATUS LIKE 'Created_tmp%';
+```
+
+Watch:
+- `Created_tmp_tables`
+- `Created_tmp_disk_tables`
+
+If disk temp tables exceed **5–10%** of total temp tables, queries are spilling to disk.
+
+### Example graph
+Stacked area chart:
+- In-memory temp tables
+- Disk-based temp tables
+
+Disk usage creeping upward usually points to reporting queries pretending to be OLTP.
+
+
+
 Disk-based temp tables are silent performance killers.
 
 ### What they do
@@ -204,6 +293,19 @@ long_query_time=1
 ```
 
 This turns guesswork into evidence.
+
+---
+
+## A Note on Graphing These Metrics
+
+You don’t need exotic tools. These work well:
+
+- `performance_schema`
+- `sys` schema views
+- Prometheus + mysqld_exporter
+- Percona Monitoring and Management (PMM)
+
+**Golden rule:** Always graph rates, not raw counters.
 
 ---
 
