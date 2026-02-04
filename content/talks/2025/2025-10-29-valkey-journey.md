@@ -16,7 +16,7 @@ event_date_end: ""
 event_url: ""
 event_location: "Boston"
 talk_tags: ['Valkey', 'Opensource', 'Open Source', 'Tech']
-slides: ""
+slides: "/slides/2025/Laura-Czajkowski-The-story-of-Valkey.pdf"
 video: ""
 ---
 ## Abstract

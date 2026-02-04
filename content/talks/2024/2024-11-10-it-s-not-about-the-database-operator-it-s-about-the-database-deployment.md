@@ -14,7 +14,7 @@ event: "Cloud Native Rejects NA 2024"
 event_status: "Done"
 event_date_start: "2024-11-10"
 event_date_end: "2024-11-14"
-event_url: "https://cloud-native.rejekts.io/#participation"
+event_url: ""
 event_location: ""
 talk_tags: ['Everest', 'Cloud Native', 'Video']
 slides: ""

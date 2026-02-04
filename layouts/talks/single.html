@@ -68,7 +68,11 @@
         <div class="talk-meta__item">
           <span class="meta-label">Slides</span>
           <span class="meta-value">
-            <a href="{{ . }}" target="_blank" rel="noopener" class="talk-link">📑 View Slides</a>
+            {{ if or (hasPrefix . "http://") (hasPrefix . "https://") }}
+              <a href="{{ . }}" target="_blank" rel="noopener" class="talk-link">🌍 External Slides</a>
+            {{ else }}
+              <a href="{{ . }}" target="_blank" rel="noopener" class="talk-link">📥 Download Slides (PDF)</a>
+            {{ end }}
           </span>
         </div>
         {{ end }}

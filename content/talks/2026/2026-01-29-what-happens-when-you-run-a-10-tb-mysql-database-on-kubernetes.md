@@ -13,7 +13,7 @@ event: "MySQL Belgian Days (preFOSDEM) 2026"
 event_status: "Accepted"
 event_date_start: "2026-01-29"
 event_date_end: ""
-event_url: "https://sessionize.com/prefosdem-mysql-belgian-days"
+event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
 event_location: "Belgian, Brussels"
 talk_tags: ['MySQL', 'Kubernetes']
 slides: ""

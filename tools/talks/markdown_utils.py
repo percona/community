@@ -370,15 +370,19 @@ def build_hugo_markdown(
                 event_title = ev.get("Name", "") or event_title
                 date_prop = ev.get("Date", {})
                 if isinstance(date_prop, dict):
-                    # Take first event's date for context
                     if not event_date_start:
                         event_date_start = date_prop.get("start", "") or ""
                         event_date_end = date_prop.get("end", "") or ""
-                event_url = ev.get("CFP URL", "") or ev.get("URL", "") or event_url
+                event_url = ev.get("URL", "") or event_url
                 event_location = ev.get("Event Location", "") or ev.get("City", "") or event_location
                 tech_raw = ev.get("Technology", "")
                 if tech_raw:
                     event_tech_tags.extend(_normalize_tags_str(tech_raw))
+
+    if not event_title:
+        raw_event_field = extract_value(props.get("Event"))
+        if raw_event_field:
+            event_title = raw_event_field.strip()
 
     # Normalize tags
     tag_list = _normalize_tags_str(tags_raw) + event_tech_tags
@@ -414,8 +418,8 @@ def build_hugo_markdown(
     front_matter_lines.extend([f"  - {s}" for s in speakers] if speakers else ["  - unknown"])
     front_matter_lines.extend([
         f'talk_url: "{conference_url}"',
-        f'presentation_date: "{final_presentation_date}"',  # May now come from event
-        f'presentation_date_end: "{presentation_date_end}"',  # Keep end only if originally present
+        f'presentation_date: "{final_presentation_date}"',
+        f'presentation_date_end: "{presentation_date_end}"',
         f'presentation_time: "{presentation_time}"',
         f'talk_year: "{talk_year}"',
         f'event: "{event_title}"',
@@ -440,7 +444,6 @@ def build_hugo_markdown(
     markdown = front_matter + ("\n" + body if body else "\n")
 
     return title, public_date, talk_year, markdown, new_speakers_list
-
 
 def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
     """

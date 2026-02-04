@@ -14,7 +14,7 @@ event: "State of Open Con 2025"
 event_status: "Done"
 event_date_start: "2025-02-04"
 event_date_end: "2025-02-05"
-event_url: "https://sessionize.com/state-of-open-con-2025/"
+event_url: "https://stateofopencon.com/"
 event_location: "London, UK"
 talk_tags: ['Everest', 'Kubernetes', 'Opensource', 'Open Source', 'Video']
 slides: ""
