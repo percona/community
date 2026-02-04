@@ -30,6 +30,7 @@ talks_tags:
 - Everest
 - Open Source
 - Operators
+- Video
 posts_count: 1
 events_count: 1
 talks_count: 4

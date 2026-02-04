@@ -23,6 +23,7 @@ blog_tags:
 - Developer
 - Encryption
 - Engineering
+- Mailing Lists
 - Meetup
 - Open Source
 - Percona
@@ -39,13 +40,14 @@ events_tags:
 - opensource
 - securing
 talks_tags: []
-posts_count: 3
+posts_count: 4
 events_count: 3
 talks_count: 1
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

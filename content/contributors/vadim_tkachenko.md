@@ -24,6 +24,7 @@ events_tags:
 - MySQL-Summit
 talks_tags:
 - Kubernetes
+- Video
 posts_count: 0
 events_count: 3
 talks_count: 1
