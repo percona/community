@@ -13,7 +13,7 @@ event: "Kubecon + CloudNativeCon Europe 2025"
 event_status: "Done"
 event_date_start: "2025-04-01"
 event_date_end: "2025-04-04"
-event_url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/"
+event_url: "https://kccnceu2025.sched.com/"
 event_location: "London, UK"
 talk_tags: ['PostgreSQL', 'Operators', 'Kubernetes', 'Cloud Native', 'Open Source', 'Video']
 slides: ""
