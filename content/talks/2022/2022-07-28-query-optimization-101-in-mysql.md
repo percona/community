@@ -15,7 +15,7 @@ event_date_start: "2022-07-28"
 event_date_end: "2022-07-31"
 event_url: "https://www.socallinuxexpo.org/scale/19x/"
 event_location: ""
-talk_tags: ['MySQL']
+talk_tags: ['MySQL', 'Video']
 slides: "https://www.socallinuxexpo.org/scale/19x/presentations/query-optimization-101-mysql/"
 video: "https://www.youtube.com/watch?v=rAc3iZQPvhM"
 youtube_id: "rAc3iZQPvhM"

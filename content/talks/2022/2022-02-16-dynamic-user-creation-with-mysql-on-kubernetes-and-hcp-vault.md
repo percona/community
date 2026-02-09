@@ -15,7 +15,7 @@ event_date_start: "2022-02-17"
 event_date_end: "2022-02-18"
 event_url: ""
 event_location: ""
-talk_tags: ['MySQL', 'Kubernetes']
+talk_tags: ['MySQL', 'Kubernetes', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=z-zWTxzhEc0"
 youtube_id: "z-zWTxzhEc0"

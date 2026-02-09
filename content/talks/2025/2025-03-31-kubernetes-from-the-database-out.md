@@ -16,7 +16,7 @@ event_date_start: "2025-03-31"
 event_date_end: ""
 event_url: ""
 event_location: "London"
-talk_tags: ['Operators', 'PostgreSQL', 'Open Source', 'Cloud Native']
+talk_tags: ['Operators', 'PostgreSQL', 'Open Source', 'Cloud Native', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=5vqHVdJ2aCs"
 youtube_id: "5vqHVdJ2aCs"

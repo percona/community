@@ -48,6 +48,7 @@ talks_tags:
 - Open Source
 - Opensource
 - Vector Search
+- Video
 - video
 posts_count: 0
 events_count: 19

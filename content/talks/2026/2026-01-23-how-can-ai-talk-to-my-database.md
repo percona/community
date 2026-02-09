@@ -5,7 +5,7 @@ layout: single
 speakers:
   - fernando_laudares_camargos
 talk_url: "https://buildevcon.com/ai-dba-self-driving-databases/"
-presentation_date: ""
+presentation_date: "2026-01-23"
 presentation_date_end: ""
 presentation_time: ""
 talk_year: "2026"

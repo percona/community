@@ -42,10 +42,12 @@ blog_tags:
 - Toolkit
 - component
 - filter
+- innodb
 - key ring
 - performance
 - replication
 - toolkit
+- tuning
 events_tags:
 - Meetup
 - Percona Community Live
@@ -54,7 +56,7 @@ events_tags:
 - event
 - opensource
 talks_tags: []
-posts_count: 15
+posts_count: 16
 events_count: 4
 talks_count: 0
 contributor_type:

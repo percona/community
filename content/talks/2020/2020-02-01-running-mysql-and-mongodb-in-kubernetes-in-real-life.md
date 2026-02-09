@@ -15,7 +15,7 @@ event_date_start: "2020-02-01"
 event_date_end: "2020-02-02"
 event_url: "https://fosdem.org/2020/"
 event_location: "Belgium"
-talk_tags: ['Kubernetes', 'MySQL', 'Open Source']
+talk_tags: ['Kubernetes', 'MySQL', 'Open Source', 'Video']
 slides: ""
 video: "https://fosdem.org/2020/schedule/event/mysql_k8s/"
 ---

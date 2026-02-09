@@ -38,6 +38,7 @@ events_tags:
 talks_tags:
 - Databases
 - Opensource
+- Video
 posts_count: 0
 events_count: 113
 talks_count: 2

@@ -23,6 +23,7 @@ events_tags:
 - Podcast
 talks_tags:
 - Open Source
+- Video
 posts_count: 0
 events_count: 4
 talks_count: 1

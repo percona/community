@@ -92,10 +92,11 @@ talks_tags:
 - Open Source
 - Opensource
 - Operators
+- Video
 - video
 posts_count: 31
 events_count: 7
-talks_count: 8
+talks_count: 12
 contributor_type:
 - author
 - speaker

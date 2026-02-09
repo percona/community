@@ -5,7 +5,7 @@ layout: single
 speakers:
   - alastair_turner
 talk_url: ""
-presentation_date: ""
+presentation_date: "2026-02-12"
 presentation_date_end: ""
 presentation_time: ""
 talk_year: "2026"

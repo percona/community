@@ -13,9 +13,9 @@ event: "Kubecon + CloudNativeCon North America 2024"
 event_status: "Done"
 event_date_start: "2024-11-12"
 event_date_end: "2024-11-15"
-event_url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/cfp/"
+event_url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/"
 event_location: "Salt Lake City, Utah"
-talk_tags: ['Containers', 'Kubernetes', 'Cloud Native']
+talk_tags: ['Containers', 'Kubernetes', 'Cloud Native', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=0gSSmdNB-Zo"
 youtube_id: "0gSSmdNB-Zo"

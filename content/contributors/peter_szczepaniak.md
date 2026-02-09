@@ -17,6 +17,7 @@ images:
 contributor_tag:
 - Cloud
 - MongoDB
+- PostgreSQL
 blog_tags: []
 events_tags: []
 talks_tags:
@@ -28,9 +29,11 @@ talks_tags:
 - Kubernetes
 - Open Source
 - Opensource
+- Operators
+- Video
 posts_count: 0
 events_count: 0
-talks_count: 3
+talks_count: 4
 contributor_type:
 - speaker
 contributor_year:

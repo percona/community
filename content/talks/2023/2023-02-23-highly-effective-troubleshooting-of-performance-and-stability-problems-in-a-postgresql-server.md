@@ -15,7 +15,7 @@ event_date_start: "2023-02-22"
 event_date_end: "2023-02-24"
 event_url: "https://pgconf.in/conferences/pgconfin2023"
 event_location: "Bengaluru, India"
-talk_tags: ['PostgreSQL', 'video']
+talk_tags: ['PostgreSQL', 'video', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=9K01PjNc-Cs"
 youtube_id: "9K01PjNc-Cs"

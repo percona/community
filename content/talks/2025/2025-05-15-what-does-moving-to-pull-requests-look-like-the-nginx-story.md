@@ -13,7 +13,7 @@ event: "PGConf.dev  2025"
 event_status: "Done"
 event_date_start: "2025-05-13"
 event_date_end: "2025-05-16"
-event_url: "https://2025.pgconf.dev/cfp.html"
+event_url: "https://2025.pgconf.dev/"
 event_location: "Montreal, Canada"
 talk_tags: ['Community', 'PostgreSQL']
 slides: "https://www.pgevents.ca/events/pgconfdev2025/sessions/session/379/slides/70/What%20does%20moving%20to%20Pull%20Requests%20look%20like%20-the%20NGINX%20story%20-%20202505.pdf"

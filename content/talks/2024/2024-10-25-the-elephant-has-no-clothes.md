@@ -15,7 +15,7 @@ event_date_start: "2024-10-22"
 event_date_end: "2024-10-25"
 event_url: "https://2024.pgconf.eu/"
 event_location: "Athens, Greece"
-talk_tags: ['PostgreSQL', 'Security']
+talk_tags: ['PostgreSQL', 'Security', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=jzjmNmH7OJ0"
 youtube_id: "jzjmNmH7OJ0"

@@ -51,11 +51,14 @@ events_tags:
 talks_tags:
 - Cloud Native
 - Containers
+- Everest
 - Kubernetes
 - Open Source
+- Opensource
+- Video
 posts_count: 4
 events_count: 10
-talks_count: 3
+talks_count: 4
 contributor_type:
 - author
 - speaker

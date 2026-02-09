@@ -15,7 +15,7 @@ event_date_start: "2021-01-05"
 event_date_end: "2021-12-14"
 event_url: "https://postgresconf.org/conferences/2021_Postgres_Conference_Webinars"
 event_location: ""
-talk_tags: ['PostgreSQL']
+talk_tags: ['PostgreSQL', 'Video']
 slides: ""
 video: "https://www.youtube.com/watch?v=7UtT6jV2LEU"
 youtube_id: "7UtT6jV2LEU"

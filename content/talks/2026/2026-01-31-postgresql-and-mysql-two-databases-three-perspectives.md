@@ -13,7 +13,7 @@ event: "FOSDEM 2026"
 event_status: "Accepted"
 event_date_start: "2026-01-30"
 event_date_end: "2026-02-02"
-event_url: "https://pretalx.fosdem.org/fosdem-2026/cfp"
+event_url: "https://fosdem.org/2026/"
 event_location: "Brussels, Belgium"
 talk_tags: ['MySQL', 'PostgreSQL']
 slides: ""
