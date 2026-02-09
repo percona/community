@@ -9,6 +9,7 @@ images:
   - blog/2026/02/fosdem-all.png
 ---
 
+This is a recap of Percona at preFosdem and Fosdem!
 
 ![Fosdem intro](/blog/2026/02/fosdem-all.png)
 
