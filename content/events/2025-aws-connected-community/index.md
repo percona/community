@@ -10,6 +10,9 @@ speakers:
   - laura_czajkowski
   - michal_nosek
 tags: ['Valkey', 'Event', 'Percona']
+event_year: 2025
+event_tag: ['Valkey', 'Event', 'Percona']
+event_category: ["Speaking"]
 ---
 
 Change is part of open source and it’s what drives progress!

@@ -17,6 +17,9 @@ taxonomies:
   contributor_year: "contributor_year"
   talk_tags: "talk_tags"
   talk_year: "talk_year"
+  event_category: "event_category"
+  event_year: "event_year"
+  event_tag: "event_tag"
 social:
   twitter: Percona
 sitemap:

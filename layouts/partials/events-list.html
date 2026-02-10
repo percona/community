@@ -1,0 +1,294 @@
+<div class="contentblock branded events">
+
+  <!-- Top dropdown filters -->
+  <div class="select-container">
+    <select id="categories-select" onchange="navigateToPage(this)">
+      <option value="">Years</option>
+      {{ with .page.Site.Taxonomies.event_year }}
+        {{ range first 10 (sort .ByCount) }}
+          <option value="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</option>
+        {{ end }}
+      {{ end }}
+    </select>
+
+    <select id="tags-select" onchange="navigateToPage(this)">
+      <option value="">Tags</option>
+      {{ with .page.Site.Taxonomies.event_tag }}
+        {{ range first 20 (sort .ByCount) }}
+          {{ if gt .Count 1 }}
+            <option value="{{ .Page.Permalink }}">{{ substr .Page.Title 0 20 }} ({{ .Count }})</option>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </select>
+  </div>
+
+  <!-- TWO-COLUMN LAYOUT -->
+  <div class="main-content">
+
+      <!-- Search status -->
+      <p class="blog-search-status" data-search-status aria-live="polite"></p>
+
+      <!-- Events list (GRID) -->
+      <div class="events-list grid grid--2" id="events-list-container">
+        {{ range .paginator.Pages }}
+          <div class="grid__item">
+            {{- $img := "" -}}
+            {{- if isset .Params "images" -}}
+              {{- $img = index .Params.images 0 -}}
+            {{- end -}}
+
+            {{ partial "talkpreview.html" (dict
+                "Link" .RelPermalink
+                "Title" .Title
+                "Content" .Content
+                "Image" $img
+            ) }}
+          </div>
+        {{ end }}
+      </div>
+
+      <!-- Pagination -->
+      {{ if gt .paginator.TotalPages 1 }}
+        <div class="paginator" id="events-paginator">
+          {{ if .paginator.HasPrev }}
+            <a href="{{ .paginator.Prev.URL }}" rel="prev">&laquo;</a>
+          {{ end }}
+
+          {{ $p := .paginator }}
+          {{ range $p.Pagers }}
+            <a href="{{ .URL }}" {{ if eq . $p }}class="active"{{ end }}>
+              {{ .PageNumber }}
+            </a>
+          {{ end }}
+
+          {{ if .paginator.HasNext }}
+            <a href="{{ .paginator.Next.URL }}" rel="next">&raquo;</a>
+          {{ end }}
+        </div>
+      {{ end }}
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+      <!-- Search input -->
+      <div class="search-sidebar">
+        <label for="events-search-input" class="sr-only">Search events</label>
+        <input
+          id="events-search-input"
+          class="blog-search-input"
+          type="search"
+          placeholder="🔍 Search events..."
+          autocomplete="off"
+        />
+        <p class="blog-search-status" data-search-status aria-live="polite"></p>
+      </div>
+
+      <!-- Year list -->
+      <h2>Years</h2>
+      <ul class="category-list">
+        {{ with .page.Site.Taxonomies.event_year }}
+          {{ range sort .ByCount "Page.Title" "desc" }}
+            <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+      <!-- Types -->
+      <h2>Types</h2>
+      <ul class="category-list">
+        {{ with .page.Site.Taxonomies.event_category }}
+        {{ range $key, $value := . }}
+            <li><a href="{{ $value.Page.Permalink }}" class="category">{{ $value.Page.Title }} ({{ $value.Count }})</a></li>
+        {{ end }}
+        {{ end }}
+      </ul>
+      <!-- Tag list -->
+      <h2>Topics</h2>
+      <ul class="category-list">
+        {{ with .page.Site.Taxonomies.event_tag }}
+          {{ range sort .ByCount }}
+              <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+
+       <h2>Tags</h2>
+        <ul class="category-list">
+        {{ with .page.Site.Taxonomies.tags }}
+            {{ range $key, $value := . }}
+            {{ if gt $value.Count 1 }}
+                <li><a href="{{ $value.Page.Permalink }}" class="category">{{ $value.Page.Title }} ({{ $value.Count }})</a></li>
+            {{ end }}
+            {{ end }}
+        {{ end }}
+       </ul>
+  </div>
+
+</div>
+
+<!-- Dropdown navigation -->
+<script>
+  function navigateToPage(select) {
+    const url = select.value;
+    if (url) window.location.href = url;
+  }
+</script>
+
+<!-- Build search index -->
+{{- $eventPages := .searchPages -}}
+{{- $searchIndex := slice -}}
+
+{{- range $eventPages -}}
+
+  {{- $title := .Title | default "" -}}
+
+  {{/* -------- EXCERPT: первые 600 символов контента -------- */}}
+  {{- $excerpt := "" -}}
+  {{- $raw := (index (split .Content "</p>") 0) -}}
+  {{- $clean := ($raw | replace "<p>" "" | safeHTML | plainify | htmlUnescape) -}}
+  {{- $excerpt = substr $clean 0 600 -}}
+
+  {{/* -------- TAGS -------- */}}
+  {{- $tags := "" -}}
+  {{- with .Params.event_tag -}}
+    {{- $tags = delimit . " " -}}
+  {{- end -}}
+
+  {{/* -------- LOCATION -------- */}}
+  {{- $event_location := .Params.event_location | default "" -}}
+
+  {{/* -------- IMAGE -------- */}}
+  {{- $img := "" -}}
+  {{- if isset .Params "images" -}}
+    {{- $img = index .Params.images 0 -}}
+  {{- end -}}
+
+  {{/* -------- SPEAKERS (как в talks) -------- */}}
+  {{- $speakers := slice -}}
+  {{- with .Params.speakers -}}
+    {{- range . -}}
+      {{- $page := site.GetPage (printf "contributors/%s" .) -}}
+      {{- with $page -}}
+        {{- $speakers = $speakers | append .Params.fullname -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $speakersStr := delimit $speakers " " -}}
+
+  {{/* -------- BUILD INDEX ENTRY -------- */}}
+  {{- $searchIndex = $searchIndex | append (dict
+    "html" (partial "talkpreview.html" (dict
+      "Link" .RelPermalink
+      "Title" .Title
+      "Content" .Content
+      "Image" $img
+    ))
+    "title"     ($title | lower)
+    "tags"      ($tags | lower)
+    "speakers"  ($speakersStr | lower)
+    "event_location" ($event_location | lower)
+    "excerpt"   ($excerpt | lower)
+  ) -}}
+
+{{- end -}}
+
+<script type="application/json" id="events-search-data">
+  {{- $searchIndex | jsonify | safeJS -}}
+</script>
+
+<!-- Client-side search -->
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("events-search-data");
+    const searchInput = document.getElementById("events-search-input");
+    const eventsList = document.getElementById("events-list-container");
+    const paginator = document.getElementById("events-paginator");
+    const statusEl = document.querySelector("[data-search-status]");
+
+    if (!searchDataEl || !searchInput || !eventsList) return;
+
+    let eventsData = [];
+    try {
+      eventsData = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultListMarkup = eventsList.innerHTML;
+
+    const scoreEvent = (event, tokens) => {
+    let score = 0;
+    tokens.forEach(token => {
+        if (event.title.includes(token)) score += 5;
+        if (event.speakers.includes(token)) score += 4;  
+        if (event.tags.includes(token)) score += 3;
+        if (event.event_location.includes(token)) score += 2;
+        if (event.excerpt.includes(token)) score += 1;
+    });
+    return score;
+    };
+
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        eventsList.innerHTML = '<div class="grid__item"><p>No matching events found.</p></div>';
+        if (statusEl) statusEl.textContent = "No results";
+        return;
+      }
+      eventsList.innerHTML = matches.map(m => `<div class="grid__item">${m.html}</div>`).join("");
+      if (statusEl) statusEl.textContent = `Found ${matches.length} results`;
+    };
+
+    const resetList = () => {
+      eventsList.innerHTML = defaultListMarkup;
+      if (statusEl) statusEl.textContent = "";
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseQueryTokens = (value) => {
+      if (!value) return [];
+      const lowered = value.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, (_, phrase) => {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder
+        .split(/\s+/)
+        .map(t => t.trim())
+        .filter(Boolean)
+        .forEach(t => tokens.push(t));
+
+      return tokens;
+    };
+
+    searchInput.addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+      const tokens = parseQueryTokens(query);
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = eventsData
+        .map(event => ({
+          ...event,
+          score: scoreEvent(event, tokens)
+        }))
+        .filter(e => e.score > 0)
+        .sort((a, b) => b.score - a.score);
+
+      renderMatches(matches);
+    });
+  });
+</script>
