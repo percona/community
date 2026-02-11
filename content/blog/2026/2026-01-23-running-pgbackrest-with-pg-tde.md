@@ -344,9 +344,11 @@ SELECT pg_tde_is_encrypted('crypt_table');
 
 ## Wrap-up
 
-Security often comes at the cost of operational complexity, but it doesn’t have to compromise recoverability. By pairing Percona's solution for transparent data encryption (pg_tde) with pgBackRest, you have established a strategy that satisfies both security auditors and operations teams: your data is transparently encrypted on disk to meet strict compliance standards, while your backups remain consistent, verifiable, and easy to restore.
+Security often comes at the cost of operational complexity, but it doesn’t have to compromise recoverability. By pairing Percona's solution for transparent data encryption (pg_tde) with pgBackRest, you can established a strategy that satisfies both security auditors and operations teams: your data is transparently encrypted on disk to meet strict compliance standards, while your backups remain consistent, verifiable, and easy to restore.
 
-This walkthrough used a local file provider for simplicity. As you move toward a production deployment, we recommend exploring a dedicated [Vault](https://docs.percona.com/pg-tde/global-key-provider-configuration/overview.html) solution for key management to further harden your architecture against unauthorized access.
+While this walkthrough used a local file provider for simplicity it is highly discouraged to do so for any production or otherwise serious use cases. For this particular scenario, the focus was supposed to be on backup, please let us know if some similar articles about Key Management System (KMS) configuration is what you would be interested in.
+
+As you progress from this blog post to a production deployment, we recommend exploring a dedicated [KMS](https://docs.percona.com/pg-tde/global-key-provider-configuration/overview.html) solution to further harden your architecture against unauthorized access.
 
 Finally, be aware that to support archiving, the pg_tde wrapper decrypts WAL files before sending them to the repository. This means your backup repository currently holds unencrypted data. To close this security gap in production, you must ensure that encryption is enabled at the backup repository level so that your backups remain just as secure as your live database.
 
