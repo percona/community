@@ -20,6 +20,7 @@ contributor_tag:
 - Community
 - MongoDB
 - MySQL
+- PostgreSQL
 blog_tags:
 - Docker
 - HELM
@@ -45,9 +46,11 @@ events_tags:
 - Percona
 - Percona Community Live
 - dashboard
+- databases
 - event
 - k8s
 - opensource
+- sponsorship
 talks_tags:
 - Cloud Native
 - Containers
@@ -57,14 +60,15 @@ talks_tags:
 - Opensource
 - Video
 posts_count: 4
-events_count: 10
-talks_count: 4
+events_count: 12
+talks_count: 5
 contributor_type:
 - author
 - speaker
 contributor_year:
 - '2025'
 - '2024'
+- '2023'
 - '2022'
 - '2021'
 ---
