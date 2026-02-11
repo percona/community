@@ -1,15 +1,19 @@
 ---
-title: "Database Reliability Engineering for MySQL"
-description: "Standardized approach for traffic redirection, a topology management tool, for master failover/switchover, and some additional tools"
+title: Database Reliability Engineering for MySQL
+description: Standardized approach for traffic redirection, a topology management
+  tool, for master failover/switchover, and some additional tools
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-2-Matthias-Crauwels.jpg
-PublishedDate: "2022-06-22"
+- events/percona-community-live/cards/Community-Live-Day-2-Matthias-Crauwels.jpg
+PublishedDate: '2022-06-22'
 draft: false
-day: "June 22"
-date: "2022-06-22"
+day: June 22
+date: '2022-06-22'
 speakers:
-  - matthias_crauwels
-tags: ['MySQL', 'Stream']
+- matthias_crauwels
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Database Reliability Engineering for MySQL](events/percona-community-live/cards/Community-Live-Day-2-Matthias-Crauwels.jpg)
 
@@ -22,4 +26,3 @@ A common request that we get from our clients is to make MySQL highly available 
 {{% youtube youtube_id="GkIYGxXxlz8" %}}{{% /youtube %}}
 
 ## Transcript
-

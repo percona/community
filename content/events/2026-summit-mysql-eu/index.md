@@ -1,21 +1,24 @@
 ---
-title: "Summit for MySQL Community, Europe — February 2, 2026"
-description: "Exploring the future of MySQL together — insights, tools, and community connections."
+title: Summit for MySQL Community, Europe — February 2, 2026
+description: Exploring the future of MySQL together — insights, tools, and community
+  connections.
 images:
-  - events/2026-summit-mysql-community-eu/Summit-MySQL-Brussels.jpg
+- events/2026-summit-mysql-community-eu/Summit-MySQL-Brussels.jpg
 layout: single
-date: "2025-11-21"
-EventDate: "Monday, February 2, 2026, at 10:30 Brussels Time (CET) / 09:30 GMT"
+date: '2025-11-21'
+EventDate: Monday, February 2, 2026, at 10:30 Brussels Time (CET) / 09:30 GMT
 speakers:
-  - vadim_tkachenko
-  - mykola_marzhan
-  - mohamed_wadie_nsiri
-  - sunny_bains
-  - geir_hoydalsvik
-  - peter_zaitsev
-tags: ['MySQL-Summit', 'MySQL', 'Community', 'Events']
+- vadim_tkachenko
+- mykola_marzhan
+- mohamed_wadie_nsiri
+- sunny_bains
+- geir_hoydalsvik
+- peter_zaitsev
+tags: ["Community", "Events", "MySQL", "MySQL-Summit"]
+events_year: ["2025"]
+events_tag: ["Community", "MySQL", "Community"]
+events_category: ["Speaking"]
 ---
-
 We're gathering in **Brussels** on **February 2nd** for a focused, in-person summit dedicated to strengthening the MySQL ecosystem through collaboration, contribution, and community building.
 
 -   Location: Rue Auguste Orts, Grand Place 3-7, 1000 Bruxelles, Belgium
@@ -95,6 +98,3 @@ We will review submissions within one week of receiving them, but we'll do our b
 The MySQL Community Summit will also be held in San Francisco, USA, January 14, 2026. If traveling to the United States works better for you, we would be delighted to welcome you there. 👉 [Link](/events/2026-mysql-summit-usa/)
 
 We look forward to hearing from you and to building the future of MySQL together.
-
-
-

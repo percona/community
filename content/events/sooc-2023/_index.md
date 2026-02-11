@@ -1,13 +1,17 @@
 ---
-title: "State of Open Con 2023"
-description: "The State of Open Con is the UK's open source technology conference. SOOC23 is an excellent opportunity to meet community and industry members in Open Source Software, Open Hardware & Open Data."
+title: State of Open Con 2023
+description: The State of Open Con is the UK's open source technology conference.
+  SOOC23 is an excellent opportunity to meet community and industry members in Open
+  Source Software, Open Hardware & Open Data.
 images:
-  - events/soocon-2023/5.jpg
+- events/soocon-2023/5.jpg
 layout: single
-date: "2023-02-28"
-tags: ['opensource', 'event']
+date: '2023-02-28'
 speakers:
-  - peter_zaitsev
+- peter_zaitsev
+tags: ["event", "opensource"]
+events_year: ["2023"]
+events_category: ["Speaking"]
 ---
 The [State of Open Con](https://stateofopencon.com/) is the UK's open source technology conference. This year, it took place at Queen Elizabeth II Centre in London, last Feb 7-8, 2023.
 
@@ -66,4 +70,3 @@ Edith also met other amazing people, like Lize Rice, who is part of the **Isoval
 The number of things that were possible to learn in two days of Open State of Con 2023 is amazing. 
 
 Looking forward to being in SOOCon23 in 2024!
-

@@ -1,16 +1,20 @@
 ---
-title: "Dave Stokes Talks Open - Episode 4 - Rachel Stephens, RedMonk - Percona Live 2023"
-description: "Dave Stokes talked to Rachel Stephens (RedMonk). They discussed her keynote at Percona Live and trends in open source databases world."
+title: Dave Stokes Talks Open - Episode 4 - Rachel Stephens, RedMonk - Percona Live
+  2023
+description: Dave Stokes talked to Rachel Stephens (RedMonk). They discussed her keynote
+  at Percona Live and trends in open source databases world.
 images:
-  - events/dave-stokes-talks-open-percona-live-2023/PL23-Podcast-4.jpg
+- events/dave-stokes-talks-open-percona-live-2023/PL23-Podcast-4.jpg
 draft: false
-date: "2023-06-22"
+date: '2023-06-22'
 speakers:
-  - dave_stokes
-  - rachel_stephens
-tags: ['PerconaLive2023', 'Podcast']
+- dave_stokes
+- rachel_stephens
+tags: ["PerconaLive2023", "Podcast"]
+events_year: ["2023"]
+events_tag: ["Community"]
+events_category: ["Speaking"]
 ---
-
 At Percona Live, Dave Stokes talked to Rachel Stephens, Senior Industry Analyst at RedMonk. They discussed her keynote at Percona Live and trends in open source databases world.
 
 ## Video

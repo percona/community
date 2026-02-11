@@ -1,20 +1,22 @@
 ---
-title: "FOSDEM 2023"
-description: "FOSDEM is an awesome conference in Europe organized by the community for the community. Percona experts actively participated in it this year."
+title: FOSDEM 2023
+description: FOSDEM is an awesome conference in Europe organized by the community
+  for the community. Percona experts actively participated in it this year.
 images:
-  - events/fosdem-2023/1.JPG
-date: "2023-02-22"
+- events/fosdem-2023/1.JPG
+date: '2023-02-22'
 layout: single
 speakers:
-  - aleks_abramova
-  - edith_puclla
-  - vinicius_grippa
-  - peter_zaitsev
-  - dmitriy_kostiuk
-  - dmitry_lenev
-tags: ['Event','fosdem']
+- aleks_abramova
+- edith_puclla
+- vinicius_grippa
+- peter_zaitsev
+- dmitriy_kostiuk
+- dmitry_lenev
+tags: ["Event", "fosdem"]
+events_year: ["2023"]
+events_category: ["Speaking"]
 ---
-
 FOSDEM is very special: people from all over the world come to Brussels to participate in the biggest open source event in Europe. How many people? FOSDEM attracts more than 5000 attendees to the ULB Solbosch campus.
 
 ![FOSDEM 2023](/events/fosdem-2023/1.JPG)
@@ -77,4 +79,3 @@ Traditionally, the Percona Team gathers together for a team dinner. We also invi
 We also walked around the city to see the sights of charming Brussels. Did you know that Belgium is the birthplace of the smurfs? It was really a surprise for me.
 
 ![FOSDEM 2023](/events/fosdem-2023/16.jpg)
-

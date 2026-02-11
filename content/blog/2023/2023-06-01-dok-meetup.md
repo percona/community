@@ -2,7 +2,7 @@
 title: "Data on Kubernetes Meetup May 23"
 date: "2023-06-01T00:00:00+00:00"
 draft: false
-tags: ["DoK", "Opensource", "CNCF", "Kuberentes", "Operators"]
+tags: ["DoK", "Opensource", "CNCF", "Kubernetes", "Operators"]
 categories: ['Community', "Cloud"]
 authors:
   - edith_puclla

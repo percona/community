@@ -33,6 +33,7 @@ events_tags:
 - PerconaUniversity
 - Promo
 - Yerevan
+- databases
 - devops
 - event
 - fosdem
@@ -47,12 +48,13 @@ talks_tags:
 - MariaDB
 - Open Source
 - Opensource
+- Security
 - Vector Search
 - Video
 - video
 posts_count: 0
-events_count: 19
-talks_count: 10
+events_count: 21
+talks_count: 18
 contributor_type:
 - speaker
 contributor_year:

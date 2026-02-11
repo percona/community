@@ -1,14 +1,19 @@
 ---
-title: "Percona MeetUp for PostgreSQL - Optimization of PostgreSQL instances - Dec 15th, 2021"
-description: "We are interested what's been going on in Support, any challenging cases that we can share, RDS and EC2 live tuning with experts"
+title: Percona MeetUp for PostgreSQL - Optimization of PostgreSQL instances - Dec
+  15th, 2021
+description: We are interested what's been going on in Support, any challenging cases
+  that we can share, RDS and EC2 live tuning with experts
 images:
-  - events/percona-meetup/postgres-december-cover-1362.jpg
-date: "2021-12-15"
+- events/percona-meetup/postgres-december-cover-1362.jpg
+date: '2021-12-15'
 draft: false
 speakers:
-  - jobin_augustine
-  - matt_yonkovit
-tags: ['PostgreSQL', 'Meetup']
+- jobin_augustine
+- matt_yonkovit
+tags: ["Meetup", "PostgreSQL"]
+events_year: ["2021"]
+events_tag: ["Community", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
 We have talked about what's been going on support side with Jobin Augustine, Senior Support Engineer at Percona, before starting to stump the expert with RDS and EC2 live tuning. This Community MeetUp for PostgreSQL is 1-hour live streaming hosted by Matt Yonkovit, The HOSS at Percona, to talk more about Optimization of PostgreSQL instances.
 

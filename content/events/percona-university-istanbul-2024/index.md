@@ -1,13 +1,17 @@
 ---
-title: "Percona University Istanbul 2024"
-description: "Percona organised a Percona University Istanbul meetup in Istanbul at September 7th 2024. It was a free database event about MySQL, PostgreSQL, MariaDB, and MongoDB. "
+title: Percona University Istanbul 2024
+description: 'Percona organised a Percona University Istanbul meetup in Istanbul at
+  September 7th 2024. It was a free database event about MySQL, PostgreSQL, MariaDB,
+  and MongoDB. '
 images:
-  - events/percona-university-istanbul-2024/4.jpg
+- events/percona-university-istanbul-2024/4.jpg
 layout: single
-date: "2024-09-07"
-tags: ["Promo", "Home", "Promo"]
+date: '2024-09-07'
 speakers:
-  - peter_zaitsev
+- peter_zaitsev
+tags: ["Home", "Promo"]
+events_year: ["2024"]
+events_category: ["Speaking"]
 ---
 Percona University is an ongoing series of community-driven database meetups, bringing together open-source enthusiasts from around the world. On September 7th, we landed in Istanbul, the vibrant cultural and economic hub of Türkiye, for a day of learning, networking, and meaningful connections.
 

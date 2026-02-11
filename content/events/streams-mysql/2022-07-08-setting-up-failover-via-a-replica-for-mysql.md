@@ -1,14 +1,19 @@
 ---
-title: "Setting Up Failover via a Replica for MySQL - Percona Community MySQL Live Stream & Chat - July 8th"
-description: "Get some tips and tricks to easily set up a Failover via a Replica for MySQL with Percona Community MySQL Live Stream"
+title: Setting Up Failover via a Replica for MySQL - Percona Community MySQL Live
+  Stream & Chat - July 8th
+description: Get some tips and tricks to easily set up a Failover via a Replica for
+  MySQL with Percona Community MySQL Live Stream
 images:
-  - events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg
+- events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg
 draft: false
-date: "2022-07-08"
+date: '2022-07-08'
 speakers:
-  - marcos_albe
-  - dave_stokes
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- dave_stokes
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community MySQL Live Stream July 8th](events/streams-mysql/Stream-MySQL-5-Marcos-with-Dave.jpg)
 
@@ -176,9 +181,3 @@ Yeah, well, you show them off to great applause today for me. I mean that I for 
 
 **Marcos Albe:**  
 Have a good day for everybody. Thanks for having me. Bye bye.
-
-
-
-
-
-

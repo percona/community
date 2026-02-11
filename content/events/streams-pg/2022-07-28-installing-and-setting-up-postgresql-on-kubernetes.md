@@ -1,16 +1,21 @@
 ---
-title: "Installing and Setting Up PostgreSQL on Kubernetes - Percona Community PostgreSQL Live Stream & Chat - July, 28th"
-description: "Percona Community Live Stream has talked about Installing and Setting Up PostgreSQL on Kubernetes on Thursday, July 28th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
+title: Installing and Setting Up PostgreSQL on Kubernetes - Percona Community PostgreSQL
+  Live Stream & Chat - July, 28th
+description: Percona Community Live Stream has talked about Installing and Setting
+  Up PostgreSQL on Kubernetes on Thursday, July 28th at 12:00 PM EDT / 06:00 PM CEST
+  / 09:30 PM IST
 draft: false
-date: "2022-07-28"
+date: '2022-07-28'
 images:
-  - events/streams-pg/pg-stream-cover-week-10-july-28.jpg
+- events/streams-pg/pg-stream-cover-week-10-july-28.jpg
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Learn more about Installing and Setting Up PostgreSQL on Kubernetes with experts. This is a part of Percona Community's bi-weekly  Live Stream. Dave and Charly shared their experience with a demo session.
 
 
@@ -57,7 +62,3 @@ Okay, now it's. So all those isolations here, they're being done for the namespa
 There are a lot of applications that are a lot of customers that make a lot of sense for that to run inside of containers or inside of Kubernetes. But for all of our situations or house of our situations that it does more harm than good to run inside of containers or run inside of the Kubernetes. All the orchestration that Kubernetes gives and things they're amazing. But for the other side, they also need a lot of investment in time and training for the team for models. They're not easy; they're not simple as you can see. There are so many pieces together to make those things work. And when a problem happens, it's it can be a nightmare to find one of our options. So we need to understand those things. This is what my message for today is really, really need to understand how this thing works so that we can decide how we can move on. And I hope that that was okay. Well, of course, they don't have that they will teach you, right? But they should have that they would be one. Yep, it is just replicated for a DBQ. One. And let's give it a try. discreditable to create Oops, my.
 
 Nope. Okay, I had a great table to choose from. I love how sometimes things work. We went, I went to be lazy, and it just doesn't work. Let me change here. I have just been here. So I'll take credit they will I got it, sir, that they will teach you. But instead of one of your roles, icon searches 300,000. So it should be enough. So only certain 300,000 holes. If we go for the other one. Now, we should have they will teach you. And here we have. We have two containers running inside of our box. And inside of each container. We have a post was writing, and we have replication between them. So I can call it a success. Right. So yeah. That's it for today. I hope you enjoyed it and I hope that it was useful for you. I hope you learned some things. And it's bad that Dave cannot like I cannot hear Dave. And that's all that was great. Oh, thanks for your time. And have a great day.
-
-
-
-

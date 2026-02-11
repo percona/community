@@ -1,15 +1,19 @@
 ---
-title: "The Road Towards an Open Database Performance Ranking"
-description: "To enable an on-demand comparison of cloud-hosted databases, we present a database performance ranking as an open dataset that is created with the Benchmarking-as-a-Service platform benchANT."
+title: The Road Towards an Open Database Performance Ranking
+description: To enable an on-demand comparison of cloud-hosted databases, we present
+  a database performance ranking as an open dataset that is created with the Benchmarking-as-a-Service
+  platform benchANT.
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Daniel-Seybold.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Daniel-Seybold.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - daniel_seybold
-tags: ['performance', 'ranking']
+- daniel_seybold
+tags: ["performance", "ranking"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
 ![The Road Towards an Open Database Performance Ranking](events/percona-community-live/cards/Community-Live-Day-3-Daniel-Seybold.jpg)
 

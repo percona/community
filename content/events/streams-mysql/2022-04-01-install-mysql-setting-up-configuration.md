@@ -1,16 +1,21 @@
 ---
-title: "Installing MySQL and Setting Up a Default Configuration - Percona Community MySQL Live Stream & Chat - April, 1st"
-description: "Listen to this recording of Percona Live Stream of April 1st, 2022 to learn how to install MySQL and Setting Up a Default Configuration with Matt Yonkovit and Marcos Albe"
+title: Installing MySQL and Setting Up a Default Configuration - Percona Community
+  MySQL Live Stream & Chat - April, 1st
+description: Listen to this recording of Percona Live Stream of April 1st, 2022 to
+  learn how to install MySQL and Setting Up a Default Configuration with Matt Yonkovit
+  and Marcos Albe
 images:
-  - events/streams-mysql/Stream-MySQL-1-cover.jpg
+- events/streams-mysql/Stream-MySQL-1-cover.jpg
 draft: false
-date: "2022-04-01"
+date: '2022-04-01'
 speakers:
-  - marcos_albe
-  - matt_yonkovit
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- matt_yonkovit
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Watch out this recording from Percona Community live stream of April 1st. Learn how to install MySQL and Setting Up a Default Configuration with Matt Yonkovit and Marcos Albe. This is a series of live stream to discuss MySQL tricks with experts.
 
 ## Video

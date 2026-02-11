@@ -1,16 +1,19 @@
 ---
-title: "Percona MeetUp for PostgreSQL October 2021"
-description: "Community MeetUp for PostgreSQL dedicated to performance improvement, monitoring to prevent performance issues, and troubleshooting."
+title: Percona MeetUp for PostgreSQL October 2021
+description: Community MeetUp for PostgreSQL dedicated to performance improvement,
+  monitoring to prevent performance issues, and troubleshooting.
 images:
-  - events/percona-meetup/postgres-october-cover-1362.jpg
-date: "2021-10-13"
+- events/percona-meetup/postgres-october-cover-1362.jpg
+date: '2021-10-13'
 draft: false
 speakers:
-  - charly_batista
-  - matt_yonkovit
-tags: ['PostgreSQL', 'Meetup']
+- charly_batista
+- matt_yonkovit
+tags: ["Meetup", "PostgreSQL"]
+events_year: ["2021"]
+events_tag: ["Community", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Community MeetUp for PostgreSQL was live stream on Oct 13th at 11:00am EDT to talk about how to improve your database performance with appropriated tools for monitoring and optimization. Here are the full recording and transcript :
 
 ## Video
@@ -242,5 +245,3 @@ The MeetUp for PostgreSQL is recommended for everyone who is:
 Subscribe to our channels to get informed of all upcoming MeetUps.
 
 Invite your friends to this MeetUp by sharing this page.
-
-

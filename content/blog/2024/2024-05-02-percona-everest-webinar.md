@@ -48,7 +48,7 @@ Some questions that users asked in this presentation are:
 
 The PV will remain in place; this is a standard functionality of a stateful set. After the Pod goes down, the replacement Pod will attach to the PVC, which is standard behavior for a stateful set.
 
-### What happens if the node in Kuberentes goes down?
+### What happens if the node in Kubernetes goes down?
 
 It depends on the storage layer that you have configured in your cluster. If the storage class you are using is tied to that node, then placing it on a new node will provision a new one, and some reconciliation will occur within the database itself.
 

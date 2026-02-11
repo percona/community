@@ -1,16 +1,23 @@
 ---
-title: " Installation of MongoDB via a Kubernetes Operator - Community MeetUp - March 10th"
-description: "Learn more about installation of MongoDB via a Kubernetes operator in this recording of The Percona Community MeetUp of March 10th hosted by Matt Yonkovit, the Head of Open Source Strategy at Percona. Sergey Pronin, Product Owner at Percona, took us through the step-by-step setup to get us started with a new MongoDB cluster."
+title: 'Installation of MongoDB via a Kubernetes Operator - Community MeetUp - March
+  10th'
+description: Learn more about installation of MongoDB via a Kubernetes operator in
+  this recording of The Percona Community MeetUp of March 10th hosted by Matt Yonkovit,
+  the Head of Open Source Strategy at Percona. Sergey Pronin, Product Owner at Percona,
+  took us through the step-by-step setup to get us started with a new MongoDB cluster.
 images:
-  - events/percona-meetup/2022-03-10-meetup-mongodb.jpg
-date: "2022-03-10"
+- events/percona-meetup/2022-03-10-meetup-mongodb.jpg
+date: '2022-03-10'
 draft: false
 aliases:
-    - "/events/percona-meetups/installation-of-mongodb-via-kubernetes-operator-mar-10th/" 
+- /events/percona-meetups/installation-of-mongodb-via-kubernetes-operator-mar-10th/
 speakers:
-    - sergey_pronin
-    - matt_yonkovit
-tags: ['Mongo', 'k8s', 'Kubernetes', 'MongoDB', 'Meetup']
+- sergey_pronin
+- matt_yonkovit
+tags: ["Kubernetes", "Meetup", "Mongo", "MongoDB", "k8s"]
+events_year: ["2022"]
+events_tag: ["Cloud Native", "Community", "MongoDB"]
+events_category: ["Speaking"]
 ---
 Check this full recording of the Percona Community MeetUp of March 10th hosted and learn more about installation of MongoDB via a Kubernetes operator. Matt Yonkovit, the Head of Open Source Strategy at Percona, and Sergey Pronin, Product Owner at Percona, took us through the step-by-step setup to get us started with a new MongoDB cluster.
 

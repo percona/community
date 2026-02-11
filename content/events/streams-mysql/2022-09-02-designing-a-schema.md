@@ -1,14 +1,20 @@
 ---
-title: "MySQL Designing a Schema - Percona Community MySQL Live Stream & Chat - Sept 2nd"
-description: "Join us at Percona Community Live Stream, and we will talk about MySQL Designing a Schema with database experts on Friday, September 2nd at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST"
+title: MySQL Designing a Schema - Percona Community MySQL Live Stream & Chat - Sept
+  2nd
+description: Join us at Percona Community Live Stream, and we will talk about MySQL
+  Designing a Schema with database experts on Friday, September 2nd at 9:00 AM EDT  /
+  03:00 PM CEST/ 06:30 PM IST
 images:
-  - events/streams-mysql/2022-09-02-stream-mysql-marcos-and-dave.jpg
+- events/streams-mysql/2022-09-02-stream-mysql-marcos-and-dave.jpg
 draft: false
-date: "2022-09-02"
+date: '2022-09-02'
 speakers:
-  - marcos_albe
-  - dave_stokes
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- dave_stokes
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community MySQL Live Stream Sept 2nd](events/streams-mysql/2022-09-02-stream-mysql-marcos-and-dave.jpg)
 
@@ -115,5 +121,3 @@ Well, thank you very much, Marcos. And thanks to our audience. If you do have qu
 
 **Marcos Albe:**  
 Have a good day, everybody. Thanks for attending. Bye-bye
-
-

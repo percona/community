@@ -1,14 +1,19 @@
 ---
-title: "Installing and Setting Up MySQL on Kubernetes - Percona Community MySQL Live Stream & Chat - August 19th"
-description: "Learn more Installing and Setting Up MySQL on Kubernetes in this session of Percona Community Live Stream with Dave Stokes and Marcos Albe"
+title: Installing and Setting Up MySQL on Kubernetes - Percona Community MySQL Live
+  Stream & Chat - August 19th
+description: Learn more Installing and Setting Up MySQL on Kubernetes in this session
+  of Percona Community Live Stream with Dave Stokes and Marcos Albe
 images:
-  - events/streams-mysql/2022-08-19-stream-mysql-marcos-and-dave.jpg
+- events/streams-mysql/2022-08-19-stream-mysql-marcos-and-dave.jpg
 draft: false
-date: "2022-08-19"
+date: '2022-08-19'
 speakers:
-  - marcos_albe
-  - dave_stokes
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- dave_stokes
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community MySQL Live Stream August 19th](events/streams-mysql/2022-08-19-stream-mysql-marcos-and-dave.jpg)
 
@@ -58,7 +63,3 @@ That I will do that. Okay, sir. And we'll be back in two weeks and have a good d
 
 **Marcos Albe:**  
 Have a good day, everybody. Bye. Bye. Bye.
-
-
-
-

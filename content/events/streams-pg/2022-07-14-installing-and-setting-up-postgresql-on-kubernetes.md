@@ -1,16 +1,21 @@
 ---
-title: "Installing and Setting Up PostgreSQL on Kubernetes - Percona Community PostgreSQL Live Stream & Chat"
-description: "Join Percona Community Live Stream and learn more about Installing and Setting Up PostgreSQL on Kubernetes on Thursday, July 14th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
+title: Installing and Setting Up PostgreSQL on Kubernetes - Percona Community PostgreSQL
+  Live Stream & Chat
+description: Join Percona Community Live Stream and learn more about Installing and
+  Setting Up PostgreSQL on Kubernetes on Thursday, July 14th at 12:00 PM EDT / 06:00
+  PM CEST / 09:30 PM IST
 draft: false
-date: "2022-07-14"
+date: '2022-07-14'
 images:
-  - events/streams-pg/pg-stream-cover-week-10-july-14.jpg
+- events/streams-pg/pg-stream-cover-week-10-july-14.jpg
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Hello,
 
 Thank you for your visit! This event is postponed

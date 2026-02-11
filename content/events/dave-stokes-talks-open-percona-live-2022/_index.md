@@ -1,18 +1,22 @@
 ---
-title: "Dave Stokes Talks Open on Percona Live 2022"
-description: "David Stokes invited amazing guests to talk to him about open source technologies (MySQL, Postgres, MongoDB, MariaDB, and others) and record a podcast on Percona Live 2022 in Austin. They also talked about cloud technologies, DevOps tools, and monitoring."
+title: Dave Stokes Talks Open on Percona Live 2022
+description: David Stokes invited amazing guests to talk to him about open source
+  technologies (MySQL, Postgres, MongoDB, MariaDB, and others) and record a podcast
+  on Percona Live 2022 in Austin. They also talked about cloud technologies, DevOps
+  tools, and monitoring.
 images:
-  - events/dave-stokes-talks-open-percona-live-2022/DSTO-Cover.jpg
+- events/dave-stokes-talks-open-percona-live-2022/DSTO-Cover.jpg
 draft: false
-date: "2022-05-18"
+date: '2022-05-18'
 layout: list
 speakers:
-  - dave_stokes
-  - alkin_tezuysal
-tags: ['PerconaLive2022', 'Podcast']
+- dave_stokes
+- alkin_tezuysal
+tags: ["PerconaLive2022", "Podcast"]
+events_year: ["2022"]
+events_tag: ["Community"]
+events_category: ["Speaking","Community"]
 ---
-
-
 {{% hero-gradient class="night" %}}
 
 # Dave Stokes Talks Open on Percona Live 2022

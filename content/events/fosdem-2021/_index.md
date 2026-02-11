@@ -1,13 +1,14 @@
 ---
-title: "FOSDEM 2021"
-description: "FOSDEM is an awesome conference in Europe organized by the community for the community. Percona experts actively participated in it this year."
+title: FOSDEM 2021
+description: FOSDEM is an awesome conference in Europe organized by the community
+  for the community. Percona experts actively participated in it this year.
 images:
-  - events/fosdem-2021/cover.jpg
+- events/fosdem-2021/cover.jpg
 layout: single
-date: "2021-02-06"
-tags: ['Event', 'fosdem']
+date: '2021-02-06'
+tags: ["Event", "fosdem"]
+events_year: ["2021"]
 ---
-
 Percona Team actively participated in [FOSDEM 2021](https://fosdem.org/2021/). It is a large, non-commercial free event for thousands of developers of free and open-source software from all over the world to meet, share ideas and collaborate. Traditionally held in the beautiful city of Brussels (Belgium), it took place online this year on February 6-7. FOSDEM is widely recognized as the best such conference in Europe organized by the community for the community.
 
 Tracks were grouped into devrooms. Devrooms are a place for teams to discuss, hack and publicly present the latest directions, lightning talks, news, and discussions. Percona speakers gave 13 presentations in 10 rooms this year. 

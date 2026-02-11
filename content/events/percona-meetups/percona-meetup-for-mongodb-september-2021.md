@@ -1,18 +1,20 @@
 ---
-title: "Percona MeetUp for MongoDB Sept 2021"
-description: "The first Percona MeetUp for MongoDB on MongoDB sharded cluster best practices and future Kubernetes Operator features."
+title: Percona MeetUp for MongoDB Sept 2021
+description: The first Percona MeetUp for MongoDB on MongoDB sharded cluster best
+  practices and future Kubernetes Operator features.
 images:
-  - events/percona-meetup/mongodb-cover-1362.jpg
-date: "2021-09-22"
+- events/percona-meetup/mongodb-cover-1362.jpg
+date: '2021-09-22'
 draft: false
 speakers:
-  - vinodh_krishnaswamy
-  - ege_gunes
-  - matt_yonkovit
-tags: ['MongoDB', 'Meetup']
+- vinodh_krishnaswamy
+- ege_gunes
+- matt_yonkovit
+tags: ["Meetup", "MongoDB"]
+events_year: ["2021"]
+events_tag: ["Community", "MongoDB"]
+events_category: ["Speaking"]
 ---
-
-
 Matt Yonkovit hosted the Percona MeetUp for MongoDB on September 22nd with Vinodh Krishnaswamy, Support Engineer at Percona, to talk about "MongoDB sharded Cluster- best practices" and Ege Güneş, Software Engineer at Percona, to discuss "Cross-regional replication for MongoDB with Kubernetes". Check full video on youtube by clicking the link below :
 
 ## Video

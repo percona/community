@@ -1,15 +1,20 @@
 ---
-title: "Hacktoberfest with Percona - We Want You! - September 2022"
-description: "This new meetup is your chance to get a behind-the-scenes view and to directly interact in person with our engineers. We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona."
+title: Hacktoberfest with Percona - We Want You! - September 2022
+description: This new meetup is your chance to get a behind-the-scenes view and to
+  directly interact in person with our engineers. We’ll discuss development practices,
+  tools, projects, frameworks, and many more engineering-focused topics that we are
+  working on at Percona.
 images:
-  - events/streams-monthly-dev/Developer-Meetup-Kai.jpg
-date: "2022-09-26"
+- events/streams-monthly-dev/Developer-Meetup-Kai.jpg
+date: '2022-09-26'
 draft: false
 speakers:
-  - kai_wagner
-tags: ['Postgres', 'Hacktoberfest', 'PMM', 'MySQL', 'Kubernetes', 'Stream']
+- kai_wagner
+tags: ["Hacktoberfest", "Kubernetes", "MySQL", "PMM", "Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["Cloud Native", "MySQL", "PostgreSQL"]
+events_category: ["Speaking","Community"]
 ---
-
 October is close, and it is time for Hacktoberfest! Join our stream to talk online about this fantastic challenge at **2:30 UTC on Wednesday, September 28th**. And yes, you can be a part of the conversation with experts and jump into the stream to address the audience! 
 
 If you love open source as much as we do, Hacktoberfest is created for you. It is a unique opportunity to be a part of a great open source community. And you get not only a memorable experience but also some fantastic prizes! You can even have a tree planted in your name, isn’t that amazing?
@@ -33,7 +38,3 @@ The aim of Hacktoberfest is to provide support to open source projects and teams
 **WATCH THE RECORDING**
 
 {{% youtube youtube_id="1R4dhON3TPs" %}}{{% /youtube %}}
-
-
- 
-

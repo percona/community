@@ -1,14 +1,19 @@
 ---
-title: "Setting Up Backups and Scheduling Regular MySQL Backups - Percona Community MySQL Live Stream & Chat - June 10th"
-description: "Follow the expert lead to set up your backups and Scheduling Regular MySQL Backups in this Percona Community Live Stream of Friday, June 10th"
+title: Setting Up Backups and Scheduling Regular MySQL Backups - Percona Community
+  MySQL Live Stream & Chat - June 10th
+description: Follow the expert lead to set up your backups and Scheduling Regular
+  MySQL Backups in this Percona Community Live Stream of Friday, June 10th
 images:
-  - events/streams-mysql/Stream-MySQL-4-2022-06-10.jpg
+- events/streams-mysql/Stream-MySQL-4-2022-06-10.jpg
 draft: false
-date: "2022-06-10"
+date: '2022-06-10'
 speakers:
-  - marcos_albe
-  - matt_yonkovit
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- matt_yonkovit
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community MySQL Live Stream June 10th](events/streams-mysql/Stream-MySQL-4-2022-06-10.jpg)
 
@@ -130,7 +135,3 @@ All right. Never be too paranoid about your the safety of your data. Well, and t
 
 **Marcos Albe:**  
 Have a good day everybody. Thanks for joining us, bye.
-
-
-
-

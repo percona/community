@@ -1,15 +1,18 @@
 ---
-title: "FTD Data 2022"
-description: "A big part of the Percona Brazilian team gathered together in Florianópolis to participate in a special edition of the Floripa Tech Day (FTD), focused on DATA."
+title: FTD Data 2022
+description: A big part of the Percona Brazilian team gathered together in Florianópolis
+  to participate in a special edition of the Floripa Tech Day (FTD), focused on DATA.
 images:
-  - events/ftd-data-2022/6.png
+- events/ftd-data-2022/6.png
 layout: single
-date: "2022-10-01"
-tags: ['databases', 'sponsorship', 'event']
+date: '2022-10-01'
 speakers:
-  - marcelo_altmann
-  - charly_batista
-  - vinicius_grippa
+- marcelo_altmann
+- charly_batista
+- vinicius_grippa
+tags: ["databases", "event", "sponsorship"]
+events_year: ["2022"]
+events_category: ["Speaking", "Sponsorship"]
 ---
 A big part of the Percona Brazilian team gathered together in Florianópolis to participate in a special edition of the [Floripa Tech Day (FTD)](https://www.floripatechday.com.br/), focused on DATA. The agenda included talks on various technologies: MongoDB, MS-SQL Server, MySQL, Oracle, and PostgreSQL.
 

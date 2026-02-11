@@ -1,17 +1,20 @@
 ---
-title: "Cross-Cloud Migrations With Databases on Kubernetes"
-description: "Learn how Kubernetes and Percona Operators can help you to avoid vendor lock-in"
+title: Cross-Cloud Migrations With Databases on Kubernetes
+description: Learn how Kubernetes and Percona Operators can help you to avoid vendor
+  lock-in
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Sergey-Pronin.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Sergey-Pronin.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - sergey_pronin
-tags: ['Kubernetes', 'Database', 'Percona']
+- sergey_pronin
+tags: ["Database", "Kubernetes", "Percona"]
+events_year: ["2022"]
+events_tag: ["Cloud Native"]
+events_category: ["Speaking"]
 ---
-
 ![Cross-Cloud Migrations With Databases on Kubernetes](events/percona-community-live/cards/Community-Live-Day-3-Sergey-Pronin.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

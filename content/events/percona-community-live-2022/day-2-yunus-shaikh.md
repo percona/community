@@ -1,15 +1,19 @@
 ---
-title: "Optimization Techniques in MySQL"
-description: "Optimization of mysql with indexing, server tuning and OS tuning to make performance better"
+title: Optimization Techniques in MySQL
+description: Optimization of mysql with indexing, server tuning and OS tuning to make
+  performance better
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-2-Yunus-Shaikh.jpg
-PublishedDate: "2022-06-22"
+- events/percona-community-live/cards/Community-Live-Day-2-Yunus-Shaikh.jpg
+PublishedDate: '2022-06-22'
 draft: false
-day: "June 22"
-date: "2022-06-22"
+day: June 22
+date: '2022-06-22'
 speakers:
-  - yunus_shaikh
-tags: ['MySQL', 'Stream']
+- yunus_shaikh
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Optimization Techniques in MySQL](events/percona-community-live/cards/Community-Live-Day-2-Yunus-Shaikh.jpg)
 
@@ -23,4 +27,3 @@ Optimization of mysql with indexing, server tuning and OS tuning to make perform
 {{% youtube youtube_id="oFTFch9_wSM" %}}{{% /youtube %}}
 
 ## Transcript
-

@@ -1,18 +1,20 @@
 ---
-title: "Postgres Conference 2024"
-description: "In April 2024, the Percona Team journeyed to San Jose for the Postgres Conference in San Jose, CA, taking place from April 17th to 19th. "
+title: Postgres Conference 2024
+description: 'In April 2024, the Percona Team journeyed to San Jose for the Postgres
+  Conference in San Jose, CA, taking place from April 17th to 19th. '
 images:
-  - events/pgsv-2024/1.jpg
+- events/pgsv-2024/1.jpg
 layout: single
-date: "2024-04-19"
-tags: ['sponsorship', 'opensource', 'event']
+date: '2024-04-19'
 speakers:
-  - peter_zaitsev
-  - charly_batista
-  - dave_stokes
-  - robert_bernier
+- peter_zaitsev
+- charly_batista
+- dave_stokes
+- robert_bernier
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2024"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 In April 2024, the Percona Team journeyed to San Jose for the [Postgres Conference](https://postgresconf.org/conferences/2024) in San Jose, CA, taking place from April 17th to 19th. 
 
 ![PGSV 2024](/events/pgsv-2024/9.jpg)

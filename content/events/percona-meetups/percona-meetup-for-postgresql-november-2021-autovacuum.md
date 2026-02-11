@@ -1,16 +1,19 @@
 ---
-title: "Percona MeetUp for PostgreSQL November 2021 - Autovacuum"
-description: "Highlight and discuss the autovacuum in PostgreSQL: How to stop worrying about it and even love it!"
+title: Percona MeetUp for PostgreSQL November 2021 - Autovacuum
+description: 'Highlight and discuss the autovacuum in PostgreSQL: How to stop worrying
+  about it and even love it!'
 images:
-  - events/percona-meetup/postgres-november-cover-1920-2.jpg
-date: "2021-11-17"
+- events/percona-meetup/postgres-november-cover-1920-2.jpg
+date: '2021-11-17'
 draft: false
 speakers:
-  - sergey_kuzmichev
-  - matt_yonkovit
-tags: ['PostgreSQL', 'Meetup']
+- sergey_kuzmichev
+- matt_yonkovit
+tags: ["Meetup", "PostgreSQL"]
+events_year: ["2021"]
+events_tag: ["Community", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Listen to the full recording of The MeetUp for PostgreSQL of November 17th. We have talked about autovacuum in PostgreSQL with Percona Senior Support Engineer Sergey Kuzmichev. Matt Yonkovit, the HOSS at Percona, asked Sergey to resolve a database issue live.
 
 ## Video
@@ -346,5 +349,3 @@ The MeetUp for PostgreSQL is recommended for everyone who is :
 Subscribe to our channels to get informed of all upcoming MeetUps.
 
 Invite your friends to this MeetUp by sharing this page.
-
-

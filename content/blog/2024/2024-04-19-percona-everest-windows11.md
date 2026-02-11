@@ -27,7 +27,7 @@ Let’s start it!
 
 We will use Kubectl to run commands on our Kubernetes clusters. There are many ways to use Kubectl on Windows.
 
-I will use WSL (Windows Subsystem for Linux) to use the Linux environment directly on Windows. It is beneficial because “kubectl” and other Kuberentes tools often have better support.
+I will use WSL (Windows Subsystem for Linux) to use the Linux environment directly on Windows. It is beneficial because “kubectl” and other Kubernetes tools often have better support.
 
 In Windows 11, open PowerShell as Administrator and run:
 

@@ -1,28 +1,31 @@
 ---
-title: "Percona Community Live June 21 - Day 1"
-description: "Participate in the first day of the Percona Community Live stream on June 21st! Learn about VictoriaMetrics, flexible Indexing with Postgres, PostgreSQL backups, database resiliency, and lots of other stuff."
+title: Percona Community Live June 21 - Day 1
+description: Participate in the first day of the Percona Community Live stream on
+  June 21st! Learn about VictoriaMetrics, flexible Indexing with Postgres, PostgreSQL
+  backups, database resiliency, and lots of other stuff.
 images:
-  - events/percona-community-live/days/Day-1.jpg
-layout: landingDay
-csv: "assets/csv/Percona-Community-Live-Talks.csv"
-csv_filter: "June 21"
-date: "2022-06-21"
-tags: ['opensource']
+- events/percona-community-live/days/Day-1.jpg
+layout: landing-day
+json: /json/talks.json
+json_filter: "June 21"
+date: '2022-06-21'
 speakers:
-  - bruce_momjian
-  - anton_bystrov
-  - farokh_shahabi
-  - wayne
-  - robert_reeves
-  - matt_yonkovit
-  - lenz_grimmer
-  - barrett_chambers
-  - yang_keao
-  - charly_batista
-  - ravikumar_buragapu
+- bruce_momjian
+- anton_bystrov
+- farokh_shahabi
+- wayne
+- robert_reeves
+- matt_yonkovit
+- lenz_grimmer
+- barrett_chambers
+- yang_keao
+- charly_batista
+- ravikumar_buragapu
 weight: 1
+tags: ["opensource"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 You are invited to participate in the first day of the Percona Community Live stream! Learn about VictoriaMetrics, flexible Indexing with Postgres, PostgreSQL backups, database resiliency, and many other things on June 21st. Join us on June 22nd and June 23d for more amazing content! 
 
 ## Watch Day 1 (June 21st) Here

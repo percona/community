@@ -36,7 +36,6 @@ blog_tags:
 - Events
 - JSON
 - Kubeconeu
-- Kuberentes
 - Kubernetes
 - Meetup
 - MongoDB
@@ -87,6 +86,7 @@ talks_tags:
 - Containers
 - Databases
 - Docker
+- Everest
 - Kubernetes
 - Monitoring
 - Open Source
@@ -96,7 +96,7 @@ talks_tags:
 - video
 posts_count: 31
 events_count: 7
-talks_count: 12
+talks_count: 17
 contributor_type:
 - author
 - speaker

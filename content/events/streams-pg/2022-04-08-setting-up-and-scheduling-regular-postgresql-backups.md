@@ -1,14 +1,19 @@
 ---
-title: "Setting Up and Scheduling Regular PostgreSQL Backups - Percona Community PostgreSQL Live Stream - April, 8th"
-description: "Learn more about backups setting with experienced Percona experts to ensure that your data is secure and safe"
+title: Setting Up and Scheduling Regular PostgreSQL Backups - Percona Community PostgreSQL
+  Live Stream - April, 8th
+description: Learn more about backups setting with experienced Percona experts to
+  ensure that your data is secure and safe
 images:
-  - events/streams-pg/pg-stream-week-3-april8.jpg
+- events/streams-pg/pg-stream-week-3-april8.jpg
 draft: false
-date: "2022-04-08"
+date: '2022-04-08'
 speakers:
-  - charly_batista
-  - matt_yonkovit
-tags: ['Postgres', 'Stream']
+- charly_batista
+- matt_yonkovit
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking", "Sponsorship"]
 ---
 Learn about the best setting to protect and restore your data with Matt and Charly. They are talking about database backup settings, frequency, and different types of backups. Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups
 

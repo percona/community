@@ -1,18 +1,23 @@
 ---
-title: " MeetUp PostgreSQL - The ins and outs of PostgreSQL Configurations and Tuning - January 27th, 2022 at 10:00 am EST"
-description: "Watch the recording of the live stream Meetup for Postgres of last Thursday, January 27th, 2022 with Charly Batista and Matt Yonkovit for the optimal settings to tune a new fresh database"
+title: ' MeetUp PostgreSQL - The ins and outs of PostgreSQL Configurations and Tuning
+  - January 27th, 2022 at 10:00 am EST'
+description: Watch the recording of the live stream Meetup for Postgres of last Thursday,
+  January 27th, 2022 with Charly Batista and Matt Yonkovit for the optimal settings
+  to tune a new fresh database
 images:
-  - events/percona-meetup/2022.01.27.postgres.jpg
-date: "2022-01-27"
+- events/percona-meetup/2022.01.27.postgres.jpg
+date: '2022-01-27'
 draft: false
 aliases:
-    - "/events/percona-meetups/percona-meetup-for-postgresql-jan-27th-2022/" 
+- /events/percona-meetups/percona-meetup-for-postgresql-jan-27th-2022/
 speakers:
-  - charly_batista
-  - matt_yonkovit
-tags: ['PostgreSQL', 'Meetup']
+- charly_batista
+- matt_yonkovit
+tags: ["Meetup", "PostgreSQL"]
+events_year: ["2022"]
+events_tag: ["Community", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 The Percona Commmunity meetup for PostgreSQL was live on last Thursday, January 27th, 2022 with Charly Batista and Matt Yonkovit. They have talked about the optimal settings to tune a new fresh database. Learn in this recording the different parameters that you should check.
 
 ## Video

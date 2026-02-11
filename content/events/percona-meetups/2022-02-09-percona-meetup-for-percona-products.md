@@ -1,18 +1,22 @@
 ---
-title: " Comunity MeetUp - Installation of the main part of Percona products - February 9th, 2022 at 10:00 am EST"
-description: "Learn different installation methods for getting started with Percona distributions and tooling in this Community MeetUp with Evgeniy Patlan. Follow us!"
+title: ' Comunity MeetUp - Installation of the main part of Percona products - February
+  9th, 2022 at 10:00 am EST'
+description: Learn different installation methods for getting started with Percona
+  distributions and tooling in this Community MeetUp with Evgeniy Patlan. Follow us!
 images:
-  - events/percona-meetup/2022-02-09-meetup-products.jpg
-date: "2022-02-09"
+- events/percona-meetup/2022-02-09-meetup-products.jpg
+date: '2022-02-09'
 draft: false
 aliases:
-    - "/events/percona-meetups/percona-meetup-for-percona-products-february-9th-2022/" 
+- /events/percona-meetups/percona-meetup-for-percona-products-february-9th-2022/
 speakers:
-  - evgeniy_patlan
-  - matt_yonkovit
-tags: ['PMM', 'Meetup', 'Percona products', 'MySQL', 'PostgreSQL', 'MongoDB' ]
+- evgeniy_patlan
+- matt_yonkovit
+tags: ["Meetup", "MongoDB", "MySQL", "PMM", "Percona products", "PostgreSQL"]
+events_year: ["2022"]
+events_tag: ["Community", "MongoDB", "MySQL", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 This video and its transcript are from the Percona Commmunity Meetup that we had with Evgeniy Patlan last February 9th, 2022. We have talked how to install Percona's various components, the different software that we have, specifically looking at our server software in Postgres, MySQL, and MongoDB. We tackle how to install from a repository and what are the different install options that we have?
 
 ## Video
