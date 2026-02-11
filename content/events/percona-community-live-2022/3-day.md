@@ -1,24 +1,27 @@
 ---
-title: "Percona Community Live June 23 - Day 3"
-description: "Participate in the third day of the Percona Community Live stream on June 23d! Learn about PMM on Kubernetes, cross-cloud migrations with databases, Nebula Graph, PostgreSQL query performance, etc."
+title: Percona Community Live June 23 - Day 3
+description: Participate in the third day of the Percona Community Live stream on
+  June 23d! Learn about PMM on Kubernetes, cross-cloud migrations with databases,
+  Nebula Graph, PostgreSQL query performance, etc.
 images:
-  - events/percona-community-live/days/Day-3.jpg
-layout: landingDay
-csv: "assets/csv/Percona-Community-Live-Talks.csv"
-csv_filter: "June 23"
-date: "2022-06-23"
-tags: ['opensource', 'Percona Community Live']
+- events/percona-community-live/days/Day-3.jpg
+layout: landing-day
+json: /json/talks.json
+json_filter: "June 23"
+date: '2022-06-23'
 speakers:
-  - wey_gu
-  - hamid_akhtar
-  - sergey_pronin
-  - denys_kondratenko
-  - naveed_shaikh
-  - colin_charles
-  - maksim_gramin
-  - rahul_malik
+- wey_gu
+- hamid_akhtar
+- sergey_pronin
+- denys_kondratenko
+- naveed_shaikh
+- colin_charles
+- maksim_gramin
+- rahul_malik
+tags: ["Percona Community Live", "opensource"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 We invite you to come to the third day of the Percona Community Live stream! Learn about PMM on Kubernetes, cross-cloud migrations with databases on Kubernetes, Nebula Graph, PostgreSQL query performance, etc., on June 23d. Join us on June 21st and June 23d for more awesome content!
 
 Watch Day 3 (June 23d) Here
@@ -31,5 +34,3 @@ ask your questions in chat. Follow the links now and subscribe to notifications 
 * [Twitch PerconaCommunity](https://www.twitch.tv/perconacommunity)
 
 Full information about the event can be found here: [Percona Community Live](/events/percona-community-live-2022/)!
-
-

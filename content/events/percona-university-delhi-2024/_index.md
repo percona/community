@@ -1,13 +1,14 @@
 ---
-title: "Percona University Delhi 2024"
-description: "Percona organised a Percona University Delhi meetup in India on June 21st, 2024. It was a free database event about MySQL, PostgreSQL, MariaDB, and MongoDB. "
+title: Percona University Delhi 2024
+description: 'Percona organised a Percona University Delhi meetup in India on June
+  21st, 2024. It was a free database event about MySQL, PostgreSQL, MariaDB, and MongoDB. '
 images:
-  - events/percona-university-delhi-2024/1.jpg
+- events/percona-university-delhi-2024/1.jpg
 layout: single
-date: "2024-06-21"
-tags: ['Event', 'sponsorship', 'opensource']
+date: '2024-06-21'
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2024"]
 ---
-
 Percona Universities are was designed to help attendees dive deep into the latest advancements in database technology. On June 21st, 2024, database enthusiasts gathered in Gurgaon to talk all things databases. 
 
 ![Percona University Delhi](/events/percona-university-delhi-2024/1.jpg)
@@ -74,9 +75,3 @@ It was a productive and inspiring day for all who attended, reinforcing the impo
 ![Percona University Delhi](/events/percona-university-delhi-2024/9.jpg)
 
 We're already looking forward to the next Percona University event!
-
-
-
-
-
-

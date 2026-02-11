@@ -1,21 +1,23 @@
 ---
-title: "Percona University Athens 2023"
-description: "Percona organised a Percona University Athens meetup in Greece at Novemver 7th, 2023."
+title: Percona University Athens 2023
+description: Percona organised a Percona University Athens meetup in Greece at Novemver
+  7th, 2023.
 images:
-  - events/percona-university-athens-2023/8.jpg
+- events/percona-university-athens-2023/8.jpg
 layout: single
-date: "2023-10-16"
-tags: ['Event', 'sponsorship', 'opensource']
+date: '2023-10-16'
 speakers:
-  - peter_zaitsev
-  - peter_farkas
-  - mattias_jonsson
-  - achilleas_mantzios
-  - takis_stathopoulos
-  - ananias_tsalouchidis
-  - costa_tsaousis
+- peter_zaitsev
+- peter_farkas
+- mattias_jonsson
+- achilleas_mantzios
+- takis_stathopoulos
+- ananias_tsalouchidis
+- costa_tsaousis
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2023"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Percona University Athens took place on November 7th. The event in Athens was organised with the help and sponsorship of [FerretDB](https://www.ferretdb.com/).
 
 ![Percona University Athens](/events/percona-university-athens-2023/1.jpg)

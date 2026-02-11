@@ -1,16 +1,21 @@
 ---
-title: " MeetUp MySQL - Troubleshooting Database Outages, Slowdowns, and Security Issues - Jan 14th, 2022 at 12:00 pm EST"
-description: "Full recording and transcript of the Percona MeetUp of Friday January 14th, 2022 at 12:00 pm EST with Matt Yonkovit and Marcos Albe"
+title: ' MeetUp MySQL - Troubleshooting Database Outages, Slowdowns, and Security
+  Issues - Jan 14th, 2022 at 12:00 pm EST'
+description: Full recording and transcript of the Percona MeetUp of Friday January
+  14th, 2022 at 12:00 pm EST with Matt Yonkovit and Marcos Albe
 images:
-  - events/percona-meetup/2022.01.14-MySQL.jpg
-date: "2022-01-14"
+- events/percona-meetup/2022.01.14-MySQL.jpg
+date: '2022-01-14'
 draft: false
 aliases:
-    - "/events/percona-meetups/percona-meetup-for-mysql-january-14th-2022/" 
+- /events/percona-meetups/percona-meetup-for-mysql-january-14th-2022/
 speakers:
-  - marcos_albe
-  - matt_yonkovit
-tags: ['MySQL', 'Meetup']
+- marcos_albe
+- matt_yonkovit
+tags: ["Meetup", "MySQL"]
+events_year: ["2022"]
+events_tag: ["Community", "MySQL"]
+events_category: ["Speaking"]
 ---
 If you missed the meetup of Friday January 14th, 2022 at 12:00 pm EST with Matt Yonkovit and Marcos Albe, here is the recording as they talk about why complexity is driving outages, slowdowns, and security issues.  Matt play stump the expert and see if Marcos can improve my MySQL workload.
 
@@ -692,5 +697,3 @@ Oh, yeah, you have to be careful with that syntax. Man. You have to be careful. 
 
 
 ![Percona MeetUp for MySQL January 2022](events/percona-meetup/2022.01.14-MySQL.jpg)
-
-

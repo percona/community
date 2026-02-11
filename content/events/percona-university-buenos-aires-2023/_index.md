@@ -1,21 +1,23 @@
 ---
-title: "Percona University Buenos Aires 2023"
-description: "Percona organised a Percona University Buenos Aires meetup in Argentina at October 20th, 2023."
+title: Percona University Buenos Aires 2023
+description: Percona organised a Percona University Buenos Aires meetup in Argentina
+  at October 20th, 2023.
 images:
-  - events/percona-university-buenos-aires-2023/7.jpg
+- events/percona-university-buenos-aires-2023/7.jpg
 layout: single
-date: "2023-10-13"
-tags: ['Event', 'sponsorship', 'opensource']
+date: '2023-10-13'
 speakers:
-  - peter_zaitsev
-  - david_ducos
-  - fernando_mattera
-  - francisco_bordenave
-  - ivan_groenwold
-  - sergio_ostapowicz
-  - diego_feito
+- peter_zaitsev
+- david_ducos
+- fernando_mattera
+- francisco_bordenave
+- ivan_groenwold
+- sergio_ostapowicz
+- diego_feito
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2023"]
+events_category: ["Speaking"]
 ---
-
 Percona University came to Buenos Aires on October 20th. Percona University is a series of database meetups that we organize worldwide in different locations. 
 
 ![Percona University Buenos Aires](/events/percona-university-buenos-aires-2023/1.jpg)

@@ -9,9 +9,35 @@
 
     {{- .Content -}}
     
-    {{- $pages := .Pages -}}
-    {{- $paginator := .Paginate $pages }}
+    <div class="contentblock branded">
+        <div class="grid grid--2">
+            {{- $pages := .Pages -}}
+            {{- $paginator := .Paginate $pages }}
+            {{- range $paginator.Pages -}} 
+                <div class="grid__item">
+                    {{- if isset .Params "images" -}}
+                        {{- partial "talkpreview.html" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
+                    {{- else -}}
+                        {{- partial "talkpreview.html" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
+                    {{- end -}}
+                </div>
+            {{- end -}}
+        </div>
+        {{- if gt $paginator.TotalPages 1 -}}
+        <div class="paginator">
+            {{- if $paginator.HasPrev -}}
+                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
+            {{- end -}}
+            {{- range $paginator.Pagers -}}
+                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
+            {{- end -}}
+            {{- if $paginator.HasNext -}}
+                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
+            {{- end -}}
+        </div>
+        {{- end -}}
 
-    {{ partial "events-list.html" (dict "paginator" $paginator "page" . "searchPages" $pages) }}
+        {{ partial "sharing.html" . }}
+    </div>
 
 {{ end }}

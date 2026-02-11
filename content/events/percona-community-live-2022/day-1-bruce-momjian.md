@@ -1,17 +1,20 @@
 ---
-title: "Flexible Indexing With Postgres"
-description: "This talk explores the various indexing features of Postgres and when to use them."
+title: Flexible Indexing With Postgres
+description: This talk explores the various indexing features of Postgres and when
+  to use them.
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Bruce-Momjian-EBD.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Bruce-Momjian-EBD.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - bruce_momjian
-tags: ['Postgres',' PostgreSQL', 'Percona Community Live']
+- bruce_momjian
+tags: ["PostgreSQL", "Percona Community Live", "Postgres"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![Flexible Indexing With Postgres](events/percona-community-live/cards/Community-Live-Day-1-Bruce-Momjian-EBD.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
@@ -23,4 +26,3 @@ When considering database indexing, many people are confused by the many Postgre
 {{% youtube youtube_id="QQ1eyBcphEs" %}}{{% /youtube %}}
 
 ## Transcript
-

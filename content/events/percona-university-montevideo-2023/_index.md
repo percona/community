@@ -1,20 +1,22 @@
 ---
-title: "Percona University Montevideo 2023"
-description: "Percona organised a Percona University Montevideo meetup in Uruguay at October 24th, 2023."
+title: Percona University Montevideo 2023
+description: Percona organised a Percona University Montevideo meetup in Uruguay at
+  October 24th, 2023.
 images:
-  - events/percona-university-montevideo-2023/2.jpg
+- events/percona-university-montevideo-2023/2.jpg
 layout: single
-date: "2023-10-13"
-tags: ['Event', 'sponsorship', 'opensource']
+date: '2023-10-13'
 speakers:
-  - peter_zaitsev
-  - marcos_albe
-  - carlos_tutte
-  - agustin_gallego
-  - ignacio_nin
-  - javier_borkenztain
+- peter_zaitsev
+- marcos_albe
+- carlos_tutte
+- agustin_gallego
+- ignacio_nin
+- javier_borkenztain
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2023"]
+events_category: ["Speaking"]
 ---
-
 We bring international speakers and invite local ones to help you to build your knowledge and get up to speed on hot database topics.
 
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/1.jpg)
@@ -83,5 +85,3 @@ Percona Team spent a wonderful time together and had so much fun!
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/14.jpg)
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/15.jpg)
 ![Percona University Montevideo](/events/percona-university-montevideo-2023/16.jpg)
-
-

@@ -1,15 +1,19 @@
 ---
-title: "Cloud Native Data Management Day"
-description: "Running MongoDB on Kubernetes with GitOps can significantly simplify the deployment process. Percona Technical Product Manager Sergey Pronin demonstrates a quick demo and shows the best practices in the world of open source."
+title: Cloud Native Data Management Day
+description: Running MongoDB on Kubernetes with GitOps can significantly simplify
+  the deployment process. Percona Technical Product Manager Sergey Pronin demonstrates
+  a quick demo and shows the best practices in the world of open source.
 images:
-  - events/cloud-native-data-management-day/cover.jpg
+- events/cloud-native-data-management-day/cover.jpg
 speakers:
-  - sergey_pronin
+- sergey_pronin
 layout: single
-date: "2021-08-27"
-tags: ['Kubernetes', 'Event']
+date: '2021-08-27'
+tags: ["Event", "Kubernetes"]
+events_year: ["2021"]
+events_tag: ["Cloud Native"]
+events_category: ["Speaking"]
 ---
-
 ## MongoDB on Kubernetes with GitOps by Sergey Pronin
 
 GitOps quickly found its way into DevOps and developer’s hearts as it greatly simplifies the application delivery pipeline. GitOps can be also used to deploy and more importantly - manage - MongoDB on Kubernetes. In this video, Sergey Pronin explains how MongoDB users can benefit from the collaboration of Kubernetes and GitOps and shows a quick demo of the example.

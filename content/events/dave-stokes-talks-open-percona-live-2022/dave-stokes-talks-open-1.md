@@ -1,19 +1,23 @@
 ---
-title: "Dave Stokes talks open - Stoking the flames of open source - Episode 1 - Percona Live 2022"
-description: "Listen to the interviews from PerconaLive 2022. David Stokes invited amazing guests to talk to him about open source technologies."
+title: Dave Stokes talks open - Stoking the flames of open source - Episode 1 - Percona
+  Live 2022
+description: Listen to the interviews from PerconaLive 2022. David Stokes invited
+  amazing guests to talk to him about open source technologies.
 images:
-  - events/dave-stokes-talks-open-percona-live-2022/DSTO-1.jpg
+- events/dave-stokes-talks-open-percona-live-2022/DSTO-1.jpg
 draft: false
-date: "2022-05-30"
+date: '2022-05-30'
 speakers:
-  - dave_stokes
-  - alkin_tezuysal
-  - matt_lord
-  - ovais_tariq
-  - jakob_lorberblatt
-tags: ['PerconaLive2022', 'Podcast']
+- dave_stokes
+- alkin_tezuysal
+- matt_lord
+- ovais_tariq
+- jakob_lorberblatt
+tags: ["PerconaLive2022", "Podcast"]
+events_year: ["2022"]
+events_tag: ["Community"]
+events_category: ["Speaking","Community"]
 ---
-
 Listen to the interviews from PerconaLive 2022. David Stokes invited amazing guests to talk to him about open source technologies.
 
 ## Video

@@ -1,17 +1,20 @@
 ---
-title: "PostgreSQL and Artificial intelligence"
-description: "This presentation explains how to do machine learning inside the Postgres database"
+title: PostgreSQL and Artificial intelligence
+description: This presentation explains how to do machine learning inside the Postgres
+  database
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-2-Ibrar-Ahmed.jpg
-PublishedDate: "2022-06-22"
+- events/percona-community-live/cards/Community-Live-Day-2-Ibrar-Ahmed.jpg
+PublishedDate: '2022-06-22'
 draft: false
-day: "June 22"
-date: "2022-06-22"
+day: June 22
+date: '2022-06-22'
 speakers:
-  - ibrar_ahmed
-tags: ['PostgreSQL', 'Stream']
+- ibrar_ahmed
+tags: ["PostgreSQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![PostgreSQL and Artificial intelligence](events/percona-community-live/cards/Community-Live-Day-2-Ibrar-Ahmed.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
@@ -25,4 +28,3 @@ Artificial intelligence, machine learning, and deep learning are intertwined cap
 {{% youtube youtube_id="u4X-gJ0lUgA" %}}{{% /youtube %}}
 
 ## Transcript
-

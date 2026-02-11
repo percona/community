@@ -1,16 +1,21 @@
 ---
-title: "PostgreSQL Designing a Schema - Percona Community PostgreSQL Live Stream & Chat - Sept, 8th"
-description: "Join us at Percona Community Live Stream, and we will talk about PostgreSQL Designing a Schema with database experts on Thursday, September 8th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
+title: PostgreSQL Designing a Schema - Percona Community PostgreSQL Live Stream &
+  Chat - Sept, 8th
+description: Join us at Percona Community Live Stream, and we will talk about PostgreSQL
+  Designing a Schema with database experts on Thursday, September 8th at 12:00 PM
+  EDT / 06:00 PM CEST / 09:30 PM IST
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Cover-Week-13-sept-8th.jpg
-date: "2022-09-08"
+- events/streams-pg/PG-Stream-Cover-Week-13-sept-8th.jpg
+date: '2022-09-08'
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![Percona Community PostgreSQL Live Stream & Chat - Sept 8th](events/streams-pg/PG-Stream-Cover-Week-13-sept-8th.jpg)
 
 Percona Community Live Stream for PostgreSQL focused on Designing a Schema. This is a part of our bi-weekly meetup to develop open-source database skills. 
@@ -54,4 +59,4 @@ It's ancient history. Well, I think that's all the questions we have. I don't kn
 Well, and the other question, guys, no more questions. Thanks a lot. Okay, well, it was great to be here with you again, and help. That was a job. Let me use it for
 
 **Dave Stokes:**  
-Well, folks, have a good one, and we'll see you next time. Have a great day! 
+Well, folks, have a good one, and we'll see you next time. Have a great day!

@@ -1,17 +1,20 @@
 ---
-title: "Chernihiv.IT Conf: Tech Front"
-description: "Percona sponsored an amazing event organized by Chernihiv.IT Cluster - Chernihiv.IT Conf: Tech Front. It was an online event organized in support to Chernihiv and IT industry in this city."
+title: 'Chernihiv.IT Conf: Tech Front'
+description: 'Percona sponsored an amazing event organized by Chernihiv.IT Cluster
+  - Chernihiv.IT Conf: Tech Front. It was an online event organized in support to
+  Chernihiv and IT industry in this city.'
 images:
-  - events/chernihiv-it-conf-2022/4.png
+- events/chernihiv-it-conf-2022/4.png
 layout: single
-date: "2022-10-01"
-tags: ['opensource', 'devops', 'Event']
+date: '2022-10-01'
 speakers:
-  - evgeniy_patlan
-  - peter_zaitsev
-  - lenz_grimmer
+- evgeniy_patlan
+- peter_zaitsev
+- lenz_grimmer
+tags: ["Event", "devops", "opensource"]
+events_year: ["2022"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Percona sponsored an amazing event organized by Chernihiv.IT Cluster - Chernihiv.IT Conf: Tech Front. It was an online event organized in support to Chernihiv and IT industry in this city. It was an online event and it attackted a lot of attendees from Chernihiv and all over Ukraine. 
 
 Evgeniy Patlan, Manager in Build & Release Engineering, was in the role of the host greeting speakers, communicating with them and asking questions. 
@@ -36,6 +39,4 @@ You can watch the full recording of this fantastic online event on YouTube:
 
 {{% youtube youtube_id="4MUWz4cGKHg" %}}{{% /youtube %}}
 
-Subsribe to our [Twitter](https://twitter.com/PerconaBytes) and stay tuned to the new events! 
-
-
+Subsribe to our [Twitter](https://twitter.com/PerconaBytes) and stay tuned to the new events!

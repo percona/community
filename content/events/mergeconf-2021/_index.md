@@ -1,16 +1,19 @@
 ---
-title: "Merge Conf 2021"
-description: "Percona Team participated in Merge Conf 2021 with the talks about open source database technologies discussing all the benefits that truly open source software has."
+title: Merge Conf 2021
+description: Percona Team participated in Merge Conf 2021 with the talks about open
+  source database technologies discussing all the benefits that truly open source
+  software has.
 images:
-  - events/mergeconf-2021/mergeconf-2021.jpg
+- events/mergeconf-2021/mergeconf-2021.jpg
 layout: single
-date: "2021-11-13"
-tags: ['opensource', 'russia', 'Event']
+date: '2021-11-13'
 speakers:
-  - peter_zaitsev
-  - maria_azizova
+- peter_zaitsev
+- maria_azizova
+tags: ["Event", "opensource", "russia"]
+events_year: ["2021"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Percona Team members visited [Merge Conf 2021](https://mergeconf.ru/) in Innopolis, Russia, on November 13-14. 
 
 Percona speakers gave 2 talks on the Open Source track.
@@ -29,4 +32,4 @@ The conference took place at the [Innopolis University](https://innopolis.univer
 
 Many Russian IT companies had booths on the conference with swag giveaways and consultants who familiarized students and participants with the work of their companies. 
 
-Speakers and company representatives also had a chance to visit Techoparks with a guided tour and find out more about the history of the town and the life of its citizens. 
+Speakers and company representatives also had a chance to visit Techoparks with a guided tour and find out more about the history of the town and the life of its citizens.

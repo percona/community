@@ -1,16 +1,22 @@
 ---
-title: "Finding Poorly Designed Schema's and How to Fix Them - Percona Community MySQL Live Stream & Chat - Sept 30th"
-description: "Join us at Percona Community Live Stream, and we will talk about Finding Poorly Designed Schema's and How to Fix Them with database experts on Friday, September 30th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST"
+title: Finding Poorly Designed Schema's and How to Fix Them - Percona Community MySQL
+  Live Stream & Chat - Sept 30th
+description: Join us at Percona Community Live Stream, and we will talk about Finding
+  Poorly Designed Schema's and How to Fix Them with database experts on Friday, September
+  30th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST
 images:
-  - events/streams-mysql/Stream-MySQL-10-Marcos-with-SQL.jpg
+- events/streams-mysql/Stream-MySQL-10-Marcos-with-SQL.jpg
 draft: false
-date: "2022-09-30"
+date: '2022-09-30'
 speakers:
-  - marcos_albe
-  - edith_puclla
-  - mario_garcia
-  - dave_stokes
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- edith_puclla
+- mario_garcia
+- dave_stokes
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community MySQL Live Stream Sept 30th](events/streams-mysql/Stream-MySQL-10-Marcos-with-SQL.jpg)
 
@@ -132,5 +138,3 @@ That's it, folks. Once again, thanks to Marcos, and thanks to my two colleagues,
 
 **Marcos Albe:** 
 All right. Well, it's a pleasure being with you folks. Thank you.
-
-

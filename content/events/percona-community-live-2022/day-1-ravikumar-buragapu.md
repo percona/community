@@ -1,18 +1,19 @@
 ---
-title: "Database Resiliency"
-description: "Learn more about Database Resiliency including essentials of Database High Availability, Architectures and Operational Resiliency
-"
+title: Database Resiliency
+description: 'Learn more about Database Resiliency including essentials of Database
+  High Availability, Architectures and Operational Resiliency '
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Ravikumar-Buragapu.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Ravikumar-Buragapu.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - ravikumar_buragapu
-tags: ['Percona Community Live']
+- ravikumar_buragapu
+tags: ["Percona Community Live"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![Database Resiliency](events/percona-community-live/cards/Community-Live-Day-1-Ravikumar-Buragapu.jpg)
 
 

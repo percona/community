@@ -1,13 +1,15 @@
 ---
-title: "HighLoad++ Serbia 2023"
-description: "This summer Percona Team traveled to Belgrade in Serbia to participate in 2 events - Highload++ Serbia 2023 and Percona University Belgrade. "
+title: HighLoad++ Serbia 2023
+description: 'This summer Percona Team traveled to Belgrade in Serbia to participate
+  in 2 events - Highload++ Serbia 2023 and Percona University Belgrade. '
 images:
-  - events/highload-2023/1.jpg
+- events/highload-2023/1.jpg
 layout: single
-date: "2023-07-04"
-tags: ['databases', 'sponsorship', 'event']
+date: '2023-07-04'
+tags: ["databases", "event", "sponsorship"]
+events_year: ["2023"]
+events_category: ["Sponsorship"]
 ---
-
 This summer Percona Team traveled to Belgrade in Serbia to participate in 2 events - Highload++ Serbia 2023 and Percona University Belgrade. 
 
 The journey started with team building for those who arrived early. They went to a segway tour around the city and visited Belgrade Fortress with Kalemegdan park with an amazing guide who told them a lot about Serbia history. They also ride segways in the city center to get acquainted with the main tourist attractions. Belgrade is an amazing town with unique architecture. It was conquered and ruined so many times and then rebuilt again.

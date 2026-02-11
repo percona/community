@@ -1,20 +1,24 @@
 ---
-title: "Securing Your Data Using PostgreSQL - January 12, 2022 Developer Meetup"
-description: "This meetup is your chance to get a behind-the-scenes view and to directly interact in person with our engineers. We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona."
+title: Securing Your Data Using PostgreSQL - January 12, 2022 Developer Meetup
+description: This meetup is your chance to get a behind-the-scenes view and to directly
+  interact in person with our engineers. We’ll discuss development practices, tools,
+  projects, frameworks, and many more engineering-focused topics that we are working
+  on at Percona.
 images:
-  - events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Secure-Jan.jpg
-date: "2023-01-12"
+- events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Secure-Jan.jpg
+date: '2023-01-12'
 draft: false
 speakers:
-  - kai_wagner
-  - ibrar_ahmed
-  - edith_puclla
-  - mario_garcia
-  - charly_batista
-tags: ['Stream', 'opensource','securing']
+- kai_wagner
+- ibrar_ahmed
+- edith_puclla
+- mario_garcia
+- charly_batista
 aliases: 2022-12-15-securing-data
+tags: ["Stream", "opensource", "securing"]
+events_year: ["2023"]
+events_category: ["Speaking","Community"]
 ---
-
 When we talk about database security, it encompasses different modules of different distinct areas. It is a very vast topic because it requires securing your (1) **Network**, (2) **Network Node**, (3) **Data**, (4) **Database**, (5) **Users** and (6) **Application**. 
 
 ![Percona Community Dev Monthly](events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Secure-Jan.jpg)
@@ -31,4 +35,3 @@ Download Ibrar's slides [here](https://drive.google.com/file/d/1Q_IMBYsZynK5yArw
 
 
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and get informed of all upcoming meetups.
-

@@ -1,20 +1,20 @@
 ---
-title: "Open Source Unlocked: Exploring the Journey from Redis to Valkey – October 29, 2025"
-description: "Join us in Boston to connect with AWS, Percona, and Valkey experts."
+title: 'Open Source Unlocked: Exploring the Journey from Redis to Valkey – October
+  29, 2025'
+description: Join us in Boston to connect with AWS, Percona, and Valkey experts.
 images:
-  - events/2025-aws-connected-community/intro.png
+- events/2025-aws-connected-community/intro.png
 layout: single
-date: "2025-10-06"
-EventDate: "October 29, 2025, at 08:45 - 15:30 GMT-4 (17:45 - 00:30 GMT+5)"
+date: '2025-10-06'
+EventDate: October 29, 2025, at 08:45 - 15:30 GMT-4 (17:45 - 00:30 GMT+5)
 speakers:
-  - laura_czajkowski
-  - michal_nosek
-tags: ['Valkey', 'Event', 'Percona']
-event_year: 2025
-event_tag: ['Valkey', 'Event', 'Percona']
-event_category: ["Speaking"]
+- laura_czajkowski
+- michal_nosek
+tags: ["Event", "Percona", "Valkey"]
+events_year: ["2025"]
+events_tag: ["Valkey"]
+events_category: ["Speaking"]
 ---
-
 Change is part of open source and it’s what drives progress!
 
 As the **Redis** ecosystem evolves, new opportunities are emerging for developers and organizations that value transparency, freedom, and innovation.  

@@ -1,16 +1,20 @@
 ---
-title: "Online Stream – Removing Offensive Language from Percona Toolkit - March 27th at 13:30 pm GMT"
-description: "Gain valuable knowledge on the latest changes in MySQL and how they impact Percona Toolkit."
+title: Online Stream – Removing Offensive Language from Percona Toolkit - March 27th
+  at 13:30 pm GMT
+description: Gain valuable knowledge on the latest changes in MySQL and how they impact
+  Percona Toolkit.
 images:
-  - events/streams/Live-Sveta-Edith-march-27.jpg
+- events/streams/Live-Sveta-Edith-march-27.jpg
 layout: single
-date: "2025-03-14"
-EventDate: "March 27, 2025, at 13:30 GMT / 9:30 ET"
+date: '2025-03-14'
+EventDate: March 27, 2025, at 13:30 GMT / 9:30 ET
 speakers:
-  - sveta_smirnova
-tags: ['MySQL', 'Toolkit', 'Event']
+- sveta_smirnova
+tags: ["Event", "MySQL", "Toolkit"]
+events_year: ["2025"]
+events_tag: ["MySQL"]
+events_category: ["Speaking", "Community"]
 ---
-
 Join Our Online Stream: War story. Removing Offensive Language from Percona Toolkit
 
 **Date:** March 27, 2025  
@@ -59,7 +63,3 @@ If you have any questions or need further information, feel free to reach out to
 📅 Add to Calendar  
 🔗 [Join the LinkedIn Stream](https://www.linkedin.com/events/removingoffensivelanguagefrompe7307408691371077632/theater/)
 🔗 [Join the YouTube Stream](https://www.youtube.com/live/JOEpIQL7cXM)
-
-
-
-

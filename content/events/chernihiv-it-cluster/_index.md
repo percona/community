@@ -1,13 +1,17 @@
 ---
-title: "Chernihiv.IT Cluster Sponsorship"
-description: "Percona sponsors Chernihiv.IT Cluster and supports its different activities in the city. The members of the cluster are companies of the city that work in different directions: creation of e-commerce solutions, automation of business processes, creation of websites, development of products and solutions for business."
+title: Chernihiv.IT Cluster Sponsorship
+description: 'Percona sponsors Chernihiv.IT Cluster and supports its different activities
+  in the city. The members of the cluster are companies of the city that work in different
+  directions: creation of e-commerce solutions, automation of business processes,
+  creation of websites, development of products and solutions for business.'
 images:
-  - events/chernihiv-it-cluster/it-cluster-cover.png
+- events/chernihiv-it-cluster/it-cluster-cover.png
 layout: single
-date: "2022-01-20"
-tags: ['opensource', 'devops', 'Event']
+date: '2022-01-20'
+tags: ["Event", "devops", "opensource"]
+events_year: ["2022"]
+events_category: ["Community"]
 ---
-
 Percona is thrilled to support [Chernihiv.IT Cluster](https://www.chernihiv.it/) and help to develop the local IT community in Chernihiv, Ukraine. The cluster was founded in 2017 and it unites the efforts of 11 IT companies. Percona's engineers Evgeniy Patlan, Serhii Stasiuk, Mykola Marzhan, Maxim Kondratenko, and other Perconians in the city eagerly participate in Cluster's activities, both online and in-person, and willingly share their knowledge and experience with others.
 
 **CHERNIHIV.IT DevOps Crash Course**

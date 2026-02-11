@@ -1,18 +1,20 @@
 ---
-title: "Percona MeetUp for MySQL Sept 2021"
-description: "Community MeetUp for MySQL on 8th Sept, 2021 as part of a monthly regular event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona."
+title: Percona MeetUp for MySQL Sept 2021
+description: Community MeetUp for MySQL on 8th Sept, 2021 as part of a monthly regular
+  event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona.
 images:
-  - events/percona-meetup/cover-682.jpg
-date: "2021-09-08"
+- events/percona-meetup/cover-682.jpg
+date: '2021-09-08'
 draft: false
 speakers:
-  - marcos_albe
-  - fernando_laudares_camargos
-  - matt_yonkovit
-tags: ['MySQL', 'Meetup']
+- marcos_albe
+- fernando_laudares_camargos
+- matt_yonkovit
+tags: ["Meetup", "MySQL"]
+events_year: ["2021"]
+events_tag: ["Community", "MySQL"]
+events_category: ["Speaking"]
 ---
-
-
 Watch the video record of the live-streamed Community MeetUp for MySQL we held on September 8, 2021. Matt Yonkovit, the HOSS, sat down with 2 MySQL experts, Nando Camargos and Marcos Albe, and discusses the ways you REALLY can make your database faster. They touched query optimization, indexes, the art of database design, hiding columns, and things that occupy Matt’s thoughts when he wakes up at 3 AM. 
 
 ## Video
@@ -383,5 +385,3 @@ Nando is currently Senior Support Engineer at Percona. He played different roles
 * Thinking about working with database and big data
 
 * Interested in MySQL
-
-

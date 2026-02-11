@@ -1,17 +1,22 @@
 ---
-title: "How to Benchmark Your MySQL Database - Percona Community MySQL Live Stream & Chat - Oct 14th"
-description: "Join us at Percona Community Live Stream, and we will talk about benchmarking your MySQL database with database experts on Friday, October 28th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST."
+title: How to Benchmark Your MySQL Database - Percona Community MySQL Live Stream
+  & Chat - Oct 14th
+description: Join us at Percona Community Live Stream, and we will talk about benchmarking
+  your MySQL database with database experts on Friday, October 28th at 9:00 AM EDT  /
+  03:00 PM CEST/ 06:30 PM IST.
 images:
-  - events/streams-mysql/Stream-MySQL-Marcos-Benchmark-28-10.jpg
+- events/streams-mysql/Stream-MySQL-Marcos-Benchmark-28-10.jpg
 draft: false
-date: "2022-10-10"
+date: '2022-10-10'
 speakers:
-  - marcos_albe
-  - mario_garcia
+- marcos_albe
+- mario_garcia
 aliases: 2022-10-14-how-to-benchmark-your-mysql-database
 tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
-
 ![Percona Community MySQL Live Stream Oct 28th](events/streams-mysql/Stream-MySQL-Marcos-Benchmark-28-10.jpg)
 
 Percona Community Live Stream for MySQL will focus on benchmarking a MySQL database. This is a part of our bi-weekly meetup to develop open-source database skills. Come up with your questions and get an answer straight forward to all your questions.

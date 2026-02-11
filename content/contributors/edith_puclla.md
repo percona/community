@@ -36,7 +36,6 @@ blog_tags:
 - Events
 - JSON
 - Kubeconeu
-- Kuberentes
 - Kubernetes
 - Meetup
 - MongoDB

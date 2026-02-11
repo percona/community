@@ -1,18 +1,24 @@
 ---
-title: "End of the Year Session: Query Troubleshooting - Percona Community PostgreSQL Live Stream & Chat - December 1st"
-description: "Join us at Percona Community Live Stream. We will have End of the year session: Query troubleshooting with database experts on Thursday, December 1st at 10:00 AM EST / 04:00 PM CET / 08:30 PM IST"
+title: 'End of the Year Session: Query Troubleshooting - Percona Community PostgreSQL
+  Live Stream & Chat - December 1st'
+description: 'Join us at Percona Community Live Stream. We will have End of the year
+  session: Query troubleshooting with database experts on Thursday, December 1st at
+  10:00 AM EST / 04:00 PM CET / 08:30 PM IST'
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Dave-Chino-December.jpg
+- events/streams-pg/PG-Stream-Dave-Chino-December.jpg
 speakers:
-  - charly_batista
-  - mario_garcia
-  - edith_puclla
-  - david_gonzalez
-  - jobin_augustine
-  - muhammad_usama
-tags: ['Postgres', 'Stream']
-date: "2022-12-01"
+- charly_batista
+- mario_garcia
+- edith_puclla
+- david_gonzalez
+- jobin_augustine
+- muhammad_usama
+date: '2022-12-01'
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community PostgreSQL Live Stream & Chat](events/streams-pg/PG-Stream-Dave-Chino-December.jpg)
  
@@ -224,6 +230,3 @@ Thank you so much for being here. Thank you. Bye.
 
 
 Follow us on [Twitter](https://twitter.com/PerconaBytes) and stay tuned to all upcoming meetups.
-
-
-

@@ -1,16 +1,20 @@
 ---
-title: "International Day of Computer Security 2022"
-description: "On November 30th, Percona’s Technical Evangelists Edith Puclla and Mario García participated in the International Day of Computer Security. Presented two talks in Spanish, Percona Monitoring and Management for Novices and Docker: Basic Hands-On."
+title: International Day of Computer Security 2022
+description: 'On November 30th, Percona’s Technical Evangelists Edith Puclla and Mario
+  García participated in the International Day of Computer Security. Presented two
+  talks in Spanish, Percona Monitoring and Management for Novices and Docker: Basic
+  Hands-On.'
 images:
-  - events/international-day-of-computer-security-2022/header.jpg
+- events/international-day-of-computer-security-2022/header.jpg
 layout: single
-date: "2022-11-30"
-tags: ['opensource', 'Event']
+date: '2022-11-30'
 speakers:
-  - edith_puclla
-  - mario_garcia
+- edith_puclla
+- mario_garcia
+tags: ["Event", "opensource"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 On November 30th, Percona's Technical Evangelists Edith Puclla and Mario García participated in the [International Day of Computer Security](https://www.eventbrite.com.mx/e/dia-internacional-de-la-seguridad-informatica-ufi-tickets-467767554347). An event organized by [Comunidad Tecnológica Tapachula](https://www.facebook.com/CTTAPMX/) together with [Universidad Filantrópica Internacional](https://www.facebook.com/UFItapachula/), in Tapachula, Mexico.
 
 ![International Day of Computer Security 2022](/events/international-day-of-computer-security-2022/header.jpg)

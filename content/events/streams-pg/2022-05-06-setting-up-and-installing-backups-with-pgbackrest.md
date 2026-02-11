@@ -1,16 +1,20 @@
 ---
-title: "Setting Up and Installing Backups With pgBackRest - Percona Community PostgreSQL Live Stream & Chat - May, 6th"
-description: "Learn more about setting up and installing backups with pgbackrest in this Percona Live Stream for PostgreSQL"
+title: Setting Up and Installing Backups With pgBackRest - Percona Community PostgreSQL
+  Live Stream & Chat - May, 6th
+description: Learn more about setting up and installing backups with pgbackrest in
+  this Percona Live Stream for PostgreSQL
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Week-4-pgBackRest.jpg
-date: "2022-05-06"
+- events/streams-pg/PG-Stream-Week-4-pgBackRest.jpg
+date: '2022-05-06'
 speakers:
-  - charly_batista
-  - matt_yonkovit
-tags: ['Postgres', 'Stream']
+- charly_batista
+- matt_yonkovit
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 ![Percona Community PostgreSQL Live Stream & Chat - May 6th](events/streams-pg/PG-Stream-Week-4-pgBackRest.jpg)
 
 Listen out to this full recording of the live stream dedicated to PostgreSQL hosted by the Head Of Open Source Strategy at Percona, Matt Yonkovit, with Charly Batista, PostgreSQL Tech Lead at Percona. They took us through the setting up and installing backups with pgBackRest
@@ -968,5 +972,3 @@ understand why more people don't use dash-dash fast in their configuration files
 
 **Charly Batista**  
 Yeah, thanks, everybody.
-
-

@@ -1,19 +1,20 @@
 ---
-title: "Community Office Hours: Why PostgreSQL took the crown from MySQL and what lies ahead - January 06, 2026"
-description: "Peter will share his practical insights from years of working closely with both MySQL and PostgreSQL communities"
+title: 'Community Office Hours: Why PostgreSQL took the crown from MySQL and what
+  lies ahead - January 06, 2026'
+description: Peter will share his practical insights from years of working closely
+  with both MySQL and PostgreSQL communities
 images:
-  - events/2025-community-office-hours-peter-zaitsev/intropeter.jpg
+- events/2025-community-office-hours-peter-zaitsev/intropeter.jpg
 layout: single
-date: "2025-12-08"
-EventDate: "Tuesday, January 06, 2026, from 2:00 PM to 3:00 PM EST"
+date: '2025-12-08'
+EventDate: Tuesday, January 06, 2026, from 2:00 PM to 3:00 PM EST
 speakers:
-  - peter_zaitsev
-tags: ['PostgreSQL', 'MySQL', 'Community', 'Events']
-event_year: 2025
-event_tag: ['PostgreSQL', 'MySQL', 'Community']
-event_category: ["Office Hours"]
+- peter_zaitsev
+tags: ["Community", "Events", "MySQL", "PostgreSQL"]
+events_year: ["2025"]
+events_tag: ["Community", "MySQL", "PostgreSQL"]
+events_category: ["Speaking", "Community"]
 ---
-
 We’re excited to share that **Peter Zaitsev**, Founder of Percona, will present his talk **“Why PostgreSQL Took the Crown from MySQL and What Lies Ahead.”**
 After participating in Percona PGConf.EU in Riga, Peter is bringing this session to our community once again, with updated insights and perspectives from recent conversations with PostgreSQL experts and users.
 

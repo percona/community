@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
 Updates event front matter:
-1. event_year from date
-2. event_tag from tags (tech keywords)
-3. event_category based on speakers or content
+1. events_year from date
+2. events_tag from tags (tech keywords)
+3. events_category based on speakers or content
+4. normalize tags, events_year, events_tag, events_category to ["A","B"] format
 """
 
 import os
@@ -14,7 +15,6 @@ import re
 
 EVENTS_DIR = "content/events"
 
-# Словарь соответствия тегов → event_tag
 TECH_TAGS_MAP = {
     "PostgreSQL": "PostgreSQL",
     "Postgres": "PostgreSQL",
@@ -73,13 +73,30 @@ def ensure_list(value):
         return [v] if v else []
     return [value]
 
+def format_list_field(name, values):
+    """Вернёт строку вида name: ["A", "B"]"""
+    arr = ", ".join(f'"{v}"' for v in values)
+    return f'{name}: [{arr}]'
+
 def dump_event(doc, path):
-    lines = ["---"]
-    yaml_block = yaml.dump(doc.metadata, allow_unicode=True, sort_keys=False).strip()
-    lines.append(yaml_block)
+    meta = dict(doc.metadata)
+
+    meta_copy = {k: v for k, v in meta.items() if k not in ["tags","events_year","events_tag","events_category"]}
+    yaml_block = yaml.dump(
+        meta_copy,
+        allow_unicode=True,
+        sort_keys=False,
+        default_flow_style=False
+    ).strip()
+
+    lines = ["---", yaml_block]
+    for field in ["tags","events_year","events_tag","events_category"]:
+        if field in meta and isinstance(meta[field], list):
+            lines.append(format_list_field(field, meta[field]))
     lines.append("---")
     if doc.content:
         lines.append(doc.content.strip())
+
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
@@ -98,23 +115,23 @@ for root, _, files in os.walk(EVENTS_DIR):
         meta = doc.metadata
         changed = False
 
-        # 1. event_year from date
+        # 1. events_year from date
         year = extract_year(meta.get("date"))
         if year:
-            meta["event_year"] = [year]
+            meta["events_year"] = [year]
             changed = True
 
-        # 2. event_tag from tags
+        # 2. events_tag from tags
         tags = ensure_list(meta.get("tags"))
-        event_tags = set(ensure_list(meta.get("event_tag")))
+        events_tags = set(ensure_list(meta.get("events_tag")))
         for t in tags:
             if t in TECH_TAGS_MAP:
-                event_tags.add(TECH_TAGS_MAP[t])
-        if event_tags:
-            meta["event_tag"] = sorted(event_tags)
+                events_tags.add(TECH_TAGS_MAP[t])
+        if events_tags:
+            meta["events_tag"] = sorted(events_tags)
             changed = True
 
-        # 3. event_category rules
+        # 3. events_category rules
         speakers = ensure_list(meta.get("speakers"))
         category = []
         if speakers:
@@ -123,7 +140,12 @@ for root, _, files in os.walk(EVENTS_DIR):
         if "sponsor" in content_lower or "booth" in content_lower:
             category.append("Sponsorship")
         if category:
-            meta["event_category"] = sorted(set(category))
+            meta["events_category"] = sorted(set(category))
+            changed = True
+
+        # 4. normalize tags
+        if tags:
+            meta["tags"] = sorted(set(tags))
             changed = True
 
         if changed:

@@ -1,17 +1,20 @@
 ---
-title: "Emulate Block Device Incidents With IO Scheduler"
-description: "Block device incidents are frequent and frightening in production. To achieve high availability, distributed databases usually have fault tolerant strategies to handle these incidents."
+title: Emulate Block Device Incidents With IO Scheduler
+description: Block device incidents are frequent and frightening in production. To
+  achieve high availability, distributed databases usually have fault tolerant strategies
+  to handle these incidents.
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Yang-Keao.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Yang-Keao.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - yang_keao
-tags: ['Percona Community Live']
+- yang_keao
+tags: ["Percona Community Live"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![Emulate Block Device Incidents With IO Scheduler](events/percona-community-live/cards/Community-Live-Day-1-Yang-Keao.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
@@ -29,4 +32,3 @@ In this talk, Yang Keao will show a real-world example where the fault-tolerant 
 {{% youtube youtube_id="LQHxt3DtQxk" %}}{{% /youtube %}}
 
 ## Transcript
-

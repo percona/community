@@ -1,18 +1,20 @@
 ---
-title: "The MySQL Ecosystem in 2022"
-description: "27 years of the MySQL ecosystem, not only is there the core product from Oracle, there is a branch from Percona and a fork from MariaDB"
+title: The MySQL Ecosystem in 2022
+description: 27 years of the MySQL ecosystem, not only is there the core product from
+  Oracle, there is a branch from Percona and a fork from MariaDB
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Colin-Charles.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Colin-Charles.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - colin_charles
-tags: ['MySQL', 'MariaDB']
+- colin_charles
+tags: ["MariaDB", "MySQL"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
-
-
 This session is presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
 
 ## Watch This Talk Here

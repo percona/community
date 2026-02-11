@@ -1,15 +1,19 @@
 ---
-title: "Percona MeetUp for MySQL Oct 6th 2021"
-description: "The Community MeetUp for MySQL on oct 6th, 2021 was a part of a monthly regular event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona."
+title: Percona MeetUp for MySQL Oct 6th 2021
+description: The Community MeetUp for MySQL on oct 6th, 2021 was a part of a monthly
+  regular event hosted by Matt Yonkovit, Head of Open Source Strategy at Percona.
 images:
-  - events/percona-meetup/mysql-october-1362.jpg
-date: "2021-10-06"
+- events/percona-meetup/mysql-october-1362.jpg
+date: '2021-10-06'
 draft: false
 speakers:
-  - wayne
-  - vaibhav_upadhyay
-  - matt_yonkovit
-tags: ['MySQL', 'Meetup']
+- wayne
+- vaibhav_upadhyay
+- matt_yonkovit
+tags: ["Meetup", "MySQL"]
+events_year: ["2021"]
+events_tag: ["Community", "MySQL"]
+events_category: ["Speaking"]
 ---
 The Community MeetUp for MySQL on Oct 6th 2021 was about MySQL basics for prod environment starting from the system level and monitoring with PMM or Zabbix and backups. In addition, it was a great talk how to enable MySQL Audit Logging and to view the output. Watch the video here!
 

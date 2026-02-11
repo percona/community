@@ -1,14 +1,19 @@
 ---
-title: "Migrating MySQL to a New Server - Percona Community MySQL Live Stream & Chat - August 5th"
-description: "Find out more tips on moving a MySQL database to a new server with Dave Stokes and Marcos Albe"
+title: Migrating MySQL to a New Server - Percona Community MySQL Live Stream & Chat
+  - August 5th
+description: Find out more tips on moving a MySQL database to a new server with Dave
+  Stokes and Marcos Albe
 images:
-  - events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg
+- events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg
 draft: false
-date: "2022-08-05"
+date: '2022-08-05'
 speakers:
-  - marcos_albe
-  - dave_stokes
-tags: ['MySQL', 'Stream']
+- marcos_albe
+- dave_stokes
+tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community MySQL Live Stream August 5th](events/streams-mysql/Stream-MySQL-6-Marcos-with-Dave02.jpg)
 
@@ -196,6 +201,3 @@ Yeah, you know, I've learned quite a bit as well. You know, like we do this trul
 
 **Dave Stokes:**  
 Take care folks. Bye.
-
-
-

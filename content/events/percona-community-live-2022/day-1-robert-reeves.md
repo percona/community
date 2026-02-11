@@ -1,17 +1,20 @@
 ---
-title: "Liquibase Data: Version Control and Collaboration for the Database"
-description: "See how free Open Source Liquibase can accelerate database development and cross-team deployments."
+title: 'Liquibase Data: Version Control and Collaboration for the Database'
+description: See how free Open Source Liquibase can accelerate database development
+  and cross-team deployments.
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Robert-Reeves.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Robert-Reeves.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - robert_reeves
-tags: ['Databases',' Liquibase', 'MySQL', 'PostgreSQL', 'Percona Community Live']
+- robert_reeves
+tags: [" Liquibase", "Databases", "MySQL", "Percona Community Live", "PostgreSQL"]
+events_year: ["2022"]
+events_tag: ["MySQL", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![Liquibase Data: Version Control and Collaboration for the Database](events/percona-community-live/cards/Community-Live-Day-1-Robert-Reeves.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

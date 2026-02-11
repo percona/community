@@ -1,19 +1,22 @@
 ---
-title: "Percona MeetUp Queretaro 2022"
-description: "On May 6th, Percona together with MedTrainer organized a meetup for the local community in Queretaro, Mexico. Five experts and engineers presented talks on all kinds of topics from the open source world and databases."
+title: Percona MeetUp Queretaro 2022
+description: On May 6th, Percona together with MedTrainer organized a meetup for the
+  local community in Queretaro, Mexico. Five experts and engineers presented talks
+  on all kinds of topics from the open source world and databases.
 images:
-  - events/meetup-queretaro/meetup.jpg
+- events/meetup-queretaro/meetup.jpg
 layout: single
-date: "2022-05-06"
-tags: ['opensource', 'Event']
+date: '2022-05-06'
 speakers:
-  - peter_zaitsev
-  - michael_coburn
-  - eduardo_krieg
-  - david_gonzalez
-  - guillermo_ortega
+- peter_zaitsev
+- michael_coburn
+- eduardo_krieg
+- david_gonzalez
+- guillermo_ortega
+tags: ["Event", "opensource"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![MeetUp Queretaro 2022](/events/meetup-queretaro/1.jpg)
 
 On May 6th, Percona together with MedTrainer organized a meetup for the local community in Queretaro, Mexico. It took place in a wonderful location - Holiday Inn Zona Krystal Meeting Room. 
@@ -41,4 +44,3 @@ It was 5 hours of excellent content with coffee breaks for informal communicatio
 All sessions were well attended. After each session, experts answered questions and helped others with their advice. It was an excellent time for everyone to share their experience with other people. This is so valuable these days!
 
 ![MeetUp Queretaro 2022](/events/meetup-queretaro/5.jpg)
-

@@ -1,16 +1,19 @@
 ---
-title: "PostgreSQL running on Kubernetes operations - Percona Community PostgreSQL Live Stream & Chat - Aug, 11th"
-description: "This event was all about running PostgreSQL on Kubernetes Operations"
+title: PostgreSQL running on Kubernetes operations - Percona Community PostgreSQL
+  Live Stream & Chat - Aug, 11th
+description: This event was all about running PostgreSQL on Kubernetes Operations
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Cover-Week-11-August-11.jpg
-date: "2022-08-11"
+- events/streams-pg/PG-Stream-Cover-Week-11-August-11.jpg
+date: '2022-08-11'
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![Percona Community PostgreSQL Live Stream & Chat - August 11th](events/streams-pg/PG-Stream-Cover-Week-11-August-11.jpg)
 
 Percona Community Live Stream will share a demo and some best practices on running Postgres on Kubernetes Operations. This is a part of a bi-weekly regular meetup to share experience and improve database opensource skills with Dave and Charly. Come up and ask questions.
@@ -78,5 +81,3 @@ Yeah, and as long as you don't you don't need to build a Kubernetes cluster your
 
 **Dave Stokes:**  
 Thank you, folks, and we'll see you hopefully in two weeks with our next broadcast, and keep safe. Talk to you. Thanks.
-
-

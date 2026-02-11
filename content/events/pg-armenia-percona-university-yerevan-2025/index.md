@@ -1,29 +1,30 @@
 ---
-title: "PG Armenia x Percona University – Yerevan, August 28, 2025"
-description: "Join Percona and PG Armenia for a one-day in-person event filled with sharp talks and hands-on sessions on PostgreSQL, MongoDB, MySQL, and observability."
+title: PG Armenia x Percona University – Yerevan, August 28, 2025
+description: Join Percona and PG Armenia for a one-day in-person event filled with
+  sharp talks and hands-on sessions on PostgreSQL, MongoDB, MySQL, and observability.
 images:
-  - events/pg-armenia-percona-university-yerevan-2025/3.jpg
+- events/pg-armenia-percona-university-yerevan-2025/3.jpg
 layout: single
-date: "2025-08-04"
-EventDate: "August 28, 2025"
-tags: ['PostgreSQL', 'MongoDB', 'MySQL', 'PMM', 'Event', 'PerconaUniversity', 'Yerevan']
+date: '2025-08-04'
+EventDate: August 28, 2025
 speakers:
-  - peter_zaitsev
-  - konstantin_trushin
-  - alex_demidoff
-  - alexey_palazhchenko
-  - emma_saroyan
-  - dmitrii_kochetov
-  - andrey_borodin
-  - eugene_klimov
-  - alexander_zaitsev
-  - kim_saroyan
-  - aya_guseinova
-  - piotr_kalmukhya
-
-
+- peter_zaitsev
+- konstantin_trushin
+- alex_demidoff
+- alexey_palazhchenko
+- emma_saroyan
+- dmitrii_kochetov
+- andrey_borodin
+- eugene_klimov
+- alexander_zaitsev
+- kim_saroyan
+- aya_guseinova
+- piotr_kalmukhya
+tags: ["Event", "MongoDB", "MySQL", "PMM", "PerconaUniversity", "PostgreSQL", "Yerevan"]
+events_year: ["2025"]
+events_tag: ["MongoDB", "MySQL", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Percona and **PG Armenia** invite you to a **free, in-person event** in Yerevan, Armenia, as part of **Percona University**!
 
 This one-day gathering will feature **hands-on sessions, sharp technical talks, and real-world engineering practices**. Join developers, DBAs, and open-source database enthusiasts for an event centered around **PostgreSQL, MongoDB, MySQL**, and **observability**.

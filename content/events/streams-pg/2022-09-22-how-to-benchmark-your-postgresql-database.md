@@ -1,14 +1,20 @@
 ---
-title: "How to Benchmark Your PostgreSQL Database - Percona Community PostgreSQL Live Stream & Chat - Sept, 22nd"
-description: "Join us at Percona Community Live Stream, and we will talk about how to benchmark your PostgreSQL Database with database experts on Thursday, September 22th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
+title: How to Benchmark Your PostgreSQL Database - Percona Community PostgreSQL Live
+  Stream & Chat - Sept, 22nd
+description: Join us at Percona Community Live Stream, and we will talk about how
+  to benchmark your PostgreSQL Database with database experts on Thursday, September
+  22th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Dave-Chino-benchmark.jpg
-date: "2022-09-22"
+- events/streams-pg/PG-Stream-Dave-Chino-benchmark.jpg
+date: '2022-09-22'
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community PostgreSQL Live Stream & Chat - Sept 22th](events/streams-pg/PG-Stream-Dave-Chino-benchmark.jpg)
  
@@ -72,6 +78,4 @@ And it's almost there. So why it's finished? What was the wrap-up here? What we 
 Well, thank you, folks. Thank you, sir. Have a good night, folks. And we'll be back in two weeks with another talk with Charly. So have a good day.
 
 **Charly Batista:**  
-Thanks, everybody. 
-
-
+Thanks, everybody.

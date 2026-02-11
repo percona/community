@@ -4,7 +4,7 @@
   <div class="select-container">
     <select id="categories-select" onchange="navigateToPage(this)">
       <option value="">Years</option>
-      {{ with .page.Site.Taxonomies.event_year }}
+      {{ with .page.Site.Taxonomies.events_year }}
         {{ range first 10 (sort .ByCount) }}
           <option value="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</option>
         {{ end }}
@@ -13,7 +13,7 @@
 
     <select id="tags-select" onchange="navigateToPage(this)">
       <option value="">Tags</option>
-      {{ with .page.Site.Taxonomies.event_tag }}
+      {{ with .page.Site.Taxonomies.events_tag }}
         {{ range first 20 (sort .ByCount) }}
           {{ if gt .Count 1 }}
             <option value="{{ .Page.Permalink }}">{{ substr .Page.Title 0 20 }} ({{ .Count }})</option>
@@ -89,16 +89,16 @@
       <!-- Year list -->
       <h2>Years</h2>
       <ul class="category-list">
-        {{ with .page.Site.Taxonomies.event_year }}
+        {{ with .page.Site.Taxonomies.events_year }}
           {{ range sort .ByCount "Page.Title" "desc" }}
             <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
           {{ end }}
         {{ end }}
       </ul>
       <!-- Types -->
-      <h2>Types</h2>
+      <h2>Category</h2>
       <ul class="category-list">
-        {{ with .page.Site.Taxonomies.event_category }}
+        {{ with .page.Site.Taxonomies.events_category }}
         {{ range $key, $value := . }}
             <li><a href="{{ $value.Page.Permalink }}" class="category">{{ $value.Page.Title }} ({{ $value.Count }})</a></li>
         {{ end }}
@@ -107,7 +107,7 @@
       <!-- Tag list -->
       <h2>Topics</h2>
       <ul class="category-list">
-        {{ with .page.Site.Taxonomies.event_tag }}
+        {{ with .page.Site.Taxonomies.events_tag }}
           {{ range sort .ByCount }}
               <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
           {{ end }}
@@ -144,7 +144,7 @@
 
   {{- $title := .Title | default "" -}}
 
-  {{/* -------- EXCERPT: первые 600 символов контента -------- */}}
+  {{/* -------- EXCERPT  -------- */}}
   {{- $excerpt := "" -}}
   {{- $raw := (index (split .Content "</p>") 0) -}}
   {{- $clean := ($raw | replace "<p>" "" | safeHTML | plainify | htmlUnescape) -}}
@@ -152,7 +152,7 @@
 
   {{/* -------- TAGS -------- */}}
   {{- $tags := "" -}}
-  {{- with .Params.event_tag -}}
+  {{- with .Params.events_tag -}}
     {{- $tags = delimit . " " -}}
   {{- end -}}
 
@@ -165,7 +165,7 @@
     {{- $img = index .Params.images 0 -}}
   {{- end -}}
 
-  {{/* -------- SPEAKERS (как в talks) -------- */}}
+  {{/* -------- SPEAKERS -------- */}}
   {{- $speakers := slice -}}
   {{- with .Params.speakers -}}
     {{- range . -}}

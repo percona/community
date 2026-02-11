@@ -1,17 +1,21 @@
 ---
-title: "Data Gravity Episode 2 - Sonia Valeja and David Gonzalez - PostgreSQL for Jobseekers Book"
-description: "Joe Brockmeier talks to Percona's Sonia Valeja and David Gonzalez, about their recent book PostgreSQL for Jobseekers."
+title: Data Gravity Episode 2 - Sonia Valeja and David Gonzalez - PostgreSQL for Jobseekers
+  Book
+description: Joe Brockmeier talks to Percona's Sonia Valeja and David Gonzalez, about
+  their recent book PostgreSQL for Jobseekers.
 images:
-  - events/data-gravity/Data-Gravity-Episode-2.jpg
+- events/data-gravity/Data-Gravity-Episode-2.jpg
 draft: false
-date: "2023-11-15"
+date: '2023-11-15'
 speakers:
-  - sonia_valeja
-  - david_gonzalez
-  - joe_brockmeier
-tags: ['Data Gravity', 'Podcast']
+- sonia_valeja
+- david_gonzalez
+- joe_brockmeier
+tags: ["Data Gravity", "Podcast"]
+events_year: ["2023"]
+events_tag: ["Community"]
+events_category: ["Speaking","Community"]
 ---
-
 In this [episode](https://datagravity.podbean.com/e/data-gravity-episode-2-postgresql-for-jobseekers/), Joe Brockmeier talks to Percona's Sonia Valeja and David Gonzalez, about their recent book PostgreSQL for Jobseekers. They talk about the inspiration for the book, why they focus on jobseekers, and what's covered in the title.
 
 [Episode 2 Page](https://datagravity.podbean.com/e/data-gravity-episode-2-postgresql-for-jobseekers/)
@@ -100,4 +104,3 @@ All right. I'd like to thank both of you for being on the show. And I would like
 
 **Sonia Valeja:**  
 Thank you.
-

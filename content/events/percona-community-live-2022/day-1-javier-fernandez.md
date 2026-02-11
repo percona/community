@@ -1,17 +1,19 @@
 ---
-title: "ProxySQL 2021 Dev Submit"
-description: "A deeper dive on the details of new ProxySQL features, what they have to offer and how you can get the most out of them."
+title: ProxySQL 2021 Dev Submit
+description: A deeper dive on the details of new ProxySQL features, what they have
+  to offer and how you can get the most out of them.
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Javier-Jaramago.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Javier-Jaramago.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - javier_fernandez
-tags: ['Databases', 'Percona Community Live']
+- javier_fernandez
+tags: ["Databases", "Percona Community Live"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![ProxySQL 2021 Dev Submit](events/percona-community-live/cards/community-Live-Day-1-Javier-Jaramago.jpg)
 
 
@@ -25,4 +27,3 @@ ProxySQL has proven itself as the de-facto standard reverse proxy for MySQL, yet
 {{% youtube youtube_id="B6xKTQy_kIQ" %}}{{% /youtube %}}
 
 ## Transcript
-

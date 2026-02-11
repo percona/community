@@ -1,18 +1,19 @@
 @import "common/common";
 
-/* Главный контейнер */
 .contentblock.branded.events {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
 
-/* Левая колонка */
+
 .main-content {
   flex: 3;
+  .events-list .grid__item {
+    border-bottom: none;
+  }
 }
 
-/* Правая колонка — сайдбар */
 .sidebar {
   flex: 1;
   background: #f7f7f7;
@@ -63,7 +64,6 @@
   }
 }
 
-/* Поиск */
 .search-sidebar {
   margin-bottom: 2rem;
 }
@@ -87,7 +87,6 @@
   min-height: 1.2rem;
 }
 
-/* GRID — НЕ ломаем! */
 .events-list {
   list-style: none;
   padding: 0;

@@ -1,13 +1,16 @@
 ---
-title: "All Things Open 2021"
-description: "Percona Team participated in ATO (All Things Open) 2021 in Raleigh Convention Center. The Percona booth is the place where you can meet experts and talk about open source databases, up-to-date IT technologies, Kubernetes and monitoring tools. "
+title: All Things Open 2021
+description: 'Percona Team participated in ATO (All Things Open) 2021 in Raleigh Convention
+  Center. The Percona booth is the place where you can meet experts and talk about
+  open source databases, up-to-date IT technologies, Kubernetes and monitoring tools. '
 images:
-  - events/ato-2021/ato-2021-cover.jpeg
+- events/ato-2021/ato-2021-cover.jpeg
 layout: single
-date: "2021-10-17"
-tags: ['sponsorship', 'opensource', 'Event']
+date: '2021-10-17'
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2021"]
+events_category: ["Sponsorship"]
 ---
-
 Percona Team participated in ATO (All Things Open) in Raleigh Convention Center on October 17th - 19th.
 
 Percona speakers gave 4 talks during the conference:
@@ -31,9 +34,4 @@ Those who couldn’t attend the in-person event, can download a digital book her
 
 Speakers and Steve Hoffman also attended the Speaker / Sponsor Dinner at Sheraton Raleigh Hotel.
 
-The next events that Percona sponsors will be AWS re:Invent in Las Vegas (Nov 28, 2021 – Thu, Dec 2, 2021) and PGConf NYC in New York (Dec 2-3, 2021). 
-
-
-
-
-
+The next events that Percona sponsors will be AWS re:Invent in Las Vegas (Nov 28, 2021 – Thu, Dec 2, 2021) and PGConf NYC in New York (Dec 2-3, 2021).

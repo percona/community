@@ -1,13 +1,16 @@
 ---
-title: "Percona Roadshow Coming to Your City!"
-description: "In these sessions, our Percona experts and engineers will walk you through a broad range of topics around the open source industry, such as Percona Monitoring and Management, Percona Kubernetes Operators, MySQL, MongoDB, PostgreSQL and Percona Platform."
+title: Percona Roadshow Coming to Your City!
+description: In these sessions, our Percona experts and engineers will walk you through
+  a broad range of topics around the open source industry, such as Percona Monitoring
+  and Management, Percona Kubernetes Operators, MySQL, MongoDB, PostgreSQL and Percona
+  Platform.
 images:
-  - events/roadshow-2022/1.png
+- events/roadshow-2022/1.png
 layout: single
-date: "2022-04-13"
-tags: ['roadshow', 'opensource', 'event']
+date: '2022-04-13'
+tags: ["event", "opensource", "roadshow"]
+events_year: ["2022"]
 ---
-
 ![ROADSHOW 2022](/events/roadshow-2022/2.png)
 
 We are pleased to invite you to a one day event as part of our 2022 Road Show around Europe and Asia. 

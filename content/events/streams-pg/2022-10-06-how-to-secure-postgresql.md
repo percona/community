@@ -1,16 +1,21 @@
 ---
-title: "How to Secure PostgreSQL  - Percona Community PostgreSQL Live Stream & Chat - Oct, 6th"
-description: "Join us at Percona Community Live Stream, and we will talk about how to secure your PostgreSQL database with database experts on Thursday, October 6th at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST"
+title: How to Secure PostgreSQL  - Percona Community PostgreSQL Live Stream & Chat
+  - Oct, 6th
+description: Join us at Percona Community Live Stream, and we will talk about how
+  to secure your PostgreSQL database with database experts on Thursday, October 6th
+  at 12:00 PM EDT / 06:00 PM CEST / 09:30 PM IST
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Dave-Chino-Secure.jpg
-date: "2022-10-06"
+- events/streams-pg/PG-Stream-Dave-Chino-Secure.jpg
+date: '2022-10-06'
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![Percona Community PostgreSQL Live Stream & Chat - Oct 6th](events/streams-pg/PG-Stream-Dave-Chino-Secure.jpg)
  
 Percona Community Live Stream for PostgreSQL will focus on How to Secure PostgreSQL. This is a part of our bi-weekly meetup to develop open-source database skills. Come up with your questions and get an answer straight forward.
@@ -144,8 +149,3 @@ Thanks, thanks for the nice words, the compliments, people are going to Berlin, 
 
 **Dave Stokes:** 
 Oh, here have anything I'm moving from extra data to Postgres. I don't know anything exactly about that. I could see why you want to do that for financial reasons, call our consulting folks. They probably have other customers who are in debt. And can we cover performance tuning? Well, that might be an entire series of talks that we do coming up in the future. And with that, I want to thank everyone for participating and for the folks who watch the stream after it's done recording. And thanks again. And if you have questions, go to percona.com and, and let us know. Take care, folks. Bye Charly.
-
-
-
-
-

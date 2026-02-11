@@ -1,16 +1,20 @@
 ---
-title: "Migrating PostgreSQL to a New Server - Percona Community PostgreSQL Live Stream & Chat - June, 30th"
-description: "Find out more about how Migrating PostgreSQL to a new server with Percona Experts"
+title: Migrating PostgreSQL to a New Server - Percona Community PostgreSQL Live Stream
+  & Chat - June, 30th
+description: Find out more about how Migrating PostgreSQL to a new server with Percona
+  Experts
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Week-9-Cover.jpg
-date: "2022-06-30"
+- events/streams-pg/PG-Stream-Week-9-Cover.jpg
+date: '2022-06-30'
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Listen out to this Percona Community Live Stream if you ever had a problem migrating PostgreSQL to a New server. Charly and Dave, gave some tips to take you through the process without any problems.
 
 

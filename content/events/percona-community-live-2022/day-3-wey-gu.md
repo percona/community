@@ -1,17 +1,19 @@
 ---
-title: "The Open-Source Distributed Graph Database: Nebula Graph"
-description: "Nebula Graph is a young Open Source Graph Database that excels at huge data volume OLTP scenarios"
+title: 'The Open-Source Distributed Graph Database: Nebula Graph'
+description: Nebula Graph is a young Open Source Graph Database that excels at huge
+  data volume OLTP scenarios
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Wey-Gu.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Wey-Gu.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - wey_gu
-tags: ['Nebula', 'Graph']
+- wey_gu
+tags: ["Graph", "Nebula"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![The Open-Source Distributed Graph Database: Nebula Graph](events/percona-community-live/cards/Community-Live-Day-3-Wey-Gu.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

@@ -1,14 +1,17 @@
 ---
-title: "Percona University Limassol 2024"
-description: "Percona organised a Percona University Limassol meetup on Cyprus at April 20th, 2024."
+title: Percona University Limassol 2024
+description: Percona organised a Percona University Limassol meetup on Cyprus at April
+  20th, 2024.
 images:
-  - events/percona-university-limassol-2024/7.jpg
+- events/percona-university-limassol-2024/7.jpg
 layout: single
-date: "2024-04-22"
-tags: ['Event', 'sponsorship', 'opensource']
+date: '2024-04-22'
 speakers:
-  - peter_zaitsev
-  - andrew_pogrebnoi
+- peter_zaitsev
+- andrew_pogrebnoi
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2024"]
+events_category: ["Speaking"]
 ---
 On April 20th, 2024, people who love working with databases came together in Cyprus for something special - the Percona University Limassol. Percona put on this event to help folks dive deep into the latest database tech.
 
