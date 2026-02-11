@@ -15,7 +15,7 @@ event_date_start: "2023-12-12"
 event_date_end: ""
 event_url: "https://community.cncf.io/events/details/cncf-kcd-spain-presents-kcd-spain-2023/"
 event_location: ""
-talk_tags: ['Kubernetes', 'Video']
+talk_tags: ['Kubernetes', 'Video', 'Slides']
 slides: "https://www.slideshare.net/slideshow/kubernetes-operator-101-edith-puclla-258503216/258503216"
 video: "https://www.youtube.com/watch?v=Fxq2MVwv-pM"
 youtube_id: "Fxq2MVwv-pM"

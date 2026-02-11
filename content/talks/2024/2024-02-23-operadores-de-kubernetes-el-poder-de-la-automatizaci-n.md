@@ -15,7 +15,7 @@ event_date_start: ""
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['CloudNative']
+talk_tags: ['CloudNative', 'Slides']
 slides: "/slides/2024/Operadores-de-Kubernetes-Edith.pdf"
 video: ""
 ---

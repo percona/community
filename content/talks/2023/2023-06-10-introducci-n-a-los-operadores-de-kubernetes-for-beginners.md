@@ -15,7 +15,7 @@ event_date_start: ""
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['Kubernetes']
+talk_tags: ['Kubernetes', 'Slides']
 slides: "/slides/2023/Kubernetes-Operator-101-Edith-Puclla.pdf"
 video: ""
 ---

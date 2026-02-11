@@ -15,7 +15,7 @@ event_date_start: ""
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['PostgreSQL']
+talk_tags: ['PostgreSQL', 'Slides']
 slides: "https://www.pgday.ch/common/slides/2023_pg_stat_monitor.pdf"
 video: ""
 ---

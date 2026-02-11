@@ -15,7 +15,7 @@ event_date_start: "2023-10-20"
 event_date_end: ""
 event_url: "https://www.eventbrite.com/e/percona-university-buenos-aires-open-source-databases-event-tickets-719283605627"
 event_location: "Buenos Aires, Argentina"
-talk_tags: ['DevOps', 'Community']
+talk_tags: ['DevOps', 'Community', 'Slides']
 slides: "/slides/2023/Fernando_Mattera_-_Herramientas_Utiles_del_Percona_Toolkit_para_DBAs.pdf"
 video: ""
 ---

@@ -15,7 +15,7 @@ event_date_start: "2025-02-01"
 event_date_end: "2025-02-02"
 event_url: "https://fosdem.org/2025/"
 event_location: "Brussels, Belgium"
-talk_tags: ['MySQL', 'Open Source', 'Video']
+talk_tags: ['MySQL', 'Open Source', 'Video', 'Slides']
 slides: "https://archive.fosdem.org/2025/events/attachments/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/slides/238825/Open-sour_Bi0nFa5.pdf"
 video: "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/"
 ---

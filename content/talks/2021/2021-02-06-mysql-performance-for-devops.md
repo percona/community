@@ -15,7 +15,7 @@ event_date_start: ""
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['MariaDB', 'Video']
+talk_tags: ['MariaDB', 'Video', 'Slides']
 slides: "https://archive.fosdem.org/2021/schedule/event/mariadb_devops/attachments/slides/4306/export/events/attachments/mariadb_devops/slides/4306/DevOps_perf.pdf"
 video: "https://archive.fosdem.org/2021/schedule/event/mariadb_devops/"
 ---

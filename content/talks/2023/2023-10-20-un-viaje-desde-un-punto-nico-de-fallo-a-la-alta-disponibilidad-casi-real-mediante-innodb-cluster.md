@@ -15,7 +15,7 @@ event_date_start: "2023-10-20"
 event_date_end: ""
 event_url: "https://www.eventbrite.com/e/percona-university-buenos-aires-open-source-databases-event-tickets-719283605627"
 event_location: "Buenos Aires, Argentina"
-talk_tags: ['MySQL']
+talk_tags: ['MySQL', 'Slides']
 slides: "/slides/2023/Francisco_Bordenave_-_Un_viaje_desde_un_punto_unico_de_fallo_a_la_alta_disponibilidad_casi_real_mediante_InnoDB_Cluster.pdf"
 video: ""
 ---

@@ -15,8 +15,8 @@ event_date_start: "2023-03-23"
 event_date_end: ""
 event_url: "https://www.mysql.com/news-and-events/events/mysql-summit.html"
 event_location: "Redwood Shores, California"
-talk_tags: ['video', 'slides', 'MySQL', 'Video']
-slides: ""
+talk_tags: ['video', 'slides', 'MySQL', 'Video', 'Slides']
+slides: "/slides/2023/Oracle_MySQL_Summit_2023_JSON.pdf"
 video: "https://www.youtube.com/watch?v=dF5TYJSbP9A"
 youtube_id: "dF5TYJSbP9A"
 ---

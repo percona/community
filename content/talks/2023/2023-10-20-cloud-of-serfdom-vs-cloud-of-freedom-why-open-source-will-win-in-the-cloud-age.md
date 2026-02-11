@@ -1,5 +1,5 @@
 ---
-id: "a7f21eb7-d05e-4bb5-b57d-024612b5058f"
+id: "5e6a2938-d3e7-417e-905d-12e0dfd71455"
 title: "Cloud of Serfdom vs Cloud of Freedom: why open source will win in the Cloud age"
 layout: single
 speakers:
@@ -9,14 +9,14 @@ presentation_date: "2023-10-20"
 presentation_date_end: ""
 presentation_time: ""
 talk_year: "2023"
-event: "Percona University Montevideo 2023"
+event: "Percona University Buenos Aires 2023"
 event_status: "Done"
-event_date_start: "2023-10-24"
+event_date_start: "2023-10-20"
 event_date_end: ""
 event_url: "https://www.eventbrite.com/e/percona-university-buenos-aires-open-source-databases-event-tickets-719283605627"
-event_location: "Montevideo, Uruguay"
-talk_tags: ['Cloud', 'Opensource', 'Open Source']
-slides: "/slides/2023/PU-Uruguay-2023-Welcome-Cloud-of-Freedom-Cloud-of-Serfdom.pptx"
+event_location: "Buenos Aires, Argentina"
+talk_tags: ['Cloud', 'Opensource', 'Slides']
+slides: "/slides/2023/PU-Argentina-2023-Welcome-Cloud-of-Freedom-Cloud-of-Serfdom.pptx"
 video: ""
 ---
 ## Abstract
