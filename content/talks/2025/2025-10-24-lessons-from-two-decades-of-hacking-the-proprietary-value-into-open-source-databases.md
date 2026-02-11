@@ -15,7 +15,7 @@ event_date_start: "2025-10-21"
 event_date_end: "2025-10-24"
 event_url: "https://2025.pgconf.eu"
 event_location: "Riga, Latvia"
-talk_tags: ['PostgreSQL', 'Community', 'Open Source']
+talk_tags: ['PostgreSQL', 'Community', 'Open Source', 'Slides']
 slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7192/slides/796/Lessons%20from%20Two%20Decades%20of%20Hacking%20Proprietary%20Value%20into%20Open%20Source%20Databases.pdf"
 video: ""
 ---

@@ -15,7 +15,7 @@ event_date_start: "2018-02-03"
 event_date_end: "2018-02-04"
 event_url: "https://archive.fosdem.org/2018/schedule/"
 event_location: "Brussels, Belgium"
-talk_tags: ['MySQL', 'Video']
+talk_tags: ['MySQL', 'Video', 'Slides']
 slides: "https://archive.fosdem.org/2018/schedule/event/mysql_test_framework/attachments/slides/2155/export/events/attachments/mysql_test_framework/slides/2155/MTR.pdf"
 video: "https://archive.fosdem.org/2018/schedule/event/mysql_test_framework/"
 ---

@@ -389,6 +389,10 @@ def build_hugo_markdown(
     # Add 'Video' tag if a video is available
     if video_url:
         tag_list.append("Video")
+        
+    # Add 'Slides' tag if slides are available
+    if slides:
+        tag_list.append("Slides")
 
     # Remove duplicates while preserving order
     seen = set()

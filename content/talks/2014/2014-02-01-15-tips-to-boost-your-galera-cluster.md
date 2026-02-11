@@ -15,7 +15,7 @@ event_date_start: "2014-02-01"
 event_date_end: "2014-02-02"
 event_url: "https://archive.fosdem.org/2014/"
 event_location: "Brussels, Belgium"
-talk_tags: ['MySQL']
+talk_tags: ['MySQL', 'Slides']
 slides: "https://archive.fosdem.org/2014/schedule/event/15_tips_galera/attachments/slides/410/export/events/attachments/15_tips_galera/slides/410/Fosdem_15_Tips_Galera_Cluster_expanded.pdf"
 video: ""
 ---

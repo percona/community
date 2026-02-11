@@ -15,7 +15,7 @@ event_date_start: "2024-02-03"
 event_date_end: "2024-02-04"
 event_url: "https://archive.fosdem.org/2024/"
 event_location: "Brussels, Belgium"
-talk_tags: ['CloudNative', 'Video']
+talk_tags: ['CloudNative', 'Video', 'Slides']
 slides: "https://archive.fosdem.org/2024/events/attachments/fosdem-2024-1904-kubernetes-operators-expanding-automation-in-containerized-applications/slides/22161/Kubernetes_Operators_Expanding_Automation_in_C_AdFWbUi.pdf"
 video: "https://archive.fosdem.org/2024/schedule/event/fosdem-2024-1904-kubernetes-operators-expanding-automation-in-containerized-applications/"
 ---

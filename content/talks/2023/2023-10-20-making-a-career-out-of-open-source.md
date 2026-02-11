@@ -15,7 +15,7 @@ event_date_start: "2023-10-24"
 event_date_end: ""
 event_url: "https://www.eventbrite.com/e/percona-university-buenos-aires-open-source-databases-event-tickets-719283605627"
 event_location: "Montevideo, Uruguay"
-talk_tags: ['Opensource', 'Open Source']
+talk_tags: ['Opensource', 'Open Source', 'Slides']
 slides: "/slides/2023/PU-Uruguay-2023-Making-A-Career-out-of-Open-Source.pptx"
 video: ""
 ---

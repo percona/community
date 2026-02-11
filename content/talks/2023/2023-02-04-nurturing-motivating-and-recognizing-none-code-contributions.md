@@ -15,7 +15,7 @@ event_date_start: "2023-02-04"
 event_date_end: "2023-02-05"
 event_url: "https://fosdem.org/2023/"
 event_location: "Brussels"
-talk_tags: ['video', 'Video']
+talk_tags: ['video', 'Video', 'Slides']
 slides: "https://archive.fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/attachments/slides/5784/export/events/attachments/nurture_motivate_recognise_noncode_contributions/slides/5784/Non_Code_Contributions"
 video: "https://archive.fosdem.org/2023/schedule/event/nurture_motivate_recognise_noncode_contributions/"
 ---

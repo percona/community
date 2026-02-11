@@ -15,7 +15,7 @@ event_date_start: ""
 event_date_end: ""
 event_url: ""
 event_location: ""
-talk_tags: ['Opensource', 'Video']
+talk_tags: ['Opensource', 'Video', 'Slides']
 slides: "/slides/2022/Testing-and-Verifying-bugs-for-released-software_Lalit Choudhary-Percona.pdf"
 video: "https://www.youtube.com/watch?v=KcQOEPgqAQQ"
 youtube_id: "KcQOEPgqAQQ"
