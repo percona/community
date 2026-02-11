@@ -12,7 +12,7 @@ speakers:
 - sam_lambert
 - peter_zaitsev
 tags: ["Community", "Events", "MySQL", "MySQL-Summit"]
-events_year: ["2025"]
+events_year: ["2026"]
 events_tag: ["Community", "MySQL"]
 events_category: ["Speaking", "Community"]
 ---
