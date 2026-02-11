@@ -15,13 +15,21 @@
     {{ if eq .Section "events"}}
         <div class="hero hero-gradient night "><div class="contentblock">
 
-        <div class="hero-text">
-            <h1>Events</h1>
-            <p>Events organized by the Percona Community or other open source database communities</p>
-            <p>Full list of speakers on <a href="/contributor_type/speaker/">the Speakers page</a>.</p>
-        </div>
+        {{ if eq $paginator.PageNumber 1 }}
+            <div class="hero-text">
+                <h1>Events</h1>
+                <p>Events organized by the Percona Community or other open source database communities</p>
+                <p>Full list of speakers on <a href="/contributor_type/speaker/">the Speakers page</a>.</p>
+            </div>
+        {{ else }}
+            <div class="hero-text">
+                <h1>Events — Page {{ .Paginator.PageNumber }}</h1>
+                <p>Back to events home: <a href="{{ .Paginator.First.URL }}">Events</a> | <a href="/contributor_type/speaker/">Speakers</a></p>
+            </div>
+        {{ end }}
 
-        {{- if eq 1 1 -}}
+        {{ if eq $paginator.PageNumber 1 }}
+
         <div class="featured__wrapper">
             <div class="grid grid--2">
 
