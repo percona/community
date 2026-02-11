@@ -10,7 +10,7 @@ date: '2025-12-08'
 EventDate: Tuesday, January 06, 2026, from 2:00 PM to 3:00 PM EST
 speakers:
 - peter_zaitsev
-tags: ["Community", "Events", "MySQL", "PostgreSQL"]
+tags: ["Community", "Events", "MySQL", "PostgreSQL", "Featured"]
 events_year: ["2026"]
 events_tag: ["Community", "MySQL", "PostgreSQL"]
 events_category: ["Speaking", "Community"]

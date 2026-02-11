@@ -11,7 +11,7 @@ speakers:
 - vadim_tkachenko
 - sam_lambert
 - peter_zaitsev
-tags: ["Community", "Events", "MySQL", "MySQL-Summit"]
+tags: ["Community", "Events", "MySQL", "MySQL-Summit", "Featured"]
 events_year: ["2026"]
 events_tag: ["Community", "MySQL"]
 events_category: ["Speaking", "Community"]

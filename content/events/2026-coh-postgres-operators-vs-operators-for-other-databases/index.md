@@ -13,7 +13,7 @@ speakers:
 - ege_gunes
 - jan_wieremjewicz
 - alastair_turner
-tags: ["Community", "Events", "MySQL", "PostgreSQL"]
+tags: ["Community", "Events", "MySQL", "PostgreSQL", "Featured"]
 events_year: ["2026"]
 events_tag: ["Community", "MySQL", "PostgreSQL"]
 events_category: ["Speaking"]

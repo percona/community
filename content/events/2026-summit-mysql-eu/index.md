@@ -14,7 +14,7 @@ speakers:
 - sunny_bains
 - geir_hoydalsvik
 - peter_zaitsev
-tags: ["Community", "Events", "MySQL", "MySQL-Summit"]
+tags: ["Community", "Events", "MySQL", "MySQL-Summit", "Featured"]
 events_year: ["2026"]
 events_tag: ["Community", "MySQL", "Community"]
 events_category: ["Speaking"]

@@ -11,7 +11,7 @@ EventDate: December 3, 2025, at 14:00 GMT
 speakers:
 - marco_tusa
 - ege_gunes
-tags: ["Event", "Kubernetes", "MySQL"]
+tags: ["Event", "Kubernetes", "MySQL", "Featured"]
 events_year: ["2025"]
 events_tag: ["Cloud Native", "MySQL"]
 events_category: ["Speaking", "Community"]
