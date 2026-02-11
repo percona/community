@@ -11,7 +11,7 @@ EventDate: Tuesday, January 06, 2026, from 2:00 PM to 3:00 PM EST
 speakers:
 - peter_zaitsev
 tags: ["Community", "Events", "MySQL", "PostgreSQL"]
-events_year: ["2025"]
+events_year: ["2026"]
 events_tag: ["Community", "MySQL", "PostgreSQL"]
 events_category: ["Speaking", "Community"]
 ---

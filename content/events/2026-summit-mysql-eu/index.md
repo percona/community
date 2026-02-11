@@ -15,7 +15,7 @@ speakers:
 - geir_hoydalsvik
 - peter_zaitsev
 tags: ["Community", "Events", "MySQL", "MySQL-Summit"]
-events_year: ["2025"]
+events_year: ["2026"]
 events_tag: ["Community", "MySQL", "Community"]
 events_category: ["Speaking"]
 ---
