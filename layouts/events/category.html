@@ -21,7 +21,7 @@
             <p>Full list of speakers on <a href="/contributor_type/speaker/">the Speakers page</a>.</p>
         </div>
 
-        {{- if eq 1 2 -}}
+        {{- if eq 1 1 -}}
         <div class="featured__wrapper">
             <div class="grid grid--2">
 
@@ -42,13 +42,13 @@
                 <div class="featured__right featured__list">
                     <h2 class="title-wrap">FEATURED EVENTS</h2>
 
-                    {{- $shuffle :=  first 3 (shuffle (where $.Page.Site.Pages "Section" "events")) -}}
+                    {{- $featured := first 3 (shuffle (where (where $.Page.Site.Pages "Section" "events") "Params.tags" "intersect" (slice "Featured"))) -}}
 
-                    {{- range $shuffle -}}
+                    {{- range $featured -}}
                         {{ if isset .Params "images" }}
-                        {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .Date) -}} 
+                            {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .Date) -}} 
                         {{ else }}
-                        {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title  "PublishDate" .Date) -}}         
+                            {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "PublishDate" .Date) -}}         
                         {{ end }}
                     {{- end -}}
                 </div>
