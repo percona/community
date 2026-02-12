@@ -13,11 +13,11 @@ events_category: ["Sponsorship"]
 events_tags: ["PostgreSQL"]
 ---
 
+Percona is proud to sponsor [PGConf.de](https://2026.pgconf.de/) 2026 in Essen — one of Europe’s leading events for the PostgreSQL community. This conference brings together engineers, contributors, and practitioners who are shaping the future of PostgreSQL in production environments around the world.
+
 - 📅 **April 21–22, 2026**
 - 📍 **Haus der Technik, Essen, Germany**
 - 🔗 **Official website:** https://2026.pgconf.de/
-
-Percona is proud to sponsor [PGConf.de](https://2026.pgconf.de/) 2026 in Essen — one of Europe’s leading events for the PostgreSQL community. This conference brings together engineers, contributors, and practitioners who are shaping the future of PostgreSQL in production environments around the world.
 
 As a company deeply committed to open source database innovation, Percona actively supports the PostgreSQL ecosystem through engineering contributions, community initiatives, and hands‑on expertise. PGConf.de  provides a valuable opportunity for our team to connect with users, partners, and fellow contributors, exchange real‑world experience, and share insights from the field.
 
