@@ -9,7 +9,7 @@ images:
 - events/percona-live-2026/percona-live-2026-1.jpg
 tags: ["perconalive2026", "event", "opensource", "databases", 'Promo']
 events_year: ["2026"]
-events_category: ["Community", "Speaking", "Sponsoring"]
+events_category: ["Community", "Speaking", "Sponsorship"]
 events_tags: ["PostgreSQL", "Valkey", "MongoDB", "MySQL"]
 ---
 
