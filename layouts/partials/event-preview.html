@@ -9,7 +9,9 @@
     {{ end }}
 
     <h3>{{ .Title }}</h3>
-
+    {{ if .Params.EventLocation }}
+        <p class="event-location">📍 {{ .Params.EventLocation }}</p>
+    {{ end }}
     <div class="post__content">
 
         {{ with .Content }}
@@ -19,13 +21,13 @@
         <div class="bottom">
 
             {{ if .Params.EventDate }}
-                <p>{{ .Params.EventDate }}</p>
+                <p class="event-date">{{ .Params.EventDate }}</p>
 
             {{ else if .Params.event_date }}
-                <p>{{ .Params.event_date }}</p>
+                <p class="event-date">{{ .Params.event_date }}</p>
 
             {{ else if .Date }}
-                <p>{{ .Date.Format "January 2, 2006" }}</p>
+                <p class="event-date">{{ .Date.Format "January 2, 2006" }}</p>
 
             {{ else }}
                 <p class="readmore">Read more &raquo;</p>

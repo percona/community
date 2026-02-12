@@ -6,13 +6,28 @@
   gap: 1rem;
 }
 
-
 .main-content {
+
   flex: 3;
   .events-list .grid__item {
     border-bottom: none;
   }
 }
+
+.grid p.event-location {
+  font-size: 0.65rem;
+}
+
+.featured__one {
+  p.event-location {
+    font-size: 0.75rem;
+  }
+  .bottom p.event-date {
+    font-size: 16px;
+    color: #333;
+  }
+}
+
 
 .sidebar {
   flex: 1;
