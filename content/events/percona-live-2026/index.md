@@ -1,8 +1,9 @@
 ---
 title: Percona Live 2026 is back!
 description: 'Percona Live is back! Join the open source database community for three days of deep technical talks, hands-on workshops, and real conversations with people building and running MySQL, PostgreSQL, MongoDB, MariaDB, Valkey, and more in production.'
-date: '2026-02-11'
-EventDate: May 27, 2026
+date: '2026-05-27'
+EventDate: May 27–29, 2026
+EventLocation: Computer History Museum, Mountain View, California
 layout: single
 images:
 - events/percona-live-2026/percona-live-2026-1.jpg

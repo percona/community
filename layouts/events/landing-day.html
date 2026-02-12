@@ -174,12 +174,7 @@
     <div class="grid grid--2">
         {{ range where $.Site.Pages "Params.day" .Params.json_filter }}
             <div class="grid__item">
-                {{ partial "talkpreview" (dict
-                    "Link" .RelPermalink
-                    "Title" .Title
-                    "Image" (index .Params.images 0)
-                    "Content" .Params.description
-                ) }}
+                {{- partial "event-preview" . -}} 
             </div>
         {{ end }}
     </div>
@@ -208,12 +203,7 @@
     <div class="grid grid--2">
         {{ range where $.Site.Pages "Params.layout" "landing-day" }}
             <div class="grid__item">
-                {{ partial "talkpreview" (dict
-                    "Link" .RelPermalink
-                    "Title" .Title
-                    "Image" (index .Params.images 0)
-                    "Content" .Params.description
-                ) }}
+                {{- partial "event-preview" . -}} 
             </div>
         {{ end }}
     </div>

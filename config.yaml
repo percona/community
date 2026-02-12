@@ -9,6 +9,7 @@ params:
   favicon: superhero.png
   images:
     - contribute.jpg
+buildFuture: true
 taxonomies:
   tag: tags
   category: categories

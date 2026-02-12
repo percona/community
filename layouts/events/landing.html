@@ -57,11 +57,7 @@
     <div class="grid grid--3">
         {{ range where $.Site.Pages "Params.layout" "landing-day" }}
             <div class="grid__item">
-                {{- if isset .Params "images" -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
-                {{- else -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                {{- end -}}
+                {{- partial "event-preview" . -}} 
             </div>
         {{- end -}}
     </div>

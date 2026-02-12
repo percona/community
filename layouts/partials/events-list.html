@@ -33,17 +33,7 @@
       <div class="events-list grid grid--2" id="events-list-container">
         {{ range .paginator.Pages }}
           <div class="grid__item">
-            {{- $img := "" -}}
-            {{- if isset .Params "images" -}}
-              {{- $img = index .Params.images 0 -}}
-            {{- end -}}
-
-            {{ partial "talkpreview.html" (dict
-                "Link" .RelPermalink
-                "Title" .Title
-                "Content" .Content
-                "Image" $img
-            ) }}
+              {{ partial "event-preview" . }}
           </div>
         {{ end }}
       </div>
@@ -179,12 +169,7 @@
 
   {{/* -------- BUILD INDEX ENTRY -------- */}}
   {{- $searchIndex = $searchIndex | append (dict
-    "html" (partial "talkpreview.html" (dict
-      "Link" .RelPermalink
-      "Title" .Title
-      "Content" .Content
-      "Image" $img
-    ))
+    "html" (partial "event-preview.html" .)
     "title"     ($title | lower)
     "tags"      ($tags | lower)
     "speakers"  ($speakersStr | lower)

@@ -67,7 +67,7 @@
 
       {{- range $recommendations -}}
         <div class="grid__item">
-          {{ partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+          {{- partial "event-preview" . -}} 
         </div>
       {{- end -}}
     </div>
