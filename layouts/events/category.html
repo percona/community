@@ -39,12 +39,9 @@
                     {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $array ) -}}
 
                     {{- range $one -}}
-                        {{ if isset .Params "images" }}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Date" .Date) -}}  
-                        {{ else }}
-                         {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Date" .Date) -}}          
-                        {{ end }}
+                        {{ partial "event-preview" . }}
                     {{- end -}}
+
                 </div>
 
                 <div class="featured__right featured__list">
@@ -53,11 +50,7 @@
                     {{- $featured := first 3 (shuffle (where (where $.Page.Site.Pages "Section" "events") "Params.tags" "intersect" (slice "Featured"))) -}}
 
                     {{- range $featured -}}
-                        {{ if isset .Params "images" }}
-                            {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .Date) -}} 
-                        {{ else }}
-                            {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "PublishDate" .Date) -}}         
-                        {{ end }}
+                        {{- partial "event-preview-line" . -}} 
                     {{- end -}}
                 </div>
             </div>

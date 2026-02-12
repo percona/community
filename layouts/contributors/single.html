@@ -164,7 +164,7 @@
   <div class="grid grid--3">
     {{ range $recent_events }}
       <div class="grid__item">
-        {{ partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
+        {{- partial "event-preview" . -}} 
       </div>
     {{ end }}
   </div>
@@ -182,7 +182,7 @@
         {{ else if eq $p.Section "blog" }}
           {{ partial "postpreview" (dict "Link" $p.RelPermalink "Title" $p.Title "Image" (index $p.Params.images 0) "Content" $p.Content) }}
         {{ else }}
-          {{ partial "talkpreview" (dict "Link" $p.RelPermalink "Title" $p.Title "Image" (index $p.Params.images 0) "Content" $p.Content) }}
+          {{- partial "event-preview" . -}} 
         {{ end }}
       </div>
     {{ end }}
