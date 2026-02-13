@@ -28,6 +28,7 @@ events_tags:
 - event
 - opensource
 talks_tags:
+- Slides
 - Video
 posts_count: 1
 events_count: 3

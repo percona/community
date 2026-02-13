@@ -25,6 +25,7 @@ events_tags:
 - fosdem
 talks_tags:
 - Open Source
+- Slides
 - Video
 posts_count: 0
 events_count: 3

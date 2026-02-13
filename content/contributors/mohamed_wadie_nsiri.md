@@ -21,6 +21,7 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Events
+- Featured
 - MySQL-Summit
 talks_tags: []
 posts_count: 0

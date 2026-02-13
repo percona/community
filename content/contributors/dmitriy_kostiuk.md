@@ -22,6 +22,7 @@ events_tags:
 talks_tags:
 - Open Source
 - Opensource
+- Slides
 - Video
 posts_count: 0
 events_count: 1

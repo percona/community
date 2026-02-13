@@ -1,6 +1,6 @@
 ---
 id: "2f5674d0-91f3-80a9-bde7-eaa64953e059"
-title: "Follow my Leader - connecting client applications after sever cutover or failover"
+title: "Follow my Leader - connecting client applications after server cutover or failover"
 layout: single
 speakers:
   - alastair_turner

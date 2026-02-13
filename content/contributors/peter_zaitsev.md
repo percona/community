@@ -27,6 +27,7 @@ blog_tags: []
 events_tags:
 - Event
 - Events
+- Featured
 - Home
 - Kubernetes
 - MySQL-Summit
@@ -41,6 +42,7 @@ events_tags:
 - russia
 - sponsorship
 talks_tags:
+- Cloud Native
 - DBaaS
 - Databases
 - Kubernetes
@@ -49,12 +51,14 @@ talks_tags:
 - Open Source
 - Opensource
 - Security
+- Slides
 - Vector Search
 - Video
+- database
 - video
 posts_count: 0
-events_count: 21
-talks_count: 18
+events_count: 22
+talks_count: 19
 contributor_type:
 - speaker
 contributor_year:

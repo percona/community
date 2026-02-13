@@ -10,7 +10,7 @@ tagline: null
 social:
   facebook: null
   github: null
-  linkedin: null
+  linkedin: https://www.linkedin.com/in/egegunes/
   twitter: null
   website: null
 images:
@@ -25,12 +25,17 @@ blog_tags: []
 events_tags:
 - Event
 - Events
+- Featured
 - Kubernetes
 - Meetup
-talks_tags: []
+talks_tags:
+- Cloud Native
+- Kubernetes
+- Open Source
+- database
 posts_count: 0
-events_count: 4
-talks_count: 0
+events_count: 5
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:

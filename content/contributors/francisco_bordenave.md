@@ -27,7 +27,8 @@ events_tags:
 - event
 - opensource
 - sponsorship
-talks_tags: []
+talks_tags:
+- Slides
 posts_count: 0
 events_count: 4
 talks_count: 1

@@ -21,6 +21,7 @@ events_tags:
 - PerconaLive2023
 - Podcast
 talks_tags:
+- Slides
 - Video
 posts_count: 0
 events_count: 1

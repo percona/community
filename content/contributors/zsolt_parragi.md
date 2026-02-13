@@ -28,6 +28,7 @@ events_tags: []
 talks_tags:
 - Open Source
 - Security
+- Slides
 posts_count: 4
 events_count: 0
 talks_count: 1

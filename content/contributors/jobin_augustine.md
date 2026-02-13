@@ -25,6 +25,7 @@ events_tags:
 - opensource
 - pgpool
 talks_tags:
+- Slides
 - Video
 - video
 posts_count: 0

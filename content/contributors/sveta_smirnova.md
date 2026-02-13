@@ -33,6 +33,7 @@ events_tags:
 - Event
 talks_tags:
 - MariaDB
+- Slides
 - Video
 posts_count: 4
 events_count: 1

@@ -24,6 +24,7 @@ events_tags:
 - sponsorship
 talks_tags:
 - DevOps
+- Slides
 posts_count: 0
 events_count: 1
 talks_count: 1
