@@ -44,15 +44,40 @@
 
                 </div>
 
-                <div class="featured__right featured__list">
-                    <h2 class="title-wrap">FEATURED EVENTS</h2>
+<div class="featured__right featured__list">
+    <h2 class="title-wrap">UPCOMING EVENTS</h2>
 
-                    {{- $featured := first 3 (shuffle (where (where $.Page.Site.Pages "Section" "events") "Params.tags" "intersect" (slice "Featured"))) -}}
+    {{ $now := now }}
+    {{ $events := where $.Page.Site.RegularPages "Section" "events" }}
 
-                    {{- range $featured -}}
-                        {{- partial "event-preview-line" . -}} 
-                    {{- end -}}
-                </div>
+    {{/* Сортируем по дате */}}
+    {{ $sorted := sort $events ".Date" "asc" }}
+
+    {{ $count := 0 }}
+
+    {{ range $sorted }}
+        {{/* Пропускаем прошедшие */}}
+        {{ if le .Date $now }}
+            {{ continue }}
+        {{ end }}
+
+        {{/* Пропускаем Promo */}}
+        {{ if in .Params.tags "Promo" }}
+            {{ continue }}
+        {{ end }}
+
+        {{/* Ограничиваем тремя */}}
+        {{ if ge $count 3 }}
+            {{ break }}
+        {{ end }}
+
+        {{ partial "event-preview-line" . }}
+        {{ $count = add $count 1 }}
+    {{ end }}
+</div>
+
+
+
             </div>
         </div>
         {{- end -}}

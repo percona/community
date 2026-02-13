@@ -7,7 +7,7 @@ description: There’s a lot of discussion about comparing the available Kuberne
 images:
 - events/2026-coh-postgresql/postgresql-coh.png
 layout: single
-date: '2026-01-14'
+date: '2026-01-27'
 EventDate: Tuesday, January 27, 2026, from 1:00 PM to 2:00 PM GTM
 speakers:
 - ege_gunes

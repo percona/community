@@ -4,7 +4,7 @@ description:  Discover how Percona's latest Postgres Operator feature transforms
 images:
 - events/2026-coh-faster-backups-percona-postgresql/mayank_intro.png
 layout: single
-date: '2026-02-12'
+date: '2026-03-10'
 EventDate: Tuesday, March 10, 2026, from 11:00 AM to 12:00 PM GTM
 speakers:
 - mayank_shah
