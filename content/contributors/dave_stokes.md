@@ -34,6 +34,7 @@ events_tags:
 talks_tags:
 - Databases
 - Opensource
+- Slides
 - Video
 - slides
 - video

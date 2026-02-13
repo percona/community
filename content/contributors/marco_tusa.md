@@ -20,6 +20,7 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Featured
 - Kubernetes
 - Promo
 - fosdem

@@ -34,6 +34,7 @@ blog_tags:
 - Event
 - Event Recap
 - Events
+- FOSDEM
 - JSON
 - Kubeconeu
 - Kubernetes
@@ -92,15 +93,17 @@ talks_tags:
 - Open Source
 - Opensource
 - Operators
+- Slides
 - Video
 - video
-posts_count: 31
+posts_count: 32
 events_count: 7
 talks_count: 17
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

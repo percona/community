@@ -20,6 +20,7 @@ blog_tags: []
 events_tags: []
 talks_tags:
 - Opensource
+- Slides
 - Video
 posts_count: 0
 events_count: 0

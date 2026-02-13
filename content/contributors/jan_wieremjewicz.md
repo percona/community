@@ -36,6 +36,7 @@ blog_tags:
 - sponsorship
 events_tags:
 - Events
+- Featured
 - PerconaLive2023
 - Podcast
 talks_tags:
@@ -45,6 +46,7 @@ talks_tags:
 - Open Source
 - Opensource
 - Security
+- Slides
 - Tech
 - Video
 posts_count: 13
