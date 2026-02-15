@@ -60,9 +60,59 @@ Weak credentials remain one of the easiest attack vectors.
 
 ### Enable Password Validation
 
+component_validate_password is MySQL’s modern password policy engine. Think of it as a bouncer for user credentials. Every time someone tries to set or change a password, it checks whether that password meets your defined security standards before letting it in.
+
+It replaces the older validate_password plugin with a component-based architecture that is more flexible and better aligned with MySQL 8.x design.
+
 ``` sql
 INSTALL COMPONENT 'file://component_validate_password';
 ```
+
+### What It Does
+
+When enabled, it enforces rules such as:
+
+-   Minimum password length
+-   Required mix of character types
+-   Dictionary file checks
+-   Strength scoring
+
+If a password fails policy, MySQL rejects it immediately.
+
+### Why It Matters
+
+Weak passwords remain one of the most common entry points in database breaches. This component reduces risk by enforcing baseline credential hygiene automatically, instead of relying on developer discipline.
+
+### 1. Find Anonymous Users
+
+Anonymous users have an empty User field.
+
+``` sql
+SELECT user, host FROM mysql.user WHERE user='';
+```
+
+If you see rows returned, those are anonymous accounts.
+
+### 2. Remove Anonymous Users (Recommended Method)
+
+In modern MySQL versions:
+
+```sql
+DROP USER ''@'localhost';
+DROP USER ''@'%';
+```
+
+Adjust the Host value based on what your query returned.
+
+### Why This Matters
+
+Anonymous users:
+
+- Allow login without credentials
+- May have default privileges in some distributions
+- Increase the attack surface unnecessarily
+
+In hardened environments, there should be zero accounts with an empty username. Every identity should be explicit, accountable, and least-privileged.
 
 ### Recommended Policies
 
@@ -70,12 +120,6 @@ INSTALL COMPONENT 'file://component_validate_password';
 -   Require mixed case, numbers, and symbols
 -   Enforce password rotation policies
 -   Remove anonymous users immediately
-
-### Find Anonymous Users
-
-``` sql
-SELECT user, host FROM mysql.user WHERE user='';
-```
 
 ## 3. Encryption Everywhere
 
@@ -160,12 +204,18 @@ Filters (define what to log)
 Users assigned to filters
 It’s granular and rule-driven.
 
-### Monitor Key Events
+### Auditing Key Events
 
 -   Failed logins
 -   Privilege changes
 -   Schema modifications
 -   Unusual query activity
+
+### References:
+1. [Audit Log Filter Component
+](,https://percona.community/blog/2025/09/18/audit-log-filter-component/)
+2. [Audit Log Filters Part II
+](https://percona.community/blog/2025/10/08/audit-log-filters-part-ii/)
 
 ### Useful Metrics
 
@@ -220,7 +270,11 @@ ls -l /backup/mysql
 
 ## 8. Replication & Cluster Security
 
-Replication channels can become unintended entry points.
+Replication is not just a data distribution feature. It is a persistent, privileged communication channel between servers. If misconfigured, it can become a lateral movement pathway inside your infrastructure. Treat every replication link as a trusted but tightly controlled corridor.
+
+Principle: Replication Is a Privileged Service Account
+
+Replication users require elevated capabilities. They must be isolated, tightly scoped, and monitored like any other service identity.
 
 ### Secure Replication Users
 
@@ -228,12 +282,47 @@ Replication channels can become unintended entry points.
 CREATE USER 'repl'@'10.%' IDENTIFIED BY 'strongpassword';
 GRANT REPLICATION REPLICA ON *.* TO 'repl'@'10.%';
 ```
+Hardening considerations:
 
-### Additional Safeguards
+-   Restrict host patterns as narrowly as possible. Avoid % whenever feasible.
+-   Require SSL or X.509 certificate authentication.
+-   Enforce strong password policies or use a secrets manager.
+-   Disable interactive login capability if applicable.
 
--   Encrypt replication traffic
--   Avoid using administrative accounts
--   Monitor replication errors for anomalies
+### Encrypt Replication Traffic
+
+Replication traffic may include sensitive row data, DDL statements, and metadata. Always encrypt it.
+
+At minimum:
+
+-   Enable require_secure_transport=ON
+-   Configure TLS certificates on source and replica
+-   Set replication channel to use SSL:
+
+```sql
+CHANGE REPLICATION SOURCE TO
+  SOURCE_SSL=1,
+  SOURCE_SSL_CA='/path/ca.pem',
+  SOURCE_SSL_CERT='/path/client-cert.pem',
+  SOURCE_SSL_KEY='/path/client-key.pem';
+```
+
+For MySQL Group Replication or InnoDB Cluster:
+
+-   Enable group communication SSL
+-   Validate certificate identity
+-   Use dedicated replication networks
+
+### Binary Log and Relay Log Protection
+
+Replication relies on binary logs. Protect them.
+
+-   Set binlog_encryption=ON
+-   Set relay_log_info_repository=TABLE
+-   Restrict filesystem access to log directories
+-   Monitor log retention policies
+
+Compromised binary logs can reveal historical data changes.
 
 ------------------------------------------------------------------------
 
@@ -247,7 +336,7 @@ configuration drift and evolving threats.
 -   Weekly: failed login review
 -   Monthly: privilege audits
 -   Quarterly: configuration review
--   Annually: full security assessment
+-   Semiannually: full security assessment
 
 ------------------------------------------------------------------------
 
