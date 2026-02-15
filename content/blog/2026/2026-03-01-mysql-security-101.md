@@ -81,6 +81,11 @@ SELECT user, host FROM mysql.user WHERE user='';
 
 Encryption protects data both in transit and at rest.
 
+### Enable Transparent Data Encryption (TDE)
+
+See my BLOG post from January 13 for deep dive into Transparent Data Encryption.
+[Configuring the Component Keyring in Percona Server and PXC 8.4](https://percona.community/blog/2026/01/13/configuring-the-component-keyring-in-percona-server-and-pxc-8.4/)
+
 ### Enable TLS for Connections
 
 ``` ini
@@ -180,9 +185,9 @@ patterns.
 
 ``` ini
 local_infile=OFF
-skip_symbolic_links=ON
 secure_file_priv=/var/lib/mysql-files
-sql_mode=STRICT_ALL_TABLES
+sql_mode="STRICT_ALL_TABLES"
+secure-log-path=/var/log/mysql
 ```
 
 ### Why These Matter
