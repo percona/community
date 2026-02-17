@@ -1,6 +1,6 @@
 ---
 title: "PostgreSQL minor release postponed in Q1’ 2026"
-date: "2026-02-16T11:00:00+00:00"
+date: "2026-02-17T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'pg_stat_monitor', 'monitoring']
 categories: ['PostgreSQL']
 authors:
