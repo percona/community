@@ -1,6 +1,6 @@
 ---
 title: "PostgreSQL minor release postponed in Q1’ 2026"
-date: "2026-02-17T11:00:00+00:00"
+date: "2026-02-18T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'pg_stat_monitor', 'monitoring']
 categories: ['PostgreSQL']
 authors:
@@ -35,5 +35,3 @@ If you need to move forward with the February 12 version in the meantime, please
 Our customers can contact us through Percona Support Services to receive the high quality assistance we are known for. We also encourage community users to reach out via the [Percona Community Forums](https://forums.percona.com/), where we will do our best to provide guidance based on the information you share.
 
 Thank you for your trust and for being part of the Percona community.
-
-
