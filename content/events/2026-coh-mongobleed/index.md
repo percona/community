@@ -21,7 +21,7 @@ In this interview, we’ll break down who’s at risk, why zlib is the trigger, 
 - 📅 **Date/Time:** 24 February, 16:00 PM GTM
 - 👤 **Speaker:** Ivan Groenewold - Percona Tech Lead, MongoDB
 - 📍 **Online**
-- 🔗 To Be Confirmed
+- 🔗 [Register here](https://event.on24.com/wcc/r/5245421/414FB7CD1A026F9CCA27820E71350189)
 
 
 ***Join our Community Office Hours!***
