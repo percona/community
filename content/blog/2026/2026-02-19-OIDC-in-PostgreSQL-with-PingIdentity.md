@@ -11,9 +11,9 @@ images:
 
 PostgreSQL 18 introduced native OAuth 2.0 authentication support, marking an important step towards modern, centralized identity-based access control. However, since every identity provider implements OpenID Connect (OIDC) slightly differently, PostgreSQL delegates token validation to external validator libraries. This is where Percona's pg_oidc_validator extension comes in - it bridges PostgreSQL with any OIDC-compliant Identity Provider.
 
-There are several Identity and Access Management (IAM) solutions available today that enable Single Sign-On (SSO) using OAuth 2.0 and OpenID Connect. In an earlier blog by my colleague Fernando, [PostgreSQL OIDC Authentication with pg_oidc_validator](https://www.percona.com/blog/postgresql-oidc-authentication-with-pg_oidc_validator/), he demonstrated how PostgreSQL 18 canbe integrated with Keycloak using pg_oidc_validator. In this post, we explore the same concept using Ping Identity (PingOne).
+There are several identity and access management (IAM) solutions available today that enable Single Sign-On (SSO) using OAuth 2.0 and OpenID Connect. In an earlier blog by my colleague, Fernando [PostgreSQL OIDC Authentication with pg_oidc_validator](https://www.percona.com/blog/postgresql-oidc-authentication-with-pg_oidc_validator/), demonstrated how PostgreSQL 18 can be integrated with Keycloak using pg_oidc_validator. In this post, we explore the same concept using Ping Identity (PingOne).
 
-Ping Identity is widely used in enterprise environments for Identity and Access management. If you are in such an environment, integrating PostgreSQL directly with Ping Identity can provide access control.
+Ping Identity is widely used in enterprise environments for identity and access management. If you are in such an environment, integrating PostgreSQL directly with Ping Identity can provide access control.
 
 This blog is intended for PostgreSQL users, DBAs and customers who want to evaluate or deploy OIDC authentication using pg_oidc_validator. The goal is to provide a practical step-by-step walk-through to get a working setup.
 
@@ -41,7 +41,7 @@ We will cover the following topics as part of this blog:
 
 ![](blog/2026/02/ping-sign-on.png)
 
-4.  Log in to the Ping Identity Administrator Console and create a new environment by clicking on the + sign
+4.  Upon successful Sign-in, we will see Ping Identity Administrator Console. In the left navigation panel, click on Environments -> **Environments +** (marked in red).
 
 ![](blog/2026/02/ping-admin-console.png)
 
@@ -53,7 +53,7 @@ We will cover the following topics as part of this blog:
 
 ![](blog/2026/02/ping-manage-environment.png)
 
-7.  Add a new Application, select the type as **Device Authorization** and click on Save.
+7.  In the left navigation panel, click on Applications -> Applications -> click on **Applications +**. Fill the application name, select the application type as **Device Authorization** and click on Save.
 
 ![](blog/2026/02/ping-new-application.png)
 
@@ -61,9 +61,9 @@ We will cover the following topics as part of this blog:
 
 ![](blog/2026/02/ping-created-application.png)
 
-9.  The next step is to add a new user. Goto **Directory -\> Users** and click on + sign.
+9.  The next step is to add a new user. In the left navigation panel, click on Directory -> Users and click on **Users +** sign.
 
-    For our exercise, we are creating a user called **employees.** In some Identity Providers (IdPs), it is possible to customize the ID token and control how certain claims (including the **sub** - subject claim) are generated or mapped. However, it is important to note that, currently in PingOne, the **sub** (subject) claim for the default OpenID Connect resource cannot be customized. The value of **sub** is generated and managed internally by PingOne and cannot be altered, mapped or derived from another attribute (such as email or username). As a result, PostgreSQL must be configured to work with the **sub** value exactly as issued by PingOne.
+    Fill the username field. For our exercise, we are creating a user called **employees.** In some identity providers (IdPs), it is possible to customize the ID token and control how certain claims (including the **sub** - subject claim) are generated or mapped. However, it is important to note that, currently in PingOne, the *sub* claim for the default OpenID Connect resource cannot be customized. The value of *sub* is generated and managed internally by PingOne and cannot be altered, mapped or derived from another attribute (such as email or username). As a result, PostgreSQL must be configured to work with the *sub* value exactly as issued by PingOne.
 
 ![](blog/2026/02/ping-create-user.png)
 
@@ -78,7 +78,7 @@ Since OAuth support is only available starting with PostgreSQL 18, we need a Pos
 
 1.  Ensure that the [percona-release](https://docs.percona.com/percona-software-repositories/installing.html) is already installed and configured on your system. You can refer to the official Percona documentation for setup instructions.
 
-2.  For this exercise, the steps are demonstrated on Ubuntu 24.04, so Debian-based (.deb) packages and apt are being used.
+2.  For this exercise, the steps are demonstrated on Ubuntu 24.04
 
 **Enable the PostgreSQL 18 repository**
 ```bash
@@ -114,7 +114,7 @@ Imagine the following use case:
 
 -   For simplicity in this demonstration, employees retrieve the code by connecting to the database and querying the table directly.
 
--   To avoid managing individual database accounts for every employee, access is not tied toseparate user credentials.
+-   To avoid managing individual database accounts for every employee, access is not tied to separate user credentials.
 
 -   Instead, authentication to the database is handled through the company's SSO system, allowing employees to connect using their existing corporate identity.
 
@@ -201,7 +201,7 @@ pg_oidc_validator.authn_field = sub
 
 In this configuration, we instruct pg_oidc_validator to use the sub claim from the OIDC token as the authenticated identity.
 
-The sub claim is defined by the OpenID Connect specification as a stable and unique identifier for a user within an Identity Provider (IdP). It is intended to uniquely represent a user and remain consistent across authentication sessions.
+The sub claim is defined by the OpenID Connect specification as a stable and unique identifier for a user within an identity provider (IdP). It is intended to uniquely represent a user and remain consistent across authentication sessions.
 
 PostgreSQL does not interpret or transform this value. The validator extracts the configured claim and PostgreSQL simply compares it against a database role or an entry in pg_ident.conf. If the value does not match the expected role or mapping, authentication will fail, even if the token itself is valid.
 
@@ -211,7 +211,7 @@ It is also important to note that PostgreSQL is not limited to using the sub cla
 pg_oidc_validator.authn_field = email
 ```
 
-However, whether a claim is present in the token depends on the scopes requested during authentication. Scopes control what identity information the Identity Provider includes in the token. Common examples include:
+However, whether a claim is present in the token depends on the scopes requested during authentication. Scopes control what identity information the identity provider includes in the token. Common examples include:
 
 -   openid - ensures a valid identity token with a sub claim
 -   email - includes the user\'s email address
@@ -219,7 +219,7 @@ However, whether a claim is present in the token depends on the scopes requested
 
 If a claim is not included in the requested scope, it will not appear in the token, and PostgreSQL will not be able to use it for authentication or identity mapping. Therefore, when changing authn_field to use a different claim, ensure that the corresponding scope is requested and that the claim is actually present in the issued token.
 
-**Note**: PingIdentity does not allow customized tokens for the default resource - **OpenID Connect**. We can only use pg_oidc_validator.authn_field = sub
+**Note**: Ping Identity does not allow customized tokens for the default resource - **OpenID Connect**. We can only use pg_oidc_validator.authn_field = sub
 
 
 **Reload the configuration**
@@ -242,7 +242,7 @@ For this quick connection test, we use psql to connect to the promo database as 
 ```bash
 psql 'host=127.0.0.1 user=employees dbname=promo oauth_issuer=https://auth.pingone.com.au/64935f69-5a0a-4b69-a8bd-46967d218303/as oauth_client_id=1e892f71-09d7-4ed6-a534-0dc888d39c7c'
 ```
-By connecting via the host IP address rather than the local socket, PostgreSQL treats this as a host-based connection, ensuring that the OAuth configuration in pg_hba.conf is applied and that the authentication request is redirected to PingIdentity for validation.
+By connecting via the host IP address rather than the local socket, PostgreSQL treats this as a host-based connection, ensuring that the OAuth configuration in pg_hba.conf is applied and that the authentication request is redirected to Ping Identity for validation.
 
 We will see a prompt on the console with the URL and activation code.You will notice an activation code **XXXX-XXX.** Example shown below:
 ```text
