@@ -23,6 +23,8 @@ blog_tags:
 - Developer
 - Encryption
 - Engineering
+- Events
+- FOSDEM
 - Mailing Lists
 - Meetup
 - Open Source
@@ -39,10 +41,11 @@ events_tags:
 - Stream
 - opensource
 - securing
-talks_tags: []
-posts_count: 4
+talks_tags:
+- Slides
+posts_count: 5
 events_count: 3
-talks_count: 1
+talks_count: 2
 contributor_type:
 - author
 - speaker

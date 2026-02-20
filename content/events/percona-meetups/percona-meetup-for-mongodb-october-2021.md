@@ -1,18 +1,20 @@
 ---
-title: "Percona MeetUp for MongoDB Oct 20th, 2021"
-description: "Community MeetUp for MongoDB highlighted solutions for your common problems with MongoDB including backups, scalability, security and also some MongoDB5.0 features"
+title: Percona MeetUp for MongoDB Oct 20th, 2021
+description: Community MeetUp for MongoDB highlighted solutions for your common problems
+  with MongoDB including backups, scalability, security and also some MongoDB5.0 features
 images:
-  - events/percona-meetup/MongoDB-cover-october-1920.jpg
-date: "2021-10-20"
+- events/percona-meetup/MongoDB-cover-october-1920.jpg
+date: '2021-10-20'
 draft: false
 speakers:
-  - kimberly_wilkins
-  - andrew_pogrebnoi
-  - matt_yonkovit
-tags: ['MongoDB', 'Meetup']
+- kimberly_wilkins
+- andrew_pogrebnoi
+- matt_yonkovit
+tags: ["Meetup", "MongoDB"]
+events_year: ["2021"]
+events_tag: ["Community", "MongoDB"]
+events_category: ["Speaking"]
 ---
-
-
 This video from Percona MeetUp for MongoDB of October 20th talk about backups, scalability, security, MongoDB 5.0, and more. Full recording with Andrew Pogrebnoi, Principal Software Engineer at Percona, and Kimberly Wilkins, MongoDB Technical Lead at Percona, hosted by Matt Yonkovit, The Head of Open Source Strategy at Percona. 
 
 ## Video
@@ -245,5 +247,3 @@ Your attendance to The MeetUp for MongoDB is highly encouraged if you are:
 Subscribe to our channels to get informed of all upcoming MeetUps.
 
 Invite your friends to this MeetUp by sharing this page.
-
-

@@ -15,7 +15,7 @@ event_date_start: "2014-02-01"
 event_date_end: "2014-02-02"
 event_url: "https://archive.fosdem.org/2014/"
 event_location: "Brussels, Belgium"
-talk_tags: ['MySQL', 'Video']
+talk_tags: ['MySQL', 'Video', 'Slides']
 slides: "https://archive.fosdem.org/2014/schedule/event/lepeterborosrulez/attachments/slides/454/export/events/attachments/lepeterborosrulez/slides/454/Practical_sysbench.pdf"
 video: "https://archive.fosdem.org/2014/schedule/event/lepeterborosrulez/"
 ---

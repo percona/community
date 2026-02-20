@@ -1,17 +1,21 @@
 ---
-title: "Setting Up Alerts and Basic Automation for PostgreSQL - Percona Community PostgreSQL Live Stream & Chat - March 25th"
-description: "Our experts Matt, Agustin and Charlie were live to show real use cases and answer all questions about setting Up Alerts and Basic Automation for PostgreSQL."
+title: Setting Up Alerts and Basic Automation for PostgreSQL - Percona Community PostgreSQL
+  Live Stream & Chat - March 25th
+description: Our experts Matt, Agustin and Charlie were live to show real use cases
+  and answer all questions about setting Up Alerts and Basic Automation for PostgreSQL.
 images:
-  - events/streams-pg/pg-stream-week-3-march25.jpg
-date: "2022-03-25"
+- events/streams-pg/pg-stream-week-3-march25.jpg
+date: '2022-03-25'
 draft: false
 speakers:
-  - charly_batista
-  - matt_yonkovit
-  - agustin_gallego
-tags: ['Postgres', 'Stream']
+- charly_batista
+- matt_yonkovit
+- agustin_gallego
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Percona Community organized live stream to talk more about Setting Up Alerts and Basic Automation for PostgreSQL. This recording is from the live event of March 25th with Matt Yonkovit, Charly Batista and Agustin Gallego. This is a part of the Percona Community bi-weekly Live Stream series to discuss Postgres-related topics and deep talks with technology secrets.
 
 ## Video
@@ -619,11 +623,3 @@ Thanks, everybody.
 
 **Charly Batista:**  
 Thank you, Matt. Thank you, everyone.
-
-
-
-
-
-
-
-

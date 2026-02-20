@@ -85,6 +85,9 @@
               {{ if eq .Page.Title "Video" }}
                 <li><a href="{{ .Page.Permalink }}" class="category">Video ({{ .Count }})</a></li>
               {{ end }}
+              {{ if eq .Page.Title "Slides" }}
+                <li><a href="{{ .Page.Permalink }}" class="category">Slides ({{ .Count }})</a></li>
+              {{ end }}
             {{ end }}
           </ul>
 
@@ -92,11 +95,12 @@
           <h2>Topics</h2>
           <ul class="tag-list">
             {{ range sort .page.Site.Taxonomies.talk_tags.ByCount }}
-              {{ if and (ne .Page.Title "Video") (gt .Count 1) }}
+              {{ if and (ne .Page.Title "Video") (ne .Page.Title "Slides") (gt .Count 1) }}
                 <li><a href="{{ .Page.Permalink }}" class="tag">{{ .Page.Title }} ({{ .Count }})</a></li>
               {{ end }}
             {{ end }}
           </ul>
+
     </div>
 
   </div>

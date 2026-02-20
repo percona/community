@@ -16,6 +16,7 @@ images:
 - contributors/francisco_bordenave.png
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- MySQL
 - PMM
 blog_tags: []
 events_tags:
@@ -26,10 +27,11 @@ events_tags:
 - event
 - opensource
 - sponsorship
-talks_tags: []
+talks_tags:
+- Slides
 posts_count: 0
 events_count: 4
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:

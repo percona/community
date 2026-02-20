@@ -1,13 +1,16 @@
 ---
-title: "OSDN Conf Kyiv 2021"
-description: "Percona participated in OSDN Conf 2021 in Kyiv (Ukraine). Attendees could meet experts on MySQL, PostgreSQL, MariaDB, and MongoDB on the booth, and visit talks on Kubernetes, databases, and open source."
+title: OSDN Conf Kyiv 2021
+description: Percona participated in OSDN Conf 2021 in Kyiv (Ukraine). Attendees could
+  meet experts on MySQL, PostgreSQL, MariaDB, and MongoDB on the booth, and visit
+  talks on Kubernetes, databases, and open source.
 images:
-  - events/osdn-conf-2021/IMG_4450.jpg
+- events/osdn-conf-2021/IMG_4450.jpg
 layout: single
-date: "2021-09-18"
-tags: ['opensource', 'sponsorship', 'event']
+date: '2021-09-18'
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2021"]
+events_category: ["Sponsorship"]
 ---
-
 Percona sponsored the OSDN Conf Kyiv which was held in person in the Nivki-hal on September 18th. It was a one-day non-commercial, volunteer-organized event centered on free and open-source software. Mykola Marzhan (Director of Server Engineering, Percona) and Evgeniy Patlan (Manager of Build & Release Engineering, Percona) are the main organizers of the conference. 
 
 ![OSDN Conf Kyiv 2021](/events/osdn-conf-2021/IMG_4426-COLLAGE.jpg)
@@ -22,4 +25,4 @@ Percona had a booth where everyone could come and chat with our experienced engi
 
 Also, volunteers from Percona helped to organize the event and provided assistance to speakers and attendees.
 
-After the conference, the Percona team went to a team dinner to celebrate the successful conference. 
+After the conference, the Percona team went to a team dinner to celebrate the successful conference.

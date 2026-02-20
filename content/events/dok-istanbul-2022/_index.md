@@ -1,15 +1,17 @@
 ---
-title: "DoK Istanbul Meetup 2022"
-description: "FOSDEM is an awesome conference in Europe organized by the community for the community. Percona experts actively participated in it this year."
+title: DoK Istanbul Meetup 2022
+description: FOSDEM is an awesome conference in Europe organized by the community
+  for the community. Percona experts actively participated in it this year.
 images:
-  - events/dok-istanbul-meetup-2022/4.jpeg
+- events/dok-istanbul-meetup-2022/4.jpeg
 layout: single
-date: "2022-05-12"
-tags: ['Event']
+date: '2022-05-12'
 speakers:
-  - ege_gunes
+- ege_gunes
+tags: ["Event"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![DoK](/events/dok-istanbul-meetup-2022/5.png)
 Ege Güneş, Percona's Software Engineer, participated in the first DoK Istanbul Meetup on May 12th. It took place at the TurkNet office. 
 
@@ -23,4 +25,4 @@ Several talks were presented that day:
 
 ![DoK](/events/dok-istanbul-meetup-2022/3.png)
 
-All talks were well attended and gathered approximately 30 attendees. There was an awesome content and refreshments for everyone! 
+All talks were well attended and gathered approximately 30 attendees. There was an awesome content and refreshments for everyone!

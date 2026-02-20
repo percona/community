@@ -1,11 +1,15 @@
 ---
-title: "PGConf NYC 2022"
-description: "On September 22nd-23d, Percona Team was in New York on an important event in the PostgreSQL world - PGConf NYC. It is a non–profit, community-run conference, focused on business users, database professionals, and developers of PostgreSQL. "
+title: PGConf NYC 2022
+description: 'On September 22nd-23d, Percona Team was in New York on an important
+  event in the PostgreSQL world - PGConf NYC. It is a non–profit, community-run conference,
+  focused on business users, database professionals, and developers of PostgreSQL. '
 images:
-  - events/pgconf-nyc-2022/2.png
+- events/pgconf-nyc-2022/2.png
 layout: single
-date: "2022-09-22"
-tags: ['sponsorship', 'opensource', 'event']
+date: '2022-09-22'
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2022"]
+events_category: ["Sponsorship"]
 ---
 The [PostgreSQL NYC](https://2022.pgconf.nyc/) is a PostgreSQL community conference that was held in the last week of September 2022. It is a non–profit, community-run conference. About 140+ attendees participated in the event. Percona supported the conference on a Broze level and also provided additional support, for example, sponsoring speaker/stuff dinner. 
 

@@ -1,13 +1,15 @@
 ---
-title: "PGConf India 2024"
-description: "PGConf India 2024 took place in Bengaluru at February 28 - March 01, 2024. With about 400 conference attendees, it is the biggest Postgres event in India.  "
+title: PGConf India 2024
+description: 'PGConf India 2024 took place in Bengaluru at February 28 - March 01,
+  2024. With about 400 conference attendees, it is the biggest Postgres event in India.  '
 images:
-  - events/pgconf-india-2024/6.jpg
+- events/pgconf-india-2024/6.jpg
 layout: single
-date: "2024-02-22"
-tags: ['sponsorship', 'opensource', 'event']
+date: '2024-02-22'
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2024"]
+events_category: ["Sponsorship"]
 ---
-
 PGConf India 2024 took place in Bengaluru at February 28 - March 01, 2024. With about 400 conference attendees, it is the biggest Postgres event in India. This conference is part of efforts to grow the PostgreSQL community by increasing awareness and providing the appropriate training and resources to further PostgreSQL adoption in India.
 
 ![PGConf 2024](/events/pgconf-india-2024/9.jpg)
@@ -56,4 +58,4 @@ All attendees could participate in a raffle and win a Rapberry Pi 5 Kit and [Pos
 ![PGConf 2024](/events/pgconf-india-2024/7.jpg)
 ![PGConf 2024](/events/pgconf-india-2024/8.jpg)
 
-Big thanks for everyone who organized the event, presented there or attended it. We are already looking forward to the next year conference! 
+Big thanks for everyone who organized the event, presented there or attended it. We are already looking forward to the next year conference!

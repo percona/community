@@ -1,17 +1,20 @@
 ---
-title: "PMM on Kubernetes"
-description: "How to run PMM on Kubernetes, demonstration and discussion of technology choices"
+title: PMM on Kubernetes
+description: How to run PMM on Kubernetes, demonstration and discussion of technology
+  choices
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Denys-Kondratenko-2.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Denys-Kondratenko-2.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - denys_kondratenko
-tags: ['PMM', 'Kubernetes']
+- denys_kondratenko
+tags: ["Kubernetes", "PMM"]
+events_year: ["2022"]
+events_tag: ["Cloud Native"]
+events_category: ["Speaking"]
 ---
-
 ![PMM on Kubernetes](events/percona-community-live/cards/Community-Live-Day-3-Denys-Kondratenko-2.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

@@ -1,19 +1,21 @@
 ---
-title: "MySQL Meetup Brazil 2023"
-description: "Join us in São Paulo on MySQL Meetup Brazil on December 2nd. It is a free database event that Oracle and Percona organize together."
+title: MySQL Meetup Brazil 2023
+description: Join us in São Paulo on MySQL Meetup Brazil on December 2nd. It is a
+  free database event that Oracle and Percona organize together.
 images:
-  - events/mysql-meetup-brazil-2023/10.jpg
+- events/mysql-meetup-brazil-2023/10.jpg
 layout: single
-date: "2023-11-03"
-tags: ['opensource', 'Event']
+date: '2023-11-03'
 speakers:
-  - leonardo_bacchi_fernandes
-  - narciso_oliveira_junior
-  - herbert_menezes
-  - roberto_garcia_de_bem
-  - ricardo_rodrigues
+- leonardo_bacchi_fernandes
+- narciso_oliveira_junior
+- herbert_menezes
+- roberto_garcia_de_bem
+- ricardo_rodrigues
+tags: ["Event", "opensource"]
+events_year: ["2023"]
+events_category: ["Speaking"]
 ---
-
 Percona co-organized a [MySQL Meetup](https://anotherboringtechblog.com/2023/10/mysql-meetup-brazil-informacoes-do-evento-e-agenda/) with Oracle in São Paulo on December 2nd.
 
 ![MySQL MeetUp 2023](/events/mysql-meetup-brazil-2023/1.jpg)
@@ -59,6 +61,3 @@ And at the end of the day, all attendees were able to visit the Oracle data cent
 
 ![MySQL MeetUp 2023](/events/mysql-meetup-brazil-2023/9.JPG)
 ![MySQL MeetUp 2023](/events/mysql-meetup-brazil-2023/10.jpg)
-
-
-

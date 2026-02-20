@@ -22,6 +22,7 @@ events_tags:
 - Data Gravity
 - Podcast
 talks_tags:
+- Slides
 - Video
 posts_count: 0
 events_count: 1

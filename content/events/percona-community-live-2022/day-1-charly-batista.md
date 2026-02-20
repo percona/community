@@ -1,17 +1,20 @@
 ---
-title: "I Dropped My Database! Now What? - A Dive Into PostgreSQL Backup Using pgBackRest and How to Use it for PITR"
-description: "How to survive catastrophic events and recover data back!"
+title: I Dropped My Database! Now What? - A Dive Into PostgreSQL Backup Using pgBackRest
+  and How to Use it for PITR
+description: How to survive catastrophic events and recover data back!
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Charly-Batista.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Charly-Batista.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - charly_batista
-tags: ['Postgres',' PostgreSQL', 'Percona Community Live']
+- charly_batista
+tags: ["PostgreSQL", "Percona Community Live", "Postgres"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![I Dropped My Database! Now What? - A Dive Into PostgreSQL Backup Using pgBackRest and How to Use it for PITR](events/percona-community-live/cards/Community-Live-Day-1-Charly-Batista.jpg)
 
 
@@ -24,4 +27,3 @@ We live in a dangerous world and a catastrophe can happen at any time, including
 {{% youtube youtube_id="AbYBlTomQus" %}}{{% /youtube %}}
 
 ## Transcript
-

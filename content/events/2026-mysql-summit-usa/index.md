@@ -1,18 +1,21 @@
 ---
-title: "Summit for MySQL Community, USA Edition — January 14, 2026"
-description: "A technical summit for contributors and community members shaping the future of MySQL."
+title: Summit for MySQL Community, USA Edition — January 14, 2026
+description: A technical summit for contributors and community members shaping the
+  future of MySQL.
 images:
-  - events/2026-summit-mysql-community-eu/Summit-MySQL-SF-cover.jpg
+- events/2026-summit-mysql-community-eu/Summit-MySQL-SF-cover.jpg
 layout: single
-date: "2025-11-25"
-EventDate: "Wednesday, January 14, 2026, from 9:00 to 17:00 PT"
+date: '2025-11-25'
+EventDate: Wednesday, January 14, 2026, from 9:00 to 17:00 PT
 speakers:
-  - vadim_tkachenko
-  - sam_lambert
-  - peter_zaitsev
-tags: ['MySQL-Summit', 'MySQL', 'Community', 'Events']
+- vadim_tkachenko
+- sam_lambert
+- peter_zaitsev
+tags: ["Community", "Events", "MySQL", "MySQL-Summit", "Featured"]
+events_year: ["2026"]
+events_tag: ["Community", "MySQL"]
+events_category: ["Speaking", "Community"]
 ---
-
 We’re gathering in **San Francisco** on **January 14** for a focused, in‑person summit dedicated to strengthening the MySQL ecosystem through collaboration and contribution.
 
 - **Location:** 123 South Park St, San Francisco, CA 94107  
@@ -79,4 +82,3 @@ We will review submissions within one week of receiving them. Confirmed particip
 ## Also in Brussels
 
 The MySQL Community Summit will also take place in Brussels, February 2, 2026. If attending in Europe is more convenient for you, we warmly invite you to join us there. [Link](/events/2026-summit-mysql-eu/)
-

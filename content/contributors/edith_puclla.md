@@ -34,9 +34,9 @@ blog_tags:
 - Event
 - Event Recap
 - Events
+- FOSDEM
 - JSON
 - Kubeconeu
-- Kuberentes
 - Kubernetes
 - Meetup
 - MongoDB
@@ -87,20 +87,23 @@ talks_tags:
 - Containers
 - Databases
 - Docker
+- Everest
 - Kubernetes
 - Monitoring
 - Open Source
 - Opensource
 - Operators
+- Slides
 - Video
 - video
-posts_count: 31
+posts_count: 32
 events_count: 7
-talks_count: 12
+talks_count: 17
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

@@ -1,17 +1,21 @@
 ---
-title: "The Lost Art of Database Design"
-description: "There are a lot of people out there who have never heard why they should focus on designing their databases, and their database infrastructure a little better. So multiple people can benefit from this talk."
+title: The Lost Art of Database Design
+description: There are a lot of people out there who have never heard why they should
+  focus on designing their databases, and their database infrastructure a little better.
+  So multiple people can benefit from this talk.
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-1-Matt-Yonkovit.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Day-1-Matt-Yonkovit.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - matt_yonkovit
-tags: ['Databases',' PostgreSQL', 'MySQL', 'Percona Community Live']
+- matt_yonkovit
+tags: ["PostgreSQL", "Databases", "MySQL", "Percona Community Live"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
-
 ![The Lost Art of Database Design](events/percona-community-live/cards/Community-Live-Day-1-Matt-Yonkovit.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
@@ -24,4 +28,3 @@ Right now we are in a spot where people think that the databases are just part o
 {{% youtube youtube_id="HIqn5D3h-LE" %}}{{% /youtube %}}
 
 ## Transcript
-

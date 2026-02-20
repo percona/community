@@ -1,17 +1,19 @@
 ---
-title: "PMM Development Process"
-description: "Learn how to contribute to the PMM project"
+title: PMM Development Process
+description: Learn how to contribute to the PMM project
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Denys-Kondratenko.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Denys-Kondratenko.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - denys_kondratenko
-tags: ['PMM', 'MySQL']
+- denys_kondratenko
+tags: ["MySQL", "PMM"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
-
 ![PMM Development Process](events/percona-community-live/cards/Community-Live-Day-3-Denys-Kondratenko.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

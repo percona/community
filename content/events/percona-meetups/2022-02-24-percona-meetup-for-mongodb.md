@@ -1,18 +1,20 @@
 ---
-title: " Community MeetUp - Installation of MongoDB via a Kubernetes Operator - POSTPONED"
-description: "We have to postpone our Community MeetUp of today February 24th, 2022"
+title: ' Community MeetUp - Installation of MongoDB via a Kubernetes Operator - POSTPONED'
+description: We have to postpone our Community MeetUp of today February 24th, 2022
 images:
-  - events/percona-meetup/2022-02-24-meetup-mongodb-postponed.jpg
-date: "2022-02-24"
+- events/percona-meetup/2022-02-24-meetup-mongodb-postponed.jpg
+date: '2022-02-24'
 draft: false
 aliases:
-    - "/events/percona-meetups/installation-of-mongodb-via-a-kubernetes-operator-feb-24th/" 
+- /events/percona-meetups/installation-of-mongodb-via-a-kubernetes-operator-feb-24th/
 speakers:
-  - sergey_pronin
-  - matt_yonkovit
-tags: ['Mongo', 'k8s', 'Kubernetes', 'MongoDB', 'Meetup']
+- sergey_pronin
+- matt_yonkovit
+tags: ["Kubernetes", "Meetup", "Mongo", "MongoDB", "k8s"]
+events_year: ["2022"]
+events_tag: ["Cloud Native", "Community", "MongoDB"]
+events_category: ["Speaking"]
 ---
-
 ![Community MeetUp for Percona Products](events/percona-meetup/2022-02-24-meetup-mongodb-postponed.jpg)
 
 ***********************
@@ -55,4 +57,3 @@ In addition to [Percona Blog](https://www.percona.com/blog/author/sergey.pronin/
 * Informed about Percona products and wish to know much detail
 
 ## All kinds of feedback are welcome to help us improve upcoming events
-

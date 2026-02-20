@@ -1,0 +1,38 @@
+{{ define "css" -}}
+
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
+    {{- if in .Content "<pre class=\"chroma\">" -}}
+        {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+    {{ end }}
+{{- end }}
+
+{{ define "mainwrapper" }}
+
+<div class="hero hero-gradient night">
+    <div class="contentblock">
+        <div class="hero-text">
+
+            <h1>{{ .Title }} Events</h1>
+
+            {{ if .Content }}
+                {{ .Content }}
+            {{ else }}
+                <p>
+                    Browse all {{ .Title | humanize }} events.
+                    See all events <a href="/events/">here</a>.
+                </p>
+            {{ end }}
+
+        </div>
+    </div>
+</div>
+
+{{ .Content }}
+
+{{ $pages := .Pages.ByDate.Reverse }}
+{{ $paginator := .Paginate $pages }}
+
+{{ partial "events-list.html" (dict "paginator" $paginator "page" . "searchPages" $pages) }}
+
+{{ end }}

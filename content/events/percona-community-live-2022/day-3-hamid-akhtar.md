@@ -1,17 +1,20 @@
 ---
-title: "PostgreSQL Query Performance Insights"
-description: "Understanding query performance patterns are essentially the foundation for query performance tuning"
+title: PostgreSQL Query Performance Insights
+description: Understanding query performance patterns are essentially the foundation
+  for query performance tuning
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-3-Hamid-Akhtar.jpg
-PublishedDate: "2022-06-23"
+- events/percona-community-live/cards/Community-Live-Day-3-Hamid-Akhtar.jpg
+PublishedDate: '2022-06-23'
 draft: false
-day: "June 23"
-date: "2022-06-23"
+day: June 23
+date: '2022-06-23'
 speakers:
-  - hamid_akhtar
-tags: ['PostgreSQL', 'database']
+- hamid_akhtar
+tags: ["PostgreSQL", "database"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![PostgreSQL Query Performance Insights](events/percona-community-live/cards/Community-Live-Day-3-Hamid-Akhtar.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

@@ -1,16 +1,20 @@
 ---
-title: "Exploring the scalability limits of PostgreSQL on Kubernetes - Percona Community Live Stream August 25th"
-description: "Catch up with Percona Community Live Stream, and explore the Scalability limits of Postgres on Kubernetes"
+title: Exploring the scalability limits of PostgreSQL on Kubernetes - Percona Community
+  Live Stream August 25th
+description: Catch up with Percona Community Live Stream, and explore the Scalability
+  limits of Postgres on Kubernetes
 draft: false
-date: "2022-08-25"
+date: '2022-08-25'
 images:
-  - events/streams-pg/PG-Stream-Cover-Week-12-August-25.jpg
+- events/streams-pg/PG-Stream-Cover-Week-12-August-25.jpg
 speakers:
-  - charly_batista
-  - dave_stokes
-tags: ['Postgres', 'Stream']
+- charly_batista
+- dave_stokes
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 ![Percona Community PostgreSQL Live Stream & Chat - August 25th](events/streams-pg/PG-Stream-Cover-Week-12-August-25.jpg)
 
 Join us at Percona Community Live Stream, and we will explore the scalability limits of PostgreSQL on Kubernetes with Dave Stokes and Charly Batista. Come up with all your questions and get an answer right away.
@@ -144,4 +148,3 @@ thank you very much for giving this insight to the Postgres Brazil conference. W
 
 **Charly Batista**  
 great talking to you. It's always a pleasure to talk to you
-

@@ -1,17 +1,19 @@
 ---
-title: "Using PMM Alerting in Production"
-description: "How PMM can help you on your day to day operational tasks to prevent issues and how PMM can integrate with most popular pager tools"
+title: Using PMM Alerting in Production
+description: How PMM can help you on your day to day operational tasks to prevent
+  issues and how PMM can integrate with most popular pager tools
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-2-Francisco-Bordenave.jpg
-PublishedDate: "2022-06-22"
+- events/percona-community-live/cards/Community-Live-Day-2-Francisco-Bordenave.jpg
+PublishedDate: '2022-06-22'
 draft: false
-day: "June 22"
-date: "2022-06-22"
+day: June 22
+date: '2022-06-22'
 speakers:
-  - francisco_bordenave
-tags: ['PMM', 'Stream']
+- francisco_bordenave
+tags: ["PMM", "Stream"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 ![Using PMM Alerting in Production](events/percona-community-live/cards/Community-Live-Day-2-Francisco-Bordenave.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

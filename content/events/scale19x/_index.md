@@ -1,13 +1,16 @@
 ---
-title: "SCaLE 19X 2022"
-description: "SCaLE is the largest community-run open-source and free software conference in North America. It is held annually in the greater Los Angeles area. It was a big event with many sponsors this year."
+title: SCaLE 19X 2022
+description: SCaLE is the largest community-run open-source and free software conference
+  in North America. It is held annually in the greater Los Angeles area. It was a
+  big event with many sponsors this year.
 images:
-  - events/scale19x/scale19x-1.jpeg
+- events/scale19x/scale19x-1.jpeg
 layout: single
-date: "2022-08-05"
-tags: ['sponsorship', 'opensource', 'event']
+date: '2022-08-05'
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2022"]
+events_category: ["Sponsorship"]
 ---
-
 This July, Percona Team met in Los Angeles. We participated in the [Scale 19x](https://www.socallinuxexpo.org/scale/19x) from July 28th to 31st. SCaLE is the largest community-run open-source and free software conference in North America. It is held annually in the greater Los Angeles area. It was a big event with many sponsors this year.
 
 Percona sponsored the event on the Silver level and had a huge presence there. 5 experienced Percona experts gave several talks:
@@ -48,4 +51,4 @@ P.S. The code for the Yonk box is open to everyone on [GitHub](https://github.co
 
 ![Scale 19x](/events/scale19x/pg-group-dinner.jpeg)
 
-The next SCaLE 20x will take place in March 2022 in Pasadena. 
+The next SCaLE 20x will take place in March 2022 in Pasadena.

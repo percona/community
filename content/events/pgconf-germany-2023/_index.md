@@ -1,11 +1,15 @@
 ---
-title: "PGConf Germany 2023"
-description: "The PGConf Germany 2023 took place in the [Haus der Technik](https://2023.pgconf.de/venue/) in Essen, Germany, on June 27, 2023. It had a record-breaking registration with above 250 people. "
+title: PGConf Germany 2023
+description: 'The PGConf Germany 2023 took place in the [Haus der Technik](https://2023.pgconf.de/venue/)
+  in Essen, Germany, on June 27, 2023. It had a record-breaking registration with
+  above 250 people. '
 images:
-  - events/pgconf-germany-2023/4.jpg
+- events/pgconf-germany-2023/4.jpg
 layout: single
-date: "2023-06-27"
-tags: ['sponsorship', 'opensource', 'event']
+date: '2023-06-27'
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2023"]
+events_category: ["Sponsorship"]
 ---
 The PGConf Germany 2023 took place in the [Haus der Technik](https://2023.pgconf.de/venue/) in Essen, Germany, on June 27, 2023. It had a record-breaking registration with above 250 people. 
 

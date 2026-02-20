@@ -1,13 +1,16 @@
 ---
-title: "PGConf India 2023"
-description: "PGConf India 2023 started on a fresh note after 2 years of gap due to the pandemic. With 400+ conference attendees and 150+ attendees for the training program, it was a great event. "
+title: PGConf India 2023
+description: 'PGConf India 2023 started on a fresh note after 2 years of gap due to
+  the pandemic. With 400+ conference attendees and 150+ attendees for the training
+  program, it was a great event. '
 images:
-  - events/pgconf-india-2023/4.jpg
+- events/pgconf-india-2023/4.jpg
 layout: single
-date: "2023-02-22"
-tags: ['sponsorship', 'opensource', 'event']
+date: '2023-02-22'
+tags: ["event", "opensource", "sponsorship"]
+events_year: ["2023"]
+events_category: ["Sponsorship"]
 ---
-
 PGConf India 2023 started on a fresh note after 2 years of gap due to the pandemic. With 400+ conference attendees and 150+ attendees for the training program, it was a great event.
 
 There were three parallel tracks for the presentations. **Jobin Augustine**, PostgreSQL Escalation Specialist from Percona, gave 2 talks during the event: 

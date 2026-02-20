@@ -1,17 +1,22 @@
 ---
-title: " MeetUp for MySQL - Database Tuning Secrets of the Stars - Dec 8th 2021"
-description: "Listen to Support Case from Hell and attend to Live Troubleshooting AWS RDS/Aurora, EC2 in this Community MeetUp for MySQL hosted by Matt Yonkovit with Marcos Albe and Fernando Laudares Camargos"
+title: ' MeetUp for MySQL - Database Tuning Secrets of the Stars - Dec 8th 2021'
+description: Listen to Support Case from Hell and attend to Live Troubleshooting AWS
+  RDS/Aurora, EC2 in this Community MeetUp for MySQL hosted by Matt Yonkovit with
+  Marcos Albe and Fernando Laudares Camargos
 images:
-  - events/percona-meetup/mysql-december-cover-1920.jpg
-date: "2021-12-08"
+- events/percona-meetup/mysql-december-cover-1920.jpg
+date: '2021-12-08'
 draft: false
 aliases:
-    - "/events/percona-meetups/percona-meetup-for-mysql-december-2021/" 
+- /events/percona-meetups/percona-meetup-for-mysql-december-2021/
 speakers:
-  - marcos_albe
-  - fernando_laudares_camargo
-  - matt_yonkovit
-tags: ['MySQL', 'Meetup']
+- marcos_albe
+- fernando_laudares_camargo
+- matt_yonkovit
+tags: ["Meetup", "MySQL"]
+events_year: ["2021"]
+events_tag: ["Community", "MySQL"]
+events_category: ["Speaking"]
 ---
 Listen to this Community MeetUp for MySQL hosted by Matt Yonkovit to discuss Database Tuning and Troubleshooting with Marcos Albe and Nando Camargos. They reveal some Support Cases From Hell, Database Tuning Secrets of the Stars and stump the expert Troubleshooting on RDS/Aurora.
 

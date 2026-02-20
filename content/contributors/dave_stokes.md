@@ -16,6 +16,7 @@ images:
 - contributors/dave_stokes.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Cloud
 - MySQL
 blog_tags: []
 events_tags:
@@ -33,12 +34,13 @@ events_tags:
 talks_tags:
 - Databases
 - Opensource
+- Slides
 - Video
 - slides
 - video
 posts_count: 0
 events_count: 34
-talks_count: 3
+talks_count: 4
 contributor_type:
 - speaker
 contributor_year:

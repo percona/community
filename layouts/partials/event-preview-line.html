@@ -1,0 +1,36 @@
+<div class="featured-grid-list-item">
+    <div class="featured-grid-list-inner">
+
+        <div class="thumbnail">
+            <a href="{{ .RelPermalink }}">
+                {{ with .Params.images }}
+                    <img width="100%" height="100%"
+                         src="{{ ((resources.Get (index . 0)).Fill "682x384 90% jpg").RelPermalink }}"
+                         alt="{{ $.Title }}">
+                {{ end }}
+            </a>
+        </div>
+
+        <div class="context">
+            <a href="{{ .RelPermalink }}">
+                <h2>{{ .Title }}</h2>
+            </a>
+
+            <div class="bottom">
+                {{ if .Params.EventDate }}
+                    <p>{{ .Params.EventDate }}</p>
+
+                {{ else if .Params.event_date }}
+                    <p>{{ .Params.event_date }}</p>
+
+                {{ else if .Date }}
+                    <p>{{ .Date.Format "January 2, 2006" }}</p>
+
+                {{ else }}
+                    <p class="readmore">Read more &raquo;</p>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,16 +1,21 @@
 ---
-title: "How to Secure MySQL Database - Percona Community MySQL Live Stream & Chat - Nov 11th"
-description: "Join us at Percona Community Live Stream, and we will talk about how to secure MySQL database with database experts on Friday, November 11th at 9:00 AM EDT  / 03:00 PM CEST/ 06:30 PM IST."
+title: How to Secure MySQL Database - Percona Community MySQL Live Stream & Chat -
+  Nov 11th
+description: Join us at Percona Community Live Stream, and we will talk about how
+  to secure MySQL database with database experts on Friday, November 11th at 9:00
+  AM EDT  / 03:00 PM CEST/ 06:30 PM IST.
 images:
-  - events/streams-mysql/Stream-MySQL-Marcos-Secure-11-11.jpg
+- events/streams-mysql/Stream-MySQL-Marcos-Secure-11-11.jpg
 draft: false
-date: "2022-11-09"
+date: '2022-11-09'
 speakers:
-  - marcos_albe
-  - mario_garcia
+- marcos_albe
+- mario_garcia
 tags: ["MySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
-
 ![Percona Community MySQL Live Stream](events/streams-mysql/Stream-MySQL-Marcos-Secure-11-11.jpg)
 
 Percona Community Live Stream for MySQL will focus on **securing MySQL**. This is a part of our bi-weekly meetup to develop open-source database skills. Come up with your questions and get an answer straight forward to all your questions.
@@ -65,5 +70,3 @@ Yeah, I think so. I'm about to travel. We have meetings. Yeah, two weeks. I will
 
 **Mario Garcia:**  
 Hi, everyone. Thank you for joining us.
-
-

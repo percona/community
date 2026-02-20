@@ -1,5 +1,7 @@
 {{ define "css" -}}
+
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
     {{- if in .Content "<pre class=\"chroma\">" -}}
         {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
     {{ end }}
@@ -13,13 +15,21 @@
     {{ if eq .Section "events"}}
         <div class="hero hero-gradient night "><div class="contentblock">
 
-        <div class="hero-text">
-            <h1>Events</h1>
-            <p>Events organized by the Percona Community or other open source database communities</p>
-            <p>Full list of speakers on <a href="/contributor_type/speaker/">the Speakers page</a>.</p>
-        </div>
+        {{ if eq $paginator.PageNumber 1 }}
+            <div class="hero-text">
+                <h1>Events</h1>
+                <p>Events organized by the Percona Community or other open source database communities</p>
+                <p>Full list of speakers on <a href="/contributor_type/speaker/">the Speakers page</a>.</p>
+            </div>
+        {{ else }}
+            <div class="hero-text">
+                <h1>Events — Page {{ .Paginator.PageNumber }}</h1>
+                <p>Back to events home: <a href="{{ .Paginator.First.URL }}">Events</a> | <a href="/contributor_type/speaker/">Speakers</a></p>
+            </div>
+        {{ end }}
 
-        {{- if eq 1 2 -}}
+        {{ if eq $paginator.PageNumber 1 }}
+
         <div class="featured__wrapper">
             <div class="grid grid--2">
 
@@ -29,27 +39,45 @@
                     {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $array ) -}}
 
                     {{- range $one -}}
-                        {{ if isset .Params "images" }}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Date" .Date) -}}  
-                        {{ else }}
-                         {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Date" .Date) -}}          
-                        {{ end }}
+                        {{ partial "event-preview" . }}
                     {{- end -}}
+
                 </div>
 
-                <div class="featured__right featured__list">
-                    <h2 class="title-wrap">FEATURED EVENTS</h2>
+<div class="featured__right featured__list">
+    <h2 class="title-wrap">UPCOMING EVENTS</h2>
 
-                    {{- $shuffle :=  first 3 (shuffle (where $.Page.Site.Pages "Section" "events")) -}}
+    {{ $now := now }}
+    {{ $events := where $.Page.Site.RegularPages "Section" "events" }}
 
-                    {{- range $shuffle -}}
-                        {{ if isset .Params "images" }}
-                        {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "PublishDate" .Date) -}} 
-                        {{ else }}
-                        {{- partial "featured-blog-post-grid-line" (dict "Link" .RelPermalink "Title" .Title  "PublishDate" .Date) -}}         
-                        {{ end }}
-                    {{- end -}}
-                </div>
+    {{/* Сортируем по дате */}}
+    {{ $sorted := sort $events ".Date" "asc" }}
+
+    {{ $count := 0 }}
+
+    {{ range $sorted }}
+        {{/* Пропускаем прошедшие */}}
+        {{ if le .Date $now }}
+            {{ continue }}
+        {{ end }}
+
+        {{/* Пропускаем Promo */}}
+        {{ if in .Params.tags "Promo" }}
+            {{ continue }}
+        {{ end }}
+
+        {{/* Ограничиваем тремя */}}
+        {{ if ge $count 3 }}
+            {{ break }}
+        {{ end }}
+
+        {{ partial "event-preview-line" . }}
+        {{ $count = add $count 1 }}
+    {{ end }}
+</div>
+
+
+
             </div>
         </div>
         {{- end -}}
@@ -58,37 +86,7 @@
 
     {{- .Content -}}
 
-    <div class="contentblock branded">
-
-        <div class="grid grid--3">
-            {{- range $paginator.Pages -}} 
-                <div class="grid__item">
-                    {{- if isset .Params "images" -}}
-
-                            {{ partial "talkpreview" (dict "Link" .RelPermalink "Date" .Params.date "EventDate" .Params.EventDate "Title" .Title "Image" (index .Params.images 0) "Content" .Content) }}
-
-                    {{- else -}}
-                        {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                    {{- end -}}
-                </div>
-            {{- end -}}
-        </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
-        {{- end -}}
-
-        {{ partial "sharing.html" . }}
-    </div>
+    {{ partial "events-list.html" (dict "paginator" $paginator "page" . "searchPages" $pages) }}
 
     <div class="block blue"><div class="block__content"> 
     <div class="blog__featured ">

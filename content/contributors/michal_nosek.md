@@ -23,6 +23,7 @@ events_tags:
 - Valkey
 talks_tags:
 - Open Source
+- Slides
 posts_count: 0
 events_count: 1
 talks_count: 1

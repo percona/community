@@ -1,17 +1,21 @@
 ---
-title: "Community Office Hours: MySQL Replication in Cloud Native Environments - December 4, 2025"
-description: "Deep-dive office hours on Percona Operator for MySQL with native Group Replication on Kubernetes—replication models, HA design, and practical ops."
+title: 'Community Office Hours: MySQL Replication in Cloud Native Environments - December
+  4, 2025'
+description: Deep-dive office hours on Percona Operator for MySQL with native Group
+  Replication on Kubernetes—replication models, HA design, and practical ops.
 images:
-  - events/2026-community-office-hours-understanding-mysql-replication-in-cloud-native-environments/intro.jpg
+- events/2026-community-office-hours-understanding-mysql-replication-in-cloud-native-environments/intro.jpg
 layout: single
-date: "2025-11-28"
-EventDate: "December 3, 2025, at 14:00 GMT"
-tags: ['MySQL', 'Kubernetes', 'Event']
+date: '2025-11-28'
+EventDate: December 3, 2025, at 14:00 GMT
 speakers:
-  - marco_tusa
-  - ege_gunes
+- marco_tusa
+- ege_gunes
+tags: ["Event", "Kubernetes", "MySQL", "Featured"]
+events_year: ["2025"]
+events_tag: ["Cloud Native", "MySQL"]
+events_category: ["Speaking", "Community"]
 ---
-
 ## Join the Community Office Hours
 
 This session focuses on MySQL built on Percona Server for MySQL with native MySQL Group Replication on Kubernetes. It’s a significant step for the MySQL and Cloud Native community, offering more open-source options for deploying reliable, consistent MySQL clusters at scale.

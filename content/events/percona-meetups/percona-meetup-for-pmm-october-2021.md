@@ -1,16 +1,22 @@
 ---
-title: "Percona MeetUp for PMM Oct 27th, 2021"
-description: "The Community MeetUp for Percona Monitoring and Management (PMM) introduce some features that help optimizing performance, and improve the security of your open-source database environments. PMM is free and open-source i.e you have access to the code. In this meetup he was talking about only MySQL technologies, but it also applies to Postgres and MongoDB."
+title: Percona MeetUp for PMM Oct 27th, 2021
+description: The Community MeetUp for Percona Monitoring and Management (PMM) introduce
+  some features that help optimizing performance, and improve the security of your
+  open-source database environments. PMM is free and open-source i.e you have access
+  to the code. In this meetup he was talking about only MySQL technologies, but it
+  also applies to Postgres and MongoDB.
 images:
-  - events/percona-meetup/cover-pmm-october-1920.jpg
-date: "2021-10-27"
+- events/percona-meetup/cover-pmm-october-1920.jpg
+date: '2021-10-27'
 draft: false
 speakers:
-  - michael_coburn
-  - matt_yonkovit
-tags: ['PMM', 'Meetup']
+- michael_coburn
+- matt_yonkovit
+tags: ["Meetup", "PMM"]
+events_year: ["2021"]
+events_tag: ["Community"]
+events_category: ["Speaking"]
 ---
-
 Percona Community Team orgnize Community MeetUp for Percona Monitoring and Management (PMM) every month to introduce some features that help optimizing performance, and improve the security of your open-source database environments. Here is the full video recording of the live-streamed Community MeetUp for PMM of last Oct 27th, 2021. Matt Yonkovit and Michael Coburn make a demo of the dashboard and some of the more incremental changes.
 
 ## Video

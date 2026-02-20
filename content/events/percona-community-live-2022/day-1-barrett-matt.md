@@ -1,18 +1,21 @@
 ---
-title: "10 Deadly PostgreSQL Sins"
-description: "As people use PostgreSQL for more and more projects, many of them are falling into the same traps, problems, and issues that many others have."
+title: 10 Deadly PostgreSQL Sins
+description: As people use PostgreSQL for more and more projects, many of them are
+  falling into the same traps, problems, and issues that many others have.
 images:
-  -  events/percona-community-live/cards/Community-Live-Two-Day-1-Barret-Matt-16x9.jpg
-PublishedDate: "2022-06-21"
+- events/percona-community-live/cards/Community-Live-Two-Day-1-Barret-Matt-16x9.jpg
+PublishedDate: '2022-06-21'
 draft: false
-day: "June 21"
-date: "2022-06-21"
+day: June 21
+date: '2022-06-21'
 speakers:
-  - barrett_chambers
-  - matt_yonkovit
-tags: ['Postgres',' PostgreSQL', 'Percona Community Live']
+- barrett_chambers
+- matt_yonkovit
+tags: ["PostgreSQL", "Percona Community Live", "Postgres"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![10 Deadly PostgreSQL Sins](events/percona-community-live/cards/Community-Live-Two-Day-1-Barret-Matt-16x9.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).
@@ -25,4 +28,3 @@ PostgreSQL is one of the most popular open source databases on the planet. Accor
 {{% youtube youtube_id="vKfFmyjVmRc" %}}{{% /youtube %}}
 
 ## Transcript
-

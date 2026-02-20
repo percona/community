@@ -1,17 +1,22 @@
 ---
-title: "Live Chat & Demo: JS Stored Programs in Percona Server for MySQL – April 14, 2025"
-description: "Discover the newest public prototype of JS stored programs in Percona Server for MySQL. Join us for a live demo and discussion on April 14, 2025, to explore use cases, implementation details, and practical applications."
+title: 'Live Chat & Demo: JS Stored Programs in Percona Server for MySQL – April 14,
+  2025'
+description: Discover the newest public prototype of JS stored programs in Percona
+  Server for MySQL. Join us for a live demo and discussion on April 14, 2025, to explore
+  use cases, implementation details, and practical applications.
 images:
-  - blog/2025/04/Cover-Linkedin.jpg
+- blog/2025/04/Cover-Linkedin.jpg
 layout: single
-date: "2025-04-04"
-EventDate: "April 14, 2025, at 16:30 CEST / 14:30 GMT / 10:30 am ET"
+date: '2025-04-04'
+EventDate: April 14, 2025, at 16:30 CEST / 14:30 GMT / 10:30 am ET
 speakers:
-  - dmitry_lenev
-  - marco_tusa
-tags: ['MySQL', 'Event']
+- dmitry_lenev
+- marco_tusa
+tags: ["Event", "MySQL"]
+events_year: ["2025"]
+events_tag: ["MySQL"]
+events_category: ["Speaking", "Community"]
 ---
-
 ## Join the Online Stream
 
 Percona invites you to a Live Chat & Demo showcasing the **public prototype** of **JS stored programs** in Percona Server for MySQL! 

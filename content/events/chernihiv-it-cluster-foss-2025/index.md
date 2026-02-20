@@ -1,14 +1,18 @@
 ---
-title: "Partnership with Chernihiv National Technological University and Chernihiv IT Cluster"
-description: "Percona is proud to support educational and community-driven initiatives in collaboration with Chernihiv National Technological University and the Chernihiv IT Cluster."
+title: Partnership with Chernihiv National Technological University and Chernihiv
+  IT Cluster
+description: Percona is proud to support educational and community-driven initiatives
+  in collaboration with Chernihiv National Technological University and the Chernihiv
+  IT Cluster.
 images:
-  - events/chernihiv-it-cluster-foss-2025/foss-2025.jpg
+- events/chernihiv-it-cluster-foss-2025/foss-2025.jpg
 layout: single
-date: "2025-09-15"
-EventDate: "October 2–3, 2025"
-tags: ['opensource', 'devops', 'Event']
+date: '2025-09-15'
+EventDate: October 2–3, 2025
+tags: ["Event", "devops", "opensource"]
+events_year: ["2025"]
+events_category: ["Community"]
 ---
-
 Percona is proud to support educational and community-driven initiatives in collaboration with Chernihiv National Technological University and the Chernihiv IT Cluster. As an official partner of the upcoming FOSS conference, Percona contributes through thought leadership, technical expertise, and active participation in the organizing committee.
 
 Evgeniy Patlan ([blog](https://www.percona.com/blog/author/evgeniy-patlan/), [LinkedIn](https://www.linkedin.com/in/evgeniypatlan/)), Manager of Build & Release Engineering at Percona, plays a key role in these efforts. With nearly 20 years of experience in software engineering, release processes, and open-source technologies, Evgeniy is:

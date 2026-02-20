@@ -179,7 +179,7 @@ Now we can open the localhost:3000 in the browser again and check that the backe
 
 ![Percona Everest Backend Go Result](blog/2023/10/backend-go-run-result.png)
 
-## Everestctl and Kuberentes cluster
+## Everestctl and Kubernetes cluster
 
 Another important component of Percona Everest is everestctl. [everestctl](https://github.com/percona/percona-everest-cli/) is a CLI tool responsible for provisioning Percona Everest on Kubernetes clusters.
 

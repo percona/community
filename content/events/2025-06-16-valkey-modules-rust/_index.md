@@ -1,17 +1,20 @@
 ---
-title: "Online Stream – Building Valkey Modules in Rust – June 16, 2025"
-description: "Learn how to extend Valkey with custom modules using Rust and the Valkey Modules Rust SDK."
+title: Online Stream – Building Valkey Modules in Rust – June 16, 2025
+description: Learn how to extend Valkey with custom modules using Rust and the Valkey
+  Modules Rust SDK.
 images:
-  - events/streams/Valkey-Modules.jpg
+- events/streams/Valkey-Modules.jpg
 layout: single
-date: "2025-05-30"
-EventDate: "June 16, 2025, at 8:00 PM GMT / 1:00 PM PT"
+date: '2025-05-30'
+EventDate: June 16, 2025, at 8:00 PM GMT / 1:00 PM PT
 speakers:
-  - dmitry_polyakovsky
-  - lori_lorusso
-tags: ['Rust', 'Valkey', 'Event']
+- dmitry_polyakovsky
+- lori_lorusso
+tags: ["Event", "Rust", "Valkey"]
+events_year: ["2025"]
+events_tag: ["Valkey"]
+events_category: ["Speaking", "Community"]
 ---
-
 Percona invites developers and engineers to an **interactive technical session** on **building Valkey modules in Rust**, featuring **Dmitry Polyakovsky**, a recognized **author and speaker** on Valkey and Rust module development.  
 
 Have you used **Valkey (or Redis)** but wished it had a specific feature?  

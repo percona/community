@@ -1,14 +1,18 @@
 ---
-title: "Percona MeetUp for Percona Monitoring and Management PMM Dec 1st, 2021"
-description: "Live streaming from AWS re:Invent in Las Vegas to highlight PMM features for open-source database monitoring: MySQL, PostgreSQL, MongoDB"
+title: Percona MeetUp for Percona Monitoring and Management PMM Dec 1st, 2021
+description: 'Live streaming from AWS re:Invent in Las Vegas to highlight PMM features
+  for open-source database monitoring: MySQL, PostgreSQL, MongoDB'
 images:
-  - events/percona-meetup/cover-pmm-december-1920.jpg
-date: "2021-12-01"
+- events/percona-meetup/cover-pmm-december-1920.jpg
+date: '2021-12-01'
 draft: false
 speakers:
-  - michael_coburn
-  - matt_yonkovit
-tags: ['PMM', 'Meetup']
+- michael_coburn
+- matt_yonkovit
+tags: ["Meetup", "PMM"]
+events_year: ["2021"]
+events_tag: ["Community"]
+events_category: ["Speaking", "Sponsorship"]
 ---
 Percona Monitoring and Management (PMM) is designed and constantly updated with useful features for monitoring and optimizing your database performance. The Community MeetUp for PMM of last Dec 1st, 2021 was live streaming from AWS re:Invent with Michael Coburn, hosted by Matt Yonkovit. Together, they have resolved database performance issues and stump the expert.
 
@@ -613,4 +617,3 @@ We welcome everyone! Come and benefit from the MeetUp if you are:
 * Student or someone who wants to learn more about open source databases
 
 * Interested in monitoring your database performance with PMM
-

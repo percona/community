@@ -1,48 +1,52 @@
 ---
-title: "Percona Community Live 2022"
-description: "Percona Community Live will take place on June 21-23 and will be live-streamed on YouTube, LinkedIn, and Twitch. It is an excellent opportunity to learn from the best-of-breed experts directly from your home!"
+title: Percona Community Live 2022
+description: Percona Community Live will take place on June 21-23 and will be live-streamed
+  on YouTube, LinkedIn, and Twitch. It is an excellent opportunity to learn from the
+  best-of-breed experts directly from your home!
 images:
-  - events/percona-community-live/cover-start.jpg
+- events/percona-community-live/cover-start.jpg
 layout: landing
-csv: "assets/csv/Percona-Community-Live-Talks.csv"
-date: "2022-06-21"
-tags: ['opensource', 'event', 'Percona Community Live', 'dashboard']
+csv: csv/Percona-Community-Live-Talks.csv
+json: /json/talks.json
+date: '2022-06-21'
 speakers:
-  - bruce_momjian
-  - matt_yonkovit
-  - lenz_grimmer
-  - barrett_chambers
-  - charly_batista
-  - denys_kondratenko
-  - david_ducos
-  - sergey_pronin
-  - francisco_bordenave
-  - colin_charles
-  - maksim_gramin
-  - wey_gu
-  - leonardo_bacchi_fernandes
-  - gabriel_ciciliani
-  - ravikumar_buragapu
-  - yang_keao
-  - anton_bystrov
-  - farokh_shahabi
-  - wayne
-  - robert_reeves
-  - sri_sakthivel
-  - yunus_shaikh
-  - matthias_crauwels
-  - divyanshu_soni
-  - ibrar_ahmed
-  - kedar_vaijanapurkar
-  - alawi_assaggaf
-  - rahul_malik
-  - hamid_akhtar
-  - naveed_shaikh
-  - sidney_chen
-  - daniel_seybold
-  - javier_fernandez
+- bruce_momjian
+- matt_yonkovit
+- lenz_grimmer
+- barrett_chambers
+- charly_batista
+- denys_kondratenko
+- david_ducos
+- sergey_pronin
+- francisco_bordenave
+- colin_charles
+- maksim_gramin
+- wey_gu
+- leonardo_bacchi_fernandes
+- gabriel_ciciliani
+- ravikumar_buragapu
+- yang_keao
+- anton_bystrov
+- farokh_shahabi
+- wayne
+- robert_reeves
+- sri_sakthivel
+- yunus_shaikh
+- matthias_crauwels
+- divyanshu_soni
+- ibrar_ahmed
+- kedar_vaijanapurkar
+- alawi_assaggaf
+- rahul_malik
+- hamid_akhtar
+- naveed_shaikh
+- sidney_chen
+- daniel_seybold
+- javier_fernandez
+tags: ["Percona Community Live", "dashboard", "event", "opensource"]
+events_year: ["2022"]
+events_category: ["Speaking"]
 ---
-
 Good news! We are happy to announce a new 100% virtual event coming up this summer - **Percona Community Live**! 
 
 * Agenda is ready and published [here](#agenda)
@@ -79,6 +83,3 @@ The event will be live-streamed on several platforms. No registration is require
 Twitter - [@PerconaBytes](https://twitter.com/PerconaBytes)
 
 Twitch - [PerconaCommunity](https://www.twitch.tv/perconacommunity)
-
-
-

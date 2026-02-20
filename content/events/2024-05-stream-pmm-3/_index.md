@@ -1,17 +1,21 @@
 ---
-title: "Online Stream – Enhance Your Database Monitoring with PMM 3 – May 20th at 18:30 GMT"
-description: "Gain valuable knowledge on the latest changes in MySQL and how they impact Percona Toolkit."
+title: Online Stream – Enhance Your Database Monitoring with PMM 3 – May 20th at 18:30
+  GMT
+description: Gain valuable knowledge on the latest changes in MySQL and how they impact
+  Percona Toolkit.
 images:
-  - events/streams/Stream-PMM-3.jpg
+- events/streams/Stream-PMM-3.jpg
 layout: single
-date: "2025-05-07"
-EventDate: "May 20, 2025, at 18:30 GMT / 14:30 ET"
+date: '2025-05-07'
+EventDate: May 20, 2025, at 18:30 GMT / 14:30 ET
 speakers:
-  - michael_coburn
-  - nurlan_moldomurov
-tags: ['MongoDB', 'PMM', 'Event']
+- michael_coburn
+- nurlan_moldomurov
+tags: ["Event", "MongoDB", "PMM"]
+events_year: ["2025"]
+events_tag: ["MongoDB"]
+events_category: ["Speaking", "Community"]
 ---
-
 Percona invites you to a **Live Stream & Demo** featuring the latest enhancements in **Percona Monitoring and Management (PMM) 3**!
 
 Discover **new security features, query analytics improvements, and enhanced monitoring configurations** designed to optimize database observability and management. Learn about key upgrades released on **January 30, 2025**, and how they can enhance your database operations.
@@ -71,6 +75,3 @@ Tune in on **May 20, 2025**, at **18:30 GMT / 14:30 ET**, and watch the live str
 🔗 Join the [YouTube Stream](https://www.youtube.com/watch?v=6QWSRYJaXl0)
 
 Mark your calendars, spread the word, and get ready for an insightful session on **PMM 3**!
-
-
-

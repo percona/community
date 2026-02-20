@@ -1,14 +1,20 @@
 ---
-title: "Using PostgreSQL and Redis to Boost Performance - Percona Community PostgreSQL Live Stream & Chat - November 17th"
-description: "Join us at Percona Community Live Stream, and we will talk about how to use PG and Redis to boost performance with database experts on Thursday, November 17th at 10:00 AM EST / 04:00 PM CET / 08:30 PM IST"
+title: Using PostgreSQL and Redis to Boost Performance - Percona Community PostgreSQL
+  Live Stream & Chat - November 17th
+description: Join us at Percona Community Live Stream, and we will talk about how
+  to use PG and Redis to boost performance with database experts on Thursday, November
+  17th at 10:00 AM EST / 04:00 PM CET / 08:30 PM IST
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Dave-Chino-Redis.jpg
+- events/streams-pg/PG-Stream-Dave-Chino-Redis.jpg
 speakers:
-  - charly_batista
-  - mario_garcia
-tags: ['Postgres', 'Stream']
-date: "2022-11-17"
+- charly_batista
+- mario_garcia
+date: '2022-11-17'
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
 ![Percona Community PostgreSQL Live Stream & Chat](events/streams-pg/PG-Stream-Dave-Chino-Redis.jpg)
  

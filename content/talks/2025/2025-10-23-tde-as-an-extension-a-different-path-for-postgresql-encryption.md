@@ -15,7 +15,7 @@ event_date_start: "2025-10-21"
 event_date_end: "2025-10-24"
 event_url: "https://2025.pgconf.eu"
 event_location: "Riga, Latvia"
-talk_tags: ['PostgreSQL', 'Security', 'Open Source']
+talk_tags: ['PostgreSQL', 'Security', 'Open Source', 'Slides']
 slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7191/slides/807/PGConf%20EU%202025%20Riga%20TDE%20slides.pdf"
 video: ""
 ---

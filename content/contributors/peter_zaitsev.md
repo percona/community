@@ -27,12 +27,14 @@ blog_tags: []
 events_tags:
 - Event
 - Events
+- Featured
 - Home
 - Kubernetes
 - MySQL-Summit
 - PerconaUniversity
 - Promo
 - Yerevan
+- databases
 - devops
 - event
 - fosdem
@@ -40,6 +42,7 @@ events_tags:
 - russia
 - sponsorship
 talks_tags:
+- Cloud Native
 - DBaaS
 - Databases
 - Kubernetes
@@ -47,12 +50,15 @@ talks_tags:
 - MariaDB
 - Open Source
 - Opensource
+- Security
+- Slides
 - Vector Search
 - Video
+- database
 - video
 posts_count: 0
-events_count: 19
-talks_count: 10
+events_count: 22
+talks_count: 19
 contributor_type:
 - speaker
 contributor_year:

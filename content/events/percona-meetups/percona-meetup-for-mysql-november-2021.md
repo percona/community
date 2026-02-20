@@ -1,15 +1,20 @@
 ---
-title: " MeetUp for MySQL - Database Backup and Xtrabackup - Nov 3rd 2021"
-description: "This Community MeetUp for MySQL on November 3rd was a 1-hour talk dedicated to talk and answer questions about open source database backup, Percona Xtrabackup, Schroedinger Backup, and Q&A."
+title: ' MeetUp for MySQL - Database Backup and Xtrabackup - Nov 3rd 2021'
+description: This Community MeetUp for MySQL on November 3rd was a 1-hour talk dedicated
+  to talk and answer questions about open source database backup, Percona Xtrabackup,
+  Schroedinger Backup, and Q&A.
 images:
-  - events/percona-meetup/cover-mysql-november-1-1920.jpg
-date: "2021-11-03"
+- events/percona-meetup/cover-mysql-november-1-1920.jpg
+date: '2021-11-03'
 draft: false
 speakers:
-  - pep_pla
-  - marcelo_altmann
-  - matt_yonkovit
-tags: ['MySQL', 'Meetup']
+- pep_pla
+- marcelo_altmann
+- matt_yonkovit
+tags: ["Meetup", "MySQL"]
+events_year: ["2021"]
+events_tag: ["Community", "MySQL"]
+events_category: ["Speaking"]
 ---
 Full recording of the Percona MeetUp for MySQL of Nov 3rd 2021. Marcelo Altmann and Pep Pla joined Matt Yonkovit to talk about Database Backup and Xtrabackup. In this video you will be aware of different database Backup solutions out there, Best practices vs. wrong strategies, Percona XtraBackup and more. As usual during the Community Meetup, They have answered questions from attendees live.
 

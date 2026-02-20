@@ -25,14 +25,18 @@ events_tags:
 - opensource
 - pgpool
 talks_tags:
+- Dev
+- Slides
 - Video
+- performance
 - video
 posts_count: 0
 events_count: 6
-talks_count: 4
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

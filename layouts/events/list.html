@@ -15,11 +15,7 @@
             {{- $paginator := .Paginate $pages }}
             {{- range $paginator.Pages -}} 
                 <div class="grid__item">
-                    {{- if isset .Params "images" -}}
-                        {{- partial "talkpreview.html" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content) -}}
-                    {{- else -}}
-                        {{- partial "talkpreview.html" (dict "Link" .RelPermalink "Title" .Title "Content" .Content) -}}
-                    {{- end -}}
+                    {{- partial "event-preview" . -}} 
                 </div>
             {{- end -}}
         </div>

@@ -9,6 +9,7 @@ params:
   favicon: superhero.png
   images:
     - contribute.jpg
+buildFuture: true
 taxonomies:
   tag: tags
   category: categories
@@ -17,6 +18,9 @@ taxonomies:
   contributor_year: "contributor_year"
   talk_tags: "talk_tags"
   talk_year: "talk_year"
+  events_category: "events_category"
+  events_year: "events_year"
+  events_tag: "events_tag"
 social:
   twitter: Percona
 sitemap:

@@ -1,16 +1,20 @@
 ---
-title: "Data Gravity Episode 1 - Charles Thompson - Dolphie, a Real-Time MySQL Monitoring Assistant"
-description: "Joe Brockmeier talks to Charles Thompson, creator of Dolphie - a real-time MySQL monitoring assistant that's open source and available for multiple platforms."
+title: Data Gravity Episode 1 - Charles Thompson - Dolphie, a Real-Time MySQL Monitoring
+  Assistant
+description: Joe Brockmeier talks to Charles Thompson, creator of Dolphie - a real-time
+  MySQL monitoring assistant that's open source and available for multiple platforms.
 images:
-  - events/data-gravity/Data-Gravity-Episode-1.jpg
+- events/data-gravity/Data-Gravity-Episode-1.jpg
 draft: false
-date: "2023-11-14"
+date: '2023-11-14'
 speakers:
-  - charles_thompson
-  - joe_brockmeier
-tags: ['Data Gravity', 'Podcast']
+- charles_thompson
+- joe_brockmeier
+tags: ["Data Gravity", "Podcast"]
+events_year: ["2023"]
+events_tag: ["Community"]
+events_category: ["Speaking","Community"]
 ---
-
 In this [episode](https://datagravity.podbean.com/e/data-gravity-episode-1/), Joe Brockmeier talks to Charles Thompson, creator of Dolphie - a real-time MySQL monitoring assistant that's open source and available for multiple platforms. He talks about creating Dolphie, how it fits into the MySQL monitoring space, and more.
 
 [Episode 1 Link](https://datagravity.podbean.com/e/data-gravity-episode-1/)
@@ -117,4 +121,4 @@ Now we're getting close to the end of our time, nor respect everybody's time, I 
 So some good things to note is that it supports Mac, Linux, and Windows also works for MySQL. I really wanted to support the older verses just because I know a lot of people that are still on 5.7, and even some people that are on 5.6, though, you know, it's important to me back and be able to share it with people that are on the older versions of me, it is kind of crazy to think that companies and people still use pod plastics, I'm not really sure why. But you know, at that point, it is what it is. Yeah, and I forgot to mention that it also supports group replication. So as you can see, I am trying to support as much as I can, that's feasible for me, but there's obviously going to be some things I currently don't support, but I am improving upon Dolphie, you know, through time, and eventually it will support even more things. So yeah, to close things out. I just want to thank you, Joe, for inviting me on and for letting me be the first person on your podcast here. I really appreciate that man. And I would like to encourage all of our listeners of the podcast to check out Dolphie to see how they can be able to help them with their database needs.
 
 **Joe Brockmeier:**  
-All right, and those of you who are still on MySQL five, six, you need to reconsider your life choices and get upgraded soon. If you need help with MySQL 5.7 Percona is going to help you support that that is commercialism going to make the podcast right there. But we are supporting folks pass it upstream into life. But really upgrade if you're on 5.6 for whatever, for goodness sakes. Please do check it out. I want to thank Charles again for being on the podcast. I really appreciate it. He's. This has been really great and thank you for making the first episode so easy. Please check back for more episodes and share and enjoy. 
+All right, and those of you who are still on MySQL five, six, you need to reconsider your life choices and get upgraded soon. If you need help with MySQL 5.7 Percona is going to help you support that that is commercialism going to make the podcast right there. But we are supporting folks pass it upstream into life. But really upgrade if you're on 5.6 for whatever, for goodness sakes. Please do check it out. I want to thank Charles again for being on the podcast. I really appreciate it. He's. This has been really great and thank you for making the first episode so easy. Please check back for more episodes and share and enjoy.

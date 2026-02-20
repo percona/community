@@ -24,12 +24,14 @@ blog_tags:
 - pg_alastair
 events_tags:
 - Events
+- Featured
 talks_tags:
 - Cloud Native
 - CloudNative
 - Everest
 - Open Source
 - Operators
+- Slides
 - Video
 posts_count: 1
 events_count: 1

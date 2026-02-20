@@ -1,12 +1,14 @@
 ---
-title: "Community PostgreSQL Live Stream & Chat"
-description: "Join the new regular series of monthly Online MeetUp for each community every Wednesday on Discord starting from Sept, 8th 2021."
+title: Community PostgreSQL Live Stream & Chat
+description: Join the new regular series of monthly Online MeetUp for each community
+  every Wednesday on Discord starting from Sept, 8th 2021.
 layout: list
 images:
-  - events/streams-pg/Stream-Cover.jpg
-date: "2022-01-27"
+- events/streams-pg/Stream-Cover.jpg
+date: '2022-01-27'
+events_year: ["2022"]
+events_category: ["Speaking","Community"]
 ---
-
 {{% hero-gradient class="night" %}}
 
 # Community PostgreSQL Live Stream & Chat

@@ -1,17 +1,20 @@
 ---
-title: "Production with ProxySQL and Orchestrator"
-description: "use case scenarios to implement HA utilizing ProxySQL, Orchestrator and Load Balancers in production environments"
+title: Production with ProxySQL and Orchestrator
+description: use case scenarios to implement HA utilizing ProxySQL, Orchestrator and
+  Load Balancers in production environments
 images:
-  -  events/percona-community-live/cards/Community-Live-Day-2-Alawi-Assaggaf.jpg
-PublishedDate: "2022-06-22"
+- events/percona-community-live/cards/Community-Live-Day-2-Alawi-Assaggaf.jpg
+PublishedDate: '2022-06-22'
 draft: false
-day: "June 22"
-date: "2022-06-22"
+day: June 22
+date: '2022-06-22'
 speakers:
-  - alawi_assaggaf
-tags: ['ProxySQL', 'Stream']
+- alawi_assaggaf
+tags: ["ProxySQL", "Stream"]
+events_year: ["2022"]
+events_tag: ["MySQL"]
+events_category: ["Speaking"]
 ---
-
 ![Production with ProxySQL and Consul](events/percona-community-live/cards/Community-Live-Day-2-Alawi-Assaggaf.jpg)
 
 This session was presented on [Percona Community Live](/events/percona-community-live-2022/) Online June 21-23, 2022. Check out the full schedule [here](/events/percona-community-live-2022/).

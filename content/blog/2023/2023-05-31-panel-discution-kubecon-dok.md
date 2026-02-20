@@ -6,7 +6,7 @@ tags: [
     "Kubeconeu",
     "Opensource",
     "CNCF",
-    "Kuberentes",
+    "Kubernetes",
     "DoK",
     "Operators",
   ]

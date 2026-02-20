@@ -1,12 +1,15 @@
 ---
-title: "Monthly Percona Developer Meetup - Join the Stream!"
-description: "This new meetup is your chance to get a behind-the-scenes view and to directly interact in person with our engineers. Jump into the session with the Restream link from the chat!"
+title: Monthly Percona Developer Meetup - Join the Stream!
+description: This new meetup is your chance to get a behind-the-scenes view and to
+  directly interact in person with our engineers. Jump into the session with the Restream
+  link from the chat!
 layout: list
 images:
-  - events/streams-monthly-dev/Developer-Meetup-Kai.jpg
-date: "2022-09-26"
+- events/streams-monthly-dev/Developer-Meetup-Kai.jpg
+date: '2022-09-26'
+events_year: ["2022"]
+events_category: ['Community']
 ---
-
 {{% hero-gradient class="night" %}}
 
 # Monthly Percona Developer Meetup

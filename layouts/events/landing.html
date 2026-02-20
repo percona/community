@@ -3,16 +3,16 @@
   {{- if in .Content "<pre class=\"chroma\">" -}}
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{ end }}
-
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/landing.scss") | safeCSS) -}}
 {{- end }}
 
 {{ define "meta" }}
+
   {{- if (isset .Params "speakers") -}}
     {{ range $key, $author := .Params.speakers -}}
       {{- with $.Site.GetPage (print "/contributors/" $author) -}}
         <meta name="author" content="{{ .Params.fullname }}" />
-      {{- end }}{{ if $key }}, {{ end -}}
+      {{- end }}
     {{- end -}}
   {{- end -}}
 
@@ -20,19 +20,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-  {{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
+  {{/* ---- JSON Talks ---- */}}
+  {{ $json := resources.Get .Params.json }}
+  {{ $data := $json | transform.Unmarshal }}
+  {{ $Talks := $data.talks }}
 
-  {{ range $i, $r := $Talks }}{{ if ge $i 1 }}
-    <meta type="talk" title="{{ index $r 0 }}" speaker1="{{ index $r 1 }}" company1="{{ index $r 2 }}" speaker2="{{ index $r 4 }}" company2="{{ index $r 5 }}" time="{{ index $r 9 }}" />
-  {{ end }}{{ end }}
+  {{ range $i, $r := $Talks }}
+    <meta type="talk"
+          title="{{ $r.Title }}"
+          speaker1="{{ index $r "Speaker 1" }}"
+          company1="{{ index $r "Company 1" }}"
+          speaker2="{{ index $r "Speaker 2" }}"
+          company2="{{ index $r "Company 2" }}"
+          time="{{ index $r "Sorting time" }}" />
+  {{ end }}
+
 {{ end }}
 
 {{ define "main" }}
 
-{{ $Talks := resources.Get .Params.csv | transform.Unmarshal }}
+{{/* ---- JSON Talks ---- */}}
+{{ $json := resources.Get .Params.json }}
+{{ $data := $json | transform.Unmarshal }}
+{{ $Talks := $data.talks }}
 
 <div class="landing text">
-  
+
     <h1>{{ .Title }}</h1>
 
     <div class="body">
@@ -42,18 +55,32 @@
     <h2 id="days">Days</h2>
 
     <div class="grid grid--3">
-        {{ range where $.Site.Pages "Params.layout" "landingDay" }}
+        {{ range where $.Site.Pages "Params.layout" "landing-day" }}
             <div class="grid__item">
-                {{- if isset .Params "images" -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
-                {{- else -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                {{- end -}}
+                {{- partial "event-preview" . -}} 
             </div>
         {{- end -}}
     </div>
 
     <h2 id="agenda">Agenda</h2>
+    <table id="example2" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th width="5%"></th>
+                <th width="50%">Talk</th>
+                <th>Speaker</th>
+                <th width="10%">Date</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>Talks</th>
+                <th>Speaker</th>
+                <th>Date</th>
+            </tr>
+        </tfoot>
+    </table>
 
     <div class="video">
         {{ partial "video.html" . }} 
@@ -68,7 +95,7 @@
                {{- if isset .Params "images" -}}
                     {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Image" (index .Params.images 0) "Content" .Content "Job" .Params.job) -}}
                 {{- else -}}
-                    {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Content" .Content "Name" .Params.full_name) -}}
+                    {{- partial "speakerpreview" (dict "Link" .RelPermalink "Name" .Params.fullname "Content" .Content ) -}}
                 {{- end -}}
             </div>
           {{- end }}
@@ -78,41 +105,102 @@
 
 </div>
 
-<div class="contentblock">
-
-    <h2 id="talks">Talks</h2>
-
-    <div class="grid grid--2">
-        {{- $pages := .Pages -}}
-        {{- $paginator := .Paginate $pages }}
-        {{- range $paginator.Pages -}} 
-            <div class="grid__item">
-                {{- if isset .Params "images" -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Params.description ) -}}
-                {{- else -}}
-                    {{- partial "talkpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Params.description) -}}
-                {{- end -}}
-            </div>
-        {{- end -}}
-    </div>
-    {{- if gt $paginator.TotalPages 1 -}}
-    <div class="paginator">
-        {{- if $paginator.HasPrev -}}
-            <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-        {{- end -}}
-        {{- range $paginator.Pagers -}}
-            <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-        {{- end -}}
-        {{- if $paginator.HasNext -}}
-            <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-        {{- end -}}
-    </div>
-    {{- end -}}
-
-</div>
 
 <br/><br/>
 {{ partial "sharing.html" . }}
 <br/><br/>
+
+<script type="text/javascript">
+
+// Формат раскрывающегося блока
+function format(d) {
+    let html = '<div class="landing-table__description"><p>';
+
+    if (d.description) {
+        html += d.description;
+    }
+
+    if (d.speaker1) {
+        html +=
+            '<br/><br/><span class="landing-table__speaker">' +
+            d.speaker1 + ' (' + d.company1 + ')</span><br/>' +
+            d.bio1;
+    }
+
+    if (d.speaker2) {
+        html +=
+            '<br/><br/><span class="landing-table__speaker">' +
+            d.speaker2 + ' (' + d.company2 + ')</span><br/>' +
+            d.bio2;
+    }
+
+    html += '</p></div>';
+    return html;
+}
+
+// Класс Talk
+function Talk(meta) {
+    this.title = meta.getAttribute("title");
+    this.speaker1 = meta.getAttribute("speaker1");
+    this.company1 = meta.getAttribute("company1");
+    this.bio1 = meta.getAttribute("bio1") || "";
+    this.speaker2 = meta.getAttribute("speaker2");
+    this.company2 = meta.getAttribute("company2");
+    this.bio2 = meta.getAttribute("bio2") || "";
+    this.description = meta.getAttribute("description") || "";
+    this.date = meta.getAttribute("date") || "";
+    this.time = meta.getAttribute("time") || "";
+
+    if (this.speaker2) {
+        this.speaker =
+            '<b>' + this.speaker1 + '</b> (' + this.company1 + '), <br/>' +
+            '<b>' + this.speaker2 + '</b> (' + this.company2 + ')';
+    } else {
+        this.speaker =
+            '<b>' + this.speaker1 + '</b> (' + this.company1 + ')';
+    }
+}
+
+$(document).ready(function () {
+
+    // Собираем все <meta type="talk">
+    const metas = document.querySelectorAll('meta[type="talk"]');
+
+    const data_obj = [...metas].map(m => new Talk(m));
+
+    // Создаём таблицу
+    const table = $('#example2').DataTable({
+        data: data_obj,
+        columns: [
+            {
+                className: 'dt-control',
+                orderable: false,
+                data: null,
+                defaultContent: '',
+            },
+            { data: 'title' },
+            { data: 'speaker' },
+            { data: 'time' }
+        ],
+        order: [[3, 'asc']],
+        paging: false
+    });
+
+    // Обработчик раскрытия строк
+    $('#example2 tbody').on('click', 'td.dt-control', function () {
+        const tr = $(this).closest('tr');
+        const row = table.row(tr);
+
+        if (row.child.isShown()) {
+            row.child.hide();
+            tr.removeClass('shown');
+        } else {
+            row.child(format(row.data())).show();
+            tr.addClass('shown');
+        }
+    });
+});
+</script>
+
 
 {{ end }}

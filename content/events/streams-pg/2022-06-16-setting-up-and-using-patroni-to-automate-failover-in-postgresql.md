@@ -1,16 +1,20 @@
 ---
-title: "Setting Up and Using Patroni to Automate Failover in PostgreSQL - Percona Community PostgreSQL Live Stream"
-description: "Learn more about setting up and using Patroni to automate failover in PostgreSQL with this Percona Community Live Stream of June, 16th"
+title: Setting Up and Using Patroni to Automate Failover in PostgreSQL - Percona Community
+  PostgreSQL Live Stream
+description: Learn more about setting up and using Patroni to automate failover in
+  PostgreSQL with this Percona Community Live Stream of June, 16th
 draft: false
 images:
-  - events/streams-pg/PG-Stream-Week-6-bg.jpg
-date: "2022-06-14"
+- events/streams-pg/PG-Stream-Week-6-bg.jpg
+date: '2022-06-14'
 speakers:
-  - charly_batista
-  - matt_yonkovit
-tags: ['Postgres', 'Stream']
+- charly_batista
+- matt_yonkovit
+tags: ["Postgres", "Stream"]
+events_year: ["2022"]
+events_tag: ["PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 ![Percona Community PostgreSQL Live Stream & Chat - June 16th](events/streams-pg/PG-Stream-Week-6-bg.jpg)
 
 This is a part of bi-weekly Percona Community Live Stream. Our experts, Charly and Matt has talked about setting up and using Patroni to automate failover in Postgres.

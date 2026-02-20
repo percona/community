@@ -15,7 +15,7 @@ event_date_start: "2024-06-12"
 event_date_end: ""
 event_url: ""
 event_location: "Denmark"
-talk_tags: ['CloudNative', 'Kubernetes', 'Containers', 'Docker', 'Open Source']
+talk_tags: ['CloudNative', 'Kubernetes', 'Containers', 'Docker', 'Open Source', 'Slides']
 slides: "https://www.slideshare.net/slideshow/managing-database-containers-with-kubernetes-operators-and-docker/270337781"
 video: ""
 ---
