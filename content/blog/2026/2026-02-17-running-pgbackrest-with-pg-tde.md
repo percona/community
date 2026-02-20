@@ -302,19 +302,20 @@ find /var/lib/postgresql/18/main -mindepth 1 -delete
 ### 8.3 Restore from Backup
 
 ```bash
-pgbackrest --stanza=demo restore
+pgbackrest --stanza=demo restore --recovery-option=restore_command='/usr/lib/postgresql/18/bin/pg_tde_restore_encrypt %f %p "pgbackrest --stanza=demo archive-get %%f %%p"'
 ```
 
 ### 8.4 Configure the Restore Command
 
-While pgBackRest automatically configures `postgresql.auto.conf` with a default `restore_command`, our setup requires a custom wrapper `pg_tde_restore_encrypt`. Open the configuration file, locate the default `restore_command` entry, and replace it with the pg_tde command below to enable on-the-fly decryption:
+We used `--recovery-option` in the restore command. This option writes the correct `restore_command` for this recovery run and keeps the configuration in one place.
+
+`pg_tde_restore_encrypt` is the required wrapper for pg_tde WAL restore: pgBackRest reads WALs from the repository in plain form, and this tool re-encrypts them as PostgreSQL writes them back to disk so the restored cluster remains encrypted.
+
+If you also want PostgreSQL to exit recovery automatically, you can add another recovery option in the same command, for example:
 
 ```
-restore_command = '/usr/lib/postgresql/18/bin/pg_tde_restore_encrypt %f %p "pgbackrest --config=/etc/pgbackrest.conf --stanza=demo archive-get %%f %%p"'
-recovery_target_action = 'promote'
+--recovery-option=recovery_target_action='promote'
 ```
-
-We set `recovery_target_action = 'promote'` to ensure the database automatically exits recovery mode and accepts read/write traffic as soon as the restore completes.
 
 ### 8.5 Start PostgreSQL
 
