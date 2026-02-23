@@ -21,7 +21,12 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Meetup
-talks_tags: []
+talks_tags:
+- Cloud Native
+- Kubernetes
+- MariaDB
+- Open Source
+- Video
 posts_count: 0
 events_count: 2
 talks_count: 2
