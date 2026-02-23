@@ -10,14 +10,15 @@ presentation_date_end: ""
 presentation_time: "2:25 pm"
 talk_year: "2026"
 event: "MySQL Belgian Days (preFOSDEM) 2026"
-event_status: "Accepted"
+event_status: "Done"
 event_date_start: "2026-01-29"
 event_date_end: ""
 event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
 event_location: "Belgian, Brussels"
-talk_tags: ['MySQL']
+talk_tags: ['MySQL', 'Video']
 slides: ""
-video: ""
+video: "https://www.youtube.com/watch?v=1SeXi2Vxf1w"
+youtube_id: "1SeXi2Vxf1w"
 ---
 ## Abstract
 

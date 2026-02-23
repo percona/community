@@ -58,7 +58,7 @@ talks_tags:
 - video
 posts_count: 0
 events_count: 22
-talks_count: 19
+talks_count: 21
 contributor_type:
 - speaker
 contributor_year:

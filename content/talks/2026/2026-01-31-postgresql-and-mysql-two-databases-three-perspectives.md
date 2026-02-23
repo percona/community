@@ -15,7 +15,7 @@ event_date_start: "2026-01-30"
 event_date_end: "2026-02-02"
 event_url: "https://fosdem.org/2026/"
 event_location: "Brussels, Belgium"
-talk_tags: ['MySQL', 'PostgreSQL']
+talk_tags: ['MySQL', 'PostgreSQL', 'Cloud Native', 'Open Source', 'Kubernetes', 'MariaDB']
 slides: ""
 video: ""
 ---

@@ -86,6 +86,7 @@ talks_tags:
 - CloudNative
 - Containers
 - Databases
+- DevOps
 - Docker
 - Everest
 - Kubernetes
@@ -98,7 +99,7 @@ talks_tags:
 - video
 posts_count: 32
 events_count: 7
-talks_count: 17
+talks_count: 18
 contributor_type:
 - author
 - speaker
