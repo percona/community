@@ -26,12 +26,13 @@ blog_tags:
 - pg_zsolt
 events_tags: []
 talks_tags:
+- OIDC
 - Open Source
 - Security
 - Slides
 posts_count: 4
 events_count: 0
-talks_count: 1
+talks_count: 2
 contributor_type:
 - author
 - speaker

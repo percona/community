@@ -41,7 +41,7 @@ events_tags:
 talks_tags: []
 posts_count: 7
 events_count: 9
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
 - speaker

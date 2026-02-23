@@ -21,7 +21,7 @@ events_tags: []
 talks_tags: []
 posts_count: 0
 events_count: 0
-talks_count: 1
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
