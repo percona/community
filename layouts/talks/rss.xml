@@ -1,0 +1,69 @@
+{{- $pages := sort .Pages ".Params.presentation_date" "desc" -}}
+<rss version="2.0">
+  <channel>
+    <title>{{ .Site.Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Site.Params.description }}</description>
+
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+
+      <pubDate>
+        {{ (time .Params.presentation_date).Format "Mon, 02 Jan 2006 15:04:05 MST" }}
+      </pubDate>
+
+      <!-- ABSTRACT -->
+      <description>
+        {{- $p := replace (index (split .Content "</p>") 0) "<p>" "" -}}
+        {{- $clean := $p | plainify | htmlUnescape -}}
+        {{- replace $clean "Abstract " "" -}}
+      </description>
+
+      <!-- SPEAKERS -->
+      {{- with .Params.speakers }}
+        {{- range . }}
+          {{- $c := $.Site.GetPage (print "/contributors/" .) -}}
+          {{- with $c }}
+            <author>{{ $c.Params.fullname }}</author>
+          {{- end }}
+        {{- end }}
+      {{- end }}
+
+      <!-- TAGS -->
+      {{- with .Params.talk_tags }}
+        {{- range . }}
+          <category>{{ . }}</category>
+        {{- end }}
+      {{- end }}
+
+      <!-- EVENT INFO -->
+      {{- with .Params.event }}
+        <event>{{ . }}</event>
+      {{- end }}
+
+      {{- with .Params.event_url }}
+        <event_url>{{ . }}</event_url>
+      {{- end }}
+
+      {{- with .Params.event_location }}
+        <event_location>{{ . }}</event_location>
+      {{- end }}
+
+      <!-- SLIDES -->
+      {{- with .Params.slides }}
+        <slides>{{ . }}</slides>
+      {{- end }}
+
+      <!-- VIDEO -->
+      {{- with .Params.video }}
+        <video>{{ . }}</video>
+      {{- end }}
+
+    </item>
+    {{ end }}
+
+  </channel>
+</rss>
