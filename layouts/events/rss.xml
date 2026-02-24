@@ -1,0 +1,86 @@
+{{- $pages := sort .Pages ".Params.date" "desc" -}}
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>{{ .Site.Title }} — Events</title>
+    <link>{{ .Permalink }}</link>
+    <description>Upcoming and past events from Percona Community</description>
+
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+
+      <pubDate>
+        {{ (time .Params.date).Format "Mon, 02 Jan 2006 15:04:05 MST" }}
+      </pubDate>
+
+      <!-- CLEAN DESCRIPTION (first paragraph only) -->
+      <description>
+        {{- $first := index (split .Content "</p>") 0 -}}
+        {{- $clean := $first | plainify | htmlUnescape -}}
+        {{- $clean -}}
+      </description>
+
+      <!-- IMAGE (media:thumbnail + media:content) -->
+        {{ with .Params.images }}
+          {{ $img := index . 0 }}
+          {{ $res := resources.Get $img }}
+          {{ if $res }}
+            {{ $thumb := ($res.Fill "320x180 90% jpg") }}
+            {{ $full := ($res.Fill "1280x720 90% jpg") }}
+            <media:thumbnail url="{{ $thumb.RelPermalink | absURL }}" />
+            <media:content url="{{ $full.RelPermalink | absURL }}" medium="image" />
+          {{ else }}
+            <media:thumbnail url="{{ $img | absURL }}" />
+            <media:content url="{{ $img | absURL }}" medium="image" />
+          {{ end }}
+        {{ end }}
+
+
+      <!-- EVENT DATE -->
+      {{ with .Params.EventDate }}
+        <event_date>{{ . }}</event_date>
+      {{ end }}
+
+      <!-- EVENT LOCATION -->
+      {{ with .Params.EventLocation }}
+        <event_location>{{ . }}</event_location>
+      {{ end }}
+
+      <!-- SPEAKERS -->
+      {{ with .Params.speakers }}
+        {{ range . }}
+          {{ $c := $.Site.GetPage (print "/contributors/" .) }}
+          {{ with $c }}
+            <author>{{ .Params.fullname }}</author>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <!-- TAGS -->
+      {{ with .Params.events_tags }}
+        {{ range . }}
+          <category>{{ . }}</category>
+        {{ end }}
+      {{ end }}
+
+      <!-- CATEGORY -->
+      {{ with .Params.events_category }}
+        {{ range . }}
+          <event_category>{{ . }}</event_category>
+        {{ end }}
+      {{ end }}
+
+      <!-- YEAR -->
+      {{ with .Params.events_year }}
+        {{ range . }}
+          <event_year>{{ . }}</event_year>
+        {{ end }}
+      {{ end }}
+
+    </item>
+    {{ end }}
+
+  </channel>
+</rss>
