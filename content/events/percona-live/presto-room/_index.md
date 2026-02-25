@@ -3,6 +3,7 @@ title: "Presto Community Track"
 description: "Presto Community Track - Percona Live ONLINE 2021 - The Presto Community put together their own track for Percona Live 2021, focusing on managing the complex nature of today’s data infrastructures using Presto.  Presto is used by some of the largest companies in the world to be able to query and aggregate data from disparate databases and system.  Learn from experts around the world on how to wrangle that data sprawl!
 "
 layout: list
+date: Thu, 13 May 2021 11:30:00 +0000
 images:
  - events/percona-live/PL2021-Presto-community-track.jpg
 ---
