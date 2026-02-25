@@ -154,7 +154,7 @@ GRANT SELECT ON dcode TO employees;
 
 ## Configure OAuth access in PostgreSQL:
 
-Finally, in order for users to connect using OAuth and authenticate through the Ping Identity server, we need to create an identity map and add an entry for such access on PostgreSQL's authentication configuration file.
+In order for users to connect using OAuth and authenticate through the Ping Identity server, we need to create an identity map and add an entry for such access on PostgreSQL's authentication configuration file.
 
 Edit the identity mapping configuration file and add an entry, which we will call *oidc*, mapping connections originated by a system user identified with a sub ID. For this exercise, we allow any string to match
 ```bash
@@ -177,7 +177,7 @@ host    promo           employees       0.0.0.0/0       oauth issuer=https://aut
 
   2. In production environments, restrict the IP range instead of using *0.0.0.0/0*
 
-  3. The oauth_issuer is the **Issuer ID** which we copied earlier during PingOne environment setup.
+  3. The `oauth_issuer` must exactly match the **Issuer ID** from your PingOne environment. The Issuer URL is unique to each PingOne environment and contains your environment UUID. It typically follows this format: `https://auth.pingone.com.au/<ENVIRONMENT_UUID>/as`. Replace `<ENVIRONMENT_UUID>` with the actual value from your PingOne environment. Do not copy the placeholder value directly.
 
 ## Enabling the pg_oidc_validation extension
 
@@ -188,11 +188,11 @@ sudo vim /etc/postgresql/18/main/postgresql.conf
 oauth_validator_libraries = 'pg_oidc_validator'
 ```
 
-The sub claim is defined by the OpenID Connect specification as a stable and unique identifier for a user within an identity provider (IdP). It is intended to uniquely represent a user and remain consistent across authentication sessions.
+The validator uses the `sub` claim from the access token by default. Hence, we need not explicitly set `pg_oidc_validator.authn_field=sub`. The sub claim is defined by the OpenID Connect specification as a stable and unique identifier for a user within an identity provider (IdP). It is intended to uniquely represent a user and remain consistent across authentication sessions.
 
 PostgreSQL does not interpret or transform this value. The validator extracts the configured claim and PostgreSQL compares it against a database role or an entry in pg_ident.conf. If the value does not match the expected role or mapping, authentication will fail, even if the token itself is valid.
 
-In this setup with Ping Identity, only the sub claim can be used for authentication with the default OpenID Connect resource. We have not explicitly set pg_oidc_validator.authn_field=sub in the config file as this is the default value.
+In this setup with Ping Identity, only the sub claim can be used for authentication with the default OpenID Connect resource.
 
 ## Reload the configuration
 
@@ -232,7 +232,7 @@ Approve access for the application, and that's it! The user has now been success
 Return to the PostgreSQL prompt and you should see that the login to the promo database is successful. You can now query the *dcode* table to fetch the discount code.
 
 ```bash
-mohit.joshi@qa-hd-27527:~$ psql 'host=127.0.0.1 user=employees dbname=promo oauth_issuer=https://auth.pingone.com.au/64935f69-5a0a-4b69-a8bd-46967d218303/as oauth_client_id=1e892f71-09d7-4ed6-a534-0dc888d39c7c'
+psql 'host=127.0.0.1 user=employees dbname=promo oauth_issuer=https://auth.pingone.com.au/64935f69-5a0a-4b69-a8bd-46967d218303/as oauth_client_id=1e892f71-09d7-4ed6-a534-0dc888d39c7c'
 Visit https://auth.pingone.com.au/64935f69-5a0a-4b69-a8bd-46967d218303/device and enter the code: 7KK7-88DK
 psql (18.2 - Percona Server for PostgreSQL 18.2.1)
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, compression: off, ALPN: postgresql)
