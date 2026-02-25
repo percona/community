@@ -35,17 +35,20 @@ blog_tags:
 - pg_tde
 - pg_zsolt
 events_tags:
+- Featured
 - Hacktoberfest
 - Kubernetes
+- PG
 - Postgres
 - Stream
+- event
 - opensource
 - securing
 talks_tags:
 - Slides
 posts_count: 5
-events_count: 3
-talks_count: 3
+events_count: 4
+talks_count: 4
 contributor_type:
 - author
 - speaker

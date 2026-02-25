@@ -14,7 +14,7 @@ event_status: "Accepted"
 event_date_start: "2026-04-21"
 event_date_end: "2026-04-22"
 event_url: "https://2026.pgconf.de/"
-event_location: "Essen, German"
+event_location: "Essen, Germany"
 talk_tags: ['PostgreSQL', 'Kubernetes']
 slides: ""
 video: ""

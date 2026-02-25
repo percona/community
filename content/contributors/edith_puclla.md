@@ -77,8 +77,11 @@ events_tags:
 - Event
 - Postgres
 - Stream
+- database
 - fosdem
+- in-memory
 - opensource
+- performance
 - securing
 talks_tags:
 - 2024 Q1
@@ -98,7 +101,7 @@ talks_tags:
 - Video
 - video
 posts_count: 32
-events_count: 7
+events_count: 8
 talks_count: 18
 contributor_type:
 - author

@@ -19,12 +19,16 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Featured
+- PG
+- Postgres
+- event
 - opensource
 - sponsorship
 talks_tags:
 - Kubernetes
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 1
 contributor_type:
 - speaker
