@@ -1,9 +1,10 @@
 {{- $pages := sort .Pages ".Params.date" "desc" -}}
+{{- $pages = where $pages ".Params.date" "!=" nil -}}
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>{{ .Site.Title }} — Events</title>
+    <title>{{ .Title }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Upcoming and past events from Percona Community</description>
+    <description>{{ .Description }}</description>
 
     {{ range $pages }}
     <item>

@@ -1,4 +1,4 @@
 ---
 title: "Percona Community Talks"
-description: ""
+description: "Presentations delivered by Percona Community speakers at conferences and meetups."
 ---
