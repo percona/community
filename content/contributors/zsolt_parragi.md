@@ -24,14 +24,18 @@ blog_tags:
 - PostgreSQL
 - Security
 - pg_zsolt
-events_tags: []
+events_tags:
+- Featured
+- PG
+- Postgres
+- event
 talks_tags:
 - OIDC
 - Open Source
 - Security
 - Slides
 posts_count: 4
-events_count: 0
+events_count: 1
 talks_count: 2
 contributor_type:
 - author

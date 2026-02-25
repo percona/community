@@ -20,7 +20,14 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Cloud Native
+- Event
+- Kubernetes
+- MariaDB
 - Meetup
+- PostgresSQL
+- opensource
+- sponsorship
 talks_tags:
 - Cloud Native
 - Kubernetes
@@ -28,7 +35,7 @@ talks_tags:
 - Open Source
 - Video
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 2
 contributor_type:
 - speaker

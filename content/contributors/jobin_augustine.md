@@ -19,11 +19,15 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Dev
+- Event
 - Meetup
 - Postgres
 - Stream
 - opensource
+- performance
 - pgpool
+- sponsorship
 talks_tags:
 - Dev
 - Slides
@@ -31,8 +35,8 @@ talks_tags:
 - performance
 - video
 posts_count: 0
-events_count: 6
-talks_count: 5
+events_count: 7
+talks_count: 6
 contributor_type:
 - speaker
 contributor_year:

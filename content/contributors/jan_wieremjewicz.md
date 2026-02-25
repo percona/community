@@ -29,6 +29,7 @@ blog_tags:
 - Security
 - monitoring
 - opensource
+- pg_alastair
 - pg_jan
 - pg_oidc_validator
 - pg_stat_monitor
@@ -37,8 +38,11 @@ blog_tags:
 events_tags:
 - Events
 - Featured
+- PG
 - PerconaLive2023
 - Podcast
+- Postgres
+- event
 talks_tags:
 - Cloud Native
 - Design
@@ -49,8 +53,8 @@ talks_tags:
 - Slides
 - Tech
 - Video
-posts_count: 14
-events_count: 2
+posts_count: 15
+events_count: 3
 talks_count: 5
 contributor_type:
 - author
