@@ -1,23 +1,27 @@
 ---
-id: "2ee674d0-91f3-80c2-90a1-d3b84f25732c"
-title: "Implementando alta disponibilidade e continuidade de serviço no MySQL nos dias atuais"
+id: 2ee674d0-91f3-80c2-90a1-d3b84f25732c
+title: Implementando alta disponibilidade e continuidade de serviço no MySQL nos dias
+  atuais
 layout: single
 speakers:
-  - fernando_laudares_camargos
-talk_url: "https://mysqlbr.com.br/agenda/"
-presentation_date: "2025-10-04"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "MySQL BR Conf 2025"
-event_status: "Done"
-event_date_start: "2025-10-04"
-event_date_end: ""
-event_url: ""
-event_location: "São Paulo, Brazil"
-talk_tags: ['MySQL']
-slides: ""
-video: ""
+- fernando_laudares_camargos
+talk_url: https://mysqlbr.com.br/agenda/
+presentation_date: '2025-10-04'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: MySQL BR Conf 2025
+event_status: Done
+event_date_start: '2025-10-04'
+event_date_end: ''
+event_url: ''
+event_location: São Paulo, Brazil
+talk_tags:
+- MySQL
+slides: ''
+video: ''
+images:
+- talks/2025/2025-10-04-implementando-alta-disponibilidade-e-continuidade-de-servi-o-no-mysql-nos-dias-atuais.png
 ---
 ## Abstract
 

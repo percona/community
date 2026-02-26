@@ -1,23 +1,30 @@
 ---
-id: "281674d0-91f3-80ad-8e44-f74d5d37152a"
-title: "Lessons from two decades of hacking the proprietary value into open source databases"
+id: 281674d0-91f3-80ad-8e44-f74d5d37152a
+title: Lessons from two decades of hacking the proprietary value into open source
+  databases
 layout: single
 speakers:
-  - michal_nosek
-talk_url: ""
-presentation_date: "2025-10-24"
-presentation_date_end: ""
-presentation_time: "09:25–10:15"
-talk_year: "2025"
-event: "PGConf EU 2025 Riga"
-event_status: "Done"
-event_date_start: "2025-10-21"
-event_date_end: "2025-10-24"
-event_url: "https://2025.pgconf.eu"
-event_location: "Riga, Latvia"
-talk_tags: ['PostgreSQL', 'Community', 'Open Source', 'Slides']
-slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7192/slides/796/Lessons%20from%20Two%20Decades%20of%20Hacking%20Proprietary%20Value%20into%20Open%20Source%20Databases.pdf"
-video: ""
+- michal_nosek
+talk_url: ''
+presentation_date: '2025-10-24'
+presentation_date_end: ''
+presentation_time: 09:25–10:15
+talk_year: '2025'
+event: PGConf EU 2025 Riga
+event_status: Done
+event_date_start: '2025-10-21'
+event_date_end: '2025-10-24'
+event_url: https://2025.pgconf.eu
+event_location: Riga, Latvia
+talk_tags:
+- PostgreSQL
+- Community
+- Open Source
+- Slides
+slides: https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7192/slides/796/Lessons%20from%20Two%20Decades%20of%20Hacking%20Proprietary%20Value%20into%20Open%20Source%20Databases.pdf
+video: ''
+images:
+- talks/2025/2025-10-24-lessons-from-two-decades-of-hacking-the-proprietary-value-into-open-source-databases.png
 ---
 ## Abstract
 

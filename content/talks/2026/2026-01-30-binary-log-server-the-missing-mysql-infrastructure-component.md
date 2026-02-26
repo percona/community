@@ -1,24 +1,28 @@
 ---
-id: "2ee674d0-91f3-8052-8d3d-e016fac9eef0"
-title: "Binary Log Server - the missing MySQL infrastructure component"
+id: 2ee674d0-91f3-8052-8d3d-e016fac9eef0
+title: Binary Log Server - the missing MySQL infrastructure component
 layout: single
 speakers:
-  - yura_sorokin
-talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
-presentation_date: "2026-01-30"
-presentation_date_end: ""
-presentation_time: "9:35 am"
-talk_year: "2026"
-event: "MySQL Belgian Days (preFOSDEM) 2026"
-event_status: "Done"
-event_date_start: "2026-01-29"
-event_date_end: ""
-event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
-event_location: "Belgian, Brussels"
-talk_tags: ['MySQL', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=5se7UKErguU"
-youtube_id: "5se7UKErguU"
+- yura_sorokin
+talk_url: https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/
+presentation_date: '2026-01-30'
+presentation_date_end: ''
+presentation_time: 9:35 am
+talk_year: '2026'
+event: MySQL Belgian Days (preFOSDEM) 2026
+event_status: Done
+event_date_start: '2026-01-29'
+event_date_end: ''
+event_url: https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/
+event_location: Belgian, Brussels
+talk_tags:
+- MySQL
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=5se7UKErguU
+youtube_id: 5se7UKErguU
+images:
+- talks/2026/2026-01-30-binary-log-server-the-missing-mysql-infrastructure-component.png
 ---
 ## Abstract
 

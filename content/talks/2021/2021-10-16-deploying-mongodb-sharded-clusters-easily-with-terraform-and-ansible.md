@@ -1,24 +1,28 @@
 ---
-id: "d23ea3a3-ec43-40f3-aea8-a897ca71a1f9"
-title: "Deploying MongoDB sharded clusters easily with Terraform and Ansible"
+id: d23ea3a3-ec43-40f3-aea8-a897ca71a1f9
+title: Deploying MongoDB sharded clusters easily with Terraform and Ansible
 layout: single
 speakers:
-  - ivan_groenewold
-talk_url: "https://2021.allthingsopen.org/"
-presentation_date: "2021-10-16"
-presentation_date_end: ""
-presentation_time: "16/Oct/21 10:30 PM"
-talk_year: "2021"
-event: "All Things Open 2021 "
-event_status: "Done"
-event_date_start: "2021-10-17"
-event_date_end: "2021-10-19"
-event_url: "https://2021.allthingsopen.org/"
-event_location: "Raleigh"
-talk_tags: ['MongoDB', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=XTCXDmJD3cA"
-youtube_id: "XTCXDmJD3cA"
+- ivan_groenewold
+talk_url: https://2021.allthingsopen.org/
+presentation_date: '2021-10-16'
+presentation_date_end: ''
+presentation_time: 16/Oct/21 10:30 PM
+talk_year: '2021'
+event: 'All Things Open 2021 '
+event_status: Done
+event_date_start: '2021-10-17'
+event_date_end: '2021-10-19'
+event_url: https://2021.allthingsopen.org/
+event_location: Raleigh
+talk_tags:
+- MongoDB
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=XTCXDmJD3cA
+youtube_id: XTCXDmJD3cA
+images:
+- talks/2021/2021-10-16-deploying-mongodb-sharded-clusters-easily-with-terraform-and-ansible.png
 ---
 ## Abstract
 

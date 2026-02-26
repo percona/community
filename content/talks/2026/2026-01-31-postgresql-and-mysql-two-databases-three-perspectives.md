@@ -1,23 +1,31 @@
 ---
-id: "2ee674d0-91f3-8031-a92f-c120a58cbaee"
-title: "PostgreSQL and MySQL, Two Databases, Three Perspectives"
+id: 2ee674d0-91f3-8031-a92f-c120a58cbaee
+title: PostgreSQL and MySQL, Two Databases, Three Perspectives
 layout: single
 speakers:
-  - pep_pla
-talk_url: "https://fosdem.org/2026/schedule/event/JWX9UM-postgres-mysql-two-databases-three-perspectives/"
-presentation_date: "2026-01-31"
-presentation_date_end: ""
-presentation_time: "10:30"
-talk_year: "2026"
-event: "FOSDEM 2026"
-event_status: "Accepted"
-event_date_start: "2026-01-30"
-event_date_end: "2026-02-02"
-event_url: "https://fosdem.org/2026/"
-event_location: "Brussels, Belgium"
-talk_tags: ['MySQL', 'PostgreSQL', 'Cloud Native', 'Open Source', 'Kubernetes', 'MariaDB']
-slides: ""
-video: ""
+- pep_pla
+talk_url: https://fosdem.org/2026/schedule/event/JWX9UM-postgres-mysql-two-databases-three-perspectives/
+presentation_date: '2026-01-31'
+presentation_date_end: ''
+presentation_time: '10:30'
+talk_year: '2026'
+event: FOSDEM 2026
+event_status: Accepted
+event_date_start: '2026-01-30'
+event_date_end: '2026-02-02'
+event_url: https://fosdem.org/2026/
+event_location: Brussels, Belgium
+talk_tags:
+- MySQL
+- PostgreSQL
+- Cloud Native
+- Open Source
+- Kubernetes
+- MariaDB
+slides: ''
+video: ''
+images:
+- talks/2026/2026-01-31-postgresql-and-mysql-two-databases-three-perspectives.png
 ---
 ## Abstract
 

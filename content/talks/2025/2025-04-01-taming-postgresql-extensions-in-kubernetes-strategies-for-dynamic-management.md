@@ -1,24 +1,32 @@
 ---
-id: "183674d0-91f3-80f8-9925-f59857164c66"
-title: "Taming PostgreSQL Extensions in Kubernetes: Strategies for Dynamic Management"
+id: 183674d0-91f3-80f8-9925-f59857164c66
+title: Taming PostgreSQL Extensions in Kubernetes: Strategies for Dynamic Management
 layout: single
 speakers:
-  - peter_szczepaniak
-talk_url: "https://colocatedeventseu2025.sched.com/event/1u5hJ/taming-postgresql-extensions-in-kubernetes-strategies-for-dynamic-management-peter-szczepaniak-percona"
-presentation_date: "2025-04-01"
-presentation_date_end: ""
-presentation_time: "11:45"
-talk_year: "2025"
-event: "Kubecon + CloudNativeCon Europe 2025"
-event_status: "Done"
-event_date_start: "2025-04-01"
-event_date_end: "2025-04-04"
-event_url: "https://kccnceu2025.sched.com/"
-event_location: "London, UK"
-talk_tags: ['PostgreSQL', 'Operators', 'Kubernetes', 'Cloud Native', 'Open Source', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=_arr3sEckSw"
-youtube_id: "_arr3sEckSw"
+- peter_szczepaniak
+talk_url: https://colocatedeventseu2025.sched.com/event/1u5hJ/taming-postgresql-extensions-in-kubernetes-strategies-for-dynamic-management-peter-szczepaniak-percona
+presentation_date: '2025-04-01'
+presentation_date_end: ''
+presentation_time: '11:45'
+talk_year: '2025'
+event: Kubecon + CloudNativeCon Europe 2025
+event_status: Done
+event_date_start: '2025-04-01'
+event_date_end: '2025-04-04'
+event_url: https://kccnceu2025.sched.com/
+event_location: London, UK
+talk_tags:
+- PostgreSQL
+- Operators
+- Kubernetes
+- Cloud Native
+- Open Source
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=_arr3sEckSw
+youtube_id: _arr3sEckSw
+images:
+- talks/2025/2025-04-01-taming-postgresql-extensions-in-kubernetes-strategies-for-dynamic-management.png
 ---
 ## Abstract
 

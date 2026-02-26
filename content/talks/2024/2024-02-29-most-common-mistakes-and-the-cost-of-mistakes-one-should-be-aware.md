@@ -1,24 +1,28 @@
 ---
-id: "32350568-fef7-496e-9e0a-bd2a65576e9f"
-title: "Most Common Mistakes and the Cost of Mistakes One Should Be Aware"
+id: 32350568-fef7-496e-9e0a-bd2a65576e9f
+title: Most Common Mistakes and the Cost of Mistakes One Should Be Aware
 layout: single
 speakers:
-  - jobin_augustine
-talk_url: "https://www.pgconf.in/conferences/pgconfin2024/program/proposals/574"
-presentation_date: "2024-02-29"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2024"
-event: "PGConf India 2024"
-event_status: "Done"
-event_date_start: "2024-02-28"
-event_date_end: "2024-03-01"
-event_url: "https://pgconf.in/conferences/pgconfin2024"
-event_location: ""
-talk_tags: ['PostgreSQL', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=5ysqoTEEdUk&t=2s"
-youtube_id: "5ysqoTEEdUk"
+- jobin_augustine
+talk_url: https://www.pgconf.in/conferences/pgconfin2024/program/proposals/574
+presentation_date: '2024-02-29'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2024'
+event: PGConf India 2024
+event_status: Done
+event_date_start: '2024-02-28'
+event_date_end: '2024-03-01'
+event_url: https://pgconf.in/conferences/pgconfin2024
+event_location: ''
+talk_tags:
+- PostgreSQL
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=5ysqoTEEdUk&t=2s
+youtube_id: 5ysqoTEEdUk
+images:
+- talks/2024/2024-02-29-most-common-mistakes-and-the-cost-of-mistakes-one-should-be-aware.png
 ---
 ## Abstract
 

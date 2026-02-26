@@ -1,24 +1,29 @@
 ---
-id: "2f0674d0-91f3-80e3-ba07-f057ab65d320"
-title: "What MySQL Community Can Learn From PostgreSQL"
+id: 2f0674d0-91f3-80e3-ba07-f057ab65d320
+title: What MySQL Community Can Learn From PostgreSQL
 layout: single
 speakers:
-  - peter_zaitsev
-talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
-presentation_date: "2026-01-29"
-presentation_date_end: ""
-presentation_time: "4:40 pm"
-talk_year: "2026"
-event: "MySQL Belgian Days (preFOSDEM) 2026"
-event_status: "Done"
-event_date_start: "2026-01-29"
-event_date_end: ""
-event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
-event_location: "Belgian, Brussels"
-talk_tags: ['MySQL', 'PostgreSQL', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=f09iJKVx02w"
-youtube_id: "f09iJKVx02w"
+- peter_zaitsev
+talk_url: https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/
+presentation_date: '2026-01-29'
+presentation_date_end: ''
+presentation_time: 4:40 pm
+talk_year: '2026'
+event: MySQL Belgian Days (preFOSDEM) 2026
+event_status: Done
+event_date_start: '2026-01-29'
+event_date_end: ''
+event_url: https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/
+event_location: Belgian, Brussels
+talk_tags:
+- MySQL
+- PostgreSQL
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=f09iJKVx02w
+youtube_id: f09iJKVx02w
+images:
+- talks/2026/2026-01-29-what-mysql-community-can-learn-from-postgresql.png
 ---
 ## Abstract
 

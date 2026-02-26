@@ -1,24 +1,28 @@
 ---
-id: "2f0674d0-91f3-8098-8085-cd6a523a20e8"
-title: "Bringing Flamegraphs to MySQL Query Optimization"
+id: 2f0674d0-91f3-8098-8085-cd6a523a20e8
+title: Bringing Flamegraphs to MySQL Query Optimization
 layout: single
 speakers:
-  - vinicius_grippa
-talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
-presentation_date: "2026-01-30"
-presentation_date_end: ""
-presentation_time: "1:15 pm"
-talk_year: "2026"
-event: "MySQL Belgian Days (preFOSDEM) 2026"
-event_status: "Done"
-event_date_start: "2026-01-29"
-event_date_end: ""
-event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
-event_location: "Belgian, Brussels"
-talk_tags: ['MySQL', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=tdx9leN2kBg"
-youtube_id: "tdx9leN2kBg"
+- vinicius_grippa
+talk_url: https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/
+presentation_date: '2026-01-30'
+presentation_date_end: ''
+presentation_time: 1:15 pm
+talk_year: '2026'
+event: MySQL Belgian Days (preFOSDEM) 2026
+event_status: Done
+event_date_start: '2026-01-29'
+event_date_end: ''
+event_url: https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/
+event_location: Belgian, Brussels
+talk_tags:
+- MySQL
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=tdx9leN2kBg
+youtube_id: tdx9leN2kBg
+images:
+- talks/2026/2026-01-30-bringing-flamegraphs-to-mysql-query-optimization.png
 ---
 ## Abstract
 

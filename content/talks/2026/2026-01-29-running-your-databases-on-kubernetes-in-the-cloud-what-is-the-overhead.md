@@ -1,24 +1,28 @@
 ---
-id: "2ee674d0-91f3-80c4-87f4-ced74b919b1b"
-title: "Running your databases on Kubernetes in the cloud: what is the overhead?"
+id: 2ee674d0-91f3-80c4-87f4-ced74b919b1b
+title: 'Running your databases on Kubernetes in the cloud: what is the overhead?'
 layout: single
 speakers:
-  - fernando_laudares_camargos
-talk_url: "https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/"
-presentation_date: "2026-01-29"
-presentation_date_end: ""
-presentation_time: "1:50 pm"
-talk_year: "2026"
-event: "MySQL Belgian Days (preFOSDEM) 2026"
-event_status: "Done"
-event_date_start: "2026-01-29"
-event_date_end: ""
-event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
-event_location: "Belgian, Brussels"
-talk_tags: ['MySQL', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=vjEAZhSBy7k"
-youtube_id: "vjEAZhSBy7k"
+- fernando_laudares_camargos
+talk_url: https://www.mysqlandfriends.eu/post/prefosdem-mysql-belgian-days-2026-agenda/
+presentation_date: '2026-01-29'
+presentation_date_end: ''
+presentation_time: 1:50 pm
+talk_year: '2026'
+event: MySQL Belgian Days (preFOSDEM) 2026
+event_status: Done
+event_date_start: '2026-01-29'
+event_date_end: ''
+event_url: https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/
+event_location: Belgian, Brussels
+talk_tags:
+- MySQL
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=vjEAZhSBy7k
+youtube_id: vjEAZhSBy7k
+images:
+- talks/2026/2026-01-29-running-your-databases-on-kubernetes-in-the-cloud-what-is-the-overhead.png
 ---
 ## Abstract
 
