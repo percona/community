@@ -22,7 +22,6 @@ Percona will have a strong presence with four expert speakers contributing to th
 * **Peter Zaitsev** (Founder)
 * **Andrey Glazkov**
 * **Martin Visser**
-* **Edith Puclla**
 
 The summit explores critical technical themes for modern high-throughput applications, including distributed clustering, durability patterns, and real-time event-driven patterns. 
 
@@ -38,4 +37,4 @@ Percona is excited to join this global virtual gathering to share insights on bu
 
 ![Percona Speakers](/events/build-dev-con-2026/percona-speakers.jpg)
 
-Those interested in the intersection of open-source and high-performance databases can find more information on the [official event page](https://builddevcon.com/in-memory-databases/).
+Those interested in the intersection of open-source and high-performance databases can find more information on the [official event page](https://buildevcon.com/in-memory-databases/).
