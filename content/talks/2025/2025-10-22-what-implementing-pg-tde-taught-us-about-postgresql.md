@@ -1,23 +1,29 @@
 ---
-id: "222674d0-91f3-8053-a28d-df125703a538"
-title: "What implementing pg_tde taught us about PostgreSQL"
+id: 222674d0-91f3-8053-a28d-df125703a538
+title: What implementing pg_tde taught us about PostgreSQL
 layout: single
 speakers:
-  - jan_wieremjewicz
-talk_url: ""
-presentation_date: "2025-10-22"
-presentation_date_end: ""
-presentation_time: "16:05–16:55"
-talk_year: "2025"
-event: "PGConf EU 2025 Riga"
-event_status: "Done"
-event_date_start: "2025-10-21"
-event_date_end: "2025-10-24"
-event_url: "https://2025.pgconf.eu"
-event_location: "Riga, Latvia"
-talk_tags: ['Security', 'PostgreSQL', 'Open Source', 'Slides']
-slides: "https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7191/slides/807/PGConf%20EU%202025%20Riga%20TDE%20slides.pdf"
-video: ""
+- jan_wieremjewicz
+talk_url: ''
+presentation_date: '2025-10-22'
+presentation_date_end: ''
+presentation_time: 16:05–16:55
+talk_year: '2025'
+event: PGConf EU 2025 Riga
+event_status: Done
+event_date_start: '2025-10-21'
+event_date_end: '2025-10-24'
+event_url: https://2025.pgconf.eu
+event_location: Riga, Latvia
+talk_tags:
+- Security
+- PostgreSQL
+- Open Source
+- Slides
+slides: https://www.postgresql.eu/events/pgconfeu2025/sessions/session/7191/slides/807/PGConf%20EU%202025%20Riga%20TDE%20slides.pdf
+video: ''
+images:
+- talks/2025/2025-10-22-what-implementing-pg-tde-taught-us-about-postgresql.png
 ---
 ## Abstract
 

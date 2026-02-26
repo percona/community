@@ -1,24 +1,34 @@
 ---
-id: "28d674d0-91f3-8067-b616-d9df8de564a7"
-title: "Azure DBaaS on Your Terms: Gaining Full Control Without the Operational Headache"
+id: 28d674d0-91f3-8067-b616-d9df8de564a7
+title: 'Azure DBaaS on Your Terms: Gaining Full Control Without the Operational Headache'
 layout: single
 speakers:
-  - peter_szczepaniak
-  - radoslaw_szulgo
-talk_url: "https://www.meetup.com/pl-PL/microsoft-azure-users-group-poland/events/311357008/?eventOrigin=group_upcoming_events"
-presentation_date: "2025-10-16"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "Microsoft Azure User Group Poland #18 "
-event_status: "Done"
-event_date_start: "2025-10-16"
-event_date_end: ""
-event_url: "https://www.meetup.com/microsoft-azure-users-group-poland/events/311357008/?eventOrigin=group_events_list"
-event_location: "Gdansk, Poland"
-talk_tags: ['Kubernetes', 'DBaaS', 'Cloud', 'Opensource', 'Databases', 'MongoDB', 'Azure', 'Cloud Native']
-slides: ""
-video: ""
+- peter_szczepaniak
+- radoslaw_szulgo
+talk_url: https://www.meetup.com/pl-PL/microsoft-azure-users-group-poland/events/311357008/?eventOrigin=group_upcoming_events
+presentation_date: '2025-10-16'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: 'Microsoft Azure User Group Poland #18 '
+event_status: Done
+event_date_start: '2025-10-16'
+event_date_end: ''
+event_url: https://www.meetup.com/microsoft-azure-users-group-poland/events/311357008/?eventOrigin=group_events_list
+event_location: Gdansk, Poland
+talk_tags:
+- Kubernetes
+- DBaaS
+- Cloud
+- Opensource
+- Databases
+- MongoDB
+- Azure
+- Cloud Native
+slides: ''
+video: ''
+images:
+- talks/2025/2025-10-16-azure-dbaas-on-your-terms-gaining-full-control-without-the-operational-headache.png
 ---
 ## Abstract
 

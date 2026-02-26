@@ -1,25 +1,33 @@
 ---
-id: "14b674d0-91f3-80c9-8b30-fbed1187229e"
-title: "Panel: Cloud Native, Cost Conscious, No Comprimise: Leveraging Open Source Databases in Financial Industry"
+id: 14b674d0-91f3-80c9-8b30-fbed1187229e
+title: 'Panel: Cloud Native, Cost Conscious, No Comprimise: Leveraging Open Source
+  Databases in Financial Industry'
 layout: single
 speakers:
-  - lori_lorusso
-  - sergey_pronin
-talk_url: "https://stateofopencon2025.sched.com/event/1tDBl"
-presentation_date: "2025-02-04"
-presentation_date_end: ""
-presentation_time: "4:50pm"
-talk_year: "2025"
-event: "State of Open Con 2025"
-event_status: "Done"
-event_date_start: "2025-02-04"
-event_date_end: "2025-02-05"
-event_url: "https://stateofopencon.com/"
-event_location: "London, UK"
-talk_tags: ['Everest', 'Kubernetes', 'Opensource', 'Open Source', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=4RM3JxcA_Xs"
-youtube_id: "4RM3JxcA_Xs"
+- lori_lorusso
+- sergey_pronin
+talk_url: https://stateofopencon2025.sched.com/event/1tDBl
+presentation_date: '2025-02-04'
+presentation_date_end: ''
+presentation_time: 4:50pm
+talk_year: '2025'
+event: State of Open Con 2025
+event_status: Done
+event_date_start: '2025-02-04'
+event_date_end: '2025-02-05'
+event_url: https://stateofopencon.com/
+event_location: London, UK
+talk_tags:
+- Everest
+- Kubernetes
+- Opensource
+- Open Source
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=4RM3JxcA_Xs
+youtube_id: 4RM3JxcA_Xs
+images:
+- talks/2025/2025-02-04-panel-cloud-native-cost-conscious-no-comprimise-leveraging-open-source-databases-in-financial-industry.png
 ---
 ## Abstract
 

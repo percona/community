@@ -1,23 +1,28 @@
 ---
-id: "2cc674d0-91f3-8016-ac50-cfe7f0b74306"
-title: "When a Postgres Operator decision is not forever: approaches and experiences for migrating between Postgres Operators"
+id: 2cc674d0-91f3-8016-ac50-cfe7f0b74306
+title: 'When a Postgres Operator decision is not forever: approaches and experiences
+  for migrating between Postgres Operators'
 layout: single
 speakers:
-  - takis_panagiotis_stathopoulos
-talk_url: "https://www.postgresql.eu/events/pgconfde2026/sessions/session/7562-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators/"
-presentation_date: "2026-04-21"
-presentation_date_end: "2026-04-22"
-presentation_time: ""
-talk_year: "2026"
-event: "PGConf Germany 2026"
-event_status: "Accepted"
-event_date_start: "2026-04-21"
-event_date_end: "2026-04-22"
-event_url: "https://2026.pgconf.de/"
-event_location: "Essen, Germany"
-talk_tags: ['PostgreSQL', 'Kubernetes']
-slides: ""
-video: ""
+- takis_panagiotis_stathopoulos
+talk_url: https://www.postgresql.eu/events/pgconfde2026/sessions/session/7562-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators/
+presentation_date: '2026-04-21'
+presentation_date_end: '2026-04-22'
+presentation_time: ''
+talk_year: '2026'
+event: PGConf Germany 2026
+event_status: Accepted
+event_date_start: '2026-04-21'
+event_date_end: '2026-04-22'
+event_url: https://2026.pgconf.de/
+event_location: Essen, Germany
+talk_tags:
+- PostgreSQL
+- Kubernetes
+slides: ''
+video: ''
+images:
+- talks/2026/2026-04-21-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators.png
 ---
 ## Abstract
 

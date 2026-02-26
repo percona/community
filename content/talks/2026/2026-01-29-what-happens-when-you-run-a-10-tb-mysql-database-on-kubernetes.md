@@ -1,24 +1,29 @@
 ---
-id: "2c4674d0-91f3-802a-bf56-e8eb17d29f95"
-title: "What happens when you run a 10 TB MySQL database on Kubernetes?"
+id: 2c4674d0-91f3-802a-bf56-e8eb17d29f95
+title: What happens when you run a 10 TB MySQL database on Kubernetes?
 layout: single
 speakers:
-  - marco_tusa
-talk_url: ""
-presentation_date: "2026-01-29"
-presentation_date_end: ""
-presentation_time: "Thu 1:15 pm - 1:45 pm"
-talk_year: "2026"
-event: "MySQL Belgian Days (preFOSDEM) 2026"
-event_status: "Done"
-event_date_start: "2026-01-29"
-event_date_end: ""
-event_url: "https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/"
-event_location: "Belgian, Brussels"
-talk_tags: ['MySQL', 'Kubernetes', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=4cP-U3ebDkc"
-youtube_id: "4cP-U3ebDkc"
+- marco_tusa
+talk_url: ''
+presentation_date: '2026-01-29'
+presentation_date_end: ''
+presentation_time: Thu 1:15 pm - 1:45 pm
+talk_year: '2026'
+event: MySQL Belgian Days (preFOSDEM) 2026
+event_status: Done
+event_date_start: '2026-01-29'
+event_date_end: ''
+event_url: https://www.mysql.com/news-and-events/events/mysql-belgian-aka-pre-fosdem-days/
+event_location: Belgian, Brussels
+talk_tags:
+- MySQL
+- Kubernetes
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=4cP-U3ebDkc
+youtube_id: 4cP-U3ebDkc
+images:
+- talks/2026/2026-01-29-what-happens-when-you-run-a-10-tb-mysql-database-on-kubernetes.png
 ---
 ## Abstract
 

@@ -1,23 +1,27 @@
 ---
-id: "310674d0-91f3-80ea-8fe9-fad9aae63063"
-title: "Don’t OIDC Yourself in the Foot: Postgres 18’s New Auth Explained"
+id: 310674d0-91f3-80ea-8fe9-fad9aae63063
+title: 'Don’t OIDC Yourself in the Foot: Postgres 18’s New Auth Explained'
 layout: single
 speakers:
-  - zsolt_parragi
-talk_url: "https://www.postgresql.eu/events/pgconfde2026/sessions/session/7555-dont-oidc-yourself-in-the-foot-postgres-18s-new-auth-explained/"
-presentation_date: "2026-04-21"
-presentation_date_end: "2026-04-22"
-presentation_time: ""
-talk_year: "2026"
-event: "PGConf Germany 2026"
-event_status: "Accepted"
-event_date_start: "2026-04-21"
-event_date_end: "2026-04-22"
-event_url: "https://2026.pgconf.de/"
-event_location: "Essen, Germany"
-talk_tags: ['PostgreSQL', 'OIDC']
-slides: ""
-video: ""
+- zsolt_parragi
+talk_url: https://www.postgresql.eu/events/pgconfde2026/sessions/session/7555-dont-oidc-yourself-in-the-foot-postgres-18s-new-auth-explained/
+presentation_date: '2026-04-21'
+presentation_date_end: '2026-04-22'
+presentation_time: ''
+talk_year: '2026'
+event: PGConf Germany 2026
+event_status: Accepted
+event_date_start: '2026-04-21'
+event_date_end: '2026-04-22'
+event_url: https://2026.pgconf.de/
+event_location: Essen, Germany
+talk_tags:
+- PostgreSQL
+- OIDC
+slides: ''
+video: ''
+images:
+- talks/2026/2026-04-21-don-t-oidc-yourself-in-the-foot-postgres-18-s-new-auth-explained.png
 ---
 ## Abstract
 
