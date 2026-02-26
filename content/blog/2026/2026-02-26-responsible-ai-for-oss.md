@@ -9,7 +9,7 @@ authors:
   - alastair_turner
 slug: responsible-ai-for-oss
 ---
-AI-driven pressure on open source maintainers, reviewers and, even, contributors, has been very much in the news lately. Nobody needs another set of edited highlights on the theme from me. For a Postgres-specific view, and insight on how low quality AI outputs affect contributors, Tomas Vondra published a great post on his blog recently [https://vondra.me/posts/the-ai-inversion/], which referenced an interesting talk by Robert Haas [https://www.pgevents.ca/events/pgconfdev2025/schedule/session/254-committer-review-an-exercise-in-paranoia/] at PGConf.dev in Montreal last year. I won’t rehash the content here, they’re both quite quick reads and well worth the time.
+AI-driven pressure on open source maintainers, reviewers and, even, contributors, has been very much in the news lately. Nobody needs another set of edited highlights on the theme from me. For a Postgres-specific view, and insight on how low quality AI outputs affect contributors, [Tomas Vondra published a great post on his blog recently](https://vondra.me/posts/the-ai-inversion/), which referenced [an interesting talk by Robert Haas](https://www.pgevents.ca/events/pgconfdev2025/schedule/session/254-committer-review-an-exercise-in-paranoia/) at PGConf.dev in Montreal last year. I won’t rehash the content here, they’re both quite quick reads and well worth the time.
 
 The key points which got me thinking about the rest of this piece are:
  - Low quality AI reviews are also a time sink, not just AI slop patches
