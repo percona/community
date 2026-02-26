@@ -1,23 +1,26 @@
 ---
-id: "2ee674d0-91f3-80e5-b65a-f5ef44b1558a"
-title: "Projetando um sistema de check-in usando a \"nova\" replicação bidirecional"
+id: 2ee674d0-91f3-80e5-b65a-f5ef44b1558a
+title: Projetando um sistema de check-in usando a "nova" replicação bidirecional
 layout: single
 speakers:
-  - fernando_laudares_camargos
-talk_url: "https://2025.pgconf.com.br/talk?token=c508cb0d75fdc28448f68e21c249b84e"
-presentation_date: "2025-09-03"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "PGConf.Brasil 2025"
-event_status: "Done"
-event_date_start: "2025-09-03"
-event_date_end: "2025-09-05"
-event_url: "https://2025.pgconf.com.br/"
-event_location: "Brazil"
-talk_tags: ['PostgreSQL']
-slides: ""
-video: ""
+- fernando_laudares_camargos
+talk_url: https://2025.pgconf.com.br/talk?token=c508cb0d75fdc28448f68e21c249b84e
+presentation_date: '2025-09-03'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: PGConf.Brasil 2025
+event_status: Done
+event_date_start: '2025-09-03'
+event_date_end: '2025-09-05'
+event_url: https://2025.pgconf.com.br/
+event_location: Brazil
+talk_tags:
+- PostgreSQL
+slides: ''
+video: ''
+images:
+- talks/2025/2025-09-03-projetando-um-sistema-de-check-in-usando-a-nova-replica-o-bidirecional.png
 ---
 ## Abstract
 

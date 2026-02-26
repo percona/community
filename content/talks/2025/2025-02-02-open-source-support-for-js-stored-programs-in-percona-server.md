@@ -1,23 +1,29 @@
 ---
-id: "145674d0-91f3-80c1-a21f-c59d0efc1e2c"
-title: "Open-source support for JS stored programs in Percona Server"
+id: 145674d0-91f3-80c1-a21f-c59d0efc1e2c
+title: Open-source support for JS stored programs in Percona Server
 layout: single
 speakers:
-  - dmitry_lenev
-talk_url: "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/"
-presentation_date: "2025-02-02"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "FOSDEM 2025"
-event_status: "Done"
-event_date_start: "2025-02-01"
-event_date_end: "2025-02-02"
-event_url: "https://fosdem.org/2025/"
-event_location: "Brussels, Belgium"
-talk_tags: ['MySQL', 'Open Source', 'Video', 'Slides']
-slides: "https://archive.fosdem.org/2025/events/attachments/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/slides/238825/Open-sour_Bi0nFa5.pdf"
-video: "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/"
+- dmitry_lenev
+talk_url: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/
+presentation_date: '2025-02-02'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: FOSDEM 2025
+event_status: Done
+event_date_start: '2025-02-01'
+event_date_end: '2025-02-02'
+event_url: https://fosdem.org/2025/
+event_location: Brussels, Belgium
+talk_tags:
+- MySQL
+- Open Source
+- Video
+- Slides
+slides: https://archive.fosdem.org/2025/events/attachments/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/slides/238825/Open-sour_Bi0nFa5.pdf
+video: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4814-open-source-support-for-js-stored-programs-in-percona-server/
+images:
+- talks/2025/2025-02-02-open-source-support-for-js-stored-programs-in-percona-server.png
 ---
 ## Abstract
 

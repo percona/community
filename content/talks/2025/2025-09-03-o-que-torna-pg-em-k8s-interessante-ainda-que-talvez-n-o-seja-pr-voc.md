@@ -1,23 +1,26 @@
 ---
-id: "2ee674d0-91f3-80ec-94a6-c9fa3278b757"
-title: "O que torna PG em K8s interessante, ainda que (talvez) não seja prá você?"
+id: 2ee674d0-91f3-80ec-94a6-c9fa3278b757
+title: O que torna PG em K8s interessante, ainda que (talvez) não seja prá você?
 layout: single
 speakers:
-  - fernando_laudares_camargos
-talk_url: "https://2025.pgconf.com.br/talk?token=c7c14626bf7ea4976752c4c24bab4e2f"
-presentation_date: "2025-09-03"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "PGConf.Brasil 2025"
-event_status: "Done"
-event_date_start: "2025-09-03"
-event_date_end: "2025-09-05"
-event_url: "https://2025.pgconf.com.br/"
-event_location: "Brazil"
-talk_tags: ['PostgreSQL']
-slides: ""
-video: ""
+- fernando_laudares_camargos
+talk_url: https://2025.pgconf.com.br/talk?token=c7c14626bf7ea4976752c4c24bab4e2f
+presentation_date: '2025-09-03'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: PGConf.Brasil 2025
+event_status: Done
+event_date_start: '2025-09-03'
+event_date_end: '2025-09-05'
+event_url: https://2025.pgconf.com.br/
+event_location: Brazil
+talk_tags:
+- PostgreSQL
+slides: ''
+video: ''
+images:
+- talks/2025/2025-09-03-o-que-torna-pg-em-k8s-interessante-ainda-que-talvez-n-o-seja-pr-voc.png
 ---
 ## Abstract
 

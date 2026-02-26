@@ -1,23 +1,28 @@
 ---
-id: "1ff674d0-91f3-801a-992e-e53ee72ea05b"
-title: "Kubernetes from the Database Out"
+id: 1ff674d0-91f3-801a-992e-e53ee72ea05b
+title: Kubernetes from the Database Out
 layout: single
 speakers:
-  - alastair_turner
-talk_url: "https://2025.pgconf.nyc/"
-presentation_date: "2025-09-30"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "PGConf NYC 2025"
-event_status: "Done"
-event_date_start: "2025-09-29"
-event_date_end: "2025-10-01"
-event_url: "https://2025.pgconf.nyc/"
-event_location: "New York"
-talk_tags: ['PostgreSQL', 'CloudNative', 'Everest']
-slides: ""
-video: ""
+- alastair_turner
+talk_url: https://2025.pgconf.nyc/
+presentation_date: '2025-09-30'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: PGConf NYC 2025
+event_status: Done
+event_date_start: '2025-09-29'
+event_date_end: '2025-10-01'
+event_url: https://2025.pgconf.nyc/
+event_location: New York
+talk_tags:
+- PostgreSQL
+- CloudNative
+- Everest
+slides: ''
+video: ''
+images:
+- talks/2025/2025-09-30-kubernetes-from-the-database-out.png
 ---
 ## Abstract
 

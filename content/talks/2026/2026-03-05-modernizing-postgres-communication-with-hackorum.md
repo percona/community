@@ -1,23 +1,26 @@
 ---
-id: "310674d0-91f3-8097-8d46-f8328596aed8"
-title: "Modernizing Postgres Communication with Hackorum"
+id: 310674d0-91f3-8097-8d46-f8328596aed8
+title: Modernizing Postgres Communication with Hackorum
 layout: single
 speakers:
-  - kai_wagner
-talk_url: "https://www.meetup.com/postgresql-meetup-berlin/events/313412510/"
-presentation_date: "2026-03-05"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2026"
-event: "PostgreSQL Berlin March 2026 Meetup"
-event_status: "Accepted"
-event_date_start: "2026-03-05"
-event_date_end: "2026-03-05"
-event_url: "https://www.meetup.com/postgresql-meetup-berlin/events/313412510/"
-event_location: "Berlin, Germany"
-talk_tags: ['PostgreSQL']
-slides: ""
-video: ""
+- kai_wagner
+talk_url: https://www.meetup.com/postgresql-meetup-berlin/events/313412510/
+presentation_date: '2026-03-05'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2026'
+event: PostgreSQL Berlin March 2026 Meetup
+event_status: Accepted
+event_date_start: '2026-03-05'
+event_date_end: '2026-03-05'
+event_url: https://www.meetup.com/postgresql-meetup-berlin/events/313412510/
+event_location: Berlin, Germany
+talk_tags:
+- PostgreSQL
+slides: ''
+video: ''
+images:
+- talks/2026/2026-03-05-modernizing-postgres-communication-with-hackorum.png
 ---
 ## Abstract
 

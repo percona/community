@@ -1,0 +1,4 @@
+Pillow==10.2.0
+python-frontmatter==1.0.0
+PyYAML==6.0.1
+dataclasses==0.6

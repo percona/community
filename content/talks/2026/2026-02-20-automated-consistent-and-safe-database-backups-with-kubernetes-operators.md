@@ -1,23 +1,29 @@
 ---
-id: "306674d0-91f3-8074-92c2-c9b7088308bb"
-title: "Automated, Consistent, and Safe: Database Backups with Kubernetes Operators"
+id: 306674d0-91f3-8074-92c2-c9b7088308bb
+title: 'Automated, Consistent, and Safe: Database Backups with Kubernetes Operators'
 layout: single
 speakers:
-  - george_kechagias
-talk_url: "https://buildevcon.com/cloud-native-databases/"
-presentation_date: "2026-02-20"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2026"
-event: "Cloud Native Databases"
-event_status: "Accepted"
-event_date_start: "2026-02-20"
-event_date_end: "2026-02-21"
-event_url: "https://buildevcon.com/cloud-native-databases/"
-event_location: "Virtual "
-talk_tags: ['Kubernetes', 'Cloud Native', 'database', 'Open Source']
-slides: ""
-video: ""
+- george_kechagias
+talk_url: https://buildevcon.com/cloud-native-databases/
+presentation_date: '2026-02-20'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2026'
+event: Cloud Native Databases
+event_status: Accepted
+event_date_start: '2026-02-20'
+event_date_end: '2026-02-21'
+event_url: https://buildevcon.com/cloud-native-databases/
+event_location: 'Virtual '
+talk_tags:
+- Kubernetes
+- Cloud Native
+- database
+- Open Source
+slides: ''
+video: ''
+images:
+- talks/2026/2026-02-20-automated-consistent-and-safe-database-backups-with-kubernetes-operators.png
 ---
 ## Abstract
 
