@@ -163,7 +163,7 @@
 
       {{ with .Params.images }}
         <h2>Speaker card</h2>
-        <div style="width: 800px;">
+        <div style="max-width: 800px;">
         <img width="100%" height="100%" 
              src="{{ ((resources.Get (index . 0)).Fill "1200x630 80% jpg").RelPermalink }}" 
              alt="{{ $.Page.Title}}" />
