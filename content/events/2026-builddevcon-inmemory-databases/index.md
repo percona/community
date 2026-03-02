@@ -8,6 +8,7 @@ speakers:
 - peter_zaitsev
 - andrey_glazkov
 - martin_visser
+- kyle_davis
 date: '2026-03-20'
 tags: ["Event", "opensource", "database", "in-memory", "performance"]
 events_year: ["2026"]
@@ -18,9 +19,11 @@ Percona is taking part in the **DB Mastery: In-Memory Databases** summit on **Ma
 
 Percona will have a strong presence with four expert speakers contributing to the talks and discussions:
 
-* **Peter Zaitsev** (Founder)
-* **Andrey Glazkov**
+* **Peter Zaitsev** Founder Percona
+* **Andrey Glazkov** 
 * **Martin Visser**
+* **Kyle Davis**
+
 
 The summit explores critical technical themes for modern high-throughput applications, including distributed clustering, durability patterns, and real-time event-driven patterns. 
 
