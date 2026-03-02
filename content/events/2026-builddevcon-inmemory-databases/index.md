@@ -19,10 +19,10 @@ Percona is taking part in the **DB Mastery: In-Memory Databases** summit on **Ma
 
 Percona will have a strong presence with four expert speakers contributing to the talks and discussions:
 
-* **Peter Zaitsev** Founder Percona
-* **Andrey Glazkov** 
-* **Martin Visser**
-* **Kyle Davis**
+* **Peter Zaitsev** - Founder of Percona
+* **Andrey Glazkov** - Valkey and Redis Product Manager
+* **Martin Visser** - Valkey and Redis Tech Lead
+* **Kyle Davis** - General Manager, Redis and Valkey Ecosystem
 
 
 The summit explores critical technical themes for modern high-throughput applications, including distributed clustering, durability patterns, and real-time event-driven patterns. 
