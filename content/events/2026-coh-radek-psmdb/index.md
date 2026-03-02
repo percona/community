@@ -25,7 +25,7 @@ This session is also open for you to ask questions, collaborate, and provide you
 - 📅 **Date/Time:** 5 March, 11:00 AM GMT
 - 👤 **Speaker:** Radoslaw Szulgo - Senior Product Manager, Percona Software for MongoDB
 - 📍 **Online**
-- 🔗  Registration opening soon
+- 🔗 [**Register free here**](https://event.on24.com/wcc/r/5263217/F98F14FB0828D3264A3BFA479E3B3A9D)
 
 
 ***Join our Community Office Hours!***
