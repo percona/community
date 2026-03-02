@@ -1,6 +1,6 @@
 ---
 title: "Hardening MySQL: Practical Security Strategies for DBAs"
-date: "2026-03-01T00:00:00+00:00"
+date: "2026-03-02T00:00:00+00:00"
 tags: ["Opensource", "Percona", "MySQL", "Community", "Percona Server", "security", "auditing"]
 categories: ["MySQL"]
 authors:
