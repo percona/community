@@ -1,17 +1,17 @@
 ---
 title: "PostgreSQL 18 OIDC Authentication with Ping Identity using pg_oidc_validator"
-date: "2026-02-24T00:00:00+00:00"
+date: "2026-03-04T00:00:00+00:00"
 tags: ['PostgreSQL', 'OIDC', 'Security', 'PingIdentity', 'pg_oidc_validator']
 categories: ['PostgreSQL']
 authors:
   - mohit_joshi
 images:
-  - blog/2026/02/ping-oidc-banner.png
+  - blog/2026/03/ping-oidc-banner.png
 ---
 
 PostgreSQL 18 introduced native OAuth 2.0 authentication support, marking an important step towards modern, centralized identity-based access control. However, since every identity provider implements OpenID Connect (OIDC) slightly differently, PostgreSQL delegates token validation to external validator libraries. This is where Percona's [pg_oidc_validator](https://github.com/Percona-Lab/pg_oidc_validator)  extension comes in - it bridges PostgreSQL with any OIDC-compliant Identity Provider.
 
-There are several identity and access management (IAM) solutions available today that enable Single Sign-On (SSO) using OAuth 2.0 and OpenID Connect. In an earlier blog by my colleague, Zsolt [OIDC in PostgreSQL: With Keycloak](https://percona.community/blog/2026/01/19/oidc-in-postgresql-with-keycloak/), demonstrated how PostgreSQL 18 can be integrated with Keycloak using pg_oidc_validator. In this post, we explore the same concept using [Ping Identity](https://www.pingidentity.com/en/platform.html) (PingOne).
+There are several identity and access management (IAM) solutions available today that enable Single Sign-On (SSO) using OAuth 2.0 and OpenID Connect. In an earlier blog by my colleague Zsolt, [OIDC in PostgreSQL: With Keycloak](https://percona.community/blog/2026/01/19/oidc-in-postgresql-with-keycloak/), he demonstrated how PostgreSQL 18 can be integrated with Keycloak using pg_oidc_validator. In this post, we explore the same concept using [Ping Identity](https://www.pingidentity.com/en/platform.html) (PingOne).
 
 Ping Identity is widely used in enterprise environments for identity and access management. If you are in such an environment, integrating PostgreSQL directly with Ping Identity can provide access control.
 
@@ -27,47 +27,47 @@ We will cover the following topics as part of this blog:
 # Setting up PingOne environment
 
 1.  Register a new [account](https://www.pingidentity.com/en/account/register.html)
-![](blog/2026/02/ping-account-register.png)
+![](blog/2026/03/ping-account-register.png)
 
-2.  Fill in the details to complete the profile
-![](blog/2026/02/ping-profile.png)
+2.  Fill in the required details to complete the profile
+![](blog/2026/03/ping-profile.png)
 
-3.  Next step is to Sign-In into the Ping Identity [account](https://www.pingidentity.com/en/account/sign-on.html)
-![](blog/2026/02/ping-sign-on.png)
+3.  The next step is to sign in to your Ping Identity [account](https://www.pingidentity.com/en/account/sign-on.html)
+![](blog/2026/03/ping-sign-on.png)
 
 4.  Upon successful Sign-in, we will see Ping Identity Administrator Console. In the left navigation panel, click on Environments -> **Environments +** (marked in red).
-![](blog/2026/02/ping-admin-console.png)
+![](blog/2026/03/ping-admin-console.png)
 
 5.  Provide an environment name and click on Finish
-![](blog/2026/02/ping-environment.png)
+![](blog/2026/03/ping-environment.png)
 
 6.  Once the environment is created, click on Manage environment.
-![](blog/2026/02/ping-manage-environment.png)
+![](blog/2026/03/ping-manage-environment.png)
 
 7.  In the left navigation panel, click on Applications -> Applications -> click on **Applications +**. Fill the application name, select the application type as **Device Authorization** and click on Save.
-![](blog/2026/02/ping-new-application.png)
+![](blog/2026/03/ping-new-application.png)
 
 8.  Upon successful creation, we will see generated **Client ID** and **Issuer ID**. The Issuer ID can be copied from under the *Connection Details* section. Enable the toggle so that the application is Active.
-![](blog/2026/02/ping-created-application.png)
+![](blog/2026/03/ping-created-application.png)
 
-9. Once the application is successfully created, we should also add a client scope. In the left navigation panel, click on Applications -> Resources -> OpenID Connect. We will see a section called *Scopes* under which we see a **+ Add Scope** button.
-![](blog/2026/02/ping-click-add-scope.png)
+9. Once the application is successfully created, we need to add a client scope. In the left navigation panel, click on Applications -> Resources -> OpenID Connect. You will see a section called *Scopes* under which there is a **+ Add Scope** button.
+![](blog/2026/03/ping-click-add-scope.png)
 
 10. Upon clicking the Add scope button, we need to fill the *Scope name* and click on Save. In our example, we are creating a scope called *pgscope*
-![](blog/2026/02/ping-add-scope-name.png)
+![](blog/2026/03/ping-add-scope-name.png)
 
 11. Now, let's assign the custom scope we created to our client application. In the left navigation panel, click on Applications -> Applications. Select the application *postgres* which we created previously and click on *Resource Access*
-![](blog/2026/02/ping-application-config.png)
+![](blog/2026/03/ping-application-config.png)
 
 12. From the list of available scopes, select the custom scope we created and click on Save. This will assign the scope to our application.
-![](blog/2026/02/ping-application-add-scope.png)
+![](blog/2026/03/ping-application-add-scope.png)
 
 13.  The next step is to add a new user. In the left navigation panel, click on Directory -> Users and click on **Users +** sign.
 
      Fill the username field. For our exercise, we are creating a user called **employees.** In some identity providers (IdPs), it is possible to customize tokens and control how certain claims (including the **sub** - subject claim) are generated or mapped. However, it is important to note that while Ping Identity allows customization of the ID token, the access token claims (including sub) for the default OpenID Connect resource cannot be customized. The value of sub in the access token is generated and managed internally by PingOne and cannot be altered, mapped, or derived from another attribute (such as email or username). As a result, PostgreSQL must be configured to work with the sub value exactly as issued in the access token by PingOne.
-![](blog/2026/02/ping-create-user.png)
+![](blog/2026/03/ping-create-user.png)
 
-14. Enable the user by turning the toggle "ON" and set a password.![](blog/2026/02/ping-enable-user.png)
+14. Enable the user by turning the toggle "ON" and set a password.![](blog/2026/03/ping-enable-user.png)
 
 # Install PostgreSQL 18 from Packages
 
@@ -141,7 +141,7 @@ CREATE DATABASE promo;
 \c promo
 ```
 
-**Add a table to store the discount code:**
+**Add a table to store discount codes:**
 ```sql
 CREATE TABLE dcode (code varchar(10), GENERATED_AT TIMESTAMP default now());
 INSERT INTO dcode (code) VALUES ('SAVENOW');
@@ -221,13 +221,13 @@ We will see a prompt on the console with the URL and activation code.You will no
 Visit https://auth.pingone.com.au/64935f69-5a0a-4b69-a8bd-46967d218303/device and enter the code: 7KK7-88DK
 ```
 Upon clicking the URL, it will prompt you to log in with the **employee\'s** user, which we created during the PingOne environment setup.
-![](blog/2026/02/ping-user-login.png)
+![](blog/2026/03/ping-user-login.png)
 
 Next, it will prompt you to enter the activation code.
-![](blog/2026/02/ping-activation-code.png)
+![](blog/2026/03/ping-activation-code.png)
 
 Approve access for the application, and that's it! The user has now been successfully authenticated via OIDC.
-![](blog/2026/02/ping-approve-user.png)
+![](blog/2026/03/ping-approve-user.png)
 
 Return to the PostgreSQL prompt and you should see that the login to the promo database is successful. You can now query the *dcode* table to fetch the discount code.
 
