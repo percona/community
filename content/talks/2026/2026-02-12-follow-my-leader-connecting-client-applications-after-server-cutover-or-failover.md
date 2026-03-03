@@ -1,23 +1,26 @@
 ---
-id: "2f5674d0-91f3-80a9-bde7-eaa64953e059"
-title: "Follow my Leader - connecting client applications after server cutover or failover"
+id: 2f5674d0-91f3-80a9-bde7-eaa64953e059
+title: Follow my Leader - connecting client applications after server cutover or failover
 layout: single
 speakers:
-  - alastair_turner
-talk_url: ""
-presentation_date: "2026-02-12"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2026"
-event: "Postgres Edinburgh Feb 2026"
-event_status: "Accepted"
-event_date_start: "2026-02-12"
-event_date_end: ""
-event_url: "https://luma.com/uj0qvxqk"
-event_location: "Edinburgh, UK"
-talk_tags: ['PostgreSQL']
-slides: ""
-video: ""
+- alastair_turner
+talk_url: ''
+presentation_date: '2026-02-12'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2026'
+event: Postgres Edinburgh Feb 2026
+event_status: Accepted
+event_date_start: '2026-02-12'
+event_date_end: ''
+event_url: https://luma.com/uj0qvxqk
+event_location: Edinburgh, UK
+talk_tags:
+- PostgreSQL
+slides: ''
+video: ''
+images:
+- talks/2026/2026-02-12-follow-my-leader-connecting-client-applications-after-server-cutover-or-failover.png
 ---
 ## Abstract
 

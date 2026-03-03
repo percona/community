@@ -11,7 +11,7 @@ speakers:
 - peter_farkas
 - mattias_jonsson
 - achilleas_mantzios
-- takis_stathopoulos
+- takis_panagiotis_stathopoulos
 - ananias_tsalouchidis
 - costa_tsaousis
 tags: ["Event", "opensource", "sponsorship"]

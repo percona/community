@@ -27,10 +27,12 @@ events_tags:
 - opensource
 - pgpool
 - securing
-talks_tags: []
+talks_tags:
+- Slides
+- Video
 posts_count: 0
 events_count: 7
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:

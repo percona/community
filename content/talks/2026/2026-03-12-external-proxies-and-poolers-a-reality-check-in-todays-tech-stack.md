@@ -1,23 +1,28 @@
 ---
-id: "2c0674d0-91f3-80a5-bb9d-c5c1b3054981"
-title: "External Proxies and Poolers - A reality check in todays tech stack"
+id: 2c0674d0-91f3-80a5-bb9d-c5c1b3054981
+title: External Proxies and Poolers - A reality check in todays tech stack
 layout: single
 speakers:
-  - jobin_augustine
-talk_url: "https://pgconf.in/conferences/pgconfin2026/program/proposals/1076"
-presentation_date: "2026-03-12"
-presentation_date_end: "2026-03-13"
-presentation_time: ""
-talk_year: "2026"
-event: "PGConf India 2026"
-event_status: "Accepted"
-event_date_start: "2026-03-11"
-event_date_end: "2026-03-13"
-event_url: "https://pgconf.in/conferences/pgconfin2026"
-event_location: "Bengaluru, India"
-talk_tags: ['PostgreSQL', 'Dev', 'performance']
-slides: ""
-video: ""
+- jobin_augustine
+talk_url: https://pgconf.in/conferences/pgconfin2026/program/proposals/1076
+presentation_date: '2026-03-12'
+presentation_date_end: '2026-03-13'
+presentation_time: ''
+talk_year: '2026'
+event: PGConf India 2026
+event_status: Accepted
+event_date_start: '2026-03-11'
+event_date_end: '2026-03-13'
+event_url: https://pgconf.in/conferences/pgconfin2026
+event_location: Bengaluru, India
+talk_tags:
+- PostgreSQL
+- Dev
+- performance
+slides: ''
+video: ''
+images:
+- talks/2026/2026-03-12-external-proxies-and-poolers-a-reality-check-in-todays-tech-stack.png
 ---
 ## Abstract
 

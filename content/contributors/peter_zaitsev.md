@@ -34,11 +34,14 @@ events_tags:
 - PerconaUniversity
 - Promo
 - Yerevan
+- database
 - databases
 - devops
 - event
 - fosdem
+- in-memory
 - opensource
+- performance
 - russia
 - sponsorship
 talks_tags:
@@ -57,8 +60,8 @@ talks_tags:
 - database
 - video
 posts_count: 0
-events_count: 22
-talks_count: 19
+events_count: 23
+talks_count: 21
 contributor_type:
 - speaker
 contributor_year:

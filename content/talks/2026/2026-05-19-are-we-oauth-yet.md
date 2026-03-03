@@ -1,23 +1,26 @@
 ---
-id: "2fc674d0-91f3-809d-93d5-e5b4a1419ccb"
-title: "Are we OAuth yet?"
+id: 2fc674d0-91f3-809d-93d5-e5b4a1419ccb
+title: Are we OAuth yet?
 layout: single
 speakers:
-  - andreas_karlsson
-talk_url: ""
-presentation_date: "2026-05-19"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2026"
-event: "PGconf.Dev  2026"
-event_status: "Accepted"
-event_date_start: "2026-05-19"
-event_date_end: "2026-05-22"
-event_url: "https://2026.pgconf.dev"
-event_location: "Vancouver, Canada "
-talk_tags: ['PostgreSQL']
-slides: ""
-video: ""
+- andreas_karlsson
+talk_url: ''
+presentation_date: '2026-05-19'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2026'
+event: PGconf.Dev  2026
+event_status: Accepted
+event_date_start: '2026-05-19'
+event_date_end: '2026-05-22'
+event_url: https://2026.pgconf.dev
+event_location: 'Vancouver, Canada '
+talk_tags:
+- PostgreSQL
+slides: ''
+video: ''
+images:
+- talks/2026/2026-05-19-are-we-oauth-yet.png
 ---
 ## Abstract
 
