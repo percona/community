@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="29.5.2">
+  <diagram name="Percona Mockups" id="percona-mockups-grid">
+    <mxGraphModel dx="1150" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- MOCKUP 1 -->
+        <mxCell id="mockup1" parent="1" value="Mockup 1: Command Center"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4ff;strokeColor=#90c2ff;fontSize=22;fontStyle=1;" vertex="1">
+          <mxGeometry x="100" y="60" width="1500" height="1000" as="geometry"/>
+        </mxCell>
+
+        <!-- HERO IMAGE -->
+        <mxCell id="hero" parent="mockup1" value="Hero Image (3 smiling mountaineers)"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#cccccc;fontSize=20;" vertex="1">
+          <mxGeometry x="140" y="100" width="1420" height="300" as="geometry"/>
+        </mxCell>
+
+        <!-- HEADLINE -->
+        <mxCell id="headline" parent="mockup1" value="The Peak of Database Engineering is a Shared Climb."
+          style="text;whiteSpace=wrap;html=1;fontSize=28;fontStyle=1;" vertex="1">
+          <mxGeometry x="160" y="420" width="1380" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- SEARCH LABEL -->
+        <mxCell id="searchLabel" parent="mockup1" value="Ask the AI:"
+          style="text;whiteSpace=wrap;html=1;fontSize=18;" vertex="1">
+          <mxGeometry x="160" y="500" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- SEARCH BAR -->
+        <mxCell id="searchBar" parent="mockup1"
+          value="Ask the AI: 'How do I optimize PMM for 10k nodes?'"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=20;" vertex="1">
+          <mxGeometry x="160" y="540" width="1380" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- LIVE TICKER -->
+        <mxCell id="ticker" parent="mockup1"
+          value="32 New PRs • 15 Solved Forum Questions • Jane D. merged PMM-120"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4ff;strokeColor=#90c2ff;fontSize=18;" vertex="1">
+          <mxGeometry x="160" y="630" width="1380" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- SMILES GRID CARD 1 -->
+        <mxCell id="card1" parent="mockup1" value="Featured Mountaineer"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#ffcc80;fontSize=18;" vertex="1">
+          <mxGeometry x="160" y="720" width="420" height="280" as="geometry"/>
+        </mxCell>
+
+        <!-- SMILES GRID CARD 2 -->
+        <mxCell id="card2" parent="mockup1" value="Top Contributor"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6fff2;strokeColor=#80ffbf;fontSize=18;" vertex="1">
+          <mxGeometry x="640" y="720" width="420" height="280" as="geometry"/>
+        </mxCell>
+
+        <!-- SMILES GRID CARD 3 -->
+        <mxCell id="card3" parent="mockup1" value="Community Lead"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;strokeColor=#80aaff;fontSize=18;" vertex="1">
+          <mxGeometry x="1120" y="720" width="420" height="280" as="geometry"/>
+        </mxCell>
+
+
+
+        <!-- MOCKUP 2 -->
+        <mxCell id="mockup2" parent="1" value="Mockup 2: Wall of Fame"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#ffcc80;fontSize=22;fontStyle=1;" vertex="1">
+          <mxGeometry x="1700" y="60" width="1500" height="1000" as="geometry"/>
+        </mxCell>
+
+        <!-- TITLE -->
+        <mxCell id="wf_title" parent="mockup2" value="The Ascent: Mountaineer Wall of Fame"
+          style="text;whiteSpace=wrap;html=1;fontSize=28;fontStyle=1;" vertex="1">
+          <mxGeometry x="1720" y="80" width="1460" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- MASONRY GRID (4 faces) -->
+        <mxCell id="wf_face1" parent="mockup2" value="Mountaineer A"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="1720" y="160" width="330" height="330" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="wf_face2" parent="mockup2" value="Mountaineer B"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="2080" y="160" width="330" height="330" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="wf_face3" parent="mockup2" value="Mountaineer C"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="2440" y="160" width="330" height="330" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="wf_face4" parent="mockup2" value="Mountaineer D"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="2800" y="160" width="330" height="330" as="geometry"/>
+        </mxCell>
+
+        <!-- STATS PANEL -->
+        <mxCell id="wf_stats" parent="mockup2" 
+          value="Contribution Score: 5000+&#xa;Specialty: MySQL Guru&#xa;Quote: 'I love Percona because the code is open, but the people are even more open.'"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6fff2;strokeColor=#80ffbf;fontSize=18;" vertex="1">
+          <mxGeometry x="1720" y="520" width="1410" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- CTA SIDEBAR -->
+        <mxCell id="wf_cta" parent="mockup2" 
+          value="Join the Ascent&#xa;Your Progress: 3/10 to Basecamp"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f7ff;strokeColor=#80caff;fontSize=20;fontStyle=1;" vertex="1">
+          <mxGeometry x="1720" y="740" width="1410" height="280" as="geometry"/>
+        </mxCell>
+
+
+        <!-- MOCKUP 3 -->
+        <mxCell id="mockup3" parent="1" value="Mockup 3: The Brain (LLM Hub)"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f7ff;strokeColor=#80caff;fontSize=22;fontStyle=1;" vertex="1">
+          <mxGeometry x="100" y="1120" width="1500" height="1000" as="geometry"/>
+        </mxCell>
+
+        <!-- LEFT PANEL: AI ANSWER -->
+        <mxCell id="brain_left" parent="mockup3" value="AI Answer"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=20;" vertex="1">
+          <mxGeometry x="120" y="1140" width="700" height="960" as="geometry"/>
+        </mxCell>
+
+        <!-- LEFT PANEL TITLE -->
+        <mxCell id="brain_left_title" parent="mockup3" value="Percona Brain Says:"
+          style="text;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1;" vertex="1">
+          <mxGeometry x="140" y="1160" width="660" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- LEFT PANEL ANSWER BLOCK -->
+        <mxCell id="brain_left_answer" parent="mockup3"
+          value="Concise technical explanation goes here..."
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#dddddd;fontSize=18;" vertex="1">
+          <mxGeometry x="140" y="1210" width="660" height="300" as="geometry"/>
+        </mxCell>
+
+        <!-- LEFT PANEL RELEVANT RESULTS -->
+        <mxCell id="brain_left_results" parent="mockup3"
+          value="Relevant Results:&#xa;- Restart / Hotspot (Feb 2)&#xa;- Transcript mark T"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef7ff;strokeColor=#90c2ff;fontSize=18;" vertex="1">
+          <mxGeometry x="140" y="1530" width="660" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- RIGHT PANEL: CONTEXT STACK -->
+        <mxCell id="brain_right" parent="mockup3" value="Related Human Content"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#80bfff;fontSize=20;" vertex="1">
+          <mxGeometry x="860" y="1140" width="720" height="960" as="geometry"/>
+        </mxCell>
+
+        <!-- VIDEO BLOCK -->
+        <mxCell id="brain_video" parent="mockup3"
+          value="Video: YouTube Talk Thumbnail"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="880" y="1160" width="680" height="220" as="geometry"/>
+        </mxCell>
+
+        <!-- FORUM BLOCK -->
+        <mxCell id="brain_forum" parent="mockup3"
+          value="Forum: Certified Solution Thread"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="880" y="1400" width="680" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- CODE BLOCK -->
+        <mxCell id="brain_code" parent="mockup3"
+          value="Code: GitHub Folder Link"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=18;" vertex="1">
+          <mxGeometry x="880" y="1600" width="680" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- FEEDBACK BLOCK -->
+        <mxCell id="brain_feedback" parent="mockup3"
+          value="Is this helpful? Send thanks to [Name]"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6fff2;strokeColor=#80ffbf;fontSize=18;" vertex="1">
+          <mxGeometry x="880" y="1800" width="680" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- MOCKUP 4 -->
+        <mxCell id="mockup4" parent="1" value="Mockup 4: Live Pulse"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;strokeColor=#80aaff;fontSize=22;fontStyle=1;" vertex="1">
+          <mxGeometry x="1700" y="1120" width="1500" height="1000" as="geometry"/>
+        </mxCell>
+
+        <!-- GLOBAL MAP -->
+        <mxCell id="lp_map" parent="mockup4" value="Global Map (Meetup Pins)"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1e1e1e;fontColor=#ffffff;strokeColor=#444444;fontSize=20;" vertex="1">
+          <mxGeometry x="1720" y="1140" width="1460" height="420" as="geometry"/>
+        </mxCell>
+
+        <!-- KANBAN TITLE -->
+        <mxCell id="lp_kanban_title" parent="mockup4" value="Contribution Kanban"
+          style="text;whiteSpace=wrap;html=1;fontSize=24;fontStyle=1;" vertex="1">
+          <mxGeometry x="1720" y="1580" width="1460" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- KANBAN COLUMN: GOOD FIRST ISSUE -->
+        <mxCell id="lp_k1" parent="mockup4" value="GOOD FIRST ISSUE&#xa;PMM-1234&#xa;Add React Hook&#xa;Bounty: Ray&#xa;Mentor: Sarah K"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7e6;strokeColor=#ffcc80;fontSize=18;" vertex="1">
+          <mxGeometry x="1720" y="1640" width="450" height="300" as="geometry"/>
+        </mxCell>
+
+        <!-- KANBAN COLUMN: HELP WANTED -->
+        <mxCell id="lp_k2" parent="mockup4" value="HELP WANTED&#xa;PMM-1224&#xa;Add Prometheus Plug&#xa;Mentor: Sarah K"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6fff2;strokeColor=#80ffbf;fontSize=18;" vertex="1">
+          <mxGeometry x="2200" y="1640" width="450" height="300" as="geometry"/>
+        </mxCell>
+
+        <!-- KANBAN COLUMN: IN PROGRESS -->
+        <mxCell id="lp_k3" parent="mockup4" value="IN PROGRESS&#xa;AMM-1234&#xa;Add React Hook&#xa;Mentor: Sarah K"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f0ff;strokeColor=#80aaff;fontSize=18;" vertex="1">
+          <mxGeometry x="2680" y="1640" width="450" height="300" as="geometry"/>
+        </mxCell>
+
+        <!-- TALKS CAROUSEL -->
+        <mxCell id="lp_talks" parent="mockup4" value="Talks Archive (Netflix-style Carousel)"
+          style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=20;" vertex="1">
+          <mxGeometry x="1720" y="1960" width="1460" height="140" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

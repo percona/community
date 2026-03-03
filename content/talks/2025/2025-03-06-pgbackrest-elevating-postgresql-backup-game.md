@@ -1,24 +1,29 @@
 ---
-id: "151674d0-91f3-8001-8cc5-d0ffb87352b1"
-title: "pgBackRest: Elevating PostgreSQL Backup Game"
+id: 151674d0-91f3-8001-8cc5-d0ffb87352b1
+title: 'pgBackRest: Elevating PostgreSQL Backup Game'
 layout: single
 speakers:
-  - sonia_valeja
-talk_url: "https://www.pgconf.in/conferences/pgconfin2025/program/proposals/919"
-presentation_date: "2025-03-06"
-presentation_date_end: ""
-presentation_time: "14:00"
-talk_year: "2025"
-event: "PGConf India 2025"
-event_status: "Done"
-event_date_start: "2025-03-05"
-event_date_end: "2025-03-07"
-event_url: "https://pgconf.in/conferences/pgconfin2025"
-event_location: "Bangalore, India"
-talk_tags: ['PostgreSQL', 'Video', 'Slides']
-slides: "https://pgconf.in/files/presentations/2025/919.pptx"
-video: "https://www.youtube.com/watch?v=Kxn-7pBU6Ug"
-youtube_id: "Kxn-7pBU6Ug"
+- sonia_valeja
+talk_url: https://www.pgconf.in/conferences/pgconfin2025/program/proposals/919
+presentation_date: '2025-03-06'
+presentation_date_end: ''
+presentation_time: '14:00'
+talk_year: '2025'
+event: PGConf India 2025
+event_status: Done
+event_date_start: '2025-03-05'
+event_date_end: '2025-03-07'
+event_url: https://pgconf.in/conferences/pgconfin2025
+event_location: Bangalore, India
+talk_tags:
+- PostgreSQL
+- Video
+- Slides
+slides: https://pgconf.in/files/presentations/2025/919.pptx
+video: https://www.youtube.com/watch?v=Kxn-7pBU6Ug
+youtube_id: Kxn-7pBU6Ug
+images:
+- talks/2025/2025-03-06-pgbackrest-elevating-postgresql-backup-game.png
 ---
 ## Abstract
 

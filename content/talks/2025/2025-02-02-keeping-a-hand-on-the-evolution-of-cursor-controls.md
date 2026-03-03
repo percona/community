@@ -1,23 +1,29 @@
 ---
-id: "15c674d0-91f3-80d2-b12e-e9eb91f32db1"
-title: "Keeping a hand on the evolution of cursor controls"
+id: 15c674d0-91f3-80d2-b12e-e9eb91f32db1
+title: Keeping a hand on the evolution of cursor controls
 layout: single
 speakers:
-  - dmitriy_kostiuk
-talk_url: "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/"
-presentation_date: "2025-02-02"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2025"
-event: "FOSDEM 2025"
-event_status: "Done"
-event_date_start: "2025-02-01"
-event_date_end: "2025-02-02"
-event_url: "https://fosdem.org/2025/"
-event_location: "Brussels, Belgium"
-talk_tags: ['Opensource', 'Open Source', 'Video', 'Slides']
-slides: "https://archive.fosdem.org/2025/events/attachments/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/slides/238671/hist_mice_1tVeXaY.pdf"
-video: "https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/"
+- dmitriy_kostiuk
+talk_url: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/
+presentation_date: '2025-02-02'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2025'
+event: FOSDEM 2025
+event_status: Done
+event_date_start: '2025-02-01'
+event_date_end: '2025-02-02'
+event_url: https://fosdem.org/2025/
+event_location: Brussels, Belgium
+talk_tags:
+- Opensource
+- Open Source
+- Video
+- Slides
+slides: https://archive.fosdem.org/2025/events/attachments/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/slides/238671/hist_mice_1tVeXaY.pdf
+video: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/
+images:
+- talks/2025/2025-02-02-keeping-a-hand-on-the-evolution-of-cursor-controls.png
 ---
 ## Abstract
 

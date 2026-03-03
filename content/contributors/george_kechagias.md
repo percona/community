@@ -33,6 +33,5 @@ contributor_type:
 - speaker
 contributor_year:
 - '2026'
-- '2025'
 ---
 Software Engineer & Engineering Manager

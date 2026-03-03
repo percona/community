@@ -1,24 +1,30 @@
 ---
-id: "14b674d0-91f3-80ab-9eaf-c05e86f2ad15"
-title: "Securing Your Software Supply Chain One Open Source Project at a Time"
+id: 14b674d0-91f3-80ab-9eaf-c05e86f2ad15
+title: Securing Your Software Supply Chain One Open Source Project at a Time
 layout: single
 speakers:
-  - lori_lorusso
-talk_url: "https://stateofopencon2025.sched.com/event/1tDGG"
-presentation_date: "2025-02-05"
-presentation_date_end: ""
-presentation_time: "11:30 am"
-talk_year: "2025"
-event: "State of Open Con 2025"
-event_status: "Done"
-event_date_start: "2025-02-04"
-event_date_end: "2025-02-05"
-event_url: "https://stateofopencon.com/"
-event_location: "London, UK"
-talk_tags: ['Security', 'PostgreSQL', 'Open Source', 'Video']
-slides: ""
-video: "https://www.youtube.com/watch?v=uB1hEKXIFjE"
-youtube_id: "uB1hEKXIFjE"
+- lori_lorusso
+talk_url: https://stateofopencon2025.sched.com/event/1tDGG
+presentation_date: '2025-02-05'
+presentation_date_end: ''
+presentation_time: 11:30 am
+talk_year: '2025'
+event: State of Open Con 2025
+event_status: Done
+event_date_start: '2025-02-04'
+event_date_end: '2025-02-05'
+event_url: https://stateofopencon.com/
+event_location: London, UK
+talk_tags:
+- Security
+- PostgreSQL
+- Open Source
+- Video
+slides: ''
+video: https://www.youtube.com/watch?v=uB1hEKXIFjE
+youtube_id: uB1hEKXIFjE
+images:
+- talks/2025/2025-02-05-securing-your-software-supply-chain-one-open-source-project-at-a-time.png
 ---
 ## Abstract
 

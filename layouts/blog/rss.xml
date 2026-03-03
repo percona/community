@@ -1,0 +1,75 @@
+{{- $pages := sort .Pages ".Params.date" "desc" -}}
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    <title>{{ .Title }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Description }}</description>
+
+    <atom:link href="{{ .Permalink }}index.xml"
+               rel="self"
+               type="application/rss+xml" />
+
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>{{ .Site.Copyright }}</copyright>
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
+
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+
+      <pubDate>{{ (time .Params.date).Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+
+      <!-- CLEAN DESCRIPTION -->
+      <description>
+        {{- $first := index (split .Content "</p>") 0 -}}
+        {{- $clean := $first | plainify | htmlUnescape -}}
+        {{- $clean -}}
+      </description>
+
+      <!-- FULL HTML CONTENT -->
+      <content:encoded>{{ .Content | htmlUnescape  }}</content:encoded>
+
+      <!-- AUTHORS -->
+      {{ with .Params.authors }}
+        {{ range . }}
+          {{ $c := $.Site.GetPage (print "/contributors/" .) }}
+          {{ with $c }}
+            <author>{{ .Params.fullname }}</author>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <!-- TAGS -->
+      {{ with .Params.tags }}
+        {{ range . }}
+          <category>{{ . }}</category>
+        {{ end }}
+      {{ end }}
+
+      <!-- IMAGE -->
+      {{ with .Params.images }}
+        {{ $img := index . 0 }}
+        {{ $res := resources.Get $img }}
+        {{ if $res }}
+          {{ $thumb := ($res.Fill "320x180 90% jpg") }}
+          {{ $full := ($res.Fill "1280x720 90% jpg") }}
+          <media:thumbnail url="{{ $thumb.RelPermalink | absURL }}" />
+          <media:content url="{{ $full.RelPermalink | absURL }}" medium="image" />
+        {{ else }}
+          <media:thumbnail url="{{ $img | absURL }}" />
+          <media:content url="{{ $img | absURL }}" medium="image" />
+        {{ end }}
+      {{ end }}
+
+    </item>
+    {{ end }}
+
+  </channel>
+</rss>

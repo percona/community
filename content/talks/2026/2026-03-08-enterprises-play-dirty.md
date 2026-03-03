@@ -1,23 +1,28 @@
 ---
-id: "302674d0-91f3-8038-83f3-d67c8f8c3368"
-title: "Enterprises Play Dirty"
+id: 302674d0-91f3-8038-83f3-d67c8f8c3368
+title: Enterprises Play Dirty
 layout: single
 speakers:
-  - peter_farkas
-talk_url: "https://www.socallinuxexpo.org/scale/23x/presentations/enterprises-play-dirty"
-presentation_date: "2026-03-08"
-presentation_date_end: ""
-presentation_time: "1:45-2:45pm "
-talk_year: "2026"
-event: "Scale23X"
-event_status: "Accepted"
-event_date_start: "2026-03-05"
-event_date_end: "2026-03-08"
-event_url: "https://www.socallinuxexpo.org/scale/23x"
-event_location: "Pasadena, California"
-talk_tags: ['Opensource', 'Databases', 'Open Source']
-slides: ""
-video: ""
+- peter_farkas
+talk_url: https://www.socallinuxexpo.org/scale/23x/presentations/enterprises-play-dirty
+presentation_date: '2026-03-08'
+presentation_date_end: ''
+presentation_time: '1:45-2:45pm '
+talk_year: '2026'
+event: Scale23X
+event_status: Accepted
+event_date_start: '2026-03-05'
+event_date_end: '2026-03-08'
+event_url: https://www.socallinuxexpo.org/scale/23x
+event_location: Pasadena, California
+talk_tags:
+- Opensource
+- Databases
+- Open Source
+slides: ''
+video: ''
+images:
+- talks/2026/2026-03-08-enterprises-play-dirty.png
 ---
 ## Abstract
 

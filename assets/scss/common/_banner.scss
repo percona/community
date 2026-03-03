@@ -1,5 +1,63 @@
 @import "variables";
 
+.pc-top-banner-wrapper {
+  padding-top: 60px;
+
+  @media (max-width: 640px) {
+    padding-top: 47px; 
+  }
+
+  .pc-top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    background: linear-gradient(90deg, #FF6A00, #FFB800);
+    color: #ffffff;
+
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    &__btn {
+      background: rgba(255, 255, 255, 0.85);
+      color: #8A3D00;
+      padding: 4px 14px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+
+      transition: background 0.2s ease, transform 0.15s ease;
+
+      &:hover {
+        background: #ffffff;
+        transform: translateY(-1px);
+      }
+    }
+
+    @media (max-width: 640px) {
+      padding: 6px 0px; 
+      gap: 6px;          
+
+      &__btn {
+        font-size: 14px;
+        padding: 4px 10px; 
+        border-radius: 12px;
+      }
+    }
+  }
+
+}
+
 .banner {
 
   .banner__content
