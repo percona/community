@@ -5,7 +5,7 @@ images:
 - events/2026-coh-faster-backups-percona-postgresql/mayank_intro.png
 layout: single
 date: '2026-03-10'
-EventDate: Tuesday, March 10, 2026 · 11:00-12:00 GMT
+EventDate: Tuesday, March 10, 2026 · 13:00-14:00 GMT
 EventLocation: Online
 speakers:
 - mayank_shah
