@@ -1,6 +1,6 @@
 ---
 title: "I Built an AI That Impersonates Me on Slack, and It Was Disturbingly Easy"
-date: "2026-03-06T10:00:00+00:00"
+date: "2026-03-09T10:00:00+00:00"
 tags: ["Percona", "Vibe Coding", "Community", "Security", "Open Source"]
 categories: ['PostgreSQL']
 authors:
