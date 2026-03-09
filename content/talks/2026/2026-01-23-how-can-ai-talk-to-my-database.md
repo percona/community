@@ -1,23 +1,29 @@
 ---
-id: "2ee674d0-91f3-8016-9c07-e1469f56bdf8"
-title: "How Can AI Talk to My Database?"
+id: 2ee674d0-91f3-8016-9c07-e1469f56bdf8
+title: How Can AI Talk to My Database?
 layout: single
 speakers:
-  - fernando_laudares_camargos
-talk_url: "https://buildevcon.com/ai-dba-self-driving-databases/"
-presentation_date: "2026-01-23"
-presentation_date_end: ""
-presentation_time: ""
-talk_year: "2026"
-event: "AI DBA: Self-Running Databases"
-event_status: "Accepted"
-event_date_start: "2026-01-23"
-event_date_end: ""
-event_url: "https://buildevcon.com/ai-dba-self-driving-databases/"
-event_location: "Virtual "
-talk_tags: ['MySQL', 'PostgreSQL', 'ai', 'Open Source']
-slides: ""
-video: ""
+- fernando_laudares_camargos
+talk_url: https://buildevcon.com/ai-dba-self-driving-databases/
+presentation_date: '2026-01-23'
+presentation_date_end: ''
+presentation_time: ''
+talk_year: '2026'
+event: 'AI DBA: Self-Running Databases'
+event_status: Accepted
+event_date_start: '2026-01-23'
+event_date_end: ''
+event_url: https://buildevcon.com/ai-dba-self-driving-databases/
+event_location: 'Virtual '
+talk_tags:
+- MySQL
+- PostgreSQL
+- ai
+- Open Source
+slides: ''
+video: ''
+images:
+- talks/2026/2026-01-23-how-can-ai-talk-to-my-database.png
 ---
 ## Abstract
 

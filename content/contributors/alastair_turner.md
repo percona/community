@@ -22,6 +22,7 @@ blog_tags:
 - Opensource
 - PostgreSQL
 - pg_alastair
+- pg_jan
 events_tags:
 - Events
 - Featured
@@ -33,7 +34,7 @@ talks_tags:
 - Operators
 - Slides
 - Video
-posts_count: 1
+posts_count: 2
 events_count: 1
 talks_count: 4
 contributor_type:
