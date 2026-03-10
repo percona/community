@@ -13,7 +13,7 @@ Not every PostgreSQL installation requires encryption at rest. However, for orga
 
 While Transparent Data Encryption (TDE) successfully locks down your data at rest, it raises a critical operational question: will your backup and restore workflow continue to work correctly with encrypted data? When deploying Transparent Data Encryption, it is essential to validate that pgBackRest can reliably back up and restore encrypted clusters.
 
-This post walks through a complete, step-by-step configuration of pg_tde with pgBackRest on Debian/Ubuntu. We will explore how to optimize your backup performance, secure your repository, and most importantly verify that your encrypted restores work exactly as expected.
+This post walks through a complete, step-by-step configuration of pg_tde with pgBackRest on Debian/Ubuntu. We will explore how to optimize your backup performance, secure your repository, and most importantly verify that your encrypted backup restores work exactly as expected.
 
 ## What is pg_tde?
 
@@ -51,10 +51,11 @@ By the end of this post you will have:
 
 - Percona Distribution for PostgreSQL installed with pg_tde and pgBackRest
 - A key directory and key providers created
+- pg_tde enabled in PostgreSQL
+- Encrypt tables and indexes with pg_tde ([docs](https://docs.percona.com/pg-tde/test.html))
 - [WAL encryption](https://docs.percona.com/pg-tde/wal-encryption.html) enabled
 - A pgBackRest stanza configured and a full backup completed
-- Use pg_tde to [encrypt tables and indexes](https://docs.percona.com/pg-tde/test.html)
-- A simple verification that encrypted data is not readable on disk
+- Verification that encrypted data is not readable on disk
 
 ## Prerequisites
 
@@ -82,7 +83,7 @@ sudo percona-release setup ppg-18
 sudo apt-get update
 
 # Install the server, tde extension, and pgbackrest
-sudo apt-get install -y percona-postgresql-18 percona-postgresql-contrib percona-pg-tde18 percona-pgbackrest
+sudo apt-get install -y percona-postgresql-18 percona-pg-tde18 percona-pgbackrest
 
 # Verify Installation
 psql --version
