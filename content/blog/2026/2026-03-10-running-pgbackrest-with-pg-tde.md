@@ -206,7 +206,7 @@ sudo chown postgres:postgres /var/lib/pgbackrest
 - `repo1-path`: The directory where backups will be stored
 - `repo1-retention-full`: Keep only two full backups
 - `start-fast=y`: Forces a checkpoint immediately when a backup starts. Without this, the backup would wait for the next scheduled checkpoint.
-- `compress-type=none`: By skipping compression, we avoid a "CPU Tax" that yields almost zero storage benefit on encrypted data blocks.
+- `compress-type=none`: By skipping compression, we eliminate unnecessary CPU overhead since compressing encrypted data blocks yields almost zero storage benefit.
 - `repo1-cipher-type` and `repo1-cipher-pass`: Enable pgBackRest repository encryption. While pg_tde protects the live database files, these settings ensure that backup files and archived WAL stored in the repository are also encrypted at rest using AES-256
 
 ## Step 4: Wire pgBackRest into PostgreSQL Archiving
