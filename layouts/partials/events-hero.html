@@ -1,0 +1,44 @@
+<div class="featured__wrapper">
+    <div class="grid grid--2">
+
+        <div class="featured__left featured__one branded">
+
+            {{- $array := split "Promo" "," -}}
+            {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $array ) -}}
+
+            {{- range $one -}}
+                {{ partial "event-preview" . }}
+            {{- end -}}
+
+        </div>
+
+        <div class="featured__right featured__list">
+            <h2 class="title-wrap">UPCOMING EVENTS</h2>
+
+            {{ $now := now }}
+            {{ $events := where $.Page.Site.RegularPages "Section" "events" }}
+
+            {{ $sorted := sort $events ".Date" "asc" }}
+
+            {{ $count := 0 }}
+
+            {{ range $sorted }}
+                {{ if le .Date $now }}
+                    {{ continue }}
+                {{ end }}
+
+                {{ if in .Params.tags "Promo" }}
+                    {{ continue }}
+                {{ end }}
+
+                {{ if ge $count 3 }}
+                    {{ break }}
+                {{ end }}
+
+                {{ partial "event-preview-line" . }}
+                {{ $count = add $count 1 }}
+            {{ end }}
+        </div>
+
+    </div>
+</div>

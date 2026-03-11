@@ -16,7 +16,28 @@ images:
 - contributors/martin_visser.png
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
-- Valkey
+- AI
+- Community
+blog_tags: []
+events_tags:
+- Data Structures
+- Event
+- Events
+- Performance
 - Redis
+- Security
+- Valkey
+- database
+- in-memory
+- opensource
+- performance
+talks_tags: []
+posts_count: 0
+events_count: 4
+talks_count: 0
+contributor_type:
+- speaker
+contributor_year:
+- '2026'
 ---
 Valkey and Redis tech lead @Percona

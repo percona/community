@@ -10,6 +10,7 @@ date: '2023-02-22'
 tags: ["event", "opensource", "sponsorship"]
 events_year: ["2023"]
 events_category: ["Sponsorship"]
+events_tag: ["In-Person"]
 ---
 PGConf India 2023 started on a fresh note after 2 years of gap due to the pandemic. With 400+ conference attendees and 150+ attendees for the training program, it was a great event.
 

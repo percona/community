@@ -12,6 +12,7 @@ speakers:
 date: '2026-03-20'
 tags: ["Event", "opensource", "database", "in-memory", "performance"]
 events_year: ["2026"]
+events_tag: ["Online"]
 events_category: ["Speaking", "Sponsorship"]
 ---
 

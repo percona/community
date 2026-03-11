@@ -11,7 +11,7 @@ speakers:
 - konstantin_trushin
 tags: ["Community", "Events", "MongoDB", "PSMDB", "Security"]
 events_year: ["2026"]
-events_tag: ["Community", "MongoDB", "Security"]
+events_tag: ["Community", "MongoDB", "Security", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 

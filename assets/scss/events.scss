@@ -7,15 +7,118 @@
 }
 
 .main-content {
-
   flex: 3;
-  .events-list .grid__item {
-    border-bottom: none;
+}
+
+.home-blocks {
+  .event-description {
+    display: none;
   }
 }
 
-.grid p.event-location {
-  font-size: 0.65rem;
+.events-list {
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    .grid__item {
+      border-bottom: 1px solid #e8ecf3;
+    }
+  }
+
+}
+
+.event--preview {
+  display: block;
+
+  padding: 1rem;
+
+  @media screen and (max-width: 760px) {
+    padding: 1rem 0;
+  }
+
+  img {
+    margin-bottom:0.375rem;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5em;
+  }
+
+  :last-child {
+    margin-bottom:0;
+  }
+
+  .event-location {
+    font-size: 0.65rem;
+  }
+  .event__content {
+    margin-top: 1rem;
+
+    p {
+        color: #42536d;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: 400;
+    }
+
+    .event-description {
+      margin-bottom: 25px;
+    }
+    
+    .bottom {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      position: absolute;
+      bottom: 10px;
+      width: calc(100% - 48px);
+
+      p {
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 13px;
+        font-weight: 600;
+        color: #040506;
+      }
+
+      .post-type {
+        color: #00bda5;
+        font-weight: 600;
+      }
+
+    }
+  }
+
+  &:hover {
+    h3 {
+      color: $link;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.5em;
+    }
+  }
+
+}
+
+a.event--preview, a.event--preview * {
+  text-decoration: none;
+  color: $dark;
+
+  .readmore {
+    color: $link;
+    font-weight: bold;
+  }
 }
 
 .featured__one {
@@ -102,15 +205,6 @@
   min-height: 1.2rem;
 }
 
-.events-list {
-  list-style: none;
-  padding: 0;
-
-  .grid__item {
-    border-bottom: 1px solid #e8ecf3;
-  }
-}
-
 /* Tablet */
 @media (max-width: 1024px) {
   .contentblock.branded.events {
@@ -132,3 +226,4 @@
     display: flex;
   }
 }
+

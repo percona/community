@@ -9,6 +9,7 @@ date: '2024-02-22'
 tags: ["event", "opensource", "sponsorship"]
 events_year: ["2024"]
 events_category: ["Sponsorship"]
+events_tag: ["In-Person"]
 ---
 PGConf India 2024 took place in Bengaluru at February 28 - March 01, 2024. With about 400 conference attendees, it is the biggest Postgres event in India. This conference is part of efforts to grow the PostgreSQL community by increasing awareness and providing the appropriate training and resources to further PostgreSQL adoption in India.
 

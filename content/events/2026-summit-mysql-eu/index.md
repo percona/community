@@ -16,7 +16,7 @@ speakers:
 - peter_zaitsev
 tags: ["Community", "Events", "MySQL", "MySQL-Summit", "Featured"]
 events_year: ["2026"]
-events_tag: ["Community", "MySQL", "Community"]
+events_tag: ["Community", "MySQL", "Community", "In-Person"]
 events_category: ["Speaking"]
 ---
 We're gathering in **Brussels** on **February 2nd** for a focused, in-person summit dedicated to strengthening the MySQL ecosystem through collaboration, contribution, and community building.

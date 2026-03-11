@@ -15,6 +15,7 @@ speakers:
 - javier_borkenztain
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2023"]
+events_tag: ["In-Person"]
 events_category: ["Speaking"]
 ---
 We bring international speakers and invite local ones to help you to build your knowledge and get up to speed on hot database topics.

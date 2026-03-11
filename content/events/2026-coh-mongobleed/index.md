@@ -11,7 +11,7 @@ speakers:
 - ivan_groenewold
 tags: ["Community", "Events", "MongoDB", "PSMDB"]
 events_year: ["2026"]
-events_tag: ["Community", "MongoDB"]
+events_tag: ["Community", "MongoDB",  "Online"]
 events_category: ["Speaking", "Community"]
 ---
 Discover how CVE-2025-14847 (“MongoBleed”) can expose **MongoDB** to high-severity information disclosure—allowing an unauthenticated remote client to extract fragments of uninitialized server memory when zlib network compression is enabled on a network-reachable instance. 

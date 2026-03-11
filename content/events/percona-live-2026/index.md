@@ -9,8 +9,8 @@ images:
 - events/percona-live-2026/percona-live-2026-1.jpg
 tags: ["perconalive2026", "event", "opensource", "databases", 'Promo']
 events_year: ["2026"]
+events_tag: ["PostgreSQL", "In-Person", "Valkey", "MongoDB", "MySQL"]
 events_category: ["Community", "Speaking", "Sponsorship"]
-events_tags: ["PostgreSQL", "Valkey", "MongoDB", "MySQL"]
 ---
 
 [Percona Live 2026](https://perconalive.com/) is back! Join the **open source database community** for three days of deep technical talks, hands-on workshops, and real conversations with people building and running MySQL, PostgreSQL, MongoDB, MariaDB, Valkey, and more in production.

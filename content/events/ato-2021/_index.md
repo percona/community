@@ -9,6 +9,7 @@ layout: single
 date: '2021-10-17'
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2021"]
+events_tag: ["Online"]
 events_category: ["Sponsorship"]
 ---
 Percona Team participated in ATO (All Things Open) in Raleigh Convention Center on October 17th - 19th.

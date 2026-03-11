@@ -1,6 +1,6 @@
 {{ $alt := .Title }}
 
-<a href="{{ .RelPermalink }}" class="post post--preview">
+<a href="{{ .RelPermalink }}" class="event event--preview">
 
     {{ with .Params.images }}
         <img width="100%" height="100%" 
@@ -12,10 +12,10 @@
     {{ if .Params.EventLocation }}
         <p class="event-location">📍 {{ .Params.EventLocation }}</p>
     {{ end }}
-    <div class="post__content">
+    <div class="event__content">
 
         {{ with .Content }}
-            <p>{{ replace (index (split . "</p>") 0) "<p>" "" | safeHTML | plainify }}</p>
+            <p class="event-description">{{ replace (index (split . "</p>") 0) "<p>" "" | safeHTML | plainify }}</p>
         {{ end }}
 
         <div class="bottom">

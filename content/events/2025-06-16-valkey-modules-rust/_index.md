@@ -12,7 +12,7 @@ speakers:
 - lori_lorusso
 tags: ["Event", "Rust", "Valkey"]
 events_year: ["2025"]
-events_tag: ["Valkey"]
+events_tag: ["Valkey", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 Percona invites developers and engineers to an **interactive technical session** on **building Valkey modules in Rust**, featuring **Dmitry Polyakovsky**, a recognized **author and speaker** on Valkey and Rust module development.  

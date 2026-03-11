@@ -9,6 +9,7 @@ layout: single
 date: '2021-12-02'
 tags: ["event", "opensource", "sponsorship"]
 events_year: ["2021"]
+events_tag: ["In-Person"]
 events_category: ["Sponsorship"]
 ---
 On December 2th-3th, Percona Team was in New York on an important event in the PostgreSQL world - [PGConf NYC](https://2021.pgconf.nyc/). It is a non–profit, community-run conference, focused on business users, database professionals, and developers of PostgreSQL. Percona was thrilled to participate in it as a Platinum sponsor this year. 

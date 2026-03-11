@@ -14,10 +14,12 @@ images:
 - contributors/alastair_turner.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- AI
 - Community
 - MySQL
 - PostgreSQL
 blog_tags:
+- AI
 - Community
 - Opensource
 - PostgreSQL
@@ -34,7 +36,7 @@ talks_tags:
 - Operators
 - Slides
 - Video
-posts_count: 2
+posts_count: 3
 events_count: 1
 talks_count: 4
 contributor_type:

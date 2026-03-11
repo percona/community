@@ -10,6 +10,7 @@ layout: single
 date: '2022-04-13'
 tags: ["event", "opensource", "roadshow"]
 events_year: ["2022"]
+events_tag: ["In-Person"]
 ---
 ![ROADSHOW 2022](/events/roadshow-2022/2.png)
 

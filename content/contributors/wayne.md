@@ -40,12 +40,14 @@ blog_tags:
 - Replication
 - Security
 - Toolkit
+- auditing
 - component
 - filter
 - innodb
 - key ring
 - performance
 - replication
+- security
 - toolkit
 - tuning
 events_tags:
@@ -56,7 +58,7 @@ events_tags:
 - event
 - opensource
 talks_tags: []
-posts_count: 16
+posts_count: 17
 events_count: 4
 talks_count: 0
 contributor_type:

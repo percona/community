@@ -12,7 +12,7 @@ images:
 tags: ["Opensource", "event", 'Featured']
 events_year: ["2026"]
 events_category: ["Sponsorship", "Speaking"]
-events_tags: ["Opensource"]
+events_tag: ["Opensource", "In-Person"]
 ---
 
 Percona is proud to sponsor **SCaLE 23X**, one of the most dynamic and community‑driven open source conferences in North America. As the largest volunteer‑run event of its kind, SCaLE brings together developers, technologists, and industry leaders for four days of collaboration, learning, and innovation. It’s a perfect reflection of what we value most at Percona — community, openness, and building great technology together.

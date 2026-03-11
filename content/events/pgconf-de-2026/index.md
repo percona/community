@@ -10,7 +10,7 @@ images:
 tags: ["Postgres", "event", "PG", 'Featured']
 events_year: ["2026"]
 events_category: ["Sponsorship"]
-events_tags: ["PostgreSQL"]
+events_tag: ["PostgreSQL", "In-Person"]
 speakers:
 - takis_panagiotis_stathopoulos
 - kai_wagner
