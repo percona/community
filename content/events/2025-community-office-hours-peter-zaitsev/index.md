@@ -12,7 +12,7 @@ speakers:
 - peter_zaitsev
 tags: ["Community", "Events", "MySQL", "PostgreSQL", "Featured"]
 events_year: ["2026"]
-events_tag: ["Community", "MySQL", "PostgreSQL"]
+events_tag: ["Community", "MySQL", "PostgreSQL", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 We’re excited to share that **Peter Zaitsev**, Founder of Percona, will present his talk **“Why PostgreSQL Took the Crown from MySQL and What Lies Ahead.”**

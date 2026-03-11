@@ -11,7 +11,7 @@ speakers:
 - mayank_shah
 tags: ["Community", "Events", "PostgreSQL", "Featured"]
 events_year: ["2026"]
-events_tag: ["Community", "PostgreSQL"]
+events_tag: ["Community", "PostgreSQL", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 Discover how Percona’s latest **PostgreSQL Operator** feature transforms database backups with **Kubernetes VolumeSnapshots**. Learn the setup, benefits such as near-instant snapshots and improved disaster recovery, key limitations, and practical deployment steps for production workloads.

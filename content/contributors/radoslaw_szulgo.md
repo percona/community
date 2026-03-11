@@ -15,6 +15,7 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
+- Community
 - MongoDB
 - PMM
 blog_tags:
@@ -23,7 +24,9 @@ blog_tags:
 - Opensource
 - PMM
 - Percona
-events_tags: []
+events_tags:
+- Events
+- PSMDB
 talks_tags:
 - Azure
 - Cloud Native
@@ -35,12 +38,13 @@ talks_tags:
 - observability
 - pmm
 posts_count: 1
-events_count: 0
+events_count: 1
 talks_count: 2
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 ---
 Senior Product Manager at Percona

@@ -11,7 +11,7 @@ speakers:
 - radoslaw_szulgo
 tags: ["Community", "Events", "MongoDB", "PSMDB"]
 events_year: ["2026"]
-events_tag: ["Community", "MongoDB"]
+events_tag: ["Community", "MongoDB",  "Online"]
 events_category: ["Speaking", "Community"]
 ---
 

@@ -11,7 +11,7 @@ speakers:
 - martin_visser
 tags: ["Community", "Events", "Valkey", "Redis", "Security", "Performance"]
 events_year: ["2026"]
-events_tag: ["Community", "Valkey", "Redis"]
+events_tag: ["Community", "Valkey", "Redis",  "Online"]
 events_category: ["Speaking", "Community"]
 ---
 

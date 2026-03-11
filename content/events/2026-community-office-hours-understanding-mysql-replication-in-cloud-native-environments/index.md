@@ -13,7 +13,7 @@ speakers:
 - ege_gunes
 tags: ["Event", "Kubernetes", "MySQL", "Featured"]
 events_year: ["2025"]
-events_tag: ["Cloud Native", "MySQL"]
+events_tag: ["Cloud Native", "MySQL", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 ## Join the Community Office Hours

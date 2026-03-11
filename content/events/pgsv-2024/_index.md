@@ -13,6 +13,7 @@ speakers:
 - robert_bernier
 tags: ["event", "opensource", "sponsorship"]
 events_year: ["2024"]
+events_tag: ["In-Person"]
 events_category: ["Speaking", "Sponsorship"]
 ---
 In April 2024, the Percona Team journeyed to San Jose for the [Postgres Conference](https://postgresconf.org/conferences/2024) in San Jose, CA, taking place from April 17th to 19th. 

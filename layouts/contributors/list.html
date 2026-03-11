@@ -1,5 +1,6 @@
 {{ define "css" }}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
 {{ end }}
 
 {{ define "mainwrapper" }}

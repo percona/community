@@ -9,6 +9,7 @@ images:
 - events/streams-mysql/Stream-MySQL-cover.jpg
 date: '2022-04-01'
 events_year: ["2022"]
+events_tag: ["Online"]
 events_category: ["Speaking","Community"]
 ---
 {{% hero-gradient class="night" %}}

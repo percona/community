@@ -16,6 +16,7 @@ speakers:
 - diego_feito
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2023"]
+events_tag: ["In-Person"]
 events_category: ["Speaking"]
 ---
 Percona University came to Buenos Aires on October 20th. Percona University is a series of database meetups that we organize worldwide in different locations. 

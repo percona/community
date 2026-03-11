@@ -14,7 +14,7 @@ speakers:
 - marco_tusa
 tags: ["Event", "MySQL"]
 events_year: ["2025"]
-events_tag: ["MySQL"]
+events_tag: ["MySQL", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 ## Join the Online Stream

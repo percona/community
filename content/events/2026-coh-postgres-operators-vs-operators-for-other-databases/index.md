@@ -15,7 +15,7 @@ speakers:
 - alastair_turner
 tags: ["Community", "Events", "MySQL", "PostgreSQL", "Featured"]
 events_year: ["2026"]
-events_tag: ["Community", "MySQL", "PostgreSQL"]
+events_tag: ["Community", "MySQL", "PostgreSQL",  "Online"]
 events_category: ["Speaking"]
 ---
 There’s a lot of discussion about comparing Kubernetes operators for Postgres, but what about how Postgres operators compare to operators for other databases?

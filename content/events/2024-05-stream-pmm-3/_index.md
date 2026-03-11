@@ -13,7 +13,7 @@ speakers:
 - nurlan_moldomurov
 tags: ["Event", "MongoDB", "PMM"]
 events_year: ["2025"]
-events_tag: ["MongoDB"]
+events_tag: ["MongoDB", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 Percona invites you to a **Live Stream & Demo** featuring the latest enhancements in **Percona Monitoring and Management (PMM) 3**!

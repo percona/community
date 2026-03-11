@@ -13,6 +13,7 @@ speakers:
 - marco_tusa
 tags: ["Event", "Promo", "fosdem"]
 events_year: ["2023"]
+events_tag: ["In-Person"]
 events_category: ["Speaking", "Sponsorship"]
 ---
 Two days before the main FOSDEM event, MySQL enthusiasts all over the world gather together for learning and networking at preFOSDEM MySQL Days in Brussels. This time the event took place at the same building where it was interrupted by COVID - ICAB Incubator. The event was free but required registration due to limited capacity. A couple of weeks before the event, all available tickets were sold out. 

@@ -13,7 +13,7 @@ speakers:
 - peter_zaitsev
 tags: ["Community", "Events", "MySQL", "MySQL-Summit", "Featured"]
 events_year: ["2026"]
-events_tag: ["Community", "MySQL"]
+events_tag: ["Community", "MySQL", "In-Person"]
 events_category: ["Speaking", "Community"]
 ---
 We’re gathering in **San Francisco** on **January 14** for a focused, in‑person summit dedicated to strengthening the MySQL ecosystem through collaboration and contribution.

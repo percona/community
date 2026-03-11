@@ -12,7 +12,7 @@ speakers:
   - peter_zaitsev
 tags: ["Community", "Events", "Featured", "Kubernetes"]
 events_year: ["2026"]
-events_tag: ["Community", "Cloud", "Kubernetes"]
+events_tag: ["Community", "Cloud", "Kubernetes",  "Online"]
 events_category: ["Speaking", "Sponsorship"]
 ---
 

@@ -1,15 +1,18 @@
 <div class="home-blocks home-blocks__posdcasts branded">
-    <h2>Events</h2>
-    <div class="grid grid--4">
-    {{ $t := slice "Event" "event" }}
+    <h2>Upcoming Events</h2>
 
-    {{- range first 8 (where (where $.Page.Site.Pages "Section" "events") "Params.tags" "intersect" $t ) -}}
-    <div class="grid__item">
-        {{ partial "event-preview" . }}
+    <div class="grid grid--3">
+        {{ $now := now }}
+        {{ $events := where $.Page.Site.Pages "Section" "events" }}
+        {{ $upcoming := where $events "Date" ">" $now }}
+        {{ $sorted := sort $upcoming "Date" "asc" }}
+        {{ range first 3 $sorted }}
+            <div class="grid__item">
+                {{ partial "event-preview" . }}
+            </div>
+        {{ end }}
     </div>
-    {{- end -}}
-    </div>
-    <a class="view-all" href="{{ "/events/" | relURL }}" >View all events</a>
+
+    <a class="view-all" href="{{ "/events/" | relURL }}">View all events</a>
     <br/>
 </div>
-

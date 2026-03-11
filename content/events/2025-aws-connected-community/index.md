@@ -12,7 +12,7 @@ speakers:
 - michal_nosek
 tags: ["Event", "Percona", "Valkey"]
 events_year: ["2025"]
-events_tag: ["Valkey"]
+events_tag: ["Valkey", "Online"]
 events_category: ["Speaking"]
 ---
 Change is part of open source and it’s what drives progress!
