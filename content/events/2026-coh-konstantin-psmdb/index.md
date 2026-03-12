@@ -22,9 +22,9 @@ Participants will learn the mechanics of master key rotation, how the server han
 - 📅 **Date/Time:** March 17, 2026, 11:00 AM – 12:00 PM GMT
 - 👤 **Speaker:** Konstantin Trushin - Senior Software Engineer 
 - 📍 **Online**
-- 🔗 Registration opening soon
+- 🔗 [Registration Here](https://event.on24.com/wcc/r/5276496/4375666CF5E4E88A07E8592424A36ADB)
 
 
-***Join our Community Office Hours!***
+***Join our Open Source Unplugged!***
 
-![Percona Community Office Hours Konstantin](/events/2026-coh-konstantin-psmdb/konstantin.png)
+![Percona Open Source Unplugged Konstantin](/events/2026-coh-konstantin-psmdb/konstantin.png)
