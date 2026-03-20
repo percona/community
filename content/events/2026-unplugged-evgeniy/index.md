@@ -24,7 +24,7 @@ Finally, discover how to implement a hybrid CI/CD workflow that combines develop
 - 📅 **Date/Time:** March 30, 2026, 14:00 PM – 15:00 PM GMT
 - 👤 **Speaker:** [Evgeniy Patlan](https://www.linkedin.com/in/evgeniypatlan/) - Manager, Build & Release Engineering
 - 📍 **Online**
-- 🔗 [**Register free here**](https://event.on24.com/wcc/r/5287557/19D16E69FF52906B270B524036E6B60
+- 🔗 [**Register free here**](https://event.on24.com/wcc/r/5287557/19D16E69FF52906B270B524036E6B60A)
 
 
 ***Join our Open Source Unplugged!***
