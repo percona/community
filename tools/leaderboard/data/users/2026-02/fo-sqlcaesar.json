@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-sqlcaesar",
+    "display_name": "SQLCaesar",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/s\/9fc348\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=SQLCaesar",
+    "github_login": null,
+    "forum_username": "SQLCaesar",
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "IST fallback to SST due to large seqno gap",
+            "url": "https:\/\/forums.percona.com\/t\/ist-fallback-to-sst-due-to-large-seqno-gap",
+            "date": "2026-02-12"
+        },
+        {
+            "title": "Primary node forwarding\/failing over due to \"Too many connections\"",
+            "url": "https:\/\/forums.percona.com\/t\/primary-node-forwarding-failing-over-due-to-too-many-connections",
+            "date": "2026-02-19"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

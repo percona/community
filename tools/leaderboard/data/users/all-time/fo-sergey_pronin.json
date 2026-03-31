@@ -1,0 +1,865 @@
+{
+    "user_key": "fo-sergey_pronin",
+    "display_name": "Sergey Pronin",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/sergey_pronin\/120\/14887_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Sergey_Pronin",
+    "github_login": null,
+    "forum_username": "Sergey_Pronin",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 1198,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 1198,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 149,
+    "solutions": 18,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Issue while installing Percona XtraDB Cluster on Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/issue-while-installing-percona-xtradb-cluster-on-kubernetes\/4",
+            "date": "2024-01-15"
+        },
+        {
+            "topic_title": "Affinity and Mongos and CursorNotFound - oh my!",
+            "url": "https:\/\/forums.percona.com\/t\/affinity-and-mongos-and-cursornotfound-oh-my\/17",
+            "date": "2024-10-25"
+        },
+        {
+            "topic_title": "How to configure S3 backup for PostgreSQL using values.yaml",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-configure-s3-backup-for-postgresql-using-values-yaml\/10",
+            "date": "2024-06-24"
+        },
+        {
+            "topic_title": "Cluster-wide installation tips",
+            "url": "https:\/\/forums.percona.com\/t\/cluster-wide-installation-tips\/7",
+            "date": "2024-01-09"
+        },
+        {
+            "topic_title": "Cluster-wide installation tips",
+            "url": "https:\/\/forums.percona.com\/t\/cluster-wide-installation-tips\/9",
+            "date": "2024-02-22"
+        },
+        {
+            "topic_title": "Cluster-wide installation tips",
+            "url": "https:\/\/forums.percona.com\/t\/cluster-wide-installation-tips\/11",
+            "date": "2024-11-01"
+        },
+        {
+            "topic_title": "Cluster-wide installation tips",
+            "url": "https:\/\/forums.percona.com\/t\/cluster-wide-installation-tips\/13",
+            "date": "2024-11-01"
+        },
+        {
+            "topic_title": "splitHorizon DNS?",
+            "url": "https:\/\/forums.percona.com\/t\/splithorizon-dns\/14",
+            "date": "2024-02-22"
+        },
+        {
+            "topic_title": "How to collect metrics and ship to existing prometheus grafana setup",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-collect-metrics-and-ship-to-existing-prometheus-grafana-setup\/10",
+            "date": "2024-09-09"
+        },
+        {
+            "topic_title": "OpenShift support for Postgres Operator version 2",
+            "url": "https:\/\/forums.percona.com\/t\/openshift-support-for-postgres-operator-version-2\/4",
+            "date": "2024-01-26"
+        },
+        {
+            "topic_title": "OpenShift support for Postgres Operator version 2",
+            "url": "https:\/\/forums.percona.com\/t\/openshift-support-for-postgres-operator-version-2\/8",
+            "date": "2024-03-14"
+        },
+        {
+            "topic_title": "Accessing root on Percona Postgres instances",
+            "url": "https:\/\/forums.percona.com\/t\/accessing-root-on-percona-postgres-instances\/26",
+            "date": "2024-01-10"
+        },
+        {
+            "topic_title": "Accessing root on Percona Postgres instances",
+            "url": "https:\/\/forums.percona.com\/t\/accessing-root-on-percona-postgres-instances\/28",
+            "date": "2024-08-07"
+        },
+        {
+            "topic_title": "Accessing root on Percona Postgres instances",
+            "url": "https:\/\/forums.percona.com\/t\/accessing-root-on-percona-postgres-instances\/30",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Exposing MongoDB via Load balancer - switch from internet-facing to internal facing (AWS)",
+            "url": "https:\/\/forums.percona.com\/t\/exposing-mongodb-via-load-balancer-switch-from-internet-facing-to-internal-facing-aws\/5",
+            "date": "2024-02-22"
+        },
+        {
+            "topic_title": "Pvc taint with IP of node, pod stuck in pending in case of node restart\/crash",
+            "url": "https:\/\/forums.percona.com\/t\/pvc-taint-with-ip-of-node-pod-stuck-in-pending-in-case-of-node-restart-crash\/9",
+            "date": "2024-04-17"
+        },
+        {
+            "topic_title": "Pvc taint with IP of node, pod stuck in pending in case of node restart\/crash",
+            "url": "https:\/\/forums.percona.com\/t\/pvc-taint-with-ip-of-node-pod-stuck-in-pending-in-case-of-node-restart-crash\/10",
+            "date": "2024-08-23"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/3",
+            "date": "2024-02-12"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/5",
+            "date": "2024-02-19"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/7",
+            "date": "2024-04-12"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/9",
+            "date": "2024-04-17"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/11",
+            "date": "2024-05-31"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/13",
+            "date": "2024-08-31"
+        },
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/15",
+            "date": "2024-09-02"
+        },
+        {
+            "topic_title": "PVC container mongod - helm",
+            "url": "https:\/\/forums.percona.com\/t\/pvc-container-mongod-helm\/2",
+            "date": "2024-01-23"
+        },
+        {
+            "topic_title": "Pitr restore working different way in two ways",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restore-working-different-way-in-two-ways\/2",
+            "date": "2024-01-15"
+        },
+        {
+            "topic_title": "Pitr restore working different way in two ways",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restore-working-different-way-in-two-ways\/5",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Pitr restore working different way in two ways",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restore-working-different-way-in-two-ways\/7",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "Pitr restore working different way in two ways",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restore-working-different-way-in-two-ways\/12",
+            "date": "2024-02-14"
+        },
+        {
+            "topic_title": "PXC cluster fails after single pod failure",
+            "url": "https:\/\/forums.percona.com\/t\/pxc-cluster-fails-after-single-pod-failure\/2",
+            "date": "2024-01-15"
+        },
+        {
+            "topic_title": "PXC cluster fails after single pod failure",
+            "url": "https:\/\/forums.percona.com\/t\/pxc-cluster-fails-after-single-pod-failure\/4",
+            "date": "2024-02-19"
+        },
+        {
+            "topic_title": "Syncing the mongodb operator between two datacenters",
+            "url": "https:\/\/forums.percona.com\/t\/syncing-the-mongodb-operator-between-two-datacenters\/2",
+            "date": "2024-01-14"
+        },
+        {
+            "topic_title": "Syncing the mongodb operator between two datacenters",
+            "url": "https:\/\/forums.percona.com\/t\/syncing-the-mongodb-operator-between-two-datacenters\/4",
+            "date": "2024-01-15"
+        },
+        {
+            "topic_title": "Percona (Docker) shuts down over and over again - need help please",
+            "url": "https:\/\/forums.percona.com\/t\/percona-docker-shuts-down-over-and-over-again-need-help-please\/6",
+            "date": "2024-01-15"
+        },
+        {
+            "topic_title": "Constant host unreachable errors within pod",
+            "url": "https:\/\/forums.percona.com\/t\/constant-host-unreachable-errors-within-pod\/7",
+            "date": "2024-03-07"
+        },
+        {
+            "topic_title": "Bug with Percona Server for MongoDB 4.4.27-26 on AWS EKS",
+            "url": "https:\/\/forums.percona.com\/t\/bug-with-percona-server-for-mongodb-4-4-27-26-on-aws-eks\/2",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "How to create new database and user with the chart",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-create-new-database-and-user-with-the-chart\/5",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "How to create new database and user with the chart",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-create-new-database-and-user-with-the-chart\/8",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "How to create new database and user with the chart",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-create-new-database-and-user-with-the-chart\/12",
+            "date": "2024-09-27"
+        },
+        {
+            "topic_title": "Restore from deleted backup",
+            "url": "https:\/\/forums.percona.com\/t\/restore-from-deleted-backup\/2",
+            "date": "2024-01-27"
+        },
+        {
+            "topic_title": "Cross DC\/region replication of percona mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/cross-dc-region-replication-of-percona-mongodb\/3",
+            "date": "2024-02-01"
+        },
+        {
+            "topic_title": "Upgrade of mongodb operator and the mongodb version",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-of-mongodb-operator-and-the-mongodb-version\/2",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "Upgrade of mongodb operator and the mongodb version",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-of-mongodb-operator-and-the-mongodb-version\/4",
+            "date": "2024-02-19"
+        },
+        {
+            "topic_title": "Unable to configure Percona MySQL group replication cluster on K8s with version v0.6.0",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-configure-percona-mysql-group-replication-cluster-on-k8s-with-version-v0-6-0\/3",
+            "date": "2024-02-02"
+        },
+        {
+            "topic_title": "Unable to configure Percona MySQL group replication cluster on K8s with version v0.6.0",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-configure-percona-mysql-group-replication-cluster-on-k8s-with-version-v0-6-0\/5",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "PerconaServerMongoDBRestore - configuration for Azure storage",
+            "url": "https:\/\/forums.percona.com\/t\/perconaservermongodbrestore-configuration-for-azure-storage\/3",
+            "date": "2024-02-13"
+        },
+        {
+            "topic_title": "Support for MongoDB 7 in Operartor",
+            "url": "https:\/\/forums.percona.com\/t\/support-for-mongodb-7-in-operartor\/2",
+            "date": "2024-02-18"
+        },
+        {
+            "topic_title": "Migrating Sharded MongoDB cluster to Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/migrating-sharded-mongodb-cluster-to-kubernetes\/2",
+            "date": "2024-02-18"
+        },
+        {
+            "topic_title": "Metrics from mongodb_exporter do not work with grafana-dashboards",
+            "url": "https:\/\/forums.percona.com\/t\/metrics-from-mongodb-exporter-do-not-work-with-grafana-dashboards\/2",
+            "date": "2024-02-18"
+        },
+        {
+            "topic_title": "Zero data loss auto failover and sync old primary as replica without need of rebuild",
+            "url": "https:\/\/forums.percona.com\/t\/zero-data-loss-auto-failover-and-sync-old-primary-as-replica-without-need-of-rebuild\/3",
+            "date": "2024-02-18"
+        },
+        {
+            "topic_title": "Unable to start mongodb operator on EKS",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-start-mongodb-operator-on-eks\/2",
+            "date": "2024-02-26"
+        },
+        {
+            "topic_title": "Prometheus Postgres Exporter failing to connect Database",
+            "url": "https:\/\/forums.percona.com\/t\/prometheus-postgres-exporter-failing-to-connect-database\/2",
+            "date": "2024-03-07"
+        },
+        {
+            "topic_title": "Error: manage sys users: update clustercheck user password expiration",
+            "url": "https:\/\/forums.percona.com\/t\/error-manage-sys-users-update-clustercheck-user-password-expiration\/2",
+            "date": "2024-03-18"
+        },
+        {
+            "topic_title": "Kubernetes XtraDB Cluster Operator frequently restarts",
+            "url": "https:\/\/forums.percona.com\/t\/kubernetes-xtradb-cluster-operator-frequently-restarts\/2",
+            "date": "2024-03-07"
+        },
+        {
+            "topic_title": "Percona MongoDB operator is causing high number of connections to the database",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-operator-is-causing-high-number-of-connections-to-the-database\/2",
+            "date": "2024-04-01"
+        },
+        {
+            "topic_title": "Pg-db chart schedule cloud backups",
+            "url": "https:\/\/forums.percona.com\/t\/pg-db-chart-schedule-cloud-backups\/2",
+            "date": "2024-03-18"
+        },
+        {
+            "topic_title": "Percona MongoDB operator on OpenShift > 4.13?",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-operator-on-openshift-4-13\/2",
+            "date": "2024-03-15"
+        },
+        {
+            "topic_title": "Mongod configuration",
+            "url": "https:\/\/forums.percona.com\/t\/mongod-configuration\/2",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "Crash loop in percona operator Observed a panic in reconciler",
+            "url": "https:\/\/forums.percona.com\/t\/crash-loop-in-percona-operator-observed-a-panic-in-reconciler\/2",
+            "date": "2024-04-01"
+        },
+        {
+            "topic_title": "Need to same secret before mongodb restore",
+            "url": "https:\/\/forums.percona.com\/t\/need-to-same-secret-before-mongodb-restore\/2",
+            "date": "2024-03-25"
+        },
+        {
+            "topic_title": "Percona mongoDB crash on AKS",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-crash-on-aks\/2",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "When PerconaXtraDBCluster replicas are scaled down from 3 to 1, PVCs from deleted replicas aren't deleted",
+            "url": "https:\/\/forums.percona.com\/t\/when-perconaxtradbcluster-replicas-are-scaled-down-from-3-to-1-pvcs-from-deleted-replicas-arent-deleted\/2",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "Azure backup fails with \/usr\/bin\/run_backup.sh: 1 (Operation not permitted)",
+            "url": "https:\/\/forums.percona.com\/t\/azure-backup-fails-with-usr-bin-run-backup-sh-1-operation-not-permitted\/2",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "Azure backup fails with \/usr\/bin\/run_backup.sh: 1 (Operation not permitted)",
+            "url": "https:\/\/forums.percona.com\/t\/azure-backup-fails-with-usr-bin-run-backup-sh-1-operation-not-permitted\/4",
+            "date": "2024-03-29"
+        },
+        {
+            "topic_title": "Mongodb automatic backup not working using aws serviecaccount",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-automatic-backup-not-working-using-aws-serviecaccount\/2",
+            "date": "2024-04-01"
+        },
+        {
+            "topic_title": "Unable to expose mongodb replicaset to nodeport Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-expose-mongodb-replicaset-to-nodeport-kubernetes\/2",
+            "date": "2024-04-15"
+        },
+        {
+            "topic_title": "MongoDB Ldap Authentication - parsing CN with backslashes and commas issue",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-ldap-authentication-parsing-cn-with-backslashes-and-commas-issue\/3",
+            "date": "2024-07-23"
+        },
+        {
+            "topic_title": "Postgresql backup to S3 Minio from an Istio enabled namespace",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-backup-to-s3-minio-from-an-istio-enabled-namespace\/3",
+            "date": "2024-07-08"
+        },
+        {
+            "topic_title": "Timescaledb support",
+            "url": "https:\/\/forums.percona.com\/t\/timescaledb-support\/2",
+            "date": "2024-07-15"
+        },
+        {
+            "topic_title": "Percona XtraDB operator with single node detects itself as peer",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtradb-operator-with-single-node-detects-itself-as-peer\/4",
+            "date": "2024-07-12"
+        },
+        {
+            "topic_title": "Update correct location of pitr resources in docs",
+            "url": "https:\/\/forums.percona.com\/t\/update-correct-location-of-pitr-resources-in-docs\/3",
+            "date": "2024-07-22"
+        },
+        {
+            "topic_title": "Encrypted backup configuration in PXC Cluster Resource",
+            "url": "https:\/\/forums.percona.com\/t\/encrypted-backup-configuration-in-pxc-cluster-resource\/3",
+            "date": "2024-07-19"
+        },
+        {
+            "topic_title": "Encrypted backup configuration in PXC Cluster Resource",
+            "url": "https:\/\/forums.percona.com\/t\/encrypted-backup-configuration-in-pxc-cluster-resource\/5",
+            "date": "2024-07-22"
+        },
+        {
+            "topic_title": "Encrypted backup configuration in PXC Cluster Resource",
+            "url": "https:\/\/forums.percona.com\/t\/encrypted-backup-configuration-in-pxc-cluster-resource\/7",
+            "date": "2024-08-01"
+        },
+        {
+            "topic_title": "Help to understand how the resource limits are set on clusters",
+            "url": "https:\/\/forums.percona.com\/t\/help-to-understand-how-the-resource-limits-are-set-on-clusters\/5",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Restore of Postgresql database is not working",
+            "url": "https:\/\/forums.percona.com\/t\/restore-of-postgresql-database-is-not-working\/2",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Problems with backup",
+            "url": "https:\/\/forums.percona.com\/t\/problems-with-backup\/2",
+            "date": "2024-08-19"
+        },
+        {
+            "topic_title": "Problems with backup",
+            "url": "https:\/\/forums.percona.com\/t\/problems-with-backup\/4",
+            "date": "2024-08-19"
+        },
+        {
+            "topic_title": "Problems with backup",
+            "url": "https:\/\/forums.percona.com\/t\/problems-with-backup\/6",
+            "date": "2024-08-22"
+        },
+        {
+            "topic_title": "Problems with backup",
+            "url": "https:\/\/forums.percona.com\/t\/problems-with-backup\/8",
+            "date": "2024-08-31"
+        },
+        {
+            "topic_title": "PITR not working 'no database selected' error",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-not-working-no-database-selected-error\/2",
+            "date": "2024-08-19"
+        },
+        {
+            "topic_title": "MySQL database not starting",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-database-not-starting\/2",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Modify pgbouncer.ini",
+            "url": "https:\/\/forums.percona.com\/t\/modify-pgbouncer-ini\/2",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "PerconaServerMongoDBRestore: ERROR oplog no such file",
+            "url": "https:\/\/forums.percona.com\/t\/perconaservermongodbrestore-error-oplog-no-such-file\/2",
+            "date": "2024-08-19"
+        },
+        {
+            "topic_title": "PerconaServerMongoDBRestore: ERROR oplog no such file",
+            "url": "https:\/\/forums.percona.com\/t\/perconaservermongodbrestore-error-oplog-no-such-file\/4",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "Primary\/replica labels on pods",
+            "url": "https:\/\/forums.percona.com\/t\/primary-replica-labels-on-pods\/2",
+            "date": "2024-08-19"
+        },
+        {
+            "topic_title": "Everest questions",
+            "url": "https:\/\/forums.percona.com\/t\/everest-questions\/2",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Everest questions",
+            "url": "https:\/\/forums.percona.com\/t\/everest-questions\/4",
+            "date": "2024-08-15"
+        },
+        {
+            "topic_title": "Percona MongoDB EKS with EFS, the second StatefulSet instances fails to access EFS",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-eks-with-efs-the-second-statefulset-instances-fails-to-access-efs\/4",
+            "date": "2024-08-19"
+        },
+        {
+            "topic_title": "Percona Xtra DB Cluster installed with helm: How to change pxc_strict_mode to PERMISSIVE permanently",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtra-db-cluster-installed-with-helm-how-to-change-pxc-strict-mode-to-permissive-permanently\/3",
+            "date": "2024-09-09"
+        },
+        {
+            "topic_title": "Pbm backup to backblaze",
+            "url": "https:\/\/forums.percona.com\/t\/pbm-backup-to-backblaze\/2",
+            "date": "2024-08-26"
+        },
+        {
+            "topic_title": "Operator fails to rejoin crashed nodes to cluster without deleting it manually",
+            "url": "https:\/\/forums.percona.com\/t\/operator-fails-to-rejoin-crashed-nodes-to-cluster-without-deleting-it-manually\/2",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "PXC PVCs are resized successfully but pod still see old storage size even after restart",
+            "url": "https:\/\/forums.percona.com\/t\/pxc-pvcs-are-resized-successfully-but-pod-still-see-old-storage-size-even-after-restart\/3",
+            "date": "2024-09-03"
+        },
+        {
+            "topic_title": "MongoDB loadbalancers svc stuck in pending state, without external IP address",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-loadbalancers-svc-stuck-in-pending-state-without-external-ip-address\/2",
+            "date": "2024-08-31"
+        },
+        {
+            "topic_title": "MongoDB loadbalancers svc stuck in pending state, without external IP address",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-loadbalancers-svc-stuck-in-pending-state-without-external-ip-address\/5",
+            "date": "2024-09-02"
+        },
+        {
+            "topic_title": "MySQL StatefulSet can't rollout to ready state after cluster spec update",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-statefulset-cant-rollout-to-ready-state-after-cluster-spec-update\/2",
+            "date": "2024-09-03"
+        },
+        {
+            "topic_title": "Efficiently Adding a Secondary Node with the 5TB data to a Percona MongoDB Replica Set Without Full Resync",
+            "url": "https:\/\/forums.percona.com\/t\/efficiently-adding-a-secondary-node-with-the-5tb-data-to-a-percona-mongodb-replica-set-without-full-resync\/2",
+            "date": "2024-09-02"
+        },
+        {
+            "topic_title": "Public schema options helm chart",
+            "url": "https:\/\/forums.percona.com\/t\/public-schema-options-helm-chart\/3",
+            "date": "2024-09-04"
+        },
+        {
+            "topic_title": "Public schema options helm chart",
+            "url": "https:\/\/forums.percona.com\/t\/public-schema-options-helm-chart\/6",
+            "date": "2024-09-04"
+        },
+        {
+            "topic_title": "Unable to run sidecar with pgBouncer",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-run-sidecar-with-pgbouncer\/2",
+            "date": "2024-10-01"
+        },
+        {
+            "topic_title": "Question: Does PXC Operator renew TLS certificate that automatically generated by the operator itself?",
+            "url": "https:\/\/forums.percona.com\/t\/question-does-pxc-operator-renew-tls-certificate-that-automatically-generated-by-the-operator-itself\/4",
+            "date": "2024-09-16"
+        },
+        {
+            "topic_title": "How does the operator know which pods form a cluster and which do not?",
+            "url": "https:\/\/forums.percona.com\/t\/how-does-the-operator-know-which-pods-form-a-cluster-and-which-do-not\/2",
+            "date": "2024-09-30"
+        },
+        {
+            "topic_title": "Percona Backup not working with multiple backup policies",
+            "url": "https:\/\/forums.percona.com\/t\/percona-backup-not-working-with-multiple-backup-policies\/3",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "Pg-instances from percona pg-db chart is not going to be setup",
+            "url": "https:\/\/forums.percona.com\/t\/pg-instances-from-percona-pg-db-chart-is-not-going-to-be-setup\/2",
+            "date": "2024-10-04"
+        },
+        {
+            "topic_title": "Running non-sharding setup with only 1 replica",
+            "url": "https:\/\/forums.percona.com\/t\/running-non-sharding-setup-with-only-1-replica\/3",
+            "date": "2024-10-04"
+        },
+        {
+            "topic_title": "Debug images don't seem to exist",
+            "url": "https:\/\/forums.percona.com\/t\/debug-images-dont-seem-to-exist\/2",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "Is there any workaround to enable server-side encryption for azure blob storage",
+            "url": "https:\/\/forums.percona.com\/t\/is-there-any-workaround-to-enable-server-side-encryption-for-azure-blob-storage\/2",
+            "date": "2024-10-04"
+        },
+        {
+            "topic_title": "Percona MongoDB Replica set configuration",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-replica-set-configuration\/3",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "Percona MongoDB Replica set configuration",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-replica-set-configuration\/5",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "Percona MongoDB Replica set configuration",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-replica-set-configuration\/7",
+            "date": "2024-10-11"
+        },
+        {
+            "topic_title": "EBS vs EFS Peristance Volume Storage Class",
+            "url": "https:\/\/forums.percona.com\/t\/ebs-vs-efs-peristance-volume-storage-class\/2",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "EBS vs EFS Peristance Volume Storage Class",
+            "url": "https:\/\/forums.percona.com\/t\/ebs-vs-efs-peristance-volume-storage-class\/4",
+            "date": "2024-10-08"
+        },
+        {
+            "topic_title": "Backup files are not deleted from Azure blob storage",
+            "url": "https:\/\/forums.percona.com\/t\/backup-files-are-not-deleted-from-azure-blob-storage\/8",
+            "date": "2024-10-18"
+        },
+        {
+            "topic_title": "Older backups are not getting deleted, with the keep argument specified",
+            "url": "https:\/\/forums.percona.com\/t\/older-backups-are-not-getting-deleted-with-the-keep-argument-specified\/2",
+            "date": "2024-10-18"
+        },
+        {
+            "topic_title": "Stuck Kubernetes Resource",
+            "url": "https:\/\/forums.percona.com\/t\/stuck-kubernetes-resource\/3",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "Standard vs regional provisioned disks, for ex. GCP",
+            "url": "https:\/\/forums.percona.com\/t\/standard-vs-regional-provisioned-disks-for-ex-gcp\/2",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "PXC Operator failed to update service with new annotations on the haproxy created service",
+            "url": "https:\/\/forums.percona.com\/t\/pxc-operator-failed-to-update-service-with-new-annotations-on-the-haproxy-created-service\/3",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "MongoDB 8 + arm support?",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-8-arm-support\/2",
+            "date": "2024-10-25"
+        },
+        {
+            "topic_title": "Monitor PerconaServerMongoDBBackup with Prometheus on Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/monitor-perconaservermongodbbackup-with-prometheus-on-kubernetes\/2",
+            "date": "2024-11-04"
+        },
+        {
+            "topic_title": "Restore from a specific timeline",
+            "url": "https:\/\/forums.percona.com\/t\/restore-from-a-specific-timeline\/2",
+            "date": "2024-11-04"
+        },
+        {
+            "topic_title": "Running Percona operator",
+            "url": "https:\/\/forums.percona.com\/t\/running-percona-operator\/2",
+            "date": "2024-11-04"
+        },
+        {
+            "topic_title": "Backup fails after helm upgrade",
+            "url": "https:\/\/forums.percona.com\/t\/backup-fails-after-helm-upgrade\/3",
+            "date": "2024-11-16"
+        },
+        {
+            "topic_title": "Cannot get PITR backup restore to work",
+            "url": "https:\/\/forums.percona.com\/t\/cannot-get-pitr-backup-restore-to-work\/2",
+            "date": "2024-11-16"
+        },
+        {
+            "topic_title": "Not able to login into PMM dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/not-able-to-login-into-pmm-dashboard\/3",
+            "date": "2024-11-08"
+        },
+        {
+            "topic_title": "Error when trying to restore - failed to ensure snapshot file ...\/cfg\/metadata.json: get S3 object header: NoCredentialProviders",
+            "url": "https:\/\/forums.percona.com\/t\/error-when-trying-to-restore-failed-to-ensure-snapshot-file-cfg-metadata-json-get-s3-object-header-nocredentialproviders\/3",
+            "date": "2024-11-25"
+        },
+        {
+            "topic_title": "Error when trying to restore - failed to ensure snapshot file ...\/cfg\/metadata.json: get S3 object header: NoCredentialProviders",
+            "url": "https:\/\/forums.percona.com\/t\/error-when-trying-to-restore-failed-to-ensure-snapshot-file-cfg-metadata-json-get-s3-object-header-nocredentialproviders\/5",
+            "date": "2024-11-25"
+        },
+        {
+            "topic_title": "Issues with configuring backup against S3 storage",
+            "url": "https:\/\/forums.percona.com\/t\/issues-with-configuring-backup-against-s3-storage\/4",
+            "date": "2024-11-16"
+        },
+        {
+            "topic_title": "Issues with configuring backup against S3 storage",
+            "url": "https:\/\/forums.percona.com\/t\/issues-with-configuring-backup-against-s3-storage\/5",
+            "date": "2024-11-18"
+        },
+        {
+            "topic_title": "Issues with configuring backup against S3 storage",
+            "url": "https:\/\/forums.percona.com\/t\/issues-with-configuring-backup-against-s3-storage\/8",
+            "date": "2024-11-20"
+        },
+        {
+            "topic_title": "Error: could not find previous WAL record",
+            "url": "https:\/\/forums.percona.com\/t\/error-could-not-find-previous-wal-record\/3",
+            "date": "2024-12-02"
+        },
+        {
+            "topic_title": "Migrate from Operator v1.11 -> v1.13 \/ v1.14 \/ v1.15",
+            "url": "https:\/\/forums.percona.com\/t\/migrate-from-operator-v1-11-v1-13-v1-14-v1-15\/2",
+            "date": "2024-11-19"
+        },
+        {
+            "topic_title": "Migrate from Operator v1.11 -> v1.13 \/ v1.14 \/ v1.15",
+            "url": "https:\/\/forums.percona.com\/t\/migrate-from-operator-v1-11-v1-13-v1-14-v1-15\/4",
+            "date": "2024-12-02"
+        },
+        {
+            "topic_title": "Percona Server for MongoDB on Rancher",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-on-rancher\/2",
+            "date": "2024-11-28"
+        },
+        {
+            "topic_title": "Percona Server for MongoDB on Rancher",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-on-rancher\/4",
+            "date": "2024-11-29"
+        },
+        {
+            "topic_title": "Percona Server for MongoDB on Rancher",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-on-rancher\/6",
+            "date": "2024-12-04"
+        },
+        {
+            "topic_title": "Recommended Instance Family \/ Type",
+            "url": "https:\/\/forums.percona.com\/t\/recommended-instance-family-type\/2",
+            "date": "2024-12-02"
+        },
+        {
+            "topic_title": "clusterServiceDNSMode nok (non sharding setup)",
+            "url": "https:\/\/forums.percona.com\/t\/clusterservicednsmode-nok-non-sharding-setup\/2",
+            "date": "2024-12-02"
+        },
+        {
+            "topic_title": "Startup of replicaset takes very long",
+            "url": "https:\/\/forums.percona.com\/t\/startup-of-replicaset-takes-very-long\/2",
+            "date": "2024-12-02"
+        },
+        {
+            "topic_title": "Restore to New Kubernetes cluster from S3 - No Oplog",
+            "url": "https:\/\/forums.percona.com\/t\/restore-to-new-kubernetes-cluster-from-s3-no-oplog\/2",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "Restore to New Kubernetes cluster from S3 - No Oplog",
+            "url": "https:\/\/forums.percona.com\/t\/restore-to-new-kubernetes-cluster-from-s3-no-oplog\/4",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "Collecting metrics using \"mongodb exporter\" as a sidecar in kube prometheus grafana setup gives only rs0 metrics, not the cfg and mongos metrics",
+            "url": "https:\/\/forums.percona.com\/t\/collecting-metrics-using-mongodb-exporter-as-a-sidecar-in-kube-prometheus-grafana-setup-gives-only-rs0-metrics-not-the-cfg-and-mongos-metrics\/2",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "Documenting my tests in using HTTP with pgbackrest and Minio",
+            "url": "https:\/\/forums.percona.com\/t\/documenting-my-tests-in-using-http-with-pgbackrest-and-minio\/3",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "Loadbalancer creation",
+            "url": "https:\/\/forums.percona.com\/t\/loadbalancer-creation\/2",
+            "date": "2024-12-10"
+        },
+        {
+            "topic_title": "Users not being created",
+            "url": "https:\/\/forums.percona.com\/t\/users-not-being-created\/2",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "Percona Mongodb operator restarts with error \"fatal error: concurrent map read and map write\"",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-operator-restarts-with-error-fatal-error-concurrent-map-read-and-map-write\/2",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "Can't find cluster-wide install option in OperatorHub",
+            "url": "https:\/\/forums.percona.com\/t\/cant-find-cluster-wide-install-option-in-operatorhub\/2",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Percona 3 ppm-server error",
+            "url": "https:\/\/forums.percona.com\/t\/percona-3-ppm-server-error\/2",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Percona 3 ppm-server error",
+            "url": "https:\/\/forums.percona.com\/t\/percona-3-ppm-server-error\/4",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Problems upgrading PMM server from 2.28 to 3",
+            "url": "https:\/\/forums.percona.com\/t\/problems-upgrading-pmm-server-from-2-28-to-3\/4",
+            "date": "2025-03-28"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Connection to an exposed replicaset is not working",
+            "url": "https:\/\/forums.percona.com\/t\/connection-to-an-exposed-replicaset-is-not-working\/11",
+            "date": "2024-05-31"
+        },
+        {
+            "topic_title": "Restore from deleted backup",
+            "url": "https:\/\/forums.percona.com\/t\/restore-from-deleted-backup\/2",
+            "date": "2024-01-27"
+        },
+        {
+            "topic_title": "Unable to configure Percona MySQL group replication cluster on K8s with version v0.6.0",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-configure-percona-mysql-group-replication-cluster-on-k8s-with-version-v0-6-0\/3",
+            "date": "2024-02-02"
+        },
+        {
+            "topic_title": "Percona MongoDB operator is causing high number of connections to the database",
+            "url": "https:\/\/forums.percona.com\/t\/percona-mongodb-operator-is-causing-high-number-of-connections-to-the-database\/2",
+            "date": "2024-04-01"
+        },
+        {
+            "topic_title": "Mongod configuration",
+            "url": "https:\/\/forums.percona.com\/t\/mongod-configuration\/2",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "Need to same secret before mongodb restore",
+            "url": "https:\/\/forums.percona.com\/t\/need-to-same-secret-before-mongodb-restore\/2",
+            "date": "2024-03-25"
+        },
+        {
+            "topic_title": "Azure backup fails with \/usr\/bin\/run_backup.sh: 1 (Operation not permitted)",
+            "url": "https:\/\/forums.percona.com\/t\/azure-backup-fails-with-usr-bin-run-backup-sh-1-operation-not-permitted\/4",
+            "date": "2024-03-29"
+        },
+        {
+            "topic_title": "Encrypted backup configuration in PXC Cluster Resource",
+            "url": "https:\/\/forums.percona.com\/t\/encrypted-backup-configuration-in-pxc-cluster-resource\/3",
+            "date": "2024-07-19"
+        },
+        {
+            "topic_title": "Modify pgbouncer.ini",
+            "url": "https:\/\/forums.percona.com\/t\/modify-pgbouncer-ini\/2",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Public schema options helm chart",
+            "url": "https:\/\/forums.percona.com\/t\/public-schema-options-helm-chart\/3",
+            "date": "2024-09-04"
+        },
+        {
+            "topic_title": "Question: Does PXC Operator renew TLS certificate that automatically generated by the operator itself?",
+            "url": "https:\/\/forums.percona.com\/t\/question-does-pxc-operator-renew-tls-certificate-that-automatically-generated-by-the-operator-itself\/4",
+            "date": "2024-09-16"
+        },
+        {
+            "topic_title": "EBS vs EFS Peristance Volume Storage Class",
+            "url": "https:\/\/forums.percona.com\/t\/ebs-vs-efs-peristance-volume-storage-class\/2",
+            "date": "2024-10-07"
+        },
+        {
+            "topic_title": "Backup files are not deleted from Azure blob storage",
+            "url": "https:\/\/forums.percona.com\/t\/backup-files-are-not-deleted-from-azure-blob-storage\/8",
+            "date": "2024-10-18"
+        },
+        {
+            "topic_title": "Older backups are not getting deleted, with the keep argument specified",
+            "url": "https:\/\/forums.percona.com\/t\/older-backups-are-not-getting-deleted-with-the-keep-argument-specified\/2",
+            "date": "2024-10-18"
+        },
+        {
+            "topic_title": "Standard vs regional provisioned disks, for ex. GCP",
+            "url": "https:\/\/forums.percona.com\/t\/standard-vs-regional-provisioned-disks-for-ex-gcp\/2",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "MongoDB 8 + arm support?",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-8-arm-support\/2",
+            "date": "2024-10-25"
+        },
+        {
+            "topic_title": "Running Percona operator",
+            "url": "https:\/\/forums.percona.com\/t\/running-percona-operator\/2",
+            "date": "2024-11-04"
+        },
+        {
+            "topic_title": "Recommended Instance Family \/ Type",
+            "url": "https:\/\/forums.percona.com\/t\/recommended-instance-family-type\/2",
+            "date": "2024-12-02"
+        }
+    ]
+}

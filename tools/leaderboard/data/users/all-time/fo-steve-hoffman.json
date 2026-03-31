@@ -1,0 +1,206 @@
+{
+    "user_key": "fo-steve-hoffman",
+    "display_name": "Steve Hoffman",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/steve.hoffman\/120\/66_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=steve.hoffman",
+    "github_login": null,
+    "forum_username": "steve.hoffman",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 361,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 361,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 28,
+    "solutions": 6,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "PMMBackupRestore script updated to work with PMM3 (mostly)",
+            "url": "https:\/\/forums.percona.com\/t\/pmmbackuprestore-script-updated-to-work-with-pmm3-mostly",
+            "date": "2025-08-14"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "How to to backup Alert Templates and Alert Rules",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-to-backup-alert-templates-and-alert-rules\/25",
+            "date": "2024-07-24"
+        },
+        {
+            "topic_title": "How to to backup Alert Templates and Alert Rules",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-to-backup-alert-templates-and-alert-rules\/29",
+            "date": "2025-06-25"
+        },
+        {
+            "topic_title": "How to to backup Alert Templates and Alert Rules",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-to-backup-alert-templates-and-alert-rules\/31",
+            "date": "2025-07-04"
+        },
+        {
+            "topic_title": "Pmm-agent frequent disconnection with pmm-server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-frequent-disconnection-with-pmm-server\/6",
+            "date": "2024-01-19"
+        },
+        {
+            "topic_title": "Failed to send test alert.: the receiver timed out: failed to send notifications to email address: email@example.com: dial tcp x.x.x.x:587: i\/o timeout",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-send-test-alert-the-receiver-timed-out-failed-to-send-notifications-to-email-address-email-example-com-dial-tcp-x-x-x-x-i-o-timeout\/6",
+            "date": "2024-01-22"
+        },
+        {
+            "topic_title": "Staged Upgrade for PMM2",
+            "url": "https:\/\/forums.percona.com\/t\/staged-upgrade-for-pmm2\/5",
+            "date": "2024-02-22"
+        },
+        {
+            "topic_title": "Staged Upgrade for PMM2",
+            "url": "https:\/\/forums.percona.com\/t\/staged-upgrade-for-pmm2\/8",
+            "date": "2024-02-23"
+        },
+        {
+            "topic_title": "Staged Upgrade for PMM2",
+            "url": "https:\/\/forums.percona.com\/t\/staged-upgrade-for-pmm2\/10",
+            "date": "2024-02-23"
+        },
+        {
+            "topic_title": "How collect metrics from docker 9323\/metrics to pmm?",
+            "url": "https:\/\/forums.percona.com\/t\/how-collect-metrics-from-docker-9323-metrics-to-pmm\/5",
+            "date": "2024-03-01"
+        },
+        {
+            "topic_title": "How collect metrics from docker 9323\/metrics to pmm?",
+            "url": "https:\/\/forums.percona.com\/t\/how-collect-metrics-from-docker-9323-metrics-to-pmm\/7",
+            "date": "2024-03-01"
+        },
+        {
+            "topic_title": "How collect metrics from docker 9323\/metrics to pmm?",
+            "url": "https:\/\/forums.percona.com\/t\/how-collect-metrics-from-docker-9323-metrics-to-pmm\/9",
+            "date": "2024-03-01"
+        },
+        {
+            "topic_title": "PMM2 and mariaDB, missing metrics",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-and-mariadb-missing-metrics\/6",
+            "date": "2024-03-05"
+        },
+        {
+            "topic_title": "I need to migrate my PMM POC DB server to new server and i want to clone everything on my new PMM dashboard. Can someone please help us with the exact steps?",
+            "url": "https:\/\/forums.percona.com\/t\/i-need-to-migrate-my-pmm-poc-db-server-to-new-server-and-i-want-to-clone-everything-on-my-new-pmm-dashboard-can-someone-please-help-us-with-the-exact-steps\/2",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "SMTP Settings in PMM Appliance",
+            "url": "https:\/\/forums.percona.com\/t\/smtp-settings-in-pmm-appliance\/3",
+            "date": "2024-04-08"
+        },
+        {
+            "topic_title": "SMTP Settings in PMM Appliance",
+            "url": "https:\/\/forums.percona.com\/t\/smtp-settings-in-pmm-appliance\/6",
+            "date": "2024-04-08"
+        },
+        {
+            "topic_title": "Trouble with smtp contact point in pmm 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/trouble-with-smtp-contact-point-in-pmm-2-42-0\/4",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "Trouble with smtp contact point in pmm 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/trouble-with-smtp-contact-point-in-pmm-2-42-0\/6",
+            "date": "2024-08-30"
+        },
+        {
+            "topic_title": "Trouble with smtp contact point in pmm 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/trouble-with-smtp-contact-point-in-pmm-2-42-0\/7",
+            "date": "2024-08-30"
+        },
+        {
+            "topic_title": "Trouble with smtp contact point in pmm 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/trouble-with-smtp-contact-point-in-pmm-2-42-0\/9",
+            "date": "2024-09-06"
+        },
+        {
+            "topic_title": "PMM unable to see the login page",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-unable-to-see-the-login-page\/4",
+            "date": "2024-09-03"
+        },
+        {
+            "topic_title": "Pmm2-client 2.43.0",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-2-43-0\/2",
+            "date": "2024-09-24"
+        },
+        {
+            "topic_title": "Connection Check Failed when adding MySQL database with \"pmm-admin config...\"",
+            "url": "https:\/\/forums.percona.com\/t\/connection-check-failed-when-adding-mysql-database-with-pmm-admin-config\/2",
+            "date": "2024-09-25"
+        },
+        {
+            "topic_title": "Connection Check Failed when adding MySQL database with \"pmm-admin config...\"",
+            "url": "https:\/\/forums.percona.com\/t\/connection-check-failed-when-adding-mysql-database-with-pmm-admin-config\/3",
+            "date": "2024-09-25"
+        },
+        {
+            "topic_title": "Upgrade grafana version within PMM 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-grafana-version-within-pmm-2-42-0\/2",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "Unable to alter provisioned dashboards",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-alter-provisioned-dashboards\/2",
+            "date": "2025-01-15"
+        },
+        {
+            "topic_title": "Vulnerability in PMM Open Virtual Appliance (OVA) installations",
+            "url": "https:\/\/forums.percona.com\/t\/vulnerability-in-pmm-open-virtual-appliance-ova-installations\/4",
+            "date": "2025-02-20"
+        },
+        {
+            "topic_title": "PMM3 in AWS Marketplace",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-in-aws-marketplace\/3",
+            "date": "2025-05-22"
+        },
+        {
+            "topic_title": "PMM3 in AWS Marketplace",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-in-aws-marketplace\/4",
+            "date": "2025-08-15"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "SMTP Settings in PMM Appliance",
+            "url": "https:\/\/forums.percona.com\/t\/smtp-settings-in-pmm-appliance\/3",
+            "date": "2024-04-08"
+        },
+        {
+            "topic_title": "Pmm2-client 2.43.0",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-2-43-0\/2",
+            "date": "2024-09-24"
+        },
+        {
+            "topic_title": "Connection Check Failed when adding MySQL database with \"pmm-admin config...\"",
+            "url": "https:\/\/forums.percona.com\/t\/connection-check-failed-when-adding-mysql-database-with-pmm-admin-config\/2",
+            "date": "2024-09-25"
+        },
+        {
+            "topic_title": "Upgrade grafana version within PMM 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-grafana-version-within-pmm-2-42-0\/2",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "Unable to alter provisioned dashboards",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-alter-provisioned-dashboards\/2",
+            "date": "2025-01-15"
+        },
+        {
+            "topic_title": "PMM3 in AWS Marketplace",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-in-aws-marketplace\/3",
+            "date": "2025-05-22"
+        }
+    ]
+}

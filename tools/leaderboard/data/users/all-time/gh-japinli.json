@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-japinli",
+    "display_name": "Japin Li",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/20606090?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=japinli",
+    "github_login": "japinli",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 300,
+    "points_github": 300,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 3,
+    "prs_merged": 3,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Fix another typo",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/274",
+            "repo": "percona\/pg_tde",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Remove outdated comments",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/273",
+            "repo": "percona\/pg_tde",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix a typo about tablespace",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/269",
+            "repo": "percona\/pg_tde",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

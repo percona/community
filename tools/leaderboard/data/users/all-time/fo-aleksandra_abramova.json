@@ -1,0 +1,129 @@
+{
+    "user_key": "fo-aleksandra_abramova",
+    "display_name": "Aleksandra Abramova",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/aleksandra_abramova\/120\/3038_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Aleksandra_Abramova",
+    "github_login": null,
+    "forum_username": "Aleksandra_Abramova",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 100,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 100,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 20,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Percona Distribution for MySQL (PXC-based variation) 8.0.35 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-mysql-pxc-based-variation-8-0-35-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for MySQL (PXC-based variation) 8.0.35 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-mysql-pxc-based-variation-8-0-35-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona XtraDB Cluster 8.0.35-27 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtradb-cluster-8-0-35-27-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona XtraDB Cluster 8.0.35-27 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtradb-cluster-8-0-35-27-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Server for MongoDB 4.4.27-26 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-4-4-27-26-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Server for MongoDB 4.4.27-26 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-4-4-27-26-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for MongoDB 4.4.27 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-mongodb-4-4-27-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for MongoDB 4.4.27 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-mongodb-4-4-27-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 16.1 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-16-1-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 16.1 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-16-1-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 15.5 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-15-5-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 15.5 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-15-5-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 12.17 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-12-17-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 12.17 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-12-17-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 11.22 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-11-22-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Distribution for PostgreSQL 11.22 Update Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-distribution-for-postgresql-11-22-update-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Server for MongoDB 7.0.5-3 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-7-0-5-3-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Server for MongoDB 7.0.5-3 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mongodb-7-0-5-3-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Operator for PostgreSQL 2.3.1 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-operator-for-postgresql-2-3-1-released",
+            "date": "2024-01-26"
+        },
+        {
+            "title": "Percona Operator for PostgreSQL 2.3.1 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-operator-for-postgresql-2-3-1-released",
+            "date": "2024-01-26"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,141 @@
+{
+    "user_key": "gh-aaronplagge",
+    "display_name": "Aaron M Plagge",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/18037314?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=aaronplagge",
+    "github_login": "aaronplagge",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-20T15:51:21+00:00",
+    "points_total": 950,
+    "points_github": 950,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 8,
+    "prs_merged": 10,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "GAS-587: Corrections to orchestrator documentation. ",
+            "url": "https:\/\/github.com\/percona\/GAS\/pull\/167",
+            "repo": "percona\/GAS",
+            "date": "2024-05-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-593: Fix binlogs already backed up not being discovered on backup driver start.",
+            "url": "https:\/\/github.com\/percona\/percona-rdba-backups\/pull\/184",
+            "repo": "percona\/percona-rdba-backups",
+            "date": "2024-05-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PLAT-1185: Fix binlogs already backed up not being discovered on backup driver start. ",
+            "url": "https:\/\/github.com\/percona\/percona-rdba-backups\/pull\/183",
+            "repo": "percona\/percona-rdba-backups",
+            "date": "2024-03-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-543: Adjust dir size tests to allow for xfs size differences.",
+            "url": "https:\/\/github.com\/percona\/percona-rdba-backups\/pull\/182",
+            "repo": "percona\/percona-rdba-backups",
+            "date": "2024-03-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-523: Adding backup documentation. ",
+            "url": "https:\/\/github.com\/percona\/GAS\/pull\/145",
+            "repo": "percona\/GAS",
+            "date": "2024-02-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-535: Skip gather facts for cloud dbs",
+            "url": "https:\/\/github.com\/percona\/GAS\/pull\/144",
+            "repo": "percona\/GAS",
+            "date": "2024-02-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "DO NOT MERGE: Test branch.  Will Delete.",
+            "url": "https:\/\/github.com\/percona\/remote-dba-ansible\/pull\/1065",
+            "repo": "percona\/remote-dba-ansible",
+            "date": "2024-01-16",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-465: Updates to test_utils.py",
+            "url": "https:\/\/github.com\/percona\/percona-rdba-backups\/pull\/181",
+            "repo": "percona\/percona-rdba-backups",
+            "date": "2024-01-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PLAT-1199: Added StreamingReplicationLag alert.",
+            "url": "https:\/\/github.com\/percona\/remote-dba-ansible\/pull\/1064",
+            "repo": "percona\/remote-dba-ansible",
+            "date": "2023-12-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-409: Tools role documentation",
+            "url": "https:\/\/github.com\/percona\/GAS\/pull\/107",
+            "repo": "percona\/GAS",
+            "date": "2023-09-21",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "GAS-320 Adding orchestrator hooks.",
+            "url": "https:\/\/github.com\/percona\/GAS\/pull\/76",
+            "repo": "percona\/GAS",
+            "date": "2023-07-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PLAT-1083: Allow binlog backups to specify my.cnf location.",
+            "url": "https:\/\/github.com\/percona\/percona-rdba-backups\/pull\/152",
+            "repo": "percona\/percona-rdba-backups",
+            "date": "2023-04-21",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PLAT-1008: Credential changes do not update .pgpass",
+            "url": "https:\/\/github.com\/percona\/remote-dba-ansible\/pull\/1015",
+            "repo": "percona\/remote-dba-ansible",
+            "date": "2022-07-01",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PLAT-830: Adding role for managing firewalld on monitor.",
+            "url": "https:\/\/github.com\/percona\/remote-dba-ansible\/pull\/951",
+            "repo": "percona\/remote-dba-ansible",
+            "date": "2022-02-01",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

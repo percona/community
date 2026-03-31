@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-elsayedmt",
+    "display_name": "Mohamed Talha Elsayed",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/6063995?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=elsayedmt",
+    "github_login": "elsayedmt",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 210,
+    "points_github": 210,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Unable to deploy standby cluster using helm-chart due to missing PG Custom Resource options",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/480",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2025-01-31",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "Pg db metadata passthrough",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/491",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2025-02-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "pg-db - Added missing PerconaPGCluster .spec.standby. fields",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/481",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2025-01-31",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

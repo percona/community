@@ -1,0 +1,34 @@
+{
+    "user_key": "bl-stan-lipinski",
+    "display_name": "Stan Lipinski",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?blog=Stan+Lipinski",
+    "github_login": null,
+    "forum_username": null,
+    "period": "2026-01",
+    "period_label": "January 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 100,
+    "points_github": 0,
+    "points_content": 100,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 1,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [
+        {
+            "title": "Configuring the Component Keyring in Percona Server and PXC 8.4",
+            "url": "https:\/\/percona.community\/blog\/2026\/01\/13\/configuring-the-component-keyring-in-percona-server-and-pxc-8.4\/",
+            "date": "13.01.2026"
+        }
+    ],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

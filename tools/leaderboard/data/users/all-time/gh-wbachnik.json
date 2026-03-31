@@ -1,0 +1,61 @@
+{
+    "user_key": "gh-wbachnik",
+    "display_name": "Wiktor Bachnik",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/2462084?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=wbachnik",
+    "github_login": "wbachnik",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 250,
+    "points_github": 250,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 4,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "FIXED added simulation mode handling",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/208",
+            "repo": "percona\/cpe",
+            "date": "2024-12-05",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "added simulation mode handling to get_query_stats()",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/204",
+            "repo": "percona\/cpe",
+            "date": "2024-12-04",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "added anomaly detection research results",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/161",
+            "repo": "percona\/cpe",
+            "date": "2024-11-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed port mapping for docker example",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/137",
+            "repo": "percona\/cpe",
+            "date": "2024-10-29",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

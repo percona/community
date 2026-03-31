@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-blair-rampling",
+    "display_name": "Blair Rampling",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/blair.rampling\/120\/22947_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=blair.rampling",
+    "github_login": null,
+    "forum_username": "blair.rampling",
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Announcing OpenEverest: the next step for the Everest project",
+            "url": "https:\/\/forums.percona.com\/t\/announcing-openeverest-the-next-step-for-the-everest-project",
+            "date": "2026-01-06"
+        },
+        {
+            "title": "Announcing OpenEverest: the next step for the Everest project",
+            "url": "https:\/\/forums.percona.com\/t\/announcing-openeverest-the-next-step-for-the-everest-project",
+            "date": "2026-01-06"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

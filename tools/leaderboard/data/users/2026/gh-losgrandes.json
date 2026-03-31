@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-losgrandes",
+    "display_name": "Piotr Wajda",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/5540542?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=losgrandes",
+    "github_login": "losgrandes",
+    "forum_username": null,
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 50,
+    "points_github": 50,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 2,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Added users data to history table",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/1079",
+            "repo": "percona\/percona-toolkit",
+            "date": "2026-02-19",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "Added users data to history table",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/1078",
+            "repo": "percona\/percona-toolkit",
+            "date": "2026-02-19",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

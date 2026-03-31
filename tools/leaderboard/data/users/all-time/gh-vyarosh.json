@@ -1,0 +1,349 @@
+{
+    "user_key": "gh-vyarosh",
+    "display_name": "Vadym Yarosh",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/4964888?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=vyarosh",
+    "github_login": "vyarosh",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 3275,
+    "points_github": 3275,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 32,
+    "prs_merged": 33,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PMM-12926 cleanup duplicated jobs and fixed conditional",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/663",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12926 jobs has been moved to pmm-qa",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/752",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-02-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12926 cleanup, jobs are at pmm-qa repo",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/642",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-02-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12924 e2e FB switched to pmm-qa",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/750",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-02-27",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 added new fb checks job",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3564",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-02-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 more args fixes for FB calls",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/661",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 fb integration fixes",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/660",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 fixes",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/659",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 fix suites",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/658",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 added suites",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/657",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 switch tarball test to pmm-qa",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3551",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-02-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12296 added all jobs",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/655",
+            "repo": "percona\/pmm-qa",
+            "date": "2024-02-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12921 getter switched",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/748",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-02-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 cli refactoring layer 1",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/745",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-02-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12219 unskip \"+\" in password test",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/742",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-02-12",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12773 update mongo version",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/740",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-02-09",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 FB package test names update",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3538",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-02-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 minor doc, jobs order and job name refactoring",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/636",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-02-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11378 unhardcoded workspace folder",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/635",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-02-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11378 fixed relative repo issue for FB call",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/633",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-02-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11378 added tarball tests to FB",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3524",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-02-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11046 pmm2-client_integration_upgrade_custom_port updated",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/631",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 fix for Focal job",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/630",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 removed bionic from package tests",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/729",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-01-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 fixed server check for RC",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/627",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 reduced hanging time",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/626",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 matix view update",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/625",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-9527 fixed runner to test new job",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/624",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-9527 FB job with required tests updates",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/622",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12770 Jobs updates per review",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/618",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12770 added OS matrix for Package Tests and fixed dev-latest discovery",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/722",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2024-01-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12808 updated psmdb to 7.0",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/612",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2024-01-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12770 added GH action for package tests",
+            "url": "https:\/\/github.com\/Percona-QA\/package-testing\/pull\/609",
+            "repo": "Percona-QA\/package-testing",
+            "date": "2023-12-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12773 update mongo version",
+            "url": "https:\/\/github.com\/percona\/pmm-qa\/pull\/652",
+            "repo": "percona\/pmm-qa",
+            "date": "2023-12-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12773 added mongo 7 to aws staging start job",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2430",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2023-12-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 update workflows",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/672",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2023-08-21",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 restored ol-8 and ol-9",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2104",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2023-05-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-7 pmm client setup refactored",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3139",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-03-16",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11066 max-query-length tests",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/459",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2022-12-06",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-9515 another part",
+            "url": "https:\/\/github.com\/percona\/pmm-ui-tests\/pull\/324",
+            "repo": "percona\/pmm-ui-tests",
+            "date": "2022-06-23",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

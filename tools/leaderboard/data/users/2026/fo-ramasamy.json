@@ -1,0 +1,49 @@
+{
+    "user_key": "fo-ramasamy",
+    "display_name": "Ramasamy",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/ramasamy\/120\/16466_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Ramasamy",
+    "github_login": null,
+    "forum_username": "Ramasamy",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 20,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 20,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 4,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "How to capture only DDL, Connections, Failed Logins and Grant\/Revoke privileges in Percona MySQL 8.4.7?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-capture-only-ddl-connections-failed-logins-and-grant-revoke-privileges-in-percona-mysql-8-4-7",
+            "date": "2026-01-21"
+        },
+        {
+            "title": "Is it possible to extract the user connection details and DDL statements into a MySQL table in Percona MySQL 8.4.7?",
+            "url": "https:\/\/forums.percona.com\/t\/is-it-possible-to-extract-the-user-connection-details-and-ddl-statements-into-a-mysql-table-in-percona-mysql-8-4-7",
+            "date": "2026-01-23"
+        },
+        {
+            "title": "Questions related to Percona Telemetry Agent and Audit Log Filter plugin",
+            "url": "https:\/\/forums.percona.com\/t\/questions-related-to-percona-telemetry-agent-and-audit-log-filter-plugin",
+            "date": "2026-01-29"
+        },
+        {
+            "title": "Upgrading Percona Server from 8.0.44 to 8.4.7 on GTID based replication environments?",
+            "url": "https:\/\/forums.percona.com\/t\/upgrading-percona-server-from-8-0-44-to-8-4-7-on-gtid-based-replication-environments",
+            "date": "2026-02-11"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

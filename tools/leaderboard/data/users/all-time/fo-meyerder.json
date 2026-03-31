@@ -1,0 +1,135 @@
+{
+    "user_key": "fo-meyerder",
+    "display_name": "meyerder",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/meyerder\/120\/16994_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=meyerder",
+    "github_login": null,
+    "forum_username": "meyerder",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 78,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 78,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 12,
+    "replies": 9,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Detection\/Alert\/Failover",
+            "url": "https:\/\/forums.percona.com\/t\/detection-alert-failover",
+            "date": "2024-01-15"
+        },
+        {
+            "title": "PMM Alerting Labels\/format",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-alerting-labels-format",
+            "date": "2024-01-21"
+        },
+        {
+            "title": "PMM install Non Docker\/Podman",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-install-non-docker-podman",
+            "date": "2024-02-23"
+        },
+        {
+            "title": "Audit Logging - help?",
+            "url": "https:\/\/forums.percona.com\/t\/audit-logging-help",
+            "date": "2024-08-12"
+        },
+        {
+            "title": "Add Service Leverage Proxy",
+            "url": "https:\/\/forums.percona.com\/t\/add-service-leverage-proxy",
+            "date": "2024-10-23"
+        },
+        {
+            "title": "PMM 2.43.2 Upgrade?",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-2-43-2-upgrade",
+            "date": "2024-10-30"
+        },
+        {
+            "title": "Configure Proxy",
+            "url": "https:\/\/forums.percona.com\/t\/configure-proxy",
+            "date": "2025-01-31"
+        },
+        {
+            "title": "How to adjust the Alert history (where is the data?)",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-adjust-the-alert-history-where-is-the-data",
+            "date": "2025-02-14"
+        },
+        {
+            "title": "Upgrade Failed from 2.x to 3",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-failed-from-2-x-to-3",
+            "date": "2025-03-24"
+        },
+        {
+            "title": "Pmm2 Client\/Pmm3",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-pmm3",
+            "date": "2025-06-25"
+        },
+        {
+            "title": "8.4 Audit items Install\/Upgrade",
+            "url": "https:\/\/forums.percona.com\/t\/8-4-audit-items-install-upgrade",
+            "date": "2025-07-16"
+        },
+        {
+            "title": "Request - Or Config setting?",
+            "url": "https:\/\/forums.percona.com\/t\/request-or-config-setting",
+            "date": "2025-10-16"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Cluster freezes if one node's disk is full",
+            "url": "https:\/\/forums.percona.com\/t\/cluster-freezes-if-one-nodes-disk-is-full\/4",
+            "date": "2025-07-16"
+        },
+        {
+            "topic_title": "Minor update xtraDB cluster 8.0.34 -> 8.0.35",
+            "url": "https:\/\/forums.percona.com\/t\/minor-update-xtradb-cluster-8-0-34-8-0-35\/2",
+            "date": "2024-02-19"
+        },
+        {
+            "topic_title": "How to properly setup HAProxy with Percona XtraDB Cluster?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-properly-setup-haproxy-with-percona-xtradb-cluster\/3",
+            "date": "2025-01-21"
+        },
+        {
+            "topic_title": "How to properly setup HAProxy with Percona XtraDB Cluster?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-properly-setup-haproxy-with-percona-xtradb-cluster\/5",
+            "date": "2025-01-24"
+        },
+        {
+            "topic_title": "Data sync between 2 percona xtradb mysql clusters",
+            "url": "https:\/\/forums.percona.com\/t\/data-sync-between-2-percona-xtradb-mysql-clusters\/5",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "Table alter to drop a partition takes 10mins or more to complete",
+            "url": "https:\/\/forums.percona.com\/t\/table-alter-to-drop-a-partition-takes-10mins-or-more-to-complete\/10",
+            "date": "2024-10-04"
+        },
+        {
+            "topic_title": "Why a disk full on a node kill cluster?",
+            "url": "https:\/\/forums.percona.com\/t\/why-a-disk-full-on-a-node-kill-cluster\/4",
+            "date": "2025-07-16"
+        },
+        {
+            "topic_title": "Nodes got aborted one by one when creating\/droping index",
+            "url": "https:\/\/forums.percona.com\/t\/nodes-got-aborted-one-by-one-when-creating-droping-index\/3",
+            "date": "2025-07-16"
+        },
+        {
+            "topic_title": "MySQL 8.0 information_schema Corruption - Cannot Expand PXC Cluster",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-8-0-information-schema-corruption-cannot-expand-pxc-cluster\/4",
+            "date": "2026-02-23"
+        }
+    ],
+    "forum_solutions": []
+}

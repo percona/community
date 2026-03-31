@@ -1,0 +1,85 @@
+{
+    "user_key": "fo-rohit_khurana",
+    "display_name": "ROHIT KHURANA",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/rohit_khurana\/120\/2760_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=ROHIT_KHURANA",
+    "github_login": null,
+    "forum_username": "ROHIT_KHURANA",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 70,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 70,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 10,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "One node is running out of space after cluster crash",
+            "url": "https:\/\/forums.percona.com\/t\/one-node-is-running-out-of-space-after-cluster-crash\/9",
+            "date": "2025-02-25"
+        },
+        {
+            "topic_title": "One node is running out of space after cluster crash",
+            "url": "https:\/\/forums.percona.com\/t\/one-node-is-running-out-of-space-after-cluster-crash\/11",
+            "date": "2025-02-25"
+        },
+        {
+            "topic_title": "One node is running out of space after cluster crash",
+            "url": "https:\/\/forums.percona.com\/t\/one-node-is-running-out-of-space-after-cluster-crash\/13",
+            "date": "2025-02-26"
+        },
+        {
+            "topic_title": "PXC8.0.37 Very high thread activity during replication",
+            "url": "https:\/\/forums.percona.com\/t\/pxc8-0-37-very-high-thread-activity-during-replication\/5",
+            "date": "2025-02-25"
+        },
+        {
+            "topic_title": "PXC8.0.37 Very high thread activity during replication",
+            "url": "https:\/\/forums.percona.com\/t\/pxc8-0-37-very-high-thread-activity-during-replication\/10",
+            "date": "2025-02-25"
+        },
+        {
+            "topic_title": "Too Many Open Files\/Open Connections Issue for MongoDB",
+            "url": "https:\/\/forums.percona.com\/t\/too-many-open-files-open-connections-issue-for-mongodb\/3",
+            "date": "2025-03-25"
+        },
+        {
+            "topic_title": "Mariadb keeps crashing due to OOM",
+            "url": "https:\/\/forums.percona.com\/t\/mariadb-keeps-crashing-due-to-oom\/6",
+            "date": "2025-04-03"
+        },
+        {
+            "topic_title": "Mariadb keeps crashing due to OOM",
+            "url": "https:\/\/forums.percona.com\/t\/mariadb-keeps-crashing-due-to-oom\/8",
+            "date": "2025-04-04"
+        },
+        {
+            "topic_title": "Mariadb keeps crashing due to OOM",
+            "url": "https:\/\/forums.percona.com\/t\/mariadb-keeps-crashing-due-to-oom\/10",
+            "date": "2025-04-09"
+        },
+        {
+            "topic_title": "Mariadb keeps crashing due to OOM",
+            "url": "https:\/\/forums.percona.com\/t\/mariadb-keeps-crashing-due-to-oom\/12",
+            "date": "2025-04-14"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "One node is running out of space after cluster crash",
+            "url": "https:\/\/forums.percona.com\/t\/one-node-is-running-out-of-space-after-cluster-crash\/13",
+            "date": "2025-02-26"
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "user_key": "gh-myjamong",
+    "display_name": "Lake Yoo",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/44043666?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=myJamong",
+    "github_login": "myJamong",
+    "forum_username": null,
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 105,
+    "points_github": 105,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 3,
+    "prs_created": 3,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Fast provisioning with CSI Volume Clone for replica set scale-up",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2284",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-14",
+            "state": "open"
+        },
+        {
+            "title": "Manual TLS fails to update certificates on SAN changes and causes cluster stuck on secret regeneration",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2278",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-09",
+            "state": "open"
+        },
+        {
+            "title": "Add ExternalDNS annotation support for exposed Services",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2267",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-06",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPSMDB-1608: add externaldns anotation to create dns for created loadbalancer",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/2280",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-09",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "K8SPSMDB-1606: Add CA key persistence for manual TLS to support safe cert re-signing on SAN changes",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/2277",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-09",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "K8SPSMDB-1457: add certManagementPolicy option",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/2266",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-05",
+            "merged": false,
+            "state": "open"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,85 @@
+{
+    "user_key": "gh-hqakhtar",
+    "display_name": "Hamid Akhtar",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/7226795?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=hqakhtar",
+    "github_login": "hqakhtar",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 525,
+    "points_github": 525,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 6,
+    "prs_merged": 5,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Setting the version to 1.0.0-alpha for the tech preview release.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/164",
+            "repo": "percona\/pg_tde",
+            "date": "2024-04-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Updated locking to include locks on files. This is critical to prevent",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/163",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Keyrotation and key name versioning implementation",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/144",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Refactoring the code and adding TDEMasterKeyInfo to TDE file headers.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/143",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Refactoring the code and adding TDEMasterKeyInfo to TDE file headers.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/141",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-13",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Key Map Implementation - Replacing TDE Forks",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/113",
+            "repo": "percona\/pg_tde",
+            "date": "2024-01-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "WIP patch for sharing code - Not to be committed",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/84",
+            "repo": "percona\/pg_tde",
+            "date": "2023-12-07",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

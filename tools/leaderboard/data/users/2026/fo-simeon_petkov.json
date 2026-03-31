@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-simeon_petkov",
+    "display_name": "Simeon Petkov",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/s\/7ab992\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Simeon_Petkov",
+    "github_login": null,
+    "forum_username": "Simeon_Petkov",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Percona-xtrabackup-84 cannot be installed on Rocky Linux 9.7 with Percona Server 8.4 (missing libmysqlclient.so.21)",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtrabackup-84-cannot-be-installed-on-rocky-linux-9-7-with-percona-server-8-4-missing-libmysqlclient-so-21",
+            "date": "2026-02-04"
+        },
+        {
+            "title": "Unable to Create a Jira Ticket",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-a-jira-ticket",
+            "date": "2026-02-06"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

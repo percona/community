@@ -1,0 +1,34 @@
+{
+    "user_key": "bl-iuliia--julie--slobodian",
+    "display_name": "Iuliia (Julie) Slobodian",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?blog=Iuliia+%28Julie%29+Slobodian",
+    "github_login": null,
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 100,
+    "points_github": 0,
+    "points_content": 100,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 1,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [
+        {
+            "title": "Geeks Go Peaks: Building Community Through Adventure and Challenge",
+            "url": "https:\/\/percona.community\/blog\/2025\/06\/25\/geeks-go-peaks-building-community-through-adventure-and-challenge\/",
+            "date": "25.06.2025"
+        }
+    ],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

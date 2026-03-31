@@ -1,0 +1,40 @@
+{
+    "user_key": "fo-spronin",
+    "display_name": "Sergey Pronin",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/spronin\/120\/22828_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=spronin",
+    "github_login": null,
+    "forum_username": "spronin",
+    "period": "2026-01",
+    "period_label": "January 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 7,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 7,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 1,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "OpenEverest has a new home! Where to find us and our community",
+            "url": "https:\/\/forums.percona.com\/t\/openeverest-has-a-new-home-where-to-find-us-and-our-community",
+            "date": "2026-01-29"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Workflow identity for backup storage (AKS\/Azure Blog Storage)",
+            "url": "https:\/\/forums.percona.com\/t\/workflow-identity-for-backup-storage-aks-azure-blog-storage\/6",
+            "date": "2026-01-12"
+        }
+    ],
+    "forum_solutions": []
+}

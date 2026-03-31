@@ -1,0 +1,130 @@
+{
+    "user_key": "fo-stateros",
+    "display_name": "Stateros",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/stateros\/120\/2490_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Stateros",
+    "github_login": null,
+    "forum_username": "Stateros",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 73,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 73,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 11,
+    "replies": 9,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "GitOps way to install Everest",
+            "url": "https:\/\/forums.percona.com\/t\/gitops-way-to-install-everest",
+            "date": "2024-11-13"
+        },
+        {
+            "title": "Percona Everest 1.3.0 can't see any namespaces or create them from WEB UI",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-1-3-0-cant-see-any-namespaces-or-create-them-from-web-ui",
+            "date": "2024-11-18"
+        },
+        {
+            "title": "AWS S3 integration",
+            "url": "https:\/\/forums.percona.com\/t\/aws-s3-integration",
+            "date": "2025-02-13"
+        },
+        {
+            "title": "Vulnerability in PMM Open Virtual Appliance (OVA) installations",
+            "url": "https:\/\/forums.percona.com\/t\/vulnerability-in-pmm-open-virtual-appliance-ova-installations",
+            "date": "2025-02-19"
+        },
+        {
+            "title": "PSMDB Restore fails on zstd compression",
+            "url": "https:\/\/forums.percona.com\/t\/psmdb-restore-fails-on-zstd-compression",
+            "date": "2025-04-10"
+        },
+        {
+            "title": "Performance of AWS Graviton instances for MongoDB",
+            "url": "https:\/\/forums.percona.com\/t\/performance-of-aws-graviton-instances-for-mongodb",
+            "date": "2025-05-22"
+        },
+        {
+            "title": "\"deleting outdated backup job\" spam in the operator log on operator 1.20.0",
+            "url": "https:\/\/forums.percona.com\/t\/deleting-outdated-backup-job-spam-in-the-operator-log-on-operator-1-20-0",
+            "date": "2025-05-22"
+        },
+        {
+            "title": "\"FULL CLUSTER CRASH\" during restore physical backup",
+            "url": "https:\/\/forums.percona.com\/t\/full-cluster-crash-during-restore-physical-backup",
+            "date": "2025-07-03"
+        },
+        {
+            "title": "Selective Backup Using Percona Operator",
+            "url": "https:\/\/forums.percona.com\/t\/selective-backup-using-percona-operator",
+            "date": "2025-08-08"
+        },
+        {
+            "title": "PMM Agent Not Monitoring PVC Mounted at \/data\/db in Percona Operator for MongoDB",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-not-monitoring-pvc-mounted-at-data-db-in-percona-operator-for-mongodb",
+            "date": "2025-09-10"
+        },
+        {
+            "title": "MongoDB traffic investigation. system.profile resizing",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-traffic-investigation-system-profile-resizing",
+            "date": "2025-12-08"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "PMM2 client not registering",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-not-registering\/7",
+            "date": "2025-04-04"
+        },
+        {
+            "topic_title": "Video tutorial: MongoDB on Amazon EKS using Percona Everest",
+            "url": "https:\/\/forums.percona.com\/t\/video-tutorial-mongodb-on-amazon-eks-using-percona-everest\/4",
+            "date": "2025-02-05"
+        },
+        {
+            "topic_title": "Ubuntu 24.04 Packages",
+            "url": "https:\/\/forums.percona.com\/t\/ubuntu-24-04-packages\/7",
+            "date": "2024-05-16"
+        },
+        {
+            "topic_title": "Ubuntu 24.04 Packages",
+            "url": "https:\/\/forums.percona.com\/t\/ubuntu-24-04-packages\/12",
+            "date": "2024-07-24"
+        },
+        {
+            "topic_title": "Ssue Connecting to MongoDB via External Addresses (splitHorizons)",
+            "url": "https:\/\/forums.percona.com\/t\/ssue-connecting-to-mongodb-via-external-addresses-splithorizons\/2",
+            "date": "2025-04-24"
+        },
+        {
+            "topic_title": "Percona Backup for MongoDB + MongoDB Community 7.0?",
+            "url": "https:\/\/forums.percona.com\/t\/percona-backup-for-mongodb-mongodb-community-7-0\/6",
+            "date": "2025-06-04"
+        },
+        {
+            "topic_title": "Is fileCopyBased initialSyncMethod supports in Percona Server for MongoDB 8?",
+            "url": "https:\/\/forums.percona.com\/t\/is-filecopybased-initialsyncmethod-supports-in-percona-server-for-mongodb-8\/5",
+            "date": "2025-11-20"
+        },
+        {
+            "topic_title": "Is fileCopyBased initialSyncMethod supports in Percona Server for MongoDB 8?",
+            "url": "https:\/\/forums.percona.com\/t\/is-filecopybased-initialsyncmethod-supports-in-percona-server-for-mongodb-8\/7",
+            "date": "2025-11-20"
+        },
+        {
+            "topic_title": "Single rs possible?",
+            "url": "https:\/\/forums.percona.com\/t\/single-rs-possible\/3",
+            "date": "2025-09-23"
+        }
+    ],
+    "forum_solutions": []
+}

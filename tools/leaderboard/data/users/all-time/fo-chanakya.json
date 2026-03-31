@@ -1,0 +1,105 @@
+{
+    "user_key": "fo-chanakya",
+    "display_name": "Chanakya",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/c\/cab0a1\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Chanakya",
+    "github_login": null,
+    "forum_username": "Chanakya",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 60,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 60,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 10,
+    "replies": 5,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Support for Linux Generic Arm Binaries",
+            "url": "https:\/\/forums.percona.com\/t\/support-for-linux-generic-arm-binaries",
+            "date": "2024-02-12"
+        },
+        {
+            "title": "Xtrabackup Waiting for table backup lock mysql 8.0",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-waiting-for-table-backup-lock-mysql-8-0",
+            "date": "2024-02-28"
+        },
+        {
+            "title": "Percona Server MySQL 8.0.37 Linux generic version has missing Libs",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-mysql-8-0-37-linux-generic-version-has-missing-libs",
+            "date": "2024-08-15"
+        },
+        {
+            "title": "Galera Cluser hung state with wsrep: preparing for TO isolation",
+            "url": "https:\/\/forums.percona.com\/t\/galera-cluser-hung-state-with-wsrep-preparing-for-to-isolation",
+            "date": "2024-09-25"
+        },
+        {
+            "title": "Percona Server 8.0.39 Linux Generic missing glibc 2.17 tar",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-8-0-39-linux-generic-missing-glibc-2-17-tar",
+            "date": "2024-12-18"
+        },
+        {
+            "title": "Does MySQL\/clients use Netty?",
+            "url": "https:\/\/forums.percona.com\/t\/does-mysql-clients-use-netty",
+            "date": "2024-12-19"
+        },
+        {
+            "title": "Percona Binary issue with libssl.so.1.1",
+            "url": "https:\/\/forums.percona.com\/t\/percona-binary-issue-with-libssl-so-1-1",
+            "date": "2025-01-08"
+        },
+        {
+            "title": "Automated way to get notified on Percona Downloads",
+            "url": "https:\/\/forums.percona.com\/t\/automated-way-to-get-notified-on-percona-downloads",
+            "date": "2025-11-04"
+        },
+        {
+            "title": "Openssl libs are added in 8.4.6 PS",
+            "url": "https:\/\/forums.percona.com\/t\/openssl-libs-are-added-in-8-4-6-ps",
+            "date": "2025-12-22"
+        },
+        {
+            "title": "Cannot use external kerberos authentication to login to persona mysql",
+            "url": "https:\/\/forums.percona.com\/t\/cannot-use-external-kerberos-authentication-to-login-to-persona-mysql",
+            "date": "2026-02-05"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Percona Server for MySQL 8.0.35-27 Released",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-for-mysql-8-0-35-27-released\/2",
+            "date": "2024-02-22"
+        },
+        {
+            "topic_title": "Zero data loss auto failover and sync old primary as replica without need of rebuild",
+            "url": "https:\/\/forums.percona.com\/t\/zero-data-loss-auto-failover-and-sync-old-primary-as-replica-without-need-of-rebuild\/10",
+            "date": "2024-02-22"
+        },
+        {
+            "topic_title": "Zero data loss auto failover and sync old primary as replica without need of rebuild",
+            "url": "https:\/\/forums.percona.com\/t\/zero-data-loss-auto-failover-and-sync-old-primary-as-replica-without-need-of-rebuild\/12",
+            "date": "2024-02-29"
+        },
+        {
+            "topic_title": "MySQL Failover Query",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-failover-query\/6",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "MySQL Failover Query",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-failover-query\/8",
+            "date": "2025-01-09"
+        }
+    ],
+    "forum_solutions": []
+}

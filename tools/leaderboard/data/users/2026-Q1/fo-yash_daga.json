@@ -1,0 +1,65 @@
+{
+    "user_key": "fo-yash_daga",
+    "display_name": "Yash Daga",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/yash_daga\/120\/22569_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Yash_Daga",
+    "github_login": null,
+    "forum_username": "Yash_Daga",
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 26,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 26,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 4,
+    "replies": 3,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "How to mount keyring using extraPVC in percona 1.19.0",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-mount-keyring-using-extrapvc-in-percona-1-19-0",
+            "date": "2026-01-21"
+        },
+        {
+            "title": "Cannot specify custom --transition-key for XtraBackup in Percona PXC Cluster",
+            "url": "https:\/\/forums.percona.com\/t\/cannot-specify-custom-transition-key-for-xtrabackup-in-percona-pxc-cluster",
+            "date": "2026-01-29"
+        },
+        {
+            "title": "Do we need to manually backup Binlog encryption keys while restoring from a backup",
+            "url": "https:\/\/forums.percona.com\/t\/do-we-need-to-manually-backup-binlog-encryption-keys-while-restoring-from-a-backup",
+            "date": "2026-02-10"
+        },
+        {
+            "title": "Encrypted Backup and Restore is failing for PXC 8.0.32-24.2",
+            "url": "https:\/\/forums.percona.com\/t\/encrypted-backup-and-restore-is-failing-for-pxc-8-0-32-24-2",
+            "date": "2026-02-19"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom\/23",
+            "date": "2026-03-05"
+        },
+        {
+            "topic_title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom\/26",
+            "date": "2026-03-06"
+        },
+        {
+            "topic_title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom\/30",
+            "date": "2026-03-10"
+        }
+    ],
+    "forum_solutions": []
+}

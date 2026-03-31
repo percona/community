@@ -1,0 +1,95 @@
+{
+    "user_key": "fo-kay_khan",
+    "display_name": "Kay Khan",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/kay_khan\/120\/17023_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Kay_Khan",
+    "github_login": null,
+    "forum_username": "Kay_Khan",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 59,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 59,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 11,
+    "replies": 2,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Get database collection document metrics using percona\/mongodb_exporter:0.36",
+            "url": "https:\/\/forums.percona.com\/t\/get-database-collection-document-metrics-using-percona-mongodb-exporter-0-36",
+            "date": "2024-02-22"
+        },
+        {
+            "title": "EBS vs EFS Peristance Volume Storage Class",
+            "url": "https:\/\/forums.percona.com\/t\/ebs-vs-efs-peristance-volume-storage-class",
+            "date": "2024-10-07"
+        },
+        {
+            "title": "Recommended Instance Family \/ Type",
+            "url": "https:\/\/forums.percona.com\/t\/recommended-instance-family-type",
+            "date": "2024-11-28"
+        },
+        {
+            "title": "Help setting up a Production sharded MongoDB Cluster with 3 replicas per shard",
+            "url": "https:\/\/forums.percona.com\/t\/help-setting-up-a-production-sharded-mongodb-cluster-with-3-replicas-per-shard",
+            "date": "2025-02-24"
+        },
+        {
+            "title": "Authentication and liveness\/readiness issues on new installation",
+            "url": "https:\/\/forums.percona.com\/t\/authentication-and-liveness-readiness-issues-on-new-installation",
+            "date": "2025-04-29"
+        },
+        {
+            "title": "Need to run sh.stopBalancer() during mongosync process",
+            "url": "https:\/\/forums.percona.com\/t\/need-to-run-sh-stopbalancer-during-mongosync-process",
+            "date": "2025-05-01"
+        },
+        {
+            "title": "Exposing Sharded Cluster on AWS EKS NLB Target Type",
+            "url": "https:\/\/forums.percona.com\/t\/exposing-sharded-cluster-on-aws-eks-nlb-target-type",
+            "date": "2025-05-02"
+        },
+        {
+            "title": "Frequent NoSuchTransaction Errors When Running mongosync with the Percona Kubernetes Operator for MongoDB",
+            "url": "https:\/\/forums.percona.com\/t\/frequent-nosuchtransaction-errors-when-running-mongosync-with-the-percona-kubernetes-operator-for-mongodb",
+            "date": "2025-05-13"
+        },
+        {
+            "title": "MongoDB Sharded Cluster Stuck Initializing Due to Denylisted Sync Source",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-sharded-cluster-stuck-initializing-due-to-denylisted-sync-source",
+            "date": "2025-06-02"
+        },
+        {
+            "title": "How do we handle vertically scaling mongodb deployment",
+            "url": "https:\/\/forums.percona.com\/t\/how-do-we-handle-vertically-scaling-mongodb-deployment",
+            "date": "2025-06-03"
+        },
+        {
+            "title": "Grafana MongoDB Dashboards Showing Incorrect Data",
+            "url": "https:\/\/forums.percona.com\/t\/grafana-mongodb-dashboards-showing-incorrect-data",
+            "date": "2025-06-11"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "MongoDB 8 + arm support?",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-8-arm-support\/5",
+            "date": "2024-11-19"
+        },
+        {
+            "topic_title": "MongoDB 8 + arm support?",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-8-arm-support\/13",
+            "date": "2024-12-17"
+        }
+    ],
+    "forum_solutions": []
+}

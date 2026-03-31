@@ -1,0 +1,34 @@
+{
+    "user_key": "fo-sam_117",
+    "display_name": "sam_117",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=sam_117",
+    "github_login": null,
+    "forum_username": "sam_117",
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 2,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 2,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 1,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Recovering MySql Database",
+            "url": "https:\/\/forums.percona.com\/t\/recovering-mysql-database\/5",
+            "date": "2026-03-02"
+        }
+    ],
+    "forum_solutions": []
+}

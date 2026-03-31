@@ -1,0 +1,370 @@
+{
+    "user_key": "fo-lalit-choudhary",
+    "display_name": "Lalit Choudhary",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/lalit.choudhary\/120\/51_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=lalit.choudhary",
+    "github_login": null,
+    "forum_username": "lalit.choudhary",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 376,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 376,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 63,
+    "solutions": 5,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Postgresql Upgrade 12 to 14",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-upgrade-12-to-14\/3",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "MongoDB backup failed",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-backup-failed\/3",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "Atlas mongodb registering cluster error Unauthorized. Please check username and password",
+            "url": "https:\/\/forums.percona.com\/t\/atlas-mongodb-registering-cluster-error-unauthorized-please-check-username-and-password\/3",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "How to close To many connection",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-close-to-many-connection\/2",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "Configure external HAProxy for MYSQL cluster",
+            "url": "https:\/\/forums.percona.com\/t\/configure-external-haproxy-for-mysql-cluster\/2",
+            "date": "2024-01-17"
+        },
+        {
+            "topic_title": "Pt-table-sync MySQL server has gone away",
+            "url": "https:\/\/forums.percona.com\/t\/pt-table-sync-mysql-server-has-gone-away\/2",
+            "date": "2024-01-17"
+        },
+        {
+            "topic_title": "Pt-table-sync MySQL server has gone away",
+            "url": "https:\/\/forums.percona.com\/t\/pt-table-sync-mysql-server-has-gone-away\/4",
+            "date": "2024-01-23"
+        },
+        {
+            "topic_title": "Can't set up 1 node pxc on kubernetes cluster",
+            "url": "https:\/\/forums.percona.com\/t\/cant-set-up-1-node-pxc-on-kubernetes-cluster\/2",
+            "date": "2024-02-01"
+        },
+        {
+            "topic_title": "Replication failed for drop user if exists",
+            "url": "https:\/\/forums.percona.com\/t\/replication-failed-for-drop-user-if-exists\/2",
+            "date": "2024-02-12"
+        },
+        {
+            "topic_title": "Replication failed for drop user if exists",
+            "url": "https:\/\/forums.percona.com\/t\/replication-failed-for-drop-user-if-exists\/4",
+            "date": "2024-02-12"
+        },
+        {
+            "topic_title": "Replication failed for drop user if exists",
+            "url": "https:\/\/forums.percona.com\/t\/replication-failed-for-drop-user-if-exists\/6",
+            "date": "2024-02-13"
+        },
+        {
+            "topic_title": "Replication failed for drop user if exists",
+            "url": "https:\/\/forums.percona.com\/t\/replication-failed-for-drop-user-if-exists\/8",
+            "date": "2024-02-13"
+        },
+        {
+            "topic_title": "How to properly setup HAProxy with Percona XtraDB Cluster?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-properly-setup-haproxy-with-percona-xtradb-cluster\/2",
+            "date": "2024-05-13"
+        },
+        {
+            "topic_title": "How to properly setup HAProxy with Percona XtraDB Cluster?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-properly-setup-haproxy-with-percona-xtradb-cluster\/4",
+            "date": "2025-01-24"
+        },
+        {
+            "topic_title": "How to import OVA file into vSphere (VMWare)",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-import-ova-file-into-vsphere-vmware\/2",
+            "date": "2024-05-30"
+        },
+        {
+            "topic_title": "Update correct location of pitr resources in docs",
+            "url": "https:\/\/forums.percona.com\/t\/update-correct-location-of-pitr-resources-in-docs\/2",
+            "date": "2024-07-17"
+        },
+        {
+            "topic_title": "Patroni Error CRITICAL: system ID mismatch, node belongs to a different cluster",
+            "url": "https:\/\/forums.percona.com\/t\/patroni-error-critical-system-id-mismatch-node-belongs-to-a-different-cluster\/7",
+            "date": "2024-07-25"
+        },
+        {
+            "topic_title": "HY000\/2006 MySQL server has gone away",
+            "url": "https:\/\/forums.percona.com\/t\/hy000-2006-mysql-server-has-gone-away\/8",
+            "date": "2024-08-16"
+        },
+        {
+            "topic_title": "The node information of the aws rds recently created in pmm is not visible",
+            "url": "https:\/\/forums.percona.com\/t\/the-node-information-of-the-aws-rds-recently-created-in-pmm-is-not-visible\/5",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "Why does an error occur when selecting sys.innodb_lock_waits in PMM?",
+            "url": "https:\/\/forums.percona.com\/t\/why-does-an-error-occur-when-selecting-sys-innodb-lock-waits-in-pmm\/6",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "Backup jobs not created anymore",
+            "url": "https:\/\/forums.percona.com\/t\/backup-jobs-not-created-anymore\/3",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "Backup jobs not created anymore",
+            "url": "https:\/\/forums.percona.com\/t\/backup-jobs-not-created-anymore\/5",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "Prometheus monitoring",
+            "url": "https:\/\/forums.percona.com\/t\/prometheus-monitoring\/3",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "Trouble with smtp contact point in pmm 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/trouble-with-smtp-contact-point-in-pmm-2-42-0\/2",
+            "date": "2024-08-29"
+        },
+        {
+            "topic_title": "How configure the pgbouncer wth hba auth method",
+            "url": "https:\/\/forums.percona.com\/t\/how-configure-the-pgbouncer-wth-hba-auth-method\/3",
+            "date": "2025-03-17"
+        },
+        {
+            "topic_title": "How to fetch the slow queries from the QAN database",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-fetch-the-slow-queries-from-the-qan-database\/10",
+            "date": "2024-10-17"
+        },
+        {
+            "topic_title": "How to fetch the slow queries from the QAN database",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-fetch-the-slow-queries-from-the-qan-database\/13",
+            "date": "2024-10-24"
+        },
+        {
+            "topic_title": "QAN Not showing any data for the Service\/DB",
+            "url": "https:\/\/forums.percona.com\/t\/qan-not-showing-any-data-for-the-service-db\/4",
+            "date": "2024-11-27"
+        },
+        {
+            "topic_title": "QAN Not showing any data for the Service\/DB",
+            "url": "https:\/\/forums.percona.com\/t\/qan-not-showing-any-data-for-the-service-db\/6",
+            "date": "2024-12-04"
+        },
+        {
+            "topic_title": "Percona xtradb cluster 1.15 readiness probe failure in kubernetes with kubeadm",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtradb-cluster-1-15-readiness-probe-failure-in-kubernetes-with-kubeadm\/2",
+            "date": "2024-11-27"
+        },
+        {
+            "topic_title": "Logcollector document is not detailed enough",
+            "url": "https:\/\/forums.percona.com\/t\/logcollector-document-is-not-detailed-enough\/2",
+            "date": "2024-11-28"
+        },
+        {
+            "topic_title": "Xtrabackup failing with [MY-012209] [InnoDB] Multiple files found for the same tablespace ID",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-failing-with-my-012209-innodb-multiple-files-found-for-the-same-tablespace-id\/2",
+            "date": "2024-12-06"
+        },
+        {
+            "topic_title": "Xtrabackup failing with [MY-012209] [InnoDB] Multiple files found for the same tablespace ID",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-failing-with-my-012209-innodb-multiple-files-found-for-the-same-tablespace-id\/4",
+            "date": "2024-12-09"
+        },
+        {
+            "topic_title": "Xtrabackup: Database page corruption detected at page 135592, retrying",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-database-page-corruption-detected-at-page-135592-retrying\/2",
+            "date": "2024-12-09"
+        },
+        {
+            "topic_title": "Mysql User Details dashboard does not show query when filtering in QAN",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-user-details-dashboard-does-not-show-query-when-filtering-in-qan\/2",
+            "date": "2024-12-10"
+        },
+        {
+            "topic_title": "Mysql User Details dashboard does not show query when filtering in QAN",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-user-details-dashboard-does-not-show-query-when-filtering-in-qan\/4",
+            "date": "2024-12-10"
+        },
+        {
+            "topic_title": "Slow log as query source but still get expensive perfschema queries",
+            "url": "https:\/\/forums.percona.com\/t\/slow-log-as-query-source-but-still-get-expensive-perfschema-queries\/2",
+            "date": "2024-12-13"
+        },
+        {
+            "topic_title": "Slow log as query source but still get expensive perfschema queries",
+            "url": "https:\/\/forums.percona.com\/t\/slow-log-as-query-source-but-still-get-expensive-perfschema-queries\/3",
+            "date": "2024-12-13"
+        },
+        {
+            "topic_title": "How to use PG17 pg_tde with Docker?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-use-pg17-pg-tde-with-docker\/2",
+            "date": "2024-12-23"
+        },
+        {
+            "topic_title": "How to use PG17 pg_tde with Docker?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-use-pg17-pg-tde-with-docker\/4",
+            "date": "2024-12-24"
+        },
+        {
+            "topic_title": "Sanitizing pt-query-digest output",
+            "url": "https:\/\/forums.percona.com\/t\/sanitizing-pt-query-digest-output\/2",
+            "date": "2024-12-25"
+        },
+        {
+            "topic_title": "MySQL 8.4 - High memory consumption",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-8-4-high-memory-consumption\/2",
+            "date": "2025-01-03"
+        },
+        {
+            "topic_title": "\"node still exists\" when trying to re-register services in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/node-still-exists-when-trying-to-re-register-services-in-pmm\/2",
+            "date": "2025-01-16"
+        },
+        {
+            "topic_title": "\"node still exists\" when trying to re-register services in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/node-still-exists-when-trying-to-re-register-services-in-pmm\/5",
+            "date": "2025-01-16"
+        },
+        {
+            "topic_title": "High CPU utilization by PMM agent",
+            "url": "https:\/\/forums.percona.com\/t\/high-cpu-utilization-by-pmm-agent\/2",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Help with PGBackRest Stanza Creation (Unable to Verify Certificate)",
+            "url": "https:\/\/forums.percona.com\/t\/help-with-pgbackrest-stanza-creation-unable-to-verify-certificate\/2",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Help with PGBackRest Stanza Creation (Unable to Verify Certificate)",
+            "url": "https:\/\/forums.percona.com\/t\/help-with-pgbackrest-stanza-creation-unable-to-verify-certificate\/5",
+            "date": "2025-02-14"
+        },
+        {
+            "topic_title": "Help with PGBackRest Stanza Creation (Unable to Verify Certificate)",
+            "url": "https:\/\/forums.percona.com\/t\/help-with-pgbackrest-stanza-creation-unable-to-verify-certificate\/8",
+            "date": "2025-02-17"
+        },
+        {
+            "topic_title": "Failed to register pmm-agent on PMM Server:",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-register-pmm-agent-on-pmm-server\/2",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Failed to register pmm-agent on PMM Server:",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-register-pmm-agent-on-pmm-server\/4",
+            "date": "2025-02-12"
+        },
+        {
+            "topic_title": "Alert Message in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/alert-message-in-pmm\/2",
+            "date": "2025-02-19"
+        },
+        {
+            "topic_title": "How to setup RDS Postgres 16 on pmm-2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-setup-rds-postgres-16-on-pmm-2-42-0\/2",
+            "date": "2025-03-26"
+        },
+        {
+            "topic_title": "ProxySQL added to \"PPM Inventory\" but the status remain N\/A",
+            "url": "https:\/\/forums.percona.com\/t\/proxysql-added-to-ppm-inventory-but-the-status-remain-n-a\/2",
+            "date": "2025-04-15"
+        },
+        {
+            "topic_title": "ProxySQL added to \"PPM Inventory\" but the status remain N\/A",
+            "url": "https:\/\/forums.percona.com\/t\/proxysql-added-to-ppm-inventory-but-the-status-remain-n-a\/4",
+            "date": "2025-04-17"
+        },
+        {
+            "topic_title": "ProxySQL added to \"PPM Inventory\" but the status remain N\/A",
+            "url": "https:\/\/forums.percona.com\/t\/proxysql-added-to-ppm-inventory-but-the-status-remain-n-a\/6",
+            "date": "2025-04-29"
+        },
+        {
+            "topic_title": "Change location of Percona XtraDB",
+            "url": "https:\/\/forums.percona.com\/t\/change-location-of-percona-xtradb\/2",
+            "date": "2025-04-25"
+        },
+        {
+            "topic_title": "Could not open PID File",
+            "url": "https:\/\/forums.percona.com\/t\/could-not-open-pid-file\/5",
+            "date": "2025-04-28"
+        },
+        {
+            "topic_title": "Could not open PID File",
+            "url": "https:\/\/forums.percona.com\/t\/could-not-open-pid-file\/8",
+            "date": "2025-04-29"
+        },
+        {
+            "topic_title": "Error in xtrabackup prepare: \"cannot open .\/xtrabackup_logfile\"",
+            "url": "https:\/\/forums.percona.com\/t\/error-in-xtrabackup-prepare-cannot-open-xtrabackup-logfile\/2",
+            "date": "2025-05-08"
+        },
+        {
+            "topic_title": "Pmm3 can connect to database, throws pg_hba error on pt-pg-summary",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-can-connect-to-database-throws-pg-hba-error-on-pt-pg-summary\/2",
+            "date": "2025-05-13"
+        },
+        {
+            "topic_title": "MySQL Galera: Partition Maintenance Very Slow During Heavy Load — Fast After Restart",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-galera-partition-maintenance-very-slow-during-heavy-load-fast-after-restart\/2",
+            "date": "2025-05-13"
+        },
+        {
+            "topic_title": "Does Percona Operator support cross namespace deploy PS-DB?",
+            "url": "https:\/\/forums.percona.com\/t\/does-percona-operator-support-cross-namespace-deploy-ps-db\/2",
+            "date": "2025-05-15"
+        },
+        {
+            "topic_title": "[PS 8.4.4] Keyvault component doen't launch",
+            "url": "https:\/\/forums.percona.com\/t\/ps-8-4-4-keyvault-component-doent-launch\/2",
+            "date": "2025-05-21"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Xtrabackup failing with [MY-012209] [InnoDB] Multiple files found for the same tablespace ID",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-failing-with-my-012209-innodb-multiple-files-found-for-the-same-tablespace-id\/2",
+            "date": "2024-12-06"
+        },
+        {
+            "topic_title": "Slow log as query source but still get expensive perfschema queries",
+            "url": "https:\/\/forums.percona.com\/t\/slow-log-as-query-source-but-still-get-expensive-perfschema-queries\/2",
+            "date": "2024-12-13"
+        },
+        {
+            "topic_title": "Sanitizing pt-query-digest output",
+            "url": "https:\/\/forums.percona.com\/t\/sanitizing-pt-query-digest-output\/2",
+            "date": "2024-12-25"
+        },
+        {
+            "topic_title": "Change location of Percona XtraDB",
+            "url": "https:\/\/forums.percona.com\/t\/change-location-of-percona-xtradb\/2",
+            "date": "2025-04-25"
+        },
+        {
+            "topic_title": "Does Percona Operator support cross namespace deploy PS-DB?",
+            "url": "https:\/\/forums.percona.com\/t\/does-percona-operator-support-cross-namespace-deploy-ps-db\/2",
+            "date": "2025-05-15"
+        }
+    ]
+}

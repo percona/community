@@ -1,0 +1,95 @@
+{
+    "user_key": "fo-peter_szczepaniak",
+    "display_name": "Peter Szczepaniak",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/peter_szczepaniak\/120\/21329_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Peter_Szczepaniak",
+    "github_login": null,
+    "forum_username": "Peter_Szczepaniak",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 122,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 122,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 11,
+    "solutions": 2,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "One Everest to manage multiple Kubernetes\/Rancher Clusters and Namespaces",
+            "url": "https:\/\/forums.percona.com\/t\/one-everest-to-manage-multiple-kubernetes-rancher-clusters-and-namespaces\/2",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "Adding support for non-AWS S3 Backup Storage Location",
+            "url": "https:\/\/forums.percona.com\/t\/adding-support-for-non-aws-s3-backup-storage-location\/2",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "Adding support for non-AWS S3 Backup Storage Location",
+            "url": "https:\/\/forums.percona.com\/t\/adding-support-for-non-aws-s3-backup-storage-location\/4",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "Everest questions",
+            "url": "https:\/\/forums.percona.com\/t\/everest-questions\/7",
+            "date": "2025-01-15"
+        },
+        {
+            "topic_title": "Everest questions",
+            "url": "https:\/\/forums.percona.com\/t\/everest-questions\/9",
+            "date": "2025-05-20"
+        },
+        {
+            "topic_title": "Is there a way to choose operator version when install Percona Everest?",
+            "url": "https:\/\/forums.percona.com\/t\/is-there-a-way-to-choose-operator-version-when-install-percona-everest\/2",
+            "date": "2024-08-22"
+        },
+        {
+            "topic_title": "Specify nodeAffinity in everest percona deployment",
+            "url": "https:\/\/forums.percona.com\/t\/specify-nodeaffinity-in-everest-percona-deployment\/2",
+            "date": "2024-09-18"
+        },
+        {
+            "topic_title": "Specify nodeAffinity in everest percona deployment",
+            "url": "https:\/\/forums.percona.com\/t\/specify-nodeaffinity-in-everest-percona-deployment\/4",
+            "date": "2024-09-23"
+        },
+        {
+            "topic_title": "Pitr restoration not working properly - Mongodb operator version : 7.0.8-5",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restoration-not-working-properly-mongodb-operator-version-7-0-8-5\/2",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "AWS S3 integration",
+            "url": "https:\/\/forums.percona.com\/t\/aws-s3-integration\/2",
+            "date": "2025-05-20"
+        },
+        {
+            "topic_title": "Road Map for OpenShift for Percona Everest",
+            "url": "https:\/\/forums.percona.com\/t\/road-map-for-openshift-for-percona-everest\/2",
+            "date": "2025-03-17"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Adding support for non-AWS S3 Backup Storage Location",
+            "url": "https:\/\/forums.percona.com\/t\/adding-support-for-non-aws-s3-backup-storage-location\/2",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "Road Map for OpenShift for Percona Everest",
+            "url": "https:\/\/forums.percona.com\/t\/road-map-for-openshift-for-percona-everest\/2",
+            "date": "2025-03-17"
+        }
+    ]
+}

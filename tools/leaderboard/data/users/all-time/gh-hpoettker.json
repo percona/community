@@ -1,0 +1,61 @@
+{
+    "user_key": "gh-hpoettker",
+    "display_name": "Henning Pöttker",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/25299532?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=hpoettker",
+    "github_login": "hpoettker",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 400,
+    "points_github": 400,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 4,
+    "prs_merged": 4,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PT-2378 - extended FP precision in pt-table-sync",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/863",
+            "repo": "percona\/percona-toolkit",
+            "date": "2024-09-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed flaky tests",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/862",
+            "repo": "percona\/percona-toolkit",
+            "date": "2024-09-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PT-2377 - fixed pt-table-sync for JSON utf8 strings",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/861",
+            "repo": "percona\/percona-toolkit",
+            "date": "2024-09-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PT-2375 - fixed pt-table-sync for tables with generated columns",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/860",
+            "repo": "percona\/percona-toolkit",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

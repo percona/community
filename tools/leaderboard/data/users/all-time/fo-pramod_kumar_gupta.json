@@ -1,0 +1,124 @@
+{
+    "user_key": "fo-pramod_kumar_gupta",
+    "display_name": "Pramod Kumar Gupta",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/pramod_kumar_gupta\/120\/19488_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Pramod_Kumar_Gupta",
+    "github_login": null,
+    "forum_username": "Pramod_Kumar_Gupta",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 95,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 95,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 19,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Mongodb not visble in Query Analytics",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-not-visble-in-query-analytics",
+            "date": "2024-12-20"
+        },
+        {
+            "title": "Mongdb replicaSet Monitoring",
+            "url": "https:\/\/forums.percona.com\/t\/mongdb-replicaset-monitoring",
+            "date": "2024-12-24"
+        },
+        {
+            "title": "Mongodb node getting uregistred",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-node-getting-uregistred",
+            "date": "2024-12-31"
+        },
+        {
+            "title": "Size of collections mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/size-of-collections-mongodb",
+            "date": "2025-01-02"
+        },
+        {
+            "title": "Number of collections not visible in mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/number-of-collections-not-visible-in-mongodb",
+            "date": "2025-01-09"
+        },
+        {
+            "title": "Alerting for slow querries mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/alerting-for-slow-querries-mongodb",
+            "date": "2025-01-16"
+        },
+        {
+            "title": "Getting DataSource Error",
+            "url": "https:\/\/forums.percona.com\/t\/getting-datasource-error",
+            "date": "2025-01-16"
+        },
+        {
+            "title": "Server password in docker compose",
+            "url": "https:\/\/forums.percona.com\/t\/server-password-in-docker-compose",
+            "date": "2025-01-17"
+        },
+        {
+            "title": "Getting while adding Library Panel",
+            "url": "https:\/\/forums.percona.com\/t\/getting-while-adding-library-panel",
+            "date": "2025-01-30"
+        },
+        {
+            "title": "Ready, write latency mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/ready-write-latency-mongodb",
+            "date": "2025-02-05"
+        },
+        {
+            "title": "Percona 3 ppm-server error",
+            "url": "https:\/\/forums.percona.com\/t\/percona-3-ppm-server-error",
+            "date": "2025-02-12"
+        },
+        {
+            "title": "Upgrade pmm-2-client to pmm3-client",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-pmm-2-client-to-pmm3-client",
+            "date": "2025-02-13"
+        },
+        {
+            "title": "Where to find these these in mongodb monitoring in pmm dashboards",
+            "url": "https:\/\/forums.percona.com\/t\/where-to-find-these-these-in-mongodb-monitoring-in-pmm-dashboards",
+            "date": "2025-02-14"
+        },
+        {
+            "title": "Percona 3 watch tower",
+            "url": "https:\/\/forums.percona.com\/t\/percona-3-watch-tower",
+            "date": "2025-02-17"
+        },
+        {
+            "title": "Alert Message in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/alert-message-in-pmm",
+            "date": "2025-02-18"
+        },
+        {
+            "title": "Extract value form alert",
+            "url": "https:\/\/forums.percona.com\/t\/extract-value-form-alert",
+            "date": "2025-02-19"
+        },
+        {
+            "title": "Default notification template code",
+            "url": "https:\/\/forums.percona.com\/t\/default-notification-template-code",
+            "date": "2025-02-20"
+        },
+        {
+            "title": "Data at rest encryption mongoDb percona Server 8.0",
+            "url": "https:\/\/forums.percona.com\/t\/data-at-rest-encryption-mongodb-percona-server-8-0",
+            "date": "2025-04-24"
+        },
+        {
+            "title": "Not able to change pmm password in kube",
+            "url": "https:\/\/forums.percona.com\/t\/not-able-to-change-pmm-password-in-kube",
+            "date": "2025-09-15"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

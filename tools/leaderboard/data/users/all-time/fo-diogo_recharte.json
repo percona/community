@@ -1,0 +1,296 @@
+{
+    "user_key": "fo-diogo_recharte",
+    "display_name": "Diogo Recharte",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/diogo_recharte\/120\/8004_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Diogo_Recharte",
+    "github_login": null,
+    "forum_username": "Diogo_Recharte",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 493,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 493,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 44,
+    "solutions": 8,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog Changes ⚠️",
+            "url": "https:\/\/forums.percona.com\/t\/action-required-percona-everest-and-bitnami-container-catalog-changes",
+            "date": "2025-09-19"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Install Everest on Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/install-everest-on-kubernetes\/4",
+            "date": "2024-02-16"
+        },
+        {
+            "topic_title": "Creating a cluster from S3 backup path",
+            "url": "https:\/\/forums.percona.com\/t\/creating-a-cluster-from-s3-backup-path\/5",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "Creating a cluster from S3 backup path",
+            "url": "https:\/\/forums.percona.com\/t\/creating-a-cluster-from-s3-backup-path\/7",
+            "date": "2024-04-01"
+        },
+        {
+            "topic_title": "Percona Everest v0.8.0. Issue with PMM and certificate",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-v0-8-0-issue-with-pmm-and-certificate\/4",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Percona Everest v0.8.0. Issue with PMM and certificate",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-v0-8-0-issue-with-pmm-and-certificate\/6",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Percona Everest v0.8.0. Issue with PMM and certificate",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-v0-8-0-issue-with-pmm-and-certificate\/7",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Percona Everest v0.8.0. Issue with PMM and certificate",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-v0-8-0-issue-with-pmm-and-certificate\/10",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "PMM-Client: Failed to establish two-way communication channel: context canceled",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-failed-to-establish-two-way-communication-channel-context-canceled\/2",
+            "date": "2024-03-15"
+        },
+        {
+            "topic_title": "Backup to non AWS S3",
+            "url": "https:\/\/forums.percona.com\/t\/backup-to-non-aws-s3\/9",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "Backup to non AWS S3",
+            "url": "https:\/\/forums.percona.com\/t\/backup-to-non-aws-s3\/12",
+            "date": "2024-04-08"
+        },
+        {
+            "topic_title": "Backup to non AWS S3",
+            "url": "https:\/\/forums.percona.com\/t\/backup-to-non-aws-s3\/14",
+            "date": "2024-05-07"
+        },
+        {
+            "topic_title": "Unable to create new MongoDB cluster from backup (full or PITR)",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-new-mongodb-cluster-from-backup-full-or-pitr\/2",
+            "date": "2024-03-27"
+        },
+        {
+            "topic_title": "Unable to create new MongoDB cluster from backup (full or PITR)",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-new-mongodb-cluster-from-backup-full-or-pitr\/5",
+            "date": "2024-03-27"
+        },
+        {
+            "topic_title": "Unable to create new MongoDB cluster from backup (full or PITR)",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-new-mongodb-cluster-from-backup-full-or-pitr\/6",
+            "date": "2024-03-27"
+        },
+        {
+            "topic_title": "Unable to create new MongoDB cluster from backup (full or PITR)",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-new-mongodb-cluster-from-backup-full-or-pitr\/8",
+            "date": "2024-03-27"
+        },
+        {
+            "topic_title": "Unable to create new MongoDB cluster from backup (full or PITR)",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-new-mongodb-cluster-from-backup-full-or-pitr\/10",
+            "date": "2024-03-27"
+        },
+        {
+            "topic_title": "Unable to create new MongoDB cluster from backup (full or PITR)",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-new-mongodb-cluster-from-backup-full-or-pitr\/13",
+            "date": "2024-03-28"
+        },
+        {
+            "topic_title": "Backup Retention",
+            "url": "https:\/\/forums.percona.com\/t\/backup-retention\/2",
+            "date": "2024-04-09"
+        },
+        {
+            "topic_title": "Backup Retention",
+            "url": "https:\/\/forums.percona.com\/t\/backup-retention\/4",
+            "date": "2024-04-16"
+        },
+        {
+            "topic_title": "Backup Retention",
+            "url": "https:\/\/forums.percona.com\/t\/backup-retention\/7",
+            "date": "2024-08-12"
+        },
+        {
+            "topic_title": "How to configure proxy for everest-operator-controller-manager",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-configure-proxy-for-everest-operator-controller-manager\/2",
+            "date": "2024-07-22"
+        },
+        {
+            "topic_title": "How to configure proxy for everest-operator-controller-manager",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-configure-proxy-for-everest-operator-controller-manager\/4",
+            "date": "2025-01-13"
+        },
+        {
+            "topic_title": "Help to understand how the resource limits are set on clusters",
+            "url": "https:\/\/forums.percona.com\/t\/help-to-understand-how-the-resource-limits-are-set-on-clusters\/11",
+            "date": "2024-08-20"
+        },
+        {
+            "topic_title": "Help to understand how the resource limits are set on clusters",
+            "url": "https:\/\/forums.percona.com\/t\/help-to-understand-how-the-resource-limits-are-set-on-clusters\/13",
+            "date": "2024-09-18"
+        },
+        {
+            "topic_title": "Restore of Postgresql database is not working",
+            "url": "https:\/\/forums.percona.com\/t\/restore-of-postgresql-database-is-not-working\/7",
+            "date": "2024-09-20"
+        },
+        {
+            "topic_title": "Percona Everest backup from S3",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-backup-from-s3\/2",
+            "date": "2024-08-22"
+        },
+        {
+            "topic_title": "Percona Everest backup from S3",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-backup-from-s3\/5",
+            "date": "2024-08-23"
+        },
+        {
+            "topic_title": "OIDC Login ends in 401 (token signature is invalid)",
+            "url": "https:\/\/forums.percona.com\/t\/oidc-login-ends-in-401-token-signature-is-invalid\/2",
+            "date": "2024-09-12"
+        },
+        {
+            "topic_title": "OIDC Login ends in 401 (token signature is invalid)",
+            "url": "https:\/\/forums.percona.com\/t\/oidc-login-ends-in-401-token-signature-is-invalid\/4",
+            "date": "2024-09-13"
+        },
+        {
+            "topic_title": "OIDC Login ends in 401 (token signature is invalid)",
+            "url": "https:\/\/forums.percona.com\/t\/oidc-login-ends-in-401-token-signature-is-invalid\/6",
+            "date": "2024-09-18"
+        },
+        {
+            "topic_title": "OIDC Login ends in 401 (token signature is invalid)",
+            "url": "https:\/\/forums.percona.com\/t\/oidc-login-ends-in-401-token-signature-is-invalid\/8",
+            "date": "2024-09-19"
+        },
+        {
+            "topic_title": "Percona Everest 1.3.0 can't see any namespaces or create them from WEB UI",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-1-3-0-cant-see-any-namespaces-or-create-them-from-web-ui\/6",
+            "date": "2024-11-20"
+        },
+        {
+            "topic_title": "Backup page is throwing 500 error for PostgreSQL",
+            "url": "https:\/\/forums.percona.com\/t\/backup-page-is-throwing-500-error-for-postgresql\/2",
+            "date": "2024-12-10"
+        },
+        {
+            "topic_title": "Backup page is throwing 500 error for PostgreSQL",
+            "url": "https:\/\/forums.percona.com\/t\/backup-page-is-throwing-500-error-for-postgresql\/4",
+            "date": "2024-12-12"
+        },
+        {
+            "topic_title": "Everest 1.3.0 upgrade pgOperator to 2.5.0",
+            "url": "https:\/\/forums.percona.com\/t\/everest-1-3-0-upgrade-pgoperator-to-2-5-0\/2",
+            "date": "2024-12-10"
+        },
+        {
+            "topic_title": "Pitr restoration not working properly - Mongodb operator version : 7.0.8-5",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restoration-not-working-properly-mongodb-operator-version-7-0-8-5\/4",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "Unable to change disk size in Everest UI after PV resize",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-change-disk-size-in-everest-ui-after-pv-resize\/2",
+            "date": "2025-04-15"
+        },
+        {
+            "topic_title": "PMM sub-chart with Everest 1.6.0",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-sub-chart-with-everest-1-6-0\/6",
+            "date": "2025-05-15"
+        },
+        {
+            "topic_title": "MySQL Cluster goes into full crash every 5-10mins",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-cluster-goes-into-full-crash-every-5-10mins\/2",
+            "date": "2025-05-19"
+        },
+        {
+            "topic_title": "Pmm-client container OOMKilled due to invalid memory limit generated by everest-1.7.0",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-container-oomkilled-due-to-invalid-memory-limit-generated-by-everest-1-7-0\/3",
+            "date": "2025-07-14"
+        },
+        {
+            "topic_title": "Upgrade to Everest 1.8.0 fails with context canceled due to hanging pre-upgrade hook",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-to-everest-1-8-0-fails-with-context-canceled-due-to-hanging-pre-upgrade-hook\/4",
+            "date": "2025-08-08"
+        },
+        {
+            "topic_title": "Failed to pull image \"bitnami\/kubectl:latest",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-pull-image-bitnami-kubectl-latest\/4",
+            "date": "2025-09-19"
+        },
+        {
+            "topic_title": "Why should we have automatic backups via jobs in postgres? #1690",
+            "url": "https:\/\/forums.percona.com\/t\/why-should-we-have-automatic-backups-via-jobs-in-postgres-1690\/4",
+            "date": "2025-10-16"
+        },
+        {
+            "topic_title": "Declarative Database & User Management in DatabaseCluster CR",
+            "url": "https:\/\/forums.percona.com\/t\/declarative-database-user-management-in-databasecluster-cr\/2",
+            "date": "2025-11-26"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Percona Everest v0.8.0. Issue with PMM and certificate",
+            "url": "https:\/\/forums.percona.com\/t\/percona-everest-v0-8-0-issue-with-pmm-and-certificate\/10",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Backup Retention",
+            "url": "https:\/\/forums.percona.com\/t\/backup-retention\/2",
+            "date": "2024-04-09"
+        },
+        {
+            "topic_title": "How to configure proxy for everest-operator-controller-manager",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-configure-proxy-for-everest-operator-controller-manager\/2",
+            "date": "2024-07-22"
+        },
+        {
+            "topic_title": "OIDC Login ends in 401 (token signature is invalid)",
+            "url": "https:\/\/forums.percona.com\/t\/oidc-login-ends-in-401-token-signature-is-invalid\/6",
+            "date": "2024-09-18"
+        },
+        {
+            "topic_title": "Pitr restoration not working properly - Mongodb operator version : 7.0.8-5",
+            "url": "https:\/\/forums.percona.com\/t\/pitr-restoration-not-working-properly-mongodb-operator-version-7-0-8-5\/4",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "Upgrade to Everest 1.8.0 fails with context canceled due to hanging pre-upgrade hook",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-to-everest-1-8-0-fails-with-context-canceled-due-to-hanging-pre-upgrade-hook\/4",
+            "date": "2025-08-08"
+        },
+        {
+            "topic_title": "Failed to pull image \"bitnami\/kubectl:latest",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-pull-image-bitnami-kubectl-latest\/4",
+            "date": "2025-09-19"
+        },
+        {
+            "topic_title": "Declarative Database & User Management in DatabaseCluster CR",
+            "url": "https:\/\/forums.percona.com\/t\/declarative-database-user-management-in-databasecluster-cr\/2",
+            "date": "2025-11-26"
+        }
+    ]
+}

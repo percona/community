@@ -1,0 +1,149 @@
+{
+    "user_key": "gh-daninda",
+    "display_name": "Danila",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/126169546?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=daninda",
+    "github_login": "daninda",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-20T15:45:12+00:00",
+    "points_total": 1425,
+    "points_github": 1425,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 15,
+    "prs_merged": 14,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "[UI] EVEREST-992: documentation for textInput storybook",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/469",
+            "repo": "percona\/everest",
+            "date": "2024-07-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "ui-improvement: min size for monitoring instance column in db table",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/447",
+            "repo": "percona\/everest",
+            "date": "2024-06-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1043: stepper storybook",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/436",
+            "repo": "percona\/everest",
+            "date": "2024-06-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1088: update technology column in db list table",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/435",
+            "repo": "percona\/everest",
+            "date": "2024-06-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1052: update technology selection card",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/427",
+            "repo": "percona\/everest",
+            "date": "2024-06-18",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1039: checkbox storybook",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/426",
+            "repo": "percona\/everest",
+            "date": "2024-06-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-931: design review fix",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/425",
+            "repo": "percona\/everest",
+            "date": "2024-06-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1058 monitoring endpoint label renaming",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/411",
+            "repo": "percona\/everest",
+            "date": "2024-06-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1049: change insert to enter",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/288",
+            "repo": "percona\/everest",
+            "date": "2024-05-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1042: icons storybook",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/286",
+            "repo": "percona\/everest",
+            "date": "2024-05-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1040: text-array storybook",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/285",
+            "repo": "percona\/everest",
+            "date": "2024-05-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1041: ToggleButtonGroupInput storybook",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/284",
+            "repo": "percona\/everest",
+            "date": "2024-05-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] ui-improvement: trim spaces in delete database modal",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/283",
+            "repo": "percona\/everest",
+            "date": "2024-05-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-931 Wizard - disable all editing\/continuing fields when required input is deleted",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/243",
+            "repo": "percona\/everest",
+            "date": "2024-04-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] Everest 986 fix warning message for tls certificate",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/219",
+            "repo": "percona\/everest",
+            "date": "2024-04-20",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

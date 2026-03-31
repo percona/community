@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-reddy_nishanth",
+    "display_name": "reddy nishanth",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/reddy_nishanth\/120\/21004_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=reddy_nishanth",
+    "github_login": null,
+    "forum_username": "reddy_nishanth",
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom",
+            "date": "2026-02-04"
+        },
+        {
+            "title": "PXC Operator Data at Rest encryption Vault alternatives like Openbao",
+            "url": "https:\/\/forums.percona.com\/t\/pxc-operator-data-at-rest-encryption-vault-alternatives-like-openbao",
+            "date": "2026-02-21"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

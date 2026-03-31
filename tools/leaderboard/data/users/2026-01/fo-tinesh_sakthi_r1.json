@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-tinesh_sakthi_r1",
+    "display_name": "Tinesh_Sakthi_R1",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Tinesh_Sakthi_R1",
+    "github_login": null,
+    "forum_username": "Tinesh_Sakthi_R1",
+    "period": "2026-01",
+    "period_label": "January 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Need Clarification: Best Practice for pgBackRest Configuration in Multi-DC Patroni Standby Cluster",
+            "url": "https:\/\/forums.percona.com\/t\/need-clarification-best-practice-for-pgbackrest-configuration-in-multi-dc-patroni-standby-cluster",
+            "date": "2026-01-05"
+        },
+        {
+            "title": "Convert the architecture from PostgreSQL distribution to PostgreSQL operator",
+            "url": "https:\/\/forums.percona.com\/t\/convert-the-architecture-from-postgresql-distribution-to-postgresql-operator",
+            "date": "2026-01-29"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

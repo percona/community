@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-adutra",
+    "display_name": "Alexandre Dutra",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/463876?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=adutra",
+    "github_login": "adutra",
+    "forum_username": null,
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 125,
+    "points_github": 125,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 2,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "feat(mongodb): Add configurable reconcile interval to Helm chart",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/784",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-01-31",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "K8SPSMDB-1571: Make reconciliation interval configurable",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/2221",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-01-31",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

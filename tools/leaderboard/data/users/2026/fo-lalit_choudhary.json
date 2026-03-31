@@ -1,0 +1,50 @@
+{
+    "user_key": "fo-lalit_choudhary",
+    "display_name": "Lalit_Choudhary",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Lalit_Choudhary",
+    "github_login": null,
+    "forum_username": "Lalit_Choudhary",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 17,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 17,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 3,
+    "replies": 1,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Does K8-PXC support bi-directional replication between two clusters?",
+            "url": "https:\/\/forums.percona.com\/t\/does-k8-pxc-support-bi-directional-replication-between-two-clusters",
+            "date": "2026-01-06"
+        },
+        {
+            "title": "Pmm3.5 & proxysql_exporter error due to caching_sha2_password auth",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-5-proxysql-exporter-error-due-to-caching-sha2-password-auth",
+            "date": "2026-02-11"
+        },
+        {
+            "title": "Unable to create bug from https:\/\/perconadev.atlassian.net\/jira\/projects",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-create-bug-from-https-perconadev-atlassian-net-jira-projects",
+            "date": "2026-02-17"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Percona Operator - Adding external DNS entries for each PXC node",
+            "url": "https:\/\/forums.percona.com\/t\/percona-operator-adding-external-dns-entries-for-each-pxc-node\/6",
+            "date": "2026-02-17"
+        }
+    ],
+    "forum_solutions": []
+}

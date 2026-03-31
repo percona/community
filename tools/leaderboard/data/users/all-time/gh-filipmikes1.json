@@ -1,0 +1,461 @@
+{
+    "user_key": "gh-filipmikes1",
+    "display_name": "Filip Mikes",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/83272871?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=filipmikes1",
+    "github_login": "filipmikes1",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 3000,
+    "points_github": 3000,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 30,
+    "prs_merged": 30,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "[UI] EVEREST-898 Added alert warning for PG PITR",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/100",
+            "repo": "percona\/everest",
+            "date": "2024-03-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-863 error boundary",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/94",
+            "repo": "percona\/everest",
+            "date": "2024-03-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-887 Fixed issue with not being able to edit storage location in mongo db edit",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/82",
+            "repo": "percona\/everest",
+            "date": "2024-03-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix - added public to gitignore",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/80",
+            "repo": "percona\/everest",
+            "date": "2024-03-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-894 Added monitoring name to db detail",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/79",
+            "repo": "percona\/everest",
+            "date": "2024-03-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-882 Add monitoringConfigName to DbClusterTableElement",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/65",
+            "repo": "percona\/everest",
+            "date": "2024-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-883 Added alert for pitr enabled by default in PG",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/62",
+            "repo": "percona\/everest",
+            "date": "2024-03-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-866 Changed modal in backup list to general one",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/58",
+            "repo": "percona\/everest",
+            "date": "2024-03-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-862 Add column hide state to local storage",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/272",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-759 Changed messages for schedule backups",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/271",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-813 Added fix always custom value",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/270",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-629 Allowed pitr restore to new db cluster",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/266",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-627 enable restore pitr for pg",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/265",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-829 Added monitoring endpoint modal to db wizard",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/257",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-821 Added copy button to extended row and db details",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/252",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-801 Fix db versions",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/250",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-807 Fixed show storage location name in pitr section",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/249",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-802 Fix do not allow edit of storage for mongo db",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/248",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-624 enable pitr for pg",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/247",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-02-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-749 Allowed schedules in db wizard and details for pg",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/245",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-766 Added chip component, fixed colors",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/242",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-782 Fixed disabling pitr when schledule is edited\/created",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/238",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-762 Added support for single storage only",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/236",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-755 fix db version selector",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/233",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-628 Enabled pitr restore for mongodb",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/229",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-625 Added pitr for mongodb",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/228",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-569 Changed scheduled text",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/223",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-697 Added no storages message and modal in db details",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/222",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-698 Added add storage modal when no storages in db wizard",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/221",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-729 fixed multiline issue in overview backups",
+            "url": "https:\/\/github.com\/percona\/percona-everest-frontend\/pull\/219",
+            "repo": "percona\/percona-everest-frontend",
+            "date": "2024-01-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11771-move-core-ui-to-grafana",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3231",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-04-20",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11926-subscription-page-link-improvement",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3196",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-04-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11934 product-tour-advisor-fix",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3194",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-04-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11786-fix-table-filter",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3134",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-03-13",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11730 Advisors alert section",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3111",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-03-06",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11512-fix-proxy-error",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3109",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-03-06",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11345 PMM-11272 Security advisors section Create FB FE + BE",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3077",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-02-21",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11539 advisors info button",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/608",
+            "repo": "percona\/grafana",
+            "date": "2023-02-07",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11399-empty-rule-name-in-pop-up-messages",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3027",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-01-24",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11357 The-rule-is-inherited-from-the-termplate",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3025",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-01-23",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10016 Failed checks table rearranges",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3024",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-01-23",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11255 Clean rule name",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2991",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-01-09",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10871 Settings alertmanager integration link fix",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2983",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-01-03",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10942 change schedule time ui",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2956",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-12-16",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-11086 change backup design",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2918",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-11-28",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10899 Description in finished backup is missing",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2869",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-11-02",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10599 Change backup modal to separate page",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2826",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-10-12",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10502 Improved backup design",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2752",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-09-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10369 Implement websockets for checks",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2698",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-08-09",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-10059 filter integrated to table",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2606",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-06-28",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Antalya POC",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/426",
+            "repo": "percona\/grafana",
+            "date": "2022-05-11",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-9782 Render dynamic contacts",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2513",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-05-10",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-9849 Run button for individual checks",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2480",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-04-26",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-9493 entitlements v2",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/2428",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2022-04-04",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

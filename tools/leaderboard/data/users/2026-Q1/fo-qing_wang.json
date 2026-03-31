@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-qing_wang",
+    "display_name": "Qing_Wang",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Qing_Wang",
+    "github_login": null,
+    "forum_username": "Qing_Wang",
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "PBM physical backup\/restore for Open Source Mongo DB",
+            "url": "https:\/\/forums.percona.com\/t\/pbm-physical-backup-restore-for-open-source-mongo-db",
+            "date": "2026-01-27"
+        },
+        {
+            "title": "End to end Snapshot-based physical backups",
+            "url": "https:\/\/forums.percona.com\/t\/end-to-end-snapshot-based-physical-backups",
+            "date": "2026-02-05"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

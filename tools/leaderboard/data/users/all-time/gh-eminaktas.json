@@ -1,0 +1,76 @@
+{
+    "user_key": "gh-eminaktas",
+    "display_name": "Emin AKTAS",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/54074230?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=eminaktas",
+    "github_login": "eminaktas",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 345,
+    "points_github": 345,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 2,
+    "prs_created": 4,
+    "prs_merged": 3,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Add ability to override the timezone for backup jobs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/2158",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-08-12",
+            "state": "closed"
+        },
+        {
+            "title": "Feature Request: Support for extraPVCs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/2126",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-07-23",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPXC-1701: add pxc config for restore job",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2164",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-08-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1702: ensure tzdata available in main container",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2159",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-08-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1688 feat: add support for extraPVCs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2128",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-07-23",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1703: Set generateEmbeddedObjectMeta to true",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2125",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-07-23",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

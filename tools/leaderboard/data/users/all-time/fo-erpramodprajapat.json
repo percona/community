@@ -1,0 +1,51 @@
+{
+    "user_key": "fo-erpramodprajapat",
+    "display_name": "Pramod Prajapat",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/e\/c37758\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=erpramodprajapat",
+    "github_login": null,
+    "forum_username": "erpramodprajapat",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 62,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 62,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 1,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Why PT-online-schema_change not giving error for duplicate primary",
+            "url": "https:\/\/forums.percona.com\/t\/why-pt-online-schema-change-not-giving-error-for-duplicate-primary",
+            "date": "2024-02-26"
+        },
+        {
+            "title": "Few times a normal query\/proc is taking time to execute",
+            "url": "https:\/\/forums.percona.com\/t\/few-times-a-normal-query-proc-is-taking-time-to-execute",
+            "date": "2024-02-26"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Setup replication using mysqldump. Restore getting \"Access to system schema 'mysql' is rejected.\"",
+            "url": "https:\/\/forums.percona.com\/t\/setup-replication-using-mysqldump-restore-getting-access-to-system-schema-mysql-is-rejected\/2",
+            "date": "2024-06-25"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Setup replication using mysqldump. Restore getting \"Access to system schema 'mysql' is rejected.\"",
+            "url": "https:\/\/forums.percona.com\/t\/setup-replication-using-mysqldump-restore-getting-access-to-system-schema-mysql-is-rejected\/2",
+            "date": "2024-06-25"
+        }
+    ]
+}

@@ -1,0 +1,270 @@
+{
+    "user_key": "fo-roma_novikov",
+    "display_name": "Roma Novikov",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/roma_novikov\/120\/1161_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Roma_Novikov",
+    "github_login": null,
+    "forum_username": "Roma_Novikov",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 336,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 336,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 43,
+    "solutions": 5,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "PMM's PostgreSQL Connections Graphs show No Data Points",
+            "url": "https:\/\/forums.percona.com\/t\/pmms-postgresql-connections-graphs-show-no-data-points\/4",
+            "date": "2024-01-10"
+        },
+        {
+            "topic_title": "Cannot find the newly import data from PMM after successful import using pmm-dump",
+            "url": "https:\/\/forums.percona.com\/t\/cannot-find-the-newly-import-data-from-pmm-after-successful-import-using-pmm-dump\/2",
+            "date": "2024-01-03"
+        },
+        {
+            "topic_title": "How to remove collected data in PMM after removing a service?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-remove-collected-data-in-pmm-after-removing-a-service\/5",
+            "date": "2024-01-03"
+        },
+        {
+            "topic_title": "The node that has already been deleted is shown in grafana node list",
+            "url": "https:\/\/forums.percona.com\/t\/the-node-that-has-already-been-deleted-is-shown-in-grafana-node-list\/5",
+            "date": "2024-01-04"
+        },
+        {
+            "topic_title": "DB server all cores are 100%",
+            "url": "https:\/\/forums.percona.com\/t\/db-server-all-cores-are-100\/2",
+            "date": "2024-01-04"
+        },
+        {
+            "topic_title": "Query QPS metric in PMM2 QAN dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/query-qps-metric-in-pmm2-qan-dashboard\/2",
+            "date": "2024-01-04"
+        },
+        {
+            "topic_title": "Query QPS metric in PMM2 QAN dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/query-qps-metric-in-pmm2-qan-dashboard\/6",
+            "date": "2024-01-05"
+        },
+        {
+            "topic_title": "Regarding Customization of Home Dashboard Page in Percona PMM",
+            "url": "https:\/\/forums.percona.com\/t\/regarding-customization-of-home-dashboard-page-in-percona-pmm\/2",
+            "date": "2024-01-05"
+        },
+        {
+            "topic_title": "Regarding Customization of Home Dashboard Page in Percona PMM",
+            "url": "https:\/\/forums.percona.com\/t\/regarding-customization-of-home-dashboard-page-in-percona-pmm\/4",
+            "date": "2024-01-05"
+        },
+        {
+            "topic_title": "Regarding Customization of Home Dashboard Page in Percona PMM",
+            "url": "https:\/\/forums.percona.com\/t\/regarding-customization-of-home-dashboard-page-in-percona-pmm\/6",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "How to add etcd service to prometheus conifg?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-add-etcd-service-to-prometheus-conifg\/2",
+            "date": "2024-01-10"
+        },
+        {
+            "topic_title": "[QAN] Chronological sort",
+            "url": "https:\/\/forums.percona.com\/t\/qan-chronological-sort\/2",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "Pmm-agent frequent disconnection with pmm-server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-frequent-disconnection-with-pmm-server\/2",
+            "date": "2024-01-11"
+        },
+        {
+            "topic_title": "Pmm-agent frequent disconnection with pmm-server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-frequent-disconnection-with-pmm-server\/4",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "Unable to install PMM to manage Percona Backup for MongoDB",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-install-pmm-to-manage-percona-backup-for-mongodb\/2",
+            "date": "2024-01-12"
+        },
+        {
+            "topic_title": "Pmm dashboard data and query data",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-dashboard-data-and-query-data\/2",
+            "date": "2024-03-27"
+        },
+        {
+            "topic_title": "PMM Alerting Labels\/format",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-alerting-labels-format\/2",
+            "date": "2024-02-20"
+        },
+        {
+            "topic_title": "Patroni Management UI",
+            "url": "https:\/\/forums.percona.com\/t\/patroni-management-ui\/4",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Exposing mysqld and node exporter metrics to host ip address in pmm 2.41.0",
+            "url": "https:\/\/forums.percona.com\/t\/exposing-mysqld-and-node-exporter-metrics-to-host-ip-address-in-pmm-2-41-0\/2",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "PMM as stateful set on K8S performance issues",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-as-stateful-set-on-k8s-performance-issues\/3",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Panel plugin not found: pmm-update",
+            "url": "https:\/\/forums.percona.com\/t\/panel-plugin-not-found-pmm-update\/2",
+            "date": "2024-04-04"
+        },
+        {
+            "topic_title": "PMM Alerting on Google Chat",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-alerting-on-google-chat\/2",
+            "date": "2024-07-24"
+        },
+        {
+            "topic_title": "Postgresql_pgstatmonitor_agent running on port 0",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-pgstatmonitor-agent-running-on-port-0\/2",
+            "date": "2024-08-06"
+        },
+        {
+            "topic_title": "Does pg_stat_statements extension view needs to be created on all databases",
+            "url": "https:\/\/forums.percona.com\/t\/does-pg-stat-statements-extension-view-needs-to-be-created-on-all-databases\/4",
+            "date": "2024-08-14"
+        },
+        {
+            "topic_title": "No plan found with PG16 (PMM2.42)",
+            "url": "https:\/\/forums.percona.com\/t\/no-plan-found-with-pg16-pmm2-42\/2",
+            "date": "2024-08-26"
+        },
+        {
+            "topic_title": "PMM To monitor `pgpool` using `pgpool2_exporter`",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-to-monitor-pgpool-using-pgpool2-exporter\/3",
+            "date": "2024-09-04"
+        },
+        {
+            "topic_title": "PostgreSQL Query is trimming in the QAN dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-query-is-trimming-in-the-qan-dashboard\/13",
+            "date": "2024-09-05"
+        },
+        {
+            "topic_title": "PostgreSQL Query is trimming in the QAN dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-query-is-trimming-in-the-qan-dashboard\/17",
+            "date": "2024-09-06"
+        },
+        {
+            "topic_title": "PostgreSQL Query is trimming in the QAN dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-query-is-trimming-in-the-qan-dashboard\/19",
+            "date": "2024-09-06"
+        },
+        {
+            "topic_title": "How to configure PMM Invetory for MSSQL",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-configure-pmm-invetory-for-mssql\/2",
+            "date": "2024-09-05"
+        },
+        {
+            "topic_title": "I submitted a PR to fix the data display issue in Grafana",
+            "url": "https:\/\/forums.percona.com\/t\/i-submitted-a-pr-to-fix-the-data-display-issue-in-grafana\/2",
+            "date": "2024-09-12"
+        },
+        {
+            "topic_title": "PMM alerts text messages",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-alerts-text-messages\/2",
+            "date": "2024-09-13"
+        },
+        {
+            "topic_title": "Pmm2-client 2.43.0",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-2-43-0\/3",
+            "date": "2024-09-24"
+        },
+        {
+            "topic_title": "Vmagent killed by OOM killer",
+            "url": "https:\/\/forums.percona.com\/t\/vmagent-killed-by-oom-killer\/2",
+            "date": "2024-09-26"
+        },
+        {
+            "topic_title": "Is PMM supports AlloyDB",
+            "url": "https:\/\/forums.percona.com\/t\/is-pmm-supports-alloydb\/2",
+            "date": "2024-09-26"
+        },
+        {
+            "topic_title": "PMM2 with AWS RDS PostgreSQL with rds.force_ssl=0",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-with-aws-rds-postgresql-with-rds-force-ssl-0\/2",
+            "date": "2024-10-15"
+        },
+        {
+            "topic_title": "How to update the packages that are part of PMM Client's base docker image?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-update-the-packages-that-are-part-of-pmm-clients-base-docker-image\/2",
+            "date": "2024-10-08"
+        },
+        {
+            "topic_title": "How to fetch the slow queries from the QAN database",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-fetch-the-slow-queries-from-the-qan-database\/4",
+            "date": "2024-10-11"
+        },
+        {
+            "topic_title": "How to fetch the slow queries from the QAN database",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-fetch-the-slow-queries-from-the-qan-database\/6",
+            "date": "2024-10-11"
+        },
+        {
+            "topic_title": "Not able to enable the QAN properly in mongoDB containers",
+            "url": "https:\/\/forums.percona.com\/t\/not-able-to-enable-the-qan-properly-in-mongodb-containers\/2",
+            "date": "2024-10-16"
+        },
+        {
+            "topic_title": "PostgreSQL custom query is not working",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-custom-query-is-not-working\/2",
+            "date": "2024-10-16"
+        },
+        {
+            "topic_title": "Error when analyzing MySQL queries in QA in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/error-when-analyzing-mysql-queries-in-qa-in-pmm\/2",
+            "date": "2024-10-16"
+        },
+        {
+            "topic_title": "Add PMM as a datasource in Grafana",
+            "url": "https:\/\/forums.percona.com\/t\/add-pmm-as-a-datasource-in-grafana\/2",
+            "date": "2024-10-30"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "PMM To monitor `pgpool` using `pgpool2_exporter`",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-to-monitor-pgpool-using-pgpool2-exporter\/3",
+            "date": "2024-09-04"
+        },
+        {
+            "topic_title": "I submitted a PR to fix the data display issue in Grafana",
+            "url": "https:\/\/forums.percona.com\/t\/i-submitted-a-pr-to-fix-the-data-display-issue-in-grafana\/2",
+            "date": "2024-09-12"
+        },
+        {
+            "topic_title": "PMM alerts text messages",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-alerts-text-messages\/2",
+            "date": "2024-09-13"
+        },
+        {
+            "topic_title": "How to update the packages that are part of PMM Client's base docker image?",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-update-the-packages-that-are-part-of-pmm-clients-base-docker-image\/2",
+            "date": "2024-10-08"
+        },
+        {
+            "topic_title": "Add PMM as a datasource in Grafana",
+            "url": "https:\/\/forums.percona.com\/t\/add-pmm-as-a-datasource-in-grafana\/2",
+            "date": "2024-10-30"
+        }
+    ]
+}

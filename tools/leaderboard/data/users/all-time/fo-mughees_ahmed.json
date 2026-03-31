@@ -1,0 +1,135 @@
+{
+    "user_key": "fo-mughees_ahmed",
+    "display_name": "Mughees Ahmed",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/mughees_ahmed\/120\/9028_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Mughees_Ahmed",
+    "github_login": null,
+    "forum_username": "Mughees_Ahmed",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 186,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 186,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 18,
+    "solutions": 3,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Percona if down two node",
+            "url": "https:\/\/forums.percona.com\/t\/percona-if-down-two-node\/4",
+            "date": "2024-02-06"
+        },
+        {
+            "topic_title": "Percona if down two node",
+            "url": "https:\/\/forums.percona.com\/t\/percona-if-down-two-node\/7",
+            "date": "2024-02-07"
+        },
+        {
+            "topic_title": "Xtrabackup: copy_file() failed",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-copy-file-failed\/3",
+            "date": "2024-02-06"
+        },
+        {
+            "topic_title": "Facing Connection Closure Issues with Percona MySQL and ProxySQL Load Balancing",
+            "url": "https:\/\/forums.percona.com\/t\/facing-connection-closure-issues-with-percona-mysql-and-proxysql-load-balancing\/2",
+            "date": "2024-02-06"
+        },
+        {
+            "topic_title": "Facing Connection Closure Issues with Percona MySQL and ProxySQL Load Balancing",
+            "url": "https:\/\/forums.percona.com\/t\/facing-connection-closure-issues-with-percona-mysql-and-proxysql-load-balancing\/3",
+            "date": "2024-02-06"
+        },
+        {
+            "topic_title": "Facing Connection Closure Issues with Percona MySQL and ProxySQL Load Balancing",
+            "url": "https:\/\/forums.percona.com\/t\/facing-connection-closure-issues-with-percona-mysql-and-proxysql-load-balancing\/7",
+            "date": "2024-02-07"
+        },
+        {
+            "topic_title": "Facing Connection Closure Issues with Percona MySQL and ProxySQL Load Balancing",
+            "url": "https:\/\/forums.percona.com\/t\/facing-connection-closure-issues-with-percona-mysql-and-proxysql-load-balancing\/11",
+            "date": "2024-02-07"
+        },
+        {
+            "topic_title": "Replica out of sync - Percona MySQL version 5.7.32-35",
+            "url": "https:\/\/forums.percona.com\/t\/replica-out-of-sync-percona-mysql-version-5-7-32-35\/2",
+            "date": "2024-02-07"
+        },
+        {
+            "topic_title": "Xtrabackup problem",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-problem\/4",
+            "date": "2024-02-27"
+        },
+        {
+            "topic_title": "Few questions regarding full and incremental backups\/storage",
+            "url": "https:\/\/forums.percona.com\/t\/few-questions-regarding-full-and-incremental-backups-storage\/4",
+            "date": "2024-02-27"
+        },
+        {
+            "topic_title": "Full Cluster Stop and Start for off-business hours",
+            "url": "https:\/\/forums.percona.com\/t\/full-cluster-stop-and-start-for-off-business-hours\/2",
+            "date": "2024-02-28"
+        },
+        {
+            "topic_title": "Full Cluster Stop and Start for off-business hours",
+            "url": "https:\/\/forums.percona.com\/t\/full-cluster-stop-and-start-for-off-business-hours\/4",
+            "date": "2024-02-29"
+        },
+        {
+            "topic_title": "Full Cluster Stop and Start for off-business hours",
+            "url": "https:\/\/forums.percona.com\/t\/full-cluster-stop-and-start-for-off-business-hours\/6",
+            "date": "2024-03-01"
+        },
+        {
+            "topic_title": "Using Clone for addInstance on MySQL Innodb Cluster uses 100% Memory",
+            "url": "https:\/\/forums.percona.com\/t\/using-clone-for-addinstance-on-mysql-innodb-cluster-uses-100-memory\/2",
+            "date": "2024-03-05"
+        },
+        {
+            "topic_title": "Innobackupex install steps for MySQL-8.0.33",
+            "url": "https:\/\/forums.percona.com\/t\/innobackupex-install-steps-for-mysql-8-0-33\/2",
+            "date": "2024-03-05"
+        },
+        {
+            "topic_title": "Ubuntu 22.04, MySQL 8 and libjemalloc2",
+            "url": "https:\/\/forums.percona.com\/t\/ubuntu-22-04-mysql-8-and-libjemalloc2\/2",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Mysql Ver 8.0.36-28 for Linux on x86_64 (Percona Server (GPL), Release '28', Revision '47601f19'$) - start failure after suso apt update && sudo apt dist-upgrade",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-ver-8-0-36-28-for-linux-on-x86-64-percona-server-gpl-release-28-revision-47601f19-start-failure-after-suso-apt-update-sudo-apt-dist-upgrade\/3",
+            "date": "2024-03-11"
+        },
+        {
+            "topic_title": "Pt-table-checksum row",
+            "url": "https:\/\/forums.percona.com\/t\/pt-table-checksum-row\/2",
+            "date": "2024-03-11"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Replica out of sync - Percona MySQL version 5.7.32-35",
+            "url": "https:\/\/forums.percona.com\/t\/replica-out-of-sync-percona-mysql-version-5-7-32-35\/2",
+            "date": "2024-02-07"
+        },
+        {
+            "topic_title": "Xtrabackup problem",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-problem\/4",
+            "date": "2024-02-27"
+        },
+        {
+            "topic_title": "Innobackupex install steps for MySQL-8.0.33",
+            "url": "https:\/\/forums.percona.com\/t\/innobackupex-install-steps-for-mysql-8-0-33\/2",
+            "date": "2024-03-05"
+        }
+    ]
+}

@@ -1,0 +1,277 @@
+{
+    "user_key": "gh-codeforall",
+    "display_name": "Muhammad Usama",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/4718466?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=codeforall",
+    "github_login": "codeforall",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 2800,
+    "points_github": 2800,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 31,
+    "prs_merged": 27,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PG-1120: Add a new SQL interface pg_tde_alter_principal_key_keyring",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/357",
+            "repo": "percona\/pg_tde",
+            "date": "2024-11-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PG-1205: Update RMGR ID from experimental to registered value (140)",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/355",
+            "repo": "percona\/pg_tde",
+            "date": "2024-11-20",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Add a interface to alter key provider of the principal key",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/354",
+            "repo": "percona\/pg_tde",
+            "date": "2024-11-19",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PG-1058 Fix Mergejoin issue",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/323",
+            "repo": "percona\/pg_tde",
+            "date": "2024-10-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Add key type to internal relation keys in pg_tde:",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/317",
+            "repo": "percona\/pg_tde",
+            "date": "2024-10-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Enhance pg_tde SMGR handling:",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/316",
+            "repo": "percona\/pg_tde",
+            "date": "2024-10-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PG-1008: Change product name and version number",
+            "url": "https:\/\/github.com\/percona\/postgres\/pull\/7",
+            "repo": "percona\/postgres",
+            "date": "2024-09-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PG-853: Access control of pg_tde SQL functions",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/277",
+            "repo": "percona\/pg_tde",
+            "date": "2024-09-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Minor performance update",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/272",
+            "repo": "percona\/pg_tde",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PG-847: exclude pg_tde* files from checksum validation",
+            "url": "https:\/\/github.com\/percona\/postgres\/pull\/4",
+            "repo": "percona\/postgres",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PG-976: Fix for memory leaks",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/264",
+            "repo": "percona\/pg_tde",
+            "date": "2024-08-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PG-959 Fix for an assert failure",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/258",
+            "repo": "percona\/pg_tde",
+            "date": "2024-08-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix for PG-949: CREATE INDEX doesn't work with full encryption",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/248",
+            "repo": "percona\/pg_tde",
+            "date": "2024-08-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Add function to list available key provides for database",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/239",
+            "repo": "percona\/pg_tde",
+            "date": "2024-07-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Add XLOG functionality to key provider info file and unify XLOG messages for extension installation cleanup",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/236",
+            "repo": "percona\/pg_tde",
+            "date": "2024-07-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Remove 'percona_tde.pg_tde_key_provider' user catalog",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/230",
+            "repo": "percona\/pg_tde",
+            "date": "2024-07-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "TDE TupleTableSlot for storing decrypted tuple along with the buffer …",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/197",
+            "repo": "percona\/pg_tde",
+            "date": "2024-05-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Implement event triggers to identify index creation on encrypted tables.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/196",
+            "repo": "percona\/pg_tde",
+            "date": "2024-05-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Implement event triggers to identify index creation on encrypted tables.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/195",
+            "repo": "percona\/pg_tde",
+            "date": "2024-05-22",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Implement event triggers to identify index creation on encrypted tables.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/189",
+            "repo": "percona\/pg_tde",
+            "date": "2024-05-13",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Fix issue-153: Server crash and database corruption",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/165",
+            "repo": "percona\/pg_tde",
+            "date": "2024-04-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Rename tde_master_key_info to pg_tde_master_key_info",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/161",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Add pg_tde_version() function to get the module version of the extension",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/158",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "A function to get the current master key info.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/150",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix for Issue:140",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/148",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-21",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Test case update for Issue:82",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/142",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update README.md",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/133",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Disallow deletion of keyring used by Master key.",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/132",
+            "repo": "percona\/pg_tde",
+            "date": "2024-03-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Framework for multi-tenancy support",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/121",
+            "repo": "percona\/pg_tde",
+            "date": "2024-02-21",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Implement interfaces and framework for multi tenancy",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/118",
+            "repo": "percona\/pg_tde",
+            "date": "2024-02-15",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Updating the toasted column in encrypted table causes the crash (#82)",
+            "url": "https:\/\/github.com\/percona\/pg_tde\/pull\/103",
+            "repo": "percona\/pg_tde",
+            "date": "2024-01-19",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

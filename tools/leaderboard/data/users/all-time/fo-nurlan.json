@@ -1,0 +1,970 @@
+{
+    "user_key": "fo-nurlan",
+    "display_name": "Nurlan Moldomurov",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/nurlan\/120\/1523_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=nurlan",
+    "github_login": null,
+    "forum_username": "nurlan",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 1720,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 1720,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 160,
+    "solutions": 28,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Connect PMM agent with service account",
+            "url": "https:\/\/forums.percona.com\/t\/connect-pmm-agent-with-service-account\/6",
+            "date": "2024-09-19"
+        },
+        {
+            "topic_title": "Separating users by node",
+            "url": "https:\/\/forums.percona.com\/t\/separating-users-by-node\/2",
+            "date": "2024-01-09"
+        },
+        {
+            "topic_title": "Pmm-agent frequent disconnection with pmm-server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-frequent-disconnection-with-pmm-server\/7",
+            "date": "2024-01-20"
+        },
+        {
+            "topic_title": "Atlas mongodb registering cluster error Unauthorized. Please check username and password",
+            "url": "https:\/\/forums.percona.com\/t\/atlas-mongodb-registering-cluster-error-unauthorized-please-check-username-and-password\/4",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "Atlas mongodb registering cluster error Unauthorized. Please check username and password",
+            "url": "https:\/\/forums.percona.com\/t\/atlas-mongodb-registering-cluster-error-unauthorized-please-check-username-and-password\/7",
+            "date": "2024-01-18"
+        },
+        {
+            "topic_title": "HAproxy Monitoring with PMM-Agent \"Status Failed\"",
+            "url": "https:\/\/forums.percona.com\/t\/haproxy-monitoring-with-pmm-agent-status-failed\/2",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "Compatible dashboards for mongodb_exporter:0.39.0",
+            "url": "https:\/\/forums.percona.com\/t\/compatible-dashboards-for-mongodb-exporter-0-39-0\/2",
+            "date": "2024-01-22"
+        },
+        {
+            "topic_title": "ERROR: permission denied for function pg_ls_waldir",
+            "url": "https:\/\/forums.percona.com\/t\/error-permission-denied-for-function-pg-ls-waldir\/2",
+            "date": "2024-01-24"
+        },
+        {
+            "topic_title": "Unable configure pmm2-client",
+            "url": "https:\/\/forums.percona.com\/t\/unable-configure-pmm2-client\/4",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Unable configure pmm2-client",
+            "url": "https:\/\/forums.percona.com\/t\/unable-configure-pmm2-client\/6",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Unable configure pmm2-client",
+            "url": "https:\/\/forums.percona.com\/t\/unable-configure-pmm2-client\/8",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Can't find where to Configure remote writes on pmm2-server (docker)",
+            "url": "https:\/\/forums.percona.com\/t\/cant-find-where-to-configure-remote-writes-on-pmm2-server-docker\/2",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Can't find where to Configure remote writes on pmm2-server (docker)",
+            "url": "https:\/\/forums.percona.com\/t\/cant-find-where-to-configure-remote-writes-on-pmm2-server-docker\/4",
+            "date": "2024-02-08"
+        },
+        {
+            "topic_title": "Failed to register pmm-agent on PMM Server: Internal server error",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-register-pmm-agent-on-pmm-server-internal-server-error\/2",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "Failed to register pmm-agent on PMM Server: Internal server error",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-register-pmm-agent-on-pmm-server-internal-server-error\/4",
+            "date": "2024-02-05"
+        },
+        {
+            "topic_title": "Failed to register pmm-agent on PMM Server: Internal server error",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-register-pmm-agent-on-pmm-server-internal-server-error\/6",
+            "date": "2024-02-06"
+        },
+        {
+            "topic_title": "NUMA Nodes - Actual number of nodes are not reflecting in dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/numa-nodes-actual-number-of-nodes-are-not-reflecting-in-dashboard\/2",
+            "date": "2024-02-06"
+        },
+        {
+            "topic_title": "Mongo errors associated with mongodb_exporter pmm jobs",
+            "url": "https:\/\/forums.percona.com\/t\/mongo-errors-associated-with-mongodb-exporter-pmm-jobs\/2",
+            "date": "2024-02-15"
+        },
+        {
+            "topic_title": "Pmm-client container json logs",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-container-json-logs\/2",
+            "date": "2024-02-21"
+        },
+        {
+            "topic_title": "PMM install Non Docker\/Podman",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-install-non-docker-podman\/2",
+            "date": "2024-02-23"
+        },
+        {
+            "topic_title": "MongoDB 7.0.5 no metrics in dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-7-0-5-no-metrics-in-dashboard\/3",
+            "date": "2024-02-26"
+        },
+        {
+            "topic_title": "PMM Query Analytics for MongoDB shows N\/A for User Name",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-query-analytics-for-mongodb-shows-n-a-for-user-name\/2",
+            "date": "2024-02-27"
+        },
+        {
+            "topic_title": "The server is not reachble fron other namespaces, pmm-agent getting i\/o time out",
+            "url": "https:\/\/forums.percona.com\/t\/the-server-is-not-reachble-fron-other-namespaces-pmm-agent-getting-i-o-time-out\/2",
+            "date": "2024-02-28"
+        },
+        {
+            "topic_title": "The server is not reachble fron other namespaces, pmm-agent getting i\/o time out",
+            "url": "https:\/\/forums.percona.com\/t\/the-server-is-not-reachble-fron-other-namespaces-pmm-agent-getting-i-o-time-out\/4",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "PMM MongoDB Integration Challenges",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-mongodb-integration-challenges\/2",
+            "date": "2024-02-29"
+        },
+        {
+            "topic_title": "How collect metrics from docker 9323\/metrics to pmm?",
+            "url": "https:\/\/forums.percona.com\/t\/how-collect-metrics-from-docker-9323-metrics-to-pmm\/11",
+            "date": "2024-03-05"
+        },
+        {
+            "topic_title": "High Availability for PMM",
+            "url": "https:\/\/forums.percona.com\/t\/high-availability-for-pmm\/2",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "Mongo service node not add in QAN",
+            "url": "https:\/\/forums.percona.com\/t\/mongo-service-node-not-add-in-qan\/2",
+            "date": "2024-03-11"
+        },
+        {
+            "topic_title": "Mongo service node not add in QAN",
+            "url": "https:\/\/forums.percona.com\/t\/mongo-service-node-not-add-in-qan\/6",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "Pmm server going in unhealthy state",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-going-in-unhealthy-state\/2",
+            "date": "2024-03-11"
+        },
+        {
+            "topic_title": "Pmm server going in unhealthy state",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-going-in-unhealthy-state\/5",
+            "date": "2024-03-19"
+        },
+        {
+            "topic_title": "How can I use PMM APIs to get data from query analytics dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/how-can-i-use-pmm-apis-to-get-data-from-query-analytics-dashboard\/3",
+            "date": "2024-03-19"
+        },
+        {
+            "topic_title": "How can I use PMM APIs to get data from query analytics dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/how-can-i-use-pmm-apis-to-get-data-from-query-analytics-dashboard\/5",
+            "date": "2024-03-19"
+        },
+        {
+            "topic_title": "Upgrade Percona PMM 2.41.x issues (Appliance)",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-percona-pmm-2-41-x-issues-appliance\/2",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "Upgrade Percona PMM 2.41.x issues (Appliance)",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-percona-pmm-2-41-x-issues-appliance\/4",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "Qan mysql perfschema agent status is waiting",
+            "url": "https:\/\/forums.percona.com\/t\/qan-mysql-perfschema-agent-status-is-waiting\/2",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "PMM installation troubles",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-installation-troubles\/2",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "PMM2 push pull and scrape duration",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-push-pull-and-scrape-duration\/2",
+            "date": "2024-04-03"
+        },
+        {
+            "topic_title": "PMM2 push pull and scrape duration",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-push-pull-and-scrape-duration\/4",
+            "date": "2024-04-03"
+        },
+        {
+            "topic_title": "Does pg_stat_statements extension view needs to be created on all databases",
+            "url": "https:\/\/forums.percona.com\/t\/does-pg-stat-statements-extension-view-needs-to-be-created-on-all-databases\/2",
+            "date": "2024-08-13"
+        },
+        {
+            "topic_title": "Failed to get info from pmm-agent on PMM-Server",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-get-info-from-pmm-agent-on-pmm-server\/2",
+            "date": "2024-09-16"
+        },
+        {
+            "topic_title": "pmm-agent load CPU",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-load-cpu\/2",
+            "date": "2024-09-27"
+        },
+        {
+            "topic_title": "pmm-agent load CPU",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-load-cpu\/4",
+            "date": "2024-09-27"
+        },
+        {
+            "topic_title": "PostgreSQL custom query is not working",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-custom-query-is-not-working\/6",
+            "date": "2024-11-06"
+        },
+        {
+            "topic_title": "PostgreSQL custom query is not working",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-custom-query-is-not-working\/8",
+            "date": "2024-11-08"
+        },
+        {
+            "topic_title": "Changing IP Addresses of PMM and Database Servers Without Losing historical Data?",
+            "url": "https:\/\/forums.percona.com\/t\/changing-ip-addresses-of-pmm-and-database-servers-without-losing-historical-data\/2",
+            "date": "2024-10-18"
+        },
+        {
+            "topic_title": "Upgrade grafana version within PMM 2.42.0",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-grafana-version-within-pmm-2-42-0\/4",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "Unable to login to PMM UI",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-login-to-pmm-ui\/3",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "Unable to login to PMM UI",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-login-to-pmm-ui\/6",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "Getting error while backing up PMM 2 data",
+            "url": "https:\/\/forums.percona.com\/t\/getting-error-while-backing-up-pmm-2-data\/3",
+            "date": "2024-10-25"
+        },
+        {
+            "topic_title": "Getting error while backing up PMM 2 data",
+            "url": "https:\/\/forums.percona.com\/t\/getting-error-while-backing-up-pmm-2-data\/5",
+            "date": "2024-10-27"
+        },
+        {
+            "topic_title": "Getting error while backing up PMM 2 data",
+            "url": "https:\/\/forums.percona.com\/t\/getting-error-while-backing-up-pmm-2-data\/7",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "QAN MariaDB Example query is trimmed",
+            "url": "https:\/\/forums.percona.com\/t\/qan-mariadb-example-query-is-trimmed\/2",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "QAN MariaDB Example query is trimmed",
+            "url": "https:\/\/forums.percona.com\/t\/qan-mariadb-example-query-is-trimmed\/6",
+            "date": "2024-10-31"
+        },
+        {
+            "topic_title": "Mongod threads continuously increasing",
+            "url": "https:\/\/forums.percona.com\/t\/mongod-threads-continuously-increasing\/3",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "PMM 2.43.2 Upgrade?",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-2-43-2-upgrade\/2",
+            "date": "2024-10-30"
+        },
+        {
+            "topic_title": "PMM 2.43.0 causing too many connections",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-2-43-0-causing-too-many-connections\/2",
+            "date": "2024-11-07"
+        },
+        {
+            "topic_title": "QAN does not show the PostgreSQL queries with Full Table scan",
+            "url": "https:\/\/forums.percona.com\/t\/qan-does-not-show-the-postgresql-queries-with-full-table-scan\/3",
+            "date": "2024-11-08"
+        },
+        {
+            "topic_title": "QAN does not show the PostgreSQL queries with Full Table scan",
+            "url": "https:\/\/forums.percona.com\/t\/qan-does-not-show-the-postgresql-queries-with-full-table-scan\/5",
+            "date": "2025-05-02"
+        },
+        {
+            "topic_title": "QAN does not show the PostgreSQL queries with Full Table scan",
+            "url": "https:\/\/forums.percona.com\/t\/qan-does-not-show-the-postgresql-queries-with-full-table-scan\/7",
+            "date": "2025-05-03"
+        },
+        {
+            "topic_title": "Not able to login into PMM dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/not-able-to-login-into-pmm-dashboard\/2",
+            "date": "2024-11-08"
+        },
+        {
+            "topic_title": "False alarm on PMM",
+            "url": "https:\/\/forums.percona.com\/t\/false-alarm-on-pmm\/3",
+            "date": "2024-12-03"
+        },
+        {
+            "topic_title": "Pmm with nginx reverse proxy stuck in login page",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-with-nginx-reverse-proxy-stuck-in-login-page\/2",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "Number of collections not visible in mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/number-of-collections-not-visible-in-mongodb\/2",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "Number of collections not visible in mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/number-of-collections-not-visible-in-mongodb\/4",
+            "date": "2025-01-09"
+        },
+        {
+            "topic_title": "\"node still exists\" when trying to re-register services in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/node-still-exists-when-trying-to-re-register-services-in-pmm\/3",
+            "date": "2025-01-16"
+        },
+        {
+            "topic_title": "\"node still exists\" when trying to re-register services in PMM",
+            "url": "https:\/\/forums.percona.com\/t\/node-still-exists-when-trying-to-re-register-services-in-pmm\/6",
+            "date": "2025-01-20"
+        },
+        {
+            "topic_title": "Alerting for slow querries mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/alerting-for-slow-querries-mongodb\/3",
+            "date": "2025-01-20"
+        },
+        {
+            "topic_title": "Alerting for slow querries mongodb",
+            "url": "https:\/\/forums.percona.com\/t\/alerting-for-slow-querries-mongodb\/6",
+            "date": "2025-01-22"
+        },
+        {
+            "topic_title": "PMM Attempts to Connect to rdsadmin Database",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-attempts-to-connect-to-rdsadmin-database\/3",
+            "date": "2025-01-22"
+        },
+        {
+            "topic_title": "Upgrade grafana on PMM2 on AWS AMI",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-grafana-on-pmm2-on-aws-ami\/3",
+            "date": "2025-01-30"
+        },
+        {
+            "topic_title": "Upgrade grafana on PMM2 on AWS AMI",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-grafana-on-pmm2-on-aws-ami\/7",
+            "date": "2025-02-03"
+        },
+        {
+            "topic_title": "Upgrade grafana on PMM2 on AWS AMI",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-grafana-on-pmm2-on-aws-ami\/10",
+            "date": "2025-03-06"
+        },
+        {
+            "topic_title": "High IO Wait on PostgreSQL Master - Possible PMM2 Issue?",
+            "url": "https:\/\/forums.percona.com\/t\/high-io-wait-on-postgresql-master-possible-pmm2-issue\/2",
+            "date": "2025-01-31"
+        },
+        {
+            "topic_title": "Not able to enable QAN for Percona MongoDB",
+            "url": "https:\/\/forums.percona.com\/t\/not-able-to-enable-qan-for-percona-mongodb\/2",
+            "date": "2025-02-03"
+        },
+        {
+            "topic_title": "Ready only user to operate PMM for Postgresql",
+            "url": "https:\/\/forums.percona.com\/t\/ready-only-user-to-operate-pmm-for-postgresql\/2",
+            "date": "2025-02-04"
+        },
+        {
+            "topic_title": "Does anyone use PMM to monitor databases deployed on kubernetes?",
+            "url": "https:\/\/forums.percona.com\/t\/does-anyone-use-pmm-to-monitor-databases-deployed-on-kubernetes\/2",
+            "date": "2025-02-05"
+        },
+        {
+            "topic_title": "Percona 3 ppm-server error",
+            "url": "https:\/\/forums.percona.com\/t\/percona-3-ppm-server-error\/5",
+            "date": "2025-02-13"
+        },
+        {
+            "topic_title": "Upgrade pmm-2-client to pmm3-client",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-pmm-2-client-to-pmm3-client\/4",
+            "date": "2025-02-13"
+        },
+        {
+            "topic_title": "Login page redirection",
+            "url": "https:\/\/forums.percona.com\/t\/login-page-redirection\/7",
+            "date": "2025-02-24"
+        },
+        {
+            "topic_title": "leaderHealthCheck fails after update to 3.0.0",
+            "url": "https:\/\/forums.percona.com\/t\/leaderhealthcheck-fails-after-update-to-3-0-0\/2",
+            "date": "2025-03-06"
+        },
+        {
+            "topic_title": "QAN doesn't display query from python script",
+            "url": "https:\/\/forums.percona.com\/t\/qan-doesnt-display-query-from-python-script\/2",
+            "date": "2025-02-24"
+        },
+        {
+            "topic_title": "Alerting and \"Unexpected error\" in graph rendered by GF Image Renderer service",
+            "url": "https:\/\/forums.percona.com\/t\/alerting-and-unexpected-error-in-graph-rendered-by-gf-image-renderer-service\/8",
+            "date": "2025-02-25"
+        },
+        {
+            "topic_title": "Alerting and \"Unexpected error\" in graph rendered by GF Image Renderer service",
+            "url": "https:\/\/forums.percona.com\/t\/alerting-and-unexpected-error-in-graph-rendered-by-gf-image-renderer-service\/11",
+            "date": "2025-03-06"
+        },
+        {
+            "topic_title": "Metric Name Changes in MongoDB Exporter – Clarification Needed",
+            "url": "https:\/\/forums.percona.com\/t\/metric-name-changes-in-mongodb-exporter-clarification-needed\/3",
+            "date": "2025-03-03"
+        },
+        {
+            "topic_title": "PMM Query Analisys: Error when try to get query examples",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-query-analisys-error-when-try-to-get-query-examples\/2",
+            "date": "2025-03-03"
+        },
+        {
+            "topic_title": "PMM Query Analisys: Error when try to get query examples",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-query-analisys-error-when-try-to-get-query-examples\/4",
+            "date": "2025-03-12"
+        },
+        {
+            "topic_title": "Pmm3.00 \/srv is not writable for pmm user",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-00-srv-is-not-writable-for-pmm-user\/2",
+            "date": "2025-03-04"
+        },
+        {
+            "topic_title": "Pmm3.00 \/srv is not writable for pmm user",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-00-srv-is-not-writable-for-pmm-user\/4",
+            "date": "2025-03-06"
+        },
+        {
+            "topic_title": "Pmm3.00 \/srv is not writable for pmm user",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-00-srv-is-not-writable-for-pmm-user\/6",
+            "date": "2025-04-24"
+        },
+        {
+            "topic_title": "Pmm3.00 \/srv is not writable for pmm user",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-00-srv-is-not-writable-for-pmm-user\/8",
+            "date": "2025-04-24"
+        },
+        {
+            "topic_title": "Pmm3.00 \/srv is not writable for pmm user",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-00-srv-is-not-writable-for-pmm-user\/11",
+            "date": "2025-04-25"
+        },
+        {
+            "topic_title": "Alert templates ",
+            "url": "https:\/\/forums.percona.com\/t\/alert-templates\/2",
+            "date": "2025-03-06"
+        },
+        {
+            "topic_title": "PMM query analytic schedule report",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-query-analytic-schedule-report\/2",
+            "date": "2025-03-10"
+        },
+        {
+            "topic_title": "CVE-2025-1094 PMM2 release",
+            "url": "https:\/\/forums.percona.com\/t\/cve-2025-1094-pmm2-release\/2",
+            "date": "2025-03-12"
+        },
+        {
+            "topic_title": "Error running query on database cprt_dba_pgsql_cpu_mem_cal_per_query pq: relation pg_activity_with_cpu_mem does not exist",
+            "url": "https:\/\/forums.percona.com\/t\/error-running-query-on-database-cprt-dba-pgsql-cpu-mem-cal-per-query-pq-relation-pg-activity-with-cpu-mem-does-not-exist\/3",
+            "date": "2025-03-14"
+        },
+        {
+            "topic_title": "Error running query on database cprt_dba_pgsql_cpu_mem_cal_per_query pq: relation pg_activity_with_cpu_mem does not exist",
+            "url": "https:\/\/forums.percona.com\/t\/error-running-query-on-database-cprt-dba-pgsql-cpu-mem-cal-per-query-pq-relation-pg-activity-with-cpu-mem-does-not-exist\/6",
+            "date": "2025-03-14"
+        },
+        {
+            "topic_title": "Exporting PMM Data for Existing Monitoring System",
+            "url": "https:\/\/forums.percona.com\/t\/exporting-pmm-data-for-existing-monitoring-system\/2",
+            "date": "2025-03-19"
+        },
+        {
+            "topic_title": "Comparing pmm-agent config to pmm-admin config",
+            "url": "https:\/\/forums.percona.com\/t\/comparing-pmm-agent-config-to-pmm-admin-config\/2",
+            "date": "2025-03-26"
+        },
+        {
+            "topic_title": "Percona PMM tool giving performance issues on Prod environments",
+            "url": "https:\/\/forums.percona.com\/t\/percona-pmm-tool-giving-performance-issues-on-prod-environments\/5",
+            "date": "2025-03-28"
+        },
+        {
+            "topic_title": "Percona PMM tool giving performance issues on Prod environments",
+            "url": "https:\/\/forums.percona.com\/t\/percona-pmm-tool-giving-performance-issues-on-prod-environments\/7",
+            "date": "2025-04-04"
+        },
+        {
+            "topic_title": "Pmm v3 update not possible",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-update-not-possible\/6",
+            "date": "2025-06-02"
+        },
+        {
+            "topic_title": "Pmm v3 update not possible",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-update-not-possible\/8",
+            "date": "2025-06-08"
+        },
+        {
+            "topic_title": "Pmm v3 update not possible",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-update-not-possible\/10",
+            "date": "2025-06-11"
+        },
+        {
+            "topic_title": "PMM outlook email alerts not working",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-outlook-email-alerts-not-working\/9",
+            "date": "2025-04-04"
+        },
+        {
+            "topic_title": "How to remove PMM2 volume safely after upgrading to PMM3 version",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-remove-pmm2-volume-safely-after-upgrading-to-pmm3-version\/4",
+            "date": "2025-04-08"
+        },
+        {
+            "topic_title": "Error: Cannot open an HTTP server: socket.error reported errno.EACCES",
+            "url": "https:\/\/forums.percona.com\/t\/error-cannot-open-an-http-server-socket-error-reported-errno-eacces\/3",
+            "date": "2025-04-08"
+        },
+        {
+            "topic_title": "Error: Cannot open an HTTP server: socket.error reported errno.EACCES",
+            "url": "https:\/\/forums.percona.com\/t\/error-cannot-open-an-http-server-socket-error-reported-errno-eacces\/5",
+            "date": "2025-04-09"
+        },
+        {
+            "topic_title": "Is the vmalert still available in PMM v3?",
+            "url": "https:\/\/forums.percona.com\/t\/is-the-vmalert-still-available-in-pmm-v3\/2",
+            "date": "2025-04-09"
+        },
+        {
+            "topic_title": "Add custom lines into vmagent under pmm-agent",
+            "url": "https:\/\/forums.percona.com\/t\/add-custom-lines-into-vmagent-under-pmm-agent\/2",
+            "date": "2025-04-11"
+        },
+        {
+            "topic_title": "Add custom lines into vmagent under pmm-agent",
+            "url": "https:\/\/forums.percona.com\/t\/add-custom-lines-into-vmagent-under-pmm-agent\/4",
+            "date": "2025-04-12"
+        },
+        {
+            "topic_title": "Add custom lines into vmagent under pmm-agent",
+            "url": "https:\/\/forums.percona.com\/t\/add-custom-lines-into-vmagent-under-pmm-agent\/7",
+            "date": "2025-04-16"
+        },
+        {
+            "topic_title": "Add custom lines into vmagent under pmm-agent",
+            "url": "https:\/\/forums.percona.com\/t\/add-custom-lines-into-vmagent-under-pmm-agent\/8",
+            "date": "2025-04-16"
+        },
+        {
+            "topic_title": "Adding ssl enabled mysql rds on percona",
+            "url": "https:\/\/forums.percona.com\/t\/adding-ssl-enabled-mysql-rds-on-percona\/2",
+            "date": "2025-04-15"
+        },
+        {
+            "topic_title": "Run Pmm on VM WITHROUT DOCKER",
+            "url": "https:\/\/forums.percona.com\/t\/run-pmm-on-vm-withrout-docker\/4",
+            "date": "2025-04-21"
+        },
+        {
+            "topic_title": "QAN: unused index columns and full tbl scan columns are always empty",
+            "url": "https:\/\/forums.percona.com\/t\/qan-unused-index-columns-and-full-tbl-scan-columns-are-always-empty\/2",
+            "date": "2025-04-23"
+        },
+        {
+            "topic_title": "QAN: unused index columns and full tbl scan columns are always empty",
+            "url": "https:\/\/forums.percona.com\/t\/qan-unused-index-columns-and-full-tbl-scan-columns-are-always-empty\/5",
+            "date": "2025-04-24"
+        },
+        {
+            "topic_title": "QAN: unused index columns and full tbl scan columns are always empty",
+            "url": "https:\/\/forums.percona.com\/t\/qan-unused-index-columns-and-full-tbl-scan-columns-are-always-empty\/6",
+            "date": "2025-04-24"
+        },
+        {
+            "topic_title": "Unable to register pmm-agent on pmm server",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-register-pmm-agent-on-pmm-server\/4",
+            "date": "2025-04-23"
+        },
+        {
+            "topic_title": "Unable to register pmm-agent on pmm server",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-register-pmm-agent-on-pmm-server\/7",
+            "date": "2025-04-23"
+        },
+        {
+            "topic_title": "QAN showing query which are not running during the time range selected",
+            "url": "https:\/\/forums.percona.com\/t\/qan-showing-query-which-are-not-running-during-the-time-range-selected\/6",
+            "date": "2025-04-25"
+        },
+        {
+            "topic_title": "QAN showing query which are not running during the time range selected",
+            "url": "https:\/\/forums.percona.com\/t\/qan-showing-query-which-are-not-running-during-the-time-range-selected\/8",
+            "date": "2025-04-25"
+        },
+        {
+            "topic_title": "Pmm static send authorize\/?client_id=some_id",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-static-send-authorize-client-id-some-id\/3",
+            "date": "2025-05-06"
+        },
+        {
+            "topic_title": "Pmm static send authorize\/?client_id=some_id",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-static-send-authorize-client-id-some-id\/6",
+            "date": "2025-06-02"
+        },
+        {
+            "topic_title": "Pmm static send authorize\/?client_id=some_id",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-static-send-authorize-client-id-some-id\/9",
+            "date": "2025-06-08"
+        },
+        {
+            "topic_title": "[PMM 3.1.0] Alertmanager TLS Certificate Trust Issue with Proxy (Slack Webhook)",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-1-0-alertmanager-tls-certificate-trust-issue-with-proxy-slack-webhook\/2",
+            "date": "2025-05-13"
+        },
+        {
+            "topic_title": "[PMM 3.1.0] Alertmanager TLS Certificate Trust Issue with Proxy (Slack Webhook)",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-1-0-alertmanager-tls-certificate-trust-issue-with-proxy-slack-webhook\/4",
+            "date": "2025-05-15"
+        },
+        {
+            "topic_title": "ARM64 support for PMM-Server",
+            "url": "https:\/\/forums.percona.com\/t\/arm64-support-for-pmm-server\/3",
+            "date": "2025-05-15"
+        },
+        {
+            "topic_title": "Problem with PMM - Exit code 70",
+            "url": "https:\/\/forums.percona.com\/t\/problem-with-pmm-exit-code-70\/4",
+            "date": "2025-05-22"
+        },
+        {
+            "topic_title": "Specified repository does not exist: http:\/\/repo.percona.com\/pmm-3client\/",
+            "url": "https:\/\/forums.percona.com\/t\/specified-repository-does-not-exist-http-repo-percona-com-pmm-3client\/2",
+            "date": "2025-05-30"
+        },
+        {
+            "topic_title": "Pmm-agent \"404 Not Found\" trying to register with server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-404-not-found-trying-to-register-with-server\/2",
+            "date": "2025-06-08"
+        },
+        {
+            "topic_title": "Pmm-agent \"404 Not Found\" trying to register with server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-404-not-found-trying-to-register-with-server\/4",
+            "date": "2025-06-10"
+        },
+        {
+            "topic_title": "Pmm-agent \"404 Not Found\" trying to register with server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-404-not-found-trying-to-register-with-server\/6",
+            "date": "2025-06-12"
+        },
+        {
+            "topic_title": "PMM Client-Side Caching in 3.2.0 & HA Setup for PMM Server in Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-side-caching-in-3-2-0-ha-setup-for-pmm-server-in-kubernetes\/2",
+            "date": "2025-06-09"
+        },
+        {
+            "topic_title": "PMM Client-Side Caching in 3.2.0 & HA Setup for PMM Server in Kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-side-caching-in-3-2-0-ha-setup-for-pmm-server-in-kubernetes\/4",
+            "date": "2025-06-10"
+        },
+        {
+            "topic_title": "Percona Alerting not enabled",
+            "url": "https:\/\/forums.percona.com\/t\/percona-alerting-not-enabled\/2",
+            "date": "2025-06-10"
+        },
+        {
+            "topic_title": "Percona Alerting not enabled",
+            "url": "https:\/\/forums.percona.com\/t\/percona-alerting-not-enabled\/4",
+            "date": "2025-06-11"
+        },
+        {
+            "topic_title": "PMM v3 postgres performance with timescaledb",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-postgres-performance-with-timescaledb\/2",
+            "date": "2025-06-11"
+        },
+        {
+            "topic_title": "PMM v3 postgres performance with timescaledb",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-postgres-performance-with-timescaledb\/4",
+            "date": "2025-06-12"
+        },
+        {
+            "topic_title": "Grafana MongoDB Dashboards Showing Incorrect Data",
+            "url": "https:\/\/forums.percona.com\/t\/grafana-mongodb-dashboards-showing-incorrect-data\/2",
+            "date": "2025-06-11"
+        },
+        {
+            "topic_title": "Grafana MongoDB Dashboards Showing Incorrect Data",
+            "url": "https:\/\/forums.percona.com\/t\/grafana-mongodb-dashboards-showing-incorrect-data\/4",
+            "date": "2025-06-12"
+        },
+        {
+            "topic_title": "CVE-2025-4123 vulnerability",
+            "url": "https:\/\/forums.percona.com\/t\/cve-2025-4123-vulnerability\/2",
+            "date": "2025-06-17"
+        },
+        {
+            "topic_title": "QAN API is Down after upgrade the PMM server from 2.44.0 to 3.2.0 version",
+            "url": "https:\/\/forums.percona.com\/t\/qan-api-is-down-after-upgrade-the-pmm-server-from-2-44-0-to-3-2-0-version\/2",
+            "date": "2025-06-18"
+        },
+        {
+            "topic_title": "QAN API is Down after upgrade the PMM server from 2.44.0 to 3.2.0 version",
+            "url": "https:\/\/forums.percona.com\/t\/qan-api-is-down-after-upgrade-the-pmm-server-from-2-44-0-to-3-2-0-version\/5",
+            "date": "2025-06-24"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/2",
+            "date": "2025-06-19"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/4",
+            "date": "2025-06-19"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/19",
+            "date": "2025-06-24"
+        },
+        {
+            "topic_title": "Pmm2 Client\/Pmm3",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-pmm3\/4",
+            "date": "2025-06-26"
+        },
+        {
+            "topic_title": "Pmm2 Client\/Pmm3",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-pmm3\/6",
+            "date": "2025-06-27"
+        },
+        {
+            "topic_title": "PMM doesn't display MySQL replication info",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-doesnt-display-mysql-replication-info\/2",
+            "date": "2025-06-26"
+        },
+        {
+            "topic_title": "PMM Not Showing Aurora MySQL Queries in Query Analytics",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-not-showing-aurora-mysql-queries-in-query-analytics\/2",
+            "date": "2025-07-14"
+        },
+        {
+            "topic_title": "PMM 3.3.0 to 3.3.1 upgrade problem when restarting",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-3-0-to-3-3-1-upgrade-problem-when-restarting\/2",
+            "date": "2025-08-07"
+        },
+        {
+            "topic_title": "PMM 3.3.0 to 3.3.1 upgrade problem when restarting",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-3-0-to-3-3-1-upgrade-problem-when-restarting\/5",
+            "date": "2025-08-07"
+        },
+        {
+            "topic_title": "Pmm-client unable to connect to pmm-server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-unable-to-connect-to-pmm-server\/2",
+            "date": "2025-08-13"
+        },
+        {
+            "topic_title": "Mongodb_exporter failed to create PBM client from uri",
+            "url": "https:\/\/forums.percona.com\/t\/mongodb-exporter-failed-to-create-pbm-client-from-uri\/2",
+            "date": "2025-08-29"
+        },
+        {
+            "topic_title": "Too high load and QPS levels in QAN MySQL",
+            "url": "https:\/\/forums.percona.com\/t\/too-high-load-and-qps-levels-in-qan-mysql\/2",
+            "date": "2025-09-20"
+        },
+        {
+            "topic_title": "PMM prevents MongoDB from accepting connections randomly",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-prevents-mongodb-from-accepting-connections-randomly\/2",
+            "date": "2025-10-10"
+        },
+        {
+            "topic_title": "PMM prevents MongoDB from accepting connections randomly",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-prevents-mongodb-from-accepting-connections-randomly\/5",
+            "date": "2025-10-10"
+        },
+        {
+            "topic_title": "Need confirmation about the variable pg_stat_monitor.pgsm_enable_query_plan",
+            "url": "https:\/\/forums.percona.com\/t\/need-confirmation-about-the-variable-pg-stat-monitor-pgsm-enable-query-plan\/3",
+            "date": "2025-10-30"
+        },
+        {
+            "topic_title": "PostgreSQL:PMM agent queries are consuming more CPU's",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-pmm-agent-queries-are-consuming-more-cpus\/7",
+            "date": "2025-11-19"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "HAproxy Monitoring with PMM-Agent \"Status Failed\"",
+            "url": "https:\/\/forums.percona.com\/t\/haproxy-monitoring-with-pmm-agent-status-failed\/2",
+            "date": "2024-01-16"
+        },
+        {
+            "topic_title": "ERROR: permission denied for function pg_ls_waldir",
+            "url": "https:\/\/forums.percona.com\/t\/error-permission-denied-for-function-pg-ls-waldir\/2",
+            "date": "2024-01-24"
+        },
+        {
+            "topic_title": "Unable configure pmm2-client",
+            "url": "https:\/\/forums.percona.com\/t\/unable-configure-pmm2-client\/8",
+            "date": "2024-01-29"
+        },
+        {
+            "topic_title": "Mongo errors associated with mongodb_exporter pmm jobs",
+            "url": "https:\/\/forums.percona.com\/t\/mongo-errors-associated-with-mongodb-exporter-pmm-jobs\/2",
+            "date": "2024-02-15"
+        },
+        {
+            "topic_title": "Pmm-client container json logs",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-container-json-logs\/2",
+            "date": "2024-02-21"
+        },
+        {
+            "topic_title": "PMM Query Analytics for MongoDB shows N\/A for User Name",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-query-analytics-for-mongodb-shows-n-a-for-user-name\/2",
+            "date": "2024-02-27"
+        },
+        {
+            "topic_title": "High Availability for PMM",
+            "url": "https:\/\/forums.percona.com\/t\/high-availability-for-pmm\/2",
+            "date": "2024-03-08"
+        },
+        {
+            "topic_title": "How can I use PMM APIs to get data from query analytics dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/how-can-i-use-pmm-apis-to-get-data-from-query-analytics-dashboard\/3",
+            "date": "2024-03-19"
+        },
+        {
+            "topic_title": "PMM installation troubles",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-installation-troubles\/2",
+            "date": "2024-03-21"
+        },
+        {
+            "topic_title": "Changing IP Addresses of PMM and Database Servers Without Losing historical Data?",
+            "url": "https:\/\/forums.percona.com\/t\/changing-ip-addresses-of-pmm-and-database-servers-without-losing-historical-data\/2",
+            "date": "2024-10-18"
+        },
+        {
+            "topic_title": "PMM 2.43.0 causing too many connections",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-2-43-0-causing-too-many-connections\/2",
+            "date": "2024-11-07"
+        },
+        {
+            "topic_title": "Ready only user to operate PMM for Postgresql",
+            "url": "https:\/\/forums.percona.com\/t\/ready-only-user-to-operate-pmm-for-postgresql\/2",
+            "date": "2025-02-04"
+        },
+        {
+            "topic_title": "leaderHealthCheck fails after update to 3.0.0",
+            "url": "https:\/\/forums.percona.com\/t\/leaderhealthcheck-fails-after-update-to-3-0-0\/2",
+            "date": "2025-03-06"
+        },
+        {
+            "topic_title": "Metric Name Changes in MongoDB Exporter – Clarification Needed",
+            "url": "https:\/\/forums.percona.com\/t\/metric-name-changes-in-mongodb-exporter-clarification-needed\/3",
+            "date": "2025-03-03"
+        },
+        {
+            "topic_title": "PMM Query Analisys: Error when try to get query examples",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-query-analisys-error-when-try-to-get-query-examples\/2",
+            "date": "2025-03-03"
+        },
+        {
+            "topic_title": "Exporting PMM Data for Existing Monitoring System",
+            "url": "https:\/\/forums.percona.com\/t\/exporting-pmm-data-for-existing-monitoring-system\/2",
+            "date": "2025-03-19"
+        },
+        {
+            "topic_title": "Is the vmalert still available in PMM v3?",
+            "url": "https:\/\/forums.percona.com\/t\/is-the-vmalert-still-available-in-pmm-v3\/2",
+            "date": "2025-04-09"
+        },
+        {
+            "topic_title": "Adding ssl enabled mysql rds on percona",
+            "url": "https:\/\/forums.percona.com\/t\/adding-ssl-enabled-mysql-rds-on-percona\/2",
+            "date": "2025-04-15"
+        },
+        {
+            "topic_title": "Run Pmm on VM WITHROUT DOCKER",
+            "url": "https:\/\/forums.percona.com\/t\/run-pmm-on-vm-withrout-docker\/4",
+            "date": "2025-04-21"
+        },
+        {
+            "topic_title": "QAN showing query which are not running during the time range selected",
+            "url": "https:\/\/forums.percona.com\/t\/qan-showing-query-which-are-not-running-during-the-time-range-selected\/8",
+            "date": "2025-04-25"
+        },
+        {
+            "topic_title": "Pmm static send authorize\/?client_id=some_id",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-static-send-authorize-client-id-some-id\/9",
+            "date": "2025-06-08"
+        },
+        {
+            "topic_title": "ARM64 support for PMM-Server",
+            "url": "https:\/\/forums.percona.com\/t\/arm64-support-for-pmm-server\/3",
+            "date": "2025-05-15"
+        },
+        {
+            "topic_title": "Problem with PMM - Exit code 70",
+            "url": "https:\/\/forums.percona.com\/t\/problem-with-pmm-exit-code-70\/4",
+            "date": "2025-05-22"
+        },
+        {
+            "topic_title": "PMM v3 postgres performance with timescaledb",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-postgres-performance-with-timescaledb\/4",
+            "date": "2025-06-12"
+        },
+        {
+            "topic_title": "CVE-2025-4123 vulnerability",
+            "url": "https:\/\/forums.percona.com\/t\/cve-2025-4123-vulnerability\/2",
+            "date": "2025-06-17"
+        },
+        {
+            "topic_title": "Pmm2 Client\/Pmm3",
+            "url": "https:\/\/forums.percona.com\/t\/pmm2-client-pmm3\/4",
+            "date": "2025-06-26"
+        },
+        {
+            "topic_title": "PMM doesn't display MySQL replication info",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-doesnt-display-mysql-replication-info\/2",
+            "date": "2025-06-26"
+        },
+        {
+            "topic_title": "Pmm-client unable to connect to pmm-server",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-client-unable-to-connect-to-pmm-server\/2",
+            "date": "2025-08-13"
+        }
+    ]
+}

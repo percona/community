@@ -1,0 +1,89 @@
+{
+    "user_key": "fo-ipcmlr",
+    "display_name": "ipcmlr",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/i\/df705f\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=ipcmlr",
+    "github_login": null,
+    "forum_username": "ipcmlr",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 60,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 60,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 12,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Setup replication using mysqldump. Restore getting \"Access to system schema 'mysql' is rejected.\"",
+            "url": "https:\/\/forums.percona.com\/t\/setup-replication-using-mysqldump-restore-getting-access-to-system-schema-mysql-is-rejected",
+            "date": "2024-06-25"
+        },
+        {
+            "title": "MySQL end of life?",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-end-of-life",
+            "date": "2024-12-13"
+        },
+        {
+            "title": "Xtrabackup restore to point in time",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-restore-to-point-in-time",
+            "date": "2025-03-05"
+        },
+        {
+            "title": "Creating openssl certificates for replication",
+            "url": "https:\/\/forums.percona.com\/t\/creating-openssl-certificates-for-replication",
+            "date": "2025-03-26"
+        },
+        {
+            "title": "ERROR: Authentication plugin 'caching_sha2_password' when using mysqlsh",
+            "url": "https:\/\/forums.percona.com\/t\/error-authentication-plugin-caching-sha2-password-when-using-mysqlsh",
+            "date": "2025-06-02"
+        },
+        {
+            "title": "Unable to run util.checkForServerUpgrade()",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-run-util-checkforserverupgrade",
+            "date": "2025-06-02"
+        },
+        {
+            "title": "Need to create a new database and load a lot of data with replication",
+            "url": "https:\/\/forums.percona.com\/t\/need-to-create-a-new-database-and-load-a-lot-of-data-with-replication",
+            "date": "2025-06-09"
+        },
+        {
+            "title": "Getting weird warnings on mysql upgrade checker 8.4 \"references a non unique key\"",
+            "url": "https:\/\/forums.percona.com\/t\/getting-weird-warnings-on-mysql-upgrade-checker-8-4-references-a-non-unique-key",
+            "date": "2025-06-23"
+        },
+        {
+            "title": "Minimum version of 8.0 that can be upgraded to 8.4?",
+            "url": "https:\/\/forums.percona.com\/t\/minimum-version-of-8-0-that-can-be-upgraded-to-8-4",
+            "date": "2025-07-17"
+        },
+        {
+            "title": "Audit log file json format",
+            "url": "https:\/\/forums.percona.com\/t\/audit-log-file-json-format",
+            "date": "2025-09-08"
+        },
+        {
+            "title": "Getting null when running audit_log_read",
+            "url": "https:\/\/forums.percona.com\/t\/getting-null-when-running-audit-log-read",
+            "date": "2026-01-28"
+        },
+        {
+            "title": "Audit filter with query and user info in one record possible?",
+            "url": "https:\/\/forums.percona.com\/t\/audit-filter-with-query-and-user-info-in-one-record-possible",
+            "date": "2026-03-05"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

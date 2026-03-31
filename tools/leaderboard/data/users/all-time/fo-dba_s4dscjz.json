@@ -1,0 +1,96 @@
+{
+    "user_key": "fo-dba_s4dscjz",
+    "display_name": "dba_S4dscjz",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/d\/65b543\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=dba_S4dscjz",
+    "github_login": null,
+    "forum_username": "dba_S4dscjz",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 95,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 95,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 7,
+    "replies": 5,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Strange behaviour with Audit Log Filter component",
+            "url": "https:\/\/forums.percona.com\/t\/strange-behaviour-with-audit-log-filter-component",
+            "date": "2025-01-23"
+        },
+        {
+            "title": "QAN doesn't display query from python script",
+            "url": "https:\/\/forums.percona.com\/t\/qan-doesnt-display-query-from-python-script",
+            "date": "2025-02-21"
+        },
+        {
+            "title": "Xtrabackup : best options for performance",
+            "url": "https:\/\/forums.percona.com\/t\/xtrabackup-best-options-for-performance",
+            "date": "2025-03-14"
+        },
+        {
+            "title": "Write audit_log_filter definitons",
+            "url": "https:\/\/forums.percona.com\/t\/write-audit-log-filter-definitons",
+            "date": "2025-04-23"
+        },
+        {
+            "title": "PMM doesn't display MySQL replication info",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-doesnt-display-mysql-replication-info",
+            "date": "2025-06-26"
+        },
+        {
+            "title": "PMM upgrade from 2.44.1 to 3.2.0 - Migrations: Dirty database version 18",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-upgrade-from-2-44-1-to-3-2-0-migrations-dirty-database-version-18",
+            "date": "2025-07-07"
+        },
+        {
+            "title": "Audit_log_filter with version 8.0",
+            "url": "https:\/\/forums.percona.com\/t\/audit-log-filter-with-version-8-0",
+            "date": "2025-07-18"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Defining rules for audit log filter component (v8.0 \/ 8.4)",
+            "url": "https:\/\/forums.percona.com\/t\/defining-rules-for-audit-log-filter-component-v8-0-8-4\/2",
+            "date": "2025-04-23"
+        },
+        {
+            "topic_title": "Audit_log_filter component and MySQL 8.4",
+            "url": "https:\/\/forums.percona.com\/t\/audit-log-filter-component-and-mysql-8-4\/9",
+            "date": "2025-03-14"
+        },
+        {
+            "topic_title": "Audit_log_filter component and MySQL 8.4",
+            "url": "https:\/\/forums.percona.com\/t\/audit-log-filter-component-and-mysql-8-4\/13",
+            "date": "2025-05-06"
+        },
+        {
+            "topic_title": "Audit_log_filter component and MySQL 8.4",
+            "url": "https:\/\/forums.percona.com\/t\/audit-log-filter-component-and-mysql-8-4\/17",
+            "date": "2025-05-07"
+        },
+        {
+            "topic_title": "How to skip select or all read operation in audit_log_filter in percona 8.4",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-skip-select-or-all-read-operation-in-audit-log-filter-in-percona-8-4\/4",
+            "date": "2025-05-16"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Defining rules for audit log filter component (v8.0 \/ 8.4)",
+            "url": "https:\/\/forums.percona.com\/t\/defining-rules-for-audit-log-filter-component-v8-0-8-4\/2",
+            "date": "2025-04-23"
+        }
+    ]
+}

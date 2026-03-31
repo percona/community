@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-guoard",
+    "display_name": "Ali Afsharzadeh",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/65511355?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=guoard",
+    "github_login": "guoard",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 225,
+    "points_github": 225,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 3,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Use systemctl --system daemon-reload and ignore errors in postinst",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/pull\/1212",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2025-12-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Make mongodb_exporter user creation idempotent in postinst script",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/pull\/1211",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2025-12-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix \/dev\/null redirection typo in systemctl command",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/pull\/1210",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2025-12-03",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

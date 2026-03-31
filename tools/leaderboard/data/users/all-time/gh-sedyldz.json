@@ -1,0 +1,621 @@
+{
+    "user_key": "gh-sedyldz",
+    "display_name": "sedyldz",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/41821819?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=sedyldz",
+    "github_login": "sedyldz",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-20T14:57:10+00:00",
+    "points_total": 6800,
+    "points_github": 6800,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 74,
+    "prs_merged": 66,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Redirect to register",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/233",
+            "repo": "percona\/cpe",
+            "date": "2024-12-11",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "Docker env",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/227",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Okta client fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/226",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Okta client env",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/225",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "okta env fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/224",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Hotjar fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/222",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "hotjar fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/221",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "fix invalid date",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/220",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Description fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/218",
+            "repo": "percona\/cpe",
+            "date": "2024-12-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Anomaly Details Fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/216",
+            "repo": "percona\/cpe",
+            "date": "2024-12-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Issue details",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/213",
+            "repo": "percona\/cpe",
+            "date": "2024-12-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Build Fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/206",
+            "repo": "percona\/cpe",
+            "date": "2024-12-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Hotjar fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/201",
+            "repo": "percona\/cpe",
+            "date": "2024-12-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add hotjar",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/178",
+            "repo": "percona\/cpe",
+            "date": "2024-12-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Dark mode and UI fixes",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/177",
+            "repo": "percona\/cpe",
+            "date": "2024-12-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Security upgrade axios from 1.7.7 to 1.7.8",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/174",
+            "repo": "percona\/cpe",
+            "date": "2024-11-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Security upgrade @okta\/okta-auth-js from 7.7.0 to 7.8.1",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/173",
+            "repo": "percona\/cpe",
+            "date": "2024-11-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Security upgrade @okta\/okta-auth-js from 7.7.0 to 7.8.1",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/167",
+            "repo": "percona\/cpe",
+            "date": "2024-11-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Sidebar",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/163",
+            "repo": "percona\/cpe",
+            "date": "2024-11-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "More Filters popover and Pagination",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/160",
+            "repo": "percona\/cpe",
+            "date": "2024-11-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Events Page",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/157",
+            "repo": "percona\/cpe",
+            "date": "2024-11-21",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "landing page sample",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/156",
+            "repo": "percona\/cpe",
+            "date": "2024-11-20",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "UI fixes",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/148",
+            "repo": "percona\/cpe",
+            "date": "2024-11-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Build fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/147",
+            "repo": "percona\/cpe",
+            "date": "2024-11-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Show basic json explain output",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/146",
+            "repo": "percona\/cpe",
+            "date": "2024-11-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Issue detail with stepped explain output rendering",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/142",
+            "repo": "percona\/cpe",
+            "date": "2024-10-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Readme fix - revert",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/141",
+            "repo": "percona\/cpe",
+            "date": "2024-10-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "issue details with real api",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/140",
+            "repo": "percona\/cpe",
+            "date": "2024-10-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "fix readme docker port",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/139",
+            "repo": "percona\/cpe",
+            "date": "2024-10-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "update documentation for local and docker",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/135",
+            "repo": "percona\/cpe",
+            "date": "2024-10-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add issue details",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/132",
+            "repo": "percona\/cpe",
+            "date": "2024-10-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "onboarding fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/131",
+            "repo": "percona\/cpe",
+            "date": "2024-10-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix user model",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/130",
+            "repo": "percona\/cpe",
+            "date": "2024-10-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "save cloud provider metadata",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/129",
+            "repo": "percona\/cpe",
+            "date": "2024-10-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "cleanup ",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/115",
+            "repo": "percona\/cpe",
+            "date": "2024-09-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "import fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/113",
+            "repo": "percona\/cpe",
+            "date": "2024-09-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add new auth",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/101",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add cloud provider step",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/100",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "add onboarding ",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/91",
+            "repo": "percona\/cpe",
+            "date": "2024-09-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add inventory page and navbar",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/84",
+            "repo": "percona\/cpe",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "work with real stream data",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/83",
+            "repo": "percona\/cpe",
+            "date": "2024-09-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "not ok screen",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/78",
+            "repo": "percona\/cpe",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "clean poc",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/68",
+            "repo": "percona\/cpe",
+            "date": "2024-08-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "query status card component",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/64",
+            "repo": "percona\/cpe",
+            "date": "2024-08-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Redesign",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/62",
+            "repo": "percona\/cpe",
+            "date": "2024-08-21",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Cleaning up",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/61",
+            "repo": "percona\/cpe",
+            "date": "2024-08-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "fix redirect auth",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/60",
+            "repo": "percona\/cpe",
+            "date": "2024-08-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Add okta authentication",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/58",
+            "repo": "percona\/cpe",
+            "date": "2024-08-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "replaced insights with insights service post response",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/54",
+            "repo": "percona\/cpe",
+            "date": "2024-07-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "smallest fix that nobody but me would notice",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/53",
+            "repo": "percona\/cpe",
+            "date": "2024-07-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update backend url and fix import",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/52",
+            "repo": "percona\/cpe",
+            "date": "2024-07-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Dynamic Table and refactoring",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/51",
+            "repo": "percona\/cpe",
+            "date": "2024-07-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Locks amount",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/49",
+            "repo": "percona\/cpe",
+            "date": "2024-07-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Stream fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/46",
+            "repo": "percona\/cpe",
+            "date": "2024-07-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "fix all healthy",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/44",
+            "repo": "percona\/cpe",
+            "date": "2024-07-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "health status fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/43",
+            "repo": "percona\/cpe",
+            "date": "2024-07-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Last fixes",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/42",
+            "repo": "percona\/cpe",
+            "date": "2024-07-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Streaming Refinement",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/41",
+            "repo": "percona\/cpe",
+            "date": "2024-07-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "qps detail fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/40",
+            "repo": "percona\/cpe",
+            "date": "2024-07-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "minor height fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/39",
+            "repo": "percona\/cpe",
+            "date": "2024-07-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "locks and queries refinement",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/37",
+            "repo": "percona\/cpe",
+            "date": "2024-07-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "last polishes before demo",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/34",
+            "repo": "percona\/cpe",
+            "date": "2024-07-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "update api_url",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/32",
+            "repo": "percona\/cpe",
+            "date": "2024-07-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add stream setup",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/30",
+            "repo": "percona\/cpe",
+            "date": "2024-07-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "remove trailing slash",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/26",
+            "repo": "percona\/cpe",
+            "date": "2024-07-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Front end with real stream",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/25",
+            "repo": "percona\/cpe",
+            "date": "2024-07-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "test hardcoding backend url",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/24",
+            "repo": "percona\/cpe",
+            "date": "2024-07-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add health endpoint",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/21",
+            "repo": "percona\/cpe",
+            "date": "2024-07-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add frontend url to cors header",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/18",
+            "repo": "percona\/cpe",
+            "date": "2024-07-05",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "WIP detailed metric view",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/17",
+            "repo": "percona\/cpe",
+            "date": "2024-07-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Detailed view",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/14",
+            "repo": "percona\/cpe",
+            "date": "2024-07-04",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Merge main",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/11",
+            "repo": "percona\/cpe",
+            "date": "2024-07-04",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "add error handling for stream failing",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/6",
+            "repo": "percona\/cpe",
+            "date": "2024-07-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "add navbar",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/1",
+            "repo": "percona\/cpe",
+            "date": "2024-06-28",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

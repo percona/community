@@ -1,0 +1,40 @@
+{
+    "user_key": "fo-bharath_k",
+    "display_name": "Bharath_K",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Bharath_K",
+    "github_login": null,
+    "forum_username": "Bharath_K",
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 7,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 7,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 1,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "ERROR: 57014: canceling statement due to user request",
+            "url": "https:\/\/forums.percona.com\/t\/error-57014-canceling-statement-due-to-user-request",
+            "date": "2026-02-18"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Percona PMM tool giving performance issues on Prod environments",
+            "url": "https:\/\/forums.percona.com\/t\/percona-pmm-tool-giving-performance-issues-on-prod-environments\/9",
+            "date": "2026-02-19"
+        }
+    ],
+    "forum_solutions": []
+}

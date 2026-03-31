@@ -1,0 +1,36 @@
+{
+    "user_key": "gh-mpiscaer",
+    "display_name": "Michiel Piscaer",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/1213043?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=mpiscaer",
+    "github_login": "mpiscaer",
+    "forum_username": null,
+    "period": "2026-01",
+    "period_label": "January 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 10,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Using percona-xtradb-cluster-operator on a IPv6-only cluster",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/2335",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2026-01-07",
+            "state": "open"
+        }
+    ],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

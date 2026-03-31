@@ -1,0 +1,36 @@
+{
+    "user_key": "gh-ivertonschmidt-oss",
+    "display_name": "ivertonschmidt-oss",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/238927790?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=ivertonschmidt-oss",
+    "github_login": "ivertonschmidt-oss",
+    "forum_username": null,
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 10,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "False Positive \"Errant GTID\" reported on cascading replicas",
+            "url": "https:\/\/github.com\/percona\/orchestrator\/issues\/88",
+            "repo": "percona\/orchestrator",
+            "date": "2026-02-25",
+            "state": "open"
+        }
+    ],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

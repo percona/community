@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-vishwas-sharma2480",
+    "display_name": "Vishwas Sharma",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/135056281?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=vishwas-sharma2480",
+    "github_login": "vishwas-sharma2480",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 225,
+    "points_github": 225,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 3,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Enable revive",
+            "url": "https:\/\/github.com\/percona\/pmm\/pull\/2773",
+            "repo": "percona\/pmm",
+            "date": "2024-01-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Enable revive",
+            "url": "https:\/\/github.com\/percona\/pmm\/pull\/2770",
+            "repo": "percona\/pmm",
+            "date": "2024-01-16",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "made changes for enableing tagliatelle",
+            "url": "https:\/\/github.com\/percona\/pmm\/pull\/2745",
+            "repo": "percona\/pmm",
+            "date": "2024-01-09",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

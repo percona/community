@@ -1,0 +1,59 @@
+{
+    "user_key": "gh-kyriosgn0",
+    "display_name": "AvivGuiser",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/39168048?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=KyriosGN0",
+    "github_login": "KyriosGN0",
+    "forum_username": null,
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 55,
+    "points_github": 55,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 3,
+    "prs_created": 1,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "allow creating roles which only reference other roles",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2174",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-01-06",
+            "state": "closed"
+        },
+        {
+            "title": "using File copy based initial sync fails when trying to scale replicaset",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2172",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-01-05",
+            "state": "open"
+        },
+        {
+            "title": "psmdb-db: support tpl for replicaSet Configuration spec",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/751",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-01-02",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "[psmdb-db]: pass replset.configuration through tpl function",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/777",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-01-23",
+            "merged": false,
+            "state": "open"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-yashdaga-24",
+    "display_name": "Yash Daga",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/225847767?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=yashdaga-24",
+    "github_login": "yashdaga-24",
+    "forum_username": null,
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 75,
+    "points_github": 75,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 3,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Mount extraPVCs to restore and prepare jobs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2361",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2026-02-10",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "Support file-based keyring components in restore operations",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2360",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2026-02-09",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Add support for restoring encrypted backup",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/2359",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2026-02-09",
+            "merged": false,
+            "state": "open"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

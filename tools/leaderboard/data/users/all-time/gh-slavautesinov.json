@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-slavautesinov",
+    "display_name": "SlavaUtesinov",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/12560600?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=SlavaUtesinov",
+    "github_login": "SlavaUtesinov",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 210,
+    "points_github": 210,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "MySQL StatefulSet can't rollout to ready state after cluster spec update",
+            "url": "https:\/\/github.com\/percona\/percona-server-mysql-operator\/issues\/626",
+            "repo": "percona\/percona-server-mysql-operator",
+            "date": "2024-04-10",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPS-326: Orchestrator mysql-monit resources",
+            "url": "https:\/\/github.com\/percona\/percona-server-mysql-operator\/pull\/520",
+            "repo": "percona\/percona-server-mysql-operator",
+            "date": "2024-01-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CLOUD-838 - MySQL backup image must always be specified",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/279",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-01-16",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

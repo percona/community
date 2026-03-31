@@ -1,0 +1,68 @@
+{
+    "user_key": "gh-ebuildy",
+    "display_name": "Thomas Decaux",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/1219817?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=ebuildy",
+    "github_login": "ebuildy",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 295,
+    "points_github": 295,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 2,
+    "prs_created": 2,
+    "prs_merged": 3,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "pxc-db: volumeSpec is missing persistentVolumeClaim dataSource fields",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/288",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-02-09",
+            "state": "open"
+        },
+        {
+            "title": "Provision data with xtrabackup",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1620",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-02-06",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPXC-1360 - pxc-db: add pxdbCluster annotations",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/290",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-02-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1368: PVC: forward dataSource field",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1624",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-02-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "fix(pmm\/secret): use Values.secret.annotations",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/263",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2023-11-22",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

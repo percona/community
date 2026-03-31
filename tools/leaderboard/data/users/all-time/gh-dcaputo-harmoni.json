@@ -1,0 +1,135 @@
+{
+    "user_key": "gh-dcaputo-harmoni",
+    "display_name": "dcaputo-harmoni",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/65166251?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=dcaputo-harmoni",
+    "github_login": "dcaputo-harmoni",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 620,
+    "points_github": 620,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 7,
+    "prs_created": 7,
+    "prs_merged": 5,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Large PITR binlog uploads to Azure storage timeout with \"Context deadline exceeded\"",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1847",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-16",
+            "state": "closed"
+        },
+        {
+            "title": "Pgbackrest exec fails intermittently",
+            "url": "https:\/\/github.com\/percona\/percona-postgresql-operator\/issues\/925",
+            "repo": "percona\/percona-postgresql-operator",
+            "date": "2024-10-10",
+            "state": "closed"
+        },
+        {
+            "title": "Additional newline issues with PITR binlog collection on Azure",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1841",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-10",
+            "state": "closed"
+        },
+        {
+            "title": "Exec timeouts on PITR reconciler and sync users processes",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1837",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-06",
+            "state": "closed"
+        },
+        {
+            "title": "Restore fails using Azure storage with message \"no info files in sst dir\"",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1812",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-09-01",
+            "state": "closed"
+        },
+        {
+            "title": "Pitr fails due to newline character in last-set filename",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1810",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-08-31",
+            "state": "closed"
+        },
+        {
+            "title": "Proxysql user sync generating EOF errors",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1809",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-08-30",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "Allow proxysql entrypoint to work with helm config",
+            "url": "https:\/\/github.com\/percona\/percona-docker\/pull\/1065",
+            "repo": "percona\/percona-docker",
+            "date": "2024-11-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1542: Fix Azure binlog upload for large files",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1848",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-16",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPG-702: Fix pod exec failing intermittently with retry logic",
+            "url": "https:\/\/github.com\/percona\/percona-postgresql-operator\/pull\/926",
+            "repo": "percona\/percona-postgresql-operator",
+            "date": "2024-10-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1502: Fix additional pitr azure newline issue",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1842",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1503: Fix exec in pitr and proxysql pods",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1838",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GITHUB-ISSUE-1812: Fix azure storage restore by removing hardcoded trailing slash",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1813",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-09-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "GITHUB-ISSUE-1810: Fix newline in last set filename",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1811",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-09-01",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

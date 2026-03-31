@@ -1,0 +1,76 @@
+{
+    "user_key": "fo-jyoti_rajai",
+    "display_name": "Jyoti Rajai",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/jyoti_rajai\/120\/4482_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Jyoti_Rajai",
+    "github_login": null,
+    "forum_username": "Jyoti_Rajai",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 78,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 78,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 4,
+    "replies": 4,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Docker pt-toolkit",
+            "url": "https:\/\/forums.percona.com\/t\/docker-pt-toolkit",
+            "date": "2024-09-30"
+        },
+        {
+            "title": "FAiled to intialized PXC in kubernetes",
+            "url": "https:\/\/forums.percona.com\/t\/failed-to-intialized-pxc-in-kubernetes",
+            "date": "2024-11-07"
+        },
+        {
+            "title": "Memory Usage in MySQL",
+            "url": "https:\/\/forums.percona.com\/t\/memory-usage-in-mysql",
+            "date": "2024-11-12"
+        },
+        {
+            "title": "Percona xtrabackup not working with xbstream",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtrabackup-not-working-with-xbstream",
+            "date": "2025-05-07"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "What is the difference between MyISAM and InnoDB tables?",
+            "url": "https:\/\/forums.percona.com\/t\/what-is-the-difference-between-myisam-and-innodb-tables\/2",
+            "date": "2025-11-14"
+        },
+        {
+            "topic_title": "ProxySQL keeps sending SELECT traffic to a PXC node in Donor\/Desynced",
+            "url": "https:\/\/forums.percona.com\/t\/proxysql-keeps-sending-select-traffic-to-a-pxc-node-in-donor-desynced\/2",
+            "date": "2025-12-09"
+        },
+        {
+            "topic_title": "ProxySQL keeps sending SELECT traffic to a PXC node in Donor\/Desynced",
+            "url": "https:\/\/forums.percona.com\/t\/proxysql-keeps-sending-select-traffic-to-a-pxc-node-in-donor-desynced\/6",
+            "date": "2025-12-12"
+        },
+        {
+            "topic_title": "MariaDB 11.8.5 error Argument \"\" isn't numeric in numeric comparison (<=>) at \/usr\/bin\/pt-deadlock-logger line 5200",
+            "url": "https:\/\/forums.percona.com\/t\/mariadb-11-8-5-error-argument-isnt-numeric-in-numeric-comparison-at-usr-bin-pt-deadlock-logger-line-5200\/2",
+            "date": "2025-12-12"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "What is the difference between MyISAM and InnoDB tables?",
+            "url": "https:\/\/forums.percona.com\/t\/what-is-the-difference-between-myisam-and-innodb-tables\/2",
+            "date": "2025-11-14"
+        }
+    ]
+}

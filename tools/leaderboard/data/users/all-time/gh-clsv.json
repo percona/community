@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-clsv",
+    "display_name": "Anton Averianov",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/5821199?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=clsv",
+    "github_login": "clsv",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 210,
+    "points_github": 210,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "error status on successful backups due to certificate retrieval issue",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/1723",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2024-11-13",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPSMDB-1276: Optimize TLS and CA certificate file writes in getMongoUri function",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/1736",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2024-11-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPSMDB-1215: fix ExternalTrafficPolicy for different service types",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/1673",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2024-10-08",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

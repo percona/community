@@ -1,0 +1,54 @@
+{
+    "user_key": "fo-anuja_kuchipudi",
+    "display_name": "Anuja_Kuchipudi",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Anuja_Kuchipudi",
+    "github_login": null,
+    "forum_username": "Anuja_Kuchipudi",
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 5,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Google Summer of Code 2026: Contribution guide",
+            "url": "https:\/\/forums.percona.com\/t\/google-summer-of-code-2026-contribution-guide\/4",
+            "date": "2026-02-09"
+        },
+        {
+            "topic_title": "Google Summer of Code 2026: Contribution guide",
+            "url": "https:\/\/forums.percona.com\/t\/google-summer-of-code-2026-contribution-guide\/6",
+            "date": "2026-02-09"
+        },
+        {
+            "topic_title": "Google Summer of Code 2026: Contribution guide",
+            "url": "https:\/\/forums.percona.com\/t\/google-summer-of-code-2026-contribution-guide\/9",
+            "date": "2026-02-17"
+        },
+        {
+            "topic_title": "Google Summer of Code 2026: Contribution guide",
+            "url": "https:\/\/forums.percona.com\/t\/google-summer-of-code-2026-contribution-guide\/11",
+            "date": "2026-02-17"
+        },
+        {
+            "topic_title": "Google Summer of Code 2026: Contribution guide",
+            "url": "https:\/\/forums.percona.com\/t\/google-summer-of-code-2026-contribution-guide\/13",
+            "date": "2026-02-19"
+        }
+    ],
+    "forum_solutions": []
+}

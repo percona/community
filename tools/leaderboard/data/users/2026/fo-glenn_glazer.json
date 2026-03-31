@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-glenn_glazer",
+    "display_name": "Glenn_Glazer",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Glenn_Glazer",
+    "github_login": null,
+    "forum_username": "Glenn_Glazer",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Kubectl apply reports spurious errors with conflicts using the Percona yaml",
+            "url": "https:\/\/forums.percona.com\/t\/kubectl-apply-reports-spurious-errors-with-conflicts-using-the-percona-yaml",
+            "date": "2026-02-17"
+        },
+        {
+            "title": "How to connect PMM to the quickstart postgres database",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-connect-pmm-to-the-quickstart-postgres-database",
+            "date": "2026-02-19"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

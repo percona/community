@@ -1,0 +1,60 @@
+{
+    "user_key": "gh-drfaust92",
+    "display_name": "Ilia Lazebnik",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/33663870?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=DrFaust92",
+    "github_login": "DrFaust92",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 220,
+    "points_github": 220,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 2,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "psmdb - add tpl support for replsets",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/732",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2025-12-12",
+            "state": "closed"
+        },
+        {
+            "title": "Support OCI artifact releases for charts",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/721",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2025-12-05",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "PSMDB operator - support revisionhistorylimit",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/604",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2025-08-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPSMDB-1207 - add missing mongo pmm params",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/406",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-10-31",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

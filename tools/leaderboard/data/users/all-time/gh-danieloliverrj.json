@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-danieloliverrj",
+    "display_name": "Daniel Oliver",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/57630918?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=DanielOliverRJ",
+    "github_login": "DanielOliverRJ",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 200,
+    "points_github": 200,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PBM-1593 Use RetryReader when reading from Azure",
+            "url": "https:\/\/github.com\/percona\/percona-backup-mongodb\/pull\/1177",
+            "repo": "percona\/percona-backup-mongodb",
+            "date": "2025-08-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PBM-1329 Write to temporary file name and sync before renaming",
+            "url": "https:\/\/github.com\/percona\/percona-backup-mongodb\/pull\/954",
+            "repo": "percona\/percona-backup-mongodb",
+            "date": "2024-06-25",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

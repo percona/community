@@ -1,0 +1,37 @@
+{
+    "user_key": "gh-justinvtime",
+    "display_name": "JustInVTime",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/3274024?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=JustInVTime",
+    "github_login": "JustInVTime",
+    "forum_username": null,
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 100,
+    "points_github": 100,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 1,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Fixed indentation for proxysql image pull secrets",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/811",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-03-05",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

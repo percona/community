@@ -1,0 +1,701 @@
+{
+    "user_key": "gh-venkatesh-prasad-v",
+    "display_name": "Venkatesh Prasad",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/63641998?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=venkatesh-prasad-v",
+    "github_login": "venkatesh-prasad-v",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 7950,
+    "points_github": 7950,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 84,
+    "prs_merged": 78,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PS-9647: MySQL Perf Improvements",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5589",
+            "repo": "percona\/percona-server",
+            "date": "2025-04-17",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "Merge v2.7.1-1-dev branch to v2",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/277",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2025-04-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[8.4] PS-9719: changing binlog_transaction_dependency_tracking hit segmentation fault ",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5584",
+            "repo": "percona\/percona-server",
+            "date": "2025-04-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[8.0] PS-9719: changing binlog_transaction_dependency_tracking hit segmentation fault",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5583",
+            "repo": "percona\/percona-server",
+            "date": "2025-04-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix test run when using ${RUN_NAME}",
+            "url": "https:\/\/github.com\/Percona-QA\/perf-tests\/pull\/1",
+            "repo": "Percona-QA\/perf-tests",
+            "date": "2025-03-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4469: Implement clone support for SSTs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/2047",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-02-25",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4469: Implement clone support for SSTs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/2045",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-02-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4173: PXC node stalls with parallel replication workers executing…",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/2013",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-01-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4173: PXC node stalls with parallel replication workers executing…",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/2011",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-01-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[8.4] PXC-4173: PXC node stalls with parallel replication workers executing DDLs via async node",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/2010",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-01-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[8.0] PXC-4173: PXC node stalls with parallel replication workers executing…",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/2008",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-01-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[8.0] PXC-4173: PXC node stalls with parallel replication workers executing…",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1993",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-01-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[8.4] PXC-4173: PXC node stalls with parallel replication workers executing DDLs via async node",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1992",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2025-01-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1499: ProxySQL 2.7.1-1 release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/275",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-11-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1499: ProxySQL 2.7.1-1 release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/274",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-11-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2977",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2975",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2972",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Remove weekly triggers for PXC-5.7 param job",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2969",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2968",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2967",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2963",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-11-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1465: ProxySQL 2.7.1",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/273",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-11-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-534: ProxySQL 2.7.1-1 release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/272",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-11-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "DISTMYSQL-432: inject-errant-tagged-gtid test fails with 8.4.2 server",
+            "url": "https:\/\/github.com\/percona\/orchestrator\/pull\/52",
+            "repo": "percona\/orchestrator",
+            "date": "2024-11-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1465: ProxySQL 2.7.1",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/271",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-10-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1453: ProxySQL 2.6.5 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/270",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-09-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (update submodule pointer)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1948",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (Merge galera-4.20)",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/287",
+            "repo": "percona\/galera",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1453: ProxySQL 2.6.5 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/269",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-09-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-518: Add systemd unit for proxysql --inital",
+            "url": "https:\/\/github.com\/percona\/proxysql-packaging\/pull\/73",
+            "repo": "percona\/proxysql-packaging",
+            "date": "2024-09-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (Fix compilation failure with",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1939",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-08-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (Fix compilation failure with",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/285",
+            "repo": "percona\/galera",
+            "date": "2024-08-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (Merge galera-4.20)",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/284",
+            "repo": "percona\/galera",
+            "date": "2024-08-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (Update wsrep-lib)",
+            "url": "https:\/\/github.com\/percona\/wsrep-lib\/pull\/21",
+            "repo": "percona\/wsrep-lib",
+            "date": "2024-08-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 (Update wsrep-API)",
+            "url": "https:\/\/github.com\/percona\/wsrep-API\/pull\/9",
+            "repo": "percona\/wsrep-API",
+            "date": "2024-08-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4407: PXC 8.0.37 refresh - Q2 2024 ",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1937",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-08-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4434: Merge PS 5.7.44-50 Q2 2024",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1932",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-06-20",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4173: PXC node stalls with parallel replication workers executing DDLs via async node",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1927",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-06-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1400: RM-1400: ProxySQL 2.6.3 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/267",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-06-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1400: ProxySQL 2.6.3 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/266",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-06-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "DISTMYSQL 412: Orchestrator should handle tagged GTIDs",
+            "url": "https:\/\/github.com\/percona\/orchestrator\/pull\/39",
+            "repo": "percona\/orchestrator",
+            "date": "2024-05-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Bump MySQL and PS versions for PXB testing on Jenkins",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2653",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-05-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXB-3283: Column %s precise type mismatch error while importing a tablespace (trunk)",
+            "url": "https:\/\/github.com\/percona\/percona-xtrabackup\/pull\/1560",
+            "repo": "percona\/percona-xtrabackup",
+            "date": "2024-05-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PS-9219: MySQL converts collation of date data type in ibd but data dictionary (trunk)",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5295",
+            "repo": "percona\/percona-server",
+            "date": "2024-05-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXB-3283: Column %s precise type mismatch error while importing a tablespace (8.0)",
+            "url": "https:\/\/github.com\/percona\/percona-xtrabackup\/pull\/1559",
+            "repo": "percona\/percona-xtrabackup",
+            "date": "2024-05-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PS-9219: MySQL converts collation of date data type in ibd but data dictionary (8.0) ",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5294",
+            "repo": "percona\/percona-server",
+            "date": "2024-05-20",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Support go version 1.22",
+            "url": "https:\/\/github.com\/percona\/orchestrator\/pull\/37",
+            "repo": "percona\/orchestrator",
+            "date": "2024-05-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update submodule pointer with the updated go.sum",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/265",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Bump go version to 1.21",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2622",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-04-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update pxc_scheduler_handler submodule pointer",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/264",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4386: PXC 8.2.0 refresh - Q4 2023 (Set PXB versions)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1905",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1376: ProxySQL 2.6.2 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/263",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1376: ProxySQL 2.6.2 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/262",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1376: Jenkins adjustments for ProxySQL-2.6.2",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2602",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-04-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1376: ProxySQL 2.6.2 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/261",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-513: FIx shellcheck errors",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/260",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-511: proxysql-admin syncusers hangs at 1000 DB user or above",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/259",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-04-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4386: PXC 8.2.0 refresh - Q4 2023 (Fix MTR failures)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1901",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": " PXC-4386: PXC 8.2.0 refresh - Q4 2023 (Fix MTR failures)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1898",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4369: PXC 8.0.36 refresh - Q1 2024 (Fix build errors)",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2588",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-04-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4365: PXC nodes leave cluster when row size is too large and has more than 3 NVARCHAR columns (trunk)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1894",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4341: Executing prepared statement can abort node after FLUSH TABLES (trunk)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1893",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4386: PXC 8.0.36 refresh - Q1 2024 (Fixed MTR failures)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1892",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4369: PXC 8.0.36 refresh - Q1 2024 (Fix compilation errors on CentOS-7)",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1890",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-04-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4369: PXC 8.0.36 refresh - Q1 2024 (Fix compilation errors on CentOS-7)",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/278",
+            "repo": "percona\/galera",
+            "date": "2024-03-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4386: PXC 8.2.0 refresh - Q4 2023 (Remove binlog_57_decryption suite",
+            "url": "https:\/\/github.com\/Percona-Lab\/jenkins-pipelines\/pull\/2580",
+            "repo": "Percona-Lab\/jenkins-pipelines",
+            "date": "2024-03-28",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4386: PXC 8.2.0 refresh - Q4 2023 ",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1885",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-03-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4369: PXC 8.0.36 refresh - Q1 2024 (Disable appending zero-level",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/277",
+            "repo": "percona\/galera",
+            "date": "2024-03-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update wsrep-lib",
+            "url": "https:\/\/github.com\/percona\/wsrep-lib\/pull\/20",
+            "repo": "percona\/wsrep-lib",
+            "date": "2024-03-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4369: PXC 8.0.36 refresh - Q1 2024",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1881",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Release v2.5.5-1",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/258",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-03-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1284: Merge release-8.0.35 to trunk",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1879",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-02-27",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "RM-1359: ProxySQL 2.5.5-1 Release",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/257",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-02-20",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PSQLADM-506: Update systemd file from proxysql sources",
+            "url": "https:\/\/github.com\/percona\/proxysql-packaging\/pull\/64",
+            "repo": "percona\/proxysql-packaging",
+            "date": "2024-02-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PS-9071: Merge MySQL 8.3.0 (Fix compilation error on Azure Pipelines)",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5228",
+            "repo": "percona\/percona-server",
+            "date": "2024-02-12",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[8.3] PS-9018: Replica stalls completely when log_replica_updates=0 and a local DDL executed",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5226",
+            "repo": "percona\/percona-server",
+            "date": "2024-02-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4378: Make the dev-helper.cmake file to download PXB-8.1 automoatically",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1877",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-02-12",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4369: Merge Galera-4.17",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/276",
+            "repo": "percona\/galera",
+            "date": "2024-02-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update the pxc_scheduler_handler submodule to include new bugfixes and features",
+            "url": "https:\/\/github.com\/percona\/proxysql-admin-tool\/pull\/254",
+            "repo": "percona\/proxysql-admin-tool",
+            "date": "2024-01-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4365: PXC nodes leave cluster when row size is too large and has more than 3 NVARCHAR columns.",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1874",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-01-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4365: PXC nodes leave cluster when row size is too large and has more than 3 NVARCHAR columns.",
+            "url": "https:\/\/github.com\/percona\/galera\/pull\/274",
+            "repo": "percona\/galera",
+            "date": "2024-01-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PS-9018: Replica stalls completely when log_replica_updates=0 and a local DDL executed",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5206",
+            "repo": "percona\/percona-server",
+            "date": "2024-01-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PXC-4341: Executing prepared statement can abort node after FLUSH TABLES",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster\/pull\/1867",
+            "repo": "percona\/percona-xtradb-cluster",
+            "date": "2024-01-03",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

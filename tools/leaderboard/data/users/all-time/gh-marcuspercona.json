@@ -1,0 +1,93 @@
+{
+    "user_key": "gh-marcuspercona",
+    "display_name": "MarcusPercona",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/159548722?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=MarcusPercona",
+    "github_login": "MarcusPercona",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 425,
+    "points_github": 425,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 8,
+    "prs_merged": 3,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "[Snyk] Upgrade dijit from 1.16.3 to 1.17.3",
+            "url": "https:\/\/github.com\/percona\/percona-xtrabackup\/pull\/1568",
+            "repo": "percona\/percona-xtrabackup",
+            "date": "2024-05-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Upgrade dojo from 1.16.2 to 1.17.3",
+            "url": "https:\/\/github.com\/percona\/percona-xtrabackup\/pull\/1567",
+            "repo": "percona\/percona-xtrabackup",
+            "date": "2024-05-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Upgrade playwright and playwright\/test from 1.42.1 to 1.44.1",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/245",
+            "repo": "percona\/everest",
+            "date": "2024-04-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Upgrade @playwright\/test from 1.42.1 to 1.43.0",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/244",
+            "repo": "percona\/everest",
+            "date": "2024-04-26",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Fix for 1 vulnerabilities",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/736",
+            "repo": "percona\/grafana",
+            "date": "2024-03-26",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Fix for 3 vulnerabilities",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/726",
+            "repo": "percona\/grafana",
+            "date": "2024-03-22",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Upgrade @playwright\/test from 1.41.2 to 1.42.0",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/102",
+            "repo": "percona\/everest",
+            "date": "2024-03-20",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[Snyk] Upgrade playwright from 1.41.2 to 1.42.0",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/101",
+            "repo": "percona\/everest",
+            "date": "2024-03-20",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

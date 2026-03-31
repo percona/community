@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-yash_daga",
+    "display_name": "Yash Daga",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/yash_daga\/120\/22569_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Yash_Daga",
+    "github_login": null,
+    "forum_username": "Yash_Daga",
+    "period": "2026-01",
+    "period_label": "January 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "How to mount keyring using extraPVC in percona 1.19.0",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-mount-keyring-using-extrapvc-in-percona-1-19-0",
+            "date": "2026-01-21"
+        },
+        {
+            "title": "Cannot specify custom --transition-key for XtraBackup in Percona PXC Cluster",
+            "url": "https:\/\/forums.percona.com\/t\/cannot-specify-custom-transition-key-for-xtrabackup-in-percona-pxc-cluster",
+            "date": "2026-01-29"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,46 @@
+{
+    "user_key": "fo-jtlarson",
+    "display_name": "jtlarson",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/j\/ac8455\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=jtlarson",
+    "github_login": null,
+    "forum_username": "jtlarson",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 57,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 57,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 1,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Resolving excessive binlog growth on mysql 8.4 xtradb cluster",
+            "url": "https:\/\/forums.percona.com\/t\/resolving-excessive-binlog-growth-on-mysql-8-4-xtradb-cluster",
+            "date": "2025-05-23"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Questions regarding node starts & table locks",
+            "url": "https:\/\/forums.percona.com\/t\/questions-regarding-node-starts-table-locks\/8",
+            "date": "2025-09-22"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Questions regarding node starts & table locks",
+            "url": "https:\/\/forums.percona.com\/t\/questions-regarding-node-starts-table-locks\/8",
+            "date": "2025-09-22"
+        }
+    ]
+}

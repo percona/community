@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-lbmdkap",
+    "display_name": "lbmdkap",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/l\/c37758\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=lbmdkap",
+    "github_login": null,
+    "forum_username": "lbmdkap",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Out of memory doing import",
+            "url": "https:\/\/forums.percona.com\/t\/out-of-memory-doing-import",
+            "date": "2026-01-20"
+        },
+        {
+            "title": "Avoid OOM for the MySQL Service",
+            "url": "https:\/\/forums.percona.com\/t\/avoid-oom-for-the-mysql-service",
+            "date": "2026-02-10"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

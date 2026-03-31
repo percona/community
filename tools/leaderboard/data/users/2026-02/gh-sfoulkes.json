@@ -1,0 +1,36 @@
+{
+    "user_key": "gh-sfoulkes",
+    "display_name": "Stephen Foulkes",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/951736?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=sfoulkes",
+    "github_login": "sfoulkes",
+    "forum_username": null,
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 10,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Physical restores fail due to database logs",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2229",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-02-05",
+            "state": "open"
+        }
+    ],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

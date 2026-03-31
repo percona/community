@@ -1,0 +1,200 @@
+{
+    "user_key": "fo-naresh9999",
+    "display_name": "Naresh9999",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/naresh9999\/120\/5568_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Naresh9999",
+    "github_login": null,
+    "forum_username": "Naresh9999",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 131,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 131,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 21,
+    "replies": 13,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "PostgreSQL Query is trimming in the QAN dashboard",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-query-is-trimming-in-the-qan-dashboard",
+            "date": "2024-09-03"
+        },
+        {
+            "title": "PostgreSQL High CPU utilization Issue while doing load test",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-high-cpu-utilization-issue-while-doing-load-test",
+            "date": "2024-09-05"
+        },
+        {
+            "title": "Is PMM supports AlloyDB",
+            "url": "https:\/\/forums.percona.com\/t\/is-pmm-supports-alloydb",
+            "date": "2024-09-26"
+        },
+        {
+            "title": "How configure the pgbouncer wth hba auth method",
+            "url": "https:\/\/forums.percona.com\/t\/how-configure-the-pgbouncer-wth-hba-auth-method",
+            "date": "2024-09-30"
+        },
+        {
+            "title": "Update button is showing latest version 2.43.0 instead 2.43.1",
+            "url": "https:\/\/forums.percona.com\/t\/update-button-is-showing-latest-version-2-43-0-instead-2-43-1",
+            "date": "2024-10-03"
+        },
+        {
+            "title": "How to fetch the slow queries from the QAN database",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-fetch-the-slow-queries-from-the-qan-database",
+            "date": "2024-10-10"
+        },
+        {
+            "title": "PostgreSQL custom query is not working",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-custom-query-is-not-working",
+            "date": "2024-10-15"
+        },
+        {
+            "title": "Clickhouse FATAL can't find command '\/usr\/bin\/clickhouse-server'",
+            "url": "https:\/\/forums.percona.com\/t\/clickhouse-fatal-cant-find-command-usr-bin-clickhouse-server",
+            "date": "2024-10-23"
+        },
+        {
+            "title": "QAN MariaDB Example query is trimmed",
+            "url": "https:\/\/forums.percona.com\/t\/qan-mariadb-example-query-is-trimmed",
+            "date": "2024-10-28"
+        },
+        {
+            "title": "QAN does not show the PostgreSQL queries with Full Table scan",
+            "url": "https:\/\/forums.percona.com\/t\/qan-does-not-show-the-postgresql-queries-with-full-table-scan",
+            "date": "2024-11-06"
+        },
+        {
+            "title": "Unfortunately, PMM2 Data Source Default is unchecked",
+            "url": "https:\/\/forums.percona.com\/t\/unfortunately-pmm2-data-source-default-is-unchecked",
+            "date": "2024-11-13"
+        },
+        {
+            "title": "PMM3: Unable to connect the click house DB externally from DBeaver or other tools",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-unable-to-connect-the-click-house-db-externally-from-dbeaver-or-other-tools",
+            "date": "2025-02-13"
+        },
+        {
+            "title": "Error running query on database cprt_dba_pgsql_cpu_mem_cal_per_query pq: relation pg_activity_with_cpu_mem does not exist",
+            "url": "https:\/\/forums.percona.com\/t\/error-running-query-on-database-cprt-dba-pgsql-cpu-mem-cal-per-query-pq-relation-pg-activity-with-cpu-mem-does-not-exist",
+            "date": "2025-03-13"
+        },
+        {
+            "title": "How to remove PMM2 volume safely after upgrading to PMM3 version",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-remove-pmm2-volume-safely-after-upgrading-to-pmm3-version",
+            "date": "2025-04-08"
+        },
+        {
+            "title": "QAN: unused index columns and full tbl scan columns are always empty",
+            "url": "https:\/\/forums.percona.com\/t\/qan-unused-index-columns-and-full-tbl-scan-columns-are-always-empty",
+            "date": "2025-04-22"
+        },
+        {
+            "title": "After upgrade the agent from 3.1.0 to 3.2.0 agent then MariaDB service state always Down (MariaDB 10.6 version or higher versions)",
+            "url": "https:\/\/forums.percona.com\/t\/after-upgrade-the-agent-from-3-1-0-to-3-2-0-agent-then-mariadb-service-state-always-down-mariadb-10-6-version-or-higher-versions",
+            "date": "2025-06-06"
+        },
+        {
+            "title": "QAN API is Down after upgrade the PMM server from 2.44.0 to 3.2.0 version",
+            "url": "https:\/\/forums.percona.com\/t\/qan-api-is-down-after-upgrade-the-pmm-server-from-2-44-0-to-3-2-0-version",
+            "date": "2025-06-18"
+        },
+        {
+            "title": "DB::Exception: default: Authentication failed: password is incorrect, or there is no user with such name",
+            "url": "https:\/\/forums.percona.com\/t\/db-default-authentication-failed-password-is-incorrect-or-there-is-no-user-with-such-name",
+            "date": "2025-06-18"
+        },
+        {
+            "title": "PMM3 | PostgreSQL | Inside container FATAL: role does not exist",
+            "url": "https:\/\/forums.percona.com\/t\/pmm3-postgresql-inside-container-fatal-role-does-not-exist",
+            "date": "2025-06-24"
+        },
+        {
+            "title": "Need confirmation about the variable pg_stat_monitor.pgsm_enable_query_plan",
+            "url": "https:\/\/forums.percona.com\/t\/need-confirmation-about-the-variable-pg-stat-monitor-pgsm-enable-query-plan",
+            "date": "2025-10-29"
+        },
+        {
+            "title": "PostgreSQL:PMM agent queries are consuming more CPU's",
+            "url": "https:\/\/forums.percona.com\/t\/postgresql-pmm-agent-queries-are-consuming-more-cpus",
+            "date": "2025-11-18"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "MySQL Query Performance Troubleshooting doesn't show queries",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-query-performance-troubleshooting-doesnt-show-queries\/6",
+            "date": "2024-10-08"
+        },
+        {
+            "topic_title": "We want your feedback to make PMM even better!",
+            "url": "https:\/\/forums.percona.com\/t\/we-want-your-feedback-to-make-pmm-even-better\/5",
+            "date": "2024-10-26"
+        },
+        {
+            "topic_title": "We want your feedback to make PMM even better!",
+            "url": "https:\/\/forums.percona.com\/t\/we-want-your-feedback-to-make-pmm-even-better\/7",
+            "date": "2024-10-28"
+        },
+        {
+            "topic_title": "Pmm v3 update not possible",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-update-not-possible\/12",
+            "date": "2025-07-10"
+        },
+        {
+            "topic_title": "Pmm v3 update not possible",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-update-not-possible\/14",
+            "date": "2025-07-11"
+        },
+        {
+            "topic_title": "Pmm v3 update not possible",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-v3-update-not-possible\/15",
+            "date": "2025-07-11"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/9",
+            "date": "2025-06-23"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/11",
+            "date": "2025-06-23"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/13",
+            "date": "2025-06-23"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/15",
+            "date": "2025-06-23"
+        },
+        {
+            "topic_title": "PMM server is not receiving metrics from client",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-is-not-receiving-metrics-from-client\/17",
+            "date": "2025-06-23"
+        },
+        {
+            "topic_title": "PMMBackupRestore script updated to work with PMM3 (mostly)",
+            "url": "https:\/\/forums.percona.com\/t\/pmmbackuprestore-script-updated-to-work-with-pmm3-mostly\/2",
+            "date": "2025-08-15"
+        },
+        {
+            "topic_title": "Choose a monitoring extension pg_stat_monitor",
+            "url": "https:\/\/forums.percona.com\/t\/choose-a-monitoring-extension-pg-stat-monitor\/3",
+            "date": "2025-11-18"
+        }
+    ],
+    "forum_solutions": []
+}

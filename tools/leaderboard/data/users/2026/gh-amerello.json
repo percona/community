@@ -1,0 +1,52 @@
+{
+    "user_key": "gh-amerello",
+    "display_name": "amerello",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/2496271?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=amerello",
+    "github_login": "amerello",
+    "forum_username": null,
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 120,
+    "points_github": 120,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 2,
+    "prs_created": 1,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "The `psmdb-db` chart appears to render the wrong field `storageAutoscaling` name in the `PerconaServerMongoDB` custom resource",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/812",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-03-09",
+            "state": "closed"
+        },
+        {
+            "title": "Restore fails with x509: certificate signed by unknown authority when using custom CA bundle with MinIO storage (PSMDB Operator 1.22.0)",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2257",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-02-26",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "Rename `storageAutoscaling` to `storageScaling` in values and templates",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/813",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-03-09",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,61 @@
+{
+    "user_key": "gh-btriller",
+    "display_name": "Bastian Triller",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/851727?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=btriller",
+    "github_login": "btriller",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 250,
+    "points_github": 250,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 4,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "MySQL\/MyRocks: Add missing label filters",
+            "url": "https:\/\/github.com\/percona\/grafana-dashboards\/pull\/1744",
+            "repo": "percona\/grafana-dashboards",
+            "date": "2025-12-11",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "release-notes: Fix version",
+            "url": "https:\/\/github.com\/percona\/pxc-docs\/pull\/297",
+            "repo": "percona\/pxc-docs",
+            "date": "2025-12-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "OS\/Network_Details: Fix TCP counters",
+            "url": "https:\/\/github.com\/percona\/grafana-dashboards\/pull\/1649",
+            "repo": "percona\/grafana-dashboards",
+            "date": "2025-01-21",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "OS\/Network_Details: Fix outgoing resets\/segments not shown",
+            "url": "https:\/\/github.com\/percona\/grafana-dashboards\/pull\/1587",
+            "repo": "percona\/grafana-dashboards",
+            "date": "2024-04-05",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

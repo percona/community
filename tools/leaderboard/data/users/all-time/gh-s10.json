@@ -1,0 +1,101 @@
+{
+    "user_key": "gh-s10",
+    "display_name": "Vlad Gusev",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/540697?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=s10",
+    "github_login": "s10",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 810,
+    "points_github": 810,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 8,
+    "prs_merged": 8,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Cluster reconciliation doesn't work if storage is bigger than requested",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/1804",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-08-28",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPXC-1567: binlog-collector: normalize duplicate slashes in the bucket path",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1943",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2025-01-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "fix: don't add the storage name twice to the scheduled backup name",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1923",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-12-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1544: Add basic Prometheus metrics for binlog-collector",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1916",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-12-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1543: set controller reference for binlog-collector deployment",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1880",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-11-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1500: Allow to pass activeDeadlineSeconds option to backup jobs",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1863",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-11-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1482: Add waiting period after peer list update",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1854",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-10-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1462: Restart PXC pods after monitor user password change",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1816",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-09-13",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPXC-1456: Add support for custom SecurityContext for initContainers",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/pull\/1808",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2024-08-30",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

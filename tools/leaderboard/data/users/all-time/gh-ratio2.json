@@ -1,0 +1,84 @@
+{
+    "user_key": "gh-ratio2",
+    "display_name": "Aleksey Vasenev",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/2958497?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=Ratio2",
+    "github_login": "Ratio2",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 520,
+    "points_github": 520,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 2,
+    "prs_created": 5,
+    "prs_merged": 5,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Full backup by schedule does not work for a second database with the same name in a different namespace",
+            "url": "https:\/\/github.com\/percona\/percona-postgresql-operator\/issues\/693",
+            "repo": "percona\/percona-postgresql-operator",
+            "date": "2024-03-18",
+            "state": "closed"
+        },
+        {
+            "title": "Differential backup missing in pg-db",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/303",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-03-16",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPG-563  - pg-db: Fix multiple labels for topologySpreadConstraints",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/321",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-04-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPG-562 - pg-db: Support for incremental backups",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/320",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-04-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPG-546  - pg-db: restore without postgresCluster, options for pgbackrest, restore from gcs and azure",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/318",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-04-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPG-541  - pg-db: fix differential schedule, any repository combinations",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/316",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-04-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPG-528 - Passing the schedule as a string to allow an asterisk at the beginning",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/306",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-03-18",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

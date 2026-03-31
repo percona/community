@@ -1,0 +1,581 @@
+{
+    "user_key": "gh-rui902",
+    "display_name": "Rui Costa",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/11246700?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=rui902",
+    "github_login": "rui902",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 6750,
+    "points_github": 6750,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 69,
+    "prs_merged": 67,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "CPE-602 \/ CPE-603 - Fix agent connection problems",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/232",
+            "repo": "percona\/cpe",
+            "date": "2024-12-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Attempted to improve the logging of FastAPI errors",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/228",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Fixes Multiple Head Migrations error on production",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/223",
+            "repo": "percona\/cpe",
+            "date": "2024-12-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CPE-581 Index Insights",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/199",
+            "repo": "percona\/cpe",
+            "date": "2024-12-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CPE-578 Added logic to filter unwanted cloudwatch alarms",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/181",
+            "repo": "percona\/cpe",
+            "date": "2024-12-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CPE-577 Added insights column",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/171",
+            "repo": "percona\/cpe",
+            "date": "2024-11-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Changed cloudwatch client from the sync boto3 library to the async aioboto3",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/170",
+            "repo": "percona\/cpe",
+            "date": "2024-11-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added time intervals between explain commands; improved the explain f…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/169",
+            "repo": "percona\/cpe",
+            "date": "2024-11-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CPE-570: Added query id and query fingerprint persistence in the main database",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/166",
+            "repo": "percona\/cpe",
+            "date": "2024-11-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CPE-565 \/ CPE-566 : Integration with SQS to create the Query Issues from the CloudWatch Alarms",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/159",
+            "repo": "percona\/cpe",
+            "date": "2024-11-22",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added database port",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/155",
+            "repo": "percona\/cpe",
+            "date": "2024-11-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Forced some specific query ids to be pushed to cloudwatch",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/154",
+            "repo": "percona\/cpe",
+            "date": "2024-11-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Minor change in rclone script",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/153",
+            "repo": "percona\/cpe",
+            "date": "2024-11-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CPE-540: Added synthetic data generation for postgresql",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/152",
+            "repo": "percona\/cpe",
+            "date": "2024-11-15",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Adding EXPLAIN outputs",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/144",
+            "repo": "percona\/cpe",
+            "date": "2024-10-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Attempted to fix the issue with the broker sudden burst of events",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/143",
+            "repo": "percona\/cpe",
+            "date": "2024-10-31",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added pg_stat_statements monitoring",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/136",
+            "repo": "percona\/cpe",
+            "date": "2024-10-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added missing logic in the agent conf file; Minor fixes",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/134",
+            "repo": "percona\/cpe",
+            "date": "2024-10-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed logic in the monitoring agent causing multiple events being sen…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/133",
+            "repo": "percona\/cpe",
+            "date": "2024-10-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Extra fixes",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/128",
+            "repo": "percona\/cpe",
+            "date": "2024-10-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Improved logging for both API and monitoring agent; Added secret valu…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/127",
+            "repo": "percona\/cpe",
+            "date": "2024-10-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixing ECS issues",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/126",
+            "repo": "percona\/cpe",
+            "date": "2024-10-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Minor fix",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/125",
+            "repo": "percona\/cpe",
+            "date": "2024-10-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Minor updates to allow the new PG credentials to be parsed during the…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/124",
+            "repo": "percona\/cpe",
+            "date": "2024-10-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Enabled local development with configurable credentials for the Rabbi…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/123",
+            "repo": "percona\/cpe",
+            "date": "2024-10-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Created new company for every new user; added source_metadata field t…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/122",
+            "repo": "percona\/cpe",
+            "date": "2024-10-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Merge branch 'main' into feature\/be-revert-hardcoded-demo",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/121",
+            "repo": "percona\/cpe",
+            "date": "2024-10-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Testing the new broker address",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/120",
+            "repo": "percona\/cpe",
+            "date": "2024-10-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Testing the new broker address",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/119",
+            "repo": "percona\/cpe",
+            "date": "2024-10-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Testing the new broker address",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/118",
+            "repo": "percona\/cpe",
+            "date": "2024-10-01",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Reverted missing broker host setting",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/117",
+            "repo": "percona\/cpe",
+            "date": "2024-09-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added db_status to be tracked from AWS itself; Added capitalization i…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/116",
+            "repo": "percona\/cpe",
+            "date": "2024-09-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Removed hardcoded credentials and logs with sensitive data; Kept the …",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/114",
+            "repo": "percona\/cpe",
+            "date": "2024-09-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Applied same CF environment parsing logic for username and password",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/112",
+            "repo": "percona\/cpe",
+            "date": "2024-09-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added fallback check for the local hostname of the RMQ_HOST setting",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/111",
+            "repo": "percona\/cpe",
+            "date": "2024-09-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added validations for incorrectly configured ECS Environment Variables",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/110",
+            "repo": "percona\/cpe",
+            "date": "2024-09-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added Aliases to the Customer Service Settings",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/109",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Updated Monitoring Agent Settings Defaults",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/108",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Improvements to the inventory and inventory agent status tracking",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/107",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Reduced some extreme logging in the OAuth2 Middleware, and other improvements",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/106",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixing ARN role and Inventory updates",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/105",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed OAuth2 hack issue with x-customer-id header",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/104",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed \/ applied changes targeted for September's Demo",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/103",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added backwards compatibility hack for the requests authentication pr…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/102",
+            "repo": "percona\/cpe",
+            "date": "2024-09-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed inventory bug not showing some entries",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/99",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix build issue",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/98",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix build issue",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/97",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix build issue",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/96",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix build issue",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/95",
+            "repo": "percona\/cpe",
+            "date": "2024-09-25",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added manual ACK for the long running callback",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/94",
+            "repo": "percona\/cpe",
+            "date": "2024-09-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Backend Okta Auth",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/93",
+            "repo": "percona\/cpe",
+            "date": "2024-09-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Minor linter changes",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/92",
+            "repo": "percona\/cpe",
+            "date": "2024-09-23",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added Cloud Provider tracking to the database, and two endpoints to a…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/90",
+            "repo": "percona\/cpe",
+            "date": "2024-09-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed most of the raised concerns in the query issues endpoint and da…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/89",
+            "repo": "percona\/cpe",
+            "date": "2024-09-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix the query issues data structure",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/88",
+            "repo": "percona\/cpe",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added count and total to the query issues endpoint",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/87",
+            "repo": "percona\/cpe",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Adding enhancements to the query issues endpoint and table",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/86",
+            "repo": "percona\/cpe",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added Query Issues Table; Added API Endpoints to list, dismiss, and u…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/85",
+            "repo": "percona\/cpe",
+            "date": "2024-09-10",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added both customer backend workflows",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/82",
+            "repo": "percona\/cpe",
+            "date": "2024-09-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added latest version of the backend code for the new attune v1 iteration",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/67",
+            "repo": "percona\/cpe",
+            "date": "2024-08-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Multi-DB Processing + Inventory",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/59",
+            "repo": "percona\/cpe",
+            "date": "2024-08-07",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "BE - New API Definitions (Open API) and historical data",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/57",
+            "repo": "percona\/cpe",
+            "date": "2024-07-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "New locks format (v2) and other improvements",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/50",
+            "repo": "percona\/cpe",
+            "date": "2024-07-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix Access Logs to ignore logging the health endpoint; minor improvem…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/48",
+            "repo": "percona\/cpe",
+            "date": "2024-07-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixes the bug when multiple streams read from the same database",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/47",
+            "repo": "percona\/cpe",
+            "date": "2024-07-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "POC tweaks",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/45",
+            "repo": "percona\/cpe",
+            "date": "2024-07-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fixed the time between real-time query updates; fixed sending locks b…",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/38",
+            "repo": "percona\/cpe",
+            "date": "2024-07-09",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Formatting Stream Endpoints",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/31",
+            "repo": "percona\/cpe",
+            "date": "2024-07-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "WIP - Backend POC ",
+            "url": "https:\/\/github.com\/percona\/cpe\/pull\/5",
+            "repo": "percona\/cpe",
+            "date": "2024-07-03",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

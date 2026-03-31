@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-zpascal",
+    "display_name": "Pascal Zimmermann",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/13447634?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=ZPascal",
+    "github_login": "ZPascal",
+    "forum_username": null,
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 110,
+    "points_github": 110,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 1,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Missing binaries for v0.48.0",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/issues\/1241",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2026-02-11",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "feat: Add buildx support in goreleaser configuration for amd64",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/pull\/1244",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2026-02-19",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

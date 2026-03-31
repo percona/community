@@ -1,0 +1,50 @@
+{
+    "user_key": "fo-thanhht2",
+    "display_name": "thanhht2",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/thanhht2\/120\/23001_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=thanhht2",
+    "github_login": null,
+    "forum_username": "thanhht2",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 56,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 56,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 3,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Cross-cluster restore fails with \"backup meta: not found\" error despite metadata existing in S3",
+            "url": "https:\/\/forums.percona.com\/t\/cross-cluster-restore-fails-with-backup-meta-not-found-error-despite-metadata-existing-in-s3\/9",
+            "date": "2026-01-14"
+        },
+        {
+            "topic_title": "Cross-cluster restore fails with \"backup meta: not found\" error despite metadata existing in S3",
+            "url": "https:\/\/forums.percona.com\/t\/cross-cluster-restore-fails-with-backup-meta-not-found-error-despite-metadata-existing-in-s3\/11",
+            "date": "2026-01-15"
+        },
+        {
+            "topic_title": "Cross-cluster restore fails with \"backup meta: not found\" error despite metadata existing in S3",
+            "url": "https:\/\/forums.percona.com\/t\/cross-cluster-restore-fails-with-backup-meta-not-found-error-despite-metadata-existing-in-s3\/13",
+            "date": "2026-01-15"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Cross-cluster restore fails with \"backup meta: not found\" error despite metadata existing in S3",
+            "url": "https:\/\/forums.percona.com\/t\/cross-cluster-restore-fails-with-backup-meta-not-found-error-despite-metadata-existing-in-s3\/13",
+            "date": "2026-01-15"
+        }
+    ]
+}

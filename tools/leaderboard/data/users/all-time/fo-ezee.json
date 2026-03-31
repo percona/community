@@ -1,0 +1,56 @@
+{
+    "user_key": "fo-ezee",
+    "display_name": "Ezhilan Ulaganathan",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/e\/bbe5ce\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=ezee",
+    "github_login": null,
+    "forum_username": "ezee",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 64,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 64,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 2,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Restore PBM backup onto only one node (for initial sync)",
+            "url": "https:\/\/forums.percona.com\/t\/restore-pbm-backup-onto-only-one-node-for-initial-sync",
+            "date": "2024-11-06"
+        },
+        {
+            "title": "PBM sharded cluster 100 TB",
+            "url": "https:\/\/forums.percona.com\/t\/pbm-sharded-cluster-100-tb",
+            "date": "2025-07-28"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Table partitioning - is there any way to crate partition table manually",
+            "url": "https:\/\/forums.percona.com\/t\/table-partitioning-is-there-any-way-to-crate-partition-table-manually\/3",
+            "date": "2025-07-30"
+        },
+        {
+            "topic_title": "Mongo 7.0.15-9 and Release of Open Files",
+            "url": "https:\/\/forums.percona.com\/t\/mongo-7-0-15-9-and-release-of-open-files\/4",
+            "date": "2025-08-06"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Mongo 7.0.15-9 and Release of Open Files",
+            "url": "https:\/\/forums.percona.com\/t\/mongo-7-0-15-9-and-release-of-open-files\/4",
+            "date": "2025-08-06"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "user_key": "gh-x6uddy",
+    "display_name": "Alexander Volkov",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/117294450?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=X6uddy",
+    "github_login": "X6uddy",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 550,
+    "points_github": 550,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 7,
+    "prs_merged": 5,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "[UI]EVEREST-1070 replacing the restore icon",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/464",
+            "repo": "percona\/everest",
+            "date": "2024-06-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI]Everest 1004 max width for content container",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/287",
+            "repo": "percona\/everest",
+            "date": "2024-05-12",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "[UI]EVEREST-997-storybook-radio-group",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/267",
+            "repo": "percona\/everest",
+            "date": "2024-04-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI]Everest 992-storybook-text-field",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/266",
+            "repo": "percona\/everest",
+            "date": "2024-04-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] EVEREST-1005-Expand-divider-in-tabs-component changing the width …",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/242",
+            "repo": "percona\/everest",
+            "date": "2024-04-26",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "[UI] Everest 978 fix undefined",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/220",
+            "repo": "percona\/everest",
+            "date": "2024-04-20",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "EVEREST-978-fix-undefined added a check for undefined",
+            "url": "https:\/\/github.com\/percona\/everest\/pull\/218",
+            "repo": "percona\/everest",
+            "date": "2024-04-19",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

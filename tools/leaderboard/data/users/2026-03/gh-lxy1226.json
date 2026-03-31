@@ -1,0 +1,37 @@
+{
+    "user_key": "gh-lxy1226",
+    "display_name": "LXY",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/8820178?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=LXY1226",
+    "github_login": "LXY1226",
+    "forum_username": null,
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 25,
+    "points_github": 25,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 1,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "fix: is_object_exist false positive when S3-compatible storage returns NoSuchKey on stderr",
+            "url": "https:\/\/github.com\/percona\/percona-docker\/pull\/1298",
+            "repo": "percona\/percona-docker",
+            "date": "2026-03-18",
+            "merged": false,
+            "state": "open"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

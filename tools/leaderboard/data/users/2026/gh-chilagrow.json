@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-chilagrow",
+    "display_name": "Chi Fujii",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/24355139?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=chilagrow",
+    "github_login": "chilagrow",
+    "forum_username": null,
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 85,
+    "points_github": 85,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 0,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Add support for active passive replication",
+            "url": "https:\/\/github.com\/percona\/percona-xtradb-cluster-operator\/issues\/2346",
+            "repo": "percona\/percona-xtradb-cluster-operator",
+            "date": "2026-01-19",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "Update documentation for helm deployment",
+            "url": "https:\/\/github.com\/percona\/pmm\/pull\/4876",
+            "repo": "percona\/pmm",
+            "date": "2025-12-30",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

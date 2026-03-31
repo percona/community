@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-amerello",
+    "display_name": "amerello",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/2496271?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=amerello",
+    "github_login": "amerello",
+    "forum_username": null,
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 110,
+    "points_github": 110,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 1,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "The `psmdb-db` chart appears to render the wrong field `storageAutoscaling` name in the `PerconaServerMongoDB` custom resource",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/812",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-03-09",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "Rename `storageAutoscaling` to `storageScaling` in values and templates",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/813",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2026-03-09",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

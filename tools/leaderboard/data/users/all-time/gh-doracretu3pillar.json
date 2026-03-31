@@ -1,0 +1,309 @@
+{
+    "user_key": "gh-doracretu3pillar",
+    "display_name": "Dora",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/103416234?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=doracretu3pillar",
+    "github_login": "doracretu3pillar",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-20T15:45:12+00:00",
+    "points_total": 1925,
+    "points_github": 1925,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 32,
+    "prs_merged": 15,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PMM-13717: Errors appear when a user with a non-admin role logs in to PMM",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3852",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2025-02-19",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13717: Errors appear when a user with a non-admin role logs in to PMM",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/809",
+            "repo": "percona\/grafana",
+            "date": "2025-02-19",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13372: Replaced react-json-view with @microlink\/react-json-view",
+            "url": "https:\/\/github.com\/percona\/grafana-dashboards\/pull\/1654",
+            "repo": "percona\/grafana-dashboards",
+            "date": "2025-02-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13676: PMM Branded Logo in PMM generated Emails",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3835",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2025-01-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13676: PMM Branded Logo in PMM generated Emails",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/803",
+            "repo": "percona\/grafana",
+            "date": "2025-01-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13608: Dismiss modal API call",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3803",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-12-18",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "PMM-13414: refresh services",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3802",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-12-17",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13608: Dismiss modal API call ",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/794",
+            "repo": "percona\/grafana",
+            "date": "2024-12-17",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13414: Refresh data once at 5000ms",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/793",
+            "repo": "percona\/grafana",
+            "date": "2024-12-16",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13414: refresh services",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3795",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-12-12",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13451: Tabbed table content size and browser tab title",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3793",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-12-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13451: Tabbed table content size and browser tab title",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/790",
+            "repo": "percona\/grafana",
+            "date": "2024-12-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13472: Update Popup - Wording improvements",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3787",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-11-29",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13472: Update Popup - Wording improvements",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/789",
+            "repo": "percona\/grafana",
+            "date": "2024-11-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13520: Bug when creating new alert rule with filter MATCH",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3761",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-11-08",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13520: Bug when creating new alert rule with filter MATCH",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/785",
+            "repo": "percona\/grafana",
+            "date": "2024-11-08",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13259: Restores logs bug",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3756",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-11-06",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": " PMM-13259: Restores logs bug",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/783",
+            "repo": "percona\/grafana",
+            "date": "2024-11-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13259: Restore logs bug",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3755",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-11-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13259: Restores Logs bug",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/782",
+            "repo": "percona\/grafana",
+            "date": "2024-11-05",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13414: Refresh data once at 5000ms",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/780",
+            "repo": "percona\/grafana",
+            "date": "2024-10-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12910: Popup new version available",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3726",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-10-08",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12910: Popup new version available",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/776",
+            "repo": "percona\/grafana",
+            "date": "2024-09-28",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Pmm-13166: nodes monitor db",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3675",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-07-30",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13166: Ability to monitor DBs from a different node",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/766",
+            "repo": "percona\/grafana",
+            "date": "2024-07-29",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13254: Fixed the updatesEnable payload",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/764",
+            "repo": "percona\/grafana",
+            "date": "2024-07-24",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Pmm-12710: api fixes",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/763",
+            "repo": "percona\/grafana",
+            "date": "2024-07-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-13073: No configuration error",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/757",
+            "repo": "percona\/grafana",
+            "date": "2024-06-17",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "PMM-12710:  API breaking changes",
+            "url": "https:\/\/github.com\/percona\/grafana-dashboards\/pull\/1594",
+            "repo": "percona\/grafana-dashboards",
+            "date": "2024-04-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12710:  Api Breaking Changes",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/742",
+            "repo": "percona\/grafana",
+            "date": "2024-04-04",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Pmm-12988 switch fix",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3584",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2024-03-13",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12988: Bugs around PMM3 Backup management",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/721",
+            "repo": "percona\/grafana",
+            "date": "2024-03-13",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12390 Make the text search case insensitive",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3447",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-11-16",
+            "merged": false,
+            "state": "closed"
+        },
+        {
+            "title": "Pmm 12390 make the text search case insensitive",
+            "url": "https:\/\/github.com\/percona\/grafana\/pull\/698",
+            "repo": "percona\/grafana",
+            "date": "2023-11-14",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PMM-12443: ci.yml for PMM-12443_filter_for_backups branch",
+            "url": "https:\/\/github.com\/Percona-Lab\/pmm-submodules\/pull\/3380",
+            "repo": "Percona-Lab\/pmm-submodules",
+            "date": "2023-09-07",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

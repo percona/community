@@ -1,0 +1,50 @@
+{
+    "user_key": "gh-kongchenjiao",
+    "display_name": "kongchenjiao",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/35647366?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=kongchenjiao",
+    "github_login": "kongchenjiao",
+    "forum_username": null,
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 30,
+    "points_github": 30,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 3,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "This version 10.5.11-MariaDB-1 of the database is unable to collect data",
+            "url": "https:\/\/github.com\/percona\/pmm\/issues\/5037",
+            "repo": "percona\/pmm",
+            "date": "2026-02-14",
+            "state": "open"
+        },
+        {
+            "title": "Suggestion",
+            "url": "https:\/\/github.com\/percona\/pmm\/issues\/5029",
+            "repo": "percona\/pmm",
+            "date": "2026-02-12",
+            "state": "open"
+        },
+        {
+            "title": "Ask some questions",
+            "url": "https:\/\/github.com\/percona\/pmm\/issues\/5015",
+            "repo": "percona\/pmm",
+            "date": "2026-02-10",
+            "state": "closed"
+        }
+    ],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

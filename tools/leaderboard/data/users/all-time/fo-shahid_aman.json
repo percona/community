@@ -1,0 +1,71 @@
+{
+    "user_key": "fo-shahid_aman",
+    "display_name": "Shahid Aman",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/shahid_aman\/120\/21364_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Shahid_Aman",
+    "github_login": null,
+    "forum_username": "Shahid_Aman",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 67,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 67,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 6,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Question about PBM Agent Deployment for 3-Node MongoDB Replica Set",
+            "url": "https:\/\/forums.percona.com\/t\/question-about-pbm-agent-deployment-for-3-node-mongodb-replica-set",
+            "date": "2025-06-29"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/2",
+            "date": "2025-06-26"
+        },
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/5",
+            "date": "2025-06-27"
+        },
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/7",
+            "date": "2025-06-27"
+        },
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/9",
+            "date": "2025-06-27"
+        },
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/11",
+            "date": "2025-06-27"
+        },
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/14",
+            "date": "2025-06-29"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Setting Up and Monitoring MongoDB 8 Replica Sets with PMM 3 … | Percona Community",
+            "url": "https:\/\/forums.percona.com\/t\/setting-up-and-monitoring-mongodb-8-replica-sets-with-pmm-3-percona-community\/14",
+            "date": "2025-06-29"
+        }
+    ]
+}

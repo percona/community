@@ -1,0 +1,37 @@
+{
+    "user_key": "gh-yakirgb",
+    "display_name": "Yakir Gibraltar",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/12082308?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=yakirgb",
+    "github_login": "yakirgb",
+    "forum_username": null,
+    "period": "2026-02",
+    "period_label": "February 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 100,
+    "points_github": 100,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 1,
+    "prs_merged": 1,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Bug#118009, Bug#118486, Bug#119770, Bug#119867: Fix range optimizer full table scan for IN() and OR with oversized values",
+            "url": "https:\/\/github.com\/percona\/percona-server\/pull\/5829",
+            "repo": "percona\/percona-server",
+            "date": "2026-02-09",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

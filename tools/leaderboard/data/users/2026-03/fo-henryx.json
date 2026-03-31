@@ -1,0 +1,34 @@
+{
+    "user_key": "fo-henryx",
+    "display_name": "Henryx",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/henryx\/120\/13625_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Henryx",
+    "github_login": null,
+    "forum_username": "Henryx",
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 5,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 5,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "PMM 3.6.0 – ClickHouse background merge loop on system.metric_log causing 100% CPU and repeated MEMORY_LIMIT_EXCEEDED",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-6-0-clickhouse-background-merge-loop-on-system-metric-log-causing-100-cpu-and-repeated-memory-limit-exceeded",
+            "date": "2026-03-13"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

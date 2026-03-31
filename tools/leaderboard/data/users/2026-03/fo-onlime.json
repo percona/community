@@ -1,0 +1,34 @@
+{
+    "user_key": "fo-onlime",
+    "display_name": "Philip Iezzi",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/onlime\/120\/229_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=onlime",
+    "github_login": null,
+    "forum_username": "onlime",
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 5,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 5,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 1,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Missing mysql_config_editor from Percona Server for MySQL 8.4.8-8",
+            "url": "https:\/\/forums.percona.com\/t\/missing-mysql-config-editor-from-percona-server-for-mysql-8-4-8-8",
+            "date": "2026-03-14"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

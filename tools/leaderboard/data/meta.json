@@ -1,0 +1,177 @@
+{
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "default_period": "2026",
+    "periods": [
+        {
+            "key": "all-time",
+            "label": "All Time",
+            "type": "all-time"
+        },
+        {
+            "key": "2024",
+            "label": "2024",
+            "type": "year"
+        },
+        {
+            "key": "2025",
+            "label": "2025",
+            "type": "year"
+        },
+        {
+            "key": "2026",
+            "label": "2026",
+            "type": "year"
+        },
+        {
+            "key": "2025-Q1",
+            "label": "Q1 2025",
+            "type": "quarter"
+        },
+        {
+            "key": "2025-Q2",
+            "label": "Q2 2025",
+            "type": "quarter"
+        },
+        {
+            "key": "2025-Q3",
+            "label": "Q3 2025",
+            "type": "quarter"
+        },
+        {
+            "key": "2025-Q4",
+            "label": "Q4 2025",
+            "type": "quarter"
+        },
+        {
+            "key": "2026-Q1",
+            "label": "Q1 2026",
+            "type": "quarter"
+        },
+        {
+            "key": "2026-03",
+            "label": "March 2026",
+            "type": "month"
+        },
+        {
+            "key": "2026-02",
+            "label": "February 2026",
+            "type": "month"
+        },
+        {
+            "key": "2026-01",
+            "label": "January 2026",
+            "type": "month"
+        },
+        {
+            "key": "2025-12",
+            "label": "December 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-11",
+            "label": "November 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-10",
+            "label": "October 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-09",
+            "label": "September 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-08",
+            "label": "August 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-07",
+            "label": "July 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-06",
+            "label": "June 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-05",
+            "label": "May 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-04",
+            "label": "April 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-03",
+            "label": "March 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-02",
+            "label": "February 2025",
+            "type": "month"
+        },
+        {
+            "key": "2025-01",
+            "label": "January 2025",
+            "type": "month"
+        },
+        {
+            "key": "2024-12",
+            "label": "December 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-11",
+            "label": "November 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-10",
+            "label": "October 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-09",
+            "label": "September 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-08",
+            "label": "August 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-07",
+            "label": "July 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-06",
+            "label": "June 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-05",
+            "label": "May 2024",
+            "type": "month"
+        },
+        {
+            "key": "2024-04",
+            "label": "April 2024",
+            "type": "month"
+        }
+    ],
+    "categories": [
+        "global",
+        "github",
+        "content",
+        "forum"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-marek-knappe",
+    "display_name": "Marek Knappe",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/6347747?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=marek-knappe",
+    "github_login": "marek-knappe",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 225,
+    "points_github": 225,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 3,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "PT-2418: Fix column data loss during RENAME COLUMN operations",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/976",
+            "repo": "percona\/percona-toolkit",
+            "date": "2025-07-02",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "PT-2458 - fix(pt-online-schema-change): correct --remove-data-dir default behav…",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/974",
+            "repo": "percona\/percona-toolkit",
+            "date": "2025-06-24",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "fix(pt-online-schema-change): correct --remove-data-dir default behav…",
+            "url": "https:\/\/github.com\/percona\/percona-toolkit\/pull\/973",
+            "repo": "percona\/percona-toolkit",
+            "date": "2025-06-24",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

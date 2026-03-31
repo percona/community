@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-adnull",
+    "display_name": "Alex",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/23433573?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=adnull",
+    "github_login": "adnull",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 200,
+    "points_github": 200,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Serving SRV targets and getting all nodes in single request",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/pull\/835",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2024-04-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix splitting cluster URI into multiple targets",
+            "url": "https:\/\/github.com\/percona\/mongodb_exporter\/pull\/780",
+            "repo": "percona\/mongodb_exporter",
+            "date": "2024-01-17",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

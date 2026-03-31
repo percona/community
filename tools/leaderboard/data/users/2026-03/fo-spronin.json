@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-spronin",
+    "display_name": "Sergey Pronin",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/spronin\/120\/22828_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=spronin",
+    "github_login": null,
+    "forum_username": "spronin",
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 4,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 4,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 2,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Valkey support in Everest",
+            "url": "https:\/\/forums.percona.com\/t\/valkey-support-in-everest\/5",
+            "date": "2026-03-03"
+        },
+        {
+            "topic_title": "SSO login does not work with Authentik",
+            "url": "https:\/\/forums.percona.com\/t\/sso-login-does-not-work-with-authentik\/2",
+            "date": "2026-03-03"
+        }
+    ],
+    "forum_solutions": []
+}

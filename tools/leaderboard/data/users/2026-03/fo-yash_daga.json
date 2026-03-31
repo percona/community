@@ -1,0 +1,44 @@
+{
+    "user_key": "fo-yash_daga",
+    "display_name": "Yash Daga",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/yash_daga\/120\/22569_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Yash_Daga",
+    "github_login": null,
+    "forum_username": "Yash_Daga",
+    "period": "2026-03",
+    "period_label": "March 2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 6,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 6,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 3,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom\/23",
+            "date": "2026-03-05"
+        },
+        {
+            "topic_title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom\/26",
+            "date": "2026-03-06"
+        },
+        {
+            "topic_title": "Full crash Percona after OOM",
+            "url": "https:\/\/forums.percona.com\/t\/full-crash-percona-after-oom\/30",
+            "date": "2026-03-10"
+        }
+    ],
+    "forum_solutions": []
+}

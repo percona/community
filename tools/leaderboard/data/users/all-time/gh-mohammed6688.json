@@ -1,0 +1,53 @@
+{
+    "user_key": "gh-mohammed6688",
+    "display_name": "Mohammed Ashraf",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/35745424?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=mohammed6688",
+    "github_login": "mohammed6688",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 210,
+    "points_github": 210,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 1,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Issue in unsafeFlags in operator version 1.15.0",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/issues\/375",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-09-16",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "Update README.md",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/360",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2024-08-18",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update limitation.md",
+            "url": "https:\/\/github.com\/percona\/pxc-docs\/pull\/133",
+            "repo": "percona\/pxc-docs",
+            "date": "2024-02-22",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

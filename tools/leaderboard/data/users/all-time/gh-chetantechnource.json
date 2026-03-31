@@ -1,0 +1,45 @@
+{
+    "user_key": "gh-chetantechnource",
+    "display_name": "Chetan Patel",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/87816669?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=ChetanTechnource",
+    "github_login": "ChetanTechnource",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 200,
+    "points_github": 200,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 2,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "sudo is required",
+            "url": "https:\/\/github.com\/percona\/pxb-docs\/pull\/340",
+            "repo": "percona\/pxb-docs",
+            "date": "2024-11-30",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Update xbcloud-s3.md for wasabi s3 bucket policy",
+            "url": "https:\/\/github.com\/percona\/pxb-docs\/pull\/336",
+            "repo": "percona\/pxb-docs",
+            "date": "2024-11-09",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

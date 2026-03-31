@@ -1,0 +1,69 @@
+{
+    "user_key": "gh-yashpal2104",
+    "display_name": "Yash Pal",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/112522911?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=yashpal2104",
+    "github_login": "yashpal2104",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 275,
+    "points_github": 275,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 5,
+    "prs_merged": 2,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Add login page initially pointing to blank page",
+            "url": "https:\/\/github.com\/percona\/pmm\/pull\/3592",
+            "repo": "percona\/pmm",
+            "date": "2025-02-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Added jpg pics which where previously pointing to 404 page",
+            "url": "https:\/\/github.com\/percona\/pmm\/pull\/3591",
+            "repo": "percona\/pmm",
+            "date": "2025-02-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Updated mirror.md for improved readability",
+            "url": "https:\/\/github.com\/percona\/repo-config-docs\/pull\/147",
+            "repo": "percona\/repo-config-docs",
+            "date": "2025-02-05",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "Updated installing.md for improved readability",
+            "url": "https:\/\/github.com\/percona\/repo-config-docs\/pull\/146",
+            "repo": "percona\/repo-config-docs",
+            "date": "2025-02-05",
+            "merged": false,
+            "state": "open"
+        },
+        {
+            "title": "Updated installation.md for improved readability",
+            "url": "https:\/\/github.com\/percona\/distmongo-docs\/pull\/274",
+            "repo": "percona\/distmongo-docs",
+            "date": "2025-02-05",
+            "merged": false,
+            "state": "open"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

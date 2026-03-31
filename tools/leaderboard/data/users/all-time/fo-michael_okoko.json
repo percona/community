@@ -1,0 +1,205 @@
+{
+    "user_key": "fo-michael_okoko",
+    "display_name": "Michael Okoko",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/michael_okoko\/120\/5688_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=Michael_Okoko",
+    "github_login": null,
+    "forum_username": "Michael_Okoko",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 310,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 310,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 30,
+    "solutions": 5,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [
+        {
+            "topic_title": "Installing for ARM64 - Missing Telemetry Agent",
+            "url": "https:\/\/forums.percona.com\/t\/installing-for-arm64-missing-telemetry-agent\/10",
+            "date": "2025-01-13"
+        },
+        {
+            "topic_title": "Pmm backup management",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-backup-management\/2",
+            "date": "2024-11-25"
+        },
+        {
+            "topic_title": "PMM 3.X register pmm agent using service account",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-x-register-pmm-agent-using-service-account\/2",
+            "date": "2025-04-08"
+        },
+        {
+            "topic_title": "Unable to register pmm-agent on pmm server",
+            "url": "https:\/\/forums.percona.com\/t\/unable-to-register-pmm-agent-on-pmm-server\/2",
+            "date": "2025-04-23"
+        },
+        {
+            "topic_title": "Pmm-agent - Can't extract table names from query insert into. Too long query in pg_stat_statements results in errors in log",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-cant-extract-table-names-from-query-insert-into-too-long-query-in-pg-stat-statements-results-in-errors-in-log\/2",
+            "date": "2025-05-09"
+        },
+        {
+            "topic_title": "Pmm-agent - Can't extract table names from query insert into. Too long query in pg_stat_statements results in errors in log",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-cant-extract-table-names-from-query-insert-into-too-long-query-in-pg-stat-statements-results-in-errors-in-log\/4",
+            "date": "2025-05-09"
+        },
+        {
+            "topic_title": "How to set node name",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-set-node-name\/2",
+            "date": "2025-05-14"
+        },
+        {
+            "topic_title": "How to set node name",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-set-node-name\/4",
+            "date": "2025-05-14"
+        },
+        {
+            "topic_title": "How to set node name",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-set-node-name\/6",
+            "date": "2025-05-14"
+        },
+        {
+            "topic_title": "Failing to create pmm-server on docker",
+            "url": "https:\/\/forums.percona.com\/t\/failing-to-create-pmm-server-on-docker\/6",
+            "date": "2025-05-15"
+        },
+        {
+            "topic_title": "Error: Request failed with status code 500",
+            "url": "https:\/\/forums.percona.com\/t\/error-request-failed-with-status-code-500\/2",
+            "date": "2025-05-22"
+        },
+        {
+            "topic_title": "Error: Request failed with status code 500",
+            "url": "https:\/\/forums.percona.com\/t\/error-request-failed-with-status-code-500\/4",
+            "date": "2025-06-02"
+        },
+        {
+            "topic_title": "Error: Request failed with status code 500",
+            "url": "https:\/\/forums.percona.com\/t\/error-request-failed-with-status-code-500\/6",
+            "date": "2025-06-05"
+        },
+        {
+            "topic_title": "Need something similar to integrated alerting from PMM V2 into PMM V3",
+            "url": "https:\/\/forums.percona.com\/t\/need-something-similar-to-integrated-alerting-from-pmm-v2-into-pmm-v3\/2",
+            "date": "2025-06-03"
+        },
+        {
+            "topic_title": "PMM upgrade from 2.44.1 to 3.2.0 - Migrations: Dirty database version 18",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-upgrade-from-2-44-1-to-3-2-0-migrations-dirty-database-version-18\/2",
+            "date": "2025-07-07"
+        },
+        {
+            "topic_title": "PMM Dashboard shows TLS=false despite successful HTTPS configuration",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-dashboard-shows-tls-false-despite-successful-https-configuration\/2",
+            "date": "2025-07-23"
+        },
+        {
+            "topic_title": "Configuring labels on host-related metrics",
+            "url": "https:\/\/forums.percona.com\/t\/configuring-labels-on-host-related-metrics\/2",
+            "date": "2025-07-23"
+        },
+        {
+            "topic_title": "I m getting below error while Adding RDS server in PMM3 for monitoring",
+            "url": "https:\/\/forums.percona.com\/t\/i-m-getting-below-error-while-adding-rds-server-in-pmm3-for-monitoring\/2",
+            "date": "2025-08-07"
+        },
+        {
+            "topic_title": "Connection refused using PMM for postgresql",
+            "url": "https:\/\/forums.percona.com\/t\/connection-refused-using-pmm-for-postgresql\/2",
+            "date": "2025-08-15"
+        },
+        {
+            "topic_title": "Pmm-server upgrade from 2.33 to version 3",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-upgrade-from-2-33-to-version-3\/3",
+            "date": "2025-09-22"
+        },
+        {
+            "topic_title": "Pmm-server upgrade from 2.33 to version 3",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-server-upgrade-from-2-33-to-version-3\/5",
+            "date": "2025-09-22"
+        },
+        {
+            "topic_title": "Pmm-data volume not exists",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-data-volume-not-exists\/2",
+            "date": "2025-10-08"
+        },
+        {
+            "topic_title": "Pmm-data volume not exists",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-data-volume-not-exists\/5",
+            "date": "2025-10-09"
+        },
+        {
+            "topic_title": "Pmm-data volume not exists",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-data-volume-not-exists\/7",
+            "date": "2025-10-09"
+        },
+        {
+            "topic_title": "Info about how PMM evaluate the metrics for a given filesystem",
+            "url": "https:\/\/forums.percona.com\/t\/info-about-how-pmm-evaluate-the-metrics-for-a-given-filesystem\/2",
+            "date": "2025-11-11"
+        },
+        {
+            "topic_title": "Insufficient access permissions error after upgrade to pmm 3.5.0",
+            "url": "https:\/\/forums.percona.com\/t\/insufficient-access-permissions-error-after-upgrade-to-pmm-3-5-0\/2",
+            "date": "2025-11-25"
+        },
+        {
+            "topic_title": "Insufficient access permissions error after upgrade to pmm 3.5.0",
+            "url": "https:\/\/forums.percona.com\/t\/insufficient-access-permissions-error-after-upgrade-to-pmm-3-5-0\/4",
+            "date": "2025-11-26"
+        },
+        {
+            "topic_title": "Insufficient access permissions error after upgrade to pmm 3.5.0",
+            "url": "https:\/\/forums.percona.com\/t\/insufficient-access-permissions-error-after-upgrade-to-pmm-3-5-0\/6",
+            "date": "2025-12-03"
+        },
+        {
+            "topic_title": "Insufficient access permissions error after upgrade to pmm 3.5.0",
+            "url": "https:\/\/forums.percona.com\/t\/insufficient-access-permissions-error-after-upgrade-to-pmm-3-5-0\/7",
+            "date": "2025-12-19"
+        },
+        {
+            "topic_title": "PMM QAN for prepared statements with AWS RDS mysql",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-qan-for-prepared-statements-with-aws-rds-mysql\/2",
+            "date": "2025-12-08"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "PMM 3.X register pmm agent using service account",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-3-x-register-pmm-agent-using-service-account\/2",
+            "date": "2025-04-08"
+        },
+        {
+            "topic_title": "Pmm-agent - Can't extract table names from query insert into. Too long query in pg_stat_statements results in errors in log",
+            "url": "https:\/\/forums.percona.com\/t\/pmm-agent-cant-extract-table-names-from-query-insert-into-too-long-query-in-pg-stat-statements-results-in-errors-in-log\/4",
+            "date": "2025-05-09"
+        },
+        {
+            "topic_title": "How to set node name",
+            "url": "https:\/\/forums.percona.com\/t\/how-to-set-node-name\/2",
+            "date": "2025-05-14"
+        },
+        {
+            "topic_title": "Need something similar to integrated alerting from PMM V2 into PMM V3",
+            "url": "https:\/\/forums.percona.com\/t\/need-something-similar-to-integrated-alerting-from-pmm-v2-into-pmm-v3\/2",
+            "date": "2025-06-03"
+        },
+        {
+            "topic_title": "Configuring labels on host-related metrics",
+            "url": "https:\/\/forums.percona.com\/t\/configuring-labels-on-host-related-metrics\/2",
+            "date": "2025-07-23"
+        }
+    ]
+}

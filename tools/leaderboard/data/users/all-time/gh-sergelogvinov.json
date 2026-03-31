@@ -1,0 +1,77 @@
+{
+    "user_key": "gh-sergelogvinov",
+    "display_name": "Serge",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/5407715?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=sergelogvinov",
+    "github_login": "sergelogvinov",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 500,
+    "points_github": 500,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 2,
+    "prs_merged": 6,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "K8SPSMDB-1002: add crd preferer primary node",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/1629",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2024-08-27",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPSMDB-948 Multi arch build improvements",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/1462",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2024-03-06",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPSMDB-1003: Add permission to read node labels",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/249",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2023-10-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPSMDB-1003: Kubernetes node zone\/region tag",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/1360",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2023-10-12",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "CLOUD-838 - Fix backup pod-containerSecurityContext",
+            "url": "https:\/\/github.com\/percona\/percona-helm-charts\/pull\/248",
+            "repo": "percona\/percona-helm-charts",
+            "date": "2023-10-11",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "K8SPSMDB-948: Multi arch build",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/1356",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2023-10-09",
+            "merged": true,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

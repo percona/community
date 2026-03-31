@@ -1,0 +1,59 @@
+{
+    "user_key": "gh-shajia-deshaw",
+    "display_name": "Afeedh Shaji",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/131908735?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=shajia-deshaw",
+    "github_login": "shajia-deshaw",
+    "forum_username": null,
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 55,
+    "points_github": 55,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 3,
+    "prs_created": 1,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [
+        {
+            "title": "Physical restore gets stuck during pod rolling update due to authentication failures",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2251",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-02-22",
+            "state": "open"
+        },
+        {
+            "title": "`pbm-init` container missing `SecurityContext` during physical restore (violates if namespace PSA restricted)",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2250",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-02-22",
+            "state": "open"
+        },
+        {
+            "title": "Mounting generic secrets into the main mongod container",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/issues\/2231",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-02-11",
+            "state": "open"
+        }
+    ],
+    "github_prs": [
+        {
+            "title": "K8SPSMDB-1595: set container security context for `pbm-init` container",
+            "url": "https:\/\/github.com\/percona\/percona-server-mongodb-operator\/pull\/2283",
+            "repo": "percona\/percona-server-mongodb-operator",
+            "date": "2026-03-13",
+            "merged": false,
+            "state": "open"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-wxc",
+    "display_name": "wxc",
+    "avatar_url": "https:\/\/avatars.discourse-cdn.com\/v4\/letter\/w\/bc79bd\/120.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=wxc",
+    "github_login": null,
+    "forum_username": "wxc",
+    "period": "2026",
+    "period_label": "2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "After enabling Pitr in pxc-operator, what value should binlog_expire_logs_seconds be configured to?",
+            "url": "https:\/\/forums.percona.com\/t\/after-enabling-pitr-in-pxc-operator-what-value-should-binlog-expire-logs-seconds-be-configured-to",
+            "date": "2026-01-08"
+        },
+        {
+            "title": "In pxc-operator version 5.7, innodb_undo_tablespaces was set to 0 when creating an instance, and now needs to be adjusted to 3. How can this be done? Directly modifying the configuration prevents the instance from starting normally",
+            "url": "https:\/\/forums.percona.com\/t\/in-pxc-operator-version-5-7-innodb-undo-tablespaces-was-set-to-0-when-creating-an-instance-and-now-needs-to-be-adjusted-to-3-how-can-this-be-done-directly-modifying-the-configuration-prevents-the-instance-from-starting-normally",
+            "date": "2026-01-22"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

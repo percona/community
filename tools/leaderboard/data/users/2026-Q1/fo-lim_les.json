@@ -1,0 +1,39 @@
+{
+    "user_key": "fo-lim_les",
+    "display_name": "Lim_Les",
+    "avatar_url": null,
+    "profile_url": "\/web\/leaderboard\/profile?forum=Lim_Les",
+    "github_login": null,
+    "forum_username": "Lim_Les",
+    "period": "2026-Q1",
+    "period_label": "Q1 2026",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 10,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 10,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "Cross-cluster restore fails with \"backup meta: not found\" error despite metadata existing in S3",
+            "url": "https:\/\/forums.percona.com\/t\/cross-cluster-restore-fails-with-backup-meta-not-found-error-despite-metadata-existing-in-s3",
+            "date": "2026-01-13"
+        },
+        {
+            "title": "Enhancing PBM Storage: Proposal for Local PV Support",
+            "url": "https:\/\/forums.percona.com\/t\/enhancing-pbm-storage-proposal-for-local-pv-support",
+            "date": "2026-01-15"
+        }
+    ],
+    "forum_replies": [],
+    "forum_solutions": []
+}

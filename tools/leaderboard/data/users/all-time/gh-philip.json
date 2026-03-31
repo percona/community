@@ -1,0 +1,117 @@
+{
+    "user_key": "gh-philip",
+    "display_name": "Philip Olson",
+    "avatar_url": "https:\/\/avatars.githubusercontent.com\/u\/42943?v=4",
+    "profile_url": "\/web\/leaderboard\/profile?github=philip",
+    "github_login": "philip",
+    "forum_username": null,
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-31T08:47:21+00:00",
+    "points_total": 1025,
+    "points_github": 1025,
+    "points_content": 0,
+    "points_forum": 0,
+    "issues_created": 0,
+    "prs_created": 11,
+    "prs_merged": 10,
+    "blog_posts": 0,
+    "topics_created": 0,
+    "replies": 0,
+    "solutions": 0,
+    "github_issues": [],
+    "github_prs": [
+        {
+            "title": "Fix links and version references (branch 17) ",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/774",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix links and version references (branch 16)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/773",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix links and version references (branch 15)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/772",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix a broken link reference found during `mkdocs serve` (branch 14)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/771",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix broken link references found during `mkdocs serve` (branch 13)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/770",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-07",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix typo (13)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/765",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix typo (14)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/764",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix typo (15)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/763",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix typo (16)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/762",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix typo (17)",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/761",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-03",
+            "merged": true,
+            "state": "closed"
+        },
+        {
+            "title": "Fix a typo",
+            "url": "https:\/\/github.com\/percona\/postgresql-docs\/pull\/760",
+            "repo": "percona\/postgresql-docs",
+            "date": "2025-03-03",
+            "merged": false,
+            "state": "closed"
+        }
+    ],
+    "blog_list": [],
+    "forum_topics": [],
+    "forum_replies": [],
+    "forum_solutions": []
+}

@@ -1,0 +1,91 @@
+{
+    "user_key": "fo-dogs_cute",
+    "display_name": "dogs Cute",
+    "avatar_url": "https:\/\/forums.percona.com\/user_avatar\/forums.percona.com\/dogs_cute\/120\/12754_2.png",
+    "profile_url": "\/web\/leaderboard\/profile?forum=dogs_Cute",
+    "github_login": null,
+    "forum_username": "dogs_Cute",
+    "period": "all-time",
+    "period_label": "All Time",
+    "generated_at": "2026-03-30T15:50:46+00:00",
+    "points_total": 78,
+    "points_github": 0,
+    "points_content": 0,
+    "points_forum": 78,
+    "issues_created": 0,
+    "prs_created": 0,
+    "prs_merged": 0,
+    "blog_posts": 0,
+    "topics_created": 2,
+    "replies": 9,
+    "solutions": 1,
+    "github_issues": [],
+    "github_prs": [],
+    "blog_list": [],
+    "forum_topics": [
+        {
+            "title": "If I delete the data directory, How should I recover?",
+            "url": "https:\/\/forums.percona.com\/t\/if-i-delete-the-data-directory-how-should-i-recover",
+            "date": "2024-12-12"
+        },
+        {
+            "title": "[ERROR] [MY-013935] [Server] IO-layer timeout before wait_timeout was reached",
+            "url": "https:\/\/forums.percona.com\/t\/error-my-013935-server-io-layer-timeout-before-wait-timeout-was-reached",
+            "date": "2025-03-05"
+        }
+    ],
+    "forum_replies": [
+        {
+            "topic_title": "Percona XtraDB cluster not available after bootstrap the first node",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtradb-cluster-not-available-after-bootstrap-the-first-node\/16",
+            "date": "2024-10-19"
+        },
+        {
+            "topic_title": "Restore a full backup using different version of xtrabackup",
+            "url": "https:\/\/forums.percona.com\/t\/restore-a-full-backup-using-different-version-of-xtrabackup\/3",
+            "date": "2024-10-21"
+        },
+        {
+            "topic_title": "My mysql server has started crashing intermittently",
+            "url": "https:\/\/forums.percona.com\/t\/my-mysql-server-has-started-crashing-intermittently\/2",
+            "date": "2025-02-07"
+        },
+        {
+            "topic_title": "Percona Server 8.4 MySQL Commvault Backup getting stuck",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-8-4-mysql-commvault-backup-getting-stuck\/2",
+            "date": "2025-02-22"
+        },
+        {
+            "topic_title": "Issues with incremental MariaDB backups setup",
+            "url": "https:\/\/forums.percona.com\/t\/issues-with-incremental-mariadb-backups-setup\/2",
+            "date": "2025-03-16"
+        },
+        {
+            "topic_title": "Upgrade from 5.7 to 8",
+            "url": "https:\/\/forums.percona.com\/t\/upgrade-from-5-7-to-8\/4",
+            "date": "2025-08-27"
+        },
+        {
+            "topic_title": "Install component 'file:\/\/component_percona_udf' is failing post upgrade to 8.4",
+            "url": "https:\/\/forums.percona.com\/t\/install-component-file-component-percona-udf-is-failing-post-upgrade-to-8-4\/2",
+            "date": "2025-08-29"
+        },
+        {
+            "topic_title": "MySQL 8.0 information_schema Corruption - Cannot Expand PXC Cluster",
+            "url": "https:\/\/forums.percona.com\/t\/mysql-8-0-information-schema-corruption-cannot-expand-pxc-cluster\/2",
+            "date": "2026-01-31"
+        },
+        {
+            "topic_title": "Percona-xtrabackup-84 cannot be installed on Rocky Linux 9.7 with Percona Server 8.4 (missing libmysqlclient.so.21)",
+            "url": "https:\/\/forums.percona.com\/t\/percona-xtrabackup-84-cannot-be-installed-on-rocky-linux-9-7-with-percona-server-8-4-missing-libmysqlclient-so-21\/2",
+            "date": "2026-02-04"
+        }
+    ],
+    "forum_solutions": [
+        {
+            "topic_title": "Percona Server 8.4 MySQL Commvault Backup getting stuck",
+            "url": "https:\/\/forums.percona.com\/t\/percona-server-8-4-mysql-commvault-backup-getting-stuck\/2",
+            "date": "2025-02-22"
+        }
+    ]
+}
