@@ -112,7 +112,7 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 
 ---
 
-## The 4 Signals That Actually Matter
+## The 5 Signals That Actually Matter
 
 ### 1. Buffer Pool Hit Ratio (Handle With Care)
 
@@ -139,7 +139,10 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 
 **Interpretation:**
 
-- Near zero → Normal unless sustained under load  
+- Near zero → Normal unless sustained under load 
+- Near zero during steady load → expected
+- Near zero + spikes in reads → pressure
+- Near zero while idle → suspicious (possible misread or config issue)
 - Sustained zero + rising reads → Memory pressure  
 
 ---
@@ -164,12 +167,27 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 
 ```sql
 SHOW GLOBAL STATUS LIKE 'Innodb_buffer_pool_reads';
+-- Take two samples 60s apart and compare
 ```
+
+Track the rate of change (reads/sec), not the absolute value.
 
 **Interpretation:**
 
 - Rising reads → Working set does not fit in memory  
 - Flat reads → Memory is absorbing the workload  
+
+---
+
+### 5. Read Ahead / Eviction Pressure
+
+```sql
+SHOW GLOBAL STATUS LIKE 'Innodb_buffer_pool_read_ahead%';
+SHOW GLOBAL STATUS LIKE 'Innodb_pages_evicted';
+```
+
+- High read-ahead with low usefulness can indicate inefficient access patterns.
+- High eviction rates + rising reads = classic churn signature
 
 ---
 
@@ -192,6 +210,7 @@ Time --->
 Memory:  [FULL][FULL][FULL][FULL]
 Reads:   ↑   ↑↑   ↑↑↑  ↑↑↑↑
 Latency:  -    ^    ^^   ^^^
+Evictions: ↑   ↑↑   ↑↑↑  ↑↑↑↑
 ```
 
 If you see this pattern, your working set does not fit in memory.
@@ -220,6 +239,10 @@ innodb_io_capacity = 1000
 innodb_io_capacity_max = 2000
 ```
 
+- Sustained IO spikes → increase innodb_io_capacity
+- Dirty pages climbing → flushing lag
+- Sudden stalls → checkpoint pressure
+
 **What they control:**
 
 - `innodb_io_capacity` → Expected steady-state IO throughput  
@@ -235,6 +258,8 @@ innodb_io_capacity_max = 2000
 ```
 innodb_buffer_pool_instances = 4
 ```
+
+⚠️ Only useful for large buffer pools (typically >1GB). Too many instances can reduce efficiency.
 
 ---
 
@@ -258,6 +283,8 @@ Buffer pool resizing is online in modern MySQL versions, but:
 **Cause:** Working set barely fits  
 
 **Fix:** Increase buffer pool size gradually  
+
+If increasing the buffer pool size does not reduce disk reads, the problem is not memory.
 
 ---
 
@@ -299,6 +326,8 @@ SELECT
 FROM information_schema.INNODB_BUFFER_POOL_STATS;
 ```
 
+Assumes default 16KB page size (innodb_page_size).
+
 ### Dirty Page Percentage
 
 ```sql
@@ -324,6 +353,17 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 - Oversizing and starving the OS  
 - Not tuning IO capacity  
 - Leaving defaults in write-heavy systems  
+
+---
+
+## Quick Checklist
+
+If you remember nothing else:
+
+- Reads increasing? → working set too big
+- Free buffers always ~0? → pressure
+- Dirty pages high? → flushing lag
+- Latency spiking? → checkpoint or IO saturation
 
 ---
 
