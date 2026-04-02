@@ -1,0 +1,213 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contribute.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+<style>
+/* ---- Leader Cards (top 3) ---- */
+.lb-leaders {
+  display:flex; align-items:flex-start; justify-content:center;
+  gap:16px; padding:20px 0 16px; flex-wrap:wrap;
+}
+.lb-leader-card {
+  background:#fff; border:1px solid #dee2e6; border-radius:12px;
+  padding:20px 16px; text-align:center; cursor:pointer;
+  transition:box-shadow .15s, transform .15s;
+  min-width:170px; flex:1; max-width:230px;
+}
+.lb-leader-card:hover { box-shadow:0 4px 16px rgba(0,0,0,.12); transform:translateY(-3px); }
+.lb-leader-card.rank-1 { border-color:#f5c518; box-shadow:0 2px 8px rgba(245,197,24,.2); }
+.lb-leader-card.rank-2 { border-color:#adb5bd; }
+.lb-leader-card.rank-3 { border-color:#cd7f32; }
+
+.lb-avatar-circle {
+  border-radius:50%; object-fit:cover; background:#e9ecef;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; color:#fff; flex-shrink:0;
+}
+.lb-avatar-xl { width:200px; height:200px; font-size:64px; border:4px solid #f5c518; }
+.lb-avatar-lg { width:150px; height:150px; font-size:48px; border:3px solid #adb5bd; }
+.lb-avatar-md { width:40px;  height:40px;  font-size:15px; }
+.lb-leader-card.rank-2 .lb-avatar-circle { border-color:#adb5bd; }
+.lb-leader-card.rank-3 .lb-avatar-circle { border-color:#cd7f32; }
+
+.lb-leader-name   { font-weight:600; font-size:15px; margin:8px 0 2px; }
+.lb-leader-handle { font-size:12px; color:#6c757d; margin-bottom:10px; }
+.lb-leader-pts    { font-size:24px; font-weight:700; color:#0d6efd; margin-bottom:10px; }
+.lb-leader-card.rank-1 .lb-leader-pts { font-size:28px; }
+.lb-stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:5px; }
+.lb-stat-box  { background:#f8f9fa; border-radius:6px; padding:7px 5px; }
+.lb-stat-val  { font-size:15px; font-weight:700; }
+.lb-stat-lbl  { font-size:10px; color:#6c757d; margin-top:1px; }
+
+/* ---- Category buttons + period row ---- */
+.lb-toolbar {
+  display:flex; align-items:center; justify-content:center;
+  flex-wrap:wrap; gap:10px; padding:8px 0 0;
+}
+.lb-cat-btn {
+  display:inline-block; padding:9px 24px;
+  border:2px solid #dee2e6; border-radius:50px;
+  background:#fff; color:#495057; font-size:15px; font-weight:500;
+  cursor:pointer; transition:all .15s;
+}
+.lb-cat-btn:hover  { border-color:#0d6efd; color:#0d6efd; }
+.lb-cat-btn.active { background:#0d6efd; border-color:#0d6efd; color:#fff; }
+.lb-period-sep { width:1px; height:32px; background:#dee2e6; margin:0 6px; }
+.lb-period-select {
+  padding:7px 12px; border:2px solid #dee2e6; border-radius:50px;
+  background:#fff; color:#495057; font-size:15px; font-weight:500;
+  cursor:pointer; appearance:none; -webkit-appearance:none;
+  padding-right:28px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23adb5bd' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 10px center;
+  transition:border-color .15s;
+}
+.lb-period-select:focus { outline:none; border-color:#0d6efd; }
+.lb-period-select:hover { border-color:#0d6efd; }
+
+/* ---- Table ---- */
+.lb-table-wrap { overflow-x:auto; }
+.lb-table { width:100%; border-collapse:collapse; font-size:13px; }
+.lb-table th {
+  font-size:11px; color:#6c757d; font-weight:600; text-transform:uppercase;
+  letter-spacing:.04em; border-bottom:2px solid #dee2e6; padding:8px;
+  white-space:nowrap; text-align:right;
+}
+.lb-table th.col-user { text-align:left; min-width:160px; }
+.lb-table th.col-rank { width:36px; text-align:right; }
+.lb-table td {
+  padding:8px; border-bottom:1px solid #f2f2f2;
+  vertical-align:middle; text-align:right; white-space:nowrap;
+}
+.lb-table td.col-rank  { color:#6c757d; font-weight:600; width:36px; }
+.lb-table td.col-user  { text-align:left; }
+.lb-table tbody tr     { cursor:pointer; }
+.lb-table tbody tr:hover { background:#f8f9fa; }
+.lb-user-cell   { display:flex; align-items:center; gap:9px; }
+.lb-user-name   { font-weight:500; font-size:13px; }
+.lb-user-handle { font-size:11px; color:#6c757d; }
+.lb-pts-col { font-weight:700; color:#0d6efd; }
+.lb-zero    { color:#dee2e6; }
+
+/* ---- Large Detail Modal ---- */
+.lb-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,.5);
+  z-index:1050; display:flex; align-items:flex-start; justify-content:center;
+  padding:40px 16px; overflow-y:auto;
+}
+.lb-modal-lg {
+  background:#fff; border-radius:12px; width:100%; max-width:680px;
+  position:relative; margin-top:50px; margin-bottom:40px;
+}
+.lb-modal-header {
+  display:flex; align-items:center; gap:16px;
+  padding:20px 24px 16px; border-bottom:1px solid #dee2e6; position:relative;
+}
+.lb-modal-body { padding:20px 24px; }
+.lb-modal-close {
+  position:absolute; top:12px; right:14px; z-index:10;
+  background:transparent !important; border:none !important; outline:none;
+  box-shadow:none !important; border-radius:0 !important;
+  font-size:24px; cursor:pointer; color:#adb5bd;
+  line-height:1; padding:4px 8px; appearance:none; -webkit-appearance:none;
+}
+.lb-modal-close:hover { color:#333; background:transparent !important; }
+.lb-modal-pts     { font-size:26px; font-weight:700; color:#0d6efd; }
+.lb-modal-pts-lbl { font-size:12px; color:#6c757d; }
+.lb-modal-stats   { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.lb-modal-stat    { flex:1; min-width:70px; background:#f8f9fa; border-radius:8px; padding:10px 8px; text-align:center; }
+.lb-modal-stat .v { font-size:18px; font-weight:700; }
+.lb-modal-stat .l { font-size:11px; color:#6c757d; margin-top:2px; }
+
+.lb-section       { margin-bottom:20px; }
+.lb-section-title {
+  font-size:12px; font-weight:700; text-transform:uppercase;
+  letter-spacing:.05em; color:#6c757d;
+  border-bottom:1px solid #f2f2f2; padding-bottom:5px; margin-bottom:8px;
+}
+.lb-contrib-item  {
+  display:flex; align-items:flex-start; justify-content:space-between;
+  gap:8px; padding:5px 0; border-bottom:1px solid #f8f9fa; font-size:13px;
+}
+.lb-contrib-item:last-child { border-bottom:none; }
+.lb-contrib-left  { display:flex; align-items:baseline; gap:6px; flex:1; min-width:0; }
+.lb-contrib-link  { color:#0d6efd; text-decoration:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.lb-contrib-link:hover { text-decoration:underline; }
+.lb-contrib-meta  { color:#adb5bd; font-size:11px; white-space:nowrap; flex-shrink:0; }
+.lb-badge         { display:inline-block; border-radius:4px; padding:1px 6px; font-size:10px; font-weight:600; flex-shrink:0; }
+.lb-badge-merged  { background:#198754; color:#fff; }
+.lb-badge-open    { background:#0d6efd; color:#fff; }
+.lb-badge-closed  { background:#6c757d; color:#fff; }
+.lb-cta {
+  background:#e8f4fd; border-radius:8px; padding:12px 14px;
+  font-size:13px; color:#0c5460; margin-top:16px;
+}
+.lb-spinner {
+  width:36px; height:36px; border:3px solid #dee2e6;
+  border-top-color:#0d6efd; border-radius:50%;
+  animation:lb-spin .7s linear infinite; margin:32px auto;
+  display:block;
+}
+@keyframes lb-spin { to { transform:rotate(360deg); } }
+
+/* ---- App wrapper ---- */
+.lb-app-frame {
+  max-width:960px; margin:32px auto 48px;
+  background:#fff;
+  border:1px solid #e3e8ef;
+  border-radius:20px;
+  box-shadow:0 4px 32px rgba(0,0,0,.07), 0 1px 4px rgba(0,0,0,.04);
+  overflow:hidden;
+}
+.lb-app-header {
+  background:linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+  padding:36px 32px 28px;
+  text-align:center;
+}
+.lb-app-header h2 {
+  color:#fff; font-size:28px; font-weight:700; margin:0 0 6px; letter-spacing:-.3px;
+}
+.lb-app-header p { color:rgba(255,255,255,.8); font-size:15px; margin:0 0 16px; }
+.lb-app-header-badges {
+  display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap;
+}
+.lb-badge-pill {
+  display:inline-flex; align-items:center; gap:5px;
+  background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25);
+  color:#fff; border-radius:50px; padding:4px 12px; font-size:12px; font-weight:500;
+  backdrop-filter:blur(4px);
+}
+.lb-app-body { padding:24px 24px 28px; }
+</style>
+
+<div class="lb-app-frame">
+  <div class="lb-app-header">
+    <h2>🏆 Community Leaderboard</h2>
+    <p>Recognizing top contributors to Percona's open-source ecosystem</p>
+    <div class="lb-app-header-badges">
+      <span class="lb-badge-pill">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </span>
+      <span class="lb-badge-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Forum &amp; Blog
+      </span>
+      <span class="lb-badge-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Live data
+      </span>
+    </div>
+  </div>
+
+  <div class="lb-app-body">
+    <div id="lb-widget"><div style="text-align:center;padding:2rem;color:#6c757d">Loading…</div></div>
+  </div>
+</div>
+
+<script>
+  window.LB_BASE = 'https://raw.githubusercontent.com/dbazhenov/community-website-leaderboard-data/main';
+</script>
+<script type="module" src="/js/lb-widget.js?v={{ now.Unix }}"></script>
+{{ end }}
