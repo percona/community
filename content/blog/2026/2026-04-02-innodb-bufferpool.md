@@ -1,7 +1,7 @@
 ---
 title: "InnoDB Buffer Pool Tuning: From Rule-of-Thumb to Real Signals"
 date: "2026-04-02T00:00:00+00:00"
-tags: ["Opensource", "Percona", "MySQL", "Community", "Percona Server", "innodb bufferpool", "auditing"]
+tags: ["Opensource", "Percona", "MySQL", "Community", "Percona Server", "innodb bufferpool", "tuning"]
 categories: ["MySQL"]
 authors:
   - wayne
@@ -110,6 +110,8 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 - `database_pages` → Pages holding data  
 - `modified_database_pages` → Dirty pages waiting to flush  
 
+Great for automation.
+
 ---
 
 ## The 5 Signals That Actually Matter
@@ -133,7 +135,7 @@ Use it as a sanity check, not a decision-maker.
 ### 2. Free Buffers
 
 ```sql
-SELECT free_buffers
+SELECT SUM(free_buffers) AS free_buffers
 FROM information_schema.INNODB_BUFFER_POOL_STATS;
 ```
 
@@ -151,7 +153,7 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 
 ```sql
 SELECT
-    (modified_database_pages / database_pages) * 100 AS dirty_pct
+    (SUM(modified_database_pages) / SUM(database_pages)) * 100.0 AS dirty_pct
 FROM information_schema.INNODB_BUFFER_POOL_STATS;
 ```
 
@@ -183,11 +185,27 @@ Track the rate of change (reads/sec), not the absolute value.
 
 ```sql
 SHOW GLOBAL STATUS LIKE 'Innodb_buffer_pool_read_ahead%';
-SHOW GLOBAL STATUS LIKE 'Innodb_pages_evicted';
+SHOW GLOBAL STATUS LIKE 'Innodb_buffer_pool_pages_evicted';
+SHOW GLOBAL STATUS LIKE 'Innodb_buffer_pool_reads';
 ```
 
-- High read-ahead with low usefulness can indicate inefficient access patterns.
-- High eviction rates + rising reads = classic churn signature
+**Interpretation:**
+
+- Efficient read-ahead:
+    - read_ahead increases
+    - read_ahead_evicted remains low
+- Inefficient read-ahead (wasted IO):
+    - High read_ahead_evicted / read_ahead
+    - Indicates access patterns defeating prefetching
+- Buffer pool churn:
+    - pages_evicted rising
+    - buffer_pool_reads rising
+    - Indicates pages are evicted and re-read from disk
+- Healthy vs unhealthy eviction:
+    - High evictions + stable reads → normal turnover
+    - High evictions + rising reads → memory pressure
+
+Focus on rates of change over time, not absolute values.
 
 ---
 
@@ -322,7 +340,7 @@ If increasing the buffer pool size does not reduce disk reads, the problem is no
 
 ```sql
 SELECT
-    (database_pages * 16) / 1024 AS mb_used
+    (SUM(database_pages) * 16) / 1024 AS mb_used
 FROM information_schema.INNODB_BUFFER_POOL_STATS;
 ```
 
@@ -339,7 +357,7 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 ### Free Buffer Check
 
 ```sql
-SELECT free_buffers
+SELECT SUM(free_buffers) AS free_buffers
 FROM information_schema.INNODB_BUFFER_POOL_STATS;
 ```
 
@@ -370,6 +388,8 @@ If you remember nothing else:
 ## Final Thoughts
 
 The InnoDB buffer pool doesn’t fail loudly. It degrades quietly until your disk becomes the bottleneck.
+
+By the time you notice, you're debugging latency instead of preventing it.
 
 When you monitor the right signals and tune with intent, you move from guesswork to understanding.
 
