@@ -20,6 +20,8 @@ innodb_buffer_pool_size = 70% of RAM
 
 That’s not tuning. That’s a starting guess.
 
+Real tuning starts when the workload pushes back.
+
 ---
 
 ## Visual Overview
@@ -36,7 +38,7 @@ This guide walks through how to monitor, understand, and tune the buffer pool us
 
 ## What the Buffer Pool Really Is
 
-The buffer pool isn’t just “memory for MySQL.” It’s a living system:
+The buffer pool isn’t just “memory for MySQL.” It’s a living system under constant pressure:
 
 - A cache of data and indexes  
 - A write staging area (dirty pages)  
@@ -141,11 +143,9 @@ FROM information_schema.INNODB_BUFFER_POOL_STATS;
 
 **Interpretation:**
 
-- Near zero → Normal unless sustained under load 
-- Near zero during steady load → expected
-- Near zero + spikes in reads → pressure
-- Near zero while idle → suspicious (possible misread or config issue)
-- Sustained zero + rising reads → Memory pressure  
+- Near zero during steady load → normal
+- Near zero + rising disk reads → pressure
+- Near zero while mostly idle → suspicious (possible misread or config issue)
 
 ---
 
@@ -299,10 +299,6 @@ If your workload is primarily IO-bound, this setting will have little impact.
 
 ### Sizing Guidelines
 
-A practical rule:
-
-Use roughly 1 instance per 1GB of buffer pool, up to a reasonable limit.
-
 General guidance:
 
 - < 1GB buffer pool → 1 instance
@@ -454,6 +450,6 @@ The InnoDB buffer pool doesn’t fail loudly. It degrades quietly until your dis
 
 By the time you notice, you're debugging latency instead of preventing it.
 
-When you monitor the right signals and tune with intent, you move from guesswork to understanding.
+Monitor the right signals, and you’ll see problems forming before users do.
 
-And that’s where real performance gains happen.
+That’s the difference between reacting to performance… and controlling it.
