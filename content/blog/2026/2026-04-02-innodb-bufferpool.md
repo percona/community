@@ -271,13 +271,76 @@ innodb_io_capacity_max = 2000
 
 ---
 
-### Step 3: Reduce Contention (Large Systems)
+### Step 3: Buffer Pool Instances:Reduce Contention
 
-```
-innodb_buffer_pool_instances = 4
+A practical, battle-tested guideline:
+
+Use 1 instance per ~1GB of buffer pool, up to a reasonable limit.
+
+Buffer Pool Instances: Reducing Contention
+
+The buffer pool can be split into multiple instances, each managing its own internal structures. This helps reduce contention under high concurrency.
+
+Without this, all threads compete for the same buffer pool internals. With multiple instances, that load is distributed.
+
+---
+
+### When It Matters
+
+Buffer pool instances only help when contention exists. You’ll see benefits if your system has:
+
+- High concurrency (many active threads)
+- CPU-bound workloads
+- Mutex contention in InnoDB
+
+If your workload is primarily IO-bound, this setting will have little impact.
+
+---
+
+### Sizing Guidelines
+
+A practical rule:
+
+Use roughly 1 instance per 1GB of buffer pool, up to a reasonable limit.
+
+General guidance:
+
+- < 1GB buffer pool → 1 instance
+- 1GB–8GB → 2–4 instances
+- 8GB–64GB → 4–8 instances
+- 64GB+ → 8–16 instances
+
+---
+
+### Keep Instances Large Enough
+
+Each instance needs enough memory to function efficiently.
+
+Avoid going below ~1GB per instance.
+
+If instances are too small:
+
+- LRU efficiency drops
+- Eviction becomes more aggressive
+- Cache locality suffers
+
+Example
+
+```sql
+innodb_buffer_pool_size = 32G
+innodb_buffer_pool_instances = 8
 ```
 
-⚠️ Only useful for large buffer pools (typically >1GB). Too many instances can reduce efficiency.
+This gives ~4GB per instance, which is well-balanced.
+
+---
+
+### Common Mistakes
+
+- Increasing instances without evidence of contention
+- Matching instance count to CPU cores
+- Using many instances with a small buffer pool
+- Expecting this to fix IO bottlenecks
 
 ---
 
