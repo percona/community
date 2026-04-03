@@ -297,10 +297,12 @@ Error opening connection to ProxySQL:
 unexpected resp from server for caching_sha2_password, perform full authentication
 
 ```
+
 This occurs because ProxySQL does not support the required RSA-based full authentication, breaking PMM monitoring integration.
-**Reported Affected Version/s**: 1.19.0
-**Upstream Bug**: Not applicable
-**Workaround/Fix**: Use mysql_native_password
+
+**Reported Affected Version/s**: 1.19.0  
+**Upstream Bug**: Not applicable  
+**Workaround/Fix**: Use `mysql_native_password`  
 **Fixed/Planned Version/s**: 1.20.0
 
 ---
