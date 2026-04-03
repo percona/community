@@ -16,6 +16,7 @@ speakers:
 - costa_tsaousis
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2023"]
+events_tag: ["In-Person"]
 events_category: ["Speaking", "Sponsorship"]
 ---
 Percona University Athens took place on November 7th. The event in Athens was organised with the help and sponsorship of [FerretDB](https://www.ferretdb.com/).

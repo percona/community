@@ -29,9 +29,40 @@
       <!-- Search status -->
       <p class="blog-search-status" data-search-status aria-live="polite"></p>
 
+      <!-- UPCOMING (only on page 1) -->
+      {{ $upcomingLinks := slice }}
+
+      {{ if eq .paginator.PageNumber 1 }}
+        {{ $now := now }}
+        {{ $events := .searchPages }}
+        {{ $upcoming := where $events "Date" ">" $now }}
+        {{ $sortedUpcoming := sort $upcoming "Date" "asc" }}
+
+        {{ range $sortedUpcoming }}
+          {{ $upcomingLinks = $upcomingLinks | append .RelPermalink }}
+        {{ end }}
+
+        {{ if gt (len $sortedUpcoming) 0 }}
+          <div id="upcoming-events-block">
+            <h2>Upcoming Events</h2>
+            <div class="events-list grid grid--2">
+              {{ range $sortedUpcoming }}
+                <div class="grid__item">
+                  {{ partial "event-preview" . }}
+                </div>
+              {{ end }}
+            </div>
+            <hr/>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      <!-- ALL EVENTS TITLE -->
+      <!-- <h2 class="all-events-title">Our Event History</h2> -->
+
       <!-- Events list (GRID) -->
       <div class="events-list grid grid--2" id="events-list-container">
-        {{ range .paginator.Pages }}
+        {{ range where .paginator.Pages "RelPermalink" "not in" $upcomingLinks }}
           <div class="grid__item">
               {{ partial "event-preview" . }}
           </div>
@@ -85,6 +116,7 @@
           {{ end }}
         {{ end }}
       </ul>
+
       <!-- Types -->
       <h2>Category</h2>
       <ul class="category-list">
@@ -94,18 +126,36 @@
         {{ end }}
         {{ end }}
       </ul>
-      <!-- Tag list -->
-      <h2>Topics</h2>
+
+      <!-- Format section -->
+      <h2>Format</h2>
       <ul class="category-list">
         {{ with .page.Site.Taxonomies.events_tag }}
           {{ range sort .ByCount }}
-              <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ if eq .Page.Title "Online" }}
+              <li><a href="{{ .Page.Permalink }}" class="category">Online ({{ .Count }})</a></li>
+            {{ end }}
+            {{ if eq .Page.Title "In-Person" }}
+              <li><a href="{{ .Page.Permalink }}" class="category">In‑Person ({{ .Count }})</a></li>
+            {{ end }}
           {{ end }}
         {{ end }}
       </ul>
 
-       <h2>Tags</h2>
-        <ul class="category-list">
+      <!-- Topics section -->
+      <h2>Topics</h2>
+      <ul class="category-list">
+        {{ with .page.Site.Taxonomies.events_tag }}
+          {{ range sort .ByCount }}
+            {{ if and (ne .Page.Title "Online") (ne .Page.Title "In-Person") }}
+              <li><a href="{{ .Page.Permalink }}" class="category">{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+
+      <h2>Tags</h2>
+      <ul class="category-list">
         {{ with .page.Site.Taxonomies.tags }}
             {{ range $key, $value := . }}
             {{ if gt $value.Count 1 }}
@@ -113,7 +163,7 @@
             {{ end }}
             {{ end }}
         {{ end }}
-       </ul>
+      </ul>
   </div>
 
 </div>
@@ -191,6 +241,7 @@
     const eventsList = document.getElementById("events-list-container");
     const paginator = document.getElementById("events-paginator");
     const statusEl = document.querySelector("[data-search-status]");
+    const upcomingBlock = document.getElementById("upcoming-events-block");
 
     if (!searchDataEl || !searchInput || !eventsList) return;
 
@@ -204,17 +255,16 @@
     const defaultListMarkup = eventsList.innerHTML;
 
     const scoreEvent = (event, tokens) => {
-    let score = 0;
-    tokens.forEach(token => {
+      let score = 0;
+      tokens.forEach(token => {
         if (event.title.includes(token)) score += 5;
-        if (event.speakers.includes(token)) score += 4;  
+        if (event.speakers.includes(token)) score += 4;
         if (event.tags.includes(token)) score += 3;
         if (event.event_location.includes(token)) score += 2;
         if (event.excerpt.includes(token)) score += 1;
-    });
-    return score;
+      });
+      return score;
     };
-
 
     const renderMatches = (matches) => {
       if (!matches.length) {
@@ -222,7 +272,9 @@
         if (statusEl) statusEl.textContent = "No results";
         return;
       }
-      eventsList.innerHTML = matches.map(m => `<div class="grid__item">${m.html}</div>`).join("");
+      eventsList.innerHTML = matches
+        .map(m => `<div class="grid__item">${m.html}</div>`)
+        .join("");
       if (statusEl) statusEl.textContent = `Found ${matches.length} results`;
     };
 
@@ -230,6 +282,7 @@
       eventsList.innerHTML = defaultListMarkup;
       if (statusEl) statusEl.textContent = "";
       if (paginator) paginator.classList.remove("is-hidden");
+      if (upcomingBlock) upcomingBlock.style.display = "";   // ← вернуть Upcoming
     };
 
     const parseQueryTokens = (value) => {
@@ -262,6 +315,9 @@
         resetList();
         return;
       }
+
+      // HIDE UPCOMING WHEN SEARCHING
+      if (upcomingBlock) upcomingBlock.style.display = "none";
 
       if (paginator) paginator.classList.add("is-hidden");
 

@@ -11,6 +11,7 @@ speakers:
 - andrew_pogrebnoi
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2024"]
+events_tag: ["In-Person"]
 events_category: ["Speaking"]
 ---
 On April 20th, 2024, people who love working with databases came together in Cyprus for something special - the Percona University Limassol. Percona put on this event to help folks dive deep into the latest database tech.

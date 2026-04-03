@@ -6,6 +6,7 @@ images:
 - events/percona-university-delhi-2024/1.jpg
 layout: single
 date: '2024-06-21'
+events_tag: ["In-Person"]
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2024"]
 ---

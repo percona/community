@@ -31,6 +31,7 @@ blog_tags:
 - Percona
 - PostgreSQL
 - Security
+- Vibe Coding
 - pg_kwagner
 - pg_tde
 - pg_zsolt
@@ -46,7 +47,7 @@ events_tags:
 - securing
 talks_tags:
 - Slides
-posts_count: 5
+posts_count: 6
 events_count: 4
 talks_count: 4
 contributor_type:

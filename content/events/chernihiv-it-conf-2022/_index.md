@@ -12,6 +12,7 @@ speakers:
 - peter_zaitsev
 - lenz_grimmer
 tags: ["Event", "devops", "opensource"]
+events_tag: ["Online"]
 events_year: ["2022"]
 events_category: ["Speaking", "Sponsorship"]
 ---

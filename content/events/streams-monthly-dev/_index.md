@@ -9,6 +9,7 @@ images:
 date: '2022-09-26'
 events_year: ["2022"]
 events_category: ['Community']
+events_tag: ["Online"]
 ---
 {{% hero-gradient class="night" %}}
 

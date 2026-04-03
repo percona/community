@@ -7,6 +7,7 @@ layout: single
 date: '2026-03-23'
 tags: ["Event", "opensource", "Cloud Native", "PostgreSQL", "MySQL", "MongoDB", "Kubernetes"]
 events_year: ["2026"]
+events_tag: ["In-Person"]
 events_category: ["Sponsorship", "Speaking"]
 ---
 

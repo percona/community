@@ -28,58 +28,8 @@
             </div>
         {{ end }}
 
-        {{ if eq $paginator.PageNumber 1 }}
-
-        <div class="featured__wrapper">
-            <div class="grid grid--2">
-
-                <div class="featured__left featured__one branded">
-
-                    {{- $array := split "Promo" "," -}}
-                    {{- $one := first 1 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $array ) -}}
-
-                    {{- range $one -}}
-                        {{ partial "event-preview" . }}
-                    {{- end -}}
-
-                </div>
-
-<div class="featured__right featured__list">
-    <h2 class="title-wrap">UPCOMING EVENTS</h2>
-
-    {{ $now := now }}
-    {{ $events := where $.Page.Site.RegularPages "Section" "events" }}
-
-    {{/* Сортируем по дате */}}
-    {{ $sorted := sort $events ".Date" "asc" }}
-
-    {{ $count := 0 }}
-
-    {{ range $sorted }}
-        {{/* Пропускаем прошедшие */}}
-        {{ if le .Date $now }}
-            {{ continue }}
-        {{ end }}
-
-        {{/* Пропускаем Promo */}}
-        {{ if in .Params.tags "Promo" }}
-            {{ continue }}
-        {{ end }}
-
-        {{/* Ограничиваем тремя */}}
-        {{ if ge $count 3 }}
-            {{ break }}
-        {{ end }}
-
-        {{ partial "event-preview-line" . }}
-        {{ $count = add $count 1 }}
-    {{ end }}
-</div>
-
-
-
-            </div>
-        </div>
+        {{ if eq $paginator.PageNumber 9999 }}
+            {{ partial "events-hero.html" . }}
         {{- end -}}
         </div></div>
     {{- end -}}

@@ -10,6 +10,7 @@ date: '2022-04-12'
 tags: ["event", "opensource", "sponsorship"]
 events_year: ["2022"]
 events_category: ["Sponsorship"]
+events_tag: ["In-Person"]
 ---
 This time Percona Team flew to San Jose to participate in the [Postgres Conference Silicon Valley](https://postgresconf.org/conferences/SV2022) from April 7th to 8th. This is a significant event for the Postgres Community on the West Coast. 
 

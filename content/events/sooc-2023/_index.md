@@ -11,6 +11,7 @@ speakers:
 - peter_zaitsev
 tags: ["event", "opensource"]
 events_year: ["2023"]
+events_tag: ["In-Person"]
 events_category: ["Speaking"]
 ---
 The [State of Open Con](https://stateofopencon.com/) is the UK's open source technology conference. This year, it took place at Queen Elizabeth II Centre in London, last Feb 7-8, 2023.

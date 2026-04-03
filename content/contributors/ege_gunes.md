@@ -21,7 +21,13 @@ contributor_tag:
 - MongoDB
 - MySQL
 - PostgreSQL
-blog_tags: []
+- cloud
+- community
+blog_tags:
+- cloud
+- events
+- kubernetes
+- operators
 events_tags:
 - Event
 - Events
@@ -33,10 +39,11 @@ talks_tags:
 - Kubernetes
 - Open Source
 - database
-posts_count: 0
+posts_count: 1
 events_count: 5
 talks_count: 1
 contributor_type:
+- author
 - speaker
 contributor_year:
 - '2026'

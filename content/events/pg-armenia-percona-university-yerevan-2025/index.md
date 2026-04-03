@@ -22,7 +22,7 @@ speakers:
 - piotr_kalmukhya
 tags: ["Event", "MongoDB", "MySQL", "PMM", "PerconaUniversity", "PostgreSQL", "Yerevan"]
 events_year: ["2025"]
-events_tag: ["MongoDB", "MySQL", "PostgreSQL"]
+events_tag: ["MongoDB", "MySQL", "PostgreSQL", "In-Person"]
 events_category: ["Speaking"]
 ---
 Percona and **PG Armenia** invite you to a **free, in-person event** in Yerevan, Armenia, as part of **Percona University**!

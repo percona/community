@@ -10,6 +10,7 @@ date: '2024-09-07'
 speakers:
 - peter_zaitsev
 tags: ["Home", "Promo"]
+events_tag: ["In-Person"]
 events_year: ["2024"]
 events_category: ["Speaking"]
 ---

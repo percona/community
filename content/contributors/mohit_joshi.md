@@ -12,15 +12,23 @@ social:
 images:
 - contributors/mohit.jpeg
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
-blog_tags: []
+contributor_tag:
+- PostgreSQL
+blog_tags:
+- OIDC
+- PingIdentity
+- PostgreSQL
+- Security
+- pg_oidc_validator
 events_tags: []
 talks_tags: []
-posts_count: 0
+posts_count: 1
 events_count: 0
 talks_count: 0
-contributor_type: []
-contributor_year: []
+contributor_type:
+- author
+contributor_year:
+- '2026'
 ---
 Mohit joined Percona in 2019 as a Senior QA Engineer, working across MySQL, PostgreSQL and Percona XtraBackup. He focuses on improving product quality by designing stress tests, validating edge cases, and building automation frameworks - including pstress, a custom stress-testing framework.
 

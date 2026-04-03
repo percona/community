@@ -10,6 +10,7 @@ layout: single
 date: '2022-01-20'
 tags: ["Event", "devops", "opensource"]
 events_year: ["2022"]
+events_tag: ["Online"]
 events_category: ["Community"]
 ---
 Percona is thrilled to support [Chernihiv.IT Cluster](https://www.chernihiv.it/) and help to develop the local IT community in Chernihiv, Ukraine. The cluster was founded in 2017 and it unites the efforts of 11 IT companies. Percona's engineers Evgeniy Patlan, Serhii Stasiuk, Mykola Marzhan, Maxim Kondratenko, and other Perconians in the city eagerly participate in Cluster's activities, both online and in-person, and willingly share their knowledge and experience with others.

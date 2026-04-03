@@ -10,6 +10,7 @@ date: '2022-11-05'
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2022"]
 events_category: ["Sponsorship"]
+events_tag: ["In-Person"]
 speakers:
 - sergey_pronin
 - peter_zaitsev

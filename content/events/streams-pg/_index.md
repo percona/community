@@ -8,6 +8,7 @@ images:
 date: '2022-01-27'
 events_year: ["2022"]
 events_category: ["Speaking","Community"]
+events_tag: ["Online"]
 ---
 {{% hero-gradient class="night" %}}
 

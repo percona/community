@@ -10,6 +10,7 @@ date: '2026-01-30'
 tags: ["Event", "opensource", "sponsorship", "Cloud Native", "Kubernetes", "MariaDB", "PostgresSQL", "MySQL"]
 events_year: ["2026"]
 events_category: ["Sponsorship"]
+events_tag: ["In-Person"]
 ---
 
 Percona had a strong presence at **FOSDEM 2026**, taking place January 31 – February 1, 2026, at the ULB Solbosch Campus in Brussels, Belgium. 

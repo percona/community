@@ -11,6 +11,7 @@ date: '2025-09-15'
 EventDate: October 2–3, 2025
 tags: ["Event", "devops", "opensource"]
 events_year: ["2025"]
+events_tag: ["Online"]
 events_category: ["Community"]
 ---
 Percona is proud to support educational and community-driven initiatives in collaboration with Chernihiv National Technological University and the Chernihiv IT Cluster. As an official partner of the upcoming FOSS conference, Percona contributes through thought leadership, technical expertise, and active participation in the organizing committee.

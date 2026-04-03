@@ -11,7 +11,7 @@ speakers:
 - peter_zaitsev
 tags: ["Event", "Kubernetes", "PostgreSQL", "opensource", "russia"]
 events_year: ["2021"]
-events_tag: ["Cloud Native", "PostgreSQL"]
+events_tag: ["Cloud Native", "PostgreSQL", "In-Person"]
 events_category: ["Speaking", "Community"]
 ---
 On November 15th, Percona organized a meetup with the local community in Ulyanovsk (Russia). From Percona, there were Peter Zaitsev (CEO), Maria Azizova (Staff Executive), and Aleksandra Abramova (Community Specialist). They had a chance to meet engineers from different IT companies who live nearby. 

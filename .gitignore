@@ -8,3 +8,4 @@ public
 *.swp
 .*.swp
 __pycache__
+tools/kapaio
