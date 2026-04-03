@@ -6,7 +6,7 @@ categories: ['MySQL', 'MongoDB', 'PostgreSQL', 'Kubernetes', 'Backup', 'Monitori
 authors:
   - aaditya_dubey
 images:
-  - blog/2026/03/BugReportMarch2026.jpg
+  - blog/2026/04/BugReportMarch2026.jpg
 ---
 
 At Percona, we operate on the premise that full transparency makes a product better. We strive to build the best open-source database products, but also to help you manage any issues that arise in any of the databases that we support. And, in true open-source form, report back on any issues or bugs you might encounter along the way.
