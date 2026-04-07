@@ -3,7 +3,7 @@
 title: 'Nightmare on Collation Street - April 7, 2026'
 description: Jan and Alastair discuss what happens when changes to glibc or ICU come after your Postgres indexes..
 images:
-- events/2026-nightmare-on-collation-street/banner.jpg
+- events/2026-nightmare-on-collation-street/banner.jpeg
 layout: single
 date: '2026-03-30'
 EventDate: Monday, March 30, 2026 · 14:00-15:00 GMT
@@ -29,4 +29,4 @@ Join Jan and Alastair for a discussion about how this becomes your Postgres data
 
 ***Join our Open Source Unplugged!***
 
-![Percona Open Source Unplugged Nightmare on Collation Street](/events/2026-nightmare-on-collation-street/banner.jpg)
+![Percona Open Source Unplugged Nightmare on Collation Street](/events/2026-nightmare-on-collation-street/banner.jpeg)
