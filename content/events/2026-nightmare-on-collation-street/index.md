@@ -5,8 +5,8 @@ description: Jan and Alastair discuss what happens when changes to glibc or ICU 
 images:
 - events/2026-nightmare-on-collation-street/banner.jpeg
 layout: single
-date: '2026-03-30'
-EventDate: Monday, March 30, 2026 · 14:00-15:00 GMT
+date: '2026-04-07'
+EventDate: Tuesday, April 7, 2026 · 11:00-12:00 BST
 EventLocation: Online
 speakers:
 - evgeniy_patlan
