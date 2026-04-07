@@ -19,6 +19,7 @@ Setting up data-at-rest encryption correctly requires more than just flipping a 
 
 Participants will learn the mechanics of master key rotation, how the server handles compromised keys through KMIP state polling, and how to avoid potential data loss pitfalls when working with versioned secrets in Vault[cite: 29].
 
+- 🎥 [Watch the recording](https://youtu.be/ZC2Y5z1G5-U)
 - 📅 **Date/Time:** March 17, 2026, 11:00 AM – 12:00 PM GMT
 - 👤 **Speaker:** Konstantin Trushin - Senior Software Engineer 
 - 📍 **Online**
