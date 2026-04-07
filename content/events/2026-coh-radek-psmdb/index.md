@@ -22,6 +22,7 @@ Senior Product Manager **Radoslaw Szulgo** will highlight how Percona is enhanci
 This session is also open for you to ask questions, collaborate, and provide your requirements and use cases.
 
 
+- - 🎥 [Watch the recording](https://youtu.be/v1Y_a27WRgs)
 - 📅 **Date/Time:** 5 March, 11:00 AM GMT
 - 👤 **Speaker:** Radoslaw Szulgo - Senior Product Manager, Percona Software for MongoDB
 - 📍 **Online**

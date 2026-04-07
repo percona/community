@@ -21,6 +21,7 @@ Attendees will learn how to handle complex requirements such as idempotent lifec
 
 Finally, discover how to implement a hybrid CI/CD workflow that combines development-time speed with production-grade rigor.
 
+- 🎥 [Watch the recording](https://youtu.be/ZA2jVq2VIIc)
 - 📅 **Date/Time:** March 30, 2026, 14:00 PM – 15:00 PM GMT
 - 👤 **Speaker:** [Evgeniy Patlan](https://www.linkedin.com/in/evgeniypatlan/) - Manager, Build & Release Engineering
 - 📍 **Online**

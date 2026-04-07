@@ -18,6 +18,7 @@ Discover how CVE-2025-14847 (“MongoBleed”) can expose **MongoDB** to high-se
 
 In this interview, we’ll break down who’s at risk, why zlib is the trigger, and the fastest mitigation: disable zlib while keeping snappy/zstd. We’ll also show how to confirm the fix (server options, logs, and PMM metrics) and how to plan upgrades to patched releases.
 
+- 🎥 [Watch the recording](https://youtu.be/x6m28oUbS00)
 - 📅 **Date/Time:** 24 February, 16:00 PM GTM
 - 👤 **Speaker:** Ivan Groenewold - Percona Tech Lead, MongoDB
 - 📍 **Online**
