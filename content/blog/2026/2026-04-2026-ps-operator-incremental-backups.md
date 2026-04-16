@@ -81,7 +81,6 @@ spec:
         type: full
       - name: daily-incremental
         schedule: "0 0 * * 1-6"      # Monday through Saturday
-        keep: 24
         storageName: s3-us
         type: incremental
 ```
