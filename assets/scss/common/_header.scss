@@ -22,15 +22,22 @@ header {
     font-size: 1.2rem;
     font-weight: bold;
     font-variant: small-caps;
+    display: flex;
+    align-items: center;
 
     a {
-      margin-top: 0.7rem;
       text-decoration: none;
-      display: block;
+      display: flex;
+      align-items: center;
       border: none;
 
       &:visited {
-        border: none;   
+        border: none;
+      }
+
+      img {
+        height: 45px;
+        width: auto;
       }
     }
   }
@@ -49,8 +56,12 @@ header {
     box-shadow: 0 0 3px 0 rgba(168, 168, 168, .5);
   }
 
-  .logo a {
-    position:absolute;
+  .page-header .logo {
+    z-index: 4;
+
+    a img {
+      height: 32px;
+    }
   }
   .page-header {
     justify-content: space-between;
@@ -78,6 +89,7 @@ header {
   #show-mobile-menu:checked + .mobile-toggle {
     position:fixed;
     right:$padding-right-page;
+    z-index:12;
     .hamburger-bar:nth-of-type(1) {
       transform:translateY(0.4rem) rotate(315deg);
     }
@@ -95,7 +107,6 @@ header {
     width:1.2rem;
     height:1rem;
     z-index:5;
-    margin-top:0.75rem;
     label, .hamburger-bar {
       cursor: pointer;
     }
@@ -108,6 +119,7 @@ header {
     right:0;
     bottom:100vh;
     opacity:0;
+    z-index:10;
     background:rgba(0,0,0,0.5);
     transition: opacity $transition-length ease-in-out, border-bottom-color $transition-length ease-in-out;
   }
@@ -133,7 +145,7 @@ header {
     top:0;
     left:0;
     right:0;
-    z-index:3;
+    z-index:11;
     font-size:1rem;
     line-height:3rem;
     padding: 3rem $padding-right-page 1.5rem $padding-left-page;
@@ -237,6 +249,7 @@ header {
 
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 }
 
