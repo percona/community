@@ -15,11 +15,11 @@ images:
 - contributors/sami_ahlroos.png
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - MySQL
 blog_tags: []
 events_tags: []
 talks_tags:
-- Kubernetes
 - Open Source
 - Video
 posts_count: 0

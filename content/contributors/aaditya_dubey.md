@@ -14,29 +14,44 @@ images:
 - contributors/aaditya_dubey.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Backup
 - Cloud
+- Kubernetes
 - MongoDB
+- Monitoring
 - MySQL
 - PMM
 - PostgreSQL
 - Toolkit
 blog_tags:
 - Kubernetes
+- Kubernetes Operator
 - MongoDB
 - MySQL
 - Opensource
+- Orchestrator
+- PBM
+- PCSM
+- PG_TDE
 - PMM
+- PSMDB
 - Percona
+- Percona Distribution for MySQL
+- Percona Server/MySQL
+- Percona Toolkit
+- Percona XtraBackup
+- Percona XtraDB Cluster
 - PostgreSQL
 - opensource
 events_tags: []
 talks_tags: []
-posts_count: 6
+posts_count: 7
 events_count: 0
 talks_count: 0
 contributor_type:
 - author
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

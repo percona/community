@@ -16,6 +16,7 @@ images:
 contributor_tag:
 - Cloud
 - Community
+- Kubernetes
 - MongoDB
 - PMM
 blog_tags:
@@ -33,7 +34,6 @@ talks_tags:
 - DBaaS
 - Databases
 - Grafana
-- Kubernetes
 - Opensource
 - observability
 - pmm

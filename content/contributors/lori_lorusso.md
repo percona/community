@@ -17,6 +17,7 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- Kubernetes
 - PostgreSQL
 blog_tags: []
 events_tags:
@@ -25,7 +26,6 @@ events_tags:
 - Valkey
 talks_tags:
 - Everest
-- Kubernetes
 - Open Source
 - Opensource
 - Security

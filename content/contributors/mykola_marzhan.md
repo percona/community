@@ -16,7 +16,9 @@ images:
 - contributors/mykola_marzhan.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Backup
 - Community
+- Kubernetes
 - MongoDB
 - MySQL
 blog_tags: []
@@ -25,8 +27,6 @@ events_tags:
 - Featured
 - MySQL-Summit
 talks_tags:
-- Backup
-- Kubernetes
 - Open Source
 - Video
 posts_count: 0

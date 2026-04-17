@@ -16,7 +16,9 @@ images:
 contributor_tag:
 - Cloud
 - Community
+- Kubernetes
 - MongoDB
+- Monitoring
 - MySQL
 - PMM
 - PostgreSQL
@@ -89,8 +91,6 @@ talks_tags:
 - DevOps
 - Docker
 - Everest
-- Kubernetes
-- Monitoring
 - Open Source
 - Opensource
 - Operators

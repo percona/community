@@ -18,6 +18,7 @@ images:
 contributor_tag:
 - Cloud
 - Community
+- Kubernetes
 - MySQL
 - PMM
 - PostgreSQL
@@ -46,7 +47,6 @@ blog_tags:
 - pg_stat_monitor
 - podman
 events_tags:
-- Kubernetes
 - Percona Community Live
 - dashboard
 - event

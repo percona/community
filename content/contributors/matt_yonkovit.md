@@ -16,6 +16,7 @@ images:
 - contributors/matt.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - MongoDB
 - MySQL
 - PMM
@@ -23,7 +24,6 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Databases
-- Kubernetes
 - Meetup
 - Mongo
 - Operator

@@ -18,6 +18,7 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- Kubernetes
 - MongoDB
 - MySQL
 - PostgreSQL
@@ -32,11 +33,9 @@ events_tags:
 - Event
 - Events
 - Featured
-- Kubernetes
 - Meetup
 talks_tags:
 - Cloud Native
-- Kubernetes
 - Open Source
 - database
 posts_count: 1

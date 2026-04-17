@@ -15,6 +15,7 @@ images:
 - contributors/takis_stathopoulos.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - PostgreSQL
 blog_tags: []
 events_tags:
@@ -25,8 +26,7 @@ events_tags:
 - event
 - opensource
 - sponsorship
-talks_tags:
-- Kubernetes
+talks_tags: []
 posts_count: 0
 events_count: 2
 talks_count: 1

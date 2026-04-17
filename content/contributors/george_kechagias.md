@@ -16,14 +16,13 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- Kubernetes
 blog_tags: []
 events_tags:
 - Events
 - Featured
-- Kubernetes
 talks_tags:
 - Cloud Native
-- Kubernetes
 - Open Source
 - database
 posts_count: 0
