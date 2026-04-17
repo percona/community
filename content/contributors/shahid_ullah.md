@@ -15,14 +15,23 @@ social:
 images:
 - contributors/icon.png
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
-blog_tags: []
+contributor_tag:
+- PostgreSQL
+blog_tags:
+- Backups
+- Opensource
+- PG_TDE
+- Percona
+- PostgreSQL
+- Security
 events_tags: []
 talks_tags: []
-posts_count: 0
+posts_count: 1
 events_count: 0
 talks_count: 0
-contributor_type: []
-contributor_year: []
+contributor_type:
+- author
+contributor_year:
+- '2026'
 ---
 Senior Software Developer in Test at Percona, focused on quality, automation, and reliable releases.

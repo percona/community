@@ -16,6 +16,7 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
+- Kubernetes
 - MongoDB
 - PostgreSQL
 blog_tags: []
@@ -26,7 +27,6 @@ talks_tags:
 - DBaaS
 - Databases
 - Everest
-- Kubernetes
 - Open Source
 - Opensource
 - Operators

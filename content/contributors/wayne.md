@@ -44,6 +44,7 @@ blog_tags:
 - component
 - filter
 - innodb
+- innodb bufferpool
 - key ring
 - performance
 - replication
@@ -58,7 +59,7 @@ events_tags:
 - event
 - opensource
 talks_tags: []
-posts_count: 17
+posts_count: 18
 events_count: 4
 talks_count: 0
 contributor_type:

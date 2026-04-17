@@ -14,11 +14,11 @@ social:
 images:
 - contributors/chetan_shivashankar.png
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- Kubernetes
 blog_tags: []
 events_tags: []
 talks_tags:
-- Kubernetes
 - Video
 posts_count: 0
 events_count: 0

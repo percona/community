@@ -16,16 +16,23 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- Kubernetes
+- MySQL
 - PostgreSQL
-blog_tags: []
+blog_tags:
+- Community
+- Kubernetes
+- MySQL
+- Open Source
 events_tags:
 - Events
 - Featured
 talks_tags: []
-posts_count: 0
+posts_count: 1
 events_count: 1
 talks_count: 0
 contributor_type:
+- author
 - speaker
 contributor_year:
 - '2026'

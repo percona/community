@@ -16,16 +16,15 @@ images:
 - contributors/marco_tusa.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - MySQL
 blog_tags: []
 events_tags:
 - Event
 - Featured
-- Kubernetes
 - Promo
 - fosdem
 talks_tags:
-- Kubernetes
 - Open Source
 - Video
 posts_count: 0

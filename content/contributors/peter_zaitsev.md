@@ -19,6 +19,7 @@ images:
 contributor_tag:
 - Cloud
 - Community
+- Kubernetes
 - MongoDB
 - MySQL
 - PMM
@@ -29,7 +30,6 @@ events_tags:
 - Events
 - Featured
 - Home
-- Kubernetes
 - MySQL-Summit
 - PerconaUniversity
 - Promo
@@ -48,7 +48,6 @@ talks_tags:
 - Cloud Native
 - DBaaS
 - Databases
-- Kubernetes
 - Linux
 - MariaDB
 - Open Source

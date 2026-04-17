@@ -14,6 +14,7 @@ images:
 - contributors/kai_wagner.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - MySQL
 - PMM
 - PostgreSQL
@@ -38,7 +39,6 @@ blog_tags:
 events_tags:
 - Featured
 - Hacktoberfest
-- Kubernetes
 - PG
 - Postgres
 - Stream

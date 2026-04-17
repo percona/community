@@ -1,12 +1,14 @@
 ---
 title: "Incremental backups in Percona Kubernetes Operator for MySQL"
-date: "2026-04-16T10:00:00+00:00"
-tags: ["Percona", "Kubernetes, "Cloud", "Community", "Open Source", "MySQL"]
-categories: ['MySQL']
+date: "2026-04-17T10:00:00+00:00"
+tags: ['Kubernetes', 'Community', 'Open Source', 'MySQL']
+categories: ['MySQL', 'Kubernetes']
 authors:
   - mayank_shah
-images: []
+images:
+  - blog/2026/04/Mayank.png
 ---
+
 Starting with version 1.1.0, the Percona Kubernetes Operator for MySQL now supports **incremental backups**. This feature lets you backup only the changed data since the last backup, instead of copying your entire dataset each time. The result is dramatically smaller backup sizes, faster backup windows, and lower cloud storage costs.
 
 In this post, we'll walk through how the feature works under the hood, how to configure it, and what to keep in mind when designing your backup strategy.

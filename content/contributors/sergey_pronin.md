@@ -18,6 +18,7 @@ images:
 contributor_tag:
 - Cloud
 - Community
+- Kubernetes
 - MongoDB
 - MySQL
 - PostgreSQL
@@ -39,7 +40,6 @@ blog_tags:
 events_tags:
 - Database
 - Event
-- Kubernetes
 - Meetup
 - Mongo
 - PBM
@@ -55,7 +55,6 @@ talks_tags:
 - Cloud Native
 - Containers
 - Everest
-- Kubernetes
 - Open Source
 - Opensource
 - Video

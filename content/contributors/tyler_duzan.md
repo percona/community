@@ -15,11 +15,11 @@ images:
 - contributors/tyler_duzan.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Backup
 - MySQL
 blog_tags: []
 events_tags: []
 talks_tags:
-- Backup
 - Open Source
 - Video
 posts_count: 0

@@ -17,6 +17,7 @@ images:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- Kubernetes
 - MySQL
 blog_tags: []
 events_tags:
@@ -24,7 +25,6 @@ events_tags:
 - Featured
 - MySQL-Summit
 talks_tags:
-- Kubernetes
 - Video
 posts_count: 0
 events_count: 3

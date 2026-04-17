@@ -16,13 +16,13 @@ images:
 - contributors/pep_pla.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - MySQL
 - PostgreSQL
 blog_tags: []
 events_tags:
 - Cloud Native
 - Event
-- Kubernetes
 - MariaDB
 - Meetup
 - PostgresSQL
@@ -30,7 +30,6 @@ events_tags:
 - sponsorship
 talks_tags:
 - Cloud Native
-- Kubernetes
 - MariaDB
 - Open Source
 - Video

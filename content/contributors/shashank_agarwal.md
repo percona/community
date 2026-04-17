@@ -16,12 +16,12 @@ images:
 - contributors/shashank_agarwal.jpg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - PostgreSQL
 blog_tags: []
 events_tags:
 - Community Track
 - Google
-- Kubernetes
 - Percona Live 2021
 talks_tags: []
 posts_count: 0
