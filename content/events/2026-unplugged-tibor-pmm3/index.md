@@ -21,9 +21,9 @@ Real-Time Query Analytics helps teams see queries as they run, making it easier 
 
 - 📅 **Date/Time:** April 22, 2026, 4:00 PM – 5:00 PM GMT
 - 👤 **Speaker:** Tibor Korocz - Observability Tech Lead
-- 🎙️ **Host:** Edith Puclla
+- 🎙️ **Host:** Edith Puclla - Tech Evangelist
 - 📍 **Online**
-- 🔗 Registration Link To be Confirmed
+- 🔗 [Register here](https://event.on24.com/wcc/r/5325286/E1D988231E34FF2F9F4C3D3CC806A33F) 
 
 
 ***Join our Open Source Unplugged!***
