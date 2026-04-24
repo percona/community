@@ -1,6 +1,7 @@
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
   {{- if in .Content "<pre class=\"chroma\">" -}}
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{ end }}
@@ -37,6 +38,33 @@
       {{ partial "content.html" . }}
       {{ partial "video.html" . }}  
     </div>
+
+    <!-- Talks -->
+    {{ if isset .Params "talks" }}
+    <div class="event-talks">
+      <h2>{{ if eq (len .Params.talks) 1 }}Talk{{ else }}Talks{{ end }}</h2>
+      <div class="grid grid--2">
+        {{ range .Params.talks }}
+          {{ $talkPage := $.Site.GetPage (print "/talks/" .) }}
+          {{ with $talkPage }}
+          <div class="grid__item">
+            {{ if .Params.images }}
+              <a href="{{ .RelPermalink }}" class="event-talk-img-link">
+                <img src="{{ ((resources.Get (index .Params.images 0)).Fill "1200x630 80% jpg").RelPermalink }}" alt="{{ .Title }}" />
+                <span class="event-talk-img-link__overlay">
+                  <span class="event-talk-img-link__title">{{ .Title }}</span>
+                  <span class="event-talk-img-link__cta">Learn more →</span>
+                </span>
+              </a>
+            {{ else }}
+              {{ partial "talks-preview-grid.html" . }}
+            {{ end }}
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
 
     <!-- Speaker Bios -->
     {{ if isset .Params "speakers" }}
