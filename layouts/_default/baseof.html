@@ -8,7 +8,7 @@
 
     <meta name="description" content="{{ with .Description }}{{ . | truncate 159 }}{{ else }}{{if .IsPage}}{{ .Summary | truncate 159 }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ if .Site.Params.favicon }}
-    <link rel="shortcut icon" href="{{ (resources.Get "icons/cropped-percona-favicon-32x32.png").RelPermalink }}" type="image/png" />
+    <link rel="shortcut icon" href="{{ (resources.Get "icons/Percona-Yellow-Icon-192.png").RelPermalink }}" type="image/png" />
     {{ end }}
 
     {{ if .Params.canonical -}}
