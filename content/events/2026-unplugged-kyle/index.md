@@ -22,7 +22,7 @@ In this session, **Kyle Davis** will lead a practical discussion on the transiti
 - 📅 **Date/Time:** April 28, 2026, 16:00 BST / 11:00 AM EDT
 - 👤 **Speaker:** Kyle Davis - General Manager, Redis-Valkey Ecosystem
 - 📍 **Online**
-- 🔗 Registration link to be confirmed
+- 🔗 [Register here for free and join us!](https://event.on24.com/wcc/r/5332683/BBCCBFC9371226007E1FA75EB6DEE701)
 
 
 ***Join our Open Source Unplugged!***

@@ -4,7 +4,7 @@ name: kyle_davis
 name_pronunciation: kyle_davis
 fullname: Kyle Davis
 fullname_pronounciation: Kyle Davis
-job: AWS, Senior Developer Advocate
+job: General Manager, Redis-Valkey Ecosystem
 country: Canada
 tagline: null
 social:
@@ -38,4 +38,4 @@ contributor_year:
 - '2026'
 - '2021'
 ---
-Kyle Davis is the Senior Developer Advocate with Open Distro for Elasticsearch at AWS. While being a relative newcomer to AWS, Kyle has a long history with software development and databases. When not working, Kyle enjoys 3D printing, and getting his hand dirty in his Edmonton, Alberta-based home garden.
+Kyle Davis is the General Manager of the Redis-Valkey Ecosystem at Percona. Although he is relatively new to Percona, Kyle has a long history in software development and databases. When not working, Kyle enjoys 3D printing, and getting his hand dirty in his Edmonton, Alberta-based home garden.
