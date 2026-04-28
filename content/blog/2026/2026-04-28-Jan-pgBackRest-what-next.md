@@ -1,6 +1,6 @@
 ---
 title: "pgBackRest is archived, what now?"
-date: "2026-04-27T11:00:00+00:00"
+date: "2026-04-28T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'pgBackRest']
 categories: ['PostgreSQL']
 authors:
