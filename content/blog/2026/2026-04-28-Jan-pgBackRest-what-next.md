@@ -14,14 +14,24 @@ images:
 On 27 April 2026, pgBackRest maintainer David Steele announced on [LinkedIn](https://www.linkedin.com/posts/davidsteele_after-a-lot-of-thought-i-have-decided-to-share-7454442611911655424-mVMS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAD3qpgBKSXefFXDYJlyIbIdar9mZh-NYBw) and in the [GitHub repository](https://github.com/pgbackrest/pgbackrest) that the project is becoming ~unmaintained~ archived, starting with:
 
 > TL;DR: pgBackRest is no longer being maintained. If you fork pgBackRest, please select a new name for your project.
+
+<div style="width:70%; margin: auto;">
+
 ![](blog/2026/04/Jan-david-li.png)
+
+</div>
 
 If you’re reading this, you’re likely either affected or at least concerned. In this short write up I will do my best to calm your nerves, present short term as well as more long term ideas and options.
 
 ## Where are we now - the status quo
 pgBackRest is a critical part of the PostgreSQL ecosystem, and nobody seriously expects it to simply disappear. What happens next is now up to the community.
 One possible outcome is the emergence of multiple forks of pgBackRest. That raises the risk of fragmentation or, put bluntly, ~Clone~ Fork Wars.
+
+<div style="width:70%; margin: auto;">
+
 ![](blog/2026/04/Jan-forks.png)
+
+</div>
 
 That said, there has already been a significant amount of discussion across the community, and one thing is clear:
 
@@ -32,11 +42,11 @@ The challenge now is twofold:
 * What direction should we take long term, without overcomplicating the short-term response?
 
 ## What is Percona planning
-Percona includes pgBackRest in the Percona Distribution for PostgreSQL as the recommended backup and restore solution. From our perspective, it remains the most mature, enterprise-ready and reliable option available. While alternatives like WAL-G or Barman are well regarded, our recommendation remains unchanged.
+[Percona includes pgBackRest](https://docs.percona.com/postgresql/14/solutions/backup-recovery.html#pgbackrest) in the [Percona Distribution for PostgreSQL](https://docs.percona.com/postgresql/14/index.html) as the recommended backup and restore solution. From our perspective, it remains the most mature, enterprise-ready and reliable option available. While alternatives like WAL-G or Barman are well regarded, our recommendation remains unchanged.
 
 To emphasize the message: 
 
-> the current situation does not impact our recommendation.
+> the current situation does <u>not</u> impact our recommendation.
 
 Percona will continue supporting pgBackRest. What that support looks like in terms of maintainership and collaboration with other organizations is still being actively discussed and will take time to solidify.
 
@@ -52,11 +62,17 @@ Two observations are worth calling out:
 1. People need sustainable funding, work cannot be assumed to be purely voluntary.
 2. A healthy open source project should not depend on a single company or individual.
 
-The current situation is, to some extent, a result of the opposite model. pgBackRest development was largely driven by a single company and later single maintainer, David Steele, with sponsorship from Crunchy Data. While others have contributed (e.g. Stephen Frost and [pgstef](https://github.com/pgstef), the project effectively relied on one primary maintainer.
-I think it’s fair to say we’ve seen a fair share [xkcd \#2347](https://xkcd.com/2347/) posted all over the internet over the course of last 24h. So here’s one more
+The current situation is, to some extent, a result of the opposite model. pgBackRest development was largely driven by a single company and later single maintainer, [David Steele](https://github.com/dwsteele), with sponsorship from Crunchy Data. While others have contributed (e.g.i [Stephen Frost](https://github.com/sfrost) and Stefan Fercot - [pgstef](https://github.com/pgstef)), the project effectively relied on one primary maintainer.
+
+I think it’s fair to say we’ve seen a fair share [xkcd \#2347](https://xkcd.com/2347/) posted all over the internet over the course of last 24h. So here’s one more:
+
+<div style="width:50%; margin: auto;">
+
 ![](blog/2026/04/Jan-comic-neb.png)
 
-To avoid repeating this pattern, we — along with other vendors — are deliberately taking time before jumping into forks or immediate solutions. The goal is to find a sustainable, collaborative model rather than rushing into fragmentation.
+</div>
+
+To avoid repeating this pattern, we (along with other vendors) are deliberately taking time before jumping into forks or immediate solutions. The goal is to find a sustainable, collaborative model rather than rushing into fragmentation.
 
 For comparison, it took the Linux Foundation 6 days to respond to the [Redis license change](https://github.com/redis/redis/pull/13157) by [launching Valkey](https://www.linuxfoundation.org/press/linux-foundation-launches-open-source-valkey-community). While this situation is different as there’s no license change in pgBackRest, it illustrates that meaningful coordination takes time.
 
@@ -65,7 +81,12 @@ This is exactly where the open source community can demonstrate its strength.
 ## What are the long term options?
 
 This situation is particularly surprising to me personally, as I recently referenced David’s proposed transparent funding model in [my talk](https://www.postgresql.eu/events/pgconfde2026/) at [PGConf.DE](http://pgconf.de/) just last week.
-![](Jan-david-money.png)
+
+<div style="width:30%; margin: auto;">
+
+![](blog/2026/04/Jan-david-money.png)
+
+</div>
 
 The idea, distributing funding across organizations that rely on the project, seemed like a promising path toward a more sustainable ecosystem. In hindsight, it appears that adoption of this model was either too slow or insufficient to support ongoing maintenance.
 
@@ -77,7 +98,12 @@ Looking ahead, several long-term options are being discussed within the communit
 These discussions are ongoing. If you’re attending [PGConf.Dev](https://2026.pgconf.dev/), this will almost certainly be a major topic, especially in the extensions ecosystem track of community sessions in the [Canfor](https://2026.pgconf.dev/schedule/tuesday) room on Tuesday.
 
 ## So what should I do now?
+
+<div style="width:70%; margin: auto;">
+
 ![](blog/2026/04/Jan-what-now.png)
+
+</div>
 
 In short, nothing but wait. Yes, this means:
 
