@@ -12,6 +12,7 @@ social:
   website: null
 images:
 - contributors/jan_wieremjewicz.jpg
+contact_email: jan.wieremjewicz@percona.com
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

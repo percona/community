@@ -1,83 +1,321 @@
 {{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/projects.scss") | safeCSS) -}}
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contributors.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
 {{ end }}
 
 {{ define "mainwrapper" }}
-    {{ if or .Title .Content }}
 
-        <div class="hero hero-gradient night"><div class="contentblock">
-            <div class="hero-text">
-                <h1>{{ .Params.hero_title }}</h1>
-                <p>{{ .Params.hero_description }}</p>
+    <!-- Hero -->
+    <div class="hero hero-pg">
+        <div class="contentblock">
+            <div class="hero-pg__inner">
+                <div class="hero-pg__text">
+                    <h1>{{ .Params.hero_title }}</h1>
+                    <p>{{ .Params.hero_description }}</p>
+                </div>
+                <div class="hero-pg__icon">
+                    {{- with resources.Get "images/pg/postgres-icon-white.png" -}}
+                    <img src="{{ .RelPermalink }}" alt="PostgreSQL" />
+                    {{- end }}
+                </div>
             </div>
-        </div></div>
+        </div>
+    </div>
 
-        <div class="page-main">
-            <div class="text body">
-            
-            {{ .Content }}
+    <div class="wide">
 
-            {{ partial "sharing.html" . }} 
+        <!-- Intro -->
+        <div class="pg-intro">
+            <h2>What We Build for PostgreSQL</h2>
+            <p>Percona is an active contributor to the PostgreSQL ecosystem. We build and maintain open source tools that extend PostgreSQL's capabilities — from encryption and query analytics to Kubernetes automation — and we sponsor projects that benefit the entire community.</p>
+        </div>
 
-            {{ range where .Pages "Params.block" "postgresql-links" }}
+        <!-- Project nav -->
+        <div class="pg-projects-nav">
+            <a class="pg-nav-item pg-nav-item--pg"      href="#percona-distribution-for-postgresql">Percona Distribution for PostgreSQL</a>
+            <a class="pg-nav-item pg-nav-item--pg"      href="#pg_tde">pg_tde</a>
+            <a class="pg-nav-item pg-nav-item--pg"      href="#pg_oidc_validator">pg_oidc_validator</a>
+            <a class="pg-nav-item pg-nav-item--pg"      href="#pg_stat_monitor">Monitoring & PMM</a>
+            <a class="pg-nav-item pg-nav-item--k8s"     href="#percona-operator-for-postgresql">Percona Operator for PostgreSQL</a>
+            <a class="pg-nav-item pg-nav-item--percona"  href="#hackorum">Hackorum</a>
+        </div>
 
-                <h2>{{ .Title }}</h2>
+    </div><!-- /.wide -->
 
-                {{- .Content -}}
+    {{- $pgTags := slice "Postgres" "PostgreSQL" "postgres" -}}
 
-                {{ range where .Site.Pages.ByWeight "Params.lessons" "postgresql" }}
-
-                    <h3>{{ .Title }}</h3>
-                    <div class="postgresql-links branded">
-                        <h4>Blog posts</h4>
-
-                        <div class="grid-links grid-links--4 ">
-                        {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "blog") -}}    
-                            <div class="grid__item">
-                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
+    <!-- Let's Talk -->
+    {{- $teamSlugs := slice "alastair_turner" "kai_wagner" "jan_wieremjewicz" -}}
+    <div class="pg-connect">
+        <div class="contentblock">
+            <div class="pg-connect__intro">
+                <h2>Let's Talk PostgreSQL</h2>
+                <p>Our team lives and breathes PostgreSQL — from community and open source to product feedback and joint projects. We'd love to hear from you, whatever the topic.</p>
+            </div>
+            <div class="pg-connect__team">
+                {{- range $teamSlugs -}}
+                    {{- $person := $.Site.GetPage (print "/contributors/" .) -}}
+                    {{- with $person -}}
+                    <div class="pg-connect__card">
+                        {{ with .Params.images }}
+                            <a href="{{ $person.RelPermalink }}" class="pg-connect__avatar-link">
+                                <img src="{{ ((resources.Get (index . 0)).Fill "160x160 90% jpg").RelPermalink }}"
+                                     alt="{{ $person.Params.fullname }}" class="pg-connect__avatar" />
+                            </a>
+                        {{ end }}
+                        <div class="pg-connect__info">
+                            <a href="{{ .RelPermalink }}" class="pg-connect__name">{{ .Params.fullname }}</a>
+                            {{ with .Params.job }}
+                                <p class="pg-connect__role">{{ . }}</p>
+                            {{ else }}{{ with .Params.tagline }}
+                                <p class="pg-connect__role">{{ . }}</p>
+                            {{ end }}{{ end }}
+                            <div class="pg-connect__links">
+                                {{ with .Params.social.linkedin }}
+                                    <a href="{{ . }}" target="_blank" rel="noopener" class="pg-connect__link pg-connect__link--linkedin">
+                                        <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode }}" alt="LinkedIn" />
+                                        LinkedIn
+                                    </a>
+                                {{ end }}
+                                {{ with .Params.contact_email }}
+                                    <a href="mailto:{{ . }}" class="pg-connect__link pg-connect__link--email">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                        Email
+                                    </a>
+                                {{ end }}
                             </div>
-                        {{- end -}}
-                        </div>
-
-                        <h4>Video</h4>
-
-                        <div class="grid-links grid-links--4">
-                        {{- range (where (where .Site.Pages.ByWeight "Params.block" .Params.blockKey) "Params.type" "video") -}}    
-                            <div class="grid__item">
-                                <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a><br/>by {{ .Params.author }} ({{ .Params.company}})
-                            </div>
-                        {{- end -}}
                         </div>
                     </div>
-                {{ end }}
-
-            {{ end }}
-
-            {{ range where .Pages "Params.block" "percona-pg-distribution" }}
-
-                <h2>{{ .Title }}</h2>
-
-                {{- .Content -}}
-
-            {{ end }}
+                    {{- end -}}
+                {{- end -}}
             </div>
-
-        {{ partial "sharing.html" . }} 
-
+            <div class="pg-connect__footer">
+                <p>Reach out directly, invite us to your conference, or join the conversation on the <a href="https://forums.percona.com/c/postgresql/25" target="_blank" rel="noopener">Percona PostgreSQL Forum</a>.</p>
+            </div>
         </div>
-        
-        <div class="contentblock branded">
+    </div>
+
+    <div class="wide">
+
+        <!-- ① Percona Distribution for PostgreSQL -->
+        <div class="pg-project pg-project--pg" id="percona-distribution-for-postgresql">
+            <div class="grid grid--2">
+                <div class="block_left">
+                    <h2>Percona Distribution for PostgreSQL</h2>
+                    <p>A curated, enterprise-ready bundle of the PostgreSQL server with the best open source extensions — tested and maintained together so you don't have to.</p>
+                    <p>Includes tools for high availability (Patroni), backup (pgBackRest), connection pooling (PgBouncer), and monitoring — all pre-validated and ready to deploy.</p>
+                    <ul>
+                        <li>📦 One package, fully tested stack</li>
+                        <li>🔒 Enterprise-grade HA and backup</li>
+                        <li>🐧 Debian, Ubuntu, RHEL and derivatives</li>
+                        <li>🐳 Docker and Kubernetes ready</li>
+                    </ul>
+                    <div class="buttons">
+                        <a class="button__main" href="https://docs.percona.com/postgresql/18/installing.html">Install PostgreSQL 18</a>
+                        <a class="button__second" href="https://github.com/percona/postgres-packaging" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <div class="pg-logo-block pg-logo-block--pg">
+                    {{- with resources.Get "images/pg/postgresql-horizontal.png" -}}
+                    <img src="{{ .RelPermalink }}" alt="Percona Distribution for PostgreSQL" />
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+
+        <!-- ② pg_tde -->
+        <div class="pg-project pg-project--tde" id="pg_tde">
+            <div class="grid grid--2">
+                <div class="pg-logo-block pg-logo-block--tde">
+                    {{- with resources.Get "images/pg/PostgreSQL-icon.png" -}}
+                    <img src="{{ .RelPermalink }}" alt="pg_tde" />
+                    {{- end }}
+                    <span class="pg-logo-block__label">Transparent Data Encryption</span>
+                </div>
+                <div class="block_left">
+                    <h2>pg_tde — Transparent Data Encryption</h2>
+                    <p>Encrypt your PostgreSQL data at rest without changing a single line of application code. pg_tde works at the storage level, covering both data files and WAL records.</p>
+                    <p>Designed for organizations with compliance requirements (HIPAA, PCI DSS, GDPR) who can't afford to modify their application layer.</p>
+                    <ul>
+                        <li>🔐 File-level encryption, transparent to applications</li>
+                        <li>🗝️ Integrates with external KMS and keyring files</li>
+                        <li>📜 Encrypts both data files and WAL records</li>
+                        <li>✅ Supports PostgreSQL 17 and 18</li>
+                    </ul>
+                    <div class="buttons">
+                        <a class="button__main" href="https://docs.percona.com/pg-tde/index.html">Documentation</a>
+                        <a class="button__second" href="https://github.com/percona/pg_tde" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ③ pg_oidc_validator -->
+        <div class="pg-project pg-project--tde" id="pg_oidc_validator">
+            <div class="grid grid--2">
+                <div class="block_left">
+                    <h2>pg_oidc_validator — OIDC Authentication</h2>
+                    <p>Replace password-based PostgreSQL authentication with your organization's existing identity provider. pg_oidc_validator validates JWTs issued by any OIDC-compliant provider — no separate password management needed.</p>
+                    <p>Works with Keycloak, Microsoft Entra ID, and any other OIDC-compliant provider. Integrates with OAuth 2 device flow via libpq.</p>
+                    <ul>
+                        <li>🔑 JWT validation via OIDC providers (Keycloak, Entra ID, and more)</li>
+                        <li>🔄 OAuth 2 device flow support through libpq</li>
+                        <li>⚙️ Flexible identity mapping via configurable JWT fields</li>
+                        <li>✅ Supports PostgreSQL 18</li>
+                    </ul>
+                    <div class="buttons">
+                        <a class="button__main" href="https://github.com/Percona-Lab/pg_oidc_validator" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <div class="pg-logo-block pg-logo-block--tde">
+                    {{- with resources.Get "images/pg/PostgreSQL-icon.png" -}}
+                    <img src="{{ .RelPermalink }}" alt="pg_oidc_validator" />
+                    {{- end }}
+                    <span class="pg-logo-block__label">OIDC Authentication</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⑤ pg_stat_monitor -->
+        <div class="pg-project pg-project--pg" id="pg_stat_monitor">
+            <div class="grid grid--2">
+                <div class="block_left">
+                    <h2>pg_stat_monitor — Query Performance Analytics</h2>
+                    <p>A drop-in replacement for pg_stat_statements that goes much further — grouping statistics into configurable time buckets and capturing actual query plans and parameter values.</p>
+                    <p>Stop guessing which queries caused a performance spike. With time-based bucketing you get pinpoint visibility into exactly when and why slowdowns occurred.</p>
+                    <p>Pair it with <a href="https://docs.percona.com/percona-monitoring-and-management/3/" target="_blank" rel="noopener"><strong>Percona Monitoring and Management (PMM)</strong></a> for a complete observability solution — query analytics, dashboards, alerting, and slow query visualization all in one place.</p>
+                    <ul>
+                        <li>📊 Time-bucket metrics — per-interval stats, not just lifetime averages</li>
+                        <li>🔍 Captures actual parameter values for easier debugging</li>
+                        <li>📋 Displays real execution plans alongside statistics</li>
+                        <li>📈 Deep PMM integration — dashboards, QAN, and alerting out of the box</li>
+                    </ul>
+                    <div class="buttons">
+                        <a class="button__main" href="https://docs.percona.com/pg-stat-monitor/">pg_stat_monitor Docs</a>
+                        <a class="button__second" href="https://docs.percona.com/percona-monitoring-and-management/3/" target="_blank" rel="noopener">PMM Docs</a>
+                        <a class="button__second" href="https://github.com/percona/pg_stat_monitor" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <div class="img-wide">
+                    {{- with resources.Get "images/pg/postgres-pmm.png" -}}
+                    <img src="{{ (.Resize "800x").RelPermalink }}" alt="pg_stat_monitor and PMM" />
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+
+        <!-- ⑥ Percona Operator for PostgreSQL -->
+        <div class="pg-project pg-project--k8s" id="percona-operator-for-postgresql">
+            <div class="grid grid--2">
+                <div class="pg-logo-block pg-logo-block--k8s">
+                    {{- with resources.Get "images/pg/Operators-horizontal.png" -}}
+                    <img src="{{ .RelPermalink }}" alt="Percona Operator for PostgreSQL" />
+                    {{- end }}
+                </div>
+                <div class="block_left">
+                    <h2>Percona Operator for PostgreSQL</h2>
+                    <p>Running PostgreSQL on Kubernetes? The Percona Operator automates everything — provisioning, scaling, backups, TLS, failover, and upgrades — applying industry best practices consistently across your clusters.</p>
+                    <p>Built for teams who want the reliability of a managed database without handing control to a cloud vendor.</p>
+                    <ul>
+                        <li>☸️ Full lifecycle automation on any Kubernetes</li>
+                        <li>🔄 Automated failover and rolling upgrades</li>
+                        <li>💾 Scheduled backups with point-in-time recovery</li>
+                        <li>📈 Native PMM monitoring integration</li>
+                    </ul>
+                    <div class="buttons">
+                        <a class="button__main" href="https://docs.percona.com/percona-operator-for-postgresql/latest/">Documentation</a>
+                        <a class="button__second" href="https://github.com/percona/percona-postgresql-operator" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⑦ Hackorum -->
+        <div class="pg-project pg-project--percona" id="hackorum">
+            <div class="grid grid--2">
+                <div class="block_left">
+                    <h2>Hackorum — for PostgreSQL Developers</h2>
+                    <p>A mailing list archive and discussion platform built specifically for the PostgreSQL developer community. Searchable archives of hacker, bugs, and docs lists — with patch tracking integrated directly with CommitFest.</p>
+                    <p>If you contribute to PostgreSQL core, Hackorum is your new home base.</p>
+                    <ul>
+                        <li>📬 Searchable archive of all major PostgreSQL mailing lists</li>
+                        <li>🔖 Patch tracking with CommitFest integration and CI scores</li>
+                        <li>👤 Contributor profiles with committer status</li>
+                        <li>🛠️ Open source, built with Rails 8 on PostgreSQL</li>
+                    </ul>
+                    <div class="buttons">
+                        <a class="button__main" href="https://hackorum.dev/">Visit Hackorum</a>
+                        <a class="button__second" href="https://github.com/hackorum-dev/hackorum" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <div class="img-wide">
+                    {{- with resources.Get "images/pg/hackorum.png" -}}
+                    <img src="{{ (.Resize "800x").RelPermalink }}" alt="Hackorum" />
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.wide -->
+
+    <!-- Events -->
+    {{- $events := first 3 (where (where $.Page.Site.RegularPages "Section" "events") "Params.tags" "intersect" $pgTags) -}}
+    {{ if $events }}
+    <div class="contentblock branded">
+        <h2>Events</h2>
+        <div class="grid grid--3">
+            {{- range $events -}}
+                <div class="grid__item">{{- partial "event-preview" . -}}</div>
+            {{- end -}}
+        </div>
+    </div>
+    {{ end }}
+
+    <!-- Talks -->
+    {{- $talks := first 3 (where (where $.Page.Site.RegularPages "Section" "talks") "Params.talk_tags" "intersect" $pgTags) -}}
+    {{ if $talks }}
+    <div class="contentblock branded">
+        <h2>Talks</h2>
+        <div class="grid grid--3">
+            {{- range $talks -}}
+                <div class="grid__item">{{- partial "talks-preview-grid.html" . -}}</div>
+            {{- end -}}
+        </div>
+        <p><a href="/talks/">See all talks →</a></p>
+    </div>
+    {{ end }}
+
+    <!-- Blog Posts -->
+    {{- $posts := first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $pgTags) -}}
+    {{ if $posts }}
+    <div class="contentblock branded">
         <h2>Community Blog Posts</h2>
         <div class="grid grid--3">
-
-            {{ $t := slice "Postgres" "PostgreSQL" "postgres" }}
-
-            {{- range first 3 (where (where $.Page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $t ) -}}
+            {{- range $posts -}}
                 <div class="grid__item">
-                {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content  "PublishDate" .PublishDate) }}
+                    {{ partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "PublishDate" .PublishDate) }}
                 </div>
             {{- end -}}
         </div>
-        </div>
+        <p><a href="/blog/">See all posts →</a></p>
+    </div>
     {{ end }}
+
+    <!-- Contributors -->
+    {{- $contributors := first 4 (where (where $.Page.Site.RegularPages "Section" "contributors") "Params.contributor_tag" "intersect" (slice "PostgreSQL")) -}}
+    {{ if $contributors }}
+    <div class="contentblock branded">
+        <h2>Community Contributors</h2>
+        <div class="grid grid--4">
+            {{- range $contributors -}}
+                <div class="grid__item">{{- partial "contributors-preview.html" . -}}</div>
+            {{- end -}}
+        </div>
+        <p><a href="/contributors/">See all contributors →</a></p>
+    </div>
+    {{ end }}
+
 {{ end }}
