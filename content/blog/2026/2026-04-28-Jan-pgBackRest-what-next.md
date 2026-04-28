@@ -62,7 +62,7 @@ Two observations are worth calling out:
 1. People need sustainable funding, work cannot be assumed to be purely voluntary.
 2. A healthy open source project should not depend on a single company or individual.
 
-The current situation is, to some extent, a result of the opposite model. pgBackRest development was largely driven by a single company and later single maintainer, [David Steele](https://github.com/dwsteele), with sponsorship from Crunchy Data. While others have contributed (e.g.i [Stephen Frost](https://github.com/sfrost) and Stefan Fercot - [pgstef](https://github.com/pgstef)), the project effectively relied on one primary maintainer.
+The current situation is, to some extent, a result of the opposite model. pgBackRest development was largely driven by a single company and later single maintainer, [David Steele](https://github.com/dwsteele), with sponsorship from Crunchy Data. While others have contributed (e.g.i [Stephen Frost](https://github.com/sfrost) and Stefan Fercot - [pgstef](https://github.com/pgstef)), and there was a wider team maintaining the project in the past, recently the project effectively relied on one primary maintainer.
 
 I think it’s fair to say we’ve seen a fair share [xkcd \#2347](https://xkcd.com/2347/) posted all over the internet over the course of last 24h. So here’s one more:
 
