@@ -6,7 +6,9 @@
       "WebFetch(domain:docs.percona.com)",
       "Bash(gh repo *)",
       "Bash(curl -s https://api.github.com/repos/Percona-Lab/pg_oidc_validator)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('description',''\\)\\); print\\('---README---'\\); print\\(d.get\\('readme',''\\)[:3000]\\)\")"
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('description',''\\)\\); print\\('---README---'\\); print\\(d.get\\('readme',''\\)[:3000]\\)\")",
+      "Bash(gh api *)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }

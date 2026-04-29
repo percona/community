@@ -1,5 +1,217 @@
 @import "common/common";
 
+/* ── PostgreSQL event card — image + gradient overlay ── */
+.event-pg-card {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
+
+  &__img {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #1a2f5e;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    // gradient overlay (hidden for Online events)
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 30%,
+        rgba(10, 20, 50, 0.55) 65%,
+        rgba(10, 20, 50, 0.88) 100%
+      );
+      pointer-events: none;
+    }
+
+    &--clean::after { display: none; }
+  }
+
+  &__noimg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #004bb5 0%, #0074ff 100%);
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.2rem 0.65rem;
+    border-radius: 100px;
+    background: #f6fe54;
+    color: #0a1f44;
+    z-index: 3;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.85rem 1rem;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
+  }
+
+  &__meta {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* ── PostgreSQL events section ── */
+.pg-events {
+  padding: 4rem 0 2rem;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0a1f44;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ── PostgreSQL talk card ── */
+.talk-pg-card {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+
+    .talk-pg-card__play { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+  }
+
+  &__img {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #1a2f5e;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        transparent 25%,
+        rgba(10, 20, 50, 0.55) 65%,
+        rgba(10, 20, 50, 0.9) 100%
+      );
+      pointer-events: none;
+    }
+
+    &--clean::after { display: none; }
+  }
+
+  &__noimg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0a1f44 0%, #1a3a7e 100%);
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.85rem 1rem;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 0.2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__meta {
+    font-size: 0.74rem;
+    color: rgba(255, 255, 255, 0.72);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__play {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #0a1f44;
+    padding-left: 3px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+}
+
+/* ── PostgreSQL talks section ── */
+.pg-talks {
+  padding: 2rem 0 2rem;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0a1f44;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* ── PostgreSQL intro block ── */
 .pg-intro {
   text-align: center;
@@ -78,7 +290,7 @@
 
 .hero-pg__icon {
   flex-shrink: 0;
-  width: 160px;
+  width: 240px;
   opacity: 0.92;
 
   img {
@@ -89,7 +301,8 @@
   }
 
   @media (max-width: 760px) {
-    width: 100px;
+    width: 50vw;
+    max-width: 240px;
   }
 }
 
@@ -98,14 +311,29 @@
 // Nav strip between intro and project sections
 .pg-projects-nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
   padding: 0.5rem 4rem 3rem;
 }
 
+.pg-projects-nav__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  &--community {
+    margin-top: 0.4rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #e8edf5;
+  }
+}
+
 .pg-nav-item {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   padding: 0.3rem 0.85rem;
   border-radius: 20px;
   font-size: 0.78rem;
@@ -115,23 +343,49 @@
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
 
+  &__icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: block;
+    object-fit: contain;
+  }
+
+  &__icon--pmm {
+    width: 36px;
+    height: 36px;
+  }
+
   &--pg {
     background: rgba(0, 94, 214, 0.08);
     color: #005ed6;
     border-color: rgba(0, 94, 214, 0.25);
-    &:hover { background: #005ed6; color: #fff; border-color: #005ed6; }
+    &:hover {
+      background: #005ed6; color: #fff; border-color: #005ed6;
+      .pg-nav-item__icon { filter: brightness(0) invert(1); }
+    }
   }
   &--k8s {
     background: rgba(42, 166, 223, 0.08);
     color: #1a8fc0;
     border-color: rgba(42, 166, 223, 0.25);
-    &:hover { background: #2aa6df; color: #282727; border-color: #2aa6df; }
+    &:hover {
+      background: #2aa6df; color: #282727; border-color: #2aa6df;
+      .pg-nav-item__icon { filter: brightness(0); }
+    }
   }
   &--percona {
     background: rgba(101, 61, 244, 0.08);
     color: #653df4;
     border-color: rgba(101, 61, 244, 0.25);
     &:hover { background: #653df4; color: #fff; border-color: #653df4; }
+  }
+
+  &--community {
+    background: rgba(0, 189, 165, 0.08);
+    color: #008f7a;
+    border-color: rgba(0, 189, 165, 0.3);
+    &:hover { background: #00bda5; color: #fff; border-color: #00bda5; }
   }
 }
 
@@ -143,10 +397,17 @@
 
   .grid--2 {
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media (max-width: 760px) {
-    padding: 2rem 1.2rem;
+    padding: 1.5rem 1.2rem;
+    border-top: 1px solid #e0e6f2;
+
+    &:first-of-type {
+      border-top: none;
+    }
   }
 
   &--pg     { border-left-color: #005ed6; }
@@ -157,36 +418,134 @@
   &:first-of-type { padding-top: 2rem; }
 
 
-  .img-wide img {
-    border-radius: 10px;
-    border: 1px solid #e0e6f0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    display: block;
+  .img-wide {
+    img {
+      border-radius: 10px;
+      border: 1px solid #e0e6f0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 760px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Override .grid h2 from _grid.scss (higher specificity wins)
+  h2,
+  .block_left h2 {
+    margin-top: 0;
+    font-size: 1.5rem !important;
+    font-weight: 800;
+    color: #0a1f44;
+    line-height: 1.2;
+  }
+
+  // Normalize ALL text inside project blocks to the same size/color
+  .block_left {
+    font-size: 0.9rem !important;
+    line-height: 1.7;
+    color: #333;
+
+    p, ul, ol, li, a {
+      font-size: inherit !important;
+      line-height: inherit;
+      color: inherit;
+    }
+
+    p { margin-bottom: 0.6rem; }
+
+    ul {
+      margin-top: 0.4rem;
+      padding-left: 1.4rem;
+    }
+
+    li { margin-bottom: 0.3rem; }
+  }
+}
+
+// Standalone image block (no coloured card background)
+.pg-img-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem 1.5rem 0;
+
+  img {
+    max-width: 300px;
     width: 100%;
     height: auto;
+    display: block;
   }
 
-  h2 {
-    margin-top: 0;
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #0a1f44;
+  &--operator {
+    img {
+      max-width: 340px;
+    }
   }
 
-  // Normalize font for lists to match paragraph text
-  p, ul, ol, li {
-    font-size: 1rem;
-    line-height: 1.65;
-    color: #333;
+  @media (max-width: 760px) {
+    padding: 1.5rem 0 0;
+    justify-content: center;
+
+    img { max-width: 220px; }
+  }
+}
+
+// Project action buttons
+.pg-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.pg-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+
+  &--primary {
+    background: #005ed6;
+    color: #fff !important;
+    border: 2px solid #005ed6;
+
+    &:hover {
+      background: #0047a8;
+      border-color: #0047a8;
+      color: #fff !important;
+    }
   }
 
-  ul {
-    margin-top: 0.5rem;
-    padding-left: 1.4rem;
+  &--secondary {
+    background: transparent;
+    color: #005ed6 !important;
+    border: 2px solid #005ed6;
+
+    &:hover {
+      background: #005ed6;
+      color: #fff !important;
+    }
   }
 
-  li {
-    margin-bottom: 0.3rem;
+  &--ghost {
+    background: transparent;
+    color: #444 !important;
+    border: 2px solid #ccc;
+
+    &:hover {
+      background: #f0f4ff;
+      border-color: #005ed6;
+      color: #005ed6 !important;
+    }
   }
 }
 
@@ -197,22 +556,27 @@
   align-items: center;
   justify-content: center;
   align-self: center;
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
-  gap: 1rem;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  gap: 1.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 
   img {
-    max-width: 70%;
-    max-height: 160px;
+    width: 240px;
     height: auto;
-    width: auto;
+    display: block;
   }
 
   &__label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &--pg {
@@ -231,12 +595,32 @@
     background: #282727;
     img { filter: brightness(0) invert(1); }
   }
+
+  @media (max-width: 760px) {
+    max-width: 100%;
+    padding: 2.5rem 2rem;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 180px;
+    }
+
+    &__label {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 /* ── PostgreSQL "Let's Talk" connect block ── */
 .pg-connect {
   background: linear-gradient(135deg, #0e1a3a 0%, #1a2f5e 100%);
   padding: 3rem 0;
+
+  &--community {
+    background: linear-gradient(135deg, #1a2f5e 0%, #0e1a3a 100%);
+    margin-top: 1rem;
+  }
 
   h2 {
     color: #fff;
