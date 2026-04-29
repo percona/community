@@ -1,6 +1,6 @@
 ---
 title: "OIDC error scenarios"
-date: "2026-04-30:00:00+00:00"
+date: "2026-04-30T00:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_zsolt', 'OIDC', 'Security']
 categories: ['PostgreSQL']
 authors:
