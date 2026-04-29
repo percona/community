@@ -466,6 +466,41 @@
   }
 }
 
+// GitHub star nudge
+.pg-star {
+  display: block;
+  position: relative;
+  padding-left: 1.4rem;
+  margin-top: 0.9rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #7a8aaa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &::before {
+    content: '⭐';
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    font-size: 0.85rem;
+    line-height: 1;
+  }
+
+  &:hover {
+    color: #005ed6;
+
+    .pg-star__underline {
+      text-decoration: underline;
+    }
+  }
+
+  &__underline {
+    font-weight: 600;
+    color: inherit;
+  }
+}
+
 // Standalone image block (no coloured card background)
 .pg-img-block {
   display: flex;
