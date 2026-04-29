@@ -36,7 +36,7 @@
         <!-- Intro -->
         <div class="pg-intro">
             <h2>What We Build for PostgreSQL</h2>
-            <p>Percona is an active contributor to the PostgreSQL ecosystem. We build and maintain open source tools that extend PostgreSQL's capabilities — from encryption and query analytics to Kubernetes automation — and we sponsor projects that benefit the entire community.</p>
+            <p>Percona builds and maintains open source tools for PostgreSQL — from encryption extensions and query analytics to Kubernetes operators. We also contribute patches upstream and sponsor projects like Hackorum that are useful for the whole community.</p>
         </div>
 
         <!-- Project nav -->
@@ -199,7 +199,7 @@
                         <li>Scheduled and on-demand backups with point-in-time recovery</li>
                         <li>Standby clusters for disaster recovery</li>
                         <li>TLS, LDAP, PostgreSQL extension management</li>
-                        <li>PMM monitoring integration</li>
+                        <li>PMM integration for dashboards and query analytics</li>
                     </ul>
                     <div class="pg-buttons">
                         <a class="pg-btn pg-btn--primary"   href="https://docs.percona.com/percona-operator-for-postgresql/latest/">Documentation</a>
@@ -249,7 +249,7 @@
                 <div class="block_left">
                     <h2>Monitoring — pg_stat_monitor &amp; PMM</h2>
                     <p><strong>pg_stat_monitor</strong> is a PostgreSQL extension and a drop-in replacement for pg_stat_statements. The key difference: it groups statistics into time buckets, so you can see not just overall averages but what happened during a specific interval. It also captures actual query parameters and execution plans.</p>
-                    <p><strong><a href="https://docs.percona.com/percona-monitoring-and-management/3/" target="_blank" rel="noopener">Percona Monitoring and Management (PMM)</a></strong> is an open source monitoring tool with built-in PostgreSQL dashboards, query analytics (QAN), and alerting. pg_stat_monitor feeds directly into PMM's QAN, giving you slow query analysis with full context.</p>
+                    <p><strong><a href="https://docs.percona.com/percona-monitoring-and-management/3/" target="_blank" rel="noopener">Percona Monitoring and Management (PMM)</a></strong> is an open source monitoring tool with built-in PostgreSQL dashboards, query analytics (QAN), and alerting. pg_stat_monitor plugs directly into PMM's QAN, so you can see slow queries with their actual parameters and execution plans.</p>
                     <ul>
                         <li>Time-bucket stats — see what changed, not just lifetime averages</li>
                         <li>Captures actual parameter values and execution plans</li>
@@ -355,7 +355,7 @@
         <div class="contentblock">
             <div class="pg-connect__intro">
                 <h2>Get involved with the PostgreSQL community</h2>
-                <p>Want to organise an event, give a talk, share an idea, or just figure out how to make your first contribution to PostgreSQL or Percona's open source projects? We're happy to help — reach out and let's talk.</p>
+                <p>Want to organise a meetup, give a talk, or just figure out where to start contributing? We're happy to help — reach out and let's talk.</p>
             </div>
             <div class="pg-connect__team" style="grid-template-columns: repeat(2, 1fr); max-width: 720px; margin-left: auto; margin-right: auto;">
                 {{- range $closingSlugs -}}
