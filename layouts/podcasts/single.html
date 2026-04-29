@@ -20,7 +20,7 @@
 
   <article class="event text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
     {{ if $.PublishDate }}
-      {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
+      {{ with .Params.images }}{{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}<meta itemprop="image" content="{{ .Permalink }}" />{{ end }}{{ end }}
       <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
       {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
     {{ end }}
