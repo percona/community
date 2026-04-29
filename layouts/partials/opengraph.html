@@ -5,7 +5,10 @@
 
 {{ with $.Params.images }}
     {{ range first 6 . -}}
-        <meta name="image" property="og:image" content="{{ ((resources.Get .).Resize "1200x jpg 90%").Permalink }}" />
+        {{- $imgPath := strings.TrimPrefix "/" . -}}
+        {{- with resources.Get $imgPath -}}
+        <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}" />
+        {{- end }}
     {{ end }}
 {{ else -}}
     {{ with $.Params.youtube_id }}
@@ -18,7 +21,10 @@
             <meta name="image" property="og:image" content="{{ $featured.Permalink }}"/>
         {{ else -}}
             {{- with $.Site.Params.images -}}
-                <meta name="image" property="og:image" content="{{ ((resources.Get (index . 0)).Resize "1200x jpg 90%").Permalink }}"/>
+                {{- $imgPath := strings.TrimPrefix "/" (index . 0) -}}
+                {{- with resources.Get $imgPath -}}
+                <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}"/>
+                {{- end }}
             {{ end }}
         {{ end }}
     {{ end }}    
