@@ -36,7 +36,7 @@
         <!-- Intro -->
         <div class="pg-intro">
             <h2>What We Build for PostgreSQL</h2>
-            <p>Percona builds and maintains open source tools for PostgreSQL — from encryption extensions and query analytics to Kubernetes operators. We also contribute patches upstream and sponsor projects like Hackorum that are useful for the whole community.</p>
+            <p>Percona builds and maintains open source tools for PostgreSQL  - from encryption extensions and query analytics to Kubernetes operators. We also contribute patches upstream and sponsor projects like Hackorum that are useful for the whole community.</p>
         </div>
 
         <!-- Project nav -->
@@ -78,7 +78,7 @@
         <div class="contentblock">
             <div class="pg-connect__intro">
                 <h2>Let's Talk PostgreSQL</h2>
-                <p>Our team lives and breathes PostgreSQL — from community and open source to product feedback and joint projects. We'd love to hear from you, whatever the topic.</p>
+                <p>Our team lives and breathes PostgreSQL  - from community and open source to product feedback and joint projects. We'd love to hear from you, whatever the topic.</p>
             </div>
             <div class="pg-connect__team">
                 {{- range $teamSlugs -}}
@@ -131,15 +131,15 @@
                 <div class="block_left">
                     <h2>Percona Distribution for PostgreSQL</h2>
                     <p>A collection of open source tools that work well together for running PostgreSQL in production. Everything is tested as a set, so you don't have to figure out compatibility yourself.</p>
-                    <p>The core is <strong>Percona Server for PostgreSQL</strong> — a drop-in replacement for stock Postgres, fully binary-compatible. It exposes storage and WAL APIs that make extensions like <a href="#pg_tde">pg_tde</a> (transparent encryption) possible. Percona is working to get these APIs merged upstream.</p>
+                    <p>The core is <strong>Percona Server for PostgreSQL</strong>  - a drop-in replacement for stock Postgres, fully binary-compatible. It exposes storage and WAL APIs that make extensions like <a href="#pg_tde">pg_tde</a> (transparent encryption) possible. Percona is working to get these APIs merged upstream.</p>
                     <p>What's in the box:</p>
                     <ul>
-                        <li><strong>Patroni + ETCD + HAProxy</strong> — high availability</li>
-                        <li><strong>pgBackRest</strong> — backup and point-in-time recovery</li>
-                        <li><strong>PgBouncer</strong> — connection pooling</li>
-                        <li><strong>pg_stat_monitor + PMM</strong> — query analytics and monitoring</li>
-                        <li><strong>PostGIS</strong> — spatial data support</li>
-                        <li><strong>Percona Operator</strong> — if you're on Kubernetes</li>
+                        <li><strong>Patroni + ETCD + HAProxy</strong>  - high availability</li>
+                        <li><strong>pgBackRest</strong>  - backup and point-in-time recovery</li>
+                        <li><strong>PgBouncer</strong>  - connection pooling</li>
+                        <li><strong>pg_stat_monitor + PMM</strong>  - query analytics and monitoring</li>
+                        <li><strong>PostGIS</strong>  - spatial data support</li>
+                        <li><strong>Percona Operator</strong>  - if you're on Kubernetes</li>
                     </ul>
                     <div class="pg-buttons">
                         <a class="pg-btn pg-btn--primary" href="https://docs.percona.com/postgresql/">Documentation</a>
@@ -166,23 +166,23 @@
                     <span class="pg-logo-block__label">Transparent Data Encryption</span>
                 </div>
                 <div class="block_left">
-                    <h2>pg_tde — Transparent Data Encryption</h2>
-                    <p>A PostgreSQL extension that encrypts data at rest — data files and WAL records — without touching your application code. It hooks into the storage layer via the APIs added in Percona Server for PostgreSQL.</p>
+                    <h2>pg_tde  - Transparent Data Encryption</h2>
+                    <p>A PostgreSQL extension that encrypts data at rest  - data files and WAL records  - without touching your application code. It hooks into the storage layer via the APIs added in Percona Server for PostgreSQL.</p>
                     <p>It's under active development and already usable. If you're dealing with compliance requirements (HIPAA, PCI DSS, GDPR) and can't encrypt at the app layer, this is worth a look.</p>
                     <ul>
                         <li>Encrypts data files and WAL records at the storage level</li>
                         <li>Works with external KMS or local keyring files</li>
-                        <li>Transparent to applications — no code changes needed</li>
+                        <li>Transparent to applications  - no code changes needed</li>
                         <li>Supports PostgreSQL 17 and 18</li>
                     </ul>
-                    <p>Curious how it works or want to try it? Talk to <a href="#lets-talk">Kai or Jan</a> — they're happy to help.</p>
+                    <p>Curious how it works or want to try it? Talk to <a href="#lets-talk">Kai or Jan</a>  - they're happy to help.</p>
                     <div class="pg-buttons">
                         <a class="pg-btn pg-btn--primary"   href="https://docs.percona.com/pg-tde/index.html">Documentation</a>
                         <a class="pg-btn pg-btn--secondary" href="https://github.com/percona/pg_tde" target="_blank" rel="noopener">GitHub</a>
                         <a class="pg-btn pg-btn--ghost"     href="https://forums.percona.com/c/postgresql/pg-tde-transparent-data-encryption-tde/82" target="_blank" rel="noopener">Forum</a>
                         <a class="pg-btn pg-btn--ghost"     href="/tags/PG_TDE/">Blog posts</a>
                     </div>
-                    <a class="pg-star" href="https://github.com/percona/pg_tde" target="_blank" rel="noopener">pg_tde is actively evolving — a <span class="pg-star__underline">GitHub star</span> shows us it matters to you</a>
+                    <a class="pg-star" href="https://github.com/percona/pg_tde" target="_blank" rel="noopener">pg_tde is actively evolving  - a <span class="pg-star__underline">GitHub star</span> shows us it matters to you</a>
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
             <div class="grid grid--2">
                 <div class="block_left">
                     <h2>Percona Operator for PostgreSQL</h2>
-                    <p>A Kubernetes operator that automates the full lifecycle of PostgreSQL clusters — from initial provisioning to backups, restores, scaling, upgrades, and TLS setup. Based on the Percona Distribution for PostgreSQL.</p>
+                    <p>A Kubernetes operator that automates the full lifecycle of PostgreSQL clusters  - from initial provisioning to backups, restores, scaling, upgrades, and TLS setup. Based on the Percona Distribution for PostgreSQL.</p>
                     <p>Runs on GKE, EKS, AKS, OpenShift, Minikube, and generic Kubernetes. Also supported on <a href="https://openeverest.io/" target="_blank" rel="noopener">Open Everest</a>.</p>
                     <ul>
                         <li>Cluster provisioning, scaling, rolling upgrades</li>
@@ -206,7 +206,7 @@
                         <a class="pg-btn pg-btn--secondary" href="https://github.com/percona/percona-postgresql-operator" target="_blank" rel="noopener">GitHub</a>
                         <a class="pg-btn pg-btn--ghost"     href="https://forums.percona.com/c/postgresql/percona-kubernetes-operator-for-postgresql/68" target="_blank" rel="noopener">Forum</a>
                     </div>
-                    <a class="pg-star" href="https://github.com/percona/percona-postgresql-operator" target="_blank" rel="noopener">Running it in your cluster? <span class="pg-star__underline">Drop us a star on GitHub</span> — we'd love to know</a>
+                    <a class="pg-star" href="https://github.com/percona/percona-postgresql-operator" target="_blank" rel="noopener">Running it in your cluster? <span class="pg-star__underline">Drop us a star on GitHub</span>  - we'd love to know</a>
                 </div>
                 <div class="pg-img-block pg-img-block--operator">
                     {{- with resources.Get "images/pg/operators-product-icon.svg" -}}
@@ -220,7 +220,7 @@
         <div class="pg-project pg-project--percona" id="hackorum">
             <div class="grid grid--2">
                 <div class="block_left">
-                    <h2>Hackorum — for PostgreSQL Developers</h2>
+                    <h2>Hackorum  - for PostgreSQL Developers</h2>
                     <p>A mailing list archive and discussion platform for the PostgreSQL developer community. Searchable archives of the hackers, bugs, and docs lists, with patch tracking tied directly to CommitFest.</p>
                     <p>Built and maintained by Percona as a contribution to the PostgreSQL community. Open source, Rails 8, running on PostgreSQL.</p>
                     <ul>
@@ -228,12 +228,12 @@
                         <li>Patch tracking with CommitFest integration and CI scores</li>
                         <li>Contributor profiles with committer status</li>
                     </ul>
-                    <p>Have feedback or ideas? <a href="#lets-talk">Kai</a> is happy to chat — he's closely involved and always interested in hearing from the community.</p>
+                    <p>Have feedback or ideas? <a href="#lets-talk">Kai</a> is happy to chat  - he's closely involved and always interested in hearing from the community.</p>
                     <div class="pg-buttons">
                         <a class="pg-btn pg-btn--primary"   href="https://hackorum.dev/">Visit Hackorum</a>
                         <a class="pg-btn pg-btn--secondary" href="https://github.com/hackorum-dev/hackorum" target="_blank" rel="noopener">GitHub</a>
                     </div>
-                    <a class="pg-star" href="https://github.com/hackorum-dev/hackorum" target="_blank" rel="noopener">It's open source and free to use — a <span class="pg-star__underline">star on GitHub</span> would make Kai's day</a>
+                    <a class="pg-star" href="https://github.com/hackorum-dev/hackorum" target="_blank" rel="noopener">It's open source and free to use  - a <span class="pg-star__underline">star on GitHub</span> would make Kai's day</a>
                 </div>
                 <div class="img-wide">
                     {{- with resources.Get "images/pg/hackorum.png" -}}
@@ -247,11 +247,11 @@
         <div class="pg-project pg-project--pg" id="pg_stat_monitor">
             <div class="grid grid--2">
                 <div class="block_left">
-                    <h2>Monitoring — pg_stat_monitor &amp; PMM</h2>
+                    <h2>Monitoring  - pg_stat_monitor &amp; PMM</h2>
                     <p><strong>pg_stat_monitor</strong> is a PostgreSQL extension and a drop-in replacement for pg_stat_statements. The key difference: it groups statistics into time buckets, so you can see not just overall averages but what happened during a specific interval. It also captures actual query parameters and execution plans.</p>
                     <p><strong><a href="https://docs.percona.com/percona-monitoring-and-management/3/" target="_blank" rel="noopener">Percona Monitoring and Management (PMM)</a></strong> is an open source monitoring tool with built-in PostgreSQL dashboards, query analytics (QAN), and alerting. pg_stat_monitor plugs directly into PMM's QAN, so you can see slow queries with their actual parameters and execution plans.</p>
                     <ul>
-                        <li>Time-bucket stats — see what changed, not just lifetime averages</li>
+                        <li>Time-bucket stats  - see what changed, not just lifetime averages</li>
                         <li>Captures actual parameter values and execution plans</li>
                         <li>PMM: dashboards, QAN, alerting for PostgreSQL out of the box</li>
                     </ul>
@@ -281,9 +281,9 @@
                     <span class="pg-logo-block__label">OIDC Authentication</span>
                 </div>
                 <div class="block_left">
-                    <h2>pg_oidc_validator — OIDC Authentication</h2>
+                    <h2>pg_oidc_validator  - OIDC Authentication</h2>
                     <p>A PostgreSQL extension that validates JWTs issued by any OIDC-compliant provider, letting you use your existing identity system (Keycloak, Microsoft Entra ID, etc.) instead of managing separate Postgres passwords.</p>
-                    <p>Also supports the OAuth 2 device flow through libpq — useful for CLI tools and applications that can't open a browser.</p>
+                    <p>Also supports the OAuth 2 device flow through libpq  - useful for CLI tools and applications that can't open a browser.</p>
                     <ul>
                         <li>JWT validation against any OIDC provider</li>
                         <li>OAuth 2 device flow via libpq</li>
@@ -295,7 +295,7 @@
                         <a class="pg-btn pg-btn--ghost"     href="https://forums.percona.com/c/postgresql/pg-oidc-validator/86" target="_blank" rel="noopener">Forum</a>
                         <a class="pg-btn pg-btn--ghost"     href="/tags/OIDC/">Blog posts</a>
                     </div>
-                    <a class="pg-star" href="https://github.com/Percona-Lab/pg_oidc_validator" target="_blank" rel="noopener">Still an early project — your <span class="pg-star__underline">star on GitHub</span> tells us it's worth continuing</a>
+                    <a class="pg-star" href="https://github.com/Percona-Lab/pg_oidc_validator" target="_blank" rel="noopener">Still an early project  - your <span class="pg-star__underline">star on GitHub</span> tells us it's worth continuing</a>
                 </div>
             </div>
         </div>
@@ -355,7 +355,7 @@
         <div class="contentblock">
             <div class="pg-connect__intro">
                 <h2>Get involved with the PostgreSQL community</h2>
-                <p>Want to organise a meetup, give a talk, or just figure out where to start contributing? We're happy to help — reach out and let's talk.</p>
+                <p>Want to organise a meetup, give a talk, or just figure out where to start contributing? We're happy to help  - reach out and let's talk.</p>
             </div>
             <div class="pg-connect__team" style="grid-template-columns: repeat(2, 1fr); max-width: 720px; margin-left: auto; margin-right: auto;">
                 {{- range $closingSlugs -}}
