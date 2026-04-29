@@ -1,6 +1,9 @@
 {{- with $.Params.images -}}
+    {{- $imgPath := strings.TrimPrefix "/" (index . 0) -}}
+    {{- with resources.Get $imgPath -}}
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="{{ (resources.Get (index . 0)).Permalink }}"/>
+    <meta name="twitter:image" content="{{ .Permalink }}"/>
+    {{- end -}}
 {{ else -}}
 
     {{ with $.Params.youtube_id }}
@@ -17,8 +20,11 @@
             <meta name="twitter:image" content="{{ $featured.Permalink }}"/>
         {{- else -}}
             {{- with $.Site.Params.images -}}
+                {{- $siteImgPath := strings.TrimPrefix "/" (index . 0) -}}
+                {{- with resources.Get $siteImgPath -}}
                 <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:image" content="{{ ((resources.Get (index . 0)).Resize "1200x jpg 90%").Permalink }}"/>
+                <meta name="twitter:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}"/>
+                {{- end -}}
             {{ else -}}
                 <meta name="twitter:card" content="summary"/>
             {{- end -}}
