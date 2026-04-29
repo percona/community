@@ -1,0 +1,44 @@
+{{- $video := .Params.video -}}
+{{- $ytID := "" -}}
+{{- if $video -}}
+    {{- if strings.Contains $video "youtube.com/watch" -}}
+        {{- $ytID = replaceRE `.*[?&]v=([^&]+).*` "$1" $video -}}
+    {{- else if strings.Contains $video "youtu.be/" -}}
+        {{- $ytID = replaceRE `.*youtu\.be/([^?&]+).*` "$1" $video -}}
+    {{- end -}}
+{{- end -}}
+
+<a href="{{ .RelPermalink }}" class="talk-pg-card">
+    <div class="talk-pg-card__img{{ if .Params.images }} talk-pg-card__img--clean{{ end }}">
+        {{- if .Params.images -}}
+            {{- with resources.Get (index .Params.images 0) -}}
+            <img src="{{ (.Fill "682x384 60% jpg").RelPermalink }}"
+                 alt="{{ $.Title }}" loading="lazy" />
+            {{- end -}}
+        {{- else if $ytID -}}
+            <img src="https://img.youtube.com/vi/{{ $ytID }}/mqdefault.jpg"
+                 alt="{{ .Title }}" loading="lazy" />
+        {{- else -}}
+            <div class="talk-pg-card__noimg"></div>
+        {{- end -}}
+
+        {{- if not .Params.images -}}
+        <div class="talk-pg-card__overlay">
+            <div class="talk-pg-card__title">{{ .Title }}</div>
+            <div class="talk-pg-card__meta">
+                {{- range first 1 .Params.speakers -}}
+                    {{- $c := $.Site.GetPage (print "/contributors/" .) -}}
+                    {{- with $c -}}{{ .Params.fullname }}{{- end -}}
+                {{- end -}}
+                {{- with .Params.presentation_date -}}
+                &nbsp;·&nbsp;{{ . | time.Format "Jan 2006" }}
+                {{- end -}}
+            </div>
+        </div>
+        {{- end -}}
+
+        {{- if $ytID -}}
+        <span class="talk-pg-card__play">▶</span>
+        {{- end -}}
+    </div>
+</a>

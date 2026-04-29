@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_12" data-name="Layer 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1123.51 1123.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #653df4;
+      }
+    </style>
+  </defs>
+  <g id="Background">
+    <g>
+      <polygon class="cls-1" points="526.13 548.06 526.13 548.06 842.85 548.06 684.49 273.8 526.13 548.06"/>
+      <polygon class="cls-1" points="404.52 408.84 382.78 371.2 280.66 548.06 324.14 548.06 404.52 408.84"/>
+      <polygon class="cls-1" points="602.25 359 534.01 240.83 356.62 548.06 493.09 548.06 602.25 359"/>
+      <g>
+        <polygon class="cls-1" points="526.13 575.44 526.13 575.44 842.85 575.44 684.49 849.71 526.13 575.44"/>
+        <polygon class="cls-1" points="404.52 714.66 382.78 752.31 280.66 575.44 324.14 575.44 404.52 714.66"/>
+        <polygon class="cls-1" points="602.25 764.5 534.01 882.67 356.62 575.44 493.09 575.44 602.25 764.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

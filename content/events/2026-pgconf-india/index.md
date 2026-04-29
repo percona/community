@@ -9,7 +9,7 @@ speakers:
 date: '2026-03-11'
 tags: ["Event", "opensource", "sponsorship", "PostgreSQL", "Dev", "performance"]
 events_year: ["2026"]
-events_tag: ["In-Person"]
+events_tag: ["In-Person", "PostgreSQL"]
 events_category: ["Sponsorship"]
 ---
 
