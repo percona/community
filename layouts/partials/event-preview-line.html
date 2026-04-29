@@ -4,9 +4,11 @@
         <div class="thumbnail">
             <a href="{{ .RelPermalink }}">
                 {{ with .Params.images }}
+                    {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
                     <img width="100%" height="100%"
-                         src="{{ ((resources.Get (index . 0)).Fill "682x384 90% jpg").RelPermalink }}"
+                         src="{{ (.Fill "682x384 90% jpg").RelPermalink }}"
                          alt="{{ $.Title }}">
+                    {{- end }}
                 {{ end }}
             </a>
         </div>

@@ -3,9 +3,11 @@
 <a href="{{ .RelPermalink }}" class="event event--preview">
 
     {{ with .Params.images }}
-        <img width="100%" height="100%" 
-             src="{{ ((resources.Get (index . 0)).Fill "682x384 60% jpg").RelPermalink }}" 
+        {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
+        <img width="100%" height="100%"
+             src="{{ (.Fill "682x384 60% jpg").RelPermalink }}"
              alt="{{ $alt }}" />
+        {{- end }}
     {{ end }}
 
     <h3>{{ .Title }}</h3>

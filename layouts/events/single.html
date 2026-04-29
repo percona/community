@@ -11,7 +11,7 @@
 {{ define "main" }}
   <article class="event text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
     {{ if $.PublishDate }}
-      {{ with .Params.images }}<meta itemprop="image" content="{{ (resources.Get (index . 0)).Permalink }}" />{{ end }}
+      {{ with .Params.images }}{{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}<meta itemprop="image" content="{{ .Permalink }}" />{{ end }}{{ end }}
       <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
       {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
     {{ end }}
@@ -50,7 +50,7 @@
           <div class="grid__item">
             {{ if .Params.images }}
               <a href="{{ .RelPermalink }}" class="event-talk-img-link">
-                <img src="{{ ((resources.Get (index .Params.images 0)).Fill "1200x630 80% jpg").RelPermalink }}" alt="{{ .Title }}" />
+                {{- with resources.Get (strings.TrimPrefix "/" (index .Params.images 0)) }}<img src="{{ (.Fill "1200x630 80% jpg").RelPermalink }}" alt="{{ $.Title }}" />{{ end }}
                 <span class="event-talk-img-link__overlay">
                   <span class="event-talk-img-link__title">{{ .Title }}</span>
                   <span class="event-talk-img-link__cta">Learn more →</span>

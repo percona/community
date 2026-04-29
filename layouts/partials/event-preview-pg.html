@@ -2,7 +2,9 @@
 
     {{- $img := "" -}}
     {{- with .Params.images -}}
-        {{- $img = (resources.Get (index . 0)).Fill "682x384 60% jpg" -}}
+        {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) -}}
+            {{- $img = .Fill "682x384 60% jpg" -}}
+        {{- end -}}
     {{- end -}}
 
     <div class="event-pg-card__img{{ if and .Params.events_tag (in .Params.events_tag "Unplugged") }} event-pg-card__img--clean{{ end }}">
