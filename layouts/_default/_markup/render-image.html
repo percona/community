@@ -4,7 +4,7 @@
     {{ $caption = . | safeHTML }}
 {{ end }}
 
-{{ $image := resources.Get .Destination }}
+{{ $image := resources.Get (strings.TrimPrefix "/" .Destination) }}
 
 {{- if $image -}}
 <figure>

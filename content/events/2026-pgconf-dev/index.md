@@ -1,7 +1,6 @@
-
 ---
 title: 'PGconf.Dev 2026'
-description: Percona is proud to sponsor PGConf.dev, taking place May 19–22 in Vancouver, reinforcing our strong commitment to the open source ecosystem. As a company deeply rooted in the PostgreSQL community, Percona is excited to support and engage with developers and contributors who are shaping the future of PostgreSQL.
+description: "Percona is proud to sponsor PGConf.dev, taking place May 19–22 in Vancouver, reinforcing our strong commitment to the open source ecosystem. As a company deeply rooted in the PostgreSQL community, Percona is excited to support and engage with developers and contributors who are shaping the future of PostgreSQL."
 images:
 - events/2026/PGConf-DEV-2026.jpg
 layout: single
@@ -12,7 +11,7 @@ tags: ["Community", "Events", "Opensource"]
 speakers:
 - andreas_karlsson
 events_year: ["2026"]
-events_tag: ["Community", "Linux", "Opensource"]
+events_tag: ["In-Person", "PostgreSQL"]
 events_category: ["Sponsorship", "Speaking"]
 talks:
 - 2026/2026-05-19-are-we-oauth-yet

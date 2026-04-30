@@ -6,7 +6,9 @@
     <div class="post__image">
         <a href="{{ .RelPermalink }}">
             {{ with .Params.images }}
-                <img src="{{ ((resources.Get (index . 0)).Fill "682x420 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
+                {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
+                <img src="{{ (.Fill "682x420 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
+                {{- end }}
             {{ end }}
         </a>
     </div>

@@ -1,4 +1,3 @@
-
 ---
 title: 'Nightmare on Collation Street - April 7, 2026'
 description: Jan and Alastair discuss what happens when changes to glibc or ICU come after your Postgres indexes..
@@ -12,7 +11,7 @@ speakers:
 - evgeniy_patlan
 tags: ["Community", "Events", "Postgres", "DevOps", "Engineering"]
 events_year: ["2026"]
-events_tag: ["Community", "Linux", "Postgres", "Online"]
+events_tag: ["Community", "Linux", "PostgreSQL", "Online"]
 events_category: ["Speaking", "Community"]
 ---
 

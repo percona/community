@@ -1,0 +1,40 @@
+<a href="{{ .RelPermalink }}" class="event-pg-card">
+
+    {{- $img := "" -}}
+    {{- with .Params.images -}}
+        {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) -}}
+            {{- $img = .Fill "682x384 60% jpg" -}}
+        {{- end -}}
+    {{- end -}}
+
+    <div class="event-pg-card__img{{ if and .Params.events_tag (in .Params.events_tag "Unplugged") }} event-pg-card__img--clean{{ end }}">
+        {{- if $img -}}
+        <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" width="682" height="384" />
+        {{- else -}}
+        <div class="event-pg-card__noimg"></div>
+        {{- end -}}
+
+        {{- if and .Params.events_category (in .Params.events_category "Sponsorship") -}}
+        <span class="event-pg-card__badge">Sponsor</span>
+        {{- end -}}
+
+        {{- if not (and .Params.events_tag (in .Params.events_tag "Unplugged")) -}}
+        <div class="event-pg-card__overlay">
+            <div class="event-pg-card__title">{{ .Title }}</div>
+            <div class="event-pg-card__meta">
+                {{- if .Params.EventDate -}}
+                    {{ .Params.EventDate }}
+                {{- else if .Params.event_date -}}
+                    {{ .Params.event_date }}
+                {{- else if .Date -}}
+                    {{ .Date.Format "Jan 2, 2006" }}
+                {{- end -}}
+                {{- with .Params.EventLocation -}}
+                &nbsp;·&nbsp;{{ . }}
+                {{- end -}}
+            </div>
+        </div>
+        {{- end -}}
+    </div>
+
+</a>
