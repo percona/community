@@ -7,6 +7,9 @@ authors:
   - jan_wieremjewicz
 images:
   - blog/2026/04/opensourcedoesntdie-blog-hero-fundit.png
+aliases:
+  - /blog/2026/04/30/open-source-doesnt-die.-it-gets-unfunded.
+slug: open-source-doesnt-die-it-gets-unfunded
 ---
 
 If you are using PostgreSQL in any capacity very likely this week has started for you with a bang. pgBackRest, one of the most known tools for PostgreSQL, praised for the scalable and reliable way to do backups has announced that the project is currently archived.
