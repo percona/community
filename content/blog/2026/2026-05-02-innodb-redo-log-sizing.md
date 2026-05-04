@@ -6,7 +6,7 @@ categories: ["MySQL"]
 authors:
   - wayne
 images:
-  - blog/2026/04/bufferpool-tuning.png
+  - blog/2026/05/innodb-redo-log-sizing.png
 ---
 
 ## Introduction
