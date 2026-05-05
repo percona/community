@@ -4,7 +4,6 @@ name_pronunciation: laura_czajkowski
 fullname: Laura Czajkowski
 fullname_pronounciation: Laura Czajkowski
 job: Director of Community, Percona
-contact_email: laura.czajkowski@percona.com
 tagline: Director of Community, Percona
 social:
   facebook: null

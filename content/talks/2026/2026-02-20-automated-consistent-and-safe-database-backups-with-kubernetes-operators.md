@@ -9,11 +9,11 @@ presentation_date: '2026-02-20'
 presentation_date_end: ''
 presentation_time: ''
 talk_year: '2026'
-event: Cloud Native Databases
+event: 'Build DevCon:  Cloud Native Databases'
 event_status: Accepted
 event_date_start: '2026-02-20'
 event_date_end: '2026-02-21'
-event_url: https://buildevcon.com/cloud-native-databases/
+event_url: https://buildevcon.com/events/cloud-native-databases
 event_location: 'Virtual '
 talk_tags:
 - Kubernetes

@@ -12,7 +12,6 @@ social:
   website: null
 images:
 - contributors/kai_wagner.jpg
-contact_email: kai.wagner@percona.com
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

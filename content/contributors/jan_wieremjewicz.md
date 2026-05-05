@@ -12,7 +12,6 @@ social:
   website: null
 images:
 - contributors/jan_wieremjewicz.jpg
-contact_email: jan.wieremjewicz@percona.com
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
@@ -30,6 +29,7 @@ blog_tags:
 - Security
 - monitoring
 - opensource
+- pgBackRest
 - pg_alastair
 - pg_jan
 - pg_oidc_validator
@@ -54,7 +54,7 @@ talks_tags:
 - Slides
 - Tech
 - Video
-posts_count: 15
+posts_count: 17
 events_count: 3
 talks_count: 5
 contributor_type:

@@ -7,7 +7,7 @@ speakers:
 talk_url: https://www.meetup.com/postgresql-meetup-berlin/events/313412510/
 presentation_date: '2026-03-05'
 presentation_date_end: ''
-presentation_time: ''
+presentation_time: 20:15 - 21:00
 talk_year: '2026'
 event: PostgreSQL Berlin March 2026 Meetup
 event_status: Accepted

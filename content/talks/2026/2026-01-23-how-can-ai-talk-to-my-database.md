@@ -10,18 +10,20 @@ presentation_date_end: ''
 presentation_time: ''
 talk_year: '2026'
 event: 'AI DBA: Self-Running Databases'
-event_status: Accepted
+event_status: Done
 event_date_start: '2026-01-23'
 event_date_end: ''
-event_url: https://buildevcon.com/ai-dba-self-driving-databases/
+event_url: https://buildevcon.com/events/ai-dba-self-driving-databases
 event_location: 'Virtual '
 talk_tags:
 - MySQL
 - PostgreSQL
 - ai
 - Open Source
+- Video
 slides: ''
-video: ''
+video: https://www.youtube.com/watch?v=HP7ij4oyOH8
+youtube_id: HP7ij4oyOH8
 images:
 - talks/2026/2026-01-23-how-can-ai-talk-to-my-database.png
 ---

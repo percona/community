@@ -18,7 +18,8 @@ event_location: Belgian, Brussels
 talk_tags:
 - MySQL
 - Video
-slides: ''
+- Slides
+slides: https://docs.google.com/presentation/d/1l3ZKxfgQM6DUMeCTjVFzYTPxdlmUQTZ6UPs4nLKNbIA/edit?usp=sharing
 video: https://www.youtube.com/watch?v=vjEAZhSBy7k
 youtube_id: vjEAZhSBy7k
 images:
