@@ -45,6 +45,7 @@ events_tags:
 - russia
 - sponsorship
 talks_tags:
+- Ai
 - Cloud Native
 - DBaaS
 - Databases
@@ -56,11 +57,12 @@ talks_tags:
 - Slides
 - Vector Search
 - Video
+- ai
 - database
 - video
 posts_count: 0
 events_count: 23
-talks_count: 21
+talks_count: 24
 contributor_type:
 - speaker
 contributor_year:

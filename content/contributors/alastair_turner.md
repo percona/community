@@ -3,8 +3,8 @@ name: alastair_turner
 name_pronunciation: alastair_turner
 fullname: Alastair Turner
 fullname_pronounciation: Alastair Turner
-tagline: Open Source Database Enthusiast
 job: PostgreSQL Evangelist, Percona
+tagline: Open Source Database Enthusiast
 social:
   facebook: null
   github: https://github.com/decodableminion
@@ -13,7 +13,6 @@ social:
   website: null
 images:
 - contributors/alastair_turner.jpg
-contact_email: alastair.turner@percona.com
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - AI

@@ -15,12 +15,15 @@ images:
 - contributors/andreas_karlsson.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
 - PostgreSQL
 blog_tags: []
-events_tags: []
+events_tags:
+- Events
+- Opensource
 talks_tags: []
 posts_count: 0
-events_count: 0
+events_count: 1
 talks_count: 2
 contributor_type:
 - speaker

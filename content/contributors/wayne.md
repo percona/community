@@ -24,17 +24,21 @@ blog_tags:
 - Bullseye
 - Community
 - DIY
+- Database Tuning
 - GTID
+- InnoDB
 - Installation
 - LAG
 - MySQL
 - Open Source Databases
+- OpenSource
 - Opensource
 - PMM
 - PXC
 - Percona
 - Percona Server
 - Percona Server for MySQL
+- Performance
 - Raspberry Pi
 - Recovery
 - Replication
@@ -59,7 +63,7 @@ events_tags:
 - event
 - opensource
 talks_tags: []
-posts_count: 18
+posts_count: 19
 events_count: 4
 talks_count: 0
 contributor_type:

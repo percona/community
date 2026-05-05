@@ -16,6 +16,7 @@ images:
 - contributors/sveta_smirnova.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Cloud
 - Community
 - MySQL
 - PMM
@@ -31,17 +32,20 @@ blog_tags:
 - monitoring
 events_tags:
 - Event
+- Events
+- Troubleshooting
 talks_tags:
 - MariaDB
 - Slides
 - Video
 posts_count: 4
-events_count: 1
+events_count: 2
 talks_count: 4
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2022'
 - '2021'

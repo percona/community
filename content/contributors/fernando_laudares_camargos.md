@@ -27,6 +27,7 @@ events_tags:
 - sponsorship
 talks_tags:
 - Open Source
+- Slides
 - Video
 - ai
 posts_count: 0

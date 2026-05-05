@@ -16,21 +16,26 @@ social:
 images:
 - contributors/kyle_davis.jpg
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- Community
 blog_tags: []
 events_tags:
 - Amazon
 - Community Track
 - Event
+- Events
+- Open Source
 - OpenSearch
 - Percona Live 2021
+- Redis
+- Valkey
 - database
 - in-memory
 - opensource
 - performance
 talks_tags: []
 posts_count: 0
-events_count: 7
+events_count: 8
 talks_count: 0
 contributor_type:
 - speaker

@@ -6,11 +6,11 @@ speakers:
 - andreas_karlsson
 talk_url: https://www.postgresql.eu/events/pgconfde2026/sessions/session/7576-everything-you-need-to-know-about-collations/
 presentation_date: '2026-04-21'
-presentation_date_end: '2026-04-22'
-presentation_time: ''
+presentation_date_end: ''
+presentation_time: 12:15-13:00
 talk_year: '2026'
 event: PGConf Germany 2026
-event_status: Accepted
+event_status: Done
 event_date_start: '2026-04-21'
 event_date_end: '2026-04-22'
 event_url: https://2026.pgconf.de/
