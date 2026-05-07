@@ -13,9 +13,11 @@ images:
 - contributors/zsolt_parragi.png
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- AI
 - Cloud
 - PostgreSQL
 blog_tags:
+- AI
 - Backups
 - Keycloak
 - OIDC
@@ -23,6 +25,7 @@ blog_tags:
 - Percona
 - PostgreSQL
 - Security
+- development
 - pg_zsolt
 events_tags:
 - Featured
@@ -34,7 +37,7 @@ talks_tags:
 - Open Source
 - Security
 - Slides
-posts_count: 5
+posts_count: 6
 events_count: 1
 talks_count: 2
 contributor_type:

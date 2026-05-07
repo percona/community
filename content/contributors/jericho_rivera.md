@@ -35,7 +35,6 @@ contributor_type:
 contributor_year:
 - '2026'
 ---
-
 I’m a database engineer with 10+ years of experience designing, optimizing, and supporting large-scale MySQL and MongoDB environments—most recently as part of Percona’s global engineering organization. My work focuses on solving high-impact, complex database challenges for customers operating mission-critical systems where performance, availability, and data integrity are non-negotiable.
 
 Across my career, I’ve led deep-dive investigations into performance bottlenecks, reliability issues, replication failures, and scalability limits. I specialize in advanced troubleshooting, query and schema optimization, high availability architecture, distributed systems behavior, and proactive capacity/performance planning. I’m comfortable working in high-pressure production environments and delivering clear, actionable solutions that improve stability and reduce operational risk.
