@@ -7,15 +7,20 @@ job: Director of Community, Percona
 tagline: Director of Community, Percona
 social:
   facebook: null
-  github: null
+  github: lauraczajkowski
   linkedin: https://www.linkedin.com/in/lauraczajkowski/
   twitter: null
-  website: null
+  website: https://laura.community
 images:
 - contributors/laura_czajkowski.jpeg
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
-blog_tags: []
+contributor_tag:
+- Community
+blog_tags:
+- Community
+- Events
+- Open Source
+- Percona
 events_tags:
 - Event
 - Percona
@@ -26,12 +31,14 @@ talks_tags:
 - Slides
 - Tech
 - Valkey
-posts_count: 0
+posts_count: 1
 events_count: 1
 talks_count: 1
 contributor_type:
+- author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 ---
 Laura is a Developer Ecosystem Leader with over 20 years of experience building and scaling high-impact technical communities. She began her career in Software QA, a technical foundation that led her to discover a passion for open source and a natural transition into community management and leadership. From her foundational leadership at the University of Limerick to serving on Ubuntu’s Community Council and EMEA Membership Board, Laura has dedicated her career to the art of community governance.
