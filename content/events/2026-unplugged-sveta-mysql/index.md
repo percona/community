@@ -28,7 +28,7 @@ Whether you are running MySQL in a managed service, on virtual machines, or insi
 - 👤 **Speaker:** Sveta Smirnova - Principal Support Engineering Coordinator
 - 🎙️ **Host:** Edith Puclla - Tech Evangelist
 - 📍 **Online**
-- 🔗 Registration Link to Be Confirmed
+- 🔗 Register and Join us [here](https://event.on24.com/wcc/r/5351605/0C82E89AFF24C3FD3BDAC65D7EA0B227)
 
 
 ***Join our Open Source Unplugged!***
