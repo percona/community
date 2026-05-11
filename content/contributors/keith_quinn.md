@@ -13,4 +13,4 @@ images:
 contributor_tag:
 - MongoDB
 ---
-Kaith is a Quality Engineer at Percona, working on the Percona for MongoDB project. He has over a decade of experience in software testing and previously worked at IBM on products including QRadar, a leading SIEM solution.
+Keith is a Quality Engineer at Percona, working on the Percona for MongoDB project. He has over a decade of experience in software testing and previously worked at IBM on products including QRadar, a leading SIEM solution.
