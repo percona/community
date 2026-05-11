@@ -1,6 +1,6 @@
 ---
 name: edith_puclla
-name_pronunciation: eidht_puclla
+name_pronunciation: edith_puclla
 fullname: Edith Puclla
 fullname_pronounciation: Edith Puclla
 tagline: Technical Evangelist, Percona
