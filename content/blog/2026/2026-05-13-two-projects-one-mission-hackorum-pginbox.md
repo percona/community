@@ -21,7 +21,7 @@ Jack didn't know at the time was that hackorum.dev existed but he reached the ex
 
 ### **Who is Jack?**
 
-Jack Bonatakis is a Principal Software Engineer focused on Data & Insights, based in Washington, D.C and currently working at Robin, a Boston-based startup. His professional background spans data engineering, cloud analytics, and building data-driven platforms, with stints at MITRE working on government-sector data solutions, as well as roles at Rhino Insurance and DAS42, a cloud analytics consultancy. He holds a Master's degree from the University of Colorado Boulder and has built a career on turning complex, noisy data into something people can actually use.
+[Jack Bonatakis](https://www.linkedin.com/in/jack-bonatakis/) is a Principal Software Engineer focused on Data & Insights, based in Washington, D.C and currently working at Robin, a Boston-based startup. His professional background spans data engineering, cloud analytics, and building data-driven platforms, with stints at MITRE working on government-sector data solutions, as well as roles at Rhino Insurance and DAS42, a cloud analytics consultancy. He holds a Master's degree from the University of Colorado Boulder and has built a career on turning complex, noisy data into something people can actually use.
 
 Which makes it completely unsurprising that he looked at the pg-hackers mailing list, one of the most information-dense, high-volume technical discussions on the internet, and thought: *this could be so much better.*
 
