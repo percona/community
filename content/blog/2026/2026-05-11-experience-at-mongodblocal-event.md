@@ -1,5 +1,5 @@
 ---
-title: "Our Experience at MongoDB.local London 2026: The Era of AI Agents, Badges, and... Surviving on Chips!"
+title: "Our Experience at MongoDB.local London 2026: The Era of AI Agents, Badges, and Surviving on Chips!"
 date: "2026-05-11T00:00:00+00:00"
 tags: ['AI', 'events', 'MongoDB', 'database']
 categories: ['Community']
