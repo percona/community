@@ -56,16 +56,11 @@ This is where foundations typically kick in: providing an easy way for organizat
 
 ## Where are we now?
 
-There’s a lot of backchannel talks happening. 
+There’s a lot of backchannel talks happening, join them and represent the open source point of view. 
 
-Join the ones on:
+One example of such a channel is [Reddit](https://www.reddit.com/r/PostgreSQL/comments/1sx2ttg/pgbackrest_is_no_longer_being_maintained/) though it requires quite a lot of karma (a Reddit thing) and not everyone will find it easy to successfully post there.
 
-- Telegram
-- Discord
-- Slack
-- [Reddit](https://www.reddit.com/r/PostgreSQL/comments/1sx2ttg/pgbackrest_is_no_longer_being_maintained/) (I don’t have enough karma to engage there :/)
-
-or let us know what is your stance [(Percona Community Forum thread available)](https://forums.percona.com/t/pgbackrest-is-eol/40720) so that we can represent you in the discussions we are having.
+While there you can join Telegram, Slack or Discord discussions some of the channels there are private so we wanted to provide an open and visible place where you can let us know what is your stance and for this purpose [(Percona Community Forum thread is available)](https://forums.percona.com/t/pgbackrest-is-eol/40720).
 
 A lot of blog posts have been written on this subject, check out [Planet PostgreSQL](https://planet.postgresql.org/) to find some of them! I particularly enjoyed some of them, the [one](https://proopensource.it/blog/postgresql-ecosystem-problems-2026) from [Stefanie Janine Stölting](https://proopensource.it/stefanie-janine-stoelting.html), I feel I am mostly aligned with. PostgreSQL needs an Ecosystem Umbrella Foundation
 
