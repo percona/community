@@ -45,7 +45,7 @@ For years, pgBackRest was supported through corporate sponsorship from mainly on
 
 This is the “[Nebraska guy problem](https://xkcd.com/2347/)” in action: software used by a large part of the industry, sustained by a very small number of people.
 
-Yes, [anyone can fork the project](https://github.com/pgbunker/pgbunker), but:
+Yes, anyone can fork the project (and some already did), but:
 
 - trust doesn’t fork
 - community doesn’t fork
