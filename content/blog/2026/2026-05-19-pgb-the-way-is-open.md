@@ -9,13 +9,13 @@ images:
   - blog/2026/05/Jan-pgb-back-cover.png
 ---
 
-The crisis unfolded over the course of a couple of weeks since 27 April, 2026 and the [announcement](https://pgbackrest.org/news.html):
+The crisis unfolded over the course of a couple of weeks starting on 27 April 2026, when a [message appeared on the pgBackRest project announcing](https://pgbackrest.org/news.html):
+ that the repository would be archived and active maintenance would stop.
 
 ![blog/2026/05/Jan-pgb-news-1.png](blog/2026/05/Jan-pgb-news-1.png)
 
-
-[pgBackRest](https://pgbackrest.org/), one of the most widely used backup and recovery tools in the PostgreSQL ecosystem, was suddenly described as “[dead](https://mydbanotebook.org/posts/pgbackrest-is-dead.-now-what/)”, “[EOL](https://www.gabrielebartolini.it/articles/2026/04/why-the-cycle-of-open-source-sustainability-needs-to-be-virtuous/)”, or “[abandoned](https://news.ycombinator.com/item?id=47919997)”. The trigger was clear: its long-time maintainer, after more than a decade of work, announced he could no longer continue without sustainable funding and would archive the repository.
-
+For many in the PostgreSQL ecosystem, this landed like a shock. [pgBackRest](https://pgbackrest.org/) is one of the most widely used backup and recovery tools for PostgreSQL, deeply embedded in production environments across enterprises large and small. Now it was suddenly described as “[dead](https://mydbanotebook.org/posts/pgbackrest-is-dead.-now-what/)”, “[EOL](https://www.gabrielebartolini.it/articles/2026/04/why-the-cycle-of-open-source-sustainability-needs-to-be-virtuous/)”, or “[abandoned](https://news.ycombinator.com/item?id=47919997)”. The trigger was clear: its long-time maintainer, after more than a decade of work, announced he could no longer continue without sustainable funding and would archive the repository.
+i
 That message spread fast. The interpretation spread even faster.
 
 And it was wrong.
