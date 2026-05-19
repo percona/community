@@ -1,6 +1,6 @@
 ---
 title: "pgBackRest - The Way Is Open"
-date: "2026-05-18T11:00:00+00:00"
+date: "2026-05-19T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'pgBackRest']
 categories: ['PostgreSQL']
 authors:
