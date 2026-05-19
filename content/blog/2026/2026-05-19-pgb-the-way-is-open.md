@@ -97,7 +97,7 @@ This is what open source actually requires: not heroics, but coordination.
 
 The short version:
 
-- **Percona** has coordinated with multiple companies to secure funding for the original maintainer
+- **Percona** has  [https://pgbackrest.org/news.html#will-continue](coordinated with multiple companies) to [https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html](secure funding for the original maintainer)
 - **Percona** is contributing engineering resources to expand the contributor base
 - **Percona** is working with other organizations to secure additional engineering commitments
 - **Percona** is taking active part in discussing the long term needs for a PostgreSQL ecosystem foundation
