@@ -95,9 +95,11 @@ This is what open source actually requires: not heroics, but coordination.
 
 ## So what’s with pgBackRest?
 
-The short version:
+It's all good. Well, better.
 
 ![blog/2026/05/jan-pgb-back-cover.png](blog/2026/05/jan-pgb-back-cover.png)
+
+The short version:
 
 - **Percona** has [coordinated with multiple companies](https://pgbackrest.org/news.html#will-continue) to [secure funding for the original maintainer](https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html)
 - **Percona** is contributing engineering resources to expand the contributor base
