@@ -6,10 +6,10 @@ categories: ['PostgreSQL']
 authors:
   - jan_wieremjewicz
 images:
-  - blog/2026/05/Jan-pgb-back-cover.png
+  - blog/2026/05/Jan-pgb-back-alright.jpg
 ---
 
-The crisis unfolded over the course of a couple of weeks starting on 27 April 2026, when a [message appeared on the pgBackRest project announcing](https://pgbackrest.org/news.html):
+Events unfolded quickly over the course of a couple of weeks starting on 27 April 2026, when a [message appeared on the pgBackRest project announcing](https://pgbackrest.org/news.html):
  that the repository would be archived and active maintenance would stop.
 
 ![blog/2026/05/Jan-pgb-news-1.png](blog/2026/05/Jan-pgb-news-1.png)
@@ -97,7 +97,9 @@ This is what open source actually requires: not heroics, but coordination.
 
 The short version:
 
-- **Percona** has  [https://pgbackrest.org/news.html#will-continue](coordinated with multiple companies) to [https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html](secure funding for the original maintainer)
+![blog/2026/05/jan-pgb-back-cover.png](blog/2026/05/jan-pgb-back-cover.png)
+
+- **Percona** has [coordinated with multiple companies](https://pgbackrest.org/news.html#will-continue) to [secure funding for the original maintainer](https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html)
 - **Percona** is contributing engineering resources to expand the contributor base
 - **Percona** is working with other organizations to secure additional engineering commitments
 - **Percona** is taking active part in discussing the long term needs for a PostgreSQL ecosystem foundation
