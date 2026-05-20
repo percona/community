@@ -1,5 +1,5 @@
 ---
-title: "pgBackRest - The Way Is Open"
+title: "Backrest's back, alright!"
 date: "2026-05-19T11:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'pgBackRest']
 categories: ['PostgreSQL']
