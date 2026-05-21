@@ -21,13 +21,17 @@ Attendees will learn how to handle complex requirements such as idempotent lifec
 
 Finally, discover how to implement a hybrid CI/CD workflow that combines development-time speed with production-grade rigor.
 
-- 🎥 [Watch the recording](https://youtu.be/ZA2jVq2VIIc)
+**Recording:**
+
+- Missed the live session? 🎥 [Watch it here](https://youtu.be/ZA2jVq2VIIc)
+
+**About the Event:**
 - 📅 **Date/Time:** March 30, 2026, 14:00 PM – 15:00 PM GMT
 - 👤 **Speaker:** [Evgeniy Patlan](https://www.linkedin.com/in/evgeniypatlan/) - Manager, Build & Release Engineering
 - 📍 **Online**
 - 🔗 [**Register free here**](https://event.on24.com/wcc/r/5287557/19D16E69FF52906B270B524036E6B60A)
 
 
-***Join our Open Source Unplugged!***
+*Join our Open Source Unplugged!*
 
 ![Percona Open Source Unplugged Evgeniy](/events/2026-unplugged-evgeniy/evgeniy.png)
