@@ -101,7 +101,7 @@ It's all good. Well, better.
 
 The short version:
 
-- [Multiple companies coordinated together](https://pgbackrest.org/news.html#will-continue) to [ensure continued funding and support around PgBackRest](https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html)
+- [Multiple companies coordinated together](https://pgbackrest.org/news.html#will-continue) to [ensure continued funding and support around pgBackRest](https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html)
 - Engineering effort is now being shared more broadly to expand the contributor and maintainer base
 - Discussions around longer term sustainability and governance in the PostgreSQL ecosystem accelerated significantly
 - **Percona** played an active role in coordinating these efforts, contributing engineering resources, and helping bring organizations together around a sustainable path forward
