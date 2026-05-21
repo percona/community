@@ -19,6 +19,12 @@ PMM 3 introduces new observability capabilities with **Real-Time Query Analytics
 
 Real-Time Query Analytics helps teams see queries as they run, making it easier to detect long-running operations, lock contention, and active performance issues in the moment. At the same time, PMM High Availability improves monitoring resilience through automatic failover, helping reduce blind spots during failures or maintenance.
 
+**Recording:**
+
+- Missed the live session? 🎥 [Watch it here](https://youtu.be/9dDfEehLhdc)
+
+**About the Event:**
+
 - 📅 **Date/Time:** April 22, 2026, 4:00 PM – 5:00 PM GMT
 - 👤 **Speaker:** Tibor Korocz - Observability Tech Lead
 - 🎙️ **Host:** Edith Puclla - Tech Evangelist
@@ -26,6 +32,6 @@ Real-Time Query Analytics helps teams see queries as they run, making it easier 
 - 🔗 [Register here](https://event.on24.com/wcc/r/5325286/E1D988231E34FF2F9F4C3D3CC806A33F) 
 
 
-***Join our Open Source Unplugged!***
+*Join our Open Source Unplugged!*
 
 ![Percona Open Source Unplugged Tibor Korocz](/events/2026-unplugged-tibor-pmm3/intro.png)

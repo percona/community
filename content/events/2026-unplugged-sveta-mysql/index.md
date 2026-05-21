@@ -24,6 +24,13 @@ Whether you are running MySQL in a managed service, on virtual machines, or insi
 * Cloud- and container-specific observability tools.
 * Workarounds and investigative strategies for real-world incidents in **AWS, GCP, Azure, or Kubernetes**.
 
+
+**Recording:**
+
+- Missed the live session? 🎥 [Watch it here](https://youtu.be/Wiujh-aXDSg)
+
+**About the Event:**
+
 - 📅 **Date/Time:** May 11, 2026, 4:00 PM – 5:00 PM GMT
 - 👤 **Speaker:** Sveta Smirnova - Principal Support Engineering Coordinator
 - 🎙️ **Host:** Edith Puclla - Tech Evangelist
@@ -31,6 +38,6 @@ Whether you are running MySQL in a managed service, on virtual machines, or insi
 - 🔗 Register and Join us [here](https://event.on24.com/wcc/r/5351605/0C82E89AFF24C3FD3BDAC65D7EA0B227)
 
 
-***Join our Open Source Unplugged!***
+*Join our Open Source Unplugged!*
 
 ![Percona Open Source Unplugged Sveta Smirnova](/events/2026-unplugged-sveta-mysql/intro.png)
