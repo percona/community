@@ -19,12 +19,19 @@ Redis has been a key technology for many developers, companies, and open-source 
 
 In this session, **Kyle Davis** will lead a practical discussion on the transition from **Redis** to **Valkey**, including the questions, concerns, and opportunities people may face when exploring Valkey adoption. Participants will gain a clearer understanding of the current ecosystem, how Redis and Valkey relate to each other, and how the community can contribute to a healthy open-source future for this technology.
 
+
+**Recording:**
+
+- Missed the live session? 🎥 [Watch it here](https://youtu.be/Z9YwtZP_KCA)
+
+**About the Event:**
+
 - 📅 **Date/Time:** April 28, 2026, 16:00 BST / 11:00 AM EDT
 - 👤 **Speaker:** Kyle Davis - General Manager, Redis-Valkey Ecosystem
 - 📍 **Online**
 - 🔗 [Register here for free and join us!](https://event.on24.com/wcc/r/5332683/BBCCBFC9371226007E1FA75EB6DEE701)
 
 
-***Join our Open Source Unplugged!***
+*Join our Open Source Unplugged!*
 
 ![Percona Open Source Unplugged Kyle Davis](/events/2026-unplugged-kyle/intro.png)
