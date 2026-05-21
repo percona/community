@@ -76,7 +76,7 @@ and more often to:
 
 and
 
-> how do we name our fork?
+> what do we name our fork?
 > 
 
 That’s a natural reaction, but it’s not a good one.
@@ -101,10 +101,11 @@ It's all good. Well, better.
 
 The short version:
 
-- **Percona** has [coordinated with multiple companies](https://pgbackrest.org/news.html#will-continue) to [secure funding for the original maintainer](https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html)
-- **Percona** is contributing engineering resources to expand the contributor base
-- **Percona** is working with other organizations to secure additional engineering commitments
-- **Percona** is taking active part in discussing the long term needs for a PostgreSQL ecosystem foundation
+- [Multiple companies coordinated together](https://pgbackrest.org/news.html#will-continue) to [ensure continued funding and support around PgBackRest](https://www.globenewswire.com/news-release/2026/05/19/3297383/0/en/open-source-stays-open-percona-sponsors-pgbackrest-to-keep-postgresql-backups-running.html)
+- Engineering effort is now being shared more broadly to expand the contributor and maintainer base
+- Discussions around longer term sustainability and governance in the PostgreSQL ecosystem accelerated significantly
+- **Percona** played an active role in coordinating these efforts, contributing engineering resources, and helping bring organizations together around a sustainable path forward
+
 
 ![blog/2026/05/Jan-pgb-news-3.png](blog/2026/05/Jan-pgb-news-3.png)
 
