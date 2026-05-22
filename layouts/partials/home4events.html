@@ -3,7 +3,7 @@
 
     <div class="grid grid--3">
         {{ $now := now }}
-        {{ $events := where $.Page.Site.Pages "Section" "events" }}
+        {{ $events := where $.Page.Site.RegularPages "Section" "events" }}
         {{ $upcoming := where $events "Date" ">" $now }}
         {{ $sorted := sort $upcoming "Date" "asc" }}
         {{ range first 3 $sorted }}

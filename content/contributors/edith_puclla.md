@@ -24,6 +24,7 @@ contributor_tag:
 - PostgreSQL
 - Toolkit
 blog_tags:
+- AI
 - Backups
 - CNCF
 - Cloud
@@ -57,11 +58,13 @@ blog_tags:
 - Valkey
 - Volume
 - Windows
+- database
 - databases
 - docker
 - dok
 - edith_puclla
 - europe
+- events
 - hacktoberfest
 - k3d
 - kubecon
@@ -97,7 +100,7 @@ talks_tags:
 - Slides
 - Video
 - video
-posts_count: 32
+posts_count: 33
 events_count: 7
 talks_count: 18
 contributor_type:
