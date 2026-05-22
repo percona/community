@@ -54,7 +54,10 @@ Pitch us first. A couple of sentences on what you want to write about and why yo
 
 You don't need to be a published writer. You need to have done something and be willing to explain how. A 900-word post about how you debugged a replication lag issue last quarter is more valuable than a 3,000-word survey of the database landscape.
 
-Send pitches and questions to the Percona Community team — by filling in **this form**.
+Send pitches and questions to the Percona Community team — by filling in **[this form](https://share.hsforms.com/2quoru-zrSli2l-89aiiJggg9e0)**.
+
+<script src="https://js.hsforms.net/forms/embed/758664.js" defer></script>
+<div class="hs-form-frame" data-region="na1" data-form-id="aaea2bbb-eceb-4a58-b697-ef3d6a288982" data-portal-id="758664"></div>
 
 ### Open topics: blog, talks, guides
 
