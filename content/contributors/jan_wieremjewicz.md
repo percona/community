@@ -54,7 +54,7 @@ talks_tags:
 - Slides
 - Tech
 - Video
-posts_count: 17
+posts_count: 18
 events_count: 3
 talks_count: 5
 contributor_type:

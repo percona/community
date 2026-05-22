@@ -7,7 +7,7 @@
         <a href="{{ .RelPermalink }}">
             {{ with .Params.images }}
                 {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
-                <img src="{{ (.Fill "682x420 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
+                <img src="{{ (.Fill "682x358 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
                 {{- end }}
             {{ end }}
         </a>

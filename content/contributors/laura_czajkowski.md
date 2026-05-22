@@ -19,8 +19,13 @@ contributor_tag:
 blog_tags:
 - Community
 - Events
+- MariaDB
+- MongoDB
+- MySQL
 - Open Source
 - Percona
+- PostgreSQL
+- Valkey
 events_tags:
 - Event
 - Percona
@@ -31,7 +36,7 @@ talks_tags:
 - Slides
 - Tech
 - Valkey
-posts_count: 1
+posts_count: 2
 events_count: 1
 talks_count: 1
 contributor_type:

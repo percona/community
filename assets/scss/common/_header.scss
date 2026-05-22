@@ -60,7 +60,7 @@ header {
     z-index: 4;
 
     a img {
-      height: 32px;
+      height: 46px;
     }
   }
   .page-header {
@@ -197,6 +197,10 @@ header {
 
 @media screen and (min-width: $mobile-breaking-point) {
   .page-header {
+
+    .logo a img {
+      height: 60px;
+    }
 
     .mobile-toggle {
       display: none;

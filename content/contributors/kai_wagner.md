@@ -47,7 +47,7 @@ events_tags:
 - securing
 talks_tags:
 - Slides
-posts_count: 6
+posts_count: 7
 events_count: 4
 talks_count: 4
 contributor_type:

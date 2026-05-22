@@ -1,13 +1,14 @@
-date: "2026-05-22"
-tags: ['Community', 'Percona', 'Open Source', 'Events']
+---
+title: "Write for the Percona Community"
+date: "2026-05-22T11:00:00+00:00"
+tags: ['Community', 'Percona', 'Open Source', 'MySQL', 'PostgreSQL', 'MongoDB', 'MariaDB', 'Valkey']
 categories: ['Community']
 authors:
   - laura_czajkowski
 images:
-  - 
+  - blog/2026/05/laura_blog_cover.jpg
 slug: write-for-percona-community
-
-# Write for the Percona Community
+---
 
 You've fixed something gnarly in production this year. You've migrated a database that nobody wanted to touch. You've built something on top of Percona Operators, or Percona Toolkit, or Percona Monitoring and Management (PMM), and you've learned things along the way that aren't written down anywhere yet.
 
@@ -24,7 +25,7 @@ For every post we publish, you get:
 
 The points stack across contributions. The more you write, the more you collect.
 
-#### A note on payment
+### A note on payment
 
 *Not everyone can accept payment for writing — employment contracts, tax situations, visa rules, and conflict-of-interest policies all get in the way. If that's you, we'll donate the same $350 to an open source project or community of your choice on your behalf. Tell us who to send it to when you pitch.*
 
