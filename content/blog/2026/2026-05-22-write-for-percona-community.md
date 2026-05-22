@@ -99,3 +99,7 @@ Not sure where to start? Here are some directions we'd love to see covered. Pick
 ---
 
 We pay engineers to share what they've learned. That's the whole offer. If you've got something worth writing, write it.
+
+## Content Ownership and Licensing
+
+Contributors to the Percona Community Blog retain copyright of their work. By submitting content, authors grant Percona a non-exclusive, worldwide, royalty-free license to publish, distribute, and promote the content as part of the Percona Community platform. Unless otherwise specified, all community blog posts are published under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
