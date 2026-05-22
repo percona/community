@@ -98,7 +98,7 @@ This is what open source actually requires: not heroics, but coordination.
 It's all good. Well, better.
 
 
-![blog/2026/05/jan-pgb-back-cover.png](blog/2026/05/Jan-pgb-back-cover.png) Jan-pgb-back-cover.png
+![blog/2026/05/Jan-pgb-back-cover.png](blog/2026/05/Jan-pgb-back-cover.png)
 
 
 The short version:
