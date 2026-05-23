@@ -7,7 +7,7 @@ layout: single
 speakers:
 - pep_pla
 date: '2026-01-30'
-tags: ["Event", "opensource", "sponsorship", "Cloud Native", "Kubernetes", "MariaDB", "PostgresSQL", "MySQL"]
+tags: ["Event", "opensource", "sponsorship", "Cloud Native", "Kubernetes", "MariaDB", "PostgreSQL", "MySQL"]
 events_year: ["2026"]
 events_category: ["Sponsorship"]
 events_tag: ["In-Person"]
