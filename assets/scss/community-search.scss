@@ -1,0 +1,524 @@
+@import "common/variables";
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+html.community-search-overlay-open {
+  overflow: hidden;
+}
+
+/* Icon in header row (sibling of nav, not inside mobile drawer) */
+.page-header > .community-search-header {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  z-index: 8;
+  margin-left: 0.75rem;
+
+  @media screen and (max-width: 999px) {
+    order: 2;
+    margin-left: auto;
+    margin-right: 0.35rem;
+  }
+}
+
+.community-search-header {
+  &__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    color: $light;
+    font-size: inherit;
+    font-weight: normal;
+    transition: color 0.15s ease, background 0.15s ease;
+    box-shadow: none;
+
+    &:hover,
+    &:focus-visible,
+    .community-search-header.is-open & {
+      color: $link-green;
+      background: rgba(255, 255, 255, 0.14);
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    display: block;
+  }
+}
+
+/* Full-screen overlay (moved to body via JS — do not nest in transformed header) */
+.community-search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10050;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.25rem 1rem 1.5rem;
+  box-sizing: border-box;
+  background: transparent;
+  isolation: isolate;
+  overflow-y: auto;
+
+  &[hidden] {
+    display: none !important;
+  }
+
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    /* Muted overlay: $header-color (#282727) + subtle cool mid-tone, ~92% opacity */
+    background: linear-gradient(
+      155deg,
+      rgba($header-color, 0.94) 0%,
+      rgba(42, 50, 52, 0.92) 45%,
+      rgba(32, 42, 46, 0.93) 100%
+    );
+    cursor: pointer;
+  }
+
+  &__panel {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 44rem;
+    margin-top: clamp(1.5rem, 6vh, 3.5rem);
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 2.5rem);
+    max-height: calc(100dvh - 2.5rem);
+    pointer-events: auto;
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__head-text {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  &__close {
+    position: static;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: background 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(255, 255, 255, 0.28);
+      outline: none;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.35;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__beta {
+    display: inline-block;
+    padding: 0.12rem 0.45rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0a1f44;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 4px;
+    vertical-align: middle;
+  }
+
+  &__credit {
+    margin: 0.35rem 0 0;
+    padding: 0;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    text-align: left;
+  }
+
+  &__unavail {
+    margin: 0 0 1rem;
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
+    &[hidden] {
+      display: none !important;
+    }
+  }
+
+  &__form {
+    margin-bottom: 0.85rem;
+  }
+
+  /* Pill search bar (input + magnifier inside white capsule) */
+  &__field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: none;
+    border-radius: 9999px;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.14);
+    padding: 0.5rem 0.55rem 0.5rem 1.5rem;
+    transition: box-shadow 0.15s ease;
+
+    &:focus-within {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    }
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    height: 2.75rem;
+    margin: 0;
+    padding: 0 0.5rem 0 0;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    font-weight: 400;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #1f2937;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &::placeholder {
+      color: #6b7280;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.85rem;
+    height: 2.85rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    color: #111827;
+    font-weight: normal;
+    transition: background 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(0, 0, 0, 0.05);
+      outline: none;
+    }
+
+    svg {
+      display: block;
+      pointer-events: none;
+    }
+  }
+
+  &__results {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .page-header #show-mobile-menu {
+    order: 3;
+  }
+
+  .page-header .mobile-toggle {
+    order: 4;
+    flex-shrink: 0;
+    margin-left: 0;
+  }
+
+  .page-header .mobile-menu {
+    order: 5;
+  }
+}
+
+/* ── Full search page (/search/) ─────────────────────────────────────────── */
+
+.search-page-hero {
+  background-color: $header-color;
+  padding-bottom: 3.75rem;
+
+  &__block {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+
+  /* Page uses <header> for semantics; global header { background } must not show here */
+  &__intro {
+    max-width: 44rem;
+    margin: 0 auto;
+    text-align: center;
+    color: $light;
+    background: transparent;
+  }
+
+  &__title {
+    margin: 0 0 0.65rem;
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.2;
+    color: $light;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  &__beta {
+    display: inline-block;
+    padding: 0.12rem 0.45rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0a1f44;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 0;
+    vertical-align: middle;
+  }
+
+  &__lead {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__credit {
+    margin: 0;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.community-search-page {
+  position: relative;
+  z-index: 2;
+  margin-top: -2.85rem;
+  padding-top: 0;
+  padding-bottom: 3rem;
+
+  #community-search .cs-wrap.cs-page {
+    max-width: 44rem;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Pill bar (new widget) or legacy .cs-row until CDN script is updated */
+  #community-search .cs-page-search-field,
+  #community-search .cs-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto 1.25rem;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 9999px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0.55rem 0.5rem 1.5rem;
+    gap: 0;
+  }
+
+  #community-search .cs-row .cs-input,
+  #community-search .cs-page-search-field .cs-input {
+    flex: 1;
+    min-width: 0;
+    height: 2.75rem;
+    margin: 0;
+    padding: 0 0.5rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #1f2937;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+
+  #community-search .cs-row .cs-input:focus,
+  #community-search .cs-page-search-field .cs-input:focus {
+    border: none;
+    outline: none;
+  }
+
+  #community-search .cs-row .cs-btn,
+  #community-search .cs-page-search-field .cs-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: auto;
+    min-width: 2.85rem;
+    height: 2.85rem;
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    background: $link-green !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+  }
+
+  #community-search .cs-row .cs-btn:hover,
+  #community-search .cs-page-search-field .cs-btn:hover {
+    background: darken($link-green, 6%) !important;
+    border: none !important;
+  }
+
+  #community-search .cs-page-search-field {
+    margin-bottom: 1.25rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  #community-search .cs-page-search-field .cs-btn {
+    width: 2.85rem;
+    min-width: 2.85rem;
+    padding: 0 !important;
+    background: transparent !important;
+    color: #111827 !important;
+    font-weight: normal !important;
+    font-size: inherit !important;
+  }
+
+  #community-search .cs-page-search-field .cs-btn:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+  }
+
+  #community-search .cs-filters {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin: 0 0 1.25rem !important;
+    padding: 0 !important;
+  }
+
+  #community-search .cs-filter {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    min-height: 2rem !important;
+    margin: 0 !important;
+    padding: 0.35rem 14px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 99px !important;
+    background: #fff !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    color: #374151 !important;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease !important;
+  }
+
+  #community-search .cs-filter:hover {
+    background: #ecfdf5 !important;
+    color: #0e7045 !important;
+    border-color: #9ca3af !important;
+  }
+
+  #community-search .cs-filter.active,
+  #community-search .cs-filter.active:hover {
+    background: $link-green !important;
+    color: #fff !important;
+    border-color: $link-green !important;
+  }
+
+  #community-search .cs-status {
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  #community-search .cs-grid {
+    margin-top: 0;
+  }
+}

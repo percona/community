@@ -10,7 +10,9 @@ header {
 .page-header {
   @include menu;
 
-  a {
+  /* Menu links only — not semantic search popup (.cs-popup) */
+  nav .menu__list > li > a,
+  nav .menu__list .submenu__list a {
     display: block;
     border-bottom-width: 0.2rem;
     font-weight: normal;
@@ -65,11 +67,27 @@ header {
   }
   .page-header {
     justify-content: space-between;
-    z-index:1;
+    z-index: 1;
     a {
       border-bottom-width: 0;
     }
   }
+
+  #show-mobile-menu {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
   .hamburger-bar {
     height:0.2rem;
     background: $light;
@@ -87,9 +105,9 @@ header {
     }
   }
   #show-mobile-menu:checked + .mobile-toggle {
-    position:fixed;
-    right:$padding-right-page;
-    z-index:12;
+    position: fixed;
+    right: $padding-right-page;
+    z-index: 12;
     .hamburger-bar:nth-of-type(1) {
       transform:translateY(0.4rem) rotate(315deg);
     }
@@ -222,7 +240,7 @@ header {
       list-style-type: none;
     }
 
-    nav ul {
+    nav ul.menu__list {
       display: flex;
       align-items: center;
       justify-content: flex-end;

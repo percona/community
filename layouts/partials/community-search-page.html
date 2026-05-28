@@ -1,0 +1,15 @@
+{{/*
+  Full search page widget (page mode). Used on /search/
+*/}}
+<div id="community-search" class="community-search-page__widget"></div>
+<script>
+  window.CommunitySearchConfig = {
+    mode: 'page',
+    apiUrl: "{{ .Site.Params.searchApiUrl | default "" }}",
+    target: "#community-search",
+    columns: {{ .Site.Params.searchColumns | default 3 }},
+    limit: {{ .Site.Params.searchLimitPage | default (.Site.Params.searchLimit | default 30) }},
+  };
+</script>
+{{ $api := .Site.Params.searchApiUrl | default "" }}
+<script src="{{ $api }}/community-search.js" crossorigin="anonymous"></script>

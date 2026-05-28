@@ -1,0 +1,21 @@
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+<section class="search-page-hero">
+  <div class="contentblock search-page-hero__block">
+    <div class="search-page-hero__intro">
+      <h1 class="search-page-hero__title">
+        {{ .Title }}
+        <span class="search-page-hero__beta">Beta</span>
+      </h1>
+      <p class="search-page-hero__lead">Semantic search across blog posts, events, talks, and contributors.</p>
+      <p class="search-page-hero__credit">Powered by Percona Server for PostgreSQL and pgvector</p>
+    </div>
+  </div>
+</section>
+<div class="contentblock branded community-search-page">
+  {{ partial "community-search-page.html" . }}
+</div>
+{{ end }}

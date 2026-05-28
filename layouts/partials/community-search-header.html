@@ -1,0 +1,169 @@
+<div class="community-search-header" id="community-search-box">
+  <button
+    type="button"
+    class="community-search-header__toggle"
+    id="community-search-toggle"
+    aria-expanded="false"
+    aria-controls="community-search-overlay"
+    aria-label="Open search"
+  >
+    <svg class="community-search-header__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+      <path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+</div>
+
+<div
+  class="community-search-overlay"
+  id="community-search-overlay"
+  hidden
+  aria-hidden="true"
+>
+  <div class="community-search-overlay__backdrop" id="community-search-backdrop" aria-hidden="true"></div>
+  <div class="community-search-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="community-search-dialog-title">
+    <div class="community-search-overlay__head">
+      <div class="community-search-overlay__head-text">
+        <h2 class="community-search-overlay__title" id="community-search-dialog-title">
+          Search Percona Community
+          <span class="community-search-overlay__beta">Beta</span>
+        </h2>
+        <p class="community-search-overlay__credit">Powered by Percona Server for PostgreSQL and pgvector</p>
+      </div>
+      <button type="button" class="community-search-overlay__close" id="community-search-close" aria-label="Close search">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="community-search-overlay__form">
+      <label class="sr-only" for="community-search-input">Search site</label>
+      <div class="community-search-overlay__field">
+        <input
+          id="community-search-input"
+          class="community-search-overlay__input"
+          type="search"
+          name="q"
+          placeholder="Find talks, articles, events &amp; more"
+          autocomplete="off"
+        />
+        <button type="button" id="community-search-button" class="community-search-overlay__submit" aria-label="Search">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.75"/>
+            <path d="M16.5 16.5L20 20" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="community-search-overlay__unavail" id="community-search-unavail" hidden role="status">
+      Search is temporarily unavailable. Please try again later.
+    </div>
+    <div class="community-search-overlay__results" id="community-search-results"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const root = document.getElementById('community-search-box');
+  const overlay = document.getElementById('community-search-overlay');
+  const toggle = document.getElementById('community-search-toggle');
+  const closeBtn = document.getElementById('community-search-close');
+  const backdrop = document.getElementById('community-search-backdrop');
+  const input = document.getElementById('community-search-input');
+  const searchBtn = document.getElementById('community-search-button');
+  const form = overlay && overlay.querySelector('.community-search-overlay__form');
+  const unavail = document.getElementById('community-search-unavail');
+  if (!root || !overlay || !toggle) return;
+
+  if (overlay.parentElement !== document.body) {
+    document.body.appendChild(overlay);
+  }
+
+  function getPopup() {
+    return document.querySelector('#community-search-results .cs-popup');
+  }
+
+  function hidePopup() {
+    const popup = getPopup();
+    if (!popup) return;
+    popup.hidden = true;
+    root.dispatchEvent(new CustomEvent('community-search-popup-close'));
+  }
+
+  function setSearchFormVisible(visible) {
+    if (form) form.hidden = !visible;
+    if (unavail) unavail.hidden = visible;
+    if (input) input.disabled = !visible;
+    if (searchBtn) searchBtn.disabled = !visible;
+  }
+
+  function setOverlayOpen(open) {
+    root.classList.toggle('is-open', open);
+    overlay.hidden = !open;
+    overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close search' : 'Open search');
+    document.documentElement.classList.toggle('community-search-overlay-open', open);
+    if (!open) {
+      hidePopup();
+      setSearchFormVisible(true);
+    }
+    if (open) {
+      requestAnimationFrame(function () {
+        if (input && !input.disabled) input.focus();
+      });
+    }
+  }
+
+  toggle.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (!overlay.hidden) {
+      setOverlayOpen(false);
+      return;
+    }
+    setSearchFormVisible(true);
+    toggle.disabled = true;
+    var check = window.CommunitySearch && window.CommunitySearch.checkHealth;
+    Promise.resolve(typeof check === 'function' ? check() : true)
+      .then(function (healthy) {
+        if (!healthy) {
+          setOverlayOpen(true);
+          setSearchFormVisible(false);
+          if (unavail && window.CommunitySearch.unavailableMessage) {
+            unavail.textContent = window.CommunitySearch.unavailableMessage;
+          }
+          return;
+        }
+        setOverlayOpen(true);
+      })
+      .finally(function () {
+        toggle.disabled = false;
+      });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      setOverlayOpen(false);
+    });
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener('click', function () {
+      setOverlayOpen(false);
+    });
+  }
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay || e.target === backdrop) {
+      setOverlayOpen(false);
+    }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !overlay.hidden) {
+      setOverlayOpen(false);
+    }
+  });
+})();
+</script>
+{{ partial "community-search-embed.html" . }}
