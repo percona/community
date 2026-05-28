@@ -89,6 +89,7 @@
             <ul class="menu__list">
               {{ $currentPage := . }}
               {{ range .Site.Menus.main }}
+                {{ if eq .Identifier "search" }}{{ continue }}{{ end }}
                 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                   <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
                     {{ .Pre }}
@@ -116,6 +117,7 @@
             </ul>
           </nav>
         </div>
+        {{ partial "community-search-header.html" . }}
       </div>
     </header>
 

@@ -7,6 +7,14 @@ copyright: |
 disableHugoGeneratorInject: true
 params:
   favicon: superhero.png
+  searchApiUrl: "https://search.percona.community"
+  searchPageUrl: "/search/"
+  searchInputSelector: "#community-search-input"
+  searchButtonSelector: "#community-search-button"
+  searchMountSelector: "#community-search-results"
+  searchLimit: 12
+  searchLimitPage: 30
+  searchColumns: 3
   images:
     - contribute.jpg
 buildFuture: true
@@ -201,6 +209,11 @@ menu:
       parent: contribute
       weight: 10
 
+    - identifier: search
+      name: Search
+      url: /search/
+      parent: other
+      weight: 0
     - identifier: newsletter
       name: Community Newsletter
       url: /contribute/newsletter

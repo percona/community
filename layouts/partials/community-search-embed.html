@@ -1,0 +1,319 @@
+{{/*
+  Loads community-search.js (embed mode). Overlay UI in community-search-header.html.
+*/}}
+<script>
+  window.CommunitySearchConfig = {
+    mode: 'embed',
+    apiUrl: "{{ .Site.Params.searchApiUrl | default "" }}",
+    input: "{{ .Site.Params.searchInputSelector | default "#community-search-input" }}",
+    button: "{{ .Site.Params.searchButtonSelector | default "#community-search-button" }}",
+    mount: "{{ .Site.Params.searchMountSelector | default "#community-search-results" }}",
+    resultsPageUrl: "{{ .Site.Params.searchPageUrl | default "/search/" }}",
+    limit: {{ .Site.Params.searchLimit | default 12 }},
+  };
+</script>
+{{ $api := .Site.Params.searchApiUrl | default "" }}
+<script src="{{ $api }}/community-search.js" crossorigin="anonymous"></script>
+<style id="community-search-site-overrides">
+  .community-search-overlay {
+    background: transparent !important;
+  }
+
+  .community-search-overlay__backdrop {
+    background: linear-gradient(
+      155deg,
+      rgba(40, 39, 39, 0.94) 0%,
+      rgba(42, 50, 52, 0.92) 45%,
+      rgba(32, 42, 46, 0.93) 100%
+    ) !important;
+  }
+
+  #community-search-overlay .community-search-overlay__field {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    background: #fff !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.14) !important;
+    padding: 0.5rem 0.55rem 0.5rem 1.5rem !important;
+  }
+
+  #community-search-overlay .community-search-overlay__input {
+    flex: 1 1 auto !important;
+    display: block !important;
+    height: 2.75rem !important;
+    margin: 0 !important;
+    padding: 0 0.5rem 0 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    font-size: 1.125rem !important;
+    font-weight: 400 !important;
+    color: #1f2937 !important;
+    box-shadow: none !important;
+  }
+
+  #community-search-overlay .community-search-overlay__submit {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    width: 2.85rem !important;
+    height: 2.85rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    font-size: inherit !important;
+    font-weight: normal !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+  }
+
+  #community-search-overlay .community-search-overlay__submit:hover {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  #community-search-overlay .community-search-overlay__beta {
+    display: inline-block !important;
+    font-size: 0.65rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    color: #0a1f44 !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border: none !important;
+    padding: 0.12rem 0.45rem !important;
+    border-radius: 4px !important;
+  }
+
+  #community-search-overlay .community-search-overlay__credit {
+    display: block !important;
+    margin: 0.35rem 0 0 !important;
+    font-size: 0.72rem !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    color: rgba(255, 255, 255, 0.65) !important;
+    text-align: left !important;
+  }
+
+  #community-search-results .cs-err--friendly {
+    display: block !important;
+    padding: 12px 14px !important;
+    color: #991b1b !important;
+    background: #fef2f2 !important;
+    border-radius: 8px !important;
+    font-weight: 400 !important;
+  }
+
+  #community-search-box .community-search-header__toggle {
+    display: flex !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    font-weight: normal !important;
+  }
+
+  /* Results card — isolate from site nav / menu CSS */
+  #community-search-results .cs-popup {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    z-index: auto !important;
+    background: #fff !important;
+    color: #111827 !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+    font-size: 0.875rem !important;
+    line-height: 1.45 !important;
+    text-align: left !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #community-search-results .cs-popup[hidden] {
+    display: none !important;
+  }
+
+  #community-search-results .cs-popup ul.cs-popup-list {
+    display: block !important;
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    max-height: 50vh !important;
+    max-height: 50dvh !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: static !important;
+    left: auto !important;
+    background: #fff !important;
+    border: none !important;
+  }
+
+  #community-search-results .cs-popup ul.cs-popup-list > li {
+    display: block !important;
+    position: static !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: normal !important;
+    list-style: none !important;
+    overflow: visible !important;
+  }
+
+  #community-search-results .cs-popup a.cs-popup-item {
+    display: block !important;
+    position: relative !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 12px 14px !important;
+    line-height: 1.4 !important;
+    border: none !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    margin: 0 !important;
+    background: #fff !important;
+    color: #111827 !important;
+    text-decoration: none !important;
+    font-weight: 400 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  #community-search-results .cs-popup a.cs-popup-item:hover {
+    background: #f0fdf4 !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-item-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    position: static !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-body {
+    display: block !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    position: static !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-top {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    margin: 0 0 4px !important;
+    position: static !important;
+    line-height: 1.35 !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-title,
+  #community-search-results .cs-popup .cs-popup-top strong {
+    display: block !important;
+    position: static !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+    color: #0e7045 !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  #community-search-results .cs-popup .cs-meta-line {
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+    font-size: 0.75rem !important;
+    line-height: 1.35 !important;
+    color: #6b7280 !important;
+    font-weight: 400 !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-excerpt {
+    display: block !important;
+    position: static !important;
+    margin: 4px 0 0 !important;
+    font-size: 0.78rem !important;
+    line-height: 1.4 !important;
+    color: #4b5563 !important;
+    font-weight: 400 !important;
+    overflow: hidden !important;
+    max-height: 2.8em !important;
+  }
+
+  #community-search-results .cs-popup .cs-score {
+    position: static !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    border: none !important;
+  }
+
+  #community-search-results .cs-popup img.cs-popup-thumb {
+    display: block !important;
+    position: static !important;
+    flex-shrink: 0 !important;
+    width: 140px !important;
+    height: auto !important;
+    aspect-ratio: 1200 / 630 !important;
+    margin: 0 !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+    border: 1px solid #e5e7eb !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-status {
+    display: block !important;
+    position: static !important;
+    padding: 10px 14px !important;
+    font-size: 0.8125rem !important;
+    line-height: 1.5 !important;
+    color: #6b7280 !important;
+    border-bottom: 1px solid #f3f4f6 !important;
+    font-weight: 400 !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-status strong {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    display: inline !important;
+    position: static !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-footer {
+    display: block !important;
+    position: static !important;
+    padding: 7px 14px !important;
+    text-align: center !important;
+    background: #f9fafb !important;
+    border-top: 1px solid #e5e7eb !important;
+  }
+
+  #community-search-results .cs-popup .cs-popup-footer a {
+    display: inline !important;
+    position: static !important;
+    height: auto !important;
+    border: none !important;
+    color: #0e7045 !important;
+    font-weight: 600 !important;
+  }
+</style>
