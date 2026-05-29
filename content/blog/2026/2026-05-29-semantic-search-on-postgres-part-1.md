@@ -1,5 +1,5 @@
 ---
-title: "Building Smart Semantic Search using PostgreSQL and pgvector — Case Study, Part 1: Introduction"
+title: "Building Smart Semantic Search using PostgreSQL and pgvector. Case Study - Part 1"
 date: "2026-05-29T11:00:00+00:00"
 tags: ["PostgreSQL", "pgvector", "search", "embeddings", "ai"]
 categories: ['PostgreSQL']
