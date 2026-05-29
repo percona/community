@@ -1,5 +1,5 @@
 ---
-title: "Building Smart Semantic Search using PostgreSQL and pgvector - Case Study, Part 1: Introduction"
+title: "Building Smart Semantic Search using PostgreSQL and pgvector — Case Study, Part 1: Introduction"
 date: "2026-05-29T11:00:00+00:00"
 tags: ["PostgreSQL", "pgvector", "search", "embeddings", "ai"]
 categories: ['PostgreSQL']
@@ -19,7 +19,7 @@ I'll walk through how and why I built the search for our community site: blog, e
 
 ## Context: Website, Search, and Task
 
-The Community team has a website on **Hugo**, an open-source static site generator, hosted for free on **GitHub Pages**. The site has articles, events, talks, videos, and more.
+The community team has a website on **Hugo**, an open source static site generator, hosted for free on **GitHub Pages**. The site has articles, events, talks, videos, and more.
 
 > If you're thinking of starting your own, I recommend checking out these examples: [blog.koehntopp.info](https://blog.koehntopp.info/), [openeverest.io](https://openeverest.io/), [perconalive.com](https://perconalive.com/), [oursqlfoundation.org](https://oursqlfoundation.org/)
 
@@ -147,7 +147,7 @@ Briefly, **why** this stack (deeper comparison in **part two**):
 
 - **[PostgreSQL](https://www.postgresql.org/)** + **[pgvector](https://github.com/pgvector/pgvector)**: vectors and metadata in one DB. Cosine similarity plus an HNSW index is enough at community scale. ([pgvector in Percona docs](https://docs.percona.com/postgresql/18/enable-extensions.html#pgvector))
 
-- **[Percona Distribution for PostgreSQL 18](https://docs.percona.com/postgresql/18/index.html)**: Postgres with pgvector and a Docker image. Vanilla Postgres works too if you install the extension; I used Percona to try "their" Postgres + pgvector in a real deploy.
+- **[Percona Distribution for PostgreSQL 18](https://docs.percona.com/postgresql/18/index.html)**: PostgreSQL with pgvector and a Docker image. Vanilla Postgres works too if you install the extension; I used Percona to try "their" Postgres + pgvector in a real deploy.
 
 - **[Python](https://www.python.org/)** + **[FastAPI](https://fastapi.tiangolo.com/)**: fast API setup, OpenAPI included, good libraries for crawl/embed/Postgres.
 
@@ -162,7 +162,7 @@ Briefly, **why** this stack (deeper comparison in **part two**):
 - **[Cursor](https://cursor.com/)**: main dev tool; its AI agent helped with boilerplate, wiring API to the demo, and Docker fixes. I still reviewed everything. Without it, the same work would have taken weeks.
 
 
-### How long did it take?
+### How long it took
 
 - **~6 hours** with Cursor to a first prototype: crawl, API, Docker, basic demo;
 - **~2 more days** for schema changes, per-type ranking, embed/page widget, search history, dashboard, indexer fixes, EC2 deploy;
@@ -176,7 +176,7 @@ I'm not publishing the repo yet. The code is tied to **percona.community**: our 
 
 If you wanted a drop-in repo: porting someone else's monolith often takes longer than rebuilding from a clear sketch. Part two will have architecture, schema, and stack notes enough for a Cursor agent (or similar) to rebuild for **your** feeds and UI.
 
-Interested in a **generic open-source** or **search-as-a-service** version? Say so in the comments; I'm weighing whether it's worth a separate project.
+Interested in a **generic open source** or **search-as-a-service** version? Say so in the comments; I'm weighing whether it's worth a separate project.
 
 ### What's Next
 
