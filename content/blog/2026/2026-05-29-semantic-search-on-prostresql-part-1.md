@@ -1,5 +1,5 @@
 ---
-title: "Building Smart Semantic Search using PostgreSQL and pgvector: Case Study — Part 1: Introduction"
+title: "Building Smart Semantic Search using PostgreSQL and pgvector - Case Study, Part 1: Introduction"
 date: "2026-05-29T11:00:00+00:00"
 tags: ["PostgreSQL", "pgvector", "search", "embeddings", "ai"]
 categories: ['PostgreSQL']
@@ -7,53 +7,48 @@ authors:
   - daniil_bazhenov
 images:
   - blog/2026/05/search-part-1-cover.png
-slug: semantic-search-on-prostresql-part-1
+slug: semantic-search-on-postgresql-part-1
 ---
 
-Type "zero downtime database migration" into the site’s search bar—and get articles and presentations about database migration with minimal downtime, even if those words aren’t in the titles or content. This is **semantic search** on **PostgreSQL** and **[pgvector](https://github.com/pgvector/pgvector)**—without paid embedding APIs or a separate vector database. In this series, I’ll explain exactly how it works and why I chose this stack.
+Type "zero downtime database migration" into the site's search bar and you'll get articles and talks about database migration with minimal downtime, even if those words aren't in the titles or content. This is **semantic search** on **PostgreSQL** and **[pgvector](https://github.com/pgvector/pgvector)**, without paid embedding APIs or a separate vector database. In this series I'll cover how it works and why I chose this stack.
 
-I’ll explain how and why I developed the search for a community site—blog, events, talks, profiles. This article will be useful if you want to replicate this approach or are looking for a practical case study using simple components. If you’ve already done something similar, I’d love to hear your feedback.
+I'll walk through how and why I built the search for our community site: blog, events, talks, and profiles. The post should help if you want to repeat the approach or need a practical case study on simple components. If you've done something similar, I'd like to hear your feedback.
 
 ![Smart Semantic Search using PostgreSQL and pgvector - Introduction](blog/2026/05/search-part-1-intro-kubernetes.png)
 
 
 ## Context: Website, Search, and Task
 
-The Community team has a website built on **Hugo**—an open-source static site generator—which is hosted for free on **GitHub Pages**. The site features articles, events, talks, videos, and a wealth of other information.
+The Community team has a website on **Hugo**, an open-source static site generator, hosted for free on **GitHub Pages**. The site has articles, events, talks, videos, and more.
 
-> If you’re thinking of starting your own, I recommend checking out these examples:
-> - [blog.koehntopp.info](https://blog.koehntopp.info/)
-> - [openeverest.io](https://openeverest.io/)
-> - [perconalive.com](https://perconalive.com/)
-> - [oursqlfoundation.org](https://oursqlfoundation.org/)
+> If you're thinking of starting your own, I recommend checking out these examples: [blog.koehntopp.info](https://blog.koehntopp.info/), [openeverest.io](https://openeverest.io/), [perconalive.com](https://perconalive.com/), [oursqlfoundation.org](https://oursqlfoundation.org/)
 
-But a Hugo site is just a collection of HTML files without a backend. Search or filters can only be implemented using frontend JS or external services. For a very long time, our site simply didn’t have a search function. Then **Kai Wagner** contributed and added a JS-based search for the blog that worked on exact word matches ([percona.community/blog](https://percona.community/blog))
+But a Hugo site is a collection of HTML files without a backend. Search or filters only work via frontend JS or an external service. For a long time our site had no search at all. Then **Kai Wagner** contributed a JS search for the blog that matched exact words ([percona.community/blog](https://percona.community/blog)).
 
-Recently, our beloved community lead **Laura Czajkowski** set a goal: the site needs to have a smart AI search. We tried several off-the-shelf solutions, but they were all either too expensive or unsuitable for various reasons. For example, we want the search to include not only site content, but also videos from other sources, the forum, and our GitHub repositories—and possibly documentation in the future.
+Recently our community lead **Laura Czajkowski** asked for smart AI search on the site. We tried several off-the-shelf products; they were either too expensive or a poor fit. We also want search to cover more than the site itself eventually: videos from other platforms, the forum, our GitHub repos, and maybe documentation later.
 
-So I suggested building this search feature ourselves—modern AI assistants are actually quite good at handling prototypes of this kind. I’ll discuss which tech stack to use as a foundation below.
+I suggested building it ourselves. Modern AI assistants are good enough for a prototype like this. Below I'll explain the stack.
 
 ## What We'll Do
 
-The website will remain static on Hugo and GitHub Pages. We'll set up the search service **separately**—that's the only sensible approach for this kind of architecture. The goal is simple: a user types in a query using natural language and receives a list of results that are semantically relevant.
+The site stays on Hugo and GitHub Pages. The search service runs **separately**; for this architecture that's the sensible option. The goal is simple: the user types a query in plain language and gets a list of semantically relevant links.
 
-Kai’s keyword-based search was already a step forward, but it doesn’t capture **meaning**. Type “postgresql” and you get pages where that word appears. But an article about slow queries or replication might not show up in the results if it uses different wording. **Semantic search** works differently: the query and documents are converted into **vectors**—sets of numbers that reflect the meaning of the text (**embedding**). Phrases with similar meanings end up close together in this space, even if the words don’t match. A query like “how to speed up slow queries in MySQL” might find content about tuning and optimization, even if those words aren’t in the titles or content.
+Kai's keyword search was a step forward, but it doesn't catch **meaning**. Type "postgresql" and you get pages where the word appears. An article about slow queries or replication may be missing if the wording is different. **Semantic search** works differently: the query and documents become **vectors**, numeric representations of meaning (**embedding**). Similar meaning lands nearby in vector space even when the words differ. A query like "how to speed up slow queries in MySQL" can surface tuning and optimization content without those words in the title.
 
-Why not other solutions? A solid open-source option is **[OpenSearch](https://opensearch.org/)**: full-text search, vector search, and a mature ecosystem. Among similar engines, I also looked at **[Manticore Search](https://manticoresearch.com/)**. Both work, but for **semantics**, you still need a separate embedding pipeline—a model during indexing and for each query. That means yet another service on top of the model: to set up, configure, and monitor.
+Why not another engine? **[OpenSearch](https://opensearch.org/)** is a solid open-source option: full-text and vector search, mature ecosystem. I also looked at **[Manticore Search](https://manticoresearch.com/)**. Both work, but **semantics** still need an embedding pipeline (model at index time and on each query). That's another service to run beside the model.
 
-Honestly: I wanted to build **my own** solution on **Postgres** and see what it’s capable of when paired with pgvector—a practical experiment, not a race for the perfect search engine. **PostgreSQL with [pgvector](https://github.com/pgvector/pgvector)** stores page metadata, chunks, vectors, and query history all in a single database—without a separate vector DB. In **[Percona Distribution for PostgreSQL 18](https://docs.percona.com/postgresql/18/index.html)**, pgvector is already included in the distribution: `CREATE EXTENSION vector` — and you’re ready to go.
+I wanted my own stack on **Postgres** with pgvector: a practical experiment, not a hunt for the perfect search product. **PostgreSQL with [pgvector](https://github.com/pgvector/pgvector)** keeps page metadata, chunks, vectors, and query history in one database. **[Percona Distribution for PostgreSQL 18](https://docs.percona.com/postgresql/18/index.html)** ships pgvector in the distribution; run `CREATE EXTENSION vector` and you're set.
 
-Technically, the plan is as follows—four parts:
+The plan has four parts:
 
+1. **Widget** on the site: search field and results (plain JS; Hugo unchanged).
+2. **API**: takes the query, embeds it with the same model as indexing, searches the DB, returns JSON links.
+3. **Indexer**: background worker that reads RSS/HTML, chunks text, embeds, writes to the DB.
+4. **PostgreSQL + pgvector**: one database for metadata, chunks, vectors, and search history.
 
-1. **Widget** on the website — search field and results display (standard JS; we don’t touch Hugo).
-2. **API** — receives a request, computes a vector using the same model as during indexing, searches the database, and returns JSON with links.
-3. **Indexer** — a background worker: reads the site’s RSS and HTML, splits it into chunks, computes vectors, and writes to the database.
-4. **PostgreSQL + pgvector** — a single database for page metadata, chunks, vectors, and search history.
+Hugo stays static; the smart parts live in a separate service. No separate vector DB, no paid embedding API, no RAG chat, only links.
 
-Hugo remains static; all the “smart” parts are in a separate service. Without a separate vector database, without paid embedding APIs, and without RAG chat—just link delivery.
-
-The diagram shows two flows: **search** (when a user enters a query) and **indexing** (when we update the database—on demand or on a schedule). Let’s start with the user:
+The diagram shows two flows: **search** (user query) and **indexing** (refresh the DB on demand or on a schedule). Top to bottom, from the user:
 
 ```mermaid
 flowchart TB
@@ -91,30 +86,30 @@ flowchart TB
     style DB fill:#e6ffe6
 ```
 
-The diagram omits an important rule: **the indexer and the API must use the same embedding model**. The query vector and the vectors in the database must reside in the same space—otherwise, the search is meaningless. For example, you cannot mix Nomic for indexing and OpenAI for the query. The model is loaded both in the API (for each search) and in the indexer (for each chunk); the widget is unaware of it—it only passes the query text.
+The diagram shows the shared **embedding model**; worth stating explicitly anyway. **The indexer and the API must use the same model.** Query vectors and stored vectors must share one space or search is meaningless. Don't mix Nomic at index time with OpenAI at query time, for example. The widget only sends text; it doesn't know which model runs behind the API.
 
-On paper, everything looks straightforward. In practice, I redesigned the database schema **three times** and tweaked the results to ensure blog posts didn’t crowd out events and talks. It was also surprising how much the **similarity threshold** affects the results—just one parameter, yet the output changes drastically. But the plan worked overall: within a few days, we had a working beta on the live site. Below is what we ended up with.
+On paper it looked simple. In practice I changed the database schema **three times** and tuned ranking so blog posts didn't crowd out events and talks. The **similarity threshold** mattered more than I expected: one parameter, large swing in results. Still, within a few days we had a working beta on the live site. Here's what shipped.
 
 ## The Result (Spoiler)
 
-It took about **three leisurely days** and roughly **$20 worth of Cursor tokens** to build, debug, and deploy. You can try it out right now at **[percona.community](https://percona.community)**—use the search icon in the header or go to **[percona.community/search/](https://percona.community/search/)**.
+It took about **three unhurried days** and roughly **$20 in Cursor tokens** to build, debug, and deploy. Try it on **[percona.community](https://percona.community)** (search icon in the header) or **[percona.community/search/](https://percona.community/search/)**.
 
-For now, the index includes the site’s own content: the blog, events, talks, and member profiles. Videos from other platforms, the forum, and GitHub are in the works; the architecture is designed to allow for connecting new sources without changing the stack.
+The index currently covers the site: blog, events, talks, member profiles. Video from other platforms, the forum, and GitHub are planned; the design should allow new sources without replacing the stack.
 
-This is currently a **beta**: the data on the site is public, and the search isn’t mission-critical—but I’m keeping a close eye on stability and security.
+This is **beta**: the content is public and search isn't business-critical, but I watch stability and security.
 
 ### Website Widget
 
-In the header, there is a search icon: clicking it opens an input field, with a popup below it displaying a list of results, a **similarity score** (indicating how closely the result matches the query in meaning, on a scale from 0 to 1), and the API response time. The website remains static—the widget simply sends a request to `search.percona.community` and displays the response. The “All results” link leads to the full page `/search/`.
+The header has a search icon. Click it to get an input field and a popup with results, **similarity score** (0 to 1, how close the hit is in meaning), and API latency. The site stays static; the widget calls `search.percona.community` and renders JSON. "All results" opens `/search/`.
 
-Try the widget on [percona.community](https://percona.community)—for example, search for `slow queries mysql tuning` or `kubernetes operator database`. If you find it useful, please leave a comment below letting us know what you liked and what you would change.
+Try it on [percona.community](https://percona.community), e.g. `slow queries mysql tuning` or `kubernetes operator database`. Comments welcome if something feels off.
 
 ![Smart Semantic Search using PostgreSQL and pgvector - Widget](blog/2026/05/search-part-1-intro-pz-talks.png)
 
 
 ### Full Results Page
 
-A separate page at `/search/` with detailed results : filters by content type, cards, and links to resources.
+A separate `/search/` page with filters by content type, cards, and links.
 
 
 ![Smart Semantic Search using PostgreSQL and pgvector - Search Page](blog/2026/05/search-part-1-intro-page.png)
@@ -123,13 +118,13 @@ A separate page at `/search/` with detailed results : filters by content type, c
 
 ### API
 
-**FastAPI** service at `https://search.percona.community`. It accepts a request, computes the embedding, queries Postgres, and returns JSON: links, similarity score, and timings—how much time was spent on the model and how much on the database. 
+**FastAPI** at `https://search.percona.community`: embed the query, search Postgres, return JSON with links, scores, and timings (model vs database).
 
-The service is deployed on **AWS EC2** using Docker Compose: API, indexer, Postgres.
+The service runs on **AWS EC2** in Docker Compose: API, indexer, Postgres.
 
 ### Demo Dashboard
 
-Since the AI agent in Cursor handled the routine tasks well, I also put together a **development dashboard** (`/demo`): to test search, run indexing, view statuses, query history, and what’s in the database. It’s not needed for production—it’s just my personal sandbox—but debugging would have taken significantly longer without it.
+The Cursor AI agent handled a lot of the boilerplate, so I also built a **dev dashboard** (`/demo`) to test search, run indexing, inspect history, and browse indexed chunks. Not for production, but it saved debugging time.
 
 Demo Dashboard
 ![Smart Semantic Search using PostgreSQL and pgvector - Demo Dashboard Search](blog/2026/05/search-part-1-intro-demo-search.png)
@@ -144,50 +139,47 @@ Indexing status, to see when search data was last updated
 
 Indexed documents with the ability to view data and chunks.
 
-![Smart Semantic Search using PostgreSQL and pgvector - Demo Dashboard Indexed documents](blog/2026/05/search-part-1-intro-demo-status.png)
+![Smart Semantic Search using PostgreSQL and pgvector - Demo Dashboard Indexed documents](blog/2026/05/search-part-1-intro-demo-pages.png)
 
 ### What I Used
 
-In short—**why** I chose this particular stack. We’ll cover comparisons with alternatives and configuration details in **part two**.
+Briefly, **why** this stack (deeper comparison in **part two**):
 
-- **[PostgreSQL](https://www.postgresql.org/)** + **[pgvector](https://github.com/pgvector/pgvector)** — vectors and metadata in a single database, without a separate vector DB. Cosine similarity and the HNSW index handle semantic search at the scale of a community site. ([pgvector documentation on Percona](https://docs.percona.com/postgresql/18/enable-extensions.html#pgvector))
+- **[PostgreSQL](https://www.postgresql.org/)** + **[pgvector](https://github.com/pgvector/pgvector)**: vectors and metadata in one DB. Cosine similarity plus an HNSW index is enough at community scale. ([pgvector in Percona docs](https://docs.percona.com/postgresql/18/enable-extensions.html#pgvector))
 
-- **[Percona Distribution for PostgreSQL 18](https://docs.percona.com/postgresql/18/index.html)** — the same Postgres, but with pgvector already included in the distribution and a ready-to-use Docker image. Regular PostgreSQL will also work if you install the extension manually; I chose Percona because I work at Percona and wanted to test the combination of “their Postgres + pgvector” in production.
+- **[Percona Distribution for PostgreSQL 18](https://docs.percona.com/postgresql/18/index.html)**: Postgres with pgvector and a Docker image. Vanilla Postgres works too if you install the extension; I used Percona to try "their" Postgres + pgvector in a real deploy.
 
-- **[Python](https://www.python.org/)** + **[FastAPI](https://fastapi.tiangolo.com/)** — a quick way to set up an API with OpenAPI out of the box. An ecosystem for crawling, embeddings, and working with Postgres without unnecessary boilerplate; for a prototype, this was more important than choosing the “perfect” framework.
+- **[Python](https://www.python.org/)** + **[FastAPI](https://fastapi.tiangolo.com/)**: fast API setup, OpenAPI included, good libraries for crawl/embed/Postgres.
 
-- **[nomic-embed-text-v1](https://huggingface.co/nomic-ai/nomic-embed-text-v1)** + **[sentence-transformers](https://www.sbert.net/)** — an open-source model with 768 dimensions that runs locally on the CPU. No need for a paid embedding API or per-chunk billing with full indexing. For search, it’s important that the index and the query are processed by **the same** model — Nomic is suitable for this. Other models are also possible; later I want to compare results for certain queries.
+- **[nomic-embed-text-v1](https://huggingface.co/nomic-ai/nomic-embed-text-v1)** + **[sentence-transformers](https://www.sbert.net/)**: open model, 768 dims, CPU-friendly, no per-chunk API bill. Index and query must use the **same** model; Nomic fits. I'll compare others later.
 
-- **[Hugo](https://gohugo.io/)** + **JavaScript** — the site is already on Hugo; the widget is a thin layer of JS on top of the static content. I didn’t have to change the engine: search lives in a separate service; Hugo just serves HTML and calls the API.
+- **[Hugo](https://gohugo.io/)** + **JavaScript**: thin widget on existing static site.
 
-- **[Docker](https://www.docker.com/)** / **Docker Compose** — the same Compose file locally and on the server: Postgres, API, indexer. Fewer surprises when moving from a laptop to EC2.
+- **[Docker](https://www.docker.com/)** / **Docker Compose**: same layout locally and on EC2.
 
-- **[AWS EC2](https://aws.amazon.com/ec2/)** + **nginx** — a separate host for search: HTTPS on the `search.percona.community` subdomain, CORS for the static site on GitHub Pages. A simple VPS without Kubernetes — sufficient for beta.
+- **[AWS EC2](https://aws.amazon.com/ec2/)** + **nginx**: HTTPS on `search.percona.community`, CORS for GitHub Pages.
 
-- **[Cursor](https://cursor.com/)** — the main development tool: the developer wrote boilerplate code, integrated the API with the demo, and fixed Docker errors. Without it, the same amount of work would have taken weeks, not days.
+- **[Cursor](https://cursor.com/)**: main dev tool; its AI agent helped with boilerplate, wiring API to the demo, and Docker fixes. I still reviewed everything. Without it, the same work would have taken weeks.
 
 
 ### How long did it take?
 
-To be honest, in terms of time:
+- **~6 hours** with Cursor to a first prototype: crawl, API, Docker, basic demo;
+- **~2 more days** for schema changes, per-type ranking, embed/page widget, search history, dashboard, indexer fixes, EC2 deploy;
+- **~$20** in Cursor tokens total.
 
-- **~6 hours** of hands-on work with Cursor—enough to get the first working prototype up and running: crawl, API, Docker, basic demo;
-- another **~2 days** of leisurely iterations — database schema, content-type-based output, embed/page widget, search history, dashboard, fixing the indexer worker, deployment to EC2;
-- **~$20** — Cursor tokens for the entire cycle.
-
-Without AI, the same amount of work would have taken me weeks. With the agent, I mostly formulated the task, checked the results, and tweaked the details.
+Without AI I'd have stretched the same work over weeks. With the agent I mostly wrote tasks, checked output, and fixed edges.
 
 ### About the code and repository
 
-I’m not **posting** the code yet—not on principle, but because it’s currently tightly tailored to **percona.community**: specific RSS feeds, content types (blog, event, talk, contributor), a widget for our Hugo template, and deployment to our EC2. This is a working internal prototype, not a universal library.
+I'm not publishing the repo yet. The code is tied to **percona.community**: our RSS feeds, content types, Hugo widget, EC2 layout. It's an internal prototype, not a reusable library.
 
-If you’re here for a ready-made repository—let’s be honest: breaking down someone else’s monolith to fit your site often takes longer than building it from scratch using a clear blueprint. In the second part, I’ll provide the architecture, database schema, and stack details—that’s enough for your Cursor agent (or another AI assistant) to build something similar tailored to **your** feeds, fields, and frontend.
+If you wanted a drop-in repo: porting someone else's monolith often takes longer than rebuilding from a clear sketch. Part two will have architecture, schema, and stack notes enough for a Cursor agent (or similar) to rebuild for **your** feeds and UI.
 
-If you’re interested in a **universal open-source solution** or a **search service for any website**—let me know in the comments. I have some ideas on this, and your feedback will help me decide whether it makes sense to spin this off into a separate project.
+Interested in a **generic open-source** or **search-as-a-service** version? Say so in the comments; I'm weighing whether it's worth a separate project.
 
 ### What's Next
 
-Try searching on [percona.community](https://percona.community) and let us know in the comments what you find—we're especially interested in seeing where the semantic search succeeded where the old substring search fell short.
+Try search on [percona.community](https://percona.community) and comment what you find, especially where semantics beat the old substring search.
 
-In the **second part**, I’ll break down the inner workings: the database schema (with those three modifications), chunking, the HNSW index, why results are filtered by content type—and a step-by-step guide to running it locally with Docker Compose.
-
+Part **two** will go inside: schema (including those three rewrites), chunking, HNSW, per-type result caps, and a local Docker Compose walkthrough.
