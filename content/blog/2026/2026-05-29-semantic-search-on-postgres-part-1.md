@@ -1,5 +1,5 @@
 ---
-title: "Building Smart Semantic Search using PostgreSQL and pgvector. Case Study - Part 1"
+title: "Building Smart Semantic Search using PostgreSQL and pgvector. Case Study - Part 1 - Introduction"
 date: "2026-05-29T11:00:00+00:00"
 tags: ["PostgreSQL", "pgvector", "search", "embeddings", "ai"]
 categories: ['PostgreSQL']
@@ -159,14 +159,14 @@ Briefly, **why** this stack (deeper comparison in **part two**):
 
 - **[AWS EC2](https://aws.amazon.com/ec2/)** + **nginx**: HTTPS on `search.percona.community`, CORS for GitHub Pages.
 
-- **[Cursor](https://cursor.com/)**: main dev tool; its AI agent helped with boilerplate, wiring API to the demo, and Docker fixes. I still reviewed everything. Without it, the same work would have taken weeks.
+- **AI-assisted development** (I used [Cursor](https://cursor.com/)): the agent handled boilerplate, wiring, and Docker fixes. I reviewed everything. Any similar AI coding tool would work; the point is having one.
 
 
 ### How long it took
 
-- **~6 hours** with Cursor to a first prototype: crawl, API, Docker, basic demo;
+- **~6 hours** with an AI coding assistant to a first prototype: crawl, API, Docker, basic demo;
 - **~2 more days** for schema changes, per-type ranking, embed/page widget, search history, dashboard, indexer fixes, EC2 deploy;
-- **~$20** in Cursor tokens total.
+- **~$20** in AI assistant tokens total.
 
 Without AI I'd have stretched the same work over weeks. With the agent I mostly wrote tasks, checked output, and fixed edges.
 

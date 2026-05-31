@@ -5,7 +5,10 @@ table {
   margin-top: 2rem;
   padding: 0;
   width: 100%;
-  table-layout: fixed;
+  table-layout: auto;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table caption {
