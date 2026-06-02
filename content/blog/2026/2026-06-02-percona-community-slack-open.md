@@ -1,7 +1,7 @@
 ---
 title: "The Percona Community Slack is open — come hang out"
 date: "2026-06-02T11:00:00+00:00"
-tags: ['Community', 'Percona', 'Open Source', 'MySQL', 'PostgreSQL', 'MongoDB', 'MariaDB', 'Valkey']
+tags: ['Community', 'Percona', 'Open Source', 'MySQL', 'PostgreSQL', 'MongoDB', 'MariaDB', 'Valkey', 'Slack']
 categories: ['Community']
 authors:
   - laura_czajkowski
