@@ -48,4 +48,4 @@ Treat everyone as a peer. Assume good faith. No harassment. Critique technology 
 
 If you're a DBA, a developer, a contributor, or just someone who runs databases and occasionally wants to talk to other people who run databases — you belong here.
 
-[Join the Percona Community Slack →](http://percona.slack.com/)
+[Join the Percona Community Slack →](https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow)
