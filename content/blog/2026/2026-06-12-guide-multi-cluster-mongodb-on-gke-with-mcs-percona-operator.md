@@ -5,6 +5,8 @@ tags: ['Kubernetes', 'Operators', 'Open Source', 'MongoDB']
 categories: ['MongoDB']
 authors:
   - edith_puclla
+  - ivan_groenewold
+
 images:
   - blog/2026/06/mcs.png
 slug:  multi-cluster-mongodb-percona-operator
@@ -12,7 +14,7 @@ slug:  multi-cluster-mongodb-percona-operator
 
 # Multi-Cluster MongoDB on GKE with MCS Guide
 
-Deploying the Percona Operator for MongoDB across two GKE clusters using Multi-Cluster Services (MCS)
+[Ivan Groenewold](https://www.linkedin.com/in/igroene/), Technical Lead, Percona MongoDB, and I put together a detailed step-by-step guide on deploying the Percona Operator for MongoDB across two GKE clusters using Multi-Cluster Services (MCS)
 
 This guide walks through deploying a highly available MongoDB replica set that spans two GKE clusters using the [Percona Operator for MongoDB](https://github.com/percona/percona-server-mongodb-operator) and [GKE Multi-Cluster Services (MCS)](https://cloud.google.com/kubernetes-engine/docs/concepts/multi-cluster-services).
 
