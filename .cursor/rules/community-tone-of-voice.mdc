@@ -1,0 +1,18 @@
+---
+description: Apply Percona Community tone of voice to all site copy and content edits
+alwaysApply: true
+---
+
+# Community tone of voice
+
+When writing, editing, or rewriting any user-facing text for percona.community — markdown content, frontmatter (`title`, `description`, etc.), page copy, CTAs, event announcements, blog posts, newsletters, and social captions — read and follow:
+
+`.cursor/skills/community-tone-of-voice-writer/SKILL.md`
+
+Before writing, read the relevant reference files in that skill when needed:
+
+- `references/content-formats.md` — format rules by content type
+- `references/voice-examples.md` — tone examples
+- `references/editorial-style-guide.md` — naming, punctuation, grammar
+
+This is community content, not marketing copy. Write like an engineer talking to another engineer. Do not use marketing or sales voice.
