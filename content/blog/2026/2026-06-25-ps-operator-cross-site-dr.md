@@ -49,7 +49,6 @@ Clusters are linked by network address, not by Kubernetes references. A replica 
 
 With the model in place, let’s build a simple cross-site disaster recovery setup.
 
-
 ![Figure 1. InnoDB ClusterSet overview](../../../assets/blog/2026/06/innodb_clusterset.png)
 _Figure 1. InnoDB ClusterSet overview. https://dev.mysql.com/doc/mysql-shell/8.0/en/innodb-clusterset.html_
 
@@ -63,11 +62,9 @@ In this example:
 
 In a real deployment, these would usually run in separate Kubernetes clusters, regions, or cloud environments. The steps are mostly the same. The main requirement is that the endpoints listed in the ClusterSet spec must be routable between sites.
 
-
 ### Creating a primary cluster
 
 The primary cluster `dc1` is a regular Group Replication cluster. There is nothing ClusterSet-specific about it at this stage.
-
 
 ```yaml
 apiVersion: ps.percona.com/v1
@@ -81,7 +78,6 @@ spec:
 ```
 
 You can find a complete YAML [here](https://github.com/percona/percona-server-mysql-operator/blob/main/deploy/cr.yaml). Apply it and wait for it to come up the way you normally would, just as you would for any normal Percona Operator-managed MySQL cluster.
-
 
 ### Creating the replica cluster
 
@@ -112,7 +108,6 @@ The operator automatically creates a clusterset MySQL user in every cluster and 
 The operator uses this user to orchestrate ClusterSet operations, so the password must be the same across all clusters in the ClusterSet. When your clusters are deployed separately, copy the clusterset value from the primary cluster secret into the replica cluster secret before linking them.
 
 For example, if `dc1` is the primary, copy the clusterset password from the `dc1` secret into the corresponding secret for `dc2`.
-
 
 ### Linking the clusters
 
@@ -165,7 +160,6 @@ At this point, `dc1` serves reads and writes, while `dc2` acts as a live read-on
 > The operator makes it possible to seed the replica cluster from an existing backup of the primary cluster instead. Create a `PerconaServerMySQLBackup` on the primary, restore that backup into the replica cluster with `PerconaServerMySQLRestore`, and then add the replica to the ClusterSet using recoveryMethod: incremental. You can find the exact restore procedure in the documentation.
 >
 > At that point, the replica already has the primary’s data and GTID history, so ClusterSet only needs to catch it up from the primary’s binary logs instead of transferring the full dataset again.
-
 
 ### Verifying it worked
 
