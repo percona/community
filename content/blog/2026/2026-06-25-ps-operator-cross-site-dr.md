@@ -80,7 +80,7 @@ spec:
   # ... the rest of a normal cluster spec
 ```
 
-Apply it and wait for it to come up the way you normally would, just as you would for any normal Percona Operator-managed MySQL cluster.
+You can find a complete YAML [here](https://github.com/percona/percona-server-mysql-operator/blob/main/deploy/cr.yaml). Apply it and wait for it to come up the way you normally would, just as you would for any normal Percona Operator-managed MySQL cluster.
 
 
 ### Creating the replica cluster
