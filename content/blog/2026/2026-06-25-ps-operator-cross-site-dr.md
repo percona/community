@@ -1,6 +1,6 @@
 ---
-title: "Incremental backups in Percona Kubernetes Operator for MySQL"
-date: "2026-04-16T10:00:00+00:00"
+title: "One Region to Many: Cross-site MySQL DR with Percona Kubernetes Operator"
+date: "2026-06-25T10:00:00+00:00"
 tags: ["Percona", "Kubernetes", "Cloud", "Community", "Open Source", "MySQL"]
 categories: ['MySQL']
 authors:
