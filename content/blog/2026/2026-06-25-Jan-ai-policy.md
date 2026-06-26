@@ -39,7 +39,7 @@ In the same talk, he discussed how curl had to stop its bug bounty program. Curl
 > not accept or otherwise handle any vulnerability reports during the month of July 2026.
 > 
 
-Security reports are an especially sensitive case. A wrong AI-generated vulnerability report is not harmless. Someone has to read it, reproduce it, evaluate it and decide whether it is real. Even when the issue is not there, the work is still very real. Like it or not but when it’s unfounded work that proves a ai-generated false it is abusive.
+Security reports are an especially sensitive case. An AI-generated vulnerability report is not harmless. Someone has to read it, reproduce it, evaluate it and decide whether it is real. Even when the issue is not there, the work is still very real. Like it or not but when it’s unfounded work that proves a ai-generated false it is abusive.
 
 Knowing that some projects adopt AI-focused policies, I searched for examples of such policies, using AI obviously 🙂, and stumbled upon [a very useful (open source!) list that already gathers this kind of information](https://github.com/melissawm/open-source-ai-contribution-policies).
 
