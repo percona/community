@@ -1,5 +1,5 @@
 ---
-title: "One Region to Many: Cross-site MySQL DR with Percona Kubernetes Operator"
+title: "Cross-site MySQL DR with Percona Kubernetes Operator"
 date: "2026-06-25T10:00:00+00:00"
 tags: ["Percona", "Kubernetes", "Cloud", "Community", "Open Source", "MySQL"]
 categories: ['MySQL']
@@ -8,7 +8,7 @@ authors:
 images: []
 ---
 
-# One Region to Many: Cross-site MySQL DR with Percona Kubernetes Operator
+# Cross-site MySQL DR with Percona Kubernetes Operator
 
 A MySQL InnoDB Cluster provides high availability for a single database cluster using Group Replication. This works well for node failures inside the cluster, but disaster recovery usually requires another cluster in a separate location: another Kubernetes cluster, region, data center, or cloud.
 
