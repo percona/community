@@ -153,11 +153,11 @@ At this point, `dc1` serves reads and writes, while `dc2` acts as a live read-on
 
 > **Seeding large replica clusters**
 >
-> In this example, the replica cluster is created with recoveryMethod: clone, so MySQL Shell provisions the first replica member by copying a physical snapshot from an existing ClusterSet member. That is convenient for medium/small datasets, but it can be fragile across WAN links or very large databases.
+> In this example, the replica cluster is created with `recoveryMethod: clone`, so MySQL Shell provisions the first replica member by copying a physical snapshot from an existing ClusterSet member. That is convenient for medium/small datasets, but it can be fragile across WAN links or very large databases.
 >
 > A full clone can take hours, consume significant bandwidth, add load to the donor, run into network interruptions, and become expensive to retry if the operation fails partway through. It can also not be the best fit when the primary is busy or when cross-region egress cost is a concern.
 >
-> The operator makes it possible to seed the replica cluster from an existing backup of the primary cluster instead. Create a `PerconaServerMySQLBackup` on the primary, restore that backup into the replica cluster with `PerconaServerMySQLRestore`, and then add the replica to the ClusterSet using recoveryMethod: incremental. You can find the exact restore procedure in the documentation.
+> The operator makes it possible to seed the replica cluster from an existing backup of the primary cluster instead. Create a `PerconaServerMySQLBackup` on the primary, restore that backup into the replica cluster with `PerconaServerMySQLRestore`, and then add the replica to the ClusterSet using `recoveryMethod: incremental`. You can find the exact restore procedure in the [documentation](https://docs.percona.com/percona-operator-for-mysql/latest/backups-restore-to-new-cluster.html).
 >
 > At that point, the replica already has the primary’s data and GTID history, so ClusterSet only needs to catch it up from the primary’s binary logs instead of transferring the full dataset again.
 
@@ -205,7 +205,7 @@ The operator only follows this path when it can confirm that the current primary
 
 The explicit flag is important because failover can cause data loss. Replication between clusters is asynchronous, so any writes that reached the old primary but had not yet replicated to `dc2` are not present on the new primary. Once `dc2` is promoted, those missing writes become unrecoverable through normal ClusterSet recovery.
 
-The risk of data loss is why the field is named unsafeFlags.forcedFailover.
+The risk of data loss is why the field is named `unsafeFlags.forcedFailover`.
 
 Another important point is that when the old primary comes back, it does not automatically resume as primary. After a forced failover, the recovered cluster must be explicitly reintroduced into the ClusterSet as a replica.
 
