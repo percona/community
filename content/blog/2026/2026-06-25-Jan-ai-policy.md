@@ -1,6 +1,6 @@
 ---
 title: "Why PostgreSQL needs an AI usage policy"
-date: "2026-06-25T11:00:00+00:00"
+date: "2026-06-26T10:00:00+00:00"
 tags: ['PostgreSQL', 'Opensource', 'pg_jan', 'ai']
 categories: ['PostgreSQL']
 authors:
