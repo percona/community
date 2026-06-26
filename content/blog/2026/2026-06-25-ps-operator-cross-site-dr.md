@@ -43,9 +43,9 @@ But the tradeoff here is that a replica cluster may be slightly behind the prima
 
 Before building a ClusterSet with the operator, there are a few important requirements to keep in mind:
 
-Every cluster in the ClusterSet must use the Group Replication topology. The operator also supports asynchronous replication with Orchestrator for standalone clusters, but that topology cannot be part of an InnoDB ClusterSet.
-You need MySQL 8.0.27 or later
-Clusters are linked by network address, not by Kubernetes references. A replica cluster only needs to be reachable and managed by an operator. It does not need to live in the same Kubernetes cluster as the primary.
+- Every cluster in the ClusterSet must use the Group Replication topology. The operator also supports asynchronous replication with Orchestrator for standalone clusters, but that topology cannot be part of an InnoDB ClusterSet.
+- You need MySQL 8.0.27 or later
+- Clusters are linked by network address, not by Kubernetes references. A replica cluster only needs to be reachable and managed by an operator. It does not need to live in the same Kubernetes cluster as the primary.
 
 With the model in place, let’s build a simple cross-site disaster recovery setup.
 
@@ -99,15 +99,15 @@ Normally, when the operator creates a Group Replication cluster, the first MySQL
 
 For a ClusterSet replica, that is not what we want. We do not want `dc2` to form an independent empty cluster. Instead, we want it to receive data from the primary cluster and then join the ClusterSet as a replica.
 
-With bootstrap.mode: manual, the first pod starts but does not bootstrap its own Group Replication group. It waits until the ClusterSet process adopts it, clones data from the primary, and then forms the replica cluster. During this stage, the first `dc2` pod may remain in a NotReady state until it is a part of the ClusterSet.
+With `bootstrap.mode: manual`, the first pod starts but does not bootstrap its own Group Replication group. It waits until the ClusterSet process adopts it, clones data from the primary, and then forms the replica cluster. During this stage, the first `dc2` pod may remain in a `NotReady` state until it is a part of the ClusterSet.
 
 ### Sharing cluster credentials
 
-The operator automatically creates a clusterset MySQL user in every cluster and stores its password in the cluster secret.
+The operator automatically creates a `clusterset` MySQL user in every cluster and stores its password in the cluster secret.
 
-The operator uses this user to orchestrate ClusterSet operations, so the password must be the same across all clusters in the ClusterSet. When your clusters are deployed separately, copy the clusterset value from the primary cluster secret into the replica cluster secret before linking them.
+The operator uses this user to orchestrate ClusterSet operations, so the password must be the same across all clusters in the ClusterSet. When your clusters are deployed separately, copy the `clusterset` value from the primary cluster secret into the replica cluster secret before linking them.
 
-For example, if `dc1` is the primary, copy the clusterset password from the `dc1` secret into the corresponding secret for `dc2`.
+For example, if `dc1` is the primary, copy the `clusterset` password from the `dc1` secret into the corresponding secret for `dc2`.
 
 ### Linking the clusters
 
