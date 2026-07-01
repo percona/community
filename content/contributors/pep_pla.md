@@ -25,7 +25,6 @@ events_tags:
 - Event
 - MariaDB
 - Meetup
-- PostgresSQL
 - opensource
 - sponsorship
 talks_tags:

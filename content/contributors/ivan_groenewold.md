@@ -17,14 +17,17 @@ contributor_tag:
 - Community
 - MongoDB
 blog_tags:
+- Kubernetes
 - MongoDB
+- Open Source
 - Opensource
+- Operators
 events_tags:
 - Events
 - PSMDB
 talks_tags:
 - Video
-posts_count: 1
+posts_count: 2
 events_count: 1
 talks_count: 1
 contributor_type:
