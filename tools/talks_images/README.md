@@ -88,22 +88,34 @@ pip install pillow pyyaml python-frontmatter
 
 ## Usage
 
-Run the generator:
+Run the generator manually after adding new talks:
+
+```
+python tools/talks_images/main.py --only-new
+```
+
+Only create cards for talks that do not yet have a PNG at `assets/talks/<year>/<slug>.png`. This is the usual command after adding one or more new talk files.
+
+Process all talks from a given year (regenerates existing cards too):
 
 ```
 python tools/talks_images/main.py
+python tools/talks_images/main.py --min-year 2026
 ```
 
-By default, it processes all talks with:
+### CLI options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--only-new` | off | Skip talks that already have `assets/talks/<year>/<slug>.png` |
+| `--min-year` | `2025` | Only load talks with `talk_year >= min-year` |
+
+Previously, `min_year=2025` was hard-coded in `main.py`. It is now the default for `--min-year`.
+
+To generate images for all years:
 
 ```
-load_all_talks(min_year=2025)
-```
-
-To generate images for all years, edit `main.py`:
-
-```
-talks = load_all_talks(min_year=None)
+python tools/talks_images/main.py --min-year 2000
 ```
 
 ---
