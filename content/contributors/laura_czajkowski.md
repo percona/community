@@ -25,6 +25,7 @@ blog_tags:
 - Open Source
 - Percona
 - PostgreSQL
+- Slack
 - Valkey
 events_tags:
 - Event
@@ -36,7 +37,7 @@ talks_tags:
 - Slides
 - Tech
 - Valkey
-posts_count: 2
+posts_count: 3
 events_count: 1
 talks_count: 1
 contributor_type:

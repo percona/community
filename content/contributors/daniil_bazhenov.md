@@ -47,23 +47,30 @@ blog_tags:
 - PostgreSQL
 - Security
 - Tools
+- ai
 - blog
 - contributing
 - contributions
 - contributors
 - daniil.bazhenov
+- docker
 - documentation
+- embeddings
+- hybrid-search
 - online meetups
 - percona speakers
+- pgvector
+- search
 events_tags: []
 talks_tags: []
-posts_count: 16
+posts_count: 19
 events_count: 1
 talks_count: 0
 contributor_type:
 - author
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2024'
 - '2023'

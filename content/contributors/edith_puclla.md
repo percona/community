@@ -100,7 +100,7 @@ talks_tags:
 - Slides
 - Video
 - video
-posts_count: 33
+posts_count: 34
 events_count: 7
 talks_count: 18
 contributor_type:
