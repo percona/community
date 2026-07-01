@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL Autovacuum Internals and Benchmark"
-date: "2026-06-30T11:00:00+00:00"
-tags: ["PostgreSQL", "autovacuum", "vacuum", "mvcc"]
+date: "2026-07-01T11:00:00+00:00"
+tags: ["PostgreSQL", "autovacuum", "vacuum", "mvcc", "pg_pep"]
 categories: ['PostgreSQL']
 authors:
   - pep_pla
