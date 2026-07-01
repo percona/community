@@ -87,6 +87,13 @@ def load_all_talks(min_year: int | None = None) -> list[Talk]:
     return talks
 
 
+def talk_image_asset_path(talk: Talk) -> str:
+    return os.path.join(ASSETS_DIR, "talks", talk.year, f"{talk.slug}.png")
+
+
+def talk_image_exists(talk: Talk) -> bool:
+    return os.path.isfile(talk_image_asset_path(talk))
+
 
 def update_front_matter(md_path: str, image_path: str):
     """
