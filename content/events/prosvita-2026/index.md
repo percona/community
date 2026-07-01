@@ -27,26 +27,8 @@ Software development, portfolio pet projects, cloud architecture, cybersecurity,
 
 | Session | What students got |
 | ------- | ----------------- |
-| Shift Left: Why Security Comes First, Not Last | Security as a design constraint from day one — CI/CD, release engineering, SBOMs, reproducible builds from real pipeline work |
-| Commit to Your Career: Getting Started in Open Source | Where to find a first project, what counts as a useful contribution, how that reads on a resume when you are starting out |
-
-### Shift left
-
-Evgeniy leads Percona's build and release engineering team. His first talk connected shift-left security to what he ships every week: packaging, pipeline automation, supply-chain hygiene. Not a pre-release checkbox — constraints you design in.
-
-![Shift Left talk card](/blog/2026/06/ProsvITa-2026-card-shift.jpg)
-
-![Evgeniy Patlan presenting at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-1.jpg)
-
-### Your first open source contribution
-
-The second session was practical. Evgeniy went from build engineering to leading a release team while staying active in Chernihiv — local conferences, course updates with the university, student events. He walked through where to look, what a good first PR looks like, and what hiring managers actually notice.
-
-![Commit to Your Career talk card](/blog/2026/06/ProsvITa-2026-card-commit.jpg)
-
-![Evgeniy Patlan with students at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-2.jpg)
-
-![Evgeniy Patlan at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-3.jpg)
+| [Shift Left: Why Security Comes First, Not Last](/talks/2026/2026-06-22-shift-left-why-security-comes-first-not-last/) | Security as a design constraint from day one — CI/CD, release engineering, SBOMs, reproducible builds from real pipeline work |
+| [Commit to Your Career: Getting Started in Open Source](/talks/2026/2026-06-22-commit-to-your-career-getting-started-in-open-source/) | Where to find a first project, what counts as a useful contribution, how that reads on a resume when you are starting out |
 
 ## Chernihiv IT Cluster
 
