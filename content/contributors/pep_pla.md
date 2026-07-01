@@ -5,7 +5,7 @@ fullname: Pep Pla
 fullname_pronounciation: Pep Pla
 job: Consultant, Professional Services, Percona
 country: null
-tagline: null
+tagline: Senior Consultant @ Percona PS | PostgreSQL | MySQL
 social:
   facebook: null
   github: null
