@@ -1,5 +1,8 @@
 .idea
 .claude
+.cursor
+docs
+scripts
 .env
 resources/_gen
 .DS_Store
