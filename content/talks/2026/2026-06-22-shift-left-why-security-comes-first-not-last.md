@@ -26,9 +26,10 @@ video: ''
 images:
 - talks/2026/2026-06-22-shift-left-why-security-comes-first-not-last.png
 ---
-## Abstract
 
 Evgeniy Patlan leads Percona's build and release engineering team. This session connects shift-left security to what he ships every week: packaging, pipeline automation, and supply-chain hygiene. Security is not a pre-release checkbox — it is a design constraint from day one, covering CI/CD, release engineering, SBOMs, and reproducible builds from real production work.
+
+![Shift Left talk card](/blog/2026/06/ProsvITa-2026-card-shift.jpg)
 
 ![Evgeniy Patlan presenting at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-1.jpg)
 

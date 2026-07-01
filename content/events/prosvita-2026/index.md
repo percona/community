@@ -17,6 +17,8 @@ events_category: ['Community', 'Speaking']
 
 [Chernihiv IT Cluster](https://chernihiv.it/en) ran ProsvITa 2026 at Chernihiv Polytechnic National University, June 22–25. Engineers from local and international companies spent four days on what production work actually looks like: development, cloud, security, career skills, and how to get your first foothold in open source.
 
+![Evgeniy Patlan presenting at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-1.jpg)
+
 Percona has backed the Cluster for years. [Evgeniy Patlan](https://percona.community/contributors/evgeniy_patlan/), Manager of Build and Release Engineering at Percona and a researcher at the university, opened the intensive on June 22 with two sessions for students. He has been in this loop a long time — meetups, lectures, conference committees, curriculum work with faculty.
 
 ## What was on the program
@@ -25,10 +27,33 @@ Software development, portfolio pet projects, cloud architecture, cybersecurity,
 
 ## Evgeniy's sessions
 
-| Session | What students got |
-| ------- | ----------------- |
-| [Shift Left: Why Security Comes First, Not Last](/talks/2026/2026-06-22-shift-left-why-security-comes-first-not-last/) | Security as a design constraint from day one — CI/CD, release engineering, SBOMs, reproducible builds from real pipeline work |
-| [Commit to Your Career: Getting Started in Open Source](/talks/2026/2026-06-22-commit-to-your-career-getting-started-in-open-source/) | Where to find a first project, what counts as a useful contribution, how that reads on a resume when you are starting out |
+{{% grid size=2 %}}
+
+{{% griditem %}}
+[![Shift Left talk card](/blog/2026/06/ProsvITa-2026-card-shift.jpg)](/talks/2026/2026-06-22-shift-left-why-security-comes-first-not-last/)
+{{% /griditem %}}
+
+{{% griditem %}}
+### [Shift Left: Why Security Comes First, Not Last](/talks/2026/2026-06-22-shift-left-why-security-comes-first-not-last/)
+
+Security as a design constraint from day one — CI/CD, release engineering, SBOMs, reproducible builds from real pipeline work.
+{{% /griditem %}}
+
+{{% griditem %}}
+[![Commit to Your Career talk card](/blog/2026/06/ProsvITa-2026-card-commit.jpg)](/talks/2026/2026-06-22-commit-to-your-career-getting-started-in-open-source/)
+{{% /griditem %}}
+
+{{% griditem %}}
+### [Commit to Your Career: Getting Started in Open Source](/talks/2026/2026-06-22-commit-to-your-career-getting-started-in-open-source/)
+
+Where to find a first project, what counts as a useful contribution, how that reads on a resume when you are starting out.
+{{% /griditem %}}
+
+{{% /grid %}}
+
+![Evgeniy Patlan with students at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-2.jpg)
+
+![Evgeniy Patlan at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-3.jpg)
 
 ## Chernihiv IT Cluster
 
