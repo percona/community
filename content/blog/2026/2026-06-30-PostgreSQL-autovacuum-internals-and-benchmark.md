@@ -10,10 +10,6 @@ images:
 slug: postgresql-autovacuum-internals-benchmark
 ---
 
-# PostgreSQL Autovacuum Internals and Benchmark
-
-## Introduction
-
 Vacuum, or more precisely autovacuum, is the most important automatic maintenance task in PostgreSQL. It is key for performance, but also for long-term database survival. If it runs too often, it can damage performance. If it does not run often enough, performance can suffer. With too few workers, it takes too long. With too many, it consumes resources. If the maintenance work memory is not enough, the load can multiply due to multiple index scans. If you disable it completely, it will rise from the dead and run without limits.
 
 I guess you get it. It is critical to understand what autovacuum does and how it does it.
