@@ -1,14 +1,12 @@
 ---
 title: "Cross-site DR with Percona Operator for MySQL"
-date: "2026-06-25T10:00:00+00:00"
+date: "2026-07-06T10:00:00+00:00"
 tags: ["Percona", "Kubernetes", "Cloud", "Community", "Open Source", "MySQL"]
-categories: ['MySQL']
+categories: ['MySQL', 'Cloud']
 authors:
   - mayank_shah
 images: []
 ---
-
-# Cross-site DR with Percona Operator for MySQL
 
 A MySQL InnoDB Cluster provides high availability for a single database cluster using Group Replication. This works well for node failures inside the cluster, but disaster recovery usually requires another cluster in a separate location: another Kubernetes cluster, region, data center, or cloud.
 
@@ -51,7 +49,7 @@ With the model in place, let’s build a simple cross-site disaster recovery set
 
 
 
-![Figure 1. InnoDB ClusterSet overview](https://docs.percona.com/percona-operator-for-mysql/latest/assets/images/innodb-clusterset.svg)
+![Figure 1. InnoDB ClusterSet overview](../../../assets/blog/2026/06/ps-clusterset-architecture.svg)
 
 ## Setting up ClusterSet
 
