@@ -49,8 +49,9 @@ Before building a ClusterSet with the operator, there are a few important requir
 
 With the model in place, let’s build a simple cross-site disaster recovery setup.
 
-![Figure 1. InnoDB ClusterSet overview](../../../assets/blog/2026/06/innodb_clusterset.png)
-_Figure 1. InnoDB ClusterSet overview. https://dev.mysql.com/doc/mysql-shell/8.0/en/innodb-clusterset.html_
+
+
+![Figure 1. InnoDB ClusterSet overview](https://docs.percona.com/percona-operator-for-mysql/latest/assets/images/innodb-clusterset.svg)
 
 ## Setting up ClusterSet
 
