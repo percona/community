@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/umair_shahid.jpg
+aliases:
+- /speakers/umair_shahid
+- /speakers/umair_shahid/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

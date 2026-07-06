@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/agustin_gallego.jpg
+aliases:
+- /speakers/agustin_gallego
+- /speakers/agustin_gallego/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/krunal-pix.png
+aliases:
+- /authors/krunal_bauskar
+- /authors/krunal_bauskar/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

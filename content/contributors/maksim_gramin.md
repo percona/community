@@ -14,6 +14,11 @@ social:
   website: gramin.pro
 images:
 - contributors/maksim_gramin.png
+aliases:
+- /authors/maksim_gramin
+- /authors/maksim_gramin/
+- /speakers/maksim_gramin
+- /speakers/maksim_gramin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

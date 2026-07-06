@@ -14,6 +14,9 @@ social:
   website: https://openuk.uk/
 images:
 - contributors/amanda_brock.jpg
+aliases:
+- /speakers/amanda_brock
+- /speakers/amanda_brock/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

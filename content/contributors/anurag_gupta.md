@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/anurag_gupta.jpg
+aliases:
+- /speakers/anurag_gupta
+- /speakers/anurag_gupta/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

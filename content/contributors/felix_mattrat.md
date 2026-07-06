@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2018/10/Felix.Mattrat.png
+aliases:
+- /authors/felix_mattrat
+- /authors/felix_mattrat/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

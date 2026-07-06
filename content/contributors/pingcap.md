@@ -12,6 +12,9 @@ social:
   website: https://pingcap.com/en/
 images:
 - contributors/pingcap.png
+aliases:
+- /authors/pingcap
+- /authors/pingcap/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/david_gonzalez.png
+aliases:
+- /speakers/david_gonzalez
+- /speakers/david_gonzalez/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/lorraine.jpeg
+aliases:
+- /authors/lorraine_pocklington
+- /authors/lorraine_pocklington/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/marcos_albe.jpeg
+aliases:
+- /speakers/marcos_albe
+- /speakers/marcos_albe/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

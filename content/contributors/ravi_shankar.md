@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ravi_shankar.jpg
+aliases:
+- /speakers/ravi_shankar
+- /speakers/ravi_shankar/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

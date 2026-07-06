@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/leonardo_bacchi_fernandes.png
+aliases:
+- /speakers/leonardo_bacchi_fernandes
+- /speakers/leonardo_bacchi_fernandes/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

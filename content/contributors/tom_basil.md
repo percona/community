@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/tom_basil.jpeg
+aliases:
+- /authors/tom_basil
+- /authors/tom_basil/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

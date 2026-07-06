@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/jan_kleinert.jpg
+aliases:
+- /speakers/jan_kleinert
+- /speakers/jan_kleinert/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/beinan_wang.jpg
+aliases:
+- /speakers/beinan_wang
+- /speakers/beinan_wang/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

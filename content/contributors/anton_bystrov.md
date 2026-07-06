@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/anton_bystrov.jpeg
+aliases:
+- /authors/anton_bystrov
+- /authors/anton_bystrov/
+- /speakers/anton_bystrov
+- /speakers/anton_bystrov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

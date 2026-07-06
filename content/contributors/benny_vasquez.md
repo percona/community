@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/benny_vasquez.jpeg
+aliases:
+- /speakers/benny_vasquez
+- /speakers/benny_vasquez/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/karthik_appigatla.jpg
+aliases:
+- /speakers/karthik_appigatla
+- /speakers/karthik_appigatla/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

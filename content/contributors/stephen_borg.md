@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/stephen_borg.jpg
+aliases:
+- /speakers/stephen_borg
+- /speakers/stephen_borg/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

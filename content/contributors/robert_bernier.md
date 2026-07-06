@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/robert_bernier.jpg
+aliases:
+- /speakers/robert_bernier
+- /speakers/robert_bernier/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

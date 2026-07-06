@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/anna_widenius.jpg
+aliases:
+- /speakers/anna_widenius
+- /speakers/anna_widenius/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

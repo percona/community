@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/dave_stokes.jpg
+aliases:
+- /speakers/dave_stokes
+- /speakers/dave_stokes/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

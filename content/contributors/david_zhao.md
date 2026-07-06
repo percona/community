@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/david_zhao.jpg
+aliases:
+- /authors/david_zhao
+- /authors/david_zhao/
+- /speakers/david_zhao
+- /speakers/david_zhao/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

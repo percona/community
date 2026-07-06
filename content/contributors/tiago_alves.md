@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/tiago_alves.jpg
+aliases:
+- /speakers/tiago_alves
+- /speakers/tiago_alves/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

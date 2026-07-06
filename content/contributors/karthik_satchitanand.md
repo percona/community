@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/karthik_satchitanand.jpg
+aliases:
+- /speakers/karthik_satchitanand
+- /speakers/karthik_satchitanand/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/werner-pix.png
+aliases:
+- /authors/werner_keil
+- /authors/werner_keil/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

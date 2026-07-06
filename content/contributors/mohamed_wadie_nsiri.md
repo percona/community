@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/mohamed_wadie_nsiri.jpeg
+aliases:
+- /speakers/mohamed_wadie_nsiri
+- /speakers/mohamed_wadie_nsiri/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

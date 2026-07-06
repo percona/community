@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/georgi_kodinov.jpg
+aliases:
+- /speakers/georgi_kodinov
+- /speakers/georgi_kodinov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

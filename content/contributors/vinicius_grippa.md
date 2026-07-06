@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/vinicius_grippa.jpg
+aliases:
+- /speakers/vinicius_grippa
+- /speakers/vinicius_grippa/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

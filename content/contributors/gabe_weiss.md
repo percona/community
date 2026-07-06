@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/gabe_weiss.jpg
+aliases:
+- /speakers/gabe_weiss
+- /speakers/gabe_weiss/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

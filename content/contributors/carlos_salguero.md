@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/carlos_salguero.jpg
+aliases:
+- /authors/carlos_salguero
+- /authors/carlos_salguero/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

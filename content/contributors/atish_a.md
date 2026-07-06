@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/atish_a.jpeg
+aliases:
+- /authors/atish_a
+- /authors/atish_a/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

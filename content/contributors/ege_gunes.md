@@ -15,6 +15,9 @@ social:
   website: https://ege.dev
 images:
 - contributors/ege_gunes.jpg
+aliases:
+- /speakers/ege_gunes
+- /speakers/ege_gunes/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

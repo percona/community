@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/art-vons-pix.png
+aliases:
+- /authors/art_vanscheppingen
+- /authors/art_vanscheppingen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/wey_gu.png
+aliases:
+- /speakers/wey_gu
+- /speakers/wey_gu/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

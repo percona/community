@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/francesco_nobilia.jpg
+aliases:
+- /speakers/francesco_nobilia
+- /speakers/francesco_nobilia/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

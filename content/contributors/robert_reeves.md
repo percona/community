@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/robert_reeves.jpg
+aliases:
+- /authors/robert_reeves
+- /authors/robert_reeves/
+- /speakers/robert_reeves
+- /speakers/robert_reeves/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

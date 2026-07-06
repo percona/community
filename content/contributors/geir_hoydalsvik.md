@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/geir_hoydalsvik.jpeg
+aliases:
+- /speakers/geir_hoydalsvik
+- /speakers/geir_hoydalsvik/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

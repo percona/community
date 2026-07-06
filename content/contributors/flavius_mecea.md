@@ -12,6 +12,9 @@ social:
   website: https://www.presslabs.com/
 images:
 - contributors/flavius_mecea.jpeg
+aliases:
+- /authors/flavius_mecea
+- /authors/flavius_mecea/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

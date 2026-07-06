@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/stacy.png
+aliases:
+- /authors/stacy
+- /authors/stacy/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

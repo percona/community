@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/05/raghu.jpg
+aliases:
+- /authors/raghavendra_prabhu
+- /authors/raghavendra_prabhu/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

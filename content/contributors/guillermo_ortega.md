@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/guillermo_ortega.png
+aliases:
+- /speakers/guillermo_ortega
+- /speakers/guillermo_ortega/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

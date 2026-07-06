@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/jan_wieremjewicz.jpg
+aliases:
+- /authors/jan_wieremjewicz
+- /authors/jan_wieremjewicz/
 planet_pg_tag: pg_jan
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sonia_valeja.jpeg
+aliases:
+- /speakers/sonia_valeja
+- /speakers/sonia_valeja/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

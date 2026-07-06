@@ -15,6 +15,9 @@ social:
   website: https://cloud.google.com/database-migration/
 images:
 - contributors/shachar_guz.jpg
+aliases:
+- /speakers/shachar_guz
+- /speakers/shachar_guz/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

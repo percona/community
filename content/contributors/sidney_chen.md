@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sidney_chen.jpg
+aliases:
+- /speakers/sidney_chen
+- /speakers/sidney_chen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

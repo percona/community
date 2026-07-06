@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/dmitry_lenev.jpg
+aliases:
+- /speakers/dmitry_lenev
+- /speakers/dmitry_lenev/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

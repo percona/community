@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/daniil_bazhenov.png
+aliases:
+- /authors/daniil_bazhenov
+- /authors/daniil_bazhenov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

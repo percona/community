@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/chunxu_tang.jpg
+aliases:
+- /speakers/chunxu_tang
+- /speakers/chunxu_tang/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

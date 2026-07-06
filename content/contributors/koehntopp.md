@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/0-1.jpeg
+aliases:
+- /authors/koehntopp
+- /authors/koehntopp/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

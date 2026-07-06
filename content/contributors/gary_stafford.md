@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/gary_stafford.jpg
+aliases:
+- /speakers/gary_stafford
+- /speakers/gary_stafford/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

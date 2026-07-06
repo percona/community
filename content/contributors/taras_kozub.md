@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/taras_kozub.png
+aliases:
+- /authors/taras_kozub
+- /authors/taras_kozub/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

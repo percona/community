@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ariel_weisberg.jpg
+aliases:
+- /speakers/ariel_weisberg
+- /speakers/ariel_weisberg/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

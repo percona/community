@@ -12,6 +12,9 @@ social:
   website: http://berubeconsulting.com/
 images:
 - contributors/person-using-laptop.jpg
+aliases:
+- /authors/david_berube
+- /authors/david_berube/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

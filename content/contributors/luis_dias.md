@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/luis_dias.jpg
+aliases:
+- /speakers/luis_dias
+- /speakers/luis_dias/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

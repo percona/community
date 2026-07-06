@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/yang_keao.png
+aliases:
+- /speakers/yang_keao
+- /speakers/yang_keao/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

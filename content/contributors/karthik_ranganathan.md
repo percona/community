@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/karthik_ranganathan.png
+aliases:
+- /speakers/karthik_ranganathan
+- /speakers/karthik_ranganathan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

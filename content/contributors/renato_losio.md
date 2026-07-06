@@ -12,6 +12,9 @@ social:
   website: https://cloudiamo.com/
 images:
 - contributors/renato_losio.jpeg
+aliases:
+- /authors/renato_losio
+- /authors/renato_losio/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

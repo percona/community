@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/vaibhav_upadhyay.jpg
+aliases:
+- /speakers/vaibhav_upadhyay
+- /speakers/vaibhav_upadhyay/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

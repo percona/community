@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/joe_brockmeier.jpeg
+aliases:
+- /speakers/joe_brockmeier
+- /speakers/joe_brockmeier/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

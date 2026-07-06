@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/fernando_mattera.jpg
+aliases:
+- /speakers/fernando_mattera
+- /speakers/fernando_mattera/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

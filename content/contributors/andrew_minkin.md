@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/andrew_minkin.jpeg
+aliases:
+- /authors/andrew_minkin
+- /authors/andrew_minkin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

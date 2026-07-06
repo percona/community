@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/elizaveta_dokshina.jpeg
+aliases:
+- /authors/elizaveta_dokshina
+- /authors/elizaveta_dokshina/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/aurelien_lequoy.jpeg
+aliases:
+- /authors/aurelien_lequoy
+- /authors/aurelien_lequoy/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

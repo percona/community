@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/matthias_crauwels.jpg
+aliases:
+- /speakers/matthias_crauwels
+- /speakers/matthias_crauwels/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

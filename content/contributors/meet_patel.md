@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/09/Meet_Patel-2.jpg
+aliases:
+- /authors/meet_patel
+- /authors/meet_patel/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/christoph_bussler.jpg
+aliases:
+- /speakers/christoph_bussler
+- /speakers/christoph_bussler/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/brian_walters.jpeg
+aliases:
+- /speakers/brian_walters
+- /speakers/brian_walters/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

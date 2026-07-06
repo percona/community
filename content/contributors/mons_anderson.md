@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/2020-10-28-18.10.30.jpg
+aliases:
+- /authors/mons_anderson
+- /authors/mons_anderson/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

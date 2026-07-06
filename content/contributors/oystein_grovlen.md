@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/oystein-pix.png
+aliases:
+- /authors/oystein_grovlen
+- /authors/oystein_grovlen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

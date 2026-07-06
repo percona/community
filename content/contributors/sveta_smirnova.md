@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/sveta_smirnova.jpeg
+aliases:
+- /authors/sveta_smirnova
+- /authors/sveta_smirnova/
+- /speakers/sveta_smirnova
+- /speakers/sveta_smirnova/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

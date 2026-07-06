@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/aaditya_dubey.jpeg
+aliases:
+- /authors/aaditya_dubey
+- /authors/aaditya_dubey/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Backup

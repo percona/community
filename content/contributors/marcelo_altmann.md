@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/marcelo_altmann.png
+aliases:
+- /speakers/marcelo_altmann
+- /speakers/marcelo_altmann/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/05/rene.jpg
+aliases:
+- /authors/rene_cannao
+- /authors/rene_cannao/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

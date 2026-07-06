@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/maxia-pix.png
+aliases:
+- /authors/giuseppe
+- /authors/giuseppe/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

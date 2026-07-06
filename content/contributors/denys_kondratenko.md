@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/denys_kondratenko.png
+aliases:
+- /authors/denys_kondratenko
+- /authors/denys_kondratenko/
+- /speakers/denys_kondratenko
+- /speakers/denys_kondratenko/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/andreas_scherbaum.jpg
+aliases:
+- /speakers/andreas_scherbaum
+- /speakers/andreas_scherbaum/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/jono_bacon.jpg
+aliases:
+- /speakers/jono_bacon
+- /speakers/jono_bacon/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

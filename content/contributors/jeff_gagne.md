@@ -12,6 +12,9 @@ social:
   website: https://jfg-mysql.blogspot.com/
 images:
 - contributors/jeff_gagne.png
+aliases:
+- /authors/jeff_gagne
+- /authors/jeff_gagne/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

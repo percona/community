@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/lukas_eder.jpg
+aliases:
+- /speakers/lukas_eder
+- /speakers/lukas_eder/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

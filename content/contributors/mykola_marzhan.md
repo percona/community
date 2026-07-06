@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/mykola_marzhan.jpeg
+aliases:
+- /speakers/mykola_marzhan
+- /speakers/mykola_marzhan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Backup

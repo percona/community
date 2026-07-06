@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/evgeniy_patlan.jpg
+aliases:
+- /speakers/evgeniy_patlan
+- /speakers/evgeniy_patlan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

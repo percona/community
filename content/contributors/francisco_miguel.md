@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/francisco_miguel.png
+aliases:
+- /authors/francisco_miguel
+- /authors/francisco_miguel/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

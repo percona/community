@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/yahav_biran.jpg
+aliases:
+- /authors/yahav_biran
+- /authors/yahav_biran/
+- /speakers/yahav_biran
+- /speakers/yahav_biran/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

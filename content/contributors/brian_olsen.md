@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/brian_olsen.jpg
+aliases:
+- /speakers/brian_olsen
+- /speakers/brian_olsen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

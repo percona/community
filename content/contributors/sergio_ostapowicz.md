@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/sergio_ostapowicz.jpg
+aliases:
+- /speakers/sergio_ostapowicz
+- /speakers/sergio_ostapowicz/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

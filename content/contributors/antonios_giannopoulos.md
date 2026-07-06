@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/antonios_giannopoulos.png
+aliases:
+- /authors/antonios_giannopoulos
+- /authors/antonios_giannopoulos/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -7,13 +7,16 @@ job: Principal Engineer, pgEdge
 country: null
 tagline: null
 social:
-  website: null
   facebook: null
-  twitter: null
   github: null
   linkedin: https://www.linkedin.com/in/ibrarahmed74/
+  twitter: null
+  website: null
 images:
 - contributors/ibrar_ahmed.jpg
+aliases:
+- /speakers/ibrar_ahmed
+- /speakers/ibrar_ahmed/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

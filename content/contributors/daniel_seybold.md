@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/daniel_seybold.png
+aliases:
+- /speakers/daniel_seybold
+- /speakers/daniel_seybold/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

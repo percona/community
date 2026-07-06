@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/daniel_black.jpg
+aliases:
+- /authors/daniel_black
+- /authors/daniel_black/
+- /speakers/daniel_black
+- /speakers/daniel_black/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

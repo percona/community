@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/andrey_minkin.png
+aliases:
+- /speakers/andrey_minkin
+- /speakers/andrey_minkin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

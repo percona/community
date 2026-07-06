@@ -12,6 +12,11 @@ social:
   website: null
 images:
 - contributors/kai_wagner.jpg
+aliases:
+- /authors/kai_wagner
+- /authors/kai_wagner/
+- /speakers/kai_wagner
+- /speakers/kai_wagner/
 planet_pg_tag: pg_kwagner
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

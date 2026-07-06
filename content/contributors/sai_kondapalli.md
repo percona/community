@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sai_kondapalli.jpg
+aliases:
+- /speakers/sai_kondapalli
+- /speakers/sai_kondapalli/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

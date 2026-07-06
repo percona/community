@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/francisco_bordenave.png
+aliases:
+- /speakers/francisco_bordenave
+- /speakers/francisco_bordenave/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

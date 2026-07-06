@@ -12,6 +12,9 @@ social:
   website: http://mysqlentomologist.blogspot.com/
 images:
 - contributors/valeriy_kravchuk.jpeg
+aliases:
+- /authors/valeriy_kravchuk
+- /authors/valeriy_kravchuk/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

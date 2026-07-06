@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/divyanshu_soni.png
+aliases:
+- /speakers/divyanshu_soni
+- /speakers/divyanshu_soni/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

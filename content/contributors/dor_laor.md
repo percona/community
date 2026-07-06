@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/dor_laor.jpg
+aliases:
+- /speakers/dor_laor
+- /speakers/dor_laor/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

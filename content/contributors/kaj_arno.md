@@ -13,6 +13,11 @@ social:
   website: null
 images:
 - contributors/kaj_arno.jpg
+aliases:
+- /authors/kaj_arno
+- /authors/kaj_arno/
+- /speakers/kaj_arno
+- /speakers/kaj_arno/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

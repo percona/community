@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/muhammad_usama.png
+aliases:
+- /speakers/muhammad_usama
+- /speakers/muhammad_usama/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

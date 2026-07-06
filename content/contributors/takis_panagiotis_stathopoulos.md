@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/takis_stathopoulos.jpg
+aliases:
+- /speakers/takis_stathopoulos
+- /speakers/takis_stathopoulos/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

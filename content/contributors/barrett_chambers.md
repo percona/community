@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/barrett_chambers.png
+aliases:
+- /speakers/barrett_chambers
+- /speakers/barrett_chambers/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

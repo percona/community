@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/nickolay_ihalainen.jpg
+aliases:
+- /speakers/nickolay_ihalainen
+- /speakers/nickolay_ihalainen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

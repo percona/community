@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/dr_gavin_mendel.jpg
+aliases:
+- /speakers/dr_gavin_mendel
+- /speakers/dr_gavin_mendel/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

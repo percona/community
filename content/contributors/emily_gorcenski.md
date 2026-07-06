@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/emily-g-pix.png
+aliases:
+- /authors/emily_gorcenski
+- /authors/emily_gorcenski/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

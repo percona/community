@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/icon.png
+aliases:
+- /authors/cate_lawrence
+- /authors/cate_lawrence/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

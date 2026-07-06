@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/vinodh_krishnaswamy.jpg
+aliases:
+- /speakers/vinodh_krishnaswamy
+- /speakers/vinodh_krishnaswamy/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

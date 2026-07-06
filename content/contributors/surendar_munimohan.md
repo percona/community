@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/surendar_munimohan.jpg
+aliases:
+- /speakers/surendar_munimohan
+- /speakers/surendar_munimohan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

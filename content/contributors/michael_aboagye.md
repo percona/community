@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/12/Michael-Aboagye.jpg
+aliases:
+- /authors/michael_aboagye
+- /authors/michael_aboagye/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

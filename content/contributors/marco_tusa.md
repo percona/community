@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/marco_tusa.jpg
+aliases:
+- /speakers/marco_tusa
+- /speakers/marco_tusa/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

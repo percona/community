@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/kedar_vaijanapurkar.jpg
+aliases:
+- /speakers/kedar_vaijanapurkar
+- /speakers/kedar_vaijanapurkar/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

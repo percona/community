@@ -12,6 +12,11 @@ social:
   website: https://edithpuclla.com/
 images:
 - contributors/edith_puclla.jpeg
+aliases:
+- /authors/edith_puclla
+- /authors/edith_puclla/
+- /speakers/edith_puclla
+- /speakers/edith_puclla/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

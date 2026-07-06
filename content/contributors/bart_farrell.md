@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/bart_farrell.jpg
+aliases:
+- /speakers/bart_farrell
+- /speakers/bart_farrell/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

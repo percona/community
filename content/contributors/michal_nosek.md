@@ -12,6 +12,11 @@ social:
   website: null
 images:
 - contributors/michal_nosek.jpeg
+aliases:
+- /authors/michal_nosek
+- /authors/michal_nosek/
+- /speakers/michal_nosek
+- /speakers/michal_nosek/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

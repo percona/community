@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/tyler_turk.png
+aliases:
+- /authors/tyler_turk
+- /authors/tyler_turk/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

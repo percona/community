@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/alexandre_vaniachine.jpeg
+aliases:
+- /authors/alexandre_vaniachine
+- /authors/alexandre_vaniachine/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sergey_kuzmichev.jpg
+aliases:
+- /speakers/sergey_kuzmichev
+- /speakers/sergey_kuzmichev/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

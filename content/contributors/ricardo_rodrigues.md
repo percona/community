@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ricardo_rodrigues.jpg
+aliases:
+- /speakers/ricardo_rodrigues
+- /speakers/ricardo_rodrigues/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

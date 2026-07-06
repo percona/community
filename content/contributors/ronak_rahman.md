@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/ronak-profile.png
+aliases:
+- /authors/ronak_rahman
+- /authors/ronak_rahman/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

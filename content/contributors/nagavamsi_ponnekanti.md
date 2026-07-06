@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/nagavamsi_ponnekanti.jpeg
+aliases:
+- /speakers/nagavamsi_ponnekanti
+- /speakers/nagavamsi_ponnekanti/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

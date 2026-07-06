@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/shlomi_noach.jpg
+aliases:
+- /authors/shlomi_noach
+- /authors/shlomi_noach/
+- /speakers/shlomi_noach
+- /speakers/shlomi_noach/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/07/2020-07-08-19.04.47.jpg
+aliases:
+- /authors/andrey_sergeev
+- /authors/andrey_sergeev/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

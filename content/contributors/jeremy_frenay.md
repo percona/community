@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/jeremy_frenay.jpg
+aliases:
+- /speakers/jeremy_frenay
+- /speakers/jeremy_frenay/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

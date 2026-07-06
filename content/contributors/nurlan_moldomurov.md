@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/nurlan_moldomurov.jpeg
+aliases:
+- /speakers/nurlan_moldomurov
+- /speakers/nurlan_moldomurov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

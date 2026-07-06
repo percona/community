@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/gabriel_ciciliani.png
+aliases:
+- /speakers/gabriel_ciciliani
+- /speakers/gabriel_ciciliani/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

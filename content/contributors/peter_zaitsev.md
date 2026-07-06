@@ -15,6 +15,9 @@ social:
   website: https://peterzaitsev.com/
 images:
 - contributors/peter_zaitsev.jpg
+aliases:
+- /speakers/peter_zaitsev
+- /speakers/peter_zaitsev/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

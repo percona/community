@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/fernando_laudares.jpg
+aliases:
+- /speakers/fernando_laudares
+- /speakers/fernando_laudares/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
