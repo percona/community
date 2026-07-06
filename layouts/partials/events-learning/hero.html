@@ -1,5 +1,5 @@
 
-<section class="hub-hero hub-hero--photo hub-hero--compact" aria-labelledby="el-hero-heading">
+<section class="hub-hero hub-hero--photo" aria-labelledby="el-hero-heading">
   <div class="hub-hero__media" aria-hidden="true">
     {{ partial "hero-bg-image.html" (dict "page" . "class" "hub-hero__image" "width" 1600) }}
     <div class="hub-hero__gradient" aria-hidden="true"></div>
@@ -15,7 +15,7 @@
   <div class="hub-hero__inner">
     <div class="hub-hero__copy">
       <h1 class="hub-hero__title" id="el-hero-heading">
-        <span class="hub-hero__accent">Events</span> &amp;<br>
+        <span class="hub-hero__accent">Events &amp;</span><br>
         Learning
       </h1>
       {{ with .Params.description }}

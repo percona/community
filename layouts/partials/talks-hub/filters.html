@@ -3,13 +3,12 @@
 {{ $activeTitle := "" }}
 {{ $activePermalink := "" }}
 {{ $activeContent := "" }}
-{{ $videosURL := (site.GetPage "/videos").RelPermalink }}
 {{ if eq $page.Type "talk_year" }}
   {{ $activeType = $page.Type }}
   {{ $activeTitle = $page.Title }}
   {{ $activePermalink = $page.RelPermalink }}
 {{ else if eq $page.Type "talk_tags" }}
-  {{ if eq $page.Title "Slides" }}
+  {{ if or (eq $page.Title "Slides") (eq $page.Title "Video") }}
     {{ $activeContent = $page.Title }}
     {{ $activePermalink = $page.RelPermalink }}
   {{ else }}
@@ -55,7 +54,7 @@
         <ul class="el-filters__list">
           {{ range sort site.Taxonomies.talk_tags.ByCount }}
             {{ if eq .Page.Title "Video" }}
-              <li><a class="el-filters__option" href="{{ $videosURL }}">Video ({{ .Count }})</a></li>
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>Video ({{ .Count }})</a></li>
             {{ end }}
             {{ if eq .Page.Title "Slides" }}
               <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>Slides ({{ .Count }})</a></li>

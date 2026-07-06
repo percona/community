@@ -1,0 +1,50 @@
+{{/*
+  Event / podcast card image: explicit cover, YouTube thumbnail, or site default.
+  Params:
+    page  — Hugo page
+    class — CSS class on img (optional)
+    alt   — alt text (optional, defaults to page title)
+    fill  — Hugo fill spec (optional, default 1200x630 Center q85 jpg)
+*/}}
+{{- $page := .page -}}
+{{- $class := .class | default "" -}}
+{{- $alt := .alt | default $page.Title -}}
+{{- $fill := .fill | default "1200x630 Center q85 jpg" -}}
+{{- $coverImg := "" -}}
+
+{{- with index $page.Params.images 0 -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}
+    {{- $coverImg = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $coverImg -}}
+  <img
+    {{- with $class }} class="{{ . }}"{{ end }}
+    src="{{ ($coverImg.Fill $fill).RelPermalink }}"
+    alt="{{ $alt }}"
+    loading="lazy"
+    width="1200"
+    height="630"
+  >
+{{- else if $page.Params.youtube_id -}}
+  <img
+    {{- with $class }} class="{{ . }}"{{ end }}
+    src="https://img.youtube.com/vi/{{ $page.Params.youtube_id }}/hqdefault.jpg"
+    alt="{{ $alt }}"
+    loading="lazy"
+    width="1200"
+    height="630"
+  >
+{{- else -}}
+  {{- with partial "page-cover-resource.html" $page -}}
+    <img
+      {{- with $class }} class="{{ . }}"{{ end }}
+      src="{{ (.Fill $fill).RelPermalink }}"
+      alt="{{ $alt }}"
+      loading="lazy"
+      width="1200"
+      height="630"
+    >
+  {{- end -}}
+{{- end -}}

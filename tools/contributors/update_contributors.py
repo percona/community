@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Aggregates contributor activity from blog posts, events, podcasts, and talks.
+Aggregates contributor activity from blog posts, events (including podcasts under
+content/events/podcasts/), and talks.
 Generates auto-fields in contributor cards: counts, tags, types, and activity years.
 """
 
@@ -14,7 +15,6 @@ from collections import defaultdict
 # Paths to content directories
 BLOG_DIR = "content/blog"
 EVENTS_DIR = "content/events"
-PODCASTS_DIR = "content/podcasts"
 TALKS_DIR = "content/talks"
 CONTRIB_DIR = "content/contributors"
 
@@ -23,6 +23,13 @@ PRIMARY_FIELDS = [
     "title", "name", "name_pronunciation", "fullname", "fullname_pronounciation",
     "job", "country", "tagline", "social", "images"
 ]
+
+# Auto-generated field keys (replaced on each run)
+AUTO_FIELD_KEYS = {
+    "contributor_tag", "blog_tags", "events_tags", "talks_tags",
+    "posts_count", "events_count", "talks_count",
+    "contributor_type", "contributor_year",
+}
 
 # Global sets for aggregating data
 all_categories = set()
@@ -93,16 +100,26 @@ def dump_contributor(contrib, path, auto_fields):
     """
     Saves the contributor file with:
       - Primary fields (as-is)
+      - Other manual fields (e.g. planet_pg_tag)
       - Auto-generated fields (sorted, with warning comment)
     Preserves content after front matter.
     """
     lines = ["---"]
+    written = set()
     # Write primary fields in fixed order
     for key in PRIMARY_FIELDS:
         if key in contrib:
             val = contrib[key]
             snippet = yaml.dump({key: val}, allow_unicode=True, sort_keys=False).strip()
             lines.append(snippet)
+            written.add(key)
+    # Preserve other manual front matter (not auto-generated)
+    for key in sorted(contrib.keys()):
+        if key in written or key in AUTO_FIELD_KEYS or key == "content":
+            continue
+        snippet = yaml.dump({key: contrib[key]}, allow_unicode=True, sort_keys=False).strip()
+        lines.append(snippet)
+        written.add(key)
     # Add comment for auto-generated fields
     lines.append("# Auto-generated fields. Do not edit manually.")
     # Write auto fields
@@ -168,39 +185,38 @@ for root, _, files in os.walk(BLOG_DIR):
 
 
 # ———————————————————————
-# 2. Process events and podcasts
+# 2. Process events (podcasts live under content/events/podcasts/)
 # ———————————————————————
-for source, root_dir in [("events", EVENTS_DIR), ("podcasts", PODCASTS_DIR)]:
-    for root, _, files in os.walk(root_dir):
-        for fname in files:
-            if not fname.endswith(".md"):
-                continue
-            path = os.path.join(root, fname)
-            doc = load_md(path)
-            if not doc:
-                continue
-            speakers = doc.get("speakers", []) or []
-            doc_tags = doc.get("tags", []) or []
+for root, _, files in os.walk(EVENTS_DIR):
+    for fname in files:
+        if not fname.endswith(".md") or fname == "_index.md":
+            continue
+        path = os.path.join(root, fname)
+        doc = load_md(path)
+        if not doc:
+            continue
+        speakers = doc.get("speakers", []) or []
+        doc_tags = doc.get("tags", []) or []
 
-            # Extract year only from 'date' field
-            year = extract_year(doc.get("date"))
+        # Extract year only from 'date' field
+        year = extract_year(doc.get("date"))
 
-            # Aggregate per speaker
-            for s in speakers:
-                if not isinstance(s, str) or not s.strip():
-                    continue
-                contributor = s.strip()
-                for t in doc_tags:
-                    if isinstance(t, str) and t.strip():
-                        t_clean = t.strip()
-                        if t_clean in all_categories:
-                            contributor_all_tags[contributor].add(t_clean)
-                        else:
-                            contributor_events_tags[contributor].add(t_clean)
-                contributor_events_count[contributor] += 1
-                contributor_types[contributor].add("speaker")
-                if year:
-                    contributor_years[contributor].add(year)
+        # Aggregate per speaker
+        for s in speakers:
+            if not isinstance(s, str) or not s.strip():
+                continue
+            contributor = s.strip()
+            for t in doc_tags:
+                if isinstance(t, str) and t.strip():
+                    t_clean = t.strip()
+                    if t_clean in all_categories:
+                        contributor_all_tags[contributor].add(t_clean)
+                    else:
+                        contributor_events_tags[contributor].add(t_clean)
+            contributor_events_count[contributor] += 1
+            contributor_types[contributor].add("speaker")
+            if year:
+                contributor_years[contributor].add(year)
 
 
 # ———————————————————————
@@ -244,7 +260,7 @@ for root, _, files in os.walk(TALKS_DIR):
 updated = 0
 for root, _, files in os.walk(CONTRIB_DIR):
     for fname in files:
-        if not fname.endswith(".md"):
+        if not fname.endswith(".md") or fname == "_index.md":
             continue
         path = os.path.join(root, fname)
         contrib = load_md(path)
