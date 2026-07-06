@@ -12,6 +12,7 @@ social:
   website: null
 images:
 - contributors/jan_wieremjewicz.jpg
+planet_pg_tag: pg_jan
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

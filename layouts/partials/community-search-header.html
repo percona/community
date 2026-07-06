@@ -7,10 +7,7 @@
     aria-controls="community-search-overlay"
     aria-label="Open search"
   >
-    <svg class="community-search-header__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
-      <path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    </svg>
+    {{ partial "icon-search.html" (dict "width" 22 "height" 22 "class" "community-search-header__icon") }}
   </button>
 </div>
 
@@ -48,10 +45,7 @@
           autocomplete="off"
         />
         <button type="button" id="community-search-button" class="community-search-overlay__submit" aria-label="Search">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.75"/>
-            <path d="M16.5 16.5L20 20" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
-          </svg>
+          {{ partial "icon-search.html" (dict "width" 24 "height" 24) }}
         </button>
       </div>
     </div>

@@ -24,8 +24,6 @@ video: ''
 images:
 - talks/2026/2026-04-21-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators.png
 ---
-## Abstract
-
 The Postgres ecosystem on Kubernetes is thriving and this is particularly evident in the Postgres K8s Operators space. 
 
 As the Postgres Operator ecosystem matures, real world experience has shown that, technical, licensing or operational constraints can make it necessary to migrate between PostgreSQL Kubernetes Operators over the lifecycle of a database platform.

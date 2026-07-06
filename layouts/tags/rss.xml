@@ -1,0 +1,81 @@
+{{- $contributor := false -}}
+{{- $tag := lower .Title -}}
+{{- range where site.RegularPages "Section" "contributors" -}}
+  {{- if eq (lower .Params.planet_pg_tag) $tag -}}
+    {{- $contributor = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $pages := sort .Pages ".Params.date" "desc" -}}
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    {{ with $contributor }}
+    <title>{{ .Params.fullname }} — Percona Community</title>
+    <description>{{ with .Params.tagline }}{{ . }}{{ else }}Posts about Postgres by {{ .Params.fullname }} | Percona Community{{ end }}</description>
+    {{ else }}
+    <title>{{ .Title }} — Percona Community</title>
+    <description>Recent content tagged {{ .Title }} on Percona Community.</description>
+    {{ end }}
+    <link>{{ .Permalink }}</link>
+
+    <atom:link href="{{ .Permalink }}index.xml"
+               rel="self"
+               type="application/rss+xml" />
+
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>{{ .Site.Copyright }}</copyright>
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
+
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+
+      <pubDate>{{ (time .Params.date).Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
+
+      <description>
+        {{- $first := index (split .Content "</p>") 0 -}}
+        {{- $first | plainify | htmlUnescape -}}
+      </description>
+
+      <content:encoded>{{ .Content | htmlUnescape }}</content:encoded>
+
+      {{ with .Params.authors }}
+        {{ range . }}
+          {{ $c := $.Site.GetPage (print "/contributors/" .) }}
+          {{ with $c }}
+            <author>{{ .Params.fullname }}</author>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ with .Params.tags }}
+        {{ range . }}
+          <category>{{ . }}</category>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Params.images }}
+        {{ $img := index . 0 }}
+        {{ $res := resources.Get $img }}
+        {{ if $res }}
+          {{ $thumb := ($res.Fill "320x180 90% jpg") }}
+          {{ $full := ($res.Fill "1280x720 90% jpg") }}
+          <media:thumbnail url="{{ $thumb.Permalink | absURL }}" />
+          <media:content url="{{ $full.Permalink | absURL }}" medium="image" />
+        {{ else }}
+          <media:thumbnail url="{{ $img | absURL }}" />
+          <media:content url="{{ $img | absURL }}" medium="image" />
+        {{ end }}
+      {{ end }}
+
+    </item>
+    {{ end }}
+
+  </channel>
+</rss>

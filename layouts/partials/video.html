@@ -1,7 +1,22 @@
-{{ if .Params.youtube_id }}
-    <h2>Video</h2>
-    <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">
-    <img width="480px" src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg" alt="" />
-    </a>
-    <p>Link: <a href="https://youtu.be/{{ .Params.youtube_id }}" class="" target="_blank">https://youtu.be/{{ .Params.youtube_id }}</a></p>
+{{ $page := . }}
+{{ $heading := "Video" }}
+{{ if reflect.IsMap . }}
+  {{ $page = .page | default . }}
+  {{ $heading = .heading | default $heading }}
+{{ end }}
+{{ with $page.Params.youtube_id }}
+  <div class="youtube__block media-embed media-embed--youtube">
+    <h2>{{ $heading }}</h2>
+    <iframe
+      src="https://www.youtube.com/embed/{{ . }}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <p class="media-embed__caption video-link">
+      Watch on:
+      <a href="https://youtu.be/{{ . }}" class="youtube__link" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </p>
+  </div>
 {{ end }}

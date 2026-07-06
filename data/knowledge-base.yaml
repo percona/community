@@ -1,0 +1,150 @@
+nav:
+  - id: get-involved
+    label: How to get involved
+    url: /knowledge-base/
+  - id: blogs
+    label: Community Blogs
+    url: /blog/
+    children:
+      - id: posts
+        label: Posts
+        url: /blog/
+      - id: authors
+        label: Authors
+        url: /contributor_type/author/
+  - id: contributors
+    label: Contributors
+    url: /contributors/
+  - id: forums
+    label: Community Forums
+    url: https://forums.percona.com/
+  - id: slack
+    label: Slack
+    url: https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow
+
+get_involved:
+  title: Get
+  title_accent: involved
+  intro: |
+    Percona's software is open source. That means the code, the documentation, the bug tracker, and the forum are all places where you can contribute — and where contributions actually shape what ships.
+
+    Whatever your starting point, there's a real way in. Pick the one that matches the time and energy you have right now. None of these paths is more valuable than the others.
+  paths:
+    - title: Answer questions on the forum
+      text: |
+        The [Percona Forum](https://forums.percona.com/) is where DBAs and developers go when something's gone wrong at 2 a.m. If you've solved a problem before, your answer is worth more than any blog post — because someone is searching for it right now.
+
+        You don't need to be an expert across the stack. Pick a topic you actually run in production and watch that category.
+    - title: Submit a pull request
+      text: |
+        Code contributions are welcome across every Percona repository — fixes, features, tests, documentation patches. If you want a curated entry point, the [Newbie-labeled tasks in Jira](https://perconadev.atlassian.net/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie) are scoped for a first contribution.
+
+        Fork, branch, commit, and open a PR against the relevant repo. Keep the diff focused. Reference the issue you're closing. After the PR is open, drop a note to [community-team@percona.com](mailto:community-team@percona.com) so we can give it visibility.
+    - title: Open a GitHub issue
+      text: |
+        If something's broken, behaves unexpectedly, or the docs don't match reality, file an issue. A clear bug report with reproduction steps, version numbers, and the actual vs. expected behavior is one of the most useful things you can give a maintainer.
+
+        Find the right repository under [github.com/percona](https://github.com/percona) and open an issue there. If you're not sure which repo, ask on the [forum](https://forums.percona.com/) first.
+
+        **Start here if you've hit a bug or a doc gap and you've got 15 minutes.**
+    - title: Write a blog post
+      text: |
+        If you've debugged something hairy, run a benchmark, migrated between versions, or have an opinion about how to operate a database at scale — write it up. The [Percona Community blog](/blog/) publishes technical posts from contributors. Follow the [publishing guide](/blog/2022/02/10/how-to-publish-blog-post/) or send a draft to [community-team@percona.com](mailto:community-team@percona.com).
+    - title: Send feedback
+      text: |
+        Direct feedback on a release, a feature, a workflow, or this community itself goes to [community-team@percona.com](mailto:community-team@percona.com). Tell us what's working, what isn't, and what you wish existed. We read all of it.
+  outro: |
+    Contributors get acknowledged in release notes, in the [contributors directory](/contributors/), and occasionally with Percona swag. That's a side effect, not the point — the point is that the software gets better when the people who use it shape it.
+
+    Questions about any of the above? Email [community-team@percona.com](mailto:community-team@percona.com).
+  cards:
+    - image_title: Community forums
+      text: The Percona Forum is where DBAs and developers land at 2 a.m. when something's broken. If you've solved it before, answer — someone's searching for it right now.
+      image: hub/cards/nature-5.jpg
+      links:
+        - url: https://forums.percona.com/
+          cta: Go to forum
+      row: top
+    - image_title: Code
+      text: Fork a repo and open a pull request — fixes, features, tests, or doc patches all count. Questions first? Ask in Slack or email community-team@percona.com.
+      image: hub/cards/nature-1.jpg
+      links:
+        - url: https://github.com/percona/
+          cta: GitHub
+      row: top
+    - image_title: Issues
+      text: Report bugs and doc gaps on GitHub, or pick up a Newbie-labeled Jira task scoped for a first contribution.
+      image: hub/heroes/subscribe.jpg
+      links:
+        - url: https://github.com/percona/
+          cta: GitHub issues
+        - url: https://perconadev.atlassian.net/browse/K8SPXC-955?jql=status%20in%20(Open%2C%20New)%20AND%20labels%20%3D%20newbie
+          cta: Browse Jira tasks
+      row: top
+    - image_title: Blog
+      text: Debugged something hairy or migrated between versions? Write it up for the Percona Community blog. Send us a draft at community-team@percona.com or publish it yourself.
+      image: hub/cards/nature-2.jpg
+      links:
+        - url: /blog/
+          cta: Community blog
+        - url: /blog/2022/02/10/how-to-publish-blog-post/
+          cta: Publishing guide
+        - url: /contribute/opentopics/
+          cta: Open topics
+      row: bottom
+    - image_title: Documentation
+      text: Improve a guide, fix an outdated line, or flag a gap so the next person finds answers faster. Not sure where it lives? Ask in the forums.
+      image: hub/cards/nature-4.jpg
+      links:
+        - url: https://docs.percona.com/
+          cta: Percona Docs
+        - url: /contribute/documentation/
+          cta: Contribute docs
+      row: bottom
+    - image_title: Connect and share your experience
+      text: "Follow the Percona Community on social media, join the conversation in Slack, and share what you're learning with people running the same databases you are. [See all ways to connect](/contribute/contact/)."
+      image: hub/heroes/home-1920.webp
+      row: bottom
+      social:
+        - label: Slack
+          url: https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow
+        - label: Forum
+          url: https://forums.percona.com/
+        - label: LinkedIn
+          url: https://www.linkedin.com/company/percona
+          icon: icon-linkedin.svg
+        - label: Twitter
+          url: https://twitter.com/Percona
+          icon: icon-twitter.svg
+        - label: YouTube
+          url: https://www.youtube.com/c/percona
+          icon: icon-youtube.svg
+
+community_content:
+  title: From the
+  title_accent: wider community
+  intro: |
+    Articles and videos about Percona software published on external blogs and YouTube — shared by users, customers, and database enthusiasts.
+
+    Wrote a post or recorded a tutorial? Publish it on your platform and add it to our collection.
+  cards:
+    - image_title: Community articles
+      text: Write about Percona products on your own blog, then send the link to community-team@percona.com — we curate anything that covers our stack, wherever it's published.
+      image: hub/cards/nature-4.jpg
+      links:
+        - url: /contribute/articles/
+          cta: Share an article
+        - url: /contribute/opentopics/
+          cta: Open topics
+    - image_title: Community videos
+      text: Record a tutorial or a talk about open source databases, publish it on YouTube, and send the link to community-team@percona.com. Creators of any size welcome.
+      image: hub/cards/nature-3.jpg
+      links:
+        - url: /contribute/videos/
+          cta: Community videos
+    - image_title: Events
+      text: Organize a local meetup, or join our conferences and online sessions. Connect with the practitioners running these databases in production and share what you know.
+      image: hub/cards/nature-2.jpg
+      links:
+        - url: /events/
+          cta: See events

@@ -1,0 +1,608 @@
+@import "variables";
+@import "../home/mixins";
+
+// Unified hero block. Types: hub-hero--mountains | hub-hero--photo | hub-hero--logo
+// Optional on photo: hub-hero--compact (280px hub listing pages)
+
+.hub-hero {
+  position: relative;
+  overflow: hidden;
+  background: $brand-black;
+  box-sizing: border-box;
+
+  &__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &__triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    pointer-events: none;
+    object-fit: contain;
+    object-position: top right;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    max-width: $layout-max-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__copy {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  &__title {
+    margin: 0 0 0.65rem;
+    color: $brand-white;
+    font-family: $font-poppins;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  &__accent {
+    color: $brand-yellow;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: rgba($brand-white, 0.88);
+    font-family: $font-poppins;
+    font-weight: 400;
+    line-height: 1.55;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: rgba($brand-white, 0.95);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+
+      &:hover {
+        color: $brand-white;
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__search {
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    height: 53px;
+    padding: 7.5px 18px;
+    border: none;
+    border-radius: 153px;
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: 0 3px 47px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+  }
+
+  &__search-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: 0.9375rem;
+
+    &::placeholder {
+      color: rgba($brand-black, 0.5);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__search-submit {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: $brand-black;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // ── Mountains: compact line-art hero (section / utility pages) ──────────
+
+  &--mountains {
+    height: 300px;
+    min-height: 300px;
+
+    .hub-hero__image {
+      object-position: center center;
+    }
+
+    .hub-hero__gradient {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.5) 55%,
+        rgba(0, 0, 0, 0.28) 100%
+      );
+    }
+
+    .hub-hero__triangle {
+      max-width: 34%;
+      object-fit: contain;
+    }
+
+    .hub-hero__inner {
+      align-items: center;
+      height: 100%;
+      padding: 1.25rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+    }
+
+    .hub-hero__title {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      line-height: 1.12;
+    }
+
+    .hub-hero__subtitle {
+      max-width: 40rem;
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+    }
+
+    .hub-hero__search {
+      top: 50%;
+      right: clamp(1rem, 4vw, 90px);
+      transform: translateY(-50%);
+    }
+
+    &.hub-hero--tech-kubernetes .hub-hero__accent { color: $brand-kubernetes; }
+    &.hub-hero--tech-mysql .hub-hero__accent { color: $brand-mysql; }
+    &.hub-hero--tech-postgresql .hub-hero__accent { color: lighten($brand-postgresql, 18%); }
+    &.hub-hero--tech-mongodb .hub-hero__accent { color: lighten($brand-mongodb, 12%); }
+    &.hub-hero--tech-valkey .hub-hero__accent { color: $brand-valkey; }
+    &.hub-hero--tech-redis .hub-hero__accent { color: $brand-redis; }
+    &.hub-hero--tech-percona .hub-hero__accent { color: lighten($brand-purple, 22%); }
+
+    &.hub-hero--logo {
+      // Right-side band — mirror of percona.com hero (60° diagonal, offset from JS).
+      --hub-hero-band-color: #{$brand-purple};
+      --hub-hero-band-offset: 10.8125rem; // fallback: 300px / tan(60°)
+
+      .hub-hero__gradient {
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.78) 0%,
+          rgba(0, 0, 0, 0.5) 45%,
+          rgba(0, 0, 0, 0.22) 68%,
+          rgba(0, 0, 0, 0.08) 100%
+        );
+      }
+
+      .hub-hero__band {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        background: var(--hub-hero-band-color);
+        clip-path: polygon(
+          calc(50% + var(--hub-hero-band-offset)) 0,
+          100% 0,
+          100% 100%,
+          50% 100%
+        );
+        pointer-events: none;
+      }
+
+      .hub-hero__inner {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 38%);
+        align-items: center;
+        gap: 1rem;
+        height: 100%;
+        width: 100%;
+        max-width: $layout-max-width;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.25rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+        box-sizing: border-box;
+      }
+
+      .hub-hero__brand-logo {
+        grid-column: 2;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        max-width: 14rem;
+        margin: 0;
+        pointer-events: none;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
+      .hub-hero__copy {
+        grid-column: 1;
+        max-width: 42rem;
+        min-width: 0;
+        padding-right: 0;
+      }
+
+      .hub-hero__subtitle {
+        max-width: 40rem;
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      height: auto;
+      min-height: 220px;
+
+      .hub-hero__triangle {
+        height: 100%;
+        width: auto;
+        max-width: none;
+        object-fit: contain;
+        object-position: top right;
+      }
+
+      .hub-hero__title {
+        font-size: clamp(2.25rem, 10.5vw, 3rem);
+        line-height: 1.08;
+      }
+
+      .hub-hero__subtitle {
+        font-size: clamp(0.9375rem, 4vw, 1.0625rem);
+        line-height: 1.5;
+      }
+
+      &.hub-hero--logo {
+        min-height: 0;
+
+        .hub-hero__gradient {
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.72) 0%,
+            rgba(0, 0, 0, 0.45) 55%,
+            rgba(0, 0, 0, 0.25) 100%
+          );
+        }
+
+        // Full-width brand stripe = logo row (one block, height follows logo).
+        .hub-hero__band {
+          display: none;
+        }
+
+        .hub-hero__inner {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: flex-start;
+          gap: 0;
+          width: 100%;
+          max-width: none;
+          height: auto;
+          min-height: 0;
+          padding: 4.5rem 0 0;
+        }
+
+        .hub-hero__copy {
+          width: 100%;
+          max-width: none;
+          padding: 0 clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 4rem;
+          box-sizing: border-box;
+        }
+
+        .hub-hero__title {
+          margin-bottom: 0.75rem;
+        }
+
+        .hub-hero__subtitle {
+          max-width: none;
+        }
+
+        .hub-hero__brand-logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          grid-column: auto;
+          align-self: stretch;
+          width: 100%;
+          max-width: none;
+          margin: 0;
+          padding: 2rem 1rem;
+          box-sizing: border-box;
+          background: var(--hub-hero-band-color);
+
+          img {
+            display: block;
+            width: 70%;
+            max-width: none;
+            height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+
+      &:not(.hub-hero--logo) .hub-hero__inner {
+        align-items: flex-end;
+        min-height: 220px;
+        padding-bottom: 1.5rem;
+      }
+
+      &:not(.hub-hero--logo) .hub-hero__copy {
+        max-width: none;
+      }
+
+      .hub-hero__search {
+        top: 1rem;
+        transform: none;
+      }
+    }
+  }
+
+  // ── Photo: full hub hero with background image ───────────────────────────
+
+  &--photo {
+    height: 625px;
+    min-height: 625px;
+
+    .hub-hero__image {
+      object-position: center 40%;
+    }
+
+    .hub-hero__gradient {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 0, 0, 0.45) 55%,
+        rgba(0, 0, 0, 0.25) 100%
+      );
+    }
+
+    .hub-hero__triangle {
+      max-width: 42%;
+    }
+
+    .hub-hero__inner {
+      align-items: flex-end;
+      height: 100%;
+      @include home-hero-shell;
+      padding-top: 2rem;
+      padding-bottom: 8.5rem;
+    }
+
+    .hub-hero__copy {
+      max-width: 42rem;
+    }
+
+    .hub-hero__title {
+      margin-bottom: 1rem;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+
+      br {
+        display: none;
+      }
+    }
+
+    .hub-hero__subtitle {
+      max-width: 36rem;
+      color: rgba($brand-white, 0.92);
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+    }
+
+    .hub-hero__search {
+      right: 90px;
+      bottom: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      height: auto;
+      min-height: 380px;
+
+      .hub-hero__triangle {
+        height: 86%;
+        max-width: 58%;
+      }
+
+      .hub-hero__gradient {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.35) 0%,
+          rgba(0, 0, 0, 0.2) 45%,
+          rgba(0, 0, 0, 0.55) 100%
+        );
+      }
+
+      .hub-hero__search {
+        top: 1.35rem;
+        right: 1.35rem;
+        bottom: auto;
+        left: auto;
+        display: flex;
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+        pointer-events: auto;
+      }
+
+      .hub-hero__search-input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .hub-hero__search-submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: $brand-black;
+
+        svg {
+          display: block;
+          flex-shrink: 0;
+        }
+      }
+
+      .hub-hero__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        min-height: 380px;
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 1.75rem;
+        padding-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+        padding-right: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+      }
+
+      .hub-hero__copy {
+        flex: 0 0 auto;
+        max-width: 22rem;
+      }
+
+      .hub-hero__title {
+        margin-bottom: 0.75rem;
+        font-size: clamp(3rem, 15vw, 3.375rem);
+        line-height: 0.96;
+        letter-spacing: -0.02em;
+
+        br {
+          display: block;
+        }
+      }
+
+      .hub-hero__subtitle {
+        font-size: clamp(1rem, 4.2vw, 1.1875rem);
+        line-height: 1.45;
+        max-width: 20rem;
+      }
+    }
+  }
+
+  // Shorter photo hero on hub listing pages (Events, Talks, …)
+  &--photo.hub-hero--compact {
+    height: 280px;
+    min-height: 280px;
+
+    .hub-hero__inner {
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      max-width: $layout-max-width;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1.25rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+      box-sizing: border-box;
+    }
+
+    .hub-hero__title {
+      margin-bottom: 0.65rem;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.08;
+      text-transform: uppercase;
+    }
+
+    .hub-hero__subtitle {
+      font-size: clamp(0.8125rem, 1.4vw, 0.9375rem);
+      line-height: 1.5;
+    }
+
+    .hub-hero__triangle {
+      max-width: 34%;
+    }
+
+    .hub-hero__search {
+      top: 50%;
+      right: clamp(1rem, 4vw, 90px);
+      bottom: auto;
+      transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 900px) {
+      min-height: 220px;
+
+      .hub-hero__inner {
+        align-items: center;
+        justify-content: center;
+        min-height: 220px;
+        padding-top: 1.25rem;
+        padding-bottom: 1.5rem;
+        padding-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+        padding-right: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+      }
+
+      .hub-hero__title {
+        font-size: clamp(2rem, 10vw, 2.75rem);
+      }
+
+      .hub-hero__subtitle {
+        font-size: clamp(0.8125rem, 3.5vw, 0.9375rem);
+        max-width: none;
+      }
+
+      .hub-hero__triangle {
+        max-width: 42%;
+      }
+
+      .hub-hero__search {
+        top: 1rem;
+        transform: none;
+      }
+    }
+  }
+}

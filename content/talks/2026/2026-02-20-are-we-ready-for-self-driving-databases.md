@@ -26,6 +26,4 @@ youtube_id: yr4PAWefEQw
 images:
 - talks/2026/2026-02-20-are-we-ready-for-self-driving-databases.png
 ---
-## Abstract
-
 Peter Zaitsev asks the fundamental question: are we actually ready for self-driving databases? Drawing on decades of experience with MySQL and open source databases, he examines what autonomous database operations look like in practice today versus the aspirational vision — and what it will take to get there.

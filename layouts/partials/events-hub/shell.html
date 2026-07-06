@@ -1,0 +1,20 @@
+{{/*
+  Shared events hub page shell — hero, sidebar, footer.
+  Used by /events/ hub and taxonomy filter pages.
+*/}}
+<div class="hub-page events-learning events-hub">
+  {{ partial "events-hub/hero.html" . }}
+
+  <div class="events-learning__layout">
+    {{ partial "hub/sidebar.html" . }}
+
+    <div class="events-learning__main">
+      {{ if eq .variant "filtered" }}
+        {{ partial "events-hub/back-tab.html" . }}
+      {{ end }}
+      {{ partial "events-hub/list.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ partial "hub/filters.js.html" . }}

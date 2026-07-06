@@ -1,0 +1,99 @@
+{{ $card := . }}
+{{ $imageTitle := $card.image_title | default $card.title }}
+{{ $cardID := printf "kb-card-%s" ($imageTitle | anchorize) }}
+
+<article class="kb-contrib-card" aria-labelledby="{{ $cardID }}">
+  {{ with $card.image }}
+    {{ with resources.Get . }}
+      <div class="kb-contrib-card__media">
+        <img
+          class="kb-contrib-card__img"
+          src="{{ (.Fill "780x524 q85 jpg").RelPermalink }}"
+          alt=""
+          width="780"
+          height="524"
+          loading="lazy"
+          decoding="async"
+        >
+        <div class="kb-contrib-card__media-gradient" aria-hidden="true"></div>
+        {{ with $imageTitle }}
+        <p class="kb-contrib-card__media-title" id="{{ $cardID }}">{{ . }}</p>
+        {{ end }}
+        <svg
+          class="kb-contrib-card__triangle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="84"
+          height="145"
+          viewBox="0 0 84 145"
+          fill="none"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path d="M84 145L0 0L84 0L84 145Z" fill="#282727"/>
+        </svg>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <div class="kb-contrib-card__body">
+    <div class="kb-contrib-card__content">
+      <div class="kb-contrib-card__text">{{ $card.text | markdownify }}</div>
+
+      {{ if $card.social }}
+        <ul class="kb-contrib-card__social">
+          {{ range $card.social }}
+            <li>
+              <a
+                class="kb-contrib-card__social-link"
+                href="{{ .url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="{{ .label }}"
+              >
+                {{ with resources.Get .icon }}
+                  <img
+                    class="kb-contrib-card__social-icon"
+                    src="{{ .RelPermalink }}"
+                    alt=""
+                    width="22"
+                    height="22"
+                    decoding="async"
+                  >
+                {{ end }}
+                <span>{{ .label }}</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ else }}
+        {{ if $card.badges }}
+          <div class="kb-contrib-card__badges">
+            {{ range $card.badges }}
+              <span class="kb-contrib-card__badge">{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ $links := $card.links | default slice }}
+        {{ if and (not $links) $card.url $card.cta }}
+          {{ $links = slice (dict "url" $card.url "cta" $card.cta) }}
+        {{ end }}
+        {{ with $links }}
+        <div class="kb-contrib-card__links">
+          {{ range . }}
+          <a
+            class="kb-contrib-card__link"
+            href="{{ if strings.HasPrefix .url "http" }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"
+            {{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}
+          >
+            {{ .cta }}
+            <span class="kb-contrib-card__link-arrow" aria-hidden="true"></span>
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="kb-contrib-card__bar" aria-hidden="true"></div>
+  </div>
+</article>

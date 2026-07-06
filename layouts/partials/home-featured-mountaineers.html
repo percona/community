@@ -1,0 +1,18 @@
+{{ $candidates := where .Site.RegularPages "Section" "contributors" }}
+{{ $candidates = where $candidates "Params.posts_count" "gt" 0 }}
+{{ $candidates = where $candidates "Params.talks_count" "gt" 0 }}
+{{ $candidates = where $candidates "Params.events_count" "gt" 0 }}
+{{ $candidates = where $candidates "Params.images" "ne" nil }}
+{{ $candidates = sort $candidates "Params.posts_count" "desc" }}
+{{ $featured := first 3 $candidates }}
+
+{{ if gt (len $featured) 0 }}
+<section class="featured-mountaineers" aria-labelledby="featured-mountaineers-heading">
+  <h2 class="sr-only" id="featured-mountaineers-heading">Featured Mountaineers</h2>
+  <div class="featured-mountaineers__grid">
+    {{ range $featured }}
+      {{ partial "home-featured-mountaineer-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

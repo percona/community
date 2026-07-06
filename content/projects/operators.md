@@ -1,9 +1,14 @@
 ---
 title: "Percona Kubernetes Operators"
 description: "If you are using Kubernetes, you might have wondered how to best deal with database clusters. This is done by controllers in Kubernetes configuration files - our Kubernetes Operators allow you to easily manage complex deployments by extending the Kubernetes API with custom resources."
+tech: kubernetes
+hero_title_before: "Percona"
+hero_title_accent: "Kubernetes"
+hero_title_after: "Operators"
+hero_description: "Automate MySQL, MongoDB, and PostgreSQL on Kubernetes. Give feedback, report bugs, contribute code, or share what you learned."
 blog_tags: ["Kubernetes","Cloud","Operators"]
-hero_description: "How can you help?"
-hero_title: "Percona Kubernetes Operators"
+event_tags: ["Kubernetes", "Cloud Native", "Cloud"]
+talk_tags: ["Kubernetes", "Cloud", "CloudNative", "Cloud Native", "Operators"]
 ---
 
 ## Download, Try, Give Feedback, & Enhance

@@ -26,8 +26,6 @@ video: ''
 images:
 - talks/2025/2025-10-24-lessons-from-two-decades-of-hacking-the-proprietary-value-into-open-source-databases.png
 ---
-## Abstract
-
 Two decades of working with different open source databases have taught us a lot about what it takes to make them enterprise-ready while keeping them truly open. Features like high availability, Transparent Data Encryption (TDE) and OpenID Connect (OIDC) aren’t just “nice to have” — they’re what determine whether a database can succeed in the Enterprise environment.
 
 In this talk, we’ll explore how those lessons apply to PostgreSQL. We’ll discuss where Postgres follows familiar patterns from other open source databases, where it stands apart, and what that means for adoption in large organizations. We’ll also dive into the current state of making PostgreSQL fit for enterprise workloads, highlight ongoing gaps, and share ideas for what the community could focus on to ensure PostgreSQL’s continued growth and success.

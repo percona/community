@@ -1,0 +1,24 @@
+{{ $page := . }}
+{{ $title := $page.Title }}
+{{ $eventDate := $page.Params.EventDate | default ($page.Date.Format "2 January 2006") }}
+{{ $coverImg := partial "page-cover-resource.html" $page }}
+
+<a class="home-event-card" href="{{ $page.RelPermalink }}">
+  <div class="home-event-card__media">
+    {{ with $coverImg }}
+      <img
+        class="home-event-card__image"
+        src="{{ (.Fill "1200x630 Center jpg q85").RelPermalink }}"
+        alt=""
+        width="1200"
+        height="630"
+        loading="lazy"
+        decoding="async"
+      >
+    {{ end }}
+    <div class="home-event-card__overlay">
+      <h3 class="home-event-card__title">{{ $title }}</h3>
+      <p class="home-event-card__date">{{ $eventDate }}</p>
+    </div>
+  </div>
+</a>

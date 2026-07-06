@@ -25,8 +25,6 @@ video: ''
 images:
 - talks/2026/2026-06-22-commit-to-your-career-getting-started-in-open-source.png
 ---
-## Abstract
-
 A practical session for students starting out in tech. Evgeniy Patlan walked through where to find a first open source project, what counts as a useful contribution, and how that work reads on a resume when you are beginning your career. He drew on his own path from build engineering to leading a release team while staying active in Chernihiv — local conferences, course updates with the university, and student events.
 
 ![Commit to Your Career talk card](/blog/2026/06/ProsvITa-2026-card-commit.jpg)

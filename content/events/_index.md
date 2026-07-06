@@ -1,5 +1,5 @@
 ---
 title: "Events"
-description: "Events organized by the Percona Community or other open source database communities"
-layout: category
+description: "Where open source database people meet, learn, and build together."
+layout: hub
 ---

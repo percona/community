@@ -1,0 +1,77 @@
+{{ $footer := site.Data.homefooter }}
+
+<footer class="home-footer" aria-labelledby="home-footer-heading">
+  <p class="aria-only" id="home-footer-heading">Site footer</p>
+  <div class="home-footer__inner">
+    <div class="home-footer__nav">
+      {{ range $footer.columns }}
+        <div class="home-footer__column">
+          <h3 class="home-footer__column-title">{{ .title }}</h3>
+          <ul class="home-footer__links">
+            {{ range .links }}
+              <li>
+                <a
+                  href="{{ .url }}"
+                  {{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}
+                >{{ .name }}</a>
+              </li>
+            {{ end }}
+            {{ with .categories }}
+              {{ range . }}
+                {{ $categoryName := . }}
+                {{ range site.Taxonomies.categories.ByCount }}
+                  {{ if eq .Page.Title $categoryName }}
+                    <li>
+                      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                    </li>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+
+    <div class="home-footer__brand">
+      <div class="home-footer__logo">
+        {{ partial "site-logo.html" (dict "height" 45 "invert" true "class" "home-footer__logo-link") }}
+      </div>
+
+      {{ with $footer.description }}
+        <p class="home-footer__description">{{ . }}</p>
+      {{ end }}
+
+      <div class="home-footer__actions">
+        {{ with $footer.slack }}
+          <a
+            class="home-footer__slack"
+            href="{{ .url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >{{ .label }}</a>
+        {{ end }}
+
+        {{ with $footer.connect }}
+          <a
+            class="home-footer__cta"
+            href="{{ .url }}"
+            {{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}
+          >{{ .label }}</a>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ with $footer.copyright }}
+      <p class="home-footer__copyright">{{ . }}</p>
+    {{ end }}
+
+    {{ with .File }}
+      <div class="home-footer__edit">
+        <a href="{{ printf "https://github.com/percona/community/edit/main/content/%s" .Path | safeURL }}" target="_blank" rel="noreferrer noopener">
+          ✎ Edit this page on GitHub
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</footer>

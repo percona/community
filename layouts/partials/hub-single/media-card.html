@@ -1,0 +1,157 @@
+{{/*
+  hs-media-card — image + minimal text card (blog, talk grids).
+*/}}
+{{ $page := . }}
+{{ $type := "" }}
+{{ $hideSpeakers := false }}
+
+{{ if reflect.IsMap . }}
+  {{ $page = .page }}
+  {{ $type = .type | default "" }}
+  {{ $hideSpeakers = .hideSpeakers | default false }}
+{{ end }}
+
+{{ if not $type }}
+  {{ if eq $page.Section "blog" }}
+    {{ $type = "blog" }}
+  {{ else if eq $page.Section "talks" }}
+    {{ $type = "talk" }}
+  {{ end }}
+{{ end }}
+
+{{ $title := $page.Title }}
+{{ $coverImg := partial "page-cover-resource.html" $page }}
+{{ $hasCustomImage := false }}
+{{ with index $page.Params.images 0 }}
+  {{ with resources.Get (strings.TrimPrefix "/" .) }}
+    {{ $hasCustomImage = true }}
+  {{ end }}
+{{ end }}
+
+{{ $displayDate := "" }}
+{{ $eventName := "" }}
+{{ $location := "" }}
+{{ $promo := false }}
+
+{{ if eq $type "blog" }}
+  {{ $publishDate := $page.PublishDate }}
+  {{ $currentYear := now.Format "2006" }}
+  {{ $displayDate = cond (eq ($publishDate.Format "2006") $currentYear) ($publishDate.Format "January 2") ($publishDate.Format "January 2, 2006") }}
+{{ else if eq $type "talk" }}
+  {{ if $page.Params.presentation_date }}
+    {{ $displayDate = $page.Params.presentation_date | time.Format "2 Jan 2006" }}
+  {{ else if $page.Params.event_date_start }}
+    {{ $displayDate = $page.Params.event_date_start | time.Format "2 Jan 2006" }}
+  {{ end }}
+  {{ $eventName = $page.Params.event | default "" }}
+  {{ $location = $page.Params.event_location | default "" }}
+  {{ $promo = and $hasCustomImage (or $displayDate $eventName) }}
+{{ else if eq $type "podcast" }}
+  {{ $publishDate := $page.PublishDate }}
+  {{ $currentYear := now.Format "2006" }}
+  {{ $displayDate = cond (eq ($publishDate.Format "2006") $currentYear) ($publishDate.Format "January 2") ($publishDate.Format "January 2, 2006") }}
+{{ end }}
+
+{{ $speakers := $page.Params.speakers | default slice }}
+{{ $showSpeakers := and (or (eq $type "talk") (eq $type "podcast")) (not $hideSpeakers) (gt (len $speakers) 0) }}
+{{ $showTitle := or (not $promo) (ne $type "talk") }}
+{{ $showMeta := or (eq $type "blog") (eq $type "podcast") (and (eq $type "talk") (or $eventName $displayDate $location)) }}
+
+<a
+  class="hs-media-card hs-media-card--{{ $type }}{{ if $promo }} hs-media-card--promo{{ end }}"
+  href="{{ $page.RelPermalink }}"
+>
+  <div class="hs-media-card__media">
+    {{ if $coverImg }}
+      <img
+        class="hs-media-card__image"
+        src="{{ ($coverImg.Fill "1200x630 Center jpg q85").RelPermalink }}"
+        alt=""
+        width="1200"
+        height="630"
+        loading="lazy"
+        decoding="async"
+      >
+      {{ if and (eq $type "talk") $promo $displayDate }}
+        <span class="hs-media-card__date-tag">{{ $displayDate }}</span>
+      {{ end }}
+    {{ else if and (eq $type "podcast") $page.Params.youtube_id }}
+      <img
+        class="hs-media-card__image"
+        src="https://img.youtube.com/vi/{{ $page.Params.youtube_id }}/hqdefault.jpg"
+        alt=""
+        width="1200"
+        height="630"
+        loading="lazy"
+        decoding="async"
+      >
+    {{ else }}
+      <div class="hs-media-card__noimg" aria-hidden="true"></div>
+    {{ end }}
+  </div>
+
+  <div class="hs-media-card__body">
+    {{ if $showTitle }}
+      <p class="hs-media-card__title">{{ $title }}</p>
+    {{ else }}
+      <span class="sr-only">{{ $title }}</span>
+    {{ end }}
+
+    {{ if or $showMeta $showSpeakers }}
+      <div class="hs-media-card__footer">
+        {{ if $showMeta }}
+          <div class="hs-media-card__meta">
+            {{ if or (eq $type "blog") (eq $type "podcast") }}
+              <p class="hs-media-card__date">{{ $displayDate }}</p>
+            {{ else if eq $type "talk" }}
+              {{ if $promo }}
+                {{ with $eventName }}
+                  <p class="hs-media-card__event">{{ . }}</p>
+                {{ end }}
+              {{ else }}
+                {{ with $eventName }}
+                  <p class="hs-media-card__event">{{ . }}</p>
+                {{ end }}
+                {{ with $displayDate }}
+                  <p class="hs-media-card__date">{{ . }}</p>
+                {{ end }}
+                {{ with $location }}
+                  <p class="hs-media-card__location">{{ . }}</p>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ if $showSpeakers }}
+          <div class="hs-media-card__speakers">
+            {{ range first 2 $speakers }}
+              {{ with site.GetPage (printf "/contributors/%s" .) }}
+                <span class="hs-media-card__speaker">
+                  {{ with index .Params.images 0 }}
+                    {{ with resources.Get (strings.TrimPrefix "/" .) }}
+                      <img
+                        class="hs-media-card__avatar"
+                        src="{{ (.Fill "56x56 Center jpg q85").RelPermalink }}"
+                        alt=""
+                        width="24"
+                        height="24"
+                        loading="lazy"
+                        decoding="async"
+                      >
+                    {{ else }}
+                      <span class="hs-media-card__avatar hs-media-card__avatar--placeholder" aria-hidden="true"></span>
+                    {{ end }}
+                  {{ else }}
+                    <span class="hs-media-card__avatar hs-media-card__avatar--placeholder" aria-hidden="true"></span>
+                  {{ end }}
+                  <span class="hs-media-card__speaker-name">{{ .Params.fullname }}</span>
+                </span>
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</a>

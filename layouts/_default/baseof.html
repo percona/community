@@ -43,9 +43,14 @@
 
     {{- .Page.Scratch.Set "css" "" -}}
     {{- block "css" . -}}{{- end -}}
-    {{- $cssPath := printf "%s%s" .RelPermalink "page.css" -}}
-    {{- $css := (.Page.Scratch.Get "css" | resources.FromString $cssPath | css.Sass | resources.Minify) -}}
+    {{- $cssContent := .Page.Scratch.Get "css" -}}
+    {{- if hugo.IsDevelopment -}}
+    <style>{{ $cssContent | safeCSS }}</style>
+    {{- else -}}
+    {{- $cssPath := printf "%s%s.css" .RelPermalink (md5 $cssContent) -}}
+    {{- $css := $cssContent | resources.FromString $cssPath | resources.Minify -}}
     <style>{{ $css.Content | safeCSS }}</style>
+    {{- end -}}
 
     {{ block "head" . }}{{ end }}
 
@@ -67,15 +72,16 @@
 {{ end }}
 
     <meta name="color-scheme" content="dark light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='https://cdn-prod.securiti.ai/consent/cookie-consent.css' />
   </head>
-  <body>
+  <body{{ if .IsHome }} class="is-home"{{ else if or (eq .Section "events-learning") (and (eq .Section "events") (eq .Layout "hub")) (in (slice "events_year" "events_category" "events_tag") .Type) (and (eq .Section "events") (eq .Kind "page")) (and (eq .Section "contributors") (eq .Layout "hub")) (and (in (slice "contributor_type" "contributor_tag" "contributor_year") .Type) (not (and (eq .Type "contributor_type") (eq .Data.Term "author")))) (and (eq .Section "contributors") (eq .Kind "page")) (and (eq .Section "talks") (eq .Layout "hub")) (in (slice "talk_year" "talk_tags") .Type) (and (eq .Section "talks") (eq .Kind "page")) (and (eq .Section "videos") (eq .Layout "hub")) }} class="is-events-learning"{{ else if eq .Section "knowledge-base" }} class="is-knowledge-base"{{ else if or (eq .Section "blog") (eq .Type "categories") (eq .Type "tags") (and (eq .Type "contributor_type") (eq .Data.Term "author")) }} class="is-blog"{{ end }}>
     {{ partial "banners-top.html" . }}
     <header>
       <div class="page-header">
-        <div class="logo"><a href="/">
-          <img src="data:image/svg+xml;base64,{{ (resources.Get "percona-logo.svg").Content | base64Encode}}" alt="Percona" />
-        </a></div>
+        <div class="logo">{{ partial "site-logo.html" (dict "height" 45) }}</div>
         <input type="checkbox" id="show-mobile-menu" value="1" aria-hidden="true" />
         <div class="mobile-toggle" aria-controls="mobile-menu" aria-label="Open navigation" role="button">
           <label for="show-mobile-menu" id="hamburger">
@@ -84,40 +90,95 @@
             <span class="hamburger-bar"></span>
           </label>
         </div>
-        <div class="mobile-menu" id="mobile-menu" aria-labelledby="navigation-header" role="dialog" aria-modal="false" aria-hidden="true">
-          <nav>
-            <ul class="menu__list">
-              {{ $currentPage := . }}
-              {{ range .Site.Menus.main }}
-                {{ if eq .Identifier "search" }}{{ continue }}{{ end }}
-                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                  <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+        <nav class="page-header__nav" aria-label="Main navigation">
+          <ul class="menu__list menu__list--primary">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+              {{ if or (eq .Identifier "search") (.Params.button) (.Params.secondary) (.Params.hidden) (.Parent) }}{{ continue }}{{ end }}
+              <li class="menu__item{{ if .HasChildren }} menu__item--has-children{{ end }}{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+                <a href="{{ .URL }}" data-text="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                  <span>{{ .Name }}</span>
+                </a>
+                {{ if .HasChildren }}
+                <ul class="menu__dropdown">
+                  {{ range .Children }}
+                  <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}" data-text="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                      <span>{{ .Name }}</span>
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+        <div class="page-header__actions">
+          {{ range .Site.Menus.main }}
+            {{ if and .Params.secondary (not .Params.hidden) }}
+              <a class="page-header__link" href="{{ .URL }}" data-text="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+          {{ end }}
+          {{ partial "community-search-header.html" . }}
+          {{ range .Site.Menus.main }}
+            {{ if .Params.button }}
+              <a class="page-header__cta" href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-labelledby="navigation-header" role="dialog" aria-modal="false" aria-hidden="true">
+        <nav aria-label="Mobile navigation">
+          <ul class="menu__list menu__list--mobile">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+              {{ if or (eq .Identifier "search") (.Params.hidden) (.Parent) (and .Params.secondary (not .Params.button)) }}{{ continue }}{{ end }}
+              {{ if .Params.button }}
+              <li class="menu__item menu__item--cta">
+                <a href="{{ .URL }}" class="menu__cta" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                  {{ .Pre }}
+                  <span>{{ .Name }}</span>
+                </a>
+              </li>
+              {{ else if .HasChildren }}
+              <li class="menu__item menu__item--has-children{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
+                <div class="menu__accordion-header">
+                  <a href="{{ .URL }}" class="menu__top-link" data-text="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
                     {{ .Pre }}
                     <span>{{ .Name }}</span>
                   </a>
-                  {{ if .HasChildren }}
-                  <!-- <span class="drop-icon" for="{{ .Name }}">▾</span> -->
-                  <ul class="submenu__list sub-menu">
-                      {{ range .Children }}
-                      <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                        <a href="{{ .URL }}">
-                          <span>{{ .Name }}</span>
-                        </a>
-                      </li>
-                      {{ end }}
-                  </ul>
-                 {{ end }} 
-                </li>
-              {{ end }}
-              <li class="percona-ca">
-                  <a href="https://percona.com" target="_blank" >
-                    <span>Visit Percona</span>
-                  </a>
+                  <button
+                    type="button"
+                    class="menu__toggle"
+                    aria-expanded="{{ if $currentPage.HasMenuCurrent "main" . }}true{{ else }}false{{ end }}"
+                    aria-controls="mobile-submenu-{{ .Identifier }}"
+                    aria-label="Toggle {{ .Name }} submenu"
+                  >
+                    <span class="menu__chevron" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <ul class="menu__dropdown menu__dropdown--mobile" id="mobile-submenu-{{ .Identifier }}"{{ if not ($currentPage.HasMenuCurrent "main" .) }} hidden{{ end }}>
+                  {{ range .Children }}
+                  <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL }}" class="menu__top-link menu__top-link--sub" data-text="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                      <span>{{ .Name }}</span>
+                    </a>
+                  </li>
+                  {{ end }}
+                </ul>
               </li>
-            </ul>
-          </nav>
-        </div>
-        {{ partial "community-search-header.html" . }}
+              {{ else }}
+              <li class="menu__item{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+                <a href="{{ .URL }}" class="menu__top-link" data-text="{{ .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>
+                  {{ .Pre }}
+                  <span>{{ .Name }}</span>
+                </a>
+              </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -130,47 +191,11 @@
     </main>
 
 
-    {{ block "edit" . }}
-        {{ with .File }}
-          <div class="edit-on-github">
-            <div class="container">
-              <a href="{{ printf "https://github.com/percona/community/edit/main/content/%s" .Path | safeURL }}" target="_blank" rel="noreferrer noopener">
-                ✎ Edit this page on GitHub
-              </a>
-            </div>
-          </div>
-        {{ end }}
-    {{ end }}
-
-    <footer class="page">
-      <p class="aria-only" id="footer-heading" aria-hidden="false">Footer</p>
-      <div class="page-footer">
-        <nav class="footer">
-          <div class="abc">
-
-            <ul>
-              {{ range .Site.Menus.footer }}
-              <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                <a href="{{ .URL }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel=" noreferrer"{{ end }}>
-                  {{ .Pre }}
-                  <span>{{ .Name }}</span>
-                </a>
-              </li>
-              {{ end }}
-              <li><a class="cmp-revoke-consent" style="padding-left: 0.75rem!important; padding-right: 0.75rem!important;">Revoke Consent</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div>
-
-        {{ with .Site.Copyright | default .Site.Title }}<aside> {{ . | safeHTML }} </aside>{{ end }}
-      </div>
-    </footer>
+    {{ partial "home-footer.html" . }}
 
     {{ $js := resources.Get "js/aria.js" }}
     {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-    <script async type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+    <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
     <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer. -->
     <script async>
     (function () {

@@ -1,29 +1,44 @@
+{{ define "head" }}
+{{ end }}
+
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
-  {{- if in .Content "<pre class=\"chroma\">" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
-  {{ end }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/hub-single.scss") | safeCSS) -}}
 {{- end }}
 
 {{ define "mainwrapper" }}
 
 <div class="home">
-  {{ .Content }}
+  {{ partial "home-hero.html" . }}
+  {{ partial "home-upcoming-events.html" . }}
+  {{ partial "home-latest-cards.html" (dict
+    "eyebrow" "Knowledge Base"
+    "title" "Latest"
+    "accent" "Articles"
+    "section" "blog"
+    "cardPartial" "hub-single/blog-card.html"
+    "limit" 3
+    "viewAllPage" (site.GetPage "/blog")
+    "viewAllLabel" "View all articles"
+    "headingId" "home-blog-heading"
+  ) }}
+  {{ partial "home-latest-cards.html" (dict
+    "eyebrow" "Events & Learning"
+    "title" "Latest"
+    "accent" "Talks"
+    "section" "talks"
+    "cardPartial" "hub-single/talk-card.html"
+    "limit" 3
+    "viewAllPage" (site.GetPage "/talks")
+    "viewAllLabel" "View all talks"
+    "headingId" "home-talks-heading"
+  ) }}
+  {{/* v1-hidden: Join the Ascent block — see docs/v1-hidden-items.md */}}
+  {{/* partial "home-ascent-cta.html" . */}}
 
-  <div class="block">
-    <div class="block__content">
-
-    {{ partial "home4events.html" . }}
-
-    </div>  
-  </div>
-
-  <div class="block blue">
-    <div class="block__content"> 
-    {{ partial "home4posts.html" . }}
-    </div>
+  <div class="home-newsletter">
+    {{ partial "events-learning/newsletter-figma.html" . }}
   </div>
 </div>
 {{ end }}
-

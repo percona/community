@@ -27,8 +27,6 @@ video: ''
 images:
 - talks/2026/2026-01-31-postgresql-and-mysql-two-databases-three-perspectives.png
 ---
-## Abstract
-
 In this session, four seasoned database administrators with sound knowledge of both PostgreSQL and MySQL present an unbiased comparison of the two technologies. Attendees will learn about the architectural and DX differences between the world's two most popular databases.
 
 Pep Pla, with his peculiar sense of humour, will open the session with a deep dive into the MVCC architectures between the two. The audience will learn why we need MVCC. Postgres and MySQL take very different approaches to implementation: Postgres relies on row versioning and vacuuming dead tuples, while MySQL does in-place changes and tracks versions with the undo log.

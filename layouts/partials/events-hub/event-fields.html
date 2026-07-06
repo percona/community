@@ -1,0 +1,27 @@
+{{/*
+  Shared event card fields.
+
+  Params:
+    page — Hugo event page
+  Returns dict: title, date, location
+*/}}
+{{ $page := . }}
+{{ $title := $page.Title }}
+{{ $date := $page.Params.EventDate | default $page.Params.event_date | default ($page.Date.Format "January 2, 2006") }}
+{{ $location := $page.Params.EventLocation | default $page.Params.event_location | default "" }}
+
+{{ if not $location }}
+  {{ with $page.Params.events_tag }}
+    {{ if in . "Online" }}
+      {{ $location = "Online" }}
+    {{ else if in . "In-Person" }}
+      {{ $location = "In-Person" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if not $location }}
+  {{ $location = "Online" }}
+{{ end }}
+
+{{ return (dict "title" $title "date" $date "location" $location) }}

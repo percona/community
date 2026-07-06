@@ -1,0 +1,45 @@
+{{/*
+  Share preview image URL for Open Graph and Twitter cards.
+
+  Accepts a Page, or dict with "page".
+  Priority:
+    1. Params.images[0]
+    2. Params.youtube_id (YouTube thumbnail)
+    3. Page bundle resource (*feature*, *cover*, *thumbnail*)
+    4. Site default via page-cover-resource.html (hub/home/cover.jpg)
+*/}}
+{{- $page := . -}}
+{{- if reflect.IsMap . -}}
+  {{- with .page -}}{{- $page = . -}}{{- end -}}
+{{- end -}}
+
+{{- $url := "" -}}
+
+{{- with index $page.Params.images 0 -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}
+    {{- $url = (.Resize "1200x jpg 90%").RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $url -}}
+  {{- with $page.Params.youtube_id -}}
+    {{- $url = printf "https://img.youtube.com/vi/%s/hqdefault.jpg" . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $url -}}
+  {{- $images := $page.Resources.ByType "image" -}}
+  {{- $featured := $images.GetMatch "*feature*" -}}
+  {{- if not $featured -}}{{- $featured = $images.GetMatch "{*cover*,*thumbnail*}" -}}{{- end -}}
+  {{- with $featured -}}
+    {{- $url = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $url -}}
+  {{- with partial "page-cover-resource.html" $page -}}
+    {{- $url = (.Resize "1200x jpg 90%").RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "url" $url) -}}

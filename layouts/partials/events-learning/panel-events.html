@@ -1,0 +1,130 @@
+{{ $ctx := . }}
+{{ $page := $ctx.page }}
+{{ $now := now }}
+{{ $events := $ctx.eventPages }}
+{{ $eventsPerPage := 12 }}
+{{ $eventsHub := site.GetPage "/events" }}
+
+{{ $sortedUpcoming := sort (where $events "Date" ">" $now) "Date" "asc" }}
+{{ $upcomingLinks := slice }}
+{{ range $sortedUpcoming }}
+  {{ $upcomingLinks = $upcomingLinks | append .RelPermalink }}
+{{ end }}
+
+{{ $candidates := slice }}
+{{ range $sortedUpcoming }}
+  {{ $imgs := .Params.images | default slice }}
+  {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
+    {{ $candidates = $candidates | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if eq (len $candidates) 0 }}
+  {{ $past := where $events "Date" "<=" $now }}
+  {{ range sort $past "Date" "desc" }}
+    {{ $imgs := .Params.images | default slice }}
+    {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
+      {{ $candidates = $candidates | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $featured := $candidates }}
+
+{{ $pastPool := slice }}
+{{ range sort (where $events "Date" "<=" $now) "Date" "desc" }}
+  {{ $imgs := .Params.images | default slice }}
+  {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) (not (in $upcomingLinks .RelPermalink)) }}
+    {{ $pastPool = $pastPool | append . }}
+  {{ end }}
+{{ end }}
+{{ $pastPreview := first 4 $pastPool }}
+
+{{ $eventCount := len $events }}
+{{ $totalPages := 1 }}
+{{ if gt $eventCount 0 }}
+  {{ $totalPages = int (math.Ceil (div (float $eventCount) (float $eventsPerPage))) }}
+{{ end }}
+
+<section
+  class="el-panel"
+  id="el-panel-events"
+  data-el-panel="events"
+  aria-labelledby="el-events-heading"
+>
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-events-heading">
+      Up &amp; Coming <span class="el-panel__accent">Events</span>
+    </h2>
+    {{ with $page.Params.intro }}
+      <div class="el-panel__intro">{{ . | markdownify }}</div>
+    {{ end }}
+  </header>
+
+  {{ if gt (len $featured) 0 }}
+    <div class="grid grid--2 el-events-grid">
+      {{ range $featured }}
+        <div class="grid__item">
+          {{ partial "home-event-card.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No upcoming events at the moment.</p>
+  {{ end }}
+
+  {{ with $eventsHub }}
+    <p class="el-panel__more">
+      <a class="el-panel__more-link" href="{{ .RelPermalink }}">Browse all events &rarr;</a>
+    </p>
+  {{ end }}
+
+  {{ partial "events-learning/newsletter-figma.html" . }}
+
+  <section class="el-past-events" aria-labelledby="el-past-events-heading">
+    <h2 class="el-past-events__title" id="el-past-events-heading">Past Events</h2>
+
+    {{ partial "events-learning/filters.html" $page }}
+
+    <div class="grid grid--2 el-events-grid" id="el-past-events-grid">
+      {{ if gt (len $pastPreview) 0 }}
+        {{ range $pastPreview }}
+          <div class="grid__item">
+            {{ partial "home-event-card.html" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <p class="el-panel__empty grid__item">No past events to show.</p>
+      {{ end }}
+    </div>
+
+    {{ with $eventsHub }}
+      <nav class="el-pagination" aria-label="Browse all events on the Events page">
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+
+        <span class="el-pagination__status">
+          Page 1 of {{ $totalPages }}
+        </span>
+
+        {{ if gt $totalPages 1 }}
+          <a
+            class="el-pagination__arrow"
+            href="{{ printf "%spage/2/" .RelPermalink }}"
+            rel="next"
+            aria-label="Page 2 on Events"
+          >&rsaquo;</a>
+        {{ else }}
+          <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+        {{ end }}
+      </nav>
+
+    {{ end }}
+  </section>
+</section>
+
+<script>
+  function elNavigateFilter(select) {
+    var url = select.value;
+    if (url) window.location.href = url;
+  }
+</script>

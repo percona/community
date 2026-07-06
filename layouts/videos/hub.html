@@ -1,0 +1,18 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+{{ $allTalks := where site.RegularPages "Section" "talks" }}
+{{ $videos := where (where $allTalks "Params.talk_tags" "intersect" (slice "Video")) "Params.youtube_id" "!=" nil }}
+{{ $pages := sort $videos ".Params.presentation_date" "desc" }}
+{{ $paginator := .Paginate $pages 12 }}
+
+{{ partial "videos-hub/shell.html" (dict
+  "page" .
+  "paginator" $paginator
+  "searchPages" $pages
+  "activeNav" "videos"
+) }}
+{{ end }}

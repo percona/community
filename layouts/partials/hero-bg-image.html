@@ -1,0 +1,50 @@
+{{/*
+  Hero background image — optimized WebP at build time.
+
+  Params:
+    src   — asset path (optional when page/line is set)
+    class — CSS class on the img element
+    width — max width in px for Resize (default 2560)
+    line  — hero-line variant 1–3 (fallback when no custom image)
+    page  — Hugo page; uses Params.hero_image, then hero_line or URL hash
+*/}}
+{{ $src := .src | default "" }}
+{{ $class := .class }}
+{{ $maxWidth := .width | default 2560 }}
+{{ $line := .line | default 0 }}
+
+{{ if not $src }}
+  {{ with .page }}
+    {{ $src = .Params.hero_image | default "" }}
+  {{ end }}
+{{ end }}
+
+{{ if not $line }}
+  {{ with .page }}
+    {{ if .RelPermalink }}
+      {{ $line = .Params.hero_line | default (add (mod (len .RelPermalink) 3) 1) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if and (not $src) $line }}
+  {{ $src = printf "hub/heroes/hero-line-%d-1600x300.webp" (int $line) }}
+{{ else if not $src }}
+  {{ $src = "hub/heroes/hero-line-1-1600x300.webp" }}
+{{ end }}
+
+{{ with resources.Get $src }}
+  {{ $img := . }}
+  {{ if and (gt $img.Width $maxWidth) (not (strings.Contains $src "hero-line-")) }}
+    {{ $img = .Resize (printf "%dx q85 webp" $maxWidth) }}
+  {{ end }}
+  <img
+    class="{{ $class }}"
+    src="{{ $img.RelPermalink }}"
+    alt=""
+    width="{{ $img.Width }}"
+    height="{{ $img.Height }}"
+    fetchpriority="high"
+    decoding="async"
+  >
+{{ end }}

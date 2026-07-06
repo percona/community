@@ -1,0 +1,218 @@
+@import "common/common";
+
+/* Simple content pages (contribute, etc.) — not hub singles, blog, KB, or E&L */
+
+.page-main > .text.content-page {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  text-align: left;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-family: $font-poppins;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $brand-black;
+    text-align: left;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-family: $font-poppins;
+    color: $brand-black;
+    letter-spacing: -0.01em;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  p, ul, ol, dl, blockquote {
+    font-family: $font-poppins;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: $brand-black;
+  }
+
+  p, ul, ol, figure, dl, hr {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  li + li {
+    margin-top: 0.35rem;
+  }
+
+  a {
+    color: $brand-purple;
+    text-decoration-color: rgba($brand-purple, 0.45);
+
+    &:hover {
+      color: darken($brand-purple, 8%);
+      text-decoration-color: darken($brand-purple, 8%);
+    }
+  }
+
+  .body img,
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .form-section {
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+
+.page-main:has(> .text.content-page) {
+  max-width: $layout-max-width;
+  padding-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+  padding-right: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+  box-sizing: border-box;
+}
+
+.content-page-shell {
+  max-width: $layout-max-width;
+  margin: 0 auto;
+  padding: 0 clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 3rem;
+  box-sizing: border-box;
+
+  p, ul, ol, li {
+    font-family: $font-poppins;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: $brand-black;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  a:where(:not(.event-card):not(.resp-sharing-button__link):not(.el-sidebar__link):not(.el-back-tab):not(.hub-single__back):not(.project-page__back):not([class*="-btn"]):not([class*="__submit"]):not([class*="__pill"]):not([class*="__back"])) {
+    color: $brand-purple;
+    font-weight: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba($brand-purple, 0.45);
+    text-underline-offset: 2px;
+    transition: color $transition-length ease-out, text-decoration-color $transition-length ease-out;
+
+    &:hover,
+    &:visited:hover {
+      color: darken($brand-purple, 8%);
+      text-decoration-color: darken($brand-purple, 8%);
+    }
+
+    &:visited {
+      color: $brand-purple;
+    }
+  }
+
+  > .contentblock:first-child {
+    padding-top: 3rem;
+  }
+
+  .contentblock {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content-band--cta {
+    margin-left: calc(-1 * clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}));
+    margin-right: calc(-1 * clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}));
+    margin-bottom: 0;
+  }
+
+  > .sharing {
+    margin-top: 2rem;
+  }
+}
+
+.archive-page__intro.content-page-shell {
+  padding-bottom: 0;
+}
+
+.newsletter-page {
+  &__main {
+    max-width: $layout-max-width;
+    margin: 0 auto;
+    padding: 3rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 4.5rem;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    max-width: 48rem;
+    margin: 0 auto;
+    font-family: $font-poppins;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: $brand-black;
+    text-align: left;
+
+    > p:first-child {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      color: $paragraph-grey;
+    }
+  }
+
+  .form-section {
+    margin-top: 0;
+  }
+}
+
+.topics-page {
+  &__main {
+    max-width: $layout-max-width;
+    margin: 0 auto;
+    padding: 3rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 0;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    .contentblock {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+    }
+
+    h3 {
+      font-family: $font-poppins;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: $brand-black;
+      margin: 0 0 0.75rem;
+    }
+
+    ul {
+      margin: 0 0 1.5rem;
+      padding-left: 1.25rem;
+      font-family: $font-poppins;
+      line-height: 1.65;
+    }
+  }
+
+  .content-band--cta {
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+}

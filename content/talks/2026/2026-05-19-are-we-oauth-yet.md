@@ -22,8 +22,6 @@ video: ''
 images:
 - talks/2026/2026-05-19-are-we-oauth-yet.png
 ---
-## Abstract
-
 OAuth 2.0 support landed in PostgreSQL 18, but support in core PostgreSQL alone is not enough. To be useful to end users there needs to be support in the broader ecosystem: OAuth validator plugins, third-party database clients, CLI tools, database drivers, etc.
 
 This talk gives an overview of the state of OAuth in PostgreSQL and the wider ecosystem. I will share my experiences with adding OAuth support to third-party code and with writing an OAuth validator, and share the pain points I encountered and what can be improved in core PostgreSQL including some improvements already in the pipeline. Finally I will explain how you can help out with making OAuth support in the PostgreSQL world a reality.

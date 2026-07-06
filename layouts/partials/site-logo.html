@@ -1,0 +1,24 @@
+{{/*
+  Site logo (SVG). Params:
+  - class: extra class on the link wrapper
+  - height: img height in px (default 45)
+  - invert: true for white logo on dark backgrounds
+*/}}
+{{ $logo := resources.Get "hub/logo/community-logo.svg" }}
+{{ $class := .class | default "" }}
+{{ $height := .height | default 45 }}
+{{ $invert := .invert | default false }}
+
+<a href="/" class="site-logo{{ with $class }} {{ . }}{{ end }}">
+  {{ with $logo }}
+    <img
+      src="{{ .RelPermalink }}"
+      alt="Percona Community"
+      width="531"
+      height="157"
+      class="site-logo__img{{ if $invert }} site-logo__img--invert{{ end }}"
+      style="height: {{ $height }}px;"
+      decoding="async"
+    >
+  {{ end }}
+</a>

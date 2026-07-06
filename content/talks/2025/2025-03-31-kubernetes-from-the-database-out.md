@@ -28,8 +28,6 @@ youtube_id: 5vqHVdJ2aCs
 images:
 - talks/2025/2025-03-31-kubernetes-from-the-database-out.png
 ---
-## Abstract
-
 Do you already know databases? Are you new to Kubernetes? Do you want to focus your Kubernetes learning on only the bits which are relevant to databases? Then this is the talk for you! Skip the usual 'why run databases on Kubernetes' discussion and dive straight into the 'how.' We'll show you precisely what you need to know to get started today.
 Using a Postgres database hosted on Kubernetes as an example, we will cover the components of Kubernetes involved in day-to-day activities - including network connectivity, storage, and the automation of restarts and upgrades.
 Join us for an overview of the few, core components among the many, many pieces of the Kubernetes ecosystem you need to learn about first, to start your Data on Kubernetes journey.

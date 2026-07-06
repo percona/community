@@ -1,0 +1,7 @@
+{{ $href := .href | default (site.GetPage "/talks").RelPermalink }}
+{{ $label := .label | default "Back to Talks Hub" }}
+
+<a class="el-back-tab" href="{{ $href }}">
+  <span class="el-back-tab__arrow" aria-hidden="true">&larr;</span>
+  {{ $label }}
+</a>

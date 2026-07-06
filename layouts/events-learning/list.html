@@ -1,0 +1,37 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+{{ $eventPages := where site.RegularPages "Section" "events" }}
+
+<div class="hub-page events-learning">
+  {{ partial "events-learning/hero.html" . }}
+
+  <div class="events-learning__layout">
+    {{ partial "events-learning/sidebar.html" . }}
+
+    <div class="events-learning__main">
+      {{ partial "events-learning/panel-events.html" (dict "page" . "eventPages" $eventPages) }}
+      {{ partial "events-learning/panel-speakers.html" . }}
+      {{ partial "events-learning/newsletter-figma.html" . }}
+      {{ partial "events-learning/panel-talks.html" . }}
+      {{ partial "events-learning/panel-videos.html" . }}
+      {{ partial "events-learning/panel-percona-live.html" . }}
+
+      {{ range (index site.Data "events-learning").nav }}
+        {{ if and (ne .id "events") (ne .id "speakers") (ne .id "talks") (ne .id "videos") (ne .id "percona-live") (not .hidden) }}
+          {{ partial "events-learning/panel-placeholder.html" (dict "id" .id "label" .label) }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ $tabJS := resources.Get "js/events-learning.js" }}
+{{ with $tabJS }}
+<script src="{{ .RelPermalink }}" defer></script>
+{{ end }}
+{{ end }}

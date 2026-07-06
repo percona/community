@@ -1,45 +1,23 @@
-{{ define "css" }}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
-{{ end }}
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/labs.scss") | safeCSS) -}}
+{{- end }}
 
 {{ define "mainwrapper" }}
-    {{ if or .Title .Content }}
+  {{ partial "hero.html" (dict "page" .) }}
 
-        {{ .Content }}
-
-        {{- $pages := .Pages -}}
-        {{- $paginator := .Paginate $pages 15 }}
-
-        <div class="contentblock branded">
-            <h2>Latest articles</h2>
-            <div class="grid grid--3">
-                {{- range $paginator.Pages -}}
-                    <div class="grid__item">
-                        {{- $excerpt := "" -}}
-                        {{- if isset .Params "excerpt" }}
-                            {{- $excerpt = .Params.excerpt -}}
-                        {{- end -}}
-                        {{- if isset .Params "images" -}}
-                            {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
-                        {{- else -}}
-                            {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
-                        {{- end -}}
-                    </div>
-                {{- end -}}
-            </div>
-            {{- if gt $paginator.TotalPages 1 -}}
-            <div class="paginator">
-                {{- if $paginator.HasPrev -}}
-                    <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-                {{- end -}}
-                {{- range $paginator.Pagers -}}
-                    <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-                {{- end -}}
-                {{- if $paginator.HasNext -}}
-                    <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-                {{- end -}}
-            </div>
-            {{- end -}}
-        </div>
+  <div class="labs-hub">
+    {{ with .Content }}
+      <div class="labs-hub__intro content-page-shell">
+        {{ . }}
+      </div>
     {{ end }}
+
+    {{ $paginator := .Paginate .Pages 15 }}
+    {{ partial "labs/articles-panel.html" (dict "paginator" $paginator "title" "Lab articles") }}
+
+    {{ partial "sharing.html" . }}
+  </div>
 {{ end }}

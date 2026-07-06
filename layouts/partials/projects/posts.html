@@ -1,0 +1,13 @@
+{{ if .Params.blog_tags }}
+  <section class="project-page__posts" aria-labelledby="project-posts-heading">
+    <h2 class="project-page__posts-heading" id="project-posts-heading">Community blog posts</h2>
+    <div class="project-page__posts-grid">
+      {{ $tags := .Params.blog_tags }}
+      {{ range first 3 (where (where $.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $tags) }}
+        <div class="project-page__posts-item">
+          {{ partial "hub-single/blog-card.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

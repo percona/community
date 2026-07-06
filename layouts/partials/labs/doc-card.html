@@ -1,0 +1,6 @@
+<a href="{{ .RelPermalink }}" class="labs-doc-card">
+  <h3 class="labs-doc-card__title">{{ .Title }}</h3>
+  {{ with .Description }}
+    <p class="labs-doc-card__desc">{{ . }}</p>
+  {{ end }}
+</a>

@@ -67,7 +67,7 @@ Here you will learn how to edit the HTML and CSS templates of the site to change
 
 - Install [Hugo engine](https://gohugo.io/getting-started/installing/)
 
-- Run the Hugo server in the source code folder of the site with the command `hugo server -D` and open a local copy of the site in your browser at localhost:1313
+- Run the Hugo server in the source code folder of the site with the command `hugo server -D --disableFastRender` and open a local copy of the site in your browser at localhost:1313
 
 - Create a separate branch for your changes.
 

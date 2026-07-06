@@ -5,6 +5,7 @@ description: FOSDEM is an awesome conference in Europe organized by the communit
 images:
 - events/fosdem-2023/1.JPG
 date: '2023-02-22'
+EventLocation: Brussels, Belgium
 layout: single
 speakers:
 - aleks_abramova

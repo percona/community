@@ -1,0 +1,7 @@
+{{ $page := . }}
+{{ $hideSpeakers := false }}
+{{ if reflect.IsMap . }}
+  {{ $page = .page }}
+  {{ $hideSpeakers = .hideSpeakers | default false }}
+{{ end }}
+{{ partial "hub-single/media-card.html" (dict "page" $page "type" "talk" "hideSpeakers" $hideSpeakers) }}

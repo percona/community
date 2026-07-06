@@ -1,0 +1,21 @@
+{{ $data := index site.Data "knowledge-base" }}
+{{ $section := $data.community_content }}
+
+<section class="kb-section kb-section--community" aria-labelledby="kb-community-content-heading">
+  <header class="kb-section__header">
+    <h2 class="kb-section__title" id="kb-community-content-heading">
+      {{ $section.title }} <span class="kb-section__accent">{{ $section.title_accent }}</span>
+    </h2>
+    {{ with $section.intro }}
+      <div class="kb-section__intro">{{ . | markdownify }}</div>
+    {{ end }}
+  </header>
+
+  <div class="kb-cards">
+    <div class="kb-cards__row">
+      {{ range $section.cards }}
+        {{ partial "knowledge-base/contribution-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>

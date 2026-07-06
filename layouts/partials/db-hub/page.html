@@ -1,0 +1,14 @@
+{{/*
+  Database hub page shell: content + community feeds.
+
+  Params:
+    page  — Hugo page (required)
+    feeds — dict passed to db-hub/community-feeds.html
+*/}}
+<div class="db-hub">
+    <div class="db-hub__body text">
+        {{ .page.Content }}
+    </div>
+
+    {{ partial "db-hub/community-feeds.html" .feeds }}
+</div>

@@ -1,0 +1,17 @@
+hero:
+  hub:
+    description: |
+      Presentations from Percona Community speakers at conferences and meetups. Browse by topic or year.
+
+  defaults:
+    talk_year: |
+      Talks from Percona Community speakers in {{ term }}.
+    talk_tags: |
+      Talks from Percona Community speakers on {{ term }}.
+
+  terms:
+    talk_tags:
+      Video: |
+        Talks with video recordings from Percona Community speakers.
+      Slides: |
+        Talks with slide decks from Percona Community speakers.

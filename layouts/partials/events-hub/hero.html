@@ -1,0 +1,33 @@
+{{ $page := .page }}
+{{ $variant := .variant | default "hub" }}
+{{ $paginator := .paginator }}
+{{ $copy := partial "events-hub/hero-copy.html" . }}
+<section class="hub-hero hub-hero--photo hub-hero--compact" aria-labelledby="el-events-hub-heading">
+  <div class="hub-hero__media" aria-hidden="true">
+    {{ partial "hero-bg-image.html" (dict "page" $page "class" "hub-hero__image" "width" 1600) }}
+    <div class="hub-hero__gradient" aria-hidden="true"></div>
+  </div>
+
+  {{ partial "hub-triangle.html" (dict
+    "path" "hub/icons/hero-triangle.svg"
+    "class" "hub-hero__triangle"
+    "width" 476
+    "height" 625
+  ) }}
+
+  <div class="hub-hero__inner">
+    <div class="hub-hero__copy">
+      <h1 class="hub-hero__title" id="el-events-hub-heading">
+        {{ if eq $variant "hub" }}
+          <span class="hub-hero__accent">Events</span> Hub
+        {{ else }}
+          Events <span class="hub-hero__accent">{{ $copy.titleAccent }}</span>
+        {{ end }}
+      </h1>
+      {{ with $copy.description }}
+        <div class="hub-hero__subtitle">{{ . | markdownify }}</div>
+      {{ end }}
+    </div>
+  </div>
+
+</section>

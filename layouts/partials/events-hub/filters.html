@@ -1,0 +1,146 @@
+{{ $data := index site.Data "events-learning" }}
+{{ $page := . }}
+{{ $activeType := "" }}
+{{ $activeTitle := "" }}
+{{ $activePermalink := "" }}
+{{ if in (slice "events_year" "events_category" "events_tag") $page.Type }}
+  {{ $activeType = $page.Type }}
+  {{ $activeTitle = $page.Title }}
+  {{ $activePermalink = $page.RelPermalink }}
+{{ end }}
+
+{{ $isTechTag := and (eq $activeType "events_tag") (in $data.filters.technology $activeTitle) }}
+{{ $isFormatTag := and (eq $activeType "events_tag") (or (eq $activeTitle "Online") (eq $activeTitle "In-Person")) }}
+{{ $isGeneralTag := and (eq $activeType "events_tag") (and (ne $activeTitle "Online") (ne $activeTitle "In-Person") (ne $activeTitle "Community") (not (in $data.filters.technology $activeTitle))) }}
+
+<div class="el-filters-bar">
+<div class="el-filters" data-el-filters>
+
+  <details class="el-filters__field">
+    <summary class="el-filters__btn{{ if $isTechTag }} is-active{{ end }}">
+      {{ if $isTechTag }}
+        <span class="el-filters__label">Technology:</span>
+        <span class="el-filters__value">{{ $activeTitle }}</span>
+      {{ else }}
+        Technology
+      {{ end }}
+      <span class="el-filters__chevron" aria-hidden="true">▾</span>
+    </summary>
+    <div class="el-filters__panel" role="listbox">
+      <ul class="el-filters__list">
+        {{ range $data.filters.technology }}
+          {{ $slug := . | urlize }}
+          {{ $termData := index site.Taxonomies.events_tag $slug }}
+          {{ if $termData }}
+            <li><a class="el-filters__option{{ if eq $termData.Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ $termData.Page.RelPermalink }}"{{ if eq $termData.Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ . }}</a></li>
+          {{ else }}
+            <li><span class="el-filters__option el-filters__option--disabled">{{ . }}</span></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+
+  <details class="el-filters__field">
+    <summary class="el-filters__btn{{ if eq $activeType "events_year" }} is-active{{ end }}">
+      {{ if eq $activeType "events_year" }}
+        <span class="el-filters__label">Year:</span>
+        <span class="el-filters__value">{{ $activeTitle }}</span>
+      {{ else }}
+        Year
+      {{ end }}
+      <span class="el-filters__chevron" aria-hidden="true">▾</span>
+    </summary>
+    <div class="el-filters__panel" role="listbox">
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_year }}
+          {{ range first 12 (sort .ByCount "Page.Title" "desc") }}
+            <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+
+  <details class="el-filters__field">
+    <summary class="el-filters__btn{{ if eq $activeType "events_category" }} is-active{{ end }}">
+      {{ if eq $activeType "events_category" }}
+        <span class="el-filters__label">Category:</span>
+        <span class="el-filters__value">{{ $activeTitle }}</span>
+      {{ else }}
+        Category
+      {{ end }}
+      <span class="el-filters__chevron" aria-hidden="true">▾</span>
+    </summary>
+    <div class="el-filters__panel" role="listbox">
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_category }}
+          {{ range sort . "Page.Title" "asc" }}
+            <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+
+  <details class="el-filters__field">
+    <summary class="el-filters__btn{{ if $isGeneralTag }} is-active{{ end }}">
+      {{ if $isGeneralTag }}
+        <span class="el-filters__label">Tags:</span>
+        <span class="el-filters__value">{{ $activeTitle }}</span>
+      {{ else }}
+        Tags
+      {{ end }}
+      <span class="el-filters__chevron" aria-hidden="true">▾</span>
+    </summary>
+    <div class="el-filters__panel" role="listbox">
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_tag }}
+          {{ range sort . "Page.Title" "asc" }}
+            {{ if and (ne .Page.Title "Online") (ne .Page.Title "In-Person") (ne .Page.Title "Community") }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+
+  <details class="el-filters__field">
+    <summary class="el-filters__btn{{ if $isFormatTag }} is-active{{ end }}">
+      {{ if $isFormatTag }}
+        <span class="el-filters__label">Format:</span>
+        <span class="el-filters__value">{{ $activeTitle }}</span>
+      {{ else }}
+        Format
+      {{ end }}
+      <span class="el-filters__chevron" aria-hidden="true">▾</span>
+    </summary>
+    <div class="el-filters__panel" role="listbox">
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_tag }}
+          {{ range sort . "Page.Title" "asc" }}
+            {{ if or (eq .Page.Title "Online") (eq .Page.Title "In-Person") }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </details>
+
+</div>
+
+  <div class="el-filters-search">
+    <label class="sr-only" for="events-hub-search">Search events</label>
+    <input
+      id="events-hub-search"
+      class="el-filters-search__input"
+      type="search"
+      placeholder="Search events..."
+      autocomplete="off"
+    >
+  </div>
+</div>
+
+<p class="el-filters-search__status" data-events-search-status aria-live="polite"></p>

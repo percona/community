@@ -1,0 +1,4 @@
+{{ $js := resources.Get "js/hub-filters.js" }}
+{{ with $js }}
+<script src="{{ .RelPermalink }}" defer></script>
+{{ end }}

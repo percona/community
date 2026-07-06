@@ -1,26 +1,128 @@
-<p>Tags: 
-{{ $len := (len .Site.Data.youtube) }}
-{{ $num := 1 }}
-{{ range $category, $list := .Site.Data.youtube }}
-{{ $s := replace $category " " "-" }}
-<a href="#{{ $s }}">{{ $category }}</a>{{ if ne $num $len }}, {{ end }}
-{{ $num = add $num 1 }}
-{{end}}
-</p>
-{{ range $category, $list := .Site.Data.youtube }}
-{{ $s := replace $category " " "-" }}
-<h2 id="{{ $s }}">{{ $category }}</h2>
-{{ range $list }}
-<div class="youtubeList__container">
-<div class="youtubeList__img">
-    <a href="https://youtu.be/{{ .youtube_id }}" class="youtube__img" target="_blank"><img width="180px" src="https://img.youtube.com/vi/{{ .youtube_id }}/hqdefault.jpg" alt="" /></a>
+{{ $data := .Site.Data.youtube }}
+
+<div class="jspag" id="yt-pag">
+  <div class="jspag__toolbar">
+    <div class="jspag__filters" id="yt-filters"></div>
+    <div class="jspag__search-wrap">
+      <svg class="jspag__search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <input class="jspag__search-input" id="yt-search" type="search" placeholder="Search…" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="jspag__grid jspag__grid--video" id="yt-grid"></div>
+
+  <div class="jspag__nav" id="yt-nav"></div>
 </div>
-<div class="youtubeList__text">
-<p class="youtubeList__title"><a href="https://youtu.be/{{ .youtube_id }}" class="" target="_blank">{{ .title }}</a></p>
-<p class="youtubeList__authors">{{ .authors }} - {{ .date }}</p>
-</div>
-</div>
-{{end}}
-{{end}}
-<div class="json" style="display: none;">{{ .Site.Data.youtube | jsonify }}</div>
-{{ .Inner }}
+
+<script>
+(function () {
+  var raw = {{ $data | jsonify | safeJS }};
+
+  var all = [];
+  for (var cat in raw) {
+    raw[cat].forEach(function(v) {
+      all.push({ youtube_id: v.youtube_id, title: v.title, date: v.date, authors: v.authors, category: cat });
+    });
+  }
+
+  var PER_PAGE = 12;
+  var currentCat = '';
+  var searchQuery = '';
+  var currentPage = 1;
+
+  var grid     = document.getElementById('yt-grid');
+  var nav      = document.getElementById('yt-nav');
+  var filtersEl = document.getElementById('yt-filters');
+  var searchEl  = document.getElementById('yt-search');
+
+  function esc(s) {
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // Build filters sorted by count desc
+  var counts = {};
+  all.forEach(function(v){ counts[v.category] = (counts[v.category]||0) + 1; });
+  var cats = Object.keys(counts).sort(function(a,b){ return counts[b] - counts[a]; });
+
+  var filterHtml = '<button class="jspag__filter is-active" data-val="">All <span class="jspag__filter-count">' + all.length + '</span></button>';
+  cats.forEach(function(cat) {
+    filterHtml += '<button class="jspag__filter" data-val="' + esc(cat) + '">' + esc(cat) + ' <span class="jspag__filter-count">' + counts[cat] + '</span></button>';
+  });
+  filtersEl.innerHTML = filterHtml;
+
+  function filtered() {
+    var q = searchQuery.toLowerCase();
+    return all.filter(function(v) {
+      var matchCat  = !currentCat || v.category === currentCat;
+      var matchText = !q || v.title.toLowerCase().indexOf(q) !== -1 || String(v.authors||'').toLowerCase().indexOf(q) !== -1;
+      return matchCat && matchText;
+    });
+  }
+
+  function render() {
+    var items = filtered();
+    var totalPages = Math.max(1, Math.ceil(items.length / PER_PAGE));
+    if (currentPage > totalPages) currentPage = 1;
+    var slice = items.slice((currentPage-1)*PER_PAGE, currentPage*PER_PAGE);
+
+    grid.innerHTML = slice.length ? slice.map(function(v) {
+      return '<a href="https://youtu.be/' + esc(v.youtube_id) + '" target="_blank" rel="noopener noreferrer" class="yt-card">' +
+        '<div class="yt-card__media">' +
+          '<img class="yt-card__img" src="https://img.youtube.com/vi/' + esc(v.youtube_id) + '/hqdefault.jpg" ' +
+               'alt="' + esc(v.title) + '" loading="lazy" width="320" height="180">' +
+          '<div class="yt-card__play">' +
+            '<svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+              '<path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C56 0 34 0 34 0S12 0 7.5 1.7a8.5 8.5 0 0 0-6 6C0 12.3 0 24 0 24s0 11.7 1.5 16.3a8.5 8.5 0 0 0 6 6C12 48 34 48 34 48s22 0 26.5-1.7a8.5 8.5 0 0 0 6-6C68 35.7 68 24 68 24s0-11.7-1.5-16.3z" fill="#fff" opacity=".85"/>' +
+              '<path d="M27 34l18-10-18-10z" fill="#333"/>' +
+            '</svg>' +
+          '</div>' +
+        '</div>' +
+        '<div class="yt-card__info">' +
+          '<p class="yt-card__title">' + esc(v.title) + '</p>' +
+          '<p class="yt-card__meta">' + esc(v.authors) + ' · ' + esc(v.date) + '</p>' +
+        '</div>' +
+      '</a>';
+    }).join('') : '<p class="jspag__empty">No videos found.</p>';
+
+    if (totalPages <= 1) { nav.innerHTML = ''; return; }
+    nav.innerHTML =
+      '<button class="jspag__arrow' + (currentPage===1?' is-disabled':'') + '" id="yt-prev">&lsaquo;</button>' +
+      '<span class="jspag__status">Page ' + currentPage + ' of ' + totalPages + '</span>' +
+      '<button class="jspag__arrow' + (currentPage===totalPages?' is-disabled':'') + '" id="yt-next">&rsaquo;</button>';
+
+    document.getElementById('yt-prev').addEventListener('click', function(){ if(currentPage>1){currentPage--;render();scrollToTop();} });
+    document.getElementById('yt-next').addEventListener('click', function(){ if(currentPage<totalPages){currentPage++;render();scrollToTop();} });
+  }
+
+  function scrollToTop() {
+    var el = document.getElementById('yt-pag');
+    if (el) el.scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  filtersEl.addEventListener('click', function(e) {
+    var btn = e.target.closest('.jspag__filter');
+    if (!btn) return;
+    filtersEl.querySelectorAll('.jspag__filter').forEach(function(b){ b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    currentCat = btn.dataset.val;
+    currentPage = 1;
+    render();
+  });
+
+  var searchTimer;
+  searchEl.addEventListener('input', function() {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function() {
+      searchQuery = searchEl.value.trim();
+      currentPage = 1;
+      render();
+    }, 200);
+  });
+
+  render();
+})();
+</script>
+{{- .Inner -}}

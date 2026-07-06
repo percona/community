@@ -5,13 +5,10 @@ layout: list
 date: Wed, 12 May 2021 8:00:00 +0000
 images:
  - events/percona-live/PL2021-OpenSearch-community-track.jpg
+hero_type: mountains
+hero_title: "Amazon OpenSearch Community Track"
+hero_description: "In 2021 Elastic Search switched their licensing to SSPL, in response AWS forked Elastic into the open source project called OpenSearch. In this Percona Live 2021 community track we learn about the project, how and why it exists, and how you can deploy OpenSearch in your environment."
+hero_line: 1
 ---
 
-{{% hero-gradient class="night" %}}
-
-# Amazon OpenSearch Community Track
-
-In 2021 Elastic Search switched their licensing to SSPL, in response AWS forked Elastic into the open source project called OpenSearch. In this Percona Live 2021 community track we learn about the project, how and why it exists, and how you can deploy OpenSearch in your environment.
-
-{{% /hero-gradient %}}
 

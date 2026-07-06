@@ -10,16 +10,11 @@ date: '2022-09-26'
 events_year: ["2022"]
 events_category: ['Community']
 events_tag: ["Online"]
+hero_type: mountains
+hero_title: "Monthly Percona Developer Meetup"
+hero_description: "This new meetup is your chance to get a behind-the-scenes view and to directly interact in-person with our engineers. Jump into the session with the Restream link from the online chat during the event and share your thoughts with the audience!"
+hero_line: 3
 ---
-{{% hero-gradient class="night" %}}
-
-# Monthly Percona Developer Meetup
-
-This new meetup is your chance to get a behind-the-scenes view and to **directly interact** in-person with our engineers. Jump into the session with the Restream link from the online chat during the event and share your thoughts with the audience!
-
-We’ll discuss development practices, tools, projects, frameworks, and many more engineering-focused topics that we are working on at Percona. It will be fantastic! 
-
-{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

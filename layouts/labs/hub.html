@@ -1,0 +1,41 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/labs.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+{{- end }}
+
+{{ define "mainwrapper" }}
+  {{ partial "hero.html" (dict "page" .) }}
+
+  <div class="labs-hub">
+    {{ with .Content }}
+      <div class="labs-hub__intro content-page-shell">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ $projectPaths := slice "labs/serverless-postgresql" "labs/terraform-provider" "labs/dbaas-creator" }}
+    <section class="el-panel labs-panel" aria-labelledby="labs-projects-heading">
+      <header class="el-panel__header">
+        <h2 class="el-panel__title" id="labs-projects-heading">Lab projects</h2>
+      </header>
+      <div class="labs-projects-grid">
+        {{ range $projectPaths }}
+          {{ with site.GetPage . }}
+            {{ partial "labs/project-card.html" . }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+
+    {{ $articles := (where site.RegularPages "File.Dir" "labs/posts/").ByDate.Reverse }}
+    {{ $paginator := .Paginate $articles 15 }}
+    {{ partial "labs/articles-panel.html" (dict "paginator" $paginator) }}
+
+    {{ partial "sharing.html" . }}
+  </div>
+{{ end }}

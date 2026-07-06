@@ -60,26 +60,83 @@ We have so much great content on Percona Live this year (as usual, I should say)
 
 The event will be live-streamed on several platforms. No registration is required. Feel free to ask your questions in chat. Follow the links now and subscribe to notifications not to miss anything!
 
-**YouTube:**
+<div class="landing-streams">
 
-* [Day 1 : June 21st](https://www.youtube.com/watch?v=JBZSWDNmO9M)
-* Day 2 : June 22nd
-  * [Part 1 Link](https://www.youtube.com/watch?v=i4Sz7R-Rs30)
-  * [Part 2 Link](https://www.youtube.com/watch?v=sXaBwHv8lf0)
-  * [Part 3 Link](https://www.youtube.com/watch?v=NHHyBbyjG20)
-  * [Part 4 Link](https://www.youtube.com/watch?v=bdaG5DvPI8k)
-* [Day 3 : June 23d](https://www.youtube.com/watch?v=RXexzG_L47A)
+<div class="landing-streams__grid">
 
-**LinkedIn:**
+<div class="landing-streams__card">
+<h3 class="landing-streams__card-title">YouTube</h3>
 
-* [Day 1 : June 21st](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
-* Day 2 : June 22nd
-  * [Part 1 Link](https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/)
-  * [Part 2 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945357069013188608/)
-  * [Part 3 Link](https://www.linkedin.com/video/event/urn:li:ugcPost:6945423420683689985/)
-  * [Part 4 Link](https://www.linkedin.com/feed/update/urn:li:ugcPost:6945436938506035200)
-* [Day 3 : June 23d](https://www.linkedin.com/video/event/urn:li:ugcPost:6940255935252631552/)
+<div class="landing-streams__day">
+<div class="landing-streams__day-info">
+<span class="landing-streams__day-label">Day 1</span>
+<span class="landing-streams__day-date">June 21st</span>
+</div>
+<a class="landing-streams__watch" href="https://www.youtube.com/watch?v=JBZSWDNmO9M">Watch stream</a>
+</div>
 
-Twitter - [@PerconaBytes](https://twitter.com/PerconaBytes)
+<div class="landing-streams__day landing-streams__day--parts">
+<div class="landing-streams__day-info">
+<span class="landing-streams__day-label">Day 2</span>
+<span class="landing-streams__day-date">June 22nd</span>
+</div>
+<div class="landing-streams__parts">
+<a class="landing-streams__part" href="https://www.youtube.com/watch?v=i4Sz7R-Rs30">Part 1</a>
+<a class="landing-streams__part" href="https://www.youtube.com/watch?v=sXaBwHv8lf0">Part 2</a>
+<a class="landing-streams__part" href="https://www.youtube.com/watch?v=NHHyBbyjG20">Part 3</a>
+<a class="landing-streams__part" href="https://www.youtube.com/watch?v=bdaG5DvPI8k">Part 4</a>
+</div>
+</div>
 
-Twitch - [PerconaCommunity](https://www.twitch.tv/perconacommunity)
+<div class="landing-streams__day">
+<div class="landing-streams__day-info">
+<span class="landing-streams__day-label">Day 3</span>
+<span class="landing-streams__day-date">June 23rd</span>
+</div>
+<a class="landing-streams__watch" href="https://www.youtube.com/watch?v=RXexzG_L47A">Watch stream</a>
+</div>
+
+</div>
+
+<div class="landing-streams__card">
+<h3 class="landing-streams__card-title">LinkedIn</h3>
+
+<div class="landing-streams__day">
+<div class="landing-streams__day-info">
+<span class="landing-streams__day-label">Day 1</span>
+<span class="landing-streams__day-date">June 21st</span>
+</div>
+<a class="landing-streams__watch" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/">Watch stream</a>
+</div>
+
+<div class="landing-streams__day landing-streams__day--parts">
+<div class="landing-streams__day-info">
+<span class="landing-streams__day-label">Day 2</span>
+<span class="landing-streams__day-date">June 22nd</span>
+</div>
+<div class="landing-streams__parts">
+<a class="landing-streams__part" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:6940253974163832832/">Part 1</a>
+<a class="landing-streams__part" href="https://www.linkedin.com/video/event/urn:li:ugcPost:6945357069013188608/">Part 2</a>
+<a class="landing-streams__part" href="https://www.linkedin.com/video/event/urn:li:ugcPost:6945423420683689985/">Part 3</a>
+<a class="landing-streams__part" href="https://www.linkedin.com/feed/update/urn:li:ugcPost:6945436938506035200">Part 4</a>
+</div>
+</div>
+
+<div class="landing-streams__day">
+<div class="landing-streams__day-info">
+<span class="landing-streams__day-label">Day 3</span>
+<span class="landing-streams__day-date">June 23rd</span>
+</div>
+<a class="landing-streams__watch" href="https://www.linkedin.com/video/event/urn:li:ugcPost:6940255935252631552/">Watch stream</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="landing-streams__social">
+<a class="landing-streams__social-link" href="https://twitter.com/PerconaBytes">Twitter · @PerconaBytes</a>
+<a class="landing-streams__social-link" href="https://www.twitch.tv/perconacommunity">Twitch · PerconaCommunity</a>
+</div>
+
+</div>

@@ -1,0 +1,89 @@
+{{ $page := . }}
+{{ $activeType := "" }}
+{{ $activeTitle := "" }}
+{{ $activePermalink := "" }}
+{{ if in (slice "contributor_type" "contributor_tag" "contributor_year") $page.Type }}
+  {{ $activeType = $page.Type }}
+  {{ $activeTitle = $page.Title | humanize }}
+  {{ $activePermalink = $page.RelPermalink }}
+{{ end }}
+
+<div class="el-filters-bar">
+  <div class="el-filters" data-el-filters>
+
+    <details class="el-filters__field">
+      <summary class="el-filters__btn{{ if eq $activeType "contributor_type" }} is-active{{ end }}">
+        {{ if eq $activeType "contributor_type" }}
+          <span class="el-filters__label">Type:</span>
+          <span class="el-filters__value">{{ $activeTitle }}</span>
+        {{ else }}
+          Type
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ with $page.Site.Taxonomies.contributor_type }}
+            {{ range sort . "Page.Title" "asc" }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title | humanize }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
+    <details class="el-filters__field">
+      <summary class="el-filters__btn{{ if eq $activeType "contributor_year" }} is-active{{ end }}">
+        {{ if eq $activeType "contributor_year" }}
+          <span class="el-filters__label">Activity:</span>
+          <span class="el-filters__value">{{ $activeTitle }}</span>
+        {{ else }}
+          Activity
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ range sort site.Taxonomies.contributor_year "Page.Title" "desc" }}
+            <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
+    <details class="el-filters__field">
+      <summary class="el-filters__btn{{ if eq $activeType "contributor_tag" }} is-active{{ end }}">
+        {{ if eq $activeType "contributor_tag" }}
+          <span class="el-filters__label">Tags:</span>
+          <span class="el-filters__value">{{ $activeTitle }}</span>
+        {{ else }}
+          Tags
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ range first 30 (sort site.Taxonomies.contributor_tag.ByCount) }}
+            {{ if gt .Count 1 }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="el-filters-search">
+    <label class="sr-only" for="contributors-hub-search">Search contributors</label>
+    <input
+      id="contributors-hub-search"
+      class="el-filters-search__input"
+      type="search"
+      placeholder="Search contributors..."
+      autocomplete="off"
+    >
+  </div>
+</div>
+
+<p class="el-filters-search__status" data-contributors-search-status aria-live="polite"></p>

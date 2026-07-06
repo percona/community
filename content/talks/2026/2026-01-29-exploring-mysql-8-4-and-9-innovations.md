@@ -24,8 +24,6 @@ youtube_id: j76A0l1q5SE
 images:
 - talks/2026/2026-01-29-exploring-mysql-8-4-and-9-innovations.png
 ---
-## Abstract
-
 MySQL 8.4 LTS and the upcoming MySQL 9 series introduce a new wave of enhancements designed to boost performance, scalability, and developer efficiency. This session will explore the most impactful advancements across these versions—including improvements in transaction handling, replication, InnoDB, security, and evolving architectural patterns. Participants will gain practical insights into how these features can enhance real world deployments and how to plan future upgrades confidently and efficiently.
 
 Agenda

@@ -1,0 +1,67 @@
+{{/*
+  Knowledge Base horizontal tabs.
+
+  Params:
+    page           — current Hugo page
+    activeTab      — optional nav id override (get-involved, blogs, contributors, …)
+    activeSubTab   — optional blog sub-tab id (posts, authors) when expandBlogTabs is true
+    expandBlogTabs — on /blog/, replace "Community Blogs" with Posts / Authors; hide Contributors
+*/}}
+{{ $page := .page }}
+{{ $data := index site.Data "knowledge-base" }}
+{{ $nav := $data.nav }}
+{{ $activeTab := .activeTab | default "" }}
+{{ $activeSubTab := .activeSubTab | default "" }}
+{{ $expandBlogTabs := .expandBlogTabs | default false }}
+
+{{ if not $activeTab }}
+  {{ $activeTab = "get-involved" }}
+  {{ if eq $page.Section "blog" }}
+    {{ $activeTab = "blogs" }}
+  {{ else if and (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
+    {{ $activeTab = "blogs" }}
+  {{ else if eq $page.Section "contributors" }}
+    {{ $activeTab = "contributors" }}
+  {{ end }}
+{{ end }}
+
+{{ if not $activeSubTab }}
+  {{ if eq $page.Section "blog" }}
+    {{ $activeSubTab = "posts" }}
+  {{ else if and (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
+    {{ $activeSubTab = "authors" }}
+  {{ end }}
+{{ end }}
+
+<nav class="kb-tabs" aria-label="Knowledge Base sections">
+  <div class="kb-tabs__inner">
+    <div class="kb-tabs__card">
+      <ul class="kb-tabs__list">
+        {{ range $nav }}
+          {{ if and (eq .id "blogs") $expandBlogTabs .children }}
+            {{ range .children }}
+              {{ $isActive := eq .id $activeSubTab }}
+              <li class="kb-tabs__item">
+                <a
+                  href="{{ .url | relURL }}"
+                  class="kb-tabs__link{{ if $isActive }} is-active{{ end }}"
+                  {{ if $isActive }} aria-current="page"{{ end }}
+                >{{ .label }}</a>
+              </li>
+            {{ end }}
+          {{ else if not (and $expandBlogTabs (eq .id "contributors")) }}
+            {{ $isActive := eq .id $activeTab }}
+            <li class="kb-tabs__item">
+              <a
+                href="{{ if strings.HasPrefix .url "http" }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"
+                class="kb-tabs__link{{ if $isActive }} is-active{{ end }}"
+                {{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}
+                {{ if $isActive }} aria-current="page"{{ end }}
+              >{{ .label }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -80,7 +80,8 @@
 
     <h2>Podcasts</h2>
     <ul>
-    {{ range where .Site.Pages "Section" "podcasts" }}
+    {{ with site.GetPage "/events/podcasts" }}
+      {{ range .RegularPages }}
         <li class="podcast"><a href="{{ .Permalink }}" class="podcast__link">{{ .Title }}</a><br>
           {{- if (isset .Params "speakers") -}}
             <span class="podcast__speakers">
@@ -96,7 +97,8 @@
             <span class="podcast__date"> on {{ .Params.Date.Format "January 2, 2006" }}</span> 
           {{- end -}}
         </li>
-    {{ end }}   
+      {{ end }}
+    {{ end }}
     </ul>   
 
     <h2>Blog Posts</h2>

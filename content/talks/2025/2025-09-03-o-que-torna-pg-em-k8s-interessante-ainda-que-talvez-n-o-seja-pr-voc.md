@@ -22,8 +22,6 @@ video: ''
 images:
 - talks/2025/2025-09-03-o-que-torna-pg-em-k8s-interessante-ainda-que-talvez-n-o-seja-pr-voc.png
 ---
-## Abstract
-
 Como instalar um ambiente PostgreSQL em K8s utilizando o Percona Operator e quais são os principais atrativo e os maiores desafios dessa escolha.
 
 

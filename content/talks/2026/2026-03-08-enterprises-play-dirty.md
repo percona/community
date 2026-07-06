@@ -24,8 +24,6 @@ video: ''
 images:
 - talks/2026/2026-03-08-enterprises-play-dirty.png
 ---
-## Abstract
-
 From Red Hat to MongoDB, major vendors are increasingly adopting tactics designed to protect market power, limit competition, and restrict user freedom. This talk examines the strategies behind these moves and explores how they affect the broader open source ecosystem and the communities that rely on it.
 
 We will discuss recent examples, the motivations driving these decisions, and the long-term risks posed to innovation, collaboration, and software freedom. Attendees will leave with a clearer understanding of the dynamics at play - and what the open source community can do to remain resilient.

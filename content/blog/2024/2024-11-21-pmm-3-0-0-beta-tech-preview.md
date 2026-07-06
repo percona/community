@@ -6,7 +6,7 @@ categories: ['PMM']
 authors:
   - ondrej_patocka
 images:
-  - images/pmm/pmm-blog-post-cover.png
+  - blog/2024/12/pmm-blog-post-cover.png
 slug: percona-monitoring-management-technical-preview
 ---
 

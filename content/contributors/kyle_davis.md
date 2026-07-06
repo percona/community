@@ -10,7 +10,7 @@ tagline: null
 social:
   facebook: null
   github: null
-  linkedin: null
+  linkedin: https://www.linkedin.com/in/kyle-davis-linux/
   twitter: null
   website: null
 images:

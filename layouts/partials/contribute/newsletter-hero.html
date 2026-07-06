@@ -1,0 +1,8 @@
+{{ partial "hero/photo.html" (dict
+  "page" .
+  "headingId" "newsletter-hero-heading"
+  "compact" true
+  "titleBefore" (.Params.hero.titleBefore | default "Community")
+  "titleAccent" (.Params.hero.titleAccent | default "Newsletter")
+  "description" .Description
+) }}

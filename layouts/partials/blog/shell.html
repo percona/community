@@ -1,0 +1,29 @@
+{{/*
+  Shared blog hub shell — hero, optional tabs, main + sidebar.
+
+  Params:
+    page         — current Hugo page
+    paginator    — Hugo paginator
+    searchPages  — pages for client-side search index
+    variant      — "hub" (main /blog/ page 1) or "compact"
+    titleOverride — optional compact hero title (plain text)
+    subtitle     — optional compact hero subtitle
+*/}}
+<div class="blog-hub">
+  {{ partial "blog/hero.html" . }}
+
+  {{ if eq .variant "hub" }}
+    {{ partial "blog/tabs.html" . }}
+  {{ end }}
+
+  <div class="blog-hub__layout">
+    <div class="blog-hub__main">
+      {{ partial "blog/list.html" . }}
+    </div>
+    {{ partial "blog/sidebar.html" . }}
+  </div>
+</div>
+
+{{ partial "blog/search.html" (dict "searchPages" .searchPages) }}
+
+{{ partial "hub/filters.js.html" . }}

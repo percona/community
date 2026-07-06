@@ -23,8 +23,6 @@ video: ''
 images:
 - talks/2026/2026-04-21-20-years-in-the-trenches-what-postgres-can-learn-from-the-proprietary-world.png
 ---
-## Abstract
-
 What prevents a major financial institution or government body from fully migrating to PostgreSQL? Often, it isn't performance, it's the strict requirements for security, compliance, and high availability. After twenty years of adapting open source databases for the enterprise, it has become clear that features like Transparent Data Encryption (TDE) and strong identity management (OIDC) are deciding factors.
 
 This talk explores the journey of making PostgreSQL fit for the most demanding environments. We will move beyond the basics to discuss the architectural reality of implementing enterprise-grade security and availability in Postgres. Attendees will leave with a clear understanding of the current "Enterprise Gap," how to bridge it using modern tools, and what the PostgreSQL community must tackle next to secure its future in the corporate world.

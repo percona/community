@@ -24,7 +24,5 @@ video: ''
 images:
 - talks/2025/2025-05-15-what-does-moving-to-pull-requests-look-like-the-nginx-story.png
 ---
-## Abstract
-
 Like Postgres, the nginx open source project ran their own source control systems and accepted patches via mailing lists, until September 2024. At this point, the project moved wholesale to GitHub - issues, discussions, pull requests, the lot.
 Is there anything from the experience of this very different development community which can inform the discussion around Postgres community tooling? Join me for an summary of the numbers, trends and anecdotes from the first few months of the nginx changes, and a few possible benchmarks to give them some context.

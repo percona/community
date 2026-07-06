@@ -23,8 +23,6 @@ video: ''
 images:
 - talks/2025/2025-10-04-implementando-alta-disponibilidade-e-continuidade-de-servi-o-no-mysql-nos-dias-atuais.png
 ---
-## Abstract
-
 A 25 anos atrás, a introdução da replicação nativa contribuiu para fazer do MySQL o banco de dados mais utilizado pelas principais aplicações movendo a Internet. A essência do conceito permanece a mesma: se algo der errado com o servidor principal, os dados continuam disponíveis “online” na réplica. Mas a maneira como essa solução é implementada evoluiu bastante. Aliás, hoje contamos com mais de uma opção.
 Recentemente, me encontrei trabalhando em três projetos muito similares envolvendo HA para MySQL e continuidade de serviço. Porém, os requisitos de cada um eram tais que me vi sugerindo uma implentação diferente em cada caso.
 Nessa apresentação, uso as características desses projetos como pano de fundo para destacar as diferenças entre a replicação assíncrona traditional e a semi-síncrona, que hoje pode ser implementada tanto com o plugin Galera, utilizado pelo Percona XtraDB Cluster (PXC) e MariaDB Cluster, quanto pelo Group Replication, que constitui a base do InnoDB Cluster.

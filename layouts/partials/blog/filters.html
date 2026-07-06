@@ -1,0 +1,73 @@
+{{ $page := . }}
+{{ $activeCategory := "" }}
+{{ $activeTag := "" }}
+{{ $activePermalink := "" }}
+{{ if eq $page.Type "categories" }}
+  {{ $activeCategory = $page.Title }}
+  {{ $activePermalink = $page.RelPermalink }}
+{{ else if eq $page.Type "tags" }}
+  {{ $activeTag = $page.Title }}
+  {{ $activePermalink = $page.RelPermalink }}
+{{ end }}
+
+<div class="blog-mobile-filters">
+  <div class="el-filters-bar">
+    <div class="el-filters" data-el-filters>
+
+      <details class="el-filters__field">
+        <summary class="el-filters__btn{{ if $activeCategory }} is-active{{ end }}">
+          {{ if $activeCategory }}
+            <span class="el-filters__label">Category:</span>
+            <span class="el-filters__value">{{ $activeCategory }}</span>
+          {{ else }}
+            Categories
+          {{ end }}
+          <span class="el-filters__chevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="el-filters__panel" role="listbox">
+          <ul class="el-filters__list">
+            {{ range sort site.Taxonomies.categories.ByCount }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </details>
+
+      <details class="el-filters__field">
+        <summary class="el-filters__btn{{ if $activeTag }} is-active{{ end }}">
+          {{ if $activeTag }}
+            <span class="el-filters__label">Tags:</span>
+            <span class="el-filters__value">{{ $activeTag }}</span>
+          {{ else }}
+            Tags
+          {{ end }}
+          <span class="el-filters__chevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="el-filters__panel" role="listbox">
+          <ul class="el-filters__list">
+            {{ range first 30 (sort site.Taxonomies.tags.ByCount) }}
+              {{ if gt .Count 1 }}
+                <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }} ({{ .Count }})</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="el-filters-search">
+      <label class="sr-only" for="blog-search-input-mobile">Search blog posts</label>
+      <input
+        id="blog-search-input-mobile"
+        class="el-filters-search__input"
+        type="search"
+        placeholder="Search"
+        autocomplete="off"
+        data-blog-search-input
+      >
+    </div>
+  </div>
+
+  <p class="el-filters-search__status blog-mobile-filters__status" data-blog-search-status aria-live="polite"></p>
+</div>

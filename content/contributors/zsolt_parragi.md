@@ -11,6 +11,7 @@ social:
   website: null
 images:
 - contributors/zsolt_parragi.png
+planet_pg_tag: pg_zsolt
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - AI

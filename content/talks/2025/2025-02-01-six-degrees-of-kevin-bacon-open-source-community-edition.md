@@ -24,6 +24,4 @@ video: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4715-six-degre
 images:
 - talks/2025/2025-02-01-six-degrees-of-kevin-bacon-open-source-community-edition.png
 ---
-## Abstract
-
 The open source community can be siloed at times. People tend to ‘stay in their lane’ and don’t realize what they may be missing out on by not expanding their network. I know time is limited and it’s impossible to participate in every community so how do you become like Kevin Bacon? How do you set yourself up to be connected to people in various communities that you may be able to help or vice versa without being present at every meeting? I’m going to show you how you can channel your inner Kevin Bacon and learn how to expand your network like your funding counted on it!

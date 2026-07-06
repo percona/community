@@ -1,0 +1,45 @@
+{{ $paginator := .paginator }}
+{{ $variant := .variant | default "compact" }}
+{{ $page := .page }}
+
+<section class="blog-panel el-panel" aria-labelledby="blog-posts-heading">
+  {{ if eq $variant "hub" }}
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="blog-posts-heading">Latest articles</h2>
+  </header>
+  {{ else }}
+  <h2 class="sr-only" id="blog-posts-heading">Blog posts</h2>
+  {{ end }}
+
+  {{ if not .hideFilters }}
+    {{ partial "blog/filters.html" $page }}
+  {{ end }}
+
+  <ul class="post-list" id="blog-post-list">
+    {{ range $paginator.Pages }}
+      <li class="post-item">
+        {{ partial "postpreview-list" . }}
+      </li>
+    {{ end }}
+  </ul>
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="blog-pagination el-pagination" id="blog-paginator" aria-label="Blog pagination">
+      {{ if $paginator.HasPrev }}
+        <a class="el-pagination__arrow" href="{{ $paginator.Prev.URL }}" rel="prev" aria-label="Previous page">&lsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+      {{ end }}
+
+      <span class="el-pagination__status">
+        Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+      </span>
+
+      {{ if $paginator.HasNext }}
+        <a class="el-pagination__arrow" href="{{ $paginator.Next.URL }}" rel="next" aria-label="Next page">&rsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+      {{ end }}
+    </nav>
+  {{ end }}
+</section>

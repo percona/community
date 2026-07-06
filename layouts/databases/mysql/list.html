@@ -1,0 +1,24 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+    {{ partial "page-hero-logo.html" (dict "page" . "tech" "mysql") }}
+
+    {{ partial "db-hub/page.html" (dict
+        "page" .
+        "feeds" (dict
+            "page" .
+            "eventTag" "MySQL"
+            "talkTag" "MySQL"
+            "blogTags" (slice "MySQL" "mysql")
+            "feedLabel" "MySQL"
+            "blogCategoryURL" "/categories/mysql/"
+            "eventsURL" "/events_tag/mysql/"
+            "talksURL" "/talk_tags/mysql/"
+        )
+    ) }}
+{{ end }}

@@ -1,0 +1,41 @@
+{{ $data := index site.Data "knowledge-base" }}
+{{ $section := $data.get_involved }}
+
+<section class="kb-section" aria-labelledby="kb-get-involved-heading">
+  <header class="kb-section__header">
+    <h2 class="kb-section__title" id="kb-get-involved-heading">
+      {{ $section.title }} <span class="kb-section__accent">{{ $section.title_accent }}</span>
+    </h2>
+    {{ with $section.intro }}
+      <div class="kb-section__intro">{{ . | markdownify }}</div>
+    {{ end }}
+  </header>
+
+  {{ with $section.paths }}
+    <div class="kb-paths">
+      {{ range . }}
+        <article class="kb-path">
+          <h3 class="kb-path__title">{{ .title }}</h3>
+          <div class="kb-path__text">{{ .text | markdownify }}</div>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div class="kb-cards">
+    <div class="kb-cards__row">
+      {{ range first 3 $section.cards }}
+        {{ partial "knowledge-base/contribution-card.html" . }}
+      {{ end }}
+    </div>
+    <div class="kb-cards__row">
+      {{ range after 3 $section.cards }}
+        {{ partial "knowledge-base/contribution-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+
+  {{ with $section.outro }}
+    <div class="kb-section__outro">{{ . | markdownify }}</div>
+  {{ end }}
+</section>

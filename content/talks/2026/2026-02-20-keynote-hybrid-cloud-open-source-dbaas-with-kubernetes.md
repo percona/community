@@ -27,6 +27,4 @@ video: ''
 images:
 - talks/2026/2026-02-20-keynote-hybrid-cloud-open-source-dbaas-with-kubernetes.png
 ---
-## Abstract
-
 Hybrid Cloud Open Source DBaaS with Kubernetes

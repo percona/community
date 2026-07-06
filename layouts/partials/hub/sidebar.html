@@ -1,0 +1,50 @@
+{{/*
+  Shared sidebar for Events & Learning hub pages.
+  Params: activeNav — "events", "speakers", "talks", or "videos"
+*/}}
+{{ $learningURL := "/events-learning/" | relURL }}
+{{ $eventsURL := "/events/" | relURL }}
+{{ $speakersURL := "/contributor_type/speaker/" | relURL }}
+{{ $talksURL := "/talks/" | relURL }}
+{{ $videosURL := "/videos/" | relURL }}
+{{ $activeNav := .activeNav | default "" }}
+
+<nav class="el-sidebar" aria-label="Events & Learning sections">
+  <div class="el-sidebar__card">
+    <ul class="el-sidebar__list">
+    {{ range (index site.Data "events-learning").nav }}
+      {{ if not .hidden }}
+      {{ $href := printf "%s#el-panel-%s" $learningURL .id }}
+      {{ $isActive := false }}
+      {{ if eq .id "events" }}
+        {{ $href = $eventsURL }}
+        {{ if eq $activeNav "events" }}
+          {{ $isActive = true }}
+        {{ end }}
+      {{ else if eq .id "speakers" }}
+        {{ $href = $speakersURL }}
+        {{ if eq $activeNav "speakers" }}
+          {{ $isActive = true }}
+        {{ end }}
+      {{ else if eq .id "talks" }}
+        {{ $href = $talksURL }}
+        {{ if eq $activeNav "talks" }}
+          {{ $isActive = true }}
+        {{ end }}
+      {{ else if eq .id "videos" }}
+        {{ $href = $videosURL }}
+        {{ if eq $activeNav "videos" }}
+          {{ $isActive = true }}
+        {{ end }}
+      {{ end }}
+      <li class="el-sidebar__item">
+        <a
+          href="{{ $href }}"
+          class="el-sidebar__link{{ if $isActive }} is-active{{ end }}"
+        >{{ .label }}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+    </ul>
+  </div>
+</nav>

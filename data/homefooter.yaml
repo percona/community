@@ -1,0 +1,53 @@
+description: "Where people who run databases in production share events, talks, and practical know-how."
+slack:
+  label: Join us on Slack
+  url: https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow
+connect:
+  label: Connect
+  url: /contribute/contact/
+copyright: "© 2026 Percona All Rights Reserved"
+columns:
+  - title: Events & Learning
+    links:
+      - name: Events
+        url: /events/
+      - name: Speakers
+        url: /contributor_type/speaker/
+      - name: Talks
+        url: /talks/
+      - name: Talks videos
+        url: /videos/
+  - title: Knowledge Base
+    links:
+      - name: How to get involved
+        url: /knowledge-base/
+      - name: Articles
+        url: /contribute/articles/
+      - name: YouTube videos
+        url: /contribute/videos/
+  - title: Forums
+    links:
+      - name: Show & Tell
+        url: https://forums.percona.com/
+      - name: Technical Q&A
+        url: https://forums.percona.com/
+      - name: Product Feedback
+        url: https://forums.percona.com/
+  - title: Blog
+    links:
+      - name: All posts
+        url: /blog/
+    categories:
+      - PostgreSQL
+      - MySQL
+      - Cloud
+      - MongoDB
+  # v1-hidden: Mountaineers MVP Portal (Community Ascent) — see docs/v1-hidden-items.md
+  # - title: Mountaineers MVP Portal
+  #   links:
+  #     - name: Basecamp
+  #       url: /contribute/leaderboard/
+  #     - name: Hall of Fame
+  #       url: /open-source-database-hall-of-fame/
+  #     - name: Summit Dashboard
+  #       url: /contribute/leaderboard/

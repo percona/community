@@ -1,0 +1,46 @@
+{{/*
+  Resolves hero title accent and description for contributors hub pages.
+*/}}
+{{ $page := .page }}
+{{ $variant := .variant | default "hub" }}
+{{ $paginator := .paginator }}
+{{ $data := index site.Data "contributors-hub" }}
+{{ $hubPage := site.GetPage "/contributors" }}
+
+{{ $titleAccent := "Hub" }}
+{{ $description := "" }}
+
+{{ if eq $variant "filtered" }}
+  {{ if in (slice "contributor_type" "contributor_tag" "contributor_year") $page.Type }}
+    {{ $titleAccent = $page.Title | humanize }}
+    {{ $termDesc := "" }}
+    {{ $termKey := "" }}
+    {{ with $page.Data.Term }}
+      {{ $termKey = . }}
+    {{ else }}
+      {{ $termKey = $page.Title | urlize }}
+    {{ end }}
+    {{ with index $data.hero.terms $page.Type }}
+      {{ if $termKey }}
+        {{ $termDesc = index . $termKey }}
+      {{ end }}
+    {{ end }}
+    {{ if $termDesc }}
+      {{ $description = $termDesc }}
+    {{ else if index $data.hero.defaults $page.Type }}
+      {{ $description = replace (index $data.hero.defaults $page.Type) "{{ term }}" ($page.Title | humanize) }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ with $data.hero.hub.description }}
+    {{ $description = . }}
+  {{ else }}
+    {{ $description = $hubPage.Params.description }}
+  {{ end }}
+{{ end }}
+
+{{ if and $paginator (gt $paginator.PageNumber 1) }}
+  {{ $description = printf "Page %d of %d. %s" $paginator.PageNumber $paginator.TotalPages ($description | plainify) }}
+{{ end }}
+
+{{ return (dict "titleAccent" $titleAccent "description" $description) }}

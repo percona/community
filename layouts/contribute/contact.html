@@ -1,0 +1,69 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contact-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+{{ $data := index site.Data "contact" }}
+{{ $post := site.GetPage $data.featured_post }}
+
+<div class="contact-page">
+  {{ partial "hero.html" (dict
+    "page" .
+    "variant" "photo"
+    "titleBefore" $data.hero.title_before
+    "titleAccent" $data.hero.title_accent
+    "description" $data.hero.description
+    "compact" true
+  ) }}
+
+  <div class="contact-page__main">
+    <section class="contact-channels" aria-label="Community contact channels">
+      <ul class="contact-channels__list">
+        {{ range $data.channels }}
+          <li class="contact-channels__item">
+            <article class="contact-channel">
+              <h2 class="contact-channel__title">
+                {{ if .url }}
+                  <a
+                    class="contact-channel__title-link"
+                    href="{{ .url }}"
+                    {{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}
+                  >{{ .title }}</a>
+                {{ else }}
+                  {{ .title }}
+                {{ end }}
+              </h2>
+              <p class="contact-channel__text">{{ .text }}</p>
+              {{ if .url }}
+                <p class="contact-channel__action">
+                  <a
+                    class="contact-channel__link"
+                    href="{{ .url }}"
+                    {{ if .external }} target="_blank" rel="noopener noreferrer"{{ end }}
+                  >{{ .label | default .url }}</a>
+                </p>
+              {{ end }}
+            </article>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+
+    {{ with $post }}
+      <section class="contact-page__featured" aria-labelledby="contact-featured-heading">
+        <h2 class="contact-page__featured-title" id="contact-featured-heading">From the blog</h2>
+        <div class="grid grid--2 contact-page__featured-grid">
+          <div class="grid__item">
+            {{ partial "hub-single/blog-card.html" . }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  </div>
+
+  <div class="contact-page__newsletter">
+    {{ partial "events-learning/newsletter-figma.html" . }}
+  </div>
+</div>
+{{ end }}

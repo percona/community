@@ -1,0 +1,11 @@
+<section class="blog-post-hero" aria-hidden="true">
+  <div class="blog-post-hero__media">
+    {{ partial "hero-bg-image.html" (dict "page" . "class" "blog-post-hero__image" "width" 1600) }}
+  </div>
+  {{ partial "hub-triangle.html" (dict
+    "path" "hub/icons/blog-post-hero-triangle.svg"
+    "class" "blog-post-hero__triangle"
+    "width" 552
+    "height" 350
+  ) }}
+</section>

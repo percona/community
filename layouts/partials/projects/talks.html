@@ -1,0 +1,16 @@
+{{ $tags := .Params.talk_tags | default .Params.blog_tags }}
+{{ if $tags }}
+  {{ $talks := first 3 (sort (where (where $.Site.RegularPages "Section" "talks") "Params.talk_tags" "intersect" $tags) "Params.presentation_date" "desc") }}
+  {{ if $talks }}
+    <section class="project-page__posts" aria-labelledby="project-talks-heading">
+      <h2 class="project-page__posts-heading" id="project-talks-heading">Talks</h2>
+      <div class="project-page__posts-grid">
+        {{ range $talks }}
+          <div class="project-page__posts-item">
+            {{ partial "hub-single/talk-card.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

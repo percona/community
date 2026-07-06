@@ -1,0 +1,74 @@
+{{ $page := .page }}
+{{ $paginator := .paginator }}
+{{ $searchPages := .searchPages }}
+{{ $variant := .variant | default "filtered" }}
+
+{{ $listTitle := "Contributors" }}
+{{ if and (eq $variant "filtered") (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
+  {{ $listTitle = "Speakers" }}
+{{ else if and (eq $variant "filtered") (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
+  {{ $listTitle = "Authors" }}
+{{ else if eq $variant "filtered" }}
+  {{ $listTitle = printf "%s Contributors" ($page.Title | humanize) }}
+{{ end }}
+
+{{ $showEvents := true }}
+{{ if and (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
+  {{ $showEvents = false }}
+{{ end }}
+
+<section class="el-panel" aria-labelledby="el-contributors-heading">
+{{ if not .hideTitle }}
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-contributors-heading">
+      {{ $listTitle }}{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}
+    </h2>
+  </header>
+{{ else }}
+  <h2 class="sr-only" id="el-contributors-heading">{{ $listTitle }}</h2>
+{{ end }}
+
+  {{ partial "contributors-hub/filters.html" $page }}
+
+  {{ if gt (len $paginator.Pages) 0 }}
+    <div class="el-speakers-grid" id="contributors-hub-grid">
+      {{ range $paginator.Pages }}
+        {{ partial "contributors-hub/speaker-card.html" (dict "page" . "showEvents" $showEvents) }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No contributors found.</p>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="el-pagination" id="contributors-hub-paginator" aria-label="Contributors pagination">
+      {{ if $paginator.HasPrev }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Prev.URL }}"
+          rel="prev"
+          aria-label="Previous page"
+        >&lsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+      {{ end }}
+
+      <span class="el-pagination__status">
+        Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+      </span>
+
+      {{ if $paginator.HasNext }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Next.URL }}"
+          rel="next"
+          aria-label="Next page"
+        >&rsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+  {{ partial "contributors-hub/search.html" (dict "searchPages" $searchPages "showEvents" $showEvents) }}
+</section>

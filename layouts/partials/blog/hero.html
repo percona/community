@@ -1,0 +1,64 @@
+{{ $page := .page }}
+{{ $variant := .variant | default "compact" }}
+{{ $paginator := .paginator }}
+{{ $titleOverride := .titleOverride | default "" }}
+{{ $subtitle := .subtitle | default "" }}
+
+{{ $titleLine1 := "Community" }}
+{{ $titleAccent := "Blog" }}
+{{ $description := $page.Params.description }}
+{{ $useSingleTitle := false }}
+{{ $singleTitle := "" }}
+
+{{ if ne $titleOverride "" }}
+  {{ $useSingleTitle = true }}
+  {{ $singleTitle = $titleOverride }}
+{{ end }}
+
+{{ if and (not $useSingleTitle) (eq $variant "compact") $paginator (gt $paginator.PageNumber 1) }}
+  {{ $useSingleTitle = true }}
+  {{ $singleTitle = printf "Community Blog — Page %d" $paginator.PageNumber }}
+{{ end }}
+
+<section class="kb-hero{{ if eq $variant "compact" }} kb-hero--compact{{ end }}" aria-labelledby="blog-hero-heading">
+  <div class="kb-hero__media" aria-hidden="true">
+    {{ partial "hero-bg-image.html" (dict "page" $page "class" "kb-hero__image" "width" 1600) }}
+    <div class="kb-hero__gradient" aria-hidden="true"></div>
+  </div>
+
+  {{ partial "hub-triangle.html" (dict
+    "path" "hub/icons/hero-triangle.svg"
+    "class" "kb-hero__triangle"
+    "width" 476
+    "height" 625
+  ) }}
+
+  <div class="kb-hero__inner">
+    <div class="kb-hero__copy">
+      <h1 class="kb-hero__title" id="blog-hero-heading">
+        {{ if $useSingleTitle }}
+          {{ $singleTitle }}
+        {{ else if $titleAccent }}
+          <span class="kb-hero__accent">{{ $titleLine1 }}</span> {{ $titleAccent }}
+        {{ else }}
+          {{ $titleLine1 }}
+        {{ end }}
+      </h1>
+      {{ if eq $variant "hub" }}
+        {{ if ne $subtitle "" }}
+          <p class="kb-hero__subtitle">{{ $subtitle }}</p>
+        {{ else }}
+        {{ with $page.Params.intro }}
+          <div class="kb-hero__subtitle">{{ . | markdownify }}</div>
+        {{ else }}
+          {{ with $description }}
+            <p class="kb-hero__subtitle">{{ . }}</p>
+          {{ end }}
+        {{ end }}
+        {{ end }}
+      {{ else if ne $subtitle "" }}
+        <p class="kb-hero__subtitle">{{ $subtitle }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

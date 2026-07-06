@@ -1,0 +1,16 @@
+{{/*
+  Shared videos hub page shell — hero, sidebar, footer.
+*/}}
+<div class="hub-page events-learning videos-hub">
+  {{ partial "videos-hub/hero.html" . }}
+
+  <div class="events-learning__layout">
+    {{ partial "hub/sidebar.html" . }}
+
+    <div class="events-learning__main">
+      {{ partial "videos-hub/list.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ partial "hub/filters.js.html" . }}

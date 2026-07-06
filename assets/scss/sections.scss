@@ -1,5 +1,125 @@
 @import "common/common";
 
+// PostgreSQL page content shell — matches .page-header (1440px + responsive padding)
+@mixin pg-layout-shell {
+  width: 100%;
+  max-width: $layout-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+  padding-right: clamp(#{$padding-right-page}, 4.44vw, #{$layout-padding-x});
+  box-sizing: border-box;
+}
+
+/* ── Database hub pages (MySQL, MongoDB) ── */
+.db-hub {
+  &__body {
+    @include pg-layout-shell;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+
+    a {
+      color: $link;
+      text-decoration-color: $link;
+
+      &:hover,
+      &:visited:hover {
+        color: $link-hover;
+        text-decoration-color: $link-hover;
+      }
+    }
+
+    table {
+      display: table;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      table-layout: auto;
+    }
+
+    .contribute-mysql,
+    .contribute-mongodb {
+      th {
+        font-size: 0.65rem;
+        letter-spacing: 0.06em;
+      }
+
+      td {
+        vertical-align: top;
+      }
+
+      a {
+        color: $link;
+        text-decoration-color: $link;
+        font-weight: 600;
+
+        &:hover,
+        &:visited:hover {
+          color: $link-hover;
+          text-decoration-color: $link-hover;
+        }
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      &.text {
+        p,
+        ul,
+        ol,
+        li {
+          font-size: 1rem;
+          line-height: 1.625rem;
+        }
+
+        h2 {
+          font-size: 1.375rem;
+          line-height: 1.75rem;
+        }
+
+        h3 {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__see-all {
+    margin: 1.5rem 0 0;
+    text-align: center;
+
+    a {
+      color: $link;
+      text-decoration-color: $link;
+      font-weight: 600;
+
+      &:hover,
+      &:visited:hover {
+        color: $link-hover;
+        text-decoration-color: $link-hover;
+      }
+    }
+  }
+}
+
+.contentblock {
+  &.pg-talks,
+  &.pg-events,
+  &.pg-contribute {
+    max-width: $layout-max-width;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+    padding-right: clamp(#{$padding-right-page}, 4.44vw, #{$layout-padding-x});
+    box-sizing: border-box;
+  }
+}
+
 /* ── PostgreSQL event card — image + gradient overlay ── */
 .event-pg-card {
   display: block;
@@ -91,7 +211,9 @@
 
 /* ── PostgreSQL events section ── */
 .pg-events {
-  padding: 4rem 0 2rem;
+  @include pg-layout-shell;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 
   h2 {
     font-size: 1.6rem;
@@ -201,8 +323,51 @@
 }
 
 /* ── PostgreSQL talks section ── */
+@mixin pg-prose-content {
+  p {
+    margin: 0 0 1rem;
+    font-family: $font-poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;
+  }
+
+  ul {
+    margin: 0 0 1.25rem;
+    padding-left: 1.35rem;
+    list-style: disc;
+
+    li {
+      margin-bottom: 0.75rem;
+      font-family: $font-poppins;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #444;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a {
+    color: $link;
+    text-decoration-color: rgba($link, 0.45);
+
+    &:hover,
+    &:visited:hover {
+      color: $link-hover;
+      text-decoration-color: $link-hover;
+    }
+  }
+}
+
 .pg-talks {
-  padding: 2rem 0 2rem;
+  @include pg-layout-shell;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   h2 {
     font-size: 1.6rem;
@@ -210,12 +375,38 @@
     color: #0a1f44;
     margin-bottom: 1.5rem;
   }
+
+  @include pg-prose-content;
+}
+
+/* ── PostgreSQL contribute / reading prose sections ── */
+.pg-contribute {
+  @include pg-layout-shell;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0a1f44;
+    margin: 0 0 1rem;
+  }
+
+  @include pg-prose-content;
+
+  &__subsection {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e8ecf3;
+  }
 }
 
 /* ── PostgreSQL intro block ── */
 .pg-intro {
+  @include pg-layout-shell;
   text-align: center;
-  padding: 5rem 2rem 3rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 
   h2 {
     font-size: 2.2rem;
@@ -241,6 +432,7 @@
   padding: 3rem 0 2.5rem;
 
   .contentblock {
+    @include pg-layout-shell;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -310,11 +502,13 @@
 
 // Nav strip between intro and project sections
 .pg-projects-nav {
+  @include pg-layout-shell;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.5rem 4rem 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
 }
 
 .pg-projects-nav__row {
@@ -370,28 +564,39 @@
     color: #1a8fc0;
     border-color: rgba(42, 166, 223, 0.25);
     &:hover {
-      background: #2aa6df; color: #282727; border-color: #2aa6df;
+      background: #2aa6df; color: $brand-black; border-color: #2aa6df;
       .pg-nav-item__icon { filter: brightness(0); }
     }
   }
   &--percona {
-    background: rgba(101, 61, 244, 0.08);
-    color: #653df4;
-    border-color: rgba(101, 61, 244, 0.25);
-    &:hover { background: #653df4; color: #fff; border-color: #653df4; }
+    background: rgba($brand-purple, 0.08);
+    color: $brand-purple;
+    border-color: rgba($brand-purple, 0.25);
+    &:hover { background: $brand-purple; color: #fff; border-color: $brand-purple; }
   }
 
   &--community {
     background: rgba(0, 189, 165, 0.08);
     color: #008f7a;
     border-color: rgba(0, 189, 165, 0.3);
-    &:hover { background: #00bda5; color: #fff; border-color: #00bda5; }
+    &:hover { background: $brand-purple; color: #fff; border-color: $brand-purple; }
+  }
+
+  &--mysql {
+    background: rgba($brand-mysql, 0.08);
+    color: $brand-mysql;
+    border-color: rgba($brand-mysql, 0.28);
+    &:hover {
+      background: $brand-mysql;
+      color: #fff;
+      border-color: $brand-mysql;
+    }
   }
 }
 
 // Project section wrappers — colored left border accent
 .pg-project {
-  padding: 3rem 4rem;
+  padding: 3rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
   border-left: 5px solid transparent;
   margin-bottom: 0;
 
@@ -413,7 +618,12 @@
   &--pg     { border-left-color: #005ed6; }
   &--tde    { border-left-color: #005ed6; background: #f7faff; }
   &--k8s    { border-left-color: #2aa6df; background: #f5fbff; }
-  &--percona { border-left-color: #653df4; background: #f9f7ff; }
+  &--percona { border-left-color: $brand-purple; background: #f9f7ff; }
+  &--mysql  { border-left-color: $brand-mysql; background: #fff8f4; }
+
+  &--mysql-alt {
+    background: #fff;
+  }
 
   &:first-of-type { padding-top: 2rem; }
 
@@ -463,6 +673,34 @@
     }
 
     li { margin-bottom: 0.3rem; }
+  }
+
+  &--mysql {
+    .pg-btn--primary {
+      background: $brand-mysql;
+      border-color: $brand-mysql;
+
+      &:hover {
+        background: darken($brand-mysql, 8%);
+        border-color: darken($brand-mysql, 8%);
+      }
+    }
+
+    .pg-btn--secondary {
+      color: $brand-mysql !important;
+      border-color: $brand-mysql;
+
+      &:hover {
+        background: $brand-mysql;
+        color: #fff !important;
+      }
+    }
+
+    .pg-btn--ghost:hover {
+      background: rgba($brand-mysql, 0.08);
+      border-color: $brand-mysql;
+      color: $brand-mysql !important;
+    }
   }
 }
 
@@ -621,14 +859,19 @@
   }
 
   &--tde {
-    background: #282727;
+    background: $brand-black;
     img { filter: brightness(0) invert(1); }
     .pg-logo-block__label { color: #f6fe54; }
   }
 
   &--k8s {
-    background: #282727;
+    background: $brand-black;
     img { filter: brightness(0) invert(1); }
+  }
+
+  &--mysql {
+    background: $brand-mysql;
+    .pg-logo-block__label { color: rgba($brand-white, 0.9); }
   }
 
   @media (max-width: 760px) {
@@ -647,10 +890,14 @@
   }
 }
 
-/* ── PostgreSQL "Let's Talk" connect block ── */
-.pg-connect {
+/* ── Connect team block (Let's Talk, people sections) ── */
+.connect {
   background: linear-gradient(135deg, #0e1a3a 0%, #1a2f5e 100%);
   padding: 3rem 0;
+
+  .contentblock {
+    @include pg-layout-shell;
+  }
 
   &--community {
     background: linear-gradient(135deg, #1a2f5e 0%, #0e1a3a 100%);
@@ -668,7 +915,7 @@
   }
 }
 
-.pg-connect__intro {
+.connect__intro {
   text-align: center;
   margin-bottom: 2.5rem;
 
@@ -681,21 +928,34 @@
   }
 }
 
-.pg-connect__team {
+.connect__team {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 2rem;
+
+  &--pair {
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    justify-content: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
+
+    &--pair {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+    }
   }
 }
 
-.pg-connect__card {
+.connect__card {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
@@ -713,7 +973,7 @@
   }
 }
 
-.pg-connect__avatar-link {
+.connect__avatar-link {
   display: block;
   border-radius: 50%;
   border: 3px solid rgba(0, 189, 165, 0.5);
@@ -724,43 +984,60 @@
   transition: border-color 0.2s ease;
 
   &:hover {
-    border-color: #00bda5;
+    border-color: $brand-purple;
   }
 }
 
-.pg-connect__avatar {
+a.connect__avatar-link {
+  &:visited {
+    border-color: rgba(0, 189, 165, 0.5);
+  }
+
+  &:hover,
+  &:visited:hover {
+    border-color: $brand-purple;
+  }
+}
+
+.connect__avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.pg-connect__info {
+.connect__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.2rem;
 }
 
-.pg-connect__name {
+a.connect__name {
   font-size: 1.05rem;
   font-weight: 700;
   color: #fff !important;
   text-decoration: none;
 
-  &:hover {
-    color: #00bda5 !important;
+  &:visited {
+    color: #fff !important;
+  }
+
+  &:hover,
+  &:visited:hover {
+    color: lighten($brand-purple, 22%) !important;
+    text-decoration: none;
   }
 }
 
-.pg-connect__role {
+.connect__role {
   font-size: 0.8rem;
   color: #8fa3c0;
   margin: 0;
   line-height: 1.4;
 }
 
-.pg-connect__links {
+.connect__links {
   display: flex;
   gap: 0.6rem;
   margin-top: 0.6rem;
@@ -768,7 +1045,7 @@
   justify-content: center;
 }
 
-.pg-connect__link {
+a.connect__link {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -777,7 +1054,7 @@
   font-size: 0.78rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 
   img, svg {
     width: 14px;
@@ -785,34 +1062,46 @@
     flex-shrink: 0;
   }
 
-  &--linkedin {
+  &.connect__link--linkedin {
     background: rgba(10, 102, 194, 0.2);
     color: #7eb4e8;
     border: 1px solid rgba(10, 102, 194, 0.35);
 
-    &:hover {
+    &:visited {
+      color: #7eb4e8;
+    }
+
+    &:hover,
+    &:visited:hover {
       background: #0a66c2;
       color: #fff;
+      text-decoration: none;
     }
   }
 
-  &--email {
-    background: rgba(0, 189, 165, 0.15);
-    color: #00bda5;
-    border: 1px solid rgba(0, 189, 165, 0.3);
+  &.connect__link--email {
+    background: rgba($brand-white, 0.08);
+    color: #dce3f0;
+    border: 1px solid rgba($brand-white, 0.18);
 
     svg {
       stroke: currentColor;
     }
 
-    &:hover {
-      background: #00bda5;
+    &:visited {
+      color: #dce3f0;
+    }
+
+    &:hover,
+    &:visited:hover {
+      background: rgba($brand-white, 0.16);
       color: #fff;
+      text-decoration: none;
     }
   }
 }
 
-.pg-connect__footer {
+.connect__footer {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
@@ -825,11 +1114,17 @@
   }
 
   a {
-    color: #00bda5;
+    color: #dce3f0;
     font-weight: 600;
     text-decoration: none;
 
-    &:hover {
+    &:visited {
+      color: #dce3f0;
+    }
+
+    &:hover,
+    &:visited:hover {
+      color: #fff;
       text-decoration: underline;
     }
   }
