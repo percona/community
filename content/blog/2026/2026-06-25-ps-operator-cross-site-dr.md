@@ -5,7 +5,8 @@ tags: ["Percona", "Kubernetes", "Cloud", "Community", "Open Source", "MySQL"]
 categories: ['MySQL', 'Cloud']
 authors:
   - mayank_shah
-images: []
+images:
+  - blog/2026/06/mayank-cross-cluster-ps-cover.jpg
 ---
 
 A MySQL InnoDB Cluster provides high availability for a single database cluster using Group Replication. This works well for node failures inside the cluster, but disaster recovery usually requires another cluster in a separate location: another Kubernetes cluster, region, data center, or cloud.
