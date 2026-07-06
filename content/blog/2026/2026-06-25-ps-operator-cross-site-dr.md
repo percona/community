@@ -1,5 +1,5 @@
 ---
-title: "Cross-site MySQL DR with Percona Kubernetes Operator"
+title: "Cross-site DR with Percona Operator for MySQL"
 date: "2026-06-25T10:00:00+00:00"
 tags: ["Percona", "Kubernetes", "Cloud", "Community", "Open Source", "MySQL"]
 categories: ['MySQL']
@@ -8,7 +8,7 @@ authors:
 images: []
 ---
 
-# Cross-site MySQL DR with Percona Kubernetes Operator
+# Cross-site DR with Percona Operator for MySQL
 
 A MySQL InnoDB Cluster provides high availability for a single database cluster using Group Replication. This works well for node failures inside the cluster, but disaster recovery usually requires another cluster in a separate location: another Kubernetes cluster, region, data center, or cloud.
 
@@ -29,7 +29,7 @@ Any disaster recovery design usually comes down to two important numbers:
 
 The way you design and operate a ClusterSet directly affects both. To understand why, it helps to first look at the architecture.
 
-An InnoDB ClusterSet is built from two or more InnoDB Clusters. Each InnoDB Cluster is a Group Replication group. In other words, it is the same kind of highly available MySQL cluster that the Percona MySQL Kubernetes Operator can already deploy and manage.
+An InnoDB ClusterSet is built from two or more InnoDB Clusters. Each InnoDB Cluster is a Group Replication group. In other words, it is the same kind of highly available MySQL cluster that the [Percona Operator for MySQL](https://docs.percona.com/percona-operator-for-mysql/latest/index.html) can already deploy and manage.
 
 A ClusterSet adds another layer on top of those clusters. One cluster is the primary cluster and accepts writes, while the others are replica clusters and remain read-only. The primary sends its changes to each replica using asynchronous replication over a dedicated replication channel.
 
@@ -221,7 +221,7 @@ kind: PerconaServerMySQLClusterSet
 metadata:
   name: my-cluster-set
 spec:
-  # .. exising spec
+  # .. existing spec
   clusters:
   # .. existing clusters
     - innodbClusterName: dc3
@@ -253,14 +253,14 @@ Like forced failover, forced removal is gated behind an unsafe flag because the 
 
 ### Wrapping up
 
-The Percona Kubernetes Operator for MySQL allows extending Group Replication beyond a single site by managing InnoDB ClusterSet through a custom resource `PerconaServerMySQLClusterSet`. A primary cluster handles writes, replica clusters stay synchronized, and the operator manages switchovers, failovers, and membership changes declaratively.
+The Percona Operator for MySQL allows extending Group Replication beyond a single site by managing InnoDB ClusterSet through a custom resource `PerconaServerMySQLClusterSet`. A primary cluster handles writes, replica clusters stay synchronized, and the operator manages switchovers, failovers, and membership changes declaratively.
 
 For planned maintenance, switchover moves the primary role safely with no data loss. For outages, forced failover promotes a surviving replica, with the expected risk of losing any writes that had not yet replicated. That replication lag is the practical RPO, so it should be monitored and tested as part of the DR plan.
 
-With the Percona Kubernetes Operator for MySQL, disaster recovery becomes repeatable, Kubernetes-native, and easier to operate across regions or clusters.
+With the Percona Operator for MySQL, disaster recovery becomes repeatable, Kubernetes-native, and easier to operate across regions or clusters.
 
 ### Further reading
-- InnoDB ClusterSet docs: https://dev.mysql.com/doc/mysql-shell/8.0/en/innodb-clusterset.html
-- Percona Kubernetes Operator for MySQL docs (TODO: insert exact link after release): https://docs.percona.com/percona-operator-for-mysql/ps/
+- [InnoDB ClusterSet docs](https://dev.mysql.com/doc/mysql-shell/8.0/en/innodb-clusterset.html)
+- [Cross-site replication in Percona Operator for MySQL](https://docs.percona.com/percona-operator-for-mysql/latest/replication.html)
 
 
