@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/rachel_pedreschi.jpg
+aliases:
+- /speakers/rachel_pedreschi
+- /speakers/rachel_pedreschi/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

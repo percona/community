@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/herbert_menezes.jpg
+aliases:
+- /speakers/herbert_menezes
+- /speakers/herbert_menezes/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

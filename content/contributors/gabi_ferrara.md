@@ -14,6 +14,9 @@ social:
   website: https://gabi.dev/
 images:
 - contributors/gabi_ferrara.jpg
+aliases:
+- /speakers/gabi_ferrara
+- /speakers/gabi_ferrara/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

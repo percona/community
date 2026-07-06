@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/kyle_davis.jpg
+aliases:
+- /speakers/kyle_davis
+- /speakers/kyle_davis/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

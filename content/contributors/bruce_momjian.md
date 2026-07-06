@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/bruce_momjian.jpg
+aliases:
+- /speakers/bruce_momjian
+- /speakers/bruce_momjian/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

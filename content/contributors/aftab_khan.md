@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/person-using-laptop.jpg
+aliases:
+- /authors/aftab_khan
+- /authors/aftab_khan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

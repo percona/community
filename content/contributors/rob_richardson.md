@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/rob_richardson.jpg
+aliases:
+- /speakers/rob_richardson
+- /speakers/rob_richardson/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

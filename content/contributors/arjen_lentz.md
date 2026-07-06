@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2018/10/arjen-lentz.jpg
+aliases:
+- /authors/arjen_lentz
+- /authors/arjen_lentz/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -14,6 +14,9 @@ social:
   website: kuaishou.com
 images:
 - contributors/amos_bird.jpg
+aliases:
+- /speakers/amos_bird
+- /speakers/amos_bird/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

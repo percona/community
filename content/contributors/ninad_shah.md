@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/ninad_shah.jpeg
+aliases:
+- /authors/ninad_shah
+- /authors/ninad_shah/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

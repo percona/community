@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/levi_junkert.jpeg
+aliases:
+- /authors/levi_junkert
+- /authors/levi_junkert/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

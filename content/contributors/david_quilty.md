@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/david_quilty.jpeg
+aliases:
+- /authors/david_quilty
+- /authors/david_quilty/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

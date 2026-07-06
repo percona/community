@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/pep_pla.jpg
+aliases:
+- /speakers/pep_pla
+- /speakers/pep_pla/
 planet_pg_tag: pg_pep
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

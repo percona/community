@@ -12,6 +12,11 @@ social:
   website: null
 images:
 - contributors/aleksandra_abramova.png
+aliases:
+- /authors/aleksandra_abramova
+- /authors/aleksandra_abramova/
+- /speakers/aleks_abramova
+- /speakers/aleks_abramova/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

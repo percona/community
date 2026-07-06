@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/shashank_agarwal.jpg
+aliases:
+- /speakers/shashank_agarwal
+- /speakers/shashank_agarwal/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

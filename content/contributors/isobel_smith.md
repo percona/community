@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/isobel_smith.jpeg
+aliases:
+- /authors/isobel_smith
+- /authors/isobel_smith/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

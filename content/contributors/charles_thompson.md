@@ -12,6 +12,11 @@ social:
   website: null
 images:
 - contributors/charles_thompson.jpg
+aliases:
+- /authors/charles_thompson
+- /authors/charles_thompson/
+- /speakers/charles_thompson
+- /speakers/charles_thompson/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/hemant_bhanawat.jpg
+aliases:
+- /speakers/hemant_bhanawat
+- /speakers/hemant_bhanawat/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

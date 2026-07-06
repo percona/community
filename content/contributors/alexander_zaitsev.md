@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/alexander_zaitsev.jpeg
+aliases:
+- /speakers/alexander_zaitsev
+- /speakers/alexander_zaitsev/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

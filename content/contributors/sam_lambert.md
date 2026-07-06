@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sam_lambert.jpeg
+aliases:
+- /speakers/sam_lambert
+- /speakers/sam_lambert/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

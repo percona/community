@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/kenny_gryp.jpg
+aliases:
+- /speakers/kenny_gryp
+- /speakers/kenny_gryp/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

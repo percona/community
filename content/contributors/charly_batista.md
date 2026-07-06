@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/charly_batista.jpg
+aliases:
+- /speakers/charly_batista
+- /speakers/charly_batista/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

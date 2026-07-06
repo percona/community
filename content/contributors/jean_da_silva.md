@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/jean_da_silva.jpg
+aliases:
+- /speakers/jean_da_silva
+- /speakers/jean_da_silva/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

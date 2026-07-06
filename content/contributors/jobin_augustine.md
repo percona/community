@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/jobin_augustine.jpg
+aliases:
+- /speakers/jobin_augustine
+- /speakers/jobin_augustine/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

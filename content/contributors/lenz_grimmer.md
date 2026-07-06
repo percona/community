@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/lenz_grimmer.jpg
+aliases:
+- /speakers/lenz_grimmer
+- /speakers/lenz_grimmer/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

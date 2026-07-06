@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/05/yoav.jpeg
+aliases:
+- /authors/yoav_eilat
+- /authors/yoav_eilat/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/person-using-laptop.jpg
+aliases:
+- /authors/phil_plachta
+- /authors/phil_plachta/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

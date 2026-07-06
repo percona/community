@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/lori_lorusso.jpeg
+aliases:
+- /speakers/lori_lorusso
+- /speakers/lori_lorusso/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

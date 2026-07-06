@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/09/photo_2019-02-15_21-17-02_cut-photo.ru_.png
+aliases:
+- /authors/oleg_babin
+- /authors/oleg_babin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

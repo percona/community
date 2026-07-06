@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/radoslaw_szulgo.jpeg
+aliases:
+- /authors/radoslaw_szulgo
+- /authors/radoslaw_szulgo/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

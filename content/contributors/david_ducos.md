@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/david_ducos.png
+aliases:
+- /speakers/david_ducos
+- /speakers/david_ducos/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

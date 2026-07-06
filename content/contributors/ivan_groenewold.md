@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/ivan_groenewold.jpg
+aliases:
+- /authors/ivan_groenewold
+- /authors/ivan_groenewold/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

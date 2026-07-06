@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/tim_meehan.jpg
+aliases:
+- /speakers/tim_meehan
+- /speakers/tim_meehan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

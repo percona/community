@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/guy_harrison.jpg
+aliases:
+- /speakers/guy_harrison
+- /speakers/guy_harrison/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

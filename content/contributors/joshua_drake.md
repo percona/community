@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/joshua_drake.jpg
+aliases:
+- /speakers/joshua_drake
+- /speakers/joshua_drake/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

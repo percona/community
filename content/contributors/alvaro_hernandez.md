@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/alvaro_hernandez.jpg
+aliases:
+- /speakers/alvaro_hernandez
+- /speakers/alvaro_hernandez/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

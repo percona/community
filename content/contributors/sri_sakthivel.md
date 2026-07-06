@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sri_sakthivel.png
+aliases:
+- /speakers/sri_sakthivel
+- /speakers/sri_sakthivel/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

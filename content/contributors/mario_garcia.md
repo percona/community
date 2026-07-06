@@ -12,6 +12,11 @@ social:
   website: null
 images:
 - contributors/mario_garcia.jpg
+aliases:
+- /authors/mario_garcia
+- /authors/mario_garcia/
+- /speakers/mario_garcia
+- /speakers/mario_garcia/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

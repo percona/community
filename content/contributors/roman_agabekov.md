@@ -12,6 +12,9 @@ social:
   website: https://releem.com
 images:
 - contributors/roman_agabekov.jpg
+aliases:
+- /authors/roman_agabekov
+- /authors/roman_agabekov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

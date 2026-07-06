@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/mayank_sharma.jpeg
+aliases:
+- /authors/mayank_sharma
+- /authors/mayank_sharma/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

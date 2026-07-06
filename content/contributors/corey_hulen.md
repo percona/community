@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/corey_hulen.png
+aliases:
+- /speakers/corey_hulen
+- /speakers/corey_hulen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/alexander_korotkov.jpg
+aliases:
+- /speakers/alexander_korotkov
+- /speakers/alexander_korotkov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/puneet_kala.png
+aliases:
+- /authors/puneet_kala
+- /authors/puneet_kala/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

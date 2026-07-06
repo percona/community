@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/walter_garcia.jpg
+aliases:
+- /speakers/walter_garcia
+- /speakers/walter_garcia/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

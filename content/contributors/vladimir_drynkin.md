@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/06/portal_photo.png
+aliases:
+- /authors/vladimir_drynkin
+- /authors/vladimir_drynkin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

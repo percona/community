@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ivan_groenwold.jpg
+aliases:
+- /speakers/ivan_groenwold
+- /speakers/ivan_groenwold/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

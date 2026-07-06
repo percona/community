@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/denis_magda.jpg
+aliases:
+- /speakers/denis_magda
+- /speakers/denis_magda/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

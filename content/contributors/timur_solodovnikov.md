@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/timur_solodovnikov.jpeg
+aliases:
+- /authors/timur_solodovnikov
+- /authors/timur_solodovnikov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

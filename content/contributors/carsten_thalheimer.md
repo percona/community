@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/carsten_thalheimer.jpg
+aliases:
+- /speakers/carsten_thalheimer
+- /speakers/carsten_thalheimer/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

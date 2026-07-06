@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/narciso_oliveira_junior.jpg
+aliases:
+- /speakers/narciso_oliveira_junior
+- /speakers/narciso_oliveira_junior/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

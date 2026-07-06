@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/federico_campoli.jpg
+aliases:
+- /authors/federico_campoli
+- /authors/federico_campoli/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

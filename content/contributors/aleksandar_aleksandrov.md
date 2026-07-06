@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2018/10/Aleksandar.Aleksandrov.jpg
+aliases:
+- /authors/aleksandar_aleksandrov
+- /authors/aleksandar_aleksandrov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

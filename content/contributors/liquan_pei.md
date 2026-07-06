@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/liquan_pei.jpg
+aliases:
+- /speakers/liquan_pei
+- /speakers/liquan_pei/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/avi_press.png
+aliases:
+- /speakers/avi_press
+- /speakers/avi_press/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

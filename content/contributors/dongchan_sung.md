@@ -12,6 +12,9 @@ social:
   website: https://gywn.blog
 images:
 - contributors/dongchan_sung.png
+aliases:
+- /authors/dongchan_sung
+- /authors/dongchan_sung/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

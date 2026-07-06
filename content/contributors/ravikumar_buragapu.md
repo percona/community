@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ravikumar_buragapu.png
+aliases:
+- /speakers/ravikumar_buragapu
+- /speakers/ravikumar_buragapu/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

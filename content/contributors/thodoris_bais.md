@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/thodoris_bais.jpeg
+aliases:
+- /authors/thodoris_bais
+- /authors/thodoris_bais/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

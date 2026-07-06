@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/achilleas_mantzios.jpg
+aliases:
+- /speakers/achilleas_mantzios
+- /speakers/achilleas_mantzios/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

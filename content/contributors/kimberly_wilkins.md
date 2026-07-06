@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/kimberly_wilkins.jpg
+aliases:
+- /speakers/kimberly_wilkins
+- /speakers/kimberly_wilkins/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

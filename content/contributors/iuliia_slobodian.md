@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/iuliia_slobodian.jpeg
+aliases:
+- /authors/iuliia_slobodian
+- /authors/iuliia_slobodian/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

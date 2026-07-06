@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/oleksandr_kuzminskyi.jpg
+aliases:
+- /speakers/oleksandr_kuzminskyi
+- /speakers/oleksandr_kuzminskyi/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

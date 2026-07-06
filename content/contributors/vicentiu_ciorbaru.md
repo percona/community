@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/vicentiu_ciorbaru.jpg
+aliases:
+- /authors/vicențiu_ciorbaru
+- /authors/vicențiu_ciorbaru/
+- /speakers/vicentiu_ciorbaru
+- /speakers/vicentiu_ciorbaru/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

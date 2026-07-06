@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/geoff_winans.png
+aliases:
+- /authors/geoff_winans
+- /authors/geoff_winans/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

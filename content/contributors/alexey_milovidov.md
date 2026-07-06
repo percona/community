@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/alexey_milovidov.jpg
+aliases:
+- /speakers/alexey_milovidov
+- /speakers/alexey_milovidov/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

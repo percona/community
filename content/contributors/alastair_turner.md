@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/alastair_turner.jpg
+aliases:
+- /authors/alastair_turner
+- /authors/alastair_turner/
 planet_pg_tag: pg_alastair
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

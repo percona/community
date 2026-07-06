@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/ondrej_patocka.png
+aliases:
+- /authors/ondrej_patocka
+- /authors/ondrej_patocka/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/hamid_akhtar.png
+aliases:
+- /speakers/hamid_akhtar
+- /speakers/hamid_akhtar/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

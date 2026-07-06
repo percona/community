@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/frederic_descamps.jpg
+aliases:
+- /speakers/frederic_descamps
+- /speakers/frederic_descamps/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

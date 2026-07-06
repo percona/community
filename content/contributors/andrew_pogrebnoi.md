@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/andrew_pogrebnoi.jpg
+aliases:
+- /speakers/andrew_pogrebnoi
+- /speakers/andrew_pogrebnoi/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

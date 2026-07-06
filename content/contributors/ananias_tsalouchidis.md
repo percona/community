@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ananias_tsalouchidis.jpg
+aliases:
+- /speakers/ananias_tsalouchidis
+- /speakers/ananias_tsalouchidis/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

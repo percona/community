@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/andrey_brodin.jpg
+aliases:
+- /speakers/andrey_brodin
+- /speakers/andrey_brodin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

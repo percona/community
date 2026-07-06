@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/danish_wadhwa.jpeg
+aliases:
+- /authors/danish_wadhwa
+- /authors/danish_wadhwa/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

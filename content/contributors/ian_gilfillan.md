@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/ian_gilfillan.jpg
+aliases:
+- /speakers/ian_gilfillan
+- /speakers/ian_gilfillan/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

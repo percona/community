@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2019/04/sugu_sougoumarane.jpg
+aliases:
+- /authors/sugu_sougoumarane
+- /authors/sugu_sougoumarane/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

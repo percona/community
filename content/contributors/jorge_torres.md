@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2020/10/torres-pix.png
+aliases:
+- /authors/jorge_torres
+- /authors/jorge_torres/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

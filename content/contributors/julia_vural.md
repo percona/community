@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/julia_vural.jpeg
+aliases:
+- /authors/julia_vural
+- /authors/julia_vural/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

@@ -13,6 +13,9 @@ social:
   website: null
 images:
 - contributors/dmitry_kostiuk.jpg
+aliases:
+- /speakers/dmitry_kostiuk
+- /speakers/dmitry_kostiuk/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

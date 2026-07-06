@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/valentin_traen.jpg
+aliases:
+- /authors/valentin_traen
+- /authors/valentin_traen/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

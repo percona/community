@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/clint_dovholuk.jpg
+aliases:
+- /speakers/clint_dovholuk
+- /speakers/clint_dovholuk/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

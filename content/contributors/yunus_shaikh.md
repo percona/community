@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/yunus_shaikh.png
+aliases:
+- /speakers/yunus_shaikh
+- /speakers/yunus_shaikh/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

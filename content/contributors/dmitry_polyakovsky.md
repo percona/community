@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/dmitry_polyakovsky.jpeg
+aliases:
+- /speakers/dmitry_polyakovsky
+- /speakers/dmitry_polyakovsky/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

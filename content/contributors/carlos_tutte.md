@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/carlos_tutte.jpg
+aliases:
+- /speakers/carlos_tutte
+- /speakers/carlos_tutte/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

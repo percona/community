@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/sunny_bains.png
+aliases:
+- /speakers/sunny_bains
+- /speakers/sunny_bains/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

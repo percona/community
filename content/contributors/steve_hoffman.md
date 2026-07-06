@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/steve_hoffman.jpg
+aliases:
+- /speakers/steve_hoffman
+- /speakers/steve_hoffman/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

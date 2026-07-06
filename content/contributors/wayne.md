@@ -12,6 +12,11 @@ social:
   website: null
 images:
 - contributors/Wayne_Leutwyler.png
+aliases:
+- /authors/wayne
+- /authors/wayne/
+- /speakers/wayne
+- /speakers/wayne/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

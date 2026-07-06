@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/ignacio_nin.jpg
+aliases:
+- /speakers/ignacio_nin
+- /speakers/ignacio_nin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/gurnish_anand.png
+aliases:
+- /authors/gurnish_anand
+- /authors/gurnish_anand/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

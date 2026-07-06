@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/johannes_schluter.jpg
+aliases:
+- /speakers/johannes_schluter
+- /speakers/johannes_schluter/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

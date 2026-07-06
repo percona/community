@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/pandit_prasad.jpg
+aliases:
+- /speakers/pandit_prasad
+- /speakers/pandit_prasad/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

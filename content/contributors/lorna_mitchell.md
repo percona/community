@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/lorna_mitchell.jpg
+aliases:
+- /speakers/lorna_mitchell
+- /speakers/lorna_mitchell/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -14,6 +14,9 @@ social:
   website: https://askdbablog.wordpress.com/blog
 images:
 - contributors/alkin_tezuysal.jpg
+aliases:
+- /speakers/alkin_tezuysal
+- /speakers/alkin_tezuysal/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

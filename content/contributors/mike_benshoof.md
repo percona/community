@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/mike_benshoof.jpg
+aliases:
+- /speakers/mike_benshoof
+- /speakers/mike_benshoof/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

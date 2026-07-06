@@ -14,6 +14,9 @@ social:
   website: ovaistariq.net
 images:
 - contributors/ovais_tariq.png
+aliases:
+- /speakers/ovais_tariq
+- /speakers/ovais_tariq/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/rahul_malik.png
+aliases:
+- /speakers/rahul_malik
+- /speakers/rahul_malik/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

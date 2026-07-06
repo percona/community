@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/costa_tsaousis.jpg
+aliases:
+- /speakers/costa_tsaousis
+- /speakers/costa_tsaousis/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

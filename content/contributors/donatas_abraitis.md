@@ -12,6 +12,9 @@ social:
   website: blog.donatas.net
 images:
 - contributors/donatas_abraitis.png
+aliases:
+- /authors/donatas_abraitis
+- /authors/donatas_abraitis/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -15,6 +15,11 @@ social:
   website: https://federico-razzoli.com/
 images:
 - contributors/federico_razzoli.jpg
+aliases:
+- /authors/federico_razzoli
+- /authors/federico_razzoli/
+- /speakers/federico_razzoli
+- /speakers/federico_razzoli/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

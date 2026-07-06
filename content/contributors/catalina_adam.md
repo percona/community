@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/catalina_adam.png
+aliases:
+- /authors/catalina_adam
+- /authors/catalina_adam/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

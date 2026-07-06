@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/naveed_shaikh.png
+aliases:
+- /speakers/naveed_shaikh
+- /speakers/naveed_shaikh/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

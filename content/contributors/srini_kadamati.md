@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/srini_kadamati.jpg
+aliases:
+- /speakers/srini_kadamati
+- /speakers/srini_kadamati/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

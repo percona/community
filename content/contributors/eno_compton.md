@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/eno_compton.jpg
+aliases:
+- /speakers/eno_compton
+- /speakers/eno_compton/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

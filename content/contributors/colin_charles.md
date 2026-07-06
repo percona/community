@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/colin_charles.png
+aliases:
+- /authors/colin_charles
+- /authors/colin_charles/
+- /speakers/colin_charles
+- /speakers/colin_charles/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

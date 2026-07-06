@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/roberto_garcia_de_bem.jpg
+aliases:
+- /speakers/roberto_garcia_de_bem
+- /speakers/roberto_garcia_de_bem/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

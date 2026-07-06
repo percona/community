@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - blog/2018/10/tiago-jorge.jpg
+aliases:
+- /authors/tiago_jorge
+- /authors/tiago_jorge/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/emily_omier.jpg
+aliases:
+- /speakers/emily_omier
+- /speakers/emily_omier/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

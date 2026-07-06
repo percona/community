@@ -12,6 +12,9 @@ social:
   website: https://growfusely.com/
 images:
 - blog/2020/05/Gaurav-Belani-Google-Search-2020-05-26-14-34-29.png
+aliases:
+- /authors/gaurav_belani
+- /authors/gaurav_belani/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

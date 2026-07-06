@@ -14,6 +14,11 @@ social:
   website: null
 images:
 - contributors/sergey_pronin.jpg
+aliases:
+- /authors/sergey_pronin
+- /authors/sergey_pronin/
+- /speakers/sergey_pronin
+- /speakers/sergey_pronin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

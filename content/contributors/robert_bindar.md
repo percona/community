@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/robert_bindar.jpg
+aliases:
+- /speakers/robert_bindar
+- /speakers/robert_bindar/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

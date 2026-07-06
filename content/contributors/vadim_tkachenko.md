@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/vadim_tkachenko.jpg
+aliases:
+- /speakers/vadim_tkachenko
+- /speakers/vadim_tkachenko/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

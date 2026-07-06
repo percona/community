@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/michael_coburn.jpg
+aliases:
+- /speakers/michael_coburn
+- /speakers/michael_coburn/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

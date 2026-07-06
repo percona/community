@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/morgan_tocker.jpg
+aliases:
+- /speakers/morgan_tocker
+- /speakers/morgan_tocker/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

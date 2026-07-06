@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/david_murphy.jpg
+aliases:
+- /speakers/david_murphy
+- /speakers/david_murphy/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

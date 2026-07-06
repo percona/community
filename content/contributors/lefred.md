@@ -12,6 +12,9 @@ social:
   website: http://lefred.be
 images:
 - blog/2020/10/lefred-pix.png
+aliases:
+- /authors/lefred
+- /authors/lefred/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

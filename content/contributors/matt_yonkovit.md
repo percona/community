@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/matt.jpg
+aliases:
+- /speakers/matt_yonkovit
+- /speakers/matt_yonkovit/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

@@ -12,6 +12,9 @@ social:
   website: null
 images:
 - contributors/person-using-laptop.jpg
+aliases:
+- /authors/alexander_rubin
+- /authors/alexander_rubin/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

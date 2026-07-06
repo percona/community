@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/henrik_ingo.jpg
+aliases:
+- /speakers/henrik_ingo
+- /speakers/henrik_ingo/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

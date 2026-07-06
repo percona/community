@@ -15,6 +15,9 @@ social:
   website: null
 images:
 - contributors/alawi_assaggaf.png
+aliases:
+- /speakers/alawi_assaggaf
+- /speakers/alawi_assaggaf/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

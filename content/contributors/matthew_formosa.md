@@ -14,6 +14,9 @@ social:
   website: null
 images:
 - contributors/matthew_formosa.jpg
+aliases:
+- /speakers/matthew_formosa
+- /speakers/matthew_formosa/
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []
