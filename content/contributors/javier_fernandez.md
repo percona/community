@@ -21,12 +21,9 @@ blog_tags: []
 events_tags:
 - Databases
 - Percona Community Live
-- dashboard
-- event
-- opensource
 talks_tags: []
 posts_count: 0
-events_count: 2
+events_count: 1
 talks_count: 0
 contributor_type:
 - speaker

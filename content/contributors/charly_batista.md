@@ -25,7 +25,6 @@ events_tags:
 - Podcast
 - Postgres
 - Stream
-- dashboard
 - databases
 - event
 - opensource
@@ -35,7 +34,7 @@ events_tags:
 talks_tags:
 - Video
 posts_count: 0
-events_count: 29
+events_count: 28
 talks_count: 1
 contributor_type:
 - speaker

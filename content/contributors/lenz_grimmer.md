@@ -23,13 +23,11 @@ events_tags:
 - Event
 - Percona Community Live
 - Postgres
-- dashboard
 - devops
-- event
 - opensource
 talks_tags: []
 posts_count: 0
-events_count: 5
+events_count: 4
 talks_count: 0
 contributor_type:
 - speaker

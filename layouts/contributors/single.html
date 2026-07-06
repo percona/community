@@ -29,14 +29,7 @@
 {{ $talks_sorted := sort $talks ".Params.presentation_date" "desc" }}
 {{ $recent_talks := first 3 $talks_sorted }}
 
-{{ $events := slice }}
-{{ range $.Site.RegularPages }}
-  {{ $is_talk := eq .Section "talks" }}
-  {{ $has_speaker := and (isset .Params "speakers") (in .Params.speakers $contributor_name) }}
-  {{ if and $has_speaker (not $is_talk) }}
-    {{ $events = $events | append . }}
-  {{ end }}
-{{ end }}
+{{ $events := partial "hub-single/contributor-events.html" (dict "name" $contributor_name) }}
 {{ $events_count := len $events }}
 {{ $recent_events := first 3 (sort $events ".Date" "desc") }}
 
@@ -44,7 +37,7 @@
 {{ if $posts }}{{ $all_activities = $all_activities | union $posts }}{{ end }}
 {{ if $talks }}{{ $all_activities = $all_activities | union $talks }}{{ end }}
 {{ if $events }}{{ $all_activities = $all_activities | union $events }}{{ end }}
-{{ $all_activities = where $all_activities ".Kind" "page" }}
+{{ $all_activities = where $all_activities ".Kind" "in" (slice "page" "section") }}
 
 {{ $seen := newScratch }}
 {{ range $recent_posts }}{{ $seen.Set .RelPermalink true }}{{ end }}

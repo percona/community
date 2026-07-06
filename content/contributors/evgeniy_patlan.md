@@ -37,10 +37,15 @@ events_tags:
 - devops
 - opensource
 - pgpool
-talks_tags: []
+talks_tags:
+- Career
+- DevOps
+- Education
+- Open Source
+- Security
 posts_count: 0
 events_count: 7
-talks_count: 0
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:

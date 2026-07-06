@@ -59,12 +59,10 @@ events_tags:
 - Meetup
 - Percona Community Live
 - Postgres
-- dashboard
-- event
 - opensource
 talks_tags: []
 posts_count: 19
-events_count: 4
+events_count: 3
 talks_count: 0
 contributor_type:
 - author

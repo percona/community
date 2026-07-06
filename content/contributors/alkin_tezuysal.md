@@ -25,7 +25,7 @@ talks_tags:
 - Open Source
 - Video
 posts_count: 0
-events_count: 4
+events_count: 3
 talks_count: 1
 contributor_type:
 - speaker

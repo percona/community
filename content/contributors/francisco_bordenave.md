@@ -21,16 +21,13 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
-- Percona Community Live
 - Stream
-- dashboard
-- event
 - opensource
 - sponsorship
 talks_tags:
 - Slides
 posts_count: 0
-events_count: 4
+events_count: 3
 talks_count: 1
 contributor_type:
 - speaker

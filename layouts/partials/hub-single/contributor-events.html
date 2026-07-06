@@ -1,0 +1,47 @@
+{{/*
+  Event pages for a contributor profile.
+
+  Params:
+    name — contributor slug (Params.name)
+
+  Includes RegularPages under events/ plus branch-bundle section pages
+  (_index.md) when the contributor is listed there but not on child sessions.
+*/}}
+{{- $contributor_name := .name -}}
+{{- $events := slice -}}
+{{- $seen := dict -}}
+
+{{- range where site.RegularPages "Section" "events" -}}
+  {{- if and (isset .Params "speakers") (in .Params.speakers $contributor_name) -}}
+    {{- $events = $events | append . -}}
+    {{- $seen = merge $seen (dict .RelPermalink true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range where site.Pages "Section" "events" -}}
+  {{- if ne .Kind "section" -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if not (isset .Params "speakers") -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if not (in .Params.speakers $contributor_name) -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- if index $seen .RelPermalink -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $bundleDir := .File.Dir -}}
+  {{- $listedOnChild := false -}}
+  {{- range where site.RegularPages "Section" "events" -}}
+    {{- if and (eq .File.Dir $bundleDir) (isset .Params "speakers") (in .Params.speakers $contributor_name) -}}
+      {{- $listedOnChild = true -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $listedOnChild -}}
+    {{- $events = $events | append . -}}
+    {{- $seen = merge $seen (dict .RelPermalink true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $events -}}
