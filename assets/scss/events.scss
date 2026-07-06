@@ -1,11 +1,5 @@
 @import "common/common";
 
-.contentblock.branded.events {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
 .main-content {
   flex: 3;
 }
@@ -87,7 +81,7 @@
       }
 
       .post-type {
-        color: #00bda5;
+        color: $link;
         font-weight: 600;
       }
 
@@ -280,19 +274,8 @@ a.event--preview, a.event--preview * {
   min-height: 1.2rem;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .contentblock.branded.events {
-    flex-direction: row;
-  }
-}
-
 /* Mobile */
 @media (max-width: 768px) {
-  .contentblock.branded.events {
-    flex-direction: column;
-  }
-
   .sidebar {
     display: none;
   }
@@ -300,5 +283,39 @@ a.event--preview, a.event--preview * {
   .select-container {
     display: flex;
   }
+}
+
+// ── Event series (e.g. Percona Live rooms landing) ─────────────────────────
+
+.event-series,
+.event-collection {
+  max-width: $layout-max-width;
+  margin: 0 auto;
+  padding: 0 clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 3rem;
+  box-sizing: border-box;
+
+  &__intro {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+
+    &.content-page-shell {
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__rooms,
+  &__list {
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.event-series__rooms,
+.event-collection__list {
+  padding-top: 2rem;
 }
 

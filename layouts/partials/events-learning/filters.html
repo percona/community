@@ -1,0 +1,94 @@
+{{ $data := index site.Data "events-learning" }}
+
+<div class="el-filters" data-el-filters>
+
+  {{/* Technology */}}
+  <div class="el-filters__field">
+    <button type="button" class="el-filters__btn" data-el-dropdown="technology" aria-expanded="false" aria-haspopup="listbox">
+      Technology <span class="el-filters__chevron">▾</span>
+    </button>
+    <div class="el-filters__panel" id="el-dropdown-technology" role="listbox" hidden>
+      <ul class="el-filters__list">
+        {{ range $data.filters.technology }}
+          {{ $term := . }}
+          {{ $slug := $term | urlize }}
+          {{ $termData := index site.Taxonomies.events_tag $slug }}
+          {{ if $termData }}
+            <li><a class="el-filters__option" href="{{ $termData.Page.RelPermalink }}">{{ $term }}</a></li>
+          {{ else }}
+            <li><span class="el-filters__option el-filters__option--disabled">{{ $term }}</span></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  {{/* Year */}}
+  <div class="el-filters__field">
+    <button type="button" class="el-filters__btn" data-el-dropdown="year" aria-expanded="false" aria-haspopup="listbox">
+      Year <span class="el-filters__chevron">▾</span>
+    </button>
+    <div class="el-filters__panel" id="el-dropdown-year" role="listbox" hidden>
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_year }}
+          {{ range first 12 (sort .ByCount "Page.Title" "desc") }}
+            <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  {{/* Category */}}
+  <div class="el-filters__field">
+    <button type="button" class="el-filters__btn" data-el-dropdown="category" aria-expanded="false" aria-haspopup="listbox">
+      Category <span class="el-filters__chevron">▾</span>
+    </button>
+    <div class="el-filters__panel" id="el-dropdown-category" role="listbox" hidden>
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_category }}
+          {{ range sort . "Page.Title" "asc" }}
+            <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  {{/* Tags */}}
+  <div class="el-filters__field">
+    <button type="button" class="el-filters__btn" data-el-dropdown="tags" aria-expanded="false" aria-haspopup="listbox">
+      Tags <span class="el-filters__chevron">▾</span>
+    </button>
+    <div class="el-filters__panel" id="el-dropdown-tags" role="listbox" hidden>
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_tag }}
+          {{ range sort . "Page.Title" "asc" }}
+            {{ if and (ne .Page.Title "Online") (ne .Page.Title "In-Person") (ne .Page.Title "Community") }}
+              <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  {{/* Format */}}
+  <div class="el-filters__field">
+    <button type="button" class="el-filters__btn" data-el-dropdown="format" aria-expanded="false" aria-haspopup="listbox">
+      Format <span class="el-filters__chevron">▾</span>
+    </button>
+    <div class="el-filters__panel" id="el-dropdown-format" role="listbox" hidden>
+      <ul class="el-filters__list">
+        {{ with .Site.Taxonomies.events_tag }}
+          {{ range sort . "Page.Title" "asc" }}
+            {{ if or (eq .Page.Title "Online") (eq .Page.Title "In-Person") }}
+              <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+</div>

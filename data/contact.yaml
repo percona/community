@@ -1,0 +1,33 @@
+hero:
+  title_before: Connect with the
+  title_accent: community
+  description: Got a question, a fix, or just want to see what's happening? Pick the channel that works for you.
+
+channels:
+  - title: Slack
+    text: The fastest way to get an answer or start a conversation. Jump into a channel, ask a question, or just lurk until you're ready.
+    url: https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow
+    label: Join Slack
+    external: true
+  - title: Forums
+    text: For longer questions, troubleshooting threads, and discussions that are worth keeping around. Search first — it's likely been asked.
+    url: https://forums.percona.com/
+    label: Go to forums
+    external: true
+  - title: X / Twitter
+    text: Database news, community updates, and the occasional hot take.
+    url: https://x.com/Perconabytes
+    label: "@Perconabytes on X"
+    external: true
+  - title: Mastodon
+    text: Same content, different home. Find us at @PerconaBytes.
+    url: https://mastodon.social/@PerconaBytes
+    label: "@PerconaBytes on Mastodon"
+    external: true
+  - title: Email
+    text: For anything that doesn't fit above — reach the community team directly.
+    url: mailto:community-team@percona.com
+    label: community-team@percona.com
+    external: false
+
+featured_post: /blog/2026/2026-05-07-meet-the-percona-community-team

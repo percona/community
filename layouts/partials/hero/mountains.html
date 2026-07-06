@@ -1,0 +1,87 @@
+{{/*
+  hub-hero--mountains: compact mountain-line hero for section pages.
+*/}}
+{{ $page := . }}
+{{ $headingId := "hub-hero-heading" }}
+{{ $showSearch := false }}
+{{ $searchId := "page" }}
+{{ $title := "" }}
+{{ $titleBefore := "" }}
+{{ $titleAccent := "" }}
+{{ $titleAfter := "" }}
+{{ $description := "" }}
+{{ $tech := "" }}
+{{ $heroLine := 0 }}
+
+{{ if reflect.IsMap . }}
+  {{ $page = .page | default . }}
+  {{ $headingId = .headingId | default $headingId }}
+  {{ $showSearch = .showSearch | default false }}
+  {{ $searchId = .searchId | default $searchId }}
+  {{ $title = .title | default "" }}
+  {{ $titleBefore = .titleBefore | default "" }}
+  {{ $titleAccent = .titleAccent | default "" }}
+  {{ $titleAfter = .titleAfter | default "" }}
+  {{ $description = .description | default "" }}
+  {{ $tech = .tech | default "" }}
+  {{ $heroLine = .hero_line | default 0 }}
+{{ end }}
+
+{{ if not $title }}
+  {{ $title = $page.Params.hero_title | default $page.Title }}
+{{ end }}
+{{ if not $titleBefore }}
+  {{ $titleBefore = $page.Params.hero_title_before | default "" }}
+{{ end }}
+{{ if not $titleAccent }}
+  {{ $titleAccent = $page.Params.hero_title_accent | default "" }}
+{{ end }}
+{{ if not $titleAfter }}
+  {{ $titleAfter = $page.Params.hero_title_after | default "" }}
+{{ end }}
+{{ if not $description }}
+  {{ $description = $page.Params.hero_description | default $page.Description | default "" }}
+{{ end }}
+{{ if not $tech }}
+  {{ $tech = $page.Params.tech | default "" }}
+{{ end }}
+{{ if not $heroLine }}
+  {{ $heroLine = $page.Params.hero_line | default (add (mod (len $page.RelPermalink) 3) 1) }}
+{{ end }}
+
+<section class="hub-hero hub-hero--mountains{{ with $tech }} hub-hero--tech-{{ . }}{{ end }}" aria-labelledby="{{ $headingId }}">
+  <div class="hub-hero__media" aria-hidden="true">
+    {{ partial "hero-bg-image.html" (dict "page" $page "line" $heroLine "class" "hub-hero__image" "width" 1600) }}
+    <div class="hub-hero__gradient" aria-hidden="true"></div>
+  </div>
+
+  {{ partial "hub-triangle.html" (dict
+    "path" "hub/icons/hero-triangle.svg"
+    "class" "hub-hero__triangle"
+    "width" 476
+    "height" 625
+  ) }}
+
+  <div class="hub-hero__inner">
+    <div class="hub-hero__copy">
+      <h1 class="hub-hero__title" id="{{ $headingId }}">
+        {{- if or $titleAccent $titleBefore $titleAfter -}}
+          {{- if $titleBefore -}}{{ $titleBefore }}{{ end -}}
+          {{- if and $titleBefore $titleAccent }} {{ end -}}
+          {{- if $titleAccent -}}<span class="hub-hero__accent">{{ $titleAccent }}</span>{{ end -}}
+          {{- if and $titleAccent $titleAfter }} {{ end -}}
+          {{- if $titleAfter -}}{{ $titleAfter }}{{ end -}}
+        {{- else -}}
+          {{ $title }}
+        {{- end -}}
+      </h1>
+      {{ with $description }}
+        <p class="hub-hero__subtitle">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ if $showSearch }}
+    {{ partial "hub-hero-search.html" (dict "block" "hub-hero" "id" $searchId) }}
+  {{ end }}
+</section>

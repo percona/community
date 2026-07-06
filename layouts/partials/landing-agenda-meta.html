@@ -1,0 +1,30 @@
+{{/*
+  Emits <meta type="talk"> tags for landing agenda DataTables.
+
+  Params:
+    talks — slice of talk objects from talks.json
+    pages — Hugo pages to match for talk URLs (event child pages)
+*/}}
+{{ range .talks }}
+  {{ $talkTitle := index . "Title" }}
+  {{ $url := "" }}
+  {{ range $.pages }}
+    {{ if and (not .IsSection) (eq .Title $talkTitle) }}
+      {{ $url = .RelPermalink }}
+    {{ end }}
+  {{ end }}
+  <meta type="talk"
+        title="{{ $talkTitle }}"
+        speaker1="{{ index . "Speaker 1" }}"
+        company1="{{ index . "Company 1" }}"
+        bio1="{{ index . "Bio 1" | htmlEscape }}"
+        speaker2="{{ index . "Speaker 2" }}"
+        company2="{{ index . "Company 2" }}"
+        bio2="{{ index . "Bio 2" | htmlEscape }}"
+        description="{{ index . "Description" | htmlEscape }}"
+        date="{{ index . "Date" }}"
+        time="{{ index . "Sorting time" }}"
+        time1="{{ index . "Time Start EDT" }}"
+        time2="{{ index . "Time Start CEST" }}"
+        url="{{ $url }}" />
+{{ end }}

@@ -24,8 +24,6 @@ video: ''
 images:
 - talks/2026/2026-03-12-external-proxies-and-poolers-a-reality-check-in-todays-tech-stack.png
 ---
-## Abstract
-
 For decades, the standard PostgreSQL playbook has included an external connection pooler like PgBouncer or PgPool-II and proxies like HAProxy for service discovery, which we won’t see generally with other database installations like Oracle or SQLServer. This architectural pattern, mainly born from the high cost of process forking in older operating systems, is often treated as gospel. But what if this long-held wisdom is now outdated? It's time to do a reality check to see whether those old observations, remarks and premises are still relevant or not, considering the underlying technology stack had drastically changed over decades
  
 ### This talk discusses

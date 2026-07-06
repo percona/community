@@ -24,8 +24,6 @@ youtube_id: 1SeXi2Vxf1w
 images:
 - talks/2026/2026-01-29-a-quick-intro-to-mysql-json-duality-views.png
 ---
-## Abstract
-
 - What are JSON Duality Views?
 - Creating JDV.
 - Common use cases.

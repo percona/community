@@ -24,6 +24,4 @@ video: ''
 images:
 - talks/2026/2026-10-11-what-happens-after-you-fork-an-oss-project.png
 ---
-## Abstract
-
 This presentation examines what happened to major forks that emerged after the high-profile license changes of recent years - including Redis, Elasticsearch, Terraform, and others. Are these projects healthy and gaining traction, or struggling to build momentum? We’ll review real data, adoption signals, and ecosystem growth to see which forks succeeded, which stalled, and why.

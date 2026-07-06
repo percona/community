@@ -1,3 +1,5 @@
+@import "common/variables";
+
 .speaker .post {
     padding-top: 20px;
     text-align: center;
@@ -22,9 +24,133 @@
         height: 180px;
     }
 
-    .dt-control {
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .landing-agenda-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 2rem;
+    }
+
+    .landing-agenda-wrap .landing-agenda-table {
+        min-width: 36rem;
+        border: 1px solid #e8ecf3;
+        border-collapse: collapse;
+
+        thead th {
+            font-family: $font-poppins;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $paragraph-grey;
+            background: #f8f9fc;
+            border-bottom: 2px solid #e8ecf3;
+            white-space: nowrap;
+        }
+
+        tbody td {
+            font-family: $font-poppins;
+            font-size: 0.875rem;
+            line-height: 1.45;
+            vertical-align: top;
+            color: $brand-black;
+            border-bottom: 1px solid #eef0f4;
+        }
+
+        tbody tr {
+            display: table-row;
+            background: $brand-white;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        tbody tr:hover {
+            background: rgba($brand-purple, 0.03);
+        }
+
+        thead {
+            clip: auto;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+        }
+
+        td,
+        th {
+            display: table-cell;
+            text-align: left;
+        }
+
+        td::before,
+        th::before {
+            content: none;
+            display: none;
+        }
+
+        .landing-agenda__link {
+            color: $brand-black;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: none;
+
+            &:hover,
+            &:visited:hover {
+                color: $brand-purple;
+                text-decoration: underline;
+            }
+
+            &:visited {
+                color: $brand-black;
+            }
+        }
+
+        .landing-agenda-table__expand {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.35rem;
+            padding: 0;
+            border: 1px solid #e8ecf3;
+            border-radius: 3px;
+            background: #f8f9fc;
+            color: $brand-black;
+            font-family: $font-poppins;
+            font-size: 0.875rem;
+            font-weight: 600;
+            line-height: 1;
+            vertical-align: middle;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                border-color: rgba($brand-purple, 0.35);
+                color: $brand-purple;
+                outline: none;
+            }
+        }
+    }
+
+    .landing__days,
+    .event-card-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid__item .event-card__title {
+        font-size: 1rem;
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .landing__days.grid--3 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
     }
 
     .dataTables_filter,
@@ -53,8 +179,188 @@
     }
 
     .landing-table__description p {
-        font-size: 0.7rem;
-        line-height: 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.55;
+        color: $paragraph-grey;
+    }
+
+    .landing-streams {
+        max-width: 52rem;
+        margin: 0 auto 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+
+            @media screen and (min-width: 640px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__card {
+            border: 1px solid #e8ecf3;
+            border-radius: 10px;
+            background: $brand-white;
+            padding: 1.125rem 1.25rem 1.25rem;
+        }
+
+        &__card-title {
+            margin: 0 0 0.875rem;
+            padding-bottom: 0.625rem;
+            border-bottom: 1px solid #eef0f4;
+            font-family: $font-poppins;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            line-height: 1.3;
+            color: $brand-black;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        &__day {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding: 0.625rem 0;
+
+            & + & {
+                border-top: 1px solid #f0f2f6;
+            }
+
+            &--parts {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.5rem;
+            }
+        }
+
+        &__day-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.1rem;
+            min-width: 0;
+        }
+
+        &__day-label {
+            font-family: $font-poppins;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            line-height: 1.3;
+            color: $brand-black;
+        }
+
+        &__day-date {
+            font-family: $font-poppins;
+            font-size: 0.8125rem;
+            font-weight: 400;
+            line-height: 1.3;
+            color: $paragraph-grey;
+        }
+
+        &__watch {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.35rem 0.75rem;
+            border: 1px solid rgba($brand-purple, 0.35);
+            border-radius: 999px;
+            background: rgba($brand-purple, 0.06);
+            color: $brand-purple;
+            font-family: $font-poppins;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background-color $transition-length ease, border-color $transition-length ease, color $transition-length ease;
+
+            &:visited {
+                color: $brand-purple;
+            }
+
+            &:hover,
+            &:visited:hover {
+                background: $brand-purple;
+                border-color: $brand-purple;
+                color: $brand-white;
+                text-decoration: none;
+            }
+        }
+
+        &__parts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        &__part {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.65rem;
+            border: 1px solid #e8ecf3;
+            border-radius: 6px;
+            background: #f8f9fc;
+            color: $brand-black;
+            font-family: $font-poppins;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background-color $transition-length ease, border-color $transition-length ease, color $transition-length ease;
+
+            &:visited {
+                color: $brand-black;
+            }
+
+            &:hover,
+            &:visited:hover {
+                background: rgba($brand-purple, 0.08);
+                border-color: rgba($brand-purple, 0.35);
+                color: $brand-purple;
+                text-decoration: none;
+            }
+        }
+
+        &__social {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.625rem;
+            margin-top: 1.25rem;
+        }
+
+        &__social-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.45rem 0.875rem;
+            border: 1px solid #e8ecf3;
+            border-radius: 999px;
+            background: $brand-white;
+            color: $brand-black;
+            font-family: $font-poppins;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background-color $transition-length ease, border-color $transition-length ease, color $transition-length ease;
+
+            &:visited {
+                color: $brand-black;
+            }
+
+            &:hover,
+            &:visited:hover {
+                background: rgba($brand-purple, 0.06);
+                border-color: rgba($brand-purple, 0.35);
+                color: $brand-purple;
+                text-decoration: none;
+            }
+        }
     }
 
     .landing__video {
@@ -67,6 +373,15 @@
         @media screen and (min-width: 1000px) {
             padding-left: 8rem;
             padding-right: 8rem;
+        }
+    }
+
+    .body .landing-streams,
+    .body .landing-streams__grid,
+    .body .landing-streams__social {
+        @media screen and (min-width: 1000px) {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -129,7 +444,7 @@
         }
     }
 
-    .grid__item h3 {
+    .grid__item h3:not(.event-card__title) {
         font-size: 1rem;
         line-height: 1rem;
         margin-top: 0;
@@ -143,6 +458,10 @@
         margin-bottom: 1.5rem;
     }
 
+    .landing__days {
+        margin-bottom: 2rem;
+    }
+
     @media screen and (max-width: 600px) {
         .time1::after {
             content: ' EDT';
@@ -150,10 +469,6 @@
 
         .time2::after {
             content: ' CEST';
-        }
-
-        .landing-agenda__title::before {
-            content: 'Talk: ';
         }
     }
 

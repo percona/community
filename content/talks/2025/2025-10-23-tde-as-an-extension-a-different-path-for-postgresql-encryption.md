@@ -25,8 +25,6 @@ video: ''
 images:
 - talks/2025/2025-10-23-tde-as-an-extension-a-different-path-for-postgresql-encryption.png
 ---
-## Abstract
-
 Transparent Data Encryption (TDE) has been a long-standing challenge in the PostgreSQL community. While proprietary solutions exist and major patch sets have been proposed, the topic continues to spark debate on the hackers mailing list, with no clear path forward.
 Our team decided to take a different approach: instead of building TDE directly into PostgreSQL, we explored how far we could go by implementing it as an extension, pushing core changes only where extensibility improvements were needed.
 This has been, and still is, a demanding project. Along the way, we have built multiple prototypes, hit dead ends, and uncovered design trade-offs that were not obvious at the start.

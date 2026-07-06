@@ -1,0 +1,17 @@
+<nav class="el-sidebar" aria-label="Events & Learning sections">
+  <div class="el-sidebar__card">
+    <ul class="el-sidebar__list">
+    {{ range (index site.Data "events-learning").nav }}
+      {{ if not .hidden }}
+      <li class="el-sidebar__item">
+        <a
+          href="#el-panel-{{ .id }}"
+          class="el-sidebar__link{{ if eq .id "events" }} is-active{{ end }}"
+          data-el-tab="{{ .id }}"
+        >{{ .label }}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+    </ul>
+  </div>
+</nav>

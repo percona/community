@@ -24,7 +24,5 @@ youtube_id: 5se7UKErguU
 images:
 - talks/2026/2026-01-30-binary-log-server-the-missing-mysql-infrastructure-component.png
 ---
-## Abstract
-
 In this session I will give you an introduction to a new open-source tool in the MySQL family – the Binary Log Server from Percona. This tool started as a simple continuous backup solution for Point-in-time Recovery (PITR). The Binary Log Server has a huge potential to become a first-class citizen in the MySQL infrastructure with multi-tenant support, REST API for management, and basic event data querying capabilities. The Binary Log Server can also serve as an intermediate link in complex replication topologies. It supports local file storage and AWS S3 for keeping binlog data and can be easily extended with other storage providers.
  https://github.com/Percona-Lab/percona-binlog-server

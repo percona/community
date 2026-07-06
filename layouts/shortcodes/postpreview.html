@@ -1,1 +1,3 @@
-{{ partial "postpreview" (dict "Link" (.Get "link") "Title" (.Get "title") "Image" (.Get "image") "Content" .Inner "Hideread" ( .Get "hideread" )) }}
+{{ with site.GetPage (.Get "link") }}
+  {{ partial "hub-single/blog-card.html" . }}
+{{ end }}

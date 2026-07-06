@@ -1,1 +1,3 @@
-<div class="hero hero-gradient {{ .Get "class" }}"><div class="contentblock"><div class="hero-text">{{ .Inner }}</div></div></div>
+{{/* DEPRECATED: use layout + partial "hero.html" with hero_type: mountains|photo in front matter.
+     Find remaining old heroes: rg 'hero-gradient' content/ */}}
+<div class="content-band {{ .Get "class" }}"><div class="contentblock"><div class="content-band__inner">{{ .Inner }}</div></div></div>

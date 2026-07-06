@@ -1,4 +1,7 @@
 ---
 title: "Percona Community Talks"
-description: "Presentations delivered by Percona Community speakers at conferences and meetups."
+description: "Presentations from Percona Community speakers at conferences and meetups. Browse by topic or year."
+layout: hub
+images:
+  - hub/covers/talks-cover.jpg
 ---

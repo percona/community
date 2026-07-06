@@ -14,8 +14,8 @@
     width: 100%;
     z-index: 9999;
 
-    background: linear-gradient(90deg, #FF6A00, #FFB800);
-    color: #ffffff;
+    background: $brand-purple;
+    color: $brand-white;
 
     padding: 10px 20px;
     display: flex;
@@ -28,19 +28,25 @@
     text-align: center;
     white-space: nowrap;
 
-    &__btn {
-      background: rgba(255, 255, 255, 0.85);
-      color: #8A3D00;
+    a.pc-top-banner__btn {
+      background: $brand-white;
+      color: $brand-purple;
       padding: 4px 14px;
       border-radius: 14px;
       font-weight: 700;
       font-size: 14px;
       text-decoration: none;
+      transition: background 0.2s ease, transform 0.15s ease, color 0.2s ease;
 
-      transition: background 0.2s ease, transform 0.15s ease;
+      &:visited {
+        color: $brand-purple;
+      }
 
-      &:hover {
-        background: #ffffff;
+      &:hover,
+      &:visited:hover {
+        background: rgba($brand-white, 0.9);
+        color: $brand-purple;
+        text-decoration: none;
         transform: translateY(-1px);
       }
     }
@@ -55,14 +61,14 @@
       text-align: center;
       box-sizing: border-box;
 
-      &__text {
+      .pc-top-banner__text {
         display: inline;
       }
 
-      &__btn {
+      a.pc-top-banner__btn {
         display: inline;
         background: none;
-        color: #fff;
+        color: $brand-white;
         padding: 0;
         border-radius: 0;
         font-size: 14px;
@@ -70,8 +76,14 @@
         text-decoration: underline;
         text-underline-offset: 2px;
 
-        &:hover {
+        &:visited {
+          color: $brand-white;
+        }
+
+        &:hover,
+        &:visited:hover {
           background: none;
+          color: rgba($brand-white, 0.85);
           transform: none;
           text-decoration: none;
         }
@@ -82,6 +94,32 @@
 }
 
 .banner {
+
+  &.night,
+  &.aqua {
+    margin: 0;
+
+    .banner__content {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .banner__text {
+      h1 {
+        margin: 0;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        line-height: 1.2;
+        color: inherit;
+      }
+
+      p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.55;
+        color: inherit;
+      }
+    }
+  }
 
   .banner__content
   {

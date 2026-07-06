@@ -9,14 +9,11 @@ date: '2022-01-27'
 events_year: ["2022"]
 events_category: ["Speaking","Community"]
 events_tag: ["Online"]
+hero_type: mountains
+hero_title: "Community PostgreSQL Live Stream & Chat"
+hero_description: "Percona Community is scheduling live streams dedicated to PostgreSQL starting from March 11th, 2022. Every two weeks, Matt Yonkovit, the Head of Open Source Strategy at Percona, will chat with Charly Batista, PostgreSQL Tech Lead at Percona, to discuss specific topics related to Postgres."
+hero_line: 2
 ---
-{{% hero-gradient class="night" %}}
-
-# Community PostgreSQL Live Stream & Chat
-
-Percona Community is scheduling live streams dedicated to PostgreSQL starting from March 11th, 2022. Every two weeks, Matt Yonkovit, the Head of Open Source Strategy at Percona, will chat with Charly Batista, PostgreSQL Tech Lead at Percona, to discuss specific topics related to Postgres.
-
-{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

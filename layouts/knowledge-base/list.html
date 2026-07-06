@@ -1,0 +1,16 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/knowledge-base.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+<div class="knowledge-base">
+  {{ partial "knowledge-base/hero.html" . }}
+  {{ partial "knowledge-base/tabs.html" . }}
+
+  <div class="kb-main">
+    {{ partial "knowledge-base/get-involved.html" . }}
+    {{ partial "knowledge-base/community-content.html" . }}
+  </div>
+</div>
+{{ end }}

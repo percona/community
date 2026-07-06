@@ -1,82 +1,112 @@
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/labs.scss") | safeCSS) -}}
   {{- if in .Content "<pre class=\"chroma\">" -}}
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{ end }}
-  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/bio.scss") | safeCSS) -}}
 {{- end }}
 
+{{ define "mainwrapper" }}
+  {{ partial "hero.html" (dict "page" .) }}
 
-{{ define "main" }}
+  <div class="labs-hub labs-page">
+    <article class="content-page-shell text{{ if not .PublishDate }} text--simple{{ end }}">
+      {{ if eq .File.Dir "labs/posts/" }}
+        <a class="labs-page__back" href="{{ (site.GetPage "/labs/posts").RelPermalink }}">
+          <span aria-hidden="true">&larr;</span>
+          Back to lab articles
+        </a>
+      {{ else if .Parent }}
+        <a class="labs-page__back" href="{{ .Parent.RelPermalink }}">
+          <span aria-hidden="true">&larr;</span>
+          Back to {{ .Parent.Title }}
+        </a>
+      {{ else }}
+        <a class="labs-page__back" href="{{ (site.GetPage "/labs").RelPermalink }}">
+          <span aria-hidden="true">&larr;</span>
+          Back to Percona Labs
+        </a>
+      {{ end }}
 
+      {{ if eq .Parent.Title "Documentation" }}
+        <p class="labs-page__breadcrumbs">
+          <a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a>
+          {{ if .CurrentSection.Parent }} / <a href="{{ .CurrentSection.Parent.RelPermalink }}">{{ .CurrentSection.Parent.Title }}</a>{{ end }}
+          {{ if .Parent }} / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>{{ end }}
+        </p>
+      {{ end }}
 
-  <article class="text">
+      <h1>{{ .Title }}</h1>
 
-    <h1>{{ .Title }}</h1>
-
-    {{ if eq .Parent.Title "Documentation" }}
-      <p class="small"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a>{{ if .CurrentSection.Parent }} / <a href="{{ .CurrentSection.Parent.RelPermalink }}">{{ .CurrentSection.Parent.Title }}</a> {{ end }}{{ if .Parent }} / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>{{ end }}</p>
-
-    {{ else if .Parent }}
-      <p class="small"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
-    {{ end }}
-
-    <div class="body">
-      {{ partial "content.html" . }}
-    </div>
-
-
-    {{ if eq .Parent.Title "Documentation" }}
-    <div class="contentblock documentation">
-        <h2>Read also</h2>
-
-        <div class="grid grid--2">
-            {{ $title := .Title }}
-            {{ range .CurrentSection.Pages }}
-            {{ if ne .Title $title }}
-            <a class="link__wrapper grid__item post post--preview" href="{{ .RelPermalink }}">
-                <h3>{{ .Title }}</h3>
-                <p>{{ .Description }}</p>
-            </a>
-            {{ end }}
-            {{ end }}
-        </div>
-
-        <p class="small"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a>{{ if .CurrentSection.Parent }} / <a href="{{ .CurrentSection.Parent.RelPermalink }}">{{ .CurrentSection.Parent.Title }}</a> {{ end }}{{ if .Parent }} / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>{{ end }}</p>
-    </div>
-    {{ else if .Parent }}
-      <p class="small"><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a></p>
-    {{ end }}
-
-  </article>
-
-  {{ if (isset .Params "tags")}}
-
-  {{- $pages := where (where $.Page.Site.RegularPages "Section" "labs") "Params.tags" "intersect" .Params.tags -}}
-
-  {{- if $pages -}}
-    <div class="contentblock branded">
-          <h2>Latest articles</h2>
-          <div class="grid grid--3">
-              {{- range $pages -}}
-                  {{- if isset .Params "date" }}
-                  <div class="grid__item">
-                      {{- $excerpt := "" -}}
-                      {{- if isset .Params "excerpt" }}
-                          {{- $excerpt = .Params.excerpt -}}
-                      {{- end -}}
-                      {{- if isset .Params "images" -}}
-                          {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Image" (index .Params.images 0) "Content" .Content "Excerpt" $excerpt "PublishDate" .PublishDate) -}}
-                      {{- else -}}
-                          {{- partial "postpreview" (dict "Link" .RelPermalink "Title" .Title "Content" .Content "Excerpt" $excerpt) -}}
-                      {{- end -}}
-                  </div>
-                  {{- end -}}
+      {{ if .PublishDate }}
+        <div class="labs-page__meta meta">
+          <time datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+          {{- if isset .Params "authors" -}}
+            <span>
+              by {{ range $key, $author := .Params.authors -}}
+                {{- with site.GetPage (printf "/contributors/%s" $author) -}}
+                  {{- if $key }}, {{ end -}}
+                  <a href="{{ .RelPermalink }}">{{ .Params.fullname }}</a>
+                {{- end -}}
               {{- end -}}
-          </div>
-      </div>
-     {{- end -}}
-  {{ end }}
+            </span>
+          {{- end -}}
+        </div>
+      {{ end }}
 
-  {{ partial "sharing.html" . }} 
+      <div class="body">
+        {{ partial "content.html" . }}
+      </div>
+
+      {{ partial "sharing.html" . }}
+    </article>
+
+    {{ if eq .Parent.Title "Documentation" }}
+      {{ $siblings := where .CurrentSection.RegularPages "Permalink" "ne" .Permalink }}
+      {{ if gt (len $siblings) 0 }}
+        <section class="el-panel labs-panel" aria-labelledby="labs-read-also-heading">
+          <header class="el-panel__header">
+            <h2 class="el-panel__title" id="labs-read-also-heading">Read also</h2>
+          </header>
+          <div class="labs-doc-grid">
+            {{ range $siblings.ByWeight }}
+              {{ partial "labs/doc-card.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+
+    {{ if eq .File.Dir "labs/posts/" }}
+      {{ $articles := where (where site.RegularPages "File.Dir" "labs/posts/") "Permalink" "ne" .Permalink }}
+      {{ if gt (len $articles) 0 }}
+        <section class="el-panel labs-panel" aria-labelledby="labs-more-articles-heading">
+          <header class="el-panel__header">
+            <h2 class="el-panel__title" id="labs-more-articles-heading">More lab articles</h2>
+          </header>
+          <div class="labs-articles-grid">
+            {{ range first 3 $articles.ByDate.Reverse }}
+              {{ partial "hub-single/blog-card.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ else if and (isset .Params "tags") }}
+      {{ $articles := where (where (where site.RegularPages "File.Dir" "labs/posts/") "Params.tags" "intersect" .Params.tags) "Permalink" "ne" .Permalink }}
+      {{ if gt (len $articles) 0 }}
+        <section class="el-panel labs-panel" aria-labelledby="labs-related-heading">
+          <header class="el-panel__header">
+            <h2 class="el-panel__title" id="labs-related-heading">Related articles</h2>
+          </header>
+          <div class="labs-articles-grid">
+            {{ range first 3 $articles.ByDate.Reverse }}
+              {{ partial "hub-single/blog-card.html" . }}
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+  </div>
 {{ end }}

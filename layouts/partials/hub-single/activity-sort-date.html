@@ -1,0 +1,28 @@
+{{/*
+  Returns a time.Time for sorting mixed contributor activity pages (blog, talks, events).
+  Params: page (Page)
+*/}}
+{{- $page := .page -}}
+{{- $sortDate := $page.Date -}}
+
+{{- if eq $page.Section "talks" -}}
+  {{- with $page.Params.presentation_date -}}
+    {{- $sortDate = . | time -}}
+  {{- else -}}
+    {{- with $page.Params.event_date_start -}}
+      {{- $sortDate = . | time -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if eq $page.Section "blog" -}}
+  {{- $sortDate = $page.PublishDate | default $page.Date -}}
+{{- else if $sortDate.IsZero -}}
+  {{- with $page.Params.event_date -}}
+    {{- $sortDate = . | time -}}
+  {{- else -}}
+    {{- with $page.Params.EventDate -}}
+      {{- $sortDate = . | time -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $sortDate -}}

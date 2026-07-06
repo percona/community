@@ -1,0 +1,156 @@
+{{ $talksHub := site.GetPage "/talks" }}
+{{ $allTalks := slice }}
+{{ with $talksHub }}
+  {{ $allTalks = sort .Pages ".Params.presentation_date" "desc" }}
+{{ end }}
+
+{{ $perPage := 6 }}
+{{ $totalTalks := len $allTalks }}
+{{ $totalPages := 1 }}
+{{ if gt $totalTalks 0 }}
+  {{ $totalPages = int (math.Ceil (div (float $totalTalks) (float $perPage))) }}
+{{ end }}
+{{ $talks := first $perPage $allTalks }}
+
+<section
+  class="el-panel"
+  id="el-panel-talks"
+  data-el-panel="talks"
+  aria-labelledby="el-talks-heading"
+>
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-talks-heading">Talks</h2>
+  </header>
+
+  <div class="el-filters" data-el-filters>
+
+    {{/* Year */}}
+    <div class="el-filters__field">
+      <button type="button" class="el-filters__btn" data-el-dropdown="tk-year" aria-expanded="false" aria-haspopup="listbox">
+        Year <span class="el-filters__chevron">▾</span>
+      </button>
+      <div class="el-filters__panel" id="el-dropdown-tk-year" role="listbox" hidden>
+        <ul class="el-filters__list">
+          {{ range sort site.Taxonomies.talk_year "Page.Title" "desc" }}
+            <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    {{/* Tags */}}
+    <div class="el-filters__field">
+      <button type="button" class="el-filters__btn" data-el-dropdown="tk-tags" aria-expanded="false" aria-haspopup="listbox">
+        Tags <span class="el-filters__chevron">▾</span>
+      </button>
+      <div class="el-filters__panel" id="el-dropdown-tk-tags" role="listbox" hidden>
+        <ul class="el-filters__list">
+          {{ range first 30 (sort site.Taxonomies.talk_tags.ByCount) }}
+            {{ if gt .Count 1 }}
+              <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  {{ if gt (len $talks) 0 }}
+    <div class="el-talks-list">
+      {{ range $talks }}
+        <article class="el-talk">
+
+          <div class="el-talk__body">
+            <a class="el-talk__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+            <p class="el-talk__meta">
+              {{ with .Params.presentation_date }}
+                <span>{{ . }}</span>
+              {{ end }}
+              {{ with .Params.event }}
+                <span class="el-talk__meta-sep">·</span>
+                <span>{{ . }}</span>
+              {{ end }}
+              {{ with .Params.event_location }}
+                <span class="el-talk__meta-sep">·</span>
+                <span>{{ . }}</span>
+              {{ end }}
+            </p>
+
+            {{ with .Params.speakers }}
+              <div class="el-talk__speakers">
+                {{ range . }}
+                  {{ $c := site.GetPage (print "/contributors/" .) }}
+                  {{ with $c }}
+                    <a class="el-talk__speaker" href="{{ .RelPermalink }}">
+                      {{ $img := index .Params.images 0 }}
+                      {{ if $img }}
+                        {{ with resources.Get $img }}
+                          <img class="el-talk__avatar" src="{{ (.Fill "112x112 Center jpg q85").RelPermalink }}" alt="{{ $c.Params.fullname }}" loading="lazy">
+                        {{ else }}
+                          <div class="el-talk__avatar-placeholder"></div>
+                        {{ end }}
+                      {{ else }}
+                        <div class="el-talk__avatar-placeholder"></div>
+                      {{ end }}
+                      <div>
+                        <div class="el-talk__speaker-name">{{ .Params.fullname }}</div>
+                        {{ with .Params.job }}
+                          <p class="el-talk__speaker-job">{{ . }}</p>
+                        {{ end }}
+                      </div>
+                    </a>
+                  {{ end }}
+                {{ end }}
+              </div>
+            {{ end }}
+
+            {{ with .Params.talk_tags }}
+              <div class="el-talk__tags">
+                {{ range . }}
+                  <a class="el-talk__tag" href="/talks/talk_tags/{{ . | urlize }}/">#{{ . }}</a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+
+          <div class="el-talk__actions">
+            {{ with .Params.slides }}
+              <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+            {{ end }}
+            {{ with .Params.video }}
+              <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+            {{ end }}
+            {{ with .Params.event_url }}
+              <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Event</a>
+            {{ end }}
+            {{ with .Params.talk_url }}
+              <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Talk</a>
+            {{ end }}
+            <a class="el-talk__action" href="{{ .RelPermalink }}">Learn more</a>
+          </div>
+
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No talks found.</p>
+  {{ end }}
+
+  <nav class="el-pagination" aria-label="Browse all talks">
+    {{ with $talksHub }}
+      <a class="el-pagination__browse" href="{{ .RelPermalink }}">Browse all talks &rarr;</a>
+    {{ end }}
+    <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+    <span class="el-pagination__status">Page 1 of {{ $totalPages }}</span>
+    {{ with $talksHub }}
+      {{ if gt $totalPages 1 }}
+        <a class="el-pagination__arrow" href="{{ printf "%spage/2/" .RelPermalink }}" aria-label="Page 2">&rsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+      {{ end }}
+    {{ end }}
+  </nav>
+
+</section>

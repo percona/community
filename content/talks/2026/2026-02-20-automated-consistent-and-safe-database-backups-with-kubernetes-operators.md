@@ -25,8 +25,6 @@ video: ''
 images:
 - talks/2026/2026-02-20-automated-consistent-and-safe-database-backups-with-kubernetes-operators.png
 ---
-## Abstract
-
 Running databases on Kubernetes is no longer experimental, and backups remain a non-negotiable part of any production deployment. As stateful workloads grow in Kubernetes, the need for automated, consistent, and database-aware backup strategies becomes critical.
 
 This talk explores the challenges of backing up databases in containerized environments and demonstrates how Kubernetes Operators can handle backup and restore for MySQL, MongoDB, and PostgreSQL using a declarative, Custom Resource–based workflow. Inspired by the Percona Operators, we'll see how complex backup procedures can be turned into simple, repeatable Kubernetes resources—keeping data protection fully Kubernetes-native.

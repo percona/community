@@ -1,0 +1,139 @@
+{{ $contributors := .searchPages }}
+{{ $showEvents := true }}
+{{ if isset . "showEvents" }}
+  {{ $showEvents = .showEvents }}
+{{ end }}
+{{ $searchIndex := slice }}
+
+{{ range $contributors }}
+  {{ $title := .Title | default "" }}
+  {{ $fullname := .Params.fullname | default "" }}
+  {{ $job := .Params.job | default "" }}
+  {{ $tagline := .Params.tagline | default "" }}
+
+  {{ $tags := "" }}
+  {{ with .Params.contributor_tag }}
+    {{ $tags = delimit . " " }}
+  {{ end }}
+
+  {{ $types := "" }}
+  {{ with .Params.contributor_type }}
+    {{ $types = delimit . " " }}
+  {{ end }}
+
+  {{ $years := "" }}
+  {{ with .Params.contributor_year }}
+    {{ $years = delimit . " " }}
+  {{ end }}
+
+  {{ $bio := .Content | markdownify | plainify | default "" }}
+
+  {{ $searchIndex = $searchIndex | append (dict
+    "html"      (partial "contributors-hub/speaker-card.html" (dict "page" . "showEvents" $showEvents))
+    "title"     ($title | lower)
+    "fullname"  ($fullname | lower)
+    "job"       ($job | lower)
+    "tagline"   ($tagline | lower)
+    "tags"      ($tags | lower)
+    "types"     ($types | lower)
+    "years"     ($years | lower)
+    "bio"       ($bio | lower)
+  ) }}
+{{ end }}
+
+<script type="application/json" id="contributors-hub-search-data">
+  {{- $searchIndex | jsonify | safeJS -}}
+</script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("contributors-hub-search-data");
+    const searchInput = document.getElementById("contributors-hub-search");
+    const grid = document.getElementById("contributors-hub-grid");
+    const paginator = document.getElementById("contributors-hub-paginator");
+    const statusEl = document.querySelector("[data-contributors-search-status]");
+
+    if (!searchDataEl || !searchInput || !grid) return;
+
+    let data = [];
+    try {
+      data = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultMarkup = grid.innerHTML;
+
+    const scoreItem = (item, tokens) => {
+      let score = 0;
+      tokens.forEach(function (token) {
+        if (item.fullname.includes(token)) score += 6;
+        if (item.job.includes(token)) score += 5;
+        if (item.title.includes(token)) score += 4;
+        if (item.tagline.includes(token)) score += 4;
+        if (item.tags.includes(token)) score += 3;
+        if (item.types.includes(token)) score += 2;
+        if (item.years.includes(token)) score += 2;
+        if (item.bio.includes(token)) score += 1;
+      });
+      return score;
+    };
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        grid.innerHTML = '<p class="el-panel__empty">No matching contributors found.</p>';
+        if (statusEl) statusEl.textContent = "No results";
+        return;
+      }
+      grid.innerHTML = matches.map(function (m) { return m.html; }).join("");
+      if (statusEl) statusEl.textContent = "Found " + matches.length + " results";
+    };
+
+    const resetList = function () {
+      grid.innerHTML = defaultMarkup;
+      if (statusEl) statusEl.textContent = "";
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseTokens = (value) => {
+      if (!value) return [];
+      const lowered = value.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, function (_, phrase) {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder.split(/\s+/).map(function (t) { return t.trim(); }).filter(Boolean).forEach(function (t) {
+        tokens.push(t);
+      });
+
+      return tokens;
+    };
+
+    searchInput.addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+      const tokens = parseTokens(query);
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = data
+        .map(function (item) {
+          return Object.assign({}, item, { score: scoreItem(item, tokens) });
+        })
+        .filter(function (item) { return item.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; });
+
+      renderMatches(matches);
+    });
+  });
+</script>

@@ -1,0 +1,71 @@
+<article class="el-talk">
+  <div class="el-talk__body">
+    <a class="el-talk__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+    <p class="el-talk__meta">
+      {{ with .Params.presentation_date }}
+        <span>{{ . }}</span>
+      {{ end }}
+      {{ with .Params.event }}
+        <span class="el-talk__meta-sep">·</span>
+        <span>{{ . }}</span>
+      {{ end }}
+      {{ with .Params.event_location }}
+        <span class="el-talk__meta-sep">·</span>
+        <span>{{ . }}</span>
+      {{ end }}
+    </p>
+
+    {{ with .Params.speakers }}
+      <div class="el-talk__speakers">
+        {{ range . }}
+          {{ $c := site.GetPage (print "/contributors/" .) }}
+          {{ with $c }}
+            <a class="el-talk__speaker" href="{{ .RelPermalink }}">
+              {{ $img := index .Params.images 0 }}
+              {{ if $img }}
+                {{ with resources.Get $img }}
+                  <img class="el-talk__avatar" src="{{ (.Fill "112x112 Center jpg q85").RelPermalink }}" alt="{{ $c.Params.fullname }}" loading="lazy">
+                {{ else }}
+                  <div class="el-talk__avatar-placeholder"></div>
+                {{ end }}
+              {{ else }}
+                <div class="el-talk__avatar-placeholder"></div>
+              {{ end }}
+              <div>
+                <div class="el-talk__speaker-name">{{ .Params.fullname }}</div>
+                {{ with .Params.job }}
+                  <p class="el-talk__speaker-job">{{ . }}</p>
+                {{ end }}
+              </div>
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .Params.talk_tags }}
+      <div class="el-talk__tags">
+        {{ range . }}
+          <a class="el-talk__tag" href="/talk_tags/{{ . | urlize }}/">#{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+
+  <div class="el-talk__actions">
+    {{ with .Params.slides }}
+      <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Slides</a>
+    {{ end }}
+    {{ with .Params.video }}
+      <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Video</a>
+    {{ end }}
+    {{ with .Params.event_url }}
+      <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Event</a>
+    {{ end }}
+    {{ with .Params.talk_url }}
+      <a class="el-talk__action" href="{{ . }}" target="_blank" rel="noopener">Talk</a>
+    {{ end }}
+    <a class="el-talk__action" href="{{ .RelPermalink }}">Learn more</a>
+  </div>
+</article>

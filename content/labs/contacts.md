@@ -1,6 +1,10 @@
 ---
 title: "Percona Labs - Contact Form"
-description: "Contact Form"
+description: "Contact the Percona Labs team."
+hero_type: mountains
+hero_title: "Contact Percona Labs"
+hero_description: "Get in touch with the Percona Labs team."
+hero_line: 2
 ---
 
 If you would like to talk with us about builds for Serverless PostgreSQL or stay in touch for future update - leave your contact details below.

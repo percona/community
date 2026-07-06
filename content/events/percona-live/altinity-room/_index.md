@@ -5,13 +5,10 @@ layout: list
 date: Wed, 12 May 2021 8:00:00 +0000
 images:
  - events/percona-live/PL2021-altinity-community-track.jpg
+hero_type: mountains
+hero_title: "Altinity Community Track"
+hero_description: "Analytics and Big Data are challenges every company has been trying to tackle for a while. This community track at Percona live 2021 brings some of the companies, projects, and community players who are looking to help move Open Source Analytics forward into one place."
+hero_line: 1
 ---
 
-{{% hero-gradient class="night" %}}
-
-# Altinity Community Track
-
-Analytics and “Big Data” are challenges every company has been trying to tackle for a while. This community track at Percona live 2021 brings some of the companies, projects, and community players who are looking to help move Open Source Analytics forward into one place. Learn about how Clickhouse is being used and growing in the enterprise and how to contribute.
-
-{{% /hero-gradient %}}
 

@@ -1,11 +1,12 @@
 .idea
 .claude
 .cursor
-docs
-scripts
 .env
 resources/_gen
+scripts
+docs
 .DS_Store
+design/Percona Community site.pdf
 .hugo_build.lock
 hugo.exe
 public

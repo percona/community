@@ -1,4 +1,381 @@
 @import "common/common";
+@import "common/event-hub-card";
+@import "home/mixins";
+
+@mixin project-layout-shell {
+  width: 100%;
+  max-width: $layout-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+  padding-right: clamp(#{$padding-right-page}, 4.44vw, #{$layout-padding-x});
+  box-sizing: border-box;
+}
+
+/* ── Project page hero ─────────────────────────────────────────────────── */
+
+.project-hero {
+  position: relative;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  background: $brand-black;
+  box-sizing: border-box;
+
+  &__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+
+  &__gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(0, 0, 0, 0.5) 55%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+    pointer-events: none;
+  }
+
+  &__triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    max-width: 38%;
+    pointer-events: none;
+    object-fit: cover;
+    object-position: top right;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    @include project-layout-shell;
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    margin: 0 0 0.75rem;
+    color: $brand-white;
+    font-family: $font-poppins;
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  &__accent {
+    color: $brand-yellow;
+  }
+
+  &__subtitle {
+    margin: 0;
+    max-width: 40rem;
+    color: rgba($brand-white, 0.88);
+    font-family: $font-poppins;
+    font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  &--tech-kubernetes .project-hero__accent { color: $brand-kubernetes; }
+  &--tech-mysql .project-hero__accent { color: $brand-mysql; }
+  &--tech-postgresql .project-hero__accent { color: lighten($brand-postgresql, 18%); }
+  &--tech-mongodb .project-hero__accent { color: lighten($brand-mongodb, 12%); }
+  &--tech-valkey .project-hero__accent { color: $brand-valkey; }
+  &--tech-redis .project-hero__accent { color: $brand-redis; }
+  &--tech-percona .project-hero__accent { color: lighten($brand-purple, 22%); }
+
+  @media screen and (max-width: 760px) {
+    height: auto;
+    min-height: 260px;
+
+    &__triangle {
+      max-width: 42%;
+      opacity: 0.95;
+    }
+
+    &__inner {
+      align-items: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.75rem;
+    }
+  }
+}
+
+/* ── Project page body ─────────────────────────────────────────────────── */
+
+.project-page {
+  background: $brand-white;
+
+  &__shell {
+    @include project-layout-shell;
+    padding-top: 1.75rem;
+    padding-bottom: 3.5rem;
+  }
+
+  a.project-page__back {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1.75rem;
+    padding: 0.45rem 1rem;
+    border: 1px solid #e8ecf3;
+    border-radius: 999px;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background-color $transition-length ease, border-color $transition-length ease, color $transition-length ease;
+
+    &:link,
+    &:visited {
+      color: $brand-black;
+      text-decoration: none;
+      border: 1px solid #e8ecf3;
+    }
+
+    &:hover,
+    &:focus,
+    &:visited:hover {
+      background: #f4f5f7;
+      border: 1px solid #d5d9e0;
+      color: $brand-black;
+      text-decoration: none;
+    }
+  }
+
+  &__body {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    h2 {
+      margin-top: 2.25rem;
+      margin-bottom: 0.85rem;
+      color: $brand-black;
+      font-family: $font-poppins;
+      font-size: clamp(1.25rem, 2vw, 1.5rem);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.65rem;
+      font-family: $font-poppins;
+      font-size: 1.0625rem;
+      font-weight: 600;
+    }
+
+    p,
+    ul,
+    ol {
+      font-family: $font-poppins;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    table {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__posts {
+    margin-top: 3.5rem;
+    padding-top: 0.5rem;
+  }
+
+  &__posts-heading {
+    margin: 0 0 1.25rem;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+
+    .eh-hub-card,
+    .hs-media-card {
+      height: 100%;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media screen and (max-width: 580px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.projects-hub {
+  &__main {
+    @include project-layout-shell;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  &__section--contrib {
+    padding: 2rem 2.25rem;
+    border: 1px solid #ece9f8;
+    border-radius: 16px;
+    background: #f8f7fc;
+
+    @media screen and (max-width: 760px) {
+      padding: 1.5rem 1.25rem;
+    }
+
+    .projects-hub__heading {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__section--posts {
+    padding-top: 0;
+  }
+
+  &__posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media screen and (max-width: 580px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 1.25rem;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media screen and (max-width: 580px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__contrib {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      color: $brand-purple;
+      font-family: $font-poppins;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: none;
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      color: $paragraph-grey;
+      font-family: $font-poppins;
+      font-size: 1rem;
+    }
+  }
+}
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid #e8ecf3;
+  border-radius: 12px;
+  background: $brand-white;
+  color: $brand-black;
+  text-decoration: none;
+  transition: border-color $transition-length ease, box-shadow $transition-length ease;
+
+  &:hover {
+    border-color: rgba($brand-purple, 0.35);
+    box-shadow: 0 8px 24px rgba($brand-black, 0.06);
+    text-decoration: none;
+  }
+
+  &__title {
+    margin: 0 0 0.65rem;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  &__desc {
+    flex: 1;
+    margin: 0;
+    color: $paragraph-grey;
+    font-family: $font-poppins;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  &__cta {
+    margin-top: 1.15rem;
+    color: $brand-purple;
+    font-family: $font-poppins;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+}
 
 .hero-menu {
     display: flex;

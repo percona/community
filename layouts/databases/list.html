@@ -1,0 +1,13 @@
+{{ define "css" }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/databases.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+  {{ partial "page-hero.html" (dict "page" .) }}
+
+  <div class="databases-hub">
+    <div class="databases-hub__inner">
+      {{ partial "databases/card-grid.html" . }}
+    </div>
+  </div>
+{{ end }}

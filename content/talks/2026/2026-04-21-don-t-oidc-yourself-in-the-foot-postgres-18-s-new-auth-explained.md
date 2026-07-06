@@ -23,8 +23,6 @@ video: ''
 images:
 - talks/2026/2026-04-21-don-t-oidc-yourself-in-the-foot-postgres-18-s-new-auth-explained.png
 ---
-## Abstract
-
 Postgres 18 adds native support for OAuth and OpenID Connect (OIDC) authentication, one of the most significant security-related changes in years. While widespread adoption will take time, since the feature requires client-side support and external validators, it is already possible to experiment with command-line clients like psql together with validators such as pg_oidc_validator.
 
 This talk includes a demo of a minimal setup using Keycloak and pg_oidc_validator, showing how developers and DBAs can start experimenting immediately. We’ll then dive into how PostgreSQL integrates with OIDC under the hood, demystifying the flow from token issuance to database login.

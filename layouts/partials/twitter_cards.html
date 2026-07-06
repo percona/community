@@ -1,38 +1,10 @@
-{{- with $.Params.images -}}
-    {{- $imgPath := strings.TrimPrefix "/" (index . 0) -}}
-    {{- with resources.Get $imgPath -}}
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="{{ .Permalink }}"/>
-    {{- end -}}
-{{ else -}}
-
-    {{ with $.Params.youtube_id }}
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image" content="https://img.youtube.com/vi/{{ $.Params.youtube_id }}/hqdefault.jpg"/>
-
-    {{ else }}
-
-        {{- $images := $.Resources.ByType "image" -}}
-        {{- $featured := $images.GetMatch "*feature*" -}}
-        {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
-        {{- with $featured -}}
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:image" content="{{ $featured.Permalink }}"/>
-        {{- else -}}
-            {{- with $.Site.Params.images -}}
-                {{- $siteImgPath := strings.TrimPrefix "/" (index . 0) -}}
-                {{- with resources.Get $siteImgPath -}}
-                <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}"/>
-                {{- end -}}
-            {{ else -}}
-                <meta name="twitter:card" content="summary"/>
-            {{- end -}}
-        {{- end -}}
-    
-    {{ end }}   
-
-{{- end }}
+{{- $share := partial "page-share-image.html" . -}}
+{{- with $share.url -}}
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="{{ . }}"/>
+{{- else -}}
+<meta name="twitter:card" content="summary"/>
+{{- end -}}
 <meta name="twitter:title" content="{{ if (ne .Title "")}}{{ .Title }} | {{ end}}{{ .Site.Title }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
 {{ with .Site.Params.Social.twitter -}}

@@ -1,0 +1,48 @@
+{{ $page := . }}
+{{ $showEvents := true }}
+{{ $showTalks := true }}
+{{ if reflect.IsMap . }}
+  {{ with .page }}{{ $page = . }}{{ end }}
+  {{ if isset . "showEvents" }}{{ $showEvents = .showEvents }}{{ end }}
+  {{ if isset . "showTalks" }}{{ $showTalks = .showTalks }}{{ end }}
+{{ end }}
+
+{{ $img := "" }}
+{{ with $page.Params.images }}
+  {{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
+    {{ $img = (.Fill "480x640 q85 webp").RelPermalink }}
+  {{ end }}
+{{ end }}
+
+<a class="el-speaker-card" href="{{ $page.RelPermalink }}">
+  <div class="el-speaker-card__media">
+    {{ if $img }}
+      <img
+        class="el-speaker-card__img is-loaded"
+        src="{{ $img }}"
+        alt="{{ $page.Params.fullname }}"
+        width="480"
+        height="640"
+        loading="lazy"
+        decoding="async"
+      >
+    {{ else }}
+      <div class="el-speaker-card__img el-speaker-card__img--placeholder" aria-hidden="true"></div>
+    {{ end }}
+    <div class="el-speaker-card__overlay" aria-hidden="true"></div>
+  </div>
+  <div class="el-speaker-card__info">
+    <p class="el-speaker-card__name">{{ $page.Params.fullname }}</p>
+    <div class="el-speaker-card__stats">
+      {{ if gt ($page.Params.posts_count | default 0) 0 }}
+        <span class="el-speaker-card__stat">{{ $page.Params.posts_count }} posts</span>
+      {{ end }}
+      {{ if and $showTalks (gt ($page.Params.talks_count | default 0) 0) }}
+        <span class="el-speaker-card__stat">{{ $page.Params.talks_count }} talks</span>
+      {{ end }}
+      {{ if and $showEvents (gt ($page.Params.events_count | default 0) 0) }}
+        <span class="el-speaker-card__stat">{{ $page.Params.events_count }} events</span>
+      {{ end }}
+    </div>
+  </div>
+</a>

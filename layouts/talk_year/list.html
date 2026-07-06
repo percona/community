@@ -1,27 +1,17 @@
-{{ define "css" }}
-  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
-{{ end }}
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+{{- end }}
 
 {{ define "mainwrapper" }}
+{{ $pages := sort .Pages ".Params.presentation_date" "desc" }}
+{{ $paginator := .Paginate $pages 9 }}
 
-{{- $pages := .Pages -}}
-{{- $pages = sort $pages ".Params.presentation_date" "desc" -}}
-
-{{- $paginator := .Paginate $pages 9 -}}
-
-<div class="hero hero-gradient aqua">
-  <div class="contentblock">
-    <div class="hero-text">
-      <h1>
-        Talks from {{ .Title }}
-      </h1>
-      <p>
-        Presentations delivered by Percona Community speakers in {{ .Title }}.
-      </p>
-    </div>
-  </div>
-</div>
-
-{{ partial "talks-list.html" (dict "paginator" $paginator "page" . "searchPages" $pages) }}
-
+{{ partial "talks-hub/shell.html" (dict
+  "page" .
+  "paginator" $paginator
+  "searchPages" $pages
+  "variant" "filtered"
+  "activeNav" "talks"
+) }}
 {{ end }}

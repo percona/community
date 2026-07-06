@@ -28,6 +28,4 @@ youtube_id: _arr3sEckSw
 images:
 - talks/2025/2025-04-01-taming-postgresql-extensions-in-kubernetes-strategies-for-dynamic-management.png
 ---
-## Abstract
-
 Running PostgreSQL in Kubernetes is becoming increasingly popular, but managing database extensions in this environment presents a challenge. Containers are designed to be immutable, making it difficult to add extensions after the database is up and running. Rebuilding containers every time you need a new extension defeats the purpose of using pre-built images with security and best practices baked in. This talk explores different approaches to managing PostgreSQL extensions in Kubernetes, including their pros and cons, and discusses potential future standards for streamlined extension management.

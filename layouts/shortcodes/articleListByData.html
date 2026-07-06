@@ -1,0 +1,159 @@
+{{ $data := .Site.Data.articles }}
+
+<div class="jspag" id="al-pag">
+  <div class="jspag__toolbar">
+    <div class="jspag__filters" id="al-filters"></div>
+    <div class="jspag__search-wrap">
+      <svg class="jspag__search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <input class="jspag__search-input" id="al-search" type="search" placeholder="Search…" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="al-table-wrap">
+    <table class="al-table">
+      <thead>
+        <tr>
+          <th class="al-table__th al-table__th--title">Title</th>
+          <th class="al-table__th al-table__th--author">Author</th>
+          <th class="al-table__th al-table__th--date">Date</th>
+          <th class="al-table__th al-table__th--tag">Tag</th>
+        </tr>
+      </thead>
+      <tbody id="al-tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="jspag__nav" id="al-nav"></div>
+</div>
+
+<script>
+(function () {
+  var raw = {{ $data | jsonify | safeJS }};
+
+  var months = {January:1,February:2,March:3,April:4,May:5,June:6,
+                July:7,August:8,September:9,October:10,November:11,December:12};
+
+  function parseDateKey(d) {
+    if (!d) return 0;
+    var m = d.match(/(\w+)\s+(\d+),?\s+(\d{4})/);
+    if (m) return parseInt(m[3])*10000 + (months[m[1]]||0)*100 + parseInt(m[2]);
+    m = d.match(/(\w+),?\s+(\d{4})/);
+    if (m) return parseInt(m[2])*10000 + (months[m[1]]||0)*100;
+    m = d.match(/(\d{4})/);
+    if (m) return parseInt(m[1])*10000;
+    return 0;
+  }
+
+  // Flatten and sort by date desc
+  var all = [];
+  for (var cat in raw) {
+    raw[cat].forEach(function(a) {
+      all.push({ title: a.title, url: a.url, authors: a.authors || [], date: a.date || '', category: a.category || cat });
+    });
+  }
+  all.sort(function(a, b) { return parseDateKey(b.date) - parseDateKey(a.date); });
+
+  var PER_PAGE = 25;
+  var currentCat = '';
+  var searchQuery = '';
+  var currentPage = 1;
+
+  var tbody    = document.getElementById('al-tbody');
+  var nav      = document.getElementById('al-nav');
+  var filtersEl = document.getElementById('al-filters');
+  var searchEl  = document.getElementById('al-search');
+
+  function esc(s) {
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function authorText(authors) {
+    return (authors||[]).map(function(a){ return a.name + (a.company ? ' '+a.company : ''); }).join(' ').toLowerCase();
+  }
+
+  function formatAuthors(authors) {
+    if (!authors || !authors.length) return '';
+    return authors.map(function(a) {
+      var s = esc(a.name);
+      if (a.company) s += ' <span class="al-company-chip">' + esc(a.company) + '</span>';
+      return s;
+    }).join('<span class="al-author-sep">, </span>');
+  }
+
+  // Build filters sorted by count desc
+  var counts = {};
+  all.forEach(function(a){ counts[a.category] = (counts[a.category]||0) + 1; });
+  var cats = Object.keys(counts).sort(function(a,b){ return counts[b] - counts[a]; });
+
+  var filterHtml = '<button class="jspag__filter is-active" data-val="">All <span class="jspag__filter-count">' + all.length + '</span></button>';
+  cats.forEach(function(cat) {
+    filterHtml += '<button class="jspag__filter" data-val="' + esc(cat) + '">' + esc(cat) + ' <span class="jspag__filter-count">' + counts[cat] + '</span></button>';
+  });
+  filtersEl.innerHTML = filterHtml;
+
+  function filtered() {
+    var q = searchQuery.toLowerCase();
+    return all.filter(function(a) {
+      var matchCat  = !currentCat || a.category === currentCat;
+      var matchText = !q || a.title.toLowerCase().indexOf(q) !== -1 || authorText(a.authors).indexOf(q) !== -1;
+      return matchCat && matchText;
+    });
+  }
+
+  function render() {
+    var items = filtered();
+    var totalPages = Math.max(1, Math.ceil(items.length / PER_PAGE));
+    if (currentPage > totalPages) currentPage = 1;
+    var slice = items.slice((currentPage-1)*PER_PAGE, currentPage*PER_PAGE);
+
+    tbody.innerHTML = slice.length ? slice.map(function(a) {
+      return '<tr class="al-table__row">' +
+        '<td class="al-table__td al-table__td--title"><a class="al-table__link" href="' + esc(a.url) + '" target="_blank" rel="noopener noreferrer">' + esc(a.title) + '</a></td>' +
+        '<td class="al-table__td al-table__td--author">' + formatAuthors(a.authors) + '</td>' +
+        '<td class="al-table__td al-table__td--date">' + esc(a.date) + '</td>' +
+        '<td class="al-table__td al-table__td--tag"><span class="al-item__tag">' + esc(a.category) + '</span></td>' +
+      '</tr>';
+    }).join('') : '<tr><td colspan="4" class="al-table__empty">No articles found.</td></tr>';
+
+    if (totalPages <= 1) { nav.innerHTML = ''; return; }
+    nav.innerHTML =
+      '<button class="jspag__arrow' + (currentPage===1?' is-disabled':'') + '" id="al-prev">&lsaquo;</button>' +
+      '<span class="jspag__status">Page ' + currentPage + ' of ' + totalPages + '</span>' +
+      '<button class="jspag__arrow' + (currentPage===totalPages?' is-disabled':'') + '" id="al-next">&rsaquo;</button>';
+
+    document.getElementById('al-prev').addEventListener('click', function(){ if(currentPage>1){currentPage--;render();scrollToTop();} });
+    document.getElementById('al-next').addEventListener('click', function(){ if(currentPage<totalPages){currentPage++;render();scrollToTop();} });
+  }
+
+  function scrollToTop() {
+    var el = document.getElementById('al-pag');
+    if (el) el.scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  filtersEl.addEventListener('click', function(e) {
+    var btn = e.target.closest('.jspag__filter');
+    if (!btn) return;
+    filtersEl.querySelectorAll('.jspag__filter').forEach(function(b){ b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    currentCat = btn.dataset.val;
+    currentPage = 1;
+    render();
+  });
+
+  var searchTimer;
+  searchEl.addEventListener('input', function() {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(function() {
+      searchQuery = searchEl.value.trim();
+      currentPage = 1;
+      render();
+    }, 200);
+  });
+
+  render();
+})();
+</script>
+{{- .Inner -}}

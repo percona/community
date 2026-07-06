@@ -1,14 +1,13 @@
 
 table {
+  display: table;
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin-top: 2rem;
   padding: 0;
   width: 100%;
+  max-width: 100%;
   table-layout: auto;
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 table caption {
@@ -18,8 +17,6 @@ table caption {
 
 table tr {
   background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
 }
 
 table th,
@@ -35,15 +32,15 @@ table th {
 }
 
 @media screen and (max-width: 600px) {
-  table {
+  table:not(.landing-agenda-table) {
     border: 0;
   }
 
-  table caption {
+  table:not(.landing-agenda-table) caption {
     font-size: 1.3em;
   }
   
-  table thead {
+  table:not(.landing-agenda-table) thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -54,20 +51,20 @@ table th {
     width: 1px;
   }
   
-  table tr {
+  table:not(.landing-agenda-table) tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
   }
   
-  table td {
+  table:not(.landing-agenda-table) td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: 1em;
     text-align: left;
   }
   
-  table td::before {
+  table:not(.landing-agenda-table) td::before {
     /*
     * aria-label has no advantage, it won't be read inside a table
     content: attr(aria-label);
@@ -78,7 +75,7 @@ table th {
     text-transform: uppercase;
   }
   
-  table td:last-child {
+  table:not(.landing-agenda-table) td:last-child {
     border-bottom: 0;
   }
 }

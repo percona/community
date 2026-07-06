@@ -1,0 +1,32 @@
+{{/*
+  Hugo image resource for a page cover.
+
+  Accepts a Page, or dict with "page".
+  Uses Params.images[0], then site.Params.images[0], then hub/home/cover.jpg.
+*/}}
+{{- $page := . -}}
+{{- if reflect.IsMap . -}}
+  {{- with .page -}}{{- $page = . -}}{{- end -}}
+{{- end -}}
+
+{{- $resource := "" -}}
+
+{{- with index $page.Params.images 0 -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}
+    {{- $resource = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $resource -}}
+  {{- with site.Params.images -}}
+    {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) -}}
+      {{- $resource = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $resource -}}
+  {{- $resource = resources.Get "hub/home/cover.jpg" -}}
+{{- end -}}
+
+{{- return $resource -}}

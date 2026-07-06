@@ -1,0 +1,69 @@
+{{/*
+  Events, talks, and blog grids for database hub pages (MySQL, MongoDB, …).
+
+  Params:
+    page             — Hugo page (required)
+    eventTag         — single events_tag value (legacy)
+    eventTags        — slice of events_tag values (matches any)
+    talkTag          — single talk_tags value (legacy)
+    talkTags         — slice of talk_tags values (matches any)
+    blogTags         — slice of blog tag strings
+    blogCategoryURL  — link for "See all posts"
+    eventsURL        — link for "See all events"
+    talksURL         — link for "See all talks"
+    feedLabel        — label for section headings and see-all links (defaults to first event tag)
+*/}}
+{{- $page := .page -}}
+{{- $eventTags := .eventTags | default slice -}}
+{{- if and (not $eventTags) .eventTag -}}
+  {{- $eventTags = slice .eventTag -}}
+{{- end -}}
+{{- $talkTags := .talkTags | default slice -}}
+{{- if and (not $talkTags) .talkTag -}}
+  {{- $talkTags = slice .talkTag -}}
+{{- end -}}
+{{- $blogTags := .blogTags -}}
+{{- $blogCategoryURL := .blogCategoryURL -}}
+{{- $eventsURL := .eventsURL -}}
+{{- $talksURL := .talksURL -}}
+{{- $feedLabel := .feedLabel | default (index $eventTags 0) -}}
+{{- $feedSlug := $feedLabel | urlize -}}
+
+{{- $events := first 6 (sort (where (where $page.Site.RegularPages "Section" "events") "Params.events_tag" "intersect" $eventTags) "Date" "desc") -}}
+{{- if $events -}}
+<div class="contentblock pg-events" id="{{ $feedSlug }}-events">
+    <h2>Where you can meet us</h2>
+    <div class="grid grid--3">
+        {{- range $events -}}
+            <div class="grid__item">{{ partial "event-preview-pg.html" . }}</div>
+        {{- end -}}
+    </div>
+    <p class="db-hub__see-all"><a href="{{ $eventsURL }}">See all {{ $feedLabel }} events →</a></p>
+</div>
+{{- end -}}
+
+{{- $talks := first 3 (sort (where (where $page.Site.RegularPages "Section" "talks") "Params.talk_tags" "intersect" $talkTags) "Params.presentation_date" "desc") -}}
+{{- if $talks -}}
+<div class="contentblock pg-talks" id="{{ $feedSlug }}-talks">
+    <h2>Talks about {{ $feedLabel }}</h2>
+    <div class="grid grid--3">
+        {{- range $talks -}}
+            <div class="grid__item">{{ partial "talk-preview-pg.html" . }}</div>
+        {{- end -}}
+    </div>
+    <p class="db-hub__see-all"><a href="{{ $talksURL }}">See all {{ $feedLabel }} talks →</a></p>
+</div>
+{{- end -}}
+
+{{- $posts := first 3 (sort (where (where $page.Site.RegularPages "Section" "blog") "Params.tags" "intersect" $blogTags) "Date" "desc") -}}
+{{- if $posts -}}
+<div class="contentblock pg-talks" id="{{ $feedSlug }}-posts">
+    <h2>From the blog</h2>
+    <div class="grid grid--3">
+        {{- range $posts -}}
+            <div class="grid__item">{{ partial "hub-single/blog-card.html" . }}</div>
+        {{- end -}}
+    </div>
+    <p class="db-hub__see-all"><a href="{{ $blogCategoryURL }}">See all posts →</a></p>
+</div>
+{{- end -}}

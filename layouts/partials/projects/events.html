@@ -1,0 +1,16 @@
+{{ $tags := .Params.event_tags | default .Params.blog_tags }}
+{{ if $tags }}
+  {{ $events := first 3 (sort (where (where $.Site.RegularPages "Section" "events") "Params.events_tag" "intersect" $tags) "Date" "desc") }}
+  {{ if $events }}
+    <section class="project-page__posts" aria-labelledby="project-events-heading">
+      <h2 class="project-page__posts-heading" id="project-events-heading">Events</h2>
+      <div class="project-page__posts-grid">
+        {{ range $events }}
+          <div class="project-page__posts-item">
+            {{ partial "events-hub/event-hub-card.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

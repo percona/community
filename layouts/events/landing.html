@@ -20,29 +20,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 
-  {{/* ---- JSON Talks ---- */}}
   {{ $json := resources.Get .Params.json }}
   {{ $data := $json | transform.Unmarshal }}
-  {{ $Talks := $data.talks }}
-
-  {{ range $i, $r := $Talks }}
-    <meta type="talk"
-          title="{{ $r.Title }}"
-          speaker1="{{ index $r "Speaker 1" }}"
-          company1="{{ index $r "Company 1" }}"
-          speaker2="{{ index $r "Speaker 2" }}"
-          company2="{{ index $r "Company 2" }}"
-          time="{{ index $r "Sorting time" }}" />
-  {{ end }}
+  {{ partial "landing-agenda-meta.html" (dict "talks" $data.talks "pages" .Pages) }}
 
 {{ end }}
 
 {{ define "main" }}
-
-{{/* ---- JSON Talks ---- */}}
-{{ $json := resources.Get .Params.json }}
-{{ $data := $json | transform.Unmarshal }}
-{{ $Talks := $data.talks }}
 
 <div class="landing text">
 
@@ -54,33 +38,16 @@
 
     <h2 id="days">Days</h2>
 
-    <div class="grid grid--3">
-        {{ range where $.Site.Pages "Params.layout" "landing-day" }}
+    <div class="grid grid--3 event-card-grid landing__days">
+        {{ range (where .Pages "Params.layout" "landing-day").ByWeight }}
             <div class="grid__item">
-                {{- partial "event-preview" . -}} 
+                {{- partial "event-card" . -}}
             </div>
         {{- end -}}
     </div>
 
     <h2 id="agenda">Agenda</h2>
-    <table id="example2" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th width="5%"></th>
-                <th width="50%">Talk</th>
-                <th>Speaker</th>
-                <th width="10%">Date</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th></th>
-                <th>Talks</th>
-                <th>Speaker</th>
-                <th>Date</th>
-            </tr>
-        </tfoot>
-    </table>
+    {{ partial "landing-agenda.html" (dict "mode" "event") }}
 
     <div class="video">
         {{ partial "video.html" . }} 
@@ -109,98 +76,5 @@
 <br/><br/>
 {{ partial "sharing.html" . }}
 <br/><br/>
-
-<script type="text/javascript">
-
-// Формат раскрывающегося блока
-function format(d) {
-    let html = '<div class="landing-table__description"><p>';
-
-    if (d.description) {
-        html += d.description;
-    }
-
-    if (d.speaker1) {
-        html +=
-            '<br/><br/><span class="landing-table__speaker">' +
-            d.speaker1 + ' (' + d.company1 + ')</span><br/>' +
-            d.bio1;
-    }
-
-    if (d.speaker2) {
-        html +=
-            '<br/><br/><span class="landing-table__speaker">' +
-            d.speaker2 + ' (' + d.company2 + ')</span><br/>' +
-            d.bio2;
-    }
-
-    html += '</p></div>';
-    return html;
-}
-
-// Класс Talk
-function Talk(meta) {
-    this.title = meta.getAttribute("title");
-    this.speaker1 = meta.getAttribute("speaker1");
-    this.company1 = meta.getAttribute("company1");
-    this.bio1 = meta.getAttribute("bio1") || "";
-    this.speaker2 = meta.getAttribute("speaker2");
-    this.company2 = meta.getAttribute("company2");
-    this.bio2 = meta.getAttribute("bio2") || "";
-    this.description = meta.getAttribute("description") || "";
-    this.date = meta.getAttribute("date") || "";
-    this.time = meta.getAttribute("time") || "";
-
-    if (this.speaker2) {
-        this.speaker =
-            '<b>' + this.speaker1 + '</b> (' + this.company1 + '), <br/>' +
-            '<b>' + this.speaker2 + '</b> (' + this.company2 + ')';
-    } else {
-        this.speaker =
-            '<b>' + this.speaker1 + '</b> (' + this.company1 + ')';
-    }
-}
-
-$(document).ready(function () {
-
-    // Собираем все <meta type="talk">
-    const metas = document.querySelectorAll('meta[type="talk"]');
-
-    const data_obj = [...metas].map(m => new Talk(m));
-
-    // Создаём таблицу
-    const table = $('#example2').DataTable({
-        data: data_obj,
-        columns: [
-            {
-                className: 'dt-control',
-                orderable: false,
-                data: null,
-                defaultContent: '',
-            },
-            { data: 'title' },
-            { data: 'speaker' },
-            { data: 'time' }
-        ],
-        order: [[3, 'asc']],
-        paging: false
-    });
-
-    // Обработчик раскрытия строк
-    $('#example2 tbody').on('click', 'td.dt-control', function () {
-        const tr = $(this).closest('tr');
-        const row = table.row(tr);
-
-        if (row.child.isShown()) {
-            row.child.hide();
-            tr.removeClass('shown');
-        } else {
-            row.child(format(row.data())).show();
-            tr.addClass('shown');
-        }
-    });
-});
-</script>
-
 
 {{ end }}

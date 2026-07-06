@@ -1,0 +1,25 @@
+{{/*
+  Unified site hero — always set hero_type in front matter or pass variant in layout.
+
+  hero_type / variant:
+    mountains — hub-hero--mountains (compact line-art)
+    photo     — hub-hero--photo (full photo background; add hero_compact: true for hub listings)
+*/}}
+{{ $type := "mountains" }}
+{{ if reflect.IsMap . }}
+  {{ $type = .variant | default .type | default "" }}
+  {{ if and (not $type) .page }}
+    {{ $type = .page.Params.hero_type | default .page.Params.hero_variant | default "mountains" }}
+  {{ end }}
+  {{ if eq $type "hub" }}
+    {{ $type = "photo" }}
+  {{ end }}
+{{ end }}
+
+{{ if eq $type "photo" }}
+  {{ partial "hero/photo.html" . }}
+{{ else if eq $type "mountains" }}
+  {{ partial "hero/mountains.html" . }}
+{{ else }}
+  {{ errorf "hero: unknown type %q (use mountains or photo)" $type }}
+{{ end }}

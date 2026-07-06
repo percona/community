@@ -1,0 +1,69 @@
+{{ $page := .page }}
+{{ $paginator := .paginator }}
+{{ $searchPages := .searchPages }}
+{{ $variant := .variant | default "filtered" }}
+
+{{ $listTitle := "Talks" }}
+{{ if eq $variant "filtered" }}
+  {{ if eq $page.Type "talk_year" }}
+    {{ $listTitle = printf "Talks from %s" $page.Title }}
+  {{ else if eq $page.Type "talk_tags" }}
+    {{ if eq $page.Title "Slides" }}
+      {{ $listTitle = "Slides" }}
+    {{ else }}
+      {{ $listTitle = printf "Talks tagged #%s" $page.Title }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<section class="el-panel" aria-labelledby="el-talks-heading">
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-talks-heading">
+      {{ $listTitle }}{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}
+    </h2>
+  </header>
+
+  {{ partial "talks-hub/filters.html" $page }}
+
+  {{ if gt (len $paginator.Pages) 0 }}
+    <div class="el-talks-list" id="talks-hub-list">
+      {{ range $paginator.Pages }}
+        {{ partial "talks-hub/talk-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No talks found.</p>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="el-pagination" id="talks-hub-paginator" aria-label="Talks pagination">
+      {{ if $paginator.HasPrev }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Prev.URL }}"
+          rel="prev"
+          aria-label="Previous page"
+        >&lsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+      {{ end }}
+
+      <span class="el-pagination__status">
+        Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+      </span>
+
+      {{ if $paginator.HasNext }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Next.URL }}"
+          rel="next"
+          aria-label="Next page"
+        >&rsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+  {{ partial "talks-hub/search.html" (dict "searchPages" $searchPages) }}
+</section>

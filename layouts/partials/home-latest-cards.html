@@ -1,0 +1,88 @@
+{{/*
+  Latest content cards for the homepage (blog, talks, etc.).
+
+  Params:
+    eyebrow      — small label above title
+    title        — heading text before accent
+    accent       — purple accent part of heading
+    section      — Hugo section name, e.g. "blog" or "talks"
+    title        — heading before accent (talks: auto-set from date mix)
+    accent       — purple accent part of heading
+    cardPartial  — partial path for each card
+    viewAllPage  — Hugo page for "view all" link
+    viewAllLabel — link text
+    headingId    — id for aria-labelledby
+*/}}
+{{ $eyebrow := .eyebrow }}
+{{ $title := .title }}
+{{ $accent := .accent }}
+{{ $cardPartial := .cardPartial }}
+{{ $viewAllPage := .viewAllPage }}
+{{ $viewAllLabel := .viewAllLabel }}
+{{ $headingId := .headingId }}
+{{ $section := .section }}
+{{ $limit := .limit | default 3 }}
+{{ $pages := where site.RegularPages "Section" $section }}
+{{ $sorted := sort $pages "Date" "desc" }}
+{{ if eq $section "blog" }}
+  {{ $sorted = sort $pages "PublishDate" "desc" }}
+{{ else if eq $section "talks" }}
+  {{ $now := now }}
+  {{ $upcoming := slice }}
+  {{ $past := slice }}
+  {{ range $pages }}
+    {{ $dateStr := .Params.presentation_date | default .Params.event_date_start }}
+    {{ if $dateStr }}
+      {{ if ge (time $dateStr) $now }}
+        {{ $upcoming = $upcoming | append . }}
+      {{ else }}
+        {{ $past = $past | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $upcoming = sort $upcoming ".Params.presentation_date" "asc" }}
+  {{ $past = sort $past ".Params.presentation_date" "desc" }}
+  {{ if ge (len $upcoming) $limit }}
+    {{ $sorted = first $limit $upcoming }}
+    {{ $title = "Up & Coming" }}
+    {{ $accent = "Talks" }}
+  {{ else if eq (len $upcoming) 0 }}
+    {{ $sorted = first $limit $past }}
+    {{ $title = "Latest" }}
+    {{ $accent = "Talks" }}
+  {{ else }}
+    {{ $sorted = $upcoming }}
+    {{ $remaining := sub $limit (len $upcoming) }}
+    {{ range first $remaining $past }}
+      {{ $sorted = $sorted | append . }}
+    {{ end }}
+    {{ $title = "Upcoming & Recent" }}
+    {{ $accent = "Talks" }}
+  {{ end }}
+{{ end }}
+{{ $items := first $limit $sorted }}
+
+{{ if gt (len $items) 0 }}
+<section class="home-events home-events--cards" aria-labelledby="{{ $headingId }}">
+  <div class="home-events__inner">
+    <p class="home-events__eyebrow">{{ $eyebrow }}</p>
+    <h2 class="home-events__title" id="{{ $headingId }}">
+      {{ $title }} <span class="home-events__accent">{{ $accent }}</span>
+    </h2>
+
+    <div class="grid grid--3 home-events__grid">
+      {{ range $items }}
+        <div class="grid__item">
+          {{ partial $cardPartial . }}
+        </div>
+      {{ end }}
+    </div>
+
+    {{ with $viewAllPage }}
+      <p class="home-events__footer">
+        <a class="home-events__link" href="{{ .RelPermalink }}">{{ $viewAllLabel }} &rsaquo;</a>
+      </p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

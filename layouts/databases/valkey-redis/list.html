@@ -1,0 +1,74 @@
+{{ define "css" }}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/sections.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
+{{ end }}
+
+{{ define "mainwrapper" }}
+    {{ partial "page-hero-logo.html" (dict "page" . "tech" "valkey" "logoLabel" "Valkey & Redis") }}
+
+    <div class="db-hub">
+        <div class="db-hub__body text">
+            {{ .Content }}
+        </div>
+
+        {{- $team := slice
+            (dict "slug" "martin_visser" "role" "Technical Lead, Valkey")
+            (dict "slug" "kyle_davis" "role" "General Manager, Redis-Valkey Ecosystem")
+        -}}
+        <div class="connect" id="valkey-team">
+            <div class="contentblock">
+                <div class="connect__intro">
+                    <h2>People &amp; contacts</h2>
+                    <p>Our Valkey and Redis team works with the community on adoption, migration, and open source programs. Say hello, we're easy to reach.</p>
+                </div>
+                <div class="connect__team connect__team--pair">
+                    {{- range $team -}}
+                        {{- $member := . -}}
+                        {{- $person := $.Site.GetPage (printf "/contributors/%s" $member.slug) -}}
+                        {{- with $person -}}
+                        <div class="connect__card">
+                            {{ with .Params.images }}
+                                <a href="{{ $person.RelPermalink }}" class="connect__avatar-link">
+                                    <img src="{{ ((resources.Get (index . 0)).Fill "160x160 90% jpg").RelPermalink }}"
+                                         alt="{{ $person.Params.fullname }}" class="connect__avatar" />
+                                </a>
+                            {{ end }}
+                            <div class="connect__info">
+                                <a href="{{ .RelPermalink }}" class="connect__name">{{ .Params.fullname }}</a>
+                                <p class="connect__role">{{ $member.role }}</p>
+                                <div class="connect__links">
+                                    {{ with .Params.social.linkedin }}
+                                        <a href="{{ . }}" target="_blank" rel="noopener" class="connect__link connect__link--linkedin">
+                                            <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode }}" alt="LinkedIn" />
+                                            LinkedIn
+                                        </a>
+                                    {{ end }}
+                                    {{ with .Params.contact_email }}
+                                        <a href="mailto:{{ . }}" class="connect__link connect__link--email">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                            Email
+                                        </a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        {{- end -}}
+                    {{- end -}}
+                </div>
+            </div>
+        </div>
+
+        {{ partial "db-hub/community-feeds.html" (dict
+            "page" .
+            "eventTags" (slice "Valkey" "Redis")
+            "talkTags" (slice "Valkey" "Redis")
+            "blogTags" (slice "Valkey" "Redis" "valkey" "redis")
+            "feedLabel" "Valkey & Redis"
+            "blogCategoryURL" "/tags/valkey/"
+            "eventsURL" "/events_tag/valkey/"
+            "talksURL" "/talk_tags/valkey/"
+        ) }}
+    </div>
+{{ end }}

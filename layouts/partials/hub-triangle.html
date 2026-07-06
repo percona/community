@@ -1,0 +1,43 @@
+{{/*
+  Renders a hub decorative triangle SVG.
+
+  Params:
+    path   — asset path under assets/ (e.g. "hub/icons/hero-triangle.svg")
+    class  — CSS class on the element
+    width  — width attribute
+    height — height attribute
+    color  — optional fill color (renders inline SVG instead of img)
+    align  — left | right (default right) when using color
+*/}}
+{{ $color := .color }}
+{{ $align := .align | default "right" }}
+{{ $responsive := .responsive | default false }}
+{{ if $color }}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="{{ .class }}"
+    {{ if not $responsive }}width="{{ .width }}" height="{{ .height }}"{{ end }}
+    viewBox="0 0 476 625"
+    {{ if $responsive }}preserveAspectRatio="xMinYMid slice"{{ end }}
+    fill="none"
+    aria-hidden="true"
+  >
+    {{- if eq $align "left" -}}
+    <path d="M0 625L476 -334L0 -334L0 625Z" fill="{{ $color }}"/>
+    {{- else -}}
+    <path d="M552 625L0 -334L552 -334L552 625Z" fill="{{ $color }}"/>
+    {{- end -}}
+  </svg>
+{{ else }}
+  {{ with resources.Get .path }}
+    <img
+      class="{{ $.class }}"
+      src="{{ .RelPermalink }}"
+      alt=""
+      width="{{ $.width }}"
+      height="{{ $.height }}"
+      aria-hidden="true"
+      decoding="async"
+    >
+  {{ end }}
+{{ end }}

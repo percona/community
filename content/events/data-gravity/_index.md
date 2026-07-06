@@ -14,12 +14,10 @@ tags: ["Data Gravity", "Podcast"]
 events_year: ["2023"]
 events_tag: ["Community"]
 events_category: ["Speaking","Community"]
+hero_type: mountains
+hero_title: "Data Gravity Podcast"
+hero_line: 2
 ---
-{{% hero-gradient class="night" %}}
-
-# Data Gravity Podcast
-
-{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

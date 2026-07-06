@@ -1,5 +1,7 @@
 ---
 title: Dave Stokes Talks Open on Percona Live 2023
+hero_title: Dave Stokes Talks Open on Percona Live 2023
+hero_line: 2
 description: On Percona Live 2023 in Denver David Stokes invited open source experts
   to talk about open source databases, DevOps, cloud technologies and trends.
 images:
@@ -15,12 +17,6 @@ events_year: ["2023"]
 events_tag: ["Community"]
 events_category: ["Speaking"]
 ---
-{{% hero-gradient class="night" %}}
-
-# Dave Stokes Talks Open on Percona Live 2023
-
-{{% /hero-gradient %}}
-
 {{% contentblock %}}
 {{% typography %}}
 

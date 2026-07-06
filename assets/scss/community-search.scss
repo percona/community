@@ -16,8 +16,8 @@ html.community-search-overlay-open {
   overflow: hidden;
 }
 
-/* Icon in header row (sibling of nav, not inside mobile drawer) */
-.page-header > .community-search-header {
+/* Icon in header row — desktop: inside __actions; mobile: flattened via display:contents */
+.page-header .community-search-header {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
@@ -44,7 +44,7 @@ html.community-search-overlay-open {
     border-radius: 50%;
     cursor: pointer;
     background: transparent;
-    color: $light;
+    color: $header-link;
     font-size: inherit;
     font-weight: normal;
     transition: color 0.15s ease, background 0.15s ease;
@@ -53,8 +53,8 @@ html.community-search-overlay-open {
     &:hover,
     &:focus-visible,
     .community-search-header.is-open & {
-      color: $link-green;
-      background: rgba(255, 255, 255, 0.14);
+      color: $header-link-hover;
+      background: rgba($brand-purple, 0.08);
       border: none;
       outline: none;
     }
@@ -87,7 +87,7 @@ html.community-search-overlay-open {
     position: fixed;
     inset: 0;
     z-index: 0;
-    /* Muted overlay: $header-color (#282727) + subtle cool mid-tone, ~92% opacity */
+    /* Muted overlay: $brand-black + subtle cool mid-tone, ~92% opacity */
     background: linear-gradient(
       155deg,
       rgba($header-color, 0.94) 0%,
@@ -307,10 +307,7 @@ html.community-search-overlay-open {
     order: 4;
     flex-shrink: 0;
     margin-left: 0;
-  }
-
-  .page-header .mobile-menu {
-    order: 5;
+    align-self: center;
   }
 }
 

@@ -1,38 +1,48 @@
-{{ define "css" }}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
-{{ end }}
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/labs.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+{{- end }}
 
 {{ define "mainwrapper" }}
-    {{ if or .Title .Content }}
+  {{ partial "hero.html" (dict "page" .) }}
 
-    <div class="hero hero-gradient night">
-        <div class="contentblock">
-            <div class="hero-text">
-                <h1>{{ if .Params.hero_title }}{{ .Params.hero_title }}{{ else }}{{ .Title }}{{ end }}</h1>
-                {{ if .Params.hero_description }}<p>{{ .Params.hero_description }}</p>{{ end }}
-            </div>
-        </div>
-    </div>
-
-    <div class="contentblock text">
-
+  <div class="labs-hub">
+    {{ if and .Content (and .Parent (ne .Parent.RelPermalink "/")) }}
+      <div class="labs-hub__intro content-page-shell">
+        <a class="labs-page__back" href="{{ .Parent.RelPermalink }}">
+          <span aria-hidden="true">&larr;</span>
+          Back to {{ .Parent.Title }}
+        </a>
         {{ .Content }}
-
-    </div>
-
-    <div class="contentblock documentation">
-
-        {{- $pages := .Pages -}}
-
-        <div class="grid grid--2">
-            {{- range $pages -}}
-            <a class="link__wrapper grid__item post post--preview" href="{{ .RelPermalink }}">
-                <h3>{{ .Title }}</h3>
-                <p>{{ .Description }}</p>
-            </a>
-            {{- end -}}
-        </div>
-    </div>
-
+      </div>
+    {{ else if .Content }}
+      <div class="labs-hub__intro content-page-shell">
+        {{ .Content }}
+      </div>
+    {{ else if and .Parent (ne .Parent.RelPermalink "/") }}
+      <div class="labs-hub__intro content-page-shell">
+        <a class="labs-page__back" href="{{ .Parent.RelPermalink }}">
+          <span aria-hidden="true">&larr;</span>
+          Back to {{ .Parent.Title }}
+        </a>
+      </div>
     {{ end }}
+
+    {{ $pages := .RegularPages.ByWeight }}
+    {{ if gt (len $pages) 0 }}
+      <section class="el-panel labs-panel" aria-labelledby="labs-docs-list-heading">
+        <h2 class="sr-only" id="labs-docs-list-heading">Documentation pages</h2>
+        <div class="labs-doc-grid">
+          {{ range $pages }}
+            {{ partial "labs/doc-card.html" . }}
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ partial "sharing.html" . }}
+  </div>
 {{ end }}

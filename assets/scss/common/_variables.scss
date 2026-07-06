@@ -10,7 +10,11 @@ $padding-right-page: 1rem;
 $transition-length: .233s;
 
 $width-max:1200px;
-$height-header: 3.2rem;
+$layout-max-width: 1440px;
+$layout-padding-x: 64px;
+$height-header: 61px;
+$height-header-logo-width: 165.638px;
+$height-header-logo-height: 44.728px;
 $height-header-img: 2rem;
 $height-menu-underline: 0.2rem;
 
@@ -25,26 +29,147 @@ $size-lead: 1.1rem;
 
 $border-radius: 0.2rem;
 
-/* colors */
-$header-color: #282727;
+/* Brand book */
+$brand-gray: #D9D9D9;
+$brand-purple: #653DF4;
+$brand-black: #282727;
+$brand-white: #ffffff;
+$brand-yellow: #F6FE54;
+$brand-mysql: #E65A15;
+$brand-postgresql: #005ED6;
+$brand-mongodb: #1FA23A;
+$brand-kubernetes: #2AA6DF;
+$brand-redis: #D6362A;
+$brand-valkey: #A83FEF;
+$paragraph-grey: #808080;
+$font-poppins: "Poppins", Helvetica, Arial, sans-serif;
 
-$palette1: #fe7f2d; //  Princeton Orange
-$palette2: #42536d; // Violet blue
-$palette3: #fefefe; // White - Traffic white
+/*
+ * Homepage layout widths — change here only:
+ * $width-max          — site content (1200, same as .page-main)
+ * $home-content-width  — hero text + mountaineers (defaults to $width-max)
+ * $hero-search-width   — search field only (Figma: 1090)
+ */
+$home-content-width: $width-max;
+
+/* Hero search */
+$hero-search-width: 1090px;
+$hero-search-height: 120px;
+$hero-search-font-size: 24.48px;
+$hero-search-line-height: 133px;
+$hero-search-padding-x: 51px;
+$hero-search-shadow: 0 0 65.2px 0 rgba(0, 0, 0, 0.66);
+$home-search-field-height: $hero-search-height;
+$home-search-overlap: $home-search-field-height / 2;
+$home-search-field-height-mobile: 72px;
+$home-search-overlap-mobile: $home-search-field-height-mobile / 2;
+$home-search-mountaineers-gap: 200px;
+$home-hero-mobile-search-vertical-gap: 56px;
+$home-search-mountaineers-gap-mobile: $home-hero-mobile-search-vertical-gap;
+
+/* Hero content shell — aligned with homepage content column */
+$home-hero-layout-width: $home-content-width;
+$home-hero-padding-x: $padding-left-page;
+$home-hero-height: 800px;
+$home-hero-desktop-lift: 100px;
+$home-hero-padding-y: 134px;
+$home-hero-text-gap: 10px;
+$home-hero-search-gap: 72px;
+$home-hero-search-gap-mobile: 28px;
+$home-hero-mobile-header-text-gap: 140px;
+$home-hero-mobile-text-search-gap: $home-hero-mobile-search-vertical-gap;
+$home-hero-triangle-width-mobile: 110px;
+$home-hero-subtitle-width: 858px;
+$home-hero-subtitle-size: 28px;
+$home-hero-subtitle-line-height: 1.39;
+$home-hero-triangle-width: 207px;
+$home-hero-triangle-height: 360px;
+
+/* Featured mountaineer cards */
+$mountaineer-card-gap: 10px;
+$mountaineer-card-radius: 4.151px;
+$mountaineer-name-size: 20px;
+$mountaineer-role-size: 14px;
+$mountaineer-stat-size: 13px;
+$mountaineer-profile-size: 16px;
+$mountaineer-social-link-size: 32px;
+$mountaineer-footer-offset: 10px;
+$mountaineer-body-padding-x: 16px;
+$mountaineer-body-padding-y: 14px;
+$mountaineer-corner-width: 70px;
+$mountaineer-corner-height: 121px;
+
+/* Homepage upcoming events (count: layouts/partials/home-upcoming-events.html) */
+$home-event-card-radius: 5px;
+$home-events-grid-gap: 27px;
+
+/* Homepage ascent CTA banner — bevel slope matches logo mountain (~60°) */
+$home-ascent-height: 781px;
+$home-ascent-title-size: 120px;
+$home-ascent-title-line-height: 120px;
+$home-ascent-cta-bottom: 80px;
+$home-ascent-text-cta-gap: 30px;
+$home-ascent-cta-font-size: 16px;
+$home-ascent-cta-line-height: 1.25;
+$home-ascent-line-height: 10px;
+$home-ascent-line-width: 78%;
+$home-ascent-line-bevel: $home-ascent-line-height * (69.7334 / 120.373);
+
+/* Homepage footer */
+$home-footer-max-width: $layout-max-width;
+$home-footer-brand-nav-gap: 100px;
+$home-footer-brand-stack-gap: 30px;
+$home-footer-padding-y: 64px;
+$home-footer-column-title-size: 13px;
+$home-footer-link-size: 13px;
+$home-footer-nav-gap: 2.5rem;
+
+/* Dropdown menu */
+$dropdown-width: 289px;
+$dropdown-padding: 24px;
+$dropdown-gap: 12px;
+$dropdown-radius: 5px;
+$dropdown-border: $brand-gray;
+$dropdown-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+$dropdown-bridge-height: 14px;
+
+/* colors */
+$header-color: $brand-black;
+$header-bg: $brand-white;
+$header-border: $brand-gray;
+$header-link: $brand-black;
+$header-link-hover: $brand-black;
+$header-link-weight: 400;
+$header-link-hover-weight: 600;
+$nav-cta-purple: $brand-purple;
+$nav-cta-purple-hover: darken($brand-purple, 10%);
+
+$header-menu-gap: 50px;
+$header-menu-font-size: 14px;
+$header-menu-line-height: 16px;
+
+$site-top-banner-offset: 60px;
+$site-top-banner-offset-mobile: 70px;
+$header-fixed-top: $site-top-banner-offset;
+$header-fixed-clearance: $height-header;
+
+/* Brand link tokens — use these in new code */
+$link: $brand-purple;
+$link-hover: darken($brand-purple, 8%);
+
+/* Legacy aliases (deprecated — mapped to brand; do not add new usages) */
+$palette1: $brand-purple;
+$palette2: $brand-purple;
+$palette3: #fefefe;
+
+$link-orange: $brand-purple;
+$link-orange-hover: $link-hover;
+$link-green: $brand-purple;
+$link-green-hover: $link-hover;
 
 $night: #0e1a53; // Oxford Blue
 $aqua: #006A5D; // Green - Tropical Rain Forest
-
 $hero-text: #ced5e3; // grey - Columbia Blue
-
-$link-orange: #E67117; // Orange
-$link-orange-hover: #fe7f2d; //  Princeton Orange
-
-$link-green: #00BDA5; // Green - Tiffany Blue
-$link-green-hover: #42536d; // Violet blue
-
-$link: #00BDA5; // Green - Tiffany Blue
-$link-hover: #42536d; // Violet blue
 
 $color-branded-h2: #697793; // Slate Gray
 

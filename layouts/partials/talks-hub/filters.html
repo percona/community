@@ -1,0 +1,103 @@
+{{ $page := . }}
+{{ $activeType := "" }}
+{{ $activeTitle := "" }}
+{{ $activePermalink := "" }}
+{{ $activeContent := "" }}
+{{ $videosURL := (site.GetPage "/videos").RelPermalink }}
+{{ if eq $page.Type "talk_year" }}
+  {{ $activeType = $page.Type }}
+  {{ $activeTitle = $page.Title }}
+  {{ $activePermalink = $page.RelPermalink }}
+{{ else if eq $page.Type "talk_tags" }}
+  {{ if eq $page.Title "Slides" }}
+    {{ $activeContent = $page.Title }}
+    {{ $activePermalink = $page.RelPermalink }}
+  {{ else }}
+    {{ $activeType = $page.Type }}
+    {{ $activeTitle = $page.Title }}
+    {{ $activePermalink = $page.RelPermalink }}
+  {{ end }}
+{{ end }}
+
+<div class="el-filters-bar">
+  <div class="el-filters" data-el-filters>
+
+    <details class="el-filters__field">
+      <summary class="el-filters__btn{{ if eq $activeType "talk_year" }} is-active{{ end }}">
+        {{ if eq $activeType "talk_year" }}
+          <span class="el-filters__label">Year:</span>
+          <span class="el-filters__value">{{ $activeTitle }}</span>
+        {{ else }}
+          Year
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ range sort site.Taxonomies.talk_year "Page.Title" "desc" }}
+            <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }} ({{ .Count }})</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
+    <details class="el-filters__field">
+      <summary class="el-filters__btn{{ if $activeContent }} is-active{{ end }}">
+        {{ if $activeContent }}
+          <span class="el-filters__label">Content:</span>
+          <span class="el-filters__value">{{ $activeContent }}</span>
+        {{ else }}
+          Content
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ range sort site.Taxonomies.talk_tags.ByCount }}
+            {{ if eq .Page.Title "Video" }}
+              <li><a class="el-filters__option" href="{{ $videosURL }}">Video ({{ .Count }})</a></li>
+            {{ end }}
+            {{ if eq .Page.Title "Slides" }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>Slides ({{ .Count }})</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
+    <details class="el-filters__field">
+      <summary class="el-filters__btn{{ if eq $activeType "talk_tags" }} is-active{{ end }}">
+        {{ if eq $activeType "talk_tags" }}
+          <span class="el-filters__label">Tags:</span>
+          <span class="el-filters__value">{{ $activeTitle }}</span>
+        {{ else }}
+          Tags
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ range first 30 (sort site.Taxonomies.talk_tags.ByCount) }}
+            {{ if and (ne .Page.Title "Video") (ne .Page.Title "Slides") (gt .Count 1) }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
+  </div>
+
+  <div class="el-filters-search">
+    <label class="sr-only" for="talks-hub-search">Search talks</label>
+    <input
+      id="talks-hub-search"
+      class="el-filters-search__input"
+      type="search"
+      placeholder="Search talks..."
+      autocomplete="off"
+    >
+  </div>
+</div>
+
+<p class="el-filters-search__status" data-talks-search-status aria-live="polite"></p>

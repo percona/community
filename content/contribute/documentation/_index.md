@@ -1,21 +1,10 @@
 ---
 title: "Percona Product Documentation"
 description: "How to contribute to the Percona Product Documentation"
+hero_type: mountains
+hero_title: "Contributing to Percona Product Documentation"
+hero_description: "Our product documentation is constantly evolving and improving. Did you spot some outdated information, or a typo? Is the documentation incomplete or confusing? Help us making it better!"
 ---
-
-{{% hero-gradient class="aqua" %}}
-
-# Contributing to Percona Product Documentation
-
-Our product documentation is constantly evolving and improving. Did you spot
-some outdated information, or a typo? Is the documentation incomplete or confusing?
-
-Help us making it better!
-
-If you would like to leave feedback or make a suggestion about enhancing our
-product documentation, you have multiple options of doing so.
-
-{{% /hero-gradient %}}
 
 {{% hero %}}
 {{% typography %}}

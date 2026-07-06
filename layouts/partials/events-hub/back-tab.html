@@ -1,0 +1,14 @@
+{{/*
+  Pill-shaped back navigation tab for events hub pages.
+
+  Params:
+    href  — destination URL (default: /events/)
+    label — link text (default: Back to Events Hub)
+*/}}
+{{ $href := .href | default (site.GetPage "/events").RelPermalink }}
+{{ $label := .label | default "Back to Events Hub" }}
+
+<a class="el-back-tab" href="{{ $href }}">
+  <span class="el-back-tab__arrow" aria-hidden="true">&larr;</span>
+  {{ $label }}
+</a>

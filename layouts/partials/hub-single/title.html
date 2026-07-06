@@ -1,0 +1,7 @@
+{{- $title := . -}}
+{{- $parts := findRESubmatch `^(.+?(?:\. |\.|: | - | — | \| ))(.+)$` $title 1 -}}
+{{- if $parts -}}
+  {{- index (index $parts 0) 1 -}}<span class="hub-single__title-accent">{{ index (index $parts 0) 2 }}</span>
+{{- else -}}
+  {{- $title -}}
+{{- end -}}

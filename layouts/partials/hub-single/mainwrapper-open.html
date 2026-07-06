@@ -1,0 +1,14 @@
+{{/*
+  Opens hub-single page shell with Events & Learning sidebar.
+
+  Params:
+    page      — current Hugo page
+    activeNav — "events", "talks", or "speakers"
+    hubClass  — e.g. events-hub, talks-hub, contributors-hub
+*/}}
+<div class="hub-page hub-single-page events-learning {{ .hubClass }}">
+  {{ partial "hub-single/hero.html" .page }}
+  <div class="events-learning__layout">
+    {{ partial "hub/sidebar.html" (dict "activeNav" .activeNav) }}
+    <div class="events-learning__main hub-single-page__main">
+      <div class="page-main">

@@ -7,7 +7,7 @@
   border: 1px solid #e1e6ed;
   border-radius: 6px;
   background: #f6f8fa;
-  margin: 1.25rem 0;
+  margin: 0.875rem 0;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
   overflow: hidden;
 }
@@ -80,14 +80,17 @@
 }
 
 .code-block__content {
-  padding: 1.75rem 0.75rem 0.9rem;
+  padding: 1.15rem 0.85rem 1.15rem 1.15rem;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .code-block__content pre {
   margin: 0;
   font-size: 0.85rem;
   background: transparent;
+  white-space: pre;
+  overflow-x: visible;
 }
 
 .code-block__content pre code {

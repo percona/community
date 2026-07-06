@@ -1,9 +1,11 @@
 ---
 title: "Percona Toolkit"
 description: "Percona Toolkit is a collection of advanced open source command-line tools to help you get the most out of your MySQL and MongoDB database setups"
+tech: mysql
+hero_title_before: "Percona"
+hero_title_accent: "Toolkit"
+hero_description: "Advanced command-line tools for MySQL, MariaDB, MongoDB, and PostgreSQL — download, try, and contribute."
 blog_tags: ["Toolkit", "toolkit"]
-hero_description: "How can you help?"
-hero_title: "Percona Toolkit"
 ---
 
 ## Download, Try, Give Feedback, & Enhance

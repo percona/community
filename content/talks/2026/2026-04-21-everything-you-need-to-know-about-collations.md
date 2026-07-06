@@ -22,8 +22,6 @@ video: ''
 images:
 - talks/2026/2026-04-21-everything-you-need-to-know-about-collations.png
 ---
-## Abstract
-
 Outside of causing trouble for you when upgrading libc what are collations good for? PostgreSQL's collations have gotten a lot of bad press from the upgrade issues but they are also a powerful and important tool, especially for working with text in other languages than English.
 
 This talk will give an introduction to collations in PostgreSQL, including how to use them, what they are useful for, how they work plus some common pitfalls and misunderstandings. You will learn, among other things, about the three collation providers (libc, icu, builtin), BCP 47, case insensitive collations, CTYPEs, what new features have been introduced in recent PostgreSQL versions and get a brief look into the future of collations in PostgreSQL.

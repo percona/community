@@ -1,6 +1,6 @@
-<div class="recommendations branded">
-  <h2>Explore More Talks</h2>
-  <div class="grid grid--3">
+<div class="recommendations hub-single-panel">
+  <h2 class="hub-single-panel__title">Explore More Talks</h2>
+  <div class="hub-single-panel__grid">
     {{ $recommendationCount := 3 }}
     {{ $currentPage := . }}
     {{ $recommended := slice }}
@@ -39,9 +39,7 @@
     {{ $recommended = first $recommendationCount $recommended }}
 
     {{ range $recommended }}
-      <div class="grid__item">
-        {{ partial "talks-preview-grid.html" . }}
-      </div>
+      {{ partial "hub-single/talk-card.html" . }}
     {{ end }}
   </div>
 </div>

@@ -1,19 +1,21 @@
 ---
 title: "Open Source Database Hall of Fame"
 description: "The OpenSource Database Hall of Fame seeks to recognize those in the Open Source world who have greatly contributed to providing database software to the community. "
+hero_type: mountains
 hero_title: "Open Source Database Hall of Fame"
 hero_description: "The OpenSource Database Hall of Fame seeks to recognize those in the Open Source world who have greatly contributed to providing database software to the community. Membership in the hall is small thanks to those whose activities have greatly contributed to making databases better for all."
+hero_line: 2
 images:
     - /images/hall-of-fame/2022/cover.jpg
 ---
 
-{{% hero-gradient class=" introduction" %}}
+{{% wrapper class="introduction" %}}
 
 ## Membership Eligibility
 
 Membership is reserved for those who have contributed to the open source database community and members are voted on by a select group from that community.
 
-{{% /hero-gradient  %}}
+{{% /wrapper %}}
 
 {{% wrapper class="inductees" %}}
 
