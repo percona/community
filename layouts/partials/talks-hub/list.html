@@ -8,8 +8,8 @@
   {{ if eq $page.Type "talk_year" }}
     {{ $listTitle = printf "Talks from %s" $page.Title }}
   {{ else if eq $page.Type "talk_tags" }}
-    {{ if eq $page.Title "Slides" }}
-      {{ $listTitle = "Slides" }}
+    {{ if or (eq $page.Title "Slides") (eq $page.Title "Video") }}
+      {{ $listTitle = $page.Title }}
     {{ else }}
       {{ $listTitle = printf "Talks tagged #%s" $page.Title }}
     {{ end }}

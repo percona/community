@@ -9,6 +9,13 @@
   overflow-x: clip;
 }
 
+// Main /events-learning/ hero — stacked title on desktop (Figma / Knowledge Base)
+.hub-page.events-learning > .hub-hero--photo:not(.hub-hero--compact) {
+  .hub-hero__title br {
+    display: block;
+  }
+}
+
 /* ── Hub pages: shared chrome ─────────────────────────────────────────── */
 
 .events-hub,

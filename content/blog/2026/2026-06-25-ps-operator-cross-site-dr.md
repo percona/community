@@ -50,7 +50,7 @@ With the model in place, let’s build a simple cross-site disaster recovery set
 
 
 
-![Figure 1. InnoDB ClusterSet overview](../../../assets/blog/2026/06/ps-clusterset-architecture.svg)
+![Figure 1. InnoDB ClusterSet overview](blog/2026/06/ps-clusterset-architecture.svg)
 
 ## Setting up ClusterSet
 

@@ -6,27 +6,10 @@
 {{ if not $desc }}
   {{ $desc = .Description | default "" | strings.TrimSpace }}
 {{ end }}
-{{ $coverImg := partial "page-cover-resource.html" . }}
 
 <a href="{{ .RelPermalink }}" class="event-card">
   <div class="event-card__media">
-    {{ if $coverImg }}
-      <img
-        src="{{ ($coverImg.Fill "1200x630 Center q85 jpg").RelPermalink }}"
-        alt="{{ $alt }}"
-        loading="lazy"
-        width="1200"
-        height="630"
-      >
-    {{ else if .Params.youtube_id }}
-      <img
-        src="https://img.youtube.com/vi/{{ .Params.youtube_id }}/hqdefault.jpg"
-        alt="{{ $alt }}"
-        loading="lazy"
-        width="1200"
-        height="630"
-      >
-    {{ end }}
+    {{ partial "event-media-image.html" (dict "page" . "alt" $alt) }}
   </div>
 
   <div class="event-card__body">

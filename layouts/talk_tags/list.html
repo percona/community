@@ -4,10 +4,7 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-{{ if eq .Data.Term "video" }}
-  <script>window.location.replace({{ (site.GetPage "/videos").RelPermalink | jsonify }});</script>
-  <p class="el-panel__empty">Redirecting to <a href="{{ (site.GetPage "/videos").RelPermalink }}">Videos</a>…</p>
-{{ else if not .Data.Term }}
+{{ if not .Data.Term }}
   <script>window.location.replace({{ (site.GetPage "/talks").RelPermalink | jsonify }});</script>
   <p class="el-panel__empty">Redirecting to <a href="{{ (site.GetPage "/talks").RelPermalink }}">Talks Hub</a>…</p>
 {{ else }}
