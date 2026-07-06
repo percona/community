@@ -20,14 +20,17 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Event
 - Postgres
 - Stream
+- opensource
+- sponsorship
 talks_tags:
 - Open Source
 - Slides
 - Video
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 2
 contributor_type:
 - speaker

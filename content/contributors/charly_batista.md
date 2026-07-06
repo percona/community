@@ -25,17 +25,21 @@ events_tags:
 - Podcast
 - Postgres
 - Stream
+- databases
+- event
 - opensource
 - pgpool
 - securing
+- sponsorship
 talks_tags:
 - Video
 posts_count: 0
-events_count: 26
+events_count: 28
 talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2024'
 - '2023'
 - '2022'
 - '2021'

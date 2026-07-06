@@ -18,12 +18,15 @@ images:
 contributor_tag:
 - Community
 blog_tags: []
-events_tags: []
+events_tags:
+- Event
+- opensource
+- sponsorship
 talks_tags:
 - DevOps
 - Slides
 posts_count: 0
-events_count: 0
+events_count: 1
 talks_count: 1
 contributor_type:
 - speaker

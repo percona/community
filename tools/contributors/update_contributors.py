@@ -96,6 +96,17 @@ def extract_year_from_field(doc: frontmatter.Post, fields: list) -> str | None:
     return None
 
 
+def dir_has_speaker_siblings(event_dir: str) -> bool:
+    """True when the event folder has session pages with their own speakers list."""
+    for fname in os.listdir(event_dir):
+        if not fname.endswith(".md") or fname == "_index.md":
+            continue
+        doc = load_md(os.path.join(event_dir, fname))
+        if doc and doc.get("speakers"):
+            return True
+    return False
+
+
 def dump_contributor(contrib, path, auto_fields):
     """
     Saves the contributor file with:
@@ -189,7 +200,11 @@ for root, _, files in os.walk(BLOG_DIR):
 # ———————————————————————
 for root, _, files in os.walk(EVENTS_DIR):
     for fname in files:
-        if not fname.endswith(".md") or fname == "_index.md":
+        if not fname.endswith(".md"):
+            continue
+        # Branch-bundle events (e.g. Percona University) store speakers on _index.md.
+        # Skip _index when child pages already declare speakers to avoid double counting.
+        if fname == "_index.md" and dir_has_speaker_siblings(root):
             continue
         path = os.path.join(root, fname)
         doc = load_md(path)

@@ -20,12 +20,14 @@ contributor_tag:
 - PMM
 blog_tags: []
 events_tags:
+- Event
 - Stream
 - opensource
+- sponsorship
 talks_tags:
 - Slides
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 1
 contributor_type:
 - speaker

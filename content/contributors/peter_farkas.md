@@ -17,17 +17,20 @@ images:
 contributor_tag: []
 blog_tags: []
 events_tags:
+- Event
 - Featured
 - Opensource
 - PerconaLive2023
 - Podcast
 - event
+- opensource
+- sponsorship
 talks_tags:
 - Databases
 - Open Source
 - Opensource
 posts_count: 0
-events_count: 3
+events_count: 4
 talks_count: 1
 contributor_type:
 - speaker

@@ -19,12 +19,14 @@ contributor_tag: []
 blog_tags: []
 events_tags:
 - Data Gravity
+- Event
 - Podcast
 - Postgres
 - Stream
+- opensource
 talks_tags: []
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 0
 contributor_type:
 - speaker

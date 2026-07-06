@@ -20,12 +20,14 @@ contributor_tag:
 - MySQL
 blog_tags: []
 events_tags:
+- Event
 - Percona Community Live
 - Postgres
+- devops
 - opensource
 talks_tags: []
 posts_count: 0
-events_count: 3
+events_count: 4
 talks_count: 0
 contributor_type:
 - speaker

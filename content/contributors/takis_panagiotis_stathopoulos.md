@@ -19,18 +19,22 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Event
 - Featured
 - PG
 - Postgres
 - event
+- opensource
+- sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
+- '2023'
 ---
 Experienced Architect, technically leading the successful completion, from presales and requirements to delivery, of more than 13 large scale (multi-million Euro cumulative budget) private and public sector IT projects, in the areas of Enterprise Content Management, Digital Publishing, SaaS, Cloud infrastructure & Operations. Involved in international projects, part of a international highly competitive team delivering cutting edge solutions. Deep knowledge of virtualisation, Cloud, SaaS and Content Management technologies and architectures, including hands on experience on selected areas. 
 
