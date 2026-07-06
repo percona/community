@@ -25,11 +25,12 @@ talks_tags:
 - Open Source
 - Video
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2023'
 - '2022'
 - '2021'
 - '2020'

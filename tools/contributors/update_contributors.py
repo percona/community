@@ -107,6 +107,28 @@ def dir_has_speaker_siblings(event_dir: str) -> bool:
     return False
 
 
+def speakers_on_index_not_in_siblings(event_dir: str, index_speakers: list) -> list:
+    """Speakers listed on _index.md but not on any sibling session page."""
+    sibling_speakers = set()
+    for fname in os.listdir(event_dir):
+        if not fname.endswith(".md") or fname == "_index.md":
+            continue
+        doc = load_md(os.path.join(event_dir, fname))
+        if not doc:
+            continue
+        for s in doc.get("speakers", []) or []:
+            if isinstance(s, str) and s.strip():
+                sibling_speakers.add(s.strip())
+    unique = []
+    for s in index_speakers:
+        if not isinstance(s, str) or not s.strip():
+            continue
+        speaker = s.strip()
+        if speaker not in sibling_speakers and speaker not in unique:
+            unique.append(speaker)
+    return unique
+
+
 def dump_contributor(contrib, path, auto_fields):
     """
     Saves the contributor file with:
@@ -202,15 +224,15 @@ for root, _, files in os.walk(EVENTS_DIR):
     for fname in files:
         if not fname.endswith(".md"):
             continue
-        # Branch-bundle events (e.g. Percona University) store speakers on _index.md.
-        # Skip _index when child pages already declare speakers to avoid double counting.
-        if fname == "_index.md" and dir_has_speaker_siblings(root):
-            continue
         path = os.path.join(root, fname)
         doc = load_md(path)
         if not doc:
             continue
         speakers = doc.get("speakers", []) or []
+        if fname == "_index.md" and dir_has_speaker_siblings(root):
+            speakers = speakers_on_index_not_in_siblings(root, speakers)
+            if not speakers:
+                continue
         doc_tags = doc.get("tags", []) or []
 
         # Extract year only from 'date' field
