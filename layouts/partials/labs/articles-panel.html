@@ -1,0 +1,53 @@
+{{ $paginator := .paginator }}
+{{ $title := .title | default "Latest articles" }}
+{{ $headingId := .headingId | default "labs-articles-heading" }}
+
+<section class="el-panel labs-panel" aria-labelledby="{{ $headingId }}">
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="{{ $headingId }}">
+      {{ $title }}{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}
+    </h2>
+  </header>
+
+  {{ if gt (len $paginator.Pages) 0 }}
+    <ul class="post-list labs-post-list">
+      {{ range $paginator.Pages }}
+        <li class="post-item">
+          {{ partial "postpreview-list" . }}
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p class="el-panel__empty">No articles yet.</p>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="el-pagination" aria-label="Labs articles pagination">
+      {{ if $paginator.HasPrev }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Prev.URL }}"
+          rel="prev"
+          aria-label="Previous page"
+        >&lsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+      {{ end }}
+
+      <span class="el-pagination__status">
+        Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+      </span>
+
+      {{ if $paginator.HasNext }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Next.URL }}"
+          rel="next"
+          aria-label="Next page"
+        >&rsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+      {{ end }}
+    </nav>
+  {{ end }}
+</section>

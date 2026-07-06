@@ -1,0 +1,7 @@
+{{ $href := .href | default (site.GetPage "/contributors").RelPermalink }}
+{{ $label := .label | default "Back to Contributors Hub" }}
+
+<a class="el-back-tab" href="{{ $href }}">
+  <span class="el-back-tab__arrow" aria-hidden="true">&larr;</span>
+  {{ $label }}
+</a>

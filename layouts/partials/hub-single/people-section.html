@@ -1,0 +1,44 @@
+{{/*
+  Dark people section for blog authors / event & talk speakers.
+
+  Params:
+    page   — current page
+    param  — front matter key: "authors" or "speakers"
+    title  — section heading (default: Authors)
+    link   — CTA label template with %s for name (default: View full profile)
+*/}}
+{{ $page := .page }}
+{{ $param := .param | default "authors" }}
+{{ $title := .title | default "Authors" }}
+{{ $linkLabel := .link | default "View full profile" }}
+
+{{ if isset $page.Params $param }}
+<section class="hub-single-people" aria-labelledby="hub-single-people-heading">
+  <div class="hub-single-people__inner">
+    <h2 id="hub-single-people-heading" class="hub-single-people__title">{{ $title }}</h2>
+    <div class="hub-single-people__list">
+      {{ range $key, $slug := index $page.Params $param }}
+        {{- with $page.Site.GetPage (print "/contributors/" $slug) -}}
+          <article class="hub-single-people__card">
+            <div class="hub-single-people__avatar">
+              {{ partial "contributor-avatar.html" (dict
+                "contributor" .
+                "size" "240x240 q85 jpg"
+                "width" 120
+                "height" 120
+              ) }}
+            </div>
+            <div class="hub-single-people__content">
+              <h3 class="hub-single-people__name">{{ .Params.fullname }}</h3>
+              {{- with .Content -}}
+                <div class="hub-single-people__bio">{{ . }}</div>
+              {{- end -}}
+              <a class="hub-single-people__link" href="{{ .RelPermalink }}">{{ $linkLabel }} &rsaquo;</a>
+            </div>
+          </article>
+        {{- end -}}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

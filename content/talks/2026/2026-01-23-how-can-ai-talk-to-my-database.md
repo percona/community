@@ -27,8 +27,6 @@ youtube_id: HP7ij4oyOH8
 images:
 - talks/2026/2026-01-23-how-can-ai-talk-to-my-database.png
 ---
-## Abstract
-
 What if we want to give AI access to our database, so it is able to actually query it?
 
 The most common way to provide an AI model access to different data sources (and tools!) is through the use of an intermediate server that implements the Model Context Protocol (MCP), which is an open standard. We call those intermediate MCP servers, and you can somewhat easily build one for different purposes. Having said that, chances are there's already an open source MCP server available out there that will cover your needs, including database access.

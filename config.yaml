@@ -16,7 +16,7 @@ params:
   searchLimitPage: 30
   searchColumns: 3
   images:
-    - contribute.jpg
+    - hub/home/cover.jpg
 buildFuture: true
 taxonomies:
   tag: tags
@@ -59,187 +59,208 @@ markup:
     tabWidth: 4
 menu:
   main:
-    - identifier: contribute
-      name: Contribute
-      url: /contribute
+    - identifier: events-learning
+      name: Events & Learning
+      url: /events-learning/
       weight: 1
+    - identifier: knowledge-base
+      name: Knowledge Base
+      url: /knowledge-base/
+      weight: 2
     - identifier: blog
       name: Blog
-      url: /blog
-      weight: 2
-    - identifier: forum
-      name: Forum
-      url: https://forums.percona.com/
+      url: /blog/
       weight: 3
-    - identifier: events
-      name: Events
-      url: /events
+    - identifier: forum
+      name: Forums
+      url: https://forums.percona.com/
       weight: 4
     - identifier: databases
       name: Databases
-      url: 
+      url: /databases/
       weight: 5
     - identifier: projects
       name: Projects
-      url: /projects
+      url: /projects/
       weight: 6
     - identifier: other
-      name: ...
-      url: 
+      name: Other
+      url: /search/
       weight: 7
-
-    - identifier: MySQL
-      name: MySQL
-      url: /mysql
-      parent: databases
-      weight: 1
-    - identifier: PostgreSQL
-      name: PostgreSQL
-      url: /postgresql
-      parent: databases
-      weight: 2
-    - identifier: MongoDB
-      name: MongoDB
-      url: /mongodb
-      parent: databases
-      weight: 3
-
-    - identifier: kubernetes
-      name: Kubernetes Operators
-      url: /projects/operators/
-      parent: projects
-      weight: 4
-    - identifier: everest
-      name: Percona Everest
-      url: /projects/everest
-      parent: projects
-      weight: 5
-    - identifier: pmm
-      name: Percona Monitoring and Management
-      url: /projects/pmm/
-      parent: projects
-      weight: 6
-    - identifier: subtoolkit
-      name: Percona Toolkit
-      url: /projects/toolkit/
-      parent: projects
-      weight: 7
-    - identifier: allprojects
-      name: All projects
-      url: /projects
-      parent: projects
+    - identifier: slack
+      name: Slack
+      url: https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow
       weight: 8
+      params:
+        hidden: true
+    - identifier: community-ascent
+      name: Community Ascent
+      url: /contribute/leaderboard
+      weight: 9
+      params:
+        hidden: true  # v1-hidden — see docs/v1-hidden-items.md
+    - identifier: swag-store
+      name: Swag store
+      url: /knowledge-base/
+      weight: 10
+      params:
+        secondary: true
+        hidden: true  # v1-hidden — see docs/v1-hidden-items.md
+    - identifier: contact-us
+      name: Contact Us
+      url: /contribute/contact/
+      weight: 11
+      params:
+        button: true
 
-    - identifier: communityevents
-      name: Community Events
-      url: /events
-      parent: events
+    - identifier: events-learning-events
+      name: Events
+      url: /events/
+      parent: events-learning
       weight: 1
-    - identifier: talks
-      name: Talks
-      url: /talks
-      parent: events
-      weight: 2
-    - identifier: speakers
+    - identifier: events-learning-speakers
       name: Speakers
       url: /contributor_type/speaker/
-      parent: events
+      parent: events-learning
+      weight: 2
+    - identifier: events-learning-talks
+      name: Talks
+      url: /talks/
+      parent: events-learning
       weight: 3
+    - identifier: events-learning-videos
+      name: Talks videos
+      url: /videos/
+      parent: events-learning
+      weight: 4
 
-    - identifier: posts
+    - identifier: knowledge-base-get-involved
+      name: How to get involved
+      url: /knowledge-base/
+      parent: knowledge-base
+      weight: 1
+    - identifier: knowledge-base-blogs
+      name: Community Blogs
+      url: /blog/
+      parent: knowledge-base
+      weight: 2
+    - identifier: knowledge-base-forums
+      name: Community Forums
+      url: https://forums.percona.com/
+      parent: knowledge-base
+      weight: 3
+    - identifier: knowledge-base-slack
+      name: Slack
+      url: https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow
+      parent: knowledge-base
+      weight: 5
+    - identifier: knowledge-base-articles
+      name: Articles
+      url: /contribute/articles/
+      parent: knowledge-base
+      weight: 6
+    - identifier: knowledge-base-videos
+      name: YouTube videos
+      url: /contribute/videos/
+      parent: knowledge-base
+      weight: 7
+    - identifier: knowledge-base-contributors
+      name: Contributors
+      url: /contributors/
+      parent: knowledge-base
+      weight: 8
+
+    - identifier: blog-posts
       name: Posts
-      url: /blog
+      url: /blog/
       parent: blog
       weight: 1
-    - identifier: authors
+    - identifier: blog-authors
       name: Authors
       url: /contributor_type/author/
       parent: blog
       weight: 2
 
-    - identifier: involved 
-      name: How to Get Involved
-      url: /contribute/how-to-get-involved
-      parent: contribute
+    - identifier: community-ascent-contribution
+      name: Contribution
+      url: /contribute
+      parent: community-ascent
       weight: 1
-    - identifier: contributors
-      name: Contributors
-      url: /contributors
-      parent: contribute
-      weight: 2
-    - identifier: coc
-      name: Code of Conduct
-      url: /contribute/coc
-      parent: contribute
-      weight: 3
-    - identifier: opentopics
-      name: Open Topics
-      url: /contribute/opentopics
-      parent: contribute
-      weight: 4
-    - identifier: articles
-      name: Articles
-      url: /contribute/articles
-      parent: contribute
-      weight: 5
-    - identifier: youtube_playlists
-      name: YouTube Playlists
-      url: /contribute/youtube_playlists
-      parent: contribute
-      weight: 6
-    - identifier: documentation
-      name: Documentation
-      url: /contribute/documentation
-      parent: contribute
-      weight: 7
-    - identifier: surveys
-      name: Testimonials & Surveys
-      url: /contribute/testimonials
-      parent: contribute
-      weight: 8
+      params:
+        hidden: true  # v1-hidden
 
-    - identifier: videos
-      name: Videos
-      url: /contribute/videos
-      parent: contribute
-      weight: 9
-    - identifier: dev
-      name: Repositories and Artifacts
-      url: /contribute/dev
-      parent: contribute
-      weight: 10
+    - identifier: mysql
+      name: MySQL
+      url: /databases/mysql/
+      parent: databases
+      weight: 1
+    - identifier: postgresql
+      name: PostgreSQL
+      url: /databases/postgresql/
+      parent: databases
+      weight: 2
+    - identifier: mongodb
+      name: MongoDB
+      url: /databases/mongodb/
+      parent: databases
+      weight: 3
+    - identifier: valkey-redis
+      name: Valkey & Redis
+      url: /databases/valkey-redis/
+      parent: databases
+      weight: 4
+
+    - identifier: kubernetes
+      name: Kubernetes Operators
+      url: /projects/operators/
+      parent: projects
+      weight: 1
+    - identifier: pmm
+      name: Percona Monitoring and Management
+      url: /projects/pmm/
+      parent: projects
+      weight: 3
+    - identifier: subtoolkit
+      name: Percona Toolkit
+      url: /projects/toolkit/
+      parent: projects
+      weight: 4
+    - identifier: allprojects
+      name: All projects
+      url: /projects/
+      parent: projects
+      weight: 5
 
     - identifier: search
       name: Search
       url: /search/
       parent: other
-      weight: 0
+      weight: 1
     - identifier: newsletter
       name: Community Newsletter
-      url: /contribute/newsletter
+      url: /contribute/newsletter/
       parent: other
-      weight: 1
+      weight: 2
     - identifier: labs
       name: Percona Labs
-      parent: other
-      url: /labs
-      weight: 2
-    - identifier: open-source-database-hall-of-fame
-      name: Open Source Database Hall of Fame
-      url: /open-source-database-hall-of-fame
+      url: /labs/
       parent: other
       weight: 3
+    - identifier: open-source-database-hall-of-fame
+      name: Open Source Database Hall of Fame
+      url: /open-source-database-hall-of-fame/
+      parent: other
+      weight: 4
     - identifier: dsto
       name: Dave Talks Open (Archive)
       url: /events/dave-stokes-talks-open-percona-live-2022/
       parent: other
-      weight: 4
+      weight: 5
     - identifier: podcasts
       name: HOSS Talks (Archive)
-      url: /podcasts
+      url: /events/podcasts/
       parent: other
-      weight: 5
-
+      weight: 6
 
   footer:
     - identifier: newsletter
@@ -256,7 +277,7 @@ menu:
       weight: 3
     - identifier: contact
       name: Contact
-      url: https://www.percona.com/about-percona/contact
+      url: /contribute/contact/
       weight: 4
     - identifier: forums
       name: Forums

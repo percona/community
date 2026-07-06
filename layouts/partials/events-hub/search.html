@@ -1,0 +1,139 @@
+{{ $events := .searchPages }}
+{{ $searchIndex := slice }}
+
+{{ range $events }}
+  {{ $title := .Title | default "" }}
+
+  {{ $location := .Params.EventLocation | default .Params.event_location | default "" }}
+  {{ if not $location }}
+    {{ with .Params.events_tag }}
+      {{ if in . "Online" }}
+        {{ $location = "Online" }}
+      {{ else if in . "In-Person" }}
+        {{ $location = "In-Person" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $date := .Params.EventDate | default .Params.event_date | default (.Date.Format "January 2, 2006") }}
+
+  {{ $tags := "" }}
+  {{ with .Params.events_tag }}
+    {{ $tags = delimit . " " }}
+  {{ end }}
+
+  {{ $categories := "" }}
+  {{ with .Params.events_category }}
+    {{ $categories = delimit . " " }}
+  {{ end }}
+
+  {{ $description := .Params.description | default "" }}
+  {{ $excerpt := .Content | plainify | default "" }}
+
+  {{ $searchIndex = $searchIndex | append (dict
+    "html"       (printf "<div class=\"grid__item\">%s</div>" (partial "events-hub/event-card.html" .))
+    "title"      ($title | lower)
+    "location"   ($location | lower)
+    "date"       ($date | lower)
+    "tags"       ($tags | lower)
+    "categories" ($categories | lower)
+    "description" ($description | lower)
+    "excerpt"    ($excerpt | lower)
+  ) }}
+{{ end }}
+
+<script type="application/json" id="events-hub-search-data">
+  {{- $searchIndex | jsonify | safeJS -}}
+</script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("events-hub-search-data");
+    const searchInput = document.getElementById("events-hub-search");
+    const grid = document.getElementById("events-hub-grid");
+    const paginator = document.getElementById("events-hub-paginator");
+    const statusEl = document.querySelector("[data-events-search-status]");
+
+    if (!searchDataEl || !searchInput || !grid) return;
+
+    let data = [];
+    try {
+      data = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultMarkup = grid.innerHTML;
+
+    const scoreItem = (item, tokens) => {
+      let score = 0;
+      tokens.forEach(function (token) {
+        if (item.title.includes(token)) score += 5;
+        if (item.location.includes(token)) score += 4;
+        if (item.tags.includes(token)) score += 3;
+        if (item.categories.includes(token)) score += 3;
+        if (item.date.includes(token)) score += 2;
+        if (item.description.includes(token)) score += 2;
+        if (item.excerpt.includes(token)) score += 1;
+      });
+      return score;
+    };
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        grid.innerHTML = '<p class="el-panel__empty grid__item">No matching events found.</p>';
+        if (statusEl) statusEl.textContent = "No results";
+        return;
+      }
+      grid.innerHTML = matches.map(function (m) { return m.html; }).join("");
+      if (statusEl) statusEl.textContent = "Found " + matches.length + " results";
+    };
+
+    const resetList = function () {
+      grid.innerHTML = defaultMarkup;
+      if (statusEl) statusEl.textContent = "";
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseTokens = (value) => {
+      if (!value) return [];
+      const lowered = value.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, function (_, phrase) {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder.split(/\s+/).map(function (t) { return t.trim(); }).filter(Boolean).forEach(function (t) {
+        tokens.push(t);
+      });
+
+      return tokens;
+    };
+
+    searchInput.addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+      const tokens = parseTokens(query);
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = data
+        .map(function (item) {
+          return Object.assign({}, item, { score: scoreItem(item, tokens) });
+        })
+        .filter(function (item) { return item.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; });
+
+      renderMatches(matches);
+    });
+  });
+</script>

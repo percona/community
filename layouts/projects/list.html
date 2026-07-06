@@ -1,10 +1,63 @@
 {{ define "css" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/projects.scss") | safeCSS) -}}
-    {{- if in .Content "<pre class=\"chroma\">" -}}
-        {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
-    {{- end -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/projects.scss") | safeCSS) -}}
 {{- end -}}
 
 {{ define "mainwrapper" }}
-    {{- .Content -}}
+  {{- $featuredTags := slice "Kubernetes" "PMM" "Toolkit" "toolkit" -}}
+  {{- $projectSlugs := slice "operators" "pmm" "toolkit" -}}
+  {{- $contribLinks := slice
+    (dict "label" "OpenEverest" "url" "/projects/everest/")
+    (dict "label" "Grafana" "url" "https://grafana.com/")
+    (dict "label" "MySQL" "url" "https://www.mysql.com/")
+    (dict "label" "PostgreSQL" "url" "https://www.postgresql.org/")
+  -}}
+
+  <div class="projects-hub">
+    {{ partial "hero.html" (dict
+      "page" .
+      "type" "mountains"
+      "titleBefore" "Open Source"
+      "titleAccent" "Projects"
+      "description" (.Params.hero_description | default "We create, contribute to, and use various open source projects. Contributing back is a core part of open source which is why we are heavily involved in various open source communities.")
+      "hero_line" 3
+    ) }}
+
+    <div class="projects-hub__main">
+      <section class="projects-hub__section" aria-labelledby="projects-ours-heading">
+        <h2 class="projects-hub__heading" id="projects-ours-heading">Our Open Source Projects</h2>
+        <div class="projects-hub__grid">
+          {{- range $projectSlugs -}}
+            {{- with site.GetPage (printf "/projects/%s" .) -}}
+              <a class="projects-card" href="{{ .RelPermalink }}">
+                <h3 class="projects-card__title">{{ .Title }}</h3>
+                <p class="projects-card__desc">{{ .Description }}</p>
+                <span class="projects-card__cta">Learn more</span>
+              </a>
+            {{- end -}}
+          {{- end -}}
+        </div>
+      </section>
+
+      <section class="projects-hub__section projects-hub__section--contrib" aria-labelledby="projects-contrib-heading">
+        <h2 class="projects-hub__heading" id="projects-contrib-heading">Projects Where We Contribute Back</h2>
+        <ul class="projects-hub__contrib">
+          {{- range $contribLinks -}}
+            <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a></li>
+          {{- end -}}
+          <li><span>… and many more</span></li>
+        </ul>
+      </section>
+
+      <section class="projects-hub__section projects-hub__section--posts" aria-labelledby="projects-posts-heading">
+        <h2 class="projects-hub__heading" id="projects-posts-heading">Featured posts</h2>
+        <div class="projects-hub__posts-grid">
+          {{- range first 3 (where (where site.RegularPages "Section" "blog") "Params.tags" "intersect" $featuredTags) -}}
+            <div class="grid__item">
+              {{ partial "hub-single/blog-card.html" . }}
+            </div>
+          {{- end -}}
+        </div>
+      </section>
+    </div>
+  </div>
 {{ end }}

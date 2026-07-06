@@ -27,6 +27,4 @@ video: ''
 images:
 - talks/2025/2025-04-10-open-source-observability-for-databases-what-re-the-best-tools-for-your-db-deployment.png
 ---
-## Abstract
-
 There is probably no doubt today that observability is an essential aspect of database operations, ensuring reliability, performance, and quick troubleshooting. In this presentation, we will look at currently available, popular, and free open-source database observability tools, comparing their capabilities and limitations. These include OpenTelemetry with Jaeger, as well as Prometheus & Grafana, VictoriaMetrics, Zabbix, and Percona Monitoring and Management (PMM). A good presentation also has a practical use case - in my case, I will illustrate PMM, which my team and I quickly set up to observe our new MongoDB multi-cluster synchronization tool. Participants will gain practical information on how to choose and implement the right observability stack for their needs in the context of databases.

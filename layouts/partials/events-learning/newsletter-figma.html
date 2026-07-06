@@ -1,0 +1,25 @@
+{{ $data := index site.Data "events-learning" }}
+{{ with $data.newsletter }}
+{{ $img := resources.Get "hub/heroes/subscribe.jpg" }}
+<section class="el-newsletter-figma" aria-labelledby="el-nf-heading">
+  <div class="el-newsletter-figma__inner">
+    <div class="el-newsletter-figma__copy">
+      <h3 class="el-newsletter-figma__title" id="el-nf-heading">{{ .title }}</h3>
+      {{ with .text }}
+        <p class="el-newsletter-figma__text">{{ . }}</p>
+      {{ end }}
+      <a class="el-newsletter-figma__submit" href="{{ .url | relURL }}">{{ .cta }}</a>
+    </div>
+    {{ with $img }}
+    <div class="el-newsletter-figma__media">
+      <img
+        class="el-newsletter-figma__img"
+        src="{{ (.Fill "694x410 q85 webp").RelPermalink }}"
+        alt="Events & Learning community"
+        loading="lazy"
+      />
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

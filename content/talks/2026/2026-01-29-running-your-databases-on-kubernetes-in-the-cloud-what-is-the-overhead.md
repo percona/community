@@ -25,8 +25,6 @@ youtube_id: vjEAZhSBy7k
 images:
 - talks/2026/2026-01-29-running-your-databases-on-kubernetes-in-the-cloud-what-is-the-overhead.png
 ---
-## Abstract
-
 One way of looking at Kubernetes is that it is all about convenience. Considering you are using an operator, you can easily and quickly deploy a new database environment in the cloud that is highly available and comes pre-configured with backups. But do we get the same performance from our database compared to running it in the same cloud but without Kubernetes? After all, the latter implies using containers on top of an already virtualized environment, over which we have less control.
 
 To gain a better understanding of the level of overhead imposed by the Kubernetes layer, I experimented with running Sysbench's OLTP and TPC-C read-write workloads on a MySQL environment deployed directly on cloud instances. I then repeated the same tests on a Kubernetes-based environment using the same cloud instances and persistent storage. This talk presents the results of these tests conducted on two different cloud providers in two distinct scenarios: one in which the dataset fits in the database cache and another in which it does not.

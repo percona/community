@@ -1,5 +1,7 @@
 ---
 title: Dave Stokes Talks Open on Percona Live 2022
+hero_title: Dave Stokes Talks Open on Percona Live 2022
+hero_line: 1
 description: David Stokes invited amazing guests to talk to him about open source
   technologies (MySQL, Postgres, MongoDB, MariaDB, and others) and record a podcast
   on Percona Live 2022 in Austin. They also talked about cloud technologies, DevOps
@@ -17,12 +19,6 @@ events_year: ["2022"]
 events_tag: ["Community"]
 events_category: ["Speaking","Community"]
 ---
-{{% hero-gradient class="night" %}}
-
-# Dave Stokes Talks Open on Percona Live 2022
-
-{{% /hero-gradient %}}
-
 {{% contentblock %}}
 {{% typography %}}
 

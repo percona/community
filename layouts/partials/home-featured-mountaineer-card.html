@@ -1,0 +1,91 @@
+{{ $page := . }}
+{{ $title := $page.Params.fullname | default $page.Title }}
+{{ $role := $page.Params.job | default $page.Params.tagline }}
+
+<article class="mountaineer-card">
+  <div class="mountaineer-card__media">
+    <div class="mountaineer-card__photo-wrap">
+      {{ with index $page.Params.images 0 }}
+        {{ with resources.Get . }}
+          <img
+            class="mountaineer-card__photo"
+            src="{{ (.Fill "360x360 Top jpg q85").RelPermalink }}"
+            alt=""
+            width="360"
+            height="360"
+            loading="lazy"
+            decoding="async"
+          >
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="mountaineer-card__gradient" aria-hidden="true"></div>
+    <svg
+      class="mountaineer-card__triangle"
+      xmlns="http://www.w3.org/2000/svg"
+      width="70"
+      height="121"
+      viewBox="0 0 70 121"
+      fill="none"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M70 121L0 0L70 0L70 121Z" fill="#282727"/>
+    </svg>
+    <p class="mountaineer-card__label" aria-hidden="true">
+      <span>Featured</span>
+      <span>Mountaineer</span>
+    </p>
+  </div>
+
+  <div class="mountaineer-card__body">
+    <h2 class="mountaineer-card__name">
+      <a class="mountaineer-card__name-link" href="{{ $page.RelPermalink }}">{{ $title }}</a>
+    </h2>
+    {{ with $role }}
+      <p class="mountaineer-card__role">{{ . }}</p>
+    {{ end }}
+
+    <ul class="mountaineer-card__stats">
+      {{ if gt $page.Params.posts_count 0 }}
+        <li>
+          <a class="mountaineer-card__stat" href="{{ $page.RelPermalink }}#blog-posts">{{ $page.Params.posts_count }} posts</a>
+        </li>
+      {{ end }}
+      {{ if gt $page.Params.talks_count 0 }}
+        <li>
+          <a class="mountaineer-card__stat" href="{{ $page.RelPermalink }}#talks">{{ $page.Params.talks_count }} talks</a>
+        </li>
+      {{ end }}
+      {{ if gt $page.Params.events_count 0 }}
+        <li>
+          <a class="mountaineer-card__stat" href="{{ $page.RelPermalink }}#events">{{ $page.Params.events_count }} events</a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <div class="mountaineer-card__footer">
+      <div class="mountaineer-card__social">
+        {{ with $page.Params.social.linkedin }}
+          <a class="mountaineer-card__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $title }} on LinkedIn">
+            {{ partial "icon-linkedin-social.html" (dict "width" 9 "height" 10) }}
+          </a>
+        {{ end }}
+        {{ with $page.Params.social.github }}
+          {{ $githubURL := . }}
+          {{ if not (strings.HasPrefix $githubURL "http") }}
+            {{ $githubURL = printf "https://github.com/%s" $githubURL }}
+          {{ end }}
+          <a class="mountaineer-card__social-link" href="{{ $githubURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $title }} on GitHub">
+            {{ partial "icon-github-social.html" (dict "width" 16 "height" 16) }}
+          </a>
+        {{ end }}
+      </div>
+
+      <a class="mountaineer-card__profile" href="{{ $page.RelPermalink }}">
+        View Profile
+        <span class="mountaineer-card__profile-arrow" aria-hidden="true">&gt;</span>
+      </a>
+    </div>
+  </div>
+</article>

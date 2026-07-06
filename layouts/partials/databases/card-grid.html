@@ -1,0 +1,43 @@
+{{/*
+  Brand-colored database hub cards with white horizontal logos.
+  Title and teaser sit below each card; the whole tile is one link.
+*/}}
+<ul class="databases-grid">
+  {{ range (slice
+    (dict "slug" "postgresql" "label" "PostgreSQL" "tech" "postgresql" "logo" "hub/products/postgres-horizontal-white.svg")
+    (dict "slug" "valkey-redis" "label" "Valkey & Redis" "tech" "valkey" "logo" "hub/products/valkey-horizontal-white.svg")
+    (dict "slug" "mysql" "label" "MySQL" "tech" "mysql" "logo" "hub/products/mysql-horizontal-white.svg")
+    (dict "slug" "mongodb" "label" "MongoDB" "tech" "mongodb" "logo" "hub/products/mongodb-horizontal-white.svg")
+  ) }}
+    {{- $card := . -}}
+    {{- $page := site.GetPage (printf "/databases/%s" $card.slug) -}}
+    {{- $teaser := "" -}}
+    {{- with $page -}}
+      {{- $teaser = .Params.hub_teaser | default .Params.hero_description | default .Description -}}
+    {{- end -}}
+    <li class="databases-grid__item">
+      <a
+        class="databases-tile"
+        href="{{ printf "/databases/%s/" $card.slug | relURL }}"
+      >
+        <span class="databases-card databases-card--{{ $card.tech }}">
+          {{ with resources.Get $card.logo }}
+            <img
+              class="databases-card__logo"
+              src="{{ .RelPermalink }}"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            >
+          {{ end }}
+        </span>
+        <span class="databases-tile__body">
+          <span class="databases-tile__title">{{ $card.label }}</span>
+          {{ with $teaser }}
+            <span class="databases-tile__desc">{{ . }}</span>
+          {{ end }}
+        </span>
+      </a>
+    </li>
+  {{ end }}
+</ul>

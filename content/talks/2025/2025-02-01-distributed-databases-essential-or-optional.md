@@ -25,6 +25,4 @@ video: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5743-distribut
 images:
 - talks/2025/2025-02-01-distributed-databases-essential-or-optional.png
 ---
-## Abstract
-
 In the era of distributed systems, many modern databases are designed to scale horizontally from the ground up. Yet, some of the most widely used databases, like MySQL and PostgreSQL, remain single-node by design, relying on third-party sharding solutions like Citus or Vitess for distribution. This raises a critical question: do we always need to go distributed, or can replicated single-node databases meet most use cases? In this talk, we’ll explore the trade-offs between distributed and non-distributed architectures, evaluate the limits of single-node databases, and discuss when it truly makes sense to embrace distribution. Join us as we navigate the complexities of modern database design and uncover what’s best for your applications.

@@ -1,0 +1,36 @@
+{{ if (isset .Params "authors") }}
+<section class="blog-post-authors" aria-labelledby="blog-post-authors-heading">
+  <div class="blog-post-authors__inner">
+    <h2 id="blog-post-authors-heading" class="blog-post-authors__title">Authors</h2>
+    <div class="blog-post-authors__list">
+      {{ range $key, $author := .Params.authors }}
+        {{- with $.Site.GetPage (print "/contributors/" $author) -}}
+          <article class="blog-post-authors__card">
+            <div class="blog-post-authors__avatar">
+              {{- with .Params.images -}}
+                {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) -}}
+                  <img
+                    src="{{ (.Fill "240x240 q85 jpg").RelPermalink }}"
+                    alt="{{ $.Params.fullname }}"
+                    width="120"
+                    height="120"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                {{- end -}}
+              {{- end -}}
+            </div>
+            <div class="blog-post-authors__content">
+              <h3 class="blog-post-authors__name">{{ .Params.fullname }}</h3>
+              {{- with .Content -}}
+                <div class="blog-post-authors__bio">{{ . }}</div>
+              {{- end -}}
+              <a class="blog-post-authors__link" href="{{ .RelPermalink }}">View full profile &rsaquo;</a>
+            </div>
+          </article>
+        {{- end -}}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

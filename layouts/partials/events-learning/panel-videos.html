@@ -1,0 +1,48 @@
+{{ $talksHub := site.GetPage "/talks" }}
+{{ $allTalks := slice }}
+{{ with $talksHub }}
+  {{ $withVideo := where .Pages ".Params.youtube_id" "!=" nil }}
+  {{ $allTalks = sort $withVideo ".Params.presentation_date" "desc" }}
+{{ end }}
+
+{{ $perPage := 6 }}
+{{ $totalTalks := len $allTalks }}
+{{ $totalPages := 1 }}
+{{ if gt $totalTalks 0 }}
+  {{ $totalPages = int (math.Ceil (div (float $totalTalks) (float $perPage))) }}
+{{ end }}
+{{ $videos := first $perPage $allTalks }}
+
+<section
+  class="el-panel"
+  id="el-panel-videos"
+  data-el-panel="videos"
+  aria-labelledby="el-videos-heading"
+>
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-videos-heading">Videos</h2>
+  </header>
+
+  {{ if gt (len $videos) 0 }}
+    <div class="el-videos-grid">
+      {{ range $videos }}
+        {{ partial "talks-hub/video-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No videos found.</p>
+  {{ end }}
+
+  {{ $videosHub := site.GetPage "/videos" }}
+  <nav class="el-pagination" aria-label="Browse all videos">
+    <a class="el-pagination__browse" href="{{ $videosHub.RelPermalink }}">Browse all videos &rarr;</a>
+    <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+    <span class="el-pagination__status">Page 1 of {{ $totalPages }}</span>
+    {{ if gt $totalPages 1 }}
+      <a class="el-pagination__arrow" href="{{ printf "%spage/2/" $videosHub.RelPermalink }}" aria-label="Page 2">&rsaquo;</a>
+    {{ else }}
+      <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+    {{ end }}
+  </nav>
+
+</section>

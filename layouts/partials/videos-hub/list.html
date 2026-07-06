@@ -1,0 +1,69 @@
+{{ $paginator := .paginator }}
+{{ $searchPages := .searchPages }}
+{{ $hubPage := site.GetPage "/videos" }}
+{{ $videosURL := $hubPage.RelPermalink }}
+
+<section class="el-panel" aria-labelledby="el-videos-heading">
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-videos-heading">
+      Videos{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}
+    </h2>
+  </header>
+
+  <div class="el-filters-bar">
+    <div class="el-filters-search">
+      <label class="sr-only" for="videos-hub-search">Search videos</label>
+      <input
+        id="videos-hub-search"
+        class="el-filters-search__input"
+        type="search"
+        placeholder="Search videos..."
+        autocomplete="off"
+      >
+    </div>
+  </div>
+
+  <p class="el-filters-search__status" data-videos-search-status aria-live="polite"></p>
+
+  {{ if gt (len $paginator.Pages) 0 }}
+    <div class="el-videos-grid" id="videos-hub-list">
+      {{ range $paginator.Pages }}
+        {{ partial "talks-hub/video-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No videos found.</p>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+    <nav class="el-pagination" id="videos-hub-paginator" aria-label="Videos pagination">
+      {{ if $paginator.HasPrev }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Prev.URL }}"
+          rel="prev"
+          aria-label="Previous page"
+        >&lsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+      {{ end }}
+
+      <span class="el-pagination__status">
+        Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+      </span>
+
+      {{ if $paginator.HasNext }}
+        <a
+          class="el-pagination__arrow"
+          href="{{ $paginator.Next.URL }}"
+          rel="next"
+          aria-label="Next page"
+        >&rsaquo;</a>
+      {{ else }}
+        <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+      {{ end }}
+    </nav>
+  {{ end }}
+
+  {{ partial "videos-hub/search.html" (dict "searchPages" $searchPages) }}
+</section>

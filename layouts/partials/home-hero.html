@@ -1,0 +1,74 @@
+{{ $hero1920 := resources.Get "hub/heroes/home-1920.webp" }}
+{{ $hero2560 := resources.Get "hub/heroes/home-2560.webp" }}
+
+<div class="home-hero-area">
+<section class="home-hero" aria-labelledby="home-hero-heading">
+  <div class="home-hero__media" aria-hidden="true">
+    {{ if and $hero1920 $hero2560 }}
+    <picture>
+      <source media="(min-width: 1440px)" srcset="{{ $hero2560.RelPermalink }}" type="image/webp">
+      <img
+        class="home-hero__image"
+        src="{{ $hero1920.RelPermalink }}"
+        srcset="{{ $hero1920.RelPermalink }} 1920w, {{ $hero2560.RelPermalink }} 2560w"
+        sizes="100vw"
+        alt=""
+        width="2560"
+        height="1600"
+        fetchpriority="high"
+        decoding="async"
+      >
+    </picture>
+    {{ end }}
+    <div class="home-hero__gradient" aria-hidden="true"></div>
+  </div>
+
+  {{ partial "hub-triangle.html" (dict
+    "path" "hub/icons/corner-triangle.svg"
+    "class" "home-hero__triangle"
+    "width" 207
+    "height" 360
+  ) }}
+
+  <div class="home-hero__content">
+    <div class="home-hero__inner">
+      <h1 class="home-hero__title" id="home-hero-heading">
+        The way is <span class="home-hero__accent">Open</span>.<br>
+        The climb is <span class="home-hero__accent">yours</span>.
+      </h1>
+      <p class="home-hero__subtitle">
+        The journey to the peak of database engineering. Powered by you, the community.
+      </p>
+    </div>
+  </div>
+
+  <div class="home-hero-search-wrap">
+    <div class="home-hero-search" id="home-hero-search">
+      <label class="sr-only" for="community-search-hero-input">Search site</label>
+      <div class="home-hero-search__field" role="search">
+        <input
+          id="community-search-hero-input"
+          class="home-hero-search__input"
+          type="search"
+          name="q"
+          placeholder="Find talks, articles, events &amp; more"
+          autocomplete="off"
+          aria-controls="community-search-overlay"
+        >
+        <button type="button" class="home-hero-search__submit" id="community-search-hero-button" aria-label="Search">
+          {{ partial "icon-search.html" (dict "width" 48 "height" 48) }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section home-section--dark">
+  {{ partial "home-featured-mountaineers.html" . }}
+</section>
+</div>
+
+{{ $heroSearchJS := resources.Get "js/home-hero-search.js" }}
+{{ with $heroSearchJS }}
+<script src="{{ .RelPermalink }}" defer></script>
+{{ end }}

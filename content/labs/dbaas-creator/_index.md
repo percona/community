@@ -2,6 +2,8 @@
 title: "Percona DBaaS Infrastructure Creator"
 description: "Percona DbaaS Infrastructure Creator creates the infrastructure for you to try a PMM DBaaS. It will help you to choose the right types of instances based on the number of vCPU and the amount of memory and create clusters."
 layout: product
+hero_type: mountains
+hero_line: 2
 images:
     - images/labs/dbaas-infrastructure-creator.jpg
 tags: ['Labs','Creator', 'DBaaS']

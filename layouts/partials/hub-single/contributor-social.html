@@ -1,0 +1,28 @@
+{{/*
+  Contributor profile social links in hub-single meta area.
+*/}}
+{{ $page := . }}
+{{ if .Params.social }}
+<div class="hub-single__social">
+  {{ with $page.Params.social.linkedin }}
+    <a class="hub-single__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode }}" alt="">
+    </a>
+  {{ end }}
+  {{ with $page.Params.social.twitter }}
+    <a class="hub-single__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+      <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode }}" alt="">
+    </a>
+  {{ end }}
+  {{ with $page.Params.social.github }}
+    <a class="hub-single__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode }}" alt="">
+    </a>
+  {{ end }}
+  {{ with $page.Params.social.website }}
+    <a class="hub-single__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Website">
+      <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-website.svg").Content | base64Encode }}" alt="">
+    </a>
+  {{ end }}
+</div>
+{{ end }}

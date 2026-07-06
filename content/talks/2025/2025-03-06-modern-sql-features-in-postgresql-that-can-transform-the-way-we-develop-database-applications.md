@@ -26,8 +26,6 @@ youtube_id: s5pQXoSV6dk
 images:
 - talks/2025/2025-03-06-modern-sql-features-in-postgresql-that-can-transform-the-way-we-develop-database-applications.png
 ---
-## Abstract
-
 PostgreSQL is the most advanced open-source database in terms of SQL processing capabilities. However, many users are unaware of the sheer power hiding inside its SQL engine and still write SQL-92 statements. With advanced SQL capabilities, much higher concurrency and performance can be achieved. This talk discusses some of the modern SQL techniques for developing applications with examples.
 • Implementation of data retention policy (archiving and purging) as a single statement.
 • Partitioning large tables without causing heavy wait locks or downtime.

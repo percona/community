@@ -1,0 +1,62 @@
+{{ $contributor := .contributor }}
+
+<aside class="planet-pg-author{{ if .variant }} planet-pg-author--{{ .variant }}{{ end }}" aria-label="Author">
+  {{ with $contributor.Params.images }}
+    <div class="planet-pg-author__media">
+      {{- $imgPath := index . 0 -}}
+      {{- with resources.Get (strings.TrimPrefix "/" $imgPath) -}}
+      <img
+        src="{{ (.Fill "600x600 q85 jpg").RelPermalink }}"
+        alt="{{ $contributor.Params.fullname }}"
+        width="300"
+        height="300"
+        loading="eager"
+        decoding="async"
+      >
+      {{- end -}}
+    </div>
+  {{ end }}
+
+  <div class="planet-pg-author__copy">
+    <h2 class="planet-pg-author__name">{{ $contributor.Params.fullname }}</h2>
+    {{ with or $contributor.Params.job $contributor.Params.tagline }}
+      <p class="planet-pg-author__role">{{ . }}</p>
+    {{ end }}
+
+    {{ with $contributor.Params.social }}
+    <div class="planet-pg-author__social">
+      {{ with $contributor.Params.social.linkedin }}
+        <a class="planet-pg-author__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-linkedin.svg").Content | base64Encode }}" alt="">
+        </a>
+      {{ end }}
+      {{ with $contributor.Params.social.twitter }}
+        <a class="planet-pg-author__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-twitter.svg").Content | base64Encode }}" alt="">
+        </a>
+      {{ end }}
+      {{ with $contributor.Params.social.github }}
+        <a class="planet-pg-author__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-github.svg").Content | base64Encode }}" alt="">
+        </a>
+      {{ end }}
+      {{ with $contributor.Params.social.website }}
+        <a class="planet-pg-author__social-link" href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Website">
+          <img src="data:image/svg+xml;base64,{{ (resources.Get "icon-website.svg").Content | base64Encode }}" alt="">
+        </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $contributor.Content }}
+      <div class="planet-pg-author__bio">{{ . }}</div>
+    {{ end }}
+
+    <div class="planet-pg-author__links">
+      <a href="{{ $contributor.RelPermalink }}">Full profile</a>
+      {{ with $.feedURL }}
+        <a href="{{ . }}">RSS feed</a>
+      {{ end }}
+    </div>
+  </div>
+</aside>

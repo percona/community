@@ -1,28 +1,53 @@
-.introduction {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-color: #f5f2f2;
+$content-page-gutter-left: clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x});
+$content-page-gutter-right: clamp(#{$padding-right-page}, 4.44vw, #{$layout-padding-x});
 
-    .hero-text p {
-        padding: 0 4rem;
+.content-page-shell > .wrapper.introduction {
+  margin-left: calc(-1 * #{$content-page-gutter-left});
+  margin-right: calc(-1 * #{$content-page-gutter-right});
+  padding-left: $content-page-gutter-left;
+  padding-right: $content-page-gutter-right;
+  box-sizing: border-box;
+}
+
+.introduction,
+.content-band.introduction {
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f5f2f2;
+  text-align: center;
+
+  .hero-text p,
+  .content-band__inner p {
+    padding: 0;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hero-text h2,
+  .content-band__inner h2 {
+    margin: 0;
+    font-family: $font-sans;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width: 760px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+
+    .hero-text p,
+    .content-band__inner p {
+      padding: 0;
     }
-
-    @media screen and (max-width: 760px) {
-
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: left;
-
-        .hero-text p {
-            padding: 0 0rem;
-        }
-
-    }  
+  }
 }
 
 .inductees {
-    
-    margin: 2rem;
+  margin: 2rem 0;
 
     h2 {
         text-align: center;

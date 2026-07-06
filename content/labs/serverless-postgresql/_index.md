@@ -2,6 +2,8 @@
 title: "Percona Build for Serverless PostgreSQL"
 description: "Percona offers builds for Serverless PostgreSQL which are based on Neon. This solution provides a serverless experience for PostgreSQL by dividing the compute nodes and storage nodes, allowing the storage to be scaled as your data grows and making the process transparent for end-users."
 layout: product
+hero_type: mountains
+hero_line: 2
 images:
     - images/labs/serverless-postgres-cover.jpg
 tags: ['Labs','Serverless', 'PostgreSQL']

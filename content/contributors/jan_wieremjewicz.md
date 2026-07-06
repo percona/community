@@ -12,6 +12,7 @@ social:
   website: null
 images:
 - contributors/jan_wieremjewicz.jpg
+planet_pg_tag: pg_jan
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
@@ -27,6 +28,7 @@ blog_tags:
 - Postgres
 - SQL
 - Security
+- ai
 - monitoring
 - opensource
 - pgBackRest
@@ -54,7 +56,7 @@ talks_tags:
 - Slides
 - Tech
 - Video
-posts_count: 18
+posts_count: 19
 events_count: 3
 talks_count: 5
 contributor_type:

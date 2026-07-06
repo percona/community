@@ -1,0 +1,48 @@
+{{ with .Params.youtube_id }}
+{{ $talk := $ }}
+{{ $ytId := . }}
+{{ $speakerNames := slice }}
+{{ with $talk.Params.speakers }}
+  {{ range . }}
+    {{ with site.GetPage (print "/contributors/" .) }}
+      {{ $speakerNames = $speakerNames | append .Params.fullname }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $speakersLabel := "" }}
+{{ if gt (len $speakerNames) 2 }}
+  {{ $speakersLabel = printf "%s, %s…" (index $speakerNames 0) (index $speakerNames 1) }}
+{{ else }}
+  {{ $speakersLabel = delimit $speakerNames ", " }}
+{{ end }}
+{{ $event := $talk.Params.event | default "" }}
+
+<a class="el-video-card" href="https://youtu.be/{{ $ytId }}" target="_blank" rel="noopener" aria-label="{{ $talk.Title }}">
+  <div class="el-video-card__media">
+    <img
+      class="el-video-card__img"
+      src="https://img.youtube.com/vi/{{ $ytId }}/hqdefault.jpg"
+      alt="{{ $talk.Title }}"
+      loading="lazy"
+      decoding="async"
+    >
+    <div class="el-video-card__overlay"></div>
+    <div class="el-video-card__play" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.45)"/>
+        <polygon points="10,8 17,12 10,16" fill="white"/>
+      </svg>
+    </div>
+  </div>
+  <div class="el-video-card__info">
+    <p class="el-video-card__title">{{ $talk.Title }}</p>
+    {{ if or $speakersLabel $event }}
+      <p class="el-video-card__meta">
+        {{ with $speakersLabel }}<span>{{ . }}</span>{{ end }}
+        {{ if and $speakersLabel $event }}<span class="el-video-card__meta-sep">·</span>{{ end }}
+        {{ with $event }}<span>{{ . }}</span>{{ end }}
+      </p>
+    {{ end }}
+  </div>
+</a>
+{{ end }}

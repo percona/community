@@ -1,0 +1,34 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
+{{- end }}
+
+{{ define "mainwrapper" }}
+  {{ partial "hero.html" (dict "page" .) }}
+
+  <div class="event-series">
+    {{ with .Content }}
+      <div class="event-series__intro content-page-shell">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <div class="event-series__rooms">
+      <div class="grid grid--2 event-card-grid">
+        {{ range .Pages.ByTitle }}
+          {{ if .IsSection }}
+            <div class="grid__item">
+              {{ partial "event-card" . }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    {{ partial "sharing.html" . }}
+  </div>
+{{ end }}

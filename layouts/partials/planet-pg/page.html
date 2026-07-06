@@ -1,0 +1,26 @@
+{{ $page := .page }}
+{{ $contributor := .contributor }}
+{{ $paginator := .paginator }}
+
+<div class="blog-hub blog-hub--planet-pg">
+  {{ partial "page-hero.html" (dict
+    "page" $page
+    "title" $contributor.Params.fullname
+    "description" "Posts about Postgres on Percona Community"
+    "tech" "postgresql"
+    "hero_line" 2
+  ) }}
+
+  <div class="blog-hub__layout blog-hub__layout--planet-pg">
+    <div class="blog-hub__main">
+      {{ partial "planet-pg/author-card.html" (dict "contributor" $contributor "feedURL" (printf "%sindex.xml" $page.RelPermalink) "variant" "inline") }}
+      {{ partial "blog/list.html" (dict "page" $page "paginator" $paginator "variant" "compact" "hideFilters" true) }}
+    </div>
+
+    <aside class="planet-pg-sidebar" aria-label="Author">
+      <div class="planet-pg-sidebar__card">
+        {{ partial "planet-pg/author-card.html" (dict "contributor" $contributor "feedURL" (printf "%sindex.xml" $page.RelPermalink) "variant" "sidebar") }}
+      </div>
+    </aside>
+  </div>
+</div>

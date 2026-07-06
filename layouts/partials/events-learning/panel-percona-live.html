@@ -1,0 +1,91 @@
+{{ $amsImg := resources.Get "hub/perconalive/pl-2026-ams-social.jpg" }}
+{{ $usaImg := resources.Get "hub/perconalive/pl-2026-usa-social.jpg" }}
+
+<section
+  class="el-panel el-panel--percona-live"
+  id="el-panel-percona-live"
+  data-el-panel="percona-live"
+  aria-labelledby="el-percona-live-heading"
+>
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-percona-live-heading">Percona Live</h2>
+  </header>
+
+  <div class="el-pl-grid">
+    <article class="el-pl-card">
+      <p class="el-pl-card__eyebrow">Upcoming Percona Live</p>
+
+      <div class="el-pl-card__media">
+        {{ with $amsImg }}
+          <img
+            class="el-pl-card__image"
+            src="{{ (.Fill "1200x675 Center jpg q85").RelPermalink }}"
+            alt=""
+            width="1200"
+            height="675"
+            loading="lazy"
+            decoding="async"
+          >
+        {{ end }}
+      </div>
+
+      <div class="el-pl-card__body">
+        <h3 class="el-pl-card__title">Percona Live Amsterdam</h3>
+        <p class="el-pl-card__meta">September 9–11, 2026 · Amsterdam, The Netherlands</p>
+
+        <div class="el-pl-card__actions">
+          <a
+            class="el-pl-btn el-pl-btn--primary"
+            href="https://perconalive.com/2026-amsterdam/cfp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Submit your talk</a>
+          <a
+            class="el-pl-btn el-pl-btn--secondary"
+            href="https://perconalive.com/2026-amsterdam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Learn more</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="el-pl-card">
+      <p class="el-pl-card__eyebrow">Past Percona Live</p>
+
+      <div class="el-pl-card__media">
+        {{ with $usaImg }}
+          <img
+            class="el-pl-card__image"
+            src="{{ (.Fill "1200x675 Center jpg q85").RelPermalink }}"
+            alt=""
+            width="1200"
+            height="675"
+            loading="lazy"
+            decoding="async"
+          >
+        {{ end }}
+      </div>
+
+      <div class="el-pl-card__body">
+        <h3 class="el-pl-card__title">Percona Live Bay Area</h3>
+        <p class="el-pl-card__meta">May 27–29, 2026 · Mountain View, California</p>
+
+        <div class="el-pl-card__actions">
+          <a
+            class="el-pl-btn el-pl-btn--primary"
+            href="https://perconalive.com/2026-usa/videos/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Watch videos</a>
+          <a
+            class="el-pl-btn el-pl-btn--secondary"
+            href="https://perconalive.com/2026-usa/slides/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Slides</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

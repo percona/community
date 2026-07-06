@@ -1,0 +1,42 @@
+{{/*
+  Contributor avatar with placeholder fallback when image is missing.
+
+  Params:
+    contributor — contributor Hugo page
+    size        — Hugo Fill spec (default: "240x240 q85 jpg")
+    width       — optional img width attribute
+    height      — optional img height attribute
+    class       — classes for img / placeholder
+    loading     — img loading attribute (default: lazy)
+*/}}
+{{ $contributor := .contributor }}
+{{ $size := .size | default "240x240 q85 jpg" }}
+{{ $class := .class | default "" }}
+{{ $loading := .loading | default "lazy" }}
+{{ $width := .width | default 120 }}
+{{ $height := .height | default 120 }}
+{{ $initial := "" }}
+{{ with $contributor.Params.fullname }}
+  {{ $initial = substr . 0 1 }}
+{{ end }}
+
+{{ $src := "" }}
+{{ with $contributor.Params.images }}
+  {{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
+    {{ $src = (.Fill $size).RelPermalink }}
+  {{ end }}
+{{ end }}
+
+{{ if $src }}
+  <img
+    class="{{ $class }}"
+    src="{{ $src }}"
+    alt="{{ $contributor.Params.fullname }}"
+    width="{{ $width }}"
+    height="{{ $height }}"
+    loading="{{ $loading }}"
+    decoding="async"
+  >
+{{ else }}
+  <span class="contributor-avatar contributor-avatar--placeholder {{ $class }}" aria-hidden="true">{{ $initial }}</span>
+{{ end }}

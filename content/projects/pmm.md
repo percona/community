@@ -1,9 +1,11 @@
 ---
 title: "PMM - Percona Monitoring and Management"
 description: "PMM - Percona Monitoring and Management for database observability"
+tech: percona
+hero_title_accent: "PMM"
+hero_title_after: "Monitoring and Management"
+hero_description: "Free, open-source database monitoring for MySQL, MongoDB, PostgreSQL, and MariaDB — try it, share feedback, and help improve it."
 blog_tags: ["PMM", "Monitoring", "Prometheus"]
-hero_description: "How can you help?"
-hero_title: "PMM - Percona Monitoring and Management"
 ---
 
 ## Start monitoring today, help build tomorrow

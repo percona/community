@@ -1,16 +1,11 @@
 ---
 title: "Open Topics: Blog, Talks, Guides"
-description: "Percona Community Open Topics for Content"
+description: "You can find our list of topics here. We are excited to hear from you if you would like to speak on any of these topics at a conference or meetup, or if you are interested in creating content such as blog posts, guides, videos, podcasts, or whatever else you can think of."
 layout: topics
+hero_type: mountains
+hero_title_before: "Open Topics:"
+hero_title_accent: "Blog, Talks, Guides"
 ---
-
-{{% hero-gradient class="aqua" %}}
-
-# Open Topics: Blog, Talks, Guides 
-
-You can find our list of topics here. We are excited to hear from you if you would like to speak on any of these topics at a conference or meetup, or if you are interested in creating content such as blog posts, guides, videos, podcasts, or whatever else you can think of.
-
-{{% /hero-gradient %}}
 
 {{% contentblock %}}
 
@@ -76,12 +71,14 @@ You can find our list of topics here. We are excited to hear from you if you wou
 {{% /grid %}}
 {{% /contentblock %}}
 
-{{% hero-gradient class="night" %}}
+<div class="content-band content-band--cta">
+<div class="contentblock">
+<div class="content-band__inner">
 
 Let us know via e-mail to [community-team@percona.com](mailto:community-team@percona.com) if you need support or if you've already published one of these topics on your own.
 
-
 We're always looking forward to pull requests on our [GitHub repository](https://github.com/percona/community).
 
-{{% /hero-gradient %}}
-
+</div>
+</div>
+</div>

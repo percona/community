@@ -1,0 +1,20 @@
+{{- $code := .Get "code" -}}
+{{- $url := .Get "url" | default (printf "https://www.youtube.com/playlist?list=%s" $code) -}}
+{{- $title := .Get "title" -}}
+{{- $thumb := .Get "thumbnail" -}}
+
+<article class="playlist-card">
+  <h2 class="playlist-card__title">{{ $title }}</h2>
+  {{- with $thumb -}}
+  <a class="playlist-card__media" href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    <img class="playlist-card__img" src="{{ ((resources.Get .).Resize "1200x 90% jpg").RelPermalink }}" alt="" loading="lazy" />
+    <span class="playlist-card__play" aria-hidden="true">
+      <svg viewBox="0 0 68 48" width="68" height="48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74a8.59 8.59 0 0 0-6.04-6.05C55.56 0 34 0 34 0S12.44 0 7.52 1.69A8.59 8.59 0 0 0 1.48 7.74 89.29 89.29 0 0 0 0 24a89.29 89.29 0 0 0 1.48 16.26 8.59 8.59 0 0 0 6.04 6.05C12.44 48 34 48 34 48s21.56 0 26.48-1.69a8.59 8.59 0 0 0 6.04-6.05A89.29 89.29 0 0 0 68 24a89.29 89.29 0 0 0-1.48-16.26z" fill="#212121" fill-opacity=".8"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+    </span>
+  </a>
+  {{- end -}}
+  <div class="playlist-card__body">
+    <div class="playlist-card__text">{{ .Inner | markdownify }}</div>
+    <a class="playlist-card__cta" href="{{ $url }}" target="_blank" rel="noopener noreferrer">Play all</a>
+  </div>
+</article>

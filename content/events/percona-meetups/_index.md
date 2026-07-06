@@ -4,15 +4,11 @@ description: "Join the new regular series of monthly Online MeetUp for each comm
 layout: list
 images:
   - events/percona-meetup/category-cover-682.jpg
+hero_type: mountains
+hero_title: "Percona Community MeetUps"
+hero_description: "See you on Percona Community MeetUp! Join the new regular series of monthly Online MeetUp for each community every Wednesday on Discord starting from Sept, 8th 2021."
+hero_line: 1
 ---
-
-{{% hero-gradient class="night" %}}
-
-# Percona Community MeetUps
-
-See you on Percona Community MeetUp!
-
-{{% /hero-gradient %}}
 
 {{% contentblock %}}
 {{% typography %}}

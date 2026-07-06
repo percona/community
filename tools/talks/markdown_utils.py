@@ -442,9 +442,8 @@ def build_hugo_markdown(
 
     front_matter = "\n".join(front_matter_lines)
 
-    # Body
-    body_parts = ["## Abstract\n\n" + abstract] if abstract else []
-    body = "\n".join(body_parts).strip()
+    # Body — abstract text only; no heading (shows up in sharing/summary snippets)
+    body = abstract.strip() if abstract else ""
     markdown = front_matter + ("\n" + body if body else "\n")
 
     return title, public_date, talk_year, markdown, new_speakers_list

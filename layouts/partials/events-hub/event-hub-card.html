@@ -1,0 +1,29 @@
+{{/*
+  Event card with caption below the image.
+  Used on Events hub, contributor pages, and related-events blocks.
+*/}}
+{{ $page := . }}
+{{ $fields := partial "events-hub/event-fields.html" $page }}
+{{ $coverImg := partial "page-cover-resource.html" $page }}
+
+<a class="eh-hub-card" href="{{ $page.RelPermalink }}">
+  <div class="eh-hub-card__media">
+    {{ with $coverImg }}
+      <img
+        class="eh-hub-card__image"
+        src="{{ (.Fill "1200x630 Center jpg q85").RelPermalink }}"
+        alt=""
+        width="1200"
+        height="630"
+        loading="lazy"
+        decoding="async"
+      >
+    {{ end }}
+  </div>
+
+  <div class="eh-hub-card__body">
+    <p class="eh-hub-card__title">{{ $fields.title }}</p>
+    <p class="eh-hub-card__location">{{ $fields.location }}</p>
+    <p class="eh-hub-card__date">{{ $fields.date }}</p>
+  </div>
+</a>

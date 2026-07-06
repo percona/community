@@ -1,0 +1,27 @@
+{{ $page := . }}
+{{ $coverImg := partial "page-cover-resource.html" $page }}
+{{ $desc := $page.Description | default "" | strings.TrimSpace }}
+
+<a href="{{ $page.RelPermalink }}" class="labs-project-card">
+  <div class="labs-project-card__media">
+    {{ with $coverImg }}
+      <img
+        class="labs-project-card__image"
+        src="{{ (.Fill "800x420 Center q85 jpg").RelPermalink }}"
+        alt=""
+        width="800"
+        height="420"
+        loading="lazy"
+        decoding="async"
+      >
+    {{ else }}
+      <div class="labs-project-card__placeholder" aria-hidden="true"></div>
+    {{ end }}
+  </div>
+  <div class="labs-project-card__body">
+    <h3 class="labs-project-card__title">{{ $page.Title }}</h3>
+    {{ with $desc }}
+      <p class="labs-project-card__desc">{{ . }}</p>
+    {{ end }}
+  </div>
+</a>

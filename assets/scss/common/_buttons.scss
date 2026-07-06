@@ -1,0 +1,68 @@
+@import "variables";
+
+@mixin btn-purple-pill($font-size: $header-menu-font-size, $line-height: $header-menu-line-height) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  font-family: $font-poppins;
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+  color: $brand-white;
+  background: $nav-cta-purple;
+  border-radius: 100px;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+  transition: background-color $transition-length ease-in-out;
+
+  &:hover,
+  &:visited:hover {
+    color: $brand-white;
+    background: $nav-cta-purple-hover;
+  }
+
+  &:visited {
+    color: $brand-white;
+  }
+}
+
+/* Use on `<a>` elements — mixin alone loses to global link color without the anchor type. */
+@mixin btn-purple-pill-link($font-size: $header-menu-font-size, $line-height: $header-menu-line-height) {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited:hover {
+    color: $brand-white;
+    text-decoration: none;
+  }
+
+  @include btn-purple-pill($font-size, $line-height);
+}
+
+/* Pill anchor links with a visible border — never set border-bottom: none (clips the stroke). */
+@mixin btn-pill-link-border($color, $width: 1.5px) {
+  border: $width solid $color;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited:hover {
+    text-decoration: none;
+    border: $width solid $color;
+  }
+}
+
+.site-logo__img {
+  display: block;
+  width: auto;
+
+  &--invert {
+    filter: brightness(0) invert(1);
+  }
+}

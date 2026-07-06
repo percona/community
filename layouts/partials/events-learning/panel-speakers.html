@@ -1,0 +1,118 @@
+{{ $speakersTax := site.GetPage "/contributor_type/speaker" }}
+{{ $allSpeakers := slice }}
+{{ with $speakersTax }}
+  {{ $allSpeakers = sort .Pages ".Params.talks_count" "desc" }}
+{{ end }}
+
+{{ $perPage := 6 }}
+{{ $totalSpeakers := len $allSpeakers }}
+{{ $totalPages := 1 }}
+{{ if gt $totalSpeakers 0 }}
+  {{ $totalPages = int (math.Ceil (div (float $totalSpeakers) (float $perPage))) }}
+{{ end }}
+{{ $speakers := first $perPage $allSpeakers }}
+
+{{ $speakerURL := "/contributor_type/speaker/" | relURL }}
+
+<section
+  class="el-panel"
+  id="el-panel-speakers"
+  data-el-panel="speakers"
+  aria-labelledby="el-speakers-heading"
+>
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-speakers-heading">Speakers</h2>
+  </header>
+
+  <div class="el-filters" data-el-filters>
+
+    {{/* Activity (contributor_year) */}}
+    <div class="el-filters__field">
+      <button type="button" class="el-filters__btn" data-el-dropdown="sp-activity" aria-expanded="false" aria-haspopup="listbox">
+        Activity <span class="el-filters__chevron">▾</span>
+      </button>
+      <div class="el-filters__panel" id="el-dropdown-sp-activity" role="listbox" hidden>
+        <ul class="el-filters__list">
+          {{ range sort site.Taxonomies.contributor_year "Page.Title" "desc" }}
+            <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+    {{/* Tags (contributor_tag) */}}
+    <div class="el-filters__field">
+      <button type="button" class="el-filters__btn" data-el-dropdown="sp-tags" aria-expanded="false" aria-haspopup="listbox">
+        Tags <span class="el-filters__chevron">▾</span>
+      </button>
+      <div class="el-filters__panel" id="el-dropdown-sp-tags" role="listbox" hidden>
+        <ul class="el-filters__list">
+          {{ range first 30 (sort site.Taxonomies.contributor_tag.ByCount) }}
+            {{ if gt .Count 1 }}
+              <li><a class="el-filters__option" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  {{ if gt (len $speakers) 0 }}
+    <div class="el-speakers-grid">
+      {{ range $speakers }}
+        {{ $img := "" }}
+        {{ with .Params.images }}
+          {{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
+            {{ $img = (.Fill "480x640 q85 webp").RelPermalink }}
+          {{ end }}
+        {{ end }}
+        <a class="el-speaker-card" href="{{ .RelPermalink }}">
+          <div class="el-speaker-card__media">
+            {{ if $img }}
+              <img
+                class="el-speaker-card__img"
+                src="{{ $img }}"
+                alt="{{ .Params.fullname }}"
+                width="480"
+                height="640"
+                loading="lazy"
+                decoding="async"
+              />
+            {{ else }}
+              <div class="el-speaker-card__img el-speaker-card__img--placeholder"></div>
+            {{ end }}
+            <div class="el-speaker-card__overlay"></div>
+          </div>
+          <div class="el-speaker-card__info">
+            <p class="el-speaker-card__name">{{ .Params.fullname }}</p>
+            <div class="el-speaker-card__stats">
+              {{ if gt .Params.posts_count 0 }}
+                <span class="el-speaker-card__stat">{{ .Params.posts_count }} posts</span>
+              {{ end }}
+              {{ if gt .Params.talks_count 0 }}
+                <span class="el-speaker-card__stat">{{ .Params.talks_count }} talks</span>
+              {{ end }}
+              {{ if gt .Params.events_count 0 }}
+                <span class="el-speaker-card__stat">{{ .Params.events_count }} events</span>
+              {{ end }}
+            </div>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No speakers found.</p>
+  {{ end }}
+
+  <nav class="el-pagination" aria-label="Browse all speakers">
+    <a class="el-pagination__browse" href="{{ $speakerURL }}">Browse all speakers &rarr;</a>
+    <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+    <span class="el-pagination__status">Page 1 of {{ $totalPages }}</span>
+    {{ if gt $totalPages 1 }}
+      <a class="el-pagination__arrow" href="{{ printf "%spage/2/" $speakerURL }}" aria-label="Page 2">&rsaquo;</a>
+    {{ else }}
+      <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+    {{ end }}
+  </nav>
+</section>

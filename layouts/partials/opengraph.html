@@ -3,31 +3,18 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
+{{- $share := partial "page-share-image.html" . -}}
+{{- with $share.url -}}
+<meta name="image" property="og:image" content="{{ . }}" />
+{{- end -}}
+
 {{ with $.Params.images }}
-    {{ range first 6 . -}}
+    {{ range after 1 (first 6 .) -}}
         {{- $imgPath := strings.TrimPrefix "/" . -}}
         {{- with resources.Get $imgPath -}}
-        <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}" />
+        <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").RelPermalink }}" />
         {{- end }}
     {{ end }}
-{{ else -}}
-    {{ with $.Params.youtube_id }}
-        <meta name="image" property="og:image" content="https://img.youtube.com/vi/{{ $.Params.youtube_id }}/hqdefault.jpg"/>
-    {{ else }}
-        {{- $images := $.Resources.ByType "image" -}}
-        {{- $featured := $images.GetMatch "*feature*" -}}
-        {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
-        {{- with $featured -}}
-            <meta name="image" property="og:image" content="{{ $featured.Permalink }}"/>
-        {{ else -}}
-            {{- with $.Site.Params.images -}}
-                {{- $imgPath := strings.TrimPrefix "/" (index . 0) -}}
-                {{- with resources.Get $imgPath -}}
-                <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}"/>
-                {{- end }}
-            {{ end }}
-        {{ end }}
-    {{ end }}    
 {{ end }}
 
 {{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}

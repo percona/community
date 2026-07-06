@@ -1,0 +1,34 @@
+{{/*
+  Authors list shell — Knowledge Base hero + blog tabs, no Events sidebar.
+*/}}
+{{ $page := .page }}
+{{ $paginator := .paginator }}
+{{ $copy := partial "contributors-hub/hero-copy.html" (dict "page" $page "variant" "filtered" "paginator" $paginator) }}
+{{ $variant := .shellVariant | default "hub" }}
+{{ $titleOverride := .titleOverride | default "" }}
+
+<div class="blog-hub authors-hub">
+  {{ partial "blog/hero.html" (dict
+    "page" $page
+    "variant" $variant
+    "titleOverride" $titleOverride
+    "subtitle" ($copy.description | plainify)
+  ) }}
+
+  {{ if eq $variant "hub" }}
+    {{ partial "knowledge-base/tabs-nav.html" (dict
+      "page" $page
+      "activeTab" "blogs"
+      "activeSubTab" "authors"
+      "expandBlogTabs" true
+    ) }}
+  {{ end }}
+
+  <div class="blog-hub__layout">
+    <div class="blog-hub__main">
+      {{ partial "contributors-hub/list.html" (merge . (dict "hideTitle" true)) }}
+    </div>
+  </div>
+</div>
+
+{{ partial "hub/filters.js.html" . }}

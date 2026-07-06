@@ -22,8 +22,6 @@ video: ''
 images:
 - talks/2025/2025-09-03-projetando-um-sistema-de-check-in-usando-a-nova-replica-o-bidirecional.png
 ---
-## Abstract
-
 Vamos nos preparar com antecedência; o turismo espacial está chegando!
 
 Embora as passagens estarão certamente disponíveis online para aqueles com um limite de cartão de crédito alto o suficiente, não devemos ter a internet como garantida no espaço sideral. Quando o ônibus espacial parar em Marte para um passeio rápido, é melhor contarmos com um sistema que não dependa de um servidor hospedado na Terra para controlar o embarque e desembarque de passageiros. E se um alienígena decidir fazer o check-in no meio da viagem e uma supernova estiver bloqueando a conexão do satélite? Tenho certeza de que a indústria do turismo tem esse tipo de preocupação em mente ao planejar cruzeiros espaciais...

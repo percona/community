@@ -1,0 +1,17 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+{{ $pages := sort .Pages ".Params.presentation_date" "desc" }}
+{{ $paginator := .Paginate $pages 9 }}
+
+{{ partial "talks-hub/shell.html" (dict
+  "page" .
+  "paginator" $paginator
+  "searchPages" $pages
+  "variant" "hub"
+  "activeNav" "talks"
+) }}
+{{ end }}

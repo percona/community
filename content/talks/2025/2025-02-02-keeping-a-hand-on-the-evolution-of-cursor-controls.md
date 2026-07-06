@@ -25,6 +25,4 @@ video: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5153-keeping-a
 images:
 - talks/2025/2025-02-02-keeping-a-hand-on-the-evolution-of-cursor-controls.png
 ---
-## Abstract
-
 The talk tracks the evolution of the peripheral devices that transmit their motion to a cursor - namely mice and trackballs. The analysis covers motion detection methods, the way signals are transmitted to the computer, ergonomics, and ways to test the device on a today computer. The pre-commercial phase is covered, which includes early marine radar trackballs, Douglas Engelbart's wheel mouse, and Rollkugel ball mouse. The commercial phase is tracked through the Xerox mechanical and optical mice, Mouse Systems' design with a reflective mouse pad, Depraz and Apple optical encoder mice, the returns to  Engelbart's original approaches in 1980s analog mice for home computers, and, finally, the ProAgio Scroll mouse that started the wheel scrolling revolution. Considered connection methods include parallel, serial, serial bus, and analog ones. The open source converters covered in the talk include Amiga Input To USB from BleuLlama, J. Floren’s Depraz USB converter, Retronic Design USB converter, and the converter of the TMK (and QMK) firmwares used for open hardware keyboards. The usage and the capabilities of the inputtattach Linux tool is covered as well.

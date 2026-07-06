@@ -1,0 +1,20 @@
+{{/*
+  Shared talks hub page shell — hero, sidebar, footer.
+  Used by /talks/ hub and talk taxonomy filter pages.
+*/}}
+<div class="hub-page events-learning talks-hub">
+  {{ partial "talks-hub/hero.html" . }}
+
+  <div class="events-learning__layout">
+    {{ partial "hub/sidebar.html" . }}
+
+    <div class="events-learning__main">
+      {{ if eq .variant "filtered" }}
+        {{ partial "talks-hub/back-tab.html" . }}
+      {{ end }}
+      {{ partial "talks-hub/list.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ partial "hub/filters.js.html" . }}

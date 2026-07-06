@@ -1,0 +1,164 @@
+@import "common/common";
+@import "common/media-card";
+
+.contact-page {
+  background: $brand-white;
+
+  .hub-hero--compact {
+    .hub-hero__title {
+      text-transform: none;
+      letter-spacing: -0.02em;
+    }
+
+    .hub-hero__accent {
+      text-transform: capitalize;
+    }
+  }
+
+  &__main {
+    max-width: $layout-max-width;
+    margin: 0 auto;
+    padding: 3rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 2rem;
+    box-sizing: border-box;
+  }
+
+  &__featured {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #e8ecf3;
+  }
+
+  &__featured-title {
+    margin: 0 0 1.5rem;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  &__featured-grid {
+    align-items: stretch;
+
+    .grid__item {
+      min-width: 0;
+    }
+  }
+
+  &__newsletter {
+    max-width: $layout-max-width;
+    margin: 0 auto;
+    padding: 0 clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 4rem;
+    box-sizing: border-box;
+
+    .el-newsletter-figma {
+      margin: 0;
+    }
+  }
+}
+
+.contact-channels {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0;
+  }
+}
+
+.contact-channel {
+  &__title {
+    margin: 0 0 0.5rem;
+    font-family: $font-poppins;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  &__title-link {
+    color: $brand-black;
+    text-decoration: none;
+    transition: color $transition-length ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $brand-purple;
+      outline: none;
+    }
+
+    &:visited {
+      color: $brand-black;
+
+      &:hover,
+      &:focus-visible {
+        color: $brand-purple;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 42rem;
+    margin: 0 0 0.5rem;
+    color: $paragraph-grey;
+    font-family: $font-poppins;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  &__action {
+    margin: 0;
+  }
+
+  &__link {
+    color: $brand-purple;
+    font-family: $font-poppins;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: underline;
+    text-decoration-color: rgba($brand-purple, 0.45);
+    text-underline-offset: 2px;
+    word-break: break-word;
+
+    &:hover,
+    &:focus-visible {
+      color: darken($brand-purple, 8%);
+      text-decoration-color: darken($brand-purple, 8%);
+      outline: none;
+    }
+
+    &:visited {
+      color: $brand-purple;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-page {
+    &__main {
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &__featured {
+      margin-top: 2rem;
+      padding-top: 2rem;
+    }
+
+    &__newsletter {
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  .contact-channels__list {
+    gap: 1.5rem;
+  }
+}

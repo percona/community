@@ -22,8 +22,6 @@ video: ''
 images:
 - talks/2026/2026-02-12-follow-my-leader-connecting-client-applications-after-server-cutover-or-failover.png
 ---
-## Abstract
-
 During a planned changeover, or after the failure of a primary, smoothly promoting a Postgres replica is not the end of the problem. It’s the start of a new phase of the problem - getting the clients connected to the right Postgres instance.
 
 It’s quite clear where the promotion and demotion of instances should take place, even if there are a few options for how to manage it. Making sure that client applications only try to write to the primary can be done in many places, from the client library in the application to the network configuration of the servers. Picking the best option is not just about technical correctness or elegance. Decisions also affect the ease of change, consistency across the environment, complexity of each deployment and costs.

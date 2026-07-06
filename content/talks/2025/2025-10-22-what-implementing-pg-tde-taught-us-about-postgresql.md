@@ -25,7 +25,5 @@ video: ''
 images:
 - talks/2025/2025-10-22-what-implementing-pg-tde-taught-us-about-postgresql.png
 ---
-## Abstract
-
 This is a firsthand account of bringing Transparent Data Encryption to PostgreSQL through  pg_tde . From idea to patch proposals, it’s a story of navigating PostgreSQL’s internals, Community realities, and trade-offs between extension and core changes.
 Why weren’t existing hooks enough? What friction did we hit? How was the experience with the Community feedback cycle? What customer feedback shaped the final design and how did users react to the proposed solutions? Based on years of work to deliver a critical enterprise capability, this talk is a diary of what it took to deliver Transparent Data Encryption as an extension to PostgreSQL, from a product manager who lived through it.

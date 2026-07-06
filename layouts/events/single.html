@@ -1,104 +1,160 @@
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/hub-single.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
-  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/talks.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
   {{- if in .Content "<pre class=\"chroma\">" -}}
     {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{ end }}
-  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/bio.scss") | safeCSS) -}}
 {{- end }}
 
+{{ define "mainwrapper" }}
+  {{ partial "hub-single/mainwrapper-open.html" (dict "page" . "activeNav" "events" "hubClass" "events-hub") }}
+    {{ block "main" . }}{{ end }}
+  {{ partial "hub-single/mainwrapper-close-main.html" }}
+    {{ block "after" . }}{{ end }}
+  {{ partial "hub-single/mainwrapper-close-page.html" . }}
+{{ end }}
+
 {{ define "main" }}
-  <article class="event text{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
+  {{ $eventDate := .Params.EventDate | default .Params.event_date }}
+  {{ $eventLocation := .Params.EventLocation | default .Params.event_location }}
+  {{ $backURL := (site.GetPage "/events").RelPermalink }}
+  {{ $backLabel := "Back to all events" }}
+  {{ with .Parent }}
+    {{ if eq .Params.layout "list" }}
+      {{ $backURL = .RelPermalink }}
+      {{ $backLabel = printf "Back to %s" (.Params.hero_title | default .Title) }}
+    {{ end }}
+  {{ end }}
+  {{ if not $eventLocation }}
+    {{ with .Params.events_tag }}
+      {{ if in . "Online" }}
+        {{ $eventLocation = "Online" }}
+      {{ else if in . "In-Person" }}
+        {{ $eventLocation = "In-Person" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <article class="text hub-single hub-single--event event{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/Event"{{ end }}>
     {{ if $.PublishDate }}
       {{ with .Params.images }}{{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}<meta itemprop="image" content="{{ .Permalink }}" />{{ end }}{{ end }}
       <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
       {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
     {{ end }}
 
-    <h1{{ if $.PublishDate }} itemprop="name headline"{{ end }}>{{ .Title }}</h1>
-    {{ if $.PublishDate }}
-      <div class="meta">
+    <a class="hub-single__back" href="{{ $backURL }}">
+      <span aria-hidden="true">&larr;</span>
+      {{ $backLabel }}
+    </a>
+
+    <header class="hub-single__header">
+      <h1 class="hub-single__title"{{ if $.PublishDate }} itemprop="name"{{ end }}>
+        {{ partial "hub-single/title.html" .Title }}
+      </h1>
+
+      <div class="hub-single__meta meta">
+        {{ if $eventDate }}
+          <p class="hub-single__meta-line">
+            <span class="hub-single__meta-label">Date:</span>
+            <time{{ if $.PublishDate }} itemprop="startDate" datetime="{{ $.PublishDate }}"{{ end }}>{{ $eventDate }}</time>
+          </p>
+        {{ else if $.PublishDate }}
+          <p class="hub-single__meta-line">
+            <span class="hub-single__meta-label">Date:</span>
+            <time datetime="{{ $.PublishDate }}" itemprop="startDate">{{ $.PublishDate.Format "2 January 2006" }}</time>
+          </p>
+        {{ end }}
+        {{ with $eventLocation }}
+          <p class="hub-single__meta-line">
+            <span class="hub-single__meta-label">Location:</span>
+            <span{{ if $.PublishDate }} itemprop="location"{{ end }}>{{ . }}</span>
+          </p>
+        {{ end }}
         {{- if (isset .Params "speakers") -}}
-        <span class="authors">Speakers:&nbsp;
-             {{ range $key, $author := .Params.speakers -}}
-              {{- with $.Site.GetPage (print "/contributors/" $author) -}}
-                {{ if $key }}, {{ end -}}
-                <a href="{{ .RelPermalink }}">{{- .Params.fullname -}}</a>
-              {{- end }} 
-            {{- end -}}
-        </span>
+          <p class="hub-single__meta-line">
+            <span class="hub-single__meta-label">Speakers:</span>
+            <span>
+              {{- range $key, $author := .Params.speakers -}}
+                {{- with $.Site.GetPage (print "/contributors/" $author) -}}
+                  {{- if $key }}, {{ end -}}
+                  <a href="{{ .RelPermalink }}">{{ .Params.fullname }}</a>
+                {{- end -}}
+              {{- end -}}
+            </span>
+          </p>
         {{- end -}}
       </div>
-    {{ end }}
+    </header>
 
-    {{ partial "sharing.html" . }}
+    {{ partial "hub-single/sharing.html" . }}
 
-    <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
+    <div{{ if $.PublishDate }} itemprop="description"{{ end }} class="body">
+      {{ if .Params.podbean_link }}
+        <p>Link to listen and subscribe: <a href="{{ .Params.podbean_link }}">PodBean</a></p>
+      {{ end }}
+      {{ with .Params.short_text }}
+        <p>{{ . | markdownify }}</p>
+      {{ end }}
+      {{ partial "video.html" (dict "page" . "heading" "YouTube") }}
       {{ partial "content.html" . }}
-      {{ partial "video.html" . }}  
     </div>
 
-    <!-- Talks -->
     {{ if isset .Params "talks" }}
-    <div class="event-talks">
-      <h2>{{ if eq (len .Params.talks) 1 }}Talk{{ else }}Talks{{ end }}</h2>
-      <div class="grid grid--2">
-        {{ range .Params.talks }}
-          {{ $talkPage := $.Site.GetPage (print "/talks/" .) }}
-          {{ with $talkPage }}
-          <div class="grid__item">
-            {{ if .Params.images }}
-              <a href="{{ .RelPermalink }}" class="event-talk-img-link">
-                {{- with resources.Get (strings.TrimPrefix "/" (index .Params.images 0)) }}<img src="{{ (.Fill "1200x630 80% jpg").RelPermalink }}" alt="{{ $.Title }}" />{{ end }}
-                <span class="event-talk-img-link__overlay">
-                  <span class="event-talk-img-link__title">{{ .Title }}</span>
-                  <span class="event-talk-img-link__cta">Learn more →</span>
-                </span>
-              </a>
-            {{ else }}
-              {{ partial "talks-preview-grid.html" . }}
+      <section class="hub-single-panel" aria-labelledby="event-talks-heading">
+        <h2 class="hub-single-panel__title" id="event-talks-heading">{{ if eq (len .Params.talks) 1 }}Talk{{ else }}Talks{{ end }}</h2>
+        <div class="hub-single-panel__grid">
+          {{ range .Params.talks }}
+            {{ with $.Site.GetPage (print "/talks/" .) }}
+              {{ partial "hub-single/talk-card.html" . }}
             {{ end }}
-          </div>
           {{ end }}
-        {{ end }}
-      </div>
-    </div>
+        </div>
+      </section>
     {{ end }}
-
-    <!-- Speaker Bios -->
-    {{ if isset .Params "speakers" }}
-      {{ partial "contributors-bios.html" . }}
-    {{ end }}
- 
   </article>
+{{ end }}
 
-  {{ partial "sharing.html" . }}
-  
-  <div class="recommendations branded">
-    <h2>Take a look at our events</h2>
-    {{ $recommendationCount := 3 }}
-    <div class="grid grid--{{ $recommendationCount }}">
-        {{- $recommendations := first 0 (where $.Page.Site.RegularPages "Section" "events") }}
-        {{- if isset .Params "recommendations" -}}
-          {{ range $key, $recommendation := .Params.recommendations -}}
-            {{- with $.Site.GetPage $recommendation -}}
-              {{- $recommendations = $recommendations | append . -}}
+{{ define "after" }}
+  {{ partial "hub-single/people-section.html" (dict "page" . "param" "speakers" "title" "Speakers" "link" "View full profile") }}
+
+  <div class="hub-single-page__below">
+    <section class="hub-single-panel recommendations">
+      <h2 class="hub-single-panel__title">
+        {{ if and .Parent (eq .Parent.Params.layout "list") (eq .Parent.Slug "podcasts") }}
+          More podcast episodes
+        {{ else }}
+          Take a look at our events
+        {{ end }}
+      </h2>
+      <div class="hub-single-panel__grid">
+        {{- $recommendationCount := 3 -}}
+        {{- $recommendations := slice -}}
+        {{- if and .Parent (eq .Parent.Params.layout "list") (eq .Parent.Slug "podcasts") -}}
+          {{- $recommendations = where .Parent.RegularPages.ByDate.Reverse "Permalink" "ne" $.Permalink -}}
+          {{- $recommendations = first $recommendationCount $recommendations -}}
+        {{- else -}}
+          {{- $recommendations = first 0 (where $.Page.Site.RegularPages "Section" "events") -}}
+          {{- if isset .Params "recommendations" -}}
+            {{ range $key, $recommendation := .Params.recommendations -}}
+              {{- with $.Site.GetPage $recommendation -}}
+                {{- $recommendations = $recommendations | append . -}}
+              {{- end -}}
             {{- end -}}
           {{- end -}}
+          {{- $missingPosts := sub $recommendationCount (len $recommendations) -}}
+          {{- $fromDate := time "2025-01-01" -}}
+          {{- range first $missingPosts (where (where $.Page.Site.RegularPages "Section" "events") "Date" "ge" $fromDate) -}}
+            {{- $recommendations = $recommendations | append . -}}
+          {{- end -}}
+          {{- $recommendations = first $recommendationCount $recommendations -}}
         {{- end -}}
-
-        {{- $missingPosts := sub $recommendationCount (len $recommendations) }}
-        {{- $fromDate := time "2025-01-01" }}
-        {{- range first $missingPosts (where (where $.Page.Site.RegularPages "Section" "events") "Date" "ge" $fromDate) }}
-          {{- $recommendations = $recommendations | append . -}}
+        {{- range $recommendations -}}
+          {{ partial "event-card" . }}
         {{- end -}}
-
-      {{- range $recommendations -}}
-        <div class="grid__item">
-          {{- partial "event-preview" . -}} 
-        </div>
-      {{- end -}}
-    </div>
+      </div>
+    </section>
   </div>
 {{ end }}

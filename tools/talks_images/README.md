@@ -9,8 +9,9 @@ The generator is designed for static‑site setups (Hugo, Jekyll, Astro, etc.) w
 
 ## Features
 
-- Automatic image generation for all talks starting from a given year  
+- Automatic image generation for all talks (optional `min_year` filter in `load_all_talks`)
 - Dynamic gradient backgrounds based on talk tags  
+- Branded background photo with semi-transparent text panel  
 - Automatic font scaling for long titles and long event names  
 - Circular speaker photos with white borders  
 - Support for one or two speakers  
@@ -31,7 +32,9 @@ tools/
       Inter-Bold.ttf
       Inter-Regular.ttf
     templates/
+      logo-white.png
       logo.png
+      percona-community-talk-bg.jpg
 content/
   talks/
     <year>/<slug>.md  # Talk Markdown files
@@ -69,17 +72,14 @@ pip install pillow pyyaml python-frontmatter
 
 ### 2. `generator.py`
 - Creates a 1200×630 PNG image.
-- Selects a gradient based on talk tags.
-- Renders:
-  - Logo  
-  - “Talks” label  
-  - Title (with dynamic font size)  
-  - Event + date + location (with dynamic font size)  
-  - Speaker photos and names  
+- Uses `percona-community-talk-bg.jpg` (cover-cropped) as the background.
+- White community logo in the top-right corner (no panel behind it).
+- Title and event metadata span the card width with side margins.
+- Speaker(s) in rounded cards at the bottom — dark semi-transparent fill, circular photo, name/role, purple stripe on the right edge.
 - Saves the final PNG into `assets/talks/<year>/`.
 
 ### 3. `main.py`
-- Loads all talks starting from a given year (default: 2025).
+- Loads talks (with optional `--min-year` and `--only-new` filters).
 - Generates images.
 - Updates Markdown front matter.
 - Prints progress.
@@ -88,22 +88,32 @@ pip install pillow pyyaml python-frontmatter
 
 ## Usage
 
-Run the generator:
+Run the generator manually after adding new talks:
+
+```
+python tools/talks_images/main.py --only-new
+```
+
+Only create cards for talks that do not yet have a PNG at `assets/talks/<year>/<slug>.png`. This is the usual command after adding one or more new talk files.
+
+Process all talks from a given year (regenerates existing cards too):
 
 ```
 python tools/talks_images/main.py
+python tools/talks_images/main.py --min-year 2026
 ```
 
-By default, it processes all talks with:
+### CLI options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--only-new` | off | Skip talks that already have `assets/talks/<year>/<slug>.png` |
+| `--min-year` | `2025` | Only load talks with `talk_year >= min-year` |
+
+To generate images for all years:
 
 ```
-load_all_talks(min_year=2025)
-```
-
-To generate images for all years, edit `main.py`:
-
-```
-talks = load_all_talks(min_year=None)
+python tools/talks_images/main.py --min-year 2000
 ```
 
 ---
@@ -160,6 +170,5 @@ talks/2025/my-talk.png
 ## Development Notes
 
 - The generator is deterministic: same input → same output.  
-- Gradients are diagonal and computed pixel‑by‑pixel for smoothness.  
 - Font scaling is based on pixel width, not character count.  
 - The layout is optimized for readability and consistent branding.

@@ -1,18 +1,20 @@
 /* button */
 button {
   cursor: pointer;
-  display:block;
+  display: block;
   font-weight: bold;
   margin: 0 auto;
-  border:0.1rem solid $palette1;
-  background-color: $palette1;
+  border: 0.1rem solid $brand-purple;
+  background-color: $brand-purple;
+  color: $brand-white;
   font-size: 1.2rem;
   border-radius: 0.9rem;
   padding: 0.6rem;
-  transition: color $transition-length ease-in-out, background-color $transition-length ease-in-out;
+  transition: color $transition-length ease-in-out, background-color $transition-length ease-in-out, border-color $transition-length ease-in-out;
+
   &:hover {
-    background-color: $palette2;
-    border: 0.1rem solid $palette2;
+    background-color: $link-hover;
+    border-color: $link-hover;
   }
 }
 
@@ -24,22 +26,27 @@ blockquote {
   border-left: .25em solid #d1d9e0;
 }
 
-/* links */
-a {
-  color: $palette2;
-  font-weight: bold;
-  text-decoration-color: $palette2;
-  transition:color $transition-length ease-out, text-decoration-color $transition-length ease-out;
-  &:hover, &:visited:hover {
-    color: $palette1;
-    text-decoration-color: $palette1;
+/* Default content links — nav/footer/header use their own scoped styles.
+   :where() keeps specificity at (0,0,1) so component styles (menu, buttons) win. */
+a:where(:not(.el-sidebar__link):not(.page-header__cta):not(.page-header__link):not(.menu__cta):not(.menu__top-link):not(.home-footer__cta):not(.home-ascent__cta):not(.pc-top-banner__btn):not(.downloadbtn):not(.kb-panel-cta):not(.resp-sharing-button__link):not(.event-card):not(.el-back-tab):not(.hub-single__back):not(.project-page__back):not([class*="-btn"]):not([class*="__submit"]):not([class*="__pill"]):not([class*="__back"])) {
+  color: $link;
+  font-weight: inherit;
+  text-decoration-color: rgba($link, 0.45);
+  transition: color $transition-length ease-out, text-decoration-color $transition-length ease-out;
+
+  &:hover,
+  &:visited:hover {
+    color: $link-hover;
+    text-decoration-color: $link-hover;
   }
+
   &:active {
-    color: $palette1;
-    text-decoration-color: $palette1;
+    color: $link-hover;
+    text-decoration-color: $link-hover;
   }
+
   &:visited {
-    color: $dark;
+    color: $link;
   }
 }
 

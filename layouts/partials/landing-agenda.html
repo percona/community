@@ -1,0 +1,178 @@
+{{/*
+  Landing event agenda table + DataTables init.
+
+  Params:
+    mode — "event" (talk + speaker + date) or "day" (talk + speaker + EDT + CEST)
+*/}}
+{{ $mode := .mode | default "event" }}
+
+<div class="landing-agenda-wrap">
+  <table id="landing-agenda" class="display landing-agenda-table landing__table" style="width:100%">
+    <thead>
+      <tr>
+        <th width="{{ if eq $mode "day" }}40%{{ else }}50%{{ end }}">Talk</th>
+        <th>Speaker</th>
+        {{ if eq $mode "day" }}
+          <th width="12%">Time EDT</th>
+          <th width="12%">Time CEST</th>
+        {{ else }}
+          <th width="10%">Date</th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script type="text/javascript">
+(function () {
+  const mode = {{ $mode | jsonify }};
+
+  function escapeHtml(text) {
+    if (!text) return '';
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function hasExpandableContent(d) {
+    return !!(d.description || d.bio1 || d.bio2);
+  }
+
+  function format(d) {
+    let html = '<div class="landing-table__description"><p>';
+
+    if (d.description) {
+      html += d.description;
+    }
+
+    if (d.bio1) {
+      html += (d.description ? '<br/><br/>' : '') +
+        '<span class="landing-table__speaker">' +
+        escapeHtml(d.speaker1) + ' (' + escapeHtml(d.company1) + ')</span><br/>' +
+        d.bio1;
+    }
+
+    if (d.bio2) {
+      html += '<br/><br/><span class="landing-table__speaker">' +
+        escapeHtml(d.speaker2) + ' (' + escapeHtml(d.company2) + ')</span><br/>' +
+        d.bio2;
+    }
+
+    html += '</p></div>';
+    return html;
+  }
+
+  function Talk(meta) {
+    this.title = meta.getAttribute('title') || '';
+    this.speaker1 = meta.getAttribute('speaker1') || '';
+    this.company1 = meta.getAttribute('company1') || '';
+    this.bio1 = meta.getAttribute('bio1') || '';
+    this.speaker2 = meta.getAttribute('speaker2') || '';
+    this.company2 = meta.getAttribute('company2') || '';
+    this.bio2 = meta.getAttribute('bio2') || '';
+    this.description = meta.getAttribute('description') || '';
+    this.date = meta.getAttribute('date') || '';
+    this.time = meta.getAttribute('time') || '';
+    this.time1 = meta.getAttribute('time1') || '';
+    this.time2 = meta.getAttribute('time2') || '';
+    this.url = meta.getAttribute('url') || '';
+
+    if (this.speaker2) {
+      this.speaker =
+        '<b>' + escapeHtml(this.speaker1) + '</b> (' + escapeHtml(this.company1) + '),<br/>' +
+        '<b>' + escapeHtml(this.speaker2) + '</b> (' + escapeHtml(this.company2) + ')';
+    } else if (this.speaker1) {
+      this.speaker =
+        '<b>' + escapeHtml(this.speaker1) + '</b> (' + escapeHtml(this.company1) + ')';
+    } else {
+      this.speaker = '';
+    }
+
+    if (this.url) {
+      this.titleHtml =
+        '<a href="' + escapeHtml(this.url) + '" class="landing-agenda__link">' +
+        escapeHtml(this.title) + '</a>';
+    } else {
+      this.titleHtml = escapeHtml(this.title);
+    }
+  }
+
+  $(document).ready(function () {
+    const metas = document.querySelectorAll('meta[type="talk"]');
+    const data = [...metas].map(function (m) { return new Talk(m); });
+    const hasExpandable = data.some(hasExpandableContent);
+
+    const columns = [];
+
+    columns.push({
+      data: 'title',
+      render: function (_data, type, row) {
+        if (type === 'sort' || type === 'type' || type === 'filter') {
+          return row.title;
+        }
+
+        let html = row.titleHtml;
+
+        if (hasExpandable && hasExpandableContent(row)) {
+          html =
+            '<button type="button" class="landing-agenda-table__expand" aria-label="Show talk details" aria-expanded="false">+</button> ' +
+            html;
+        }
+
+        return html;
+      }
+    });
+    columns.push({ data: 'speaker' });
+
+    if (mode === 'day') {
+      columns.push({ data: 'time1', className: 'time1' });
+      columns.push({ data: 'time2', className: 'time2' });
+    } else {
+      columns.push({ data: 'time' });
+    }
+
+    const orderCol = mode === 'day' ? columns.length - 1 : columns.length - 1;
+
+    const table = $('#landing-agenda').DataTable({
+      data: data,
+      columns: columns,
+      order: [[orderCol, 'asc']],
+      paging: false,
+      searching: true,
+      info: false,
+      autoWidth: false
+    });
+
+    if (hasExpandable) {
+      $('#landing-agenda tbody').on('click', '.landing-agenda-table__expand', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const btn = this;
+        const tr = $(btn).closest('tr');
+        const row = table.row(tr);
+        const rowData = row.data();
+
+        if (!hasExpandableContent(rowData)) {
+          return;
+        }
+
+        if (row.child.isShown()) {
+          row.child.hide();
+          tr.removeClass('shown');
+          btn.textContent = '+';
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          row.child(format(rowData)).show();
+          tr.addClass('shown');
+          btn.textContent = '\u2212';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
+}());
+</script>

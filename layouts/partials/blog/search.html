@@ -1,0 +1,121 @@
+{{ $blogPages := .searchPages }}
+{{ $searchIndex := slice }}
+
+{{ range $blogPages }}
+  {{ $excerpt := "" }}
+  {{ with .Params.excerpt }}
+    {{ $excerpt = (. | markdownify | plainify) }}
+  {{ end }}
+  {{ $content := (.Content | plainify) }}
+  {{ $tags := "" }}
+  {{ with .Params.tags }}
+    {{ $tags = (delimit . " ") }}
+  {{ end }}
+  {{ $authors := "" }}
+  {{ with .Params.authors }}
+    {{ $names := slice }}
+    {{ range . }}
+      {{ with site.GetPage (print "/contributors/" .) }}
+        {{ $names = $names | append .Params.fullname }}
+      {{ end }}
+    {{ end }}
+    {{ $authors = (delimit $names " ") }}
+  {{ end }}
+  {{ $searchText := printf "%s %s %s %s %s" .Title $excerpt $tags $authors $content | plainify | lower }}
+  {{ $html := partial "postpreview-list" . }}
+  {{ $searchIndex = $searchIndex | append (dict "html" $html "searchText" $searchText) }}
+{{ end }}
+
+<script type="application/json" id="blog-posts-data">{{ $searchIndex | jsonify | safeJS }}</script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("blog-posts-data");
+    const searchInputs = document.querySelectorAll("[data-blog-search-input]");
+    const postList = document.getElementById("blog-post-list");
+    const paginator = document.getElementById("blog-paginator");
+    const statusEls = document.querySelectorAll("[data-blog-search-status]");
+
+    if (!searchDataEl || !searchInputs.length || !postList) return;
+
+    let postsData = [];
+    try {
+      postsData = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultListMarkup = postList.innerHTML;
+
+    const setStatus = function (text) {
+      statusEls.forEach(function (el) {
+        el.textContent = text;
+      });
+    };
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        postList.innerHTML = '<li class="post-item post-item--empty">No matching posts found.</li>';
+        setStatus("No results");
+        return;
+      }
+      postList.innerHTML = matches.map(function (post) {
+        return '<li class="post-item">' + post.html + '</li>';
+      }).join("");
+      const label = matches.length === 1 ? "result" : "results";
+      setStatus("Found " + matches.length + " " + label);
+    };
+
+    const resetList = function () {
+      postList.innerHTML = defaultListMarkup;
+      setStatus("");
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseQueryTokens = (rawValue) => {
+      if (!rawValue) return [];
+      const lowered = rawValue.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, function (_, phrase) {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder.split(/\s+/).map(function (t) { return t.trim(); }).filter(Boolean).forEach(function (t) {
+        tokens.push(t);
+      });
+
+      return tokens;
+    };
+
+    const handleSearch = function (event) {
+      const tokens = parseQueryTokens(event.target.value.trim());
+
+      searchInputs.forEach(function (input) {
+        if (input !== event.target) {
+          input.value = event.target.value;
+        }
+      });
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = postsData.filter(function (post) {
+        return tokens.some(function (token) { return post.searchText.includes(token); });
+      });
+
+      renderMatches(matches);
+    };
+
+    searchInputs.forEach(function (input) {
+      input.addEventListener("input", handleSearch);
+    });
+  });
+</script>

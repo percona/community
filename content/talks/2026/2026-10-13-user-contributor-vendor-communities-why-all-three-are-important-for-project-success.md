@@ -25,6 +25,4 @@ video: ''
 images:
 - talks/2026/2026-10-13-user-contributor-vendor-communities-why-all-three-are-important-for-project-success.png
 ---
-## Abstract
-
 Too often, we refer to a project's 'community' as a single, uniform entity, yet in reality, projects tend to have three overlapping communities, each with its own needs, development strategies, and success metrics, all of which are crucial for maximizing project success. In this talk, we will delve into details about these three communities, discussing why understanding and growing them is important for your projects, and exploring strategies you can employ to achieve this.

@@ -1,15 +1,9 @@
 ---
 title: "Percona Community"
-description: "Percona Community - Contributions and Contributors"
+description: "We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more – we also contribute to other open source projects and communities! Let's make technology better!"
+hero_type: mountains
+hero_title: "Percona Community"
 ---
-
-{{% hero-gradient class="aqua" %}}
-
-# Percona Community
-
-We welcome all kinds of contributions, from code to documentation to visuals, awareness, enthusiasm, and more &ndash; we also contribute to other open source projects and communities! Let's make technology better!
-
-{{% /hero-gradient %}}
 
 {{% block class=" grid-6-3" %}}
 
@@ -33,14 +27,17 @@ For content inspiration, please check the [open topics](/contribute/opentopics) 
 {{% /grid %}}
 {{% /block %}}
 
-{{% hero-gradient class="night" %}}
+<div class="content-band content-band--cta">
+<div class="contentblock">
+<div class="content-band__inner">
 
 ## Code of Conduct
 
 Our community members care about integrating optimized databases efficiently into their overall architecture. There is no place for harassment of any kind. Please refer to our [Code of Conduct](/contribute/coc) for more information.
 
-{{% /hero-gradient %}}
-
+</div>
+</div>
+</div>
 
 {{% block class=" " %}}
 
@@ -92,4 +89,3 @@ Found a bug? Check out the relevant GitHub repository and file an issue or repor
 {{% /grid %}}
 
 {{% /block %}}
-

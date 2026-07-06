@@ -1,0 +1,16 @@
+{{ $paginator := .paginator }}
+{{ $data := index site.Data "videos-hub" }}
+{{ $hubPage := site.GetPage "/videos" }}
+
+{{ $description := "" }}
+{{ with $data.hero.hub.description }}
+  {{ $description = . }}
+{{ else }}
+  {{ $description = $hubPage.Params.description }}
+{{ end }}
+
+{{ if and $paginator (gt $paginator.PageNumber 1) }}
+  {{ $description = printf "Page %d of %d. %s" $paginator.PageNumber $paginator.TotalPages ($description | plainify) }}
+{{ end }}
+
+{{ return (dict "description" $description) }}

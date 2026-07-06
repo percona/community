@@ -1,0 +1,19 @@
+hero:
+  hub:
+    description: |
+      Event speakers and blog authors from the Percona Community. Browse profiles, talks, and articles.
+
+  defaults:
+    contributor_type: |
+      Browse all {{ term }} contributors from the Percona Community.
+    contributor_tag: |
+      Contributors tagged with {{ term }}.
+    contributor_year: |
+      Contributors active in {{ term }}.
+
+  terms:
+    contributor_type:
+      speaker: |
+        Event speakers from the Percona Community. Browse profiles and talks.
+      author: |
+        Blog authors from the Percona Community. Browse profiles and posts.

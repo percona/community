@@ -30,8 +30,6 @@ video: ''
 images:
 - talks/2025/2025-10-16-azure-dbaas-on-your-terms-gaining-full-control-without-the-operational-headache.png
 ---
-## Abstract
-
 Think you have to choose between the convenience of Azure's managed databases and the deep control of self-hosting? Think again.
 
 For many developers and DBAs, this is a daily struggle. Managed PaaS offerings like Azure Cosmos DB are fantastic for speed but can become a "black box" when you need full MongoDB compatibility or granular control over performance and cost. On the other end, running databases on VMs gives you total control but brings back the manual, error-prone operational work we moved to the cloud to escape.

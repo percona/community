@@ -25,6 +25,4 @@ video: ''
 images:
 - talks/2026/2026-02-20-troubleshooting-databases-on-kubernetes.png
 ---
-## Abstract
-
 Running stateful workloads on Kubernetes introduces a new layer of complexity when things go wrong. When a database node hangs or replication breaks, standard troubleshooting often falls short. In this session, we will dissect real-world failure scenarios--from storage I/O bottlenecks to networking partitions in distributed clusters.We will demonstrate a tiered troubleshooting approach using  Ephemeral Containers  for safe debugging,  kubectl plugins  for stateful insights, and (where necessary)  privileged access  for deep-kernel tracing. Attendees will leave with a checklist for building "troubleshoot-ready" operators and a toolkit for resolving database downtime faster.

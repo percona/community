@@ -1,0 +1,51 @@
+{{ $tech := .Params.tech | default "percona" }}
+{{ $colors := dict
+  "kubernetes" "#2AA6DF"
+  "mysql" "#E65A15"
+  "postgresql" "#005ED6"
+  "mongodb" "#1FA23A"
+  "valkey" "#A83FEF"
+  "redis" "#D6362A"
+  "percona" "#653DF4"
+}}
+{{ $color := index $colors $tech | default "#653DF4" }}
+{{ $titleBefore := .Params.hero_title_before }}
+{{ $titleAccent := .Params.hero_title_accent }}
+{{ $titleAfter := .Params.hero_title_after }}
+
+<section class="project-hero project-hero--tech-{{ $tech }}" aria-labelledby="project-hero-heading">
+  <div class="project-hero__media" aria-hidden="true">
+    {{ partial "hero-bg-image.html" (dict "page" . "class" "project-hero__image" "width" 1600) }}
+    <div class="project-hero__gradient" aria-hidden="true"></div>
+  </div>
+
+  {{ partial "hub-triangle.html" (dict
+    "class" "project-hero__triangle"
+    "width" 476
+    "height" 625
+    "color" $color
+  ) }}
+
+  <div class="project-hero__inner">
+    <div class="project-hero__copy">
+      <h1 class="project-hero__title" id="project-hero-heading">
+        {{- if or $titleAccent $titleBefore $titleAfter -}}
+          {{- if $titleBefore -}}{{ $titleBefore }}{{ end -}}
+          {{- if and $titleBefore $titleAccent }} {{ end -}}
+          {{- if $titleAccent -}}<span class="project-hero__accent">{{ $titleAccent }}</span>{{ end -}}
+          {{- if and $titleAccent $titleAfter }} {{ end -}}
+          {{- if $titleAfter -}}{{ $titleAfter }}{{ end -}}
+        {{- else -}}
+          {{ .Params.hero_title | default .Title }}
+        {{- end -}}
+      </h1>
+      {{ with .Params.hero_description }}
+        <p class="project-hero__subtitle">{{ . }}</p>
+      {{ else }}
+        {{ with .Description }}
+          <p class="project-hero__subtitle">{{ . }}</p>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,62 @@
+{{ $page := .page }}
+{{ $activeCategory := "" }}
+{{ $activeTag := "" }}
+{{ if eq $page.Type "categories" }}
+  {{ $activeCategory = $page.Title }}
+{{ else if eq $page.Type "tags" }}
+  {{ $activeTag = $page.Title }}
+{{ end }}
+
+<aside class="blog-sidebar" aria-label="Blog filters">
+  <div class="blog-sidebar__card">
+    <div class="blog-sidebar__section blog-sidebar__section--search">
+      <label class="sr-only" for="blog-search-input">Search blog posts</label>
+      <input
+        id="blog-search-input"
+        class="blog-sidebar__search-input"
+        type="search"
+        placeholder="Search articles..."
+        autocomplete="off"
+        data-blog-search-input
+      >
+      <p class="blog-sidebar__search-status" data-blog-search-status aria-live="polite"></p>
+    </div>
+
+    <div class="blog-sidebar__section blog-sidebar__section--filters">
+      <h2 class="blog-sidebar__heading">Categories</h2>
+      <ul class="blog-sidebar__chips">
+        {{ range sort site.Taxonomies.categories.ByCount }}
+          <li>
+            <a
+              href="{{ .Page.RelPermalink }}"
+              class="blog-sidebar__chip{{ if eq .Page.Title $activeCategory }} is-active{{ end }}"
+            >{{ .Page.Title }}<span class="blog-sidebar__chip-count">{{ .Count }}</span></a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="blog-sidebar__section blog-sidebar__section--filters">
+      <h2 class="blog-sidebar__heading">Tags</h2>
+      <ul class="blog-sidebar__chips">
+        {{ range sort site.Taxonomies.tags.ByCount }}
+          {{ if gt .Count 1 }}
+          <li>
+            <a
+              href="{{ .Page.RelPermalink }}"
+              class="blog-sidebar__chip{{ if eq .Page.Title $activeTag }} is-active{{ end }}"
+            >#{{ .Page.Title }}</a>
+          </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="blog-sidebar__section blog-sidebar__section--rss">
+      <a href="/blog/index.xml" class="blog-sidebar__rss">
+        <img src="data:image/svg+xml;base64,{{ (resources.Get "icons/rss-icon.svg").Content | base64Encode }}" alt="" class="blog-sidebar__rss-icon" width="20" height="20">
+        Subscribe to RSS Feed
+      </a>
+    </div>
+  </div>
+</aside>

@@ -5,10 +5,8 @@
 <div class="post post--list">
     <div class="post__image">
         <a href="{{ .RelPermalink }}">
-            {{ with .Params.images }}
-                {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
-                <img src="{{ (.Fill "682x358 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
-                {{- end }}
+            {{ with partial "page-cover-resource.html" . }}
+                <img src="{{ (.Fill "560x294 90% jpg").RelPermalink }}" alt="{{ $alt }}" />
             {{ end }}
         </a>
     </div>
@@ -21,13 +19,19 @@
                 <div class="post__author">
                     {{ range $author := .Params.authors -}}
                         {{- with $.Site.GetPage (print "/contributors/" $author) -}}
-                            {{- with .Params.images -}}
-                                <img class="avatar" src="{{ ((resources.Get (index . 0)).Fill "32x32 90% jpg").Permalink }}" alt="{{ $.Params.avatar_alt }}" />
-                            {{- end -}}
-                            <a href="{{ .RelPermalink }}" class="author-link">
-                                {{ .Params.fullname }}
-                                {{ with .Params.tagline }}<em>({{ . }})</em>{{ end }}
-                            </a>
+                            <div class="post__author-item">
+                            {{ partial "contributor-avatar.html" (dict
+                              "contributor" .
+                              "size" "32x32 90% jpg"
+                              "width" 32
+                              "height" 32
+                              "class" "avatar"
+                            ) }}
+                            <span class="post__author-copy">
+                                <a href="{{ .RelPermalink }}" class="post__author-name">{{ .Params.fullname }}</a>
+                                {{ with .Params.tagline }}<span class="post__author-role">{{ . }}</span>{{ end }}
+                            </span>
+                            </div>
                         {{- end }}
                     {{ end }}
                 </div>

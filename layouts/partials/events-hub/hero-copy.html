@@ -1,0 +1,43 @@
+{{/*
+  Resolves hero title accent and description for events hub pages.
+
+  Params:
+    page      — current Hugo page
+    variant   — "hub" or "filtered"
+    paginator — optional, for page N subtitles
+*/}}
+{{ $page := .page }}
+{{ $variant := .variant | default "hub" }}
+{{ $paginator := .paginator }}
+{{ $data := index site.Data "events-hub" }}
+{{ $hubPage := site.GetPage "/events" }}
+
+{{ $titleAccent := "Hub" }}
+{{ $description := "" }}
+
+{{ if eq $variant "filtered" }}
+  {{ if in (slice "events_year" "events_category" "events_tag") $page.Type }}
+    {{ $titleAccent = $page.Title }}
+    {{ $termDesc := "" }}
+    {{ with index $data.hero.terms $page.Type }}
+      {{ $termDesc = index . $page.Title }}
+    {{ end }}
+    {{ if $termDesc }}
+      {{ $description = $termDesc }}
+    {{ else if index $data.hero.defaults $page.Type }}
+      {{ $description = replace (index $data.hero.defaults $page.Type) "{{ term }}" $page.Title }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ with $data.hero.hub.description }}
+    {{ $description = . }}
+  {{ else }}
+    {{ $description = $hubPage.Params.description }}
+  {{ end }}
+{{ end }}
+
+{{ if and $paginator (gt $paginator.PageNumber 1) }}
+  {{ $description = printf "Page %d of %d. %s" $paginator.PageNumber $paginator.TotalPages ($description | plainify) }}
+{{ end }}
+
+{{ return (dict "titleAccent" $titleAccent "description" $description) }}

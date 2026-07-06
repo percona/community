@@ -1,0 +1,120 @@
+{{/*
+  Unified events hub list — replaces events-list.html for hub-style pages.
+
+  Params:
+    page        — current Hugo page
+    paginator   — Hugo paginator
+    searchPages — full page set for upcoming calculation
+    variant     — "hub" (main /events/) or "filtered" (taxonomy term pages)
+*/}}
+{{ $page := .page }}
+{{ $paginator := .paginator }}
+{{ $searchPages := .searchPages }}
+{{ $variant := .variant | default "filtered" }}
+{{ $now := now }}
+
+{{ $sortedUpcoming := sort (where $searchPages "Date" ">" $now) "Date" "asc" }}
+{{ $upcomingLinks := slice }}
+{{ range $sortedUpcoming }}
+  {{ $upcomingLinks = $upcomingLinks | append .RelPermalink }}
+{{ end }}
+
+{{ $isFiltered := eq $variant "filtered" }}
+
+<section class="el-panel" aria-labelledby="el-events-heading">
+  {{ if and (eq $paginator.PageNumber 1) (not $isFiltered) }}
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-events-heading">
+      Up &amp; Coming <span class="el-panel__accent">Events</span>
+    </h2>
+  </header>
+
+  {{ if gt (len $sortedUpcoming) 0 }}
+    <div class="grid grid--2 el-events-grid">
+      {{ range $sortedUpcoming }}
+        <div class="grid__item">
+          {{ partial "events-hub/event-card.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="el-panel__empty">No upcoming events at the moment.</p>
+  {{ end }}
+
+  {{ partial "events-learning/newsletter-figma.html" . }}
+  {{ end }}
+
+  {{ if and (eq $paginator.PageNumber 1) $isFiltered }}
+  {{ if gt (len $sortedUpcoming) 0 }}
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-events-heading">
+      Up &amp; Coming <span class="el-panel__accent">Events</span>
+    </h2>
+  </header>
+  <div class="grid grid--2 el-events-grid">
+    {{ range $sortedUpcoming }}
+      <div class="grid__item">
+        {{ partial "events-hub/event-card.html" . }}
+      </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+
+  <section class="el-past-events" aria-labelledby="el-past-events-heading">
+    <h2 class="el-past-events__title" id="el-past-events-heading">
+      {{ if gt $paginator.PageNumber 1 }}Past Events — Page {{ $paginator.PageNumber }}{{ else }}Past Events{{ end }}
+    </h2>
+
+    {{ partial "events-hub/filters.html" $page }}
+
+    <div class="grid grid--2 el-events-grid" id="events-hub-grid">
+      {{ $gridPages := $paginator.Pages }}
+      {{ if and (eq $variant "filtered") (eq $paginator.PageNumber 1) (gt (len $upcomingLinks) 0) }}
+        {{ $gridPages = where $paginator.Pages "RelPermalink" "not in" $upcomingLinks }}
+      {{ end }}
+
+      {{ if gt (len $gridPages) 0 }}
+        {{ range $gridPages }}
+          <div class="grid__item">
+            {{ partial "events-hub/event-card.html" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <p class="el-panel__empty grid__item">No events to show.</p>
+      {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+      <nav class="el-pagination" id="events-hub-paginator" aria-label="Events pagination">
+        {{ if $paginator.HasPrev }}
+          <a
+            class="el-pagination__arrow"
+            href="{{ $paginator.Prev.URL }}"
+            rel="prev"
+            aria-label="Previous page"
+          >&lsaquo;</a>
+        {{ else }}
+          <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+        {{ end }}
+
+        <span class="el-pagination__status">
+          Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+        </span>
+
+        {{ if $paginator.HasNext }}
+          <a
+            class="el-pagination__arrow"
+            href="{{ $paginator.Next.URL }}"
+            rel="next"
+            aria-label="Next page"
+          >&rsaquo;</a>
+        {{ else }}
+          <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+        {{ end }}
+      </nav>
+    {{ end }}
+  </section>
+
+  {{ partial "events-hub/search.html" (dict "searchPages" $searchPages) }}
+</section>

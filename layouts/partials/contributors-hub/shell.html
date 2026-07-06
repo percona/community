@@ -1,0 +1,27 @@
+{{/*
+  Shared contributors hub page shell — hero, sidebar, footer.
+  Used by /contributors/ hub and contributor taxonomy filter pages.
+*/}}
+<div class="hub-page events-learning contributors-hub">
+  {{ partial "contributors-hub/hero.html" . }}
+
+  <div class="events-learning__layout">
+    {{ partial "hub/sidebar.html" . }}
+
+    <div class="events-learning__main">
+      {{ if eq .variant "filtered" }}
+        {{ $page := .page }}
+        {{ $backHref := (site.GetPage "/contributors").RelPermalink }}
+        {{ $backLabel := "Back to Contributors Hub" }}
+        {{ if and (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
+          {{ $backHref = (site.GetPage "/events").RelPermalink }}
+          {{ $backLabel = "Back to Events" }}
+        {{ end }}
+        {{ partial "contributors-hub/back-tab.html" (dict "href" $backHref "label" $backLabel) }}
+      {{ end }}
+      {{ partial "contributors-hub/list.html" . }}
+    </div>
+  </div>
+</div>
+
+{{ partial "hub/filters.js.html" . }}

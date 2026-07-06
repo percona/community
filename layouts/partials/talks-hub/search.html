@@ -1,0 +1,137 @@
+{{ $talks := .searchPages }}
+{{ $searchIndex := slice }}
+
+{{ range $talks }}
+  {{ $title := .Title | default "" }}
+
+  {{ $excerpt := "" }}
+  {{ with .Params.abstract }}
+    {{ $excerpt = (. | markdownify | plainify) }}
+  {{ end }}
+
+  {{ $tags := "" }}
+  {{ with .Params.talk_tags }}
+    {{ $tags = delimit . " " }}
+  {{ end }}
+
+  {{ $speakers := slice }}
+  {{ with .Params.speakers }}
+    {{ range . }}
+      {{ $speakerPage := site.GetPage (printf "contributors/%s" .) }}
+      {{ with $speakerPage }}
+        {{ $speakers = $speakers | append .Params.fullname }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $speakersStr := delimit $speakers " " }}
+
+  {{ $event := .Params.event | default "" }}
+  {{ $eventLocation := .Params.event_location | default "" }}
+
+  {{ $cardHTML := partial "talks-hub/talk-card.html" . }}
+
+  {{ $searchIndex = $searchIndex | append (dict
+    "html"      $cardHTML
+    "title"     ($title | lower)
+    "speakers"  ($speakersStr | lower)
+    "tags"      ($tags | lower)
+    "event"     ($event | lower)
+    "event_location" ($eventLocation | lower)
+    "excerpt"   ($excerpt | lower)
+  ) }}
+{{ end }}
+
+<script type="application/json" id="talks-hub-search-data">
+  {{- $searchIndex | jsonify | safeJS -}}
+</script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const searchDataEl = document.getElementById("talks-hub-search-data");
+    const searchInput = document.getElementById("talks-hub-search");
+    const list = document.getElementById("talks-hub-list");
+    const paginator = document.getElementById("talks-hub-paginator");
+    const statusEl = document.querySelector("[data-talks-search-status]");
+
+    if (!searchDataEl || !searchInput || !list) return;
+
+    let data = [];
+    try {
+      data = JSON.parse(searchDataEl.textContent);
+    } catch {
+      return;
+    }
+
+    const defaultMarkup = list.innerHTML;
+
+    const scoreItem = (item, tokens) => {
+      let score = 0;
+      tokens.forEach(function (token) {
+        if (item.title.includes(token)) score += 5;
+        if (item.speakers.includes(token)) score += 4;
+        if (item.tags.includes(token)) score += 3;
+        if (item.event.includes(token)) score += 2;
+        if (item.event_location.includes(token)) score += 2;
+        if (item.excerpt.includes(token)) score += 1;
+      });
+      return score;
+    };
+
+    const renderMatches = (matches) => {
+      if (!matches.length) {
+        list.innerHTML = '<p class="el-panel__empty">No matching results found.</p>';
+        if (statusEl) statusEl.textContent = "No results";
+        return;
+      }
+      list.innerHTML = matches.map(function (m) { return m.html; }).join("");
+      if (statusEl) statusEl.textContent = "Found " + matches.length + " results";
+    };
+
+    const resetList = function () {
+      list.innerHTML = defaultMarkup;
+      if (statusEl) statusEl.textContent = "";
+      if (paginator) paginator.classList.remove("is-hidden");
+    };
+
+    const parseTokens = (value) => {
+      if (!value) return [];
+      const lowered = value.toLowerCase();
+      const tokens = [];
+      const phraseRegex = /"([^"]+)"/g;
+      let remainder = lowered;
+
+      remainder = remainder.replace(phraseRegex, function (_, phrase) {
+        const trimmed = phrase.trim();
+        if (trimmed) tokens.push(trimmed);
+        return " ";
+      });
+
+      remainder.split(/\s+/).map(function (t) { return t.trim(); }).filter(Boolean).forEach(function (t) {
+        tokens.push(t);
+      });
+
+      return tokens;
+    };
+
+    searchInput.addEventListener("input", function (e) {
+      const query = e.target.value.trim();
+      const tokens = parseTokens(query);
+
+      if (!tokens.length) {
+        resetList();
+        return;
+      }
+
+      if (paginator) paginator.classList.add("is-hidden");
+
+      const matches = data
+        .map(function (item) {
+          return Object.assign({}, item, { score: scoreItem(item, tokens) });
+        })
+        .filter(function (item) { return item.score > 0; })
+        .sort(function (a, b) { return b.score - a.score; });
+
+      renderMatches(matches);
+    });
+  });
+</script>

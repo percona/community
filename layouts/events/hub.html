@@ -1,0 +1,19 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+{{ $now := now }}
+{{ $pastPages := sort (where .Pages "Date" "<=" $now) "Date" "desc" }}
+{{ $paginator := .Paginate $pastPages 12 }}
+
+{{ partial "events-hub/shell.html" (dict
+  "heroPage" .
+  "page" .
+  "paginator" $paginator
+  "searchPages" .Pages
+  "variant" "hub"
+  "activeNav" "events"
+) }}
+{{ end }}

@@ -1,40 +1,69 @@
 {{ define "css" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/contribute.scss") | safeCSS) -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
-    {{- if in .Content "<pre class=\"chroma\">" -}}
-        {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
-    {{ end }}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- if in .Content "<pre class=\"chroma\">" -}}
+    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
+  {{ end }}
 {{- end }}
 
 {{ define "mainwrapper" }}
+  {{ partial "hero.html" (dict "page" .) }}
 
-    {{- .Content -}}
-    
-    <div class="contentblock branded">
-        <div class="grid grid--2">
-            {{- $pages := .Pages -}}
-            {{- $paginator := .Paginate $pages }}
-            {{- range $paginator.Pages -}} 
-                <div class="grid__item">
-                    {{- partial "event-preview" . -}} 
-                </div>
-            {{- end -}}
+  <div class="event-collection">
+    {{ with .Content }}
+      <div class="event-collection__intro content-page-shell">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ $paginator := .Paginate .Pages (.Params.paginate | default 10) }}
+    <section class="el-panel event-collection__list" aria-labelledby="event-collection-heading">
+      <h2 class="sr-only" id="event-collection-heading">Events</h2>
+
+      {{ if gt (len $paginator.Pages) 0 }}
+        <div class="grid grid--2 event-card-grid">
+          {{ range $paginator.Pages }}
+            <div class="grid__item">
+              {{ partial "event-card" . }}
+            </div>
+          {{ end }}
         </div>
-        {{- if gt $paginator.TotalPages 1 -}}
-        <div class="paginator">
-            {{- if $paginator.HasPrev -}}
-                <a href="{{ $paginator.Prev.URL }}" rel="prev">&laquo;</a>
-            {{- end -}}
-            {{- range $paginator.Pagers -}}
-                <a href="{{ .URL }}"{{ if eq . $paginator}}class="active"{{end}}>{{ .PageNumber }}</a>
-            {{- end -}}
-            {{- if $paginator.HasNext -}}
-                <a href="{{ $paginator.Next.URL }}" rel="next">&raquo;</a>
-            {{- end -}}
-        </div>
-        {{- end -}}
+      {{ else }}
+        <p class="el-panel__empty">No events yet.</p>
+      {{ end }}
 
-        {{ partial "sharing.html" . }}
-    </div>
+      {{ if gt $paginator.TotalPages 1 }}
+        <nav class="el-pagination" aria-label="Events pagination">
+          {{ if $paginator.HasPrev }}
+            <a
+              class="el-pagination__arrow"
+              href="{{ $paginator.Prev.URL }}"
+              rel="prev"
+              aria-label="Previous page"
+            >&lsaquo;</a>
+          {{ else }}
+            <span class="el-pagination__arrow is-disabled" aria-hidden="true">&lsaquo;</span>
+          {{ end }}
 
+          <span class="el-pagination__status">
+            Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+          </span>
+
+          {{ if $paginator.HasNext }}
+            <a
+              class="el-pagination__arrow"
+              href="{{ $paginator.Next.URL }}"
+              rel="next"
+              aria-label="Next page"
+            >&rsaquo;</a>
+          {{ else }}
+            <span class="el-pagination__arrow is-disabled" aria-hidden="true">&rsaquo;</span>
+          {{ end }}
+        </nav>
+      {{ end }}
+    </section>
+
+    {{ partial "sharing.html" . }}
+  </div>
 {{ end }}

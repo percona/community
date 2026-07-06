@@ -1,0 +1,29 @@
+{{ $image := resources.Get "hub/home/mountain-footer.webp" }}
+
+<section class="home-ascent" aria-labelledby="home-ascent-heading">
+  <div class="home-ascent__media">
+    {{ with $image }}
+      <img
+        class="home-ascent__image"
+        src="{{ .RelPermalink }}"
+        alt=""
+        width="1920"
+        height="1200"
+        loading="lazy"
+        decoding="async"
+      >
+    {{ end }}
+
+    <div class="home-ascent__line home-ascent__line--top" aria-hidden="true"></div>
+    <div class="home-ascent__line home-ascent__line--bottom" aria-hidden="true"></div>
+
+    <div class="home-ascent__content">
+      <div class="home-ascent__content-inner">
+        <h2 class="home-ascent__title" id="home-ascent-heading">
+          Join the<br>Ascent
+        </h2>
+        <a class="home-ascent__cta" href="/knowledge-base/">Become a Mountaineer</a>
+      </div>
+    </div>
+  </div>
+</section>

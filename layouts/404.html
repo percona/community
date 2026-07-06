@@ -1,19 +1,64 @@
-{{ define "title" }}Not found :({{ end }}
+{{ define "title" }}Page not found{{ end }}
 
 {{ define "css" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/404.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/404.scss") | safeCSS) -}}
 {{- end }}
 
-{{ define "main" }}
-    <div class="text">
-        <h1>Not found 😢</h1>
+{{ define "mainwrapper" }}
+  {{ partial "hero.html" (dict
+    "page" .
+    "headingId" "not-found-hero-heading"
+    "titleBefore" "Page"
+    "titleAccent" "not found"
+    "description" "The page you're looking for doesn't exist or may have been moved."
+    "hero_line" 2
+    "showSearch" true
+    "searchId" "not-found"
+  ) }}
 
-        <div class="body">
-            <p>Looks like you hit a dead end. Let's get you back on track:</p>
+  <div class="not-found-page">
+    <div class="content-page-shell not-found-page__content">
+      <p class="not-found-page__intro">Try searching above, or pick one of these popular destinations:</p>
 
-            <ul>
-                <li>Did you want to read something? <a href="/blog">Go to our blog!</a></li>
-            </ul>
-        </div>
+      <ul class="not-found-page__links">
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/" | relURL }}">
+            <span class="not-found-page__link-title">Homepage</span>
+            <span class="not-found-page__link-desc">Return to the Percona Community home page.</span>
+          </a>
+        </li>
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/blog/" | relURL }}">
+            <span class="not-found-page__link-title">Blog</span>
+            <span class="not-found-page__link-desc">Read posts from the community and Percona team.</span>
+          </a>
+        </li>
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/events-learning/" | relURL }}">
+            <span class="not-found-page__link-title">Events &amp; Learning</span>
+            <span class="not-found-page__link-desc">Browse talks, events, and learning resources.</span>
+          </a>
+        </li>
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/knowledge-base/" | relURL }}">
+            <span class="not-found-page__link-title">Knowledge Base</span>
+            <span class="not-found-page__link-desc">Find articles, videos, and how-to guides.</span>
+          </a>
+        </li>
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/contributors/" | relURL }}">
+            <span class="not-found-page__link-title">Contributors</span>
+            <span class="not-found-page__link-desc">Meet authors, speakers, and community members.</span>
+          </a>
+        </li>
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/search/" | relURL }}">
+            <span class="not-found-page__link-title">Search</span>
+            <span class="not-found-page__link-desc">Look up talks, articles, events, and more.</span>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 {{ end }}

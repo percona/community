@@ -24,8 +24,6 @@ video: ''
 images:
 - talks/2025/2025-09-30-kubernetes-from-the-database-out.png
 ---
-## Abstract
-
 You already know your Postgres, but you're being asked to work with this Kubernetes thing. Do you want to focus your Kubernetes learning on only the bits which are relevant to databases? Then this is the talk for you! Skip the usual 'why run databases on Kubernetes' discussion and dive straight into what you need to know to talk Postgres on Kubernetes.
 
 Using a Postgres database hosted on Kubernetes as an example, I will cover the components of Kubernetes involved in day-to-day activities - including network connectivity, storage, and the automation of restarts and upgrades.

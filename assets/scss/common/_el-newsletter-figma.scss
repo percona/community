@@ -1,0 +1,124 @@
+.el-newsletter-figma {
+  margin: 10rem 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 245px;
+    padding: 20px 19px 20px 2.5rem;
+    border-radius: 12px;
+    background: #282727;
+    box-sizing: border-box;
+  }
+
+  &__copy {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-right: 2rem;
+  }
+
+  &__media {
+    flex: 0 0 347px;
+    width: 347px;
+    height: 205px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+    color: #F6FE54;
+    font-family: $font-poppins;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__text {
+    margin: 0 0 1.25rem;
+    color: rgba($brand-white, 0.82);
+    font-family: $font-poppins;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  &__submit {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    height: 46px;
+    padding: 0 1.5rem;
+    border: none;
+    border-radius: 999px;
+    background: $nav-cta-purple;
+    color: $brand-white;
+    font-family: $font-poppins;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color $transition-length ease;
+
+    &:hover,
+    &:visited:hover {
+      background: $nav-cta-purple-hover;
+      color: $brand-white;
+      border-bottom: none;
+    }
+
+    &:visited {
+      color: $brand-white;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    &__inner {
+      flex-direction: column;
+      align-items: stretch;
+      min-height: auto;
+      padding: 1.75rem 1.5rem;
+      gap: 1.5rem;
+    }
+
+    &__copy { padding-right: 0; }
+
+    &__media {
+      flex: none;
+      width: 100%;
+      height: 200px;
+    }
+
+    &__submit { width: 100%; flex: none; justify-content: center; border-radius: 6px; }
+  }
+}
+
+a.el-newsletter-figma__submit {
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited:hover {
+    color: $brand-white;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  &:hover,
+  &:visited:hover {
+    background: $nav-cta-purple-hover;
+  }
+}

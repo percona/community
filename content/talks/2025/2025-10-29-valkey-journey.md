@@ -26,6 +26,4 @@ video: ''
 images:
 - talks/2025/2025-10-29-valkey-journey.png
 ---
-## Abstract
-
 The story of Valkey and how it fits into trends observed in the OSS database landscape.

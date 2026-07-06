@@ -1,0 +1,25 @@
+<section class="kb-hero" aria-labelledby="kb-hero-heading">
+  <div class="kb-hero__media" aria-hidden="true">
+    {{ partial "hero-bg-image.html" (dict "page" . "class" "kb-hero__image" "width" 1600) }}
+    <div class="kb-hero__gradient" aria-hidden="true"></div>
+  </div>
+
+  {{ partial "hub-triangle.html" (dict
+    "path" "hub/icons/hero-triangle.svg"
+    "class" "kb-hero__triangle"
+    "width" 476
+    "height" 625
+  ) }}
+
+  <div class="kb-hero__inner">
+    <div class="kb-hero__copy">
+      <h1 class="kb-hero__title" id="kb-hero-heading">
+        <span class="kb-hero__accent">Knowledge</span><br>
+        Base
+      </h1>
+      {{ with .Params.description }}
+        <p class="kb-hero__subtitle">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

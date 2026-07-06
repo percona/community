@@ -1,0 +1,39 @@
+hero:
+  hub:
+    description: |
+      Conferences, meetups, workshops, and online sessions — organised by Percona and the wider open source database community.
+
+  defaults:
+    events_category: |
+      Browse all {{ term }} events. Full list of speakers on [the Speakers page](/contributor_type/speaker/).
+    events_year: |
+      Browse all events from {{ term }}.
+    events_tag: |
+      Browse all {{ term }} events.
+
+  terms:
+    events_category:
+      Speaking: |
+        Explore all Speaking events featuring talks, presentations, and expert sessions. Full list of speakers on [the Speakers page](/contributor_type/speaker/).
+      Sponsoring: |
+        Browse Sponsoring events supported by Percona and our community partners.
+      Sponsorship: |
+        Browse Sponsorship events supported by Percona and our community partners.
+      Community: |
+        Community events organised by Percona and the wider open source database community.
+
+    events_tag:
+      Online: |
+        Online events, webinars, and live streams from the Percona Community and partners.
+      In-Person: |
+        In-person conferences, meetups, and workshops.
+      Community: |
+        Community-driven events and office hours.
+      MySQL: |
+        MySQL-focused conferences, meetups, and workshops.
+      PostgreSQL: |
+        PostgreSQL-focused conferences, meetups, and workshops.
+      MongoDB: |
+        MongoDB-focused conferences, meetups, and workshops.
+      Valkey: |
+        Valkey-focused conferences, meetups, and workshops.

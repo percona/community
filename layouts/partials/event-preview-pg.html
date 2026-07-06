@@ -1,17 +1,14 @@
 <a href="{{ .RelPermalink }}" class="event-pg-card">
 
+    {{- $coverImg := partial "page-cover-resource.html" . -}}
     {{- $img := "" -}}
-    {{- with .Params.images -}}
-        {{- with resources.Get (strings.TrimPrefix "/" (index . 0)) -}}
-            {{- $img = .Fill "682x384 60% jpg" -}}
-        {{- end -}}
+    {{- with $coverImg -}}
+        {{- $img = .Fill "682x384 60% jpg" -}}
     {{- end -}}
 
     <div class="event-pg-card__img{{ if and .Params.events_tag (in .Params.events_tag "Unplugged") }} event-pg-card__img--clean{{ end }}">
         {{- if $img -}}
         <img src="{{ $img.RelPermalink }}" alt="{{ .Title }}" width="682" height="384" />
-        {{- else -}}
-        <div class="event-pg-card__noimg"></div>
         {{- end -}}
 
         {{- if and .Params.events_category (in .Params.events_category "Sponsorship") -}}

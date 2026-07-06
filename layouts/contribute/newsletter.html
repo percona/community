@@ -1,0 +1,15 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+<div class="newsletter-page events-learning">
+  {{ partial "contribute/newsletter-hero.html" . }}
+  <div class="newsletter-page__main">
+    <div class="newsletter-page__content">
+      {{ partial "content.html" . }}
+    </div>
+  </div>
+</div>
+{{ end }}

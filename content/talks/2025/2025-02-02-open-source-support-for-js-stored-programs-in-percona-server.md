@@ -25,8 +25,6 @@ video: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-4814-open-sour
 images:
 - talks/2025/2025-02-02-open-source-support-for-js-stored-programs-in-percona-server.png
 ---
-## Abstract
-
 Support for stored programs written in JavaScript (often abbreviated
 as JS) was added by Oracle to MySQL version 9.0. Unfortunately, this
 feature is only available in MySQL Enterprise Edition and not in

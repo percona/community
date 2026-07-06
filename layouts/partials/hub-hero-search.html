@@ -1,0 +1,24 @@
+{{/*
+  Global site search field for hub-style heroes.
+
+  Params:
+    block — CSS block prefix (default hub-hero)
+    id    — unique suffix for input id (e.g. "blog", "kb")
+*/}}
+{{ $block := .block | default "hub-hero" }}
+{{ $id := printf "%s-hero-search-input" (.id | default "hub") }}
+
+<form class="{{ $block }}__search" action="{{ site.Params.searchPageUrl | default "/search/" | relURL }}" method="get" role="search">
+  <label class="sr-only" for="{{ $id }}">Search site</label>
+  <input
+    id="{{ $id }}"
+    class="{{ $block }}__search-input"
+    type="search"
+    name="q"
+    placeholder="Search..."
+    autocomplete="off"
+  >
+  <button type="submit" class="{{ $block }}__search-submit" aria-label="Search">
+    {{ partial "icon-search.html" (dict "width" 22 "height" 22) }}
+  </button>
+</form>
