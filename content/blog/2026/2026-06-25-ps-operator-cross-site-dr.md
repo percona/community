@@ -1,5 +1,5 @@
 ---
-title: "Cross-site DR with Percona Operator for MySQL"
+title: "Cross-site Disaster Recovery with Percona Operator for MySQL"
 date: "2026-07-06T10:00:00+00:00"
 tags: ["Percona", "Kubernetes", "Cloud", "Community", "Open Source", "MySQL"]
 categories: ['MySQL', 'Cloud']
