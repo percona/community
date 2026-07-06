@@ -48,12 +48,10 @@ blog_tags:
 - podman
 events_tags:
 - Percona Community Live
-- dashboard
-- event
 - opensource
 talks_tags: []
 posts_count: 7
-events_count: 4
+events_count: 3
 talks_count: 0
 contributor_type:
 - author

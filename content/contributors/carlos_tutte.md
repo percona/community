@@ -18,15 +18,12 @@ images:
 contributor_tag:
 - MySQL
 blog_tags: []
-events_tags:
-- Event
-- opensource
-- sponsorship
+events_tags: []
 talks_tags:
 - Open Source
 - Slides
 posts_count: 0
-events_count: 1
+events_count: 0
 talks_count: 1
 contributor_type:
 - speaker

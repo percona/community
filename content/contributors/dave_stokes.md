@@ -28,9 +28,6 @@ events_tags:
 - Podcast
 - Postgres
 - Stream
-- event
-- opensource
-- sponsorship
 talks_tags:
 - Databases
 - Opensource
@@ -39,12 +36,11 @@ talks_tags:
 - slides
 - video
 posts_count: 0
-events_count: 34
+events_count: 31
 talks_count: 4
 contributor_type:
 - speaker
 contributor_year:
-- '2024'
 - '2023'
 - '2022'
 - '2021'

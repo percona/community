@@ -22,12 +22,10 @@ events_tags:
 - PerconaLive2022
 - Podcast
 - Postgres
-- dashboard
-- event
 - opensource
 talks_tags: []
 posts_count: 0
-events_count: 6
+events_count: 5
 talks_count: 0
 contributor_type:
 - speaker

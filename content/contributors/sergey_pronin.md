@@ -45,9 +45,6 @@ events_tags:
 - PBM
 - Percona
 - Percona Community Live
-- dashboard
-- databases
-- event
 - k8s
 - opensource
 - sponsorship
@@ -59,7 +56,7 @@ talks_tags:
 - Opensource
 - Video
 posts_count: 4
-events_count: 12
+events_count: 9
 talks_count: 5
 contributor_type:
 - author

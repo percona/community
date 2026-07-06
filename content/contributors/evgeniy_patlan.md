@@ -26,7 +26,6 @@ events_tags:
 - DevOps
 - Education
 - Engineering
-- Event
 - Events
 - Linux
 - Meetup
@@ -34,13 +33,17 @@ events_tags:
 - Percona products
 - Postgres
 - Stream
-- devops
 - opensource
 - pgpool
-talks_tags: []
+talks_tags:
+- Career
+- DevOps
+- Education
+- Open Source
+- Security
 posts_count: 0
-events_count: 7
-talks_count: 0
+events_count: 6
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:

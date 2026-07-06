@@ -19,19 +19,15 @@ contributor_tag:
 - MySQL
 blog_tags: []
 events_tags:
-- Event
 - Meetup
 - Stream
-- opensource
-- sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 17
+events_count: 16
 talks_count: 0
 contributor_type:
 - speaker
 contributor_year:
-- '2023'
 - '2022'
 - '2021'
 ---

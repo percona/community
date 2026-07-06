@@ -20,10 +20,7 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Meetup
-- Percona Community Live
 - Stream
-- dashboard
-- event
 - opensource
 - pgpool
 - securing
@@ -31,7 +28,7 @@ talks_tags:
 - Slides
 - Video
 posts_count: 0
-events_count: 7
+events_count: 6
 talks_count: 1
 contributor_type:
 - speaker

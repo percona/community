@@ -101,7 +101,7 @@ talks_tags:
 - Video
 - video
 posts_count: 34
-events_count: 7
+events_count: 6
 talks_count: 18
 contributor_type:
 - author

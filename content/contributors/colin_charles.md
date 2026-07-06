@@ -24,14 +24,12 @@ blog_tags:
 events_tags:
 - MariaDB
 - Percona Community Live
-- dashboard
-- event
 - opensource
 talks_tags:
 - Slides
 - Video
 posts_count: 1
-events_count: 3
+events_count: 2
 talks_count: 1
 contributor_type:
 - author

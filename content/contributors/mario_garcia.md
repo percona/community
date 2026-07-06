@@ -33,14 +33,13 @@ blog_tags:
 - PostgreSQL
 - Python
 events_tags:
-- Event
 - Postgres
 - Stream
 - opensource
 - securing
 talks_tags: []
 posts_count: 7
-events_count: 9
+events_count: 8
 talks_count: 1
 contributor_type:
 - author

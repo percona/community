@@ -35,14 +35,10 @@ events_tags:
 - Promo
 - Yerevan
 - database
-- databases
-- devops
-- event
 - fosdem
 - in-memory
 - opensource
 - performance
-- russia
 - sponsorship
 talks_tags:
 - Ai
@@ -61,7 +57,7 @@ talks_tags:
 - database
 - video
 posts_count: 0
-events_count: 23
+events_count: 13
 talks_count: 24
 contributor_type:
 - speaker

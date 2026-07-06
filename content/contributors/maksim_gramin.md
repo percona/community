@@ -23,12 +23,10 @@ events_tags:
 - Code
 - Database
 - Percona Community Live
-- dashboard
-- event
 - opensource
 talks_tags: []
 posts_count: 3
-events_count: 3
+events_count: 2
 talks_count: 0
 contributor_type:
 - author

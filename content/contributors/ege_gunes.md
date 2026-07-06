@@ -39,7 +39,7 @@ talks_tags:
 - Open Source
 - database
 posts_count: 1
-events_count: 5
+events_count: 4
 talks_count: 1
 contributor_type:
 - author
@@ -47,7 +47,6 @@ contributor_type:
 contributor_year:
 - '2026'
 - '2025'
-- '2022'
 - '2021'
 ---
 Ege Güneş is Senior Software Engineer at Percona.

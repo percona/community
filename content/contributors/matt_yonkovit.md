@@ -31,8 +31,6 @@ events_tags:
 - Percona products
 - Postgres
 - Stream
-- dashboard
-- event
 - k8s
 - opensource
 talks_tags:
@@ -40,7 +38,7 @@ talks_tags:
 - Opensource
 - Video
 posts_count: 0
-events_count: 113
+events_count: 112
 talks_count: 2
 contributor_type:
 - speaker

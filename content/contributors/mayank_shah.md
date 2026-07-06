@@ -15,20 +15,23 @@ images:
 - contributors/mayank_shah.png
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Cloud
 - Community
 - Kubernetes
 - MySQL
 - PostgreSQL
 blog_tags:
+- Cloud
 - Community
 - Kubernetes
 - MySQL
 - Open Source
+- Percona
 events_tags:
 - Events
 - Featured
 talks_tags: []
-posts_count: 1
+posts_count: 2
 events_count: 1
 talks_count: 0
 contributor_type:

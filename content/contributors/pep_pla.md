@@ -20,7 +20,12 @@ contributor_tag:
 - Kubernetes
 - MySQL
 - PostgreSQL
-blog_tags: []
+blog_tags:
+- PostgreSQL
+- autovacuum
+- mvcc
+- pg_pep
+- vacuum
 events_tags:
 - Cloud Native
 - Event
@@ -33,10 +38,11 @@ talks_tags:
 - MariaDB
 - Open Source
 - Video
-posts_count: 0
+posts_count: 1
 events_count: 3
 talks_count: 2
 contributor_type:
+- author
 - speaker
 contributor_year:
 - '2026'
