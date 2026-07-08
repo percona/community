@@ -50,7 +50,7 @@ Here is what we think a more honest comparison looks like:
 | --- | --- | --- |
 | Requires a patched PostgreSQL | Yes | Yes |
 | How the patches are delivered | Ready-made fork/branch | Patch file, applied by hand |
-| Source available, patches cherry-pickable | Yes | Yes |
+| Open source patches, cherry-pickable | Yes | Yes |
 | Actually vendor locked | No | No |
 | API-version safety check | Yes (`PERCONA_API_VERSION`) | No, it was removed |
 | Guards against mismatched-package corruption | Yes | No |
