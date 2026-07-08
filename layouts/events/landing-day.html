@@ -1,3 +1,7 @@
+{{ define "head" }}
+  {{ partial "event-schema.html" . }}
+{{ end }}
+
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
   {{- if in .Content "<pre class=\"chroma\">" -}}

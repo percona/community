@@ -1,3 +1,7 @@
+{{ define "head" }}
+  {{ partial "blog-schema.html" . }}
+{{ end }}
+
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
@@ -23,12 +27,7 @@
 
 {{ define "main" }}
 
-  <article class="text hub-single hub-single--blog blog-post{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/BlogPosting"{{ end }}>
-    {{ if $.PublishDate }}
-      {{ with .Params.images }}{{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}<meta itemprop="image" content="{{ .Permalink }}" />{{ end }}{{ end }}
-      <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
-      {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
-    {{ end }}
+  <article class="text hub-single hub-single--blog blog-post{{ if not $.PublishDate}} text--simple{{ end }}">
 
     <a class="hub-single__back" href="{{ (site.GetPage "/blog").RelPermalink }}">
       <span aria-hidden="true">&larr;</span>
@@ -36,7 +35,7 @@
     </a>
 
     <header class="hub-single__header">
-      <h1 class="hub-single__title"{{ if $.PublishDate }} itemprop="name headline"{{ end }}>
+      <h1 class="hub-single__title">
         {{ partial "hub-single/title.html" .Title }}
       </h1>
 
@@ -44,7 +43,7 @@
         <div class="hub-single__meta meta">
           <p class="hub-single__meta-line">
             <span class="hub-single__meta-label">Date:</span>
-            <time datetime="{{ $.PublishDate }}"{{ if $.PublishDate }} itemprop="datePublished"{{ end }}>{{ $.PublishDate.Format "2 January 2006" }}</time>
+            <time datetime="{{ $.PublishDate }}">{{ $.PublishDate.Format "2 January 2006" }}</time>
           </p>
           {{- if (isset .Params "authors") -}}
             <p class="hub-single__meta-line">
@@ -65,7 +64,7 @@
 
     {{ partial "hub-single/sharing.html" . }}
 
-    <div{{ if $.PublishDate }} itemprop="articleBody"{{ end }} class="body">
+    <div class="body">
       {{ partial "content.html" . }}
     </div>
   </article>

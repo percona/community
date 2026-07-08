@@ -1,0 +1,195 @@
+{{/*
+  Schema.org Event JSON-LD for Google Search event rich results.
+  Covers organizer, location (with address), endDate, performer, and offers.
+*/}}
+{{- if .PublishDate.IsZero -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- $page := . -}}
+{{- $eventDateStr := .Params.EventDate | default .Params.event_date | default "" -}}
+{{- $eventLocation := .Params.EventLocation | default .Params.event_location | default "" -}}
+{{- $eventsTag := .Params.events_tag | default slice -}}
+
+{{- $isOnline := false -}}
+{{- if $eventLocation -}}
+  {{- if eq (lower (strings.TrimSpace $eventLocation)) "online" -}}
+    {{- $isOnline = true -}}
+  {{- end -}}
+{{- else if and (in $eventsTag "Online") (not (in $eventsTag "In-Person")) -}}
+  {{- $isOnline = true -}}
+{{- end -}}
+
+{{- $startDate := .PublishDate -}}
+{{- $endDate := .Params.EventEndDate | default .Params.event_end_date -}}
+{{- if $endDate -}}
+  {{- $endDate = time $endDate -}}
+{{- end -}}
+
+{{- if not $endDate -}}
+  {{- with findRE `\d{1,2}[–-]\d{1,2}` $eventDateStr -}}
+    {{- $endDay := int (replaceRE `^\d{1,2}[–-]` "" (index . 0)) -}}
+    {{- $startDay := $startDate.Day -}}
+    {{- if gt $endDay $startDay -}}
+      {{- $endDate = ($startDate.AddDate 0 0 (sub $endDay $startDay)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $endDate -}}
+  {{- with findRE `\d{1,2}:\d{2}\s*[-–]\s*\d{1,2}:\d{2}` $eventDateStr -}}
+    {{- $endTime := replaceRE `^.*[-–]\s*` "" (index . 0) -}}
+    {{- $endTime = strings.TrimSpace (replaceRE `(?i)\s*(gmt|bst|pt|et|cet|est|edt).*$` "" $endTime) -}}
+    {{- $tp := split $endTime ":" -}}
+    {{- if eq (len $tp) 2 -}}
+      {{- $endHour := int (index $tp 0) -}}
+      {{- $endMin := int (index $tp 1) -}}
+      {{- $endDate = time (printf "%sT%02d:%02d:00Z" ($startDate.Format "2006-01-02") $endHour $endMin) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $endDate -}}
+  {{- with findRE `to\s+(\d{1,2}):(\d{2})` $eventDateStr -}}
+    {{- $endTime := index . 0 | replaceRE `(?i)^to\s+` "" -}}
+    {{- $tp := split $endTime ":" -}}
+    {{- if eq (len $tp) 2 -}}
+      {{- $endHour := int (index $tp 0) -}}
+      {{- $endMin := int (index $tp 1) -}}
+      {{- $endDate = time (printf "%sT%02d:%02d:00Z" ($startDate.Format "2006-01-02") $endHour $endMin) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $endDate -}}
+  {{- if eq .Params.layout "landing-day" -}}
+    {{- $endDate = $startDate.Add (time.ParseDuration "24h") -}}
+  {{- else if eq .Params.layout "landing" -}}
+    {{- $maxDate := $startDate -}}
+    {{- range where .Pages "Params.layout" "landing-day" -}}
+      {{- if gt .Date.Unix $maxDate.Unix -}}
+        {{- $maxDate = .Date -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt $maxDate.Unix $startDate.Unix -}}
+      {{- $endDate = $maxDate.Add (time.ParseDuration "24h") -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $endDate -}}
+  {{- if $isOnline -}}
+    {{- $endDate = $startDate.Add (time.ParseDuration "1h") -}}
+  {{- else -}}
+    {{- $endDate = $startDate.Add (time.ParseDuration "24h") -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $description := .Description | default .Summary | plainify -}}
+{{- $imageURL := "" -}}
+{{- with partial "page-share-image.html" . -}}
+  {{- with .url -}}
+    {{- $imageURL = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $organizerName := .Params.event_organizer | default .Params.EventOrganizer | default "Percona Community" -}}
+{{- $organizerURL := .Params.event_organizer_url | default .Params.EventOrganizerURL | default "https://percona.community/" -}}
+{{- $offerURL := .Params.registration_url | default .Params.event_url | default .Permalink -}}
+
+{{- $performers := slice -}}
+{{- range .Params.speakers | default slice -}}
+  {{- with $page.Site.GetPage (printf "/contributors/%s" .) -}}
+    {{- $person := dict "@type" "Person" "name" (.Params.fullname | default .Title) -}}
+    {{- with .Permalink -}}
+      {{- $person = merge $person (dict "url" .) -}}
+    {{- end -}}
+    {{- $performers = $performers | append $person -}}
+  {{- else -}}
+    {{- $performers = $performers | append (dict "@type" "Person" "name" (humanize .)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $location := dict -}}
+{{- if $isOnline -}}
+  {{- $location = dict
+    "@type" "VirtualLocation"
+    "url" ($offerURL | absURL)
+  -}}
+{{- else if $eventLocation -}}
+  {{- $parts := slice -}}
+  {{- range split $eventLocation "," -}}
+    {{- $parts = $parts | append (strings.TrimSpace .) -}}
+  {{- end -}}
+  {{- $address := dict "@type" "PostalAddress" -}}
+  {{- $partCount := len $parts -}}
+  {{- if eq $partCount 1 -}}
+    {{- $address = merge $address (dict "streetAddress" (index $parts 0)) -}}
+  {{- else if eq $partCount 2 -}}
+    {{- $address = merge $address (dict
+      "addressLocality" (index $parts 0)
+      "addressCountry" (index $parts 1)
+    ) -}}
+  {{- else if gt $partCount 2 -}}
+    {{- $address = merge $address (dict
+      "streetAddress" (delimit (first (sub $partCount 2) $parts) ", ")
+      "addressLocality" (index $parts (sub $partCount 2))
+      "addressCountry" (index $parts (sub $partCount 1))
+    ) -}}
+  {{- end -}}
+  {{- $location = dict
+    "@type" "Place"
+    "name" $eventLocation
+    "address" $address
+  -}}
+{{- else if in $eventsTag "In-Person" -}}
+  {{- $location = dict
+    "@type" "Place"
+    "name" "In-Person"
+    "address" (dict "@type" "PostalAddress" "streetAddress" "In-Person")
+  -}}
+{{- else -}}
+  {{- $location = dict
+    "@type" "VirtualLocation"
+    "url" ($offerURL | absURL)
+  -}}
+{{- end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Event"
+  "name" .Title
+  "startDate" ($startDate.Format $iso8601)
+  "endDate" ($endDate.Format $iso8601)
+  "url" .Permalink
+  "organizer" (dict
+    "@type" "Organization"
+    "name" $organizerName
+    "url" $organizerURL
+  )
+  "offers" (dict
+    "@type" "Offer"
+    "url" ($offerURL | absURL)
+    "price" "0"
+    "priceCurrency" "USD"
+    "availability" "https://schema.org/InStock"
+    "validFrom" ($startDate.Format $iso8601)
+  )
+-}}
+
+{{- with $description -}}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{- end -}}
+{{- with $imageURL -}}
+  {{- $schema = merge $schema (dict "image" .) -}}
+{{- end -}}
+{{- with $location -}}
+  {{- $schema = merge $schema (dict "location" .) -}}
+{{- end -}}
+{{- if gt (len $performers) 0 -}}
+  {{- $schema = merge $schema (dict "performer" $performers) -}}
+{{- end -}}
+
+{{- $json := $schema | jsonify | safeJS -}}
+<script type="application/ld+json">{{ $json }}</script>
