@@ -1,3 +1,7 @@
+{{ define "head" }}
+  {{ partial "event-schema.html" . }}
+{{ end }}
+
 {{ define "css" -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
@@ -38,12 +42,7 @@
     {{ end }}
   {{ end }}
 
-  <article class="text hub-single hub-single--event event{{ if not $.PublishDate}} text--simple{{ end }}"{{ if $.PublishDate }} itemscope itemtype="https://schema.org/Event"{{ end }}>
-    {{ if $.PublishDate }}
-      {{ with .Params.images }}{{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}<meta itemprop="image" content="{{ .Permalink }}" />{{ end }}{{ end }}
-      <meta itemprop="mainEntityOfPage" content="{{ .Permalink }}" />
-      {{ with .Params.tags}}<meta itemprop="keywords" content="{{ delimit . ", " }}" />{{ end }}
-    {{ end }}
+  <article class="text hub-single hub-single--event event{{ if not $.PublishDate}} text--simple{{ end }}">
 
     <a class="hub-single__back" href="{{ $backURL }}">
       <span aria-hidden="true">&larr;</span>
@@ -51,7 +50,7 @@
     </a>
 
     <header class="hub-single__header">
-      <h1 class="hub-single__title"{{ if $.PublishDate }} itemprop="name"{{ end }}>
+      <h1 class="hub-single__title">
         {{ partial "hub-single/title.html" .Title }}
       </h1>
 
@@ -59,18 +58,18 @@
         {{ if $eventDate }}
           <p class="hub-single__meta-line">
             <span class="hub-single__meta-label">Date:</span>
-            <time{{ if $.PublishDate }} itemprop="startDate" datetime="{{ $.PublishDate }}"{{ end }}>{{ $eventDate }}</time>
+            <time datetime="{{ $.PublishDate }}">{{ $eventDate }}</time>
           </p>
         {{ else if $.PublishDate }}
           <p class="hub-single__meta-line">
             <span class="hub-single__meta-label">Date:</span>
-            <time datetime="{{ $.PublishDate }}" itemprop="startDate">{{ $.PublishDate.Format "2 January 2006" }}</time>
+            <time datetime="{{ $.PublishDate }}">{{ $.PublishDate.Format "2 January 2006" }}</time>
           </p>
         {{ end }}
         {{ with $eventLocation }}
           <p class="hub-single__meta-line">
             <span class="hub-single__meta-label">Location:</span>
-            <span{{ if $.PublishDate }} itemprop="location"{{ end }}>{{ . }}</span>
+            <span>{{ . }}</span>
           </p>
         {{ end }}
         {{- if (isset .Params "speakers") -}}
@@ -91,7 +90,7 @@
 
     {{ partial "hub-single/sharing.html" . }}
 
-    <div{{ if $.PublishDate }} itemprop="description"{{ end }} class="body">
+    <div class="body">
       {{ if .Params.podbean_link }}
         <p>Link to listen and subscribe: <a href="{{ .Params.podbean_link }}">PodBean</a></p>
       {{ end }}

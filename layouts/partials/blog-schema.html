@@ -1,0 +1,68 @@
+{{/*
+  Schema.org BlogPosting JSON-LD for Google Search article rich results.
+*/}}
+{{- if .PublishDate.IsZero -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $iso8601 := "2006-01-02T15:04:05-07:00" -}}
+{{- $page := . -}}
+{{- $description := .Description | default .Summary | plainify -}}
+{{- $imageURL := "" -}}
+{{- with partial "page-share-image.html" . -}}
+  {{- with .url -}}
+    {{- $imageURL = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $authors := slice -}}
+{{- range .Params.authors | default slice -}}
+  {{- with $page.Site.GetPage (printf "/contributors/%s" .) -}}
+    {{- $person := dict "@type" "Person" "name" (.Params.fullname | default .Title) -}}
+    {{- with .Permalink -}}
+      {{- $person = merge $person (dict "url" .) -}}
+    {{- end -}}
+    {{- $authors = $authors | append $person -}}
+  {{- else -}}
+    {{- $authors = $authors | append (dict "@type" "Person" "name" (humanize .)) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $logoURL := "" -}}
+{{- with resources.Get "icons/percona-purple-192.png" -}}
+  {{- $logoURL = .Permalink | absURL -}}
+{{- end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "datePublished" (.PublishDate.Format $iso8601)
+  "url" .Permalink
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "publisher" (dict
+    "@type" "Organization"
+    "name" "Percona Community"
+    "url" "https://percona.community/"
+    "logo" (dict "@type" "ImageObject" "url" $logoURL)
+  )
+-}}
+
+{{- with $description -}}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{- end -}}
+{{- if not .Lastmod.IsZero -}}
+  {{- $schema = merge $schema (dict "dateModified" (.Lastmod.Format $iso8601)) -}}
+{{- end -}}
+{{- with $imageURL -}}
+  {{- $schema = merge $schema (dict "image" .) -}}
+{{- end -}}
+{{- if gt (len $authors) 0 -}}
+  {{- $schema = merge $schema (dict "author" $authors) -}}
+{{- end -}}
+{{- with .Params.tags -}}
+  {{- $schema = merge $schema (dict "keywords" (delimit . ", ")) -}}
+{{- end -}}
+
+{{- $json := $schema | jsonify | safeJS -}}
+<script type="application/ld+json">{{ $json }}</script>
