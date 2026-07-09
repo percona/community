@@ -22,7 +22,7 @@ Tired of unexpected OOMKilled pods? Learn how to leverage swap in Kubernetes to 
 - 📅 **Date/Time:** 21 July, 2026, 09:00 UTC
 - 👤 **Speaker:** Chetan Shivashankar - Technical Lead, Kubernetes
 - 📍 **Online**
-- 🔗 [Register here for free and join us!](https://event.on24.com/wcc/r/5332683/BBCCBFC9371226007E1FA75EB6DEE701)
+- 🔗 [Register here for free and join us!](https://g9e0.share.hsforms.com/2L6ygZ5KTSJ2-Av_6CEFvhQ)
 
 
 *Join our Open Source Unplugged!*
