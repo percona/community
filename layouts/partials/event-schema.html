@@ -30,9 +30,9 @@
 {{- if not $endDate -}}
   {{- with findRE `\d{1,2}[–-]\d{1,2}` $eventDateStr -}}
     {{- $endDay := int (replaceRE `^\d{1,2}[–-]` "" (index . 0)) -}}
-    {{- $startDay := $startDate.Day -}}
+    {{- $startDay := int $startDate.Day -}}
     {{- if gt $endDay $startDay -}}
-      {{- $endDate = ($startDate.AddDate 0 0 (sub $endDay $startDay)) -}}
+      {{- $endDate = ($startDate.AddDate 0 0 (int (sub $endDay $startDay))) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
@@ -123,7 +123,7 @@
     {{- $parts = $parts | append (strings.TrimSpace .) -}}
   {{- end -}}
   {{- $address := dict "@type" "PostalAddress" -}}
-  {{- $partCount := len $parts -}}
+  {{- $partCount := int (len $parts) -}}
   {{- if eq $partCount 1 -}}
     {{- $address = merge $address (dict "streetAddress" (index $parts 0)) -}}
   {{- else if eq $partCount 2 -}}
