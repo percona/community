@@ -610,6 +610,160 @@
       ],
       "date": "October 20, 2020",
       "category": "MySQL"
+    },
+    {
+      "title": "Analyzing a MySQL slow query log with pt-query-digest",
+      "url": "https://www.jeffgeerling.com/blog/2018/analyzing-mysql-slow-query-log-pt-query-digest/",
+      "authors": [
+        {
+          "name": "Jeff Geerling"
+        }
+      ],
+      "date": "November 29, 2018",
+      "category": "MySQL"
+    },
+    {
+      "title": "Percona Toolkit for Managing MySQL Clusters",
+      "url": "https://alexishope.dev/posts/percona-toolkit-for-mysql-clusters/",
+      "authors": [
+        {
+          "name": "Alexis Hope"
+        }
+      ],
+      "date": "March 19, 2018",
+      "category": "MySQL"
+    },
+    {
+      "title": "Important pre-checks before running pt-online-schema-change to Add/Drop an index in MySQL",
+      "url": "https://www.pythian.com/blog/important-pre-checks-before-running-pt-online-schema-change-to-add/drop-an-index-in-mysql",
+      "authors": [
+        {
+          "name": "Pythian"
+        }
+      ],
+      "date": "",
+      "category": "MySQL"
+    },
+    {
+      "title": "Zero-Downtime MySQL Migrations: A Production Guide",
+      "url": "https://www.nazarboyko.com/articles/zero-downtime-mysql-migrations/",
+      "authors": [
+        {
+          "name": "Nazar Boyko"
+        }
+      ],
+      "date": "",
+      "category": "MySQL"
+    },
+    {
+      "title": "MySQL Online Schema Change: pt-osc and gh-ost in Production",
+      "url": "https://www.jusdb.com/blog/mysql-online-schema-change-pt-osc-gh-ost",
+      "authors": [
+        {
+          "name": "JusDB"
+        }
+      ],
+      "date": "",
+      "category": "MySQL"
+    },
+    {
+      "title": "MySQL vs MariaDB: slow query log—turn one hour of logs into a 2× speedup",
+      "url": "https://cr0x.net/en/mysql-mariadb-slow-query-log-speedup/",
+      "authors": [
+        {
+          "name": "cr0x"
+        }
+      ],
+      "date": "",
+      "category": "MySQL"
+    },
+    {
+      "title": "MySQL vs PostgreSQL Schema Changes: Who Makes ALTER TABLE a Nightmare",
+      "url": "https://cr0x.net/en/mysql-postgresql-alter-table-nightmare/",
+      "authors": [
+        {
+          "name": "cr0x"
+        }
+      ],
+      "date": "",
+      "category": "MySQL"
+    },
+    {
+      "title": "MySQL Production Monitoring: Slow Queries, Replication, Locks",
+      "url": "https://web-alert.io/blog/mysql-monitoring-production-slow-queries-replication-guide",
+      "authors": [
+        {
+          "name": "revoq"
+        }
+      ],
+      "date": "March 2026",
+      "category": "MySQL"
+    },
+    {
+      "title": "Reliably Monitoring MySQL Replication",
+      "url": "https://www.metaltoad.com/blog/reliably-monitoring-mysql-replication",
+      "authors": [
+        {
+          "name": "Metal Toad"
+        }
+      ],
+      "date": "",
+      "category": "MySQL"
+    },
+    {
+      "title": "MySQL on Fire: Rescuing Production with Percona Toolkit",
+      "url": "https://itnotes.dev/mysql-on-fire-rescuing-production-with-percona-toolkit/",
+      "authors": [
+        {
+          "name": "ITNotes"
+        }
+      ],
+      "date": "May 17, 2026",
+      "category": "MySQL"
+    },
+    {
+      "title": "What Is pt-online-schema-change for MySQL",
+      "url": "https://oneuptime.com/blog/post/2026-03-31-mysql-pt-online-schema-change/view",
+      "authors": [
+        {
+          "name": "Nawaz Dhandala"
+        }
+      ],
+      "date": "March 31, 2026",
+      "category": "MySQL"
+    },
+    {
+      "title": "How to Use pt-query-digest to Analyze MySQL Logs",
+      "url": "https://oneuptime.com/blog/post/2026-03-31-mysql-how-to-use-pt-query-digest-to-analyze-mysql-logs/view",
+      "authors": [
+        {
+          "name": "OneUptime"
+        }
+      ],
+      "date": "March 31, 2026",
+      "category": "MySQL"
+    },
+    {
+      "title": "How to Troubleshoot MySQL Replication Lag",
+      "url": "https://oneuptime.com/blog/post/2026-03-31-mysql-replication-lag-troubleshoot/view",
+      "authors": [
+        {
+          "name": "OneUptime"
+        }
+      ],
+      "date": "March 31, 2026",
+      "category": "MySQL"
+    },
+    {
+      "title": "The DBA's Toolkit: Mastering Percona Toolkit (pt-query-digest, pt-online-schema-change)",
+      "url": "https://dohost.us/index.php/2025/12/30/the-dbas-toolkit-mastering-percona-toolkit-pt-query-digest-pt-online-schema-change/",
+      "authors": [
+        {
+          "name": "DoHost"
+        }
+      ],
+      "date": "December 30, 2025",
+      "category": "MySQL"
     }
   ],
   "PostgreSQL": [
