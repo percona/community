@@ -67,21 +67,21 @@ menu:
       name: Knowledge Base
       url: /knowledge-base/
       weight: 2
+    - identifier: community-ascent
+      name: Community Ascent
+      url: /ascent/
+      weight: 3
     - identifier: blog
       name: Blog
       url: /blog/
-      weight: 3
+      weight: 4
     - identifier: forum
       name: Forums
       url: https://forums.percona.com/
-      weight: 4
-    - identifier: databases
-      name: Databases
-      url: /databases/
       weight: 5
-    - identifier: projects
-      name: Projects
-      url: /projects/
+    - identifier: databases
+      name: Databases & Projects
+      url: /databases/
       weight: 6
     - identifier: other
       name: Other
@@ -93,16 +93,10 @@ menu:
       weight: 8
       params:
         hidden: true
-    - identifier: community-ascent
-      name: Community Ascent
-      url: /contribute/leaderboard
-      weight: 9
-      params:
-        hidden: true  # v1-hidden — see docs/v1-hidden-items.md
     - identifier: swag-store
       name: Swag store
       url: /knowledge-base/
-      weight: 10
+      weight: 9
       params:
         secondary: true
         hidden: true  # v1-hidden — see docs/v1-hidden-items.md
@@ -164,11 +158,6 @@ menu:
       url: /contribute/videos/
       parent: knowledge-base
       weight: 7
-    - identifier: knowledge-base-contributors
-      name: Contributors
-      url: /contributors/
-      parent: knowledge-base
-      weight: 8
 
     - identifier: blog-posts
       name: Posts
@@ -181,13 +170,36 @@ menu:
       parent: blog
       weight: 2
 
-    - identifier: community-ascent-contribution
-      name: Contribution
-      url: /contribute
+    - identifier: community-ascent-overview
+      name: Overview
+      url: /ascent/
       parent: community-ascent
       weight: 1
-      params:
-        hidden: true  # v1-hidden
+    - identifier: community-ascent-basecamp
+      name: Basecamp
+      url: /ascent/leaderboard/
+      parent: community-ascent
+      weight: 2
+    - identifier: community-ascent-hall-of-fame
+      name: Open Source Hall of Fame
+      url: /ascent/hall-of-fame/
+      parent: community-ascent
+      weight: 3
+    - identifier: community-ascent-summit
+      name: Summit Dashboard
+      url: /ascent/summit/
+      parent: community-ascent
+      weight: 4
+    - identifier: community-ascent-maintainers
+      name: Maintainers
+      url: /contributors/
+      parent: community-ascent
+      weight: 5
+    - identifier: community-ascent-mountaineers
+      name: Mountaineers
+      url: /ascent/mountaineers/
+      parent: community-ascent
+      weight: 6
 
     - identifier: mysql
       name: MySQL
@@ -213,23 +225,23 @@ menu:
     - identifier: kubernetes
       name: Kubernetes Operators
       url: /projects/operators/
-      parent: projects
-      weight: 1
+      parent: databases
+      weight: 5
     - identifier: pmm
       name: Percona Monitoring and Management
       url: /projects/pmm/
-      parent: projects
-      weight: 3
+      parent: databases
+      weight: 6
     - identifier: subtoolkit
       name: Percona Toolkit
       url: /projects/toolkit/
-      parent: projects
-      weight: 4
+      parent: databases
+      weight: 7
     - identifier: allprojects
       name: All projects
       url: /projects/
-      parent: projects
-      weight: 5
+      parent: databases
+      weight: 8
 
     - identifier: search
       name: Search
@@ -246,21 +258,16 @@ menu:
       url: /labs/
       parent: other
       weight: 3
-    - identifier: open-source-database-hall-of-fame
-      name: Open Source Database Hall of Fame
-      url: /open-source-database-hall-of-fame/
-      parent: other
-      weight: 4
     - identifier: dsto
       name: Dave Talks Open (Archive)
       url: /events/dave-stokes-talks-open-percona-live-2022/
       parent: other
-      weight: 5
+      weight: 4
     - identifier: podcasts
       name: HOSS Talks (Archive)
       url: /events/podcasts/
       parent: other
-      weight: 6
+      weight: 5
 
   footer:
     - identifier: newsletter

@@ -1,0 +1,495 @@
+/* Global Summit page — full-page mountain background, no hero */
+:root {
+  --lb-purple: #653DF4;
+  --lb-yellow: #F6FE54;
+  --lb-black: #282727;
+  --summit-shell-max: 1440px;
+  --summit-shell-pad: clamp(1rem, 4.44vw, 64px);
+}
+
+main.page:has(.summit-page) {
+  background: #0d1117;
+  overflow-x: clip;
+}
+
+.summit-page {
+  display: grid;
+  color: #fff;
+}
+
+.summit-page__backdrop,
+.summit-page__overlay {
+  grid-area: 1 / 1;
+}
+
+.summit-page__backdrop {
+  position: relative;
+  z-index: 0;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.summit-page__backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 39, 39, 0.5);
+  pointer-events: none;
+}
+
+.summit-page__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.summit-page__overlay {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  pointer-events: none;
+}
+
+.summit-page__overlay > * {
+  pointer-events: auto;
+}
+
+.summit-page__main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  max-width: var(--summit-shell-max);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 1.75rem) var(--summit-shell-pad) clamp(2rem, 5vw, 3rem);
+  box-sizing: border-box;
+}
+
+#lb-summit-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  font-family: inherit;
+}
+
+.summit-page__intro {
+  text-align: center;
+  margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.summit-page__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 5.5vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.summit-page__subtitle {
+  margin: 0;
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* ---- Widget ---- */
+.lb-summit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ---- Mountain markers area ---- */
+.lb-summit-mountain {
+  position: relative;
+  width: min(100%, 960px);
+  flex: 1;
+  min-height: 360px;
+  margin: 0 auto;
+}
+
+.lb-summit-mountain .lb-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lb-summit-mountain .lb-loading__text {
+  color: #fff;
+}
+
+.lb-summit-marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  overflow: visible;
+  transition: transform .2s ease, filter .2s ease, z-index 0s;
+}
+
+.lb-summit-marker:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  filter: drop-shadow(0 6px 20px rgba(101, 61, 244, 0.55));
+  z-index: 20 !important;
+}
+
+.lb-summit-marker--xl .lb-summit-marker__badge {
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  transform: translate(28%, 28%);
+}
+
+.lb-summit-marker--lg .lb-summit-marker__badge {
+  width: 26px;
+  height: 26px;
+  font-size: 11px;
+  transform: translate(30%, 30%);
+}
+
+.lb-summit-marker--md .lb-summit-marker__badge {
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+  transform: translate(40%, 40%);
+}
+
+.lb-summit-marker--sm .lb-summit-marker__badge {
+  width: 22px;
+  height: 22px;
+  font-size: 9px;
+  transform: translate(50%, 50%);
+}
+
+.lb-summit-marker--lg:hover .lb-summit-marker__badge { transform: translate(30%, 30%); }
+.lb-summit-marker--md:hover .lb-summit-marker__badge { transform: translate(40%, 40%); }
+.lb-summit-marker--sm:hover .lb-summit-marker__badge { transform: translate(50%, 50%); }
+
+.lb-summit-marker__ring {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  background: var(--lb-black);
+}
+
+.lb-summit-marker__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.lb-summit-marker__fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: 700;
+  color: #fff;
+}
+
+.lb-summit-marker__badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--lb-purple);
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  transform: translate(35%, 35%);
+  pointer-events: none;
+}
+
+.lb-summit-marker__badge--gold {
+  background: var(--lb-yellow);
+  color: var(--lb-black);
+}
+
+#lb-summit-widget .lb-state {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 2rem;
+}
+
+#lb-summit-widget .lb-state-error {
+  color: #ffb4b4;
+}
+
+@media (max-width: 900px) {
+  main.page:has(.summit-page) {
+    overflow-x: hidden;
+  }
+
+  .summit-page {
+    --summit-stage-height: max(720px, calc(100dvh - 100px - var(--summit-tabs-h, 72px)));
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: calc(var(--summit-stage-height) + var(--summit-tabs-h, 72px));
+  }
+
+  .summit-page__backdrop {
+    position: absolute;
+    top: var(--summit-tabs-h, 72px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    min-height: var(--summit-stage-height);
+    line-height: 0;
+    grid-area: auto;
+  }
+
+  .summit-page__backdrop::after {
+    z-index: 1;
+  }
+
+  .summit-page__image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center 34%;
+    transform: scale(1.1);
+    transform-origin: center 22%;
+  }
+
+  .summit-page__overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(var(--summit-stage-height) + var(--summit-tabs-h, 72px));
+    width: 100%;
+    overflow: hidden;
+    grid-area: auto;
+  }
+
+  .summit-page__main {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto;
+    min-height: var(--summit-stage-height);
+    padding-top: 1.35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: clamp(1.25rem, 3vw, 2rem);
+    overflow: visible;
+    box-sizing: border-box;
+  }
+
+  .summit-page__intro {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    box-sizing: border-box;
+  }
+
+  .summit-page__title {
+    font-size: clamp(1.5rem, 7vw, 2.25rem);
+    letter-spacing: 0.03em;
+    margin-bottom: 0.25rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .summit-page__subtitle {
+    max-width: 100%;
+    font-size: clamp(0.8125rem, 3.5vw, 0.9375rem);
+    line-height: 1.35;
+    overflow-wrap: break-word;
+  }
+
+  .lb-summit {
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .lb-summit-mountain {
+    width: 100%;
+    max-width: 100%;
+    min-height: clamp(440px, 66vh, 620px);
+    margin-inline: 0;
+    overflow: visible;
+  }
+
+  .lb-summit-mountain--mobile {
+    min-height: clamp(460px, 70vh, 660px);
+    padding-top: 4px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 640px) {
+  .summit-page {
+    --summit-stage-height: max(700px, calc(100dvh - 96px - var(--summit-tabs-h, 72px)));
+  }
+
+  .summit-page__main {
+    padding-top: 1.15rem;
+  }
+
+  .summit-page__title {
+    letter-spacing: 0.02em;
+  }
+
+  .lb-summit-mountain--mobile {
+    min-height: clamp(440px, 68vh, 620px);
+  }
+}
+
+/* ---- Summit dark modal ---- */
+.lb-overlay--dark {
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.lb-modal-lg--dark {
+  background: #282727;
+  color: #fff;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.lb-modal-lg--dark .lb-modal-header {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.lb-modal-lg--dark .lb-modal-close {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lb-modal-lg--dark .lb-modal-close:hover {
+  color: #fff;
+}
+
+.lb-modal-lg--dark .lb-modal-name {
+  color: #fff;
+}
+
+.lb-modal-lg--dark .lb-modal-handle {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.lb-modal-lg--dark .lb-modal-pts {
+  color: var(--lb-yellow);
+}
+
+.lb-modal-lg--dark .lb-modal-pts-lbl {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lb-modal-lg--dark .lb-modal-stat {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.lb-modal-lg--dark .lb-modal-stat .v {
+  color: #fff;
+}
+
+.lb-modal-lg--dark .lb-modal-stat .l {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lb-modal-lg--dark .lb-section-title {
+  color: rgba(255, 255, 255, 0.55);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.lb-modal-lg--dark .lb-leader-chip {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.lb-modal-lg--dark .lb-leader-chip__rank {
+  color: var(--lb-yellow);
+}
+
+.lb-modal-lg--dark .lb-leader-chip--gold {
+  background: rgba(246, 254, 84, 0.15);
+}
+
+.lb-modal-lg--dark .lb-leader-chip--gold .lb-leader-chip__rank {
+  color: var(--lb-yellow);
+}
+
+.lb-modal-lg--dark .lb-contrib-item {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.lb-modal-lg--dark .lb-contrib-link {
+  color: #c4b5ff;
+}
+
+.lb-modal-lg--dark .lb-contrib-link:hover {
+  color: #e0d4ff;
+}
+
+.lb-modal-lg--dark .lb-contrib-meta {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.lb-modal-lg--dark .lb-modal-empty,
+.lb-modal-lg--dark .lb-state {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.lb-modal-lg--dark .lb-cta {
+  background: rgba(101, 61, 244, 0.2);
+  color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(101, 61, 244, 0.35);
+}
+
+.lb-modal-lg--dark .lb-cta a {
+  color: var(--lb-yellow);
+}
+
+.lb-modal-lg--dark .lb-spinner {
+  border-color: rgba(255, 255, 255, 0.15);
+  border-top-color: var(--lb-purple);
+}

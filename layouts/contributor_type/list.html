@@ -9,6 +9,12 @@
   {{ end }}
 {{- end }}
 
+{{ define "head" }}
+  {{ if ne .Data.Term "author" }}
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+  {{ end }}
+{{ end }}
+
 {{ define "mainwrapper" }}
 {{ if not .Data.Term }}
   <script>window.location.replace({{ (site.GetPage "/contributors").RelPermalink | jsonify }});</script>

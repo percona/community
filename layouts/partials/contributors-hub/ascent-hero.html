@@ -1,0 +1,48 @@
+{{ $page := .page }}
+{{ if not $page }}{{ $page = . }}{{ end }}
+{{ $copy := partial "contributors-hub/hero-copy.html" . }}
+{{ $showFilters := .showFilters | default false }}
+
+<div class="leaderboard-page__hero maintainers-hero">
+  {{ partial "ascent/ascent-tabs.html" (dict "active" "maintainers") }}
+
+  <div class="maintainers-hero__band">
+    <div class="leaderboard-page__backdrop" aria-hidden="true">
+      {{ $src := $page.Params.hero_image | default "hub/heroes/community-ascent.webp" }}
+      {{ with resources.Get $src }}
+        {{ $img := . }}
+        {{ if gt $img.Width 1600 }}
+          {{ $img = .Resize "1600x q85 webp" }}
+        {{ end }}
+        <img
+          class="leaderboard-page__image"
+          src="{{ $img.RelPermalink }}"
+          alt=""
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}"
+          fetchpriority="high"
+          decoding="async"
+        >
+      {{ end }}
+    </div>
+
+    <header class="leaderboard-page__intro maintainers-hero__intro">
+      <h1 class="leaderboard-page__title" id="contributors-maintainers-heading">
+        {{- $before := $page.Params.hero.titleBefore | default "Community" -}}
+        {{- $accent := $page.Params.hero.titleAccent | default "Maintainers" -}}
+        {{- if $before -}}{{ $before }}{{ end -}}
+        {{- if and $before $accent }} {{ end -}}
+        {{- if $accent -}}<span class="leaderboard-page__title-accent">{{ $accent }}</span>{{ end -}}
+      </h1>
+      {{ with $copy.description }}
+        <p class="leaderboard-page__subtitle">{{ . | markdownify }}</p>
+      {{ end }}
+    </header>
+  </div>
+
+  {{ if $showFilters }}
+    <div class="maintainers-hero__filters">
+      {{ partial "contributors-hub/filters.html" $page }}
+    </div>
+  {{ end }}
+</div>

@@ -1,0 +1,33 @@
+{{/*
+  Community Ascent section navigation.
+  Param: active — "basecamp" | "hall-of-fame" | "maintainers" | "summit"
+*/}}
+{{ $active := .active | default "" }}
+<nav class="community-ascent-tabs" aria-label="Community Ascent">
+  <div class="community-ascent-tabs__shell">
+    <div class="community-ascent-tabs__bar">
+      <ul class="community-ascent-tabs__list">
+        <li class="community-ascent-tabs__item">
+          <a href="/ascent/leaderboard/"
+             class="community-ascent-tabs__link{{ if eq $active "basecamp" }} community-ascent-tabs__link--active{{ end }}"
+             {{ if eq $active "basecamp" }}aria-current="page"{{ end }}>Basecamp</a>
+        </li>
+        <li class="community-ascent-tabs__item">
+          <a href="/contributors/"
+             class="community-ascent-tabs__link{{ if eq $active "maintainers" }} community-ascent-tabs__link--active{{ end }}"
+             {{ if eq $active "maintainers" }}aria-current="page"{{ end }}>Maintainers</a>
+        </li>
+        <li class="community-ascent-tabs__item">
+          <a href="/ascent/summit/"
+             class="community-ascent-tabs__link{{ if eq $active "summit" }} community-ascent-tabs__link--active{{ end }}"
+             {{ if eq $active "summit" }}aria-current="page"{{ end }}>Summit Dashboard</a>
+        </li>
+        <li class="community-ascent-tabs__item">
+          <a href="/ascent/hall-of-fame/"
+             class="community-ascent-tabs__link{{ if eq $active "hall-of-fame" }} community-ascent-tabs__link--active{{ end }}"
+             {{ if eq $active "hall-of-fame" }}aria-current="page"{{ end }}>Open Source Hall of Fame</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

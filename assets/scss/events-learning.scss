@@ -93,6 +93,20 @@
   max-width: 100%;
 }
 
+.events-learning__layout--full {
+  display: block;
+  max-width: $layout-max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 4rem;
+  box-sizing: border-box;
+}
+
+.events-learning__layout--full .events-learning__main {
+  max-width: 100%;
+  padding: 0;
+}
+
 /* ── Sidebar ──────────────────────────────────────────────────────────── */
 
 $el-sidebar-bg: #FBFAF8;
@@ -805,7 +819,7 @@ a.el-speakers-filters__pill {
 .el-filters-bar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   gap: 0.75rem;
   margin-bottom: 0.35rem;
@@ -813,6 +827,7 @@ a.el-speakers-filters__pill {
   .el-filters {
     margin-bottom: 0;
     flex: 1 1 auto;
+    align-items: stretch;
   }
 }
 
@@ -820,10 +835,13 @@ a.el-speakers-filters__pill {
   flex: 0 1 240px;
   width: 100%;
   max-width: 240px;
+  display: flex;
+  align-items: stretch;
 
   &__input {
     width: 100%;
     height: 40px;
+    min-height: 40px;
     margin: 0;
     padding: 0 0.875rem;
     border: none;
@@ -862,6 +880,7 @@ a.el-speakers-filters__pill {
 .el-filters {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   gap: 0.75rem;
   margin-bottom: 1.75rem;
 
@@ -897,7 +916,8 @@ a.el-speakers-filters__pill {
     align-items: center;
     gap: 0.35rem;
     height: 40px;
-    padding: 9px 9px 9px 13px;
+    min-height: 40px;
+    padding: 0 9px 0 13px;
     border: none;
     border-radius: 9px;
     background: #F4F4F4;
@@ -909,6 +929,7 @@ a.el-speakers-filters__pill {
     cursor: pointer;
     white-space: nowrap;
     outline: none;
+    box-sizing: border-box;
     transition: background-color $transition-length ease, color $transition-length ease;
 
     &:hover {

@@ -1,4 +1,7 @@
 {{ $variant := .variant | default "hub" }}
+{{ if eq $variant "hub" }}
+  {{ partial "contributors-hub/ascent-hero.html" . }}
+{{ else }}
 {{ $copy := partial "contributors-hub/hero-copy.html" . }}
 {{ $page := . }}
 {{ if .page }}{{ $page = .page }}{{ end }}
@@ -19,9 +22,7 @@
   <div class="hub-hero__inner">
     <div class="hub-hero__copy">
       <h1 class="hub-hero__title" id="el-contributors-hub-heading">
-        {{ if eq $variant "hub" }}
-          <span class="hub-hero__accent">Contributors</span> Hub
-        {{ else if and (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
+        {{ if and (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
           <span class="hub-hero__accent">Authors</span>
         {{ else if and (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
           <span class="hub-hero__accent">Speakers</span>
@@ -36,3 +37,4 @@
   </div>
 
 </section>
+{{ end }}

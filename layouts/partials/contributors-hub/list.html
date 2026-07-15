@@ -4,7 +4,9 @@
 {{ $variant := .variant | default "filtered" }}
 
 {{ $listTitle := "Contributors" }}
-{{ if and (eq $variant "filtered") (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
+{{ if eq $variant "hub" }}
+  {{ $listTitle = "Maintainers" }}
+{{ else if and (eq $variant "filtered") (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
   {{ $listTitle = "Speakers" }}
 {{ else if and (eq $variant "filtered") (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
   {{ $listTitle = "Authors" }}
@@ -28,10 +30,12 @@
   <h2 class="sr-only" id="el-contributors-heading">{{ $listTitle }}</h2>
 {{ end }}
 
-  {{ partial "contributors-hub/filters.html" $page }}
+  {{ if not .hideFilters }}
+    {{ partial "contributors-hub/filters.html" $page }}
+  {{ end }}
 
   {{ if gt (len $paginator.Pages) 0 }}
-    <div class="el-speakers-grid" id="contributors-hub-grid">
+    <div class="lb-leaders contributors-hub-grid" id="contributors-hub-grid">
       {{ range $paginator.Pages }}
         {{ partial "contributors-hub/speaker-card.html" (dict "page" . "showEvents" $showEvents) }}
       {{ end }}

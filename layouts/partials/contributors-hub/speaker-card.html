@@ -7,41 +7,48 @@
   {{ if isset . "showTalks" }}{{ $showTalks = .showTalks }}{{ end }}
 {{ end }}
 
+{{ $title := $page.Params.fullname | default $page.Title }}
+{{ $role := $page.Params.job | default $page.Params.tagline }}
 {{ $img := "" }}
 {{ with $page.Params.images }}
   {{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}
-    {{ $img = (.Fill "480x640 q85 webp").RelPermalink }}
+    {{ $img = (.Fill "480x480 Top q85 webp").RelPermalink }}
   {{ end }}
 {{ end }}
 
-<a class="el-speaker-card" href="{{ $page.RelPermalink }}">
-  <div class="el-speaker-card__media">
-    {{ if $img }}
-      <img
-        class="el-speaker-card__img is-loaded"
-        src="{{ $img }}"
-        alt="{{ $page.Params.fullname }}"
-        width="480"
-        height="640"
-        loading="lazy"
-        decoding="async"
-      >
-    {{ else }}
-      <div class="el-speaker-card__img el-speaker-card__img--placeholder" aria-hidden="true"></div>
-    {{ end }}
-    <div class="el-speaker-card__overlay" aria-hidden="true"></div>
+<a class="lb-leader-card contributor-card" href="{{ $page.RelPermalink }}">
+  <div class="lb-leader-media">
+    <div class="lb-leader-photo-wrap">
+      {{ if $img }}
+        <img
+          src="{{ $img }}"
+          alt="{{ $title }}"
+          width="480"
+          height="480"
+          loading="lazy"
+          decoding="async"
+        >
+      {{ else }}
+        <div class="lb-photo-fallback" aria-hidden="true">{{ substr $title 0 1 }}</div>
+      {{ end }}
+    </div>
   </div>
-  <div class="el-speaker-card__info">
-    <p class="el-speaker-card__name">{{ $page.Params.fullname }}</p>
-    <div class="el-speaker-card__stats">
+  <div class="lb-leader-body">
+    <p class="lb-leader-name">{{ $title }}</p>
+    {{ with $role }}
+      <p class="lb-leader-handle">{{ . }}</p>
+    {{ else }}
+      <p class="lb-leader-handle" aria-hidden="true">&nbsp;</p>
+    {{ end }}
+    <div class="lb-stat-pills">
       {{ if gt ($page.Params.posts_count | default 0) 0 }}
-        <span class="el-speaker-card__stat">{{ $page.Params.posts_count }} posts</span>
+        <span class="lb-stat-pill">{{ $page.Params.posts_count }} posts</span>
       {{ end }}
       {{ if and $showTalks (gt ($page.Params.talks_count | default 0) 0) }}
-        <span class="el-speaker-card__stat">{{ $page.Params.talks_count }} talks</span>
+        <span class="lb-stat-pill">{{ $page.Params.talks_count }} talks</span>
       {{ end }}
       {{ if and $showEvents (gt ($page.Params.events_count | default 0) 0) }}
-        <span class="el-speaker-card__stat">{{ $page.Params.events_count }} events</span>
+        <span class="lb-stat-pill">{{ $page.Params.events_count }} events</span>
       {{ end }}
     </div>
   </div>

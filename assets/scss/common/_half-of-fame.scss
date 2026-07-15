@@ -61,53 +61,12 @@ $content-page-gutter-right: clamp(#{$padding-right-page}, 4.44vw, #{$layout-padd
             padding: 1rem;
         }
 
-    }  
-
-}
-
-.inductees {
-    
-    h3 {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-size: 2rem;
     }
 
-    img {
-        max-height: 600px;
-    }
-    
-    p {
-        font-size: 1rem;
-        line-height: auto;
+    .hof-grid {
+        margin-top: 0;
     }
 
-    .intro {
-        vertical-align: middle;
-        padding: 2rem;
-        margin: 2rem 0;
-    }
-
-    @media screen and (max-width: 760px) {
-
-        .intro {
-            vertical-align: middle;
-            padding: 1rem;
-            margin: 0rem 0;
-        }
-
-        h2 {
-            text-align: left;
-            padding: 1rem;
-        }
-
-        h3 {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-    } 
 }
 
 .ceremony {

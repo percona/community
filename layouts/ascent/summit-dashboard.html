@@ -1,0 +1,56 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/lb-summit-widget.css?v={{ now.Unix }}">
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+<div class="summit-page">
+  <div class="summit-page__backdrop" aria-hidden="true">
+    {{ $src := .Params.summit_image | default "hub/heroes/global.webp" }}
+    {{ with resources.Get $src }}
+      {{ $img := . }}
+      {{ if gt $img.Width 2560 }}
+        {{ $img = .Resize "2560x q85 webp" }}
+      {{ end }}
+      <img
+        class="summit-page__image"
+        src="{{ $img.RelPermalink }}"
+        alt=""
+        width="{{ $img.Width }}"
+        height="{{ $img.Height }}"
+        fetchpriority="high"
+        decoding="async"
+      >
+    {{ end }}
+  </div>
+
+  <div class="summit-page__overlay">
+    {{ partial "ascent/ascent-tabs.html" (dict "active" "summit") }}
+
+    <div class="summit-page__main">
+      <header class="summit-page__intro">
+        <h1 class="summit-page__title" id="summit-page-heading">{{ .Title }}</h1>
+        <p class="summit-page__subtitle">{{ .Params.summit_subtitle | default "The Infinite Peak — Top 10 Worldwide" }}</p>
+      </header>
+
+      <div id="lb-summit-widget">
+        <div class="lb-loading" role="status">
+          <div class="lb-loading__spinner" aria-hidden="true"></div>
+          <p class="lb-loading__text">Marking the summits…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.LB_BASE = 'https://raw.githubusercontent.com/percona/community-leaderboard/widget';
+</script>
+<script type="module" src="/js/lb-summit-widget.js?v={{ now.Unix }}"></script>
+{{ end }}

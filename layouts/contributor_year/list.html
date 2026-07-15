@@ -3,6 +3,10 @@
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
 {{- end }}
 
+{{ define "head" }}
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+{{ end }}
+
 {{ define "mainwrapper" }}
 {{ if not .Data.Term }}
   <script>window.location.replace({{ (site.GetPage "/contributors").RelPermalink | jsonify }});</script>

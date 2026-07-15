@@ -1,0 +1,37 @@
+{{/*
+  Ascent index card — expects a section .Page with optional card_label, hero_image / summit_image / images.
+*/}}
+{{ $label := .Params.card_label | default .Title }}
+{{ $imgSrc := .Params.hero_image | default .Params.summit_image }}
+{{ if not $imgSrc }}
+  {{ with .Params.images }}{{ $imgSrc = index . 0 }}{{ end }}
+{{ end }}
+
+<a href="{{ .RelPermalink }}" class="ascent-index-card">
+  <div class="ascent-index-card__media" aria-hidden="true">
+    {{ if and $imgSrc (hasPrefix $imgSrc "/") }}
+      <img class="ascent-index-card__image" src="{{ $imgSrc }}" alt="" loading="lazy" decoding="async">
+    {{ else if $imgSrc }}
+      {{ with resources.Get $imgSrc }}
+        {{ $img := . }}
+        {{ if gt $img.Width 1200 }}{{ $img = .Resize "1200x q85 webp" }}{{ end }}
+        <img
+          class="ascent-index-card__image"
+          src="{{ $img.RelPermalink }}"
+          alt=""
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}"
+          loading="lazy"
+          decoding="async"
+        >
+      {{ end }}
+    {{ end }}
+    <div class="ascent-index-card__shade"></div>
+  </div>
+  <div class="ascent-index-card__body">
+    <p class="ascent-index-card__eyebrow">{{ $label }}</p>
+    <h2 class="ascent-index-card__title">{{ .Title }}</h2>
+    <p class="ascent-index-card__text">{{ .Description }}</p>
+    <span class="ascent-index-card__cta">Explore</span>
+  </div>
+</a>

@@ -4,9 +4,15 @@ aliases:
 - /authors/
 - /speakers
 - /speakers/
-description: Event speakers and blog authors from the Percona Community.
+description: Open-source maintainers, speakers, and authors from the Percona Community.
 images:
 - hub/covers/contributors-cover.jpg
+- hub/heroes/community-ascent.webp
 layout: hub
-title: Contributors
+title: Maintainers
+hero_image: hub/heroes/community-ascent.webp
+hero_description: Open-source maintainers, speakers, and authors from the Percona Community. Browse profiles, talks, and articles.
+hero:
+  titleBefore: Community
+  titleAccent: Maintainers
 ---

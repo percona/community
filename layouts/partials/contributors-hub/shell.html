@@ -2,17 +2,24 @@
   Shared contributors hub page shell — hero, sidebar, footer.
   Used by /contributors/ hub and contributor taxonomy filter pages.
 */}}
+{{ if eq .variant "hub" }}
+<div class="leaderboard-page contributors-maintainers-page">
+  {{ partial "contributors-hub/ascent-hero.html" (merge . (dict "showFilters" true)) }}
+
+  <div class="content-page-shell leaderboard-page__content">
+    {{ partial "contributors-hub/list.html" (merge . (dict "hideTitle" true "hideFilters" true)) }}
+  </div>
+</div>
+{{ else }}
 <div class="hub-page events-learning contributors-hub">
   {{ partial "contributors-hub/hero.html" . }}
 
-  <div class="events-learning__layout">
-    {{ partial "hub/sidebar.html" . }}
-
+  <div class="events-learning__layout events-learning__layout--full">
     <div class="events-learning__main">
       {{ if eq .variant "filtered" }}
         {{ $page := .page }}
         {{ $backHref := (site.GetPage "/contributors").RelPermalink }}
-        {{ $backLabel := "Back to Contributors Hub" }}
+        {{ $backLabel := "Back to Maintainers" }}
         {{ if and (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
           {{ $backHref = (site.GetPage "/events").RelPermalink }}
           {{ $backLabel = "Back to Events" }}
@@ -23,5 +30,6 @@
     </div>
   </div>
 </div>
+{{ end }}
 
 {{ partial "hub/filters.js.html" . }}

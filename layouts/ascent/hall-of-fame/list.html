@@ -1,0 +1,56 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/hall-of-fame.css?v={{ now.Unix }}">
+{{ end }}
+
+{{ define "mainwrapper" }}
+<div class="leaderboard-page hof-page">
+  <div class="leaderboard-page__hero hof-hero">
+    {{ partial "ascent/ascent-tabs.html" (dict "active" "hall-of-fame") }}
+
+    <div class="hof-hero__band">
+      <div class="leaderboard-page__backdrop" aria-hidden="true">
+        {{ $src := .Params.hero_image | default "hub/heroes/community-ascent.webp" }}
+        {{ with resources.Get $src }}
+          {{ $img := . }}
+          {{ if gt $img.Width 1600 }}
+            {{ $img = .Resize "1600x q85 webp" }}
+          {{ end }}
+          <img
+            class="leaderboard-page__image"
+            src="{{ $img.RelPermalink }}"
+            alt=""
+            width="{{ $img.Width }}"
+            height="{{ $img.Height }}"
+            fetchpriority="high"
+            decoding="async"
+          >
+        {{ end }}
+      </div>
+
+      <header class="leaderboard-page__intro hof-hero__intro">
+        <h1 class="leaderboard-page__title" id="hof-page-heading">
+          {{- $before := .Params.hero.titleBefore | default "Open Source Database" -}}
+          {{- $accent := .Params.hero.titleAccent | default "Hall of Fame" -}}
+          {{- if $before -}}{{ $before }}{{ end -}}
+          {{- if and $before $accent }} {{ end -}}
+          {{- if $accent -}}<span class="leaderboard-page__title-accent">{{ $accent }}</span>{{ end -}}
+        </h1>
+        <p class="leaderboard-page__subtitle">{{ .Params.hero_description | default .Description }}</p>
+      </header>
+    </div>
+  </div>
+
+  {{ if .Content }}
+    <div class="content-page-shell hof-page__content">
+      {{ .Content }}
+      {{ partial "sharing.html" . }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}

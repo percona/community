@@ -1,7 +1,7 @@
 hero:
   hub:
     description: |
-      Event speakers and blog authors from the Percona Community. Browse profiles, talks, and articles.
+      Open-source maintainers, speakers, and authors from the Percona Community. Browse profiles, talks, and articles.
 
   defaults:
     contributor_type: |

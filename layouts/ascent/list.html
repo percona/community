@@ -1,0 +1,30 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+{{ end }}
+
+{{ define "mainwrapper" }}
+<div class="ascent-index">
+  <header class="ascent-index__header">
+    <h1 class="ascent-index__title">{{ .Title }}</h1>
+    {{ with .Description }}
+      <p class="ascent-index__lead">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if .Content }}
+    <div class="ascent-index__prose">
+      {{ .Content }}
+    </div>
+  {{ end }}
+
+  <div class="ascent-index__grid">
+    {{ range where .Pages.ByWeight "Params.hide_from_index" "!=" true }}
+      {{ partial "ascent/index-card.html" . }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
