@@ -5,7 +5,10 @@
   --ascent-tabs-bg: #fbfaf8;
   --ascent-tabs-height: 95px;
   --ascent-tabs-width: 900px;
-  --ascent-tabs-pad-x: clamp(1rem, 4.44vw, 64px);
+  --ascent-tabs-pad-x: clamp(16px, 4.44vw, 64px);
+  --ascent-tabs-link-size: 15px;
+  --ascent-tabs-link-size-mobile: 13px;
+  --ascent-tabs-gap: clamp(12px, 2vw, 32px);
 }
 
 .community-ascent-tabs {
@@ -13,7 +16,7 @@
   z-index: 10;
   width: 100%;
   margin: 0;
-  padding: clamp(2rem, 5vw, 3.5rem) var(--ascent-tabs-pad-x) 0;
+  padding: clamp(32px, 5vw, 56px) var(--ascent-tabs-pad-x) 0;
   box-sizing: border-box;
   pointer-events: none;
 }
@@ -34,7 +37,7 @@
   background: var(--ascent-tabs-bg);
   box-shadow: 0 22px 33.4px rgba(0, 0, 0, 0.14);
   overflow: visible;
-  padding-inline: clamp(1.25rem, 3vw, 2.5rem);
+  padding-inline: clamp(20px, 3vw, 40px);
   box-sizing: border-box;
 }
 
@@ -42,7 +45,7 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: clamp(0.75rem, 2vw, 2rem);
+  gap: var(--ascent-tabs-gap);
   width: 100%;
   min-height: var(--ascent-tabs-height);
   margin: 0;
@@ -65,10 +68,10 @@ a.community-ascent-tabs__link {
   justify-content: center;
   height: 100%;
   min-height: var(--ascent-tabs-height);
-  padding: 0;
+  padding: 0 6px;
   color: var(--ascent-black);
   font-family: Poppins, sans-serif;
-  font-size: 0.9375rem;
+  font-size: var(--ascent-tabs-link-size);
   font-weight: 400;
   line-height: 1.2;
   white-space: nowrap;
@@ -215,8 +218,8 @@ a.community-ascent-tabs__link--active::after {
 
   a.community-ascent-tabs__link {
     min-height: var(--ascent-tabs-height);
-    padding: 1rem 1.25rem;
-    font-size: 0.8125rem;
+    padding: 16px 20px;
+    font-size: var(--ascent-tabs-link-size-mobile);
   }
 
   .community-ascent-tabs__item:first-child a.community-ascent-tabs__link {
