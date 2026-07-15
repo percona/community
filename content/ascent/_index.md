@@ -1,6 +1,8 @@
 ---
 title: Community Ascent
 description: "Recognizing contributors across Percona's open source community — from basecamp to the summit."
+images:
+  - hub/covers/community-ascent-cover.jpg
 ---
 
 Every contribution counts as a step up the mountain. Filing a bug, opening a PR, answering a question on the forum, writing a blog post, or sitting down with our engineers to tell them what's working and what isn't — it all moves you forward. This isn't only for the people writing code. However you engage, it counts.

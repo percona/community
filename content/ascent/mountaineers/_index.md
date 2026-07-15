@@ -3,6 +3,8 @@ title: "Mountaineers: the Percona Community program"
 description: "Recognize your community contributions and earn rewards as you climb from Basecamp to the summit."
 layout: mountaineers
 hide_from_index: true
+images:
+  - hub/covers/mountaineers-cover.jpg
 ---
 
 Every time you take part in this community, it counts. Filing a bug, opening a PR, answering a question on the forum, writing a blog post, sitting down with our engineers to tell them what's working and what isn't — all of it. Through the act of climbing the mountain, we monitor your contributions, provide recognition, and offer rewards.

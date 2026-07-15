@@ -9,7 +9,7 @@ hero:
   titleBefore: "Open Source Database"
   titleAccent: "Hall of Fame"
 images:
-    - hub/heroes/community-ascent.webp
+  - hub/covers/hof-cover.jpg
 aliases:
   - /open-source-database-hall-of-fame/
   - /open-source-database-hall-of-fame

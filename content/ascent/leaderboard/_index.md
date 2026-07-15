@@ -9,6 +9,8 @@ hero_description: "Recognizing top contributors to Percona's open-source ecosyst
 hero:
   titleBefore: "Community"
   titleAccent: "Leaderboard"
+images:
+  - hub/covers/leaderboard-cover.jpg
 aliases:
   - /contribute/leaderboard/
   - /contribute/leaderboard
