@@ -1,0 +1,64 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+{{ end }}
+
+{{ define "mainwrapper" }}
+
+<div class="leaderboard-page">
+  <div class="leaderboard-page__hero">
+    <div class="leaderboard-page__backdrop" aria-hidden="true">
+      {{ $src := .Params.hero_image | default "hub/heroes/community-ascent.webp" }}
+      {{ with resources.Get $src }}
+        {{ $img := . }}
+        {{ if gt $img.Width 1600 }}
+          {{ $img = .Resize "1600x q85 webp" }}
+        {{ end }}
+        <img
+          class="leaderboard-page__image"
+          src="{{ $img.RelPermalink }}"
+          alt=""
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}"
+          fetchpriority="high"
+          decoding="async"
+        >
+      {{ end }}
+    </div>
+
+    <div class="leaderboard-page__overlay">
+      {{ partial "ascent/ascent-tabs.html" (dict "active" "basecamp") }}
+
+      <header class="leaderboard-page__intro">
+        <h1 class="leaderboard-page__title" id="leaderboard-hero-heading">
+          {{- $before := .Params.hero.titleBefore | default "Community" -}}
+          {{- $accent := .Params.hero.titleAccent | default "Leaderboard" -}}
+          {{- if $before -}}{{ $before }}{{ end -}}
+          {{- if and $before $accent }} {{ end -}}
+          {{- if $accent -}}<span class="leaderboard-page__title-accent">{{ $accent }}</span>{{ end -}}
+        </h1>
+        <p class="leaderboard-page__subtitle">{{ .Params.hero_description | default .Description }}</p>
+      </header>
+    </div>
+  </div>
+
+  <div class="content-page-shell leaderboard-page__content">
+    <div id="lb-widget">
+      <div class="lb-loading" role="status">
+        <div class="lb-loading__spinner" aria-hidden="true"></div>
+        <p class="lb-loading__text">Checking the expedition logs…</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.LB_BASE = 'https://raw.githubusercontent.com/percona/community-leaderboard/widget';
+</script>
+<script type="module" src="/js/lb-widget.js?v={{ now.Unix }}"></script>
+{{ end }}

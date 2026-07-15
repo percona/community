@@ -1,7 +1,12 @@
 {{ define "css" -}}
-  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
 {{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+{{ end }}
 
 {{ define "mainwrapper" }}
 {{ $pages := sort .Pages "Title" "asc" }}

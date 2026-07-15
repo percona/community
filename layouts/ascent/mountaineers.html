@@ -1,0 +1,30 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+{{ end }}
+
+{{ define "mainwrapper" }}
+<div class="ascent-page mountaineers-page">
+  <div class="ascent-page__shell">
+    <p class="ascent-page__back">
+      <a href="{{ (.GetPage "/ascent").RelPermalink }}">&larr; Community Ascent</a>
+    </p>
+
+    <article class="ascent-page__content">
+      <header class="ascent-page__header">
+        <h1 class="ascent-page__title">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="ascent-page__lead">{{ . }}</p>
+        {{ end }}
+      </header>
+
+      <div class="ascent-page__prose">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+</div>
+{{ end }}

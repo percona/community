@@ -12,9 +12,6 @@ nav:
       - id: authors
         label: Authors
         url: /contributor_type/author/
-  - id: contributors
-    label: Contributors
-    url: /contributors/
   - id: forums
     label: Community Forums
     url: https://forums.percona.com/

@@ -20,8 +20,6 @@
     {{ $activeTab = "blogs" }}
   {{ else if and (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
     {{ $activeTab = "blogs" }}
-  {{ else if eq $page.Section "contributors" }}
-    {{ $activeTab = "contributors" }}
   {{ end }}
 {{ end }}
 

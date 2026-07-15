@@ -1,0 +1,205 @@
+/* Hall of Fame — inductee cards (hero uses shared Ascent / leaderboard styles) */
+.hof-page {
+  --hof-shell-max: 1200px;
+  --hof-shell-pad: clamp(1rem, 4.44vw, 64px);
+  --hof-card-radius: 4px;
+  --hof-purple: #653DF4;
+  --hof-black: #282727;
+}
+
+.hof-page__content {
+  width: 100%;
+  max-width: var(--hof-shell-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--hof-shell-pad);
+  padding-right: var(--hof-shell-pad);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+}
+
+/* Hero — same compact stack as Maintainers (no overlap, no filters) */
+.hof-page .community-ascent-tabs {
+  padding-top: 0;
+  flex-shrink: 0;
+}
+
+.hof-page .community-ascent-tabs__bar {
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hof-page .leaderboard-page__hero.hof-hero {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 0;
+  color: #fff;
+}
+
+.hof-page .hof-hero__band {
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(240px, 28vw, 360px);
+}
+
+.hof-page .hof-hero__band .leaderboard-page__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  grid-area: auto;
+}
+
+.hof-page .hof-hero__intro {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--lb-shell-max, 1200px);
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hof-page .leaderboard-page__title {
+  font-size: clamp(1.75rem, 3.6vw, 3.25rem);
+}
+
+.hof-page .leaderboard-page__title-accent {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hof-page .hof-hero__band {
+    min-height: 0;
+  }
+
+  .hof-page .hof-hero__band .leaderboard-page__image {
+    object-position: center 42%;
+  }
+
+  .hof-page .hof-hero__intro {
+    text-align: left;
+    padding-bottom: 1.25rem;
+  }
+
+  .hof-page .leaderboard-page__title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    line-height: 1.08;
+  }
+}
+
+.hof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.hof-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  background: transparent;
+}
+
+.hof-card__media {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: var(--hof-card-radius);
+  background: var(--hof-black);
+}
+
+.hof-card__media::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.hof-card__photo-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--hof-card-radius);
+}
+
+.hof-card__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hof-card__triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 92px;
+  height: 158px;
+  pointer-events: none;
+}
+
+.hof-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  padding: 14px 16px 12px;
+  background: #fff;
+  border-radius: var(--hof-card-radius);
+  border-bottom: 4px solid var(--hof-purple);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.hof-card__body h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--hof-black);
+}
+
+.hof-card__body p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.hof-card__body a {
+  color: var(--hof-purple);
+}
+
+.hof-card__body a:hover {
+  text-decoration: underline;
+}
+
+.inductees .hof-grid + .hof-grid,
+.inductees .hof-grid {
+  margin-bottom: 0;
+}
+
+.inductees h2 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .hof-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hof-card__triangle {
+    width: 72px;
+    height: 124px;
+  }
+}

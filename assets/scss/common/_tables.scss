@@ -1,5 +1,5 @@
 
-table {
+table:not(.lb-table) {
   display: table;
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -10,37 +10,37 @@ table {
   table-layout: auto;
 }
 
-table caption {
+table:not(.lb-table) caption {
   font-size: 1.5em;
   margin: .5em 0 .75em;
 }
 
-table tr {
+table:not(.lb-table) tr {
   background-color: #f8f8f8;
 }
 
-table th,
-table td {
+table:not(.lb-table) th,
+table:not(.lb-table) td {
   font-size: 0.75rem;
   padding: .625em;
   text-align: left;
 }
 
-table th {
+table:not(.lb-table) th {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 600px) {
-  table:not(.landing-agenda-table) {
+  table:not(.landing-agenda-table):not(.lb-table) {
     border: 0;
   }
 
-  table:not(.landing-agenda-table) caption {
+  table:not(.landing-agenda-table):not(.lb-table) caption {
     font-size: 1.3em;
   }
   
-  table:not(.landing-agenda-table) thead {
+  table:not(.landing-agenda-table):not(.lb-table) thead {
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -51,20 +51,20 @@ table th {
     width: 1px;
   }
   
-  table:not(.landing-agenda-table) tr {
+  table:not(.landing-agenda-table):not(.lb-table) tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
   }
   
-  table:not(.landing-agenda-table) td {
+  table:not(.landing-agenda-table):not(.lb-table) td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: 1em;
     text-align: left;
   }
   
-  table:not(.landing-agenda-table) td::before {
+  table:not(.landing-agenda-table):not(.lb-table) td::before {
     /*
     * aria-label has no advantage, it won't be read inside a table
     content: attr(aria-label);
@@ -75,7 +75,7 @@ table th {
     text-transform: uppercase;
   }
   
-  table:not(.landing-agenda-table) td:last-child {
+  table:not(.landing-agenda-table):not(.lb-table) td:last-child {
     border-bottom: 0;
   }
 }
