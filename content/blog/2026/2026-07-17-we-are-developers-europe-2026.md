@@ -83,8 +83,8 @@ Best talk title of the conference, courtesy of Jan Curn (Apify). The problem: mo
 
 ## The expo floor
 
-Between the talks, we've also hung up on Percona booth - yes, we've been there the entire two days and chatting with 100+ visitors about what we love the most - databases!
-
+Between the talks, we've also hung out at the Percona booth - yes, we've been there the entire two days and chatting with 100+ visitors about what we love the most - databases!
+ 
 ![Percona booth](/assets/blog/2026/07/perconabooth.jpeg "Percona Booth at WeAreDevelopers 2026")
 
 We've also visited our neighbours at the expo hall and had great conversations with them, too — but there was one that stood out:
