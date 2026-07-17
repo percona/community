@@ -54,7 +54,7 @@ If you want to try it yourself, the speaker shared [hands-on Colab notebooks](ht
 
 ## The security wake-up call: surviving the "Vulnpocalypse"
 
-Adrian Mouat (Chainguard) delivered the talk that stuck with us the most. Advanced AI models can now autonomously discover and weaponize zero-day vulnerabilities at machine speed — effectively **erasing the traditional patch window**. Especially with the rise of [Anthrophic Mythos](https://www.anthropic.com/claude/mythos) model, this might lead to Vulnpocalypse!
+Adrian Mouat (Chainguard) delivered the talk that stuck with us the most. Advanced AI models can now autonomously discover and weaponize zero-day vulnerabilities at machine speed — effectively **erasing the traditional patch window**. Especially with the rise of [Anthropic Mythos](https://www.anthropic.com/claude/mythos) model, this might lead to Vulnpocalypse!
 
 This is very serious for open source: attackers can point LLMs at public codebases, while underfunded maintainers face an overwhelming volume of newly discovered bugs. As people who live and breathe open source databases, this hits close to home.
 
