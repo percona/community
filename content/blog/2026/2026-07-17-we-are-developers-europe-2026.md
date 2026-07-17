@@ -13,6 +13,7 @@ slug: wearedevelopers-2026
 
 On July 9–10, the two of us - **Sandra** (Engineering, Percona for MongoDB) and **Radek** (Product, Percona for MongoDB) - packed our backpacks and headed to Berlin for the [WeAreDevelopers World Congress Europe 2026](https://www.wearedevelopers.com/world-congress) (WAD). The 11th edition of the congress gathered **15,000 developers and 500+ speakers** for two intense days, and we came back with full notebooks, fresh ideas, and one very clear message from the industry.
 
+![Sandra and Radek at WeAreDevelopers](/assets/blog/2026/07/wearedevelopers.jpeg "Sandra and Radek in front of Berlin Messe hosting WeAreDevelopers Europe 2026.")
 At Percona, we genuinely love getting out of our daily routine to learn what's new. Stepping away from the roadmap for two days is a fantastic reset: you zoom out, see where the whole industry is heading, and build what Sandra calls a *mental index* - concepts that might not solve today's ticket, but will absolutely pay off six months from now. This post is our attempt to share that index with you, with links so you can dig deeper into whatever catches your eye.
 
 Spoiler: if you played buzzword bingo with "agentic AI," you'd have won in the first hour. 
