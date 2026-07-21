@@ -58,6 +58,6 @@ Optional, if you want your contributions linked up:
 - **Mastodon**
 - **Bluesky**
 
-**[Join Mountaineers](https://forums.percona.com/signup)** — it takes two minutes, and your existing GitHub and forum activity starts counting right away.
+**[Join Mountaineers](https://docs.google.com/forms/d/e/1FAIpQLSeH_ube0G4TLMP_2Kh5oa1OSSNEaUExiIp1E6qzfUzg9dDD9Q/viewform)** — it takes two minutes, and your existing GitHub and forum activity starts counting right away.
 
 If you'd rather tell us what you think directly, **[book time with our engineering team](/contribute/contact/)** or **[pitch a post for the blog](/blog/2022/02/10/how-to-publish-blog-post/)**.
