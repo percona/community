@@ -14,7 +14,11 @@ slug: wearedevelopers-2026
 On July 9–10, the two of us - **Sandra** (Engineering, Percona for MongoDB) and **Radek** (Product, Percona for MongoDB) - packed our backpacks and headed to Berlin for the [WeAreDevelopers World Congress Europe 2026](https://www.wearedevelopers.com/world-congress) (WAD). The 11th edition of the congress gathered **15,000 developers and 500+ speakers** for two intense days, and we came back with full notebooks, fresh ideas, and one very clear message from the industry.
 
 ![Sandra and Radek at WeAreDevelopers](/assets/blog/2026/07/wearedevelopers.jpeg "Sandra and Radek in front of Berlin Messe hosting WeAreDevelopers Europe 2026.")
-At Percona, we genuinely love getting out of our daily routine to learn what's new. Stepping away from the roadmap for two days is a fantastic reset: you zoom out, see where the whole industry is heading, and build what Sandra calls a *mental index* - concepts that might not solve today's ticket, but will absolutely pay off six months from now. This post is our attempt to share that index with you, with links so you can dig deeper into whatever catches your eye.
+
+![WeAreDevelopers World Congress 2026 impressions](/assets/blog/2026/07/wearedevelopers-expo.png "From the keynote stage to the expo floor at WeAreDevelopers World Congress Europe 2026 in Berlin.")
+At Percona, we genuinely love getting out of our daily routine to learn what's new. It is incredibly refreshing to escape the daily grind of sprints and stand-ups just to listen and absorb. Hearing how other teams are tackling scale and complexity reminds us that we are all solving different flavors of the same core problems. These events act as a catalyst for innovation, sparking conversations that inevitably push our own boundaries. Ultimately, taking a couple of days to zoom out and see where the industry is heading helps us build what Sandra calls a *mental index* - concepts that might not solve today's ticket, but will absolutely pay off six months from now.
+
+While we took notes across a huge variety of topics, one common thread stood out above the rest. This post is our attempt to share that index with you, with links so you can dig deeper into whatever catches your eye.
 
 Spoiler: if you played buzzword bingo with "agentic AI," you'd have won in the first hour. 
 
@@ -45,11 +49,15 @@ One practical problem he highlighted: when you code with agents, context fragmen
 
 ## Retrieval is the weakest link in your RAG
 
-One of our favorite technical talks, by Tomek Porozynski (deepsense.ai), tackled the "R" in RAG (Retrieval Augmented Generation). General embedding models are trained on public data - they know general language, **not your business**. The fix: fine-tune the embedding model on examples from your own domain, so the vector space itself shifts to reflect your terminology and the real relationships between your terms.
+One of our favorite technical talks, by Tomek Porozynski (deepsense.ai), tackled the "R" in RAG (Retrieval Augmented Generation). General embedding models are trained on public data - they know general language, **not your business**.
+
+Basic retrieval falls short: keyword search misses semantic context, and vector search misses exact terms, multi-step logic, document-wide context, and internal jargon. There's no single fix - you pick the right tool for the job.
+
+![How to fix your RAG](/assets/blog/2026/07/rag-fixes.png "Matching each retrieval challenge to a potential fix.")
+
+For domain-specific knowledge, the fix is to fine-tune the embedding model on your own domain, so the vector space itself shifts to reflect your terminology and the real relationships between your terms.
 
 The mechanics are surprisingly approachable: reshape the vector space through relative distances (pull matching pairs closer, push mismatched pairs apart), using either **triplet loss** or **MultipleNegativesRankingLoss** - and with the [Sentence Transformers](https://sbert.net/) toolkit, the latter is literally one import away.
-
-![RAG Cheat sheet](/assets/blog/2026/07/rag.jpeg "Your RAG cheat sheet")
 
 If you want to try it yourself, the speaker shared [hands-on Colab notebooks](https://github.com/ontaptom/workshops/tree/main/notebooks).
 
