@@ -86,7 +86,7 @@ Best talk title of the conference, courtesy of Jan Curn (Apify). The problem: mo
 
 - **From SDLC to ADLC.** Marcin Wawryszczuk (Andersen) argued that AI speeds up *coding* but not the *release cycle* - the industry needs an Agentic Delivery Lifecycle where agents help with requirements, architecture, docs, and pipelines, while engineers keep authority over architecture, governance, and validation. 
 - **Don't lock in your AI tooling too early.** Angie Jones shared how Block bought access to many tools and let engineers run with them - what works for a web developer doesn't work for a mobile or JVM developer, and that diversity of feedback is gold. Standardize when you see workflows succeeding repeatedly, not because a vendor made a good pitch.
-- **LLMs in the wild.** GetYourGuide's data scientist and MLOps engineer walked through keeping an AI-driven recommendation system alive in production. Real numbers, real trade-offs. 
+- **LLMs in the wild.** GetYourGuide's data scientist Giampaolo Casolla and MLOps engineer Steven Mi walked through keeping an AI-driven recommendation system alive in production. Real numbers, real trade-offs. 
 - **Platform-as-a-Product.** Dominik Schmidle (Giant Swarm) on why internal platforms fail: happy users won't save your platform if the C-level sees it as pure cost. Know your user *and* your decision-maker - and do internal marketing.
 - **Werner Vogels (CTO, Amazon) fireside chat.** Invisible work is important and worth sharing. Stay curious, never stop learning - and he recommended the book [*Ask Your Developer*](https://www.amazon.de/Ask-Your-Developer-Software-Developers/dp/0063018292) by Jeff Lawson.
 
