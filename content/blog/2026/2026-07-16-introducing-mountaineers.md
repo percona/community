@@ -43,6 +43,8 @@ The people who consistently show up across the board get invited to take part in
 
 If you've filed one bug report with clear reproduction steps, answered one forum question, or have an opinion about a tool you use that you've never told us — you already have something to bring. We built Mountaineers to recognize the full range of ways people show up, not just the most visible ones.
 
-**[Sign up for Mountaineers](https://forums.percona.com/signup)** and your GitHub and forum activity start counting from day one.
+**[Join Mountaineers](https://docs.google.com/forms/d/e/1FAIpQLSeH_ube0G4TLMP_2Kh5oa1OSSNEaUExiIp1E6qzfUzg9dDD9Q/viewform)** - a two-minute form. Give us your name, email, role, database of choice, forum username, and where you're based, and your existing GitHub and forum activity starts counting from that point on.
+
+Your forum account is still where you post and answer questions — this form is what gets you on the leaderboard and matches that activity to you. Don't have a forum account yet? [Sign up here first](https://forums.percona.com/signup), then come back and add your username.
 
 Want the full detail on points, rungs, and rewards? Read the [Mountaineers program page](https://percona.community/ascent/mountaineers/).
