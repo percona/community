@@ -3,7 +3,7 @@ name: radoslaw_szulgo
 name_pronunciation: radoslaw_szulgo
 fullname: Radoslaw Szulgo
 fullname_pronounciation: Radoslaw Szulgo
-tagline: null
+tagline: Senior Product Manager, Percona
 social:
   facebook: null
   github: null
@@ -50,4 +50,4 @@ contributor_year:
 - '2026'
 - '2025'
 ---
-Senior Product Manager at Percona
+Radoslaw is a Senior Product Manager at Percona and is responsible for driving Percona Software for MongoDB. He has more than 15 years of experience in building distributed applications as a product manager, leader, and software engineer. Radek is an Agile product development enthusiast and a fan of personal development. Outside of work, he's an amateur handball and volleyball player.
