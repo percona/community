@@ -13,9 +13,9 @@ slug: wearedevelopers-2026
 
 On July 9–10, the two of us - **Sandra** (Engineering, Percona for MongoDB) and **Radek** (Product, Percona for MongoDB) - packed our backpacks and headed to Berlin for the [WeAreDevelopers World Congress Europe 2026](https://www.wearedevelopers.com/world-congress) (WAD). The 11th edition of the congress gathered **15,000 developers and 500+ speakers** for two intense days, and we came back with full notebooks, fresh ideas, and one very clear message from the industry.
 
-![Sandra and Radek at WeAreDevelopers](/assets/blog/2026/07/wearedevelopers.jpeg "Sandra and Radek in front of Berlin Messe hosting WeAreDevelopers Europe 2026.")
+![Sandra and Radek at WeAreDevelopers](blog/2026/07/wearedevelopers.jpeg "Sandra and Radek in front of Berlin Messe hosting WeAreDevelopers Europe 2026.")
 
-![WeAreDevelopers World Congress 2026 impressions](/assets/blog/2026/07/wearedevelopers-expo.png "From the keynote stage to the expo floor at WeAreDevelopers World Congress Europe 2026 in Berlin.")
+![WeAreDevelopers World Congress 2026 impressions](blog/2026/07/wearedevelopers-expo.png "From the keynote stage to the expo floor at WeAreDevelopers World Congress Europe 2026 in Berlin.")
 At Percona, we genuinely love getting out of our daily routine to learn what's new. It is incredibly refreshing to escape the daily grind of sprints and stand-ups just to listen and absorb. Hearing how other teams are tackling scale and complexity reminds us that we are all solving different flavors of the same core problems. These events act as a catalyst for innovation, sparking conversations that inevitably push our own boundaries. Ultimately, taking a couple of days to zoom out and see where the industry is heading helps us build what Sandra calls a *mental index* - concepts that might not solve today's ticket, but will absolutely pay off six months from now.
 
 While we took notes across a huge variety of topics, one common thread stood out above the rest. This post is our attempt to share that index with you, with links so you can dig deeper into whatever catches your eye.
@@ -40,8 +40,8 @@ Thomas Dohmke (CEO of Entire, previously CEO of GitHub) opened with a demo-fille
 - **20%+ of AI-generated changes are accepted without human review.** (Brave? Terrifying? Discuss.)
 - Some products - Codex, notably - are now written *only* by AI.
 
-![GitHub Stats](/assets/blog/2026/07/githubstats.png "GitHub statistics")
-![Claude Code Stats](/assets/blog/2026/07/claudecodestats.png "Claude Code statistics")
+![GitHub Stats](blog/2026/07/githubstats.png "GitHub statistics")
+![Claude Code Stats](blog/2026/07/claudecodestats.png "Claude Code statistics")
 
 His conclusion: **the Software Development Lifecycle as we know it is dead.** The DevOps loop is evolving into what he called ["The Ralph Loop"](https://medium.com/@tentenco/what-is-ralph-loop-a-new-era-of-autonomous-coding-96a4bb3e2ac8) - a much faster path from code to production, with developers acting as verifiers, because agents still fail often. The winning team, in his view, is the one whose agents understand the company's mission, values, and purpose.
 
@@ -53,7 +53,7 @@ One of our favorite technical talks, by Tomek Porozynski (deepsense.ai), tackled
 
 Basic retrieval falls short: keyword search misses semantic context, and vector search misses exact terms, multi-step logic, document-wide context, and internal jargon. There's no single fix - you pick the right tool for the job.
 
-![How to fix your RAG](/assets/blog/2026/07/rag-fixes.png "Matching each retrieval challenge to a potential fix.")
+![How to fix your RAG](blog/2026/07/rag-fixes.png "Matching each retrieval challenge to a potential fix.")
 
 For domain-specific knowledge, the fix is to fine-tune the embedding model on your own domain, so the vector space itself shifts to reflect your terminology and the real relationships between your terms.
 
@@ -94,7 +94,7 @@ Best talk title of the conference, courtesy of Jan Curn (Apify). The problem: mo
 
 Between the talks, we've also hung out at the Percona booth - yes, we've been there the entire two days and chatting with 100+ visitors about what we love the most - databases!
  
-![Percona booth](/assets/blog/2026/07/perconabooth.jpeg "Percona Booth at WeAreDevelopers 2026")
+![Percona booth](blog/2026/07/perconabooth.jpeg "Percona Booth at WeAreDevelopers 2026")
 
 We've also visited our neighbours at the expo hall and had great conversations with them, too - but there was one that stood out:
 
