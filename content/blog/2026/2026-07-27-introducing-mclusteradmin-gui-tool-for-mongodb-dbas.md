@@ -7,6 +7,9 @@ authors:
   - przemek_malkowski
 images:
   - blog/2026/07/mclusteradmin.jpg
+slug: introducing-mclusteradmin-a-lightweight-gui-tool-for-mongodb-dba
+aliases:
+  - /blog/2026/07/27/introducing-mclusteradmin-a-lightweight-gui-tool-for-mongodb-dbas
 ---
  
  
