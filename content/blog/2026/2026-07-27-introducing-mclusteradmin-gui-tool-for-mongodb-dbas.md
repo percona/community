@@ -6,7 +6,7 @@ categories: ['MongoDB']
 authors:
   - przemek_malkowski
 images:
-  - blog/2026/07/mclusteradmin.png
+  - blog/2026/07/mclusteradmin.jpg
 ---
  
  
@@ -18,7 +18,7 @@ So, why not have a nice graphical interface to visualize replica sets, sharding 
 
 So, encouraged to experiment with vibe coding in Percona, I decided to experiment with filling this gap myself and started a small personal project: a lightweight **DBA-oriented** GUI interface called **MClusterAdmin**.
 
-![MClusterAdmin](blog/2026/07/mclusteradmin.png)
+![MClusterAdmin](blog/2026/07/mclusteradmin-picture.jpg)
 
 ### Project description
 
