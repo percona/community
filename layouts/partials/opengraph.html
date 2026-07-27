@@ -12,7 +12,7 @@
     {{ range after 1 (first 6 .) -}}
         {{- $imgPath := strings.TrimPrefix "/" . -}}
         {{- with resources.Get $imgPath -}}
-        <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").RelPermalink }}" />
+        <meta name="image" property="og:image" content="{{ (.Resize "1200x jpg 90%").Permalink }}" />
         {{- end }}
     {{ end }}
 {{ end }}

@@ -17,7 +17,7 @@
 
 {{- with index $page.Params.images 0 -}}
   {{- with resources.Get (strings.TrimPrefix "/" .) -}}
-    {{- $url = (.Resize "1200x jpg 90%").RelPermalink -}}
+    {{- $url = (.Resize "1200x jpg 90%").Permalink -}}
   {{- end -}}
 {{- end -}}
 
@@ -32,13 +32,13 @@
   {{- $featured := $images.GetMatch "*feature*" -}}
   {{- if not $featured -}}{{- $featured = $images.GetMatch "{*cover*,*thumbnail*}" -}}{{- end -}}
   {{- with $featured -}}
-    {{- $url = .RelPermalink -}}
+    {{- $url = .Permalink -}}
   {{- end -}}
 {{- end -}}
 
 {{- if not $url -}}
   {{- with partial "page-cover-resource.html" $page -}}
-    {{- $url = (.Resize "1200x jpg 90%").RelPermalink -}}
+    {{- $url = (.Resize "1200x jpg 90%").Permalink -}}
   {{- end -}}
 {{- end -}}
 
