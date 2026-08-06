@@ -1,5 +1,5 @@
 {{/*
-  Authors list shell — Knowledge Base hero + blog tabs, no Events sidebar.
+  Authors list shell — Knowledge Base / blog-style horizontal tabs.
 */}}
 {{ $page := .page }}
 {{ $paginator := .paginator }}
@@ -15,14 +15,13 @@
     "subtitle" ($copy.description | plainify)
   ) }}
 
-  {{ if eq $variant "hub" }}
-    {{ partial "knowledge-base/tabs-nav.html" (dict
-      "page" $page
-      "activeTab" "blogs"
-      "activeSubTab" "authors"
-      "expandBlogTabs" true
-    ) }}
-  {{ end }}
+  {{/* Same tab strip as /blog/ — Posts / Authors expanded under Community Blogs. */}}
+  {{ partial "knowledge-base/tabs-nav.html" (dict
+    "page" $page
+    "activeTab" "blogs"
+    "activeSubTab" "authors"
+    "expandBlogTabs" true
+  ) }}
 
   <div class="blog-hub__layout">
     <div class="blog-hub__main">

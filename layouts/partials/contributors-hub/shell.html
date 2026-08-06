@@ -1,6 +1,10 @@
 {{/*
   Shared contributors hub page shell — hero, sidebar, footer.
   Used by /contributors/ hub and contributor taxonomy filter pages.
+
+  Params:
+    variant   — "hub" (Maintainers / ascent tabs) or "filtered"
+    activeNav — "speakers" enables Events & Learning left sidebar
 */}}
 {{ if eq .variant "hub" }}
 <div class="leaderboard-page contributors-maintainers-page">
@@ -11,19 +15,20 @@
   </div>
 </div>
 {{ else }}
+{{ $useSidebar := eq .activeNav "speakers" }}
 <div class="hub-page events-learning contributors-hub">
   {{ partial "contributors-hub/hero.html" . }}
 
-  <div class="events-learning__layout events-learning__layout--full">
+  <div class="events-learning__layout{{ if not $useSidebar }} events-learning__layout--full{{ end }}">
+    {{ if $useSidebar }}
+      {{ partial "hub/sidebar.html" . }}
+    {{ end }}
+
     <div class="events-learning__main">
-      {{ if eq .variant "filtered" }}
+      {{ if and (eq .variant "filtered") (not $useSidebar) }}
         {{ $page := .page }}
         {{ $backHref := (site.GetPage "/contributors").RelPermalink }}
         {{ $backLabel := "Back to Maintainers" }}
-        {{ if and (eq $page.Type "contributor_type") (eq $page.Data.Term "speaker") }}
-          {{ $backHref = (site.GetPage "/events").RelPermalink }}
-          {{ $backLabel = "Back to Events" }}
-        {{ end }}
         {{ partial "contributors-hub/back-tab.html" (dict "href" $backHref "label" $backLabel) }}
       {{ end }}
       {{ partial "contributors-hub/list.html" . }}
