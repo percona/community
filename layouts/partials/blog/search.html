@@ -26,23 +26,23 @@
   {{ $searchIndex = $searchIndex | append (dict "html" $html "searchText" $searchText) }}
 {{ end }}
 
-<script type="application/json" id="blog-posts-data">{{ $searchIndex | jsonify | safeJS }}</script>
+{{/* Content-hashed JSON — one file per unique index (shared across pagination). */}}
+{{ $indexJSON := $searchIndex | jsonify }}
+{{ $indexPath := printf "json/blog-posts-search-%s.json" (md5 $indexJSON) }}
+{{ $indexFile := resources.FromString $indexPath $indexJSON }}
+
 <script>
   window.addEventListener("DOMContentLoaded", function () {
-    const searchDataEl = document.getElementById("blog-posts-data");
     const searchInputs = document.querySelectorAll("[data-blog-search-input]");
     const postList = document.getElementById("blog-post-list");
     const paginator = document.getElementById("blog-paginator");
     const statusEls = document.querySelectorAll("[data-blog-search-status]");
 
-    if (!searchDataEl || !searchInputs.length || !postList) return;
+    if (!searchInputs.length || !postList) return;
 
     let postsData = [];
-    try {
-      postsData = JSON.parse(searchDataEl.textContent);
-    } catch {
-      return;
-    }
+    let indexLoaded = false;
+    let indexPromise = null;
 
     const defaultListMarkup = postList.innerHTML;
 
@@ -50,6 +50,27 @@
       statusEls.forEach(function (el) {
         el.textContent = text;
       });
+    };
+
+    const loadIndex = function () {
+      if (indexLoaded) return Promise.resolve(postsData);
+      if (indexPromise) return indexPromise;
+      indexPromise = fetch({{ $indexFile.RelPermalink | jsonify }})
+        .then(function (res) {
+          if (!res.ok) throw new Error("Failed to load blog search index");
+          return res.json();
+        })
+        .then(function (data) {
+          postsData = data;
+          indexLoaded = true;
+          return postsData;
+        })
+        .catch(function () {
+          indexPromise = null;
+          setStatus("Search unavailable");
+          return [];
+        });
+      return indexPromise;
     };
 
     const renderMatches = (matches) => {
@@ -92,7 +113,8 @@
     };
 
     const handleSearch = function (event) {
-      const tokens = parseQueryTokens(event.target.value.trim());
+      const rawValue = event.target.value.trim();
+      const tokens = parseQueryTokens(rawValue);
 
       searchInputs.forEach(function (input) {
         if (input !== event.target) {
@@ -106,16 +128,20 @@
       }
 
       if (paginator) paginator.classList.add("is-hidden");
+      setStatus("Searching…");
 
-      const matches = postsData.filter(function (post) {
-        return tokens.some(function (token) { return post.searchText.includes(token); });
+      loadIndex().then(function (data) {
+        const matches = data.filter(function (post) {
+          return tokens.some(function (token) { return post.searchText.includes(token); });
+        });
+        renderMatches(matches);
       });
-
-      renderMatches(matches);
     };
 
     searchInputs.forEach(function (input) {
       input.addEventListener("input", handleSearch);
+      // Prefetch index on first focus so search feels instant.
+      input.addEventListener("focus", function () { loadIndex(); }, { once: true });
     });
   });
 </script>
