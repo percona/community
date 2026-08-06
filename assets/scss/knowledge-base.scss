@@ -335,7 +335,8 @@ body.is-knowledge-base main.page {
     padding: 0;
     color: $brand-black;
     font-family: $font-poppins;
-    font-size: 0.9375rem;
+    // Match Community Ascent Basecamp tabs (--ascent-tabs-link-size: 15px)
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.2;
     white-space: nowrap;
@@ -423,6 +424,8 @@ body.is-knowledge-base main.page {
     a.kb-tabs__link {
       min-height: 72px;
       padding: 0 1.125rem;
+      // Match Ascent mobile tabs (--ascent-tabs-link-size-mobile: 13px)
+      font-size: 13px;
     }
 
     &__item:first-child a.kb-tabs__link {

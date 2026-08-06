@@ -869,9 +869,10 @@ a.home-ascent__cta {
 @import "common/el-newsletter-figma";
 
 .home-newsletter {
-  background: $brand-black;
+  // White band so the dark card floats above the footer (same as events-learning).
+  background: $brand-white;
   width: 100%;
-  padding: 4rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 0;
+  padding: 4rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 4rem;
   box-sizing: border-box;
 
   .el-newsletter-figma {

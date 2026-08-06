@@ -1,12 +1,17 @@
 {{/*
   Community Ascent section navigation.
-  Param: active — "basecamp" | "hall-of-fame" | "maintainers" | "summit"
+  Param: active — "overview" | "basecamp" | "hall-of-fame" | "maintainers" | "summit"
 */}}
 {{ $active := .active | default "" }}
 <nav class="community-ascent-tabs" aria-label="Community Ascent">
   <div class="community-ascent-tabs__shell">
     <div class="community-ascent-tabs__bar">
       <ul class="community-ascent-tabs__list">
+        <li class="community-ascent-tabs__item">
+          <a href="/ascent/"
+             class="community-ascent-tabs__link{{ if eq $active "overview" }} community-ascent-tabs__link--active{{ end }}"
+             {{ if eq $active "overview" }}aria-current="page"{{ end }}>Overview</a>
+        </li>
         <li class="community-ascent-tabs__item">
           <a href="/ascent/leaderboard/"
              class="community-ascent-tabs__link{{ if eq $active "basecamp" }} community-ascent-tabs__link--active{{ end }}"

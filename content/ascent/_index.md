@@ -1,6 +1,11 @@
 ---
 title: Community Ascent
 description: "Recognizing contributors across Percona's open source community — from basecamp to the summit."
+hero_image: hub/heroes/community-ascent.webp
+hero_description: "Recognizing contributors across Percona's open source community — from basecamp to the summit."
+hero:
+  titleBefore: "Community"
+  titleAccent: "Ascent"
 images:
   - hub/covers/community-ascent-cover.jpg
 ---

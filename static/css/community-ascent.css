@@ -4,7 +4,7 @@
   --ascent-purple: #653DF4;
   --ascent-tabs-bg: #fbfaf8;
   --ascent-tabs-height: 95px;
-  --ascent-tabs-width: 900px;
+  --ascent-tabs-width: 1100px;
   --ascent-tabs-pad-x: clamp(16px, 4.44vw, 64px);
   --ascent-tabs-link-size: 15px;
   --ascent-tabs-link-size-mobile: 13px;
@@ -231,7 +231,11 @@ a.community-ascent-tabs__link--active::after {
   }
 }
 
-/* ---- Ascent index (/ascent/) ---- */
+/* ---- Ascent index (/ascent/) — body below shared hero ---- */
+.ascent-overview-page .ascent-index {
+  padding-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
 .ascent-index {
   --ascent-index-max: 1200px;
   --ascent-index-pad: clamp(1rem, 4.44vw, 64px);

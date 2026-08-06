@@ -4,27 +4,59 @@
 
 {{ define "head" }}
 <link rel="stylesheet" href="/css/community-ascent.css?v={{ now.Unix }}">
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
 {{ end }}
 
 {{ define "mainwrapper" }}
-<div class="ascent-index">
-  <header class="ascent-index__header">
-    <h1 class="ascent-index__title">{{ .Title }}</h1>
-    {{ with .Description }}
-      <p class="ascent-index__lead">{{ . }}</p>
-    {{ end }}
-  </header>
-
-  {{ if .Content }}
-    <div class="ascent-index__prose">
-      {{ .Content }}
+<div class="leaderboard-page ascent-overview-page">
+  <div class="leaderboard-page__hero">
+    <div class="leaderboard-page__backdrop" aria-hidden="true">
+      {{ $src := .Params.hero_image | default "hub/heroes/community-ascent.webp" }}
+      {{ with resources.Get $src }}
+        {{ $img := . }}
+        {{ if gt $img.Width 1600 }}
+          {{ $img = .Resize "1600x q85 webp" }}
+        {{ end }}
+        <img
+          class="leaderboard-page__image"
+          src="{{ $img.RelPermalink }}"
+          alt=""
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}"
+          fetchpriority="high"
+          decoding="async"
+        >
+      {{ end }}
     </div>
-  {{ end }}
 
-  <div class="ascent-index__grid">
-    {{ range where .Pages.ByWeight "Params.hide_from_index" "!=" true }}
-      {{ partial "ascent/index-card.html" . }}
+    <div class="leaderboard-page__overlay">
+      {{ partial "ascent/ascent-tabs.html" (dict "active" "overview") }}
+
+      <header class="leaderboard-page__intro">
+        <h1 class="leaderboard-page__title" id="ascent-overview-heading">
+          {{- $before := .Params.hero.titleBefore | default "Community" -}}
+          {{- $accent := .Params.hero.titleAccent | default "Ascent" -}}
+          {{- if $before -}}{{ $before }}{{ end -}}
+          {{- if and $before $accent }} {{ end -}}
+          {{- if $accent -}}<span class="leaderboard-page__title-accent">{{ $accent }}</span>{{ end -}}
+        </h1>
+        <p class="leaderboard-page__subtitle">{{ .Params.hero_description | default .Description }}</p>
+      </header>
+    </div>
+  </div>
+
+  <div class="ascent-index">
+    {{ if .Content }}
+      <div class="ascent-index__prose">
+        {{ .Content }}
+      </div>
     {{ end }}
+
+    <div class="ascent-index__grid">
+      {{ range where .Pages.ByWeight "Params.hide_from_index" "!=" true }}
+        {{ partial "ascent/index-card.html" . }}
+      {{ end }}
+    </div>
   </div>
 </div>
 {{ end }}
