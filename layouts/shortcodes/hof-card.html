@@ -2,15 +2,29 @@
   Hall of Fame inductee card — mountaineer-style (photo on top, text below).
 
   Params:
-    img  — photo URL (required)
-    alt  — alt text (defaults to inner heading)
+    img  — photo path under assets/ or absolute URL (required)
+    alt  — alt text (defaults to empty)
 */}}
-{{ $img := .Get "img" }}
+{{ $imgParam := .Get "img" }}
 {{ $alt := .Get "alt" | default "" }}
+{{ $src := $imgParam }}
+
+{{ if and $imgParam (not (or (hasPrefix $imgParam "http://") (hasPrefix $imgParam "https://"))) }}
+  {{ with resources.Get (strings.TrimPrefix "/" $imgParam) }}
+    {{ $img := . }}
+    {{ if gt $img.Width 800 }}
+      {{ $img = .Resize "800x q85 webp" }}
+    {{ else }}
+      {{ $img = .Resize (printf "%dx q85 webp" $img.Width) }}
+    {{ end }}
+    {{ $src = $img.RelPermalink }}
+  {{ end }}
+{{ end }}
+
 <article class="hof-card">
   <div class="hof-card__media">
     <div class="hof-card__photo-wrap">
-      <img class="hof-card__photo" src="{{ $img }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+      <img class="hof-card__photo" src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
     </div>
     <svg class="hof-card__triangle" xmlns="http://www.w3.org/2000/svg" width="92" height="158" viewBox="0 0 70 121" fill="none" aria-hidden="true" focusable="false">
       <path d="M70 121L0 0L70 0L70 121Z" fill="#282727"/>

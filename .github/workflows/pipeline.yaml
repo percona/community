@@ -78,6 +78,50 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
 
+      - name: Shrink artifact for GitHub Pages 1GB limit
+        run: |
+          set -euo pipefail
+          # Drop unused full-size asset copies if any still got published (processed _hu_ siblings remain).
+          python3 - <<'PY'
+          from pathlib import Path
+          removed = 0
+          bytes_freed = 0
+          for p in Path("public").rglob("*"):
+              if not p.is_file():
+                  continue
+              if p.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}:
+                  continue
+              if "_hu_" in p.name:
+                  continue
+              if p.stat().st_size < 400_000:
+                  continue
+              stem = p.stem
+              siblings = list(p.parent.glob(f"{stem}_hu_*"))
+              if siblings:
+                  bytes_freed += p.stat().st_size
+                  p.unlink()
+                  removed += 1
+          print(f"removed {removed} full-size originals ({bytes_freed/1e6:.1f} MB)")
+          PY
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq jpegoptim optipng pngquant
+          find public -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -size +300k -print0 \
+            | xargs -0 -r jpegoptim --strip-all --max=75 --quiet || true
+          find public -type f -iname '*.png' -size +500k -print0 \
+            | xargs -0 -r pngquant --quality=65-85 --skip-if-larger --ext .png --force || true
+          find public -type f -iname '*.png' -size +500k -print0 \
+            | xargs -0 -r optipng -o2 -quiet || true
+          echo "Artifact size after shrink:"
+          du -sh public
+          python3 - <<'PY'
+          from pathlib import Path
+          total = sum(p.stat().st_size for p in Path("public").rglob("*") if p.is_file())
+          limit = 1024 ** 3
+          print(f"exact bytes={total} ({total/limit:.2%} of 1GiB limit)")
+          if total >= limit:
+              raise SystemExit(f"public/ still exceeds 1GiB ({total} >= {limit})")
+          PY
+
       - name: Save Hugo Cache
         id: cache-save
         uses: actions/cache/save@v4

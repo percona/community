@@ -41,28 +41,44 @@
   ) }}
 {{ end }}
 
-<script type="application/json" id="talks-hub-search-data">
-  {{- $searchIndex | jsonify | safeJS -}}
-</script>
+{{ $indexJSON := $searchIndex | jsonify }}
+{{ $indexPath := printf "json/talks-hub-search-%s.json" (md5 $indexJSON) }}
+{{ $indexFile := resources.FromString $indexPath $indexJSON }}
 
 <script>
   window.addEventListener("DOMContentLoaded", function () {
-    const searchDataEl = document.getElementById("talks-hub-search-data");
     const searchInput = document.getElementById("talks-hub-search");
     const list = document.getElementById("talks-hub-list");
     const paginator = document.getElementById("talks-hub-paginator");
     const statusEl = document.querySelector("[data-talks-search-status]");
 
-    if (!searchDataEl || !searchInput || !list) return;
+    if (!searchInput || !list) return;
 
     let data = [];
-    try {
-      data = JSON.parse(searchDataEl.textContent);
-    } catch {
-      return;
-    }
-
+    let indexLoaded = false;
+    let indexPromise = null;
     const defaultMarkup = list.innerHTML;
+
+    const loadIndex = function () {
+      if (indexLoaded) return Promise.resolve(data);
+      if (indexPromise) return indexPromise;
+      indexPromise = fetch({{ $indexFile.RelPermalink | jsonify }})
+        .then(function (res) {
+          if (!res.ok) throw new Error("Failed to load talks search index");
+          return res.json();
+        })
+        .then(function (json) {
+          data = json;
+          indexLoaded = true;
+          return data;
+        })
+        .catch(function () {
+          indexPromise = null;
+          if (statusEl) statusEl.textContent = "Search unavailable";
+          return [];
+        });
+      return indexPromise;
+    };
 
     const scoreItem = (item, tokens) => {
       let score = 0;
@@ -123,15 +139,20 @@
       }
 
       if (paginator) paginator.classList.add("is-hidden");
+      if (statusEl) statusEl.textContent = "Searching…";
 
-      const matches = data
-        .map(function (item) {
-          return Object.assign({}, item, { score: scoreItem(item, tokens) });
-        })
-        .filter(function (item) { return item.score > 0; })
-        .sort(function (a, b) { return b.score - a.score; });
+      loadIndex().then(function (items) {
+        const matches = items
+          .map(function (item) {
+            return Object.assign({}, item, { score: scoreItem(item, tokens) });
+          })
+          .filter(function (item) { return item.score > 0; })
+          .sort(function (a, b) { return b.score - a.score; });
 
-      renderMatches(matches);
+        renderMatches(matches);
+      });
     });
+
+    searchInput.addEventListener("focus", function () { loadIndex(); }, { once: true });
   });
 </script>

@@ -44,12 +44,16 @@
     {{- .Page.Scratch.Set "css" "" -}}
     {{- block "css" . -}}{{- end -}}
     {{- $cssContent := .Page.Scratch.Get "css" -}}
-    {{- if hugo.IsDevelopment -}}
+    {{- if $cssContent -}}
+      {{- if hugo.IsDevelopment -}}
     <style>{{ $cssContent | safeCSS }}</style>
-    {{- else -}}
-    {{- $cssPath := printf "%s%s.css" .RelPermalink (md5 $cssContent) -}}
-    {{- $css := $cssContent | resources.FromString $cssPath | resources.Minify -}}
-    <style>{{ $css.Content | safeCSS }}</style>
+      {{- else -}}
+        {{/* External stylesheet — content-hashed so identical bundles are shared once.
+             Inlining ~600KB CSS into every HTML page blew the GitHub Pages 1GB artifact limit. */}}
+        {{- $cssPath := printf "css/%s.css" (md5 $cssContent) -}}
+        {{- $css := $cssContent | resources.FromString $cssPath | resources.Minify -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+      {{- end -}}
     {{- end -}}
 
     {{ block "head" . }}{{ end }}
