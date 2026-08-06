@@ -145,7 +145,7 @@ h2 a, h2 a:visited {
 
     &__title {
       max-width: none;
-      font-family: $font-poppins;
+      font-family: $font-ardela;
       font-size: clamp(3.125rem, 11vw, 4rem);
       line-height: 1.02;
     }
@@ -691,7 +691,7 @@ h2 a, h2 a:visited {
   &__title {
     margin: 0 0 $home-ascent-text-cta-gap;
     color: $brand-yellow;
-    font-family: $font-poppins;
+    font-family: $font-ardela;
     font-size: $home-ascent-title-size;
     font-weight: 700;
     font-style: normal;
@@ -869,9 +869,10 @@ a.home-ascent__cta {
 @import "common/el-newsletter-figma";
 
 .home-newsletter {
-  background: $brand-black;
+  // White band so the dark card floats above the footer (same as events-learning).
+  background: $brand-white;
   width: 100%;
-  padding: 4rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 0;
+  padding: 4rem clamp(#{$padding-left-page}, 4.44vw, #{$layout-padding-x}) 4rem;
   box-sizing: border-box;
 
   .el-newsletter-figma {

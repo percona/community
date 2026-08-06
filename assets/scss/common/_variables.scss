@@ -1,7 +1,7 @@
 $font-sans: Helvetica,Arial,Lucida,sans-serif;
-$font-heading: Helvetica,Arial,Lucida,sans-serif;
 $font-serif: Helvetica,Arial,Lucida,sans-serif;
 $font-mono: "Lucida Console", Monaco, monospace;
+// Default heading stack; overridden to Ardela after $font-ardela is defined below.
 $font-heading: $font-serif;
 
 $padding-left-page: 1rem;
@@ -43,6 +43,10 @@ $brand-redis: #D6362A;
 $brand-valkey: #A83FEF;
 $paragraph-grey: #808080;
 $font-poppins: "Poppins", Helvetica, Arial, sans-serif;
+// Matches percona.com Breakdance kit: "Ardela Edge X01"
+$font-ardela: "Ardela Edge X01", $font-poppins;
+// Display headings + heroes — same face as percona.com
+$font-heading: $font-ardela;
 
 /*
  * Homepage layout widths — change here only:
