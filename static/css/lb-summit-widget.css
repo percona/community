@@ -87,6 +87,7 @@ main.page:has(.summit-page) {
 
 .summit-page__title {
   margin: 0 0 0.5rem;
+  font-family: "Ardela Edge X01", Poppins, sans-serif;
   font-size: clamp(2rem, 5.5vw, 3.75rem);
   font-weight: 700;
   line-height: 1.05;

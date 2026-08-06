@@ -254,6 +254,7 @@ a.community-ascent-tabs__link--active::after {
 
 .ascent-index__title {
   margin: 0 0 0.75rem;
+  font-family: "Ardela Edge X01", Poppins, sans-serif;
   font-size: clamp(2rem, 4.5vw, 3rem);
   font-weight: 700;
   line-height: 1.1;
@@ -453,6 +454,7 @@ a.ascent-index-card:focus-visible .ascent-index-card__image {
 
 .ascent-page__title {
   margin: 0 0 0.75rem;
+  font-family: "Ardela Edge X01", Poppins, sans-serif;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
   line-height: 1.15;
