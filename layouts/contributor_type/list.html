@@ -10,9 +10,8 @@
 {{- end }}
 
 {{ define "head" }}
-  {{ if ne .Data.Term "author" }}
+{{/* Author cards reuse lb-leader-* markup from speaker-card — needs lb-widget.css. */}}
 <link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
-  {{ end }}
 {{ end }}
 
 {{ define "mainwrapper" }}
