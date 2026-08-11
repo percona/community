@@ -1,7 +1,7 @@
 {{ $speakersTax := site.GetPage "/contributor_type/speaker" }}
 {{ $allSpeakers := slice }}
 {{ with $speakersTax }}
-  {{ $allSpeakers = sort .Pages ".Params.talks_count" "desc" }}
+  {{ $allSpeakers = sort .Pages ".Params.fullname" "asc" }}
 {{ end }}
 
 {{ $perPage := 6 }}

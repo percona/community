@@ -55,7 +55,7 @@
     const loadIndex = function () {
       if (indexLoaded) return Promise.resolve(postsData);
       if (indexPromise) return indexPromise;
-      indexPromise = fetch({{ $indexFile.RelPermalink | jsonify }})
+      indexPromise = fetch({{ $indexFile.RelPermalink | jsonify | safeJS }})
         .then(function (res) {
           if (!res.ok) throw new Error("Failed to load blog search index");
           return res.json();
