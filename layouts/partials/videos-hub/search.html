@@ -53,7 +53,7 @@
     const loadIndex = function () {
       if (indexLoaded) return Promise.resolve(data);
       if (indexPromise) return indexPromise;
-      indexPromise = fetch({{ $indexFile.RelPermalink | jsonify }})
+      indexPromise = fetch({{ $indexFile.RelPermalink | jsonify | safeJS }})
         .then(function (res) {
           if (!res.ok) throw new Error("Failed to load videos search index");
           return res.json();
