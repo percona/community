@@ -10,9 +10,8 @@
 {{- end }}
 
 {{ define "head" }}
-  {{ if ne .Data.Term "author" }}
+{{/* Author cards reuse lb-leader-* markup from speaker-card — needs lb-widget.css. */}}
 <link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
-  {{ end }}
 {{ end }}
 
 {{ define "mainwrapper" }}
@@ -24,7 +23,7 @@
 {{ if eq .Data.Term "author" }}
   {{ $pages = sort $pages ".Params.posts_count" "desc" }}
 {{ else if eq .Data.Term "speaker" }}
-  {{ $pages = sort $pages ".Params.talks_count" "desc" }}
+  {{ $pages = sort $pages ".Params.fullname" "asc" }}
 {{ else }}
   {{ $pages = sort $pages "Title" "asc" }}
 {{ end }}

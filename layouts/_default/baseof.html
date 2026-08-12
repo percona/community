@@ -8,6 +8,7 @@
 
     <meta name="description" content="{{ with .Description }}{{ . | truncate 159 }}{{ else }}{{if .IsPage}}{{ .Summary | truncate 159 }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     {{ if .Site.Params.favicon }}
+    <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32"  href="{{ (resources.Get "icons/percona-purple-32.png").RelPermalink }}" />
     <link rel="icon" type="image/png" sizes="192x192" href="{{ (resources.Get "icons/percona-purple-192.png").RelPermalink }}" />
     <link rel="apple-touch-icon"                      href="{{ (resources.Get "icons/percona-purple-192.png").RelPermalink }}" />
