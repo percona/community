@@ -3,10 +3,11 @@ name: kai_wagner
 name_pronunciation: kai_wagner
 fullname: Kai Wagner
 fullname_pronounciation: Kai Wagner
-job: Percona, Sr. Engineering Manager
+job: Head of Product & Engineering PostgreSQL, Percona
+tagline: Head of Product & Engineering PostgreSQL, Percona
 social:
   facebook: null
-  github: capri1989
+  github: ImTheKai
   linkedin: https://www.linkedin.com/in/kai-wagner-b1b661152/
   twitter: ImTheKai
   website: null
@@ -66,5 +67,5 @@ contributor_year:
 - '2023'
 - '2022'
 ---
-Kai joined Percona in 2022 as an Engineering Manager responsible for the PostgreSQL development team. Before joining Percona,
-he worked as a team lead and as a software engineer at SUSE Linux. He is now focusing on the coordination of the PostgreSQL development at Percona as well as acting as an open source evangelist.
+Kai is the Head of Product & Engineering for PostgreSQL. Before joining Percona,
+he worked as a team lead and as a software engineer at SUSE Linux. He is now focusing on the coordination of the PostgreSQL development and product at Percona as well as acting as an open source evangelist.
