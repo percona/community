@@ -13,11 +13,11 @@ Back in February, I wrote about [Hackorum](https://hackorum.dev/), a forum style
 
 ![Hackorum topic index showing pg-hackers threads with commitfest, patch and CI status icons](blog/2026/08/hackorum-update-topic-index.png)
 
-A lot has happened since then. We also talked about the project at the PostgreSQL meetup in Berlin in March, and a good chunk of what was still on the roadmap back then is live today. This post is a follow up to walk through what changed, what is new, and what we are looking at next.
+A lot has happened since then. We also talked about the project at the PostgreSQL meetup in Berlin in March, [at pgconf.de](https://www.postgresql.eu/events/pgconfde2026/schedule/session/7760-modernising-postgres-community-communication-with-hackorum/), and in a lightning talk at pgconf.dev, and a good chunk of what was still on the roadmap back then is live today. We also posted [a video introduction to Hackorum](https://www.youtube.com/watch?v=onQQJzQ8Qlw), if you prefer to see it in action rather than read about it. This post is a follow up to walk through what changed, what is new, and what we are looking at next.
 
 ## A quick recap
 
-Hackorum is an Open Source project from the community to be used by the community and hosted on [hackorum.dev](https://hackorum.dev/). The code is on [GitHub](https://github.com/hackorum-dev/hackorum). If you are new here, the short version that it syncs postgres mailing lists in the background, keeps read status, stars, tags and notes for you, and adds commitfest context and contributor info directly next to the discussion.
+Hackorum is an Open Source project from the community to be used by the community and hosted on [hackorum.dev](https://hackorum.dev/). The code is on [GitHub](https://github.com/hackorum-dev/hackorum). If you are new here, the short version that it syncs postgres mailing lists in the background, keeps read status, stars, tags and notes for you, and adds commitfest context, commit and patch history, and contributor info directly next to the discussion.
 
 Everything below is new for users since the last post. I am leaving out internal and admin only changes, since those do not affect how you use the site day to day.
 
@@ -25,22 +25,22 @@ Everything below is new for users since the last post. I am leaving out internal
 
 ![Contributor profile showing commit credits and how many patch threads landed](blog/2026/08/hackorum-update-commit-profile.png)
 
-Hackorum now links merged commits back to the thread and patch discussion that produced them. Contributor profile pages have a new commit history tab, so you can see someone's message activity and their commits in one place. The future planned contributor badges could be displayed and integrated into this as well.
+Hackorum now links pushed commits back to the thread and patch discussion that produced them. Contributor profile pages have a new commit history tab, so you can see someone's message activity and their commits in one place. There is also a [community proposal on pgsql-www](https://www.postgresql.org/message-id/CAAKRu_Z42AAq7N%3DusSS3UPMtXqbVvsQzktNmH1X20oypyqA_Xg%40mail.gmail.com) for public contributor profile pages, with the PostgreSQL Contributors Committee looking to recognize specific contributions beyond code, for example volunteering at a conference. If that lands, it would be a natural fit to surface on this profile too.
 
 ## Patch CI results, now public
 
 <img src="/blog/2026/08/hackorum-update-ci-status.png" alt="CI status card on a thread, showing apply, build and test results" style="display:block;margin:1rem auto;width:50%;border-radius:6px;">
 
-Patches attached to a thread are automatically applied, rebased when master moves, and built and tested against real PostgreSQL versions. Those results used to be an internal experiment, they are now public for everyone:
+Patches attached to a thread are automatically applied, rebased when master moves, and built and tested with the PostgreSQL test suite. Those results used to be an internal experiment, they are now public for everyone:
 
-* CI status shown as tabs directly on the thread
+* CI status icons in the topic index, and full detail in tabs on the thread itself
 * A CI dashboard at [hackorum.dev/ci](https://hackorum.dev/ci)
 * A per topic CI history view
 * A stats overview page
 
 ![Patch CI history for a thread, showing every tracked patchset version and its result](blog/2026/08/hackorum-update-ci-history.png)
 
-We reapply the latest version of each patch once a day against current master. If it stops applying, we do not give up right away, we keep retrying for 30 more days, so one bad day does not retire a patch. Only after 30 days of failing do we mark it retired, meaning the base is too old, and stop trying.
+We reapply the latest version of each patch once a day against current master. If it stops applying, we do not give up right away, we keep retrying for 30 more days, so one bad day does not retire a patch. Only after 30 days of failing do we mark it retired, meaning the base is too old, and stop trying until a new version is posted.
 
 Once something actually gets committed, there is nothing left to test against. There are two ways this shows up. If the committer changed the patch before committing it, the old version no longer applies and Hackorum shows it as no longer matching. If the committer applied it exactly as submitted, the diff against the committed version on GitHub is empty, so we know it went in as-is. Either way, we stop running CI on that thread until a new patch shows up. Some threads get committed in stages, with fixups or follow up patches, so if a new patchset lands afterward, we pick CI back up and start testing it.
 
