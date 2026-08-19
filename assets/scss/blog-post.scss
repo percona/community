@@ -127,6 +127,7 @@ $blog-prose-max: 960px;
 
     img {
       display: block;
+      width: auto;
       max-width: 100%;
       height: auto;
       margin: 1rem 0;
@@ -139,6 +140,9 @@ $blog-prose-max: 960px;
       img {
         margin-left: 0;
         margin-right: auto;
+        width: auto;
+        max-width: 100%;
+        height: auto;
       }
 
       figcaption {

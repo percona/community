@@ -352,7 +352,9 @@ main.page:has(.hub-single-page) {
       img {
         margin-left: 0;
         margin-right: auto;
+        width: auto;
         max-width: 100%;
+        height: auto;
 
         @media screen and (min-width: 768px) {
           max-width: 85%;
