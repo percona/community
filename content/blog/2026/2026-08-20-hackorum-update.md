@@ -1,6 +1,6 @@
 ---
 title: "Hackorum Update: What's New Since February"
-date: "2026-08-20T00:00:00+00:00"
+date: "2026-08-20T10:00:00+00:00"
 tags: ["Percona", "PostgreSQL", "Community", "Mailing Lists", "Open Source", "pg_kwagner"]
 categories: ['PostgreSQL']
 authors:
