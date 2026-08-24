@@ -1,5 +1,5 @@
 ---
-title: "The curios case of timezone inconsistencies between PgBouncer and Patroni Cluster"
+title: "The curious case of timezone inconsistencies between PgBouncer and Patroni Cluster"
 date: "2026-08-20T00:00:00+00:00"
 tags: ['PostgreSQL', 'Patroni', 'PgBouncer', 'Kubernetes', 'High Availability', 'Community']
 categories: ['PostgreSQL']
