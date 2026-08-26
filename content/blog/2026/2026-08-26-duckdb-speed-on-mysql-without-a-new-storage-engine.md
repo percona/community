@@ -1,6 +1,6 @@
 ---
 title: "DuckDB Speed on MySQL with dbtrail, Without a New Storage Engine"
-date: "2026-08-22T11:00:00+00:00"
+date: "2026-08-26T11:00:00+00:00"
 tags: ['MySQL', 'DuckDB', 'Parquet', 'Opensource', 'binlog', 'analytics', 'Percona Server', 'dbtrail']
 categories: ['MySQL']
 authors:
