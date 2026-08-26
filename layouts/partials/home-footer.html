@@ -66,6 +66,22 @@
       <p class="home-footer__copyright">{{ . }}</p>
     {{ end }}
 
+    {{ with $footer.developers }}
+      <nav class="home-footer__developers" aria-label="{{ .label | default "Developers" }}">
+        <span class="home-footer__developers-label">{{ .label | default "Developers" }}</span>
+        <ul class="home-footer__developers-links">
+          {{ range .links }}
+            <li>
+              <a
+                href="{{ .url }}"
+                {{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}
+              >{{ .name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
+
     {{ with .File }}
       <div class="home-footer__edit">
         <a href="{{ printf "https://github.com/percona/community/edit/main/content/%s" .Path | safeURL }}" target="_blank" rel="noreferrer noopener">

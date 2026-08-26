@@ -42,12 +42,23 @@ columns:
       - MySQL
       - Cloud
       - MongoDB
-  # v1-hidden: Mountaineers MVP Portal (Community Ascent) — see docs/v1-hidden-items.md
-  # - title: Mountaineers MVP Portal
-  #   links:
-  #     - name: Basecamp
-  #       url: /contribute/leaderboard/
-  #     - name: Hall of Fame
-  #       url: /open-source-database-hall-of-fame/
-  #     - name: Summit Dashboard
-  #       url: /contribute/leaderboard/
+developers:
+  label: Developers
+  links:
+    - name: Search API docs
+      url: /developers/
+    - name: OpenAPI
+      url: /openapi.json
+    - name: Site search
+      url: /search/
+    - name: llms.txt
+      url: /llms.txt
+# v1-hidden: Mountaineers MVP Portal (Community Ascent) — see docs/v1-hidden-items.md
+# - title: Mountaineers MVP Portal
+#   links:
+#     - name: Basecamp
+#       url: /contribute/leaderboard/
+#     - name: Hall of Fame
+#       url: /open-source-database-hall-of-fame/
+#     - name: Summit Dashboard
+#       url: /contribute/leaderboard/
