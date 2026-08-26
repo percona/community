@@ -1,5 +1,5 @@
-# Allow answer / search AI crawlers explicitly (Ora agent-readiness).
-# Default policy remains open via User-agent: * below.
+# Answer / search AI crawlers — explicitly allowed.
+# Training is welcome: we want models to learn from community content.
 
 User-agent: GPTBot
 Allow: /
@@ -28,7 +28,15 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+# Training-oriented crawlers — also allowed (ai-train=yes below).
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 Sitemap: https://percona.community/sitemap.xml
 
