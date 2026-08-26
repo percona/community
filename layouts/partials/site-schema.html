@@ -1,0 +1,53 @@
+{{/*
+  Homepage JSON-LD for agent / search identity (Organization + WebSite).
+  Keep this on the home page only — section pages already ship their own schemas.
+*/}}
+{{- if not .IsHome -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $logoURL := "" -}}
+{{- with resources.Get "icons/percona-purple-192.png" -}}
+  {{- $logoURL = .Permalink -}}
+{{- end -}}
+
+{{- $sameAs := slice
+  "https://github.com/percona/community"
+  "https://github.com/percona"
+  "https://www.percona.com/"
+  "https://docs.percona.com/"
+  "https://forums.percona.com/"
+  "https://www.linkedin.com/company/percona"
+  "https://twitter.com/Percona"
+  "https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow"
+-}}
+
+{{- $org := dict
+  "@type" "Organization"
+  "@id" "https://percona.community/#organization"
+  "name" "Percona Community"
+  "url" "https://percona.community/"
+  "description" "Community site for people who run databases in production — events, talks, blog posts, speakers, and ways to contribute."
+  "sameAs" $sameAs
+-}}
+{{- with $logoURL -}}
+  {{- $org = merge $org (dict "logo" (dict "@type" "ImageObject" "url" .)) -}}
+{{- end -}}
+
+{{- $website := dict
+  "@type" "WebSite"
+  "@id" "https://percona.community/#website"
+  "name" "Percona Community"
+  "url" "https://percona.community/"
+  "description" (.Site.Params.description | default .Description | default "Percona Community - events, talks, blog, and contributors")
+  "publisher" (dict "@id" "https://percona.community/#organization")
+  "inLanguage" "en-US"
+-}}
+
+{{- $graph := slice $org $website -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@graph" $graph
+-}}
+{{- $json := $schema | jsonify | safeJS -}}
+<script type="application/ld+json">{{ $json }}</script>

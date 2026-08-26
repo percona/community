@@ -26,6 +26,9 @@
     <meta name="robots" content="noindex,nofollow"> 
     {{ end }}
 
+    <link rel="describedby" href="{{ "llms.txt" | absURL }}" type="text/plain" title="LLM site map">
+    <link rel="alternate" type="text/plain" href="{{ "llms.txt" | absURL }}" title="llms.txt">
+
     {{"<!-- region Social -->" | safeHTML}}
     {{ partial "opengraph.html" . }}
     {{ partial "twitter_cards.html" . }}
