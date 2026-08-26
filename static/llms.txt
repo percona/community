@@ -47,6 +47,7 @@ Admin demo/docs/indexing endpoints on that host may require HTTP Basic Auth and 
 - [Forum](https://forums.percona.com/)
 - [Slack](https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow)
 - Source content repo: https://github.com/percona/community
+- Agent editing guide: https://github.com/percona/community/blob/main/AGENTS.md
 
 ## Related Percona sites
 
@@ -60,3 +61,5 @@ Admin demo/docs/indexing endpoints on that host may require HTTP Basic Auth and 
 - [robots.txt](https://percona.community/robots.txt)
 - [OpenAPI (Community Search)](https://percona.community/openapi.json)
 - [Developer docs](https://percona.community/developers/)
+- [AI Catalog](https://percona.community/.well-known/ai-catalog.json)
+- [AGENTS.md (repo)](https://github.com/percona/community/blob/main/AGENTS.md)

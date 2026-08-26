@@ -2,14 +2,14 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Percona Community Search API",
-    "description": "Public semantic search over percona.community content (blog, events, talks, contributors, and related pages). No API key for the endpoints documented here. Admin/indexing UI on the same host may require HTTP Basic Auth and is out of scope.\n\nHuman docs: https://percona.community/developers/\nSite search UI: https://percona.community/search/",
+    "description": "Public semantic search over percona.community content (blog, events, talks, contributors, and related pages). No API key for the endpoints documented here. Admin/indexing UI on the same host may require HTTP Basic Auth and is out of scope.\n\nVersioning: this document describes **v1** of the public search surface (`info.version`). Breaking changes bump `info.version` and are noted on https://percona.community/developers/. The runtime host is https://search.percona.community (no `/v1` path prefix today).\n\nErrors: unsuccessful responses use a JSON body with machine-readable `code` and human-readable `message` (see `ApiError`). FastAPI validation errors may also return a `detail` array.\n\nHuman docs: https://percona.community/developers/\nSite search UI: https://percona.community/search/\nAI catalog: https://percona.community/.well-known/ai-catalog.json",
     "version": "1.0.0",
     "contact": {
       "name": "Percona Community",
       "url": "https://percona.community/"
     },
     "license": {
-      "name": "Content site — API for public search only"
+      "name": "Content site \u2014 API for public search only"
     }
   },
   "servers": [
@@ -32,7 +32,9 @@
     "/health": {
       "get": {
         "operationId": "getHealth",
-        "tags": ["Health"],
+        "tags": [
+          "Health"
+        ],
         "summary": "Service health check",
         "description": "Public liveness and readiness hint used by the site search widget. No authentication.",
         "responses": {
@@ -64,7 +66,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/HealthUnhealthy"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/HealthUnhealthy"
+                    },
+                    {
+                      "$ref": "#/components/schemas/ApiError"
+                    }
+                  ]
                 }
               }
             }
@@ -75,7 +84,9 @@
     "/search": {
       "post": {
         "operationId": "postSearch",
-        "tags": ["Search"],
+        "tags": [
+          "Search"
+        ],
         "summary": "Semantic search",
         "description": "Search indexed community content. Uses embeddings (with hybrid keyword/person modes when useful). No API key. CORS is allowed for https://percona.community.",
         "requestBody": {
@@ -117,10 +128,78 @@
             }
           },
           "422": {
-            "description": "Validation error"
+            "description": "Request validation failed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidationError"
+                },
+                "example": {
+                  "code": "validation_error",
+                  "message": "Request validation failed",
+                  "detail": [
+                    {
+                      "loc": [
+                        "body",
+                        "query"
+                      ],
+                      "msg": "Field required",
+                      "type": "missing"
+                    }
+                  ]
+                }
+              }
+            }
           },
           "429": {
-            "description": "Rate limited (nginx may apply limits on POST /search)"
+            "description": "Rate limited by the reverse proxy",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying, when provided by the proxy",
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "code": "rate_limited",
+                  "message": "Too many requests. Slow down and retry."
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Unexpected server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "code": "internal_error",
+                  "message": "Unexpected error while searching. Retry later."
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Search backend unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiError"
+                },
+                "example": {
+                  "code": "service_unavailable",
+                  "message": "Search service temporarily unavailable."
+                }
+              }
+            }
           }
         }
       }
@@ -130,15 +209,22 @@
     "schemas": {
       "HealthResponse": {
         "type": "object",
-        "required": ["status", "database"],
+        "required": [
+          "status",
+          "database"
+        ],
         "properties": {
           "status": {
             "type": "string",
-            "enum": ["ok"]
+            "enum": [
+              "ok"
+            ]
           },
           "database": {
             "type": "string",
-            "enum": ["ok"]
+            "enum": [
+              "ok"
+            ]
           },
           "total_chunks": {
             "type": "integer",
@@ -172,13 +258,18 @@
       },
       "SearchRequest": {
         "type": "object",
-        "required": ["query"],
+        "required": [
+          "query"
+        ],
         "properties": {
           "query": {
             "type": "string",
             "description": "Natural-language search query",
             "minLength": 1,
-            "examples": ["pgvector HNSW", "Peter Zaitsev talks"]
+            "examples": [
+              "pgvector HNSW",
+              "Peter Zaitsev talks"
+            ]
           },
           "limit": {
             "type": "integer",
@@ -191,7 +282,10 @@
             "type": "string",
             "nullable": true,
             "description": "Optional filter: one type or comma-separated list. Supported values include blog, percona_blog, event, talk, contributor.",
-            "examples": ["talk", "blog,talk"]
+            "examples": [
+              "talk",
+              "blog,talk"
+            ]
           },
           "min_score": {
             "type": "number",
@@ -209,7 +303,12 @@
       },
       "SearchResult": {
         "type": "object",
-        "required": ["url", "title", "content_type", "score"],
+        "required": [
+          "url",
+          "title",
+          "content_type",
+          "score"
+        ],
         "properties": {
           "url": {
             "type": "string",
@@ -233,7 +332,7 @@
           },
           "content_type": {
             "type": "string",
-            "description": "One of blog, percona_blog, event, talk, contributor, …"
+            "description": "One of blog, percona_blog, event, talk, contributor, \u2026"
           },
           "excerpt": {
             "type": "string"
@@ -257,59 +356,162 @@
       "SearchTimings": {
         "type": "object",
         "properties": {
-          "prepare_ms": { "type": "number" },
-          "model_load_ms": { "type": "number" },
-          "embed_ms": { "type": "number" },
-          "db_ms": { "type": "number" },
-          "vector_db_ms": { "type": "number" },
-          "keyword_db_ms": { "type": "number" },
-          "format_ms": { "type": "number" },
-          "total_ms": { "type": "number" },
-          "cache_hit": { "type": "boolean" }
+          "prepare_ms": {
+            "type": "number"
+          },
+          "model_load_ms": {
+            "type": "number"
+          },
+          "embed_ms": {
+            "type": "number"
+          },
+          "db_ms": {
+            "type": "number"
+          },
+          "vector_db_ms": {
+            "type": "number"
+          },
+          "keyword_db_ms": {
+            "type": "number"
+          },
+          "format_ms": {
+            "type": "number"
+          },
+          "total_ms": {
+            "type": "number"
+          },
+          "cache_hit": {
+            "type": "boolean"
+          }
         }
       },
       "SearchStats": {
         "type": "object",
         "properties": {
-          "chunks_in_index": { "type": "integer" },
-          "pages_shown": { "type": "integer" },
-          "total_matches": { "type": "integer" },
-          "min_score": { "type": "number" },
+          "chunks_in_index": {
+            "type": "integer"
+          },
+          "pages_shown": {
+            "type": "integer"
+          },
+          "total_matches": {
+            "type": "integer"
+          },
+          "min_score": {
+            "type": "number"
+          },
           "by_type": {
             "type": "object",
-            "additionalProperties": { "type": "integer" }
+            "additionalProperties": {
+              "type": "integer"
+            }
           },
           "matched_by_type": {
             "type": "object",
-            "additionalProperties": { "type": "integer" }
+            "additionalProperties": {
+              "type": "integer"
+            }
           },
           "search_mode": {
             "type": "string",
-            "enum": ["semantic", "keyword", "person"]
+            "enum": [
+              "semantic",
+              "keyword",
+              "person"
+            ]
           }
         }
       },
       "SearchResponse": {
         "type": "object",
-        "required": ["query", "results", "total"],
+        "required": [
+          "query",
+          "results",
+          "total"
+        ],
         "properties": {
-          "query": { "type": "string" },
+          "query": {
+            "type": "string"
+          },
           "results": {
             "type": "array",
-            "items": { "$ref": "#/components/schemas/SearchResult" }
+            "items": {
+              "$ref": "#/components/schemas/SearchResult"
+            }
           },
           "total": {
             "type": "integer",
             "description": "Number of results in this response"
           },
-          "timings": { "$ref": "#/components/schemas/SearchTimings" },
-          "stats": { "$ref": "#/components/schemas/SearchStats" },
+          "timings": {
+            "$ref": "#/components/schemas/SearchTimings"
+          },
+          "stats": {
+            "$ref": "#/components/schemas/SearchStats"
+          },
           "history_id": {
             "type": "integer",
             "nullable": true,
             "description": "Server-side search history id when logging succeeded"
           }
         }
+      },
+      "ApiError": {
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Machine-readable error code",
+            "examples": [
+              "validation_error",
+              "rate_limited",
+              "internal_error",
+              "service_unavailable"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "description": "Human-readable error summary"
+          },
+          "detail": {
+            "description": "Optional structured detail (string or FastAPI-style validation list)",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": true
+              }
+            ]
+          }
+        }
+      },
+      "ValidationError": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/ApiError"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "code": {
+                "const": "validation_error"
+              }
+            }
+          }
+        ]
       }
     }
   },
