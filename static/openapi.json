@@ -1,0 +1,320 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Percona Community Search API",
+    "description": "Public semantic search over percona.community content (blog, events, talks, contributors, and related pages). No API key for the endpoints documented here. Admin/indexing UI on the same host may require HTTP Basic Auth and is out of scope.\n\nHuman docs: https://percona.community/developers/\nSite search UI: https://percona.community/search/",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Percona Community",
+      "url": "https://percona.community/"
+    },
+    "license": {
+      "name": "Content site — API for public search only"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://search.percona.community",
+      "description": "Production Community Search API"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Search",
+      "description": "Semantic and hybrid search over indexed community content"
+    },
+    {
+      "name": "Health",
+      "description": "Liveness / readiness for the search service"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "getHealth",
+        "tags": ["Health"],
+        "summary": "Service health check",
+        "description": "Public liveness and readiness hint used by the site search widget. No authentication.",
+        "responses": {
+          "200": {
+            "description": "Service is healthy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                },
+                "example": {
+                  "status": "ok",
+                  "database": "ok",
+                  "total_chunks": 18000,
+                  "total_docs": 7000,
+                  "docs_by_type": {
+                    "blog": 800,
+                    "talk": 400,
+                    "event": 200,
+                    "contributor": 300,
+                    "percona_blog": 5000
+                  }
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service unhealthy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthUnhealthy"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search": {
+      "post": {
+        "operationId": "postSearch",
+        "tags": ["Search"],
+        "summary": "Semantic search",
+        "description": "Search indexed community content. Uses embeddings (with hybrid keyword/person modes when useful). No API key. CORS is allowed for https://percona.community.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              },
+              "examples": {
+                "basic": {
+                  "summary": "Basic query",
+                  "value": {
+                    "query": "zero downtime database migration",
+                    "limit": 12
+                  }
+                },
+                "filtered": {
+                  "summary": "Filter by content type",
+                  "value": {
+                    "query": "PostgreSQL backup",
+                    "limit": 20,
+                    "content_type": "blog,talk"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Search results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation error"
+          },
+          "429": {
+            "description": "Rate limited (nginx may apply limits on POST /search)"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HealthResponse": {
+        "type": "object",
+        "required": ["status", "database"],
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["ok"]
+          },
+          "database": {
+            "type": "string",
+            "enum": ["ok"]
+          },
+          "total_chunks": {
+            "type": "integer",
+            "description": "Total embedding chunks in the index"
+          },
+          "total_docs": {
+            "type": "integer",
+            "description": "Total indexed documents"
+          },
+          "docs_by_type": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "description": "Document counts keyed by content_type"
+          }
+        }
+      },
+      "HealthUnhealthy": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "example": "unhealthy"
+          },
+          "database": {
+            "type": "string",
+            "example": "unavailable"
+          }
+        }
+      },
+      "SearchRequest": {
+        "type": "object",
+        "required": ["query"],
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Natural-language search query",
+            "minLength": 1,
+            "examples": ["pgvector HNSW", "Peter Zaitsev talks"]
+          },
+          "limit": {
+            "type": "integer",
+            "description": "Maximum number of results to return",
+            "default": 20,
+            "minimum": 1,
+            "maximum": 100
+          },
+          "content_type": {
+            "type": "string",
+            "nullable": true,
+            "description": "Optional filter: one type or comma-separated list. Supported values include blog, percona_blog, event, talk, contributor.",
+            "examples": ["talk", "blog,talk"]
+          },
+          "min_score": {
+            "type": "number",
+            "nullable": true,
+            "description": "Cosine similarity floor. If omitted, the server default applies (typically around 0.52).",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "per_type_limit": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, return up to `limit` results per content type (legacy behaviour)."
+          }
+        }
+      },
+      "SearchResult": {
+        "type": "object",
+        "required": ["url", "title", "content_type", "score"],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "description": "Publication or event date when known"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "content_type": {
+            "type": "string",
+            "description": "One of blog, percona_blog, event, talk, contributor, …"
+          },
+          "excerpt": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string",
+            "nullable": true,
+            "format": "uri"
+          },
+          "image_thumb_url": {
+            "type": "string",
+            "nullable": true,
+            "format": "uri"
+          },
+          "score": {
+            "type": "number",
+            "description": "Relevance score (higher is better)"
+          }
+        }
+      },
+      "SearchTimings": {
+        "type": "object",
+        "properties": {
+          "prepare_ms": { "type": "number" },
+          "model_load_ms": { "type": "number" },
+          "embed_ms": { "type": "number" },
+          "db_ms": { "type": "number" },
+          "vector_db_ms": { "type": "number" },
+          "keyword_db_ms": { "type": "number" },
+          "format_ms": { "type": "number" },
+          "total_ms": { "type": "number" },
+          "cache_hit": { "type": "boolean" }
+        }
+      },
+      "SearchStats": {
+        "type": "object",
+        "properties": {
+          "chunks_in_index": { "type": "integer" },
+          "pages_shown": { "type": "integer" },
+          "total_matches": { "type": "integer" },
+          "min_score": { "type": "number" },
+          "by_type": {
+            "type": "object",
+            "additionalProperties": { "type": "integer" }
+          },
+          "matched_by_type": {
+            "type": "object",
+            "additionalProperties": { "type": "integer" }
+          },
+          "search_mode": {
+            "type": "string",
+            "enum": ["semantic", "keyword", "person"]
+          }
+        }
+      },
+      "SearchResponse": {
+        "type": "object",
+        "required": ["query", "results", "total"],
+        "properties": {
+          "query": { "type": "string" },
+          "results": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/SearchResult" }
+          },
+          "total": {
+            "type": "integer",
+            "description": "Number of results in this response"
+          },
+          "timings": { "$ref": "#/components/schemas/SearchTimings" },
+          "stats": { "$ref": "#/components/schemas/SearchStats" },
+          "history_id": {
+            "type": "integer",
+            "nullable": true,
+            "description": "Server-side search history id when logging succeeded"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Percona Community Search API docs",
+    "url": "https://percona.community/developers/"
+  }
+}

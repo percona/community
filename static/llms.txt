@@ -31,6 +31,8 @@ Do not treat this site as the canonical product documentation for Percona Server
 
 Public semantic search over indexed community content. No API key required for `POST /search`.
 
+- Developer docs: https://percona.community/developers/
+- OpenAPI specification: https://percona.community/openapi.json
 - Base URL: https://search.percona.community
 - Health: https://search.percona.community/health
 - Widget script: https://search.percona.community/community-search.js
@@ -56,3 +58,5 @@ Admin demo/docs/indexing endpoints on that host may require HTTP Basic Auth and 
 
 - [Sitemap](https://percona.community/sitemap.xml)
 - [robots.txt](https://percona.community/robots.txt)
+- [OpenAPI (Community Search)](https://percona.community/openapi.json)
+- [Developer docs](https://percona.community/developers/)
