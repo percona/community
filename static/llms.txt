@@ -1,0 +1,62 @@
+# Percona Community
+
+> Community site for people who run databases in production: events, talks, blog posts, speakers, and how to contribute. Not a product docs portal and not a SaaS API — content and community first.
+
+This file is a short map for AI agents and coding tools. Prefer these links over scraping every page.
+
+## When to use this site
+
+- Find upcoming or past Percona community events, meetups, and streams
+- Look up talks, speakers, and talk videos
+- Read practical blog posts about MySQL, PostgreSQL, MongoDB, Kubernetes, and related ops topics
+- Learn how to contribute articles, talks, or open-source work
+- Search community content (blog, talks, events, contributors) via the semantic search API or the on-site search page
+
+Do not treat this site as the canonical product documentation for Percona Server, Operators, or PMM — use https://docs.percona.com/ for product docs.
+
+## Primary sections
+
+- [Home](https://percona.community/): Overview of the community site
+- [Events](https://percona.community/events/): Upcoming and past events
+- [Talks](https://percona.community/talks/): Talk listings and abstracts
+- [Talk videos](https://percona.community/videos/): Recorded talks
+- [Speakers](https://percona.community/contributor_type/speaker/): Speaker directory (A–Z)
+- [Authors](https://percona.community/contributor_type/author/): Blog authors
+- [Contributors / Maintainers](https://percona.community/contributors/): Community maintainers hub
+- [Blog](https://percona.community/blog/): Community articles
+- [Knowledge Base](https://percona.community/knowledge-base/): How to get involved
+- [Search](https://percona.community/search/): Full search results UI
+
+## Search API (for agents)
+
+Public semantic search over indexed community content. No API key required for `POST /search`.
+
+- Developer docs: https://percona.community/developers/
+- OpenAPI specification: https://percona.community/openapi.json
+- Base URL: https://search.percona.community
+- Health: https://search.percona.community/health
+- Widget script: https://search.percona.community/community-search.js
+- Site search page: https://percona.community/search/
+
+Admin demo/docs/indexing endpoints on that host may require HTTP Basic Auth and are not for public agent use.
+
+## Contribute
+
+- [How to get involved](https://percona.community/knowledge-base/)
+- [Write articles](https://percona.community/contribute/articles/)
+- [Forum](https://forums.percona.com/)
+- [Slack](https://join.slack.com/t/percona/shared_invite/zt-3zqzw80xz-864PxCOIiiilYSVMnoN5ow)
+- Source content repo: https://github.com/percona/community
+
+## Related Percona sites
+
+- [Percona](https://www.percona.com/)
+- [Percona Docs](https://docs.percona.com/)
+- [Percona Forum](https://forums.percona.com/)
+
+## Machine-readable maps
+
+- [Sitemap](https://percona.community/sitemap.xml)
+- [robots.txt](https://percona.community/robots.txt)
+- [OpenAPI (Community Search)](https://percona.community/openapi.json)
+- [Developer docs](https://percona.community/developers/)

@@ -8,19 +8,29 @@
 
 {{- if $image -}}
 <figure>
-{{- if or (strings.HasSuffix .Destination ".svg") (strings.HasSuffix .Destination ".gif") -}}
+{{- $sub := $image.MediaType.SubType -}}
+{{- if or (eq $sub "svg") (eq $sub "svg+xml") (eq $sub "gif") -}}
 <img src="{{ $image.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" />
 {{- else -}}
 {{- /* Keep img on one line — indented/multiline HTML from render hooks becomes <pre><code> inside {{% %}} shortcodes. */ -}}
-{{- $small := $image.Resize "480x q80 webp" -}}
-{{- $medium := $image.Resize "768x q80 webp" -}}
+{{- $w := $image.Width -}}
+{{- $h := $image.Height -}}
 {{- $big := $image -}}
-{{- if gt $image.Width 1400 -}}
+{{- if gt $w 1400 -}}
 {{- $big = $image.Resize "1400x q80 webp" -}}
 {{- else -}}
-{{- $big = $image.Resize (printf "%dx q80 webp" $image.Width) -}}
+{{- $big = $image.Resize (printf "%dx q80 webp" $w) -}}
 {{- end -}}
-<img sizes="100vw" srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $big.RelPermalink }} {{ $big.Width }}w" src="{{ $big.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" loading="lazy" />
+{{- $srcset := printf "%s %dw" $big.RelPermalink $big.Width -}}
+{{- if ge $w 480 -}}
+{{- $small := $image.Resize "480x q80 webp" -}}
+{{- $srcset = printf "%s %dw, %s" $small.RelPermalink $small.Width $srcset -}}
+{{- end -}}
+{{- if ge $w 768 -}}
+{{- $medium := $image.Resize "768x q80 webp" -}}
+{{- $srcset = printf "%s %dw, %s" $medium.RelPermalink $medium.Width $srcset -}}
+{{- end -}}
+<img width="{{ $w }}" height="{{ $h }}" sizes="(max-width: {{ $big.Width }}px) 100vw, {{ $big.Width }}px" srcset="{{ $srcset }}" src="{{ $big.RelPermalink }}" alt="{{ if $alt }}{{ $alt }}{{ else }}&nbsp;{{ end }}" loading="lazy" />
 {{- end -}}
 {{- with $caption -}}
 <figcaption>{{ . | markdownify }}</figcaption>
