@@ -13,6 +13,7 @@ It is **not** a product SDK portal for Percona Server, Operators, or PMM. For pr
 | Resource | URL |
 |----------|-----|
 | OpenAPI specification | [https://percona.community/openapi.json](https://percona.community/openapi.json) |
+| AI Catalog | [https://percona.community/.well-known/ai-catalog.json](https://percona.community/.well-known/ai-catalog.json) |
 | API base | [https://search.percona.community](https://search.percona.community) |
 | Health | [https://search.percona.community/health](https://search.percona.community/health) |
 | Site search UI | [https://percona.community/search/](https://percona.community/search/) |

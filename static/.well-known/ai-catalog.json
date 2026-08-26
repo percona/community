@@ -1,0 +1,61 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Percona Community",
+    "identifier": "did:web:percona.community",
+    "documentationUrl": "https://percona.community/developers/",
+    "logoUrl": "https://percona.community/icons/percona-purple-192.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:percona.community:api:community-search",
+      "displayName": "Percona Community Search API",
+      "type": "application/openapi+json",
+      "url": "https://percona.community/openapi.json",
+      "description": "Public OpenAPI for semantic search over percona.community content (blog, events, talks, contributors). No API key for POST /search. Runtime base: https://search.percona.community",
+      "tags": ["search", "openapi", "postgresql", "pgvector"],
+      "representativeQueries": [
+        "search percona community talks about PostgreSQL",
+        "find blog posts about zero downtime migration",
+        "Percona Community Search API OpenAPI"
+      ]
+    },
+    {
+      "identifier": "urn:air:percona.community:docs:developers",
+      "displayName": "Community Search API developer docs",
+      "type": "text/html",
+      "url": "https://percona.community/developers/",
+      "description": "Human-readable quickstart for the public Community Search API, curl examples, and links to OpenAPI.",
+      "tags": ["docs", "search", "developers"],
+      "representativeQueries": [
+        "Percona Community API docs",
+        "how to call search.percona.community",
+        "Percona Community developer portal"
+      ]
+    },
+    {
+      "identifier": "urn:air:percona.community:map:llms",
+      "displayName": "llms.txt site map",
+      "type": "text/plain",
+      "url": "https://percona.community/llms.txt",
+      "description": "Short map of percona.community for AI agents: sections, when to use the site, and search API entry points.",
+      "tags": ["llms.txt", "discovery"],
+      "representativeQueries": [
+        "what is on percona.community",
+        "percona community llms.txt"
+      ]
+    },
+    {
+      "identifier": "urn:air:percona.community:repo:agents",
+      "displayName": "AGENTS.md for the community site repo",
+      "type": "text/markdown",
+      "url": "https://raw.githubusercontent.com/percona/community/main/AGENTS.md",
+      "description": "Instructions for AI coding agents editing the percona/community Hugo site (content, layouts, search docs).",
+      "tags": ["agents.md", "hugo", "github"],
+      "representativeQueries": [
+        "how to edit percona community site with an AI agent",
+        "percona community AGENTS.md"
+      ]
+    }
+  ]
+}

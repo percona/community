@@ -82,4 +82,32 @@
     line-height: 1.5;
     color: $paragraph-grey;
   }
+
+  &__agent-map {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8ecf3;
+  }
+
+  &__agent-map-title {
+    margin: 0 0 0.75rem;
+    font-family: $font-poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $brand-black;
+  }
+
+  &__agent-map-body {
+    margin: 0;
+    padding: 1rem 1.125rem;
+    overflow-x: auto;
+    border: 1px solid #e8ecf3;
+    border-radius: 8px;
+    background: #f7f8fb;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: $brand-black;
+    white-space: pre-wrap;
+  }
 }
