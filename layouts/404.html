@@ -58,7 +58,30 @@
             <span class="not-found-page__link-desc">Look up talks, articles, events, and more.</span>
           </a>
         </li>
+        <li>
+          <a class="not-found-page__link-card" href="{{ "/developers/" | relURL }}">
+            <span class="not-found-page__link-title">Search API docs</span>
+            <span class="not-found-page__link-desc">OpenAPI and quickstart for the public Community Search API.</span>
+          </a>
+        </li>
       </ul>
+
+      {{/* Machine-oriented recovery map for AI agents (Ora / crawlers). */}}
+      <section class="not-found-page__agent-map" aria-label="Agent recovery map">
+        <h2 class="not-found-page__agent-map-title">For AI agents</h2>
+        <pre class="not-found-page__agent-map-body"># Page not found (HTTP 404)
+
+This path does not exist on percona.community. Useful next steps:
+
+- Site map for agents: https://percona.community/llms.txt
+- Sitemap XML: https://percona.community/sitemap.xml
+- Search UI: https://percona.community/search/
+- Search API docs: https://percona.community/developers/
+- OpenAPI: https://percona.community/openapi.json
+- AI Catalog: https://percona.community/.well-known/ai-catalog.json
+- Homepage: https://percona.community/
+</pre>
+      </section>
     </div>
   </div>
 {{ end }}
