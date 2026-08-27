@@ -8,7 +8,7 @@ draft: false
 date: '2023-06-22'
 speakers:
 - dave_stokes
-- peter_farkas
+- david_murphy
 tags: ["PerconaLive2023", "Podcast"]
 events_year: ["2023"]
 events_tag: ["Community"]

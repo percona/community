@@ -1,0 +1,17 @@
+{{/*
+  Resolve a community event page for a talk:
+  1) Params.event_jira → events with matching Params.jira
+  2) Params.event → events with matching Title
+  Returns the Page or false.
+*/}}
+{{ $eventPage := false }}
+{{ $jira := .Params.event_jira | default "" }}
+{{ $title := .Params.event | default "" }}
+{{ range where site.RegularPages "Section" "events" }}
+  {{ if and $jira .Params.jira (eq (printf "%s" .Params.jira) (printf "%s" $jira)) }}
+    {{ $eventPage = . }}
+  {{ else if and (not $eventPage) $title (eq .Title $title) }}
+    {{ $eventPage = . }}
+  {{ end }}
+{{ end }}
+{{ return $eventPage }}
