@@ -1,18 +1,19 @@
 ---
 title: FOSDEM 2026
-description: 'Percona featured prominently as a sponsor and host at FOSDEM 2026. The Percona team led community dev rooms, hosted a stand, and shared expert insights into open source databases and Cloud Native technology.'
+description: Percona featured prominently as a sponsor and host at FOSDEM 2026. The
+  Percona team led community dev rooms, hosted a stand, and shared expert insights
+  into open source databases and Cloud Native technology.
 images:
 - events/2026-fosdem/fosdem.jpg
 layout: single
 speakers:
 - pep_pla
 date: '2026-01-30'
-tags: ["Event", "opensource", "sponsorship", "Cloud Native", "Kubernetes", "MariaDB", "PostgreSQL", "MySQL"]
+tags: ["Cloud Native", "Event", "Kubernetes", "MariaDB", "MySQL", "PostgreSQL", "opensource", "sponsorship"]
 events_year: ["2026"]
-events_category: ["Sponsorship"]
-events_tag: ["In-Person"]
+events_tag: ["Cloud Native", "In-Person", "MySQL", "PostgreSQL"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Percona had a strong presence at **FOSDEM 2026**, taking place January 31 – February 1, 2026, at the ULB Solbosch Campus in Brussels, Belgium. 
 
 Percona experts contributed to the technical schedule with the following accepted talk:

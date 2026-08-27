@@ -1,12 +1,18 @@
 ---
-title: "Oracle MySQL Community Track"
-description: "Oracle MySQL Community Track - Percona Live ONLINE 2021 - The Oracle MySQL Community team brings you the MySQL Community track at Percona Live.  Learn about the new features, developments, and the tips and tricks directly from the MySQL Community."
+title: Oracle MySQL Community Track
+description: Oracle MySQL Community Track - Percona Live ONLINE 2021 - The Oracle
+  MySQL Community team brings you the MySQL Community track at Percona Live.  Learn
+  about the new features, developments, and the tips and tricks directly from the
+  MySQL Community.
 layout: list
 date: Thu, 13 May 2021 8:00:00 +0000
 images:
- - events/percona-live/PL2021-MySQL-community-track.jpg
+- events/percona-live/PL2021-MySQL-community-track.jpg
 hero_type: mountains
-hero_title: "Oracle MySQL Community Track"
-hero_description: "The Oracle MySQL Community team brings you the MySQL Community track at Percona Live. Learn about the new features, developments, and the tips and tricks directly from the MySQL Community."
+hero_title: Oracle MySQL Community Track
+hero_description: The Oracle MySQL Community team brings you the MySQL Community track
+  at Percona Live. Learn about the new features, developments, and the tips and tricks
+  directly from the MySQL Community.
 hero_line: 1
+events_year: ["2021"]
 ---

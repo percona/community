@@ -11,10 +11,10 @@ speakers:
 - vadim_tkachenko
 - sam_lambert
 - peter_zaitsev
-tags: ["Community", "Events", "MySQL", "MySQL-Summit", "Featured"]
-events_year: ["2026"]
-events_tag: ["Community", "MySQL", "In-Person"]
-events_category: ["Speaking", "Community"]
+tags: ["Community", "Events", "Featured", "MySQL", "MySQL-Summit"]
+events_year: ["2025"]
+events_tag: ["Community", "In-Person", "MySQL"]
+events_category: ["Speaking"]
 ---
 We’re gathering in **San Francisco** on **January 14** for a focused, in‑person summit dedicated to strengthening the MySQL ecosystem through collaboration and contribution.
 

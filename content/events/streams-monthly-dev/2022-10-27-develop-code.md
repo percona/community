@@ -14,7 +14,7 @@ speakers:
 - kai_wagner
 tags: ["PMM", "Stream", "opensource"]
 events_year: ["2022"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 ![Meetup](events/streams-monthly-dev/Monthly-Percona-Developer-Meetup-Code.jpg)
 

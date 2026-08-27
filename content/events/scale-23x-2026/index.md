@@ -1,6 +1,8 @@
 ---
 title: Scale23X
-description: 'Percona is excited to be a sponsor of SCaLE 23X on March 5-8 at the Pasadena Convention Center in Pasadena California, and to connect with the passionate open source community that makes this event so impactful each year.'
+description: Percona is excited to be a sponsor of SCaLE 23X on March 5-8 at the Pasadena
+  Convention Center in Pasadena California, and to connect with the passionate open
+  source community that makes this event so impactful each year.
 date: '2026-03-05'
 EventDate: March 5-8, 2026
 EventLocation: Pasadena Convention Center, California
@@ -9,12 +11,11 @@ speakers:
 - peter_farkas
 images:
 - events/scale-23x/Scale23x.jpg
-tags: ["Opensource", "event", 'Featured']
+tags: ["Featured", "Opensource", "event"]
 events_year: ["2026"]
-events_category: ["Sponsorship", "Speaking"]
-events_tag: ["Opensource", "In-Person"]
+events_tag: ["In-Person", "Opensource"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Percona is proud to sponsor **SCaLE 23X**, one of the most dynamic and community‑driven open source conferences in North America. As the largest volunteer‑run event of its kind, SCaLE brings together developers, technologists, and industry leaders for four days of collaboration, learning, and innovation. It’s a perfect reflection of what we value most at Percona — community, openness, and building great technology together.
 
 - 📅 **March 5–8, 2026**
@@ -40,4 +41,3 @@ If you’re attending, make sure to stop by **Booth 106** to learn more about Pe
 
 Not registered yet?  
 👉 [**Click here to join us!**](https://www.socallinuxexpo.org/scale/23x)
-

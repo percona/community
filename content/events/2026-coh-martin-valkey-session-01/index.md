@@ -1,6 +1,10 @@
 ---
-title: 'Semantic Caching with Valkey and Redis: Reducing LLM Cost and Latency - Martin Visser'
-description: Martin Visser walks through how semantic caching can significantly reduce the cost and latency of Large Language Model (LLM) applications by reusing meaningfully similar responses instead of exact matches. Using Valkey and Redis as vector databases, it covers embeddings, similarity thresholds, and TTLs.
+title: 'Semantic Caching with Valkey and Redis: Reducing LLM Cost and Latency - Martin
+  Visser'
+description: Martin Visser walks through how semantic caching can significantly reduce
+  the cost and latency of Large Language Model (LLM) applications by reusing meaningfully
+  similar responses instead of exact matches. Using Valkey and Redis as vector databases,
+  it covers embeddings, similarity thresholds, and TTLs.
 images:
 - events/2026-coh-martin-valkey-session-01/intro.png
 layout: single
@@ -9,12 +13,11 @@ EventDate: Friday, January 23, 2026
 EventLocation: Online
 speakers:
 - martin_visser
-tags: ["Community", "Events", "Valkey", "Redis", "AI", "Performance"]
+tags: ["AI", "Community", "Events", "Performance", "Redis", "Valkey"]
 events_year: ["2026"]
-events_tag: ["Community", "Valkey", "Redis", "AI",  "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["AI", "Community", "Online", "Redis", "Valkey"]
+events_category: ["Speaking"]
 ---
-
 Setting up efficient LLM applications requires more than just calling an API. In this session, **Martin Visser** explains how **semantic caching** can significantly reduce the cost and latency of Large Language Model (LLM) applications by reusing meaningfully similar responses instead of exact matches. 
 
 Using **Valkey** and **Redis** as vector databases, Martin walks through how embeddings, similarity thresholds, and TTLs work together to cache LLM responses efficiently. Participants will learn about practical architecture decisions, configuration trade-offs, and see a real-world demo showing how semantic caching can cut LLM usage by up to 60% while improving response times from seconds to milliseconds.

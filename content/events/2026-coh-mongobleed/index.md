@@ -1,6 +1,10 @@
 ---
-title: 'PSMDB and MongoDB MongoBleed: impact, mitigations, and patching strategy - February 24, 2026'
-description: In this session, Ivan Groenewold will break down CVE-2025-14847 (“MongoBleed”), a high-severity MongoDB memory disclosure risk when zlib compression is enabled on a network-reachable server. He’ll share the quick mitigation (disable zlib), how to verify it, and next steps for patching.
+title: 'PSMDB and MongoDB MongoBleed: impact, mitigations, and patching strategy -
+  February 24, 2026'
+description: In this session, Ivan Groenewold will break down CVE-2025-14847 (“MongoBleed”),
+  a high-severity MongoDB memory disclosure risk when zlib compression is enabled
+  on a network-reachable server. He’ll share the quick mitigation (disable zlib),
+  how to verify it, and next steps for patching.
 images:
 - events/2026-coh-mongobleed/ivan_intro.png
 layout: single
@@ -11,8 +15,8 @@ speakers:
 - ivan_groenewold
 tags: ["Community", "Events", "MongoDB", "PSMDB"]
 events_year: ["2026"]
-events_tag: ["Community", "MongoDB",  "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "MongoDB", "Online"]
+events_category: ["Speaking"]
 ---
 Discover how CVE-2025-14847 (“MongoBleed”) can expose **MongoDB** to high-severity information disclosure—allowing an unauthenticated remote client to extract fragments of uninitialized server memory when zlib network compression is enabled on a network-reachable instance. 
 

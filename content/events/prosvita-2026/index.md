@@ -1,6 +1,7 @@
 ---
 title: 'ProsvITa 2026: Four Days in IT at Chernihiv Polytechnic'
-description: Evgeniy Patlan spoke at ProsvITa 2026 on shift-left security and your first open source contribution. Chernihiv IT Cluster intensive, June 22–25, 2026.
+description: Evgeniy Patlan spoke at ProsvITa 2026 on shift-left security and your
+  first open source contribution. Chernihiv IT Cluster intensive, June 22–25, 2026.
 images:
 - blog/2026/06/ProsvITa-2026-img-1.jpg
 layout: single
@@ -9,12 +10,11 @@ EventDate: June 22–25, 2026
 EventLocation: Chernihiv Polytechnic National University, Chernihiv, Ukraine
 speakers:
 - evgeniy_patlan
-tags: ['Community', 'Events', 'Open Source', 'DevOps', 'Education']
-events_year: ['2026']
-events_tag: ['Community', 'In-Person', 'Online']
-events_category: ['Community', 'Speaking']
+tags: ["Community", "DevOps", "Education", "Events", "Open Source"]
+events_year: ["2026"]
+events_tag: ["Community", "In-Person", "Online"]
+events_category: ["Speaking"]
 ---
-
 [Chernihiv IT Cluster](https://chernihiv.it/en) ran ProsvITa 2026 at Chernihiv Polytechnic National University, June 22–25. Engineers from local and international companies spent four days on what production work actually looks like: development, cloud, security, career skills, and how to get your first foothold in open source.
 
 ![Evgeniy Patlan presenting at ProsvITa 2026](/blog/2026/06/ProsvITa-2026-img-1.jpg)

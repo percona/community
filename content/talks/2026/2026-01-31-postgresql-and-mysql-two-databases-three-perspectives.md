@@ -1,5 +1,6 @@
 ---
-id: 2ee674d0-91f3-8031-a92f-c120a58cbaee
+id: SPEAK-1149
+jira: SPEAK-1149
 title: PostgreSQL and MySQL, Two Databases, Three Perspectives
 layout: single
 speakers:
@@ -10,18 +11,19 @@ presentation_date_end: ''
 presentation_time: '10:30'
 talk_year: '2026'
 event: FOSDEM 2026
+event_jira: SPEAK-1145
 event_status: Accepted
 event_date_start: '2026-01-30'
 event_date_end: '2026-02-02'
 event_url: https://fosdem.org/2026/
-event_location: Brussels, Belgium
+event_location: Brussels
 talk_tags:
 - MySQL
 - PostgreSQL
-- Cloud Native
-- Open Source
+- Cloud-Native
 - Kubernetes
 - MariaDB
+- Open-Source
 slides: ''
 video: ''
 images:

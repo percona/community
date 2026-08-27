@@ -14,7 +14,7 @@ speakers:
 tags: ["Data Gravity", "Podcast"]
 events_year: ["2023"]
 events_tag: ["Community"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 In this [episode](https://datagravity.podbean.com/e/data-gravity-episode-2-postgresql-for-jobseekers/), Joe Brockmeier talks to Percona's Sonia Valeja and David Gonzalez, about their recent book PostgreSQL for Jobseekers. They talk about the inspiration for the book, why they focus on jobseekers, and what's covered in the title.
 

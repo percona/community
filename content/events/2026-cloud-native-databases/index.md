@@ -1,21 +1,23 @@
 ---
-title: "Build DevCon: Cloud–Native Databases"
-description: Percona sponsors this virtual event focused on tools and best practices for running powerful, flexible database platforms that adapt seamlessly to cloud workloads. Percona founder Peter Zaitsev and Percona engineers Ege Gunes and George Kechagias speak at this two‑day virtual event.
+title: 'Build DevCon: Cloud–Native Databases'
+description: Percona sponsors this virtual event focused on tools and best practices
+  for running powerful, flexible database platforms that adapt seamlessly to cloud
+  workloads. Percona founder Peter Zaitsev and Percona engineers Ege Gunes and George
+  Kechagias speak at this two‑day virtual event.
 images:
-  - events/2026/cloud-native-databases-community.jpg
+- events/2026/cloud-native-databases-community.jpg
 layout: single
 date: '2026-02-20'
 EventDate: February 20-21, 2026
 speakers:
-  - ege_gunes
-  - george_kechagias
-  - peter_zaitsev
+- ege_gunes
+- george_kechagias
+- peter_zaitsev
 tags: ["Community", "Events", "Featured", "Kubernetes"]
 events_year: ["2026"]
-events_tag: ["Community", "Cloud", "Kubernetes",  "Online"]
+events_tag: ["Cloud", "Cloud Native", "Community", "Kubernetes", "Online"]
 events_category: ["Speaking", "Sponsorship"]
 ---
-
 Join Percona as it sponsors the Cloud Native Databases virtual event on February 20–21, 2026, featuring insights from key Percona leaders and engineers. Founder Peter Zaitsev, Software Engineer Ege Gunes, and Software Engineer George Kechagias will take the stage to share their perspectives and real‑world experience, highlighting how Percona’s open source services and tools empower teams to build, run, and scale modern database platforms with confidence in cloud environments.
 
 - 📅 **February 20-21, 2026**
@@ -41,5 +43,3 @@ Here’s a quick overview of Percona’s sessions at Build DevCon:
     A deep dive into diagnosing and resolving real‑world failures in Kubernetes‑based database clusters.  
 
 [Registration for this event is open now.](https://buildevcon.com/cloud-native-databases/)
-
-

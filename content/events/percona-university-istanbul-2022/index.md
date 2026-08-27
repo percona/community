@@ -7,13 +7,13 @@ images:
 - events/percona-university-istanbul-2022/14.JPG
 layout: single
 date: '2022-11-05'
-tags: ["Event", "opensource", "sponsorship"]
-events_year: ["2022"]
-events_category: ["Sponsorship"]
-events_tag: ["In-Person"]
 speakers:
 - sergey_pronin
 - peter_zaitsev
+tags: ["Event", "opensource", "sponsorship"]
+events_year: ["2022"]
+events_tag: ["In-Person"]
+events_category: ["Speaking", "Sponsorship"]
 ---
 Percona University is a series of database meetups that we organize worldwide in different locations. November 5th we came to Istanbul, economical, cultural and historical heart of Turkiye. [HostedPMM](https://www.hostedpmm.com/) and [FerretDB](https://www.ferretdb.io/) supported us during this meetup and sponsored it. 
 

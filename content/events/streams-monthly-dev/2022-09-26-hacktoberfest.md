@@ -13,7 +13,7 @@ speakers:
 tags: ["Hacktoberfest", "Kubernetes", "MySQL", "PMM", "Postgres", "Stream"]
 events_year: ["2022"]
 events_tag: ["Cloud Native", "MySQL", "PostgreSQL"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 October is close, and it is time for Hacktoberfest! Join our stream to talk online about this fantastic challenge at **2:30 UTC on Wednesday, September 28th**. And yes, you can be a part of the conversation with experts and jump into the stream to address the audience! 
 

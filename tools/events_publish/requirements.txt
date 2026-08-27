@@ -1,0 +1,4 @@
+# Event page sync from Jira (uses tools/talks for API client)
+-r ../talks/requirements.txt
+python-frontmatter>=1.1.0
+Pillow>=10.0.0

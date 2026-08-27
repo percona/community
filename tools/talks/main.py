@@ -1,63 +1,131 @@
 """
-🔄 Sync Talks from Notion to Hugo Site
+Sync Talks from Jira SPEAK → Hugo site (percona.community).
 
-This script:
-1. Loads data from Notion (speakers, events, talks)
-2. Processes each talk:
-   - Generates a Markdown file in content/talks/
-   - Updates aliases if the URL changed
-   - Creates contributor cards for new speakers
-3. Updates Notion with the new public URL.
+Usage (from community/ repo root):
+  python tools/talks/main.py                     # dry-run
+  python tools/talks/main.py --create            # write MD + Jira URL + contributors
+  python tools/talks/main.py --create --jira-key SPEAK-2223
 
-Used by: CI/CD, manual sync.
+Then (optional images):
+  python tools/talks_images/main.py --only-new
 """
 
-from notion_utils import (
-    load_speakers,
-    load_events,
-    load_talks,
-    extract_value
-)
+from __future__ import annotations
+
+import argparse
+import os
+import subprocess
+import sys
+
+# Allow imports when run as `python tools/talks/main.py` from repo root
+_TOOLS_TALKS = os.path.dirname(os.path.abspath(__file__))
+if _TOOLS_TALKS not in sys.path:
+    sys.path.insert(0, _TOOLS_TALKS)
+
+from jira_utils import load_talks, require_env
 from markdown_utils import process_talks
-from debug_utils import print_count, print_all_fields
-import pprint
 
 
-def main():
-    """
-    Main execution flow:
-    - Load speakers, events, and talks from Notion
-    - Print counts for visibility
-    - Process all talks (generate files, update aliases, create contributors)
-    """
-    print("🔄 Starting Notion to Hugo sync for talks...")
+def run_update_contributors(repo_root: str) -> None:
+    """Recount posts/events/talks on contributor cards after talks sync."""
+    script = os.path.join(repo_root, "tools", "contributors", "update_contributors.py")
+    if not os.path.isfile(script):
+        print(f"⚠️ Contributors updater not found: {script}")
+        return
+    print("\n👥 Updating contributor counts (talks / events / posts)...")
+    result = subprocess.run(
+        [sys.executable, script],
+        cwd=repo_root,
+        check=False,
+    )
+    if result.returncode != 0:
+        print(f"⚠️ update_contributors.py exited with code {result.returncode}")
+    else:
+        print("✅ Contributor cards updated.")
 
-    # Load data from Notion
-    speakers_fields, speakers_map = load_speakers()
-    print("✅ Speakers database loaded")
 
-    events_fields, events_map = load_events()
-    print("✅ Events database loaded")
+def run_events_publish(repo_root: str, *, jira_key: str | None = None) -> None:
+    """Create/update event pages for Conferences linked to synced talks."""
+    script = os.path.join(repo_root, "tools", "events_publish", "main.py")
+    if not os.path.isfile(script):
+        print(f"⚠️ events_publish not found: {script}")
+        return
+    cmd = [sys.executable, script, "--create"]
+    if jira_key:
+        cmd.extend(["--jira-key", jira_key])
+    print("\n📅 Syncing event pages from Jira...")
+    result = subprocess.run(cmd, cwd=repo_root, check=False)
+    if result.returncode != 0:
+        print(f"⚠️ events_publish exited with code {result.returncode}")
 
-    talks = load_talks()
-    print("✅ Talks list loaded")
 
-    # Debug: print number of entries
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--create",
+        action="store_true",
+        help="Write Markdown files and update Jira Community Website URL",
+    )
+    parser.add_argument(
+        "--jira-key",
+        help="Sync a single Talk issue key (e.g. SPEAK-2223)",
+    )
+    parser.add_argument(
+        "--skip-contributors",
+        action="store_true",
+        help="With --create: do not run tools/contributors/update_contributors.py",
+    )
+    parser.add_argument(
+        "--skip-events",
+        action="store_true",
+        help="With --create: do not run tools/events_publish (event pages + images)",
+    )
+    args = parser.parse_args()
+
+    # Hugo paths are relative to community/ repo root
+    repo_root = os.path.abspath(os.path.join(_TOOLS_TALKS, "..", ".."))
+    os.chdir(repo_root)
+
+    require_env()
+    print("🔄 Starting Jira → Hugo sync for talks...")
+    print(f"📁 Working directory: {repo_root}")
+
+    talks = load_talks(jira_key=args.jira_key)
     print("-" * 50)
-    print_count(speakers_map, label="Speakers")
-    print_count(events_map, label="Events")
-    print_count(talks, label="Talks")
+    print(f"Talks to process: {len(talks)}")
+    for t in talks:
+        print(
+            f"  - {t.get('key')}: {t.get('title')[:60]!r} "
+            f"status={t.get('status')} pub={t.get('publication_status')} "
+            f"event={(t.get('event') or {}).get('name')!r}"
+        )
     print("-" * 50)
 
-    # Debug: inspect raw fields (uncomment if needed)
-    # print_all_fields(speakers_map, limit=4, stop=True)
-    # pprint.pprint(events_fields)
+    if not talks:
+        print("Nothing to sync.")
+        return
 
-    # Process all talks: generate Markdown, manage aliases, create contributors
-    print("📝 Processing talks...")
-    process_talks(talks, extract_value, speakers_map, events_map)
+    print("📝 Processing talks..." + ("" if args.create else " (dry-run)"))
+    process_talks(talks, write=args.create)
 
-    print("🎉 Sync completed successfully!")
+    if not args.create:
+        print("\nDry-run only. Re-run with --create to write files and update Jira.")
+        print("After --create: events pages, contributors, then optional talk images:")
+        print("  python tools/talks_images/main.py --only-new")
+        return
+
+    if not args.skip_events:
+        # Prefer conference key from first talk when limiting scope
+        conf_key = None
+        if args.jira_key and talks:
+            conf_key = (talks[0].get("event") or {}).get("key") or args.jira_key
+        run_events_publish(repo_root, jira_key=conf_key)
+
+    if not args.skip_contributors:
+        run_update_contributors(repo_root)
+
+    print("\n🎉 Sync completed.")
+    print("Next: python tools/talks_images/main.py --only-new")
 
 
 if __name__ == "__main__":

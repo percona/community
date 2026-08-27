@@ -1,6 +1,6 @@
 ---
-title: 'Installation of MongoDB via a Kubernetes Operator - Community MeetUp - March
-  10th'
+title: Installation of MongoDB via a Kubernetes Operator - Community MeetUp - March
+  10th
 description: Learn more about installation of MongoDB via a Kubernetes operator in
   this recording of The Percona Community MeetUp of March 10th hosted by Matt Yonkovit,
   the Head of Open Source Strategy at Percona. Sergey Pronin, Product Owner at Percona,

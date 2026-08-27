@@ -1,5 +1,6 @@
 ---
-id: 15c674d0-91f3-80d2-b12e-e9eb91f32db1
+id: SPEAK-2199
+jira: SPEAK-2199
 title: Keeping a hand on the evolution of cursor controls
 layout: single
 speakers:
@@ -10,14 +11,15 @@ presentation_date_end: ''
 presentation_time: ''
 talk_year: '2025'
 event: FOSDEM 2025
+event_jira: SPEAK-1301
 event_status: Done
 event_date_start: '2025-02-01'
 event_date_end: '2025-02-02'
 event_url: https://fosdem.org/2025/
-event_location: Brussels, Belgium
+event_location: Brussels
 talk_tags:
 - Opensource
-- Open Source
+- Open-Source
 - Video
 - Slides
 slides: https://archive.fosdem.org/2025/events/attachments/fosdem-2025-5153-keeping-a-hand-on-the-evolution-of-cursor-controls-important-mice-of-the-past-and-what-to-do-if-you-get-one-today/slides/238671/hist_mice_1tVeXaY.pdf

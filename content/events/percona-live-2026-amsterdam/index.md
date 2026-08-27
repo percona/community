@@ -1,18 +1,19 @@
 ---
 title: Percona Live 2026 Amsterdam!
-description: 'Percona Live is where the open source database world shows up. Join the people who build, run, scale, and fix data systems every day in Amsterdam for three days of deep technical talks, hands-on workshops, and real conversations.'
+description: Percona Live is where the open source database world shows up. Join the
+  people who build, run, scale, and fix data systems every day in Amsterdam for three
+  days of deep technical talks, hands-on workshops, and real conversations.
 date: '2026-09-09'
 EventDate: September 9–11, 2026
 EventLocation: Mövenpick Hotel Amsterdam City Centre, Amsterdam, The Netherlands
 layout: single
 images:
 - events/percona-live-2026-amsterdam/percona-live-2026-1.png
-tags: ["perconalive2026", "event", "opensource", "databases", 'Promo']
+tags: ["Promo", "databases", "event", "opensource", "perconalive2026"]
 events_year: ["2026"]
-events_tag: ["PostgreSQL", "In-Person", "Valkey", "MongoDB", "MySQL"]
-events_category: ["Community", "Speaking", "Sponsorship"]
+events_tag: ["In-Person", "MongoDB", "MySQL", "PostgreSQL", "Valkey"]
+events_category: ["Sponsorship"]
 ---
-
 [Percona Live 2026 Amsterdam](https://perconalive.com/2026-amsterdam/) is where the open source database world shows up. Join the people who build, run, scale, and fix data systems every day, and hear from them as they share real lessons, real challenges, and real success. **Percona Live** is a conference for engineers, operators, architects, and database leaders who care about reliability, performance, and, most importantly, keeping open source open.
 
 If you run open source databases in the real world, this is your community, and your event.

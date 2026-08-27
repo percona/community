@@ -14,7 +14,7 @@ speakers:
 tags: ["Data Gravity", "Podcast"]
 events_year: ["2023"]
 events_tag: ["Community"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 In this [episode](https://datagravity.podbean.com/e/data-gravity-episode-3-benny-vasquez-of-almalinux/), Joe Brockmeier interviews benny Vasquez of the AlmaLinux Project to discuss open source data, the future of databases, and how databases and Linux distros go together.
 

@@ -10,8 +10,8 @@ date: '2024-09-07'
 speakers:
 - peter_zaitsev
 tags: ["Home", "Promo"]
-events_tag: ["In-Person"]
 events_year: ["2024"]
+events_tag: ["In-Person"]
 events_category: ["Speaking"]
 ---
 Percona University is an ongoing series of community-driven database meetups, bringing together open-source enthusiasts from around the world. On September 7th, we landed in Istanbul, the vibrant cultural and economic hub of Türkiye, for a day of learning, networking, and meaningful connections.

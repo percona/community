@@ -43,10 +43,12 @@ blog_tags:
 - sergey_pronin
 - storage
 events_tags:
+- Cloud-Native
 - Database
 - Event
 - Meetup
 - Mongo
+- Open-Source
 - PBM
 - Percona
 - Percona Community Live
@@ -54,16 +56,19 @@ events_tags:
 - event
 - k8s
 - opensource
+- speaking
 - sponsorship
 talks_tags:
 - Cloud Native
+- Cloud-Native
 - Containers
 - Everest
 - Open Source
+- Open-Source
 - Opensource
 - Video
 posts_count: 4
-events_count: 11
+events_count: 13
 talks_count: 5
 contributor_type:
 - author

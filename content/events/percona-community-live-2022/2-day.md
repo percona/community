@@ -8,7 +8,7 @@ images:
 - events/percona-community-live/days/Day-2.jpg
 layout: landing-day
 json: /json/talks.json
-json_filter: "June 22"
+json_filter: June 22
 date: '2022-06-22'
 speakers:
 - sidney_chen

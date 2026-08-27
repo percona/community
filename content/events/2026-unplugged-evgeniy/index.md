@@ -1,6 +1,10 @@
 ---
-title: 'Mastering Linux Packaging: Native Tools vs. Modern Abstractions - March 30, 2026'
-description: Evgeniy Patlan performs a deep dive into the packaging landscape, comparing native RPM and DEB tools against abstractions like CPack and nFPM. Learn to handle idempotent lifecycle scripts, systemd integration, and complex sub-package ecosystems for enterprise-grade software.
+title: 'Mastering Linux Packaging: Native Tools vs. Modern Abstractions - March 30,
+  2026'
+description: Evgeniy Patlan performs a deep dive into the packaging landscape, comparing
+  native RPM and DEB tools against abstractions like CPack and nFPM. Learn to handle
+  idempotent lifecycle scripts, systemd integration, and complex sub-package ecosystems
+  for enterprise-grade software.
 images:
 - events/2026-unplugged-evgeniy/evgeniy.png
 layout: single
@@ -9,12 +13,11 @@ EventDate: Monday, March 30, 2026 · 14:00-15:00 GMT
 EventLocation: Online
 speakers:
 - evgeniy_patlan
-tags: ["Community", "Events", "Linux", "DevOps", "Engineering"]
+tags: ["Community", "DevOps", "Engineering", "Events", "Linux"]
 events_year: ["2026"]
-events_tag: ["Community", "Linux", "DevOps", "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "DevOps", "Linux", "Online"]
+events_category: ["Speaking"]
 ---
-
 Building and distributing software for diverse Linux environments, like database servers and distributed systems, presents unique challenges in dependency management and lifecycle orchestration. In this session, **Evgeniy Patlan** will perform a deep dive into the packaging landscape, comparing the "gold standard" of native **RPM and DEB** tools against modern abstractions like **CPack** and **nFPM**.
 
 Attendees will learn how to handle complex requirements such as idempotent lifecycle scripts, **systemd** integration via macros, and protecting user modifications with specialized configuration file handling. Evgeniy will break down the decision framework for choosing the right tool based on project complexity, from simple Go/Rust static binaries to enterprise-grade software requiring sophisticated sub-package ecosystems.

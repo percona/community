@@ -1,5 +1,6 @@
 ---
-id: 1ff674d0-91f3-801a-992e-e53ee72ea05b
+id: SPEAK-1385
+jira: SPEAK-1385
 title: Kubernetes from the Database Out
 layout: single
 speakers:
@@ -7,18 +8,19 @@ speakers:
 talk_url: https://2025.pgconf.nyc/
 presentation_date: '2025-09-30'
 presentation_date_end: ''
-presentation_time: ''
+presentation_time: 01:00
 talk_year: '2025'
 event: PGConf NYC 2025
+event_jira: SPEAK-1383
 event_status: Done
 event_date_start: '2025-09-29'
 event_date_end: '2025-10-01'
 event_url: https://2025.pgconf.nyc/
 event_location: New York
 talk_tags:
-- PostgreSQL
 - CloudNative
 - Everest
+- PostgreSQL
 slides: ''
 video: ''
 images:

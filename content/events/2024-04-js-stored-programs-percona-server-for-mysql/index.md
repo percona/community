@@ -15,7 +15,7 @@ speakers:
 tags: ["Event", "MySQL"]
 events_year: ["2025"]
 events_tag: ["MySQL", "Online"]
-events_category: ["Speaking", "Community"]
+events_category: ["Speaking"]
 ---
 ## Join the Online Stream
 

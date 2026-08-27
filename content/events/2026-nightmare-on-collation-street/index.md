@@ -1,6 +1,7 @@
 ---
-title: 'Nightmare on Collation Street - April 7, 2026'
-description: Jan and Alastair discuss what happens when changes to glibc or ICU come after your Postgres indexes..
+title: Nightmare on Collation Street - April 7, 2026
+description: Jan and Alastair discuss what happens when changes to glibc or ICU come
+  after your Postgres indexes..
 images:
 - events/2026-nightmare-on-collation-street/banner.jpeg
 layout: single
@@ -9,12 +10,11 @@ EventDate: Tuesday, April 7, 2026 · 11:00-12:00 BST
 EventLocation: Online
 speakers:
 - evgeniy_patlan
-tags: ["Community", "Events", "Postgres", "DevOps", "Engineering"]
+tags: ["Community", "DevOps", "Engineering", "Events", "Postgres"]
 events_year: ["2026"]
-events_tag: ["Community", "Linux", "PostgreSQL", "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "Linux", "Online", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
-
 Character collations - the rules for comparing and sorting character strings - are not universal, even languages which use the same characters may sort them differently. These rules may also not be stable, and the libraries implementing them may have errors, requiring fixes and updates. When character string data is indexed or partitioned under one set of rules, then queried under another, it may create some problems.
 
 Join Jan and Alastair for a discussion about how this becomes your Postgres database’s problem, when it may come for you, and how to avoid trouble. We’ll give you one spoiler, running upstairs is no more useful here than in any slasher movie.

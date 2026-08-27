@@ -11,9 +11,9 @@ day: June 21
 date: '2022-06-21'
 speakers:
 - matt_yonkovit
-tags: ["PostgreSQL", "Databases", "MySQL", "Percona Community Live"]
+tags: ["Databases", "MySQL", "Percona Community Live", "PostgreSQL"]
 events_year: ["2022"]
-events_tag: ["MySQL"]
+events_tag: ["MySQL", "PostgreSQL"]
 events_category: ["Speaking"]
 ---
 ![The Lost Art of Database Design](events/percona-community-live/cards/Community-Live-Day-1-Matt-Yonkovit.jpg)

@@ -1,22 +1,18 @@
 ---
 title: Community MySQL Live Stream & Chat
-description: Percona Community Team hosts a series of live-streamed event on MySQL.
-  You will find out all the secrets of work with that open source database together
-  with the Principal Support Engineer Marcos Albe. The meetings are bi-weekly and
-  start in April. Join us on the sessions and ask your questions to the expert!
+description: Percona Community Team hosts a series of live-streamed event on MySQL. You will find out all the secrets of work with that open source database together with the Principal Support Engineer Marcos Albe. The meetings are bi-weekly and start in April. Join us on the sessions and ask your questions to the expert!
 layout: list
 images:
 - events/streams-mysql/Stream-MySQL-cover.jpg
 date: '2022-04-01'
+hero_type: mountains
+hero_title: Community MySQL Live Stream & Chat
+hero_description: Community Team starts a series of live-streamed meetings on MySQL. They start on April, 1st and take place every 2 weeks. Marcos Albe, Principal Support Engineer at Percona, will discuss with Percona's Technical Evangelists all the secrets of working with MySQL. All sessions have time dedicated for Q&A.
+hero_line: 1
 events_year: ["2022"]
 events_tag: ["Online"]
-events_category: ["Speaking","Community"]
-hero_type: mountains
-hero_title: "Community MySQL Live Stream & Chat"
-hero_description: "Community Team starts a series of live-streamed meetings on MySQL. They start on April, 1st and take place every 2 weeks. Marcos Albe, Principal Support Engineer at Percona, will discuss with Percona's Technical Evangelists all the secrets of working with MySQL. All sessions have time dedicated for Q&A."
-hero_line: 1
+events_category: ["Community", "Speaking"]
 ---
-
 {{% contentblock %}}
 {{% typography %}}
 

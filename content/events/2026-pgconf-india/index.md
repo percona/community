@@ -1,18 +1,19 @@
 ---
 title: PGConf India 2026
-description: 'Percona is proud to sponsor PGConf India as a Gold Sponsor. Meet our experts to discuss PostgreSQL adoption, internals, and real-world case studies for running production workloads at scale.'
+description: Percona is proud to sponsor PGConf India as a Gold Sponsor. Meet our
+  experts to discuss PostgreSQL adoption, internals, and real-world case studies for
+  running production workloads at scale.
 images:
 - events/2026-pgconfindia/pgconf-india-2026.png
 layout: single
 speakers:
 - jobin_augustine
 date: '2026-03-11'
-tags: ["Event", "opensource", "sponsorship", "PostgreSQL", "Dev", "performance"]
+tags: ["Dev", "Event", "PostgreSQL", "opensource", "performance", "sponsorship"]
 events_year: ["2026"]
 events_tag: ["In-Person", "PostgreSQL"]
-events_category: ["Sponsorship"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 Percona is proud to sponsor **PGConf India 2026** as a **Gold Sponsor**, taking place from **March 11th to March 13th, 2026**, at the **Sheraton Grand Hotel at Brigade Gateway** in Bengaluru, India.
 
 We are excited to share that a Percona expert will be delivering a technical session during the conference:

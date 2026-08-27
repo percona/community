@@ -1,6 +1,8 @@
 ---
-title: 'Swap on Kubernetes - Avoiding the OOMKiller'
-description: Tired of unexpected OOMKilled pods? Learn how to leverage swap in Kubernetes to improve application resilience and handle memory spikes effectively. Explore configuration strategies, performance trade-offs, and practical test results.
+title: Swap on Kubernetes - Avoiding the OOMKiller
+description: Tired of unexpected OOMKilled pods? Learn how to leverage swap in Kubernetes
+  to improve application resilience and handle memory spikes effectively. Explore
+  configuration strategies, performance trade-offs, and practical test results.
 images:
 - events/2026-unplugged-chetan/intro.png
 layout: single
@@ -11,10 +13,9 @@ speakers:
 - chetan_shivashankar
 tags: ["Community", "Events", "Kubernetes"]
 events_year: ["2026"]
-events_tag: ["Community", "Kubernetes", "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Cloud Native", "Community", "Kubernetes", "Online"]
+events_category: ["Speaking"]
 ---
-
 Tired of unexpected OOMKilled pods? Learn how to leverage swap in Kubernetes to improve application resilience and handle memory spikes effectively. Explore configuration strategies, performance trade-offs, and practical test results.
 
 **About the Event:**

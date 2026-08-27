@@ -13,7 +13,7 @@ speakers:
 tags: ["Data Gravity", "Podcast"]
 events_year: ["2023"]
 events_tag: ["Community"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 In this [episode](https://datagravity.podbean.com/e/data-gravity-episode-1/), Joe Brockmeier talks to Charles Thompson, creator of Dolphie - a real-time MySQL monitoring assistant that's open source and available for multiple platforms. He talks about creating Dolphie, how it fits into the MySQL monitoring space, and more.
 

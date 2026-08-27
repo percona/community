@@ -1,18 +1,19 @@
 ---
 title: Percona Live 2026 is back!
-description: 'Percona Live is back! Join the open source database community for three days of deep technical talks, hands-on workshops, and real conversations with people building and running MySQL, PostgreSQL, MongoDB, MariaDB, Valkey, and more in production.'
+description: Percona Live is back! Join the open source database community for three
+  days of deep technical talks, hands-on workshops, and real conversations with people
+  building and running MySQL, PostgreSQL, MongoDB, MariaDB, Valkey, and more in production.
 date: '2026-05-27'
 EventDate: May 27–29, 2026
 EventLocation: Computer History Museum, Mountain View, California
 layout: single
 images:
 - events/percona-live-2026/percona-live-2026-1.jpg
-tags: ["perconalive2026", "event", "opensource", "databases", 'Promo']
+tags: ["Promo", "databases", "event", "opensource", "perconalive2026"]
 events_year: ["2026"]
-events_tag: ["PostgreSQL", "In-Person", "Valkey", "MongoDB", "MySQL"]
-events_category: ["Community", "Speaking", "Sponsorship"]
+events_tag: ["In-Person", "MongoDB", "MySQL", "PostgreSQL", "Valkey"]
+events_category: ["Sponsorship"]
 ---
-
 [Percona Live 2026](https://perconalive.com/) is back! Join the **open source database community** for three days of deep technical talks, hands-on workshops, and real conversations with people building and running MySQL, PostgreSQL, MongoDB, MariaDB, Valkey, and more in production.
 
 ## When & where
@@ -52,4 +53,3 @@ Join us :) !!
 ![Percona Live 2026](/events/percona-live-2026/percona-live-2026-2.png)
 
 📩 Contact: perconalive@percona.com
-

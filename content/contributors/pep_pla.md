@@ -37,9 +37,9 @@ events_tags:
 - opensource
 - sponsorship
 talks_tags:
-- Cloud Native
+- Cloud-Native
 - MariaDB
-- Open Source
+- Open-Source
 - Video
 posts_count: 1
 events_count: 3

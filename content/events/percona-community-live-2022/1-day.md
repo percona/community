@@ -7,7 +7,7 @@ images:
 - events/percona-community-live/days/Day-1.jpg
 layout: landing-day
 json: /json/talks.json
-json_filter: "June 21"
+json_filter: June 21
 date: '2022-06-21'
 speakers:
 - bruce_momjian

@@ -14,7 +14,7 @@ speakers:
 tags: ["Event", "MongoDB", "PMM"]
 events_year: ["2025"]
 events_tag: ["MongoDB", "Online"]
-events_category: ["Speaking", "Community"]
+events_category: ["Speaking"]
 ---
 Percona invites you to a **Live Stream & Demo** featuring the latest enhancements in **Percona Monitoring and Management (PMM) 3**!
 

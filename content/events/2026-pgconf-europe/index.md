@@ -1,6 +1,8 @@
 ---
-title: 'PGConf Europe 2026'
-description: 'Percona is a Gold sponsor at PGConf Europe, October 20-23 in Valencia. We are part of the PostgreSQL community year-round — this is where we catch up with contributors, operators, and the people running PostgreSQL in production.'
+title: PGConf Europe 2026
+description: Percona is a Gold sponsor at PGConf Europe, October 20-23 in Valencia.
+  We are part of the PostgreSQL community year-round — this is where we catch up with
+  contributors, operators, and the people running PostgreSQL in production.
 images:
 - events/2026-pgconf-eu-2026/pgconf-eu-2026-1200x63.jpg
 layout: single
@@ -9,10 +11,9 @@ EventDate: October 20-23, 2026
 EventLocation: Valencia, Spain
 tags: ["Community", "Events", "PostgreSQL"]
 events_year: ["2026"]
-events_tag: ["In-Person", "PostgreSQL", "Community"]
-events_category: ["Sponsorship", "Speaking"]
+events_tag: ["Community", "In-Person", "PostgreSQL"]
+events_category: ["Sponsorship"]
 ---
-
 Percona is a **Gold sponsor** at **PGConf Europe**, October 20-23 in **Valencia**. We contribute to the PostgreSQL community year-round — this is where we catch up with contributors, operators, and the people running **PostgreSQL** in production.
 
 - 📅 **October 20-23, 2026**

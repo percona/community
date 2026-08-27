@@ -10,10 +10,10 @@ date: '2025-12-08'
 EventDate: Tuesday, January 06, 2026, from 2:00 PM to 3:00 PM EST
 speakers:
 - peter_zaitsev
-tags: ["Community", "Events", "MySQL", "PostgreSQL", "Featured"]
-events_year: ["2026"]
-events_tag: ["Community", "MySQL", "PostgreSQL", "Online"]
-events_category: ["Speaking", "Community"]
+tags: ["Community", "Events", "Featured", "MySQL", "PostgreSQL"]
+events_year: ["2025"]
+events_tag: ["Community", "MySQL", "Online", "PostgreSQL"]
+events_category: ["Speaking"]
 ---
 We’re excited to share that **Peter Zaitsev**, Founder of Percona, will present his talk **“Why PostgreSQL Took the Crown from MySQL and What Lies Ahead.”**
 After participating in Percona PGConf.EU in Riga, Peter is bringing this session to our community once again, with updated insights and perspectives from recent conversations with PostgreSQL experts and users.

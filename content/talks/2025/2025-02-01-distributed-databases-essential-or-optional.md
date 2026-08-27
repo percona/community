@@ -1,5 +1,6 @@
 ---
-id: 162674d0-91f3-8001-89db-e2f637709c8b
+id: SPEAK-2196
+jira: SPEAK-2196
 title: 'Distributed Databases: Essential or Optional?'
 layout: single
 speakers:
@@ -7,17 +8,18 @@ speakers:
 talk_url: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5743-distributed-databases-essential-or-optional-/
 presentation_date: '2025-02-01'
 presentation_date_end: ''
-presentation_time: 1 8:05 - 18:20
+presentation_time: ''
 talk_year: '2025'
 event: FOSDEM 2025
+event_jira: SPEAK-1301
 event_status: Done
 event_date_start: '2025-02-01'
 event_date_end: '2025-02-02'
 event_url: https://fosdem.org/2025/
-event_location: Brussels, Belgium
+event_location: Brussels
 talk_tags:
 - Databases
-- Open Source
+- Open-Source
 - Video
 - Slides
 slides: https://archive.fosdem.org/2025/events/attachments/fosdem-2025-5743-distributed-databases-essential-or-optional-/slides/238292/FOSDEM20_oW602cK.pptx

@@ -7,7 +7,7 @@ images:
 - events/percona-community-live/days/Day-3.jpg
 layout: landing-day
 json: /json/talks.json
-json_filter: "June 23"
+json_filter: June 23
 date: '2022-06-23'
 speakers:
 - wey_gu

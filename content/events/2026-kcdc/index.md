@@ -1,18 +1,19 @@
 ---
-title: 'KCDC 2026'
-description: 'Percona is at the Kansas City Database Conference (September 9-11), connecting with developers, DBAs, and data professionals around open source databases and the technical problems you are working through in production.'
+title: KCDC 2026
+description: Percona is at the Kansas City Database Conference (September 9-11), connecting
+  with developers, DBAs, and data professionals around open source databases and the
+  technical problems you are working through in production.
 images:
 - events/2026-kcdc/kcdc2026-1200x630.jpg
 layout: single
 date: '2026-09-09'
 EventDate: September 9-11, 2026
 EventLocation: Kansas City
-tags: ["Community", "Events", "Opensource", "Database"]
+tags: ["Community", "Database", "Events", "Opensource"]
 events_year: ["2026"]
-events_tag: ["In-Person", "Opensource", "Databases"]
-events_category: ["Sponsorship", "Speaking"]
+events_tag: ["Community", "Databases", "In-Person", "Opensource"]
+events_category: ["Sponsorship"]
 ---
-
 Percona is at the Kansas City Database Conference (September 9-11), connecting with developers, DBAs, and data professionals around open source databases and the technical problems you are working through in production.
 
 - 📅 **September 9-11, 2026**

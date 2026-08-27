@@ -1,16 +1,17 @@
 ---
 title: Kubecon Europe 2026 Amsterdam
-description: 'Percona is proud to be a Silver Sponsor of Kubecon EU in Amsterdam. Join our experts in the Solutions Showcase to discuss open source databases, Kubernetes, and cloud native data management.'
+description: Percona is proud to be a Silver Sponsor of Kubecon EU in Amsterdam. Join
+  our experts in the Solutions Showcase to discuss open source databases, Kubernetes,
+  and cloud native data management.
 images:
 - events/2026-kubecon/Kubecon-Europe-2026.png
 layout: single
 date: '2026-03-23'
-tags: ["Event", "opensource", "Cloud Native", "PostgreSQL", "MySQL", "MongoDB", "Kubernetes"]
+tags: ["Cloud Native", "Event", "Kubernetes", "MongoDB", "MySQL", "PostgreSQL", "opensource"]
 events_year: ["2026"]
-events_tag: ["In-Person"]
-events_category: ["Sponsorship", "Speaking"]
+events_tag: ["Cloud Native", "In-Person", "MongoDB", "MySQL", "PostgreSQL"]
+events_category: ["Sponsorship"]
 ---
-
 Percona is proud to be a **Silver Sponsor** of **Kubecon Europe 2026**, one of the most important gatherings for the cloud native and open source ecosystem. The event will take place from **March 23-26, 2026**, at the **RAI Amsterdam** in the Netherlands.
 
 KubeCon Europe brings together practitioners, contributors, and maintainers from around the world to share knowledge and shape the future of Kubernetes and related technologies. As a flagship conference of the **Cloud Native Computing Foundation (CNCF)**, it features collaboration across Graduated, Incubating, and Sandbox projects.

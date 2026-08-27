@@ -1,6 +1,8 @@
 ---
-title: 'Faster Backups in Percona PostgreSQL Operator with VolumeSnapshots - March 10, 2026'
-description:  Discover how Percona's latest Postgres Operator feature transforms database backups using Kubernetes VolumeSnapshots.
+title: Faster Backups in Percona PostgreSQL Operator with VolumeSnapshots - March
+  10, 2026
+description: Discover how Percona's latest Postgres Operator feature transforms database
+  backups using Kubernetes VolumeSnapshots.
 images:
 - events/2026-coh-faster-backups-percona-postgresql/mayank_intro.png
 layout: single
@@ -9,10 +11,10 @@ EventDate: Tuesday, March 10, 2026 · 13:00-14:00 GMT
 EventLocation: Online
 speakers:
 - mayank_shah
-tags: ["Community", "Events", "PostgreSQL", "Featured"]
+tags: ["Community", "Events", "Featured", "PostgreSQL"]
 events_year: ["2026"]
-events_tag: ["Community", "PostgreSQL", "Online", "Unplugged"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "Online", "PostgreSQL", "Unplugged"]
+events_category: ["Speaking"]
 ---
 Discover how Percona’s latest **PostgreSQL Operator** feature transforms database backups with **Kubernetes VolumeSnapshots**. Learn the setup, benefits such as near-instant snapshots and improved disaster recovery, key limitations, and practical deployment steps for production workloads.
 

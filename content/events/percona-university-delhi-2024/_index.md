@@ -6,9 +6,9 @@ images:
 - events/percona-university-delhi-2024/1.jpg
 layout: single
 date: '2024-06-21'
-events_tag: ["In-Person"]
 tags: ["Event", "opensource", "sponsorship"]
 events_year: ["2024"]
+events_tag: ["In-Person"]
 ---
 Percona Universities are was designed to help attendees dive deep into the latest advancements in database technology. On June 21st, 2024, database enthusiasts gathered in Gurgaon to talk all things databases. 
 

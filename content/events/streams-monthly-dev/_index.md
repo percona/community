@@ -7,15 +7,17 @@ layout: list
 images:
 - events/streams-monthly-dev/Developer-Meetup-Kai.jpg
 date: '2022-09-26'
-events_year: ["2022"]
-events_category: ['Community']
-events_tag: ["Online"]
 hero_type: mountains
-hero_title: "Monthly Percona Developer Meetup"
-hero_description: "This new meetup is your chance to get a behind-the-scenes view and to directly interact in-person with our engineers. Jump into the session with the Restream link from the online chat during the event and share your thoughts with the audience!"
+hero_title: Monthly Percona Developer Meetup
+hero_description: This new meetup is your chance to get a behind-the-scenes view and
+  to directly interact in-person with our engineers. Jump into the session with the
+  Restream link from the online chat during the event and share your thoughts with
+  the audience!
 hero_line: 3
+events_year: ["2022"]
+events_tag: ["Online"]
+events_category: ["Community"]
 ---
-
 {{% contentblock %}}
 {{% typography %}}
 

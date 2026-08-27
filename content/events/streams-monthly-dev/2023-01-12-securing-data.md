@@ -17,7 +17,7 @@ speakers:
 aliases: 2022-12-15-securing-data
 tags: ["Stream", "opensource", "securing"]
 events_year: ["2023"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 When we talk about database security, it encompasses different modules of different distinct areas. It is a very vast topic because it requires securing your (1) **Network**, (2) **Network Node**, (3) **Data**, (4) **Database**, (5) **Users** and (6) **Application**. 
 

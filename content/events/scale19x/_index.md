@@ -9,8 +9,8 @@ layout: single
 date: '2022-08-05'
 tags: ["event", "opensource", "sponsorship"]
 events_year: ["2022"]
-events_category: ["Sponsorship"]
 events_tag: ["In-Person"]
+events_category: ["Sponsorship"]
 ---
 This July, Percona Team met in Los Angeles. We participated in the [Scale 19x](https://www.socallinuxexpo.org/scale/19x) from July 28th to 31st. SCaLE is the largest community-run open-source and free software conference in North America. It is held annually in the greater Los Angeles area. It was a big event with many sponsors this year.
 

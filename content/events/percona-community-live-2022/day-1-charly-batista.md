@@ -10,7 +10,7 @@ day: June 21
 date: '2022-06-21'
 speakers:
 - charly_batista
-tags: ["PostgreSQL", "Percona Community Live", "Postgres"]
+tags: ["Percona Community Live", "PostgreSQL", "Postgres"]
 events_year: ["2022"]
 events_tag: ["PostgreSQL"]
 events_category: ["Speaking"]

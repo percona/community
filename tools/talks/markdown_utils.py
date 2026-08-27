@@ -1,34 +1,40 @@
+"""
+Hugo markdown generation for Community Talks (Jira source).
+
+Writes content/talks/<year>/<date>-<slug>.md and create-only contributor cards.
+"""
+
+from __future__ import annotations
+
 import os
 import re
-import yaml
 from datetime import datetime
-from notion_utils import patch_talk
-from debug_utils import dd, ddd
+from typing import Any
+
+import yaml
+
+from jira_utils import patch_talk
+from debug_utils import dd, ddd  # noqa: F401 — kept for local debugging
 
 CONTENT_DIR = "content/talks"
 PERCONA_PREFIX = "https://percona.community/talks/"
 CONTRIBUTORS_DIR = "content/contributors"
+ASSETS_CONTRIBUTORS_DIR = "assets/contributors"
 DEFAULT_CONTRIBUTOR_IMAGE = "contributors/percona.jpeg"
 
+
 def slugify(text: str) -> str:
-    """Converts a string to URL-safe slug format."""
+    """Converts a string to URL-safe slug format (hyphens for filenames)."""
     return re.sub(r"[^a-z0-9]+", "-", (text or "").lower()).strip("-")
 
+
 def _normalize_tags_str(tags_str: str) -> list[str]:
-    """Parses comma-separated string into a list of stripped tags."""
     if not tags_str:
         return []
     return [t.strip() for t in tags_str.split(",") if t and t.strip()]
 
-# -------------------------------
-# Front matter helpers
-# -------------------------------
 
 def split_front_matter(markdown: str) -> tuple[dict, str]:
-    """
-    Splits Markdown into front matter (dict) and body.
-    Returns: (front_matter, body)
-    """
     if not markdown.startswith("---"):
         return {}, markdown
     end_idx = markdown.find("\n---\n", 4)
@@ -36,21 +42,23 @@ def split_front_matter(markdown: str) -> tuple[dict, str]:
         fm = yaml.safe_load(markdown.strip("---")) or {}
         return fm, ""
     fm_raw = markdown[4:end_idx]
-    body = markdown[end_idx + 5:]
+    body = markdown[end_idx + 5 :]
     fm = yaml.safe_load(fm_raw) or {}
     return fm, body
 
+
 def assemble_markdown(fm: dict, body: str) -> str:
-    """Reassembles front matter and body into full Markdown."""
-    fm_str = yaml.dump(fm, sort_keys=False).strip()
+    fm_str = yaml.dump(
+        fm,
+        sort_keys=False,
+        allow_unicode=True,
+        width=1000,
+        default_flow_style=False,
+    ).strip()
     return f"---\n{fm_str}\n---\n{body}"
 
 
 def normalize_aliases(value) -> list[str]:
-    """
-    Normalizes aliases field into a list of clean strings.
-    Handles None, string, or list input.
-    """
     if value is None:
         return []
     if isinstance(value, str):
@@ -61,15 +69,7 @@ def normalize_aliases(value) -> list[str]:
     return []
 
 
-# -------------------------------
-# Aliases helpers
-# -------------------------------
-
 def read_aliases_from_file(path: str) -> list[str]:
-    """
-    Reads existing aliases from a Markdown file.
-    Returns: list of alias strings.
-    """
     if not os.path.exists(path):
         return []
     with open(path, "r", encoding="utf-8") as f:
@@ -78,17 +78,15 @@ def read_aliases_from_file(path: str) -> list[str]:
     return normalize_aliases(fm.get("aliases"))
 
 
-def add_aliases_with_previous(markdown: str, previous_aliases: list[str], old_year: str, old_slug: str) -> str:
-    """
-    Adds a new alias to front matter, merging with existing ones.
-    Ensures no duplicates.
-    """
+def add_aliases_with_previous(
+    markdown: str, previous_aliases: list[str], old_year: str, old_slug: str
+) -> str:
     fm, body = split_front_matter(markdown)
     current = normalize_aliases(fm.get("aliases"))
     new_alias = f"/talks/{old_year}/{old_slug}"
 
-    merged = []
-    seen = set()
+    merged: list[str] = []
+    seen: set[str] = set()
     for a in previous_aliases + current + [new_alias]:
         if a and a not in seen:
             seen.add(a)
@@ -98,15 +96,7 @@ def add_aliases_with_previous(markdown: str, previous_aliases: list[str], old_ye
     return assemble_markdown(fm, body)
 
 
-# -------------------------------
-# Filename and URL helpers
-# -------------------------------
-
 def generate_filename(title: str, presentation_date: str) -> tuple[str, str, str]:
-    """
-    Generates file path, filename, and year based on title and date.
-    Handles various date formats (ISO, partial, string).
-    """
     year = "unknown"
     date_part = "nodate"
     dt = None
@@ -126,7 +116,11 @@ def generate_filename(title: str, presentation_date: str) -> tuple[str, str, str
                 year = maybe[:4]
                 date_part = maybe
             else:
-                year = presentation_date[:4] if re.match(r"^\d{4}", presentation_date) else "unknown"
+                year = (
+                    presentation_date[:4]
+                    if re.match(r"^\d{4}", presentation_date)
+                    else "unknown"
+                )
                 date_part = slugify(presentation_date)
 
     slug = slugify(title)
@@ -137,130 +131,232 @@ def generate_filename(title: str, presentation_date: str) -> tuple[str, str, str
 
 
 def build_public_url(year: str, filename: str) -> str:
-    """Builds the public URL for a talk."""
     slug = os.path.splitext(filename)[0]
     return f"{PERCONA_PREFIX}{year}/{slug}"
 
 
-def get_existing_slug_and_year(props, extract_value) -> tuple[str, str]:
-    """
-    Extracts old year and slug from Community Website URL.
-    Returns: (old_year, old_slug) or ("", "")
-    """
-    url = extract_value(props.get("Community Website URL")) or ""
+def get_existing_slug_and_year(community_url: str) -> tuple[str, str]:
+    url = (community_url or "").strip()
     if not url or not url.startswith(PERCONA_PREFIX):
         return "", ""
-    rest = url[len(PERCONA_PREFIX):].strip("/")
+    rest = url[len(PERCONA_PREFIX) :].strip("/")
     parts = rest.split("/", 1)
     if len(parts) != 2:
         return "", ""
-    old_year, old_slug = parts[0], parts[1]
-    return old_year, old_slug
+    return parts[0], parts[1]
 
 
-# -------------------------------
-# File operations
-# -------------------------------
+def find_existing_talk_path(jira_key: str, community_url: str) -> str | None:
+    """Locate an existing MD by Community URL path or jira/id front matter."""
+    old_year, old_slug = get_existing_slug_and_year(community_url)
+    if old_year and old_slug:
+        path = os.path.join(CONTENT_DIR, old_year, f"{old_slug}.md")
+        if os.path.exists(path):
+            return path
+
+    if not os.path.isdir(CONTENT_DIR):
+        return None
+    needle = jira_key.strip()
+    for root, _dirs, files in os.walk(CONTENT_DIR):
+        for name in files:
+            if not name.endswith(".md"):
+                continue
+            path = os.path.join(root, name)
+            try:
+                with open(path, encoding="utf-8") as f:
+                    head = f.read(4000)
+            except OSError:
+                continue
+            fm, _ = split_front_matter(head)
+            if str(fm.get("jira") or "").strip() == needle:
+                return path
+            if str(fm.get("id") or "").strip() == needle:
+                return path
+    return None
+
+
+def read_front_matter_from_file(path: str) -> dict:
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+    except OSError:
+        return {}
+    fm, _ = split_front_matter(content)
+    return fm if isinstance(fm, dict) else {}
+
+
+def preserve_site_fields(markdown: str, existing_path: str | None) -> str:
+    """
+    Keep Hugo-only / previously curated fields that talks sync does not own
+    (images, aliases, presentation_date_end) when overwriting a talk page.
+    """
+    if not existing_path or not os.path.exists(existing_path):
+        return markdown
+    old_fm = read_front_matter_from_file(existing_path)
+    if not old_fm:
+        return markdown
+    fm, body = split_front_matter(markdown)
+    changed = False
+    old_images = old_fm.get("images")
+    if old_images and not fm.get("images"):
+        fm["images"] = old_images
+        changed = True
+    old_aliases = normalize_aliases(old_fm.get("aliases"))
+    if old_aliases:
+        merged = normalize_aliases(fm.get("aliases"))
+        seen = set(merged)
+        for a in old_aliases:
+            if a not in seen:
+                merged.append(a)
+                seen.add(a)
+        if merged != normalize_aliases(fm.get("aliases")):
+            fm["aliases"] = merged
+            changed = True
+    # Sync always emits empty presentation_date_end; keep curated value if present.
+    new_end = str(fm.get("presentation_date_end") or "").strip()
+    old_end = str(old_fm.get("presentation_date_end") or "").strip()
+    if not new_end and old_end:
+        fm["presentation_date_end"] = old_end
+        changed = True
+    if not changed:
+        return markdown
+    return assemble_markdown(fm, body)
+
 
 def save_markdown_file(filepath: str, markdown: str):
-    """Saves Markdown to a file with directory creation."""
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(markdown)
     print(f"✅ Saved: {filepath}")
 
 
-def update_talk_file(filepath: str, filename: str, new_year: str, old_year: str, old_slug: str, new_markdown: str):
-    """
-    Updates talk file: moves to new location, merges aliases.
-    Deletes old file if different.
-    """
-    old_filepath = os.path.join(CONTENT_DIR, old_year, f"{old_slug}.md")
-    previous_aliases = read_aliases_from_file(old_filepath)
-    merged_markdown = add_aliases_with_previous(new_markdown, previous_aliases, old_year, old_slug)
+def update_talk_file(
+    filepath: str,
+    new_year: str,
+    old_year: str,
+    old_slug: str,
+    new_markdown: str,
+    old_filepath: str | None = None,
+):
+    old_path = old_filepath or os.path.join(CONTENT_DIR, old_year, f"{old_slug}.md")
+    previous_aliases = read_aliases_from_file(old_path)
+    merged_markdown = add_aliases_with_previous(
+        new_markdown, previous_aliases, old_year, old_slug
+    )
+    merged_markdown = preserve_site_fields(merged_markdown, old_path)
 
     save_markdown_file(filepath, merged_markdown)
     print(f"✅ New file saved: {filepath}")
 
-    if os.path.exists(old_filepath) and old_filepath != filepath:
-        os.remove(old_filepath)
-        print(f"🗑️ Deleted old file: {old_filepath}")
+    if os.path.exists(old_path) and old_path != filepath:
+        os.remove(old_path)
+        print(f"🗑️ Deleted old file: {old_path}")
 
     print(f"⚠️ Slug changed, aliases merged (added /talks/{old_year}/{old_slug})")
 
 
-# -------------------------------
-# Process talks
-# -------------------------------
-def process_talks(talks: list, extract_value, speakers_map: dict, events_map: dict):
+def process_talks(talks: list[dict[str, Any]], *, write: bool = True) -> dict[str, Any]:
     """
-    Processes all talks:
-      - Generates Markdown files in content/talks/
-      - Updates aliases if the URL has changed (slug or year)
-      - Creates contributor cards for new speakers
-      - Updates Notion only if the talk is published for the first time or URL changed
+    Process enriched Jira talks into Hugo markdown.
 
-    Prints a final summary with statistics.
+    write=False → dry-run (print plan only, no files / no Jira write-back).
     """
     total = 0
     created_files = 0
     updated_files = 0
     changed_urls = 0
-    notion_updated = 0
-    all_new_speakers = []
+    jira_updated = 0
+    all_new_speakers: list[dict[str, str]] = []
+    planned: list[dict[str, Any]] = []
 
     for talk in talks:
         total += 1
-        talk_id = talk.get("id")
-        props = talk.get("properties", {})
-
-        # Generate Markdown and collect list of newly created contributors
         title, public_date, talk_year, md, new_speakers = build_hugo_markdown(
-            talk_id, props, extract_value, speakers_map, events_map
+            talk, create_contributors=write
         )
         all_new_speakers.extend(new_speakers)
 
-        # Compute file paths and public URL
         filepath, filename, new_year = generate_filename(title, public_date)
         new_slug = os.path.splitext(filename)[0]
-        old_year, old_slug = get_existing_slug_and_year(props, extract_value)
+        community_url = talk.get("community_url") or ""
+        old_year, old_slug = get_existing_slug_and_year(community_url)
+        existing_path = find_existing_talk_path(talk.get("key") or "", community_url)
+        if existing_path and not (old_year and old_slug):
+            # Derive year/slug from discovered path for alias handling
+            rel = os.path.relpath(existing_path, CONTENT_DIR)
+            parts = rel.split(os.sep)
+            if len(parts) >= 2:
+                old_year = parts[0]
+                old_slug = os.path.splitext(parts[-1])[0]
+
         new_url = build_public_url(new_year, filename)
-
-        print(f"✅ Processing: {title.strip()}")
-
         file_exists = os.path.exists(filepath)
-        url_changed = old_slug and old_year and (old_slug != new_slug or old_year != new_year)
+        url_changed = bool(
+            old_slug and old_year and (old_slug != new_slug or old_year != new_year)
+        )
 
-        should_update_notion = False
+        planned.append(
+            {
+                "key": talk.get("key"),
+                "title": title,
+                "path": filepath,
+                "url": new_url,
+                "status": talk.get("status"),
+                "pub": talk.get("publication_status"),
+                "url_changed": url_changed,
+                "exists": file_exists,
+            }
+        )
+
+        print(f"✅ Processing: {title.strip()} [{talk.get('key')}]")
+        print(f"   → {filepath}")
+        print(f"   → {new_url}")
+
+        if not write:
+            continue
+
+        should_update_jira = False
 
         if url_changed:
-            # Update file with new content and alias
-            update_talk_file(filepath, filename, new_year, old_year, old_slug, md)
+            update_talk_file(
+                filepath,
+                new_year,
+                old_year,
+                old_slug,
+                md,
+                old_filepath=existing_path,
+            )
             print(f"🟡 URL changed: {old_year}/{old_slug} → {new_year}/{new_slug}")
             changed_urls += 1
             updated_files += 1
-            should_update_notion = True
+            should_update_jira = True
         else:
-            # Save or overwrite the file without changing URL
+            source_for_preserve = existing_path if existing_path else (
+                filepath if file_exists else None
+            )
+            md = preserve_site_fields(md, source_for_preserve)
             save_markdown_file(filepath, md)
             if file_exists:
                 updated_files += 1
             else:
                 created_files += 1
-                should_update_notion = True  # First publication → update Notion
+                should_update_jira = True
 
-        # Update Notion only if it's a new publication or URL changed
-        if should_update_notion:
-            patch_talk(talk_id, new_url)
-            print(f"🔗 Updated Notion: {new_url}")
-            notion_updated += 1
+        if should_update_jira:
+            try:
+                patch_talk(str(talk.get("key")), new_url)
+                print(f"🔗 Updated Jira: {new_url}")
+                jira_updated += 1
+            except Exception as exc:
+                print(f"❌ Jira write-back failed for {talk.get('key')}: {exc}")
         else:
-            print(f"➡️ No Notion update needed: {new_url}")
+            print(f"➡️ No Jira update needed: {new_url}")
 
-    # 📊 Final summary
-    print("\n" + "="*60)
-    print("📊 PROCESSING SUMMARY")
-    print("="*60)
+    print("\n" + "=" * 60)
+    print("📊 PROCESSING SUMMARY" + (" (dry-run)" if not write else ""))
+    print("=" * 60)
     print(f"Total talks processed:     {total}")
     print(f"New contributors created:  {len(all_new_speakers)}")
 
@@ -272,210 +368,270 @@ def process_talks(talks: list, extract_value, speakers_map: dict, events_map: di
     print(f"\nFiles created:             {created_files}")
     print(f"Files updated:             {updated_files}")
     print(f"URLs changed (aliases):    {changed_urls}")
-    print(f"Notion pages updated:      {notion_updated}")
-    print("="*60)
+    print(f"Jira issues updated:       {jira_updated}")
+    print("=" * 60)
+
+    return {
+        "total": total,
+        "created": created_files,
+        "updated": updated_files,
+        "changed_urls": changed_urls,
+        "jira_updated": jira_updated,
+        "planned": planned,
+        "new_speakers": all_new_speakers,
+    }
 
 
 def build_hugo_markdown(
-    talk_id: str,
-    props: dict,
-    extract_value,
-    speakers_map: dict,
-    events_map: dict
-) -> tuple[str, str, str, str]:
-    """Builds Hugo-compatible Markdown with safe YAML front matter."""
-    
-    # Base fields
-    title = extract_value(props.get("Title")) or ""
-    abstract = extract_value(props.get("Abstract"))
-    slides = extract_value(props.get("Publication Slides"))
-    video_url = extract_value(props.get("Publication Video"))
-    tags_raw = extract_value(props.get("Tags"))
+    talk: dict[str, Any],
+    *,
+    create_contributors: bool = True,
+) -> tuple[str, str, str, str, list[dict[str, str]]]:
+    """Build Hugo markdown from an enriched Jira talk record."""
+    talk_id = talk.get("key") or talk.get("id") or ""
+    title = talk.get("title") or ""
+    abstract = talk.get("abstract") or ""
+    slides = talk.get("slides") or ""
+    video_url = talk.get("video") or ""
+    tags_raw = talk.get("labels") or []
 
-    # Presentation date (for front matter) — may be empty
-    pres_date_val = extract_value(props.get("Presentation Date"))
-    presentation_date = ""
+    presentation_date = (talk.get("presentation_date") or "").strip()
     presentation_date_end = ""
+    presentation_time = (talk.get("presentation_time") or "").strip()
+    conference_url = talk.get("talk_url") or ""
+    event_status = talk.get("status") or ""
 
-    if isinstance(pres_date_val, dict):
-        presentation_date = pres_date_val.get("start", "") or ""
-        presentation_date_end = pres_date_val.get("end", "") or ""
-    else:
-        presentation_date = (pres_date_val or "").strip()
+    event = talk.get("event") or {}
+    event_title = event.get("name") or ""
+    event_date_start = event.get("date_start") or ""
+    event_date_end = event.get("date_end") or ""
+    event_url = event.get("url") or ""
+    event_location = event.get("location") or ""
+    event_tech_tags = list(event.get("technology") or [])
 
-    # Public date (used for file path and year)
     public_date = presentation_date.strip()
+    if not public_date and event_date_start:
+        public_date = event_date_start
 
-    if not public_date:
-        events_prop = props.get("Events 2024-2026", {})
-        if events_prop and events_prop.get("type") == "relation":
-            for rel in events_prop.get("relation", []):
-                rel_id = rel.get("id")
-                if rel_id in events_map:
-                    ev = events_map[rel_id]
-                    date_prop = ev.get("Date", {})
-                    if isinstance(date_prop, dict):
-                        event_start = date_prop.get("start", "") or ""
-                        if event_start:
-                            public_date = event_start
-                            break  # Use first event's date
-
-    # Extract year for folder and URL
     talk_year = public_date[:4] if public_date and len(public_date) >= 4 else ""
 
-    # Other fields
-    presentation_time = extract_value(props.get("Presentation Time"))
-    conference_url = extract_value(props.get("Conference URL"))
-    event_status = extract_value(props.get("Event Status"))
+    speakers: list[str] = []
+    new_speakers_list: list[dict[str, str]] = []
+    for speaker_data in talk.get("speakers") or []:
+        slug = (speaker_data.get("slug") or "").strip()
+        name = (speaker_data.get("Name") or "").strip() or "Unknown"
+        if not slug and name:
+            slug = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
+        if not slug:
+            print(f"❌ Cannot generate slug for speaker in talk {talk_id}: {name}")
+            continue
+        if create_contributors and ensure_contributor_card(slug, speaker_data):
+            new_speakers_list.append({"name": name, "slug": slug})
+        elif create_contributors:
+            # Existing card: still try to replace Percona placeholder with Jira avatar
+            backfill_contributor_avatar(slug, speaker_data)
+        speakers.append(slug)
 
-    # Resolve speakers and create contributor cards if needed
-    speakers = []
-    new_speakers_list = []
-    speakers_prop = props.get("Speaker", {})
-    if speakers_prop and speakers_prop.get("type") == "relation":
-        for rel in speakers_prop.get("relation", []):
-            rel_id = rel.get("id")
-            if rel_id in speakers_map:
-                speaker_data = speakers_map[rel_id]
-                slug = speaker_data.get("slug", "").strip()
+    if isinstance(tags_raw, str):
+        tag_list = _normalize_tags_str(tags_raw) + event_tech_tags
+    else:
+        tag_list = [str(t).strip() for t in tags_raw if str(t).strip()] + event_tech_tags
 
-                if not slug:
-                    name = speaker_data.get("Name", "").strip()
-                    if name:
-                        slug = slugify(name)
-                    if not slug:
-                        print(f"❌ Cannot generate slug for speaker in talk {talk_id}: {speaker_data.get('Name')}")
-                        continue
-
-                name = speaker_data.get("Name", "").strip() or "Unknown"
-
-                if ensure_contributor_card(slug, speaker_data):
-                    new_speakers_list.append({"name": name, "slug": slug})
-
-                speakers.append(slug)
-
-    # Resolve event data — include in front matter if available
-    event_title = ""
-    event_date_start = ""
-    event_date_end = ""
-    event_url = ""
-    event_location = ""
-    event_tech_tags = []
-    events_prop = props.get("Events 2024-2026", {})
-    if events_prop and events_prop.get("type") == "relation":
-        for rel in events_prop.get("relation", []):
-            rel_id = rel.get("id")
-            if rel_id in events_map:
-                ev = events_map[rel_id]
-                event_title = ev.get("Name", "") or event_title
-                date_prop = ev.get("Date", {})
-                if isinstance(date_prop, dict):
-                    if not event_date_start:
-                        event_date_start = date_prop.get("start", "") or ""
-                        event_date_end = date_prop.get("end", "") or ""
-                event_url = ev.get("URL", "") or event_url
-                event_location = ev.get("Event Location", "") or ev.get("City", "") or event_location
-                tech_raw = ev.get("Technology", "")
-                if tech_raw:
-                    event_tech_tags.extend(_normalize_tags_str(tech_raw))
-
-    if not event_title:
-        raw_event_field = extract_value(props.get("Event"))
-        if raw_event_field:
-            event_title = raw_event_field.strip()
-
-    # Normalize tags
-    tag_list = _normalize_tags_str(tags_raw) + event_tech_tags
-    # Add 'Video' tag if a video is available
     if video_url:
         tag_list.append("Video")
-        
-    # Add 'Slides' tag if slides are available
     if slides:
         tag_list.append("Slides")
 
-    # Remove duplicates while preserving order
-    seen = set()
+    seen: set[str] = set()
     tag_list_unique = [t for t in tag_list if not (t in seen or seen.add(t))]
-    talk_tags_yaml = "[" + ", ".join([f"'{t}'" for t in tag_list_unique]) + "]" if tag_list_unique else "[]"
+    talk_tags_yaml = (
+        "[" + ", ".join([f"'{t}'" for t in tag_list_unique]) + "]"
+        if tag_list_unique
+        else "[]"
+    )
 
-    # Escape quotes safely for YAML
-    escaped_title = title.replace('\\', '\\\\').replace('"', '\\"')
+    escaped_title = title.replace("\\", "\\\\").replace('"', '\\"')
 
-    # Extract YouTube ID from video URL
     youtube_id = None
     if video_url:
-        match = re.search(r'(?:v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})', video_url)
+        match = re.search(
+            r"(?:v=|/embed/|youtu\.be/)([a-zA-Z0-9_-]{11})", video_url
+        )
         youtube_id = match.group(1) if match else None
 
-    # If presentation_date is empty, use event_date_start as fallback (only for front matter)
     final_presentation_date = presentation_date or event_date_start
 
-    # Build front matter
     front_matter_lines = [
         "---",
         f'id: "{talk_id}"',
+        f'jira: "{talk_id}"',
         f'title: "{escaped_title}"',
-        'layout: single',
-        'speakers:',
+        "layout: single",
+        "speakers:",
     ]
-    front_matter_lines.extend([f"  - {s}" for s in speakers] if speakers else ["  - unknown"])
-    front_matter_lines.extend([
-        f'talk_url: "{conference_url}"',
-        f'presentation_date: "{final_presentation_date}"',
-        f'presentation_date_end: "{presentation_date_end}"',
-        f'presentation_time: "{presentation_time}"',
-        f'talk_year: "{talk_year}"',
-        f'event: "{event_title}"',
-        f'event_status: "{event_status}"',
-        f'event_date_start: "{event_date_start}"',
-        f'event_date_end: "{event_date_end}"',
-        f'event_url: "{event_url}"',
-        f'event_location: "{event_location}"',
-        f'talk_tags: {talk_tags_yaml}',
-        f'slides: "{slides}"',
-        f'video: "{video_url}"',
-    ])
+    front_matter_lines.extend(
+        [f"  - {s}" for s in speakers] if speakers else ["  - unknown"]
+    )
+    front_matter_lines.extend(
+        [
+            f'talk_url: "{conference_url}"',
+            f'presentation_date: "{final_presentation_date}"',
+            f'presentation_date_end: "{presentation_date_end}"',
+            f'presentation_time: "{presentation_time}"',
+            f'talk_year: "{talk_year}"',
+            f'event: "{event_title}"',
+            f'event_jira: "{event.get("key") or ""}"',
+            f'event_status: "{event_status}"',
+            f'event_date_start: "{event_date_start}"',
+            f'event_date_end: "{event_date_end}"',
+            f'event_url: "{event_url}"',
+            f'event_location: "{event_location}"',
+            f"talk_tags: {talk_tags_yaml}",
+            f'slides: "{slides}"',
+            f'video: "{video_url}"',
+        ]
+    )
     if youtube_id:
         front_matter_lines.append(f'youtube_id: "{youtube_id}"')
     front_matter_lines.append("---")
 
     front_matter = "\n".join(front_matter_lines)
-
-    # Body — abstract text only; no heading (shows up in sharing/summary snippets)
     body = abstract.strip() if abstract else ""
     markdown = front_matter + ("\n" + body if body else "\n")
 
     return title, public_date, talk_year, markdown, new_speakers_list
 
+
+def download_contributor_avatar(avatar_url: str, slug: str) -> str | None:
+    """
+    Download a Jira/Atlassian avatar into assets/contributors/<slug>.<ext>.
+    Returns Hugo-relative path (contributors/<slug>.ext) or None.
+    """
+    url = (avatar_url or "").strip()
+    if not url or not slug:
+        return None
+    # Skip obvious initials-only placeholders from Atlassian
+    if "/initials/" in url:
+        return None
+
+    import requests
+
+    try:
+        response = requests.get(url, timeout=45)
+    except requests.RequestException as exc:
+        print(f"⚠️ Avatar download failed for {slug}: {exc}")
+        return None
+    if not response.ok or not response.content:
+        print(f"⚠️ Avatar HTTP {response.status_code} for {slug}")
+        return None
+
+    ctype = (response.headers.get("content-type") or "").split(";")[0].strip().lower()
+    ext = {
+        "image/jpeg": "jpg",
+        "image/jpg": "jpg",
+        "image/png": "png",
+        "image/webp": "webp",
+        "image/gif": "gif",
+    }.get(ctype)
+    if not ext:
+        # sniff
+        head = response.content[:8]
+        if head.startswith(b"\xff\xd8"):
+            ext = "jpg"
+        elif head.startswith(b"\x89PNG"):
+            ext = "png"
+        elif head.startswith(b"RIFF"):
+            ext = "webp"
+        else:
+            print(f"⚠️ Unknown avatar type {ctype!r} for {slug}")
+            return None
+
+    os.makedirs(ASSETS_CONTRIBUTORS_DIR, exist_ok=True)
+    filename = f"{slug}.{ext}"
+    abs_path = os.path.join(ASSETS_CONTRIBUTORS_DIR, filename)
+    try:
+        with open(abs_path, "wb") as f:
+            f.write(response.content)
+    except OSError as exc:
+        print(f"⚠️ Cannot write avatar {abs_path}: {exc}")
+        return None
+    return f"contributors/{filename}"
+
+
+def _contributor_uses_placeholder(images: Any) -> bool:
+    if not images:
+        return True
+    if isinstance(images, str):
+        images = [images]
+    if not isinstance(images, list) or not images:
+        return True
+    only = str(images[0] or "").strip()
+    return only == DEFAULT_CONTRIBUTOR_IMAGE or only.endswith("/percona.jpeg")
+
+
+def backfill_contributor_avatar(slug: str, speaker_data: dict) -> bool:
+    """If contributor exists with percona.jpeg placeholder, replace with Jira avatar."""
+    filepath = os.path.join(CONTRIBUTORS_DIR, f"{slug}.md")
+    if not os.path.exists(filepath):
+        return False
+    avatar_url = (speaker_data.get("avatar_url") or "").strip()
+    if not avatar_url:
+        return False
+    try:
+        with open(filepath, encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return False
+    if not text.startswith("---"):
+        return False
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return False
+    try:
+        fm = yaml.safe_load(text[4:end]) or {}
+    except Exception:
+        return False
+    if not _contributor_uses_placeholder(fm.get("images")):
+        return False
+    rel = download_contributor_avatar(avatar_url, slug)
+    if not rel:
+        return False
+    fm["images"] = [rel]
+    body = text[end + 5 :]
+    fm_str = yaml.dump(fm, sort_keys=False, allow_unicode=True, width=1000).strip()
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(f"---\n{fm_str}\n---\n{body}")
+    except OSError as exc:
+        print(f"⚠️ Cannot update avatar in {filepath}: {exc}")
+        return False
+    print(f"🖼️ Updated contributor avatar: {filepath} → {rel}")
+    return True
+
+
 def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
-    """
-    Creates a contributor card if it does not already exist.
-    Returns True if created, False otherwise.
-    """
+    """Create contributor card if missing. Returns True if created."""
     if not slug:
         name_fallback = speaker_data.get("Name", "Unknown")
         print(f"❌ Cannot create contributor card: empty slug for speaker '{name_fallback}'")
         return False
 
-    name = speaker_data.get("Name", "").strip()
+    name = (speaker_data.get("Name") or "").strip()
     if not name:
         print(f"⚠️ Skip contributor: empty Name (slug: {slug})")
         return False
 
     filepath = os.path.join(CONTRIBUTORS_DIR, f"{slug}.md")
     if os.path.exists(filepath):
-        return False  # Already exists
+        return False
 
-    # Extract fields
     notion_status = (speaker_data.get("Status") or "").strip().lower()
     role = (speaker_data.get("Role") or "").strip()
     tagline_from_notion = (speaker_data.get("Tagline") or "").strip()
     technology = (speaker_data.get("Technology") or "").strip()
     bio = (speaker_data.get("Bio") or "").strip()
 
-    # Determine contributor type
-    is_available = notion_status == "available"
+    is_available = notion_status in {"available", ""}
     has_role = bool(role)
 
     if not is_available and has_role:
@@ -491,28 +647,32 @@ def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
         job = role or None
         tagline = tagline_from_notion or "Community Author"
 
-    # Pronunciation
-    name_pronunciation = slug
-    fullname_pronunciation = name
-
-    # Social links
-    social = {"facebook": None, "github": None, "linkedin": None, "twitter": None, "website": None}
+    social = {
+        "facebook": None,
+        "github": None,
+        "linkedin": None,
+        "twitter": None,
+        "website": None,
+    }
     notion_to_social = {
         "LinkedIn": "linkedin",
         "Twitter": "twitter",
         "GitHub": "github",
         "Website": "website",
-        "Facebook": "facebook"
+        "Facebook": "facebook",
     }
     for notion_field, key in notion_to_social.items():
         url = (speaker_data.get(notion_field) or "").strip()
         if url:
             social[key] = url
 
-    # Images
     images = [DEFAULT_CONTRIBUTOR_IMAGE]
+    avatar_rel = download_contributor_avatar(
+        str(speaker_data.get("avatar_url") or ""), slug
+    )
+    if avatar_rel:
+        images = [avatar_rel]
 
-    # Bio fallback
     if not bio:
         if technology:
             bio = f"{technology} Expert"
@@ -521,12 +681,11 @@ def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
         else:
             bio = "Database Engineer"
 
-    # Build front matter
     fm = {
         "name": slug,
-        "name_pronunciation": name_pronunciation,
+        "name_pronunciation": slug,
         "fullname": name,
-        "fullname_pronounciation": fullname_pronunciation,
+        "fullname_pronounciation": name,
         "tagline": tagline,
         "job": job,
         "status": status,
@@ -542,7 +701,6 @@ def ensure_contributor_card(slug: str, speaker_data: dict) -> bool:
 {bio}
 """
 
-    # Write file
     os.makedirs(CONTRIBUTORS_DIR, exist_ok=True)
     try:
         with open(filepath, "w", encoding="utf-8") as f:

@@ -42,26 +42,32 @@ blog_tags:
 - security
 - sponsorship
 events_tags:
+- Cloud-Native
+- Event
 - Events
 - Featured
+- Open-Source
 - PG
 - PerconaLive2023
 - Podcast
 - Postgres
 - event
+- opensource
+- speaking
+- sponsorship
 talks_tags:
-- Cloud Native
+- Cloud-Native
 - Design
 - Everest
-- Open Source
+- Open-Source
 - Opensource
 - Security
 - Slides
 - Tech
 - Video
 posts_count: 19
-events_count: 3
-talks_count: 5
+events_count: 8
+talks_count: 8
 contributor_type:
 - author
 - speaker

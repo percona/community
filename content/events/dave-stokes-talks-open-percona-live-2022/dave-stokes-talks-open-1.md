@@ -16,7 +16,7 @@ speakers:
 tags: ["PerconaLive2022", "Podcast"]
 events_year: ["2022"]
 events_tag: ["Community"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 Listen to the interviews from PerconaLive 2022. David Stokes invited amazing guests to talk to him about open source technologies.
 

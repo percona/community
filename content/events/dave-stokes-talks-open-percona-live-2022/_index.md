@@ -17,7 +17,7 @@ speakers:
 tags: ["PerconaLive2022", "Podcast"]
 events_year: ["2022"]
 events_tag: ["Community"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 {{% contentblock %}}
 {{% typography %}}

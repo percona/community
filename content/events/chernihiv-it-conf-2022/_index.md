@@ -12,8 +12,8 @@ speakers:
 - peter_zaitsev
 - lenz_grimmer
 tags: ["Event", "devops", "opensource"]
-events_tag: ["Online"]
 events_year: ["2022"]
+events_tag: ["Online"]
 events_category: ["Speaking", "Sponsorship"]
 ---
 Percona sponsored an amazing event organized by Chernihiv.IT Cluster - Chernihiv.IT Conf: Tech Front. It was an online event organized in support to Chernihiv and IT industry in this city. It was an online event and it attackted a lot of attendees from Chernihiv and all over Ukraine. 

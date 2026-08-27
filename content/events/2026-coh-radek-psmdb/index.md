@@ -1,6 +1,9 @@
 ---
-title: 'Vector Search for Percona Software for MongoDB - March 5, 2026'
-description: Discover how Percona is bringing Vector Search and Full-Text Search capabilities to the open source MongoDB ecosystem. Radoslaw Szulgo will walk through the strategic roadmap for integrating mongot into the Percona stack to provide a production-grade, open source alternative.
+title: Vector Search for Percona Software for MongoDB - March 5, 2026
+description: Discover how Percona is bringing Vector Search and Full-Text Search capabilities
+  to the open source MongoDB ecosystem. Radoslaw Szulgo will walk through the strategic
+  roadmap for integrating mongot into the Percona stack to provide a production-grade,
+  open source alternative.
 images:
 - events/2026-coh-radek-psmdb/radek.png
 layout: single
@@ -11,10 +14,9 @@ speakers:
 - radoslaw_szulgo
 tags: ["Community", "Events", "MongoDB", "PSMDB"]
 events_year: ["2026"]
-events_tag: ["Community", "MongoDB",  "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "MongoDB", "Online"]
+events_category: ["Speaking"]
 ---
-
 Discover how **Percona** is bringing **Vector Search** and **Full-Text Search** capabilities to the open source **MongoDB** ecosystem. In this session, we will walk through the strategic roadmap for integrating **mongot**, the engine powering these features into the Percona stack, offering community users a way to break free from Atlas-only limitations.
 
 Senior Product Manager **Radoslaw Szulgo** will highlight how Percona is enhancing the stack with orchestration via the **Percona Operator**, observability through **PMM**, and advanced backup/restore capabilities with **PBM**. Learn what to expect on the path to **General Availability** with MongoDB 9.0 and join the discussion to share your requirements and use cases.

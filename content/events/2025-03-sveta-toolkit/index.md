@@ -13,7 +13,7 @@ speakers:
 tags: ["Event", "MySQL", "Toolkit"]
 events_year: ["2025"]
 events_tag: ["MySQL", "Online"]
-events_category: ["Speaking", "Community"]
+events_category: ["Speaking"]
 ---
 Join Our Online Stream: War story. Removing Offensive Language from Percona Toolkit
 

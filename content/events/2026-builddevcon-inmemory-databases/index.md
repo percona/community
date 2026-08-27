@@ -1,6 +1,8 @@
 ---
 title: 'Build Dev Con: In-Memory Databases'
-description: 'Percona is participating in the DB Mastery: In-Memory Databases summit with multiple Percona speakers. This virtual event explores ultra-low-latency architectures, caching strategies, and real-time processing.'
+description: 'Percona is participating in the DB Mastery: In-Memory Databases summit
+  with multiple Percona speakers. This virtual event explores ultra-low-latency architectures,
+  caching strategies, and real-time processing.'
 images:
 - events/2026-builddevcon/builddevcon.jpeg
 layout: single
@@ -10,12 +12,11 @@ speakers:
 - martin_visser
 - kyle_davis
 date: '2026-03-20'
-tags: ["Event", "opensource", "database", "in-memory", "performance"]
+tags: ["Event", "database", "in-memory", "opensource", "performance"]
 events_year: ["2026"]
 events_tag: ["Online"]
-events_category: ["Speaking", "Sponsorship"]
+events_category: ["Speaking"]
 ---
-
 Percona is taking part in the **DB Mastery: In-Memory Databases** summit on **March 20, 2026**. This virtual event focuses on how teams design and operate high-performance in-memory systems, covering low-latency data models, caching architectures, and scaling fast read/write workloads.
 
 Percona will have a strong presence with four expert speakers contributing to the talks and discussions:

@@ -1,5 +1,6 @@
 ---
-id: 310674d0-91f3-80ea-8fe9-fad9aae63063
+id: SPEAK-1433
+jira: SPEAK-1433
 title: 'Don’t OIDC Yourself in the Foot: Postgres 18’s New Auth Explained'
 layout: single
 speakers:
@@ -7,17 +8,18 @@ speakers:
 talk_url: https://www.postgresql.eu/events/pgconfde2026/sessions/session/7555-dont-oidc-yourself-in-the-foot-postgres-18s-new-auth-explained/
 presentation_date: '2026-04-21'
 presentation_date_end: '2026-04-22'
-presentation_time: ''
+presentation_time: 01:00
 talk_year: '2026'
 event: PGConf Germany 2026
-event_status: Accepted
+event_jira: SPEAK-1431
+event_status: Done
 event_date_start: '2026-04-21'
 event_date_end: '2026-04-22'
 event_url: https://2026.pgconf.de/
-event_location: Essen, Germany
+event_location: Essen
 talk_tags:
-- PostgreSQL
 - OIDC
+- PostgreSQL
 slides: ''
 video: ''
 images:

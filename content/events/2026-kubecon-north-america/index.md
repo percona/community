@@ -1,18 +1,19 @@
 ---
-title: 'KubeCon North America 2026'
-description: 'Percona is a Silver sponsor at KubeCon + CloudNativeCon North America, November 9-12 in Salt Lake City. Find us in the Solutions Showcase to talk databases on Kubernetes, performance at scale, and open source data platforms in production.'
+title: KubeCon North America 2026
+description: Percona is a Silver sponsor at KubeCon + CloudNativeCon North America,
+  November 9-12 in Salt Lake City. Find us in the Solutions Showcase to talk databases
+  on Kubernetes, performance at scale, and open source data platforms in production.
 images:
 - events/2026-kubecon-na/kubecon-na-2026.jpg
 layout: single
 date: '2026-11-09'
 EventDate: November 9-12, 2026
 EventLocation: Salt Lake City, Utah
-tags: ["Community", "Events", "Opensource", "Cloud Native", "PostgreSQL", "MySQL", "MongoDB", "Kubernetes"]
+tags: ["Cloud Native", "Community", "Events", "Kubernetes", "MongoDB", "MySQL", "Opensource", "PostgreSQL"]
 events_year: ["2026"]
-events_tag: ["In-Person", "PostgreSQL", "MySQL", "MongoDB", "Kubernetes", "Cloud Native"]
-events_category: ["Sponsorship", "Speaking"]
+events_tag: ["Cloud Native", "Community", "In-Person", "Kubernetes", "MongoDB", "MySQL", "Opensource", "PostgreSQL"]
+events_category: ["Sponsorship"]
 ---
-
 Percona is a **Silver sponsor** at **KubeCon + CloudNativeCon North America**, November 9-12 in **Salt Lake City, Utah**. Find us in the **Solutions Showcase** to talk databases on Kubernetes — performance at scale, high availability, and what actually breaks when you run **MySQL**, **PostgreSQL**, or **MongoDB** in production clusters.
 
 - 📅 **November 9-12, 2026**

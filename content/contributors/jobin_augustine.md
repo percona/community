@@ -30,6 +30,7 @@ events_tags:
 - opensource
 - performance
 - pgpool
+- speaking
 - sponsorship
 talks_tags:
 - Dev
@@ -38,7 +39,7 @@ talks_tags:
 - performance
 - video
 posts_count: 0
-events_count: 7
+events_count: 8
 talks_count: 6
 contributor_type:
 - speaker

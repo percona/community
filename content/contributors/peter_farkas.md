@@ -19,19 +19,32 @@ blog_tags: []
 events_tags:
 - Event
 - Featured
+- Open-Source
 - Opensource
 - PerconaLive2023
 - Podcast
+- english
 - event
+- heap
+- observability
 - opensource
+- performance
+- serbia
+- speaking
 - sponsorship
 talks_tags:
 - Databases
 - Open Source
+- Open-Source
 - Opensource
+- english
+- heap
+- observability
+- performance
+- serbia
 posts_count: 0
-events_count: 4
-talks_count: 1
+events_count: 7
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:

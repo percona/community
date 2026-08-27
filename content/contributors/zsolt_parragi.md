@@ -29,21 +29,27 @@ blog_tags:
 - Percona
 - PostgreSQL
 - Security
+- TDE
 - development
 - pg_zsolt
 events_tags:
+- Event
 - Featured
+- Open-Source
 - PG
 - Postgres
 - event
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - OIDC
-- Open Source
+- Open-Source
 - Security
 - Slides
-posts_count: 6
-events_count: 1
-talks_count: 2
+posts_count: 8
+events_count: 3
+talks_count: 3
 contributor_type:
 - author
 - speaker

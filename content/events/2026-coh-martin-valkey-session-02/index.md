@@ -1,6 +1,8 @@
 ---
 title: 'Sorted Sets: Leaderboards and Beyond - Martin Visser'
-description: Martin Visser explains how sorted data structures in Valkey and Redis can be used to solve real-world problems efficiently, going beyond simple leaderboards to cover task scheduling, rate limiting, autocomplete, and more.
+description: Martin Visser explains how sorted data structures in Valkey and Redis
+  can be used to solve real-world problems efficiently, going beyond simple leaderboards
+  to cover task scheduling, rate limiting, autocomplete, and more.
 images:
 - events/2026-coh-martin-valkey-session-02/intro.png
 layout: single
@@ -9,12 +11,11 @@ EventDate: Thursday, February 12, 2026
 EventLocation: Online
 speakers:
 - martin_visser
-tags: ["Community", "Events", "Valkey", "Redis", "Performance", "Data Structures"]
+tags: ["Community", "Data Structures", "Events", "Performance", "Redis", "Valkey"]
 events_year: ["2026"]
-events_tag: ["Community", "Valkey", "Redis",  "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "Online", "Redis", "Valkey"]
+events_category: ["Speaking"]
 ---
-
 Sorted Sets are one of the most powerful data structures in Valkey and Redis, but they are often only associated with gaming leaderboards. In this session, **Martin Visser** (Valkey and Redis Tech Lead @ Percona) dives deep into how sorted data structures can solve complex engineering challenges with high efficiency.
 
 Beyond the classic "Top 10" use case, Martin demonstrates how to implement sophisticated systems like task scheduling, sliding window rate limiting, lexicographical autocomplete, and advanced range queries. Participants will also get an inside look at the internal performance optimizations in Valkey 8.1+, including SIMD operations and memory reductions that make these operations even faster and cheaper to run.

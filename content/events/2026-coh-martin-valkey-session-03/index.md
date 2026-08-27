@@ -1,6 +1,8 @@
 ---
-title: 'Rate Limiting Strategies with Valkey and Redis - Martin Visser'
-description: Martin Visser outlines various rate-limiting algorithms, such as Fixed Window, Token Bucket, and Leaky Bucket, and provides technical strategies for implementing them efficiently using Valkey and Redis. 
+title: Rate Limiting Strategies with Valkey and Redis - Martin Visser
+description: Martin Visser outlines various rate-limiting algorithms, such as Fixed
+  Window, Token Bucket, and Leaky Bucket, and provides technical strategies for implementing
+  them efficiently using Valkey and Redis.
 images:
 - events/2026-coh-martin-valkey-session-03/intro.png
 layout: single
@@ -9,12 +11,11 @@ EventDate: Thursday, February 26, 2026
 EventLocation: Online
 speakers:
 - martin_visser
-tags: ["Community", "Events", "Valkey", "Redis", "Security", "Performance"]
+tags: ["Community", "Events", "Performance", "Redis", "Security", "Valkey"]
 events_year: ["2026"]
-events_tag: ["Community", "Valkey", "Redis",  "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Community", "Online", "Redis", "Valkey"]
+events_category: ["Speaking"]
 ---
-
 Traffic spikes and "noisy neighbors" can quickly saturate backend resources. In this session, **Martin Visser** (Valkey and Redis Tech Lead @ Percona) explores robust **rate-limiting strategies** to protect system resilience and ensure fair resource allocation.
 
 Martin deep-dives into five essential algorithms, comparing their complexity and memory impact. He provides practical Lua and Python examples for implementing:

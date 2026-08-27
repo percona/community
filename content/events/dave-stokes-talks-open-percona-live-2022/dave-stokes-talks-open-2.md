@@ -14,7 +14,7 @@ speakers:
 tags: ["PerconaLive2022", "Podcast"]
 events_year: ["2022"]
 events_tag: ["Community"]
-events_category: ["Speaking","Community"]
+events_category: ["Speaking"]
 ---
 Bruce Momjian, VP, Postgres Evangelist at EDB, and Charly Batista, PostgreSQL Tech Lead at Percona joined Dave Stokes, Technical Evangelist at Percona Live 2022. This is the recording of their talk on all things Postgres-related and OpenSource technologies.
 

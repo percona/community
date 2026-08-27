@@ -1,18 +1,19 @@
 ---
-title: 'AWS re:Invent 2026'
-description: 'Percona is a Bronze sponsor at AWS re:Invent, November 30-December 4 in Las Vegas. Find us on the Expo floor to talk open source databases, performance, and data infrastructure on AWS.'
+title: AWS re:Invent 2026
+description: Percona is a Bronze sponsor at AWS re:Invent, November 30-December 4
+  in Las Vegas. Find us on the Expo floor to talk open source databases, performance,
+  and data infrastructure on AWS.
 images:
 - events/2026-aws-re-invent/aws-reinvent-1200x630.jpg
 layout: single
 date: '2026-11-30'
 EventDate: November 30-December 4, 2026
 EventLocation: Las Vegas, Nevada
-tags: ["Community", "Events", "Opensource", "Cloud", "MySQL", "PostgreSQL", "MongoDB", "Valkey"]
+tags: ["Cloud", "Community", "Events", "MongoDB", "MySQL", "Opensource", "PostgreSQL", "Valkey"]
 events_year: ["2026"]
-events_tag: ["In-Person", "MySQL", "PostgreSQL", "MongoDB", "Valkey", "Cloud Native"]
+events_tag: ["Cloud Native", "Community", "In-Person", "MongoDB", "MySQL", "Opensource", "PostgreSQL", "Valkey"]
 events_category: ["Sponsorship"]
 ---
-
 Percona is a **Bronze sponsor** at **AWS re:Invent**, November 30-December 4 in **Las Vegas**. We'll be on the Expo floor with the cloud community — talking open source databases, performance tuning, and data infrastructure that holds up in AWS production environments.
 
 - 📅 **November 30-December 4, 2026**

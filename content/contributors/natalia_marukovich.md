@@ -16,7 +16,8 @@ aliases:
 - /authors/natalia_marukovich
 - /authors/natalia_marukovich/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- PostgreSQL
 blog_tags:
 - Kubernetes
 - MongoDB
@@ -24,10 +25,12 @@ events_tags: []
 talks_tags: []
 posts_count: 1
 events_count: 0
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
+- speaker
 contributor_year:
+- '2026'
 - '2025'
 ---
 Software Engineer at Percona

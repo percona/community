@@ -1,6 +1,9 @@
 ---
-title: 'When You Don’t Control the Hardware: Troubleshooting MySQL in the Cloud - May 11, 2026'
-description: Sveta Smirnova shares practical, field-tested techniques for diagnosing MySQL issues in cloud environments where low-level hardware visibility is limited, covering Performance Schema, cloud-specific observability, and I/O throttling.
+title: 'When You Don’t Control the Hardware: Troubleshooting MySQL in the Cloud -
+  May 11, 2026'
+description: Sveta Smirnova shares practical, field-tested techniques for diagnosing
+  MySQL issues in cloud environments where low-level hardware visibility is limited,
+  covering Performance Schema, cloud-specific observability, and I/O throttling.
 images:
 - events/2026-unplugged-sveta-mysql/intro.png
 layout: single
@@ -9,12 +12,11 @@ EventDate: Monday, May 11, 2026 · 16:00-17:00 GMT
 EventLocation: Online
 speakers:
 - sveta_smirnova
-tags: ["Community", "Events", "MySQL", "Cloud", "Troubleshooting"]
+tags: ["Cloud", "Community", "Events", "MySQL", "Troubleshooting"]
 events_year: ["2026"]
-events_tag: ["Community", "MySQL", "Cloud", "Online"]
-events_category: ["Speaking", "Community"]
+events_tag: ["Cloud", "Cloud Native", "Community", "MySQL", "Online"]
+events_category: ["Speaking"]
 ---
-
 Traditional MySQL troubleshooting assumes you control the server, but in the cloud, that assumption is gone. In this session, **Sveta Smirnova** will explore practical, field-tested techniques for diagnosing MySQL issues when hardware visibility is limited.
 
 Whether you are running MySQL in a managed service, on virtual machines, or inside containers, you often lose access to low-level system data. Participants will learn how to work confidently with the visibility they actually have, focusing on:

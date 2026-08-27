@@ -1,5 +1,6 @@
 ---
-id: 310674d0-91f3-80cf-981e-c0ba11e7f162
+id: SPEAK-1434
+jira: SPEAK-1434
 title: Everything you need to know about collations
 layout: single
 speakers:
@@ -7,14 +8,15 @@ speakers:
 talk_url: https://www.postgresql.eu/events/pgconfde2026/sessions/session/7576-everything-you-need-to-know-about-collations/
 presentation_date: '2026-04-21'
 presentation_date_end: ''
-presentation_time: 12:15-13:00
+presentation_time: 01:00
 talk_year: '2026'
 event: PGConf Germany 2026
+event_jira: SPEAK-1431
 event_status: Done
 event_date_start: '2026-04-21'
 event_date_end: '2026-04-22'
 event_url: https://2026.pgconf.de/
-event_location: Essen, Germany
+event_location: Essen
 talk_tags:
 - PostgreSQL
 slides: ''

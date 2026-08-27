@@ -1,7 +1,7 @@
-
 ---
-title: 'Open Source Summit North America 2026'
-description: Percona will be a Silver Sponsor at Open Source Summit North America, taking place May 18–20 in Minneapolis. Stop by booth #8 in the Solutions Showcase to connect with our team and see how we’re helping power the open source community.
+title: Open Source Summit North America 2026
+description: Percona will be a Silver Sponsor at Open Source Summit North America,
+  taking place May 18–20 in Minneapolis. Stop by booth
 images:
 - events/2026/OSS-Nama.jpg
 layout: single
@@ -10,10 +10,9 @@ EventDate: May 18-20, 2026
 EventLocation: Minneapolis, Minnesota
 tags: ["Community", "Events", "Opensource"]
 events_year: ["2026"]
-events_tag: ["In-Person"]
+events_tag: ["Community", "In-Person", "Opensource"]
 events_category: ["Sponsorship"]
 ---
-
 Percona will be a Silver Sponsor at Open Source Summit North America, taking place May 18–20 in Minneapolis. Stop by booth #8 in the Solutions Showcase to connect with our team and see how we’re helping power the open source community.
 
 - 📅 **Date/Time:** May 18, 2026 -> May 20, 2026
@@ -27,4 +26,3 @@ Percona’s presence is vital in helping organizations navigate the ever-evolvin
 ## About the event:
 
 Open Source Summit North America 2026 is the premier gathering for open source developers, technologists, and community leaders to collaborate, share knowledge, and solve real-world challenges together. It brings together maintainers, contributors, and organizations from around the world to exchange ideas, explore emerging technologies, and help drive the future of open source innovation. Often described as the home for “code, community, and collaboration,” the event serves as a central hub for advancing projects, building connections, and strengthening the global open source ecosystem.
-
