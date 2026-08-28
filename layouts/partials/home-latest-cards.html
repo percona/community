@@ -28,35 +28,51 @@
   {{ $sorted = sort $pages "PublishDate" "desc" }}
 {{ else if eq $section "talks" }}
   {{ $now := now }}
-  {{ $upcoming := slice }}
+  {{ $until := $now.AddDate 0 1 0 }}
+  {{ $upcomingSoon := slice }}
+  {{ $upcomingLater := slice }}
   {{ $past := slice }}
   {{ range $pages }}
     {{ $dateStr := .Params.presentation_date | default .Params.event_date_start }}
     {{ if $dateStr }}
-      {{ if ge (time $dateStr) $now }}
-        {{ $upcoming = $upcoming | append . }}
+      {{ $d := time $dateStr }}
+      {{ if and (ge $d $now) (le $d $until) }}
+        {{ $upcomingSoon = $upcomingSoon | append . }}
+      {{ else if gt $d $until }}
+        {{ $upcomingLater = $upcomingLater | append . }}
       {{ else }}
         {{ $past = $past | append . }}
       {{ end }}
     {{ end }}
   {{ end }}
-  {{ $upcoming = sort $upcoming ".Params.presentation_date" "asc" }}
+  {{ $upcomingSoon = sort $upcomingSoon ".Params.presentation_date" "asc" }}
+  {{ $upcomingLater = sort $upcomingLater ".Params.presentation_date" "asc" }}
   {{ $past = sort $past ".Params.presentation_date" "desc" }}
-  {{ if ge (len $upcoming) $limit }}
-    {{ $sorted = first $limit $upcoming }}
-    {{ $title = "Up & Coming" }}
+  {{ if ge (len $upcomingSoon) $limit }}
+    {{ $sorted = first $limit $upcomingSoon }}
+    {{ $title = "Upcoming" }}
     {{ $accent = "Talks" }}
-  {{ else if eq (len $upcoming) 0 }}
-    {{ $sorted = first $limit $past }}
-    {{ $title = "Latest" }}
-    {{ $accent = "Talks" }}
-  {{ else }}
-    {{ $sorted = $upcoming }}
-    {{ $remaining := sub $limit (len $upcoming) }}
-    {{ range first $remaining $past }}
+  {{ else if gt (len $upcomingSoon) 0 }}
+    {{ $sorted = $upcomingSoon }}
+    {{ $remaining := sub $limit (len $upcomingSoon) }}
+    {{ range first $remaining $upcomingLater }}
       {{ $sorted = $sorted | append . }}
     {{ end }}
-    {{ $title = "Upcoming & Recent" }}
+    {{ if lt (len $sorted) $limit }}
+      {{ $remaining2 := sub $limit (len $sorted) }}
+      {{ range first $remaining2 $past }}
+        {{ $sorted = $sorted | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $title = "Upcoming" }}
+    {{ $accent = "Talks" }}
+  {{ else if gt (len $upcomingLater) 0 }}
+    {{ $sorted = first $limit $upcomingLater }}
+    {{ $title = "Upcoming" }}
+    {{ $accent = "Talks" }}
+  {{ else }}
+    {{ $sorted = first $limit $past }}
+    {{ $title = "Latest" }}
     {{ $accent = "Talks" }}
   {{ end }}
 {{ end }}
