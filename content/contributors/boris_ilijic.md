@@ -3,8 +3,8 @@ name: boris_ilijic
 name_pronunciation: boris_ilijic
 fullname: Boris Ilijic
 fullname_pronounciation: Boris Ilijic
-job: null
-tagline: Community Author
+job: Sr. Software Engineer @ Percona
+tagline: null
 social:
   facebook: null
   github: null
@@ -13,7 +13,7 @@ social:
   website: null
 images:
 - contributors/boris_ilijic.png
-status: community
+status: current
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Backup

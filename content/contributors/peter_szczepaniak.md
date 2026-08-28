@@ -12,7 +12,7 @@ social:
   twitter: null
   website: null
 images:
-- contributors/percona.jpeg
+- contributors/peter_szczepaniak.jpeg
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

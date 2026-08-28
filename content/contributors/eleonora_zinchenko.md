@@ -3,8 +3,8 @@ name: eleonora_zinchenko
 name_pronunciation: eleonora_zinchenko
 fullname: Eleonora Zinchenko
 fullname_pronounciation: Eleonora Zinchenko
-job: null
-tagline: Community Author
+job: Sr. Quality Engineer @ Percona
+tagline: null
 social:
   facebook: null
   github: null
@@ -13,7 +13,7 @@ social:
   website: null
 images:
 - contributors/eleonora_zinchenko.png
-status: community
+status: current
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

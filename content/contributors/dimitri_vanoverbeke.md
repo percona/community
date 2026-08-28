@@ -3,8 +3,8 @@ name: dimitri_vanoverbeke
 name_pronunciation: dimitri_vanoverbeke
 fullname: Dimitri Vanoverbeke
 fullname_pronounciation: Dimitri Vanoverbeke
-job: null
-tagline: Community Author
+job: Sr. Solutions Engineer @ Percona
+tagline: null
 social:
   facebook: null
   github: null
@@ -13,7 +13,7 @@ social:
   website: null
 images:
 - contributors/dimitri_vanoverbeke.jpg
-status: community
+status: current
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

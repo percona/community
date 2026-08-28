@@ -3,8 +3,8 @@ name: david_steele
 name_pronunciation: david_steele
 fullname: David Steele
 fullname_pronounciation: David Steele
-job: null
-tagline: Community Author
+job: pgBackRest Maintainer
+tagline: null
 social:
   facebook: null
   github: null
@@ -12,7 +12,7 @@ social:
   twitter: null
   website: null
 images:
-- contributors/percona.jpeg
+- contributors/david_steele.jpeg
 status: community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

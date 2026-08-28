@@ -12,7 +12,7 @@ social:
   twitter: null
   website: null
 images:
-- contributors/yoann_la_cancellera.png
+- contributors/yoann_la_cancellera.jpeg
 status: current
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

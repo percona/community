@@ -3,8 +3,8 @@ name: joel_jacobsson
 name_pronunciation: joel_jacobsson
 fullname: Joel Jacobsson
 fullname_pronounciation: Joel Jacobsson
-job: null
-tagline: Community Author
+job: Postgres Community
+tagline: null
 social:
   facebook: null
   github: null
@@ -12,7 +12,7 @@ social:
   twitter: null
   website: null
 images:
-- contributors/percona.jpeg
+- contributors/joel_jacobsson.jpg
 status: community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
