@@ -28,4 +28,4 @@ contributor_type:
 contributor_year:
 - '2026'
 ---
-Open Source Contributor
+pgBackRest Maintainer
