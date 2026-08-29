@@ -23,8 +23,4 @@ Conference site: [https://events.linuxfoundation.org/kubecon-cloudnativecon-nort
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [When Life Gives You Containers, Make an Open Source RDS: A Kubernetes Love Story](/talks/2024/2024-11-13-when-life-gives-you-containers-make-an-open-source-rds-a-kubernetes-love-story/) by [Sergey Pronin](/contributors/sergey_pronin/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

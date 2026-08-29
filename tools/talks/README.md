@@ -26,7 +26,7 @@ Talks are included when **all** of:
 
 - `issuetype = Talk`
 - `status` ∈ `Accepted`, `Done`
-- `Publication Status` ∈ `Ready for publication`, `Published`
+- `Publication Status` = `Ready for publication` (after sync → `Published`)
 
 ## Usage
 
@@ -39,6 +39,7 @@ python tools/talks/main.py
 python tools/talks/main.py --create
 
 # Single issue
+# One Talk by key (bypasses Ready filter — re-publish / fix)
 python tools/talks/main.py --create --jira-key SPEAK-2223
 
 # Skip event pages / contributor recount

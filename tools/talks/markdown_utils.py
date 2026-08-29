@@ -332,6 +332,9 @@ def process_talks(
             continue
 
         should_update_jira = False
+        pub = (talk.get("publication_status") or "").strip()
+        # Always write back when still in the Ready queue → flip to Published.
+        ready_for_pub = pub.casefold() == "ready for publication"
 
         if url_changed:
             update_talk_file(
@@ -360,6 +363,9 @@ def process_talks(
             else:
                 created_files += 1
                 should_update_jira = True
+
+        if ready_for_pub:
+            should_update_jira = True
 
         if should_update_jira:
             try:

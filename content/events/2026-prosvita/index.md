@@ -23,9 +23,4 @@ Conference site: [https://chernihiv.it](https://chernihiv.it)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Commit to Your Career: Getting Started in Open Source](/talks/2026/2026-06-22-commit-to-your-career-getting-started-in-open-source/) by [Evgeniy Patlan](/contributors/evgeniy_patlan/)
-* [Shift Left: Why Security Comes First, Not Last](/talks/2026/2026-06-22-shift-left-why-security-comes-first-not-last/) by [Evgeniy Patlan](/contributors/evgeniy_patlan/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

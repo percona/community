@@ -23,8 +23,4 @@ Conference site: [https://heapcon.io/2026](https://heapcon.io/2026)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Lessons from 20 Years of Bootstrapping an Open Source Business to $50M+](/talks/2026/2026-11-05-lessons-from-20-years-of-bootstrapping-an-open-source-business-to-50m/) by [Peter Farkas](/contributors/peter_farkas/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

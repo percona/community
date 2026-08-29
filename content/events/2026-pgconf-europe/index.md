@@ -4,6 +4,7 @@ description: 'Percona is a Gold sponsor at PGConf Europe, October 20-23 in Valen
 images:
 - events/2026-pgconf-eu-2026/pgconf-eu-2026-1200x63.jpg
 layout: single
+jira: SPEAK-1476
 date: '2026-10-20'
 EventDate: October 20-23, 2026
 EventLocation: Valencia, Spain

@@ -23,8 +23,4 @@ Conference site: [https://2025.pgconf.nyc/](https://2025.pgconf.nyc/)
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [Kubernetes from the Database Out](/talks/2025/2025-09-30-kubernetes-from-the-database-out/) by [Alastair Turner](/contributors/alastair_turner/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

@@ -18,9 +18,11 @@ contributor_tag:
 - Community
 blog_tags:
 - Community
+- Community Ascent
 - Events
 - MariaDB
 - MongoDB
+- Mountaineers
 - MySQL
 - Open Source
 - Percona
@@ -29,16 +31,20 @@ blog_tags:
 - Valkey
 events_tags:
 - Event
+- Open-Source
 - Percona
+- Tech
 - Valkey
+- opensource
+- speaking
 talks_tags:
 - Open Source
 - Opensource
 - Slides
 - Tech
 - Valkey
-posts_count: 3
-events_count: 1
+posts_count: 4
+events_count: 2
 talks_count: 1
 contributor_type:
 - author

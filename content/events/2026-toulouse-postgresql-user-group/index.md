@@ -19,8 +19,4 @@ events_category: ["Speaking"]
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [pg_tde, The why, the how and the real-world use cases](/talks/2026/2026-09-22-pg-tde-the-why-the-how-and-the-real-world-use-cases/) by [Dimitri Vanoverbeke](/contributors/dimitri_vanoverbeke/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

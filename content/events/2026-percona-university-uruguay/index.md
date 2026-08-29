@@ -22,8 +22,4 @@ Conference site: [https://www.percona.com/blog/percona-university-comes-to-urugu
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [State of Open Source Databases](/talks/2026/2026-08-23-state-of-open-source-databases/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

@@ -23,8 +23,4 @@ Conference site: [https://kccnceu2025.sched.com/](https://kccnceu2025.sched.com/
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [Taming PostgreSQL Extensions in Kubernetes: Strategies for Dynamic Management](/talks/2025/2025-04-01-taming-postgresql-extensions-in-kubernetes-strategies-for-dynamic-management/) by [Peter Szczepaniak](/contributors/peter_szczepaniak/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

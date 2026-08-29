@@ -25,8 +25,12 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Open-Source
 - Rust
 - Valkey
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Everest
 - Open Source
@@ -34,7 +38,7 @@ talks_tags:
 - Security
 - Video
 posts_count: 0
-events_count: 1
+events_count: 3
 talks_count: 3
 contributor_type:
 - speaker

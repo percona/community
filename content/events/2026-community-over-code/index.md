@@ -23,9 +23,4 @@ Conference site: [https://communityovercode.org/](https://communityovercode.org/
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [User/ Contributor/ Vendor Communities - Why all three are important for project success](/talks/2026/2026-10-13-user-contributor-vendor-communities-why-all-three-are-important-for-project-success/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-* [What Happens After You Fork an OSS Project?](/talks/2026/2026-10-11-what-happens-after-you-fork-an-oss-project/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

@@ -26,12 +26,4 @@ Conference site: [https://mysqlbrconf.com.br/](https://mysqlbrconf.com.br/)
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [State of MySQL Ecosystem](/talks/2026/2026-08-26-state-of-mysql-ecosystem/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-* [Best practices to migrate from MySQL 8.x to MySQL 8.4 without suprisses](/talks/2026/2026-09-26-best-practices-to-migrate-from-mysql-8-x-to-mysql-8-4-without-suprisses/) by [Aldo Junior](/contributors/aldo_junior/)
-* [Segurança vs. performance no MySQL](/talks/2026/2026-08-26-seguran-a-vs-performance-no-mysql/) by [Jean Da Silva](/contributors/jean_da_silva/)
-* [Analisando servidores MySQL com o PMM: um passo a passo](/talks/2026/2026-08-26-analisando-servidores-mysql-com-o-pmm-um-passo-a-passo/) by [Fernando Laudares Camargos](/contributors/fernando_laudares_camargos/)
-* [MySQL Performance - And what my query has to do with it?](/talks/2026/2026-09-26-mysql-performance-and-what-my-query-has-to-do-with-it/) by [Roberto Garcia De Bem](/contributors/roberto_garcia_de_bem/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

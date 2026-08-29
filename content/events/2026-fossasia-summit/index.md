@@ -23,8 +23,4 @@ Conference site: [https://summit.fossasia.org](https://summit.fossasia.org)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [GitOps for MySQL Audit Compliance: Centralized Log Filter Management with OpenTofu/Terraform](/talks/2026/2026-03-10-gitops-for-mysql-audit-compliance-centralized-log-filter-management-with-opentofu-terraform/) by [Jericho Rivera](/contributors/jericho_rivera/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

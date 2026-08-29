@@ -20,8 +20,4 @@ events_category: ["Speaking"]
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Kubernetes from the Database Out](/talks/2025/2025-03-31-kubernetes-from-the-database-out/) by [Alastair Turner](/contributors/alastair_turner/) and [Edith Puclla](/contributors/edith_puclla/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

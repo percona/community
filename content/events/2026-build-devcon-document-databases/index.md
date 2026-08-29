@@ -24,10 +24,4 @@ Conference site: [https://buildevcon.com/events/document-databases](https://buil
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Physical vs Logical Backups in Percona Backup for MongoDB](/talks/2026/2026-08-28-physical-vs-logical-backups-in-percona-backup-for-mongodb/) by [Boris Ilijic](/contributors/boris_ilijic/)
-* [Zero-Downtime Migration with Percona ClusterSync for MongoDB](/talks/2026/2026-08-28-zero-downtime-migration-with-percona-clustersync-for-mongodb/) by [Inel Pandzic](/contributors/inel_pandzic/)
-* [What Happens When MongoDB Runs Out of Disk on Kubernetes?](/talks/2026/2026-08-28-what-happens-when-mongodb-runs-out-of-disk-on-kubernetes/) by [Eleonora Zinchenko](/contributors/eleonora_zinchenko/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

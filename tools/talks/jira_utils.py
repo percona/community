@@ -47,7 +47,8 @@ CONF_TALK_LINK = "Conf & Talk"
 SPEAKER_TALK_LINK = "Speaker & Talk"
 
 PUBLISHABLE_STATUSES = frozenset({"Accepted", "Done"})
-PUBLISHABLE_PUB_STATUS = frozenset({"Ready for publication", "Published"})
+# Only queue for site sync. After write-back, status becomes Published.
+PUBLISHABLE_PUB_STATUS = frozenset({"Ready for publication"})
 
 _http = requests.Session()
 _http.trust_env = False
@@ -458,15 +459,30 @@ SPEAKER_FIELDS = [
 ]
 
 
-def publishable_jql(*, jira_key: str | None = None) -> str:
-    base = (
+def publishable_jql(
+    *,
+    jira_key: str | None = None,
+    include_published: bool = False,
+) -> str:
+    if jira_key:
+        # Explicit key: sync that Talk regardless of Publication Status
+        # (re-publish / fix). Queue sync uses Ready only.
+        return (
+            f'project = SPEAK AND issuetype = Talk AND key = {jira_key}'
+        )
+    # Talks queue: Ready only. Events pages: Ready + already Published on site.
+    if include_published:
+        pub_clause = (
+            'AND "Publication Status" in ("Ready for publication", Published) '
+        )
+    else:
+        pub_clause = 'AND "Publication Status" = "Ready for publication" '
+    return (
         'project = SPEAK AND issuetype = Talk '
         'AND status in (Accepted, Done) '
-        'AND "Publication Status" in ("Ready for publication", Published)'
+        f'{pub_clause}'
+        'ORDER BY updated DESC'
     )
-    if jira_key:
-        return f"{base} AND key = {jira_key}"
-    return base + " ORDER BY updated DESC"
 
 
 def load_conference(key: str) -> dict[str, Any]:
@@ -619,12 +635,19 @@ def issue_to_site_talk(issue: dict) -> dict[str, Any]:
     }
 
 
-def load_talks(*, jira_key: str | None = None) -> list[dict[str, Any]]:
+def load_talks(
+    *,
+    jira_key: str | None = None,
+    include_published: bool = False,
+) -> list[dict[str, Any]]:
     """
     Load publishable Talks from Jira, enriched with Conference + Speakers.
+
+    include_published: also load Published (for event pages / Talks lists).
+    Default False = Ready for publication queue only.
     """
     require_env()
-    jql = publishable_jql(jira_key=jira_key)
+    jql = publishable_jql(jira_key=jira_key, include_published=include_published)
     print(f"JQL: {jql}")
     raw = jira_search(jql, TALK_FIELDS)
     print(f"Found {len(raw)} Talk issue(s)")

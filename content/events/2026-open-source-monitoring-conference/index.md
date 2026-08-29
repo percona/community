@@ -24,8 +24,4 @@ Conference site: [https://osmc.de](https://osmc.de)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Observability for Vector Search: Why Your Green Dashboard Is Lying To You](/talks/2026/2026-11-18-observability-for-vector-search-why-your-green-dashboard-is-lying-to-you/) by [Radoslaw Szulgo](/contributors/radoslaw_szulgo/) and [Sandra Romanchenko](/contributors/sandra_romanchenko/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

@@ -21,8 +21,4 @@ Conference site: [https://buildevcon.com/events/postgresql-on-kubernetes](https:
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Kubernetes from the database out](/talks/2026/2026-05-29-kubernetes-from-the-database-out/) by [Edith Puclla](/contributors/edith_puclla/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

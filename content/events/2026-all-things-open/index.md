@@ -23,8 +23,4 @@ Conference site: [https://allthingsopen.org/events/all-things-open-2026](https:/
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [eBPF for AI-Powered Root Cause Analysis](/talks/2026/2026-10-19-ebpf-for-ai-powered-root-cause-analysis/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.
