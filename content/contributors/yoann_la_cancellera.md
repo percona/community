@@ -22,13 +22,18 @@ events_tags:
 - Event
 - opensource
 - speaking
-talks_tags: []
+talks_tags:
+- Golang
+- italian
+- programming
+- software-development
 posts_count: 0
 events_count: 1
-talks_count: 1
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 ---
 Database Engineer

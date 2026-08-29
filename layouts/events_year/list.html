@@ -4,13 +4,14 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-{{ $pages := .Pages.ByDate.Reverse }}
-{{ $paginator := .Paginate $pages 12 }}
+{{ $now := now }}
+{{ $pastPages := sort (where .Pages "Date" "<=" $now) "Date" "desc" }}
+{{ $paginator := .Paginate $pastPages 12 }}
 
 {{ partial "events-hub/shell.html" (dict
   "page" .
   "paginator" $paginator
-  "searchPages" $pages
+  "searchPages" .Pages
   "variant" "filtered"
 ) }}
 {{ end }}

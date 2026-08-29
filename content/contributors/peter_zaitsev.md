@@ -29,43 +29,65 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Cloud-Native
 - Event
 - Events
 - Featured
 - Home
 - MySQL-Summit
+- Open-Source
 - PerconaUniversity
 - Promo
+- Tech
 - Yerevan
+- conference
 - database
 - databases
+- developer-conference
 - devops
+- english
 - event
 - fosdem
 - in-memory
 - opensource
 - performance
 - russia
+- software
+- spanish
+- speaking
 - sponsorship
+- technology
+- web
 talks_tags:
 - Ai
 - Cloud Native
+- Cloud-Native
 - DBaaS
 - Databases
 - Linux
 - MariaDB
+- Observability
 - Open Source
+- Open-Source
 - Opensource
 - Security
 - Slides
+- Tech
 - Vector Search
 - Video
 - ai
+- conference
 - database
+- developer-conference
+- english
+- software
+- spanish
+- technology
 - video
+- web
 posts_count: 0
-events_count: 23
-talks_count: 24
+events_count: 32
+talks_count: 31
 contributor_type:
 - speaker
 contributor_year:

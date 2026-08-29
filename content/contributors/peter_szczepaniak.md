@@ -20,7 +20,13 @@ contributor_tag:
 - MongoDB
 - PostgreSQL
 blog_tags: []
-events_tags: []
+events_tags:
+- Cloud-Native
+- Event
+- Open-Source
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Azure
 - Cloud Native
@@ -32,7 +38,7 @@ talks_tags:
 - Operators
 - Video
 posts_count: 0
-events_count: 0
+events_count: 2
 talks_count: 4
 contributor_type:
 - speaker

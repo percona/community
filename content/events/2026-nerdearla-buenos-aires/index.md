@@ -23,8 +23,4 @@ Conference site: [https://nerdearla.com/en/argentina/](https://nerdearla.com/en/
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Open Source in the Age of AI](/talks/2026/2026-09-25-open-source-in-the-age-of-ai/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

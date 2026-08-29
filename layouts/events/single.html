@@ -112,6 +112,8 @@
           {{ end }}
         </div>
       </section>
+    {{ else }}
+      {{ partial "events/related-talks.html" . }}
     {{ end }}
   </article>
 {{ end }}

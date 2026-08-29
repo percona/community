@@ -18,8 +18,4 @@ events_category: ["Speaking"]
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [PostgreSQL TDE took a decade. What now?](/talks/2026/2026-09-30-postgresql-tde-took-a-decade-what-now/) by [Jan Wieremjewicz](/contributors/jan_wieremjewicz/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

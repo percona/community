@@ -23,8 +23,4 @@ Conference site: [https://nerdearla.mx](https://nerdearla.mx)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [What Databases Reveal About the True Cost of Kubernetes](/talks/2026/2026-11-18-what-databases-reveal-about-the-true-cost-of-kubernetes/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

@@ -23,8 +23,4 @@ Conference site: [https://events.linuxfoundation.org/kubecon-cloudnativecon-euro
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [Smarter Databases in Kubernetes: Applying AI for Query Optimization and Self-Tuning](/talks/2026/2026-03-23-smarter-databases-in-kubernetes-applying-ai-for-query-optimization-and-self-tuning/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

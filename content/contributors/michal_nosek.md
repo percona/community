@@ -24,17 +24,23 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Open-Source
 - Percona
 - Valkey
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Open Source
 - Slides
+- Video
 posts_count: 0
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 ---
 Michal Nosek is a Senior Enterprise Architect at Percona with over a decade of experience across roles in software engineering, business analysis, and technical consulting. He combines deep technical knowledge with a focus on aligning database technologies to business goals, helping Percona’s global customers design effective open source data strategies. Michal holds a BS in Computer and Information Science from the Cracow University of Technology and lives in Gdansk, Poland, where he enjoys traveling and windsurfing.

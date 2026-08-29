@@ -20,9 +20,4 @@ events_category: ["Speaking"]
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Hanging hundreds of Postgres shutdowns with a simple CDC plugin](/talks/2026/2026-09-10-hanging-hundreds-of-postgres-shutdowns-with-a-simple-cdc-plugin/) by [Yoann La Cancellera](/contributors/yoann_la_cancellera/)
-* [TDE project status update (LT)](/talks/2025/2025-09-12-tde-project-status-update-lt/) by [Jan Wieremjewicz](/contributors/jan_wieremjewicz/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

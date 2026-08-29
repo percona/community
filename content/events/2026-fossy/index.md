@@ -23,8 +23,4 @@ Conference site: [https://2026.fossy.ca/](https://2026.fossy.ca/)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Enterprises Play Dirty](/talks/2026/2026-08-07-enterprises-play-dirty/) by [Peter Farkas](/contributors/peter_farkas/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

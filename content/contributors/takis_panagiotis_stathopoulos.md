@@ -28,10 +28,11 @@ events_tags:
 - Postgres
 - event
 - opensource
+- speaking
 - sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 1
 contributor_type:
 - speaker

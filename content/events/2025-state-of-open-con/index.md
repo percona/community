@@ -24,9 +24,4 @@ Conference site: [https://stateofopencon.com/](https://stateofopencon.com/)
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [Panel: Cloud Native, Cost Conscious, No Comprimise: Leveraging Open Source Databases in Financial Industry](/talks/2025/2025-02-04-panel-cloud-native-cost-conscious-no-comprimise-leveraging-open-source-databases-in-financial-industry/) by [Lori Lorusso](/contributors/lori_lorusso/) and [Sergey Pronin](/contributors/sergey_pronin/)
-* [Securing Your Software Supply Chain One Open Source Project at a Time](/talks/2025/2025-02-05-securing-your-software-supply-chain-one-open-source-project-at-a-time/) by [Lori Lorusso](/contributors/lori_lorusso/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.
