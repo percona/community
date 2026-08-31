@@ -1,8 +1,8 @@
 ---
 title: "Building Useful Community Software with MongoDB Using AI Agents"
-date: "2026-08-30T11:00:00+00:00"
+date: "2026-08-31T11:00:00+00:00"
 tags: ["Community", "Percona", "Open Source", "Mountaineers", "Community Ascent", "GitHub", "MongoDB", "Percona Server for MongoDB", "ai"]
-categories: ['MongoDB']
+categories: ['MongoDB','Community']
 authors:
   - daniil_bazhenov
 images:
