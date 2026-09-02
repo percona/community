@@ -18,16 +18,22 @@ aliases:
 - /speakers/jean_da_silva
 - /speakers/jean_da_silva/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- MySQL
 blog_tags: []
-events_tags: []
+events_tags:
+- Event
+- opensource
+- speaking
+- sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 1
-talks_count: 0
+events_count: 2
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2022'
 ---
 Jean joined Percona as a Support Engineer in 2020. Before joining the team, he worked in a mission-critical environment for 4 years, helping administrate databases like MySQL, MongoDB, and Oracle DB. Specializing in Database Engineering, and Big Data, he likes to watch Formula 1 in his free time.

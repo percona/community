@@ -16,10 +16,25 @@ images:
 aliases:
 - /authors/kyle_flanagan
 - /authors/kyle_flanagan/
+# Auto-generated fields. Do not edit manually.
+contributor_tag:
+- Community
+blog_tags:
+- Community
+- Events
+- Percona
+- Remote Work
+- Team
+events_tags: []
+talks_tags: []
+posts_count: 1
+events_count: 0
+talks_count: 0
 contributor_type:
 - author
+contributor_year:
+- '2026'
 ---
-
 Kyle is the reason Percona events actually happen. He runs the global events programme — Percona Live, Percona.connect, and our presence at Open Source Summit, KubeCon, and dozens of regional events each year. If you've grabbed a sticker at one of our booths, he probably packed the box it came in.
 
 Before Percona he ran executive events at Utah Valley University, after years in event marketing, communications, and production. He cares about the unglamorous details that make a room full of people feel looked after: clear logistics, honest communication, and enough contingency plans that the inevitable surprises don't wreck the day.

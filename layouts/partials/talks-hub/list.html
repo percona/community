@@ -3,8 +3,39 @@
 {{ $searchPages := .searchPages }}
 {{ $variant := .variant | default "filtered" }}
 
-{{ $listTitle := "Talks" }}
-{{ if eq $variant "filtered" }}
+{{ $now := now }}
+{{ $until := $now.AddDate 0 1 0 }}
+{{ $periodLabel := printf "%s – %s" ($now.Format "2 Jan") ($until.Format "2 Jan 2006") }}
+
+{{ $sortedUpcoming := slice }}
+{{ $sortedLater := slice }}
+{{ range $searchPages }}
+  {{ $dateStr := .Params.presentation_date | default .Params.event_date_start }}
+  {{ if $dateStr }}
+    {{ $d := time $dateStr }}
+    {{ if and (ge $d $now) (le $d $until) }}
+      {{ $sortedUpcoming = $sortedUpcoming | append . }}
+    {{ else if gt $d $until }}
+      {{ $sortedLater = $sortedLater | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $sortedUpcoming = sort $sortedUpcoming ".Params.presentation_date" "asc" }}
+{{ $sortedLater = sort $sortedLater ".Params.presentation_date" "asc" }}
+
+{{ $upcomingLinks := slice }}
+{{ range $sortedUpcoming }}
+  {{ $upcomingLinks = $upcomingLinks | append .RelPermalink }}
+{{ end }}
+{{ range $sortedLater }}
+  {{ $upcomingLinks = $upcomingLinks | append .RelPermalink }}
+{{ end }}
+
+{{ $isFiltered := eq $variant "filtered" }}
+{{ $showFuture := eq $paginator.PageNumber 1 }}
+
+{{ $listTitle := "Past Talks" }}
+{{ if $isFiltered }}
   {{ if eq $page.Type "talk_year" }}
     {{ $listTitle = printf "Talks from %s" $page.Title }}
   {{ else if eq $page.Type "talk_tags" }}
@@ -13,10 +44,48 @@
     {{ else }}
       {{ $listTitle = printf "Talks tagged #%s" $page.Title }}
     {{ end }}
+  {{ else }}
+    {{ $listTitle = "Talks" }}
   {{ end }}
 {{ end }}
 
 <section class="el-panel" aria-labelledby="el-talks-heading">
+  {{ if $showFuture }}
+  {{ if or (gt (len $sortedUpcoming) 0) (not $isFiltered) }}
+  <header class="el-panel__header">
+    <h2 class="el-panel__title" id="el-talks-upcoming-heading">
+      Upcoming <span class="el-panel__accent">Talks</span>
+    </h2>
+    <p class="el-panel__subtitle">Next 30 days · {{ $periodLabel }}</p>
+  </header>
+
+  {{ if gt (len $sortedUpcoming) 0 }}
+    <div class="el-talks-list el-talks-list--upcoming">
+      {{ range $sortedUpcoming }}
+        {{ partial "talks-hub/talk-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    {{ if not $isFiltered }}
+      <p class="el-panel__empty">No talks in the next 30 days.</p>
+    {{ end }}
+  {{ end }}
+  {{ end }}
+
+  {{ if gt (len $sortedLater) 0 }}
+  <header class="el-panel__header el-panel__header--later">
+    <h2 class="el-panel__title" id="el-talks-later-heading">
+      Coming <span class="el-panel__accent">Later</span>
+    </h2>
+  </header>
+  <div class="el-talks-list el-talks-list--later">
+    {{ range $sortedLater }}
+      {{ partial "talks-hub/talk-card.html" . }}
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+
   <header class="el-panel__header">
     <h2 class="el-panel__title" id="el-talks-heading">
       {{ $listTitle }}{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}
@@ -25,9 +94,14 @@
 
   {{ partial "talks-hub/filters.html" $page }}
 
-  {{ if gt (len $paginator.Pages) 0 }}
+  {{ $gridPages := $paginator.Pages }}
+  {{ if and $isFiltered $showFuture (gt (len $upcomingLinks) 0) }}
+    {{ $gridPages = where $paginator.Pages "RelPermalink" "not in" $upcomingLinks }}
+  {{ end }}
+
+  {{ if gt (len $gridPages) 0 }}
     <div class="el-talks-list" id="talks-hub-list">
-      {{ range $paginator.Pages }}
+      {{ range $gridPages }}
         {{ partial "talks-hub/talk-card.html" . }}
       {{ end }}
     </div>

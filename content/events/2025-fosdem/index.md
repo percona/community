@@ -26,11 +26,4 @@ Conference site: [https://fosdem.org/2025/](https://fosdem.org/2025/)
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [Six Degrees of Kevin Bacon - Open Source Community Edition](/talks/2025/2025-02-01-six-degrees-of-kevin-bacon-open-source-community-edition/) by [Lori Lorusso](/contributors/lori_lorusso/)
-* [Distributed Databases: Essential or Optional?](/talks/2025/2025-02-01-distributed-databases-essential-or-optional/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-* [Keeping a hand on the evolution of cursor controls](/talks/2025/2025-02-02-keeping-a-hand-on-the-evolution-of-cursor-controls/) by [Dmitriy Kostiuk](/contributors/dmitriy_kostiuk/)
-* [Open-source support for JS stored programs in Percona Server](/talks/2025/2025-02-02-open-source-support-for-js-stored-programs-in-percona-server/) by [Dmitry Lenev](/contributors/dmitry_lenev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

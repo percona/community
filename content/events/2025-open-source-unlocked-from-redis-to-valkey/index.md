@@ -19,8 +19,4 @@ events_category: ["Speaking"]
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Valkey Journey](/talks/2025/2025-10-29-valkey-journey/) by [Laura Czajkowski](/contributors/laura_czajkowski/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

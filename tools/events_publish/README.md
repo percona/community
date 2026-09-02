@@ -27,7 +27,8 @@ Also runs after `python tools/talks/main.py --create` unless `--skip-events`.
 
 - Front matter includes `source: jira` and `jira: SPEAK-…`
 - **Never overwrites** hand-written pages without `source: jira` (use `--force` only if intentional)
-- Body: dates, location, conf URL, Speaking/Sponsoring, linked talks + speakers
+- Body: dates, location, conf URL, Speaking/Sponsoring (Talks list is rendered by the Hugo event template from related talk pages)
+
 - Then `tools/events_images` draws a gradient card + Percona Community logo
 - Then `tools/events/update_events.py` normalizes taxonomies
 

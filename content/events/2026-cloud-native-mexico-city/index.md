@@ -22,8 +22,4 @@ Conference site: [https://ocgroups.dev/cncf/group/e5vgp72/event/qhtdje9](https:/
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Kubernetes desde la perspectiva de la base de datos](/talks/2026/2026-06-10-kubernetes-desde-la-perspectiva-de-la-base-de-datos/) by [Edith Puclla](/contributors/edith_puclla/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

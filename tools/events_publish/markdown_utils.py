@@ -145,35 +145,7 @@ def build_body(event: dict[str, Any]) -> str:
         lines.append("Percona presence: " + " · ".join(badges) + ".")
         lines.append("")
 
-    talks = event.get("talks") or []
-    if talks:
-        lines.append("### Talks")
-        lines.append("")
-        for t in talks:
-            title_t = t.get("title") or t.get("key")
-            url = t.get("url") or ""
-            if url:
-                head = f"* [{title_t}]({url})"
-            else:
-                head = f"* **{title_t}**"
-            speakers = t.get("speakers") or []
-            if speakers:
-                parts = []
-                for sp in speakers:
-                    name = sp.get("name") or sp.get("slug")
-                    surl = sp.get("url") or ""
-                    if surl:
-                        parts.append(f"[{name}]({surl})")
-                    else:
-                        parts.append(str(name))
-                if len(parts) == 1:
-                    head += f" by {parts[0]}"
-                elif len(parts) == 2:
-                    head += f" by {parts[0]} and {parts[1]}"
-                else:
-                    head += " by " + ", ".join(parts[:-1]) + f", and {parts[-1]}"
-            lines.append(head)
-        lines.append("")
+    # Talks list is rendered by layouts/events/single.html (related-talks partial).
 
     lines.append(
         "Follow [Percona Community](https://percona.community/) for more open source "

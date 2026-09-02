@@ -22,8 +22,4 @@ Conference site: [https://events.linuxfoundation.org/observability-summit-europe
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [AI is Only as Smart as Your Database is Fast: Prepping Infra for the Next Wave](/talks/2026/2026-10-05-ai-is-only-as-smart-as-your-database-is-fast-prepping-infra-for-the-next-wave/) by [Peter Farkas](/contributors/peter_farkas/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

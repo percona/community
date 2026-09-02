@@ -20,8 +20,4 @@ events_category: ["Speaking"]
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [It’s not about the database operator, it’s about the database deployment](/talks/2024/2024-11-10-it-s-not-about-the-database-operator-it-s-about-the-database-deployment/) by [Jan Wieremjewicz](/contributors/jan_wieremjewicz/) and [Peter Szczepaniak](/contributors/peter_szczepaniak/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

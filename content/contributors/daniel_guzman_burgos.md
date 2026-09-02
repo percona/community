@@ -18,10 +18,25 @@ aliases:
 - /authors/daniel_guzman_burgos
 - /authors/daniel_guzman_burgos/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
-blog_tags: []
+contributor_tag:
+- MySQL
+blog_tags:
+- DuckDB
+- MySQL
+- Opensource
+- Parquet
+- Percona Server
+- analytics
+- binlog
+- dbtrail
 events_tags: []
 talks_tags: []
+posts_count: 1
+events_count: 0
+talks_count: 0
+contributor_type:
+- author
+contributor_year:
+- '2026'
 ---
-
 Daniel is a database engineer who spent years doing MySQL consulting and support, including a long stint working with the Percona ecosystem. He now builds [bintrail](https://github.com/dbtrail/dbtrail), an open source (Apache 2.0) tool that captures MySQL row events from the binlog, indexes them, and turns them into recovery SQL, point-in-time reconstruction, and a Parquet archive tier.

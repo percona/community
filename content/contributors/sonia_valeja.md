@@ -23,12 +23,16 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Data Gravity
+- Event
 - Podcast
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Slides
 - Video
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 1
 contributor_type:
 - speaker

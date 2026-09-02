@@ -24,9 +24,4 @@ Conference site: [https://pgconf.in/conferences/pgconfin2025](https://pgconf.in/
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [Modern SQL features in PostgreSQL that can transform the way we develop database applications](/talks/2025/2025-03-06-modern-sql-features-in-postgresql-that-can-transform-the-way-we-develop-database-applications/) by [Jobin Augustine](/contributors/jobin_augustine/)
-* [pgBackRest: Elevating PostgreSQL Backup Game](/talks/2025/2025-03-06-pgbackrest-elevating-postgresql-backup-game/) by [Sonia Valeja](/contributors/sonia_valeja/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

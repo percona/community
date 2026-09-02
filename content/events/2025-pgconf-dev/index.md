@@ -23,8 +23,4 @@ Conference site: [https://2025.pgconf.dev/](https://2025.pgconf.dev/)
 
 Percona presence: **Sponsoring** · **Speaking**.
 
-### Talks
-
-* [What does moving to Pull Requests look like? The nginx story](/talks/2025/2025-05-15-what-does-moving-to-pull-requests-look-like-the-nginx-story/) by [Alastair Turner](/contributors/alastair_turner/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.

@@ -132,7 +132,8 @@ def load_events_with_talks(
     Conferences linked to ≥1 publishable Talk (Accepted/Done + Ready/Published).
     """
     require_env()
-    talks = load_talks()
+    # Event pages need Ready + Published so Talks lists stay complete.
+    talks = load_talks(include_published=True)
     local = index_local_talks()
 
     by_conf: dict[str, list[dict[str, Any]]] = {}

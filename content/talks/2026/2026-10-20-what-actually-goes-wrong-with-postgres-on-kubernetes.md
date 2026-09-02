@@ -1,14 +1,14 @@
 ---
-id: SPEAK-1493
-jira: SPEAK-1493
+id: SPEAK-2206
+jira: SPEAK-2206
 title: What Actually Goes Wrong with Postgres on Kubernetes
 layout: single
 speakers:
 - natalia_marukovich
-talk_url: ''
+talk_url: https://www.postgresql.eu/events/pgconfeu2026/schedule/session/8319-what-actually-goes-wrong-with-postgres-on-kubernetes/
 presentation_date: '2026-10-20'
 presentation_date_end: ''
-presentation_time: 01:00
+presentation_time: '15:55'
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
@@ -18,7 +18,9 @@ event_date_end: '2026-10-23'
 event_url: https://2026.pgconf.eu
 event_location: Valencia
 talk_tags:
+- Cloud
 - PostgreSQL
+- kubernetes
 slides: ''
 video: ''
 images:

@@ -22,8 +22,4 @@ Conference site: [https://www.p99conf.io](https://www.p99conf.io)
 
 Percona presence: **Speaking**.
 
-### Talks
-
-* [Networking Observability Essentials - How to Know if the Network is at Fault with eBPF](/talks/2026/2026-10-21-networking-observability-essentials-how-to-know-if-the-network-is-at-fault-with-ebpf/) by [Peter Zaitsev](/contributors/peter_zaitsev/)
-
 Follow [Percona Community](https://percona.community/) for more open source database talks and events.
