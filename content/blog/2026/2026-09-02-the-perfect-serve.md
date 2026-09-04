@@ -18,6 +18,8 @@ A similar realization came to me a few months ago, although this time was pretty
 
 Very basic setup. One Percona Server for MySQL 8.0 primary, two EC2 read replicas, and PMM 2.x running in a Docker container, with QAN through performance_schema. Nothing special. The symptom was also standard: an internal analytics service joined three tables (orders, order_items, and users) and polled the primary every few minutes for recent order activity. None of the tables were big.
 
+The screenshots and measurements in this walkthrough come from a lab environment created to reproduce the query pattern, not from a production incident.
+
 In the baseline window, the query ran at 0.16 QPS and averaged 54.17 ms. It also lined up closely with CPU spikes and occasional replica-lag warnings.
 
 My "power play" instinct kicked in, and I thought about increasing the resources for the primary, or moving the analytic workload totally over to a replica. Both ideas had potential, but at the end of the day, they would just hide the problem. None of the ideas actually would have helped me understand what the problem was.
