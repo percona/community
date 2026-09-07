@@ -176,34 +176,9 @@ function LeaderCard({ user, rank, cols, onClick }) {
   `;
 }
 
-/** Keep only periods that have a published ranking file (meta can list unpublished ones). */
-async function periodsWithData(periods) {
-  const list = periods || [];
-  const checks = await Promise.all(
-    list.map(async (p) => {
-      try {
-        // Prefer HEAD; some CDNs only answer GET — fall back.
-        let r = await fetch(`${BASE}/global/${p.key}.json`, { method: 'HEAD' });
-        if (r.status === 405 || r.status === 501) {
-          r = await fetch(`${BASE}/global/${p.key}.json`, { method: 'GET' });
-        }
-        return r.ok ? p : null;
-      } catch {
-        return null;
-      }
-    }),
-  );
-  return checks.filter(Boolean);
-}
-
 // ---- Main App ----
 function LeaderboardApp({ meta }) {
-  const availablePeriods = meta.periods || [];
-  const initialPeriod =
-    (availablePeriods.some((p) => p.key === meta.default_period) && meta.default_period) ||
-    availablePeriods[0]?.key ||
-    String(new Date().getFullYear());
-  const [period, setPeriod] = useState(initialPeriod);
+  const [period, setPeriod] = useState(meta.default_period || String(new Date().getFullYear()));
   const [cat, setCat] = useState('global');
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -214,29 +189,10 @@ function LeaderboardApp({ meta }) {
     let cancelled = false;
     setLoading(true); setData(null); setError(null); setSelected(null);
     fetch(`${BASE}/${cat}/${period}.json`)
-      .then(async (r) => {
-        // Missing period file in the public feed — empty board, not a hard error.
-        if (r.status === 404) {
-          return { top30: [], generated_at: null, period, missing: true };
-        }
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json();
-      })
-      .then((d) => {
-        if (!cancelled) {
-          setData(d);
-          setLoading(false);
-        }
-      })
-      .catch((e) => {
-        if (!cancelled) {
-          setError(e.message);
-          setLoading(false);
-        }
-      });
-    return () => {
-      cancelled = true;
-    };
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(d => { if (!cancelled) { setData(d); setLoading(false); } })
+      .catch(e => { if (!cancelled) { setError(e.message); setLoading(false); } });
+    return () => { cancelled = true; };
   }, [period, cat]);
 
   const cols = CAT_COLS[cat] || CAT_COLS.global;
@@ -258,7 +214,7 @@ function LeaderboardApp({ meta }) {
           </button>
         `)}
         <${PeriodSelect}
-          periods=${availablePeriods}
+          periods=${meta.periods || []}
           value=${period}
           onChange=${setPeriod}
         />
@@ -280,7 +236,7 @@ function LeaderboardApp({ meta }) {
                 />
               `)}
             </div>
-          ` : html`<div class="lb-state">${data.missing ? 'No published data for this period yet.' : 'No contributors for this period.'}</div>`}
+          ` : html`<div class="lb-state">No contributors for this period.</div>`}
 
           ${rest.length ? html`
             <div class="lb-table-wrap">
@@ -333,20 +289,8 @@ async function init() {
   const el = document.getElementById('lb-widget');
   if (!el) return;
   try {
-    const meta = await fetch(`${BASE}/meta.json`).then((r) => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json();
-    });
-    const available = await periodsWithData(meta.periods || []);
-    const filtered = {
-      ...meta,
-      periods: available.length ? available : meta.periods || [],
-      default_period:
-        available.some((p) => p.key === meta.default_period)
-          ? meta.default_period
-          : available[0]?.key || meta.default_period,
-    };
-    render(html`<${LeaderboardApp} meta=${filtered} />`, el);
+    const meta = await fetch(`${BASE}/meta.json`).then(r => r.json());
+    render(html`<${LeaderboardApp} meta=${meta} />`, el);
   } catch (e) {
     el.innerHTML = '<p class="lb-state">Leaderboard data is not available yet.</p>';
   }
