@@ -1,0 +1,23 @@
+---
+title: PGDay Lowlands
+description: PGDay Lowlands · 2025-09-12 · Rotterdam · 2 talks from Percona
+layout: single
+source: jira
+jira: SPEAK-1376
+speakers:
+- yoann_la_cancellera
+- jan_wieremjewicz
+date: '2025-09-12'
+event_location: Rotterdam
+images:
+- events/2025-pgday-lowlands/card.png
+tags: ["Event", "PostgreSQL", "opensource", "speaking"]
+events_year: ["2025"]
+events_tag: ["In-Person", "PostgreSQL"]
+events_category: ["Speaking"]
+---
+**PGDay Lowlands** takes place **2025-09-12** in **Rotterdam**.
+
+Percona presence: **Speaking**.
+
+Follow [Percona Community](https://percona.community/) for more open source database talks and events.

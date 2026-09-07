@@ -65,7 +65,7 @@
     <div class="grid grid--2 el-events-grid">
       {{ range $featured }}
         <div class="grid__item">
-          {{ partial "home-event-card.html" . }}
+          {{ partial "events-hub/event-card.html" . }}
         </div>
       {{ end }}
     </div>
@@ -90,7 +90,7 @@
       {{ if gt (len $pastPreview) 0 }}
         {{ range $pastPreview }}
           <div class="grid__item">
-            {{ partial "home-event-card.html" . }}
+            {{ partial "events-hub/event-card.html" . }}
           </div>
         {{ end }}
       {{ else }}

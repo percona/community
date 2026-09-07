@@ -4,13 +4,25 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-{{ $pages := sort .Pages ".Params.presentation_date" "desc" }}
-{{ $paginator := .Paginate $pages 9 }}
+{{ $now := now }}
+{{ $pastPages := slice }}
+{{ range .Pages }}
+  {{ $dateStr := .Params.presentation_date | default .Params.event_date_start }}
+  {{ if $dateStr }}
+    {{ if lt (time $dateStr) $now }}
+      {{ $pastPages = $pastPages | append . }}
+    {{ end }}
+  {{ else }}
+    {{ $pastPages = $pastPages | append . }}
+  {{ end }}
+{{ end }}
+{{ $pastPages = sort $pastPages ".Params.presentation_date" "desc" }}
+{{ $paginator := .Paginate $pastPages 9 }}
 
 {{ partial "talks-hub/shell.html" (dict
   "page" .
   "paginator" $paginator
-  "searchPages" $pages
+  "searchPages" .Pages
   "variant" "filtered"
   "activeNav" "talks"
 ) }}

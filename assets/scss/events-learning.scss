@@ -257,6 +257,10 @@ $el-sidebar-width: 260px;
     margin-bottom: 2rem;
   }
 
+  &__header--later {
+    margin-top: 2.5rem;
+  }
+
   &__title {
     margin: 0 0 1.25rem;
     color: $brand-black;
@@ -266,6 +270,15 @@ $el-sidebar-width: 260px;
     line-height: 1.15;
     text-transform: uppercase;
     letter-spacing: -0.01em;
+  }
+
+  &__subtitle {
+    margin: -0.75rem 0 1.5rem;
+    color: $paragraph-grey;
+    font-family: $font-poppins;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.4;
   }
 
   &__accent {

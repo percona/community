@@ -1,4 +1,5 @@
 {{ $now := now }}
+{{ $until := $now.AddDate 0 1 0 }}
 {{ $events := where .Site.RegularPages "Section" "events" }}
 {{ $limit := 8 }}
 
@@ -6,8 +7,17 @@
 {{ $upcoming := where $events "Date" ">" $now }}
 {{ range sort $upcoming "Date" "asc" }}
   {{ $imgs := .Params.images | default slice }}
-  {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
+  {{ if and (le .Date $until) (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
     {{ $candidates = $candidates | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if eq (len $candidates) 0 }}
+  {{ range sort $upcoming "Date" "asc" }}
+    {{ $imgs := .Params.images | default slice }}
+    {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
+      {{ $candidates = $candidates | append . }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
@@ -28,13 +38,13 @@
   <div class="home-events__inner">
     <p class="home-events__eyebrow">Events &amp; Learning</p>
     <h2 class="home-events__title" id="home-events-heading">
-      Up &amp; Coming <span class="home-events__accent">Events</span>
+      Upcoming <span class="home-events__accent">Events</span>
     </h2>
 
     <div class="grid grid--2 home-events__grid">
       {{ range $featured }}
         <div class="grid__item">
-          {{ partial "home-event-card.html" . }}
+          {{ partial "events-hub/event-card.html" . }}
         </div>
       {{ end }}
     </div>

@@ -21,14 +21,18 @@ contributor_tag: []
 blog_tags: []
 events_tags:
 - Event
+- Open-Source
 - fosdem
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Open Source
 - Opensource
 - Slides
 - Video
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 1
 contributor_type:
 - speaker

@@ -1,7 +1,13 @@
 .idea
 .claude
 .cursor
+# Local env files (Jira/Notion tokens) — never commit
 .env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
 resources/_gen
 scripts
 docs

@@ -15,6 +15,7 @@
 {{ end }}
 
 {{ define "main" }}
+  {{ $communityEvent := partial "talks/community-event.html" . }}
 
   <article class="text hub-single hub-single--talk talk" itemscope itemtype="https://schema.org/BlogPosting">
     {{ with .Params.images }}{{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}<meta itemprop="image" content="{{ .Permalink }}" />{{ end }}{{ end }}
@@ -36,7 +37,9 @@
           <p class="hub-single__meta-line">
             <span class="hub-single__meta-label">Event:</span>
             <span>
-              {{ if .Params.event_url }}
+              {{ if $communityEvent }}
+                <a href="{{ $communityEvent.RelPermalink }}">{{ .Params.event }}</a>
+              {{ else if .Params.event_url }}
                 <a href="{{ .Params.event_url }}" target="_blank" rel="noopener">{{ .Params.event }}</a>
               {{ else }}
                 {{ .Params.event }}
@@ -136,13 +139,19 @@
     <div itemprop="articleBody" class="body">
       {{ partial "content.html" . }}
       {{ partial "video.html" (dict "page" . "heading" "Video") }}
-    </div>
+
+      {{ with $communityEvent }}
+        <h2>Event</h2>
+        <div class="talk-related-event">
+          {{ partial "events-hub/event-hub-card.html" . }}
+        </div>
+      {{ end }}
 
       {{ with .Params.images }}
         {{- $talkImg := resources.Get (strings.TrimPrefix "/" (index . 0)) -}}
         {{- with $talkImg }}
           <h2>Speaker card</h2>
-          <div style="max-width: 800px;">
+          <div class="talk-speaker-card">
             <img width="100%" height="100%"
                  src="{{ (.Fill "1200x630 80% jpg").RelPermalink }}"
                  alt="{{ $.Page.Title }}" />

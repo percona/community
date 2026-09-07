@@ -19,17 +19,24 @@ aliases:
 - /speakers/roberto_garcia_de_bem
 - /speakers/roberto_garcia_de_bem/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- Community
+- Kubernetes
+- MySQL
 blog_tags: []
 events_tags:
 - Event
 - opensource
-talks_tags: []
+- speaking
+- sponsorship
+talks_tags:
+- Operators
 posts_count: 0
-events_count: 1
-talks_count: 0
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2023'
 ---

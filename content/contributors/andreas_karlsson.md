@@ -19,12 +19,16 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Event
 - Events
 - Opensource
+- opensource
+- speaking
+- sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 1
-talks_count: 2
+events_count: 2
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

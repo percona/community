@@ -44,6 +44,7 @@ blog_tags:
 - pg_tde
 - pg_zsolt
 events_tags:
+- Event
 - Featured
 - Hacktoberfest
 - PG
@@ -52,11 +53,13 @@ events_tags:
 - event
 - opensource
 - securing
+- speaking
+- sponsorship
 talks_tags:
 - Slides
-posts_count: 7
-events_count: 4
-talks_count: 4
+posts_count: 8
+events_count: 5
+talks_count: 5
 contributor_type:
 - author
 - speaker

@@ -24,9 +24,11 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Event
 - Meetup
 - event
 - opensource
+- speaking
 - sponsorship
 talks_tags:
 - Open Source
@@ -34,8 +36,8 @@ talks_tags:
 - Video
 - ai
 posts_count: 0
-events_count: 2
-talks_count: 5
+events_count: 3
+talks_count: 6
 contributor_type:
 - speaker
 contributor_year:

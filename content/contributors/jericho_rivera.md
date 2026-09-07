@@ -17,7 +17,16 @@ images:
 contributor_tag:
 - PostgreSQL
 blog_tags: []
-events_tags: []
+events_tags:
+- Event
+- english
+- hardware
+- linux
+- open-source
+- opensource
+- security
+- speaking
+- web3
 talks_tags:
 - Slides
 - Video
@@ -28,7 +37,7 @@ talks_tags:
 - security
 - web3
 posts_count: 0
-events_count: 0
+events_count: 1
 talks_count: 1
 contributor_type:
 - speaker

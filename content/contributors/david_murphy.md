@@ -20,14 +20,17 @@ aliases:
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []
-events_tags: []
+events_tags:
+- PerconaLive2023
+- Podcast
 talks_tags: []
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 0
 contributor_type:
 - speaker
 contributor_year:
+- '2023'
 - '2022'
 - '2021'
 ---

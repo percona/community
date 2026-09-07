@@ -31,8 +31,14 @@ blog_tags:
 - pg_alastair
 - pg_jan
 events_tags:
+- Cloud-Native
+- Event
 - Events
 - Featured
+- Open-Source
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Cloud Native
 - CloudNative
@@ -42,7 +48,7 @@ talks_tags:
 - Slides
 - Video
 posts_count: 3
-events_count: 1
+events_count: 4
 talks_count: 4
 contributor_type:
 - author

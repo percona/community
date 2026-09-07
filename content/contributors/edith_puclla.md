@@ -84,15 +84,19 @@ blog_tags:
 - sponsorship
 - storage
 events_tags:
+- Cloud-Native
 - Event
+- Open-Source
 - Postgres
 - Stream
 - fosdem
 - opensource
 - securing
+- speaking
 talks_tags:
 - 2024 Q1
 - Cloud Native
+- Cloud-Native
 - CloudNative
 - Containers
 - Databases
@@ -106,8 +110,8 @@ talks_tags:
 - Video
 - video
 posts_count: 34
-events_count: 7
-talks_count: 18
+events_count: 10
+talks_count: 20
 contributor_type:
 - author
 - speaker

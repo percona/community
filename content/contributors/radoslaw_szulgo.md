@@ -22,27 +22,49 @@ contributor_tag:
 - Kubernetes
 - MongoDB
 - PMM
+- cloud
 blog_tags:
+- AI
+- Community
+- Community Ascent
+- Events
 - GSoC
 - MongoDB
+- Open Source
 - Opensource
 - PMM
 - Percona
+- Security
 events_tags:
+- Event
 - Events
+- Open-Source
 - PSMDB
+- Tech
+- ai
+- monitoring
+- observability
+- open-source
+- opensource
+- speaking
 talks_tags:
 - Azure
 - Cloud Native
 - DBaaS
 - Databases
 - Grafana
+- Open-Source
 - Opensource
+- Tech
+- Vector-Search
+- ai
+- monitoring
 - observability
+- open-source
 - pmm
-posts_count: 1
-events_count: 1
-talks_count: 2
+posts_count: 2
+events_count: 2
+talks_count: 3
 contributor_type:
 - author
 - speaker
