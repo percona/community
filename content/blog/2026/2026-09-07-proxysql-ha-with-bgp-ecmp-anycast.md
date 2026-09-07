@@ -1,18 +1,15 @@
 ---
 title: "ProxySQL HA with BGP ECMP Anycast"
 date: "2026-09-07T11:00:00+00:00"
-draft: true
 tags: ['MySQL', 'ProxySQL', 'Opensource', 'BGP', 'Percona Server', 'DevOps']
-categories: ['MySQL']
+categories: ['MySQL', 'Community']
 authors:
   - isobel_smith
   - marno_krahmer
 images:
-  - blog/2026/08/proxysql-ha-with-bgp-ecmp-anycast-cover.jpeg
+  - blog/2026/09/proxysql-ha-with-bgp-ecmp-anycast-cover.jpeg
 slug: proxysql-ha-with-bgp-ecmp-anycast
 ---
-
-# ProxySQL HA with BGP ECMP Anycast
 
 When setting up a new database for an application, high availability (HA) is one of the main priorities. Let's assume for this example that you chose to use a Percona XtraDB (PXC) cluster to host your database.
 But how does the application know which PXC node is healthy and can receive application traffic? Introducing a cluster of ProxySQLs can solve this problem, as ProxySQL will healthcheck the database nodes and route the application traffic to the healthy nodes.
@@ -55,7 +52,7 @@ Because the IP address and ports are in the hash, this ensures that the packets 
 
 You can visualise the setup like this:
 
-![Diagram](blog/2026/08/proxysql-ha-with-bgp-ecmp-anycast-diagram.png)
+![Diagram](blog/2026/09/proxysql-ha-with-bgp-ecmp-anycast-diagram.png)
 
 By doing so, we have achieved high availability by leveraging BGP ECMP to loadbalance traffic in an active/active configuration across the ProxySQL nodes.
 Additionally, the application config can be simplified, as only the single anycast IP (or DNS record for that IP) needs to be used for the ProxySQL cluster, and the logic of routing will be handled by the router.
@@ -83,7 +80,7 @@ If you have a multi-datacenter setup, you can choose to use local preference to 
 you can tell the router to send traffic from the application to the proxysql within the same datacenter. The advantage of this is that it keeps network latency low, and avoids cross-site transit. Configuring this in BGP means that the application does not need to be aware of which datacenter it is running in. The BGP router handles localised routing for you.
 If the local route would disappear, then the BGP router would automatically divert traffic from the application in datacenter A to the proxysql in the datacenter B.
 
-![Diagram BGP local preference](blog/2026/08/proxysql-ha-with-bgp-ecmp-anycast-lpref.png)
+![Diagram BGP local preference](blog/2026/09/proxysql-ha-with-bgp-ecmp-anycast-lpref.png)
 
 
 ## Advantages of BGP
@@ -102,3 +99,5 @@ If the local route would disappear, then the BGP router would automatically dive
 BGP ECMP is not connection-state aware, so if instances disappear/die or new instances join and the RIB table is rebuilt, the hashing algorithm will most likely forward packets for existing connections to a different instance than before. As that instance will not be aware of this TCP-Connection, it will send an RST-packet and the application will have to re-open its database connection.
 
 In the next post, we will explain the technical details of setting up BGP ECMP for our ProxySQL cluster using OPNsense as Router.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
