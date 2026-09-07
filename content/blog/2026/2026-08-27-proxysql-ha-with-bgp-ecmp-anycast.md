@@ -1,6 +1,7 @@
 ---
 title: "ProxySQL HA with BGP ECMP Anycast"
-date: "2026-08-27T11:00:00+00:00"
+date: "2026-09-07T11:00:00+00:00"
+draft: true
 tags: ['MySQL', 'ProxySQL', 'Opensource', 'BGP', 'Percona Server', 'DevOps']
 categories: ['MySQL']
 authors:
