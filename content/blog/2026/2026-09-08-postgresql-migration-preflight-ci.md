@@ -1,12 +1,12 @@
 ---
 title: "A Fail-Fast PostgreSQL Migration Preflight for CI"
-date: "2026-08-31T11:00:00+00:00"
+date: "2026-09-08T11:00:00+00:00"
 tags: ['PostgreSQL', 'Migrations', 'CI', 'Testing', 'QA', 'DevOps']
-categories: ['PostgreSQL']
+categories: ['PostgreSQL', 'Community']
 authors:
   - yizangeren
 images:
-  - blog/2026/08/postgresql-migration-preflight-ci-cover.png
+  - blog/2026/09/postgresql-migration-preflight-ci-cover.png
 slug: postgresql-migration-preflight-ci
 ---
 
@@ -125,3 +125,6 @@ That is the boundary I want `postgres-migration-preflight` to maintain: a small,
 - [PostgreSQL 18: ALTER TABLE](https://www.postgresql.org/docs/18/sql-altertable.html)
 - [PostgreSQL 18: Client connection defaults, including `lock_timeout`](https://www.postgresql.org/docs/18/runtime-config-client.html)
 - [PostgreSQL 18: `pg_index` catalog](https://www.postgresql.org/docs/18/catalog-pg-index.html)
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
+
