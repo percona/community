@@ -6,7 +6,7 @@ fullname_pronounciation: Isobel Smith
 tagline: null
 social:
   facebook: null
-  github: null
+  github: IzzySmith
   linkedin: null
   twitter: null
   website: null
@@ -32,4 +32,4 @@ contributor_type:
 contributor_year:
 - '2024'
 ---
-Isobel is a MySQL DBA at New Work SE, using async replication, Galera, and ProxySQL.
+Isobel is a MySQL DBA experienced with async replication, Galera, and ProxySQL.
