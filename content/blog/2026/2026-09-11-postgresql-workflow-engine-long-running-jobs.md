@@ -486,7 +486,7 @@ I set out to find where PostgreSQL stops being enough for coordinating long-runn
 
 The naive claim was the sharpest result: not a rare race but 886 wasted job executions out of 400 jobs at 16 workers, with a corrupted `attempt_count` on top, and PostgreSQL reporting complete success throughout. `FOR UPDATE SKIP LOCKED` fixed it exactly, with zero duplicates at every worker count and scaling within 2% of linear.
 
-The transaction-scope question was the one that taught me most, because the benchmark argued the wrong way. Holding the transaction open across the work was slightly *faster* . The cost only appeared when I stopped measuring throughput and looked at connection state: eight connections pinned in `idle in transaction`, and an open transaction whose duration tracks job length linearly. That cost is invisible at 200 ms and severe at 60 seconds, which is precisely the workload this design is for.
+The transaction-scope question was the one that taught me most, because the benchmark argued the wrong way. Holding the transaction open across the work was slightly *faster*. The cost only appeared when I stopped measuring throughput and looked at connection state: eight connections pinned in `idle in transaction`, and an open transaction whose duration tracks job length linearly. That cost is invisible at 200 ms and severe at 60 seconds, which is precisely the workload this design is for.
 
 And the partial index is the one thing I would not build without. Same query, same backlog: 0.02 ms and four buffers with it, 27.6 ms and 10,216 buffers without, on a table that was 99.9% history.
 
