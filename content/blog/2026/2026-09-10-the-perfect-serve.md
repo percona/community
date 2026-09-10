@@ -1,12 +1,12 @@
 ---
 title: "The Perfect Serve: What Tennis Taught Me About Reading PMM Like a Coach Instead of Guessing"
-date: "2026-08-29T00:00:00+00:00"
-tags: ['MySQL', 'PMM', 'Percona Server for MySQL', 'Query Optimization', 'Community']
-categories: ['MySQL']
+date: "2026-09-10T12:00:00+00:00"
+tags: ['PMM', 'Query Optimization', 'Community']
+categories: ['Community']
 authors:
   - shivank_pandey
 images:
-  - blog/2026/08/baseline_qan.png
+  - blog/2026/09/baseline_qan.png
 slug: the-perfect-serve
 ---
 
@@ -32,7 +32,7 @@ For this reason, PMM's QAN dashboard has a Load column. Load is the average numb
 
 That's the first lesson: If a query never stops running, a query that is "fast enough" can still be your biggest rival.
 
-![](blog/2026/08/baseline_qan.png)
+![](blog/2026/09/baseline_qan.png)
 
 *Figure 1: PMM Query Analytics showing the three-table join at the top of the workload, with an average query time of 54.17 ms before optimization.*
 
@@ -70,7 +70,7 @@ key: idx_order_items_order_id
 
 Thanks to PMM's rows examined to rows sent ratio, the query's inefficiency actually showed itself where it could not in raw EXPLAIN output. The query would even return a reasonably sized and useful result. The issue was that the ratio of rows examined and rows sent to the client was totally lopsided. Each execution examined about 201,370 rows while returning 819 rows, or 245.87 rows examined for every row sent. This would not trigger any system alerts, but it showed that the database was doing SO much work for a trivial result. I'm calling this "invisible" inefficiency, and the more the query becomes used, the more detrimental it becomes.
 
-![](blog/2026/08/baseline_examined.png)
+![](blog/2026/09/baseline_examined.png)
 
 *Figure 2: Before optimization, each execution examined about 201,370 rows while returning 819 rows, or 245.87 rows examined for every row sent. PMM also recorded a full scan and no index used on every execution.*
 
@@ -121,11 +121,11 @@ Extra: Using index
 
 The same normalized query remained at the top of the selected QAN workload after optimization, now running at 0.99 QPS and averaging 2.71 ms per execution.
 
-![](blog/2026/08/optimised_qan.png)
+![](blog/2026/09/optimised_qan.png)
 
 *Figure 3: The same normalized query after optimization, now averaging 2.71 ms per execution in the post-index sampling window.*
 
-![](blog/2026/08/optimised_metrics.png)
+![](blog/2026/09/optimised_metrics.png)
 
 *Figure 4: After the changes, average query time fell to 2.71 ms and rows examined dropped to about 1,460 per execution. The rows-examined-to-rows-sent ratio fell to 1.67, and executions used range access instead of a full scan.*
 
@@ -150,3 +150,5 @@ PMM didn't perform the optimization, but it made the invisible work just visible
 ## About the author
 
 Shivank Pandey is one of two engineers managing PMM at his company. He works with Percona Server for MySQL 8.0 in a primary-replica setup on EC2 and writes about database observability and query optimization.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
