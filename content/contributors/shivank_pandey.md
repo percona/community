@@ -34,4 +34,4 @@ contributor_year:
   - '2026'
 ---
 
-Shivank Pandey is one of two engineers managing PMM at his company. He works with Percona Server for MySQL 8.0 in a primary-replica setup on EC2 and writes about database observability and query optimization.
+Shivank Pandey works with Percona Monitoring and Management as part of his engineering responsibilities, using it to monitor Percona Server for MySQL, review query performance, and investigate database issues. He also writes about database observability, query optimization, and practical engineering workflows.
