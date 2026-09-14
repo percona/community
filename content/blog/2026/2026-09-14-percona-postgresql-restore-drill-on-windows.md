@@ -1,13 +1,12 @@
 ---
 title: "Prove the Backup: A Percona Distribution for PostgreSQL Restore Drill on Windows"
-date: "2026-09-14"
-draft: true
-tags: ['PostgreSQL', 'Docker', 'Backup', 'PowerShell', 'Windows']
+date: "2026-09-14T11:00:00+00:00"
+tags: ['PostgreSQL', 'Docker', 'Backup', 'PowerShell', 'Windows', 'Community']
 categories: ['PostgreSQL', 'Community']
 authors:
   - jack_vansickle
 images:
-  - hub/home/cover.jpg
+  - blog/2026/09/percona-postgresql-restore-drill-on-windows-cover.png
 slug: percona-postgresql-restore-drill-on-windows
 ---
 
@@ -234,3 +233,5 @@ Execution used a PowerShell evidence wrapper around the article's Compose layout
 ## AI-assistance disclosure
 
 AI assistance was used to structure this lab, cross-check commands against official documentation, edit the prose, and prepare and execute the automated PowerShell validation on the author's Windows laptop. The author remains responsible for reviewing the evidence, correcting the article, and approving it for publication.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
