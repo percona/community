@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL as a Workflow Engine: Building Reliable Long-Running AI Jobs Without Kafka"
-date: "2026-09-11T11:00:00+00:00"
-tags: ['PostgreSQL', 'Percona Server for PostgreSQL', 'Queues', 'Concurrency', 'Benchmark', 'AI', 'Opensource']
+date: "2026-09-16T11:00:00+00:00"
+tags: ['PostgreSQL', 'Percona Server for PostgreSQL', 'Queues', 'Concurrency', 'Benchmark', 'AI', 'Opensource', 'Community']
 categories: ['PostgreSQL', 'Community']
 authors:
   - chandan_shukla
@@ -523,3 +523,5 @@ Timings are measured from the database — first claim to last completion — ra
 - PostgreSQL documentation, `INSERT ... ON CONFLICT`
 - psycopg 3 documentation
 - Percona Distribution for PostgreSQL documentation
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
