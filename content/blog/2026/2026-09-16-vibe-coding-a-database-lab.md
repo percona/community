@@ -1,6 +1,6 @@
 ---
 title: "Vibe Coding a Database Lab: How I Built DBCanvas to Stop Rebuilding the Same Test Environment"
-date: "2026-09-16T00:00:00+00:00"
+date: "2026-09-16T09:55:00+00:00"
 tags: ['MySQL', 'MongoDB', 'PostgreSQL', 'VibeCoding', 'Percona', 'Ai', 'Labs', 'Database', 'Docker']
 categories: ['MySQL']
 authors:
