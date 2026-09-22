@@ -20,14 +20,21 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Cloud-Native
+- Event
 - Events
 - Featured
+- Open-Source
+- database
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Cloud Native
 - Open Source
 - database
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 2
 contributor_type:
 - speaker

@@ -35,5 +35,4 @@ contributor_year:
 - '2026'
 - '2025'
 ---
-
 Natalia is a software engineer at Percona, working on Kubernetes operators for MySQL, PostgreSQL, and MongoDB. She joined Percona in 2022 as a DevOps engineer, working on release automation and operator testing, and moved to operator development in 2024. Before that, five years as an SRE running production infrastructure under real SLAs.

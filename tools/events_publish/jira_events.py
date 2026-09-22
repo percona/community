@@ -18,6 +18,7 @@ if str(_TALKS) not in sys.path:
 
 from jira_utils import (  # noqa: E402
     CITY,
+    COMMUNITY_URL,
     CONF_URL,
     FINISH_DATE,
     PUB_STATUS,
@@ -50,6 +51,7 @@ CONF_FIELDS = [
     OFFLINE,
     SPONSORSHIP,
     PUB_STATUS,
+    COMMUNITY_URL,
 ]
 
 

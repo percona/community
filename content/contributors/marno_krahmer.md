@@ -11,13 +11,21 @@ social:
   twitter: null
   website: null
 images:
-  - contributors/marno_krahmer.png
+- contributors/marno_krahmer.png
 aliases:
 - /authors/marno_krahmer
 - /authors/marno_krahmer/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
-blog_tags: []
+contributor_tag:
+- Community
+- MySQL
+blog_tags:
+- BGP
+- DevOps
+- MySQL
+- Opensource
+- Percona Server
+- ProxySQL
 events_tags: []
 talks_tags: []
 posts_count: 1

@@ -5,8 +5,8 @@ layout: single
 source: jira
 jira: SPEAK-1376
 speakers:
-- yoann_la_cancellera
 - jan_wieremjewicz
+- yoann_la_cancellera
 date: '2025-09-12'
 event_location: Rotterdam
 images:

@@ -5,11 +5,11 @@ layout: single
 source: jira
 jira: SPEAK-1220
 speakers:
-- peter_zaitsev
-- aldo_junior
-- jean_da_silva
 - fernando_laudares_camargos
+- jean_da_silva
+- peter_zaitsev
 - roberto_garcia_de_bem
+- aldo_junior
 date: '2026-09-26'
 event_url: https://mysqlbrconf.com.br/
 event_location: Brazil - São Paulo

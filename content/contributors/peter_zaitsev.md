@@ -86,7 +86,7 @@ talks_tags:
 - video
 - web
 posts_count: 0
-events_count: 32
+events_count: 36
 talks_count: 31
 contributor_type:
 - speaker

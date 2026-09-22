@@ -1,7 +1,6 @@
 ---
 title: The Open Source in Finance Forum (OSFF) London 2026
-description: The Open Source in Finance Forum (OSFF) London 2026 · 2026-06-23 – 2026-06-25
-  · 1 talk from Percona
+description: The Open Source in Finance Forum (OSFF) London 2026 · 2026-06-23 – 2026-06-25 · 1 talk from Percona
 layout: single
 source: jira
 jira: SPEAK-1556
@@ -23,6 +22,7 @@ events_tag:
 images:
 - events/2026-the-open-source-in-finance-forum-osff-london/card.png
 ---
+
 **The Open Source in Finance Forum (OSFF) London 2026** takes place **2026-06-23 – 2026-06-25**.
 
 Percona presence: **Speaking**.

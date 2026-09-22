@@ -26,6 +26,7 @@ Also runs after `python tools/talks/main.py --create` unless `--skip-events`.
 ## Page rules
 
 - Front matter includes `source: jira` and `jira: SPEAK-…`
+- After write: sets Jira **Community Website URL** + **Publication Status = Published**
 - **Never overwrites** hand-written pages without `source: jira` (use `--force` only if intentional)
 - Body: dates, location, conf URL, Speaking/Sponsoring (Talks list is rendered by the Hugo event template from related talk pages)
 

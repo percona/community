@@ -20,7 +20,10 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- italian
 - opensource
+- programming
+- software-development
 - speaking
 talks_tags:
 - Golang
@@ -28,7 +31,7 @@ talks_tags:
 - programming
 - software-development
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 2
 contributor_type:
 - speaker

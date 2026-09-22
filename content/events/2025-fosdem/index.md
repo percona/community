@@ -5,10 +5,10 @@ layout: single
 source: jira
 jira: SPEAK-1301
 speakers:
-- lori_lorusso
-- peter_zaitsev
-- dmitriy_kostiuk
 - dmitry_lenev
+- dmitriy_kostiuk
+- peter_zaitsev
+- lori_lorusso
 date: '2025-02-01'
 event_date_end: '2025-02-02'
 event_url: https://fosdem.org/2025/

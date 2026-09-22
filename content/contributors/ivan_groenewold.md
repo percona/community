@@ -26,13 +26,23 @@ blog_tags:
 - Opensource
 - Operators
 events_tags:
+- Event
 - Events
+- Open-Source
 - PSMDB
+- Tech
+- opensource
+- speaking
+- technology
 talks_tags:
+- Open-Source
+- Tech
 - Video
+- kubernetes
+- technology
 posts_count: 2
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - author
 - speaker

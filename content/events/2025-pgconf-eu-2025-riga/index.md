@@ -5,9 +5,9 @@ layout: single
 source: jira
 jira: SPEAK-1394
 speakers:
-- zsolt_parragi
-- michal_nosek
 - jan_wieremjewicz
+- michal_nosek
+- zsolt_parragi
 date: '2025-10-21'
 event_date_end: '2025-10-24'
 event_url: https://2025.pgconf.eu

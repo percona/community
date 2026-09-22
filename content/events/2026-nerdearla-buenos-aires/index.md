@@ -1,10 +1,11 @@
 ---
 title: Nerdearla Buenos Aires 2026
-description: Nerdearla Buenos Aires 2026 · 2026-09-22 – 2026-09-26 · Buenos Aires · 1 talk from Percona
+description: Nerdearla Buenos Aires 2026 · 2026-09-22 – 2026-09-26 · Buenos Aires · 2 talks from Percona
 layout: single
 source: jira
 jira: SPEAK-2213
 speakers:
+- ivan_groenewold
 - peter_zaitsev
 date: '2026-09-22'
 event_date_end: '2026-09-26'

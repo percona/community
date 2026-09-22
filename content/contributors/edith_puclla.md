@@ -110,7 +110,7 @@ talks_tags:
 - Video
 - video
 posts_count: 34
-events_count: 10
+events_count: 11
 talks_count: 20
 contributor_type:
 - author

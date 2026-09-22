@@ -6,9 +6,17 @@ from __future__ import annotations
 
 import os
 import re
+import sys
+from pathlib import Path
 from typing import Any
 
 import yaml
+
+_TALKS = Path(__file__).resolve().parent.parent / "talks"
+if str(_TALKS) not in sys.path:
+    sys.path.append(str(_TALKS))
+
+from jira_utils import patch_conference  # noqa: E402
 
 EVENTS_DIR = "content/events"
 PERCONA_EVENTS_PREFIX = "https://percona.community/events/"
@@ -285,6 +293,13 @@ def process_events(
             updated += 1
         else:
             created += 1
+
+        key = str(event.get("key") or "").strip()
+        if key.startswith("SPEAK-"):
+            try:
+                patch_conference(key, url, set_published=True)
+            except Exception as exc:
+                print(f"⚠️ Jira Community URL write-back failed for {key}: {exc}")
 
     print("\n" + "=" * 60)
     print("📊 EVENTS SUMMARY" + (" (dry-run)" if not write else ""))

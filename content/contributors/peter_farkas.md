@@ -43,7 +43,7 @@ talks_tags:
 - performance
 - serbia
 posts_count: 0
-events_count: 7
+events_count: 8
 talks_count: 5
 contributor_type:
 - speaker
