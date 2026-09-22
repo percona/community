@@ -25,6 +25,8 @@ contributor_tag:
 - PostgreSQL
 blog_tags:
 - ArgoCD
+- Community
+- Community Ascent
 - Coroot
 - DBaaS
 - Databases
@@ -32,13 +34,16 @@ blog_tags:
 - Docker
 - Entry Level
 - Events
+- GitHub
 - GitOps
 - Information
 - Intermediate Level
 - Kubernetes
 - MongoDB
 - Monitoring
+- Mountaineers
 - MySQL
+- Open Source
 - Open Source Databases
 - Opensource
 - PG_TDE
@@ -47,6 +52,7 @@ blog_tags:
 - Percona
 - Percona Everest
 - Percona Monitoring and Management
+- Percona Server for MongoDB
 - PostgreSQL
 - Security
 - Tools
@@ -66,7 +72,7 @@ blog_tags:
 - search
 events_tags: []
 talks_tags: []
-posts_count: 19
+posts_count: 20
 events_count: 1
 talks_count: 0
 contributor_type:

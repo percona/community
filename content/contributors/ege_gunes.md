@@ -33,16 +33,22 @@ blog_tags:
 - kubernetes
 - operators
 events_tags:
+- Cloud-Native
 - Event
 - Events
 - Featured
 - Meetup
+- Open-Source
+- database
+- opensource
+- speaking
+- sponsorship
 talks_tags:
 - Cloud Native
 - Open Source
 - database
 posts_count: 1
-events_count: 5
+events_count: 6
 talks_count: 1
 contributor_type:
 - author

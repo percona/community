@@ -11,7 +11,7 @@ speakers:
 - david_ducos
 - fernando_mattera
 - francisco_bordenave
-- ivan_groenwold
+- ivan_groenewold
 - sergio_ostapowicz
 - diego_feito
 tags: ["Event", "opensource", "sponsorship"]

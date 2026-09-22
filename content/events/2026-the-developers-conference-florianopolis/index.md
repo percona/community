@@ -1,7 +1,6 @@
 ---
 title: The Developer's Conference - Florianópolis
-description: The Developer's Conference - Florianópolis · 2026-07-24 · 1 talk from
-  Percona
+description: The Developer's Conference - Florianópolis · 2026-07-24 · 1 talk from Percona
 layout: single
 source: jira
 speakers:
@@ -9,23 +8,12 @@ speakers:
 date: '2026-07-24'
 event_url: https://thedevconf.com/tdc/2026/florianopolis/trilha-arquitetura-cloud
 event_location: Florianópolis
-tags:
-- Event
-- opensource
-- speaking
-- Kubernetes
-- MySQL
-- Operators
-events_year:
-- '2026'
-events_category:
-- Speaking
-events_tag:
-- In-Person
-- Cloud Native
-- MySQL
 images:
 - events/2026-the-developers-conference-florianopolis/card.png
+tags: ["Event", "Kubernetes", "MySQL", "Operators", "opensource", "speaking"]
+events_year: ["2026"]
+events_tag: ["Cloud Native", "In-Person", "MySQL"]
+events_category: ["Speaking"]
 ---
 **The Developer's Conference - Florianópolis** takes place **2026-07-24** in **Florianópolis**.
 

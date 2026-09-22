@@ -10,21 +10,12 @@ date: '2026-11-01'
 event_date_end: '2026-11-03'
 event_url: https://golab.io
 event_location: Bologna
-tags:
-- Event
-- opensource
-- speaking
-- italian
-- programming
-- software-development
-events_year:
-- '2026'
-events_category:
-- Speaking
-events_tag:
-- In-Person
 images:
 - events/2026-golab/card.png
+tags: ["Event", "italian", "opensource", "programming", "software-development", "speaking"]
+events_year: ["2026"]
+events_tag: ["In-Person"]
+events_category: ["Speaking"]
 ---
 **GoLab 2026** takes place **2026-11-01 – 2026-11-03** in **Bologna**.
 

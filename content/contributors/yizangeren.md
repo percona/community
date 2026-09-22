@@ -11,13 +11,21 @@ social:
   twitter: null
   website: null
 images:
-  - contributors/yizangeren.png
+- contributors/yizangeren.png
 aliases:
 - /authors/yizangeren
 - /authors/yizangeren/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
-blog_tags: []
+contributor_tag:
+- Community
+- PostgreSQL
+blog_tags:
+- CI
+- DevOps
+- Migrations
+- PostgreSQL
+- QA
+- Testing
 events_tags: []
 talks_tags: []
 posts_count: 1

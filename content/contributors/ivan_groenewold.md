@@ -15,6 +15,10 @@ images:
 aliases:
 - /authors/ivan_groenewold
 - /authors/ivan_groenewold/
+- /contributors/ivan_groenwold
+- /contributors/ivan_groenwold/
+- /speakers/ivan_groenwold
+- /speakers/ivan_groenwold/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
@@ -26,19 +30,32 @@ blog_tags:
 - Opensource
 - Operators
 events_tags:
+- Event
 - Events
+- Open-Source
 - PSMDB
+- Tech
+- opensource
+- speaking
+- sponsorship
+- technology
 talks_tags:
+- Open-Source
+- Tech
 - Video
+- kubernetes
+- technology
 posts_count: 2
-events_count: 1
-talks_count: 1
+events_count: 4
+talks_count: 2
 contributor_type:
 - author
 - speaker
 contributor_year:
 - '2026'
 - '2025'
+- '2023'
+- '2022'
 - '2021'
 ---
 Passionate about technology, Ivan Groenewold is a seasoned professional with extensive experience in database management, cloud infrastructure, and software development. 

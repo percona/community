@@ -5,9 +5,9 @@ layout: single
 source: jira
 jira: SPEAK-1544
 speakers:
-- boris_ilijic
-- inel_pandzic
 - eleonora_zinchenko
+- inel_pandzic
+- boris_ilijic
 date: '2026-08-28'
 event_date_end: '2026-08-28'
 event_url: https://buildevcon.com/events/document-databases

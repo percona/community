@@ -26,13 +26,14 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Operators
 - opensource
 - speaking
 - sponsorship
 talks_tags:
 - Operators
 posts_count: 0
-events_count: 2
+events_count: 3
 talks_count: 2
 contributor_type:
 - speaker

@@ -5,8 +5,8 @@ layout: single
 source: jira
 jira: SPEAK-1336
 speakers:
-- jobin_augustine
 - sonia_valeja
+- jobin_augustine
 date: '2025-03-05'
 event_date_end: '2025-03-07'
 event_url: https://pgconf.in/conferences/pgconfin2025

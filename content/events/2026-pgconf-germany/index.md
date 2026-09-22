@@ -6,32 +6,21 @@ source: jira
 jira: SPEAK-1431
 speakers:
 - zsolt_parragi
-- takis_panagiotis_stathopoulos
+- andreas_karlsson
 - jan_wieremjewicz
 - kai_wagner
-- andreas_karlsson
+- takis_panagiotis_stathopoulos
 date: '2026-04-21'
 event_date_end: '2026-04-22'
 event_url: https://2026.pgconf.de/
 event_location: Essen
-tags:
-- Event
-- opensource
-- sponsorship
-- speaking
-- PostgreSQL
-events_year:
-- '2026'
-events_category:
-- Speaking
-- Sponsorship
-events_tag:
-- In-Person
-- PostgreSQL
 images:
 - events/2026-pgconf-germany/card.png
+tags: ["Event", "PostgreSQL", "opensource", "speaking", "sponsorship"]
+events_year: ["2026"]
+events_tag: ["In-Person", "PostgreSQL"]
+events_category: ["Speaking", "Sponsorship"]
 ---
-
 **PGConf Germany 2026** takes place **2026-04-21 – 2026-04-22** in **Essen**.
 
 Conference site: [https://2026.pgconf.de/](https://2026.pgconf.de/)

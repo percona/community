@@ -684,3 +684,27 @@ def patch_talk(jira_key: str, url: str) -> None:
             f"Jira patch {jira_key} failed: {response.status_code} {response.text[:400]}"
         )
     print(f"🔄 Jira updated for {jira_key}: {url}")
+
+
+def patch_conference(jira_key: str, url: str, *, set_published: bool = True) -> None:
+    """
+    Write Conference Community Website URL (+ optionally Publication Status → Published).
+    """
+    require_env()
+    fields: dict[str, Any] = {COMMUNITY_URL: url}
+    if set_published:
+        fields[PUB_STATUS] = {"value": "Published"}
+    response = _http.put(
+        f"{JIRA_URL}/rest/api/3/issue/{jira_key}",
+        headers=jira_headers(),
+        auth=jira_auth(),
+        params={"notifyUsers": "false"},
+        json={"fields": fields},
+        timeout=60,
+    )
+    if not response.ok:
+        raise RuntimeError(
+            f"Jira conference patch {jira_key} failed: "
+            f"{response.status_code} {response.text[:400]}"
+        )
+    print(f"🔄 Jira Conference updated for {jira_key}: {url}")

@@ -1,7 +1,6 @@
 ---
 title: PGDay Hyderabad 2026
-description: PGDay Hyderabad 2026 · 2026-05-20 – 2026-08-21 · Hyderabad · 1 talk from
-  Percona
+description: PGDay Hyderabad 2026 · 2026-05-20 – 2026-08-21 · Hyderabad · 1 talk from Percona
 layout: single
 source: jira
 jira: SPEAK-1452
@@ -24,6 +23,7 @@ events_tag:
 images:
 - events/2026-pgday-hyderabad/card.png
 ---
+
 **PGDay Hyderabad 2026** takes place **2026-05-20 – 2026-08-21** in **Hyderabad**.
 
 Conference site: [https://2026.pghyd.in/](https://2026.pghyd.in/)

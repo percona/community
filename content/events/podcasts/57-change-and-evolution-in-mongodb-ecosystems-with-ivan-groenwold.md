@@ -6,7 +6,7 @@ date: "2022-04-14"
 podbean_link: "https://percona.podbean.com/e/change-and-evolution-in-mongodb-ecosystems-%e2%80%93-percona-podcast-57-w-ivan-groenwold/"
 youtube_id: "WTrNoLgsTRg"
 speakers:
-  - ivan_groenwold
+  - ivan_groenewold
   - matt_yonkovit
 aliases:
     - "/podcasts/57-change-and-evolution-in-mongodb-ecosystems-with-ivan-groenwold"
