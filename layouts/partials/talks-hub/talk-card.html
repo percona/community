@@ -4,6 +4,14 @@
 
     <p class="el-talk__meta">
       {{ with .Params.presentation_date }}
+        <span>{{ . | time.Format "January 2, 2006" }}</span>
+      {{ end }}
+      {{ with .Params.presentation_time }}
+        {{ if $.Params.presentation_date }}<span class="el-talk__meta-sep">·</span>{{ end }}
+        <span>{{ . }}</span>
+      {{ end }}
+      {{ with .Params.room }}
+        <span class="el-talk__meta-sep">·</span>
         <span>{{ . }}</span>
       {{ end }}
       {{ with .Params.event }}

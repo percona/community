@@ -4,13 +4,17 @@ description: 'Percona is a Silver sponsor at Open Source Summit Europe, October 
 images:
 - events/2026-os-summit-europe/os-summit-europe-2026-1200x630.jpg
 layout: single
+jira: SPEAK-1223
 date: '2026-10-07'
 EventDate: October 7-9, 2026
 EventLocation: Prague, Czechia
 tags: ["Community", "Events", "Opensource"]
 events_year: ["2026"]
 events_tag: ["In-Person", "Opensource"]
-events_category: ["Sponsorship"]
+events_category: ["Sponsorship", "Speaking"]
+aliases:
+- /events/2026-oss-summit-eu
+- /events/2026-oss-summit-eu/
 ---
 
 Percona is a **Silver sponsor** at **Open Source Summit Europe**, October 7-9 in **Prague**. We'll be in the exhibit hall with the open source community — talking databases, sharing what we know from production work, and catching up with contributors and operators face to face.

@@ -1,27 +1,42 @@
 {{ $ctx := . }}
 {{ $page := $ctx.page }}
 {{ $now := now }}
+{{ $until := $now.AddDate 0 1 0 }}
 {{ $events := $ctx.eventPages }}
 {{ $eventsPerPage := 12 }}
 {{ $eventsHub := site.GetPage "/events" }}
 
-{{ $sortedUpcoming := sort (where $events "Date" ">" $now) "Date" "asc" }}
+{{ $sortedCurrent := slice }}
+{{ range sort $events "Date" "asc" }}
+  {{ if partial "events/is-current.html" . }}
+    {{ $sortedCurrent = $sortedCurrent | append . }}
+  {{ end }}
+{{ end }}
+
 {{ $upcomingLinks := slice }}
-{{ range $sortedUpcoming }}
+{{ range $sortedCurrent }}
   {{ $upcomingLinks = $upcomingLinks | append .RelPermalink }}
 {{ end }}
 
 {{ $candidates := slice }}
-{{ range $sortedUpcoming }}
+{{ range $sortedCurrent }}
   {{ $imgs := .Params.images | default slice }}
-  {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
+  {{ if and (le .Date $until) (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
     {{ $candidates = $candidates | append . }}
   {{ end }}
 {{ end }}
 
 {{ if eq (len $candidates) 0 }}
-  {{ $past := where $events "Date" "<=" $now }}
-  {{ range sort $past "Date" "desc" }}
+  {{ range $sortedCurrent }}
+    {{ $imgs := .Params.images | default slice }}
+    {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
+      {{ $candidates = $candidates | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if eq (len $candidates) 0 }}
+  {{ range partial "events/past-pages.html" $events }}
     {{ $imgs := .Params.images | default slice }}
     {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
       {{ $candidates = $candidates | append . }}
@@ -32,7 +47,7 @@
 {{ $featured := $candidates }}
 
 {{ $pastPool := slice }}
-{{ range sort (where $events "Date" "<=" $now) "Date" "desc" }}
+{{ range partial "events/past-pages.html" $events }}
   {{ $imgs := .Params.images | default slice }}
   {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) (not (in $upcomingLinks .RelPermalink)) }}
     {{ $pastPool = $pastPool | append . }}

@@ -1,7 +1,8 @@
 ---
 id: SPEAK-1627
 jira: SPEAK-1627
-title: Networking Observability Essentials - How to Know if the Network is at Fault with eBPF
+title: Networking Observability Essentials - How to Know if the Network is at Fault
+  with eBPF
 layout: single
 speakers:
 - peter_zaitsev

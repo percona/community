@@ -4,8 +4,7 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-{{ $now := now }}
-{{ $pastPages := sort (where .Pages "Date" "<=" $now) "Date" "desc" }}
+{{ $pastPages := partial "events/past-pages.html" .Pages }}
 {{ $paginator := .Paginate $pastPages 12 }}
 
 {{ partial "events-hub/shell.html" (dict

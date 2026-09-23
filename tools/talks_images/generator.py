@@ -1,4 +1,6 @@
 import os
+from datetime import date, datetime
+
 from PIL import Image, ImageDraw, ImageFont
 
 IMG_W = 1200
@@ -118,14 +120,15 @@ def draw_right_rounded_rect(draw, box, radius, fill):
     draw.pieslice([x2 - 2 * r, y2 - 2 * r, x2, y2], 0, 90, fill=fill)
 
 
-def text_height(draw, text, font, max_width, line_gap=6):
-    if not text:
-        return 0
-    words = text.split()
-    lines = []
-    line = ""
+_SMALL_LINE_STARTS = frozenset(
+    {"a", "an", "the", "of", "or", "and", "to", "in", "on", "at", "for", "by", "with"}
+)
+
+
+def _greedy_wrap(draw, words, font, max_width):
+    lines, line = [], ""
     for w in words:
-        test = line + " " + w if line else w
+        test = f"{line} {w}" if line else w
         if draw.textlength(test, font=font) <= max_width:
             line = test
         else:
@@ -134,48 +137,102 @@ def text_height(draw, text, font, max_width, line_gap=6):
             line = w
     if line:
         lines.append(line)
+    return lines
+
+
+def _score_title_lines(draw, lines, font, max_width):
+    """Higher is better. Favors balance, breaks after ':', avoids weak line starts."""
+    widths = [draw.textlength(ln, font=font) for ln in lines]
+    if not widths or any(w > max_width + 0.5 for w in widths):
+        return float("-inf")
+    avg = sum(widths) / len(widths)
+    variance = sum((w - avg) ** 2 for w in widths) / len(widths)
+    score = -variance
+
+    for ln in lines[:-1]:
+        if ln.rstrip().endswith((":", "—", "–")):
+            score += avg * avg * 0.45
+
+    longest = max(widths)
+    if widths[-1] < 0.5 * longest:
+        score -= (longest - widths[-1]) ** 2 * 0.25
+
+    for ln in lines[1:]:
+        first = ln.split()[0].lower().strip("\"'“”")
+        if first in _SMALL_LINE_STARTS:
+            score -= avg * avg * 0.2
+
+    return score
+
+
+def wrap_lines(draw, text, font, max_width, *, balance=False):
+    """Word-wrap. With balance=True (titles), pick a typographically better break."""
+    if not text:
+        return []
+    words = text.split()
+    greedy = _greedy_wrap(draw, words, font, max_width)
+    if not balance or len(greedy) <= 1 or len(words) < 3:
+        return greedy
+
+    n_lines = len(greedy)
+    # For 2-line titles, score every valid break. For longer titles, binary-search
+    # a target width (CSS text-wrap: balance), then refine among nearby breaks.
+    if n_lines == 2:
+        best, best_score = greedy, _score_title_lines(draw, greedy, font, max_width)
+        for i in range(1, len(words)):
+            lines = [" ".join(words[:i]), " ".join(words[i:])]
+            score = _score_title_lines(draw, lines, font, max_width)
+            if score > best_score:
+                best, best_score = lines, score
+        return best
+
+    lo, hi = 1, int(max_width)
+    balanced = greedy
+    while lo < hi:
+        mid = (lo + hi) // 2
+        trial = _greedy_wrap(draw, words, font, mid)
+        if len(trial) <= n_lines:
+            balanced = trial
+            hi = mid
+        else:
+            lo = mid + 1
+
+    # Prefer a punctuation break if it still fits in n_lines and scores better.
+    best, best_score = balanced, _score_title_lines(draw, balanced, font, max_width)
+    for i, w in enumerate(words[:-1]):
+        if not w.endswith((":", "—", "–")):
+            continue
+        left, right = " ".join(words[: i + 1]), " ".join(words[i + 1 :])
+        # Re-wrap each side greedily within max_width; accept if total lines == n.
+        left_lines = _greedy_wrap(draw, left.split(), font, max_width)
+        right_lines = _greedy_wrap(draw, right.split(), font, max_width)
+        lines = left_lines + right_lines
+        if len(lines) != n_lines:
+            continue
+        score = _score_title_lines(draw, lines, font, max_width)
+        if score > best_score:
+            best, best_score = lines, score
+    return best
+
+
+def text_height(draw, text, font, max_width, line_gap=6, *, balance=False):
+    if not text:
+        return 0
+    lines = wrap_lines(draw, text, font, max_width, balance=balance)
     if not lines:
         return 0
     return len(lines) * (font.size + line_gap) - line_gap
 
 
-def text_width_wrapped(draw, text, font, max_width):
+def text_width_wrapped(draw, text, font, max_width, *, balance=False):
     if not text:
         return 0
-    words = text.split()
-    lines = []
-    line = ""
-    max_w = 0
-    for w in words:
-        test = line + " " + w if line else w
-        if draw.textlength(test, font=font) <= max_width:
-            line = test
-        else:
-            if line:
-                lines.append(line)
-            line = w
-    if line:
-        lines.append(line)
-    for ln in lines:
-        max_w = max(max_w, draw.textlength(ln, font=font))
-    return max_w
+    lines = wrap_lines(draw, text, font, max_width, balance=balance)
+    return max((draw.textlength(ln, font=font) for ln in lines), default=0)
 
 
-def draw_wrapped(draw, text, font, x, y, max_width, fill, line_gap=6):
-    words = text.split()
-    lines = []
-    line = ""
-
-    for w in words:
-        test = line + " " + w if line else w
-        if draw.textlength(test, font=font) <= max_width:
-            line = test
-        else:
-            if line:
-                lines.append(line)
-            line = w
-    if line:
-        lines.append(line)
+def draw_wrapped(draw, text, font, x, y, max_width, fill, line_gap=6, *, balance=False):
+    lines = wrap_lines(draw, text, font, max_width, balance=balance)
 
     for ln in lines:
         draw.text((x, y), ln, font=font, fill=fill)
@@ -184,8 +241,16 @@ def draw_wrapped(draw, text, font, x, y, max_width, fill, line_gap=6):
     return y
 
 
-def pick_title_font(title):
+def pick_title_font(title, *, large: bool = False):
     title_len = len(title)
+    if large:
+        if title_len <= 60:
+            return ImageFont.truetype(FONT_BOLD, 58)
+        if title_len <= 90:
+            return ImageFont.truetype(FONT_BOLD, 50)
+        if title_len <= 120:
+            return ImageFont.truetype(FONT_BOLD, 44)
+        return ImageFont.truetype(FONT_BOLD, 40)
     if title_len <= 60:
         return ImageFont.truetype(FONT_BOLD, 52)
     if title_len <= 90:
@@ -195,6 +260,41 @@ def pick_title_font(title):
     return ImageFont.truetype(FONT_BOLD, 34)
 
 
+# Logo-bottom layout for talks on/after this date (larger type, balanced title wrap).
+LAYOUT_LOGO_BOTTOM_FROM = date(2026, 9, 24)
+
+
+def parse_iso_date(value) -> date | None:
+    text = str(value or "").strip()
+    if len(text) >= 10 and text[4] == "-" and text[7] == "-":
+        try:
+            return datetime.strptime(text[:10], "%Y-%m-%d").date()
+        except ValueError:
+            return None
+    return None
+
+
+def talk_card_date(talk, post) -> date | None:
+    """Best-effort talk date for layout selection."""
+    for key in ("presentation_date", "event_date_start"):
+        d = parse_iso_date(post.get(key))
+        if d:
+            return d
+    d = parse_iso_date(getattr(talk, "event_date", None))
+    if d:
+        return d
+    # Slug prefix: 2026-10-07-...
+    return parse_iso_date(getattr(talk, "slug", ""))
+
+
+def use_logo_bottom_layout(talk, post) -> bool:
+    # Two speakers fill the footer; logo stays top-right (legacy layout).
+    if len(talk.speakers) != 1:
+        return False
+    d = talk_card_date(talk, post)
+    return d is not None and d >= LAYOUT_LOGO_BOTTOM_FROM
+
+
 def resize_logo(max_width=240):
     logo = Image.open(LOGO_WHITE_PNG).convert("RGBA")
     ratio = max_width / logo.width
@@ -202,18 +302,31 @@ def resize_logo(max_width=240):
     return logo.resize((max_width, new_h), Image.LANCZOS)
 
 
+def format_presentation_date(date_str: str) -> str:
+    """YYYY-MM-DD → October 7, 2026 (keep non-ISO as-is)."""
+    text = (date_str or "").strip()
+    if not text:
+        return ""
+    try:
+        dt = datetime.strptime(text[:10], "%Y-%m-%d")
+        return f"{dt.strftime('%B')} {dt.day}, {dt.year}"
+    except ValueError:
+        return text
+
+
 def build_meta(post):
     event = (post.get("event") or "").strip()
-    date = post.get("presentation_date") or post.get("event_date_start") or ""
+    date_raw = post.get("presentation_date") or post.get("event_date_start") or ""
+    date = format_presentation_date(str(date_raw))
     time_str = (post.get("presentation_time") or "").strip()
     location = (post.get("event_location") or "").strip()
+    room = (post.get("room") or "").strip()
 
     line1_parts = [p for p in (event, location) if p]
     line1 = " • ".join(line1_parts)
 
-    line2 = date
-    if time_str:
-        line2 = f"{date}, {time_str}" if date else time_str
+    line2_parts = [p for p in (date, time_str, room) if p]
+    line2 = " · ".join(line2_parts)
 
     return line1, line2
 
@@ -257,27 +370,27 @@ def render_speaker_card_layer(card_w, card_h):
     return layer
 
 
-def draw_speaker_card(img, x1, y1, photo_path, name, job, font_name, font_job):
+def draw_speaker_card(img, x1, y1, photo_path, name, job, font_name, font_job, photo_size=PHOTO_SIZE):
     probe = ImageDraw.Draw(img)
     pad = CARD_PAD
     text_gap = 10
     text_max_w = 380
 
     card_w, card_h, _text_w = measure_speaker_card(
-        probe, name, job, font_name, font_job
+        probe, name, job, font_name, font_job, photo_size=photo_size
     )
 
     layer = render_speaker_card_layer(card_w, card_h)
     img.paste(layer, (x1, y1), layer)
     draw = ImageDraw.Draw(img)
 
-    photo_outer = PHOTO_SIZE + PHOTO_BORDER * 2
+    photo_outer = photo_size + PHOTO_BORDER * 2
     photo_x = x1 + pad
     photo_y = y1 + (card_h - photo_outer) // 2
 
     if photo_path and os.path.exists(photo_path):
         p = Image.open(photo_path).convert("RGB")
-        p = circle_with_border(p, PHOTO_SIZE)
+        p = circle_with_border(p, photo_size)
         img.paste(p, (photo_x, photo_y), p)
 
     text_x = photo_x + photo_outer + text_gap
@@ -338,29 +451,38 @@ def generate_talk_image(talk):
     post = frontmatter.load(talk.md_path)
     img = load_background()
 
-    font_title = pick_title_font(talk.title)
-    font_event = ImageFont.truetype(FONT_BOLD, 32)
-    font_loc = ImageFont.truetype(FONT_REG, 28)
-    font_date = ImageFont.truetype(FONT_REG, 26)
-    font_speaker = ImageFont.truetype(FONT_BOLD, 26)
-    font_job = ImageFont.truetype(FONT_REG, 20)
+    logo_bottom = use_logo_bottom_layout(talk, post)
+    font_title = pick_title_font(talk.title, large=logo_bottom)
+    speaker_photo = PHOTO_SIZE
+    if logo_bottom:
+        font_event = ImageFont.truetype(FONT_BOLD, 36)
+        font_loc = ImageFont.truetype(FONT_REG, 32)
+        font_date = ImageFont.truetype(FONT_REG, 30)
+        font_speaker = ImageFont.truetype(FONT_BOLD, 30)
+        font_job = ImageFont.truetype(FONT_REG, 23)
+        speaker_photo = 92
+        logo = resize_logo(220)
+        title_y = MARGIN_TOP  # replaced below after measuring speaker band
+    else:
+        font_event = ImageFont.truetype(FONT_BOLD, 32)
+        font_loc = ImageFont.truetype(FONT_REG, 28)
+        font_date = ImageFont.truetype(FONT_REG, 26)
+        font_speaker = ImageFont.truetype(FONT_BOLD, 26)
+        font_job = ImageFont.truetype(FONT_REG, 20)
+        logo = resize_logo(240)
+        logo_w, logo_h = logo.size
+        logo_x = IMG_W - MARGIN_X - logo_w
+        logo_y = MARGIN_TOP
+        title_y = logo_y + logo_h + TITLE_BELOW_LOGO_GAP
 
-    logo = resize_logo(240)
-    logo_w, logo_h = logo.size
-    logo_x = IMG_W - MARGIN_X - logo_w
-    logo_y = MARGIN_TOP
-
-    title_y = logo_y + logo_h + TITLE_BELOW_LOGO_GAP
     title_max_w = CONTENT_W
 
     probe = Image.new("RGBA", (IMG_W, IMG_H))
     pdraw = ImageDraw.Draw(probe)
-    title_h = text_height(pdraw, talk.title, font_title, title_max_w, line_gap=8)
+    title_h = text_height(pdraw, talk.title, font_title, title_max_w, line_gap=8, balance=True)
     meta_h, line1, line2, event, location = measure_meta_block(
         pdraw, post, font_event, font_loc, font_date
     )
-    meta_y = title_y + title_h + meta_h
-    content_bottom = meta_y
 
     card_gap = 20
     card_y2 = IMG_H - MARGIN_BOTTOM
@@ -372,7 +494,9 @@ def generate_talk_image(talk):
         name = sp_post.get("fullname", sp)
         job = sp_post.get("job") or sp_post.get("tagline") or ""
 
-        _, card_h, _ = measure_speaker_card(pdraw, name, job, font_speaker, font_job)
+        _, card_h, _ = measure_speaker_card(
+            pdraw, name, job, font_speaker, font_job, photo_size=speaker_photo
+        )
         card_y1 = int(card_y2 - card_h)
         speaker_layout.append(
             {
@@ -383,29 +507,87 @@ def generate_talk_image(talk):
                 "job": job,
             }
         )
+
+    if logo_bottom:
+        # Bottom-align title/meta just above the speaker row so the block
+        # sits near the vertical center of the card.
+        # measure_meta_block() already includes a 20px leading gap — replace it.
+        title_meta_gap = 24
+        meta_content_h = max(meta_h - 20, 0) if (line1 or line2) else 0
+        text_block_h = title_h + title_meta_gap + meta_content_h
+        # Breathing room above the larger speaker card (~logo_bottom photo 92).
+        gap_above_speakers = 64
+        band_bottom = (
+            speaker_layout[0]["y1"] - gap_above_speakers
+            if speaker_layout
+            else IMG_H - MARGIN_BOTTOM
+        )
+        title_y = band_bottom - text_block_h
+        title_y = max(title_y, MARGIN_TOP)
+
+    meta_y = title_y + title_h + meta_h
+    content_bottom = meta_y
+    for item in speaker_layout:
         content_bottom = max(content_bottom, card_y2)
 
     card_x = MARGIN_X
     for item in speaker_layout:
         item["x"] = card_x
         card_w, _, _ = measure_speaker_card(
-            pdraw, item["name"], item["job"], font_speaker, font_job
+            pdraw,
+            item["name"],
+            item["job"],
+            font_speaker,
+            font_job,
+            photo_size=speaker_photo,
         )
         card_x += card_w + card_gap
 
+    if logo_bottom:
+        logo_w, logo_h = logo.size
+        logo_x = IMG_W - MARGIN_X - logo_w
+        # Align logo vertically with the speaker card row.
+        if speaker_layout:
+            sp_y1 = speaker_layout[0]["y1"]
+            _, sp_h, _ = measure_speaker_card(
+                pdraw,
+                speaker_layout[0]["name"],
+                speaker_layout[0]["job"],
+                font_speaker,
+                font_job,
+                photo_size=speaker_photo,
+            )
+            logo_y = int(sp_y1 + (sp_h - logo_h) / 2)
+        else:
+            logo_y = IMG_H - MARGIN_BOTTOM - logo_h
+
     panel_x1 = MARGIN_X - PANEL_PAD
     panel_x2 = IMG_W - MARGIN_X + PANEL_PAD
-    panel_y1 = title_y - PANEL_PAD
-    panel_y2 = content_bottom + PANEL_PAD
+    if logo_bottom:
+        # Panel hugs the text block so empty dark space above the title doesn't
+        # make the copy read as top-aligned; text itself is mid-band.
+        panel_y1 = title_y - PANEL_PAD
+        panel_y2 = content_bottom + PANEL_PAD
+    else:
+        panel_y1 = title_y - PANEL_PAD
+        panel_y2 = content_bottom + PANEL_PAD
     img = draw_content_panel(img, panel_x1, panel_y1, panel_x2, panel_y2)
 
     draw = ImageDraw.Draw(img)
     y = draw_wrapped(
-        draw, talk.title, font_title, MARGIN_X, title_y, title_max_w, TEXT_WHITE, line_gap=8
+        draw,
+        talk.title,
+        font_title,
+        MARGIN_X,
+        title_y,
+        title_max_w,
+        TEXT_WHITE,
+        line_gap=8,
+        balance=True,
     )
 
     if line1 or line2:
-        y += 20
+        y += 24 if logo_bottom else 20
         if line1:
             if len(line1) > 70 or draw.textlength(line1, font=font_event) > CONTENT_W:
                 y = draw_wrapped(
@@ -428,6 +610,7 @@ def generate_talk_image(talk):
             item["job"],
             font_speaker,
             font_job,
+            photo_size=speaker_photo,
         )
         item["w"] = card_w
         item["h"] = card_h

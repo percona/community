@@ -1,7 +1,8 @@
 ---
 id: SPEAK-1488
 jira: SPEAK-1488
-title: 'The Anatomy of a PostgreSQL Backup CRD: pgBackRest, Multi-Repo, and Tiered Storage'
+title: 'The Anatomy of a PostgreSQL Backup CRD: pgBackRest, Multi-Repo, and Tiered
+  Storage'
 layout: single
 speakers:
 - george_kechagias

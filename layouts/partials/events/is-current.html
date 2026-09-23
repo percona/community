@@ -1,0 +1,16 @@
+{{/*
+  True while the event is still current: today <= event_date_end,
+  or today <= start Date when event_date_end is empty.
+
+  Usage: {{ if partial "events/is-current.html" . }}…{{ end }}
+*/}}
+{{ $today := now.Format "2006-01-02" }}
+{{ $end := .Date.Format "2006-01-02" }}
+{{ with .Params.event_date_end }}
+  {{ $raw := strings.TrimSpace (printf "%s" .) }}
+  {{ if $raw }}
+    {{ $end = index (split $raw "T") 0 }}
+    {{ $end = index (split $end " ") 0 }}
+  {{ end }}
+{{ end }}
+{{ return ge $end $today }}

@@ -1,8 +1,9 @@
 {{/*
-  Auto-list talks related to this event page.
+  Auto-list talks related to this event page as talk cards
+  (same card as talk hub / Params.talks override).
+
   Match: talk.event_jira == event.jira, else talk.event == event.Title
   (if talk has a non-matching event_jira, do not fall back to title).
-  Compact list: title + speakers. Renders nothing if empty.
 */}}
 {{ $event := . }}
 {{ $jira := printf "%s" ($event.Params.jira | default "") }}
@@ -29,31 +30,10 @@
     <h2 class="hub-single-panel__title" id="event-talks-heading">
       {{ if eq (len $sorted) 1 }}Talk{{ else }}Talks{{ end }}
     </h2>
-    <ul class="event-related-talks">
+    <div class="hub-single-panel__grid">
       {{ range $sorted }}
-        <li class="event-related-talks__item">
-          <a class="event-related-talks__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ with .Params.speakers }}
-            {{ $speakerPages := slice }}
-            {{ range . }}
-              {{ with site.GetPage (printf "/contributors/%s" .) }}
-                {{ $speakerPages = $speakerPages | append . }}
-              {{ end }}
-            {{ end }}
-            {{ if gt (len $speakerPages) 0 }}
-              <span class="event-related-talks__speakers">
-                <span class="event-related-talks__by">by </span>
-                {{ range $i, $sp := $speakerPages }}
-                  {{- if $i -}}
-                    {{- if eq (add $i 1) (len $speakerPages) }} and {{ else }}, {{ end -}}
-                  {{- end -}}
-                  <a href="{{ $sp.RelPermalink }}">{{ $sp.Params.fullname | default $sp.Title }}</a>
-                {{- end }}
-              </span>
-            {{ end }}
-          {{ end }}
-        </li>
+        {{ partial "hub-single/talk-card.html" . }}
       {{ end }}
-    </ul>
+    </div>
   </section>
 {{ end }}

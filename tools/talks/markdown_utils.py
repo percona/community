@@ -423,6 +423,7 @@ def build_hugo_markdown(
     presentation_date = (talk.get("presentation_date") or "").strip()
     presentation_date_end = ""
     presentation_time = (talk.get("presentation_time") or "").strip()
+    room = (talk.get("room") or "").strip()
     conference_url = talk.get("talk_url") or ""
     event_status = talk.get("status") or ""
 
@@ -503,6 +504,7 @@ def build_hugo_markdown(
             f'presentation_date: "{final_presentation_date}"',
             f'presentation_date_end: "{presentation_date_end}"',
             f'presentation_time: "{presentation_time}"',
+            f'room: "{room}"',
             f'talk_year: "{talk_year}"',
             f'event: "{event_title}"',
             f'event_jira: "{event.get("key") or ""}"',
