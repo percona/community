@@ -74,6 +74,9 @@ python tools/talks_images/main.py --only-new
 - Speakers come from **Speaker & Talk** (fallback: Speakers multi-user field).
   When Speakers (user picker) is set, Jira avatars are downloaded into
   `assets/contributors/` for new cards (and replace `percona.jpeg` placeholders).
+- **Room** (`customfield_11927`) is synced into front matter and shown on the talk page.
+- Dates stay ISO in front matter for sorting; Hugo templates render
+  `January 2, 2006` (e.g. October 7, 2026).
 - Contributor cards are create-only under `content/contributors/`.
 - Front matter `id` / `jira` use the Jira key (e.g. `SPEAK-2223`).
 

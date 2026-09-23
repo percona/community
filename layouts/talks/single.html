@@ -55,15 +55,22 @@
           </p>
         {{ end }}
 
+        {{ with .Params.room }}
+          <p class="hub-single__meta-line">
+            <span class="hub-single__meta-label">Room:</span>
+            <span>{{ . }}</span>
+          </p>
+        {{ end }}
+
         {{ if or .Params.event_date_start .Params.event_date_end }}
           <p class="hub-single__meta-line">
             <span class="hub-single__meta-label">Dates:</span>
             <span>
               {{ if .Params.event_date_start }}
-                {{ .Params.event_date_start | time.Format "2 January 2006" }}
+                {{ .Params.event_date_start | time.Format "January 2, 2006" }}
               {{ end }}
               {{ if .Params.event_date_end }}
-                {{ if .Params.event_date_start }} – {{ end }}{{ .Params.event_date_end | time.Format "2 January 2006" }}
+                {{ if .Params.event_date_start }} – {{ end }}{{ .Params.event_date_end | time.Format "January 2, 2006" }}
               {{ end }}
             </span>
           </p>
@@ -74,7 +81,7 @@
             <span class="hub-single__meta-label">Presentation:</span>
             <span>
               {{ if .Params.presentation_date }}
-                {{ .Params.presentation_date | time.Format "2 January 2006" }}
+                {{ .Params.presentation_date | time.Format "January 2, 2006" }}
               {{ end }}
               {{ if .Params.presentation_time }}
                 {{ if .Params.presentation_date }}, {{ end }}{{ .Params.presentation_time }}

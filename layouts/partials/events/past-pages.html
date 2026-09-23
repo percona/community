@@ -1,0 +1,13 @@
+{{/*
+  Past event pages from a page collection: not current by is-current.html,
+  sorted by Date descending.
+
+  Usage: {{ $past := partial "events/past-pages.html" .Pages }}
+*/}}
+{{ $past := slice }}
+{{ range . }}
+  {{ if not (partial "events/is-current.html" .) }}
+    {{ $past = $past | append . }}
+  {{ end }}
+{{ end }}
+{{ return sort $past "Date" "desc" }}

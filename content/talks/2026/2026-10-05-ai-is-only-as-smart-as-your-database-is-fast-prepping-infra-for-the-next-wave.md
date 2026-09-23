@@ -1,7 +1,8 @@
 ---
 id: SPEAK-1241
 jira: SPEAK-1241
-title: 'AI is Only as Smart as Your Database is Fast: Prepping Infra for the Next Wave'
+title: 'AI is Only as Smart as Your Database is Fast: Prepping Infra for the Next
+  Wave'
 layout: single
 speakers:
 - peter_farkas

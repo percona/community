@@ -4,8 +4,14 @@
 {{ $limit := 8 }}
 
 {{ $candidates := slice }}
-{{ $upcoming := where $events "Date" ">" $now }}
-{{ range sort $upcoming "Date" "asc" }}
+{{ $current := slice }}
+{{ range sort $events "Date" "asc" }}
+  {{ if partial "events/is-current.html" . }}
+    {{ $current = $current | append . }}
+  {{ end }}
+{{ end }}
+
+{{ range $current }}
   {{ $imgs := .Params.images | default slice }}
   {{ if and (le .Date $until) (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
     {{ $candidates = $candidates | append . }}
@@ -13,7 +19,7 @@
 {{ end }}
 
 {{ if eq (len $candidates) 0 }}
-  {{ range sort $upcoming "Date" "asc" }}
+  {{ range $current }}
     {{ $imgs := .Params.images | default slice }}
     {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
       {{ $candidates = $candidates | append . }}
@@ -22,8 +28,7 @@
 {{ end }}
 
 {{ if eq (len $candidates) 0 }}
-  {{ $past := where $events "Date" "<=" $now }}
-  {{ range sort $past "Date" "desc" }}
+  {{ range partial "events/past-pages.html" $events }}
     {{ $imgs := .Params.images | default slice }}
     {{ if and (gt (len $imgs) 0) (not (in .File.Dir "streams-")) (not (in .File.Dir "podcasts/")) }}
       {{ $candidates = $candidates | append . }}

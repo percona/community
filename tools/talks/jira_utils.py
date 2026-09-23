@@ -33,6 +33,7 @@ PUB_STATUS = "customfield_13507"
 COMMUNITY_URL = "customfield_13495"
 CONF_URL = "customfield_11932"
 TIME = "customfield_11931"
+ROOM = "customfield_11927"
 SLIDES = "customfield_13500"
 VIDEO = "customfield_13501"
 SPEAKERS_FIELD = "customfield_11938"
@@ -437,6 +438,7 @@ TALK_FIELDS = [
     COMMUNITY_URL,
     CONF_URL,
     TIME,
+    ROOM,
     SLIDES,
     VIDEO,
     SPEAKERS_FIELD,
@@ -616,6 +618,7 @@ def issue_to_site_talk(issue: dict) -> dict[str, Any]:
             )
 
     time_raw = fields.get(TIME)
+    room = str(fields.get(ROOM) or "").strip()
     return {
         "key": key,
         "id": key,  # Hugo id — Jira key replaces Notion UUID
@@ -626,6 +629,7 @@ def issue_to_site_talk(issue: dict) -> dict[str, Any]:
         "labels": labels_list(fields.get("labels")),
         "presentation_date": time_to_date(time_raw),
         "presentation_time": time_to_clock(time_raw),
+        "room": room,
         "talk_url": url_field(fields.get(CONF_URL)),
         "status": status,
         "publication_status": pub,

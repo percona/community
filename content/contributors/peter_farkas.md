@@ -33,6 +33,7 @@ events_tags:
 - speaking
 - sponsorship
 talks_tags:
+- Ai
 - Databases
 - Open Source
 - Open-Source
@@ -40,11 +41,12 @@ talks_tags:
 - english
 - heap
 - observability
+- open-source
 - performance
 - serbia
 posts_count: 0
 events_count: 8
-talks_count: 5
+talks_count: 6
 contributor_type:
 - speaker
 contributor_year:

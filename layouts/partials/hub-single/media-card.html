@@ -39,9 +39,9 @@
   {{ $displayDate = cond (eq ($publishDate.Format "2006") $currentYear) ($publishDate.Format "January 2") ($publishDate.Format "January 2, 2006") }}
 {{ else if eq $type "talk" }}
   {{ if $page.Params.presentation_date }}
-    {{ $displayDate = $page.Params.presentation_date | time.Format "2 Jan 2006" }}
+    {{ $displayDate = $page.Params.presentation_date | time.Format "January 2, 2006" }}
   {{ else if $page.Params.event_date_start }}
-    {{ $displayDate = $page.Params.event_date_start | time.Format "2 Jan 2006" }}
+    {{ $displayDate = $page.Params.event_date_start | time.Format "January 2, 2006" }}
   {{ end }}
   {{ $eventName = $page.Params.event | default "" }}
   {{ $location = $page.Params.event_location | default "" }}

@@ -14,14 +14,16 @@
 {{ $now := now }}
 {{ $until := $now.AddDate 0 1 0 }}
 
-{{ $allFuture := sort (where $searchPages "Date" ">" $now) "Date" "asc" }}
+{{/* Current = today <= event_date_end (or start Date if end empty). */}}
 {{ $sortedUpcoming := slice }}
 {{ $sortedLater := slice }}
-{{ range $allFuture }}
-  {{ if le .Date $until }}
-    {{ $sortedUpcoming = $sortedUpcoming | append . }}
-  {{ else }}
-    {{ $sortedLater = $sortedLater | append . }}
+{{ range sort $searchPages "Date" "asc" }}
+  {{ if partial "events/is-current.html" . }}
+    {{ if le .Date $until }}
+      {{ $sortedUpcoming = $sortedUpcoming | append . }}
+    {{ else }}
+      {{ $sortedLater = $sortedLater | append . }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
