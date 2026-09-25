@@ -58,6 +58,12 @@ By publishing your post on our blog, you will become a contributor to the reposi
 
 By contributing, you become a Percona Community member and agree to our [Code of Conduct](content/contribute/coc.md).
 
+### License
+
+Unless otherwise specified, blog content and articles in this repository are licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE) license. Contributors retain copyright of their work; see [Write for the Percona Community](https://percona.community/blog/2026/05/22/write-for-percona-community/) for details.
+
+The site code (Hugo layouts, templates, configuration, and tooling) is Copyright (c) Percona and is not covered by CC BY 4.0.
+
 ## Assistance and Support
 
 If you have any questions, please contact us:
