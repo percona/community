@@ -1,6 +1,6 @@
 ---
 title: "Open FIPS Build, Vectors, and Binlog Server: Marco Tusa at Percona Live"
-date: "2026-09-25T11:00:00+00:00"
+date: "2026-09-25T12:00:00+00:00"
 tags: ['MySQL', 'Percona Live', 'Open Source', 'Percona Server', 'PXC']
 categories: ['MySQL', 'Community']
 authors:
