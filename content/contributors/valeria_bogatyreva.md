@@ -36,3 +36,4 @@ contributor_year:
 ---
 
 Valeria works closely with community users of PostgreSQL, MySQL and MongoDB, analyzing their adoption patterns and demonstrating the transformative value open source databases bring to businesses. Her understanding of the technical and business aspects of multi-model database capabilities and extensibility helps her articulate its benefits to C-level executives and other key stakeholders.
+
