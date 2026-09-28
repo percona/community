@@ -39,13 +39,15 @@ events_tags:
 - Event
 - Events
 - Troubleshooting
+- opensource
+- speaking
 talks_tags:
 - MariaDB
 - Slides
 - Video
 posts_count: 4
-events_count: 2
-talks_count: 4
+events_count: 3
+talks_count: 5
 contributor_type:
 - author
 - speaker

@@ -20,6 +20,8 @@ aliases:
 - /speakers/fernando_laudares/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Backup
+- Community
 - MySQL
 - PostgreSQL
 blog_tags: []
@@ -36,8 +38,8 @@ talks_tags:
 - Video
 - ai
 posts_count: 0
-events_count: 3
-talks_count: 6
+events_count: 4
+talks_count: 7
 contributor_type:
 - speaker
 contributor_year:

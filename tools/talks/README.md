@@ -25,8 +25,7 @@ pip install -r tools/talks/requirements.txt
 Talks are included when **all** of:
 
 - `issuetype = Talk`
-- `status` ∈ `Accepted`, `Done`
-- `Publication Status` = `Ready for publication` (after sync → `Published`)
+- `Publication Status` = `Ready for publication` (any workflow status; after sync → `Published`)
 
 ## Usage
 

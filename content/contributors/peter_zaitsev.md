@@ -27,6 +27,7 @@ contributor_tag:
 - MySQL
 - PMM
 - PostgreSQL
+- cloud
 blog_tags: []
 events_tags:
 - Cloud-Native
@@ -86,8 +87,8 @@ talks_tags:
 - video
 - web
 posts_count: 0
-events_count: 36
-talks_count: 31
+events_count: 37
+talks_count: 32
 contributor_type:
 - speaker
 contributor_year:
