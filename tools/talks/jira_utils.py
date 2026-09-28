@@ -434,6 +434,7 @@ TALK_FIELDS = [
     "status",
     "labels",
     "issuelinks",
+    "duedate",
     PUB_STATUS,
     COMMUNITY_URL,
     CONF_URL,
@@ -444,6 +445,9 @@ TALK_FIELDS = [
     SPEAKERS_FIELD,
     CONF_NAME,
     TECHNOLOGY,
+    START_DATE,
+    FINISH_DATE,
+    CITY,
 ]
 
 CONF_FIELDS = [
@@ -472,7 +476,8 @@ def publishable_jql(
         return (
             f'project = SPEAK AND issuetype = Talk AND key = {jira_key}'
         )
-    # Talks queue: Ready only. Events pages: Ready + already Published on site.
+    # Match Jira filter "Talks - Publishing - Ready for Publication":
+    # Publication Status only (Accepted / Done / Open / …).
     if include_published:
         pub_clause = (
             'AND "Publication Status" in ("Ready for publication", Published) '
@@ -481,7 +486,6 @@ def publishable_jql(
         pub_clause = 'AND "Publication Status" = "Ready for publication" '
     return (
         'project = SPEAK AND issuetype = Talk '
-        'AND status in (Accepted, Done) '
         f'{pub_clause}'
         'ORDER BY updated DESC'
     )
@@ -558,6 +562,23 @@ def issue_to_site_talk(issue: dict) -> dict[str, Any]:
         event = conf
         if not event.get("name"):
             event["name"] = chosen.get("summary") or conf_name or ""
+    else:
+        # Standalone Talk: Conference Name + Start/Finish/City/URL on the issue
+        city_raw = fields.get(CITY)
+        location = (
+            city_raw.strip()
+            if isinstance(city_raw, str)
+            else str(city_raw or "").strip()
+        )
+        event.update(
+            {
+                "url": url_field(fields.get(CONF_URL)),
+                "date_start": time_to_date(fields.get(START_DATE)),
+                "date_end": time_to_date(fields.get(FINISH_DATE)),
+                "location": location,
+            }
+        )
+
     speakers: list[dict[str, Any]] = []
     avatars = speakers_avatar_index(fields)
 
@@ -617,7 +638,25 @@ def issue_to_site_talk(issue: dict) -> dict[str, Any]:
                 }
             )
 
+    # Presentation Time, else Start date / Due / Finish on the Talk / event
     time_raw = fields.get(TIME)
+    presentation_date = time_to_date(time_raw)
+    if not presentation_date:
+        for candidate in (
+            fields.get(START_DATE),
+            fields.get("duedate"),
+            fields.get(FINISH_DATE),
+            event.get("date_start"),
+        ):
+            if isinstance(candidate, str) and re.match(
+                r"^\d{4}-\d{2}-\d{2}", candidate.strip()
+            ):
+                presentation_date = candidate.strip()[:10]
+            else:
+                presentation_date = time_to_date(candidate)
+            if presentation_date:
+                break
+
     room = str(fields.get(ROOM) or "").strip()
     return {
         "key": key,
@@ -627,7 +666,7 @@ def issue_to_site_talk(issue: dict) -> dict[str, Any]:
         "slides": url_field(fields.get(SLIDES)),
         "video": url_field(fields.get(VIDEO)),
         "labels": labels_list(fields.get("labels")),
-        "presentation_date": time_to_date(time_raw),
+        "presentation_date": presentation_date,
         "presentation_time": time_to_clock(time_raw),
         "room": room,
         "talk_url": url_field(fields.get(CONF_URL)),
