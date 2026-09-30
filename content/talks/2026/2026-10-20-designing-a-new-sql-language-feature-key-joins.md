@@ -6,10 +6,11 @@ layout: single
 speakers:
 - andreas_karlsson
 - joel_jacobsson
-talk_url: ''
+talk_url: https://www.postgresql.eu/events/pgconfeu2026/schedule/session/8343-designing-a-new-sql-language-feature-key-joins/
 presentation_date: '2026-10-20'
 presentation_date_end: ''
-presentation_time: 01:00
+presentation_time: '11:15'
+room: Audit 2
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476

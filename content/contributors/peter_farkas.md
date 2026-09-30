@@ -46,7 +46,7 @@ talks_tags:
 - serbia
 posts_count: 0
 events_count: 8
-talks_count: 6
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:

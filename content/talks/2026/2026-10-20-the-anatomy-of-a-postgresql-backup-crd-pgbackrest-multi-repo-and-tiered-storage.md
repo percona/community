@@ -6,7 +6,7 @@ title: 'The Anatomy of a PostgreSQL Backup CRD: pgBackRest, Multi-Repo, and Tier
 layout: single
 speakers:
 - george_kechagias
-talk_url: ''
+talk_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
 presentation_date: '2026-10-20'
 presentation_date_end: ''
 presentation_time: 01:00
@@ -16,7 +16,7 @@ event_jira: SPEAK-1476
 event_status: Accepted
 event_date_start: '2026-10-20'
 event_date_end: '2026-10-23'
-event_url: https://2026.pgconf.eu
+event_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
 event_location: Valencia
 talk_tags:
 - PostgreSQL

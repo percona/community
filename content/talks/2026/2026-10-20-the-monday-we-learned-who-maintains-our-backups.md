@@ -6,10 +6,11 @@ layout: single
 speakers:
 - jan_wieremjewicz
 - david_steele
-talk_url: ''
+talk_url: https://www.postgresql.eu/events/pgconfeu2026/schedule/session/7963-the-monday-we-learned-who-maintains-our-backups/
 presentation_date: '2026-10-20'
 presentation_date_end: ''
-presentation_time: 01:00
+presentation_time: '14:45'
+room: Audit 2
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
