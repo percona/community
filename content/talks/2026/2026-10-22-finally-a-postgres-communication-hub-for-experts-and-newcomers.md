@@ -5,10 +5,11 @@ title: Finally a Postgres Communication Hub for Experts and Newcomers
 layout: single
 speakers:
 - kai_wagner
-talk_url: ''
-presentation_date: '2026-10-20'
+talk_url: https://www.postgresql.eu/events/pgconfeu2026/schedule/session/8197-finally-a-postgres-communication-hub-for-experts-and-newcomers/
+presentation_date: '2026-10-22'
 presentation_date_end: ''
-presentation_time: 01:00
+presentation_time: 09:25
+room: Audit 2
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
@@ -21,7 +22,10 @@ talk_tags:
 - PostgreSQL
 slides: ''
 video: ''
+aliases:
+- /talks/2026/2026-10-20-finally-a-postgres-communication-hub-for-experts-and-newcomers
 images:
+- talks/2026/2026-10-22-finally-a-postgres-communication-hub-for-experts-and-newcomers.png
 - talks/2026/2026-10-20-finally-a-postgres-communication-hub-for-experts-and-newcomers.png
 ---
 PostgreSQL development relies heavily on traditional mailing lists, but managing the "firehose" of daily emails can overwhelm both new and veteran contributors. Hackorum solves this by providing a modern, forum-style interface that respects existing email culture while dramatically improving the user experience.

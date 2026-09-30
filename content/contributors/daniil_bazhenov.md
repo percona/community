@@ -49,9 +49,12 @@ blog_tags:
 - PG_TDE
 - PHP
 - PMM
+- PXC
 - Percona
 - Percona Everest
+- Percona Live
 - Percona Monitoring and Management
+- Percona Server
 - Percona Server for MongoDB
 - PostgreSQL
 - Security
@@ -72,7 +75,7 @@ blog_tags:
 - search
 events_tags: []
 talks_tags: []
-posts_count: 20
+posts_count: 21
 events_count: 1
 talks_count: 0
 contributor_type:

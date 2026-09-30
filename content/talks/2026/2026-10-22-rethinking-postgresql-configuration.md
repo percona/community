@@ -5,10 +5,11 @@ title: Rethinking PostgreSQL Configuration
 layout: single
 speakers:
 - zsolt_parragi
-talk_url: ''
-presentation_date: '2026-10-20'
+talk_url: https://www.postgresql.eu/events/pgconfeu2026/schedule/session/8344-rethinking-postgresql-configuration/
+presentation_date: '2026-10-22'
 presentation_date_end: ''
-presentation_time: 01:00
+presentation_time: '14:55'
+room: Audit 2
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
@@ -21,7 +22,10 @@ talk_tags:
 - PostgreSQL
 slides: ''
 video: ''
+aliases:
+- /talks/2026/2026-10-20-rethinking-postgresql-configuration
 images:
+- talks/2026/2026-10-22-rethinking-postgresql-configuration.png
 - talks/2026/2026-10-20-rethinking-postgresql-configuration.png
 ---
 PostgreSQL relies on multiple configuration files. Among them, pg_hba, pg_ident, and pg_hosts use tabular formats with slightly different semantics.

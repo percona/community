@@ -47,7 +47,7 @@ talks_tags:
 - Open Source
 - Security
 - Slides
-posts_count: 8
+posts_count: 9
 events_count: 3
 talks_count: 4
 contributor_type:

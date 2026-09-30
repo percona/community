@@ -32,7 +32,7 @@ This is work in progress, not a list of future dates.
 - MyRocks and PXC, still in active development. They are first-class parts of the server, not items added to fill a list.
 - MySQL Enterprise features carried from version to version. Each version needs merges and adjustments. That work stays in the freely available server.
 
-The written vision is at [percona.com/mysqlvision](https://www.percona.com/mysqlvision). The roadmap follows it, in public.
+The written vision is at [percona.com/mysql/vision](https://www.percona.com/mysql/vision/). The roadmap follows it, in public.
 
 Answer the MariaDB questionnaire from Percona Live, and share the answer. MySQL Calculator is an open source project you can try through the operator. If something is wrong, open an issue.
 
