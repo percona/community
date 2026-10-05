@@ -47,10 +47,13 @@ talks_tags:
 - DevOps
 - Education
 - Open Source
+- Open-Source
 - Security
+- Tech
+- software-development
 posts_count: 0
-events_count: 8
-talks_count: 2
+events_count: 9
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

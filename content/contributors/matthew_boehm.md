@@ -18,17 +18,22 @@ contributor_tag:
 - MySQL
 blog_tags: []
 events_tags:
+- Event
 - PerconaLive2023
 - Podcast
+- opensource
+- speaking
 talks_tags:
+- Open-Source
 - Slides
 - Video
 posts_count: 0
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2025'
 - '2023'
 - '2022'
 ---

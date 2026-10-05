@@ -23,17 +23,17 @@ events_tags:
 - opensource
 - speaking
 talks_tags:
+- Open-Source
 - Security
 - Video
 posts_count: 0
-events_count: 2
-talks_count: 3
+events_count: 3
+talks_count: 4
 contributor_type:
 - speaker
 contributor_year:
 - '2027'
+- '2026'
 - '2025'
 ---
-
 Valeria works closely with community users of PostgreSQL, MySQL and MongoDB, analyzing their adoption patterns and demonstrating the transformative value open source databases bring to businesses. Her understanding of the technical and business aspects of multi-model database capabilities and extensibility helps her articulate its benefits to C-level executives and other key stakeholders.
-
