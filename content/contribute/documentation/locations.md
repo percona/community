@@ -29,4 +29,4 @@ for details on how to submit or suggest changes to the docs.
 | [Percona Toolkit](https://docs.percona.com/percona-toolkit/) | https://github.com/percona/percona-toolkit/tree/3.x/docs/ | [`CONTRIBUTING.md`](https://github.com/percona/percona-toolkit/blob/3.x/CONTRIBUTING.md) |
 | [Percona Software Repositories Documentation](https://docs.percona.com/percona-software-repositories/) | https://github.com/percona/repo-config-docs | [`CONTRIBUTING.md`](https://github.com/percona/repo-config-docs/blob/master/CONTRIBUTING.md) |
 | [ProxySQL and ProxySQL Admin Tool](https://docs.percona.com/proxysql/) | https://github.com/percona/proxysql-admin-tool-doc/ | [`contributing.md`](https://github.com/percona/proxysql-admin-tool-doc/blob/main/contributing.md) |
-| [Percona Documentation Style Guide](https://docs.percona.com/style-guide/) | https://github.com/percona/doc-style-guide | N/A
+| [Percona Documentation Style Guide](https://percona-style-guide.onrender.com/) | https://github.com/percona/doc-style-guide | N/A
