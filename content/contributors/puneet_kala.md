@@ -16,7 +16,8 @@ aliases:
 - /authors/puneet_kala
 - /authors/puneet_kala/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- MongoDB
 blog_tags:
 - Community
 - Events
@@ -29,14 +30,22 @@ blog_tags:
 - Percona Monitoring and Management
 - Tools
 - mysql-and-variants
-events_tags: []
-talks_tags: []
+events_tags:
+- Event
+- opensource
+- speaking
+talks_tags:
+- Open-Source
+- Tech
+- software-development
 posts_count: 1
-events_count: 0
-talks_count: 0
+events_count: 1
+talks_count: 1
 contributor_type:
 - author
+- speaker
 contributor_year:
+- '2026'
 - '2020'
 ---
 Frontend Web Automation Quality Assurance at Percona
