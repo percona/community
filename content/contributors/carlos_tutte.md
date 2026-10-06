@@ -3,7 +3,7 @@ name: carlos_tutte
 name_pronunciation: carlos_tutte
 fullname: Carlos Tutte
 fullname_pronounciation: Carlos Tutte
-job: Senior Consultant, Percona
+job: Technical Account Manager
 country: null
 tagline: null
 social:
@@ -23,17 +23,21 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Open-Source
 - opensource
+- speaking
 - sponsorship
 talks_tags:
 - Open Source
+- Open-Source
 - Slides
 posts_count: 0
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2023'
 ---
 Computer engineer from Montevideo, Uruguay, joined Percona on February 2018, first as a support engineer, then moving to the consulting team. Working in complex IT solutions for more than 10 years, Carlos now specializes in MySQL and related technologies.

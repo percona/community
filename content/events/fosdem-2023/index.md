@@ -4,6 +4,7 @@ description: FOSDEM is an awesome conference in Europe organized by the communit
   for the community. Percona experts actively participated in it this year.
 images:
 - events/fosdem-2023/1.JPG
+jira: SPEAK-1023
 date: '2023-02-22'
 EventLocation: Brussels, Belgium
 layout: single

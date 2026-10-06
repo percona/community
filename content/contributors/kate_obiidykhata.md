@@ -28,8 +28,8 @@ talks_tags:
 - english
 - uk
 posts_count: 0
-events_count: 2
-talks_count: 2
+events_count: 3
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

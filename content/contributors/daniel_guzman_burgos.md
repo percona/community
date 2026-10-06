@@ -29,13 +29,19 @@ blog_tags:
 - analytics
 - binlog
 - dbtrail
-events_tags: []
-talks_tags: []
+events_tags:
+- Event
+- Open-Source
+- opensource
+- speaking
+talks_tags:
+- Open-Source
 posts_count: 1
-events_count: 0
-talks_count: 0
+events_count: 1
+talks_count: 1
 contributor_type:
 - author
+- speaker
 contributor_year:
 - '2026'
 ---

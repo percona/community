@@ -22,16 +22,19 @@ contributor_tag:
 - PostgreSQL
 blog_tags: []
 events_tags:
+- Event
 - Percona Community Live
 - database
 - opensource
+- speaking
 - stream
 talks_tags: []
 posts_count: 0
-events_count: 4
-talks_count: 0
+events_count: 5
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2023'
 - '2022'
 ---

@@ -3,7 +3,7 @@ name: fernando_mattera
 name_pronunciation: fernando_mattera
 fullname: Fernando Mattera
 fullname_pronounciation: Fernando Mattera
-job: MySQL DBA I, Percona
+job: DBA II, MySQL - Managed Services
 country: Argentina
 tagline: null
 social:
@@ -23,16 +23,20 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Open-Source
 - opensource
+- speaking
 - sponsorship
 talks_tags:
 - DevOps
+- Open-Source
 - Slides
 posts_count: 0
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2023'
 ---
