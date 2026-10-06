@@ -1,11 +1,12 @@
 ---
 title: FOSSASIA Summit 2026
-description: FOSSASIA Summit 2026 · 2026-03-09 – 2026-03-10 · Bangkok · 1 talk from Percona
+description: FOSSASIA Summit 2026 · 2026-03-09 – 2026-03-10 · Bangkok · 2 talks from Percona
 layout: single
 source: jira
 jira: SPEAK-1558
 speakers:
 - jericho_rivera
+- sonia_valeja
 date: '2026-03-09'
 event_date_end: '2026-03-10'
 event_url: https://summit.fossasia.org

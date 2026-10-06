@@ -1,11 +1,12 @@
 ---
 title: PGConf NYC 2025
-description: PGConf NYC 2025 · 2025-09-29 – 2025-10-01 · New York · 1 talk from Percona
+description: PGConf NYC 2025 · 2025-09-29 – 2025-10-01 · New York · 2 talks from Percona
 layout: single
 source: jira
 jira: SPEAK-1383
 speakers:
 - alastair_turner
+- robert_bernier
 date: '2025-09-29'
 event_date_end: '2025-10-01'
 event_url: https://2025.pgconf.nyc/

@@ -59,7 +59,7 @@ talks_tags:
 - Slides
 posts_count: 8
 events_count: 8
-talks_count: 6
+talks_count: 7
 contributor_type:
 - author
 - speaker
