@@ -5,6 +5,21 @@ images:
 - events/2026-pgconf-eu-2026/pgconf-eu-2026-1200x63.jpg
 layout: single
 jira: SPEAK-1476
+speakers:
+- alastair_turner
+- andreas_karlsson
+- avi_vallarapu
+- chetan_shivashankar
+- david_steele
+- floor_drees
+- george_kechagias
+- jan_wieremjewicz
+- joel_jacobsson
+- kai_wagner
+- michal_nosek
+- natalia_marukovich
+- stefan_fercot
+- zsolt_parragi
 date: '2026-10-20'
 EventDate: October 20-23, 2026
 EventLocation: Valencia, Spain
