@@ -3,7 +3,7 @@ name: marcos_albe
 name_pronunciation: marcos_albe
 fullname: Marcos Albe
 fullname_pronounciation: Marcos Albe
-job: Principal Support Engineer, Percona
+job: Principal Database Performance Engineer
 country: null
 tagline: null
 social:
@@ -24,16 +24,20 @@ blog_tags: []
 events_tags:
 - Event
 - Meetup
+- Open-Source
 - Stream
 - opensource
+- speaking
 - sponsorship
-talks_tags: []
+talks_tags:
+- Open-Source
 posts_count: 0
-events_count: 17
-talks_count: 0
+events_count: 18
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2023'
 - '2022'
 - '2021'

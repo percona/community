@@ -4,7 +4,7 @@ name: agustin_gallego
 name_pronunciation: Agustin Gallego
 fullname: Agustin Gallego
 fullname_pronounciation: Agustin Gallego
-job: Senior Support Engineer at Percona
+job: Lead Support AI Engineer
 country: null
 tagline: null
 social:
@@ -24,20 +24,24 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Open-Source
 - Postgres
 - Stream
 - opensource
+- speaking
 - sponsorship
 talks_tags:
 - Open Source
+- Open-Source
 - Slides
 - Video
 posts_count: 0
-events_count: 2
-talks_count: 2
+events_count: 3
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2023'
 - '2022'
 ---
