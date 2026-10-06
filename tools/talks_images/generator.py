@@ -492,7 +492,7 @@ def generate_talk_image(talk):
         photo = talk.speaker_images[i] if i < len(talk.speaker_images) else None
         sp_post = frontmatter.load(f"content/contributors/{sp}.md")
         name = sp_post.get("fullname", sp)
-        job = sp_post.get("job") or sp_post.get("tagline") or ""
+        job = sp_post.get("job") or ""
 
         _, card_h, _ = measure_speaker_card(
             pdraw, name, job, font_speaker, font_job, photo_size=speaker_photo

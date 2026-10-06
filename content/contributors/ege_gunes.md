@@ -49,13 +49,14 @@ talks_tags:
 - database
 posts_count: 1
 events_count: 6
-talks_count: 1
+talks_count: 2
 contributor_type:
 - author
 - speaker
 contributor_year:
 - '2026'
 - '2025'
+- '2023'
 - '2022'
 - '2021'
 ---

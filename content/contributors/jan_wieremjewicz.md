@@ -60,6 +60,7 @@ talks_tags:
 - Design
 - Everest
 - Open Source
+- Open-Source
 - Opensource
 - Security
 - Slides
@@ -67,7 +68,7 @@ talks_tags:
 - Video
 posts_count: 19
 events_count: 8
-talks_count: 8
+talks_count: 9
 contributor_type:
 - author
 - speaker

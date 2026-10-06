@@ -3,7 +3,7 @@ name: dmitriy_kostiuk
 name_pronunciation: dmitriy_kostiuk
 fullname: Dmitriy Kostiuk
 fullname_pronounciation: Dmitriy Kostiuk
-job: null
+job: Senior Technical Writer, Percona
 tagline: Senior Technical Writer, former Perconian
 social:
   facebook: null

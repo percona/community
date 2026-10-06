@@ -3,7 +3,7 @@ name: robert_golebiowski
 name_pronunciation: robert_golebiowski
 fullname: Robert Golebiowski
 fullname_pronounciation: Robert Golebiowski
-job: null
+job: Senior Software Engineer, Percona
 tagline: Senior Software Engineer, former Perconian
 social:
   facebook: null

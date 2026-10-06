@@ -3,7 +3,7 @@ name: peter_szczepaniak
 name_pronunciation: peter_szczepaniak
 fullname: Peter Szczepaniak
 fullname_pronounciation: Peter Szczepaniak
-job: null
+job: Sr. Product Manager, Percona
 tagline: Sr. Product Manager, former Perconian
 social:
   facebook: null
@@ -30,6 +30,7 @@ events_tags:
 talks_tags:
 - Azure
 - Cloud Native
+- CloudNative
 - DBaaS
 - Databases
 - Everest
@@ -39,7 +40,7 @@ talks_tags:
 - Video
 posts_count: 0
 events_count: 2
-talks_count: 4
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:

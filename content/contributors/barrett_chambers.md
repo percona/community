@@ -25,10 +25,11 @@ events_tags:
 - Percona Community Live
 - Postgres
 - opensource
-talks_tags: []
+talks_tags:
+- Video
 posts_count: 0
 events_count: 2
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:

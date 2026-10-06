@@ -88,7 +88,7 @@ talks_tags:
 - web
 posts_count: 0
 events_count: 40
-talks_count: 38
+talks_count: 70
 contributor_type:
 - speaker
 contributor_year:

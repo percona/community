@@ -5,7 +5,7 @@ fullname: Matt Yonkovit
 fullname_pronounciation: Matt Yonkovit
 job: The HOSS, Percona
 country: null
-tagline: null
+tagline: Head of Open Source Strategy, former Perconian
 social:
   facebook: null
   github: https://github.com/TheYonk
@@ -38,15 +38,16 @@ events_tags:
 - opensource
 talks_tags:
 - Databases
+- Dev
 - Opensource
 - Video
 posts_count: 0
 events_count: 112
-talks_count: 2
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:
 - '2022'
 - '2021'
 ---
-Matt is currently working as the Head of Open Source Strategy (HOSS) for Percona, a leader in open source database software and services.  He has over 15 years of experience in the open source industry including over 10 years of executive-level experience leading open source teams.  Matt’s experience merges the technical and business aspects of the open source database experience with both a passion for hands on development and management and the leadership of building strong teams.  During his time he has created or managed business units responsible for service delivery ( consulting, support, and managed services ), customer success, product management, marketing, and operations.  He currently leads efforts around Percona’s OSPO, community, and developer relations efforts.  He hosts the HOSS talks FOSS podcast, writes regularly, and shares his MySQL and PostgreSQL knowledge as often as possible.
+Matt Yonkovit was Head of Open Source Strategy (HOSS) at Percona. He has over 15 years in open source, including more than 10 years leading teams. That mix covers both the technical and business side of open source databases: hands-on work, management, and building teams. At Percona he ran or helped run service delivery (consulting, support, managed services), customer success, product management, marketing, and operations, and later OSPO, community, and developer relations. He hosted the HOSS talks FOSS podcast and writes about MySQL and PostgreSQL.

@@ -5,7 +5,7 @@ fullname: Ibrar Ahmed
 fullname_pronounciation: Ibrar Ahmed
 job: Principal Engineer, pgEdge
 country: null
-tagline: null
+tagline: former Perconian
 social:
   facebook: null
   github: null
@@ -32,14 +32,15 @@ talks_tags:
 - Video
 posts_count: 0
 events_count: 6
-talks_count: 1
+talks_count: 8
 contributor_type:
 - speaker
 contributor_year:
 - '2023'
 - '2022'
 - '2021'
+- '2020'
 ---
-Ibrar Ahmed is a Software Architect in Percona LLC. Prior to coming to open source development, he had vast experience in software design and development. His main focus was on system-level embedded development. After joining EnterpriseDB in 2006, an Enterprise PostgreSQL company, he started his career in open source development specifically in PostgreSQL. He has contributed to the PostgreSQL community as well as other open source communities. His contribution ranges from the main performance feature enhancements to various PostgreSQL modules. In the database field, he has experience in other well-known databases MySQL, Oracle, and NoSQL databases such as MongoDB and Hadoop. His experience is not limited to core databases, but with the tools related to databases like Hive, HBase, and Spark. He also worked on integrating these tools with PostgreSQL.
+Ibrar Ahmed is a Principal Engineer at pgEdge. He previously worked as a Software Architect at Percona. Before open source he worked on system-level embedded software. After joining EnterpriseDB in 2006 he moved into PostgreSQL. He has contributed to PostgreSQL and other open source projects, from performance work to various PostgreSQL modules. He has also worked with MySQL, Oracle, and NoSQL systems such as MongoDB and Hadoop, and with related tools including Hive, HBase, and Spark.
 
-Ibrar gave more than fifteen PostgreSQL talks in the last year in various parts of the World (PostgreConf-EU, PostgreConf-ASIA, PostgreConf-NY, Percona Lives, FOSDEM, etc ). He also authored multiple books on PostgreSQL.
+He has given PostgreSQL talks at PGConf EU, PGConf Asia, PGConf NYC, Percona Live, FOSDEM, and elsewhere, and has authored books on PostgreSQL.

@@ -3,9 +3,9 @@ name: vinicius_grippa
 name_pronunciation: vinicius_grippa
 fullname: Vinicius Grippa
 fullname_pronounciation: Vinicius Grippa
-job: Percona, Senior Support Engineer
+job: Senior Support Engineer, Percona
 country: null
-tagline: null
+tagline: Senior Support Engineer, former Perconian
 social:
   facebook: null
   github: null
@@ -30,18 +30,20 @@ events_tags:
 - sponsorship
 talks_tags:
 - Open Source
+- Open-Source
 - Video
 posts_count: 0
 events_count: 5
-talks_count: 2
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
+- '2025'
 - '2023'
 - '2022'
 - '2020'
 ---
-Vinicius Grippa is a Senior Support Engineer at Percona.
-Vinicius joined Percona Support Engineer team in 2017. He has a Bachelor's degree in Computer Science with a passion for technology and more than 13 years experiences in databases systems. He has experience in designing databases for critical applications and, in the last few years, has become a specialist in MySQL and MongoDB ecosystems. He has helped Percona customers with hundreds of different cases featuring a vast range of scenarios and complexities.
-Vinicius is also active in the OS community, participating in virtual rooms like Slack, speaking at meetups, and presenting conferences in Europe, Asia, and North and South America.
+Vinicius Grippa was a Senior Support Engineer at Percona, where he joined the Support team in 2017. He has a Bachelor's degree in Computer Science and more than 13 years of experience with database systems. He has designed databases for critical applications and, in recent years, specialized in MySQL and MongoDB. At Percona he helped customers with hundreds of cases across a wide range of scenarios and complexities.
+
+Vinicius is active in the open source community: Slack, meetups, and talks in Europe, Asia, and North and South America.
