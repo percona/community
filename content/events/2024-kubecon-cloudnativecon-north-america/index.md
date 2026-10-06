@@ -1,6 +1,6 @@
 ---
 title: Kubecon + CloudNativeCon North America 2024
-description: Kubecon + CloudNativeCon North America 2024 · 2024-11-12 – 2024-11-15 · Salt Lake City · 1 talk from Percona
+description: Kubecon + CloudNativeCon North America 2024 · 2024-11-12 – 2024-11-15 · Salt Lake City · 2 talks from Percona
 layout: single
 source: jira
 jira: SPEAK-1287

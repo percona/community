@@ -29,12 +29,15 @@ events_tags:
 - speaking
 - sponsorship
 talks_tags:
+- Backup
 - Open-Source
+- Opensource
+- PostgreSQL
 - Slides
 - Video
 posts_count: 0
 events_count: 3
-talks_count: 2
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

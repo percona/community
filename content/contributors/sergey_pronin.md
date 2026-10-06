@@ -60,14 +60,16 @@ events_tags:
 - sponsorship
 talks_tags:
 - Cloud Native
+- CloudNative
 - Containers
 - Everest
+- Kubernetes
 - Open Source
 - Opensource
 - Video
 posts_count: 4
 events_count: 13
-talks_count: 7
+talks_count: 8
 contributor_type:
 - author
 - speaker
