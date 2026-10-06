@@ -18,7 +18,8 @@ aliases:
 - /speakers/david_gonzalez
 - /speakers/david_gonzalez/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- PostgreSQL
 blog_tags: []
 events_tags:
 - Data Gravity
@@ -27,13 +28,16 @@ events_tags:
 - Postgres
 - Stream
 - opensource
+- speaking
+- sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 3
-talks_count: 0
+events_count: 4
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2024'
 - '2023'
 - '2022'
 ---

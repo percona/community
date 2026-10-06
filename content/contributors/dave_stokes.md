@@ -21,9 +21,11 @@ aliases:
 contributor_tag:
 - Cloud
 - MySQL
+- PostgreSQL
 blog_tags: []
 events_tags:
 - Community Track
+- Event
 - Oracle
 - Percona Live 2021
 - PerconaLive2022
@@ -33,6 +35,7 @@ events_tags:
 - Stream
 - event
 - opensource
+- speaking
 - sponsorship
 talks_tags:
 - Databases
@@ -42,8 +45,8 @@ talks_tags:
 - slides
 - video
 posts_count: 0
-events_count: 32
-talks_count: 4
+events_count: 36
+talks_count: 9
 contributor_type:
 - speaker
 contributor_year:
