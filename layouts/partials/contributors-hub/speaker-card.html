@@ -8,7 +8,7 @@
 {{ end }}
 
 {{ $title := $page.Params.fullname | default $page.Title }}
-{{ $role := $page.Params.job | default $page.Params.tagline }}
+{{ $role := $page.Params.tagline | default $page.Params.job }}
 {{ $img := "" }}
 {{ with $page.Params.images }}
   {{ with resources.Get (strings.TrimPrefix "/" (index . 0)) }}

@@ -3,7 +3,7 @@ name: smit_arora
 name_pronunciation: smit_arora
 fullname: Smit Arora
 fullname_pronounciation: Smit Arora
-job: null
+job: MySQL DBA, Percona
 tagline: MySQL DBA, former Perconian
 social:
   facebook: null

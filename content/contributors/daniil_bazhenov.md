@@ -19,6 +19,7 @@ aliases:
 contributor_tag:
 - Cloud
 - Community
+- Kubernetes
 - MongoDB
 - MySQL
 - PMM
@@ -74,10 +75,11 @@ blog_tags:
 - pgvector
 - search
 events_tags: []
-talks_tags: []
+talks_tags:
+- Open-Source
 posts_count: 21
 events_count: 1
-talks_count: 0
+talks_count: 1
 contributor_type:
 - author
 - speaker

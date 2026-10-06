@@ -18,16 +18,18 @@ aliases:
 - /speakers/umair_shahid
 - /speakers/umair_shahid/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- PostgreSQL
 blog_tags: []
 events_tags: []
 talks_tags: []
 posts_count: 0
 events_count: 1
-talks_count: 0
+talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
+- '2022'
 - '2021'
 ---
 Umair counts 20 years experience in PostgreSQL and open source experience serving some of the highly competitive technology markets in USA & Europe in roles of increasing responsibility. Proven track record of the unique ability to bridge the gap between business objectives and engineering :

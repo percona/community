@@ -5,7 +5,7 @@ fullname: Hamid Akhtar
 fullname_pronounciation: Hamid Akhtar
 job: Senior Software Engineer, Percona
 country: null
-tagline: null
+tagline: Senior Software Engineer, former Perconian
 social:
   facebook: null
   github: null
@@ -28,10 +28,11 @@ events_tags:
 - opensource
 - speaking
 - stream
-talks_tags: []
+talks_tags:
+- Video
 posts_count: 0
 events_count: 5
-talks_count: 1
+talks_count: 4
 contributor_type:
 - speaker
 contributor_year:

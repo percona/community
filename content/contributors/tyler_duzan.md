@@ -3,7 +3,7 @@ name: tyler_duzan
 name_pronunciation: tyler_duzan
 fullname: Tyler Duzan
 fullname_pronounciation: Tyler Duzan
-job: null
+job: Product Manager, Percona
 tagline: Product Manager, former Perconian
 social:
   facebook: null

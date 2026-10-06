@@ -24,15 +24,17 @@ events_tags:
 - opensource
 - speaking
 talks_tags:
+- Open-Source
 - Video
 - english
 - uk
 posts_count: 0
 events_count: 3
-talks_count: 3
+talks_count: 4
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
+- '2024'
 ---
 Senior Cloud-Native Solutions Manager with 11 years of hands-on experience across Linux security, open-source infrastructure, web hosting, and enterprise systems. Focused on supporting financial institutions, cloud providers, and multi-regional enterprises in adopting and operating secure, scalable open-source platforms in production environments.
