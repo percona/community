@@ -26,12 +26,40 @@
   {{ end }}
 {{ end }}
 {{ $talks_count := len $talks }}
-{{ $talks_sorted := sort $talks ".Params.presentation_date" "desc" }}
-{{ $recent_talks := first 3 $talks_sorted }}
+
+{{/* Upcoming nearest-first; past newest-first. Never bury future talks in Earlier. */}}
+{{ $talks_upcoming := slice }}
+{{ $talks_past := slice }}
+{{ range $talks }}
+  {{ if partial "talks/is-upcoming.html" . }}
+    {{ $talks_upcoming = $talks_upcoming | append . }}
+  {{ else }}
+    {{ $talks_past = $talks_past | append . }}
+  {{ end }}
+{{ end }}
+{{ $talks_upcoming = sort $talks_upcoming ".Params.presentation_date" "asc" }}
+{{ $talks_past = sort $talks_past ".Params.presentation_date" "desc" }}
+{{ $talks_upcoming_count := len $talks_upcoming }}
+{{ $talks_past_count := len $talks_past }}
+{{ $recent_past_talks := first 3 $talks_past }}
 
 {{ $events := partial "hub-single/contributor-events.html" (dict "name" $contributor_name) }}
 {{ $events_count := len $events }}
-{{ $recent_events := first 3 (sort $events ".Date" "desc") }}
+
+{{ $events_upcoming := slice }}
+{{ $events_past := slice }}
+{{ range $events }}
+  {{ if partial "events/is-current.html" . }}
+    {{ $events_upcoming = $events_upcoming | append . }}
+  {{ else }}
+    {{ $events_past = $events_past | append . }}
+  {{ end }}
+{{ end }}
+{{ $events_upcoming = sort $events_upcoming "Date" "asc" }}
+{{ $events_past = sort $events_past "Date" "desc" }}
+{{ $events_upcoming_count := len $events_upcoming }}
+{{ $events_past_count := len $events_past }}
+{{ $recent_past_events := first 3 $events_past }}
 
 {{ $all_activities := slice }}
 {{ if $posts }}{{ $all_activities = $all_activities | union $posts }}{{ end }}
@@ -41,14 +69,27 @@
 
 {{ $seen := newScratch }}
 {{ range $recent_posts }}{{ $seen.Set .RelPermalink true }}{{ end }}
-{{ range $recent_talks }}{{ $seen.Set .RelPermalink true }}{{ end }}
-{{ range $recent_events }}{{ $seen.Set .RelPermalink true }}{{ end }}
+{{ range $talks_upcoming }}{{ $seen.Set .RelPermalink true }}{{ end }}
+{{ range $recent_past_talks }}{{ $seen.Set .RelPermalink true }}{{ end }}
+{{ range $events_upcoming }}{{ $seen.Set .RelPermalink true }}{{ end }}
+{{ range $recent_past_events }}{{ $seen.Set .RelPermalink true }}{{ end }}
 
+{{/* Earlier = past overflow only. Upcoming always stay in Upcoming sections. */}}
 {{ $remaining := slice }}
 {{ range $all_activities }}
-  {{ if not ($seen.Get .RelPermalink) }}
-    {{ $remaining = $remaining | append . }}
+  {{ if $seen.Get .RelPermalink }}
+    {{ continue }}
   {{ end }}
+  {{ if eq .Section "talks" }}
+    {{ if partial "talks/is-upcoming.html" . }}
+      {{ continue }}
+    {{ end }}
+  {{ else if eq .Section "events" }}
+    {{ if partial "events/is-current.html" . }}
+      {{ continue }}
+    {{ end }}
+  {{ end }}
+  {{ $remaining = $remaining | append . }}
 {{ end }}
 
 {{ $remaining_sorted := slice }}
@@ -91,10 +132,10 @@
                 <li><a class="hub-single__stat" href="#blog-posts">{{ $posts_count }} {{ if eq $posts_count 1 }}post{{ else }}posts{{ end }}</a></li>
               {{ end }}
               {{ if gt $talks_count 0 }}
-                <li><a class="hub-single__stat" href="#talks">{{ $talks_count }} {{ if eq $talks_count 1 }}talk{{ else }}talks{{ end }}</a></li>
+                <li><a class="hub-single__stat" href="{{ if gt $talks_upcoming_count 0 }}#upcoming-talks{{ else }}#talks{{ end }}">{{ $talks_count }} {{ if eq $talks_count 1 }}talk{{ else }}talks{{ end }}</a></li>
               {{ end }}
               {{ if gt $events_count 0 }}
-                <li><a class="hub-single__stat" href="#events">{{ $events_count }} {{ if eq $events_count 1 }}event{{ else }}events{{ end }}</a></li>
+                <li><a class="hub-single__stat" href="{{ if gt $events_upcoming_count 0 }}#upcoming-events{{ else }}#events{{ end }}">{{ $events_count }} {{ if eq $events_count 1 }}event{{ else }}events{{ end }}</a></li>
               {{ end }}
             </ul>
           </nav>
@@ -107,6 +148,28 @@
     </div>
   </article>
 
+  {{ if gt $talks_upcoming_count 0 }}
+    <section class="hub-single-panel" id="upcoming-talks" aria-labelledby="upcoming-talks-heading">
+      <h2 class="hub-single-panel__title" id="upcoming-talks-heading">Upcoming Talks</h2>
+      <div class="hub-single-panel__grid">
+        {{ range $talks_upcoming }}
+          {{ partial "hub-single/talk-card.html" (dict "page" . "hideSpeakers" true) }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ if gt $events_upcoming_count 0 }}
+    <section class="hub-single-panel" id="upcoming-events" aria-labelledby="upcoming-events-heading">
+      <h2 class="hub-single-panel__title" id="upcoming-events-heading">Upcoming Events</h2>
+      <div class="hub-single-panel__grid">
+        {{ range $events_upcoming }}
+          {{ partial "events-hub/event-card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
   {{ if gt $posts_count 0 }}
     <section class="hub-single-panel" id="blog-posts" aria-labelledby="blog-posts-heading">
       <h2 class="hub-single-panel__title" id="blog-posts-heading">Blog Posts</h2>
@@ -118,22 +181,22 @@
     </section>
   {{ end }}
 
-  {{ if gt $talks_count 0 }}
+  {{ if gt $talks_past_count 0 }}
     <section class="hub-single-panel" id="talks" aria-labelledby="talks-heading">
       <h2 class="hub-single-panel__title" id="talks-heading">Talks</h2>
       <div class="hub-single-panel__grid">
-        {{ range $recent_talks }}
+        {{ range $recent_past_talks }}
           {{ partial "hub-single/talk-card.html" (dict "page" . "hideSpeakers" true) }}
         {{ end }}
       </div>
     </section>
   {{ end }}
 
-  {{ if gt $events_count 0 }}
+  {{ if gt $events_past_count 0 }}
     <section class="hub-single-panel" id="events" aria-labelledby="events-heading">
       <h2 class="hub-single-panel__title" id="events-heading">Events</h2>
       <div class="hub-single-panel__grid">
-        {{ range $recent_events }}
+        {{ range $recent_past_events }}
           {{ partial "events-hub/event-card.html" . }}
         {{ end }}
       </div>

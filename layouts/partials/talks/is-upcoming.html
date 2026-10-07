@@ -1,0 +1,19 @@
+{{/*
+  True if the talk is still upcoming: presentation_date (or event_date_start) >= today.
+
+  Usage: {{ if partial "talks/is-upcoming.html" . }}…{{ end }}
+*/}}
+{{- $today := now.Format "2006-01-02" -}}
+{{- $d := "" -}}
+{{- with .Params.presentation_date -}}
+  {{- $d = index (split (strings.TrimSpace (printf "%s" .)) "T") 0 -}}
+{{- else -}}
+  {{- with .Params.event_date_start -}}
+    {{- $d = index (split (strings.TrimSpace (printf "%s" .)) "T") 0 -}}
+  {{- end -}}
+{{- end -}}
+{{- $upcoming := false -}}
+{{- if $d -}}
+  {{- $upcoming = ge $d $today -}}
+{{- end -}}
+{{- return $upcoming -}}
