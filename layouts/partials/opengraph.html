@@ -1,11 +1,16 @@
-<meta property="og:title" content="{{if (eq .Title "")}}{{.Site.Title}}{{ else }}{{ .Title }}{{end}}" />
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+{{- $seo := partialCached "planet-pg/seo.html" . .RelPermalink -}}
+<meta property="og:title" content="{{ with $seo.title }}{{ . }}{{ else }}{{if (eq .Title "")}}{{.Site.Title}}{{ else }}{{ .Title }}{{end}}{{ end }}" />
+<meta property="og:description" content="{{ with $seo.description }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{- $share := partial "page-share-image.html" . -}}
-{{- with $share.url -}}
+{{- $ogImage := $seo.image | default $share.url -}}
+{{- with $ogImage -}}
 <meta name="image" property="og:image" content="{{ . }}" />
+{{- end -}}
+{{- with $seo.imageAlt -}}
+<meta property="og:image:alt" content="{{ . }}" />
 {{- end -}}
 
 {{ with $.Params.images }}
