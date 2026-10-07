@@ -1,12 +1,13 @@
 {{ $page := .page }}
 {{ $contributor := .contributor }}
 {{ $paginator := .paginator }}
+{{ $seo := partialCached "planet-pg/seo.html" $page $page.RelPermalink }}
 
 <div class="blog-hub blog-hub--planet-pg">
   {{ partial "page-hero.html" (dict
     "page" $page
     "title" $contributor.Params.fullname
-    "description" "Posts about Postgres on Percona Community"
+    "description" ($seo.description | default "PostgreSQL posts on Percona Community.")
     "tech" "postgresql"
     "hero_line" 2
   ) }}
