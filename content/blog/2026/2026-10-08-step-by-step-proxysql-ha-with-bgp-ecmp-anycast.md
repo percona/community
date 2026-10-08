@@ -11,7 +11,7 @@ images:
 slug: step-by-step-proxysql-ha-with-bgp-ecmp-anycast
 ---
 
-In our previous blog post [bgp-ecmp-anycast-proxysql](/blog/2026/09/07/proxysql-ha-with-bgp-ecmp-anycast/), we established why we would want to use BGP ECMP as a strategy for making our ProxySQL cluster highly available. Now let's look at how to implement it technically.
+In our previous blog post [ProxySQL HA with BGP ECMP Anycast](/blog/2026/09/07/proxysql-ha-with-bgp-ecmp-anycast/), we established why we would want to use BGP ECMP as a strategy for making our ProxySQL cluster highly available. Now let's look at how to implement it technically.
 
 For this scenario we assume that we have:
 
