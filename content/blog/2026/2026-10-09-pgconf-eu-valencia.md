@@ -12,7 +12,7 @@ slug: pgconf-eu-valencia
 
 [PGConf.EU](https://2026.pgconf.eu/) is right around the corner! This year, we're heading to Valencia for three days of talks on October 20-22, followed by the Community Events Day on Friday, October 23.
 
-![PGConf.EU 2026 in Valencia](blog/2026/09/pgconf-eu-valencia-welcome.jpg)
+![PGConf.EU 2026 in Valencia](blog/2026/09/pgconf-eu-valencia-welcome.svg)
 
 I'm excited to get there for several reasons, and I'd like to share some of that excitement with you all :-)
 
