@@ -8,8 +8,8 @@ speakers:
 talk_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
 presentation_date: '2026-10-23'
 presentation_date_end: ''
-presentation_time: 01:00
-room: ''
+presentation_time: ''
+room: Audit 2
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
