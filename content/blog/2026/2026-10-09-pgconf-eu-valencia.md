@@ -1,7 +1,7 @@
 ---
 title: "Welcome to PGConf.EU Valencia!"
 date: "2026-10-09T09:00:00+02:00"
-tags: ['PostgreSQL', 'pgBackRest', 'Community', 'Conferences']
+tags: ['PostgreSQL', 'pgBackRest', 'Community', 'Conferences', 'pgstef']
 categories: ['PostgreSQL']
 authors:
   - stefan_fercot
