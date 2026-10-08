@@ -1,6 +1,6 @@
 ---
 title: "Step by Step: ProxySQL HA with BGP ECMP Anycast"
-date: "2026-10-02T11:00:00+00:00"
+date: "2026-10-08T18:50:00+00:00"
 tags: ['MySQL', 'ProxySQL', 'Opensource', 'BGP', 'Percona Server', 'DevOps']
 categories: ['MySQL', 'Community']
 authors:
@@ -354,3 +354,5 @@ Because the two results share the same weight (`1`), ECMP is active, and OPNsens
 ### Summary
 
 In this blog post we stepped through an example setup of BGP ECMP Anycast for ProxySQL. We configured OPNsense to accept anycast routes from our ProxySQL nodes and load-balance across them. On each node, ExaBGP announces the route whilst ProxySQL is healthy and withdraws the route when ProxySQL fails. To scale the cluster, add the new node to the proxysql_nodes alias, create a BGP neighbor for it, and raise Maximum Paths to match the new node count.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
