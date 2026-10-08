@@ -5,6 +5,7 @@ description: 'Percona organised a Percona University Delhi meetup in India on Ju
 images:
 - events/percona-university-delhi-2024/1.jpg
 layout: single
+jira: SPEAK-2235
 date: '2024-06-21'
 events_tag: ["In-Person"]
 tags: ["Event", "opensource", "sponsorship"]

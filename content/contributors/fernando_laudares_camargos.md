@@ -39,12 +39,13 @@ talks_tags:
 - ai
 posts_count: 0
 events_count: 4
-talks_count: 7
+talks_count: 9
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
 - '2025'
+- '2024'
 - '2022'
 - '2021'
 ---

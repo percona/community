@@ -7,21 +7,25 @@ job: Senior Software Engineer at Percona
 tagline: null
 social:
   facebook: null
-  github: null
-  linkedin: null
+  github: https://github.com/pgstef
+  linkedin: https://www.linkedin.com/in/stefan-fercot/
   twitter: null
   website: https://bsky.app/profile/pgstef.bsky.social
 images:
-- contributors/stefan_fercot.jpeg
+- contributors/stefan_fercot.jpg
 status: community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL
 blog_tags: []
-events_tags: []
-talks_tags: []
+events_tags:
+- Community
+- Events
+- PostgreSQL
+talks_tags:
+- PostgreSQL
 posts_count: 0
-events_count: 0
+events_count: 1
 talks_count: 1
 contributor_type:
 - speaker

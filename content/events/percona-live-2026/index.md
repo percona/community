@@ -5,6 +5,7 @@ date: '2026-05-27'
 EventDate: May 27–29, 2026
 EventLocation: Computer History Museum, Mountain View, California
 layout: single
+jira: SPEAK-2243
 images:
 - events/percona-live-2026/percona-live-2026-1.jpg
 tags: ["perconalive2026", "event", "opensource", "databases", 'Promo']

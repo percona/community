@@ -39,8 +39,8 @@ talks_tags:
 - performance
 - video
 posts_count: 0
-events_count: 9
-talks_count: 7
+events_count: 10
+talks_count: 8
 contributor_type:
 - speaker
 contributor_year:

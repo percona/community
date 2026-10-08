@@ -44,12 +44,13 @@ talks_tags:
 - CloudNative
 - Everest
 - Open Source
+- Open-Source
 - Operators
 - Slides
 - Video
 posts_count: 3
-events_count: 5
-talks_count: 5
+events_count: 6
+talks_count: 6
 contributor_type:
 - author
 - speaker

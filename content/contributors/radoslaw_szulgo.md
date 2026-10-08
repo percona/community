@@ -50,8 +50,10 @@ events_tags:
 talks_tags:
 - Azure
 - Cloud Native
+- CloudNative
 - DBaaS
 - Databases
+- Everest
 - Grafana
 - Open-Source
 - Opensource
@@ -64,7 +66,7 @@ talks_tags:
 - pmm
 posts_count: 2
 events_count: 2
-talks_count: 3
+talks_count: 4
 contributor_type:
 - author
 - speaker

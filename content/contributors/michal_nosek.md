@@ -20,6 +20,7 @@ aliases:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
+- MongoDB
 - PostgreSQL
 blog_tags: []
 events_tags:
@@ -36,11 +37,12 @@ talks_tags:
 - Video
 posts_count: 0
 events_count: 3
-talks_count: 3
+talks_count: 4
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
 - '2025'
+- '2023'
 ---
 Michal Nosek is a Senior Enterprise Architect at Percona with over a decade of experience across roles in software engineering, business analysis, and technical consulting. He combines deep technical knowledge with a focus on aligning database technologies to business goals, helping Percona’s global customers design effective open source data strategies. Michal holds a BS in Computer and Information Science from the Cracow University of Technology and lives in Gdansk, Poland, where he enjoys traveling and windsurfing.
