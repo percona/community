@@ -7,23 +7,26 @@ layout: single
 speakers:
 - george_kechagias
 talk_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
-presentation_date: '2026-10-20'
+presentation_date: '2026-10-23'
 presentation_date_end: ''
 presentation_time: 01:00
+room: ''
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
 event_status: Accepted
 event_date_start: '2026-10-20'
 event_date_end: '2026-10-23'
-event_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
+event_url: https://2026.pgconf.eu
 event_location: Valencia
 talk_tags:
 - PostgreSQL
 slides: ''
 video: ''
+aliases:
+- /talks/2026/2026-10-20-the-anatomy-of-a-postgresql-backup-crd-pgbackrest-multi-repo-and-tiered-storage
 images:
-- talks/2026/2026-10-20-the-anatomy-of-a-postgresql-backup-crd-pgbackrest-multi-repo-and-tiered-storage.png
+- talks/2026/2026-10-23-the-anatomy-of-a-postgresql-backup-crd-pgbackrest-multi-repo-and-tiered-storage.png
 ---
 Backing up a PostgreSQL cluster on Kubernetes looks simple from the outside: apply a CR, get a backup. Underneath, there are several layers working together, and each one shapes what you can recover and how fast.
 
