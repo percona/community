@@ -6,23 +6,26 @@ layout: single
 speakers:
 - chetan_shivashankar
 talk_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
-presentation_date: '2026-10-20'
+presentation_date: '2026-10-23'
 presentation_date_end: ''
-presentation_time: 01:00
+presentation_time: ''
+room: Audit 2
 talk_year: '2026'
 event: PGConf Europe 2026
 event_jira: SPEAK-1476
 event_status: Accepted
 event_date_start: '2026-10-20'
 event_date_end: '2026-10-23'
-event_url: https://2026.pgconf.eu/community-events/pg_on_kubernetes/
+event_url: https://2026.pgconf.eu
 event_location: Valencia
 talk_tags:
 - PostgreSQL
 slides: ''
 video: ''
+aliases:
+- /talks/2026/2026-10-20-swap-or-stop-how-a-little-swap-can-keep-postgresql-running
 images:
-- talks/2026/2026-10-20-swap-or-stop-how-a-little-swap-can-keep-postgresql-running.png
+- talks/2026/2026-10-23-swap-or-stop-how-a-little-swap-can-keep-postgresql-running.png
 ---
 For years, the advice for Kubernetes was straightforward: disable swap. But with swap support becoming generally available in Kubernetes 1.34, it's worth asking whether that guidance still makes sense for PostgreSQL workloads.
 
