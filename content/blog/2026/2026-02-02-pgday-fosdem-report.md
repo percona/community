@@ -15,8 +15,6 @@ I'm currently on the train on my way back home from FOSDEM this year and man, I'
 
 ## PGDay FOSDEM
 
-test 
-
 It all started with the usual PGDay FOSDEM the day before FOSDEM. Just in case - this has been happening for over 15 years and if you read this as a little blame that you didn't know about it, that's absolutely correct, as you should. It's been a great event as usual: around 150 Postgres enthusiasts collaborating with each other. There was a great set of talks (no recording available, so yes, just join next year to not miss anything), as well as the hallway track conversations.
 
 ![PGDay Kai and Slonik](/blog/2026/02/pgday-slonik.jpeg)
