@@ -71,5 +71,3 @@ Thanks to you, the conference stays free, and Ukrainian students and researchers
 - Conference proceedings will be published at the end of October.
 
 Thanks to all speakers, authors and participants. See you at FOSS 2027!
-
-*The conference was held as part of the WIN-WIN EDIH project, co-funded by the European Union (Grant Agreement No. 101191647). Views and opinions expressed are those of the authors only and do not necessarily reflect those of the European Union or the granting authority.*
