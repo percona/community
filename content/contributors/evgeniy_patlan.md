@@ -1,9 +1,9 @@
 ---
 name: evgeniy_patlan
 name_pronunciation: evgeniy_patlan
-fullname: Evgeniy Patlan
-fullname_pronounciation: Evgeniy Patlan
-job: Manager, Build & Release Engineering, Percona
+fullname: Yevhen Patlan
+fullname_pronounciation: Yevhen Patlan
+job: Sr. Build / Release Engineer, Percona
 country: null
 tagline: null
 social:
@@ -24,7 +24,16 @@ contributor_tag:
 - MySQL
 - PMM
 - PostgreSQL
-blog_tags: []
+blog_tags:
+- Community
+- Conferences
+- Education
+- Events
+- MongoDB
+- MySQL
+- Open Source
+- PMM
+- Percona
 events_tags:
 - DevOps
 - Education
@@ -51,13 +60,14 @@ talks_tags:
 - Security
 - Tech
 - software-development
-posts_count: 0
+posts_count: 1
 events_count: 9
 talks_count: 3
 contributor_type:
+- author
 - speaker
 contributor_year:
 - '2026'
 - '2022'
 ---
-Evgeniy Patlan is Manager, Build & Release Engineering Team at Percona. He is experienced Build And Release Engineer, Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Perl, JavaScript, Python, Session Initiation Protocol (SIP), SOAP, and Linux System Administration. Strong engineering professional with a specialist focused in Computer systems, Programming, System Administrating, Network Technologies.
+Yevhen Patlan is a technology leader with nearly 20 years of experience in build and release engineering. He has a strong record of building release processes and leading high-performing teams across cloud platforms. He works hands-on with Perl, Python, Bash, Docker, and Debian and RPM packaging, and he consistently delivers reliable, high-quality software releases. He loves open source and contributes to it. He is also pursuing a PhD and co-founding a charity organization in Ukraine.
