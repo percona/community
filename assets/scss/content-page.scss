@@ -180,6 +180,8 @@
   }
 
   &__content--issue {
+    max-width: 640px;
+
     h1 {
       margin: 0 0 0.5rem;
       font-family: $font-ardela;
@@ -270,12 +272,13 @@
 
 .newsletter-issue__events {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem 1.25rem;
   margin: 0 0 1rem;
+  align-items: start;
 
   @media (max-width: 40rem) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   a,
@@ -290,7 +293,9 @@
 
     img {
       width: 100%;
-      height: auto;
+      height: 5.5rem;
+      object-fit: contain;
+      object-position: center;
       border-radius: 8px;
     }
   }
@@ -349,19 +354,26 @@
 
   &__item {
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    gap: 0.35rem 1.5rem;
-    padding: 0.9rem 0;
+    gap: 0.25rem 1.25rem;
+    padding: 0.75rem 0;
     border-bottom: 1px solid rgba($brand-black, 0.08);
+
+    @media (max-width: 40rem) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
+    }
   }
 
   &__link {
+    flex: 1 1 auto;
+    min-width: 0;
     color: $brand-purple;
     font-family: $font-poppins;
-    font-size: 1rem;
-    line-height: 1.45;
+    font-size: 0.9375rem;
+    line-height: 1.4;
     text-decoration: underline;
     text-decoration-color: rgba($brand-purple, 0.45);
     text-underline-offset: 2px;
@@ -389,7 +401,8 @@
     flex: 0 0 auto;
     color: $paragraph-grey;
     font-family: $font-poppins;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
+    white-space: nowrap;
   }
 }
 
