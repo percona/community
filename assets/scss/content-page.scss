@@ -178,6 +178,219 @@
   .form-section {
     margin-top: 0;
   }
+
+  &__content--issue {
+    h1 {
+      margin: 0 0 0.5rem;
+      font-family: $font-ardela;
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: $brand-black;
+    }
+
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-family: $font-ardela;
+      font-size: 1.375rem;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: $brand-black;
+    }
+
+    > p:first-child {
+      margin-bottom: 1.25rem;
+      color: inherit;
+    }
+
+    p, ul, li {
+      font-family: $font-poppins;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    p, ul {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    a {
+      color: $brand-purple;
+      text-decoration: underline;
+      text-decoration-color: rgba($brand-purple, 0.45);
+      text-underline-offset: 2px;
+
+      &:hover,
+      &:visited:hover {
+        color: darken($brand-purple, 8%);
+        text-decoration-color: darken($brand-purple, 8%);
+      }
+
+      &:visited {
+        color: $brand-purple;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .newsletter-issue__date {
+      margin-bottom: 1.5rem;
+      color: $paragraph-grey;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    figure {
+      margin: 0 0 1rem;
+
+      img {
+        width: 20rem;
+        max-width: 100%;
+      }
+    }
+
+    p > a:has(img),
+    > a:has(img) {
+      text-decoration: none;
+    }
+  }
+}
+
+.newsletter-issue__events {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1rem;
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+
+  a,
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    color: $brand-black;
+    font-family: $font-poppins;
+    font-size: 0.875rem;
+    line-height: 1.4;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:visited:hover {
+      color: $brand-purple;
+    }
+  }
+}
+
+.newsletter-issue__back {
+  margin-bottom: 1.25rem;
+
+  a {
+    font-size: 0.875rem;
+  }
+}
+
+.newsletter-issue__date {
+  margin-bottom: 1.5rem;
+  color: $paragraph-grey;
+}
+
+.newsletter-archive {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba($brand-black, 0.12);
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-family: $font-ardela;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: $brand-black;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.35rem 1.5rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba($brand-black, 0.08);
+  }
+
+  &__link {
+    color: $brand-purple;
+    font-family: $font-poppins;
+    font-size: 1rem;
+    line-height: 1.45;
+    text-decoration: underline;
+    text-decoration-color: rgba($brand-purple, 0.45);
+    text-underline-offset: 2px;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0;
+    }
+
+    &:hover,
+    &:visited:hover {
+      color: darken($brand-purple, 8%);
+      text-decoration-color: darken($brand-purple, 8%);
+    }
+
+    &:visited {
+      color: $brand-purple;
+    }
+  }
+
+  &__date {
+    flex: 0 0 auto;
+    color: $paragraph-grey;
+    font-family: $font-poppins;
+    font-size: 0.875rem;
+  }
 }
 
 .topics-page {

@@ -20,3 +20,5 @@ public
 .*.swp
 __pycache__
 tools/kapaio
+# Newsletter source exports contain a personal address and HubSpot tokens
+tools/newsletter/data/
