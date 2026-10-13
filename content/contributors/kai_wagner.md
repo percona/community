@@ -21,6 +21,7 @@ aliases:
 planet_pg_tag: pg_kwagner
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
 - Kubernetes
 - MySQL
 - PMM
@@ -33,6 +34,7 @@ blog_tags:
 - Engineering
 - Events
 - FOSDEM
+- Jira
 - Mailing Lists
 - Meetup
 - Open Source
@@ -45,8 +47,10 @@ blog_tags:
 - pg_zsolt
 events_tags:
 - Event
+- Events
 - Featured
 - Hacktoberfest
+- Opensource
 - PG
 - Postgres
 - Stream
@@ -57,8 +61,8 @@ events_tags:
 - sponsorship
 talks_tags:
 - Slides
-posts_count: 8
-events_count: 8
+posts_count: 9
+events_count: 10
 talks_count: 7
 contributor_type:
 - author

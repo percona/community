@@ -49,7 +49,7 @@ talks_tags:
 - Slides
 - Video
 posts_count: 3
-events_count: 6
+events_count: 7
 talks_count: 6
 contributor_type:
 - author

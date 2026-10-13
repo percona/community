@@ -30,6 +30,7 @@ blog_tags:
 - Community
 - DIY
 - Database Tuning
+- Docker
 - GTID
 - InnoDB
 - Installation
@@ -44,6 +45,7 @@ blog_tags:
 - Percona Server
 - Percona Server for MySQL
 - Performance
+- PostgreSQL
 - Raspberry Pi
 - Recovery
 - Replication
@@ -66,7 +68,7 @@ events_tags:
 - Postgres
 - opensource
 talks_tags: []
-posts_count: 19
+posts_count: 20
 events_count: 3
 talks_count: 0
 contributor_type:

@@ -25,6 +25,7 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Event
+- Events
 - Open-Source
 - Percona
 - Valkey
@@ -36,7 +37,7 @@ talks_tags:
 - Slides
 - Video
 posts_count: 0
-events_count: 3
+events_count: 4
 talks_count: 4
 contributor_type:
 - speaker

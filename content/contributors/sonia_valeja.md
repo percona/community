@@ -19,24 +19,29 @@ aliases:
 - /speakers/sonia_valeja/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Backup
 - PostgreSQL
 blog_tags: []
 events_tags:
 - Data Gravity
 - Event
 - Podcast
+- english
+- hardware
+- linux
+- open-source
 - opensource
+- security
 - speaking
 - sponsorship
+- web3
 talks_tags:
-- Backup
 - Open-Source
 - Opensource
-- PostgreSQL
 - Slides
 - Video
 posts_count: 0
-events_count: 3
+events_count: 4
 talks_count: 3
 contributor_type:
 - speaker

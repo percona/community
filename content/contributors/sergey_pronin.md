@@ -60,10 +60,10 @@ events_tags:
 - sponsorship
 talks_tags:
 - Cloud Native
+- Cloud-Native
 - CloudNative
 - Containers
 - Everest
-- Kubernetes
 - Open Source
 - Opensource
 - Video

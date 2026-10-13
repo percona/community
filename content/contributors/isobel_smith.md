@@ -29,7 +29,7 @@ blog_tags:
 - Upgrades
 events_tags: []
 talks_tags: []
-posts_count: 2
+posts_count: 3
 events_count: 0
 talks_count: 0
 contributor_type:

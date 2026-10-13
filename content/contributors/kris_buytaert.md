@@ -30,7 +30,6 @@ contributor_type:
 contributor_year:
 - '2026'
 ---
-
 Kris Buytaert is a long-time DevOps and Open Source expert and engineering leader. He recently joined Percona as Practice Lead, Observability. He is one of the instigators of the DevOps movement and has started more than one conference series. He has lost count of how many times he has spoken at other events. He spends most of his time bridging the gap between developers and operations, while warning people not to make the mistakes he made. He builds infrastructures that can survive the 10th floor test or a datacenter fire, while actively promoting the DevOps idea.
 
 Blog: [Everything is a Freaking DNS Problem](https://krisbuytaert.be/blog/)

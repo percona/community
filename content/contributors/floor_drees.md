@@ -16,17 +16,18 @@ images:
 status: community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
 - PostgreSQL
 blog_tags: []
-events_tags: []
+events_tags:
+- Events
 talks_tags: []
 posts_count: 0
-events_count: 0
+events_count: 1
 talks_count: 1
 contributor_type:
 - speaker
 contributor_year:
 - '2026'
 ---
-
 Floor Drees is a Principal Program Manager at EDB, working with and in the open source community. She’s a member of the Contributor Committee, PostgreSQL Code of Conduct Committee, PostgreSQL Diversity Committee, and a PGDay Lowlands organizer. Floor is also a Co-chair for DevOpsDays.

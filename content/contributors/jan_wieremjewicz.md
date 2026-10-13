@@ -67,7 +67,7 @@ talks_tags:
 - Tech
 - Video
 posts_count: 19
-events_count: 8
+events_count: 9
 talks_count: 9
 contributor_type:
 - author

@@ -19,6 +19,7 @@ planet_pg_tag: pg_zsolt
 contributor_tag:
 - AI
 - Cloud
+- Community
 - PostgreSQL
 blog_tags:
 - AI
@@ -34,6 +35,7 @@ blog_tags:
 - pg_zsolt
 events_tags:
 - Event
+- Events
 - Featured
 - Open-Source
 - PG
@@ -48,7 +50,7 @@ talks_tags:
 - Security
 - Slides
 posts_count: 9
-events_count: 3
+events_count: 4
 talks_count: 4
 contributor_type:
 - author

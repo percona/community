@@ -18,15 +18,17 @@ aliases:
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
+- Community
 - PostgreSQL
 blog_tags:
 - Kubernetes
 - MongoDB
-events_tags: []
+events_tags:
+- Events
 talks_tags:
 - kubernetes
 posts_count: 1
-events_count: 0
+events_count: 1
 talks_count: 1
 contributor_type:
 - author

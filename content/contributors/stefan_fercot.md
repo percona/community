@@ -16,23 +16,26 @@ images:
 status: community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
-- PostgreSQL
-blog_tags: []
-events_tags:
 - Community
+- PostgreSQL
+blog_tags:
+- Community
+- Conferences
+- PostgreSQL
+- pgBackRest
+- pgstef
+events_tags:
 - Events
-- PostgreSQL
-talks_tags:
-- PostgreSQL
-posts_count: 0
+talks_tags: []
+posts_count: 1
 events_count: 1
 talks_count: 1
 contributor_type:
+- author
 - speaker
 contributor_year:
 - '2026'
 ---
-
 Stefan Fercot is a Senior Software Engineer at Percona, working on PostgreSQL and its ecosystem as part of Percona's PostgreSQL Engineering team, with a primary focus on pgBackRest development and upstream open-source contributions.
 
 As a long-time pgBackRest contributor, Stefan has a particular interest in backup tools, disaster recovery procedures and high-availability architectures. He is also Vice-Treasurer of PostgreSQL Europe, reflecting his active involvement in the PostgreSQL community.

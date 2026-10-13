@@ -18,16 +18,18 @@ aliases:
 - /speakers/robert_bernier
 - /speakers/robert_bernier/
 # Auto-generated fields. Do not edit manually.
-contributor_tag: []
+contributor_tag:
+- PostgreSQL
 blog_tags: []
 events_tags:
+- Event
 - event
 - opensource
+- speaking
 - sponsorship
-talks_tags:
-- PostgreSQL
+talks_tags: []
 posts_count: 0
-events_count: 1
+events_count: 2
 talks_count: 1
 contributor_type:
 - speaker
