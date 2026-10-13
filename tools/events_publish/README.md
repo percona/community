@@ -23,6 +23,8 @@ python tools/events_publish/main.py --create --jira-key SPEAK-2213
 
 Also runs after `python tools/talks/main.py --create` unless `--skip-events`.
 
+**Perf note:** Even with `--jira-key`, the loader fetches all Ready+Published Talks then filters. Prefer one run per conference; use talks `--skip-events` when looping keys. See `.cursor/rules/jira-talks-events-sync.mdc`.
+
 ## Page rules
 
 - Front matter includes `source: jira` and `jira: SPEAK-…`

@@ -20,3 +20,5 @@ public
 .*.swp
 __pycache__
 tools/kapaio
+# Local newsletter source dumps (PDF/EML) — not for the public site
+tools/newsletter/data/
