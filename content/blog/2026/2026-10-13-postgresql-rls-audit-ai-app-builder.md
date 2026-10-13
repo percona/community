@@ -1,10 +1,12 @@
 ---
 title: "One query to audit the PostgreSQL row-level security an AI app builder wrote for you"
-date: "2026-10-08T00:00:00+00:00"
+date: "2026-10-13T08:45:00+00:00"
 tags: ['PostgreSQL', 'Supabase', 'Security', 'RLS', 'AI']
 categories: ['PostgreSQL']
 authors:
   - oleg_naryzhnykh
+images:
+  - blog/2026/10/postgresql-rls-audit-ai-app-builder-cover.png
 slug: postgresql-rls-audit-ai-app-builder
 ---
 
@@ -465,3 +467,5 @@ I set up a GitHub Actions job that runs on every push and fails if any of my reg
 The first version of this job failed because psql writes ERROR lines to stderr. But grep was reading from stdout only.
 
 When the builder updates their schema, you will need to fix the RLS again.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
