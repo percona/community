@@ -14,13 +14,13 @@ categories: ['Community', "Cloud"]
 authors:
   - edith_puclla
 images:
-  - blog/2023/05/01-pd-intro.jpeg
+  - blog/2023/05/01-pd-intro.png
 slug: ​what-experts-said-at-kubecon-about-data-on-kubernetes
 ---
 
 **Melissa Logan**, managing director of **Data on Kubernetes** (DoK), led one of the [best panels I’ve been to at a conference at Kubecon EU](https://www.youtube.com/watch?v=TmDdkBPW_hI&t=313s) in Amsterdam about challenges with and the state of the art of running databases on Kubernetes.
 
-![Panel Discussion](blog/2023/05/01-pd-intro.jpeg)
+![Panel Discussion](blog/2023/05/01-pd-intro.png)
 
 This panel united the **Data on Kubernetes Community Operator SIG** and **Kubernetes Storage SIG** to discuss key features of Kubernetes database operators. **Xing Yang** from VMware, **Sergey Pronin** from Percona, and **Álvaro Hernández** from OnGres came together to discuss what works, what doesn’t, and where the industry is going. They also presented a feature matrix to help end users compare many database Operators.
 
