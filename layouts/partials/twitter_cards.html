@@ -1,15 +1,25 @@
+{{- $seo := partialCached "planet-pg/seo.html" . .RelPermalink -}}
 {{- $share := partial "page-share-image.html" . -}}
-{{- with $share.url -}}
-<meta name="twitter:card" content="summary_large_image"/>
+{{- $twImage := $seo.image | default $share.url -}}
+{{- with $twImage -}}
+<meta name="twitter:card" content="{{ if $seo.image }}summary{{ else }}summary_large_image{{ end }}"/>
 <meta name="twitter:image" content="{{ . }}"/>
+{{- with $seo.imageAlt -}}
+<meta name="twitter:image:alt" content="{{ . }}"/>
+{{- end -}}
 {{- else -}}
 <meta name="twitter:card" content="summary"/>
 {{- end -}}
-<meta name="twitter:title" content="{{ if (ne .Title "")}}{{ .Title }} | {{ end}}{{ .Site.Title }}"/>
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+<meta name="twitter:title" content="{{ with $seo.title }}{{ . }}{{ else }}{{ if (ne .Title "")}}{{ .Title }} | {{ end}}{{ .Site.Title }}{{ end }}"/>
+<meta name="twitter:description" content="{{ with $seo.description }}{{ . }}{{ else }}{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end -}}"/>
 {{ with .Site.Params.Social.twitter -}}
     <meta name="twitter:site" content="@{{ . }}"/>
 {{ end -}}
+{{- with $seo.contributor -}}
+    {{- with .Params.social.twitter -}}
+            <meta name="twitter:creator" content="@{{ strings.TrimPrefix "@" . }}"/>
+    {{- end -}}
+{{- else -}}
 {{ range .Params.authors }}
     {{ with $.Site.GetPage (print "/contributors/" .) -}}
         {{ with .Params.social.twitter }}
@@ -17,3 +27,4 @@
         {{ end -}}
     {{ end -}}
 {{ end -}}
+{{- end -}}

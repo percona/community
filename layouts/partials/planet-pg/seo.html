@@ -1,0 +1,36 @@
+{{/*
+  Title, description, and share image for a Planet PostgreSQL author tag page.
+
+  Returns an empty dict on ordinary pages.
+  Single return only: multiple return statements break in this Hugo build.
+*/}}
+{{ $out := dict }}
+{{ if and (eq .Kind "term") (eq .Type "tags") }}
+  {{ $found := partialCached "planet-pg/contributor.html" . .RelPermalink }}
+  {{ with index $found "page" }}
+    {{ $contributor := . }}
+    {{ $title := printf "%s | PostgreSQL blog | %s" $contributor.Params.fullname site.Title }}
+    {{ $description := "" }}
+    {{ with $contributor.Params.planet_pg_feed_description }}
+      {{ $description = . }}
+    {{ else }}
+      {{ $role := $contributor.Params.job | default $contributor.Params.tagline }}
+      {{ if $role }}
+        {{ $description = printf "PostgreSQL posts by %s, %s, on Percona Community." $contributor.Params.fullname $role }}
+      {{ else }}
+        {{ $description = printf "PostgreSQL posts by %s on Percona Community." $contributor.Params.fullname }}
+      {{ end }}
+    {{ end }}
+
+    {{ $image := "" }}
+    {{ $imageAlt := $contributor.Params.fullname }}
+    {{ with index $contributor.Params.images 0 }}
+      {{ with resources.Get (strings.TrimPrefix "/" .) }}
+        {{ $image = (.Resize "1200x jpg 90%").Permalink }}
+      {{ end }}
+    {{ end }}
+
+    {{ $out = dict "contributor" $contributor "title" $title "description" $description "image" $image "imageAlt" $imageAlt }}
+  {{ end }}
+{{ end }}
+{{ return $out }}

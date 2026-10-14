@@ -1,0 +1,16 @@
+{{/*
+  Contributor page for a Planet PostgreSQL author tag.
+
+  Returns dict with optional "page" key (contributor Page).
+  Always return a map: partialCached mishandles false / empty string.
+*/}}
+{{ $out := dict }}
+{{ if and (eq .Kind "term") (eq .Type "tags") }}
+  {{ $tag := lower (.Data.Term | default .Title) }}
+  {{ range where site.RegularPages "Section" "contributors" }}
+    {{ if eq (lower .Params.planet_pg_tag) $tag }}
+      {{ $out = dict "page" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $out }}

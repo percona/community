@@ -1,15 +1,31 @@
 {{ define "title" }}
-  {{- $contributor := false -}}
-  {{- $tag := lower .Title -}}
-  {{- range where site.RegularPages "Section" "contributors" -}}
-    {{- if eq (lower .Params.planet_pg_tag) $tag -}}
-      {{- $contributor = . -}}
-    {{- end -}}
-  {{- end -}}
-  {{- with $contributor -}}
-    {{- .Params.fullname }} | PostgreSQL blog | {{ site.Title -}}
+  {{- $seo := partialCached "planet-pg/seo.html" . .RelPermalink -}}
+  {{- with $seo.title -}}
+    {{- . -}}
   {{- else -}}
     {{- printf "#%s | %s" .Title site.Title -}}
+  {{- end -}}
+{{ end }}
+
+{{ define "meta" }}
+  {{- $seo := partialCached "planet-pg/seo.html" . .RelPermalink -}}
+  {{- with $seo.contributor -}}
+    {{- $person := dict "@type" "Person" "name" .Params.fullname "url" .Permalink -}}
+    {{- with .Params.job | default .Params.tagline -}}
+      {{- $person = merge $person (dict "jobTitle" .) -}}
+    {{- end -}}
+    {{- with $seo.image -}}
+      {{- $person = merge $person (dict "image" .) -}}
+    {{- end -}}
+    {{- $schema := dict
+      "@context" "https://schema.org"
+      "@type" "ProfilePage"
+      "name" $seo.title
+      "description" $seo.description
+      "url" $.Permalink
+      "mainEntity" $person
+    -}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
   {{- end -}}
 {{ end }}
 
@@ -22,13 +38,8 @@
 {{ define "mainwrapper" }}
 {{ $pages := .Pages }}
 {{ $paginator := .Paginate $pages 15 }}
-{{- $contributor := false -}}
-{{- $tag := lower .Title -}}
-{{- range where site.RegularPages "Section" "contributors" -}}
-  {{- if eq (lower .Params.planet_pg_tag) $tag -}}
-    {{- $contributor = . -}}
-  {{- end -}}
-{{- end -}}
+{{- $found := partialCached "planet-pg/contributor.html" . .RelPermalink -}}
+{{- $contributor := $found.page -}}
 
 {{ if $contributor }}
   {{ partial "planet-pg/page.html" (dict "page" . "contributor" $contributor "paginator" $paginator) }}
