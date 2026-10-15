@@ -20,6 +20,7 @@ aliases:
 - /speakers/peter_zaitsev/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- AI
 - Cloud
 - Community
 - Kubernetes
@@ -80,6 +81,7 @@ talks_tags:
 - conference
 - database
 - developer-conference
+- eBPF
 - english
 - software
 - spanish
@@ -87,8 +89,8 @@ talks_tags:
 - video
 - web
 posts_count: 0
-events_count: 40
-talks_count: 70
+events_count: 41
+talks_count: 71
 contributor_type:
 - speaker
 contributor_year:
