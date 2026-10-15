@@ -11,13 +11,13 @@ presentation_date: '2026-11-18'
 presentation_date_end: ''
 presentation_time: ''
 talk_year: '2026'
-event: Open Source Monitoring Conference 2026
-event_jira: SPEAK-1638
+event: OSMC 2026
+event_jira: SPEAK-2949
 event_status: Accepted
 event_date_start: '2026-11-17'
 event_date_end: '2026-11-19'
-event_url: https://osmc.de
-event_location: Germany
+event_url: https://osmc.de/
+event_location: Nuremberg
 talk_tags:
 - MongoDB
 - PMM
