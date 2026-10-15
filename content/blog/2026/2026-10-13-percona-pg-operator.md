@@ -361,6 +361,23 @@ Apply the new CR and wait for all the pods to update. @TODO how
 kubectl apply -f cr-backup.sh
 ```
 
+Before we run the backup we can put some data in which should allow us to test the restore later
+
+```shell
+ kubectl run -i --rm --tty pg-client --image=percona/percona-distribution-postgresql:18.6.1-1 --restart=Never -- psql $PGBOUNCER_URI
+```
+
+Cut and paste the following SQL into the terminal
+
+```sql
+CREATE TABLE phonebook(phone VARCHAR(32), firstname VARCHAR(32), lastname VARCHAR(32), address VARCHAR(64));
+
+INSERT INTO phonebook(phone, firstname, lastname, address) VALUES('+1 123 456 7890', 'John', 'Doe', 'North America');
+
+SELECT * FROM phonebook;
+
+```
+
 Then run the backup and wait for it to finish:
 
 ```bash
@@ -401,6 +418,13 @@ aws --no-verify-ssl --endpoint-url https://localhost:9000 \
 ```
 
 ## Restore from a Backup
+
+Before running the restore delete the row from the test table.
+
+```sql
+delete from phonebook;
+select * from phonebook;
+```
 
 Find what backups are available
 
@@ -461,6 +485,17 @@ Edit the restore.yaml and update the backup name, then apply it
 kubectl apply -f restore.yaml
 ```
 
+The restore will terminate all the Postgres Pods and restore them. Once they are back run the SQL to see if the row has been restored.
+
+```sql
+select * from phonebook;
+
+      phone      | firstname | lastname |    address
+-----------------+-----------+----------+---------------
+ +1 123 456 7890 | John      | Doe      | North America
+```
+
+
 ## Tidy Up
 
 Delete the kind cluster and everything else should go with it.
@@ -468,3 +503,6 @@ Delete the kind cluster and everything else should go with it.
 ```shell
 kind delete cluster --name percona-pg
 ```
+
+This to me is a starting point where I can play without worrying about breaking stuff as it's quick to rebuild.
+While doing this I came up with many ideas I wanted to try out but thats for the future.
