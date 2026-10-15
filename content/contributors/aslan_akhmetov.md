@@ -7,7 +7,8 @@ tagline: Python and Go backends, API integrations and data workflows
 social:
   github: https://github.com/aslanahmtv
   linkedin: https://www.linkedin.com/in/ballmerpeak/
-images: []
+images:
+- contributors/aslan_akhmetov.jpeg
 status: community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

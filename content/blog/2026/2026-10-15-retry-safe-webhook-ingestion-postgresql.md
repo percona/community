@@ -5,7 +5,8 @@ tags: ['PostgreSQL', 'Python', 'Testing', 'Concurrency']
 categories: ['PostgreSQL']
 authors:
   - aslan_akhmetov
-images: []
+images:
+  - blog/2026/10/retry-safe-webhook-ingestion-postgresql-cover.png
 slug: retry-safe-webhook-ingestion-postgresql
 aliases:
   - /blog/2026/10/08/retry-safe-webhook-ingestion-with-postgresql-duplicates-concurrent-requests-and-old-snapshots/
