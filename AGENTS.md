@@ -49,9 +49,9 @@ Guidance for AI coding agents working in [percona/community](https://github.com/
 Use when there is no SPEAK issue, or the user asks to add content by hand. Example shape: `content/events/prosvita-2026/`, `content/talks/2026/2026-06-22-shift-left-…`.
 
 1. **Speaker** — `content/contributors/<slug>.md` + `assets/contributors/<slug>.*` if missing.
-2. **Event** — `content/events/<slug>/index.md` with `speakers`, dates, location/URL. **Do not** set `source: jira` (that marks pages owned by `events_publish`; hand-written pages must stay without it so sync will not overwrite them).
+2. **Event** — `content/events/<slug>/index.md` with `speakers`, dates, location/URL. **Do not** set `source: jira` (that marks pages owned by `events_publish`; hand-written pages must stay without it so sync will not overwrite them). Prefer `sync: skip` on hand-curated event/talk pages that still carry a `jira:` key.
 3. **Event images** — promo/photos in `assets/` (often `assets/blog/<YYYY>/<MM>/` or `assets/events/<slug>/`); wire via front matter `images:` and/or body markdown. Optional gradient card: `python tools/events_images/main.py --only-new` when using that pipeline.
-4. **Talk** — `content/talks/<YYYY>/<YYYY-MM-DD>-<slug>.md` with `speakers`, `presentation_date`, event fields, abstract in the body. Match nearby talk front matter.
+4. **Talk** — `content/talks/<YYYY>/<YYYY-MM-DD>-<slug>.md` with `speakers`, `presentation_date`, event fields, abstract in the body. Match nearby talk front matter. If the talk also exists in Jira but the MD is curated on the site, set `sync: skip` so `tools/talks` will not overwrite it.
 5. **Talk cover card** — always generate with the template script (never paste “I’m speaking” / event promo into `images:` as the cover):
 
 ```bash

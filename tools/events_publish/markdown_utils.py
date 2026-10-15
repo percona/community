@@ -57,13 +57,24 @@ def read_existing_marker(path: str) -> dict[str, Any]:
         return {}
 
 
+def sync_skipped(fm: dict | None) -> bool:
+    """Hand-curated event: sync: skip / skip_sync: true."""
+    if not fm:
+        return False
+    if fm.get("skip_sync") is True:
+        return True
+    return str(fm.get("sync") or "").strip().casefold() in {"skip", "manual"}
+
+
 def can_write_event(path: str, *, force: bool = False) -> bool:
-    """Only create new pages, or update pages marked source: jira."""
+    """Only create new pages, or update pages marked source: jira (unless sync: skip)."""
     if force:
         return True
     if not os.path.exists(path):
         return True
     fm = read_existing_marker(path)
+    if sync_skipped(fm):
+        return False
     return str(fm.get("source") or "").strip().casefold() == "jira"
 
 
