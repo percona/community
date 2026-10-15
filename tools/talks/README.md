@@ -86,6 +86,9 @@ python tools/talks_images/main.py --only-new
 
 ## Notes
 
+- **Skip sync (hand-curated):** set `sync: skip` in talk front matter to keep a
+  manually edited page even when the Talk is Published in Jira. Same flag on
+  event pages blocks `events_publish` (also: omit `source: jira`).
 - Event pages: see `tools/events_publish/README.md`. Hand-written events
   (no `source: jira`) are never overwritten.
 - On the talk page, the event is title + URL (+ dates/location in front matter)

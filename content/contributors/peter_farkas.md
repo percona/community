@@ -35,6 +35,7 @@ events_tags:
 talks_tags:
 - Ai
 - Databases
+- Licensing
 - Open Source
 - Open-Source
 - Opensource
@@ -45,8 +46,8 @@ talks_tags:
 - performance
 - serbia
 posts_count: 0
-events_count: 8
-talks_count: 5
+events_count: 9
+talks_count: 6
 contributor_type:
 - speaker
 contributor_year:
