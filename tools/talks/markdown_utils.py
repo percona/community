@@ -187,10 +187,24 @@ def read_front_matter_from_file(path: str) -> dict:
     return fm if isinstance(fm, dict) else {}
 
 
+def sync_skipped(fm: dict | None) -> bool:
+    """
+    True when front matter asks talks sync to leave the page alone.
+
+    Use on hand-curated talk pages that still have a Jira key for linking:
+      sync: skip
+    """
+    if not fm:
+        return False
+    if fm.get("skip_sync") is True:
+        return True
+    return str(fm.get("sync") or "").strip().casefold() in {"skip", "manual"}
+
+
 def preserve_site_fields(markdown: str, existing_path: str | None) -> str:
     """
     Keep Hugo-only / previously curated fields that talks sync does not own
-    (images, aliases, presentation_date_end) when overwriting a talk page.
+    (images, aliases, presentation_date_end, sync) when overwriting a talk page.
     """
     if not existing_path or not os.path.exists(existing_path):
         return markdown
@@ -219,6 +233,13 @@ def preserve_site_fields(markdown: str, existing_path: str | None) -> str:
     old_end = str(old_fm.get("presentation_date_end") or "").strip()
     if not new_end and old_end:
         fm["presentation_date_end"] = old_end
+        changed = True
+    # Never drop a hand-curated sync: skip marker if somehow rewriting.
+    if sync_skipped(old_fm) and not sync_skipped(fm):
+        if "sync" in old_fm:
+            fm["sync"] = old_fm["sync"]
+        if "skip_sync" in old_fm:
+            fm["skip_sync"] = old_fm["skip_sync"]
         changed = True
     if not changed:
         return markdown
@@ -322,6 +343,20 @@ def process_talks(
         print(f"✅ Processing: {title.strip()} [{talk.get('key')}]")
         print(f"   → {filepath}")
         print(f"   → {new_url}")
+
+        existing_fm = (
+            read_front_matter_from_file(existing_path)
+            if existing_path and os.path.exists(existing_path)
+            else (
+                read_front_matter_from_file(filepath)
+                if os.path.exists(filepath)
+                else {}
+            )
+        )
+        if sync_skipped(existing_fm):
+            print(f"⏭️ Skip talk sync (sync: skip in front matter)")
+            skipped_existing += 1
+            continue
 
         if only_new and file_exists and not url_changed:
             print(f"⏭️ Skip existing talk (only-new)")

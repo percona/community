@@ -2,11 +2,13 @@
   Auto-list talks related to this event page as talk cards
   (same card as talk hub / Params.talks override).
 
-  Match: talk.event_jira == event.jira, else talk.event == event.Title
-  (if talk has a non-matching event_jira, do not fall back to title).
+  Match: talk.event_jira == event.jira (or any event.jira_also),
+  else talk.event == event.Title when talk has no event_jira.
 */}}
 {{ $event := . }}
 {{ $jira := printf "%s" ($event.Params.jira | default "") }}
+{{ $also := $event.Params.jira_also | default (slice) }}
+{{ if not (reflect.IsSlice $also) }}{{ $also = slice $also }}{{ end }}
 {{ $title := $event.Title }}
 {{ $matched := slice }}
 
@@ -14,8 +16,13 @@
   {{ $talkJira := printf "%s" (.Params.event_jira | default "") }}
   {{ $talkEvent := .Params.event | default "" }}
   {{ $ok := false }}
-  {{ if and $jira $talkJira }}
-    {{ if eq $talkJira $jira }}{{ $ok = true }}{{ end }}
+  {{ if $talkJira }}
+    {{ if and $jira (eq $talkJira $jira) }}{{ $ok = true }}{{ end }}
+    {{ if not $ok }}
+      {{ range $also }}
+        {{ if eq $talkJira (printf "%s" .) }}{{ $ok = true }}{{ end }}
+      {{ end }}
+    {{ end }}
   {{ else if and $title $talkEvent (eq $talkEvent $title) }}
     {{ $ok = true }}
   {{ end }}
