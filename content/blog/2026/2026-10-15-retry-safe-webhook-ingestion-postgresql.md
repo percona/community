@@ -1,15 +1,15 @@
 ---
 title: "Retry-safe webhook ingestion with PostgreSQL: duplicates, concurrent requests and old snapshots"
-date: "2026-10-08T00:00:00Z"
-draft: false
+date: "2026-10-15T12:15:00+00:00"
+tags: ['PostgreSQL', 'Python', 'Testing', 'Concurrency']
+categories: ['PostgreSQL']
 authors:
   - aslan_akhmetov
-tags:
-  - PostgreSQL
-  - Python
-  - Testing
-  - Concurrency
-images: []
+images:
+  - blog/2026/10/retry-safe-webhook-ingestion-postgresql-cover.png
+slug: retry-safe-webhook-ingestion-postgresql
+aliases:
+  - /blog/2026/10/08/retry-safe-webhook-ingestion-with-postgresql-duplicates-concurrent-requests-and-old-snapshots/
 ---
 
 *This is a synthetic laboratory example, not a customer production incident. AI assisted with drafting and checking the material.*
@@ -138,7 +138,7 @@ These are transaction-boundary simulations. They do not inject a broken network 
 
 ## Run the tests
 
-[Download the runnable lab](/labs/postgresql-webhook-lab-2026-10-08.zip), including the schema, Python implementation, tests and recorded verification logs. It needs Docker and Python 3.10 or later:
+[Download the runnable lab](/blog/2026/10/postgresql-webhook-lab-2026-10-08.zip), including the schema, Python implementation, tests and recorded verification logs. It needs Docker and Python 3.10 or later:
 
 ```sh
 python3 -m venv .venv
@@ -173,3 +173,5 @@ This receiver converges on the greatest accepted snapshot revision while recogni
 External effects need a separate design. Sending email or charging a card inside this function would not make those operations atomic with PostgreSQL. For that extension, a transactional outbox can record work to dispatch, and the external receiver still needs an appropriate idempotency contract.
 
 For the snapshot problem here, the useful division is explicit: the inbox answers whether an event was accepted, and the projection answers which version is current. The transaction ensures those answers cannot be committed halfway through a delivery.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
