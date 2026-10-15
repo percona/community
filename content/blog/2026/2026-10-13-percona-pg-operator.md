@@ -22,7 +22,7 @@ The scripts and instruction can be found in [Github](https://github.com/stateful
 ```shell
 git clone https://github.com/statefulops/postgres-scripts.git
 ```
-## Step 1 : Deploy a base cluster with an object store
+## Deploy a base cluster with an object store
 
 The first step is to deploy a multi-node Kind cluster with a way of simulating an S3 compatible object store (in this example using [RustFS](https://rustfs.com/)). Using something like RustFS ensure we are avoiding any cloud costs when testing backups and restores.
 
@@ -103,7 +103,7 @@ aws --endpoint-url http://localhost:9000 s3 ls
 2026-10-12 12:14:49 my-kind-bucket
 ```
 
-## Step 2 - Install the Percona PostgreSQL Operator 3.1.0
+## Install the Percona PostgreSQL Operator 3.1.0
 
 Add the Percona Helm repo:
 
@@ -129,6 +129,7 @@ Install the operator and switch to its namespace:
 kubectl create namespace pg-operator
 helm install ps-operator percona/pg-operator --namespace pg-operator
 ```
+
 ```text
 NAME: ps-operator
 LAST DEPLOYED: Mon Oct 12 12:48:30 2026
@@ -160,7 +161,7 @@ kubectl config set-context --current --namespace=pg-operator
 ```
 
 
-## Step 3 - Create a Cluster and Connect to it
+## Create a Cluster and Connect to it
 
 The sample deployment which comes with the operator repo is, in my view, too complex to start with so I've created some simple ones
 
@@ -289,7 +290,7 @@ kubectl describe po cluster1-instance1-8nz4-0|grep role
     postgres-operator.crunchydata.com/role=replica
 ```
 
-## Step 4 - Run a Backup and verify it worked
+## Run a Backup and verify it worked
 
 The next step is try a backup to an object store, in this case the local RustFS container. This is the part where I initially struggled as the setup I've used for testing MySQL and PXC didn't initially work. After much chatting with AI we jointly realised that pgBackRest ALWAYS speaks TLS to an S3 endpoint so TLS needs enabling first on the rustFS container.
 
@@ -315,19 +316,19 @@ printf '[global]\nrepo2-s3-key=%s\nrepo2-s3-key-secret=%s\n' \
 or by encoding the secret key into the s3.conf section in backup_secret.yaml and applying it.
 
 ```shell
-$ kubectl get secret rustfs-admin-credentials -n rustfs -o jsonpath='{.data.secret-key}' | base64 -d
+kubectl get secret rustfs-admin-credentials -n rustfs -o jsonpath='{.data.secret-key}' | base64 -d
 
-$ cat <<EOF | base64
+cat <<EOF | base64
 [global]
 repo2-s3-key=myadminuser
-repo2-s3-key-secret=UEtOuRuzQn6vTOcYwnZ28Cb9vjdVDISg
+repo2-s3-key-secret<set to the output of the command above>
 EOF
 
-$ vi backup_secret.yaml 
+vi backup_secret.yaml 
 
 set the s3.conf: and add the string from the command cat command above
 
-$ kubectl  apply -f backup_secret.yaml
+kubectl  apply -f backup_secret.yaml
 ```
 
 The cluster now needs to be configured to backup to the bucket by applying cr-backup.yaml
@@ -378,13 +379,14 @@ backup2                      cluster1   repo2   s3://my-kind-bucket   Succeeded 
 ```
 
 
-Check the bucket
+There should now be a backup in the rustFS bucket - Either check on the UI or via AWS CLI
 
 ```shell
 aws --no-verify-ssl --endpoint-url https://localhost:9000 \
   s3 ls --recursive s3://my-kind-bucket/pgbackrest/repo2/backup/
 ```
-```shell
+
+```text
 2026-10-13 15:21:19     243781 pgbackrest/repo2/backup/db/20261013-142013F/backup.manifest
 2026-10-13 15:21:19     243781 pgbackrest/repo2/backup/db/20261013-142013F/backup.manifest.copy
 2026-10-13 15:21:18         23 pgbackrest/repo2/backup/db/20261013-142013F/pg_data/PG_VERSION.gz
@@ -397,9 +399,71 @@ aws --no-verify-ssl --endpoint-url https://localhost:9000 \
 2026-10-13 15:21:15      38713 pgbackrest/repo2/backup/db/20261013-142013F/pg_data/base/1/1249.gz
 .......
 ```
-## Step 5 - Tidy Up
 
-Delete the kind cluster
+## Restore from a Backup
+
+Find what backups are available
+
+```shell
+kubectl get pg-backup
+```
+
+```text
+NAME                         CLUSTER    REPO    DESTINATION           STATUS      TYPE   COMPLETED   AGE
+backup2                      cluster1   repo2   s3://my-kind-bucket   Succeeded   full   2d1h        2d1h
+cluster1-backup-xr9r-9hvb7   cluster1   repo1                         Succeeded   full   2d1h        2d1h
+```
+
+Describe the backup and find the backup name
+```shell
+kubectl describe  pg-backup backup2
+```
+
+```text
+Name:         backup2
+Namespace:    pg-operator
+Labels:       <none>
+Annotations:  pgv2.percona.com/pgbackrest-backup-job-type: manual
+API Version:  pgv2.percona.com/v2
+Kind:         PerconaPGBackup
+Metadata:
+  Creation Timestamp:  2026-10-13T14:17:24Z
+  Generation:          2
+  Resource Version:    3301
+  UID:                 eead1a51-2999-4391-bd30-d85c7575c24a
+Spec:
+  Container Options:
+  Method:      pgbackrest
+  Pg Cluster:  cluster1
+  Repo Name:   repo2
+Status:
+  Backup Name:  20261013-142013F          <- Backup Name
+  Backup Type:  full
+  Completed:    2026-10-13T14:21:21Z
+  Cr Version:   3.1.0
+  Destination:  s3://my-kind-bucket
+  Image:        docker.io/percona/percona-pgbackrest:2.59.0-1
+  Job Name:     cluster1-backup-24fx
+  Repo:
+    Name:  repo2
+    s3:
+      Bucket:    my-kind-bucket
+      Endpoint:  https://rustfs-svc.rustfs.svc.cluster.local:9000
+      Region:    us-east-1
+  Size:          31673834
+  State:         Succeeded
+  Storage Type:  s3
+```
+
+Edit the restore.yaml and update the backup name, then apply it
+
+```shell
+kubectl apply -f restore.yaml
+```
+
+## Tidy Up
+
+Delete the kind cluster and everything else should go with it.
 
 ```shell
 kind delete cluster --name percona-pg
