@@ -8,6 +8,8 @@ authors:
 images:
   - blog/2026/05/laura_blog_cover.jpg
 slug: write-for-percona-community
+aliases:
+  - /blog/write-for-percona-community/
 ---
 
 You've fixed something gnarly in production this year. You've migrated a database that nobody wanted to touch. You've built something on top of Percona Operators, or Percona Toolkit, or Percona Monitoring and Management (PMM), and you've learned things along the way that aren't written down anywhere yet.

@@ -27,6 +27,30 @@ Talks are included when **all** of:
 - `issuetype = Talk`
 - `Publication Status` = `Ready for publication` (any workflow status; after sync → `Published`)
 
+## Fast path (agents / day-to-day)
+
+Cursor rule: `.cursor/rules/jira-talks-events-sync.mdc` (full checklist).
+
+**`--create` without skips** already does: talk MD → linked event pages + **event** cards → contributor recount. **Talk** cards are always separate:
+
+```bash
+python tools/talks/main.py --create
+python tools/talks_images/main.py --only-new
+```
+
+Few known keys — skip hooks, then run each **once**:
+
+```bash
+python tools/talks/main.py --create --jira-key SPEAK-2223 --skip-events --skip-contributors
+python tools/events_publish/main.py --create --jira-key SPEAK-2213   # event page + event card
+python tools/contributors/update_contributors.py
+python tools/talks_images/main.py --only-new
+```
+
+**Why not loop full `--create`:** `events_publish` loads all Ready+Published talks; `update_contributors` rewrites every contributor file.
+
+**Verify:** `hugo` build is enough; do not browser-check the site unless asked.
+
 ## Usage
 
 ```bash
@@ -62,6 +86,9 @@ python tools/talks_images/main.py --only-new
 
 ## Notes
 
+- **Skip sync (hand-curated):** set `sync: skip` in talk front matter to keep a
+  manually edited page even when the Talk is Published in Jira. Same flag on
+  event pages blocks `events_publish` (also: omit `source: jira`).
 - Event pages: see `tools/events_publish/README.md`. Hand-written events
   (no `source: jira`) are never overwritten.
 - On the talk page, the event is title + URL (+ dates/location in front matter)

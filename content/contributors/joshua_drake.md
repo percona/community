@@ -14,7 +14,7 @@ social:
   twitter: https://twitter.com/linuxhiker
   website: null
 images:
-- contributors/joshua_drake.jpg
+- contributors/joshua_drake.gif
 aliases:
 - /speakers/joshua_drake
 - /speakers/joshua_drake/

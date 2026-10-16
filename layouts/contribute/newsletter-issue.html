@@ -1,0 +1,20 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+<div class="newsletter-page">
+  <div class="newsletter-page__main">
+    <article class="newsletter-page__content newsletter-page__content--issue">
+      <p class="newsletter-issue__back">
+        <a href="{{ .Parent.RelPermalink }}">Community Newsletter</a>
+      </p>
+      <h1>{{ .Title }}</h1>
+      <p class="newsletter-issue__date">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      </p>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ end }}

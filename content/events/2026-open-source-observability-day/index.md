@@ -6,6 +6,7 @@ layout: single
 source: jira
 jira: SPEAK-1471
 speakers:
+- peter_zaitsev
 - valeria_bogatyreva
 - sonia_valeja
 date: '2026-10-15'
