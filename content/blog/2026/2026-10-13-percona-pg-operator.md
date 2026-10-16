@@ -7,21 +7,22 @@ authors:
   - neil_armitage
 ---
 
-I'm a long term user of MySQL with both asynchronous replication and synchronous with PXC. More recently this has been on Kubernetes with either helm deployments or more recently operator deployments. I felt it was time to dip my toe into the world of PostgreSQL as it's become more and more popular (or certainly appears to be).
+I'm a long term user of MySQL with both asynchronous replication and synchronous with PXC. For a while now this has been on Kubernetes with either Helm deployments or more recently operator deployments. I felt it was time to dip my toe into the world of PostgreSQL as it's become more and more popular (or certainly appears to be).
 
 My learning style has always been to jump right in a see what i can break so nowadays I normally build a repeatable throwaway Kubernetes setup with [Kind](https://kind.sigs.k8s.io/) where i can play and destroy quickly in a repeatable environment.
 
-I have recently built a set of [base kind stacks](https://github.com/statefulops/kind-scripts) that I can reuse as i was constanly rebuilding stacks with slightly different configs so i wanted to start standardising them.
+I have recently built a set of [base kind stacks](https://github.com/statefulops/kind-scripts) that I can reuse as i was constantly rebuilding stacks with slightly different configs so i wanted to start standardising them.
 
 Full disclaimer I've used this setup on an ARM Macbook. I'm assuming it will work on Linux pretty much the same but for Windows I have no idea. I've not touched Windows in a long time but it _should_ work them same.
 
 Installing kind is pretty simple and will depend on your host O/S - full details are [here](https://kind.sigs.k8s.io/docs/user/quick-start/)
 
-The scripts and instruction can be found in [Github](https://github.com/statefulops/postgres-scripts/tree/main)
+The scripts used below can be found in [Github](https://github.com/statefulops/postgres-scripts/tree/main) in the directory ```Percona-Operator```
 
 ```shell
 git clone https://github.com/statefulops/postgres-scripts.git
 ```
+
 ## Deploy a base cluster with an object store
 
 The first step is to deploy a multi-node Kind cluster with a way of simulating an S3 compatible object store (in this example using [RustFS](https://rustfs.com/)). Using something like RustFS ensure we are avoiding any cloud costs when testing backups and restores.
@@ -67,7 +68,7 @@ NAME                      READY   STATUS    RESTARTS   AGE
 rustfs-574c7b89d7-5dl4d   1/1     Running   0          4m1s
 ```
 
-A nodeport is set automatically so the RustFS UI will be available on http://localhost:9001.  The user is set to *myadminuser* and the script sets a random value for the secret password in a Kubernetes secret. To get the password run
+A nodeport is set automatically so the RustFS UI will be available on [http://localhost:9001](http://localhost:9001).  The user is set to *myadminuser* and the script sets a random value for the secret password in a Kubernetes secret. To get the password run
 
 ```shell
 kubectl get secret rustfs-admin-credentials -n rustfs -o jsonpath='{.data.secret-key}' | base64 -d
@@ -122,7 +123,6 @@ case "$CURRENT_CONTEXT" in
 esac
 ```
 
-
 Install the operator and switch to its namespace:
   
 ```shell
@@ -160,12 +160,11 @@ Read more in our documentation: https://docs.percona.com/percona-operator-for-po
 kubectl config set-context --current --namespace=pg-operator
 ```
 
-
 ## Create a Cluster and Connect to it
 
 The sample deployment which comes with the operator repo is, in my view, too complex to start with so I've created some simple ones
 
-Review cr-simple.yaml and check what it's going to do, then apply it to the kind cluster.
+Review ```cr-simple.yaml``` and check what it's going to do, then apply it to the kind cluster. It will deploy a 3 Postgres pods and 3 PGBouncer pods.
 
 ```shell
 kubectl apply -f cr-simple.yaml
@@ -202,14 +201,13 @@ cluster1-repo-host-0                       2/2     Running     0     41h   10.24
 ps-operator-pg-operator-8575f47647-rbr77   1/1     Running     0     41h   10.244.1.2    percona-pg-worker
 ```
 
-
 To connect to the cluster get the generated credentials from the Kubernetes secret
 
 ```shell
 PGBOUNCER_URI=$(kubectl get secret cluster1-pguser-cluster1 -o jsonpath='{.data.pgbouncer-uri}' | base64 --decode)
 ```
 
-Then deploy a standalone container passing the credentials to create a command prompt on the running cluster.
+Then deploy a standalone container and pass the credentials to create a command prompt on the running cluster.
 
 ```shell
 kubectl run -i --rm --tty pg-client --image=percona/percona-distribution-postgresql:18.6.1-1 --restart=Never -- psql $PGBOUNCER_URI
@@ -228,7 +226,7 @@ cluster1=> SELECT inet_server_addr();
 (1 row)
 ```
 
-In this case we are connected to cluster1-instance1-8nz4-0 which is the current Primary node.
+In this case we are connected to ```cluster1-instance1-8nz4-0``` which is the current Primary pod. To find the current role of the pod look at it's labels.
 
 ```shell
 kubectl describe po cluster1-instance1-8nz4-0|grep role
@@ -271,7 +269,7 @@ kubectl describe po cluster1-instance1-mp4b-0|grep role
 
 If you test the connection again you should end up on the new Primary
 
-```shell              
+```shell
  kubectl run -i --rm --tty pg-client --image=percona/percona-distribution-postgresql:18.6.1-1 --restart=Never -- psql $PGBOUNCER_URI
 ```
 
@@ -294,7 +292,7 @@ kubectl describe po cluster1-instance1-8nz4-0|grep role
 
 The next step is try a backup to an object store, in this case the local RustFS container. This is the part where I initially struggled as the setup I've used for testing MySQL and PXC didn't initially work. After much chatting with AI we jointly realised that pgBackRest ALWAYS speaks TLS to an S3 endpoint so TLS needs enabling first on the rustFS container.
 
-Running the  rust-enable-tls.sh script enables this 
+Running the  ```rust-enable-tls.sh``` script enables this.
 
 ```shell
 ./rust-enable-tls.sh
@@ -313,7 +311,7 @@ printf '[global]\nrepo2-s3-key=%s\nrepo2-s3-key-secret=%s\n' \
 | kubectl apply -f -
 ```
 
-or by encoding the secret key into the s3.conf section in backup_secret.yaml and applying it.
+or by encoding the secret key into the ```s3.conf``` section in ```backup_secret.yaml``` and applying it.
 
 ```shell
 kubectl get secret rustfs-admin-credentials -n rustfs -o jsonpath='{.data.secret-key}' | base64 -d
@@ -331,7 +329,7 @@ set the s3.conf: and add the string from the command cat command above
 kubectl  apply -f backup_secret.yaml
 ```
 
-The cluster now needs to be configured to backup to the bucket by applying cr-backup.yaml
+The cluster now needs to be configured to backup to the bucket by applying ```cr-backup.yaml```. This will add a new backup location ```repo2``` to the CR which points to the bucket in RustFS. Make sure the bucket ```my-kind-bucket```exists first.
 
 The key parts of the new CR are
 
@@ -355,7 +353,7 @@ backups:
 				region: "us-east-1"
 ```
 
-Apply the new CR and wait for all the pods to update. @TODO how
+Apply the new CR and wait for all the pods to update.
 
 ```shell
 kubectl apply -f cr-backup.sh
@@ -375,7 +373,6 @@ CREATE TABLE phonebook(phone VARCHAR(32), firstname VARCHAR(32), lastname VARCHA
 INSERT INTO phonebook(phone, firstname, lastname, address) VALUES('+1 123 456 7890', 'John', 'Doe', 'North America');
 
 SELECT * FROM phonebook;
-
 ```
 
 Then run the backup and wait for it to finish:
@@ -385,7 +382,7 @@ kubectl apply -f backup.yaml
 kubectl get perconapgbackup -w
 ```
 
-```
+```text
 NAME                         CLUSTER    REPO    DESTINATION           STATUS      TYPE   COMPLETED   AGE
 backup2                      cluster1   repo2   s3://my-kind-bucket   Running                        3m38s
 cluster1-backup-xr9r-9hvb7   cluster1   repo1                         Succeeded   full   7m10s       9m11s
@@ -394,7 +391,6 @@ backup2                      cluster1   repo2   s3://my-kind-bucket   Running   
 backup2                      cluster1   repo2   s3://my-kind-bucket   Succeeded   full   13s         4m10s
 backup2                      cluster1   repo2   s3://my-kind-bucket   Succeeded   full   14s         4m11s
 ```
-
 
 There should now be a backup in the rustFS bucket - Either check on the UI or via AWS CLI
 
@@ -439,6 +435,7 @@ cluster1-backup-xr9r-9hvb7   cluster1   repo1                         Succeeded 
 ```
 
 Describe the backup and find the backup name
+
 ```shell
 kubectl describe  pg-backup backup2
 ```
@@ -479,7 +476,7 @@ Status:
   Storage Type:  s3
 ```
 
-Edit the restore.yaml and update the backup name, then apply it
+Edit the ```restore.yaml``` and update the backup name next to the ```--set=20261013-142013F_20261015-165445I``` option, then apply it
 
 ```shell
 kubectl apply -f restore.yaml
@@ -495,7 +492,6 @@ select * from phonebook;
  +1 123 456 7890 | John      | Doe      | North America
 ```
 
-
 ## Tidy Up
 
 Delete the kind cluster and everything else should go with it.
@@ -505,4 +501,4 @@ kind delete cluster --name percona-pg
 ```
 
 This to me is a starting point where I can play without worrying about breaking stuff as it's quick to rebuild.
-While doing this I came up with many ideas I wanted to try out but thats for the future.
+While doing this I came up with many ideas I wanted to try out but thats for the future. I've probably made loads of bad or wrong decisions setting this up but it's a start and it works for me.

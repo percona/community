@@ -9,8 +9,8 @@ country: null
 tagline: null
 social:
   facebook: null
-  github: null
-  linkedin: 
+  github: https://github.com/narmitag
+  linkedin: https://www.linkedin.com/in/neil-a-5750885
   twitter: null
   website: null
 images:
