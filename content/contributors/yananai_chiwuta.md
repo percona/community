@@ -1,7 +1,7 @@
 ---
 name: yananai_chiwuta
 fullname: Yananai A. Chiwuta
-tagline: "Co-Founder & CEO, Forma Nôrden; Founder, Avelence"
+tagline: Co-Founder & CEO, Forma Nôrden; Founder, Avelence
 social:
   facebook: null
   github: https://github.com/yananai-chiwuta
@@ -9,7 +9,24 @@ social:
   twitter: https://x.com/YananaiOfficial
   website: https://yananaichiwuta.com/
 images:
-  - contributors/yananai_chiwuta.png
+- contributors/yananai_chiwuta.png
+# Auto-generated fields. Do not edit manually.
+contributor_tag:
+- PostgreSQL
+blog_tags:
+- CRM
+- Concurrency
+- PostgreSQL
+- Webhooks
+events_tags: []
+talks_tags: []
+posts_count: 1
+events_count: 0
+talks_count: 0
+contributor_type:
+- author
+contributor_year:
+- '2026'
 ---
 Yananai A. Chiwuta is the co-founder and CEO of [Forma Nôrden](https://formanorden.com) and founder of [Avelence](https://avelence.com). Based in London, his work at Forma Nôrden includes B2B growth systems, including research, outbound, Answer Engine Optimization, SEO, Paid Search, CRM architecture and automation. At Avelence, his work revolves around Enterprise Data Licensing.
 
