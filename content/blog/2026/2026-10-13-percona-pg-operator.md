@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Percona PostgreSQL Operator"
 date: "2026-10-13T08:45:00+00:00"
-tags: ['PostgreSQL', 'Supabase', 'Security', 'RLS', 'AI']
+tags: ['PostgreSQL']
 categories: ['PostgreSQL']
 authors:
   - neil_armitage
@@ -13,7 +13,7 @@ My learning style has always been to jump right in a see what i can break so now
 
 I have recently built a set of [base kind stacks](https://github.com/statefulops/kind-scripts) that I can reuse as i was constantly rebuilding stacks with slightly different configs so i wanted to start standardising them.
 
-Full disclaimer I've used this setup on an ARM Macbook. I'm assuming it will work on Linux pretty much the same but for Windows I have no idea. I've not touched Windows in a long time but it _should_ work them same.
+Full disclaimer I've used this setup on an Arm MacBook. I'm assuming it will work on Linux pretty much the same but for Windows I have no idea. I've not touched Windows in a long time but it _should_ work them same.
 
 Installing kind is pretty simple and will depend on your host O/S - full details are [here](https://kind.sigs.k8s.io/docs/user/quick-start/)
 
