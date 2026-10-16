@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "lost_update_psql_lab.py", line 215, in <module>
+    main()
+    ~~~~^^
+  File "lost_update_psql_lab.py", line 185, in main
+    with Client() as c:
+         ~~~~~~^^
+  File "lost_update_psql_lab.py", line 49, in __init__
+    self.pid = int(self.scalar('SELECT pg_backend_pid()'))
+                   ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lost_update_psql_lab.py", line 84, in scalar
+    rows = self.execute(sql)
+  File "lost_update_psql_lab.py", line 77, in execute
+    raise RuntimeError('psql exited before completing SQL: ' + '\n'.join(rows))
+RuntimeError: psql exited before completing SQL: psql: error: connection to server at "127.0.0.1", port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
