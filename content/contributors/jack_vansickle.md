@@ -10,7 +10,7 @@ tagline: Builds automation, QA workflows, and reproducible labs
 social:
   facebook: null
   github: jackvansickle1
-  linkedin: null
+  linkedin: https://www.linkedin.com/in/jv9
   twitter: null
   website: https://jackgpt.org
 images:
