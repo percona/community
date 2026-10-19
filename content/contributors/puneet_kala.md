@@ -17,6 +17,7 @@ aliases:
 - /authors/puneet_kala/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Community
 - MongoDB
 blog_tags:
 - Community
@@ -24,10 +25,14 @@ blog_tags:
 - GSoC
 - Google Summer of Code
 - Information
+- MongoDB
 - MySQL
+- Open Source
 - Open Source Databases
 - PMM
+- Percona
 - Percona Monitoring and Management
+- Team
 - Tools
 - mysql-and-variants
 events_tags:
@@ -38,7 +43,7 @@ talks_tags:
 - Open-Source
 - Tech
 - software-development
-posts_count: 1
+posts_count: 2
 events_count: 1
 talks_count: 1
 contributor_type:
