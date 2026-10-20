@@ -7,6 +7,8 @@ categories: ['Community']
 authors:
   - timothy_olaleke
 slug: prove-postgresql-restore-before-kubernetes-migration
+images:
+  - blog/2026/10/prove-postgresql-restore-before-kubernetes-migration-cover.png
 ---
 
 A migration plan can name every component and still leave the useful question unanswered: if the move fails, can the application work again? A dump file is not that answer. A restore into a new database, followed by the checks the application actually needs, is.
