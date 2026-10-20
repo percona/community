@@ -1,0 +1,14 @@
+{{ $issues := .RegularPages.ByDate.Reverse }}
+{{ if gt (len $issues) 0 }}
+<section class="newsletter-archive" aria-labelledby="newsletter-archive-heading">
+  <h2 id="newsletter-archive-heading">Previous issues</h2>
+  <ul class="newsletter-archive__list">
+    {{ range $issues }}
+    <li class="newsletter-archive__item">
+      <a class="newsletter-archive__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time class="newsletter-archive__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

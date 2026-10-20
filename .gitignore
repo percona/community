@@ -20,3 +20,4 @@ public
 .*.swp
 __pycache__
 tools/kapaio
+tools/newsletter/data/

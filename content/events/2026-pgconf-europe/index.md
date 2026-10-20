@@ -39,3 +39,12 @@ Percona is a **Gold sponsor** at **PGConf Europe**, October 20-23 in **Valencia*
 Stop by the **Percona booth** in the exhibit hall. Our PostgreSQL engineers are there for practical conversations — migrations, replication, performance, backups, extensions, and the operational problems you are working through now. We will have swag and a few giveaways at the booth.
 
 Several Perconians are also speaking and volunteering across the conference. If you are attending, come say hello and talk **PostgreSQL**.
+
+### Community Events Day — PostgreSQL on Kubernetes Summit @ PGConf.EU 2026
+
+On **October 23** (Community Events Day), PGConf.EU hosts the **[PostgreSQL on Kubernetes Summit](/events/2026-postgresql-on-kubernetes-summit/)** — half a day in **Audit 2** (13:30–16:45) on operators, backups, and production stories. Details and full schedule: [2026.pgconf.eu/community-events/pg_on_kubernetes](https://2026.pgconf.eu/community-events/pg_on_kubernetes/).
+
+Percona talks at the Summit:
+
+- **Chetan Shivashankar** — [Swap or Stop? How a Little Swap Can Keep PostgreSQL Running](/talks/2026/2026-10-23-swap-or-stop-how-a-little-swap-can-keep-postgresql-running/)
+- **George Kechagias** — [The Anatomy of a PostgreSQL Backup CRD: pgBackRest, Multi-Repo, and Tiered Storage](/talks/2026/2026-10-23-the-anatomy-of-a-postgresql-backup-crd-pgbackrest-multi-repo-and-tiered-storage/)
