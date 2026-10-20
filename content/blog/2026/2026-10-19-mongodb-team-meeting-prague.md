@@ -17,7 +17,7 @@ Here is a short look at what we did and what we learned.
 
 ## Who was there
 
-Engineers, QA, documentation, product management and our Scrum Master, all working on [Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/), [Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/) and Percona ClusterSync for MongoDB. One teammate could not travel and joined part of the sessions over Zoom.
+Engineers, QA, documentation, product management and our Scrum Master, all working on [Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/), [Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/) and [Percona ClusterSync for MongoDB](https://docs.percona.com/percona-clustersync-for-mongodb/). One teammate could not travel and joined part of the sessions over Zoom.
 
 ## Planning 2027 with customer and community feedback
 

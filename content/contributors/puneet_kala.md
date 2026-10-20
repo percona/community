@@ -6,7 +6,7 @@ fullname_pronounciation: Puneet Kala
 tagline: null
 social:
   facebook: null
-  github: null
+  github: https://github.com/puneet0191
   linkedin: null
   twitter: null
   website: null
@@ -53,4 +53,4 @@ contributor_year:
 - '2026'
 - '2020'
 ---
-Frontend Web Automation Quality Assurance at Percona
+Head of MongoDB Engineering and Product at Percona.
