@@ -1,6 +1,6 @@
 ---
 title: "Prove your PostgreSQL restore before a Kubernetes migration"
-date: "2026-10-09T12:00:00+02:00"
+date: "2026-10-20T14:55:00+00:00"
 draft: false
 tags: ['PostgreSQL', 'Kubernetes', 'Backup', 'Recovery', 'Community']
 categories: ['Community']
@@ -203,3 +203,5 @@ printf 'Both throwaway instances stopped; evidence retained at %s\n' "$TASK_LAB"
 ## Disclosure
 
 AI assisted initial drafting, editing, and companion-script preparation and testing. I edited the article and supplied the original lab results. This is a synthetic-data lab, not a customer incident or a Percona Operator recovery test.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
