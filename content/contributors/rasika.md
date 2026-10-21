@@ -3,7 +3,8 @@ name: rasika
 name_pronunciation: rasika
 fullname: Rasika Chivate
 fullname_pronounciation: Rasika Chivate
-tagline: null
+tagline: Technical Writer, PMM
+status: current
 social:
   facebook: null
   github: null

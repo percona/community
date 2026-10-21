@@ -28,7 +28,10 @@
                               "class" "avatar"
                             ) }}
                             <span class="post__author-copy">
-                                <a href="{{ .RelPermalink }}" class="post__author-name">{{ .Params.fullname }}</a>
+                                <span class="post__author-name-line">
+                                    <a href="{{ .RelPermalink }}" class="post__author-name">{{ .Params.fullname }}</a>
+                                    {{ partial "contributor-affiliation-icon.html" . }}
+                                </span>
                                 {{ with .Params.tagline }}<span class="post__author-role">{{ . }}</span>{{ end }}
                             </span>
                             </div>
