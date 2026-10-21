@@ -3,7 +3,8 @@ name: taras_kozub
 name_pronunciation: taras_kozub
 fullname: Taras Kozub
 fullname_pronounciation: Taras Kozub
-tagline: null
+tagline: Agile Facilitator, former Perconian
+status: former
 social:
   facebook: null
   github: null

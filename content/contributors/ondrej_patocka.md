@@ -3,7 +3,8 @@ name: ondrej_patocka
 name_pronunciation: ondrej_patocka
 fullname: Ondrej Patocka
 fullname_pronounciation: Ondrej Patocka
-tagline: null
+tagline: Agile Facilitator, former Perconian
+status: former
 social:
   facebook: null
   github: null
