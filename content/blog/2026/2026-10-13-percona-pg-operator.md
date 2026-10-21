@@ -356,7 +356,7 @@ backups:
 Apply the new CR and wait for all the pods to update.
 
 ```shell
-kubectl apply -f cr-backup.sh
+kubectl apply -f cr-backup.yaml
 ```
 
 Before we run the backup we can put some data in which should allow us to test the restore later
