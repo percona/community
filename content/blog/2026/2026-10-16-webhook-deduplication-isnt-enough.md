@@ -204,7 +204,7 @@ There's a difference between throwing an exception before the commit and after t
 
 There is also a problem with two revisions from the same source being equal.
 
-If two events, with different IDs, claim to be the same revision of a contact, then either (a) they have the same snapshot and the second one is a redundant delivery, or (b) they have different snapshots and the provider has provided contradictory revision history.
+Two events with different event IDs that refer to the same revision of a contact may contain either (a) the same contact snapshot, in which case the second event is redundant (if it is for the current revision of the contact) or stale (if the contact has been revised further) unless it contradicts the retained revision history, or (b) different contact snapshots, in which case the two events present contradictory revision history from the provider.
 
 The handler records a `revision_conflict` in the latter case and retains the previously accepted contact. It also checks for this when a contact is at a later revision but the events are retained in history. This way, it's possible to identify when a provider contradicts itself at an older revision, even if the contact has moved on.
 
