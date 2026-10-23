@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-15T18:14:24.1203443Z",
+  "finished_utc": "2026-10-15T18:14:53.0113288Z",
+  "operator": "Codex on authorized SNOW-WOLF",
+  "windows_host": "SNOW-WOLF",
+  "ai_assisted_automated_windows_testing": true,
+  "transport": "Windows Python standard library controlling existing Linux-container psql clients",
+  "server_major": 18,
+  "server_version_num": 180006,
+  "harness": "lost_update_psql_lab.py",
+  "harness_sha256": "5d80c87e0ba114b5302efe2a97ac59bcdfaf3fb9f5952c853e512b7f2fada484",
+  "validator_sha256": "3b397209a03e08c44887fa8813be9f0b3ec8f28305159307f9f5f9b2bb95c907",
+  "measured_complete_suites": 20,
+  "successful_suites": 20,
+  "observed_blocking_pairs": 80,
+  "wrong_port": 1,
+  "compilation_exit": 0
+}
