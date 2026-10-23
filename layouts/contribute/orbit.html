@@ -1,0 +1,46 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+  {{ $origin := .Site.Params.orbitPublicOrigin | default "" }}
+  {{ if hugo.IsDevelopment }}
+    {{ $origin = .Site.Params.orbitOrigin | default "http://localhost:5173" }}
+  {{ end }}
+  <div class="orbit-page">
+    {{ if $origin }}
+      <iframe class="orbit-page__frame" src="{{ $origin }}/?embed=1" title="Orbit activity" data-orbit-origin="{{ $origin }}"></iframe>
+      <script>
+        (function () {
+          var frame = document.querySelector(".orbit-page__frame")
+          if (!frame) return
+          var origin = frame.getAttribute("data-orbit-origin")
+          function publishSpace() {
+            var header = document.querySelector("header")
+            var headerBottom = header ? header.getBoundingClientRect().bottom : 0
+            var frameTop = frame.getBoundingClientRect().top + window.scrollY
+            if (headerBottom > 0) frameTop = Math.max(frameTop, headerBottom)
+            frame.contentWindow.postMessage({
+              source: "orbit-host",
+              type: "space",
+              viewportHeight: window.innerHeight,
+              frameTop: Math.round(frameTop)
+            }, origin)
+          }
+          window.addEventListener("message", function (event) {
+            if (event.origin !== origin || event.source !== frame.contentWindow) return
+            var data = event.data
+            if (!data || data.source !== "orbit" || data.type !== "resize") return
+            var height = Number(data.height)
+            if (!isFinite(height) || height < 320) return
+            frame.style.height = Math.ceil(height) + "px"
+            publishSpace()
+          })
+          window.addEventListener("resize", publishSpace)
+          frame.addEventListener("load", publishSpace)
+          publishSpace()
+        })()
+      </script>
+    {{ end }}
+  </div>
+{{ end }}
