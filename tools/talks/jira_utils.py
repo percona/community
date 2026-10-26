@@ -751,3 +751,26 @@ def patch_conference(jira_key: str, url: str, *, set_published: bool = True) -> 
             f"{response.status_code} {response.text[:400]}"
         )
     print(f"🔄 Jira Conference updated for {jira_key}: {url}")
+
+
+def update_issue_fields(jira_key: str, fields: dict[str, Any]) -> None:
+    """PUT arbitrary fields on a SPEAK issue (notifyUsers off)."""
+    require_env()
+    response = _http.put(
+        f"{JIRA_URL}/rest/api/3/issue/{jira_key}",
+        headers=jira_headers(),
+        auth=jira_auth(),
+        params={"notifyUsers": "false"},
+        json={"fields": fields},
+        timeout=60,
+    )
+    if not response.ok:
+        raise RuntimeError(
+            f"Jira field update {jira_key} failed: "
+            f"{response.status_code} {response.text[:400]}"
+        )
+
+
+def speakers_field_value(account_ids: list[str]) -> list[dict[str, str]]:
+    """Value for the Speakers user picker (customfield_11938)."""
+    return [{"accountId": account_id} for account_id in account_ids if account_id]
