@@ -26,7 +26,7 @@ columns:
       - name: YouTube videos
         url: /contribute/videos/
       - name: Lookout
-        url: /contribute/orbit/
+        url: /contribute/lookout/
   - title: Forums
     links:
       - name: Show & Tell
