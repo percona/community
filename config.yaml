@@ -8,7 +8,7 @@ disableHugoGeneratorInject: true
 params:
   favicon: superhero.png
   searchApiUrl: "https://search.percona.community"
-  orbitPublicOrigin: "https://search.percona.community"
+  lookoutPublicOrigin: "https://search.percona.community"
   searchPageUrl: "/search/"
   searchInputSelector: "#community-search-input"
   searchButtonSelector: "#community-search-button"
@@ -159,9 +159,9 @@ menu:
       url: /contribute/videos/
       parent: knowledge-base
       weight: 7
-    - identifier: knowledge-base-orbit
-      name: Orbit
-      url: /contribute/orbit/
+    - identifier: knowledge-base-lookout
+      name: Lookout
+      url: /contribute/lookout/
       parent: knowledge-base
       weight: 8
 
