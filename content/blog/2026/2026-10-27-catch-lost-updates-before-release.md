@@ -1,12 +1,13 @@
 ---
 title: "Catch Lost Updates Before Release: A Two-Client PostgreSQL Test on Windows"
-date: "2026-10-15T00:00:00+00:00"
-draft: true
+date: "2026-10-27T15:07:00+00:00"
+draft: false
 tags: ['PostgreSQL', 'Concurrency', 'Testing', 'Docker', 'PowerShell', 'Windows']
 categories: ['PostgreSQL', 'Community']
 authors:
   - jack_vansickle
-images: []
+images:
+  - blog/2026/10/catch-lost-updates-before-release-cover.png
 slug: catch-lost-updates-before-release
 ---
 
@@ -110,3 +111,5 @@ A conditional decrement does not make repeated requests idempotent. Multi-row wo
 When you adapt this release check, keep the invariant, negative control, contention evidence, and failure assertions together.
 
 *Automated Windows validation was AI-assisted using Codex on Jack VanSickle's SNOW-WOLF machine.*
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
