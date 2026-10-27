@@ -138,6 +138,18 @@ main.page:has(.hub-single-page) {
     }
   }
 
+  .hub-single__title-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.45rem 0.6rem;
+    margin-bottom: 0.5rem;
+
+    h1.hub-single__title {
+      margin-bottom: 0;
+    }
+  }
+
   h1.hub-single__title {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -577,12 +589,27 @@ main.page:has(.hub-single-page) {
   }
 
   &__name {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
     margin: 0 0 0.75rem;
     color: $brand-white;
     font-family: $font-poppins;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.3;
+
+    .author-badge--percona {
+      color: $brand-white;
+    }
+
+    .author-badge--community {
+      color: $brand-purple;
+    }
+
+    .author-badge--former .author-badge__label {
+      color: rgba($brand-white, 0.72);
+    }
   }
 
   &__bio {

@@ -65,8 +65,8 @@ talks_tags:
 - open-source
 - pmm
 posts_count: 2
-events_count: 2
-talks_count: 4
+events_count: 3
+talks_count: 5
 contributor_type:
 - author
 - speaker

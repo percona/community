@@ -4,6 +4,7 @@ name_pronunciation: daniel_guzman_burgos
 fullname: Daniel Guzman Burgos
 fullname_pronounciation: Daniel Guzman Burgos
 job: Creator of bintrail
+status: former
 country: null
 tagline: MySQL DBA. Building bintrail, an open source time machine for MySQL data.
 social:
