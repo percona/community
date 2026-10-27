@@ -160,7 +160,7 @@ menu:
       parent: knowledge-base
       weight: 7
     - identifier: knowledge-base-orbit
-      name: Orbit
+      name: Lookout
       url: /contribute/orbit/
       parent: knowledge-base
       weight: 8
