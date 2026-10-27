@@ -1,0 +1,23 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/content-page.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "mainwrapper" }}
+  {{ $origin := .Site.Params.orbitPublicOrigin | default "https://search.percona.community" }}
+  <div class="orbit-page">
+    <div id="orbit" data-feed="{{ $origin }}/orbit/widget/feed.json"></div>
+  </div>
+  {{ if hugo.IsServer }}
+  <script type="module">
+    import RefreshRuntime from "http://127.0.0.1:5174/@react-refresh"
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+  </script>
+  <script type="module" src="http://127.0.0.1:5174/@vite/client"></script>
+  <script type="module" src="http://127.0.0.1:5174/src/embed.tsx"></script>
+  {{ else }}
+  <script type="module" src="/js/orbit-app.js?v={{ now.Unix }}"></script>
+  {{ end }}
+{{ end }}

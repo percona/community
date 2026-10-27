@@ -442,3 +442,35 @@
     margin-bottom: 0;
   }
 }
+
+.orbit-page {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 2rem;
+  padding: 0 32px;
+}
+
+.orbit-page #orbit {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 720px;
+  background: transparent;
+}
+
+@media (max-width: 720px) {
+  .orbit-page {
+    max-width: none;
+    margin: 0;
+    padding: 0 16px;
+    overflow-x: hidden;
+  }
+
+  .orbit-page #orbit {
+    height: calc(100dvh - 130px);
+    min-height: 520px;
+    overflow: hidden;
+  }
+}
