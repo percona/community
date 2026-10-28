@@ -1477,6 +1477,12 @@ body.is-events-learning main.page {
     box-sizing: border-box;
   }
 
+  // Full-width hubs (no sidebar) keep padding:0 on desktop via a more
+  // specific rule — restore gutters on mobile or back/title/search flush.
+  .events-learning__layout--full .events-learning__main {
+    padding: 1.5rem $padding-left-page 2.5rem;
+  }
+
   /* Full-width sticky tab bar with horizontal scroll */
   .el-sidebar {
     position: sticky;
@@ -1658,11 +1664,78 @@ body.is-events-learning main.page {
       align-self: stretch;
     }
 
+    // Compact back chip — full pill was dominating the first viewport.
+    a.el-back-tab {
+      gap: 0.3rem;
+      margin-bottom: 1rem;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.8125rem;
+
+      .el-back-tab__arrow {
+        font-size: 0.8125rem;
+      }
+    }
+
+    // Two compact rows on narrow screens:
+    // 1) Type / Activity / Tags (scroll)
+    // 2) Affiliation + Search
+    .el-filters-bar {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      overflow: visible;
+      margin-bottom: 0.75rem;
+    }
+
     .el-filters-bar .el-filters,
     .el-filters {
-      margin-right: 0;
-      padding-right: 0;
-      overflow: visible;
+      display: contents; // fields participate in the bar flex
+      margin: 0;
+      padding: 0;
+    }
+
+    .el-filters__field {
+      flex: 0 0 auto;
+    }
+
+    .el-filters__field:not(.el-filters__field--affiliation) {
+      order: 1;
+    }
+
+    .el-filters__field--affiliation {
+      order: 2;
+      flex: 0 0 auto;
+    }
+
+    // Drop "Affiliation:" / "Type:" prefixes — value alone fits the chip.
+    .el-filters__label {
+      display: none;
+    }
+
+    .el-filters-search {
+      order: 3;
+      flex: 1 1 auto;
+      width: auto;
+      min-width: 7rem;
+      max-width: none;
+      position: relative;
+      z-index: 2;
+
+      &__input {
+        height: 32px;
+        min-height: 32px;
+        padding: 0 0.65rem;
+        font-size: 12px;
+      }
+    }
+
+    .el-filters-search__status {
+      flex: 1 0 100%;
+      order: 4;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -1678,7 +1751,6 @@ body.is-events-learning main.page {
     .el-filters-bar .el-filters {
       margin-right: 0;
       padding-right: 0;
-      overflow: visible;
     }
 
     .el-speaker-card {

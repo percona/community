@@ -41,30 +41,6 @@
     </details>
 
     <details class="el-filters__field">
-      <summary class="el-filters__btn{{ if eq $activeType "contributor_status" }} is-active{{ end }}">
-        {{ if eq $activeType "contributor_status" }}
-          <span class="el-filters__label">Affiliation:</span>
-          <span class="el-filters__value">{{ $activeTitle }}</span>
-        {{ else }}
-          Affiliation
-        {{ end }}
-        <span class="el-filters__chevron" aria-hidden="true">▾</span>
-      </summary>
-      <div class="el-filters__panel" role="listbox">
-        <ul class="el-filters__list">
-          {{/* Staff (incl. former Perconians) → Community. */}}
-          {{ $order := slice "staff" "community" }}
-          {{ range $term := $order }}
-            {{ with index site.Taxonomies.contributor_status $term }}
-              {{ $label := index $statusLabel $term | default (.Page.Title | humanize) }}
-              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ $label }}</a></li>
-            {{ end }}
-          {{ end }}
-        </ul>
-      </div>
-    </details>
-
-    <details class="el-filters__field">
       <summary class="el-filters__btn{{ if eq $activeType "contributor_year" }} is-active{{ end }}">
         {{ if eq $activeType "contributor_year" }}
           <span class="el-filters__label">Activity:</span>
@@ -104,6 +80,30 @@
       </div>
     </details>
 
+    {{/* Affiliation sits next to search on mobile (same toolbar row). */}}
+    <details class="el-filters__field el-filters__field--affiliation">
+      <summary class="el-filters__btn{{ if eq $activeType "contributor_status" }} is-active{{ end }}">
+        {{ if eq $activeType "contributor_status" }}
+          <span class="el-filters__label">Affiliation:</span>
+          <span class="el-filters__value">{{ $activeTitle }}</span>
+        {{ else }}
+          Affiliation
+        {{ end }}
+        <span class="el-filters__chevron" aria-hidden="true">▾</span>
+      </summary>
+      <div class="el-filters__panel" role="listbox">
+        <ul class="el-filters__list">
+          {{ $order := slice "staff" "community" }}
+          {{ range $term := $order }}
+            {{ with index site.Taxonomies.contributor_status $term }}
+              {{ $label := index $statusLabel $term | default (.Page.Title | humanize) }}
+              <li><a class="el-filters__option{{ if eq .Page.RelPermalink $activePermalink }} is-current{{ end }}" href="{{ .Page.RelPermalink }}"{{ if eq .Page.RelPermalink $activePermalink }} aria-current="page"{{ end }}>{{ $label }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
+    </details>
+
   </div>
 
   <div class="el-filters-search">
@@ -112,7 +112,7 @@
       id="contributors-hub-search"
       class="el-filters-search__input"
       type="search"
-      placeholder="Search contributors..."
+      placeholder="Search…"
       autocomplete="off"
     >
   </div>
