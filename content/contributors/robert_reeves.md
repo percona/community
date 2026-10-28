@@ -19,6 +19,8 @@ aliases:
 - /authors/robert_reeves/
 - /speakers/robert_reeves
 - /speakers/robert_reeves/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

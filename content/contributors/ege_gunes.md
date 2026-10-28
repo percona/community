@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/ege_gunes
 - /speakers/ege_gunes/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -14,6 +14,9 @@ social:
 images:
 - contributors/dimitri_vanoverbeke.jpg
 status: current
+contributor_status:
+- staff
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

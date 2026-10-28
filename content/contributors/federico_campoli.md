@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/federico_campoli
 - /authors/federico_campoli/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

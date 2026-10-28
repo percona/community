@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/mohamed_wadie_nsiri
 - /speakers/mohamed_wadie_nsiri/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

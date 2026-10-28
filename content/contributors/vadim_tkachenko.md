@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/vadim_tkachenko
 - /speakers/vadim_tkachenko/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/fernando_laudares
 - /speakers/fernando_laudares/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Backup

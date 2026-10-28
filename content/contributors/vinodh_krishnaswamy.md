@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/vinodh_krishnaswamy
 - /speakers/vinodh_krishnaswamy/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

@@ -19,6 +19,8 @@ aliases:
 - /contributors/ivan_groenwold/
 - /speakers/ivan_groenwold
 - /speakers/ivan_groenwold/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

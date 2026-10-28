@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/chandan_shukla
 - /authors/chandan_shukla/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/sidney_chen
 - /speakers/sidney_chen/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

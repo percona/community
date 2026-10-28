@@ -25,6 +25,7 @@ taxonomies:
   contributor_type: "contributor_type"
   contributor_tag: "contributor_tag"
   contributor_year: "contributor_year"
+  contributor_status: "contributor_status"
   talk_tags: "talk_tags"
   talk_year: "talk_year"
   events_category: "events_category"

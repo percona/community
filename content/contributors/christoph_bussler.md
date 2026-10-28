@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/christoph_bussler
 - /speakers/christoph_bussler/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

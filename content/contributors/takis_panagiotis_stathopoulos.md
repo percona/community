@@ -16,6 +16,8 @@ images:
 aliases:
 - /speakers/takis_stathopoulos
 - /speakers/takis_stathopoulos/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

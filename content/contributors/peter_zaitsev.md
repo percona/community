@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/peter_zaitsev
 - /speakers/peter_zaitsev/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - AI
@@ -83,14 +85,15 @@ talks_tags:
 - developer-conference
 - eBPF
 - english
+- kubernetes
 - software
 - spanish
 - technology
 - video
 - web
 posts_count: 0
-events_count: 41
-talks_count: 71
+events_count: 42
+talks_count: 72
 contributor_type:
 - speaker
 contributor_year:

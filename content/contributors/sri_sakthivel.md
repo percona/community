@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/sri_sakthivel
 - /speakers/sri_sakthivel/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

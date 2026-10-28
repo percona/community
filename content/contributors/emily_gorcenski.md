@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/emily_gorcenski
 - /authors/emily_gorcenski/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

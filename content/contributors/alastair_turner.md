@@ -17,6 +17,8 @@ aliases:
 - /authors/alastair_turner
 - /authors/alastair_turner/
 planet_pg_tag: pg_alastair
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - AI

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/kimberly_wilkins
 - /speakers/kimberly_wilkins/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
