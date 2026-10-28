@@ -1,0 +1,1497 @@
+
+[001] $ docker version
+--- stdout ---
+Client:
+ Version:           28.4.0
+ API version:       1.51
+ Go version:        go1.24.7
+ Git commit:        d8eb465
+ Built:             Wed Sep  3 20:56:28 2025
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          28.4.0
+  API version:      1.51 (minimum version 1.24)
+  Go version:       go1.24.7
+  Git commit:       249d679
+  Built:            Wed Sep  3 20:58:50 2025
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v1.7.28
+  GitCommit:        b98a3aace656320842a23f4a392a33f46af97866
+ runc:
+  Version:          1.3.0
+  GitCommit:        v1.3.0-0-g4ca628d
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+--- stderr ---
+--- exit: 0 ---
+
+[002] $ docker image inspect postgres@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382 --format '{{json .RepoDigests}} {{.Id}} {{.Os}}/{{.Architecture}}'
+--- stdout ---
+["postgres@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382"] sha256:526573c93ea530a230b553cc513075ab9d70b63bfd2300ef5eb5ad1cafbbc595 linux/amd64
+--- stderr ---
+--- exit: 0 ---
+
+[003] $ docker run --detach --name percona-restore-e8cb38918f-source --platform linux/amd64 --network none --user postgres --tmpfs /lab:rw,mode=1777 --entrypoint sleep postgres@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382 infinity
+--- stdout ---
+209ea16b3dca858b47c6898f3f4b8ce9bab3af7280afc6b661b5e78a374a48bd
+--- stderr ---
+--- exit: 0 ---
+
+[004] $ docker exec percona-restore-e8cb38918f-source mkdir -m 700 /lab/data /lab/socket
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[005] $ docker exec percona-restore-e8cb38918f-source initdb -D /lab/data --auth-local=peer --auth-host=reject --encoding=UTF8 --locale=C
+--- stdout ---
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+
+fixing permissions on existing directory /lab/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... Etc/UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /lab/data -l logfile start
+
+--- stderr ---
+--- exit: 0 ---
+
+[006] $ docker exec percona-restore-e8cb38918f-source pg_ctl -D /lab/data -l /lab/server.log -o '-k /lab/socket -c listen_addresses='"'"''"'"'' -w start
+--- stdout ---
+waiting for server to start.... done
+server started
+--- stderr ---
+--- exit: 0 ---
+
+[007] $ docker run --detach --name percona-restore-e8cb38918f-target --platform linux/amd64 --network none --user postgres --tmpfs /lab:rw,mode=1777 --entrypoint sleep postgres@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382 infinity
+--- stdout ---
+94269ebf405b0f1caaa0af9796a19ce3a3d222b29568ef089f14291e277ffacb
+--- stderr ---
+--- exit: 0 ---
+
+[008] $ docker exec percona-restore-e8cb38918f-target mkdir -m 700 /lab/data /lab/socket
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[009] $ docker exec percona-restore-e8cb38918f-target initdb -D /lab/data --auth-local=peer --auth-host=reject --encoding=UTF8 --locale=C
+--- stdout ---
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+
+fixing permissions on existing directory /lab/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... Etc/UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /lab/data -l logfile start
+
+--- stderr ---
+--- exit: 0 ---
+
+[010] $ docker exec percona-restore-e8cb38918f-target pg_ctl -D /lab/data -l /lab/server.log -o '-k /lab/socket -c listen_addresses='"'"''"'"'' -w start
+--- stdout ---
+waiting for server to start.... done
+server started
+--- stderr ---
+--- exit: 0 ---
+
+[011] $ docker exec percona-restore-e8cb38918f-source postgres --version
+--- stdout ---
+postgres (PostgreSQL) 18.4 (Debian 18.4-1.pgdg12+1)
+--- stderr ---
+--- exit: 0 ---
+
+[012] $ docker exec percona-restore-e8cb38918f-source psql --version
+--- stdout ---
+psql (PostgreSQL) 18.4 (Debian 18.4-1.pgdg12+1)
+--- stderr ---
+--- exit: 0 ---
+
+[013] $ docker exec percona-restore-e8cb38918f-source pg_dump --version
+--- stdout ---
+pg_dump (PostgreSQL) 18.4 (Debian 18.4-1.pgdg12+1)
+--- stderr ---
+--- exit: 0 ---
+
+[014] $ docker exec percona-restore-e8cb38918f-source pg_restore --version
+--- stdout ---
+pg_restore (PostgreSQL) 18.4 (Debian 18.4-1.pgdg12+1)
+--- stderr ---
+--- exit: 0 ---
+
+[015] $ docker exec percona-restore-e8cb38918f-source cat /etc/os-release
+--- stdout ---
+PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+NAME="Debian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+--- stderr ---
+--- exit: 0 ---
+
+[016] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_setting('server_version_num') = '180004';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[017] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_setting('server_version_num') = '180004';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[018] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_setting('listen_addresses') = ''; 
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[019] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_setting('server_version_num') = '180004';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[020] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_setting('listen_addresses') = ''; 
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[021] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+CREATE DATABASE lab_source TEMPLATE template0;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[022] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d lab_source -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+CREATE ROLE legacy_owner NOLOGIN;
+CREATE ROLE legacy_app NOLOGIN;
+CREATE SCHEMA app AUTHORIZATION legacy_owner;
+SET ROLE legacy_owner;
+CREATE TABLE app.widgets (id bigserial PRIMARY KEY, payload text NOT NULL);
+INSERT INTO app.widgets(payload) VALUES ('synthetic-alpha'), ('synthetic-beta');
+GRANT USAGE ON SCHEMA app TO legacy_app;
+GRANT SELECT, INSERT ON TABLE app.widgets TO legacy_app;
+GRANT USAGE ON SEQUENCE app.widgets_id_seq TO legacy_app;
+ALTER DEFAULT PRIVILEGES FOR ROLE legacy_owner IN SCHEMA app
+  GRANT SELECT, INSERT ON TABLES TO legacy_app;
+ALTER DEFAULT PRIVILEGES FOR ROLE legacy_owner IN SCHEMA app
+  GRANT USAGE ON SEQUENCES TO legacy_app;
+RESET ROLE;
+
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[023] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d lab_source -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT array_agg(payload ORDER BY id) = ARRAY['synthetic-alpha','synthetic-beta'] FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[024] $ docker exec percona-restore-e8cb38918f-source pg_dump -h /lab/socket -U postgres --format=custom --file=/lab/source.dump lab_source
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[025] $ docker exec percona-restore-e8cb38918f-source base64 -w 0 /lab/source.dump
+--- stdout ---
+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--- stderr ---
+--- exit: 0 ---
+
+[026] $ docker exec -i percona-restore-e8cb38918f-target sh -c 'base64 -d > /lab/source.dump'
+--- stdin ---
+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
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[027] $ docker exec percona-restore-e8cb38918f-target sha256sum /lab/source.dump
+--- stdout ---
+b5f2151fccb8ed1e24119be895eca1808485dc4b412c821b30d2dd50143193aa  /lab/source.dump
+--- stderr ---
+--- exit: 0 ---
+
+[028] $ docker exec percona-restore-e8cb38918f-target pg_restore --list /lab/source.dump
+--- stdout ---
+;
+; Archive created at 2026-10-13 08:10:08 UTC
+;     dbname: lab_source
+;     TOC Entries: 17
+;     Compression: gzip
+;     Dump Version: 1.16-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 18.4 (Debian 18.4-1.pgdg12+1)
+;     Dumped by pg_dump version: 18.4 (Debian 18.4-1.pgdg12+1)
+;
+;
+; Selected TOC Entries:
+;
+6; 2615 16387 SCHEMA - app legacy_owner
+3386; 0 0 ACL - SCHEMA app legacy_owner
+221; 1259 16389 TABLE app widgets legacy_owner
+3387; 0 0 ACL app TABLE widgets legacy_owner
+220; 1259 16388 SEQUENCE app widgets_id_seq legacy_owner
+3388; 0 0 SEQUENCE OWNED BY app widgets_id_seq legacy_owner
+3389; 0 0 ACL app SEQUENCE widgets_id_seq legacy_owner
+3228; 2604 16392 DEFAULT app widgets id legacy_owner
+3379; 0 16389 TABLE DATA app widgets legacy_owner
+3390; 0 0 SEQUENCE SET app widgets_id_seq legacy_owner
+3230; 2606 16398 CONSTRAINT app widgets widgets_pkey legacy_owner
+2054; 826 16400 DEFAULT ACL app DEFAULT PRIVILEGES FOR SEQUENCES legacy_owner
+2053; 826 16399 DEFAULT ACL app DEFAULT PRIVILEGES FOR TABLES legacy_owner
+--- stderr ---
+--- exit: 0 ---
+
+[029] $ docker exec percona-restore-e8cb38918f-target pg_restore --file=- /lab/source.dump
+--- stdout ---
+--
+-- PostgreSQL database dump
+--
+
+\restrict fkqAX9FCF3pJ2fbeRb0NE83CZbg1sDUX0fDxXUTRmDd6RXV6xWTs1Yv44sTuiWW
+
+-- Dumped from database version 18.4 (Debian 18.4-1.pgdg12+1)
+-- Dumped by pg_dump version 18.4 (Debian 18.4-1.pgdg12+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: app; Type: SCHEMA; Schema: -; Owner: legacy_owner
+--
+
+CREATE SCHEMA app;
+
+
+ALTER SCHEMA app OWNER TO legacy_owner;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: widgets; Type: TABLE; Schema: app; Owner: legacy_owner
+--
+
+CREATE TABLE app.widgets (
+    id bigint NOT NULL,
+    payload text NOT NULL
+);
+
+
+ALTER TABLE app.widgets OWNER TO legacy_owner;
+
+--
+-- Name: widgets_id_seq; Type: SEQUENCE; Schema: app; Owner: legacy_owner
+--
+
+CREATE SEQUENCE app.widgets_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE app.widgets_id_seq OWNER TO legacy_owner;
+
+--
+-- Name: widgets_id_seq; Type: SEQUENCE OWNED BY; Schema: app; Owner: legacy_owner
+--
+
+ALTER SEQUENCE app.widgets_id_seq OWNED BY app.widgets.id;
+
+
+--
+-- Name: widgets id; Type: DEFAULT; Schema: app; Owner: legacy_owner
+--
+
+ALTER TABLE ONLY app.widgets ALTER COLUMN id SET DEFAULT nextval('app.widgets_id_seq'::regclass);
+
+
+--
+-- Data for Name: widgets; Type: TABLE DATA; Schema: app; Owner: legacy_owner
+--
+
+COPY app.widgets (id, payload) FROM stdin;
+1	synthetic-alpha
+2	synthetic-beta
+\.
+
+
+--
+-- Name: widgets_id_seq; Type: SEQUENCE SET; Schema: app; Owner: legacy_owner
+--
+
+SELECT pg_catalog.setval('app.widgets_id_seq', 2, true);
+
+
+--
+-- Name: widgets widgets_pkey; Type: CONSTRAINT; Schema: app; Owner: legacy_owner
+--
+
+ALTER TABLE ONLY app.widgets
+    ADD CONSTRAINT widgets_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: SCHEMA app; Type: ACL; Schema: -; Owner: legacy_owner
+--
+
+GRANT USAGE ON SCHEMA app TO legacy_app;
+
+
+--
+-- Name: TABLE widgets; Type: ACL; Schema: app; Owner: legacy_owner
+--
+
+GRANT SELECT,INSERT ON TABLE app.widgets TO legacy_app;
+
+
+--
+-- Name: SEQUENCE widgets_id_seq; Type: ACL; Schema: app; Owner: legacy_owner
+--
+
+GRANT USAGE ON SEQUENCE app.widgets_id_seq TO legacy_app;
+
+
+--
+-- Name: DEFAULT PRIVILEGES FOR SEQUENCES; Type: DEFAULT ACL; Schema: app; Owner: legacy_owner
+--
+
+ALTER DEFAULT PRIVILEGES FOR ROLE legacy_owner IN SCHEMA app GRANT USAGE ON SEQUENCES TO legacy_app;
+
+
+--
+-- Name: DEFAULT PRIVILEGES FOR TABLES; Type: DEFAULT ACL; Schema: app; Owner: legacy_owner
+--
+
+ALTER DEFAULT PRIVILEGES FOR ROLE legacy_owner IN SCHEMA app GRANT SELECT,INSERT ON TABLES TO legacy_app;
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+\unrestrict fkqAX9FCF3pJ2fbeRb0NE83CZbg1sDUX0fDxXUTRmDd6RXV6xWTs1Yv44sTuiWW
+
+--- stderr ---
+--- exit: 0 ---
+
+[030] $ docker exec -i percona-restore-e8cb38918f-source psql -X -q -A -t -h /lab/socket -U postgres -d lab_source -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_database(), current_user, session_user, version();
+SELECT n.nspname, pg_get_userbyid(n.nspowner) AS owner, n.nspacl
+FROM pg_namespace n WHERE n.nspname = 'app';
+SELECT c.relname, c.relkind, pg_get_userbyid(c.relowner) AS owner, c.relacl
+FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+WHERE n.nspname = 'app' ORDER BY c.relname;
+SELECT pg_get_userbyid(d.defaclrole) AS creator, n.nspname,
+       d.defaclobjtype, d.defaclacl
+FROM pg_default_acl d LEFT JOIN pg_namespace n ON n.oid = d.defaclnamespace
+ORDER BY creator, n.nspname, d.defaclobjtype;
+SELECT rolname, rolsuper, rolinherit, rolcreaterole, rolcreatedb, rolcanlogin,
+       rolbypassrls
+FROM pg_roles WHERE rolname IN
+('legacy_owner','legacy_app','target_owner','target_app','migration_role')
+ORDER BY rolname;
+
+
+--- end stdin ---
+--- stdout ---
+lab_source|postgres|postgres|PostgreSQL 18.4 (Debian 18.4-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+app|legacy_owner|{legacy_owner=UC/legacy_owner,legacy_app=U/legacy_owner}
+widgets|r|legacy_owner|{legacy_owner=arwdDxtm/legacy_owner,legacy_app=ar/legacy_owner}
+widgets_id_seq|S|legacy_owner|{legacy_owner=rwU/legacy_owner,legacy_app=U/legacy_owner}
+widgets_pkey|i|legacy_owner|
+legacy_owner|app|S|{legacy_app=U/legacy_owner}
+legacy_owner|app|r|{legacy_app=ar/legacy_owner}
+legacy_app|f|t|f|f|f|f
+legacy_owner|f|t|f|f|f|f
+--- stderr ---
+--- exit: 0 ---
+
+[031] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+CREATE ROLE target_owner NOLOGIN;
+CREATE ROLE target_app NOLOGIN;
+CREATE ROLE migration_role NOLOGIN;
+CREATE DATABASE lab_preserved TEMPLATE template0;
+CREATE DATABASE lab_owner_only TEMPLATE template0;
+CREATE DATABASE lab_remapped OWNER target_owner TEMPLATE template0;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[032] $ docker exec percona-restore-e8cb38918f-target pg_restore -h /lab/socket -U postgres --dbname lab_preserved --single-transaction --exit-on-error /lab/source.dump
+--- stdout ---
+--- stderr ---
+pg_restore: error: could not execute query: ERROR:  role "legacy_owner" does not exist
+Command was: ALTER SCHEMA app OWNER TO legacy_owner;
+
+--- exit: 1 ---
+
+[033] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT NOT EXISTS (SELECT FROM pg_namespace WHERE nspname='app');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[034] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+CREATE ROLE legacy_owner NOLOGIN; CREATE ROLE legacy_app NOLOGIN;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[035] $ docker exec percona-restore-e8cb38918f-target pg_restore -h /lab/socket -U postgres --dbname lab_preserved --single-transaction --exit-on-error /lab/source.dump
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[036] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT (SELECT pg_get_userbyid(nspowner)='legacy_owner' FROM pg_namespace WHERE nspname='app') AND bool_and(pg_get_userbyid(c.relowner)='legacy_owner') FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='app';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[037] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT count(*)=2 AND bool_and(pg_get_userbyid(defaclrole)='legacy_owner') FROM pg_default_acl;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[038] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; SELECT current_user = 'legacy_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[039] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; SELECT count(*) >= 0 FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[040] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; BEGIN; INSERT INTO app.widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[041] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('legacy_app','app.widgets','SELECT') AND has_table_privilege('legacy_app','app.widgets','INSERT') AND has_sequence_privilege('legacy_app','app.widgets_id_seq','USAGE') AND NOT has_table_privilege('legacy_app','app.widgets','UPDATE') AND NOT has_table_privilege('legacy_app','app.widgets','DELETE') AND NOT has_sequence_privilege('legacy_app','app.widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[042] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_owner; CREATE TABLE app.future_widgets (id bigserial PRIMARY KEY, payload text NOT NULL);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[043] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; SELECT current_user = 'legacy_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[044] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; SELECT count(*) >= 0 FROM app.future_widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[045] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; BEGIN; INSERT INTO app.future_widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[046] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('legacy_app','app.future_widgets','SELECT') AND has_table_privilege('legacy_app','app.future_widgets','INSERT') AND has_sequence_privilege('legacy_app','app.future_widgets_id_seq','USAGE') AND NOT has_table_privilege('legacy_app','app.future_widgets','UPDATE') AND NOT has_table_privilege('legacy_app','app.future_widgets','DELETE') AND NOT has_sequence_privilege('legacy_app','app.future_widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[047] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_database(), current_user, session_user, version();
+SELECT n.nspname, pg_get_userbyid(n.nspowner) AS owner, n.nspacl
+FROM pg_namespace n WHERE n.nspname = 'app';
+SELECT c.relname, c.relkind, pg_get_userbyid(c.relowner) AS owner, c.relacl
+FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+WHERE n.nspname = 'app' ORDER BY c.relname;
+SELECT pg_get_userbyid(d.defaclrole) AS creator, n.nspname,
+       d.defaclobjtype, d.defaclacl
+FROM pg_default_acl d LEFT JOIN pg_namespace n ON n.oid = d.defaclnamespace
+ORDER BY creator, n.nspname, d.defaclobjtype;
+SELECT rolname, rolsuper, rolinherit, rolcreaterole, rolcreatedb, rolcanlogin,
+       rolbypassrls
+FROM pg_roles WHERE rolname IN
+('legacy_owner','legacy_app','target_owner','target_app','migration_role')
+ORDER BY rolname;
+
+
+--- end stdin ---
+--- stdout ---
+lab_preserved|postgres|postgres|PostgreSQL 18.4 (Debian 18.4-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+app|legacy_owner|{legacy_owner=UC/legacy_owner,legacy_app=U/legacy_owner}
+future_widgets|r|legacy_owner|{legacy_owner=arwdDxtm/legacy_owner,legacy_app=ar/legacy_owner}
+future_widgets_id_seq|S|legacy_owner|{legacy_owner=rwU/legacy_owner,legacy_app=U/legacy_owner}
+future_widgets_pkey|i|legacy_owner|
+widgets|r|legacy_owner|{legacy_owner=arwdDxtm/legacy_owner,legacy_app=ar/legacy_owner}
+widgets_id_seq|S|legacy_owner|{legacy_owner=rwU/legacy_owner,legacy_app=U/legacy_owner}
+widgets_pkey|i|legacy_owner|
+legacy_owner|app|S|{legacy_app=U/legacy_owner}
+legacy_owner|app|r|{legacy_app=ar/legacy_owner}
+legacy_app|f|t|f|f|f|f
+legacy_owner|f|t|f|f|f|f
+migration_role|f|t|f|f|f|f
+target_app|f|t|f|f|f|f
+target_owner|f|t|f|f|f|f
+--- stderr ---
+--- exit: 0 ---
+
+[048] $ docker exec percona-restore-e8cb38918f-target pg_restore -h /lab/socket -U postgres --dbname lab_owner_only --single-transaction --exit-on-error --no-owner /lab/source.dump
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[049] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT bool_and(pg_get_userbyid(c.relowner)='postgres') FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='app';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[050] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('legacy_app','app.widgets','SELECT') AND NOT has_table_privilege('target_app','app.widgets','SELECT');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[051] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT count(*)=2 AND bool_and(pg_get_userbyid(defaclrole)='legacy_owner') FROM pg_default_acl;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[052] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT * FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for schema app
+LINE 1: SELECT * FROM app.widgets;
+                      ^
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[053] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; SELECT current_user = 'legacy_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[054] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; SELECT count(*) >= 0 FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[055] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app; BEGIN; INSERT INTO app.widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[056] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('legacy_app','app.widgets','SELECT') AND has_table_privilege('legacy_app','app.widgets','INSERT') AND has_sequence_privilege('legacy_app','app.widgets_id_seq','USAGE') AND NOT has_table_privilege('legacy_app','app.widgets','UPDATE') AND NOT has_table_privilege('legacy_app','app.widgets','DELETE') AND NOT has_sequence_privilege('legacy_app','app.widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[057] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+CREATE TABLE app.owner_only_future (id bigserial PRIMARY KEY, payload text NOT NULL);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[058] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE legacy_app;
+SELECT * FROM app.owner_only_future;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table owner_only_future
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[059] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT NOT has_sequence_privilege('legacy_app','app.owner_only_future_id_seq','USAGE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[060] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_database(), current_user, session_user, version();
+SELECT n.nspname, pg_get_userbyid(n.nspowner) AS owner, n.nspacl
+FROM pg_namespace n WHERE n.nspname = 'app';
+SELECT c.relname, c.relkind, pg_get_userbyid(c.relowner) AS owner, c.relacl
+FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+WHERE n.nspname = 'app' ORDER BY c.relname;
+SELECT pg_get_userbyid(d.defaclrole) AS creator, n.nspname,
+       d.defaclobjtype, d.defaclacl
+FROM pg_default_acl d LEFT JOIN pg_namespace n ON n.oid = d.defaclnamespace
+ORDER BY creator, n.nspname, d.defaclobjtype;
+SELECT rolname, rolsuper, rolinherit, rolcreaterole, rolcreatedb, rolcanlogin,
+       rolbypassrls
+FROM pg_roles WHERE rolname IN
+('legacy_owner','legacy_app','target_owner','target_app','migration_role')
+ORDER BY rolname;
+
+
+--- end stdin ---
+--- stdout ---
+lab_owner_only|postgres|postgres|PostgreSQL 18.4 (Debian 18.4-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+app|postgres|{postgres=UC/postgres,legacy_app=U/postgres}
+owner_only_future|r|postgres|
+owner_only_future_id_seq|S|postgres|
+owner_only_future_pkey|i|postgres|
+widgets|r|postgres|{postgres=arwdDxtm/postgres,legacy_app=ar/postgres}
+widgets_id_seq|S|postgres|{postgres=rwU/postgres,legacy_app=U/postgres}
+widgets_pkey|i|postgres|
+legacy_owner|app|S|{legacy_app=U/legacy_owner}
+legacy_owner|app|r|{legacy_app=ar/legacy_owner}
+legacy_app|f|t|f|f|f|f
+legacy_owner|f|t|f|f|f|f
+migration_role|f|t|f|f|f|f
+target_app|f|t|f|f|f|f
+target_owner|f|t|f|f|f|f
+--- stderr ---
+--- exit: 0 ---
+
+[061] $ docker exec percona-restore-e8cb38918f-target pg_restore -h /lab/socket -U postgres --dbname lab_remapped --single-transaction --exit-on-error --no-owner --no-acl --role=target_owner /lab/source.dump
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[062] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT (SELECT pg_get_userbyid(nspowner)='target_owner' FROM pg_namespace WHERE nspname='app') AND bool_and(pg_get_userbyid(c.relowner)='target_owner') FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='app';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[063] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT NOT EXISTS(SELECT FROM pg_default_acl) AND NOT has_schema_privilege('legacy_app','app','USAGE') AND NOT has_table_privilege('legacy_app','app.widgets','SELECT') AND NOT has_sequence_privilege('legacy_app','app.widgets_id_seq','USAGE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[064] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT * FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for schema app
+LINE 1: SELECT * FROM app.widgets;
+                      ^
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[065] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_owner; GRANT USAGE ON SCHEMA app TO target_app;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[066] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT * FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table widgets
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[067] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_owner; GRANT SELECT, INSERT ON TABLE app.widgets TO target_app;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[068] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT count(*)=2 FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[069] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+INSERT INTO app.widgets(payload) VALUES ('synthetic-denied');
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for sequence widgets_id_seq
+LOCATION:  nextval_internal, sequence.c:652
+--- exit: 3 ---
+
+[070] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_owner; GRANT USAGE ON SEQUENCE app.widgets_id_seq TO target_app;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[071] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT current_user = 'target_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[072] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT count(*) >= 0 FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[073] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; BEGIN; INSERT INTO app.widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[074] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('target_app','app.widgets','SELECT') AND has_table_privilege('target_app','app.widgets','INSERT') AND has_sequence_privilege('target_app','app.widgets_id_seq','USAGE') AND NOT has_table_privilege('target_app','app.widgets','UPDATE') AND NOT has_table_privilege('target_app','app.widgets','DELETE') AND NOT has_sequence_privilege('target_app','app.widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[075] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+UPDATE app.widgets SET payload='synthetic-denied' WHERE id=1;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table widgets
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[076] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+DELETE FROM app.widgets WHERE id=1;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table widgets
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[077] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT setval('app.widgets_id_seq',1000);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for sequence widgets_id_seq
+LOCATION:  do_setval, sequence.c:961
+--- exit: 3 ---
+
+[078] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+CREATE TABLE app.forbidden(id integer);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for schema app
+LINE 1: CREATE TABLE app.forbidden(id integer);
+                     ^
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[079] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_owner; CREATE TABLE app.early_widgets (id bigserial PRIMARY KEY, payload text NOT NULL);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[080] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT * FROM app.early_widgets;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table early_widgets
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[081] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_owner;
+ALTER DEFAULT PRIVILEGES FOR ROLE target_owner IN SCHEMA app GRANT SELECT, INSERT ON TABLES TO target_app;
+ALTER DEFAULT PRIVILEGES FOR ROLE target_owner IN SCHEMA app GRANT USAGE ON SEQUENCES TO target_app;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[082] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT * FROM app.early_widgets;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table early_widgets
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[083] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT NOT has_sequence_privilege('target_app','app.early_widgets_id_seq','USAGE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[084] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_owner;
+GRANT SELECT, INSERT ON TABLE app.early_widgets TO target_app;
+GRANT USAGE ON SEQUENCE app.early_widgets_id_seq TO target_app;
+CREATE TABLE app.future_widgets (id bigserial PRIMARY KEY, payload text NOT NULL);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[085] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT current_user = 'target_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[086] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT count(*) >= 0 FROM app.early_widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[087] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; BEGIN; INSERT INTO app.early_widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[088] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('target_app','app.early_widgets','SELECT') AND has_table_privilege('target_app','app.early_widgets','INSERT') AND has_sequence_privilege('target_app','app.early_widgets_id_seq','USAGE') AND NOT has_table_privilege('target_app','app.early_widgets','UPDATE') AND NOT has_table_privilege('target_app','app.early_widgets','DELETE') AND NOT has_sequence_privilege('target_app','app.early_widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[089] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT current_user = 'target_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[090] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT count(*) >= 0 FROM app.future_widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[091] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; BEGIN; INSERT INTO app.future_widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[092] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('target_app','app.future_widgets','SELECT') AND has_table_privilege('target_app','app.future_widgets','INSERT') AND has_sequence_privilege('target_app','app.future_widgets_id_seq','USAGE') AND NOT has_table_privilege('target_app','app.future_widgets','UPDATE') AND NOT has_table_privilege('target_app','app.future_widgets','DELETE') AND NOT has_sequence_privilege('target_app','app.future_widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[093] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT count(*)=2 AND bool_and(pg_get_userbyid(defaclrole)='target_owner') FROM pg_default_acl;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[094] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d postgres -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+GRANT target_owner TO migration_role;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[095] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE migration_role; CREATE TABLE app.migration_widgets (id bigserial PRIMARY KEY, payload text NOT NULL);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[096] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT pg_get_userbyid(relowner)='migration_role' FROM pg_class WHERE oid='app.migration_widgets'::regclass;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[097] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app;
+SELECT * FROM app.migration_widgets;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+ERROR:  42501: permission denied for table migration_widgets
+LOCATION:  aclcheck_error, aclchk.c:2793
+--- exit: 3 ---
+
+[098] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET SESSION AUTHORIZATION migration_role;
+SET ROLE target_owner;
+CREATE TABLE app.migration_fixed_widgets (id bigserial PRIMARY KEY, payload text NOT NULL);
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[099] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT pg_get_userbyid(relowner)='target_owner' FROM pg_class WHERE oid='app.migration_fixed_widgets'::regclass;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[100] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT current_user = 'target_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[101] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT count(*) >= 0 FROM app.migration_fixed_widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[102] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; BEGIN; INSERT INTO app.migration_fixed_widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[103] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('target_app','app.migration_fixed_widgets','SELECT') AND has_table_privilege('target_app','app.migration_fixed_widgets','INSERT') AND has_sequence_privilege('target_app','app.migration_fixed_widgets_id_seq','USAGE') AND NOT has_table_privilege('target_app','app.migration_fixed_widgets','UPDATE') AND NOT has_table_privilege('target_app','app.migration_fixed_widgets','DELETE') AND NOT has_sequence_privilege('target_app','app.migration_fixed_widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[104] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE migration_role;
+GRANT SELECT, INSERT ON TABLE app.migration_widgets TO target_app;
+GRANT USAGE ON SEQUENCE app.migration_widgets_id_seq TO target_app;
+
+--- end stdin ---
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
+
+[105] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT current_user = 'target_app' AND NOT (SELECT rolsuper FROM pg_roles WHERE rolname = current_user);
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[106] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; SELECT count(*) >= 0 FROM app.migration_widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[107] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SET ROLE target_app; BEGIN; INSERT INTO app.migration_widgets(payload) VALUES ('synthetic-probe') RETURNING id > 0; ROLLBACK;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[108] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT has_table_privilege('target_app','app.migration_widgets','SELECT') AND has_table_privilege('target_app','app.migration_widgets','INSERT') AND has_sequence_privilege('target_app','app.migration_widgets_id_seq','USAGE') AND NOT has_table_privilege('target_app','app.migration_widgets','UPDATE') AND NOT has_table_privilege('target_app','app.migration_widgets','DELETE') AND NOT has_sequence_privilege('target_app','app.migration_widgets_id_seq','UPDATE');
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[109] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_preserved -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT array_agg(payload ORDER BY id)=ARRAY['synthetic-alpha','synthetic-beta'] FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[110] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_owner_only -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT array_agg(payload ORDER BY id)=ARRAY['synthetic-alpha','synthetic-beta'] FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[111] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT array_agg(payload ORDER BY id)=ARRAY['synthetic-alpha','synthetic-beta'] FROM app.widgets;
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[112] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT NOT pg_has_role('target_app','target_owner','MEMBER') AND NOT pg_has_role('target_app','migration_role','MEMBER') AND NOT rolsuper AND NOT rolcreaterole AND NOT rolcreatedb AND NOT rolbypassrls AND NOT rolcanlogin FROM pg_roles WHERE rolname='target_app';
+
+--- end stdin ---
+--- stdout ---
+t
+--- stderr ---
+--- exit: 0 ---
+
+[113] $ docker exec -i percona-restore-e8cb38918f-target psql -X -q -A -t -h /lab/socket -U postgres -d lab_remapped -v ON_ERROR_STOP=1 -v VERBOSITY=verbose
+--- stdin ---
+SELECT current_database(), current_user, session_user, version();
+SELECT n.nspname, pg_get_userbyid(n.nspowner) AS owner, n.nspacl
+FROM pg_namespace n WHERE n.nspname = 'app';
+SELECT c.relname, c.relkind, pg_get_userbyid(c.relowner) AS owner, c.relacl
+FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+WHERE n.nspname = 'app' ORDER BY c.relname;
+SELECT pg_get_userbyid(d.defaclrole) AS creator, n.nspname,
+       d.defaclobjtype, d.defaclacl
+FROM pg_default_acl d LEFT JOIN pg_namespace n ON n.oid = d.defaclnamespace
+ORDER BY creator, n.nspname, d.defaclobjtype;
+SELECT rolname, rolsuper, rolinherit, rolcreaterole, rolcreatedb, rolcanlogin,
+       rolbypassrls
+FROM pg_roles WHERE rolname IN
+('legacy_owner','legacy_app','target_owner','target_app','migration_role')
+ORDER BY rolname;
+
+
+--- end stdin ---
+--- stdout ---
+lab_remapped|postgres|postgres|PostgreSQL 18.4 (Debian 18.4-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+app|target_owner|{target_owner=UC/target_owner,target_app=U/target_owner}
+early_widgets|r|target_owner|{target_owner=arwdDxtm/target_owner,target_app=ar/target_owner}
+early_widgets_id_seq|S|target_owner|{target_owner=rwU/target_owner,target_app=U/target_owner}
+early_widgets_pkey|i|target_owner|
+future_widgets|r|target_owner|{target_owner=arwdDxtm/target_owner,target_app=ar/target_owner}
+future_widgets_id_seq|S|target_owner|{target_owner=rwU/target_owner,target_app=U/target_owner}
+future_widgets_pkey|i|target_owner|
+migration_fixed_widgets|r|target_owner|{target_owner=arwdDxtm/target_owner,target_app=ar/target_owner}
+migration_fixed_widgets_id_seq|S|target_owner|{target_owner=rwU/target_owner,target_app=U/target_owner}
+migration_fixed_widgets_pkey|i|target_owner|
+migration_widgets|r|migration_role|{migration_role=arwdDxtm/migration_role,target_app=ar/migration_role}
+migration_widgets_id_seq|S|migration_role|{migration_role=rwU/migration_role,target_app=U/migration_role}
+migration_widgets_pkey|i|migration_role|
+widgets|r|target_owner|{target_owner=arwdDxtm/target_owner,target_app=ar/target_owner}
+widgets_id_seq|S|target_owner|{target_owner=rwU/target_owner,target_app=U/target_owner}
+widgets_pkey|i|target_owner|
+target_owner|app|S|{target_app=U/target_owner}
+target_owner|app|r|{target_app=ar/target_owner}
+legacy_app|f|t|f|f|f|f
+legacy_owner|f|t|f|f|f|f
+migration_role|f|t|f|f|f|f
+target_app|f|t|f|f|f|f
+target_owner|f|t|f|f|f|f
+--- stderr ---
+--- exit: 0 ---
+
+[114] $ docker exec percona-restore-e8cb38918f-source cat /lab/server.log
+--- stdout ---
+2026-10-13 08:09:59.225 UTC [40] LOG:  starting PostgreSQL 18.4 (Debian 18.4-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+2026-10-13 08:09:59.225 UTC [40] LOG:  listening on Unix socket "/lab/socket/.s.PGSQL.5432"
+2026-10-13 08:09:59.228 UTC [46] LOG:  database system was shut down at 2026-10-13 08:09:59 UTC
+2026-10-13 08:09:59.229 UTC [40] LOG:  database system is ready to accept connections
+--- stderr ---
+--- exit: 0 ---
+
+[115] $ docker rm --force --volumes percona-restore-e8cb38918f-source
+--- stdout ---
+percona-restore-e8cb38918f-source
+--- stderr ---
+--- exit: 0 ---
+
+[116] $ docker exec percona-restore-e8cb38918f-target cat /lab/server.log
+--- stdout ---
+2026-10-13 08:10:06.439 UTC [38] LOG:  starting PostgreSQL 18.4 (Debian 18.4-1.pgdg12+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+2026-10-13 08:10:06.439 UTC [38] LOG:  listening on Unix socket "/lab/socket/.s.PGSQL.5432"
+2026-10-13 08:10:06.441 UTC [44] LOG:  database system was shut down at 2026-10-13 08:10:06 UTC
+2026-10-13 08:10:06.443 UTC [38] LOG:  database system is ready to accept connections
+2026-10-13 08:10:09.263 UTC [99] ERROR:  role "legacy_owner" does not exist
+2026-10-13 08:10:09.263 UTC [99] STATEMENT:  ALTER SCHEMA app OWNER TO legacy_owner;
+	
+	
+2026-10-13 08:10:11.722 UTC [240] ERROR:  permission denied for schema app at character 15
+2026-10-13 08:10:11.722 UTC [240] STATEMENT:  SELECT * FROM app.widgets;
+2026-10-13 08:10:12.464 UTC [282] ERROR:  permission denied for table owner_only_future
+2026-10-13 08:10:12.464 UTC [282] STATEMENT:  SELECT * FROM app.owner_only_future;
+2026-10-13 08:10:13.176 UTC [323] ERROR:  permission denied for schema app at character 15
+2026-10-13 08:10:13.176 UTC [323] STATEMENT:  SELECT * FROM app.widgets;
+2026-10-13 08:10:13.430 UTC [336] ERROR:  permission denied for table widgets
+2026-10-13 08:10:13.430 UTC [336] STATEMENT:  SELECT * FROM app.widgets;
+2026-10-13 08:10:13.821 UTC [357] ERROR:  permission denied for sequence widgets_id_seq
+2026-10-13 08:10:13.821 UTC [357] STATEMENT:  INSERT INTO app.widgets(payload) VALUES ('synthetic-denied');
+2026-10-13 08:10:14.587 UTC [399] ERROR:  permission denied for table widgets
+2026-10-13 08:10:14.587 UTC [399] STATEMENT:  UPDATE app.widgets SET payload='synthetic-denied' WHERE id=1;
+2026-10-13 08:10:14.708 UTC [406] ERROR:  permission denied for table widgets
+2026-10-13 08:10:14.708 UTC [406] STATEMENT:  DELETE FROM app.widgets WHERE id=1;
+2026-10-13 08:10:14.837 UTC [413] ERROR:  permission denied for sequence widgets_id_seq
+2026-10-13 08:10:14.837 UTC [413] STATEMENT:  SELECT setval('app.widgets_id_seq',1000);
+2026-10-13 08:10:14.966 UTC [419] ERROR:  permission denied for schema app at character 14
+2026-10-13 08:10:14.966 UTC [419] STATEMENT:  CREATE TABLE app.forbidden(id integer);
+2026-10-13 08:10:15.241 UTC [433] ERROR:  permission denied for table early_widgets
+2026-10-13 08:10:15.241 UTC [433] STATEMENT:  SELECT * FROM app.early_widgets;
+2026-10-13 08:10:15.503 UTC [447] ERROR:  permission denied for table early_widgets
+2026-10-13 08:10:15.503 UTC [447] STATEMENT:  SELECT * FROM app.early_widgets;
+2026-10-13 08:10:17.512 UTC [552] ERROR:  permission denied for table migration_widgets
+2026-10-13 08:10:17.512 UTC [552] STATEMENT:  SELECT * FROM app.migration_widgets;
+--- stderr ---
+--- exit: 0 ---
+
+[117] $ docker rm --force --volumes percona-restore-e8cb38918f-target
+--- stdout ---
+percona-restore-e8cb38918f-target
+--- stderr ---
+--- exit: 0 ---
+
+[118] $ docker ps -a --filter name=percona-restore-e8cb38918f --format '{{.Names}}'
+--- stdout ---
+--- stderr ---
+--- exit: 0 ---
