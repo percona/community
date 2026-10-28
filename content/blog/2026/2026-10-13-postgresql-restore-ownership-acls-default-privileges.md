@@ -18,39 +18,23 @@ The examples use synthetic data in disposable local containers. AI/model assista
 
 ## Choose the restore policy
 
-<table id="restore-policy-comparison" role="table">
-  <caption>Ownership and access under the two restore policies</caption>
-  <thead role="rowgroup">
-    <tr role="row">
-      <th id="restore-policy" scope="col" role="columnheader">Policy</th>
-      <th id="restore-objects" scope="col" role="columnheader">Restored objects</th>
-      <th id="restore-access" scope="col" role="columnheader">Existing application access</th>
-      <th id="restore-future" scope="col" role="columnheader">Future objects</th>
-    </tr>
-  </thead>
-  <tbody role="rowgroup">
-    <tr role="row">
-      <td headers="restore-policy" role="cell"><span class="restore-policy-label" aria-hidden="true">Policy</span>Preserve ownership and ACLs</td>
-      <td headers="restore-objects" role="cell"><span class="restore-policy-label" aria-hidden="true">Restored objects</span>Keep the source owners; create the required roles first</td>
-      <td headers="restore-access" role="cell"><span class="restore-policy-label" aria-hidden="true">Existing application access</span>Replay the source grants</td>
-      <td headers="restore-future" role="cell"><span class="restore-policy-label" aria-hidden="true">Future objects</span>Check the original creator’s default privileges</td>
-    </tr>
-    <tr role="row">
-      <td headers="restore-policy" role="cell"><span class="restore-policy-label" aria-hidden="true">Policy</span>Remap deliberately</td>
-      <td headers="restore-objects" role="cell"><span class="restore-policy-label" aria-hidden="true">Restored objects</span>Use <code>--no-owner --no-acl --role=target_owner</code></td>
-      <td headers="restore-access" role="cell"><span class="restore-policy-label" aria-hidden="true">Existing application access</span>Grant the target application’s schema, table and sequence privileges explicitly</td>
-      <td headers="restore-future" role="cell"><span class="restore-policy-label" aria-hidden="true">Future objects</span>Set defaults for the role that actually creates the objects</td>
-    </tr>
-  </tbody>
-</table>
+### Preserve ownership and ACLs
+
+- **Restored objects:** Keep the source owners; create the required roles first.
+- **Existing application access:** Replay the source grants.
+- **Future objects:** Check the original creator’s default privileges.
+
+### Remap deliberately
+
+- **Restored objects:** Use `--no-owner --no-acl --role=target_owner`.
+- **Existing application access:** Grant the target application’s schema, table and sequence privileges explicitly.
+- **Future objects:** Set defaults for the role that actually creates the objects.
 
 `--no-owner` alone is not the second policy: it changes ownership without translating role names in the archived grants. The diagnostic branch below shows the difference.
 
 ## What the lab controls
 
 The lab pins PostgreSQL **18.4**, using the `linux/amd64` image:
-
-<p class="restore-code-hint">Scroll horizontally inside the code block to read the full image digest.</p>
 
 ```text
 postgres:18.4-bookworm@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382

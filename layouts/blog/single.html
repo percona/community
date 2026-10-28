@@ -6,9 +6,6 @@
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/code.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/single.scss") | safeCSS) -}}
   {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/blog-post.scss") | safeCSS) -}}
-  {{- if eq .Params.slug "postgresql-restore-ownership-acls-default-privileges" -}}
-    {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/postgresql-restore-permissions.scss") | safeCSS) -}}
-  {{- end -}}
 {{- end }}
 
 {{ define "meta" }}
@@ -30,7 +27,7 @@
 
 {{ define "main" }}
 
-  <article class="text hub-single hub-single--blog blog-post{{ if eq .Params.slug "postgresql-restore-ownership-acls-default-privileges" }} blog-post--restore-permissions{{ end }}{{ if not $.PublishDate}} text--simple{{ end }}">
+  <article class="text hub-single hub-single--blog blog-post{{ if not $.PublishDate}} text--simple{{ end }}">
 
     <a class="hub-single__back" href="{{ (site.GetPage "/blog").RelPermalink }}">
       <span aria-hidden="true">&larr;</span>
