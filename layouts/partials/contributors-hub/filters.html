@@ -19,6 +19,8 @@
 <div class="el-filters-bar">
   <div class="el-filters" data-el-filters>
 
+    {{/* Already on /contributor_type/author|speaker — Type chip is redundant. */}}
+    {{ if ne $activeType "contributor_type" }}
     <details class="el-filters__field">
       <summary class="el-filters__btn{{ if eq $activeType "contributor_type" }} is-active{{ end }}">
         {{ if eq $activeType "contributor_type" }}
@@ -39,6 +41,7 @@
         </ul>
       </div>
     </details>
+    {{ end }}
 
     <details class="el-filters__field">
       <summary class="el-filters__btn{{ if eq $activeType "contributor_year" }} is-active{{ end }}">

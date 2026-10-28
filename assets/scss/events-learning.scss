@@ -1658,10 +1658,12 @@ body.is-events-learning main.page {
       width: 100%;
     }
 
+    // Desktop rule uses overflow-x: clip — that also clips absolute filter panels.
     .events-learning__main {
       width: 100%;
       max-width: 100%;
       align-self: stretch;
+      overflow: visible;
     }
 
     // Compact back chip — full pill was dominating the first viewport.
@@ -1676,9 +1678,8 @@ body.is-events-learning main.page {
       }
     }
 
-    // Two compact rows on narrow screens:
-    // 1) Type / Activity / Tags (scroll)
-    // 2) Affiliation + Search
+    // Keep real boxes (no display:contents) so position:absolute panels work.
+    // Row wrap: chips, then Affiliation + Search on the next line.
     .el-filters-bar {
       display: flex;
       flex-direction: row;
@@ -1686,28 +1687,42 @@ body.is-events-learning main.page {
       align-items: center;
       gap: 0.5rem;
       position: relative;
+      z-index: 40;
       overflow: visible;
       margin-bottom: 0.75rem;
     }
 
     .el-filters-bar .el-filters,
     .el-filters {
-      display: contents; // fields participate in the bar flex
+      display: flex;
+      flex: 1 1 auto;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 0;
+      width: 100%;
       margin: 0;
+      margin-bottom: 0;
       padding: 0;
+      overflow: visible;
     }
 
     .el-filters__field {
       flex: 0 0 auto;
-    }
+      position: relative;
 
-    .el-filters__field:not(.el-filters__field--affiliation) {
-      order: 1;
+      &[open] {
+        z-index: 50;
+      }
     }
 
     .el-filters__field--affiliation {
-      order: 2;
-      flex: 0 0 auto;
+      // Sit with search on the trailing row when space is tight.
+      margin-right: 0;
+    }
+
+    .el-filters__panel {
+      z-index: 60;
     }
 
     // Drop "Affiliation:" / "Type:" prefixes — value alone fits the chip.
@@ -1716,13 +1731,12 @@ body.is-events-learning main.page {
     }
 
     .el-filters-search {
-      order: 3;
-      flex: 1 1 auto;
+      flex: 1 1 8rem;
       width: auto;
       min-width: 7rem;
       max-width: none;
       position: relative;
-      z-index: 2;
+      z-index: 1;
 
       &__input {
         height: 32px;
@@ -1733,8 +1747,7 @@ body.is-events-learning main.page {
     }
 
     .el-filters-search__status {
-      flex: 1 0 100%;
-      order: 4;
+      width: 100%;
       margin-bottom: 0.5rem;
     }
   }
