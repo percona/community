@@ -18,6 +18,9 @@ images:
 aliases:
 - /speakers/agustin_gallego
 - /speakers/agustin_gallego/
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

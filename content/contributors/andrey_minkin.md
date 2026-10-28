@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/andrey_minkin
 - /speakers/andrey_minkin/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

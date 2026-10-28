@@ -18,6 +18,8 @@ images:
 aliases:
 - /authors/jack_vansickle
 - /authors/jack_vansickle/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

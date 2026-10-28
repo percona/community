@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/vladimir_drynkin
 - /authors/vladimir_drynkin/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

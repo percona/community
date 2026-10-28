@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/jorge_torres
 - /authors/jorge_torres/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

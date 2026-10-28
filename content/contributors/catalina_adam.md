@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/catalina_adam
 - /authors/catalina_adam/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PMM

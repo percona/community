@@ -5,6 +5,9 @@ fullname: Ninad Shah
 fullname_pronounciation: Ninad Shah
 tagline: PostgreSQL DBA, Percona
 status: current
+contributor_status:
+- staff
+
 social:
   facebook: null
   github: null

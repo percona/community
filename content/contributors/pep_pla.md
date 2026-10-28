@@ -18,6 +18,8 @@ aliases:
 - /speakers/pep_pla
 - /speakers/pep_pla/
 planet_pg_tag: pg_pep
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

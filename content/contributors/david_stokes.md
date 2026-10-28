@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/david_stokes
 - /authors/david_stokes/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

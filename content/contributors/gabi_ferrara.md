@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/gabi_ferrara
 - /speakers/gabi_ferrara/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

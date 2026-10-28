@@ -13,7 +13,10 @@ social:
   website: null
 images:
 - contributors/adnan_supic.jpeg
-status: community
+status: current
+contributor_status:
+- staff
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

@@ -13,7 +13,9 @@ social:
   website: null
 images:
 - contributors/fabio_da_silva.jpeg
-status: community
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -13,7 +13,9 @@ social:
   website: null
 images:
 - contributors/smit_arora.png
-status: community
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/mattias_jonsson
 - /speakers/mattias_jonsson/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

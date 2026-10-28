@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/dr_gavin_mendel
 - /speakers/dr_gavin_mendel/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

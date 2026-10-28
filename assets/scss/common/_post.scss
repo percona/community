@@ -268,6 +268,16 @@ $title-hover: #1059c0;
 
   .lb-leader-name {
     min-width: 0;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  // Square mark sits high against Poppins caps — nudge down to optical center.
+  .author-badge {
+    flex-shrink: 0;
+    align-self: center;
+    position: relative;
+    top: 0.12em;
   }
 }
 

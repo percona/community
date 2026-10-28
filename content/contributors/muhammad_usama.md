@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/muhammad_usama
 - /speakers/muhammad_usama/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/sam_lambert
 - /speakers/sam_lambert/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/avi_press
 - /speakers/avi_press/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

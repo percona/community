@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/natalia_marukovich
 - /authors/natalia_marukovich/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

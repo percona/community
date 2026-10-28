@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/michel_tricot
 - /speakers/michel_tricot/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes
