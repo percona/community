@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 560" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="560" fill="#ffffff"/>
+
+  <!-- Column titles -->
+  <text x="245" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">Old stack (C)</text>
+  <text x="735" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">New stack (C++)</text>
+
+  <!-- ============ OLD STACK ============ -->
+  <!-- Percona Server for MySQL outer box -->
+  <rect x="60" y="56" width="370" height="420" rx="10" fill="#fef9e7" stroke="#d4ac0d" stroke-width="2"/>
+  <text x="245" y="84" text-anchor="middle" font-size="16" font-weight="600" fill="#7d6608">Percona Server for MySQL</text>
+
+  <!-- component_keyring_kmip -->
+  <rect x="84" y="100" width="322" height="40" rx="6" fill="#5b7fb5" stroke="#34495e" stroke-width="1.5"/>
+  <text x="245" y="125" text-anchor="middle" font-size="14" fill="#ffffff">component_keyring_kmip</text>
+
+  <!-- kmippp -->
+  <rect x="140" y="188" width="210" height="52" rx="6" fill="#aeb6bf" stroke="#34495e" stroke-width="1.5"/>
+  <text x="245" y="219" text-anchor="middle" font-size="15" fill="#1c2833">kmippp</text>
+  <text x="245" y="235" text-anchor="middle" font-size="11" fill="#2c3e50">C++ wrapper</text>
+
+  <!-- kmip_bio -->
+  <rect x="140" y="272" width="210" height="52" rx="6" fill="#aeb6bf" stroke="#34495e" stroke-width="1.5"/>
+  <text x="245" y="303" text-anchor="middle" font-size="15" fill="#1c2833">kmip_bio</text>
+  <text x="245" y="319" text-anchor="middle" font-size="11" fill="#2c3e50">C, BIO transport glue</text>
+
+  <!-- libkmip -->
+  <rect x="140" y="356" width="210" height="52" rx="6" fill="#aeb6bf" stroke="#34495e" stroke-width="1.5"/>
+  <text x="245" y="387" text-anchor="middle" font-size="15" fill="#1c2833">libkmip</text>
+  <text x="245" y="403" text-anchor="middle" font-size="11" fill="#2c3e50">C, protocol + encode/decode</text>
+
+  <!-- arrows old stack (dependency flows upward) -->
+  <line x1="245" y1="356" x2="245" y2="328" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="245" y1="272" x2="245" y2="244" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="245" y1="188" x2="245" y2="144" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="245" y="440" text-anchor="middle" font-size="12.5" fill="#7d6608">3 layers to touch for one new operation</text>
+
+  <!-- ============ NEW STACK ============ -->
+  <rect x="550" y="56" width="370" height="420" rx="10" fill="#eafaf1" stroke="#1e8449" stroke-width="2"/>
+  <text x="735" y="84" text-anchor="middle" font-size="16" font-weight="600" fill="#145a32">Percona Server for MySQL</text>
+
+  <!-- component_keyring_kmip -->
+  <rect x="574" y="100" width="322" height="40" rx="6" fill="#5b7fb5" stroke="#34495e" stroke-width="1.5"/>
+  <text x="735" y="125" text-anchor="middle" font-size="14" fill="#ffffff">component_keyring_kmip</text>
+
+  <!-- kmipclient -->
+  <rect x="630" y="230" width="210" height="52" rx="6" fill="#52be80" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="735" y="261" text-anchor="middle" font-size="15" fill="#0b3d20">kmipclient</text>
+  <text x="735" y="277" text-anchor="middle" font-size="11" fill="#0b3d20">C++, transport + pool + API</text>
+
+  <!-- kmipcore -->
+  <rect x="630" y="314" width="210" height="52" rx="6" fill="#52be80" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="735" y="345" text-anchor="middle" font-size="15" fill="#0b3d20">kmipcore</text>
+  <text x="735" y="361" text-anchor="middle" font-size="11" fill="#0b3d20">C++, protocol + TTLV, no I/O</text>
+
+  <!-- utils -->
+  <rect x="852" y="314" width="110" height="52" rx="6" fill="#d7dbdd" stroke="#616a6b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="907" y="336" text-anchor="middle" font-size="13" fill="#1c2833">utils</text>
+  <text x="907" y="351" text-anchor="middle" font-size="10" fill="#4d5656">in progress</text>
+
+  <!-- arrows new stack -->
+  <line x1="735" y1="314" x2="735" y2="286" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="735" y1="230" x2="735" y2="144" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="735" y="440" text-anchor="middle" font-size="12.5" fill="#145a32">1 layer (kmipcore) to touch for one new operation</text>
+
+  <!-- footer -->
+  <text x="490" y="520" text-anchor="middle" font-size="11.5" fill="#808b96">kmipcore also stands alone: no network dependency, reusable outside the MySQL keyring</text>
+</svg>
