@@ -34,6 +34,7 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Cloud-Native
+- DuckDB
 - Event
 - Events
 - Featured
@@ -53,6 +54,8 @@ events_tags:
 - event
 - fosdem
 - in-memory
+- linux
+- observability
 - opensource
 - performance
 - russia
@@ -68,6 +71,7 @@ talks_tags:
 - Cloud-Native
 - DBaaS
 - Databases
+- DuckDB
 - Linux
 - MariaDB
 - Observability
@@ -85,18 +89,18 @@ talks_tags:
 - developer-conference
 - eBPF
 - english
-- kubernetes
 - software
 - spanish
 - technology
 - video
 - web
 posts_count: 0
-events_count: 42
-talks_count: 72
+events_count: 44
+talks_count: 74
 contributor_type:
 - speaker
 contributor_year:
+- '2027'
 - '2026'
 - '2025'
 - '2024'

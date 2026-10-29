@@ -26,17 +26,24 @@ contributor_tag:
 - MySQL
 blog_tags: []
 events_tags:
+- DuckDB
+- Event
 - Events
 - Featured
 - MySQL-Summit
+- opensource
+- speaking
 talks_tags:
+- Analytics
+- DuckDB
 - Video
 posts_count: 0
-events_count: 3
-talks_count: 1
+events_count: 4
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
+- '2026'
 - '2025'
 - '2021'
 ---
