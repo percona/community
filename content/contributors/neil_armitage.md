@@ -20,27 +20,17 @@ aliases:
 - /speakers/neil_armitage/
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
-- MySQL
-blog_tags: []
-events_tags:
-- Event
-- Open-Source
-- Promo
-- fosdem
-- opensource
-- speaking
-- sponsorship
-talks_tags:
-- Open Source
-- Slides
-- Video
-posts_count: 0
-events_count: 4
-talks_count: 1
+- PostgreSQL
+blog_tags:
+- PostgreSQL
+events_tags: []
+talks_tags: []
+posts_count: 1
+events_count: 0
+talks_count: 0
 contributor_type:
-- speaker
+- author
 contributor_year:
-- '2025'
-- '2023'
+- '2026'
 ---
 Senior Database Reliability Engineer, deploying and maintaining MySQL, Redis, RabbitMQ, and Pulsar clusters on Kubernetes at scale. Over three decades as a MySQL and Oracle DBA, including years at Continuent evaluating and deploying early Galera/Percona XtraDB Cluster implementations across multi-cloud environments, followed by roles spanning Skyscanner, VMware, and several DevOps leadership positions. He’s spent his career on the unglamorous but essential work of keeping production data infrastructure alive.

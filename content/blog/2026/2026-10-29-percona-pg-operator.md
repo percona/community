@@ -1,10 +1,12 @@
 ---
 title: "Getting Started with Percona PostgreSQL Operator"
-date: "2026-10-13T08:45:00+00:00"
+date: "2026-10-29T07:04:00+00:00"
 tags: ['PostgreSQL']
 categories: ['PostgreSQL']
 authors:
   - neil_armitage
+images:
+  - blog/2026/10/getting-started-pg-cover.png
 ---
 
 I'm a long term user of MySQL with both asynchronous replication and synchronous with PXC. For a while now this has been on Kubernetes with either Helm deployments or more recently operator deployments. I felt it was time to dip my toe into the world of PostgreSQL as it's become more and more popular (or certainly appears to be).
@@ -502,3 +504,5 @@ kind delete cluster --name percona-pg
 
 This to me is a starting point where I can play without worrying about breaking stuff as it's quick to rebuild.
 While doing this I came up with many ideas I wanted to try out but thats for the future. I've probably made loads of bad or wrong decisions setting this up but it's a start and it works for me.
+
+*This post is part of the [Percona Community Writers Program](/blog/write-for-percona-community/).*
