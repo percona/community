@@ -19,6 +19,10 @@ aliases:
 - /authors/david_zhao/
 - /speakers/david_zhao
 - /speakers/david_zhao/
+- /contributors/david_zhao_authors
+- /contributors/david_zhao_authors/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

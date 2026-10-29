@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/denis_magda
 - /speakers/denis_magda/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

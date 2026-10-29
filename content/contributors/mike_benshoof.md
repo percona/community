@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/mike_benshoof
 - /speakers/mike_benshoof/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

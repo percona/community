@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/yang_keao
 - /speakers/yang_keao/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

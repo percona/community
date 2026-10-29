@@ -4,7 +4,7 @@ date: Tue, 05 May 2020 21:13:57 +0000
 draft: false
 tags: ['valeriy.kravchuk', 'Events', 'MariaDB', 'MySQL']
 authors:
-  - valeriy_kravchuk
+  - valerii_kravchuk
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
 slug: dynamic-tracing-for-finding-and-solving-mariadb-and-mysql-performance-problems-on-linux-percona-live-online-talk-preview

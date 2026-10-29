@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/radoslaw_szulgo
 - /authors/radoslaw_szulgo/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud
@@ -65,8 +67,8 @@ talks_tags:
 - open-source
 - pmm
 posts_count: 2
-events_count: 2
-talks_count: 4
+events_count: 3
+talks_count: 5
 contributor_type:
 - author
 - speaker

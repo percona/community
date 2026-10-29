@@ -4,7 +4,7 @@ date: Mon, 19 Oct 2020 14:01:12 +0000
 draft: false
 tags: ['frederic.descamps', 'MySQL', 'PLO-2020-10']
 authors:
-  - lefred
+  - frederic_descamps
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 slug: mysql-8-0-document-store-discovery-of-a-new-world-percona-live-online-talk-preview

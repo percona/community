@@ -17,6 +17,8 @@ aliases:
 - /authors/aleksandra_abramova/
 - /speakers/aleks_abramova
 - /speakers/aleks_abramova/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

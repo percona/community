@@ -34,7 +34,10 @@
     </div>
   </div>
   <div class="lb-leader-body">
-    <p class="lb-leader-name">{{ $title }}</p>
+    <div class="lb-leader-name-row">
+      <p class="lb-leader-name">{{ $title }}</p>
+      {{ partial "contributor-affiliation-icon.html" $page }}
+    </div>
     {{ with $role }}
       <p class="lb-leader-handle">{{ . }}</p>
     {{ else }}

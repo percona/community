@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/aaditya_dubey
 - /authors/aaditya_dubey/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Backup

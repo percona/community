@@ -442,3 +442,35 @@
     margin-bottom: 0;
   }
 }
+
+.lookout-page {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 2rem;
+  padding: 0 32px;
+}
+
+.lookout-page #lookout {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 720px;
+  background: transparent;
+}
+
+@media (max-width: 720px) {
+  .lookout-page {
+    max-width: none;
+    margin: 0;
+    padding: 0 16px;
+    overflow-x: hidden;
+  }
+
+  .lookout-page #lookout {
+    height: calc(100dvh - 130px);
+    min-height: 520px;
+    overflow: hidden;
+  }
+}

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/ravi_shankar
 - /speakers/ravi_shankar/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

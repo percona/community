@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/isobel_smith
 - /authors/isobel_smith/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/naveed_shaikh
 - /speakers/naveed_shaikh/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

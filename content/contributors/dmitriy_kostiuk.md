@@ -16,6 +16,8 @@ images:
 aliases:
 - /speakers/dmitry_kostiuk
 - /speakers/dmitry_kostiuk/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/alawi_assaggaf
 - /speakers/alawi_assaggaf/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

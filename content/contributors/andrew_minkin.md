@@ -3,7 +3,10 @@ name: andrew_minkin
 name_pronunciation: andrew_minkin
 fullname: Andrew Minkin
 fullname_pronounciation: Andrew Minkin
-tagline: null
+tagline: Software Engineer, former Perconian
+status: former
+contributor_status:
+- staff
 social:
   facebook: null
   github: https://github.com/gen1us2k/

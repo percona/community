@@ -12,7 +12,7 @@
   <script>window.location.replace({{ (site.GetPage "/contributors").RelPermalink | jsonify }});</script>
   <p class="el-panel__empty">Redirecting to <a href="{{ (site.GetPage "/contributors").RelPermalink }}">Contributors Hub</a>…</p>
 {{ else }}
-{{ $pages := sort .Pages "Title" "asc" }}
+{{ $pages := sort (where .Pages "Params.name" "!=" nil) "Title" "asc" }}
 {{ $paginator := .Paginate $pages 12 }}
 
 {{ partial "contributors-hub/shell.html" (dict

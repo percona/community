@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/rahul_malik
 - /speakers/rahul_malik/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

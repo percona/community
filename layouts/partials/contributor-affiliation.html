@@ -1,0 +1,25 @@
+{{/*
+  Returns "percona", "former", or "community" for a contributor page.
+  Staff = status current, or job/tagline/bio says they work at Percona.
+  status former is a former employee. A past-tense bio stays community unless the role line is current.
+*/}}
+{{ $status := .Params.status | default "" }}
+{{ if eq $status "former" }}
+  {{ return "former" }}
+{{ end }}
+
+{{ $job := .Params.job | default "" }}
+{{ $tagline := .Params.tagline | default "" }}
+{{ $role := printf "%s\n%s" $job $tagline }}
+{{ $bio := .Plain | default "" }}
+{{ $rolePat := `(?im)(?:\bat\s+percona\b|@\s*percona\b)|,\s*percona\s*(?:$|[.|/])|\bpercona,\s|\bfor percona\b|\bof percona\b|\bpercona['’]s\b` }}
+{{ $bioPat := `(?i)(?:\bat\s+percona\b|@\s*percona\b|\bfor percona\b|\bof percona\b|percona community team|\bin percona\b)` }}
+{{ $pastPat := `(?i)(?:previously|prior to|former\b).{0,90}percona` }}
+
+{{ if or (eq $status "current") (findRE $rolePat $role) }}
+  {{ return "percona" }}
+{{ end }}
+{{ if and (findRE $bioPat $bio) (not (findRE $pastPat $bio)) }}
+  {{ return "percona" }}
+{{ end }}
+{{ return "community" }}

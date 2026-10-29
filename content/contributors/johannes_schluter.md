@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/johannes_schluter
 - /speakers/johannes_schluter/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

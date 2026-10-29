@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/guillermo_ortega
 - /speakers/guillermo_ortega/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

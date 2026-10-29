@@ -11,7 +11,14 @@
 {{ else if and (eq $variant "filtered") (eq $page.Type "contributor_type") (eq $page.Data.Term "author") }}
   {{ $listTitle = "Authors" }}
 {{ else if eq $variant "filtered" }}
-  {{ $listTitle = printf "%s Contributors" ($page.Title | humanize) }}
+  {{/* Prefer Staff/Community labels over raw taxonomy titles. */}}
+  {{ $statusTitles := dict "staff" "Staff" "community" "Community" }}
+  {{ $term := $page.Data.Term | default ($page.Title | urlize) }}
+  {{ with index $statusTitles $term }}
+    {{ $listTitle = printf "%s Contributors" . }}
+  {{ else }}
+    {{ $listTitle = printf "%s Contributors" ($page.Title | humanize) }}
+  {{ end }}
 {{ end }}
 
 {{ $showEvents := true }}
@@ -20,15 +27,8 @@
 {{ end }}
 
 <section class="el-panel" aria-labelledby="el-contributors-heading">
-{{ if not .hideTitle }}
-  <header class="el-panel__header">
-    <h2 class="el-panel__title" id="el-contributors-heading">
-      {{ $listTitle }}{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}
-    </h2>
-  </header>
-{{ else }}
-  <h2 class="sr-only" id="el-contributors-heading">{{ $listTitle }}</h2>
-{{ end }}
+{{/* Visible title lives in the hero / ascent header — list keeps sr-only only. */}}
+<h2 class="sr-only" id="el-contributors-heading">{{ $listTitle }}{{ if gt $paginator.PageNumber 1 }} — Page {{ $paginator.PageNumber }}{{ end }}</h2>
 
   {{ if not .hideFilters }}
     {{ partial "contributors-hub/filters.html" $page }}

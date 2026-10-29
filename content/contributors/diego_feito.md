@@ -15,6 +15,8 @@ social:
 aliases:
 - /speakers/diego_feito
 - /speakers/diego_feito/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

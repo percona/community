@@ -13,6 +13,8 @@ social:
   website: https://laura.community
 images:
 - contributors/laura_czajkowski.jpeg
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/phil_plachta
 - /authors/phil_plachta/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL
