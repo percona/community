@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/francesco_nobilia
 - /speakers/francesco_nobilia/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

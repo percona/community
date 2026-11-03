@@ -17,6 +17,9 @@ images:
 aliases:
 - /speakers/sonia_valeja
 - /speakers/sonia_valeja/
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

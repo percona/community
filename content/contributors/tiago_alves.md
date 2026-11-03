@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/tiago_alves
 - /speakers/tiago_alves/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

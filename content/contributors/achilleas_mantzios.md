@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/achilleas_mantzios
 - /speakers/achilleas_mantzios/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

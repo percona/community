@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/radoslaw_szulgo
 - /authors/radoslaw_szulgo/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

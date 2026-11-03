@@ -17,6 +17,9 @@ images:
 aliases:
 - /speakers/mykola_marzhan
 - /speakers/mykola_marzhan/
+status: former
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Backup

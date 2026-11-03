@@ -1,0 +1,27 @@
+{{ define "css" -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/home.scss") | safeCSS) -}}
+  {{- .Page.Scratch.Add "css" (partial "scss" (dict "file" "scss/events-learning.scss") | safeCSS) -}}
+{{- end }}
+
+{{ define "head" }}
+<link rel="stylesheet" href="/css/lb-widget.css?v={{ now.Unix }}">
+{{ end }}
+
+{{ define "mainwrapper" }}
+{{ if not .Data.Term }}
+  <script>window.location.replace({{ (site.GetPage "/contributors").RelPermalink | jsonify }});</script>
+  <p class="el-panel__empty">Redirecting to <a href="{{ (site.GetPage "/contributors").RelPermalink }}">Contributors Hub</a>…</p>
+{{ else }}
+{{/* Only real contributor singles — never section/_index pages. */}}
+{{ $pages := sort (where .Pages "Params.name" "!=" nil) ".Params.fullname" "asc" }}
+{{ $paginator := .Paginate $pages 12 }}
+
+{{ partial "contributors-hub/shell.html" (dict
+  "page" .
+  "paginator" $paginator
+  "searchPages" $pages
+  "variant" "filtered"
+  "activeNav" ""
+) }}
+{{ end }}
+{{ end }}

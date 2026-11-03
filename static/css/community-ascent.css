@@ -543,6 +543,9 @@ a.ascent-index-card:focus-visible .ascent-index-card__image {
   height: auto;
   min-height: 0;
   color: #fff;
+  /* Allow filter dropdowns to paint over the contributor grid below. */
+  overflow: visible;
+  z-index: 20;
 }
 
 .contributors-maintainers-page .maintainers-hero__band {
@@ -571,17 +574,35 @@ a.ascent-index-card:focus-visible .ascent-index-card__image {
 
 .contributors-maintainers-page .maintainers-hero__filters {
   position: relative;
-  z-index: 2;
+  z-index: 30;
   width: 100%;
   max-width: var(--lb-shell-max, 1200px);
   margin: 0 auto;
   padding: 1.25rem var(--lb-shell-pad, clamp(1rem, 4.44vw, 64px)) 1.5rem;
   box-sizing: border-box;
   background: #fff;
+  overflow: visible;
+}
+
+.contributors-maintainers-page .maintainers-hero__filters .el-filters-bar,
+.contributors-maintainers-page .maintainers-hero__filters .el-filters {
+  overflow: visible;
+  position: relative;
+  z-index: 30;
+}
+
+.contributors-maintainers-page .maintainers-hero__filters .el-filters__field[open] {
+  z-index: 40;
+}
+
+.contributors-maintainers-page .maintainers-hero__filters .el-filters__panel {
+  z-index: 50;
 }
 
 .contributors-maintainers-page .leaderboard-page__content {
   padding-top: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .contributors-maintainers-page .leaderboard-page__content .el-panel {
@@ -616,6 +637,12 @@ a.ascent-index-card:focus-visible .ascent-index-card__image {
 }
 
 @media (max-width: 900px) {
+  /* lb-widget sets overflow:hidden on .leaderboard-page__hero — override so panels show. */
+  .contributors-maintainers-page .leaderboard-page__hero,
+  .contributors-maintainers-page .leaderboard-page__hero.maintainers-hero {
+    overflow: visible;
+  }
+
   .contributors-maintainers-page .maintainers-hero__band {
     min-height: clamp(280px, 48vw, 360px);
   }
@@ -636,5 +663,7 @@ a.ascent-index-card:focus-visible .ascent-index-card__image {
   .contributors-maintainers-page .contributors-hub-grid.lb-leaders {
     padding-top: 1rem;
     padding-bottom: 2rem;
+    position: relative;
+    z-index: 1;
   }
 }

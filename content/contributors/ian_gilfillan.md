@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/ian_gilfillan
 - /speakers/ian_gilfillan/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

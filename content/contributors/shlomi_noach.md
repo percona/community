@@ -21,6 +21,8 @@ aliases:
 - /speakers/shlomi_noach/
 - /contributors/shlomi_noach_authors
 - /contributors/shlomi_noach_authors/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

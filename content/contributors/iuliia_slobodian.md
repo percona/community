@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/iuliia_slobodian
 - /authors/iuliia_slobodian/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

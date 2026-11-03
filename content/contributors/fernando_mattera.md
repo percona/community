@@ -17,6 +17,9 @@ images:
 aliases:
 - /speakers/fernando_mattera
 - /speakers/fernando_mattera/
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

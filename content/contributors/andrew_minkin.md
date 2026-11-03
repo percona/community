@@ -5,6 +5,8 @@ fullname: Andrew Minkin
 fullname_pronounciation: Andrew Minkin
 tagline: Software Engineer, former Perconian
 status: former
+contributor_status:
+- staff
 social:
   facebook: null
   github: https://github.com/gen1us2k/

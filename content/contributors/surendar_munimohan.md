@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/surendar_munimohan
 - /speakers/surendar_munimohan/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

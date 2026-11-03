@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/levi_junkert
 - /authors/levi_junkert/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

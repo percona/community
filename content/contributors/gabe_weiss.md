@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/gabe_weiss
 - /speakers/gabe_weiss/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

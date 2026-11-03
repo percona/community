@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/renato_losio
 - /authors/renato_losio/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

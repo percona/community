@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/antonios_giannopoulos
 - /authors/antonios_giannopoulos/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

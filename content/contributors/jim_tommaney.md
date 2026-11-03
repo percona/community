@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/jim_tommaney
 - /speakers/jim_tommaney/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

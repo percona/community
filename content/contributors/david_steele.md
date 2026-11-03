@@ -14,6 +14,9 @@ social:
 images:
 - contributors/david_steele.jpeg
 status: community
+contributor_status:
+- community
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

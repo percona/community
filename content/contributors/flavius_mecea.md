@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/flavius_mecea
 - /authors/flavius_mecea/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

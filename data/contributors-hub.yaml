@@ -10,6 +10,8 @@ hero:
       Contributors tagged with {{ term }}.
     contributor_year: |
       Contributors active in {{ term }}.
+    contributor_status: |
+      {{ term }} contributors from the Percona Community.
 
   terms:
     contributor_type:
@@ -17,3 +19,8 @@ hero:
         Event speakers from the Percona Community. Browse profiles and talks.
       author: |
         Blog authors from the Percona Community. Browse profiles and posts.
+    contributor_status:
+      staff: |
+        Percona staff and former Perconians who speak, write, and contribute in the community.
+      community: |
+        Community contributors — speakers and authors outside Percona staff.

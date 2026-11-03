@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/yunus_shaikh
 - /speakers/yunus_shaikh/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/kyle_davis
 - /speakers/kyle_davis/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

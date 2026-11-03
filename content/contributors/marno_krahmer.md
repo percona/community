@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/marno_krahmer
 - /authors/marno_krahmer/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

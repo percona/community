@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/alexandre_vaniachine
 - /authors/alexandre_vaniachine/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

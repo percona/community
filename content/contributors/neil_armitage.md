@@ -1,0 +1,36 @@
+---
+title: neil_armitage
+name: neil_armitage
+name_pronunciation: Neil Armitage
+fullname: Neil Armitage
+fullname_pronounciation: Neil Armitage
+job: Senior Database Reliability Engineer
+country: null
+tagline: null
+social:
+  facebook: null
+  github: https://github.com/narmitag
+  linkedin: https://www.linkedin.com/in/neil-a-5750885
+  twitter: null
+  website: null
+images:
+- contributors/neil_armitage.jpeg
+aliases:
+- /speakers/neil_armitage
+- /speakers/neil_armitage/
+# Auto-generated fields. Do not edit manually.
+contributor_tag:
+- PostgreSQL
+blog_tags:
+- PostgreSQL
+events_tags: []
+talks_tags: []
+posts_count: 1
+events_count: 0
+talks_count: 0
+contributor_type:
+- author
+contributor_year:
+- '2026'
+---
+Senior Database Reliability Engineer, deploying and maintaining MySQL, Redis, RabbitMQ, and Pulsar clusters on Kubernetes at scale. Over three decades as a MySQL and Oracle DBA, including years at Continuent evaluating and deploying early Galera/Percona XtraDB Cluster implementations across multi-cloud environments, followed by roles spanning Skyscanner, VMware, and several DevOps leadership positions. He’s spent his career on the unglamorous but essential work of keeping production data infrastructure alive.

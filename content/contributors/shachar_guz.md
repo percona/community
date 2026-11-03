@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/shachar_guz
 - /speakers/shachar_guz/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

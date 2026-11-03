@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/mons_anderson
 - /authors/mons_anderson/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

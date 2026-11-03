@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/farokh_shahabi
 - /speakers/farokh_shahabi/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

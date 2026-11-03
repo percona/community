@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/michael_aboagye
 - /authors/michael_aboagye/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

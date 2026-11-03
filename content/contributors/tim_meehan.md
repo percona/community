@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/tim_meehan
 - /speakers/tim_meehan/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

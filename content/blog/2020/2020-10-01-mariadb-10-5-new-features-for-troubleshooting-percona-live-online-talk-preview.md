@@ -4,7 +4,7 @@ date: Thu, 01 Oct 2020 23:42:03 +0000
 draft: false
 tags: ['valeriy.kravchuk', 'Events', 'MariaDB', 'perconalive', 'PLO-2020-10']
 authors:
-  - valeriy_kravchuk
+  - valerii_kravchuk
 images:
   - blog/2020/10/DB-PLO-Blog-Image-2020-10-05.jpg
 slug: mariadb-10-5-new-features-for-troubleshooting-percona-live-online-talk-preview

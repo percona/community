@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/hamid_akhtar
 - /speakers/hamid_akhtar/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

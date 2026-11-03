@@ -14,6 +14,8 @@ social:
   website: null
 images:
 - contributors/icon.png
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

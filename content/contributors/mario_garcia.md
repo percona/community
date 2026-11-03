@@ -17,6 +17,8 @@ aliases:
 - /authors/mario_garcia/
 - /speakers/mario_garcia
 - /speakers/mario_garcia/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB
