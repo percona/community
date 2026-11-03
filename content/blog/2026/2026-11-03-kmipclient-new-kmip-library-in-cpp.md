@@ -1,6 +1,6 @@
 ---
 title: "A New KMIP Library in C++, and the Only Free One"
-date: "2026-10-29T09:00:00+00:00"
+date: "2026-11-03T09:00:00+00:00"
 draft: false
 description: "Percona open sourced kmipclient, a new KMIP library in C++ with a clean, spec-first architecture built to replace a hard-to-extend C implementation."
 tags: ['KMIP', 'Encryption', 'Security', 'C++', 'Open Source', 'MySQL', 'Percona Server for MySQL']
@@ -8,7 +8,7 @@ categories: ['MySQL', 'Community']
 authors:
   - oleksiy_lukin
 images:
-  - blog/2026/10/kmipclient-new-kmip-library-cover.png
+  - blog/2026/11/kmipclient-new-kmip-library-cover.png
 slug: kmipclient-new-kmip-library-in-cpp
 ---
 
@@ -56,7 +56,7 @@ This separation turned out to matter more than expected. `kmipcore` can be teste
 
 The diagram below shows what that split replaced. The old stack needed three layers in C and C++ to reach `component_keyring_kmip`, Percona Server for MySQL's keyring component for KMIP. The new stack needs one: `kmipcore`, with `kmipclient` sitting on top of it.
 
-![Old C stack (libkmip, kmip_bio, kmippp, three layers) versus new C++ stack (kmipcore, kmipclient, one layer) feeding into Percona Server for MySQL's component_keyring_kmip](blog/2026/10/kmipclient-architecture-old-vs-new.svg)
+![Old C stack (libkmip, kmip_bio, kmippp, three layers) versus new C++ stack (kmipcore, kmipclient, one layer) feeding into Percona Server for MySQL's component_keyring_kmip](blog/2026/11/kmipclient-architecture-old-vs-new.svg)
 
 *Old stack on the left, new stack on the right. `kmipcore` is where new KMIP operations actually get implemented.*
 
@@ -127,7 +127,7 @@ Testing turned the prototype into a library other teams could depend on.
 
 The test suite has two layers. Unit tests exercise the protocol and data model on their own, including serialization, parsing, and specification-conformance checks. Integration tests then run against five independent KMIP server implementations: [PyKMIP](https://github.com/OpenKMIP/PyKMIP) (open source), [Cosmian KMS](https://github.com/Cosmian/kms) (source-available), HashiCorp Vault Enterprise, Fortanix Data Security Manager, and Thales CipherTrust Manager.
 
-![Diagram showing unit tests feeding into integration tests, which split into an automated CI pipeline running Cosmian KMS on every commit, and a manual QA pass running all five KMIP servers on every release](blog/2026/10/kmipclient-testing-pipeline.svg)
+![Diagram showing unit tests feeding into integration tests, which split into an automated CI pipeline running Cosmian KMS on every commit, and a manual QA pass running all five KMIP servers on every release](blog/2026/11/kmipclient-testing-pipeline.svg)
 
 Cosmian KMS runs in CI, so the integration suite exercises it on every change. CI started out against PyKMIP; the switch to Cosmian KMS came later, driven by its more complete coverage of the KMIP 2.0 specification. Cosmian KMS is source-available rather than open source: its code is public under the Business Source License (BUSL-1.1), which grants free use for non-production work like a CI pipeline outright, free production use up to two vCPUs, and converts to the Mozilla Public License (MPL) 2.0, an open source license, four years after each version's publication.
 
