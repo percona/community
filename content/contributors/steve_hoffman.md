@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/steve_hoffman
 - /speakers/steve_hoffman/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

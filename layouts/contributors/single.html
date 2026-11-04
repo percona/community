@@ -119,7 +119,10 @@
       {{ end }}
 
       <div class="hub-single__header-copy">
-        <h1 class="hub-single__title">{{ .Params.fullname }}</h1>
+        <div class="hub-single__title-row">
+          <h1 class="hub-single__title">{{ .Params.fullname }}</h1>
+          {{ partial "contributor-affiliation-icon.html" . }}
+        </div>
         {{ with .Params.job }}<p class="hub-single__subtitle">{{ . }}</p>{{ end }}
         {{ with .Params.tagline }}<p class="hub-single__tagline">{{ . }}</p>{{ end }}
 

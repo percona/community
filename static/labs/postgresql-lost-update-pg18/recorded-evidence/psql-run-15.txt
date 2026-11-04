@@ -1,0 +1,13 @@
+SERVER_VERSION_NUM 180006
+SERVER PostgreSQL 18.6 - Percona Server for PostgreSQL 18.6.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 14.2.1 20250110 (Red Hat 14.2.1-13), 64-bit
+TRANSPORT existing container psql; Windows Python standard library
+BLOCKING mode=unsafe start=10 rollback_a=False a_pid=2277 b_pid=2278 initial_reads=10,10
+BUG_REPRODUCED unsafe start=10 committed=2 stock=7
+BLOCKING mode=atomic start=10 rollback_a=False a_pid=2291 b_pid=2292 initial_reads=10,10
+PASS atomic start=10 committed=2 stock=4
+BLOCKING mode=atomic start=4 rollback_a=False a_pid=2305 b_pid=2306 initial_reads=4,4
+PASS atomic start=4 committed=1 stock=1
+BLOCKING mode=atomic start=4 rollback_a=True a_pid=2319 b_pid=2320 initial_reads=4,4
+PASS rollback start=4 committed=1 stock=1
+PASS insufficient start=2 committed=0 stock=2
+ALL EXPECTED CONDITIONS MET

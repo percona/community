@@ -14,6 +14,9 @@ social:
 images:
 - contributors/kris_buytaert.png
 status: current
+contributor_status:
+- staff
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []
@@ -24,7 +27,7 @@ events_tags:
 talks_tags: []
 posts_count: 0
 events_count: 3
-talks_count: 4
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:

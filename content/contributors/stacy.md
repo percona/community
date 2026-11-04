@@ -3,7 +3,10 @@ name: stacy
 name_pronunciation: stacy
 fullname: Stacy Rostova
 fullname_pronounciation: Stacy Rostova
-tagline: null
+tagline: Communications Manager at ProxySQL
+status: former
+contributor_status:
+- staff
 social:
   facebook: null
   github: null

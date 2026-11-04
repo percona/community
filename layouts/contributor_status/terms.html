@@ -1,0 +1,4 @@
+{{ define "mainwrapper" }}
+<script>window.location.replace({{ (site.GetPage "/contributors").RelPermalink | jsonify }});</script>
+<p class="el-panel__empty">Redirecting to <a href="{{ (site.GetPage "/contributors").RelPermalink }}">Contributors Hub</a>…</p>
+{{ end }}

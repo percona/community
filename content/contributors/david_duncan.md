@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/david_duncan
 - /speakers/david_duncan/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -10,6 +10,9 @@ social:
 images:
 - contributors/aslan_akhmetov.jpeg
 status: community
+contributor_status:
+- community
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

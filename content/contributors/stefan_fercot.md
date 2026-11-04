@@ -13,7 +13,9 @@ social:
   website: https://bsky.app/profile/pgstef.bsky.social
 images:
 - contributors/stefan_fercot.jpg
-status: community
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

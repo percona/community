@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/gurnish_anand
 - /authors/gurnish_anand/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

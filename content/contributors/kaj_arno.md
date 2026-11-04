@@ -18,6 +18,8 @@ aliases:
 - /authors/kaj_arno/
 - /speakers/kaj_arno
 - /speakers/kaj_arno/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

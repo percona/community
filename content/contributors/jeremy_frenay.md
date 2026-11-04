@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/jeremy_frenay
 - /speakers/jeremy_frenay/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

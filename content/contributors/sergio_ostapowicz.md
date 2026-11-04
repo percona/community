@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/sergio_ostapowicz
 - /speakers/sergio_ostapowicz/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

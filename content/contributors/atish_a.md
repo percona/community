@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/atish_a
 - /authors/atish_a/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

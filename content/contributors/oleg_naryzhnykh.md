@@ -15,6 +15,8 @@ social:
 images:
 - contributors/oleg_naryzhnykh.jpg
 
+contributor_status:
+- community
 # Auto-generated fields below. Do not edit manually.
 contributor_type: []
 contributor_tag: []

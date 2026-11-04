@@ -10,7 +10,7 @@ tagline: Builds automation, QA workflows, and reproducible labs
 social:
   facebook: null
   github: jackvansickle1
-  linkedin: null
+  linkedin: https://www.linkedin.com/in/jack-vansickle-29a3322a7/
   twitter: null
   website: https://jackgpt.org
 images:
@@ -18,6 +18,8 @@ images:
 aliases:
 - /authors/jack_vansickle
 - /authors/jack_vansickle/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
@@ -25,13 +27,15 @@ contributor_tag:
 blog_tags:
 - Backup
 - Community
+- Concurrency
 - Docker
 - PostgreSQL
 - PowerShell
+- Testing
 - Windows
 events_tags: []
 talks_tags: []
-posts_count: 1
+posts_count: 2
 events_count: 0
 talks_count: 0
 contributor_type:

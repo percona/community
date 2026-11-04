@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/brian_olsen
 - /speakers/brian_olsen/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

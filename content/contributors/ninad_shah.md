@@ -3,7 +3,11 @@ name: ninad_shah
 name_pronunciation: ninad_shah
 fullname: Ninad Shah
 fullname_pronounciation: Ninad Shah
-tagline: null
+tagline: PostgreSQL DBA, Percona
+status: current
+contributor_status:
+- staff
+
 social:
   facebook: null
   github: null

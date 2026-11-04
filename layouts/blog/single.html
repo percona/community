@@ -52,7 +52,10 @@
                 {{- range $key, $author := .Params.authors -}}
                   {{- with $.Site.GetPage (print "/contributors/" $author) -}}
                     {{- if $key }}, {{ end -}}
-                    <a href="{{ .RelPermalink }}">{{ .Params.fullname }}</a>
+                    <span class="hub-single__author">
+                      <a href="{{ .RelPermalink }}">{{ .Params.fullname }}</a>
+                      {{ partial "contributor-affiliation-icon.html" . }}
+                    </span>
                   {{- end -}}
                 {{- end -}}
               </span>

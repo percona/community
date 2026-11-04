@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/lenz_grimmer
 - /speakers/lenz_grimmer/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

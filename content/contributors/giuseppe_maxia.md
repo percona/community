@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/giuseppe_maxia
 - /speakers/giuseppe_maxia/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

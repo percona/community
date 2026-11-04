@@ -490,6 +490,20 @@ a.lb-leader-card:focus-visible {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
+.lb-leader-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.lb-leader-name-row .author-badge {
+  flex-shrink: 0;
+  align-self: center;
+  position: relative;
+  top: 0.12em;
+}
+
 .lb-leader-name {
   font-weight: 600;
   font-size: 18px;
@@ -499,6 +513,7 @@ a.lb-leader-card:focus-visible {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .lb-leader-handle {

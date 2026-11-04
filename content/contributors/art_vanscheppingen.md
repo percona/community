@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/art_vanscheppingen
 - /authors/art_vanscheppingen/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -3,7 +3,10 @@ name: krunal_bauskar
 name_pronunciation: krunal_bauskar
 fullname: Krunal Bauskar
 fullname_pronounciation: Krunal Bauskar
-tagline: null
+tagline: MySQL on ARM at Huawei
+status: former
+contributor_status:
+- staff
 social:
   facebook: null
   github: null

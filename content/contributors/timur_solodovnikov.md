@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/timur_solodovnikov
 - /authors/timur_solodovnikov/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

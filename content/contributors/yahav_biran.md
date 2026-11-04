@@ -19,6 +19,10 @@ aliases:
 - /authors/yahav_biran/
 - /speakers/yahav_biran
 - /speakers/yahav_biran/
+- /contributors/yahav_biran_authors
+- /contributors/yahav_biran_authors/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

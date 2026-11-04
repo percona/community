@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/brian_walters
 - /speakers/brian_walters/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

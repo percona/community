@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/alvaro_hernandez
 - /speakers/alvaro_hernandez/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

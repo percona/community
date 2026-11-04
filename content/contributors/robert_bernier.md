@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/robert_bernier
 - /speakers/robert_bernier/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

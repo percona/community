@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/narciso_oliveira_junior
 - /speakers/narciso_oliveira_junior/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

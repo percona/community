@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/tyler_turk
 - /authors/tyler_turk/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

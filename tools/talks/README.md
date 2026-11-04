@@ -97,7 +97,9 @@ python tools/talks_images/main.py --only-new
   link that Conference is used as-is. Front matter also stores `event_jira`; the
   talk page links to / shows a card for the matching community event page when
   one exists.
-- Speakers come from **Speaker & Talk** (fallback: Speakers multi-user field).
+- When creating a Talk in Jira, set both the **Speaker & Talk** link and the **Speakers** user field (`customfield_11938`, account ids), plus **Due date** (`duedate`, `YYYY-MM-DD`, same day as the talk). Start date alone is not enough.
+- When updating a Conference, set **Conf & Speaker** links and the same **Speakers** user field so they match. Only speakers of **Accepted** or **Done** talks — not Rejected or Open.
+- Speakers on the site come from **Speaker & Talk** (fallback: Speakers multi-user field).
   When Speakers (user picker) is set, Jira avatars are downloaded into
   `assets/contributors/` for new cards (and replace `percona.jpeg` placeholders).
 - **Room** (`customfield_11927`) is synced into front matter and shown on the talk page.

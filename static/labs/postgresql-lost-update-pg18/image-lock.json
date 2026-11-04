@@ -1,0 +1,11 @@
+{
+  "requested_tag": "percona/percona-distribution-postgresql:18.6",
+  "repo_digest": "percona/percona-distribution-postgresql@sha256:27a1dba816fcc4cec88f216d54e3ec86db4c1d4b16799f49800055c41606e11e",
+  "pinned_ref": "percona/percona-distribution-postgresql:18.6@sha256:27a1dba816fcc4cec88f216d54e3ec86db4c1d4b16799f49800055c41606e11e",
+  "image_id": "sha256:27a1dba816fcc4cec88f216d54e3ec86db4c1d4b16799f49800055c41606e11e",
+  "os": "linux",
+  "architecture": "amd64",
+  "verified_utc": "2026-10-15T18:11:21.1282548Z",
+  "official_image_documentation": "https://docs.percona.com/postgresql/18/docker/docker.html",
+  "release_notes": "https://docs.percona.com/postgresql/18/release-notes/release-notes-v18.6.1.html"
+}

@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/werner_keil
 - /authors/werner_keil/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:
