@@ -10,6 +10,10 @@ social:
   website: https://yananaichiwuta.com/
 images:
 - contributors/yananai_chiwuta.png
+status: community
+contributor_status:
+- community
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL
