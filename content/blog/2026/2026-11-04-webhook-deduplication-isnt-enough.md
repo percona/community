@@ -6,6 +6,8 @@ tags: ['PostgreSQL', 'Webhooks', 'CRM', 'Concurrency']
 categories: ['PostgreSQL', 'Community']
 authors:
   - yananai_chiwuta
+images:
+  - blog/2026/11/webhook-deduplication-isnt-enough-cover.png
 slug: webhook-deduplication-isnt-enough
 ---
 
