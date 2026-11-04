@@ -1,12 +1,12 @@
 ---
 title: "Why Webhook Deduplication Isn't Enough"
-date: "2026-10-16T00:00:00+00:00"
+date: "2026-11-04T09:00:00+00:00"
+draft: false
 tags: ['PostgreSQL', 'Webhooks', 'CRM', 'Concurrency']
-categories: ['PostgreSQL']
+categories: ['PostgreSQL', 'Community']
 authors:
   - yananai_chiwuta
 slug: webhook-deduplication-isnt-enough
-draft: true
 ---
 
 Let's say you're processing events from an API into your CRM. An event comes in and tells you that a particular contact is a Director at a company. So you update the job title on their contact record in the CRM, along with some other fields like the company and whether they're qualified.
