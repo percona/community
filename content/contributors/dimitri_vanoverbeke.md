@@ -13,22 +13,23 @@ social:
   website: null
 images:
 - contributors/dimitri_vanoverbeke.jpg
-status: current
 contributor_status:
 - staff
-
+status: current
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
+- Kubernetes
 - PostgreSQL
 blog_tags: []
 events_tags:
 - Event
+- Kubernetes
 - opensource
 - speaking
 talks_tags: []
 posts_count: 0
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
