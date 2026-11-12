@@ -1,12 +1,13 @@
 ---
 title: "PostgreSQL restores: preserve ownership and grants, or remap them deliberately"
-date: 2026-10-13
-draft: true
-# The retained manuscript date is not a publication slot; editors will schedule this draft.
-categories: [PostgreSQL, Community]
-images: [blog/2026/10/postgresql-restore-permissions-cover.png]
-tags: [PostgreSQL, Backups, Security]
-authors: [haifeng_cheng]
+date: "2026-11-12T10:30:00+00:00"
+draft: false
+tags: ['PostgreSQL', 'Backups', 'Security']
+categories: ['PostgreSQL', 'Community']
+authors:
+  - haifeng_cheng
+images:
+  - blog/2026/10/postgresql-restore-permissions-cover.png
 slug: postgresql-restore-ownership-acls-default-privileges
 ---
 
