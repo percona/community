@@ -4,6 +4,9 @@ description: 'Percona is a Silver sponsor at KubeCon + CloudNativeCon North Amer
 images:
 - events/2026-kubecon-na/kubecon-na-2026.jpg
 layout: single
+# Hand-written copy; keep jira for related-talks. sync: skip blocks events_publish overwrite.
+sync: skip
+jira: SPEAK-1526
 date: '2026-11-09'
 EventDate: November 9-12, 2026
 EventLocation: Salt Lake City, Utah
