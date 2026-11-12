@@ -1,28 +1,31 @@
 ---
-id: "SPEAK-3317"
-jira: "SPEAK-3317"
-title: "When a Postgres Operator Decision Is Not Forever: Approaches and Experiences for Migrating Between Postgres Operators"
+id: SPEAK-3317
+jira: SPEAK-3317
+title: 'When a Postgres Operator Decision Is Not Forever: Approaches and Experiences
+  for Migrating Between Postgres Operators'
 layout: single
 speakers:
-  - takis_panagiotis_stathopoulos
-talk_url: "https://cloomba.com/e/6-postgresql-meetup-vienna"
-presentation_date: "2026-11-11"
-presentation_date_end: ""
-presentation_time: "19:15"
-room: ""
-talk_year: "2026"
-event: "6th PostgreSQL Meetup Vienna"
-event_jira: "SPEAK-3316"
-event_status: "Done"
-event_date_start: "2026-11-11"
-event_date_end: "2026-11-11"
-event_url: "https://cloomba.com/e/6-postgresql-meetup-vienna"
-event_location: "Vienna"
-talk_tags: ['Kubernetes', 'PostgreSQL']
-slides: ""
-video: ""
+- takis_panagiotis_stathopoulos
+talk_url: https://cloomba.com/e/6-postgresql-meetup-vienna
+presentation_date: '2026-11-11'
+presentation_date_end: ''
+presentation_time: '19:15'
+room: ''
+talk_year: '2026'
+event: 6th PostgreSQL Meetup Vienna
+event_jira: SPEAK-3316
+event_status: Done
+event_date_start: '2026-11-11'
+event_date_end: '2026-11-11'
+event_url: https://cloomba.com/e/6-postgresql-meetup-vienna
+event_location: Vienna
+talk_tags:
+- Kubernetes
+- PostgreSQL
+slides: ''
+video: ''
 images:
-  - talks/2026/2026-11-11-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators.png
+- talks/2026/2026-11-11-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators.png
 ---
 The Postgres ecosystem on Kubernetes is thriving and this is particularly evident in the Postgres K8s Operators space.
 
@@ -36,3 +39,5 @@ In this talk we are going to:
 * Deep dive on a particular Operator migration case study between two popular Postgres K8s operators.
 
 By the end of this session, attendees will have a clearer understanding of the PostgreSQL Operator ecosystem, the risks and opportunities of an Operator technology switch, and concrete strategies for planning and executing the migration.
+
+![Panagiotis (Takis) Stathopoulos presenting at the PostgreSQL User Group Vienna meetup](talks/2026/2026-11-11-when-a-postgres-operator-decision-is-not-forever-approaches-and-experiences-for-migrating-between-postgres-operators-stage.png "Photo by [PostgreSQL User Group Vienna](https://www.linkedin.com/posts/postgresql-user-group-vienna_panagiotis-stathopoulos-percona-is-now-activity-7526348304775811072-ZfC0)")
