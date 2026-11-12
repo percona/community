@@ -34,8 +34,8 @@ events_tags:
 - sponsorship
 talks_tags: []
 posts_count: 0
-events_count: 3
-talks_count: 1
+events_count: 4
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:
