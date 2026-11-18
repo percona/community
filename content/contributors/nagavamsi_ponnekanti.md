@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/nagavamsi_ponnekanti
 - /speakers/nagavamsi_ponnekanti/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

@@ -16,6 +16,8 @@ aliases:
 - /authors/jan_wieremjewicz
 - /authors/jan_wieremjewicz/
 planet_pg_tag: pg_jan
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

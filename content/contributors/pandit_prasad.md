@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/pandit_prasad
 - /speakers/pandit_prasad/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

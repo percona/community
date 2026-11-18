@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/ananias_tsalouchidis
 - /speakers/ananias_tsalouchidis/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

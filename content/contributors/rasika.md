@@ -5,6 +5,9 @@ fullname: Rasika Chivate
 fullname_pronounciation: Rasika Chivate
 tagline: Technical Writer, PMM
 status: current
+contributor_status:
+- staff
+
 social:
   facebook: null
   github: null

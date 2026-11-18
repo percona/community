@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/dave_cohen
 - /authors/dave_cohen/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/ignacio_nin
 - /speakers/ignacio_nin/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

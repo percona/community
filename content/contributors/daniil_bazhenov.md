@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/daniil_bazhenov
 - /authors/daniil_bazhenov/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

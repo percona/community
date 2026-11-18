@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/vinicius_grippa
 - /speakers/vinicius_grippa/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/matt_yonkovit
 - /speakers/matt_yonkovit/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

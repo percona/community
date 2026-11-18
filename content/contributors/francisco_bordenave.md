@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/francisco_bordenave
 - /speakers/francisco_bordenave/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

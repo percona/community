@@ -13,6 +13,8 @@ social:
   website: null
 images:
 - contributors/george_kechagias.png
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
@@ -35,7 +37,7 @@ talks_tags:
 - database
 posts_count: 0
 events_count: 2
-talks_count: 2
+talks_count: 3
 contributor_type:
 - speaker
 contributor_year:

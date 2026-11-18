@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/david_berube
 - /authors/david_berube/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/morgan_tocker
 - /speakers/morgan_tocker/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

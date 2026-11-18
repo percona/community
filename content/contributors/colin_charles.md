@@ -19,6 +19,8 @@ aliases:
 - /authors/colin_charles/
 - /speakers/colin_charles
 - /speakers/colin_charles/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

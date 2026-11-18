@@ -4,7 +4,7 @@ date: Tue, 12 May 2020 16:30:04 +0000
 draft: false
 tags: ['frederic.descamps', 'Events', 'MySQL']
 authors:
-  - lefred
+  - frederic_descamps
 images:
   - blog/2020/05/Social-PL-Online-2020-1.jpg
 slug: state-of-the-dolphin-percona-live-online-talk-preview

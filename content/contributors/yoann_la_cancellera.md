@@ -14,6 +14,9 @@ social:
 images:
 - contributors/yoann_la_cancellera.jpeg
 status: current
+contributor_status:
+- staff
+
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="430" fill="#ffffff"/>
+
+  <text x="490" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">Two layers of testing</text>
+
+  <!-- Unit tests -->
+  <rect x="290" y="56" width="400" height="56" rx="8" fill="#5b7fb5" stroke="#34495e" stroke-width="1.5"/>
+  <text x="490" y="82" text-anchor="middle" font-size="15" fill="#ffffff" font-weight="600">Unit tests</text>
+  <text x="490" y="100" text-anchor="middle" font-size="11.5" fill="#eef2f7">protocol + data model: serialization, parsing, conformance</text>
+
+  <line x1="490" y1="112" x2="490" y2="140" stroke="#334155" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Integration tests -->
+  <rect x="240" y="148" width="500" height="44" rx="8" fill="#52be80" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="490" y="176" text-anchor="middle" font-size="15" fill="#0b3d20" font-weight="600">Integration tests against real KMIP servers</text>
+
+  <line x1="370" y1="192" x2="370" y2="220" stroke="#334155" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="610" y1="192" x2="610" y2="220" stroke="#334155" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- CI column -->
+  <rect x="60" y="228" width="420" height="180" rx="10" fill="#eafaf1" stroke="#1e8449" stroke-width="2"/>
+  <text x="270" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#145a32">CI pipeline — every commit</text>
+  <rect x="100" y="276" width="340" height="40" rx="6" fill="#52be80" stroke="#1e8449" stroke-width="1.5"/>
+  <text x="270" y="301" text-anchor="middle" font-size="13.5" fill="#0b3d20">Cosmian KMS</text>
+  <text x="270" y="340" text-anchor="middle" font-size="11.5" fill="#145a32">Automated, runs on every change</text>
+  <text x="270" y="358" text-anchor="middle" font-size="11.5" fill="#145a32">to the library</text>
+
+  <!-- Manual column -->
+  <rect x="500" y="228" width="420" height="180" rx="10" fill="#fef9e7" stroke="#d4ac0d" stroke-width="2"/>
+  <text x="710" y="256" text-anchor="middle" font-size="15" font-weight="600" fill="#7d6608">Manual QA pass — every release</text>
+  <rect x="520" y="272" width="180" height="30" rx="5" fill="#aeb6bf" stroke="#34495e" stroke-width="1.2"/>
+  <text x="610" y="292" text-anchor="middle" font-size="11.5" fill="#1c2833">PyKMIP</text>
+  <rect x="700" y="272" width="200" height="30" rx="5" fill="#aeb6bf" stroke="#34495e" stroke-width="1.2"/>
+  <text x="800" y="292" text-anchor="middle" font-size="11.5" fill="#1c2833">Cosmian KMS</text>
+  <rect x="520" y="308" width="200" height="30" rx="5" fill="#aeb6bf" stroke="#34495e" stroke-width="1.2"/>
+  <text x="620" y="328" text-anchor="middle" font-size="11.5" fill="#1c2833">HashiCorp Vault Enterprise</text>
+  <rect x="730" y="308" width="170" height="30" rx="5" fill="#aeb6bf" stroke="#34495e" stroke-width="1.2"/>
+  <text x="815" y="328" text-anchor="middle" font-size="11.5" fill="#1c2833">Fortanix DSM</text>
+  <rect x="520" y="344" width="230" height="30" rx="5" fill="#aeb6bf" stroke="#34495e" stroke-width="1.2"/>
+  <text x="635" y="364" text-anchor="middle" font-size="11.5" fill="#1c2833">Thales CipherTrust Manager</text>
+  <text x="710" y="400" text-anchor="middle" font-size="11.5" fill="#7d6608">Run by hand against all five servers</text>
+</svg>

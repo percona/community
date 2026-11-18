@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/matt_farina
 - /speakers/matt_farina/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

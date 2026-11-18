@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/sai_kondapalli
 - /speakers/sai_kondapalli/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

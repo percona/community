@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/evgeniy_patlan
 - /speakers/evgeniy_patlan/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
@@ -36,6 +38,7 @@ blog_tags:
 - Percona
 events_tags:
 - DevOps
+- DuckDB
 - Education
 - Engineering
 - Event
@@ -52,8 +55,10 @@ events_tags:
 - pgpool
 - speaking
 talks_tags:
+- Benchmark
 - Career
 - DevOps
+- DuckDB
 - Education
 - Open Source
 - Open-Source
@@ -61,8 +66,8 @@ talks_tags:
 - Tech
 - software-development
 posts_count: 1
-events_count: 9
-talks_count: 3
+events_count: 10
+talks_count: 4
 contributor_type:
 - author
 - speaker

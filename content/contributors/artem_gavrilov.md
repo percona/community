@@ -16,6 +16,8 @@ aliases:
 - /authors/artem_gavrilov
 - /authors/artem_gavrilov/
 planet_pg_tag: pg_artem
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

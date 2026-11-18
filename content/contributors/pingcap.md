@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/pingcap
 - /authors/pingcap/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

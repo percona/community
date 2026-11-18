@@ -1,0 +1,71 @@
+status	command	check
+PASS	016	server pinned to 18.4
+PASS	017	server version is 180004: source
+PASS	018	no TCP listener: source
+PASS	019	server version is 180004: target
+PASS	020	no TCP listener: target
+PASS	023	source has two synthetic rows
+PASS	032	preserve requires source roles
+PASS	033	failed preserve restored no schema (transaction rolled back)
+PASS	036	preserved object ownership
+PASS	037	preserved creator default ACLs
+PASS	038	preserved existing table: effective role
+PASS	039	preserved existing table: SELECT
+PASS	040	preserved existing table: generated INSERT and RETURNING
+PASS	041	preserved existing table: table and sequence rights
+PASS	043	preserved future table: effective role
+PASS	044	preserved future table: SELECT
+PASS	045	preserved future table: generated INSERT and RETURNING
+PASS	046	preserved future table: table and sequence rights
+PASS	049	no-owner alone uses restoring role for object owner
+PASS	050	no-owner alone retains legacy grantee
+PASS	051	no-owner alone retains legacy default-ACL creator
+PASS	052	no-owner alone does not map target_app
+PASS	053	no-owner alone retains old app access: effective role
+PASS	054	no-owner alone retains old app access: SELECT
+PASS	055	no-owner alone retains old app access: generated INSERT and RETURNING
+PASS	056	no-owner alone retains old app access: table and sequence rights
+PASS	058	old creator defaults do not apply to restoring role
+PASS	059	old creator defaults do not grant new sequence usage
+PASS	062	remapped schema and all relations owned by target_owner
+PASS	063	no-acl excludes source default ACLs and source application grants
+PASS	064	remap before schema grant
+PASS	066	schema usage is not table SELECT
+PASS	068	table SELECT after scoped grant
+PASS	069	table INSERT does not grant sequence usage
+PASS	071	remapped existing table: effective role
+PASS	072	remapped existing table: SELECT
+PASS	073	remapped existing table: generated INSERT and RETURNING
+PASS	074	remapped existing table: table and sequence rights
+PASS	075	app cannot UPDATE table
+PASS	076	app cannot DELETE table
+PASS	077	app cannot setval sequence
+PASS	078	app cannot CREATE in schema
+PASS	080	new table without defaults
+PASS	082	defaults do not repair pre-existing table
+PASS	083	defaults do not repair pre-existing sequence
+PASS	085	explicitly repaired early table: effective role
+PASS	086	explicitly repaired early table: SELECT
+PASS	087	explicitly repaired early table: generated INSERT and RETURNING
+PASS	088	explicitly repaired early table: table and sequence rights
+PASS	089	remapped future owner-created table: effective role
+PASS	090	remapped future owner-created table: SELECT
+PASS	091	remapped future owner-created table: generated INSERT and RETURNING
+PASS	092	remapped future owner-created table: table and sequence rights
+PASS	093	target defaults belong to target_owner only
+PASS	096	membership does not change creating role
+PASS	097	owner defaults are not inherited by a member creator
+PASS	099	migration SET ROLE creates as default-ACL owner
+PASS	100	migration with explicit owner role: effective role
+PASS	101	migration with explicit owner role: SELECT
+PASS	102	migration with explicit owner role: generated INSERT and RETURNING
+PASS	103	migration with explicit owner role: table and sequence rights
+PASS	105	explicitly repaired migration table: effective role
+PASS	106	explicitly repaired migration table: SELECT
+PASS	107	explicitly repaired migration table: generated INSERT and RETURNING
+PASS	108	explicitly repaired migration table: table and sequence rights
+PASS	109	lab_preserved retains exactly the original data
+PASS	110	lab_owner_only retains exactly the original data
+PASS	111	lab_remapped retains exactly the original data
+PASS	112	app has no owner-role membership or elevated attributes
+PASS	118	disposable containers and anonymous volumes removed

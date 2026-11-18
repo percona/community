@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/charly_batista
 - /speakers/charly_batista/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

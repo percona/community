@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/andreas_scherbaum
 - /speakers/andreas_scherbaum/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

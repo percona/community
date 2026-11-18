@@ -5,6 +5,8 @@ fullname: Taras Kozub
 fullname_pronounciation: Taras Kozub
 tagline: Agile Facilitator, former Perconian
 status: former
+contributor_status:
+- staff
 social:
   facebook: null
   github: null

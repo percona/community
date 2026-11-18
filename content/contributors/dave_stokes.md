@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/dave_stokes
 - /speakers/dave_stokes/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Cloud

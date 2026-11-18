@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/daniel_seybold
 - /speakers/daniel_seybold/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

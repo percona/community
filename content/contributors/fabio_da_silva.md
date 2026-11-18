@@ -13,7 +13,9 @@ social:
   website: null
 images:
 - contributors/fabio_da_silva.jpeg
-status: community
+status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []
@@ -26,8 +28,8 @@ talks_tags:
 - Tech
 - software-development
 posts_count: 0
-events_count: 1
-talks_count: 1
+events_count: 2
+talks_count: 2
 contributor_type:
 - speaker
 contributor_year:

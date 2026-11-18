@@ -10,6 +10,8 @@ social:
   linkedin: null
 images:
 - contributors/sandra_romanchenko.png
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

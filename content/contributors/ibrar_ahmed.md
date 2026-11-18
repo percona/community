@@ -17,6 +17,9 @@ images:
 aliases:
 - /speakers/ibrar_ahmed
 - /speakers/ibrar_ahmed/
+status: former
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

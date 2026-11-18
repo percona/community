@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/jeff_gagne
 - /authors/jeff_gagne/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

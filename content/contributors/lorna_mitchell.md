@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/lorna_mitchell
 - /speakers/lorna_mitchell/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

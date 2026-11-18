@@ -6,9 +6,10 @@ layout: single
 speakers:
 - yoann_la_cancellera
 talk_url: https://golab.io/talks/avoiding-pitfalls-with-postgres-and-go
-presentation_date: '2026-11-02'
+presentation_date: '2026-11-03'
 presentation_date_end: ''
-presentation_time: ''
+presentation_time: '11:30'
+room: Golab
 talk_year: '2026'
 event: GoLab 2026
 event_jira: SPEAK-2010
@@ -25,8 +26,10 @@ talk_tags:
 - software-development
 slides: ''
 video: ''
+aliases:
+- /talks/2026/2026-11-02-avoiding-pitfalls-with-postgres-and-go
 images:
-- talks/2026/2026-11-02-avoiding-pitfalls-with-postgres-and-go.png
+- talks/2026/2026-11-03-avoiding-pitfalls-with-postgres-and-go.png
 ---
 PostgreSQL is probably the most loved database to work with Go, for good reasons!
 

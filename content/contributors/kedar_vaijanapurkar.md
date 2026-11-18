@@ -16,6 +16,8 @@ images:
 aliases:
 - /speakers/kedar_vaijanapurkar
 - /speakers/kedar_vaijanapurkar/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

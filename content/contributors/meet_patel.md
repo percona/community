@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/meet_patel
 - /authors/meet_patel/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

@@ -148,6 +148,13 @@ main.page:has(.hub-single-page) {
     h1.hub-single__title {
       margin-bottom: 0;
     }
+
+    .author-badge {
+      flex-shrink: 0;
+      align-self: center;
+      position: relative;
+      top: 0.08em;
+    }
   }
 
   h1.hub-single__title {

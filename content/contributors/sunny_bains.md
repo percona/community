@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/sunny_bains
 - /speakers/sunny_bains/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

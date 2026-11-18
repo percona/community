@@ -11,7 +11,7 @@
 {{ $description := "" }}
 
 {{ if eq $variant "filtered" }}
-  {{ if in (slice "contributor_type" "contributor_tag" "contributor_year") $page.Type }}
+  {{ if in (slice "contributor_type" "contributor_tag" "contributor_year" "contributor_status") $page.Type }}
     {{ $titleAccent = $page.Title | humanize }}
     {{ $termDesc := "" }}
     {{ $termKey := "" }}
@@ -19,6 +19,10 @@
       {{ $termKey = . }}
     {{ else }}
       {{ $termKey = $page.Title | urlize }}
+    {{ end }}
+    {{ if eq $page.Type "contributor_status" }}
+      {{ $statusTitles := dict "staff" "Staff" "community" "Community" }}
+      {{ with index $statusTitles $termKey }}{{ $titleAccent = . }}{{ end }}
     {{ end }}
     {{ with index $data.hero.terms $page.Type }}
       {{ if $termKey }}
@@ -28,7 +32,7 @@
     {{ if $termDesc }}
       {{ $description = $termDesc }}
     {{ else if index $data.hero.defaults $page.Type }}
-      {{ $description = replace (index $data.hero.defaults $page.Type) "{{ term }}" ($page.Title | humanize) }}
+      {{ $description = replace (index $data.hero.defaults $page.Type) "{{ term }}" $titleAccent }}
     {{ end }}
   {{ end }}
 {{ else }}

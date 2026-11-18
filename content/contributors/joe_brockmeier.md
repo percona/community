@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/joe_brockmeier
 - /speakers/joe_brockmeier/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

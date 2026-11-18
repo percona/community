@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/barrett_chambers
 - /speakers/barrett_chambers/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

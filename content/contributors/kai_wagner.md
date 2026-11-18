@@ -19,6 +19,8 @@ aliases:
 - /speakers/kai_wagner
 - /speakers/kai_wagner/
 planet_pg_tag: pg_kwagner
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

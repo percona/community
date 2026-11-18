@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/marcos_albe
 - /speakers/marcos_albe/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

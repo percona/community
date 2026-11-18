@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/peter_zaitsev
 - /speakers/peter_zaitsev/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - AI
@@ -32,6 +34,7 @@ contributor_tag:
 blog_tags: []
 events_tags:
 - Cloud-Native
+- DuckDB
 - Event
 - Events
 - Featured
@@ -51,6 +54,8 @@ events_tags:
 - event
 - fosdem
 - in-memory
+- linux
+- observability
 - opensource
 - performance
 - russia
@@ -66,6 +71,7 @@ talks_tags:
 - Cloud-Native
 - DBaaS
 - Databases
+- DuckDB
 - Linux
 - MariaDB
 - Observability
@@ -89,11 +95,12 @@ talks_tags:
 - video
 - web
 posts_count: 0
-events_count: 41
-talks_count: 71
+events_count: 44
+talks_count: 74
 contributor_type:
 - speaker
 contributor_year:
+- '2027'
 - '2026'
 - '2025'
 - '2024'

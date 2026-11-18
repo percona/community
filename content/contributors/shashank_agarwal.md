@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/shashank_agarwal
 - /speakers/shashank_agarwal/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

@@ -19,7 +19,7 @@
   <script>window.location.replace({{ (site.GetPage "/contributors").RelPermalink | jsonify }});</script>
   <p class="el-panel__empty">Redirecting to <a href="{{ (site.GetPage "/contributors").RelPermalink }}">Contributors Hub</a>…</p>
 {{ else }}
-{{ $pages := .Pages }}
+{{ $pages := where .Pages "Params.name" "!=" nil }}
 {{ if eq .Data.Term "author" }}
   {{ $pages = sort $pages ".Params.posts_count" "desc" }}
 {{ else if eq .Data.Term "speaker" }}

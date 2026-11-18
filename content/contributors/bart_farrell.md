@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/bart_farrell
 - /speakers/bart_farrell/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

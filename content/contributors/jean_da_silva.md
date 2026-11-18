@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/jean_da_silva
 - /speakers/jean_da_silva/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

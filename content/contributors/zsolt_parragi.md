@@ -15,6 +15,8 @@ aliases:
 - /authors/zsolt_parragi
 - /authors/zsolt_parragi/
 planet_pg_tag: pg_zsolt
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - AI

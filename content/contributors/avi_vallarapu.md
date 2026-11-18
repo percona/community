@@ -13,7 +13,9 @@ social:
   website: null
 images:
 - contributors/avi_vallarapu.jpeg
-status: community
+status: former
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

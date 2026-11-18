@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/vijay_karumajj
 - /speakers/vijay_karumajj/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

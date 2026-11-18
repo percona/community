@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/alexander_zaitsev
 - /speakers/alexander_zaitsev/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MongoDB

@@ -443,7 +443,7 @@
   }
 }
 
-.orbit-page {
+.lookout-page {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -452,7 +452,7 @@
   padding: 0 32px;
 }
 
-.orbit-page #orbit {
+.lookout-page #lookout {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -461,14 +461,14 @@
 }
 
 @media (max-width: 720px) {
-  .orbit-page {
+  .lookout-page {
     max-width: none;
     margin: 0;
     padding: 0 16px;
     overflow-x: hidden;
   }
 
-  .orbit-page #orbit {
+  .lookout-page #lookout {
     height: calc(100dvh - 130px);
     min-height: 520px;
     overflow: hidden;

@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/jaime_sicam
 - /authors/jaime_sicam/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

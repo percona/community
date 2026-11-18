@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/marcelo_altmann
 - /speakers/marcelo_altmann/
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

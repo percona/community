@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/cate_lawrence
 - /authors/cate_lawrence/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

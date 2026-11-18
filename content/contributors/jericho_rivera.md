@@ -13,6 +13,8 @@ social:
   website: null
 images:
 - contributors/jericho_rivera.jpeg
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - PostgreSQL

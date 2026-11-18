@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/oleksandr_kuzminskyi
 - /speakers/oleksandr_kuzminskyi/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

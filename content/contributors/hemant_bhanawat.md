@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/hemant_bhanawat
 - /speakers/hemant_bhanawat/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

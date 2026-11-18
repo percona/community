@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/anna_widenius
 - /speakers/anna_widenius/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - MySQL

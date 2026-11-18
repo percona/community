@@ -17,6 +17,8 @@ images:
 aliases:
 - /speakers/patrick_mcfadin
 - /speakers/patrick_mcfadin/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags: []

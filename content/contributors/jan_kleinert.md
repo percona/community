@@ -18,6 +18,8 @@ images:
 aliases:
 - /speakers/jan_kleinert
 - /speakers/jan_kleinert/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Kubernetes

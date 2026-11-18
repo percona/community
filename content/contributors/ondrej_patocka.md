@@ -5,6 +5,8 @@ fullname: Ondrej Patocka
 fullname_pronounciation: Ondrej Patocka
 tagline: Agile Facilitator, former Perconian
 status: former
+contributor_status:
+- staff
 social:
   facebook: null
   github: null

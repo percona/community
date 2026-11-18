@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/sugu_sougoumarane
 - /authors/sugu_sougoumarane/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:

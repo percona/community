@@ -3,9 +3,9 @@
 {{- end }}
 
 {{ define "mainwrapper" }}
-  {{ $origin := .Site.Params.orbitPublicOrigin | default "https://search.percona.community" }}
-  <div class="orbit-page">
-    <div id="orbit" data-feed="{{ $origin }}/orbit/widget/feed.json"></div>
+  {{ $origin := .Site.Params.lookoutPublicOrigin | default "https://search.percona.community" }}
+  <div class="lookout-page">
+    <div id="lookout" data-feed="{{ $origin }}/lookout/widget/feed.json"></div>
   </div>
   {{ if hugo.IsServer }}
   <script type="module">
@@ -18,6 +18,6 @@
   <script type="module" src="http://127.0.0.1:5174/@vite/client"></script>
   <script type="module" src="http://127.0.0.1:5174/src/embed.tsx"></script>
   {{ else }}
-  <script type="module" src="/js/orbit-app.js?v={{ now.Unix }}"></script>
+  <script type="module" src="/js/lookout-app.js?v={{ now.Unix }}"></script>
   {{ end }}
 {{ end }}

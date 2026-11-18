@@ -1,0 +1,385 @@
+{
+  "status": "PASS",
+  "error": null,
+  "completed_utc": "2026-10-13T08:10:20.481514+00:00",
+  "image": "postgres@sha256:882236b897e39051d2368c5ccc6cda944904723506b2dfc97f2a8f5bc9afa382",
+  "platform": "linux/amd64",
+  "check_count": 70,
+  "checks": [
+    {
+      "check": "server pinned to 18.4",
+      "status": "PASS",
+      "command": "016"
+    },
+    {
+      "check": "server version is 180004: source",
+      "status": "PASS",
+      "command": "017"
+    },
+    {
+      "check": "no TCP listener: source",
+      "status": "PASS",
+      "command": "018"
+    },
+    {
+      "check": "server version is 180004: target",
+      "status": "PASS",
+      "command": "019"
+    },
+    {
+      "check": "no TCP listener: target",
+      "status": "PASS",
+      "command": "020"
+    },
+    {
+      "check": "source has two synthetic rows",
+      "status": "PASS",
+      "command": "023"
+    },
+    {
+      "check": "preserve requires source roles",
+      "status": "PASS",
+      "command": "032",
+      "expected_failure": "role \"legacy_owner\" does not exist"
+    },
+    {
+      "check": "failed preserve restored no schema (transaction rolled back)",
+      "status": "PASS",
+      "command": "033"
+    },
+    {
+      "check": "preserved object ownership",
+      "status": "PASS",
+      "command": "036"
+    },
+    {
+      "check": "preserved creator default ACLs",
+      "status": "PASS",
+      "command": "037"
+    },
+    {
+      "check": "preserved existing table: effective role",
+      "status": "PASS",
+      "command": "038"
+    },
+    {
+      "check": "preserved existing table: SELECT",
+      "status": "PASS",
+      "command": "039"
+    },
+    {
+      "check": "preserved existing table: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "040"
+    },
+    {
+      "check": "preserved existing table: table and sequence rights",
+      "status": "PASS",
+      "command": "041"
+    },
+    {
+      "check": "preserved future table: effective role",
+      "status": "PASS",
+      "command": "043"
+    },
+    {
+      "check": "preserved future table: SELECT",
+      "status": "PASS",
+      "command": "044"
+    },
+    {
+      "check": "preserved future table: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "045"
+    },
+    {
+      "check": "preserved future table: table and sequence rights",
+      "status": "PASS",
+      "command": "046"
+    },
+    {
+      "check": "no-owner alone uses restoring role for object owner",
+      "status": "PASS",
+      "command": "049"
+    },
+    {
+      "check": "no-owner alone retains legacy grantee",
+      "status": "PASS",
+      "command": "050"
+    },
+    {
+      "check": "no-owner alone retains legacy default-ACL creator",
+      "status": "PASS",
+      "command": "051"
+    },
+    {
+      "check": "no-owner alone does not map target_app",
+      "status": "PASS",
+      "command": "052",
+      "expected_failure": "permission denied for schema app",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "no-owner alone retains old app access: effective role",
+      "status": "PASS",
+      "command": "053"
+    },
+    {
+      "check": "no-owner alone retains old app access: SELECT",
+      "status": "PASS",
+      "command": "054"
+    },
+    {
+      "check": "no-owner alone retains old app access: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "055"
+    },
+    {
+      "check": "no-owner alone retains old app access: table and sequence rights",
+      "status": "PASS",
+      "command": "056"
+    },
+    {
+      "check": "old creator defaults do not apply to restoring role",
+      "status": "PASS",
+      "command": "058",
+      "expected_failure": "permission denied for table owner_only_future",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "old creator defaults do not grant new sequence usage",
+      "status": "PASS",
+      "command": "059"
+    },
+    {
+      "check": "remapped schema and all relations owned by target_owner",
+      "status": "PASS",
+      "command": "062"
+    },
+    {
+      "check": "no-acl excludes source default ACLs and source application grants",
+      "status": "PASS",
+      "command": "063"
+    },
+    {
+      "check": "remap before schema grant",
+      "status": "PASS",
+      "command": "064",
+      "expected_failure": "permission denied for schema app",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "schema usage is not table SELECT",
+      "status": "PASS",
+      "command": "066",
+      "expected_failure": "permission denied for table widgets",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "table SELECT after scoped grant",
+      "status": "PASS",
+      "command": "068"
+    },
+    {
+      "check": "table INSERT does not grant sequence usage",
+      "status": "PASS",
+      "command": "069",
+      "expected_failure": "permission denied for sequence widgets_id_seq",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "remapped existing table: effective role",
+      "status": "PASS",
+      "command": "071"
+    },
+    {
+      "check": "remapped existing table: SELECT",
+      "status": "PASS",
+      "command": "072"
+    },
+    {
+      "check": "remapped existing table: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "073"
+    },
+    {
+      "check": "remapped existing table: table and sequence rights",
+      "status": "PASS",
+      "command": "074"
+    },
+    {
+      "check": "app cannot UPDATE table",
+      "status": "PASS",
+      "command": "075",
+      "expected_failure": "permission denied for table widgets",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "app cannot DELETE table",
+      "status": "PASS",
+      "command": "076",
+      "expected_failure": "permission denied for table widgets",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "app cannot setval sequence",
+      "status": "PASS",
+      "command": "077",
+      "expected_failure": "permission denied for sequence widgets_id_seq",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "app cannot CREATE in schema",
+      "status": "PASS",
+      "command": "078",
+      "expected_failure": "permission denied for schema app",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "new table without defaults",
+      "status": "PASS",
+      "command": "080",
+      "expected_failure": "permission denied for table early_widgets",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "defaults do not repair pre-existing table",
+      "status": "PASS",
+      "command": "082",
+      "expected_failure": "permission denied for table early_widgets",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "defaults do not repair pre-existing sequence",
+      "status": "PASS",
+      "command": "083"
+    },
+    {
+      "check": "explicitly repaired early table: effective role",
+      "status": "PASS",
+      "command": "085"
+    },
+    {
+      "check": "explicitly repaired early table: SELECT",
+      "status": "PASS",
+      "command": "086"
+    },
+    {
+      "check": "explicitly repaired early table: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "087"
+    },
+    {
+      "check": "explicitly repaired early table: table and sequence rights",
+      "status": "PASS",
+      "command": "088"
+    },
+    {
+      "check": "remapped future owner-created table: effective role",
+      "status": "PASS",
+      "command": "089"
+    },
+    {
+      "check": "remapped future owner-created table: SELECT",
+      "status": "PASS",
+      "command": "090"
+    },
+    {
+      "check": "remapped future owner-created table: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "091"
+    },
+    {
+      "check": "remapped future owner-created table: table and sequence rights",
+      "status": "PASS",
+      "command": "092"
+    },
+    {
+      "check": "target defaults belong to target_owner only",
+      "status": "PASS",
+      "command": "093"
+    },
+    {
+      "check": "membership does not change creating role",
+      "status": "PASS",
+      "command": "096"
+    },
+    {
+      "check": "owner defaults are not inherited by a member creator",
+      "status": "PASS",
+      "command": "097",
+      "expected_failure": "permission denied for table migration_widgets",
+      "sqlstate": "42501"
+    },
+    {
+      "check": "migration SET ROLE creates as default-ACL owner",
+      "status": "PASS",
+      "command": "099"
+    },
+    {
+      "check": "migration with explicit owner role: effective role",
+      "status": "PASS",
+      "command": "100"
+    },
+    {
+      "check": "migration with explicit owner role: SELECT",
+      "status": "PASS",
+      "command": "101"
+    },
+    {
+      "check": "migration with explicit owner role: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "102"
+    },
+    {
+      "check": "migration with explicit owner role: table and sequence rights",
+      "status": "PASS",
+      "command": "103"
+    },
+    {
+      "check": "explicitly repaired migration table: effective role",
+      "status": "PASS",
+      "command": "105"
+    },
+    {
+      "check": "explicitly repaired migration table: SELECT",
+      "status": "PASS",
+      "command": "106"
+    },
+    {
+      "check": "explicitly repaired migration table: generated INSERT and RETURNING",
+      "status": "PASS",
+      "command": "107"
+    },
+    {
+      "check": "explicitly repaired migration table: table and sequence rights",
+      "status": "PASS",
+      "command": "108"
+    },
+    {
+      "check": "lab_preserved retains exactly the original data",
+      "status": "PASS",
+      "command": "109"
+    },
+    {
+      "check": "lab_owner_only retains exactly the original data",
+      "status": "PASS",
+      "command": "110"
+    },
+    {
+      "check": "lab_remapped retains exactly the original data",
+      "status": "PASS",
+      "command": "111"
+    },
+    {
+      "check": "app has no owner-role membership or elevated attributes",
+      "status": "PASS",
+      "command": "112"
+    },
+    {
+      "check": "disposable containers and anonymous volumes removed",
+      "status": "PASS",
+      "command": "118"
+    }
+  ]
+}

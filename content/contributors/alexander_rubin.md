@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/alexander_rubin
 - /authors/alexander_rubin/
+contributor_status:
+- community
 # Auto-generated fields. Do not edit manually.
 contributor_tag: []
 blog_tags:
