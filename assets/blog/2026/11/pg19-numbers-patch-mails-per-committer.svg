@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Patch submissions per committer</title>
+<rect width="960" height="380" fill="#ffffff"/>
+<text x="24" y="34" font-size="18" font-weight="600" fill="#0b0b0b">Patch submissions per committer</text>
+<text x="24" y="56" font-size="13" fill="#52514e">patch mails of the release divided by the number of committers</text>
+<text x="936" y="366" font-size="11" fill="#898781" text-anchor="end">hackorum.dev/stats/trends/releases</text>
+<line x1="72.00" y1="248.00" x2="936.00" y2="248.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="252.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">100</text>
+<line x1="72.00" y1="172.00" x2="936.00" y2="172.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="176.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">200</text>
+<line x1="72.00" y1="96.00" x2="936.00" y2="96.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="100.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">300</text>
+<text x="64.00" y="328.00" font-size="11" fill="#898781" text-anchor="end">0</text>
+<line x1="72.00" y1="324.00" x2="936.00" y2="324.00" stroke="#c3c2b7" stroke-width="1" shape-rendering="crispEdges"/>
+<path d="M108.00,324.00 L108.00,233.00 Q108.00,229.00 112.00,229.00 L128.00,229.00 Q132.00,229.00 132.00,233.00 L132.00,324.00 Z" fill="#653DF4"><title>PG11: 125</title></path>
+<text x="120.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG11</text>
+<text x="120.00" y="221.00" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600">125</text>
+<path d="M204.00,324.00 L204.00,221.60 Q204.00,217.60 208.00,217.60 L224.00,217.60 Q228.00,217.60 228.00,221.60 L228.00,324.00 Z" fill="#653DF4"><title>PG12: 140</title></path>
+<text x="216.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG12</text>
+<path d="M300.00,324.00 L300.00,210.96 Q300.00,206.96 304.00,206.96 L320.00,206.96 Q324.00,206.96 324.00,210.96 L324.00,324.00 Z" fill="#653DF4"><title>PG13: 154</title></path>
+<text x="312.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG13</text>
+<path d="M396.00,324.00 L396.00,172.20 Q396.00,168.20 400.00,168.20 L416.00,168.20 Q420.00,168.20 420.00,172.20 L420.00,324.00 Z" fill="#653DF4"><title>PG14: 205</title></path>
+<text x="408.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG14</text>
+<path d="M492.00,324.00 L492.00,178.28 Q492.00,174.28 496.00,174.28 L512.00,174.28 Q516.00,174.28 516.00,178.28 L516.00,324.00 Z" fill="#653DF4"><title>PG15: 197</title></path>
+<text x="504.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG15</text>
+<path d="M588.00,324.00 L588.00,183.60 Q588.00,179.60 592.00,179.60 L608.00,179.60 Q612.00,179.60 612.00,183.60 L612.00,324.00 Z" fill="#653DF4"><title>PG16: 190</title></path>
+<text x="600.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG16</text>
+<path d="M684.00,324.00 L684.00,162.32 Q684.00,158.32 688.00,158.32 L704.00,158.32 Q708.00,158.32 708.00,162.32 L708.00,324.00 Z" fill="#653DF4"><title>PG17: 218</title></path>
+<text x="696.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG17</text>
+<path d="M780.00,324.00 L780.00,159.28 Q780.00,155.28 784.00,155.28 L800.00,155.28 Q804.00,155.28 804.00,159.28 L804.00,324.00 Z" fill="#653DF4"><title>PG18: 222</title></path>
+<text x="792.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG18</text>
+<path d="M876.00,324.00 L876.00,119.76 Q876.00,115.76 880.00,115.76 L896.00,115.76 Q900.00,115.76 900.00,119.76 L900.00,324.00 Z" fill="#653DF4"><title>PG19: 274</title></path>
+<text x="888.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG19</text>
+<text x="888.00" y="107.76" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600">274</text>
+</svg>
