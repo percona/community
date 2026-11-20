@@ -1,6 +1,6 @@
 ---
 title: "When did I start contributing to pgBackRest, exactly?"
-date: "2026-11-19T14:00:00+01:00"
+date: "2026-11-23T10:00:00+01:00"
 tags: ['PostgreSQL', 'pgBackRest', 'Community', 'Contributions', 'pgstef']
 categories: ['PostgreSQL']
 authors:
@@ -87,7 +87,7 @@ Let's compare three periods: July 2020 to September 2023 ("Back then"), October 
 
 ## Reviewing a pull request today
 
-Today, I no longer build a test environment by hand for each pull request. Thanks to the wizardry of my colleague [Zsolt](https://github.com/dutow), the process is partly automated.
+Today, I no longer build a test environment by hand for each pull request. Thanks to the wizardry of my colleague [Zsolt](https://github.com/dutow), the process is partly [automated](https://percona.community/blog/2026/09/25/reviewing-large-projects-with-ai-contributing-in-a-meaningful-way/).
 
 The automation picks up every pull request David opens, and I queue the others manually when needed. A new commit on a pull request I follow triggers another review.
 
