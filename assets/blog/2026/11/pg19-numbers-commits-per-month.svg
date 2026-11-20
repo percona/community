@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Commits per month, PG18 and PG19</title>
+<rect width="960" height="400" fill="#ffffff"/>
+<text x="24" y="34" font-size="18" font-weight="600" fill="#0b0b0b">Commits per month, PG18 and PG19</text>
+<text x="24" y="56" font-size="13" fill="#52514e">same scale, from branching off the previous release until the .0 release</text>
+<text x="936" y="386" font-size="11" fill="#898781" text-anchor="end">hackorum.dev/stats/releases/18 and /19</text>
+<line x1="64.00" y1="298.80" x2="936.00" y2="298.80" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="302.80" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">100</text>
+<line x1="64.00" y1="253.60" x2="936.00" y2="253.60" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="257.60" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">200</text>
+<line x1="64.00" y1="208.40" x2="936.00" y2="208.40" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="212.40" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">300</text>
+<line x1="64.00" y1="163.20" x2="936.00" y2="163.20" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="167.20" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">400</text>
+<line x1="64.00" y1="118.00" x2="936.00" y2="118.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="122.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">500</text>
+<text x="56.00" y="348.00" font-size="11" fill="#898781" text-anchor="end">0</text>
+<line x1="64.00" y1="344.00" x2="936.00" y2="344.00" stroke="#c3c2b7" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="68.00" y="92.00" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">PG18</text>
+<path d="" fill="#653DF4"><title>May 2024: 0</title></path>
+<text x="75.44" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">May '24</text>
+<path d="M89.89,344.00 L89.89,344.00 Q89.89,343.55 90.34,343.55 L106.33,343.55 Q106.78,343.55 106.78,344.00 L106.78,344.00 Z" fill="#653DF4"><title>Jun 2024: 1</title></path>
+<path d="M112.78,344.00 L112.78,268.45 Q112.78,264.45 116.78,264.45 L125.67,264.45 Q129.67,264.45 129.67,268.45 L129.67,344.00 Z" fill="#653DF4"><title>Jul 2024: 176</title></path>
+<path d="M135.67,344.00 L135.67,280.65 Q135.67,276.65 139.67,276.65 L148.56,276.65 Q152.56,276.65 152.56,280.65 L152.56,344.00 Z" fill="#653DF4"><title>Aug 2024: 149</title></path>
+<text x="144.11" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Aug '24</text>
+<path d="M158.56,344.00 L158.56,276.58 Q158.56,272.58 162.56,272.58 L171.44,272.58 Q175.44,272.58 175.44,276.58 L175.44,344.00 Z" fill="#653DF4"><title>Sep 2024: 158</title></path>
+<path d="M181.44,344.00 L181.44,239.07 Q181.44,235.07 185.44,235.07 L194.33,235.07 Q198.33,235.07 198.33,239.07 L198.33,344.00 Z" fill="#653DF4"><title>Oct 2024: 241</title></path>
+<path d="M204.33,344.00 L204.33,256.24 Q204.33,252.24 208.33,252.24 L217.22,252.24 Q221.22,252.24 221.22,256.24 L221.22,344.00 Z" fill="#653DF4"><title>Nov 2024: 203</title></path>
+<text x="212.78" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Nov '24</text>
+<path d="M227.22,344.00 L227.22,261.22 Q227.22,257.22 231.22,257.22 L240.11,257.22 Q244.11,257.22 244.11,261.22 L244.11,344.00 Z" fill="#653DF4"><title>Dec 2024: 192</title></path>
+<path d="M250.11,344.00 L250.11,249.92 Q250.11,245.92 254.11,245.92 L263.00,245.92 Q267.00,245.92 267.00,249.92 L267.00,344.00 Z" fill="#653DF4"><title>Jan 2025: 217</title></path>
+<path d="M273.00,344.00 L273.00,235.90 Q273.00,231.90 277.00,231.90 L285.89,231.90 Q289.89,231.90 289.89,235.90 L289.89,344.00 Z" fill="#653DF4"><title>Feb 2025: 248</title></path>
+<text x="281.44" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Feb '25</text>
+<path d="M295.89,344.00 L295.89,184.38 Q295.89,180.38 299.89,180.38 L308.78,180.38 Q312.78,180.38 312.78,184.38 L312.78,344.00 Z" fill="#653DF4"><title>Mar 2025: 362</title></path>
+<text x="304.33" y="172.38" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600">362</text>
+<path d="M318.78,344.00 L318.78,203.36 Q318.78,199.36 322.78,199.36 L331.67,199.36 Q335.67,199.36 335.67,203.36 L335.67,344.00 Z" fill="#653DF4"><title>Apr 2025: 320</title></path>
+<path d="M341.67,344.00 L341.67,282.46 Q341.67,278.46 345.67,278.46 L354.56,278.46 Q358.56,278.46 358.56,282.46 L358.56,344.00 Z" fill="#653DF4"><title>May 2025: 145</title></path>
+<text x="350.11" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">May '25</text>
+<path d="M364.56,344.00 L364.56,282.01 Q364.56,278.01 368.56,278.01 L377.44,278.01 Q381.44,278.01 381.44,282.01 L381.44,344.00 Z" fill="#653DF4"><title>Jun 2025: 146</title></path>
+<path d="M387.44,344.00 L387.44,303.25 Q387.44,299.25 391.44,299.25 L400.33,299.25 Q404.33,299.25 404.33,303.25 L404.33,344.00 Z" fill="#653DF4"><title>Jul 2025: 99</title></path>
+<path d="M410.33,344.00 L410.33,302.80 Q410.33,298.80 414.33,298.80 L423.22,298.80 Q427.22,298.80 427.22,302.80 L427.22,344.00 Z" fill="#653DF4"><title>Aug 2025: 100</title></path>
+<text x="418.78" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Aug '25</text>
+<path d="M433.22,344.00 L433.22,320.43 Q433.22,316.43 437.22,316.43 L446.11,316.43 Q450.11,316.43 450.11,320.43 L450.11,344.00 Z" fill="#653DF4"><title>Sep 2025: 61</title></path>
+<text x="441.67" y="308.43" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600">61</text>
+<line x1="321.88" y1="112.00" x2="321.88" y2="344.00" stroke="#898781" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="325.88" y="122.00" font-size="11" fill="#52514e" text-anchor="start">feature freeze</text>
+<text x="505.11" y="92.00" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">PG19</text>
+<rect x="461.11" y="78" width="32" height="296" fill="#ffffff"/>
+<line x1="477.11" y1="78.00" x2="477.11" y2="374.00" stroke="#c3c2b7" stroke-width="1" shape-rendering="crispEdges"/>
+<path d="" fill="#653DF4"><title>May 2025: 0</title></path>
+<text x="512.56" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">May '25</text>
+<path d="M527.00,344.00 L527.00,341.22 Q527.00,337.22 531.00,337.22 L539.89,337.22 Q543.89,337.22 543.89,341.22 L543.89,344.00 Z" fill="#653DF4"><title>Jun 2025: 15</title></path>
+<path d="M549.89,344.00 L549.89,292.86 Q549.89,288.86 553.89,288.86 L562.78,288.86 Q566.78,288.86 566.78,292.86 L566.78,344.00 Z" fill="#653DF4"><title>Jul 2025: 122</title></path>
+<path d="M572.78,344.00 L572.78,300.09 Q572.78,296.09 576.78,296.09 L585.67,296.09 Q589.67,296.09 589.67,300.09 L589.67,344.00 Z" fill="#653DF4"><title>Aug 2025: 106</title></path>
+<text x="581.22" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Aug '25</text>
+<path d="M595.67,344.00 L595.67,285.62 Q595.67,281.62 599.67,281.62 L608.56,281.62 Q612.56,281.62 612.56,285.62 L612.56,344.00 Z" fill="#653DF4"><title>Sep 2025: 138</title></path>
+<path d="M618.56,344.00 L618.56,239.07 Q618.56,235.07 622.56,235.07 L631.44,235.07 Q635.44,235.07 635.44,239.07 L635.44,344.00 Z" fill="#653DF4"><title>Oct 2025: 241</title></path>
+<path d="M641.44,344.00 L641.44,230.48 Q641.44,226.48 645.44,226.48 L654.33,226.48 Q658.33,226.48 658.33,230.48 L658.33,344.00 Z" fill="#653DF4"><title>Nov 2025: 260</title></path>
+<text x="649.89" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Nov '25</text>
+<path d="M664.33,344.00 L664.33,230.03 Q664.33,226.03 668.33,226.03 L677.22,226.03 Q681.22,226.03 681.22,230.03 L681.22,344.00 Z" fill="#653DF4"><title>Dec 2025: 261</title></path>
+<path d="M687.22,344.00 L687.22,238.62 Q687.22,234.62 691.22,234.62 L700.11,234.62 Q704.11,234.62 704.11,238.62 L704.11,344.00 Z" fill="#653DF4"><title>Jan 2026: 242</title></path>
+<path d="M710.11,344.00 L710.11,258.96 Q710.11,254.96 714.11,254.96 L723.00,254.96 Q727.00,254.96 727.00,258.96 L727.00,344.00 Z" fill="#653DF4"><title>Feb 2026: 197</title></path>
+<text x="718.56" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Feb '26</text>
+<path d="M733.00,344.00 L733.00,159.97 Q733.00,155.97 737.00,155.97 L745.89,155.97 Q749.89,155.97 749.89,159.97 L749.89,344.00 Z" fill="#653DF4"><title>Mar 2026: 416</title></path>
+<text x="741.44" y="147.97" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600">416</text>
+<path d="M755.89,344.00 L755.89,186.18 Q755.89,182.18 759.89,182.18 L768.78,182.18 Q772.78,182.18 772.78,186.18 L772.78,344.00 Z" fill="#653DF4"><title>Apr 2026: 358</title></path>
+<path d="M778.78,344.00 L778.78,256.70 Q778.78,252.70 782.78,252.70 L791.67,252.70 Q795.67,252.70 795.67,256.70 L795.67,344.00 Z" fill="#653DF4"><title>May 2026: 202</title></path>
+<text x="787.22" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">May '26</text>
+<path d="M801.67,344.00 L801.67,256.24 Q801.67,252.24 805.67,252.24 L814.56,252.24 Q818.56,252.24 818.56,256.24 L818.56,344.00 Z" fill="#653DF4"><title>Jun 2026: 203</title></path>
+<path d="M824.56,344.00 L824.56,259.86 Q824.56,255.86 828.56,255.86 L837.44,255.86 Q841.44,255.86 841.44,259.86 L841.44,344.00 Z" fill="#653DF4"><title>Jul 2026: 195</title></path>
+<path d="M847.44,344.00 L847.44,249.01 Q847.44,245.01 851.44,245.01 L860.33,245.01 Q864.33,245.01 864.33,249.01 L864.33,344.00 Z" fill="#653DF4"><title>Aug 2026: 219</title></path>
+<text x="855.89" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Aug '26</text>
+<path d="M870.33,344.00 L870.33,261.22 Q870.33,257.22 874.33,257.22 L883.22,257.22 Q887.22,257.22 887.22,261.22 L887.22,344.00 Z" fill="#653DF4"><title>Sep 2026: 192</title></path>
+<path d="M893.22,344.00 L893.22,249.46 Q893.22,245.46 897.22,245.46 L906.11,245.46 Q910.11,245.46 910.11,249.46 L910.11,344.00 Z" fill="#653DF4"><title>Oct 2026: 218</title></path>
+<path d="M916.11,344.00 L916.11,256.70 Q916.11,252.70 920.11,252.70 L929.00,252.70 Q933.00,252.70 933.00,256.70 L933.00,344.00 Z" fill="#653DF4"><title>Nov 2026: 202</title></path>
+<text x="924.56" y="364.00" font-size="11" fill="#52514e" text-anchor="middle">Nov '26</text>
+<text x="924.56" y="244.70" font-size="12" fill="#0b0b0b" text-anchor="middle" font-weight="600">202</text>
+<line x1="759.76" y1="112.00" x2="759.76" y2="344.00" stroke="#898781" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="763.76" y="122.00" font-size="11" fill="#52514e" text-anchor="start">feature freeze</text>
+</svg>
