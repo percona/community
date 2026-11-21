@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
     <title>{{- block "title" . }}{{ if not .IsHome }}{{ with .Title }}{{ . | truncate 60 }} | {{ end }}{{ end }}{{ .Site.Title }}{{- end }}</title>
 
-    <meta name="description" content="{{ with .Description }}{{ . | truncate 159 }}{{ else }}{{if .IsPage}}{{ .Summary | truncate 159 }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    {{- $seo := partialCached "planet-pg/seo.html" . .RelPermalink -}}
+    <meta name="description" content="{{ with $seo.description }}{{ . | truncate 159 }}{{ else }}{{ with .Description }}{{ . | truncate 159 }}{{ else }}{{if .IsPage}}{{ .Summary | truncate 159 }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end }}">
     {{ if .Site.Params.favicon }}
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32"  href="{{ (resources.Get "icons/percona-purple-32.png").RelPermalink }}" />
@@ -20,10 +21,11 @@
       <link rel="canonical" href="{{ .Permalink }}" />
     {{- end }}
 
-    {{ if not (or (.Params.private) (hasPrefix .RelPermalink "/tags")) }}
+    {{- $isTagIndex := and (hasPrefix .RelPermalink "/tags") (not $seo.contributor) -}}
+    {{ if not (or (.Params.private) $isTagIndex) }}
     <meta name="robots" content="index,follow">
     {{ else }}
-    <meta name="robots" content="noindex,nofollow"> 
+    <meta name="robots" content="noindex,nofollow">
     {{ end }}
 
     <link rel="describedby" href="{{ "llms.txt" | absURL }}" type="text/plain" title="LLM site map">
