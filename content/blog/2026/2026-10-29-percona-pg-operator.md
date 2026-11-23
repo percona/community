@@ -129,7 +129,7 @@ Install the operator and switch to its namespace:
   
 ```shell
 kubectl create namespace pg-operator
-helm install ps-operator percona/pg-operator --namespace pg-operator
+helm install ps-operator percona/pg-operator --namespace pg-operator --version=3.1.0
 ```
 
 ```text
