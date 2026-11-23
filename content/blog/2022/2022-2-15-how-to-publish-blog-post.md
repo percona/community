@@ -23,7 +23,7 @@ We use the Hugo website engine. It turns Markdown pages into HTML very quickly a
 **Quick Steps**
 
 I will briefly describe the steps for the professionals:
-- Fork our repository ["percona/community"](https://github.com/percona/community/).
+- Fork our repository ["percona/community"](https://github.com/percona/community/). Percona employees with write access can skip the fork and push a branch to `percona/community` directly.
 - Make a Git Clone fork on your computer
 - Install [Hugo engine](https://gohugo.io/getting-started/installing/)
 - Run the Hugo server in the source code folder of the site with the command `hugo server -D` and open a local copy of the site in your browser at `localhost:1313`
@@ -109,9 +109,10 @@ Our website works with text and posts marked up in [Markdown](https://www.markdo
 **Quick Steps**
 
 1. Create a separate branch for your changes.
-2. Add information about you to the `content/contributors/` folder.
+2. Add your author card: `content/contributors/<your_name>.md`.
 3. Add your photo to the folder `assets/contributors`.
-4. Add your post in Markdown to the `content/blog` directory.
+4. Add your post images to `assets/blog/<YYYY>/<MM>/`.
+5. Add your post in Markdown to `content/blog/<YYYY>/`.
 
 **Detailed Instructions**
 
@@ -122,17 +123,18 @@ Our website works with text and posts marked up in [Markdown](https://www.markdo
 `git checkout -b dbazhenov_post` 
 
 3. Create a contributor card in the `content/contributors/` folder.  
-   You need to create a folder with your name and an index.md file.  
-   You can find many examples in `/content/contributors/`.
+   It is one file named after you, lowercase with underscores: `content/contributors/jane_doe.md`.  
+   Start from the template with `hugo new contributors/jane_doe.md`, or copy one of the existing cards.  
+   Set `status: community` and `contributor_status: [community]`. Percona employees use `status: current` and `contributor_status: [staff]`; former employees use `status: former` and `contributor_status: [staff]`.
 
-4. Add your photo to the folder `assets/contributors`.  
-   This is your avatar. Specify its address in your contributor profile file in the `images` field.
+4. Add your photo to the folder `assets/contributors`, e.g. `assets/contributors/jane_doe.jpg`.  
+   This is your avatar. Specify its address in your contributor profile file in the `images` field: `contributors/jane_doe.jpg`.
 
-5. If your post contains images, load the pre-made images into the `assets/blog/[YEAR]/[month]` directory. If there is no directory, create one. 
+5. If your post contains images, put them in `assets/blog/<YYYY>/<MM>/`, e.g. `assets/blog/2026/11/`. If there is no directory, create one. In the post, reference them relative to `assets/`: `![Diagram](blog/2026/11/diagram.png)`.
 
-6. Add the post in Markdown format to the `content/blog` directory. Please, specify the name of your file according to the example: "Date-name-in-style-URL". In my case, it is '2022-02-12-how-to-post.md'. If you are not familiar with Markdown, just have a look at other posts in the blog. There are examples for code blocks, headers, pictures and lists there. 
+6. Add the post in Markdown format to `content/blog/<YYYY>/`. Name the file `<YYYY-MM-DD>-<slug>.md`, e.g. `content/blog/2026/2026-11-23-how-to-post.md`. If you are not familiar with Markdown, just have a look at other posts in the blog. There are examples for code blocks, headers, pictures and lists there. 
 
-7. Each post at the beginning must have special parameters in YAML format, the so-called [Front Matter](https://gohugo.io/content-management/front-matter/). You can find an example in any of our 100+ blog posts. Specify these parameters: Title, Date, Draft status, Tags, Images (a special image that will be displayed in the list of posts and on social networks), Authors (your name as you are listed on the author card), Slug (optional, only if you want to have a special URL).
+7. Each post at the beginning must have special parameters in YAML format, the so-called [Front Matter](https://gohugo.io/content-management/front-matter/). You can find an example in any of our 100+ blog posts. Specify these parameters: Title, Date, Tags, Images (the cover that will be displayed in the list of posts and on social networks — required), Authors (your card name, e.g. `jane_doe`), Slug (optional, only if you want to have a special URL).
 
 8. If you ran the Hugo server (`hugo server -D`), you can open your post in your browser (`localhost:1313`). If you have difficulties or problems, email us at community-team@percona.com or open Issues on GitHub. To see the post in the list, you need to put the date earlier than today, as the list displays posts sorted by date.
 
@@ -186,6 +188,13 @@ This way you will see all the modified or added files that will be sent to the r
 To fix the mistake, simply make changes to the copy on your computer. Repeat steps 2 and 3 (git add, commit, push). Your new commit will automatically be added to your Pull Request.
 
 By publishing your post on our blog, you will become a full contributor to the repository and community. We will provide you with a special gift.
+
+## What We Look For
+
+- Write from your own experience: a problem you solved, a migration you ran, a tool you built. A short post about a real incident beats a long survey.
+- AI help with drafting is fine, but the post should read as yours, and every claim should be something you checked.
+- Republishing a post from your own blog is welcome — mention the original if you want a link back.
+- You keep the copyright. Community posts are published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Assistance and Support
 
