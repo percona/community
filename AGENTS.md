@@ -48,7 +48,7 @@ Guidance for AI coding agents working in [percona/community](https://github.com/
 
 Use when there is no SPEAK issue, or the user asks to add content by hand. Example shape: `content/events/prosvita-2026/`, `content/talks/2026/2026-06-22-shift-left-…`.
 
-1. **Speaker** — `content/contributors/<slug>.md` + `assets/contributors/<slug>.*` if missing.
+1. **Speaker** — `content/contributors/<slug>.md` + `assets/contributors/<slug>.*` if missing. Set `status` + `contributor_status` (see **Contributor cards** below).
 2. **Event** — `content/events/<slug>/index.md` with `speakers`, dates, location/URL. **Do not** set `source: jira` (that marks pages owned by `events_publish`; hand-written pages must stay without it so sync will not overwrite them). Prefer `sync: skip` on hand-curated event/talk pages that still carry a `jira:` key.
 3. **Event images** — promo/photos in `assets/` (often `assets/blog/<YYYY>/<MM>/` or `assets/events/<slug>/`); wire via front matter `images:` and/or body markdown. Optional gradient card: `python tools/events_images/main.py --only-new` when using that pipeline.
 4. **Talk** — `content/talks/<YYYY>/<YYYY-MM-DD>-<slug>.md` with `speakers`, `presentation_date`, event fields, abstract in the body. Match nearby talk front matter. If the talk also exists in Jira but the MD is curated on the site, set `sync: skip` so `tools/talks` will not overwrite it.
@@ -66,8 +66,24 @@ python tools/talks_images/main.py --only-new
 ### Blog post
 
 - Rule: `.cursor/rules/blog-posts.mdc`.
-- Done means: author profile + photo in `assets/contributors/` (if new), **all** post images (cover + inline) in `assets/blog/<YYYY>/<MM>/`, post MD under `content/blog/<YYYY>/`, then **`update_contributors.py`** so `posts_count` / `blog_tags` refresh (commit only that author’s card if the script touches everyone).
+- Done means: author profile + photo in `assets/contributors/` (if new; `status` + `contributor_status` set for staff / former / community), **all** post images (cover + inline) in `assets/blog/<YYYY>/<MM>/`, post MD under `content/blog/<YYYY>/`, then **`update_contributors.py`** so `posts_count` / `blog_tags` refresh (commit only that author’s card if the script touches everyone).
+- Staff vs community: only the author card differs (see **Contributor cards** below); post front matter is the same. Staff with write access branch in `percona/community`; community authors open PRs from a fork.
+- Community posts: keep the author's voice and claims (fix markup, paths, typos — do not rewrite into a different post); the post comes from the author's own experience; republishing from their own blog is fine; published under CC BY 4.0, author keeps copyright.
 - Long human guide: `content/blog/2022/2022-2-15-how-to-publish-blog-post.md`.
+
+### Contributor cards (authors and speakers)
+
+One file per person: `content/contributors/<slug>.md` (`name:` = slug), photo `assets/contributors/<slug>.jpg|png`. Template: `hugo new contributors/<slug>.md`. Before reusing an existing card, check these fields are still true:
+
+| Who | `status` (badge next to name) | `contributor_status` (Staff / Community filter) | `job` |
+|-----|------|------|------|
+| Percona employee | `current` | `[staff]` | `Role @ Percona` or `Role, Percona` |
+| Former employee | `former` | `[staff]` | current role elsewhere, or empty |
+| Community member | `community` | `[community]` | role + their company, never “Percona” |
+
+- The badge also turns Percona when `job` / `tagline` says “@ Percona” or “, Percona”, so keep `job` consistent with `status`.
+- Without `contributor_status` the person drops out of both filters on `/contributors/`.
+- Both fields sit above `# Auto-generated fields`; `update_contributors.py` keeps them.
 
 ### Verify (talks, events, blog)
 

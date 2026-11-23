@@ -14,6 +14,8 @@ social:
 images:
 - contributors/oleksiy_lukin.png
 status: current
+contributor_status:
+- staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community

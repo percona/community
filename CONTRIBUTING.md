@@ -10,28 +10,42 @@ We will highlight the folders that you will most likely touch if you are contrib
 
 ```
 > .github
-> archetypes
-> assets              ## pictures and CSS
-    > blog            ## add blog post pictures here
-        ...           ## pick the right year
-        > authors     ## add your author picture here
+> archetypes              ## templates for `hugo new` (blog post, contributor card)
+> assets                  ## pictures and CSS
+    > blog
+        > <YYYY>
+            > <MM>        ## blog post pictures (cover + inline), e.g. assets/blog/2026/11/
+    > contributors        ## your photo: <your_name>.jpg or .png
+    > talks               ## generated talk cards (tools/talks_images)
     ...
 > content
-    > authors         ## create new folder for yourself here
-        > ...
-        > <you>       ## folder with your name, add _index.md file
-          _index.md   ## copy from other author, change to your details
-    > blog            ## add your post here, follow naming pattern
+    > blog
+        > <YYYY>          ## your post: <YYYY-MM-DD>-<slug>.md
+    > contributors        ## your card: <your_name>.md (one file, not a folder)
+    > events              ## event pages: <slug>/index.md
+    > talks
+        > <YYYY>          ## talk pages: <YYYY-MM-DD>-<slug>.md
     > contribute
-        > articles.md ## add your article here
-        > videos.md   ## add your video here
-        > dev.md      ## add your custom dashboards, configuration files, etc.
+        > articles.md     ## add your article here
+        > videos.md       ## add your video here
+        > dev.md          ## add your custom dashboards, configuration files, etc.
     > ...
-    ...
 > layouts
 > static
 ...
 ```
+
+Image paths in markdown and front matter are relative to `assets/` (no `assets/` prefix): `assets/blog/2026/11/cover.png` → `blog/2026/11/cover.png`.
+
+In your contributor card, `status` and `contributor_status` say whether you are Percona staff or a community member:
+
+| Who | `status` | `contributor_status` |
+|-----|----------|----------------------|
+| Community member | `community` | `[community]` |
+| Percona employee | `current` | `[staff]` |
+| Former Percona employee | `former` | `[staff]` |
+
+Community contributors open pull requests from a fork. Percona employees with write access can push a branch to `percona/community` directly.
 
 ## How to Submit a Pull Request or Report a Bug/Issue
 

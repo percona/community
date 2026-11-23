@@ -13,9 +13,9 @@ social:
   website: null
 images:
 - contributors/kamil_holubicki.jpeg
-status: community
+status: current
 contributor_status:
-- community
+- staff
 
 # Auto-generated fields. Do not edit manually.
 contributor_tag:

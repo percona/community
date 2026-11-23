@@ -38,19 +38,21 @@ Here are the quick steps to publish the post. You can find the detailed descript
 
 The site runs on Hugo engine. It turns Markdown pages into HTML very quickly and easily. We also use GitHub and GitHub Pages for free website hosting.
 
-- Fork our repository ["percona/community"](https://github.com/percona/community/) and git clone that fork on your computer. If you just want to make a simple contribution, consider performing a [shallow clone](https://www.atlassian.com/git/tutorials/big-repositories) instead of a full local clone of the repo. This notably reduces the size of the local repo.
+- Fork our repository ["percona/community"](https://github.com/percona/community/) and git clone that fork on your computer. If you just want to make a simple contribution, consider performing a [shallow clone](https://www.atlassian.com/git/tutorials/big-repositories) instead of a full local clone of the repo. This notably reduces the size of the local repo. Percona employees with write access can skip the fork and push a branch to `percona/community` directly.
 - (Optional) install [Hugo engine](https://gohugo.io/getting-started/installing/)
 - Run the Hugo server in the source code folder of the site with the command `hugo server -D --disableFastRender` and open a local copy of the site in your browser at `localhost:1313`. Use `--disableFastRender` so SCSS/CSS changes apply without a full rebuild (this site is large and caches per-page styles).
 - Create a separate branch for your changes.
-- Add information about you to the `content/contributors/` folder.
-- Add your photo to the folder `assets/contributors`.
-- If your post contains images, load the pre-made images into the `assets/blog/[YEAR]/[month]` directory. If there is no directory, create one. 
-- Add your post in Markdown to the `content/blog` directory. Please, specify the name of your file according to the example: "Date-name-in-style-URL" ('2022-02-12-how-to-post.md').
+- Add your author card as one file: `content/contributors/<your_name>.md` (lowercase, underscores, e.g. `jane_doe.md`). Run `hugo new contributors/jane_doe.md` to start from the template, or copy an existing card. Set `status: community` and `contributor_status: [community]` — Percona employees use `status: current` and `contributor_status: [staff]`.
+- Add your photo as `assets/contributors/<your_name>.jpg` (or `.png`).
+- If your post contains images, put them in `assets/blog/<YYYY>/<MM>/` (e.g. `assets/blog/2026/11/`). If there is no directory, create one. Reference them relative to `assets/`: `![Diagram](blog/2026/11/diagram.png)`.
+- Add your post in Markdown to `content/blog/<YYYY>/`, named `<YYYY-MM-DD>-<slug>.md` (e.g. `content/blog/2026/2026-11-23-how-to-post.md`). Front matter needs `title`, `date`, `tags`, `authors` (your card name), and a cover in `images`.
 - Save the changes in Git and create a commit.
 - Push changes to your repository on GitHub.
 - Open your repository on GitHub and create a pull request.
 
 We will receive your pull request, check it and merge to our site. The post will be published after that. 
+
+A few things we look for in community posts: write from your own experience (AI help with drafting is fine, but the post should read as yours), keep claims you can back up, and feel free to republish something from your own blog. You keep the copyright; community posts are published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 By publishing your post on our blog, you will become a contributor to the repository and community. We will provide you with a special gift.
 
