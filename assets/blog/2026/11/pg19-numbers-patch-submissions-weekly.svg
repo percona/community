@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="572" viewBox="0 0 960 572" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Patch submissions per week: committers and everyone else</title>
+<rect width="960" height="572" fill="#ffffff"/>
+<text x="24" y="34" font-size="18" font-weight="600" fill="#0b0b0b">Patch submissions per week: committers and everyone else</text>
+<text x="24" y="56" font-size="13" fill="#52514e">mails with a patch, from branching off the previous release until the .0 release</text>
+<text x="936" y="558" font-size="11" fill="#898781" text-anchor="end">hackorum.dev/stats/releases/18/pulse and /19/pulse</text>
+<rect x="24" y="72" width="12" height="12" rx="2" fill="#653DF4"/>
+<text x="42.00" y="82.00" font-size="12" fill="#52514e" text-anchor="start">committers</text>
+<rect x="134" y="72" width="12" height="12" rx="2" fill="#eb6834"/>
+<text x="152.00" y="82.00" font-size="12" fill="#52514e" text-anchor="start">everyone else</text>
+<text x="64.00" y="116.00" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">PG18</text>
+<text x="108.00" y="116.00" font-size="12" fill="#52514e" text-anchor="start">committers wrote 40% of all submissions</text>
+<line x1="64.00" y1="232.00" x2="828.35" y2="232.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="236.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">100</text>
+<line x1="64.00" y1="182.00" x2="828.35" y2="182.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="186.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">200</text>
+<line x1="64.00" y1="132.00" x2="828.35" y2="132.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="136.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">300</text>
+<text x="56.00" y="286.00" font-size="11" fill="#898781" text-anchor="end">0</text>
+<line x1="64.00" y1="282.00" x2="828.35" y2="282.00" stroke="#c3c2b7" stroke-width="1" shape-rendering="crispEdges"/>
+<rect x="65.50" y="278.50" width="7.77" height="3.50" fill="#653DF4"><title>week of 2024-05-20: 7 committers, 11 others</title></rect>
+<path d="M65.50,276.50 L65.50,275.00 Q65.50,273.00 67.50,273.00 L71.27,273.00 Q73.27,273.00 73.27,275.00 L73.27,276.50 Z" fill="#eb6834"><title>week of 2024-05-20: 7 committers, 11 others</title></path>
+<rect x="76.27" y="279.50" width="7.77" height="2.50" fill="#653DF4"><title>week of 2024-05-27: 5 committers, 5 others</title></rect>
+<path d="M76.27,277.50 L76.27,277.50 Q76.27,277.00 76.77,277.00 L83.53,277.00 Q84.03,277.00 84.03,277.50 L84.03,277.50 Z" fill="#eb6834"><title>week of 2024-05-27: 5 committers, 5 others</title></path>
+<rect x="87.03" y="275.50" width="7.77" height="6.50" fill="#653DF4"><title>week of 2024-06-03: 13 committers, 23 others</title></rect>
+<path d="M87.03,273.50 L87.03,266.00 Q87.03,264.00 89.03,264.00 L92.80,264.00 Q94.80,264.00 94.80,266.00 L94.80,273.50 Z" fill="#eb6834"><title>week of 2024-06-03: 13 committers, 23 others</title></path>
+<rect x="97.80" y="275.00" width="7.77" height="7.00" fill="#653DF4"><title>week of 2024-06-10: 14 committers, 19 others</title></rect>
+<path d="M97.80,273.00 L97.80,267.50 Q97.80,265.50 99.80,265.50 L103.56,265.50 Q105.56,265.50 105.56,267.50 L105.56,273.00 Z" fill="#eb6834"><title>week of 2024-06-10: 14 committers, 19 others</title></path>
+<rect x="108.56" y="265.00" width="7.77" height="17.00" fill="#653DF4"><title>week of 2024-06-17: 34 committers, 21 others</title></rect>
+<path d="M108.56,263.00 L108.56,256.50 Q108.56,254.50 110.56,254.50 L114.33,254.50 Q116.33,254.50 116.33,256.50 L116.33,263.00 Z" fill="#eb6834"><title>week of 2024-06-17: 34 committers, 21 others</title></path>
+<rect x="119.33" y="272.00" width="7.77" height="10.00" fill="#653DF4"><title>week of 2024-06-24: 20 committers, 41 others</title></rect>
+<path d="M119.33,270.00 L119.33,253.50 Q119.33,251.50 121.33,251.50 L125.09,251.50 Q127.09,251.50 127.09,253.50 L127.09,270.00 Z" fill="#eb6834"><title>week of 2024-06-24: 20 committers, 41 others</title></path>
+<rect x="130.09" y="259.00" width="7.77" height="23.00" fill="#653DF4"><title>week of 2024-07-01: 46 committers, 48 others</title></rect>
+<path d="M130.09,257.00 L130.09,237.00 Q130.09,235.00 132.09,235.00 L135.86,235.00 Q137.86,235.00 137.86,237.00 L137.86,257.00 Z" fill="#eb6834"><title>week of 2024-07-01: 46 committers, 48 others</title></path>
+<text x="133.98" y="300.00" font-size="11" fill="#52514e" text-anchor="middle">Jul '24</text>
+<rect x="140.86" y="261.50" width="7.77" height="20.50" fill="#653DF4"><title>week of 2024-07-08: 41 committers, 45 others</title></rect>
+<path d="M140.86,259.50 L140.86,241.00 Q140.86,239.00 142.86,239.00 L146.62,239.00 Q148.62,239.00 148.62,241.00 L148.62,259.50 Z" fill="#eb6834"><title>week of 2024-07-08: 41 committers, 45 others</title></path>
+<rect x="151.62" y="265.50" width="7.77" height="16.50" fill="#653DF4"><title>week of 2024-07-15: 33 committers, 36 others</title></rect>
+<path d="M151.62,263.50 L151.62,249.50 Q151.62,247.50 153.62,247.50 L157.39,247.50 Q159.39,247.50 159.39,249.50 L159.39,263.50 Z" fill="#eb6834"><title>week of 2024-07-15: 33 committers, 36 others</title></path>
+<rect x="162.39" y="264.50" width="7.77" height="17.50" fill="#653DF4"><title>week of 2024-07-22: 35 committers, 45 others</title></rect>
+<path d="M162.39,262.50 L162.39,244.00 Q162.39,242.00 164.39,242.00 L168.15,242.00 Q170.15,242.00 170.15,244.00 L170.15,262.50 Z" fill="#eb6834"><title>week of 2024-07-22: 35 committers, 45 others</title></path>
+<rect x="173.15" y="264.00" width="7.77" height="18.00" fill="#653DF4"><title>week of 2024-07-29: 36 committers, 38 others</title></rect>
+<path d="M173.15,262.00 L173.15,247.00 Q173.15,245.00 175.15,245.00 L178.92,245.00 Q180.92,245.00 180.92,247.00 L180.92,262.00 Z" fill="#eb6834"><title>week of 2024-07-29: 36 committers, 38 others</title></path>
+<rect x="183.92" y="263.00" width="7.77" height="19.00" fill="#653DF4"><title>week of 2024-08-05: 38 committers, 46 others</title></rect>
+<path d="M183.92,261.00 L183.92,242.00 Q183.92,240.00 185.92,240.00 L189.69,240.00 Q191.69,240.00 191.69,242.00 L191.69,261.00 Z" fill="#eb6834"><title>week of 2024-08-05: 38 committers, 46 others</title></path>
+<rect x="194.69" y="260.50" width="7.77" height="21.50" fill="#653DF4"><title>week of 2024-08-12: 43 committers, 28 others</title></rect>
+<path d="M194.69,258.50 L194.69,248.50 Q194.69,246.50 196.69,246.50 L200.45,246.50 Q202.45,246.50 202.45,248.50 L202.45,258.50 Z" fill="#eb6834"><title>week of 2024-08-12: 43 committers, 28 others</title></path>
+<rect x="205.45" y="267.00" width="7.77" height="15.00" fill="#653DF4"><title>week of 2024-08-19: 30 committers, 31 others</title></rect>
+<path d="M205.45,265.00 L205.45,253.50 Q205.45,251.50 207.45,251.50 L211.22,251.50 Q213.22,251.50 213.22,253.50 L213.22,265.00 Z" fill="#eb6834"><title>week of 2024-08-19: 30 committers, 31 others</title></path>
+<rect x="216.22" y="266.00" width="7.77" height="16.00" fill="#653DF4"><title>week of 2024-08-26: 32 committers, 36 others</title></rect>
+<path d="M216.22,264.00 L216.22,250.00 Q216.22,248.00 218.22,248.00 L221.98,248.00 Q223.98,248.00 223.98,250.00 L223.98,264.00 Z" fill="#eb6834"><title>week of 2024-08-26: 32 committers, 36 others</title></path>
+<rect x="226.98" y="263.50" width="7.77" height="18.50" fill="#653DF4"><title>week of 2024-09-02: 37 committers, 44 others</title></rect>
+<path d="M226.98,261.50 L226.98,243.50 Q226.98,241.50 228.98,241.50 L232.75,241.50 Q234.75,241.50 234.75,243.50 L234.75,261.50 Z" fill="#eb6834"><title>week of 2024-09-02: 37 committers, 44 others</title></path>
+<rect x="237.75" y="267.50" width="7.77" height="14.50" fill="#653DF4"><title>week of 2024-09-09: 29 committers, 33 others</title></rect>
+<path d="M237.75,265.50 L237.75,253.00 Q237.75,251.00 239.75,251.00 L243.51,251.00 Q245.51,251.00 245.51,253.00 L245.51,265.50 Z" fill="#eb6834"><title>week of 2024-09-09: 29 committers, 33 others</title></path>
+<rect x="248.51" y="261.50" width="7.77" height="20.50" fill="#653DF4"><title>week of 2024-09-16: 41 committers, 28 others</title></rect>
+<path d="M248.51,259.50 L248.51,249.50 Q248.51,247.50 250.51,247.50 L254.28,247.50 Q256.28,247.50 256.28,249.50 L256.28,259.50 Z" fill="#eb6834"><title>week of 2024-09-16: 41 committers, 28 others</title></path>
+<rect x="259.28" y="263.50" width="7.77" height="18.50" fill="#653DF4"><title>week of 2024-09-23: 37 committers, 46 others</title></rect>
+<path d="M259.28,261.50 L259.28,242.50 Q259.28,240.50 261.28,240.50 L265.04,240.50 Q267.04,240.50 267.04,242.50 L267.04,261.50 Z" fill="#eb6834"><title>week of 2024-09-23: 37 committers, 46 others</title></path>
+<rect x="270.04" y="263.50" width="7.77" height="18.50" fill="#653DF4"><title>week of 2024-09-30: 37 committers, 53 others</title></rect>
+<path d="M270.04,261.50 L270.04,239.00 Q270.04,237.00 272.04,237.00 L275.81,237.00 Q277.81,237.00 277.81,239.00 L277.81,261.50 Z" fill="#eb6834"><title>week of 2024-09-30: 37 committers, 53 others</title></path>
+<rect x="280.81" y="260.50" width="7.77" height="21.50" fill="#653DF4"><title>week of 2024-10-07: 43 committers, 88 others</title></rect>
+<path d="M280.81,258.50 L280.81,218.50 Q280.81,216.50 282.81,216.50 L286.57,216.50 Q288.57,216.50 288.57,218.50 L288.57,258.50 Z" fill="#eb6834"><title>week of 2024-10-07: 43 committers, 88 others</title></path>
+<text x="284.69" y="300.00" font-size="11" fill="#52514e" text-anchor="middle">Oct '24</text>
+<rect x="291.57" y="244.50" width="7.77" height="37.50" fill="#653DF4"><title>week of 2024-10-14: 75 committers, 68 others</title></rect>
+<path d="M291.57,242.50 L291.57,212.50 Q291.57,210.50 293.57,210.50 L297.34,210.50 Q299.34,210.50 299.34,212.50 L299.34,242.50 Z" fill="#eb6834"><title>week of 2024-10-14: 75 committers, 68 others</title></path>
+<rect x="302.34" y="258.50" width="7.77" height="23.50" fill="#653DF4"><title>week of 2024-10-21: 47 committers, 68 others</title></rect>
+<path d="M302.34,256.50 L302.34,226.50 Q302.34,224.50 304.34,224.50 L308.10,224.50 Q310.10,224.50 310.10,226.50 L310.10,256.50 Z" fill="#eb6834"><title>week of 2024-10-21: 47 committers, 68 others</title></path>
+<rect x="313.10" y="255.00" width="7.77" height="27.00" fill="#653DF4"><title>week of 2024-10-28: 54 committers, 80 others</title></rect>
+<path d="M313.10,253.00 L313.10,217.00 Q313.10,215.00 315.10,215.00 L318.87,215.00 Q320.87,215.00 320.87,217.00 L320.87,253.00 Z" fill="#eb6834"><title>week of 2024-10-28: 54 committers, 80 others</title></path>
+<rect x="323.87" y="255.00" width="7.77" height="27.00" fill="#653DF4"><title>week of 2024-11-04: 54 committers, 87 others</title></rect>
+<path d="M323.87,253.00 L323.87,213.50 Q323.87,211.50 325.87,211.50 L329.64,211.50 Q331.64,211.50 331.64,213.50 L331.64,253.00 Z" fill="#eb6834"><title>week of 2024-11-04: 54 committers, 87 others</title></path>
+<rect x="334.64" y="261.00" width="7.77" height="21.00" fill="#653DF4"><title>week of 2024-11-11: 42 committers, 61 others</title></rect>
+<path d="M334.64,259.00 L334.64,232.50 Q334.64,230.50 336.64,230.50 L340.40,230.50 Q342.40,230.50 342.40,232.50 L342.40,259.00 Z" fill="#eb6834"><title>week of 2024-11-11: 42 committers, 61 others</title></path>
+<rect x="345.40" y="258.50" width="7.77" height="23.50" fill="#653DF4"><title>week of 2024-11-18: 47 committers, 85 others</title></rect>
+<path d="M345.40,256.50 L345.40,218.00 Q345.40,216.00 347.40,216.00 L351.17,216.00 Q353.17,216.00 353.17,218.00 L353.17,256.50 Z" fill="#eb6834"><title>week of 2024-11-18: 47 committers, 85 others</title></path>
+<rect x="356.17" y="259.00" width="7.77" height="23.00" fill="#653DF4"><title>week of 2024-11-25: 46 committers, 81 others</title></rect>
+<path d="M356.17,257.00 L356.17,220.50 Q356.17,218.50 358.17,218.50 L361.93,218.50 Q363.93,218.50 363.93,220.50 L363.93,257.00 Z" fill="#eb6834"><title>week of 2024-11-25: 46 committers, 81 others</title></path>
+<rect x="366.93" y="251.50" width="7.77" height="30.50" fill="#653DF4"><title>week of 2024-12-02: 61 committers, 90 others</title></rect>
+<path d="M366.93,249.50 L366.93,208.50 Q366.93,206.50 368.93,206.50 L372.70,206.50 Q374.70,206.50 374.70,208.50 L374.70,249.50 Z" fill="#eb6834"><title>week of 2024-12-02: 61 committers, 90 others</title></path>
+<rect x="377.70" y="260.00" width="7.77" height="22.00" fill="#653DF4"><title>week of 2024-12-09: 44 committers, 111 others</title></rect>
+<path d="M377.70,258.00 L377.70,206.50 Q377.70,204.50 379.70,204.50 L383.46,204.50 Q385.46,204.50 385.46,206.50 L385.46,258.00 Z" fill="#eb6834"><title>week of 2024-12-09: 44 committers, 111 others</title></path>
+<rect x="388.46" y="257.00" width="7.77" height="25.00" fill="#653DF4"><title>week of 2024-12-16: 50 committers, 58 others</title></rect>
+<path d="M388.46,255.00 L388.46,230.00 Q388.46,228.00 390.46,228.00 L394.23,228.00 Q396.23,228.00 396.23,230.00 L396.23,255.00 Z" fill="#eb6834"><title>week of 2024-12-16: 50 committers, 58 others</title></path>
+<rect x="399.23" y="269.50" width="7.77" height="12.50" fill="#653DF4"><title>week of 2024-12-23: 25 committers, 46 others</title></rect>
+<path d="M399.23,267.50 L399.23,248.50 Q399.23,246.50 401.23,246.50 L404.99,246.50 Q406.99,246.50 406.99,248.50 L406.99,267.50 Z" fill="#eb6834"><title>week of 2024-12-23: 25 committers, 46 others</title></path>
+<rect x="409.99" y="271.00" width="7.77" height="11.00" fill="#653DF4"><title>week of 2024-12-30: 22 committers, 52 others</title></rect>
+<path d="M409.99,269.00 L409.99,247.00 Q409.99,245.00 411.99,245.00 L415.76,245.00 Q417.76,245.00 417.76,247.00 L417.76,269.00 Z" fill="#eb6834"><title>week of 2024-12-30: 22 committers, 52 others</title></path>
+<rect x="420.76" y="249.50" width="7.77" height="32.50" fill="#653DF4"><title>week of 2025-01-06: 65 committers, 104 others</title></rect>
+<path d="M420.76,247.50 L420.76,199.50 Q420.76,197.50 422.76,197.50 L426.52,197.50 Q428.52,197.50 428.52,199.50 L428.52,247.50 Z" fill="#eb6834"><title>week of 2025-01-06: 65 committers, 104 others</title></path>
+<text x="424.64" y="300.00" font-size="11" fill="#52514e" text-anchor="middle">Jan '25</text>
+<rect x="431.52" y="256.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2025-01-13: 52 committers, 100 others</title></rect>
+<path d="M431.52,254.00 L431.52,208.00 Q431.52,206.00 433.52,206.00 L437.29,206.00 Q439.29,206.00 439.29,208.00 L439.29,254.00 Z" fill="#eb6834"><title>week of 2025-01-13: 52 committers, 100 others</title></path>
+<rect x="442.29" y="268.50" width="7.77" height="13.50" fill="#653DF4"><title>week of 2025-01-20: 27 committers, 101 others</title></rect>
+<path d="M442.29,266.50 L442.29,220.00 Q442.29,218.00 444.29,218.00 L448.06,218.00 Q450.06,218.00 450.06,220.00 L450.06,266.50 Z" fill="#eb6834"><title>week of 2025-01-20: 27 committers, 101 others</title></path>
+<rect x="453.06" y="266.00" width="7.77" height="16.00" fill="#653DF4"><title>week of 2025-01-27: 32 committers, 78 others</title></rect>
+<path d="M453.06,264.00 L453.06,229.00 Q453.06,227.00 455.06,227.00 L458.82,227.00 Q460.82,227.00 460.82,229.00 L460.82,264.00 Z" fill="#eb6834"><title>week of 2025-01-27: 32 committers, 78 others</title></path>
+<rect x="463.82" y="256.50" width="7.77" height="25.50" fill="#653DF4"><title>week of 2025-02-03: 51 committers, 107 others</title></rect>
+<path d="M463.82,254.50 L463.82,205.00 Q463.82,203.00 465.82,203.00 L469.59,203.00 Q471.59,203.00 471.59,205.00 L471.59,254.50 Z" fill="#eb6834"><title>week of 2025-02-03: 51 committers, 107 others</title></path>
+<rect x="474.59" y="253.50" width="7.77" height="28.50" fill="#653DF4"><title>week of 2025-02-10: 57 committers, 107 others</title></rect>
+<path d="M474.59,251.50 L474.59,202.00 Q474.59,200.00 476.59,200.00 L480.35,200.00 Q482.35,200.00 482.35,202.00 L482.35,251.50 Z" fill="#eb6834"><title>week of 2025-02-10: 57 committers, 107 others</title></path>
+<rect x="485.35" y="255.50" width="7.77" height="26.50" fill="#653DF4"><title>week of 2025-02-17: 53 committers, 126 others</title></rect>
+<path d="M485.35,253.50 L485.35,194.50 Q485.35,192.50 487.35,192.50 L491.12,192.50 Q493.12,192.50 493.12,194.50 L493.12,253.50 Z" fill="#eb6834"><title>week of 2025-02-17: 53 committers, 126 others</title></path>
+<rect x="496.12" y="247.00" width="7.77" height="35.00" fill="#653DF4"><title>week of 2025-02-24: 70 committers, 156 others</title></rect>
+<path d="M496.12,245.00 L496.12,171.00 Q496.12,169.00 498.12,169.00 L501.88,169.00 Q503.88,169.00 503.88,171.00 L503.88,245.00 Z" fill="#eb6834"><title>week of 2025-02-24: 70 committers, 156 others</title></path>
+<rect x="506.88" y="236.00" width="7.77" height="46.00" fill="#653DF4"><title>week of 2025-03-03: 92 committers, 127 others</title></rect>
+<path d="M506.88,234.00 L506.88,174.50 Q506.88,172.50 508.88,172.50 L512.65,172.50 Q514.65,172.50 514.65,174.50 L514.65,234.00 Z" fill="#eb6834"><title>week of 2025-03-03: 92 committers, 127 others</title></path>
+<rect x="517.65" y="245.00" width="7.77" height="37.00" fill="#653DF4"><title>week of 2025-03-10: 74 committers, 120 others</title></rect>
+<path d="M517.65,243.00 L517.65,187.00 Q517.65,185.00 519.65,185.00 L523.41,185.00 Q525.41,185.00 525.41,187.00 L525.41,243.00 Z" fill="#eb6834"><title>week of 2025-03-10: 74 committers, 120 others</title></path>
+<rect x="528.41" y="249.50" width="7.77" height="32.50" fill="#653DF4"><title>week of 2025-03-17: 65 committers, 131 others</title></rect>
+<path d="M528.41,247.50 L528.41,186.00 Q528.41,184.00 530.41,184.00 L534.18,184.00 Q536.18,184.00 536.18,186.00 L536.18,247.50 Z" fill="#eb6834"><title>week of 2025-03-17: 65 committers, 131 others</title></path>
+<rect x="539.18" y="252.50" width="7.77" height="29.50" fill="#653DF4"><title>week of 2025-03-24: 59 committers, 124 others</title></rect>
+<path d="M539.18,250.50 L539.18,192.50 Q539.18,190.50 541.18,190.50 L544.94,190.50 Q546.94,190.50 546.94,192.50 L546.94,250.50 Z" fill="#eb6834"><title>week of 2025-03-24: 59 committers, 124 others</title></path>
+<rect x="549.94" y="242.50" width="7.77" height="39.50" fill="#653DF4"><title>week of 2025-03-31: 79 committers, 122 others</title></rect>
+<path d="M549.94,240.50 L549.94,183.50 Q549.94,181.50 551.94,181.50 L555.71,181.50 Q557.71,181.50 557.71,183.50 L557.71,240.50 Z" fill="#eb6834"><title>week of 2025-03-31: 79 committers, 122 others</title></path>
+<rect x="560.71" y="255.00" width="7.77" height="27.00" fill="#653DF4"><title>week of 2025-04-07: 54 committers, 89 others</title></rect>
+<path d="M560.71,253.00 L560.71,212.50 Q560.71,210.50 562.71,210.50 L566.48,210.50 Q568.48,210.50 568.48,212.50 L568.48,253.00 Z" fill="#eb6834"><title>week of 2025-04-07: 54 committers, 89 others</title></path>
+<text x="564.59" y="300.00" font-size="11" fill="#52514e" text-anchor="middle">Apr '25</text>
+<rect x="571.48" y="264.50" width="7.77" height="17.50" fill="#653DF4"><title>week of 2025-04-14: 35 committers, 51 others</title></rect>
+<path d="M571.48,262.50 L571.48,241.00 Q571.48,239.00 573.48,239.00 L577.24,239.00 Q579.24,239.00 579.24,241.00 L579.24,262.50 Z" fill="#eb6834"><title>week of 2025-04-14: 35 committers, 51 others</title></path>
+<rect x="582.24" y="265.50" width="7.77" height="16.50" fill="#653DF4"><title>week of 2025-04-21: 33 committers, 71 others</title></rect>
+<path d="M582.24,263.50 L582.24,232.00 Q582.24,230.00 584.24,230.00 L588.01,230.00 Q590.01,230.00 590.01,232.00 L590.01,263.50 Z" fill="#eb6834"><title>week of 2025-04-21: 33 committers, 71 others</title></path>
+<rect x="593.01" y="264.50" width="7.77" height="17.50" fill="#653DF4"><title>week of 2025-04-28: 35 committers, 52 others</title></rect>
+<path d="M593.01,262.50 L593.01,240.50 Q593.01,238.50 595.01,238.50 L598.77,238.50 Q600.77,238.50 600.77,240.50 L600.77,262.50 Z" fill="#eb6834"><title>week of 2025-04-28: 35 committers, 52 others</title></path>
+<rect x="603.77" y="267.50" width="7.77" height="14.50" fill="#653DF4"><title>week of 2025-05-05: 29 committers, 31 others</title></rect>
+<path d="M603.77,265.50 L603.77,254.00 Q603.77,252.00 605.77,252.00 L609.54,252.00 Q611.54,252.00 611.54,254.00 L611.54,265.50 Z" fill="#eb6834"><title>week of 2025-05-05: 29 committers, 31 others</title></path>
+<rect x="614.54" y="278.00" width="7.77" height="4.00" fill="#653DF4"><title>week of 2025-05-12: 8 committers, 10 others</title></rect>
+<path d="M614.54,276.00 L614.54,275.00 Q614.54,273.00 616.54,273.00 L620.30,273.00 Q622.30,273.00 622.30,275.00 L622.30,276.00 Z" fill="#eb6834"><title>week of 2025-05-12: 8 committers, 10 others</title></path>
+<rect x="625.30" y="261.50" width="7.77" height="20.50" fill="#653DF4"><title>week of 2025-05-19: 41 committers, 18 others</title></rect>
+<path d="M625.30,259.50 L625.30,254.50 Q625.30,252.50 627.30,252.50 L631.07,252.50 Q633.07,252.50 633.07,254.50 L633.07,259.50 Z" fill="#eb6834"><title>week of 2025-05-19: 41 committers, 18 others</title></path>
+<rect x="636.07" y="271.50" width="7.77" height="10.50" fill="#653DF4"><title>week of 2025-05-26: 21 committers, 30 others</title></rect>
+<path d="M636.07,269.50 L636.07,258.50 Q636.07,256.50 638.07,256.50 L641.83,256.50 Q643.83,256.50 643.83,258.50 L643.83,269.50 Z" fill="#eb6834"><title>week of 2025-05-26: 21 committers, 30 others</title></path>
+<rect x="646.83" y="271.00" width="7.77" height="11.00" fill="#653DF4"><title>week of 2025-06-02: 22 committers, 31 others</title></rect>
+<path d="M646.83,269.00 L646.83,257.50 Q646.83,255.50 648.83,255.50 L652.60,255.50 Q654.60,255.50 654.60,257.50 L654.60,269.00 Z" fill="#eb6834"><title>week of 2025-06-02: 22 committers, 31 others</title></path>
+<rect x="657.60" y="267.50" width="7.77" height="14.50" fill="#653DF4"><title>week of 2025-06-09: 29 committers, 26 others</title></rect>
+<path d="M657.60,265.50 L657.60,256.50 Q657.60,254.50 659.60,254.50 L663.36,254.50 Q665.36,254.50 665.36,256.50 L665.36,265.50 Z" fill="#eb6834"><title>week of 2025-06-09: 29 committers, 26 others</title></path>
+<rect x="668.36" y="264.50" width="7.77" height="17.50" fill="#653DF4"><title>week of 2025-06-16: 35 committers, 24 others</title></rect>
+<path d="M668.36,262.50 L668.36,254.50 Q668.36,252.50 670.36,252.50 L674.13,252.50 Q676.13,252.50 676.13,254.50 L676.13,262.50 Z" fill="#eb6834"><title>week of 2025-06-16: 35 committers, 24 others</title></path>
+<rect x="679.13" y="262.00" width="7.77" height="20.00" fill="#653DF4"><title>week of 2025-06-23: 40 committers, 23 others</title></rect>
+<path d="M679.13,260.00 L679.13,252.50 Q679.13,250.50 681.13,250.50 L684.90,250.50 Q686.90,250.50 686.90,252.50 L686.90,260.00 Z" fill="#eb6834"><title>week of 2025-06-23: 40 committers, 23 others</title></path>
+<rect x="689.90" y="269.00" width="7.77" height="13.00" fill="#653DF4"><title>week of 2025-06-30: 26 committers, 25 others</title></rect>
+<path d="M689.90,267.00 L689.90,258.50 Q689.90,256.50 691.90,256.50 L695.66,256.50 Q697.66,256.50 697.66,258.50 L697.66,267.00 Z" fill="#eb6834"><title>week of 2025-06-30: 26 committers, 25 others</title></path>
+<rect x="700.66" y="270.00" width="7.77" height="12.00" fill="#653DF4"><title>week of 2025-07-07: 24 committers, 27 others</title></rect>
+<path d="M700.66,268.00 L700.66,258.50 Q700.66,256.50 702.66,256.50 L706.43,256.50 Q708.43,256.50 708.43,258.50 L708.43,268.00 Z" fill="#eb6834"><title>week of 2025-07-07: 24 committers, 27 others</title></path>
+<text x="704.54" y="300.00" font-size="11" fill="#52514e" text-anchor="middle">Jul '25</text>
+<rect x="711.43" y="271.00" width="7.77" height="11.00" fill="#653DF4"><title>week of 2025-07-14: 22 committers, 12 others</title></rect>
+<path d="M711.43,269.00 L711.43,267.00 Q711.43,265.00 713.43,265.00 L717.19,265.00 Q719.19,265.00 719.19,267.00 L719.19,269.00 Z" fill="#eb6834"><title>week of 2025-07-14: 22 committers, 12 others</title></path>
+<rect x="722.19" y="273.50" width="7.77" height="8.50" fill="#653DF4"><title>week of 2025-07-21: 17 committers, 14 others</title></rect>
+<path d="M722.19,271.50 L722.19,268.50 Q722.19,266.50 724.19,266.50 L727.96,266.50 Q729.96,266.50 729.96,268.50 L729.96,271.50 Z" fill="#eb6834"><title>week of 2025-07-21: 17 committers, 14 others</title></path>
+<rect x="732.96" y="272.50" width="7.77" height="9.50" fill="#653DF4"><title>week of 2025-07-28: 19 committers, 16 others</title></rect>
+<path d="M732.96,270.50 L732.96,266.50 Q732.96,264.50 734.96,264.50 L738.72,264.50 Q740.72,264.50 740.72,266.50 L740.72,270.50 Z" fill="#eb6834"><title>week of 2025-07-28: 19 committers, 16 others</title></path>
+<rect x="743.72" y="275.50" width="7.77" height="6.50" fill="#653DF4"><title>week of 2025-08-04: 13 committers, 24 others</title></rect>
+<path d="M743.72,273.50 L743.72,265.50 Q743.72,263.50 745.72,263.50 L749.49,263.50 Q751.49,263.50 751.49,265.50 L751.49,273.50 Z" fill="#eb6834"><title>week of 2025-08-04: 13 committers, 24 others</title></path>
+<rect x="754.49" y="276.00" width="7.77" height="6.00" fill="#653DF4"><title>week of 2025-08-11: 12 committers, 19 others</title></rect>
+<path d="M754.49,274.00 L754.49,268.50 Q754.49,266.50 756.49,266.50 L760.25,266.50 Q762.25,266.50 762.25,268.50 L762.25,274.00 Z" fill="#eb6834"><title>week of 2025-08-11: 12 committers, 19 others</title></path>
+<rect x="765.25" y="275.50" width="7.77" height="6.50" fill="#653DF4"><title>week of 2025-08-18: 13 committers, 29 others</title></rect>
+<path d="M765.25,273.50 L765.25,263.00 Q765.25,261.00 767.25,261.00 L771.02,261.00 Q773.02,261.00 773.02,263.00 L773.02,273.50 Z" fill="#eb6834"><title>week of 2025-08-18: 13 committers, 29 others</title></path>
+<rect x="776.02" y="272.00" width="7.77" height="10.00" fill="#653DF4"><title>week of 2025-08-25: 20 committers, 9 others</title></rect>
+<path d="M776.02,270.00 L776.02,269.50 Q776.02,267.50 778.02,267.50 L781.78,267.50 Q783.78,267.50 783.78,269.50 L783.78,270.00 Z" fill="#eb6834"><title>week of 2025-08-25: 20 committers, 9 others</title></path>
+<rect x="786.78" y="277.00" width="7.77" height="5.00" fill="#653DF4"><title>week of 2025-09-01: 10 committers, 17 others</title></rect>
+<path d="M786.78,275.00 L786.78,270.50 Q786.78,268.50 788.78,268.50 L792.55,268.50 Q794.55,268.50 794.55,270.50 L794.55,275.00 Z" fill="#eb6834"><title>week of 2025-09-01: 10 committers, 17 others</title></path>
+<rect x="797.55" y="274.50" width="7.77" height="7.50" fill="#653DF4"><title>week of 2025-09-08: 15 committers, 10 others</title></rect>
+<path d="M797.55,272.50 L797.55,271.50 Q797.55,269.50 799.55,269.50 L803.31,269.50 Q805.31,269.50 805.31,271.50 L805.31,272.50 Z" fill="#eb6834"><title>week of 2025-09-08: 15 committers, 10 others</title></path>
+<rect x="808.31" y="275.50" width="7.77" height="6.50" fill="#653DF4"><title>week of 2025-09-15: 13 committers, 8 others</title></rect>
+<path d="M808.31,273.50 L808.31,273.50 Q808.31,271.50 810.31,271.50 L814.08,271.50 Q816.08,271.50 816.08,273.50 L816.08,273.50 Z" fill="#eb6834"><title>week of 2025-09-15: 13 committers, 8 others</title></path>
+<rect x="819.08" y="281.50" width="7.77" height="0.50" fill="#653DF4"><title>week of 2025-09-22: 1 committers, 2 others</title></rect>
+<path d="" fill="#eb6834"><title>week of 2025-09-22: 1 committers, 2 others</title></path>
+<line x1="560.75" y1="128.00" x2="560.75" y2="282.00" stroke="#898781" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="564.75" y="138.00" font-size="11" fill="#52514e" text-anchor="start">feature freeze</text>
+<text x="64.00" y="340.00" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600">PG19</text>
+<text x="108.00" y="340.00" font-size="12" fill="#52514e" text-anchor="start">committers wrote 32% of all submissions</text>
+<line x1="64.00" y1="456.00" x2="936.00" y2="456.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="460.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">100</text>
+<line x1="64.00" y1="406.00" x2="936.00" y2="406.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="410.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">200</text>
+<line x1="64.00" y1="356.00" x2="936.00" y2="356.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="56.00" y="360.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">300</text>
+<text x="56.00" y="510.00" font-size="11" fill="#898781" text-anchor="end">0</text>
+<line x1="64.00" y1="506.00" x2="936.00" y2="506.00" stroke="#c3c2b7" stroke-width="1" shape-rendering="crispEdges"/>
+<rect x="65.50" y="500.50" width="7.77" height="5.50" fill="#653DF4"><title>week of 2025-05-05: 11 committers, 12 others</title></rect>
+<path d="M65.50,498.50 L65.50,496.50 Q65.50,494.50 67.50,494.50 L71.27,494.50 Q73.27,494.50 73.27,496.50 L73.27,498.50 Z" fill="#eb6834"><title>week of 2025-05-05: 11 committers, 12 others</title></path>
+<rect x="76.27" y="504.00" width="7.77" height="2.00" fill="#653DF4"><title>week of 2025-05-12: 4 committers, 12 others</title></rect>
+<path d="M76.27,502.00 L76.27,500.00 Q76.27,498.00 78.27,498.00 L82.03,498.00 Q84.03,498.00 84.03,500.00 L84.03,502.00 Z" fill="#eb6834"><title>week of 2025-05-12: 4 committers, 12 others</title></path>
+<rect x="87.03" y="498.50" width="7.77" height="7.50" fill="#653DF4"><title>week of 2025-05-19: 15 committers, 18 others</title></rect>
+<path d="M87.03,496.50 L87.03,491.50 Q87.03,489.50 89.03,489.50 L92.80,489.50 Q94.80,489.50 94.80,491.50 L94.80,496.50 Z" fill="#eb6834"><title>week of 2025-05-19: 15 committers, 18 others</title></path>
+<rect x="97.80" y="499.00" width="7.77" height="7.00" fill="#653DF4"><title>week of 2025-05-26: 14 committers, 20 others</title></rect>
+<path d="M97.80,497.00 L97.80,491.00 Q97.80,489.00 99.80,489.00 L103.56,489.00 Q105.56,489.00 105.56,491.00 L105.56,497.00 Z" fill="#eb6834"><title>week of 2025-05-26: 14 committers, 20 others</title></path>
+<rect x="108.56" y="499.00" width="7.77" height="7.00" fill="#653DF4"><title>week of 2025-06-02: 14 committers, 40 others</title></rect>
+<path d="M108.56,497.00 L108.56,481.00 Q108.56,479.00 110.56,479.00 L114.33,479.00 Q116.33,479.00 116.33,481.00 L116.33,497.00 Z" fill="#eb6834"><title>week of 2025-06-02: 14 committers, 40 others</title></path>
+<rect x="119.33" y="499.00" width="7.77" height="7.00" fill="#653DF4"><title>week of 2025-06-09: 14 committers, 25 others</title></rect>
+<path d="M119.33,497.00 L119.33,488.50 Q119.33,486.50 121.33,486.50 L125.09,486.50 Q127.09,486.50 127.09,488.50 L127.09,497.00 Z" fill="#eb6834"><title>week of 2025-06-09: 14 committers, 25 others</title></path>
+<rect x="130.09" y="495.50" width="7.77" height="10.50" fill="#653DF4"><title>week of 2025-06-16: 21 committers, 33 others</title></rect>
+<path d="M130.09,493.50 L130.09,481.00 Q130.09,479.00 132.09,479.00 L135.86,479.00 Q137.86,479.00 137.86,481.00 L137.86,493.50 Z" fill="#eb6834"><title>week of 2025-06-16: 21 committers, 33 others</title></path>
+<rect x="140.86" y="497.50" width="7.77" height="8.50" fill="#653DF4"><title>week of 2025-06-23: 17 committers, 36 others</title></rect>
+<path d="M140.86,495.50 L140.86,481.50 Q140.86,479.50 142.86,479.50 L146.62,479.50 Q148.62,479.50 148.62,481.50 L148.62,495.50 Z" fill="#eb6834"><title>week of 2025-06-23: 17 committers, 36 others</title></path>
+<rect x="151.62" y="496.00" width="7.77" height="10.00" fill="#653DF4"><title>week of 2025-06-30: 20 committers, 52 others</title></rect>
+<path d="M151.62,494.00 L151.62,472.00 Q151.62,470.00 153.62,470.00 L157.39,470.00 Q159.39,470.00 159.39,472.00 L159.39,494.00 Z" fill="#eb6834"><title>week of 2025-06-30: 20 committers, 52 others</title></path>
+<rect x="162.39" y="492.00" width="7.77" height="14.00" fill="#653DF4"><title>week of 2025-07-07: 28 committers, 38 others</title></rect>
+<path d="M162.39,490.00 L162.39,475.00 Q162.39,473.00 164.39,473.00 L168.15,473.00 Q170.15,473.00 170.15,475.00 L170.15,490.00 Z" fill="#eb6834"><title>week of 2025-07-07: 28 committers, 38 others</title></path>
+<text x="166.27" y="524.00" font-size="11" fill="#52514e" text-anchor="middle">Jul '25</text>
+<rect x="173.15" y="493.50" width="7.77" height="12.50" fill="#653DF4"><title>week of 2025-07-14: 25 committers, 52 others</title></rect>
+<path d="M173.15,491.50 L173.15,469.50 Q173.15,467.50 175.15,467.50 L178.92,467.50 Q180.92,467.50 180.92,469.50 L180.92,491.50 Z" fill="#eb6834"><title>week of 2025-07-14: 25 committers, 52 others</title></path>
+<rect x="183.92" y="489.50" width="7.77" height="16.50" fill="#653DF4"><title>week of 2025-07-21: 33 committers, 43 others</title></rect>
+<path d="M183.92,487.50 L183.92,470.00 Q183.92,468.00 185.92,468.00 L189.69,468.00 Q191.69,468.00 191.69,470.00 L191.69,487.50 Z" fill="#eb6834"><title>week of 2025-07-21: 33 committers, 43 others</title></path>
+<rect x="194.69" y="492.00" width="7.77" height="14.00" fill="#653DF4"><title>week of 2025-07-28: 28 committers, 27 others</title></rect>
+<path d="M194.69,490.00 L194.69,480.50 Q194.69,478.50 196.69,478.50 L200.45,478.50 Q202.45,478.50 202.45,480.50 L202.45,490.00 Z" fill="#eb6834"><title>week of 2025-07-28: 28 committers, 27 others</title></path>
+<rect x="205.45" y="491.50" width="7.77" height="14.50" fill="#653DF4"><title>week of 2025-08-04: 29 committers, 35 others</title></rect>
+<path d="M205.45,489.50 L205.45,476.00 Q205.45,474.00 207.45,474.00 L211.22,474.00 Q213.22,474.00 213.22,476.00 L213.22,489.50 Z" fill="#eb6834"><title>week of 2025-08-04: 29 committers, 35 others</title></path>
+<rect x="216.22" y="498.00" width="7.77" height="8.00" fill="#653DF4"><title>week of 2025-08-11: 16 committers, 51 others</title></rect>
+<path d="M216.22,496.00 L216.22,474.50 Q216.22,472.50 218.22,472.50 L221.98,472.50 Q223.98,472.50 223.98,474.50 L223.98,496.00 Z" fill="#eb6834"><title>week of 2025-08-11: 16 committers, 51 others</title></path>
+<rect x="226.98" y="492.00" width="7.77" height="14.00" fill="#653DF4"><title>week of 2025-08-18: 28 committers, 32 others</title></rect>
+<path d="M226.98,490.00 L226.98,478.00 Q226.98,476.00 228.98,476.00 L232.75,476.00 Q234.75,476.00 234.75,478.00 L234.75,490.00 Z" fill="#eb6834"><title>week of 2025-08-18: 28 committers, 32 others</title></path>
+<rect x="237.75" y="488.50" width="7.77" height="17.50" fill="#653DF4"><title>week of 2025-08-25: 35 committers, 58 others</title></rect>
+<path d="M237.75,486.50 L237.75,461.50 Q237.75,459.50 239.75,459.50 L243.51,459.50 Q245.51,459.50 245.51,461.50 L245.51,486.50 Z" fill="#eb6834"><title>week of 2025-08-25: 35 committers, 58 others</title></path>
+<rect x="248.51" y="494.50" width="7.77" height="11.50" fill="#653DF4"><title>week of 2025-09-01: 23 committers, 51 others</title></rect>
+<path d="M248.51,492.50 L248.51,471.00 Q248.51,469.00 250.51,469.00 L254.28,469.00 Q256.28,469.00 256.28,471.00 L256.28,492.50 Z" fill="#eb6834"><title>week of 2025-09-01: 23 committers, 51 others</title></path>
+<rect x="259.28" y="491.50" width="7.77" height="14.50" fill="#653DF4"><title>week of 2025-09-08: 29 committers, 58 others</title></rect>
+<path d="M259.28,489.50 L259.28,464.50 Q259.28,462.50 261.28,462.50 L265.04,462.50 Q267.04,462.50 267.04,464.50 L267.04,489.50 Z" fill="#eb6834"><title>week of 2025-09-08: 29 committers, 58 others</title></path>
+<rect x="270.04" y="485.50" width="7.77" height="20.50" fill="#653DF4"><title>week of 2025-09-15: 41 committers, 66 others</title></rect>
+<path d="M270.04,483.50 L270.04,454.50 Q270.04,452.50 272.04,452.50 L275.81,452.50 Q277.81,452.50 277.81,454.50 L277.81,483.50 Z" fill="#eb6834"><title>week of 2025-09-15: 41 committers, 66 others</title></path>
+<rect x="280.81" y="480.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2025-09-22: 52 committers, 107 others</title></rect>
+<path d="M280.81,478.00 L280.81,428.50 Q280.81,426.50 282.81,426.50 L286.57,426.50 Q288.57,426.50 288.57,428.50 L288.57,478.00 Z" fill="#eb6834"><title>week of 2025-09-22: 52 committers, 107 others</title></path>
+<rect x="291.57" y="484.00" width="7.77" height="22.00" fill="#653DF4"><title>week of 2025-09-29: 44 committers, 75 others</title></rect>
+<path d="M291.57,482.00 L291.57,448.50 Q291.57,446.50 293.57,446.50 L297.34,446.50 Q299.34,446.50 299.34,448.50 L299.34,482.00 Z" fill="#eb6834"><title>week of 2025-09-29: 44 committers, 75 others</title></path>
+<rect x="302.34" y="475.50" width="7.77" height="30.50" fill="#653DF4"><title>week of 2025-10-06: 61 committers, 97 others</title></rect>
+<path d="M302.34,473.50 L302.34,429.00 Q302.34,427.00 304.34,427.00 L308.10,427.00 Q310.10,427.00 310.10,429.00 L310.10,473.50 Z" fill="#eb6834"><title>week of 2025-10-06: 61 committers, 97 others</title></path>
+<text x="306.22" y="524.00" font-size="11" fill="#52514e" text-anchor="middle">Oct '25</text>
+<rect x="313.10" y="480.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2025-10-13: 52 committers, 111 others</title></rect>
+<path d="M313.10,478.00 L313.10,426.50 Q313.10,424.50 315.10,424.50 L318.87,424.50 Q320.87,424.50 320.87,426.50 L320.87,478.00 Z" fill="#eb6834"><title>week of 2025-10-13: 52 committers, 111 others</title></path>
+<rect x="323.87" y="476.00" width="7.77" height="30.00" fill="#653DF4"><title>week of 2025-10-20: 60 committers, 104 others</title></rect>
+<path d="M323.87,474.00 L323.87,426.00 Q323.87,424.00 325.87,424.00 L329.64,424.00 Q331.64,424.00 331.64,426.00 L331.64,474.00 Z" fill="#eb6834"><title>week of 2025-10-20: 60 committers, 104 others</title></path>
+<rect x="334.64" y="480.50" width="7.77" height="25.50" fill="#653DF4"><title>week of 2025-10-27: 51 committers, 122 others</title></rect>
+<path d="M334.64,478.50 L334.64,421.50 Q334.64,419.50 336.64,419.50 L340.40,419.50 Q342.40,419.50 342.40,421.50 L342.40,478.50 Z" fill="#eb6834"><title>week of 2025-10-27: 51 committers, 122 others</title></path>
+<rect x="345.40" y="478.00" width="7.77" height="28.00" fill="#653DF4"><title>week of 2025-11-03: 56 committers, 120 others</title></rect>
+<path d="M345.40,476.00 L345.40,420.00 Q345.40,418.00 347.40,418.00 L351.17,418.00 Q353.17,418.00 353.17,420.00 L353.17,476.00 Z" fill="#eb6834"><title>week of 2025-11-03: 56 committers, 120 others</title></path>
+<rect x="356.17" y="475.00" width="7.77" height="31.00" fill="#653DF4"><title>week of 2025-11-10: 62 committers, 128 others</title></rect>
+<path d="M356.17,473.00 L356.17,413.00 Q356.17,411.00 358.17,411.00 L361.93,411.00 Q363.93,411.00 363.93,413.00 L363.93,473.00 Z" fill="#eb6834"><title>week of 2025-11-10: 62 committers, 128 others</title></path>
+<rect x="366.93" y="474.50" width="7.77" height="31.50" fill="#653DF4"><title>week of 2025-11-17: 63 committers, 139 others</title></rect>
+<path d="M366.93,472.50 L366.93,407.00 Q366.93,405.00 368.93,405.00 L372.70,405.00 Q374.70,405.00 374.70,407.00 L374.70,472.50 Z" fill="#eb6834"><title>week of 2025-11-17: 63 committers, 139 others</title></path>
+<rect x="377.70" y="480.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2025-11-24: 52 committers, 128 others</title></rect>
+<path d="M377.70,478.00 L377.70,418.00 Q377.70,416.00 379.70,416.00 L383.46,416.00 Q385.46,416.00 385.46,418.00 L385.46,478.00 Z" fill="#eb6834"><title>week of 2025-11-24: 52 committers, 128 others</title></path>
+<rect x="388.46" y="483.00" width="7.77" height="23.00" fill="#653DF4"><title>week of 2025-12-01: 46 committers, 110 others</title></rect>
+<path d="M388.46,481.00 L388.46,430.00 Q388.46,428.00 390.46,428.00 L394.23,428.00 Q396.23,428.00 396.23,430.00 L396.23,481.00 Z" fill="#eb6834"><title>week of 2025-12-01: 46 committers, 110 others</title></path>
+<rect x="399.23" y="478.50" width="7.77" height="27.50" fill="#653DF4"><title>week of 2025-12-08: 55 committers, 133 others</title></rect>
+<path d="M399.23,476.50 L399.23,414.00 Q399.23,412.00 401.23,412.00 L404.99,412.00 Q406.99,412.00 406.99,414.00 L406.99,476.50 Z" fill="#eb6834"><title>week of 2025-12-08: 55 committers, 133 others</title></path>
+<rect x="409.99" y="486.50" width="7.77" height="19.50" fill="#653DF4"><title>week of 2025-12-15: 39 committers, 127 others</title></rect>
+<path d="M409.99,484.50 L409.99,425.00 Q409.99,423.00 411.99,423.00 L415.76,423.00 Q417.76,423.00 417.76,425.00 L417.76,484.50 Z" fill="#eb6834"><title>week of 2025-12-15: 39 committers, 127 others</title></path>
+<rect x="420.76" y="493.50" width="7.77" height="12.50" fill="#653DF4"><title>week of 2025-12-22: 25 committers, 109 others</title></rect>
+<path d="M420.76,491.50 L420.76,441.00 Q420.76,439.00 422.76,439.00 L426.52,439.00 Q428.52,439.00 428.52,441.00 L428.52,491.50 Z" fill="#eb6834"><title>week of 2025-12-22: 25 committers, 109 others</title></path>
+<rect x="431.52" y="498.00" width="7.77" height="8.00" fill="#653DF4"><title>week of 2025-12-29: 16 committers, 110 others</title></rect>
+<path d="M431.52,496.00 L431.52,445.00 Q431.52,443.00 433.52,443.00 L437.29,443.00 Q439.29,443.00 439.29,445.00 L439.29,496.00 Z" fill="#eb6834"><title>week of 2025-12-29: 16 committers, 110 others</title></path>
+<rect x="442.29" y="485.50" width="7.77" height="20.50" fill="#653DF4"><title>week of 2026-01-05: 41 committers, 147 others</title></rect>
+<path d="M442.29,483.50 L442.29,414.00 Q442.29,412.00 444.29,412.00 L448.06,412.00 Q450.06,412.00 450.06,414.00 L450.06,483.50 Z" fill="#eb6834"><title>week of 2026-01-05: 41 committers, 147 others</title></path>
+<text x="446.17" y="524.00" font-size="11" fill="#52514e" text-anchor="middle">Jan '26</text>
+<rect x="453.06" y="485.00" width="7.77" height="21.00" fill="#653DF4"><title>week of 2026-01-12: 42 committers, 139 others</title></rect>
+<path d="M453.06,483.00 L453.06,417.50 Q453.06,415.50 455.06,415.50 L458.82,415.50 Q460.82,415.50 460.82,417.50 L460.82,483.00 Z" fill="#eb6834"><title>week of 2026-01-12: 42 committers, 139 others</title></path>
+<rect x="463.82" y="481.50" width="7.77" height="24.50" fill="#653DF4"><title>week of 2026-01-19: 49 committers, 135 others</title></rect>
+<path d="M463.82,479.50 L463.82,416.00 Q463.82,414.00 465.82,414.00 L469.59,414.00 Q471.59,414.00 471.59,416.00 L471.59,479.50 Z" fill="#eb6834"><title>week of 2026-01-19: 49 committers, 135 others</title></path>
+<rect x="474.59" y="483.00" width="7.77" height="23.00" fill="#653DF4"><title>week of 2026-01-26: 46 committers, 132 others</title></rect>
+<path d="M474.59,481.00 L474.59,419.00 Q474.59,417.00 476.59,417.00 L480.35,417.00 Q482.35,417.00 482.35,419.00 L482.35,481.00 Z" fill="#eb6834"><title>week of 2026-01-26: 46 committers, 132 others</title></path>
+<rect x="485.35" y="484.50" width="7.77" height="21.50" fill="#653DF4"><title>week of 2026-02-02: 43 committers, 109 others</title></rect>
+<path d="M485.35,482.50 L485.35,432.00 Q485.35,430.00 487.35,430.00 L491.12,430.00 Q493.12,430.00 493.12,432.00 L493.12,482.50 Z" fill="#eb6834"><title>week of 2026-02-02: 43 committers, 109 others</title></path>
+<rect x="496.12" y="480.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2026-02-09: 52 committers, 105 others</title></rect>
+<path d="M496.12,478.00 L496.12,429.50 Q496.12,427.50 498.12,427.50 L501.88,427.50 Q503.88,427.50 503.88,429.50 L503.88,478.00 Z" fill="#eb6834"><title>week of 2026-02-09: 52 committers, 105 others</title></path>
+<rect x="506.88" y="476.00" width="7.77" height="30.00" fill="#653DF4"><title>week of 2026-02-16: 60 committers, 102 others</title></rect>
+<path d="M506.88,474.00 L506.88,427.00 Q506.88,425.00 508.88,425.00 L512.65,425.00 Q514.65,425.00 514.65,427.00 L514.65,474.00 Z" fill="#eb6834"><title>week of 2026-02-16: 60 committers, 102 others</title></path>
+<rect x="517.65" y="475.00" width="7.77" height="31.00" fill="#653DF4"><title>week of 2026-02-23: 62 committers, 133 others</title></rect>
+<path d="M517.65,473.00 L517.65,410.50 Q517.65,408.50 519.65,408.50 L523.41,408.50 Q525.41,408.50 525.41,410.50 L525.41,473.00 Z" fill="#eb6834"><title>week of 2026-02-23: 62 committers, 133 others</title></path>
+<rect x="528.41" y="479.50" width="7.77" height="26.50" fill="#653DF4"><title>week of 2026-03-02: 53 committers, 143 others</title></rect>
+<path d="M528.41,477.50 L528.41,410.00 Q528.41,408.00 530.41,408.00 L534.18,408.00 Q536.18,408.00 536.18,410.00 L536.18,477.50 Z" fill="#eb6834"><title>week of 2026-03-02: 53 committers, 143 others</title></path>
+<rect x="539.18" y="474.50" width="7.77" height="31.50" fill="#653DF4"><title>week of 2026-03-09: 63 committers, 156 others</title></rect>
+<path d="M539.18,472.50 L539.18,398.50 Q539.18,396.50 541.18,396.50 L544.94,396.50 Q546.94,396.50 546.94,398.50 L546.94,472.50 Z" fill="#eb6834"><title>week of 2026-03-09: 63 committers, 156 others</title></path>
+<rect x="549.94" y="459.00" width="7.77" height="47.00" fill="#653DF4"><title>week of 2026-03-16: 94 committers, 179 others</title></rect>
+<path d="M549.94,457.00 L549.94,371.50 Q549.94,369.50 551.94,369.50 L555.71,369.50 Q557.71,369.50 557.71,371.50 L557.71,457.00 Z" fill="#eb6834"><title>week of 2026-03-16: 94 committers, 179 others</title></path>
+<rect x="560.71" y="464.50" width="7.77" height="41.50" fill="#653DF4"><title>week of 2026-03-23: 83 committers, 169 others</title></rect>
+<path d="M560.71,462.50 L560.71,382.00 Q560.71,380.00 562.71,380.00 L566.48,380.00 Q568.48,380.00 568.48,382.00 L568.48,462.50 Z" fill="#eb6834"><title>week of 2026-03-23: 83 committers, 169 others</title></path>
+<rect x="571.48" y="443.00" width="7.77" height="63.00" fill="#653DF4"><title>week of 2026-03-30: 126 committers, 145 others</title></rect>
+<path d="M571.48,441.00 L571.48,372.50 Q571.48,370.50 573.48,370.50 L577.24,370.50 Q579.24,370.50 579.24,372.50 L579.24,441.00 Z" fill="#eb6834"><title>week of 2026-03-30: 126 committers, 145 others</title></path>
+<rect x="582.24" y="468.00" width="7.77" height="38.00" fill="#653DF4"><title>week of 2026-04-06: 76 committers, 165 others</title></rect>
+<path d="M582.24,466.00 L582.24,387.50 Q582.24,385.50 584.24,385.50 L588.01,385.50 Q590.01,385.50 590.01,387.50 L590.01,466.00 Z" fill="#eb6834"><title>week of 2026-04-06: 76 committers, 165 others</title></path>
+<text x="586.12" y="524.00" font-size="11" fill="#52514e" text-anchor="middle">Apr '26</text>
+<rect x="593.01" y="485.00" width="7.77" height="21.00" fill="#653DF4"><title>week of 2026-04-13: 42 committers, 140 others</title></rect>
+<path d="M593.01,483.00 L593.01,417.00 Q593.01,415.00 595.01,415.00 L598.77,415.00 Q600.77,415.00 600.77,417.00 L600.77,483.00 Z" fill="#eb6834"><title>week of 2026-04-13: 42 committers, 140 others</title></path>
+<rect x="603.77" y="485.00" width="7.77" height="21.00" fill="#653DF4"><title>week of 2026-04-20: 42 committers, 110 others</title></rect>
+<path d="M603.77,483.00 L603.77,432.00 Q603.77,430.00 605.77,430.00 L609.54,430.00 Q611.54,430.00 611.54,432.00 L611.54,483.00 Z" fill="#eb6834"><title>week of 2026-04-20: 42 committers, 110 others</title></path>
+<rect x="614.54" y="492.50" width="7.77" height="13.50" fill="#653DF4"><title>week of 2026-04-27: 27 committers, 95 others</title></rect>
+<path d="M614.54,490.50 L614.54,447.00 Q614.54,445.00 616.54,445.00 L620.30,445.00 Q622.30,445.00 622.30,447.00 L622.30,490.50 Z" fill="#eb6834"><title>week of 2026-04-27: 27 committers, 95 others</title></path>
+<rect x="625.30" y="483.00" width="7.77" height="23.00" fill="#653DF4"><title>week of 2026-05-04: 46 committers, 101 others</title></rect>
+<path d="M625.30,481.00 L625.30,434.50 Q625.30,432.50 627.30,432.50 L631.07,432.50 Q633.07,432.50 633.07,434.50 L633.07,481.00 Z" fill="#eb6834"><title>week of 2026-05-04: 46 committers, 101 others</title></path>
+<rect x="636.07" y="492.50" width="7.77" height="13.50" fill="#653DF4"><title>week of 2026-05-11: 27 committers, 123 others</title></rect>
+<path d="M636.07,490.50 L636.07,433.00 Q636.07,431.00 638.07,431.00 L641.83,431.00 Q643.83,431.00 643.83,433.00 L643.83,490.50 Z" fill="#eb6834"><title>week of 2026-05-11: 27 committers, 123 others</title></path>
+<rect x="646.83" y="497.50" width="7.77" height="8.50" fill="#653DF4"><title>week of 2026-05-18: 17 committers, 76 others</title></rect>
+<path d="M646.83,495.50 L646.83,461.50 Q646.83,459.50 648.83,459.50 L652.60,459.50 Q654.60,459.50 654.60,461.50 L654.60,495.50 Z" fill="#eb6834"><title>week of 2026-05-18: 17 committers, 76 others</title></path>
+<rect x="657.60" y="487.50" width="7.77" height="18.50" fill="#653DF4"><title>week of 2026-05-25: 37 committers, 122 others</title></rect>
+<path d="M657.60,485.50 L657.60,428.50 Q657.60,426.50 659.60,426.50 L663.36,426.50 Q665.36,426.50 665.36,428.50 L665.36,485.50 Z" fill="#eb6834"><title>week of 2026-05-25: 37 committers, 122 others</title></path>
+<rect x="668.36" y="490.00" width="7.77" height="16.00" fill="#653DF4"><title>week of 2026-06-01: 32 committers, 72 others</title></rect>
+<path d="M668.36,488.00 L668.36,456.00 Q668.36,454.00 670.36,454.00 L674.13,454.00 Q676.13,454.00 676.13,456.00 L676.13,488.00 Z" fill="#eb6834"><title>week of 2026-06-01: 32 committers, 72 others</title></path>
+<rect x="679.13" y="494.50" width="7.77" height="11.50" fill="#653DF4"><title>week of 2026-06-08: 23 committers, 61 others</title></rect>
+<path d="M679.13,492.50 L679.13,466.00 Q679.13,464.00 681.13,464.00 L684.90,464.00 Q686.90,464.00 686.90,466.00 L686.90,492.50 Z" fill="#eb6834"><title>week of 2026-06-08: 23 committers, 61 others</title></path>
+<rect x="689.90" y="482.00" width="7.77" height="24.00" fill="#653DF4"><title>week of 2026-06-15: 48 committers, 48 others</title></rect>
+<path d="M689.90,480.00 L689.90,460.00 Q689.90,458.00 691.90,458.00 L695.66,458.00 Q697.66,458.00 697.66,460.00 L697.66,480.00 Z" fill="#eb6834"><title>week of 2026-06-15: 48 committers, 48 others</title></path>
+<rect x="700.66" y="492.00" width="7.77" height="14.00" fill="#653DF4"><title>week of 2026-06-22: 28 committers, 36 others</title></rect>
+<path d="M700.66,490.00 L700.66,476.00 Q700.66,474.00 702.66,474.00 L706.43,474.00 Q708.43,474.00 708.43,476.00 L708.43,490.00 Z" fill="#eb6834"><title>week of 2026-06-22: 28 committers, 36 others</title></path>
+<rect x="711.43" y="490.50" width="7.77" height="15.50" fill="#653DF4"><title>week of 2026-06-29: 31 committers, 53 others</title></rect>
+<path d="M711.43,488.50 L711.43,466.00 Q711.43,464.00 713.43,464.00 L717.19,464.00 Q719.19,464.00 719.19,466.00 L719.19,488.50 Z" fill="#eb6834"><title>week of 2026-06-29: 31 committers, 53 others</title></path>
+<rect x="722.19" y="486.00" width="7.77" height="20.00" fill="#653DF4"><title>week of 2026-07-06: 40 committers, 33 others</title></rect>
+<path d="M722.19,484.00 L722.19,471.50 Q722.19,469.50 724.19,469.50 L727.96,469.50 Q729.96,469.50 729.96,471.50 L729.96,484.00 Z" fill="#eb6834"><title>week of 2026-07-06: 40 committers, 33 others</title></path>
+<text x="726.07" y="524.00" font-size="11" fill="#52514e" text-anchor="middle">Jul '26</text>
+<rect x="732.96" y="481.00" width="7.77" height="25.00" fill="#653DF4"><title>week of 2026-07-13: 50 committers, 53 others</title></rect>
+<path d="M732.96,479.00 L732.96,456.50 Q732.96,454.50 734.96,454.50 L738.72,454.50 Q740.72,454.50 740.72,456.50 L740.72,479.00 Z" fill="#eb6834"><title>week of 2026-07-13: 50 committers, 53 others</title></path>
+<rect x="743.72" y="495.00" width="7.77" height="11.00" fill="#653DF4"><title>week of 2026-07-20: 22 committers, 43 others</title></rect>
+<path d="M743.72,493.00 L743.72,475.50 Q743.72,473.50 745.72,473.50 L749.49,473.50 Q751.49,473.50 751.49,475.50 L751.49,493.00 Z" fill="#eb6834"><title>week of 2026-07-20: 22 committers, 43 others</title></path>
+<rect x="754.49" y="495.00" width="7.77" height="11.00" fill="#653DF4"><title>week of 2026-07-27: 22 committers, 48 others</title></rect>
+<path d="M754.49,493.00 L754.49,473.00 Q754.49,471.00 756.49,471.00 L760.25,471.00 Q762.25,471.00 762.25,473.00 L762.25,493.00 Z" fill="#eb6834"><title>week of 2026-07-27: 22 committers, 48 others</title></path>
+<rect x="765.25" y="494.00" width="7.77" height="12.00" fill="#653DF4"><title>week of 2026-08-03: 24 committers, 28 others</title></rect>
+<path d="M765.25,492.00 L765.25,482.00 Q765.25,480.00 767.25,480.00 L771.02,480.00 Q773.02,480.00 773.02,482.00 L773.02,492.00 Z" fill="#eb6834"><title>week of 2026-08-03: 24 committers, 28 others</title></path>
+<rect x="776.02" y="488.00" width="7.77" height="18.00" fill="#653DF4"><title>week of 2026-08-10: 36 committers, 61 others</title></rect>
+<path d="M776.02,486.00 L776.02,459.50 Q776.02,457.50 778.02,457.50 L781.78,457.50 Q783.78,457.50 783.78,459.50 L783.78,486.00 Z" fill="#eb6834"><title>week of 2026-08-10: 36 committers, 61 others</title></path>
+<rect x="786.78" y="486.00" width="7.77" height="20.00" fill="#653DF4"><title>week of 2026-08-17: 40 committers, 49 others</title></rect>
+<path d="M786.78,484.00 L786.78,463.50 Q786.78,461.50 788.78,461.50 L792.55,461.50 Q794.55,461.50 794.55,463.50 L794.55,484.00 Z" fill="#eb6834"><title>week of 2026-08-17: 40 committers, 49 others</title></path>
+<rect x="797.55" y="486.00" width="7.77" height="20.00" fill="#653DF4"><title>week of 2026-08-24: 40 committers, 63 others</title></rect>
+<path d="M797.55,484.00 L797.55,456.50 Q797.55,454.50 799.55,454.50 L803.31,454.50 Q805.31,454.50 805.31,456.50 L805.31,484.00 Z" fill="#eb6834"><title>week of 2026-08-24: 40 committers, 63 others</title></path>
+<rect x="808.31" y="488.00" width="7.77" height="18.00" fill="#653DF4"><title>week of 2026-08-31: 36 committers, 50 others</title></rect>
+<path d="M808.31,486.00 L808.31,465.00 Q808.31,463.00 810.31,463.00 L814.08,463.00 Q816.08,463.00 816.08,465.00 L816.08,486.00 Z" fill="#eb6834"><title>week of 2026-08-31: 36 committers, 50 others</title></path>
+<rect x="819.08" y="480.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2026-09-07: 52 committers, 68 others</title></rect>
+<path d="M819.08,478.00 L819.08,448.00 Q819.08,446.00 821.08,446.00 L824.85,446.00 Q826.85,446.00 826.85,448.00 L826.85,478.00 Z" fill="#eb6834"><title>week of 2026-09-07: 52 committers, 68 others</title></path>
+<rect x="829.85" y="480.00" width="7.77" height="26.00" fill="#653DF4"><title>week of 2026-09-14: 52 committers, 58 others</title></rect>
+<path d="M829.85,478.00 L829.85,453.00 Q829.85,451.00 831.85,451.00 L835.61,451.00 Q837.61,451.00 837.61,453.00 L837.61,478.00 Z" fill="#eb6834"><title>week of 2026-09-14: 52 committers, 58 others</title></path>
+<rect x="840.61" y="491.00" width="7.77" height="15.00" fill="#653DF4"><title>week of 2026-09-21: 30 committers, 75 others</title></rect>
+<path d="M840.61,489.00 L840.61,455.50 Q840.61,453.50 842.61,453.50 L846.38,453.50 Q848.38,453.50 848.38,455.50 L848.38,489.00 Z" fill="#eb6834"><title>week of 2026-09-21: 30 committers, 75 others</title></path>
+<rect x="851.38" y="496.50" width="7.77" height="9.50" fill="#653DF4"><title>week of 2026-09-28: 19 committers, 58 others</title></rect>
+<path d="M851.38,494.50 L851.38,469.50 Q851.38,467.50 853.38,467.50 L857.14,467.50 Q859.14,467.50 859.14,469.50 L859.14,494.50 Z" fill="#eb6834"><title>week of 2026-09-28: 19 committers, 58 others</title></path>
+<rect x="862.14" y="484.00" width="7.77" height="22.00" fill="#653DF4"><title>week of 2026-10-05: 44 committers, 49 others</title></rect>
+<path d="M862.14,482.00 L862.14,461.50 Q862.14,459.50 864.14,459.50 L867.91,459.50 Q869.91,459.50 869.91,461.50 L869.91,482.00 Z" fill="#eb6834"><title>week of 2026-10-05: 44 committers, 49 others</title></path>
+<text x="866.02" y="524.00" font-size="11" fill="#52514e" text-anchor="middle">Oct '26</text>
+<rect x="872.91" y="494.50" width="7.77" height="11.50" fill="#653DF4"><title>week of 2026-10-12: 23 committers, 73 others</title></rect>
+<path d="M872.91,492.50 L872.91,460.00 Q872.91,458.00 874.91,458.00 L878.67,458.00 Q880.67,458.00 880.67,460.00 L880.67,492.50 Z" fill="#eb6834"><title>week of 2026-10-12: 23 committers, 73 others</title></path>
+<rect x="883.67" y="496.00" width="7.77" height="10.00" fill="#653DF4"><title>week of 2026-10-19: 20 committers, 68 others</title></rect>
+<path d="M883.67,494.00 L883.67,464.00 Q883.67,462.00 885.67,462.00 L889.44,462.00 Q891.44,462.00 891.44,464.00 L891.44,494.00 Z" fill="#eb6834"><title>week of 2026-10-19: 20 committers, 68 others</title></path>
+<rect x="894.44" y="491.00" width="7.77" height="15.00" fill="#653DF4"><title>week of 2026-10-26: 30 committers, 37 others</title></rect>
+<path d="M894.44,489.00 L894.44,474.50 Q894.44,472.50 896.44,472.50 L900.20,472.50 Q902.20,472.50 902.20,474.50 L902.20,489.00 Z" fill="#eb6834"><title>week of 2026-10-26: 30 committers, 37 others</title></path>
+<rect x="905.20" y="490.00" width="7.77" height="16.00" fill="#653DF4"><title>week of 2026-11-02: 32 committers, 35 others</title></rect>
+<path d="M905.20,488.00 L905.20,474.50 Q905.20,472.50 907.20,472.50 L910.97,472.50 Q912.97,472.50 912.97,474.50 L912.97,488.00 Z" fill="#eb6834"><title>week of 2026-11-02: 32 committers, 35 others</title></path>
+<rect x="915.97" y="497.50" width="7.77" height="8.50" fill="#653DF4"><title>week of 2026-11-09: 17 committers, 31 others</title></rect>
+<path d="M915.97,495.50 L915.97,484.00 Q915.97,482.00 917.97,482.00 L921.73,482.00 Q923.73,482.00 923.73,484.00 L923.73,495.50 Z" fill="#eb6834"><title>week of 2026-11-09: 17 committers, 31 others</title></path>
+<rect x="926.73" y="505.50" width="7.77" height="0.50" fill="#653DF4"><title>week of 2026-11-16: 1 committers, 1 others</title></rect>
+<path d="" fill="#eb6834"><title>week of 2026-11-16: 1 committers, 1 others</title></path>
+<line x1="585.35" y1="352.00" x2="585.35" y2="506.00" stroke="#898781" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="589.35" y="362.00" font-size="11" fill="#52514e" text-anchor="start">feature freeze</text>
+</svg>

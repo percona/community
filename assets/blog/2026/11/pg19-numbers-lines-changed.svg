@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Lines changed per release</title>
+<rect width="960" height="380" fill="#ffffff"/>
+<text x="24" y="34" font-size="18" font-weight="600" fill="#0b0b0b">Lines changed per release</text>
+<text x="24" y="56" font-size="13" fill="#52514e">lines added and removed, summed over the individual commits</text>
+<text x="936" y="366" font-size="11" fill="#898781" text-anchor="end">hackorum.dev/stats/trends/releases</text>
+<line x1="72.00" y1="278.40" x2="936.00" y2="278.40" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="282.40" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">250K</text>
+<line x1="72.00" y1="232.80" x2="936.00" y2="232.80" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="236.80" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">500K</text>
+<line x1="72.00" y1="187.20" x2="936.00" y2="187.20" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="191.20" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">750K</text>
+<line x1="72.00" y1="141.60" x2="936.00" y2="141.60" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="145.60" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">1M</text>
+<line x1="72.00" y1="96.00" x2="936.00" y2="96.00" stroke="#e1e0d9" stroke-width="1" shape-rendering="crispEdges"/>
+<text x="64.00" y="100.00" font-size="11" fill="#898781" text-anchor="end" font-variant-numeric="tabular-nums">1.25M</text>
+<text x="64.00" y="328.00" font-size="11" fill="#898781" text-anchor="end">0</text>
+<line x1="72.00" y1="324.00" x2="936.00" y2="324.00" stroke="#c3c2b7" stroke-width="1" shape-rendering="crispEdges"/>
+<path d="M108.00,324.00 L108.00,206.07 Q108.00,202.07 112.00,202.07 L128.00,202.07 Q132.00,202.07 132.00,206.07 L132.00,324.00 Z" fill="#653DF4"><title>PG11: 668,463</title></path>
+<text x="120.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG11</text>
+<path d="M204.00,324.00 L204.00,172.65 Q204.00,168.65 208.00,168.65 L224.00,168.65 Q228.00,168.65 228.00,172.65 L228.00,324.00 Z" fill="#653DF4"><title>PG12: 851,716</title></path>
+<text x="216.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG12</text>
+<path d="M300.00,324.00 L300.00,207.12 Q300.00,203.12 304.00,203.12 L320.00,203.12 Q324.00,203.12 324.00,207.12 L324.00,324.00 Z" fill="#653DF4"><title>PG13: 662,733</title></path>
+<text x="312.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG13</text>
+<path d="M396.00,324.00 L396.00,185.91 Q396.00,181.91 400.00,181.91 L416.00,181.91 Q420.00,181.91 420.00,185.91 L420.00,324.00 Z" fill="#653DF4"><title>PG14: 778,977</title></path>
+<text x="408.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG14</text>
+<path d="M492.00,324.00 L492.00,212.73 Q492.00,208.73 496.00,208.73 L512.00,208.73 Q516.00,208.73 516.00,212.73 L516.00,324.00 Z" fill="#653DF4"><title>PG15: 631,966</title></path>
+<text x="504.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG15</text>
+<path d="M588.00,324.00 L588.00,205.09 Q588.00,201.09 592.00,201.09 L608.00,201.09 Q612.00,201.09 612.00,205.09 L612.00,324.00 Z" fill="#653DF4"><title>PG16: 673,837</title></path>
+<text x="600.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG16</text>
+<path d="M684.00,324.00 L684.00,200.67 Q684.00,196.67 688.00,196.67 L704.00,196.67 Q708.00,196.67 708.00,200.67 L708.00,324.00 Z" fill="#653DF4"><title>PG17: 698,059</title></path>
+<text x="696.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG17</text>
+<path d="M780.00,324.00 L780.00,212.33 Q780.00,208.33 784.00,208.33 L800.00,208.33 Q804.00,208.33 804.00,212.33 L804.00,324.00 Z" fill="#653DF4"><title>PG18: 634,151</title></path>
+<text x="792.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG18</text>
+<text x="792.00" y="200.33" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600">634K</text>
+<path d="M876.00,324.00 L876.00,121.09 Q876.00,117.09 880.00,117.09 L896.00,117.09 Q900.00,117.09 900.00,121.09 L900.00,324.00 Z" fill="#653DF4"><title>PG19: 1,134,392</title></path>
+<text x="888.00" y="344.00" font-size="12" fill="#52514e" text-anchor="middle">PG19</text>
+<text x="888.00" y="109.09" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600">1.13M</text>
+</svg>
