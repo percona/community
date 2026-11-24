@@ -45,7 +45,7 @@ Percona sponsored the first edition.
 
 ![Opening of PGConf.PL 2026 in Gdańsk](/events/2026-pgconf-pl/pgconf-pl-2026-opening.jpg)
 
-### Migrate from Oracle to PostgreSQL they said…
+### [Migrate from Oracle to PostgreSQL they said…](/talks/2026/2026-11-24-migrate-from-oracle-to-postgresql-they-said)
 
 **Speaker:** [Michal Nosek](/contributors/michal_nosek/) · Lightning talk, 13:55–14:40 block, Sala u Profesora B
 
