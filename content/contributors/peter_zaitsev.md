@@ -54,8 +54,10 @@ events_tags:
 - event
 - fosdem
 - in-memory
+- infrastructure
 - linux
 - observability
+- open-source
 - opensource
 - performance
 - russia
@@ -86,17 +88,20 @@ talks_tags:
 - ai
 - conference
 - database
+- databases
 - developer-conference
 - eBPF
 - english
+- infrastructure
+- open-source
 - software
 - spanish
 - technology
 - video
 - web
 posts_count: 0
-events_count: 44
-talks_count: 74
+events_count: 45
+talks_count: 76
 contributor_type:
 - speaker
 contributor_year:
