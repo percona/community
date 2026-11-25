@@ -46,6 +46,30 @@
       ]
     },
     {
+      "identifier": "urn:air:percona.community:map:llms-full",
+      "displayName": "llms-full.txt curated snapshot",
+      "type": "text/plain",
+      "url": "https://percona.community/llms-full.txt",
+      "description": "Curated agent snapshot of percona.community entry points and the public Community Search API. Not a dump of every page.",
+      "tags": ["llms-full.txt", "discovery"],
+      "representativeQueries": [
+        "percona community llms-full",
+        "agent snapshot of percona.community"
+      ]
+    },
+    {
+      "identifier": "urn:air:percona.community:skill:percona-community",
+      "displayName": "percona-community agent skill",
+      "type": "text/markdown",
+      "url": "https://percona.community/skill.md",
+      "description": "Agent skill for navigating percona.community and calling the public Community Search API.",
+      "tags": ["skill.md", "agents"],
+      "representativeQueries": [
+        "percona community skill.md",
+        "how should an agent use percona.community"
+      ]
+    },
+    {
       "identifier": "urn:air:percona.community:repo:agents",
       "displayName": "AGENTS.md for the community site repo",
       "type": "text/markdown",

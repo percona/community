@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "percona-community",
+      "type": "skill-md",
+      "description": "Navigate percona.community and use the public Community Search API for blogs, talks, events, and contributors.",
+      "url": "https://percona.community/.well-known/skills/percona-community/SKILL.md"
+    }
+  ]
+}

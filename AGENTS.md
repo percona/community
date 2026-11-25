@@ -21,9 +21,13 @@ Guidance for AI coding agents working in [percona/community](https://github.com/
 | `content/` | Site content (blog, talks, events, …) |
 | `layouts/` | Hugo templates |
 | `assets/scss/` | Styles (brand tokens in `common/_variables.scss`) |
-| `static/llms.txt` | Agent site map |
+| `static/llms.txt` | Agent site map (curated) |
+| `static/llms-full.txt` | Curated agent snapshot |
+| `static/skill.md` | Agent skill for this site / Search API |
 | `static/openapi.json` | OpenAPI for Community Search |
 | `static/.well-known/ai-catalog.json` | ARD / AI Catalog entries |
+| `static/.well-known/skills/` | Skills discovery index + SKILL.md |
+| `tools/agent_markdown/flatten_md_urls.py` | Mirror `index.md` → sibling `.md` for agents |
 | `content/developers.md` | Search API human docs (`/developers/`) |
 | `.cursor/rules/` | Project conventions (tone, brand, hubs) |
 
