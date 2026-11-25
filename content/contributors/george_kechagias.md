@@ -57,4 +57,4 @@ contributor_type:
 contributor_year:
 - '2026'
 ---
-George Kechagias is a Senior Software Engineer and Engineering Manager in the Cloud Engineering team at Percona, working on the Percona Kubernetes Operators.
+George is a Senior Software Engineer at Percona and a member of the Cloud Native team, where he works on the open-source Percona Kubernetes Operators. His interests include distributed systems, domain-driven design, databases, and production-grade infrastructure. Outside of work, he is a passionate sailor and runner.
