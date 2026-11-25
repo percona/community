@@ -1,26 +1,37 @@
 ---
+title: george_kechagias
 name: george_kechagias
 name_pronunciation: george_kechagias
 fullname: George Kechagias
 fullname_pronounciation: George Kechagias
-job: Software Engineer, Cloud Engineering @ Percona
+job: Percona, Senior Software Engineer
+country: Greece
 tagline: null
 social:
   facebook: null
-  github: null
+  github: https://github.com/gkech
   linkedin: https://www.linkedin.com/in/george-kechagias-86118b92/
   twitter: null
   website: null
 images:
-- contributors/george_kechagias.png
+- contributors/george_kechagias.jpg
+status: current
 contributor_status:
 - staff
 # Auto-generated fields. Do not edit manually.
 contributor_tag:
 - Community
 - Kubernetes
+- MongoDB
+- MySQL
 - PostgreSQL
-blog_tags: []
+- cloud
+- community
+blog_tags:
+- cloud
+- events
+- kubernetes
+- operators
 events_tags:
 - Cloud-Native
 - Event
@@ -33,14 +44,17 @@ events_tags:
 - sponsorship
 talks_tags:
 - Cloud Native
+- Cloud-Native
 - Open Source
+- Open-Source
 - database
-posts_count: 0
-events_count: 2
+posts_count: 1
+events_count: 4
 talks_count: 3
 contributor_type:
+- author
 - speaker
 contributor_year:
 - '2026'
 ---
-Software Engineer & Engineering Manager
+George is a Senior Software Engineer at Percona and a member of the Cloud Native team, where he works on the open-source Percona Kubernetes Operators. His interests include distributed systems, domain-driven design, databases, and production-grade infrastructure. Outside of work, he is a passionate sailor and runner.
