@@ -78,6 +78,9 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
 
+      - name: Mirror markdown pages for agent .md URLs
+        run: python3 tools/agent_markdown/flatten_md_urls.py --public public
+
       - name: Shrink artifact for GitHub Pages 1GB limit
         run: |
           set -euo pipefail

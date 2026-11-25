@@ -1,0 +1,96 @@
+# Percona Community — llms-full.txt
+
+> Curated snapshot for agents. This is not a dump of every page on the site. Use https://percona.community/llms.txt for the map, https://percona.community/sitemap.xml for inventory, and POST https://search.percona.community/search for discovery.
+
+Source: https://percona.community/
+Last updated for agent readiness improvements on the community Hugo site.
+
+---
+
+## What this site is
+
+Percona Community (https://percona.community/) publishes community content for people who run databases in production: events, talks, speakers, blog posts, and contribution guides.
+
+It is not the product documentation portal. Product docs live at https://docs.percona.com/.
+
+---
+
+## Agent entry points
+
+- llms.txt: https://percona.community/llms.txt
+- skill.md: https://percona.community/skill.md
+- OpenAPI: https://percona.community/openapi.json
+- AI Catalog: https://percona.community/.well-known/ai-catalog.json
+- Developer docs: https://percona.community/developers.md
+- Repo agent guide: https://github.com/percona/community/blob/main/AGENTS.md
+
+Markdown mirrors: append `.md` to content URLs, e.g. https://percona.community/blog.md or https://percona.community/developers.md.
+
+---
+
+## Search API (public)
+
+No API key for the public search surface.
+
+Base URL: https://search.percona.community
+
+### GET /health
+
+```bash
+curl -sS https://search.percona.community/health
+```
+
+### POST /search
+
+```bash
+curl -sS -X POST https://search.percona.community/search \
+  -H 'Content-Type: application/json' \
+  -d '{"query":"zero downtime database migration","limit":8,"content_type":"blog,talk"}'
+```
+
+Request fields:
+
+- query (string, required)
+- limit (int, default 20)
+- content_type (optional): blog, percona_blog, event, talk, contributor
+- min_score (optional float)
+- per_type_limit (optional bool)
+
+Results include url, title, content_type, excerpt, score, and optional author, date, tags, images.
+
+Full schema: https://percona.community/openapi.json
+Human docs: https://percona.community/developers.md
+
+Admin/indexing UI on the same host may require HTTP Basic Auth and is out of scope for agents.
+
+---
+
+## Primary HTML sections (also as .md)
+
+- Home: https://percona.community/ / https://percona.community/index.md
+- Events: https://percona.community/events/ / https://percona.community/events.md
+- Talks: https://percona.community/talks/ / https://percona.community/talks.md
+- Videos: https://percona.community/videos/ / https://percona.community/videos.md
+- Speakers: https://percona.community/contributor_type/speaker/ / https://percona.community/contributor_type/speaker.md
+- Authors: https://percona.community/contributor_type/author/ / https://percona.community/contributor_type/author.md
+- Contributors: https://percona.community/contributors/ / https://percona.community/contributors.md
+- Blog: https://percona.community/blog/ / https://percona.community/blog.md
+- Knowledge Base: https://percona.community/knowledge-base/ / https://percona.community/knowledge-base.md
+- Search UI: https://percona.community/search/ / https://percona.community/search.md
+
+---
+
+## Contribute
+
+- Knowledge base: https://percona.community/knowledge-base.md
+- Write articles: https://percona.community/contribute/articles.md
+- Forum: https://forums.percona.com/
+- Content repo: https://github.com/percona/community
+
+---
+
+## Related Percona sites
+
+- https://www.percona.com/
+- https://docs.percona.com/
+- https://forums.percona.com/

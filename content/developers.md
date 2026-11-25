@@ -18,6 +18,8 @@ It is **not** a product SDK portal for Percona Server, Operators, or PMM. For pr
 | Health | [https://search.percona.community/health](https://search.percona.community/health) |
 | Site search UI | [https://percona.community/search/](https://percona.community/search/) |
 | Agent site map (`llms.txt`) | [https://percona.community/llms.txt](https://percona.community/llms.txt) |
+| Agent snapshot (`llms-full.txt`) | [https://percona.community/llms-full.txt](https://percona.community/llms-full.txt) |
+| Agent skill (`skill.md`) | [https://percona.community/skill.md](https://percona.community/skill.md) |
 
 ## Authentication
 

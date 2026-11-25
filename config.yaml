@@ -308,6 +308,22 @@ imaging:
 permalinks:
   /: /:contentbasename/
   blog: /blog/:year/:month/:day/:slug/
+# Agent-facing markdown mirrors (Mintlify / AFDocs .md URL checks).
+# Post-build: tools/agent_markdown/flatten_md_urls.py copies index.md → sibling .md
+mediaTypes:
+  text/markdown:
+    suffixes: ["md"]
+outputFormats:
+  Markdown:
+    mediaType: text/markdown
+    isPlainText: true
+    notAlternative: false
+outputs:
+  home: ["HTML", "RSS", "Markdown"]
+  page: ["HTML", "Markdown"]
+  section: ["HTML", "RSS", "Markdown"]
+  taxonomy: ["HTML", "Markdown"]
+  term: ["HTML", "Markdown"]
 timeout: 2m
 caches:
   images:

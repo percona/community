@@ -1,0 +1,9 @@
+{
+  "skills": [
+    {
+      "name": "percona-community",
+      "description": "Navigate percona.community and use the public Community Search API for blogs, talks, events, and contributors.",
+      "files": ["SKILL.md"]
+    }
+  ]
+}
