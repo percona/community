@@ -3,7 +3,8 @@ name: radoslaw_szulgo
 name_pronunciation: radoslaw_szulgo
 fullname: Radoslaw Szulgo
 fullname_pronounciation: Radoslaw Szulgo
-tagline: Senior Product Manager, Percona
+job: Senior Product Manager, Percona
+tagline: null
 social:
   facebook: null
   github: null
@@ -40,15 +41,14 @@ blog_tags:
 events_tags:
 - Event
 - Events
-- Open-Source
 - PSMDB
-- Tech
 - ai
+- databases
 - monitoring
 - observability
-- open-source
 - opensource
 - speaking
+- vector-database
 talks_tags:
 - Azure
 - Cloud Native
@@ -61,14 +61,17 @@ talks_tags:
 - Opensource
 - Tech
 - Vector-Search
+- Video
 - ai
+- databases
 - monitoring
 - observability
 - open-source
 - pmm
+- vector-database
 posts_count: 2
-events_count: 3
-talks_count: 5
+events_count: 4
+talks_count: 6
 contributor_type:
 - author
 - speaker
