@@ -3,7 +3,8 @@ name: radoslaw_szulgo
 name_pronunciation: radoslaw_szulgo
 fullname: Radoslaw Szulgo
 fullname_pronounciation: Radoslaw Szulgo
-tagline: Senior Product Manager, Percona
+job: Senior Product Manager, Percona
+tagline: null
 social:
   facebook: null
   github: null

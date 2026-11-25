@@ -3,7 +3,8 @@ name: sandra_romanchenko
 name_pronunciation: sandra_romanchenko
 fullname: Sandra Romanchenko
 fullname_pronounciation: Sandra Romanchenko
-tagline: Staff Quality Engineer, Percona
+job: Staff Quality Engineer, Percona
+tagline: null
 social:
   facebook: null
   github: null
