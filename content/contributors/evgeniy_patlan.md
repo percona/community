@@ -50,10 +50,13 @@ events_tags:
 - Percona products
 - Postgres
 - Stream
+- ai
+- databases
 - devops
 - opensource
 - pgpool
 - speaking
+- vector-database
 talks_tags:
 - Benchmark
 - Career
@@ -64,10 +67,14 @@ talks_tags:
 - Open-Source
 - Security
 - Tech
+- Video
+- ai
+- databases
 - software-development
+- vector-database
 posts_count: 1
-events_count: 10
-talks_count: 4
+events_count: 11
+talks_count: 5
 contributor_type:
 - author
 - speaker
