@@ -6,51 +6,66 @@ tags: ['PMM', 'Prometheus', 'PromQL', 'Grafana', 'Community', 'Contributions']
 categories: ['PMM']
 authors:
   - daniil_bazhenov
+  - catalina_adam
 images:
   - blog/2026/11/netstat-tcp-counters-rate-cover.png
 slug: netstat-tcp-counters-rate
 ---
 
-Open **OS > Network Details** in Percona Monitoring and Management (PMM) 3.10.0 or earlier and look at the **Netstat: TCP** panel. On a busy node you'll see lines in the hundreds of thousands, climbing slowly and never coming down. On one of our test nodes, `ActiveOpens` sat at about 340,000.
+When your application reports dropped or slow connections to the database, one of the first places to look in Percona Monitoring and Management (PMM) is the **Netstat: TCP** panel on the **OS > Network Details** dashboard. It shows how many connections the node opens, accepts, and loses, and how much traffic it has to resend.
 
-That number isn't how many connections your node opens. It's how many it has opened since it last booted. The panel was graphing raw counters, so a connection storm at 3 a.m. barely moved the line.
+Up to PMM 3.10.0, that panel couldn't answer the question. Its lines sat in the hundreds of thousands and only ever climbed, so you couldn't tell when a connection storm started or whether it was over.
 
-Bastian Triller, an engineer at Placetel in Cologne, found the problem, fixed it, and sent the fix as a pull request. It shipped in PMM 3.11.0. This post walks through what was wrong, why the fix looks the way it does, and how you can spot the same mistake in your own dashboards.
+Bastian Triller, an engineer at Placetel in Cologne, spotted why: the panel plotted running totals instead of rates. He sent a fix as a [pull request](https://github.com/percona/pmm/pull/5913), and the PMM team reviewed and refined it. Starting with PMM 3.11.0, the panel shows what's happening on your node right now.
 
-## From a wrong graph to a merged fix
+Read on to see what the panel shows now, how to use it to track down connection problems, and how Bastian and the PMM team got the fix into PMM. If you build your own dashboards, you'll also learn how to check them for the same mistake.
 
-Bastian filed [PMM-15559](https://perconadev.atlassian.net/browse/PMM-15559) with a precise ask: use `rate()` or `irate()` for the five TCP counters on the panel, and put the established connections on their own axis. Then he didn't wait for someone else to do it. He changed the dashboard JSON himself and opened [percona/pmm#5913](https://github.com/percona/pmm/pull/5913).
+## What the panel showed before 3.11.0
 
-Mattia Simonato from the PMM team reviewed it. He reproduced the problem on a test node, confirmed the numbers, refined the fallback query, and added a release note on top of Bastian's commit. The PR merged on 11 November 2026.
+On one of our test nodes, the `activeOpens` line read about 340,000. That wasn't how many connections the node was opening. It was how many it had opened since it last booted. Every line on the panel was a running total like this, so you couldn't tell a quiet hour from a busy one, or when a problem started.
 
-That's what a good community contribution looks like: a real problem, a clear ticket, and a patch that's small enough to review. Thank you, Bastian.
+The `established` line, the number of connections open right now, had a different problem. It was about 100 on the same node. On a shared scale that went up to hundreds of thousands, it looked like a flat line at zero.
 
-## Counters and gauges
+Here's the panel in PMM 3.10.0 during a two-minute burst of short connections on a test node. The burst shows up as a climb, but after it ends, the lines stay up, so the panel can't tell you whether the problem is still happening:
 
-Prometheus has two kinds of numeric metrics that matter here:
+![The Netstat: TCP panel in PMM 3.10.0. The lines show running totals, climb during a connection burst at 10:53, and stay high after it ends.](blog/2026/11/netstat-tcp-before.png)
 
-- A **counter** only goes up. It resets to zero when the process or the host restarts. Examples: bytes sent, queries executed, TCP connections opened.
-- A **gauge** goes up and down. It's a snapshot of the current state. Examples: memory in use, replication lag, connections open right now.
+## What you see now
 
-The raw value of a counter is almost never what you want on a graph. You want how fast it grows.
+After you upgrade PMM Server to 3.11.0, the panel shows two kinds of information on two scales:
 
-The TCP metrics in this panel come from the node exporter, which reads them from `/proc/net/snmp`. Five of them are counters:
+- **Left scale, events per second:** how often connections are opened, reset, or fail, and how many TCP segments are resent. On the test node where `activeOpens` read about 340,000, these lines now read between 0 and 12 per second.
+- **Right scale, Connections:** how many connections are open right now.
 
-| Metric | What it counts |
-|---|---|
-| `node_netstat_Tcp_ActiveOpens` | Connections this host initiated |
-| `node_netstat_Tcp_PassiveOpens` | Connections this host accepted |
-| `node_netstat_Tcp_EstabResets` | Established connections that were reset |
-| `node_netstat_Tcp_AttemptFails` | Connection attempts that failed |
-| `node_netstat_Tcp_RetransSegs` | TCP segments retransmitted |
+Here's the same burst on the updated panel. New connections jump to almost 2,000 per second and drop back to zero when the burst ends. Open connections on the right scale rise from about 70 to almost 400, then fall back:
 
-The sixth, `node_netstat_Tcp_CurrEstab`, is a gauge: the number of connections in the `ESTABLISHED` or `CLOSE-WAIT` state right now.
+![The Netstat: TCP panel in PMM 3.11.0. During the same burst, activeOpens and passiveOpens spike to almost 2,000 per second and drop back to zero, and established connections rise and fall on the right scale.](blog/2026/11/netstat-tcp-after.png)
 
-Here's the trap. By convention, Prometheus counters end in `_total`. These don't, because the names come straight from the kernel's SNMP MIB. Nothing in `node_netstat_Tcp_ActiveOpens` tells you it's a counter. You have to know.
+## Use the panel to troubleshoot connection problems
 
-## What `max_over_time` did to a counter
+When users report connection errors or slowness:
 
-Before the fix, each counter in the panel used this query:
+1. Open **OS > Network Details**, select the node that runs your database, and set the time range to cover the incident.
+2. In **Netstat: TCP**, look for lines that jump at the time of the problem. Each line points you in a different direction:
+
+    | Line | What a spike usually means |
+    |---|---|
+    | `passiveOpens` | Clients opened many new connections at once, for example after an application restart or without connection pooling. |
+    | `activeOpens` | The node itself opened many outgoing connections, for example to other databases or services. |
+    | `attemptfails` | Connection attempts failed, for example because the target port wasn't listening or a firewall blocked it. |
+    | `estabResets` | Open connections were dropped abruptly, for example by a crashed process, a timeout, or a load balancer. |
+    | `retransSegs` | The node had to resend data, which usually means packet loss or a congested network. |
+
+3. Check `established` on the right scale. A sudden drop matches dropped connections. A line that keeps rising without coming back down can mean that connections aren't being closed.
+4. Compare the time of the spike with the connection panels on your database dashboard to see whether the database or the network is the cause.
+
+## Why the old panel showed totals
+
+If you build your own dashboards, this part is for you.
+
+Five of the six lines on the panel come from TCP counters that the node exporter reads from `/proc/net/snmp`. A counter only goes up, and it resets to zero when the host restarts. The sixth, `established`, is a gauge: a snapshot that goes up and down.
+
+Before the fix, each counter used this query:
 
 ```promql
 max_over_time(node_netstat_Tcp_ActiveOpens{node_name=~"$node_name"}[$interval])
@@ -58,15 +73,9 @@ max_over_time(node_netstat_Tcp_ActiveOpens{node_name=~"$node_name"}[$interval])
 max_over_time(node_netstat_Tcp_ActiveOpens{node_name=~"$node_name"}[5m])
 ```
 
-`max_over_time` returns the highest sample in the window. For a gauge, that's a sensible choice: it keeps short peaks that a plain sample at each step could skip.
+`max_over_time()` returns the highest value in each time step. For a counter, the highest value is always the latest one, so the query returned the total since boot.
 
-For a counter, the highest sample in any window is simply the latest one. So `max_over_time(counter[$interval])` is just the counter, which is the total since boot. Every series on the panel became a slow upward ramp. A spike of a few thousand retransmits disappeared into a line that was already at hundreds of thousands.
-
-It got worse because all six series shared one Y axis. `CurrEstab` was around 100 on that test node. Next to counters in the hundreds of thousands, it was a flat line at zero.
-
-## `rate()` and `irate()`
-
-After the fix, the same counter uses this query:
+The counters now use this query:
 
 ```promql
 rate(node_netstat_Tcp_ActiveOpens{node_name=~"$node_name"}[$interval])
@@ -74,62 +83,35 @@ rate(node_netstat_Tcp_ActiveOpens{node_name=~"$node_name"}[$interval])
 irate(node_netstat_Tcp_ActiveOpens{node_name=~"$node_name"}[5m])
 ```
 
-Here's what each part does.
+- `rate()` returns the average increase per second in each time step, and handles counter resets after a reboot.
+- `irate()` is the fallback when the time step is too short for `rate()` to return a value. The **TCP Segments** and **Netstat: UDP** panels on the same dashboard use the same pattern.
 
-**`rate(x[$interval])`** is the per-second average increase across the window. It also handles counter resets: if the value drops, for example after a reboot, `rate()` treats it as a reset to zero instead of a huge negative jump. That's the main reason not to calculate rates by hand with subtraction.
+`established` keeps its `max_over_time()` query, which suits a gauge because it keeps short peaks inside each time step. It's now on its own right axis, labeled **Connections**.
 
-**`irate(x[5m])`** uses only the last two samples in the window. It reacts fast and shows sharp spikes, which is useful on short time ranges. On long ranges it's misleading: each point on the graph sees only two samples, so spikes appear and disappear as you zoom. That's why `irate()` isn't the primary query here.
+This mistake is easy to make with any dashboard. By convention, Prometheus counter names end in `_total`, but these come straight from the kernel, and the node exporter reports them as `untyped`. Nothing in the metric tells you it's a counter. To check your own panels:
 
-**`or`** is the fallback. `rate()` needs at least two samples in the window to return anything. If `$interval` is shorter than the scrape interval, the left side is empty, and `or` falls back to `irate()` over a fixed five minutes. You'll see the same `rate ... or irate` pattern in the **TCP Segments** and **Netstat: UDP** panels on the same dashboard, so the panel now matches its neighbors.
+- **Look at the shape.** A line that only climbs, with dips only at restarts, is almost always a raw counter.
+- **Look at the size.** If a panel that should show activity shows six or seven digits on a quiet host, check the query.
+- **Match the function to the type.** For counters, use `rate()`, `irate()`, or `increase()`. For gauges, use the raw value, `max_over_time()`, or `avg_over_time()`.
 
-After the change, the counters on the same test node read between zero and 12 per second. That's a number you can alert on, compare across nodes, and correlate with an incident.
+## How the fix reached PMM
 
-## Keeping the gauge as it was
+Bastian first sent this fix in January 2025, to the old `percona/grafana-dashboards` repository, where it wasn't merged. When the PMM dashboards moved into the main `percona/pmm` repository, he sent it again as [percona/pmm#5913](https://github.com/percona/pmm/pull/5913) and filed [PMM-15559](https://perconadev.atlassian.net/browse/PMM-15559): use rates for the TCP counters, and give open connections their own axis.
 
-`CurrEstab` keeps its original query:
+Mattia Simonato from the PMM team reproduced the problem on a test node and confirmed the numbers. On top of Bastian's commit, he switched the counters from `irate()` to `rate()` to match the other panels on the dashboard, kept the original query for `established`, and added a release note. The PR merged on 11 November 2026.
 
-```promql
-max_over_time(node_netstat_Tcp_CurrEstab{node_name=~"$node_name"}[$interval])
-```
+Thank you, Bastian, and thanks for sticking with it.
 
-Running `rate()` on a gauge would give you the rate at which the number of open connections changes. That's rarely what you want. `max_over_time` is the right function for a gauge, because it keeps the peak inside each step.
+## Get the fix
 
-The other half of Bastian's change moves `established` to its own Y axis on the right:
-
-```json
-"seriesOverrides": [
-  {
-    "alias": "established",
-    "yaxis": 2
-  }
-]
-```
-
-The left axis now uses the `ops` unit (operations per second), and the right axis is labeled **Connections**. You can read the connection rate and the number of open connections on one panel without either scale flattening the other.
-
-![The Netstat: TCP panel before and after the fix. Before, max_over_time() plots counter totals since boot. After, rate() shows events per second and a connection storm stands out.](blog/2026/11/netstat-tcp-before-after.svg)
-
-The chart above is an illustration with synthetic data. The shapes match what Mattia measured on a real node: totals in the hundreds of thousands before, zero to 12 events per second after.
-
-## Check your own dashboards for the same bug
-
-This mistake isn't specific to PMM. Any dashboard can graph a raw counter, and it's easy to miss when the metric name doesn't end in `_total`. A few quick checks:
-
-- **Look at the shape.** A line that only climbs, with small steps and no dips except at restarts, is almost always a raw counter.
-- **Look at the magnitude.** If a "per something" panel shows six or seven digits on a quiet host, check the query.
-- **Read the source.** For node exporter metrics, the kernel documentation for `/proc/net/snmp` and `/proc/net/netstat` tells you which fields are cumulative.
-- **Match the function to the type.** For counters, use `rate()`, `irate()`, or `increase()`. For gauges, use `max_over_time()`, `avg_over_time()`, or the raw value. Never `max_over_time()` on a counter, and never `rate()` on a gauge.
-
-## Shipped in PMM 3.11.0
-
-The fix is in [PMM 3.11.0](https://docs.percona.com/percona-monitoring-and-management/3/release-notes/3.11.0.html), released on 26 November 2026. The same release adds alerts on slow queries from Query Analytics data, scheduled Advisors that email their results, a native PMM UI Inventory page, and the `pmm-admin update` command. After you upgrade PMM Server, the **Netstat: TCP** panel shows rates on all your nodes. You don't need to change anything on PMM Client.
+The fix is in [PMM 3.11.0](https://docs.percona.com/percona-monitoring-and-management/3/release-notes/3.11.0.html), released on 26 November 2026. Upgrade PMM Server, and the [**Netstat: TCP**](https://docs.percona.com/percona-monitoring-and-management/3/reference/dashboards/dashboard-network-details.html) panel shows rates for all your nodes. You don't need to change anything on PMM Client.
 
 ## Found a panel that looks wrong?
 
-Most PMM dashboards are JSON files in the [`dashboards/` directory of percona/pmm](https://github.com/percona/pmm/tree/main/dashboards). If a panel shows numbers that don't make sense, you can:
+If a PMM panel shows numbers that don't make sense, you can:
 
-- File a ticket in the [PMM Jira project](https://perconadev.atlassian.net/jira/software/c/projects/PMM/issues) with the panel name, the query, and a screenshot. That alone is a useful contribution.
-- Send a PR against `percona/pmm` with the fix, as Bastian did. Put the Jira key in the title, and the team will help with the rest.
+- File a ticket in the [PMM Jira project](https://perconadev.atlassian.net/jira/software/c/projects/PMM/issues) with the dashboard and panel name, and a screenshot. That alone is a useful contribution.
+- Fix it yourself, as Bastian did. Most PMM dashboards are JSON files in the [`dashboards/` directory of percona/pmm](https://github.com/percona/pmm/tree/main/dashboards). Send a PR with the Jira key in the title, and the team will help with the rest.
 - Ask on the [Percona Community Forum](https://forums.percona.com/) if you're not sure whether it's a bug.
 
 Which PMM panel have you stopped trusting? Tell us, or better, open a ticket.
