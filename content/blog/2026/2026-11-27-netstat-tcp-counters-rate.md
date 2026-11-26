@@ -12,7 +12,7 @@ images:
 slug: netstat-tcp-counters-rate
 ---
 
-When your application reports dropped or slow connections to the database, one of the first places to look in Percona Monitoring and Management (PMM) is the **Netstat: TCP** panel on the **OS > Network Details** dashboard. It shows how many connections the node opens, accepts, and loses, and how much traffic it has to resend.
+When your application reports dropped or slow connections to the database, one of the first places to look in Percona Monitoring and Management (PMM) is the **Netstat: TCP** panel on the **Network Details** dashboard (**Operating system > Network** in the PMM menu). It shows how many connections the node opens, accepts, and loses, and how much traffic it has to resend.
 
 Up to PMM 3.10.0, that panel couldn't answer the question. Its lines sat in the hundreds of thousands and only ever climbed, so you couldn't tell when a connection storm started or whether it was over.
 
@@ -22,7 +22,7 @@ Read on to see what the panel shows now, how to use it to track down connection 
 
 ## What the panel showed before 3.11.0
 
-On one of our test nodes, the `activeOpens` line read about 340,000. That wasn't how many connections the node was opening. It was how many it had opened since it last booted. Every line on the panel was a running total like this, so you couldn't tell a quiet hour from a busy one, or when a problem started.
+On one of our test nodes, the `activeOpens` line read about 340,000. That wasn't how many connections the node was opening. It was how many it had opened since it last booted. The other counter lines were running totals too, so you couldn't tell a quiet hour from a busy one, or when a problem started.
 
 The `established` line, the number of connections open right now, had a different problem. It was about 100 on the same node. On a shared scale that went up to hundreds of thousands, it looked like a flat line at zero.
 
@@ -45,7 +45,7 @@ Here's the same burst on the updated panel. New connections jump to almost 2,000
 
 When users report connection errors or slowness:
 
-1. Open **OS > Network Details**, select the node that runs your database, and set the time range to cover the incident.
+1. Open **Operating system > Network**, select the node that runs your database, and set the time range to cover the incident.
 2. In **Netstat: TCP**, look for lines that jump at the time of the problem. Each line points you in a different direction:
 
     | Line | What a spike usually means |
