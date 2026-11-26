@@ -322,8 +322,8 @@ outputs:
   home: ["HTML", "RSS", "Markdown"]
   page: ["HTML", "Markdown"]
   section: ["HTML", "RSS", "Markdown"]
-  taxonomy: ["HTML", "Markdown"]
-  term: ["HTML", "Markdown"]
+  taxonomy: ["HTML", "RSS", "Markdown"]
+  term: ["HTML", "RSS", "Markdown"]
 timeout: 2m
 caches:
   images:
