@@ -37,6 +37,6 @@ contributor_type:
 contributor_year:
 - '2025'
 ---
-Catalina Adam is a Senior Technical Writer at Percona, where she blends AI-driven content strategies with docs-as-code workflows to make open-source database technologies more accessible. 
+Catalina Adam is a Senior Technical Writer at Percona, where she documents Percona Monitoring and Management (PMM) and other open-source database tools using docs-as-code and AI-powered workflows that take manual work out of writing and publishing docs.
 
-With over a decade of experience in technical communication, she loves turning complex, messy information into clear, useful documentation.
+She has more than 13 years of experience in technical communication, an MA in Technical and Scientific Communication, and is studying for an MSc in Data Science.
