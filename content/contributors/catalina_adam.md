@@ -6,7 +6,7 @@ fullname_pronounciation: Catalina Adam
 tagline: Senior Technical Writer
 social:
   facebook: null
-  github: null
+  github: catalinaadam
   linkedin: https://www.linkedin.com/in/catalinaadam/
   twitter: null
   website: null
@@ -15,6 +15,8 @@ images:
 aliases:
 - /authors/catalina_adam
 - /authors/catalina_adam/
+status: current
+job: Senior Technical Writer @ Percona
 contributor_status:
 - staff
 # Auto-generated fields. Do not edit manually.
