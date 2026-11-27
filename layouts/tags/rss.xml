@@ -1,10 +1,5 @@
-{{- $contributor := false -}}
-{{- $tag := lower .Title -}}
-{{- range where site.RegularPages "Section" "contributors" -}}
-  {{- if eq (lower .Params.planet_pg_tag) $tag -}}
-    {{- $contributor = . -}}
-  {{- end -}}
-{{- end -}}
+{{- $found := partialCached "planet-pg/contributor.html" . .RelPermalink -}}
+{{- $contributor := $found.page -}}
 {{- $pages := sort .Pages ".Params.date" "desc" -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
