@@ -29,8 +29,8 @@ talks_tags:
 - Security
 - Video
 posts_count: 0
-events_count: 3
-talks_count: 4
+events_count: 4
+talks_count: 5
 contributor_type:
 - speaker
 contributor_year:
