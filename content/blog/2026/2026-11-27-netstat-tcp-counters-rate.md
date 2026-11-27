@@ -1,7 +1,7 @@
 ---
 title: "Community Contribution Spotlight: Fixing the Netstat TCP Panel in PMM"
 date: "2026-11-27T10:00:00+00:00"
-draft: true
+draft: false
 tags: ['PMM', 'Prometheus', 'PromQL', 'Grafana', 'Community', 'Contributions']
 categories: ['PMM']
 authors:
